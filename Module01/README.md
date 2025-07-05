@@ -2,7 +2,7 @@
 
 EdgeAI represents a paradigm shift in artificial intelligence deployment, transitioning AI capabilities from cloud-based processing to local edge devices. This chapter explores the fundamental concepts, key technologies, and practical applications that define this transformative approach to AI implementation.
 
-## 📚 Chapter Structure
+## 📚 Module Structure
 
 ### 🧠 [Section 1: EdgeAI Fundamentals](01.EdgeAIFundamentals.md)
 This section establishes the foundation by contrasting traditional cloud-based AI with edge AI deployment models. We examine critical enabling technologies including model quantization, compression optimization, and Small Language Models (SLMs) that overcome the computational constraints of edge devices. The discussion emphasizes how these innovations deliver enhanced privacy protection, ultra-low latency, and robust offline processing capabilities.
