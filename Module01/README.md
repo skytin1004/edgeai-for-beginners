@@ -1,4 +1,4 @@
-# 📱 Module01 - EdgeAI: Transforming AI Deployment for the Edge
+# 📱 Chapter 01: Transforming AI Deployment for the Edge
 
 EdgeAI represents a paradigm shift in artificial intelligence deployment, transitioning AI capabilities from cloud-based processing to local edge devices. This chapter explores the fundamental concepts, key technologies, and practical applications that define this transformative approach to AI implementation.
 
