@@ -1,6 +1,8 @@
-# 🤖 EdgeAI for Beginners - Course Structure Overview
+# 🤖 EdgeAI for Beginners 
 
 A comprehensive edge artificial intelligence learning course, providing a complete learning path from fundamental concepts to practical deployment.
+
+![cover](./imgs/cover.png)
 
 ## 📚 Course Architecture
 
