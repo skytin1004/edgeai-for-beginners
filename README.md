@@ -166,8 +166,10 @@ Each module is designed to be independently complete, but sequential learning wi
 **The future of EdgeAI lies in continuous improvement of model architectures, quantization techniques, and deployment strategies that prioritize efficiency and specialization over general-purpose capabilities. Organizations that embrace this paradigm shift will be well-positioned to leverage AI's transformative potential while maintaining control over their data and operations.**
 
 ## Other Courses
+
 Our team produces other courses! Check out:
 
+- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
 - [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
 - [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
