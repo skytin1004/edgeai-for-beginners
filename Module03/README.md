@@ -1,4 +1,4 @@
-# Chapter 03 : Deploying Small Language Models (SLMs)
+# Chapter 03: Deploying Small Language Models (SLMs)
 
 This comprehensive chapter explores the complete lifecycle of Small Language Models (SLMs) deployment, covering theoretical foundations, practical implementation strategies, and production-ready containerized solutions. The chapter is structured in three progressive sections that take readers from fundamental concepts to advanced deployment scenarios.
 
