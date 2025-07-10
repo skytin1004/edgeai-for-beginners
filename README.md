@@ -10,14 +10,14 @@ A comprehensive edge artificial intelligence learning course, providing a comple
 **Theme**: The transformative shift of edge AI deployment
 
 #### Chapter Structure:
-- [**🧠 Section 1: EdgeAI Fundamentals** - EdgeAI Foundation Knowledge](./Module01/01.EdgeAIFundamentals.md)
+- [**🧠 Section 1: EdgeAI Fundamentals**](./Module01/01.EdgeAIFundamentals.md)
   - Traditional cloud AI vs edge AI comparison
   - Edge computing challenges and constraints
   - Key technologies: model quantization, compression optimization, Small Language Models (SLMs)
   - Hardware acceleration: NPUs, GPU optimization, CPU optimization
   - Advantages: privacy security, low latency, offline capabilities, cost efficiency
 
-- [**🏢 Section 2: Real-World Case Studies** - Real-World Case Studies](./Module01/02.RealWorldCaseStudies.md)
+- [**🏢 Section 2: Real-World Case Studies**](./Module01/02.RealWorldCaseStudies.md)
   - Microsoft Phi & Mu model ecosystem
     - Phi Silica: Windows AI integration
     - Mu models: task-specific micro language models
@@ -25,7 +25,7 @@ A comprehensive edge artificial intelligence learning course, providing a comple
   - Market impact and future directions
   - Deployment considerations and best practices
 
-- [**🛠️ Section 3: Practical Implementation Guide** - Practical Implementation Guide](./Module01/03.PracticalImplementationGuide.md)
+- [**🛠️ Section 3: Practical Implementation Guide**](./Module01/03.PracticalImplementationGuide.md)
   - Development environment setup (Python 3.10+, .NET 8+)
   - Hardware requirements and recommended configurations
   - Core model family resources
@@ -38,25 +38,35 @@ A comprehensive edge artificial intelligence learning course, providing a comple
 **Theme**: SLM theoretical principles, implementation strategies, and production deployment
 
 #### Chapter Structure:
-- [**Section 1: Microsoft Phi Model Family Fundamentals** - Microsoft Phi Model Family Fundamentals](./Module02/01.PhiFamily.md)
+- [**🧠 Section 1: Microsoft Phi Model Family Fundamentals**](./Module02/01.PhiFamily.md)
   - Design philosophy evolution (Phi-1 to Phi-4)
   - Efficiency-first architecture design
   - Specialized capabilities (reasoning, multimodal, edge deployment)
 
-- [**Section 2: Qwen Family Fundamentals** - Qwen Family Fundamentals](./Module02/02.QwenFamily.md)
+- [**🌍 Section 2: Qwen Family Fundamentals**](./Module02/02.QwenFamily.md)
   - Open source excellence (Qwen 1.0 to Qwen3)
   - Advanced reasoning architecture
   - Scalable deployment options (0.5B-235B parameters)
 
-- [**Section 3: Gemma Family Fundamentals** - Gemma Family Fundamentals](./Module02/03.GemmaFamily.md)
+- [**🛠️ Section 3: Gemma Family Fundamentals**](./Module02/03.GemmaFamily.md)
   - Research-driven innovation (Gemma 3 & 3n)
   - Multimodal excellence
   - Mobile-first architecture
 
-- [**Section 4: BitNET Family Fundamentals** - BitNET Family Fundamentals](./Module02/04.BitNETFamily.md)
+- [**⚡ Section 4: BitNET Family Fundamentals**](./Module02/04.BitNETFamily.md)
   - Revolutionary quantization technology (1.58-bit)
   - Optimized inference framework
   - Sustainable AI leadership
+
+- [**📱 Section 5: Microsoft Mu Model Fundamentals**](./Module02/05.mumodel.md)
+  - Device-first architecture for Windows
+  - System integration with Windows Settings
+  - Privacy-preserving offline operation
+
+- [**🔌 Section 6: Phi-Silica Fundamentals**](./Module02/06.phisilica.md)
+  - NPU-optimized architecture for Windows Copilot+ PCs
+  - Exceptional efficiency (650 tokens/second at 1.5W)
+  - Developer integration with Windows App SDK
 
 ---
 
@@ -64,17 +74,17 @@ A comprehensive edge artificial intelligence learning course, providing a comple
 **Theme**: Complete SLM lifecycle deployment, from theory to production environment
 
 #### Chapter Structure:
-- [**Section 1: SLM Advanced Learning** - SLM Advanced Learning Foundations and Optimization](./Module03/01.SLMAdvancedLearning.md)
+- [**📊 Section 1: SLM Advanced Learning**](./Module03/01.SLMAdvancedLearning.md)
   - Parameter classification framework (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
   - Advanced optimization techniques (quantization methods, BitNET 1-bit quantization)
   - Model acquisition strategies (Hugging Face, Azure AI Foundry)
 
-- [**Section 2: Local Environment Deployment** - Local Environment Deployment](./Module03/02.DeployingSLMinLocalEnv.md)
+- [**🏠 Section 2: Local Environment Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)
   - Ollama universal platform deployment
   - Microsoft Foundry local enterprise-grade solutions
   - Framework comparative analysis
 
-- [**Section 3: Containerized Cloud Deployment** - Containerized Cloud Deployment](./Module03/03.DeployingSLMinCloud.md)
+- [**☁️ Section 3: Containerized Cloud Deployment**](./Module03/03.DeployingSLMinCloud.md)
   - vLLM high-performance inference deployment
   - Ollama container orchestration
   - ONNX Runtime edge-optimized implementation
@@ -113,6 +123,8 @@ edgeai-for-beginners/
 │   ├── 🔴 02.QwenFamily.md
 │   ├── 🟡 03.GemmaFamily.md
 │   ├── ⚫ 04.BitNETFamily.md
+│   ├── 📱 05.mumodel.md
+│   ├── 🔌 06.phisilica.md
 │   └── 📋 README.md
 ├── 🚀 Module03/ (SLM Deployment Practice)
 │   ├── 📊 01.SLMAdvancedLearning.md
