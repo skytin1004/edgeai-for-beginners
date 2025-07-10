@@ -170,7 +170,7 @@ Each module is designed to be independently complete, but sequential learning wi
 
 ## Study Guide
 
-A comprehensive [Study Guide](./studyguide.md) is available to help you maximize your learning experience. The study guide provides:
+A comprehensive [Study Guide](STUDY_GUIDE.md) is available to help you maximize your learning experience. The study guide provides:
 
 - **Structured Learning Paths**: Optimized schedules for completing the course in 20 hours
 - **Time Allocation Guidance**: Specific recommendations for balancing reading, exercises, and projects
