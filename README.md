@@ -1,6 +1,6 @@
 # EdgeAI for Beginners 
 
-A comprehensive edge artificial intelligence learning course, providing a complete learning path from fundamental concepts to practical deployment.
+An in-depth educational journey through Edge AI technologies, structured across three comprehensive modules: EdgeAI Fundamentals, Small Language Model Foundations, and Practical Deployment Strategies. This course guides learners from basic concepts through advanced implementations, featuring real-world case studies, hands-on exercises, and deployment examples that demonstrate how to effectively run AI models directly on edge devices for enhanced privacy, reduced latency, and improved efficiency.
 
 ![Course cover image](./imgs/cover.png)
 
@@ -160,6 +160,18 @@ Recommended Learning Path:
 3. Learn **Module03** to master practical deployment skills
 
 Each module is designed to be independently complete, but sequential learning will provide the best results.
+
+## Study Guide
+
+A comprehensive [Study Guide](./studyguide.md) is available to help you maximize your learning experience. The study guide provides:
+
+- **Structured Learning Paths**: Optimized schedules for completing the course in 20 hours
+- **Time Allocation Guidance**: Specific recommendations for balancing reading, exercises, and projects
+- **Key Concept Focus**: Prioritized learning objectives for each module
+- **Self-Assessment Tools**: Questions and exercises to test your understanding
+- **Mini-Project Ideas**: Practical applications to reinforce your learning
+
+The study guide is designed to accommodate both intensive learning (1 week) and part-time study (3 weeks), with clear guidance on how to allocate your time effectively even if you can only dedicate 10 hours to the course.
 
 ---
 
