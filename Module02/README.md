@@ -32,13 +32,31 @@ The third section explores Google's comprehensive approach to open-source multim
 This section demonstrates how cutting-edge research can be translated into practical, accessible AI solutions that enable new categories of applications.
 
 ### **[Section 4: BitNET Family Fundamentals](./04.BitNETFamily.md)**
-The concluding section presents Microsoft's revolutionary approach to 1-bit quantization, representing the frontier of ultra-efficient AI deployment. This advanced section covers:
+The fourth section presents Microsoft's revolutionary approach to 1-bit quantization, representing the frontier of ultra-efficient AI deployment. This advanced section covers:
 
 - **🔢 Revolutionary Quantization**: Comprehensive exploration of 1.58-bit quantization using ternary weights {-1, 0, +1}, achieving 1.37x to 6.17x speedups with 55-82% energy reduction
 - **⚡ Optimized Inference Framework**: Detailed coverage of bitnet.cpp implementation, specialized kernels, and cross-platform optimizations delivering unprecedented efficiency gains
 - **🌍 Sustainable AI Leadership**: In-depth analysis of environmental benefits, democratized deployment capabilities, and new application scenarios enabled by extreme efficiency
 
-This section establishes the future direction of efficient AI deployment, proving that revolutionary efficiency and competitive performance can coexist.
+This section demonstrates how revolutionary quantization techniques can dramatically improve AI efficiency while maintaining competitive performance.
+
+### **[Section 5: Microsoft Mu Model Fundamentals](./05.mumodel.md)**
+The fifth section explores Microsoft's groundbreaking Mu model, designed specifically for on-device deployment in Windows. This specialized section covers:
+
+- **📱 Device-First Architecture**: Comprehensive exploration of Microsoft's specialized on-device model designed for optimal performance on Windows devices
+- **🔧 System Integration**: Detailed analysis of deep Windows integration, showcasing how AI can enhance system functionality through native implementation
+- **🔒 Privacy-Preserving Design**: In-depth coverage of offline operation, local processing, and privacy-first architecture that keeps user data on-device
+
+This section demonstrates how specialized models can enhance operating system functionality while maintaining privacy and performance.
+
+### **[Section 6: Phi-Silica Fundamentals](./06.phisilica.md)**
+The concluding section examines Microsoft's Phi-Silica, an ultra-efficient language model optimized specifically for Windows Copilot+ PCs with NPU hardware. This advanced section covers:
+
+- **⚡ Exceptional Efficiency Metrics**: Comprehensive analysis of Phi-Silica's remarkable performance capabilities, delivering 650 tokens per second with only 1.5 watts of power consumption
+- **🔌 NPU Optimization**: Detailed exploration of specialized architecture designed for Neural Processing Units in Copilot+ PCs
+- **🧩 Developer Integration**: In-depth coverage of Windows App SDK integration, prompt engineering techniques, and best practices for implementing Phi-Silica in applications
+
+This section establishes the cutting edge of hardware-optimized on-device language models, showcasing how specialized model architectures combined with dedicated neural hardware can deliver exceptional AI performance on consumer devices.
 
 ## 🎯 Comprehensive Learning Outcomes
 
