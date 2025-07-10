@@ -121,6 +121,8 @@ An in-depth educational journey through Edge AI technologies, structured across 
 
 ```
 edgeai-for-beginners/
+├── imgs/
+│   └── cover.png
 ├── Module01/ (EdgeAI Fundamentals and Transformation)
 │   ├── 01.EdgeAIFundamentals.md
 │   ├── 02.RealWorldCaseStudies.md
@@ -140,7 +142,12 @@ edgeai-for-beginners/
 │   ├── 02.DeployingSLMinLocalEnv.md
 │   ├── 03.DeployingSLMinCloud.md
 │   └── README.md
-└── README.md (This file)
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md (This file)
+├── SECURITY.md
+├── studyguide.md
+└── SUPPORT.md
 ```
 
 ## Course Features
