@@ -146,7 +146,7 @@ edgeai-for-beginners/
 ├── LICENSE
 ├── README.md (This file)
 ├── SECURITY.md
-├── studyguide.md
+├── STUDY_GUIDE.md
 └── SUPPORT.md
 ```
 
