@@ -2,7 +2,7 @@
 
 An in-depth educational journey through Edge AI technologies, structured across three comprehensive modules: EdgeAI Fundamentals, Small Language Model Foundations, and Practical Deployment Strategies. This course guides learners from basic concepts through advanced implementations, featuring real-world case studies, hands-on exercises, and deployment examples that demonstrate how to effectively run AI models directly on edge devices for enhanced privacy, reduced latency, and improved efficiency.
 
-![cover](./imgs/cover.png)
+![Course cover image](./imgs/cover.png)
 
 ## Course Architecture
 
