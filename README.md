@@ -97,6 +97,66 @@ An in-depth educational journey through Edge AI technologies, structured across 
   - Ollama container orchestration
   - ONNX Runtime edge-optimized implementation
 
+---
+
+### [Module 04: Model Format Conversion and Quantization](./Module04/README.md)
+**Theme**: Complete model optimization toolkit for edge deployment across platforms
+
+#### Chapter Structure:
+- [**Section 1: Model Format Conversion and Quantization Foundations**](./Module04/01.Introduce.md)
+  - Precision classification framework (ultra-low, low, medium precision)
+  - GGUF and ONNX format advantages and use cases
+  - Quantization benefits for operational efficiency
+  - Performance benchmarks and memory footprint comparisons
+
+- [**Section 2: Llama.cpp Implementation Guide**](./Module04/02.Llamacpp.md)
+  - Cross-platform installation (Windows, macOS, Linux)
+  - GGUF format conversion and quantization levels (Q2_K to Q8_0)
+  - Hardware acceleration (CUDA, Metal, OpenCL, Vulkan)
+  - Python integration and REST API deployment
+
+- [**Section 3: Microsoft Olive Optimization Suite**](./Module04/03.MicrosoftOlive.md)
+  - Hardware-aware model optimization with 40+ built-in components
+  - Auto-optimization with dynamic and static quantization
+  - Enterprise integration with Azure ML workflows
+  - Popular model support (Llama, Phi, Qwen, Gemma)
+
+- [**Section 4: Apple MLX Framework Deep Dive**](./Module04/04.AppleMLX.md)
+  - Unified memory architecture for Apple Silicon
+  - Support for LLaMA, Mistral, Phi-3, Qwen models
+  - LoRA fine-tuning and model customization
+  - Hugging Face integration with 4-bit/8-bit quantization
+
+---
+
+### [Module 05: SLMOps - Small Language Model Operations](./Module05/README.md)
+**Theme**: Complete SLM lifecycle operations from distillation to production deployment
+
+#### Chapter Structure:
+- [**Section 1: Introduction to SLMOps**](./Module05/01.IntroduceSLMOps.md)
+  - SLMOps paradigm shift in AI operations
+  - Cost efficiency and privacy-first architecture
+  - Strategic business impact and competitive advantages
+  - Real-world implementation challenges and solutions
+
+- [**Section 2: Model Distillation - From Theory to Practice**](./Module05/02.SLMOps-Distillation.md)
+  - Knowledge transfer from teacher to student models
+  - Two-stage distillation process implementation
+  - Azure ML distillation workflows with practical examples
+  - 85% inference time reduction with 92% accuracy retention
+
+- [**Section 3: Fine-Tuning - Customizing Models for Specific Tasks**](./Module05/03.SLMOps-Finetuing.md)
+  - Parameter-efficient fine-tuning (PEFT) techniques
+  - LoRA and QLoRA advanced methods
+  - Microsoft Olive fine-tuning implementation
+  - Multi-adapter training and hyperparameter optimization
+
+- [**Section 4: Deployment - Production-Ready Implementation**](./Module05/04.SLMOps.Deployment.md)
+  - Model conversion and quantization for production
+  - Foundry Local deployment configuration
+  - Performance benchmarking and quality validation
+  - 75% size reduction with production monitoring
+
 ## Learning Outcomes Overview
 
 ### Module 01 Learning Outcomes:
@@ -116,6 +176,18 @@ An in-depth educational journey through Edge AI technologies, structured across 
 - Optimization technique mastery
 - Deployment flexibility mastery
 - Production-ready configuration capabilities
+
+### Module 04 Learning Outcomes:
+- Deep understanding of quantization boundaries and practical applications
+- Hands-on experience with multiple optimization frameworks (Llama.cpp, Olive, MLX)
+- Hardware-aware optimization selection capabilities
+- Production deployment skills for cross-platform edge computing environments
+
+### Module 05 Learning Outcomes:
+- Master SLMOps paradigm and operational principles
+- Implement model distillation for knowledge transfer and efficiency optimization
+- Apply fine-tuning techniques for domain-specific model customization
+- Deploy production-ready SLM solutions with monitoring and maintenance strategies
 
 ## File Structure Tree Diagram
 
@@ -142,6 +214,18 @@ edgeai-for-beginners/
 │   ├── 02.DeployingSLMinLocalEnv.md
 │   ├── 03.DeployingSLMinCloud.md
 │   └── README.md
+├── Module04/ (Model Format Conversion and Quantization)
+│   ├── 01.Introduce.md
+│   ├── 02.Llamacpp.md
+│   ├── 03.MicrosoftOlive.md
+│   ├── 04.AppleMLX.md
+│   └── README.md
+├── Module05/ (SLMOps - Small Language Model Operations)
+│   ├── 01.IntroduceSLMOps.md
+│   ├── 02.SLMOps-Distillation.md
+│   ├── 03.SLMOps-Finetuing.md
+│   ├── 04.SLMOps.Deployment.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -165,6 +249,8 @@ Recommended Learning Path:
 1. Start with **Module01** to build fundamental understanding of EdgeAI
 2. Proceed to **Module02** to deeply understand various SLM model families
 3. Learn **Module03** to master practical deployment skills
+4. Continue with **Module04** for advanced model optimization and format conversion
+5. Complete **Module05** to master SLMOps for production-ready implementations
 
 Each module is designed to be independently complete, but sequential learning will provide the best results.
 
