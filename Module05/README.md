@@ -1,4 +1,4 @@
-# SLMOps: A Comprehensive Guide to Small Language Model Operations
+# Chapter 05 : SLMOps - A Comprehensive Guide to Small Language Model Operations
 
 ## Overview
 
