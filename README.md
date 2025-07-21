@@ -157,6 +157,66 @@ An in-depth educational journey through Edge AI technologies, structured across 
   - Performance benchmarking and quality validation
   - 75% size reduction with production monitoring
 
+---
+
+### [Module 06: SLM Agentic Systems - AI Agents and Function Calling](./Module06/README.md)
+**Theme**: SLM agentic systems implementation from foundation to advanced function calling and Model Context Protocol integration
+
+#### Chapter Structure:
+- [**Section 1: AI Agents and Small Language Models Foundation**](./Module06/01.IntroduceAgent.md)
+  - Agent classification framework (reflex, model-based, goal-based, learning agents)
+  - SLM fundamentals and optimization strategies (GGUF, quantization, edge frameworks)
+  - SLM vs LLM trade-offs analysis (10-30× cost reduction, 70-80% task effectiveness)
+  - Practical deployment with Ollama, VLLM, and Microsoft edge solutions
+
+- [**Section 2: Function Calling in Small Language Models**](./Module06/02.FunctionCalling.md)
+  - Systematic workflow implementation (intent detection, JSON output, external execution)
+  - Platform-specific implementations (Phi-4-mini, Qwen3, Microsoft Foundry Local)
+  - Advanced examples (multi-agent collaboration, dynamic tool selection)
+  - Production considerations (rate limiting, audit logging, security measures)
+
+- [**Section 3: Model Context Protocol (MCP) Integration**](./Module06/03.IntroduceMCP.md)
+  - Protocol architecture and layered system design
+  - Multi-backend support (Ollama for development, vLLM for production)
+  - Connection protocols (STDIO and SSE modes)
+  - Real-world applications (web automation, data processing, API integration)
+
+---
+
+### [Module 07: EdgeAI Implementation Samples](./Module07/README.md)
+**Theme**: Comprehensive EdgeAI implementations across diverse platforms and frameworks
+
+#### Chapter Structure:
+- [**EdgeAI in NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
+  - 67 TOPS AI performance in credit-card-sized form factor
+  - Generative AI models support (vision transformers, LLMs, vision-language models)
+  - Applications in robotics, drones, intelligent cameras, autonomous devices
+  - Affordable $249 platform for democratized AI development
+
+- [**EdgeAI in Mobile Applications with .NET MAUI and ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
+  - Cross-platform mobile AI with single C# codebase
+  - Hardware acceleration support (CPU, GPU, mobile AI processors)
+  - Platform-specific optimizations (CoreML for iOS, NNAPI for Android)
+  - Complete generative AI loop implementation
+
+- [**EdgeAI in Azure with Small Language Models Engine**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
+  - Cloud-edge hybrid deployment architecture
+  - Azure AI services integration with ONNX Runtime
+  - Enterprise-scale deployment and continuous model management
+  - Hybrid AI workflows for intelligent document processing
+
+- [**EdgeAI with Windows ML**](./Module07/README.md#4-edgeai-with-windows-ml)
+  - Windows AI Foundry foundation for performant on-device inference
+  - Universal hardware support (AMD, Intel, NVIDIA, Qualcomm silicon)
+  - Automatic hardware abstraction and optimization
+  - Unified framework for diverse Windows hardware ecosystem
+
+- [**EdgeAI with Foundry Local Applications**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
+  - Privacy-focused RAG implementation with local resources
+  - Phi-3 language model integration with semantic search
+  - Local vector databases support (SQLite, Qdrant)
+  - Data sovereignty and offline operation capabilities
+
 ## Learning Outcomes Overview
 
 ### Module 01 Learning Outcomes:
@@ -188,6 +248,18 @@ An in-depth educational journey through Edge AI technologies, structured across 
 - Implement model distillation for knowledge transfer and efficiency optimization
 - Apply fine-tuning techniques for domain-specific model customization
 - Deploy production-ready SLM solutions with monitoring and maintenance strategies
+
+### Module 06 Learning Outcomes:
+- Understand foundational concepts of AI agents and Small Language Models architecture
+- Master function calling implementation across multiple platforms and frameworks
+- Integrate Model Context Protocol (MCP) for standardized external tool interaction
+- Build sophisticated agentic systems with minimal human intervention requirements
+
+### Module 07 Learning Outcomes:
+- Gain hands-on experience with diverse EdgeAI platforms and implementation strategies
+- Master hardware-specific optimization techniques across NVIDIA, mobile, Azure, and Windows platforms
+- Understand deployment trade-offs between performance, cost, and privacy requirements
+- Develop practical skills for building real-world EdgeAI applications across different ecosystems
 
 ## File Structure Tree Diagram
 
@@ -226,6 +298,13 @@ edgeai-for-beginners/
 │   ├── 03.SLMOps-Finetuing.md
 │   ├── 04.SLMOps.Deployment.md
 │   └── README.md
+├── Module06/ (SLM Agentic Systems)
+│   ├── 01.IntroduceAgent.md
+│   ├── 02.FunctionCalling.md
+│   ├── 03.IntroduceMCP.md
+│   └── README.md
+├── Module07/ (EdgeAI Implementation Samples)
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -251,6 +330,8 @@ Recommended Learning Path:
 3. Learn **Module03** to master practical deployment skills
 4. Continue with **Module04** for advanced model optimization and format conversion
 5. Complete **Module05** to master SLMOps for production-ready implementations
+6. Explore **Module06** to understand SLM agentic systems and function calling capabilities
+7. Finish with **Module07** to gain practical experience with diverse EdgeAI implementation samples
 
 Each module is designed to be independently complete, but sequential learning will provide the best results.
 
