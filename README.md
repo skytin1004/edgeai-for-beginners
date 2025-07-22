@@ -52,8 +52,8 @@ An in-depth educational journey through Edge AI technologies, structured across 
   - Specialized capabilities (reasoning, multimodal, edge deployment)
 
 - [**Section 2: Qwen Family Fundamentals**](./Module02/02.QwenFamily.md)
-  - Open source excellence (Qwen 1.0 to Qwen3)
-  - Advanced reasoning architecture
+  - Open source excellence (Qwen 1.0 to Qwen3) - available through Hugging Face
+  - Advanced reasoning architecture with thinking mode capabilities
   - Scalable deployment options (0.5B-235B parameters)
 
 - [**Section 3: Gemma Family Fundamentals**](./Module02/03.GemmaFamily.md)
@@ -63,16 +63,16 @@ An in-depth educational journey through Edge AI technologies, structured across 
 
 - [**Section 4: BitNET Family Fundamentals**](./Module02/04.BitNETFamily.md)
   - Revolutionary quantization technology (1.58-bit)
-  - Optimized inference framework
-  - Sustainable AI leadership
+  - Specialized inference framework from https://github.com/microsoft/BitNet
+  - Sustainable AI leadership through extreme efficiency
 
 - [**Section 5: Microsoft Mu Model Fundamentals**](./Module02/05.mumodel.md)
-  - Device-first architecture for Windows
-  - System integration with Windows Settings
+  - Device-first architecture built into Windows 11
+  - System integration with Windows 11 Settings
   - Privacy-preserving offline operation
 
 - [**Section 6: Phi-Silica Fundamentals**](./Module02/06.phisilica.md)
-  - NPU-optimized architecture for Windows Copilot+ PCs
+  - NPU-optimized architecture built into Windows 11 Copilot+ PCs
   - Exceptional efficiency (650 tokens/second at 1.5W)
   - Developer integration with Windows App SDK
 
@@ -85,7 +85,7 @@ An in-depth educational journey through Edge AI technologies, structured across 
 - [**Section 1: SLM Advanced Learning**](./Module03/01.SLMAdvancedLearning.md)
   - Parameter classification framework (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
   - Advanced optimization techniques (quantization methods, BitNET 1-bit quantization)
-  - Model acquisition strategies (Hugging Face, Azure AI Foundry)
+  - Model acquisition strategies (Azure AI Foundry for Phi models, Hugging Face for selected models)
 
 - [**Section 2: Local Environment Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)
   - Ollama universal platform deployment
@@ -119,11 +119,11 @@ An in-depth educational journey through Edge AI technologies, structured across 
   - Hardware-aware model optimization with 40+ built-in components
   - Auto-optimization with dynamic and static quantization
   - Enterprise integration with Azure ML workflows
-  - Popular model support (Llama, Phi, Qwen, Gemma)
+  - Popular model support (Llama, Phi, selected Qwen models, Gemma)
 
 - [**Section 4: Apple MLX Framework Deep Dive**](./Module04/04.AppleMLX.md)
   - Unified memory architecture for Apple Silicon
-  - Support for LLaMA, Mistral, Phi-3, Qwen models
+  - Support for LLaMA, Mistral, Phi-3, selected Qwen models
   - LoRA fine-tuning and model customization
   - Hugging Face integration with 4-bit/8-bit quantization
 
@@ -171,7 +171,7 @@ An in-depth educational journey through Edge AI technologies, structured across 
 
 - [**Section 2: Function Calling in Small Language Models**](./Module06/02.FunctionCalling.md)
   - Systematic workflow implementation (intent detection, JSON output, external execution)
-  - Platform-specific implementations (Phi-4-mini, Qwen3, Microsoft Foundry Local)
+  - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)
   - Advanced examples (multi-agent collaboration, dynamic tool selection)
   - Production considerations (rate limiting, audit logging, security measures)
 
@@ -213,7 +213,7 @@ An in-depth educational journey through Edge AI technologies, structured across 
 
 - [**EdgeAI with Foundry Local Applications**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
   - Privacy-focused RAG implementation with local resources
-  - Phi-3 language model integration with semantic search
+  - Phi-3 language model integration with semantic search (Phi models only)
   - Local vector databases support (SQLite, Qdrant)
   - Data sovereignty and offline operation capabilities
 
