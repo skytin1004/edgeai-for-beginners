@@ -1,9 +1,7 @@
 # EdgeAI for Beginners 
 
-An in-depth educational journey through Edge AI technologies, structured across three comprehensive modules: EdgeAI Fundamentals, Small Language Model Foundations, and Practical Deployment Strategies. This course guides learners from basic concepts through advanced implementations, featuring real-world case studies, hands-on exercises, and deployment examples that demonstrate how to effectively run AI models directly on edge devices for enhanced privacy, reduced latency, and improved efficiency.
 
 ![Course cover image](./imgs/cover.png)
-
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
@@ -18,6 +16,7 @@ An in-depth educational journey through Edge AI technologies, structured across 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 Follow these steps to get started using these resources:
+
 1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
 2. **Clone the Repository**:   `git clone https://github.com/microsoft/edgeai-for-beginners.git`
 3. [**Join The Azure AI Foundry Discord and meet experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
@@ -69,8 +68,6 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 - [**Section 2: Real-World Case Studies**](./Module01/02.RealWorldCaseStudies.md)
   - Microsoft Phi & Mu model ecosystem
-    - Phi Silica: Windows AI integration
-    - Mu models: task-specific micro language models
   - Japan Airlines AI reporting system case study
   - Market impact and future directions
   - Deployment considerations and best practices
