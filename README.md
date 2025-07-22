@@ -4,6 +4,56 @@ An in-depth educational journey through Edge AI technologies, structured across 
 
 ![Course cover image](./imgs/cover.png)
 
+
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)
+
+
+[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+
+Follow these steps to get started using these resources:
+1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/mcp-for-beginners/fork)
+2. **Clone the Repository**:   `git clone https://github.com/microsoft/edgeai-for-beginners.git`
+3. [**Join The Azure AI Foundry Discord and meet experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
+
+
+### 🌐 Multi-Language Support
+
+#### Supported via GitHub Action (Automated & Always Up-to-Date)
+
+[French](./translations/fr/README.md) | [Spanish](./translations/es/README.md) |  [Chinese (Simplified)](./translations/zh/README.md) | [Chinese (Traditional, Macau)](./translations/mo/README.md) | [Chinese (Traditional, Hong Kong)](./translations/hk/README.md) | [Chinese (Traditional, Taiwan)](./translations/tw/README.md) | [Japanese](./translations/ja/README.md) | [Korean](./translations/ko/README.md) | 
+
+Welcome to EdgeAI for Beginners where the power of language models meets the efficiency of local devices. This course introduces how small, optimized language models (SLMs) can run directly on edge hardware—smartphones, IoT boards, and compact servers—without needing cloud access. You'll explore how real-time, privacy-conscious AI inference is revolutionizing smart homes, industrial monitoring, and offline applications, all through lightweight deployments tailored for speed, security, and modularity. 
+
+**Edge AI**
+
+Edge AI refers to running AI algorithms and language models locally on hardware—close to where data is generated—without relying on cloud resources for inference. It reduces latency, enhances privacy, and enables real-time decision-making.
+
+Core Principles:
+- On-device inference: AI models run on edge devices (phones, routers, microcontrollers, industrial PCs).
+- Offline capability: Functions without persistent internet.
+- Low latency: Immediate responses suited for real-time systems.
+- Data sovereignty: Keeps sensitive data local, improving security and compliance.
+
+**Small Language Models (SLMs)**
+SLMs like Phi-4, Mistral-7B, or Gemma are optimized versions of larger LLMs—trained or distilled for:
+- Reduced memory footprint
+- Lower compute demand
+- Faster startup times
+
+They unlock powerful NLP capabilities while meeting the constraints of:
+- Embedded systems
+- Mobile devices
+- IoT Devices
+- Edge servers with limited GPU
+- Personal Computers
+
 ## Course Architecture
 
 ### [Module 01: EdgeAI Fundamentals and Transformation](./Module01/README.md)
