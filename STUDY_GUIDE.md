@@ -1,4 +1,6 @@
-# EdgeAI for Beginners: C### Concentrated Learni### Concentrated Learning Path (1 week)
+# EdgeAI for Beginners: Learning Paths and Study Schedule
+
+### Concentrated Learning Path (1 week)
 
 | Day | Focus | Estimated Hours |
 |------|-------|------------------|
@@ -28,7 +30,7 @@
 | Week 1 | Module 1-2: Fundamentals & SLM Foundations | 6 hours |
 | Week 2 | Module 3-4: Deployment & Optimization | 6 hours |
 | Week 3 | Module 5-6: SLMOps & AI Agents | 5 hours |
-| Week 4 | Module 7: Development Tools & Integration | 3 hours |s)
+| Week 4 | Module 7: Development Tools & Integration | 3 hours |
 
 | Day | Focus | Estimated Hours |
 |------|-------|------------------|
@@ -37,8 +39,10 @@
 | Day 5-6 | Module 3: SLM Deployment | 2 hours |
 | Day 7-8 | Module 4: Model Optimization | 4 hours |
 | Day 9-10 | Module 5: SLMOps | 3 hours |
-| Day 11-12 | Module 6: AI Agents | 2 hours |
-| Day 13-14 | Module 7| Module | Completion Date | Hours Spent | Key Takeaways |
+| Day 11-12 | Module 6: SLM Agentic Systems | 2 hours |
+| Day 13-14 | Module 7 : EdgeAI Implementation Samples | 2 hours |
+
+| Module | Completion Date | Hours Spent | Key Takeaways |
 |--------|----------------|-------------|--------------|
 | Module 1: EdgeAI Fundamentals | | | |
 | Module 2: SLM Foundations | | | |
@@ -48,7 +52,7 @@
 | Module 6: SLM Agentic Systems | | | |
 | Module 7: EdgeAI Implementation Samples | | | |
 | Hands-on Exercises | | | |
-| Mini-Project | | | |nt Tools | 3 hours |
+| Mini-Project | | | || |
 
 ### Part-time Study (4 weeks)
 
