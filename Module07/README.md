@@ -64,7 +64,9 @@ Windows ML represents Microsoft's cutting-edge runtime optimized for performant 
 ### Developer Benefits
 Windows ML abstracts the hardware and execution providers, so you can focus on writing your code. Plus, Windows ML automatically updates to support the latest NPUs, GPUs, and CPUs as they are released. The platform provides a unified framework for AI development across the diverse Windows hardware ecosystem.
 
-**Learn More**: [Windows ML Overview](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
+**Learn More**: 
+- [Windows ML Overview](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
+- [Windows EdgeAI Development Guide](../windowdeveloper.md) - Comprehensive guide for Windows Edge AI development
 
 ## 5. EdgeAI with Foundry Local Applications
 
@@ -80,6 +82,38 @@ Foundry Local enables developers to build Retrieval Augmented Generation (RAG) a
 RAG, or Retrieval Augmented Generation, is just a fancy way of saying "look up some stuff and put it into the prompt". This local implementation ensures data privacy while providing intelligent responses grounded in custom knowledge bases. The approach is particularly valuable for enterprise scenarios requiring data sovereignty and offline operation capabilities.
 
 **Learn More**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+
+## Windows EdgeAI Development Resources
+
+For developers specifically targeting the Windows platform, we've created a comprehensive guide that covers the complete Windows EdgeAI ecosystem. This resource provides detailed information about Windows AI Foundry, including APIs, tools, and best practices for EdgeAI development on Windows.
+
+### Windows AI Foundry Platform
+The Windows AI Foundry platform provides a comprehensive suite of tools and APIs specifically designed for Edge AI development on Windows devices. This includes specialized support for NPU-accelerated hardware, Windows ML integration, and platform-specific optimization techniques.
+
+**Comprehensive Guide**: [Windows EdgeAI Development Guide](../windowdeveloper.md)
+
+This guide covers:
+- Windows AI Foundry platform overview and components
+- Phi Silica API for efficient inference on NPU hardware
+- Computer Vision APIs for image processing and OCR
+- Windows ML runtime integration and optimization
+- Foundry Local CLI for local development and testing
+- Hardware optimization strategies for Windows devices
+- Practical implementation examples and best practices
+
+### AI Toolkit for Edge AI Development
+For developers using Visual Studio Code, the AI Toolkit extension provides a comprehensive development environment specifically designed for building, testing, and deploying Edge AI applications. This toolkit streamlines the entire Edge AI development workflow within VS Code.
+
+**Development Guide**: [AI Toolkit for Edge AI Development](../aitoolkit.md)
+
+The AI Toolkit guide covers:
+- Model discovery and selection for edge deployment
+- Local testing and optimization workflows
+- ONNX and Ollama integration for edge models
+- Model conversion and quantization techniques
+- Agent development for edge scenarios
+- Performance evaluation and monitoring
+- Deployment preparation and best practices
 
 ## Conclusion
 
