@@ -1,4 +1,15 @@
-# EdgeAI for Beginners: C### Concentrated Learning Path (2 weeks)
+# EdgeAI for Beginners: C### Concentrated Learni### Concentrated Learning Path (1 week)
+
+| Day | Focus | Estimated Hours |
+|------|-------|------------------|
+| Day 1 | Module 1: EdgeAI Fundamentals | 3 hours |
+| Day 2 | Module 2: SLM Foundations | 3 hours |
+| Day 3 | Module 3: SLM Deployment | 2 hours |
+| Day 4-5 | Module 4: Model Optimization (6 frameworks) | 4 hours |
+| Day 6 | Module 5: SLMOps | 3 hours |
+| Day 7 | Module 6-7: AI Agents & Development Tools | 5 hours |
+
+### Concentrated Learning Path (2 weeks)
 
 | Day | Focus | Estimated Hours |
 |------|-------|------------------|
@@ -9,6 +20,35 @@
 | Day 9-10 | Module 5: SLMOps | 3 hours |
 | Day 11-12 | Module 6: AI Agents | 2 hours |
 | Day 13-14 | Module 7: Development Tools | 3 hours |
+
+### Part-time Study (4 weeks)
+
+| Week | Focus | Estimated Hours |
+|------|-------|------------------|
+| Week 1 | Module 1-2: Fundamentals & SLM Foundations | 6 hours |
+| Week 2 | Module 3-4: Deployment & Optimization | 6 hours |
+| Week 3 | Module 5-6: SLMOps & AI Agents | 5 hours |
+| Week 4 | Module 7: Development Tools & Integration | 3 hours |s)
+
+| Day | Focus | Estimated Hours |
+|------|-------|------------------|
+| Day 1-2 | Module 1: EdgeAI Fundamentals | 3 hours |
+| Day 3-4 | Module 2: SLM Foundations | 3 hours |
+| Day 5-6 | Module 3: SLM Deployment | 2 hours |
+| Day 7-8 | Module 4: Model Optimization | 4 hours |
+| Day 9-10 | Module 5: SLMOps | 3 hours |
+| Day 11-12 | Module 6: AI Agents | 2 hours |
+| Day 13-14 | Module 7| Module | Completion Date | Hours Spent | Key Takeaways |
+|--------|----------------|-------------|--------------|
+| Module 1: EdgeAI Fundamentals | | | |
+| Module 2: SLM Foundations | | | |
+| Module 3: SLM Deployment | | | |
+| Module 4: Model Optimization (6 frameworks) | | | |
+| Module 5: SLMOps | | | |
+| Module 6: SLM Agentic Systems | | | |
+| Module 7: EdgeAI Implementation Samples | | | |
+| Hands-on Exercises | | | |
+| Mini-Project | | | |
 
 ### Part-time Study (4 weeks)
 
@@ -30,12 +70,12 @@ This is a concise 20-hour course that delivers essential knowledge about EdgeAI 
 This course is organized into seven comprehensive modules:
 
 1. **EdgeAI Fundamentals and Transformation** - Understanding the core concepts and technology shift
-2. **Small Language Model Foundations** - Exploring various model families and their architectures
+2. **Small Language Model Foundations** - Exploring various SLM families and their architectures
 3. **Small Language Model Deployment** - Implementing practical deployment strategies
-4. **Model Format Conversion and Quantization** - Advanced optimization techniques for edge deployment
-5. **SLMOps and Production Deployment** - Operational aspects of SLM lifecycle management
-6. **AI Agents and Function Calling** - Building intelligent edge applications
-7. **EdgeAI Development Tools and Samples** - Practical implementation across platforms
+4. **Model Format Conversion and Quantization** - Advanced optimization with 6 frameworks including OpenVINO
+5. **SLMOps - Small Language Model Operations** - Production lifecycle management and deployment
+6. **SLM Agentic Systems** - AI agents, function calling, and Model Context Protocol
+7. **EdgeAI Implementation Samples** - AI Toolkit, Windows development, and platform-specific implementations
 
 ## How to Use This Study Guide
 
@@ -227,8 +267,8 @@ This course is organized into seven comprehensive modules:
 
 - Master advanced quantization techniques from 1-bit to 8-bit precision
 - Understand format conversion strategies (GGUF, ONNX)
-- Implement optimization across multiple frameworks
-- Deploy optimized models for production edge environments
+- Implement optimization across six frameworks (Llama.cpp, Olive, OpenVINO, MLX, workflow synthesis)
+- Deploy optimized models for production edge environments across Intel, Apple, and cross-platform hardware
 
 ### Study Focus Areas
 
@@ -255,12 +295,20 @@ This course is organized into seven comprehensive modules:
   - Intel hardware optimization
   - Neural Network Compression Framework (NNCF)
   - Cross-platform inference deployment
+  - OpenVINO GenAI for LLM deployment
 
 #### Section 5: Apple MLX Framework
 - **Priority Concepts**: 
   - Apple Silicon optimization
   - Unified memory architecture
   - LoRA fine-tuning capabilities
+
+#### Section 6: Edge AI Development Workflow Synthesis
+- **Priority Concepts**: 
+  - Unified workflow architecture
+  - Framework selection decision trees
+  - Production readiness validation
+  - Future-proofing strategies
 
 ### Self-Assessment Questions
 
@@ -269,47 +317,49 @@ This course is organized into seven comprehensive modules:
 3. How does hardware-aware optimization in Microsoft Olive improve deployment efficiency?
 4. What are the key benefits of OpenVINO's NNCF for model compression?
 5. Describe how Apple MLX leverages unified memory architecture for optimization.
+6. How does workflow synthesis help in selecting optimal optimization frameworks?
 
 ### Hands-on Exercises
 
 1. **Model Quantization**: Apply different quantization levels to a model and compare results (1 hour)
-2. **Framework Comparison**: Test the same model across two different optimization frameworks (1 hour)
-3. **Performance Benchmarking**: Measure optimization impact on inference speed and memory usage (1 hour)
+2. **OpenVINO Optimization**: Use NNCF to compress a model for Intel hardware (1 hour)
+3. **Framework Comparison**: Test the same model across three different optimization frameworks (1 hour)
+4. **Performance Benchmarking**: Measure optimization impact on inference speed and memory usage (1 hour)
 
-## Module 5: SLMOps and Production Deployment
+## Module 5: SLMOps - Small Language Model Operations
 
 ### Key Learning Objectives
 
-- Understand SLMOps lifecycle management
-- Master distillation and fine-tuning techniques
-- Implement production deployment strategies
-- Monitor and maintain edge AI systems
+- Understand SLMOps lifecycle management principles
+- Master distillation and fine-tuning techniques for edge deployment
+- Implement production deployment strategies with monitoring
+- Build enterprise-grade SLM operations and maintenance workflows
 
 ### Study Focus Areas
 
 #### Section 1: Introduction to SLMOps
 - **Priority Concepts**: 
-  - MLOps principles for small language models
-  - Lifecycle management strategies
-  - DevOps integration patterns
+  - SLMOps paradigm shift in AI operations
+  - Cost efficiency and privacy-first architecture
+  - Strategic business impact and competitive advantages
 
 #### Section 2: Model Distillation
 - **Priority Concepts**: 
   - Knowledge transfer techniques
-  - Teacher-student model architectures
-  - Performance preservation strategies
+  - Two-stage distillation process implementation
+  - Azure ML distillation workflows
 
 #### Section 3: Fine-tuning Strategies
 - **Priority Concepts**: 
-  - Parameter-efficient fine-tuning
-  - Domain adaptation techniques
-  - Resource-constrained training
+  - Parameter-efficient fine-tuning (PEFT)
+  - LoRA and QLoRA advanced methods
+  - Multi-adapter training and hyperparameter optimization
 
 #### Section 4: Production Deployment
 - **Priority Concepts**: 
-  - Scalable deployment architectures
-  - Monitoring and observability
-  - Performance optimization in production
+  - Model conversion and quantization for production
+  - Foundry Local deployment configuration
+  - Performance benchmarking and quality validation
 
 ### Self-Assessment Questions
 
@@ -324,34 +374,37 @@ This course is organized into seven comprehensive modules:
 2. **Fine-tuning Experiment**: Fine-tune a model for a specific domain (1 hour)
 3. **Deployment Pipeline**: Set up a basic CI/CD pipeline for model deployment (1 hour)
 
-## Module 6: AI Agents and Function Calling
+## Module 6: SLM Agentic Systems - AI Agents and Function Calling
 
 ### Key Learning Objectives
 
-- Build intelligent AI agents for edge environments
-- Implement function calling capabilities
-- Understand Model Context Protocol (MCP)
-- Create agent-based applications
+- Build intelligent AI agents for edge environments using Small Language Models
+- Implement function calling capabilities with systematic workflows
+- Master Model Context Protocol (MCP) integration for standardized tool interaction
+- Create sophisticated agentic systems with minimal human intervention
 
 ### Study Focus Areas
 
-#### Section 1: Introduction to AI Agents
+#### Section 1: AI Agents and SLM Foundations
 - **Priority Concepts**: 
-  - Agent architecture patterns
-  - Edge-specific agent design
+  - Agent classification framework (reflex, model-based, goal-based, learning agents)
+  - SLM vs LLM trade-offs analysis
+  - Edge-specific agent design patterns
   - Resource optimization for agents
 
-#### Section 2: Function Calling
+#### Section 2: Function Calling in Small Language Models
 - **Priority Concepts**: 
-  - Function definition and schema
-  - Execution patterns
-  - Error handling and validation
+  - Systematic workflow implementation (intent detection, JSON output, external execution)
+  - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)
+  - Advanced examples (multi-agent collaboration, dynamic tool selection)
+  - Production considerations (rate limiting, audit logging, security measures)
 
-#### Section 3: Model Context Protocol
+#### Section 3: Model Context Protocol (MCP) Integration
 - **Priority Concepts**: 
-  - MCP architecture
-  - Integration strategies
-  - Best practices for implementation
+  - Protocol architecture and layered system design
+  - Multi-backend support (Ollama for development, vLLM for production)
+  - Connection protocols (STDIO and SSE modes)
+  - Real-world applications (web automation, data processing, API integration)
 
 ### Self-Assessment Questions
 
@@ -364,37 +417,38 @@ This course is organized into seven comprehensive modules:
 1. **Simple Agent**: Build a basic AI agent with function calling (1 hour)
 2. **MCP Integration**: Implement MCP in an agent application (30 minutes)
 
-## Module 7: EdgeAI Development Tools and Samples
+## Module 7: EdgeAI Implementation Samples
 
 ### Key Learning Objectives
 
-- Master AI Toolkit for Visual Studio Code
-- Implement EdgeAI across multiple platforms
-- Deploy solutions on various hardware architectures
-- Build production-ready EdgeAI applications
+- Master AI Toolkit for Visual Studio Code for comprehensive EdgeAI development workflows
+- Gain expertise in Windows AI Foundry platform and NPU optimization strategies
+- Implement EdgeAI across multiple hardware platforms and deployment scenarios
+- Build production-ready EdgeAI applications with platform-specific optimizations
 
 ### Study Focus Areas
 
-#### Section 1: AI Toolkit for VS Code
+#### Section 1: AI Toolkit for Visual Studio Code
 - **Priority Concepts**: 
-  - Model catalog and discovery
-  - Local testing and optimization
-  - Agent development workflows
-  - Performance monitoring and evaluation
+  - Comprehensive Edge AI development environment within VS Code
+  - Model catalog and discovery for edge deployment
+  - Local testing, optimization, and agent development workflows
+  - Performance monitoring and evaluation for edge scenarios
 
-#### Section 2: Platform-Specific Implementations
+#### Section 2: Windows EdgeAI Development Guide
 - **Priority Concepts**: 
-  - NVIDIA Jetson deployment
-  - Mobile applications with .NET MAUI
-  - Azure EdgeAI solutions
-  - Windows ML optimization
+  - Windows AI Foundry platform comprehensive overview
+  - Phi Silica API for efficient NPU inference
+  - Computer Vision APIs for image processing and OCR
+  - Foundry Local CLI for local development and testing
 
-#### Section 3: Windows Developer Tools
+#### Section 3: Platform-Specific Implementations
 - **Priority Concepts**: 
-  - Windows AI Foundry platform
-  - Phi Silica API integration
-  - NPU optimization strategies
-  - Local development workflows
+  - NVIDIA Jetson Orin Nano deployment (67 TOPS AI performance)
+  - Mobile applications with .NET MAUI and ONNX Runtime GenAI
+  - Azure EdgeAI solutions with cloud-edge hybrid architecture
+  - Windows ML optimization with universal hardware support
+  - Foundry Local applications with privacy-focused RAG implementation
 
 ### Self-Assessment Questions
 
@@ -402,12 +456,15 @@ This course is organized into seven comprehensive modules:
 2. Compare deployment strategies across different hardware platforms.
 3. What are the advantages of Windows AI Foundry for edge development?
 4. Explain the role of NPU optimization in modern edge AI applications.
+5. How does the Phi Silica API leverage NPU hardware for performance optimization?
+6. Compare the benefits of local vs. cloud deployment for privacy-sensitive applications.
 
 ### Hands-on Exercises
 
 1. **AI Toolkit Setup**: Configure AI Toolkit and optimize a model (1 hour)
-2. **Cross-Platform Deployment**: Deploy the same model on two different platforms (1 hour)
-3. **Windows Integration**: Build a simple Windows AI application (1 hour)
+2. **Windows AI Foundry**: Build a simple Windows AI application using Phi Silica API (1 hour)
+3. **Cross-Platform Deployment**: Deploy the same model on two different platforms (1 hour)
+4. **NPU Optimization**: Test NPU performance with Windows AI Foundry tools (30 minutes)
 
 ## Time Allocation Guide
 
@@ -449,13 +506,15 @@ These carefully selected resources provide the most value for your limited study
 - [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Reference for a leading edge-optimized model
 - [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intel's comprehensive optimization toolkit
 - [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Integrated EdgeAI development environment
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows-specific EdgeAI development platform
 
 ### Time-Saving Tools
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Quick model access and deployment
 - [Gradio](https://www.gradio.app/docs/interface) - Rapid UI development for AI demos
 - [Microsoft Olive](https://github.com/microsoft/Olive) - Simplified model optimization
-- [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Efficient CPU inference
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Efficient CPU inference
 - [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Neural network compression framework
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Large language model deployment toolkit
 
 ## Progress Tracking Template
 
@@ -484,13 +543,15 @@ Consider completing one of these projects to practice EdgeAI concepts (each desi
 
 ### Intermediate Projects (3-4 hours each)
 4. **AI Toolkit Workflow**: Use VS Code AI Toolkit to optimize and deploy a model from start to finish
-5. **Cross-Platform Deployment**: Deploy the same optimized model on Windows (OpenVINO) and mobile (.NET MAUI)
-6. **Function Calling Agent**: Build an AI agent with function calling capabilities for edge scenarios
+5. **Windows AI Foundry Application**: Create a Windows app using Phi Silica API and NPU optimization
+6. **Cross-Platform Deployment**: Deploy the same optimized model on Windows (OpenVINO) and mobile (.NET MAUI)
+7. **Function Calling Agent**: Build an AI agent with function calling capabilities for edge scenarios
 
 ### Advanced Integration Projects (4-5 hours each)
-7. **Windows AI Foundry Application**: Create a Windows app using Phi Silica API and NPU optimization
-8. **SLMOps Pipeline**: Implement a complete model lifecycle from training to edge deployment
-9. **Multi-Model Edge System**: Deploy multiple specialized models working together on edge hardware
+8. **OpenVINO Optimization Pipeline**: Implement complete model optimization using NNCF and GenAI toolkit
+9. **SLMOps Pipeline**: Implement a complete model lifecycle from training to edge deployment
+10. **Multi-Model Edge System**: Deploy multiple specialized models working together on edge hardware
+11. **MCP Integration System**: Build an agentic system using Model Context Protocol for tool interaction
 
 ## Learning Community
 

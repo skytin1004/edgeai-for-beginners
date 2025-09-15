@@ -4,7 +4,7 @@ The emergence of EdgeAI has made model format conversion and quantization essent
 
 ## 📚 Chapter Structure and Learning Path
 
-This chapter is organized into five progressive sections, each building upon the previous to create a comprehensive understanding of model optimization for edge computing:
+This chapter is organized into six progressive sections, each building upon the previous to create a comprehensive understanding of model optimization for edge computing:
 
 ---
 
@@ -98,6 +98,24 @@ Comprehensive coverage of Apple MLX, a revolutionary framework specifically desi
 
 ---
 
+## [Section 6: Edge AI Development Workflow Synthesis](./06.workflow-synthesis.md)
+
+### 🎯 Overview
+Comprehensive synthesis of all optimization frameworks into unified workflows, decision matrices, and best practices for production-ready Edge AI deployment across diverse platforms and use cases.
+
+**Key Topics:**
+- Unified workflow architecture integrating multiple optimization frameworks
+- Framework selection decision trees and performance trade-off analysis
+- Production readiness validation and comprehensive deployment strategies
+- Future-proofing strategies for emerging hardware and model architectures
+
+**Learning Outcomes:**
+- Master systematic framework selection based on requirements and constraints
+- Implement production-grade Edge AI pipelines with comprehensive monitoring
+- Design adaptable workflows that evolve with emerging technologies and requirements
+
+---
+
 ## 🎯 Chapter Learning Outcomes
 
 Upon completing this comprehensive chapter, readers will achieve:
@@ -129,4 +147,4 @@ This chapter provides a complete foundation for:
 - Commercial AI application development
 - Large-scale enterprise edge AI deployments
 
-The knowledge from these five sections offers a comprehensive toolkit for navigating the rapidly evolving landscape of edge AI model optimization and deployment.
+The knowledge from these six sections offers a comprehensive toolkit for navigating the rapidly evolving landscape of edge AI model optimization and deployment.
