@@ -27,14 +27,17 @@ Follow these steps to get started using these resources:
 #### Supported via GitHub Action (Automated & Always Up-to-Date)
 
 [French](./translations/fr/README.md) | [Spanish](./translations/es/README.md) |  [Chinese (Simplified)](./translations/zh/README.md) | [Chinese (Traditional, Macau)](./translations/mo/README.md) | [Chinese (Traditional, Hong Kong)](./translations/hk/README.md) | [Chinese (Traditional, Taiwan)](./translations/tw/README.md) | [Japanese](./translations/ja/README.md) | [Korean](./translations/ko/README.md) | 
+**If you wish to have additional translations languages supported are listed [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+
+## Introduction
 
 Welcome to EdgeAI for Beginners where the power of language models meets the efficiency of local devices. This course introduces how small, optimized language models (SLMs) can run directly on edge hardware—smartphones, IoT boards, and compact servers—without needing cloud access. You'll explore how real-time, privacy-conscious AI inference is revolutionizing smart homes, industrial monitoring, and offline applications, all through lightweight deployments tailored for speed, security, and modularity. 
 
-**Edge AI**
+### Edge AI
 
 Edge AI refers to running AI algorithms and language models locally on hardware—close to where data is generated—without relying on cloud resources for inference. It reduces latency, enhances privacy, and enables real-time decision-making.
 
-Core Principles:
+### Core Principles:
 - On-device inference: AI models run on edge devices (phones, routers, microcontrollers, industrial PCs).
 - Offline capability: Functions without persistent internet.
 - Low latency: Immediate responses suited for real-time systems.
