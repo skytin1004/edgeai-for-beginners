@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3c232b8e9dac492a43b9c189f4cb04df",
-  "translation_date": "2025-09-15T15:33:31+00:00",
+  "original_hash": "1e73444e4fc8f1931ac3979dbd7785e2",
+  "translation_date": "2025-09-15T16:47:48+00:00",
   "source_file": "README.md",
   "language_code": "fr"
 }
@@ -26,13 +26,13 @@ Suivez ces étapes pour commencer à utiliser ces ressources :
 
 1. **Forkez le dépôt** : Cliquez sur [![Forks GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Clonez le dépôt** : `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Rejoignez le Discord Azure AI Foundry pour rencontrer des experts et d'autres développeurs**](https://discord.com/invite/ByRwuEEgH4)
+3. [**Rejoignez le Discord Azure AI Foundry et rencontrez des experts et développeurs**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Support Multilingue
 
-#### Supporté via GitHub Action (Automatisé & Toujours à jour)
+#### Supporté via GitHub Action (Automatisé et Toujours à Jour)
 
-[Français](./README.md) | [Espagnol](../es/README.md) | [Chinois (Simplifié)](../zh/README.md) | [Chinois (Traditionnel, Macao)](../mo/README.md) | [Chinois (Traditionnel, Hong Kong)](../hk/README.md) | [Chinois (Traditionnel, Taïwan)](../tw/README.md) | [Japonais](../ja/README.md) | [Coréen](../ko/README.md)  
+[Français](./README.md) | [Espagnol](../es/README.md) | [Chinois (Simplifié)](../zh/README.md) | [Chinois (Traditionnel, Macao)](../mo/README.md) | [Chinois (Traditionnel, Hong Kong)](../hk/README.md) | [Chinois (Traditionnel, Taïwan)](../tw/README.md) | [Japonais](../ja/README.md) | [Coréen](../ko/README.md) |  
 **Si vous souhaitez ajouter des langues supplémentaires, les langues supportées sont listées [ici](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introduction
@@ -41,15 +41,15 @@ Bienvenue dans **EdgeAI pour les Débutants** – votre parcours complet dans le
 
 ### Ce que vous allez maîtriser
 
-Ce cours vous guide des concepts fondamentaux aux implémentations prêtes pour la production, couvrant :
+Ce cours vous guide des concepts fondamentaux aux implémentations prêtes pour la production, couvrant :  
 - **Modèles de Langage Réduits (SLMs)** optimisés pour le déploiement en périphérie  
 - **Optimisation adaptée au matériel** sur diverses plateformes  
 - **Inférence en temps réel** avec des capacités de préservation de la vie privée  
 - **Stratégies de déploiement en production** pour des applications d'entreprise  
 
-### Pourquoi l'EdgeAI est important
+### Pourquoi EdgeAI est important
 
-L'Edge AI représente un changement de paradigme qui répond à des défis modernes critiques :  
+Edge AI représente un changement de paradigme qui répond à des défis modernes critiques :  
 - **Confidentialité & Sécurité** : Traitez les données sensibles localement sans exposition au cloud  
 - **Performance en temps réel** : Éliminez la latence réseau pour les applications critiques  
 - **Efficacité des coûts** : Réduisez les dépenses de bande passante et de calcul dans le cloud  
@@ -58,10 +58,10 @@ L'Edge AI représente un changement de paradigme qui répond à des défis moder
 
 ### Edge AI
 
-L'Edge AI consiste à exécuter des algorithmes d'IA et des modèles de langage localement sur du matériel – près de l'endroit où les données sont générées – sans dépendre des ressources cloud pour l'inférence. Cela réduit la latence, améliore la confidentialité et permet une prise de décision en temps réel.
+Edge AI désigne l'exécution d'algorithmes d'IA et de modèles de langage localement sur du matériel – près de l'endroit où les données sont générées – sans dépendre des ressources cloud pour l'inférence. Cela réduit la latence, améliore la confidentialité et permet une prise de décision en temps réel.
 
 ### Principes fondamentaux :
-- **Inférence sur appareil** : Les modèles d'IA s'exécutent sur des appareils en périphérie (téléphones, routeurs, microcontrôleurs, PC industriels)  
+- **Inférence sur appareil** : Les modèles d'IA fonctionnent sur des appareils en périphérie (téléphones, routeurs, microcontrôleurs, PC industriels)  
 - **Capacité hors ligne** : Fonctionne sans connectivité Internet persistante  
 - **Faible latence** : Réponses immédiates adaptées aux systèmes en temps réel  
 - **Souveraineté des données** : Conserve les données sensibles localement, améliorant la sécurité et la conformité  
@@ -83,7 +83,7 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 ## Architecture du cours
 
 ### [Module 01 : Fondamentaux et Transformation de l'EdgeAI](./Module01/README.md)  
-**Thème** : Le changement transformateur du déploiement de l'Edge AI  
+**Thème** : Le changement transformateur du déploiement de l'IA en périphérie  
 
 #### Structure des chapitres :  
 - [**Section 1 : Fondamentaux de l'EdgeAI**](./Module01/01.EdgeAIFundamentals.md)  
@@ -102,14 +102,14 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 - [**Section 3 : Guide pratique d'implémentation**](./Module01/03.PracticalImplementationGuide.md)  
   - Configuration de l'environnement de développement (Python 3.10+, .NET 8+)  
   - Exigences matérielles et configurations recommandées  
-  - Ressources des familles de modèles principaux  
+  - Ressources principales des familles de modèles  
   - Outils de quantification et d'optimisation (Llama.cpp, Microsoft Olive, Apple MLX)  
   - Liste de vérification pour l'évaluation et la vérification  
 
 - [**Section 4 : Plateformes matérielles de déploiement Edge AI**](./Module01/04.EdgeDeployment.md)  
-  - Considérations et exigences pour le déploiement de l'Edge AI  
-  - Matériel Edge AI Intel et techniques d'optimisation  
-  - Solutions AI Qualcomm pour systèmes mobiles et embarqués  
+  - Considérations et exigences pour le déploiement de l'IA en périphérie  
+  - Matériel Intel pour l'IA en périphérie et techniques d'optimisation  
+  - Solutions AI Qualcomm pour les systèmes mobiles et embarqués  
   - Plateformes de calcul en périphérie NVIDIA Jetson  
   - Plateformes PC Windows AI avec accélération NPU  
   - Stratégies d'optimisation spécifiques au matériel  
@@ -161,10 +161,10 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
   - Techniques avancées d'optimisation (méthodes de quantification, quantification BitNET 1-bit)  
   - Stratégies d'acquisition de modèles (Azure AI Foundry pour les modèles Phi, Hugging Face pour les modèles sélectionnés)  
 
-- [**Section 2 : Déploiement dans un environnement local**](./Module03/02.DeployingSLMinLocalEnv.md)  
+- [**Section 2 : Déploiement en environnement local**](./Module03/02.DeployingSLMinLocalEnv.md)  
   - Déploiement universel sur la plateforme Ollama  
   - Solutions locales de niveau entreprise Microsoft Foundry  
-  - Analyse comparative des cadres  
+  - Analyse comparative des frameworks  
 
 - [**Section 3 : Déploiement en cloud conteneurisé**](./Module03/03.DeployingSLMinCloud.md)  
   - Déploiement d'inférence haute performance vLLM  
@@ -173,7 +173,7 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 
 ---
 
-### [Module 04 : Conversion de format et quantification des modèles](./Module04/README.md)  
+### [Module 04 : Conversion de Format et Quantification des Modèles](./Module04/README.md)  
 **Thème** : Boîte à outils complète d'optimisation des modèles pour le déploiement en périphérie sur diverses plateformes  
 
 #### Structure des chapitres :  
@@ -183,7 +183,7 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
   - Bénéfices de la quantification pour l'efficacité opérationnelle  
   - Comparaisons de performances et empreintes mémoire  
 
-- [**Section 2 : Guide d'implémentation de Llama.cpp**](./Module04/02.Llamacpp.md)  
+- [**Section 2 : Guide d'implémentation Llama.cpp**](./Module04/02.Llamacpp.md)  
   - Installation multiplateforme (Windows, macOS, Linux)  
   - Conversion au format GGUF et niveaux de quantification (Q2_K à Q8_0)  
   - Accélération matérielle (CUDA, Metal, OpenCL, Vulkan)  
@@ -195,11 +195,23 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
   - Intégration entreprise avec les workflows Azure ML  
   - Support des modèles populaires (Llama, Phi, modèles Qwen sélectionnés, Gemma)  
 
-- [**Section 4 : Exploration approfondie du framework Apple MLX**](./Module04/04.AppleMLX.md)  
+- [**Section 4 : Suite d'optimisation OpenVINO Toolkit**](./Module04/04.openvino.md)  
+  - Toolkit open-source d'Intel pour le déploiement AI multiplateforme  
+  - Cadre de compression des réseaux neuronaux (NNCF) pour une optimisation avancée  
+  - OpenVINO GenAI pour le déploiement de grands modèles de langage  
+  - Accélération matérielle sur CPU, GPU, VPU et accélérateurs AI  
+
+- [**Section 5 : Exploration approfondie du framework Apple MLX**](./Module04/05.AppleMLX.md)  
   - Architecture mémoire unifiée pour Apple Silicon  
   - Support pour LLaMA, Mistral, Phi-3, modèles Qwen sélectionnés  
-  - Affinage LoRA et personnalisation des modèles  
+  - Fine-tuning LoRA et personnalisation des modèles  
   - Intégration Hugging Face avec quantification 4-bit/8-bit  
+
+- [**Section 6 : Synthèse du workflow de développement Edge AI**](./Module04/06.workflow-synthesis.md)  
+  - Architecture de workflow unifiée intégrant plusieurs frameworks d'optimisation  
+  - Arbres de décision pour la sélection des frameworks et analyse des compromis de performance  
+  - Validation de la préparation à la production et stratégies de déploiement complètes  
+  - Stratégies de pérennisation pour les architectures matérielles et de modèles émergentes  
 
 ---
 
@@ -207,46 +219,46 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 **Thème** : Cycle complet des opérations SLM, de la distillation au déploiement en production  
 
 #### Structure des chapitres :  
-- [**Section 1 : Introduction aux SLMOps**](./Module05/01.IntroduceSLMOps.md)  
-  - Changement de paradigme des SLMOps dans les opérations IA  
+- [**Section 1 : Introduction à SLMOps**](./Module05/01.IntroduceSLMOps.md)  
+  - Changement de paradigme SLMOps dans les opérations AI  
   - Architecture axée sur l'efficacité des coûts et la confidentialité  
   - Impact stratégique sur les entreprises et avantages compétitifs  
   - Défis réels d'implémentation et solutions  
+- [**Section 2 : Distillation de modèles - De la théorie à la pratique**](./Module05/02.SLMOps-Distillation.md)
+  - Transfert de connaissances des modèles enseignants aux modèles étudiants
+  - Mise en œuvre d'un processus de distillation en deux étapes
+  - Flux de travail de distillation Azure ML avec des exemples pratiques
+  - Réduction de 85 % du temps d'inférence tout en conservant 92 % de précision
 
-- [**Section 2 : Distillation des modèles - De la théorie à la pratique**](./Module05/02.SLMOps-Distillation.md)  
-  - Transfert de connaissances des modèles enseignants aux modèles étudiants  
-  - Implémentation du processus de distillation en deux étapes  
-  - Workflows de distillation Azure ML avec exemples pratiques  
-  - Réduction de 85% du temps d'inférence avec une rétention de précision de 92%  
+- [**Section 3 : Affinage - Personnalisation des modèles pour des tâches spécifiques**](./Module05/03.SLMOps-Finetuing.md)
+  - Techniques d'affinage efficaces en paramètres (PEFT)
+  - Méthodes avancées LoRA et QLoRA
+  - Mise en œuvre de l'affinage avec Microsoft Olive
+  - Formation multi-adaptateurs et optimisation des hyperparamètres
 
-- [**Section 3 : Affinage - Personnalisation des modèles pour des tâches spécifiques**](./Module05/03.SLMOps-Finetuing.md)  
-  - Techniques d'affinage efficaces en paramètres (PEFT)  
-  - Méthodes avancées LoRA et QLoRA  
-  - Implémentation d'affinage Microsoft Olive  
-  - Formation multi-adaptateurs et optimisation des hyperparamètres  
 - [**Section 4 : Déploiement - Mise en œuvre prête pour la production**](./Module05/04.SLMOps.Deployment.md)
   - Conversion et quantification des modèles pour la production
-  - Configuration de déploiement Foundry Local
+  - Configuration de déploiement local Foundry
   - Benchmarking des performances et validation de la qualité
-  - Réduction de taille de 75 % avec surveillance en production
+  - Réduction de 75 % de la taille avec surveillance en production
 
 ---
 
 ### [Module 06 : Systèmes agentiques SLM - Agents IA et appels de fonctions](./Module06/README.md)
-**Thème** : Mise en œuvre des systèmes agentiques SLM, des bases aux appels de fonctions avancés et intégration du protocole de contexte de modèle
+**Thème** : Mise en œuvre des systèmes agentiques SLM, des bases aux appels de fonctions avancés et à l'intégration du protocole de contexte de modèle (MCP)
 
 #### Structure des chapitres :
-- [**Section 1 : Fondations des agents IA et des petits modèles de langage**](./Module06/01.IntroduceAgent.md)
-  - Cadre de classification des agents (réflexes, basés sur des modèles, orientés objectifs, agents apprenants)
+- [**Section 1 : Agents IA et bases des petits modèles de langage**](./Module06/01.IntroduceAgent.md)
+  - Cadre de classification des agents (réflexes, basés sur des modèles, basés sur des objectifs, agents apprenants)
   - Fondamentaux des SLM et stratégies d'optimisation (GGUF, quantification, frameworks edge)
   - Analyse des compromis entre SLM et LLM (réduction des coûts de 10 à 30×, efficacité des tâches de 70 à 80 %)
-  - Déploiement pratique avec Ollama, VLLM et solutions Microsoft edge
+  - Déploiement pratique avec Ollama, VLLM et solutions edge de Microsoft
 
 - [**Section 2 : Appels de fonctions dans les petits modèles de langage**](./Module06/02.FunctionCalling.md)
-  - Mise en œuvre de workflows systématiques (détection d'intention, sortie JSON, exécution externe)
-  - Implémentations spécifiques aux plateformes (Phi-4-mini, modèles Qwen sélectionnés, Microsoft Foundry Local)
+  - Mise en œuvre systématique des flux de travail (détection d'intention, sortie JSON, exécution externe)
+  - Implémentations spécifiques à la plateforme (Phi-4-mini, modèles Qwen sélectionnés, Microsoft Foundry Local)
   - Exemples avancés (collaboration multi-agents, sélection dynamique d'outils)
-  - Considérations pour la production (limitation de débit, journalisation d'audit, mesures de sécurité)
+  - Considérations pour la production (limitation de débit, journalisation des audits, mesures de sécurité)
 
 - [**Section 3 : Intégration du protocole de contexte de modèle (MCP)**](./Module06/03.IntroduceMCP.md)
   - Architecture du protocole et conception de systèmes en couches
@@ -260,55 +272,67 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 **Thème** : Implémentations EdgeAI complètes sur diverses plateformes et frameworks
 
 #### Structure des chapitres :
-- [**EdgeAI sur NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
+- [**Outils IA pour Visual Studio Code**](./Module07/aitoolkit.md)
+  - Environnement de développement Edge AI complet dans VS Code
+  - Catalogue de modèles et découverte pour le déploiement edge
+  - Flux de travail de test local, optimisation et développement d'agents
+  - Surveillance des performances et évaluation pour les scénarios edge
+
+- [**Guide de développement EdgeAI sous Windows**](./Module07/windowdeveloper.md)
+  - Aperçu complet de la plateforme Windows AI Foundry
+  - API Phi Silica pour une inférence NPU efficace
+  - API de vision par ordinateur pour le traitement d'images et l'OCR
+  - CLI Foundry Local pour le développement et les tests locaux
+
+- [**EdgeAI dans NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
   - Performance IA de 67 TOPS dans un format de la taille d'une carte de crédit
-  - Support des modèles d'IA générative (transformateurs de vision, LLM, modèles vision-langage)
+  - Support des modèles IA génératifs (transformateurs de vision, LLM, modèles vision-langage)
   - Applications en robotique, drones, caméras intelligentes, dispositifs autonomes
   - Plateforme abordable à 249 $ pour un développement IA démocratisé
 
 - [**EdgeAI dans les applications mobiles avec .NET MAUI et ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
   - IA mobile multiplateforme avec un code C# unique
   - Support de l'accélération matérielle (CPU, GPU, processeurs IA mobiles)
-  - Optimisations spécifiques aux plateformes (CoreML pour iOS, NNAPI pour Android)
-  - Implémentation complète de la boucle d'IA générative
+  - Optimisations spécifiques à la plateforme (CoreML pour iOS, NNAPI pour Android)
+  - Mise en œuvre complète de la boucle IA générative
 
-- [**EdgeAI sur Azure avec le moteur des petits modèles de langage**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
+- [**EdgeAI dans Azure avec le moteur des petits modèles de langage**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
   - Architecture de déploiement hybride cloud-edge
   - Intégration des services Azure AI avec ONNX Runtime
   - Déploiement à l'échelle de l'entreprise et gestion continue des modèles
-  - Workflows IA hybrides pour le traitement intelligent de documents
+  - Flux de travail IA hybrides pour le traitement intelligent de documents
 
 - [**EdgeAI avec Windows ML**](./Module07/README.md#4-edgeai-with-windows-ml)
   - Fondation Windows AI Foundry pour une inférence performante sur appareil
   - Support matériel universel (AMD, Intel, NVIDIA, Qualcomm)
-  - Abstraction et optimisation matérielle automatiques
+  - Abstraction et optimisation matérielle automatique
   - Framework unifié pour un écosystème matériel Windows diversifié
 
 - [**EdgeAI avec les applications Foundry Local**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
-  - Implémentation RAG axée sur la confidentialité avec des ressources locales
+  - Mise en œuvre RAG axée sur la confidentialité avec des ressources locales
   - Intégration du modèle de langage Phi-3 avec recherche sémantique (modèles Phi uniquement)
   - Support des bases de données vectorielles locales (SQLite, Qdrant)
   - Capacités de souveraineté des données et fonctionnement hors ligne
 
 ## Objectifs d'apprentissage du cours
 
-En complétant ce cours complet sur EdgeAI, vous développerez l'expertise nécessaire pour concevoir, implémenter et déployer des solutions EdgeAI prêtes pour la production. Notre approche structurée garantit que vous maîtriserez à la fois les bases théoriques et les compétences pratiques.
+En complétant ce cours complet sur EdgeAI, vous développerez l'expertise nécessaire pour concevoir, mettre en œuvre et déployer des solutions EdgeAI prêtes pour la production. Notre approche structurée garantit que vous maîtriserez à la fois les bases théoriques et les compétences pratiques.
 
 ### Compétences techniques
 
 **Connaissances de base**
 - Comprendre les différences fondamentales entre les architectures IA basées sur le cloud et celles basées sur le edge
-- Maîtriser les principes de quantification, compression et optimisation des modèles pour des environnements contraints en ressources
+- Maîtriser les principes de quantification, compression et optimisation des modèles pour des environnements à ressources limitées
 - Comprendre les options d'accélération matérielle (NPUs, GPUs, CPUs) et leurs implications de déploiement
 
-**Compétences en implémentation**
+**Compétences en mise en œuvre**
 - Déployer des petits modèles de langage sur diverses plateformes edge (mobile, embarqué, IoT, serveurs edge)
 - Appliquer des frameworks d'optimisation tels que Llama.cpp, Microsoft Olive, ONNX Runtime et Apple MLX
-- Implémenter des systèmes d'inférence en temps réel avec des exigences de réponse sous la seconde
+- Mettre en œuvre des systèmes d'inférence en temps réel avec des exigences de réponse sous la seconde
 
 **Expertise en production**
 - Concevoir des architectures EdgeAI évolutives pour des applications d'entreprise
-- Implémenter des stratégies de surveillance, maintenance et mise à jour pour les systèmes déployés
+- Mettre en œuvre des stratégies de surveillance, maintenance et mise à jour pour les systèmes déployés
 - Appliquer les meilleures pratiques de sécurité pour des implémentations EdgeAI respectueuses de la vie privée
 
 ### Capacités stratégiques
@@ -316,12 +340,12 @@ En complétant ce cours complet sur EdgeAI, vous développerez l'expertise néce
 **Cadre de prise de décision**
 - Évaluer les opportunités EdgeAI et identifier les cas d'utilisation adaptés aux applications commerciales
 - Analyser les compromis entre précision du modèle, vitesse d'inférence, consommation d'énergie et coûts matériels
-- Sélectionner les familles SLM et configurations appropriées en fonction des contraintes de déploiement spécifiques
+- Sélectionner les familles et configurations SLM appropriées en fonction des contraintes de déploiement spécifiques
 
 **Architecture système**
 - Concevoir des solutions EdgeAI de bout en bout intégrées à l'infrastructure existante
-- Planifier des architectures hybrides edge-cloud pour une performance et une efficacité des coûts optimales
-- Implémenter des flux de données et des pipelines de traitement pour des applications IA en temps réel
+- Planifier des architectures hybrides edge-cloud pour des performances et une efficacité de coûts optimales
+- Mettre en œuvre des flux de données et des pipelines de traitement pour des applications IA en temps réel
 
 ### Applications industrielles
 
@@ -332,19 +356,19 @@ En complétant ce cours complet sur EdgeAI, vous développerez l'expertise néce
 - **Villes intelligentes** : Infrastructure intelligente et systèmes de gestion des ressources
 - **Électronique grand public** : Applications mobiles alimentées par l'IA et dispositifs domestiques intelligents
 
-## Aperçu des résultats d'apprentissage
+## Résumé des résultats d'apprentissage
 
 ### Résultats d'apprentissage du Module 01 :
 - Comprendre les différences fondamentales entre les architectures IA cloud et edge
 - Maîtriser les techniques d'optimisation de base pour le déploiement edge
 - Reconnaître les applications réelles et les succès
-- Acquérir des compétences pratiques pour implémenter des solutions EdgeAI
+- Acquérir des compétences pratiques pour mettre en œuvre des solutions EdgeAI
 
 ### Résultats d'apprentissage du Module 02 :
-- Compréhension approfondie des différentes philosophies de conception SLM et leurs implications de déploiement
+- Compréhension approfondie des différentes philosophies de conception SLM et de leurs implications de déploiement
 - Maîtriser les capacités de prise de décision stratégique basées sur les contraintes computationnelles et les exigences de performance
 - Comprendre les compromis de flexibilité de déploiement
-- Posséder des perspectives prêtes pour l'avenir sur des architectures IA efficaces
+- Posséder des perspectives prêtes pour l'avenir sur les architectures IA efficaces
 
 ### Résultats d'apprentissage du Module 03 :
 - Capacités stratégiques de sélection de modèles
@@ -354,26 +378,30 @@ En complétant ce cours complet sur EdgeAI, vous développerez l'expertise néce
 
 ### Résultats d'apprentissage du Module 04 :
 - Compréhension approfondie des limites de quantification et des applications pratiques
-- Expérience pratique avec plusieurs frameworks d'optimisation (Llama.cpp, Olive, MLX)
-- Capacités de sélection d'optimisation matérielle
-- Compétences de déploiement en production pour des environnements edge multiplateformes
+- Expérience pratique avec plusieurs frameworks d'optimisation (Llama.cpp, Olive, OpenVINO, MLX)
+- Maîtrise de l'optimisation matérielle Intel avec OpenVINO et NNCF
+- Capacités de sélection d'optimisation matérielle sur diverses plateformes
+- Compétences de déploiement en production pour des environnements informatiques edge multiplateformes
+- Sélection stratégique de frameworks et synthèse de flux de travail pour des solutions IA edge optimales
 
 ### Résultats d'apprentissage du Module 05 :
 - Maîtriser le paradigme SLMOps et les principes opérationnels
-- Implémenter la distillation de modèles pour le transfert de connaissances et l'optimisation de l'efficacité
-- Appliquer des techniques de fine-tuning pour la personnalisation de modèles spécifiques au domaine
+- Mettre en œuvre la distillation de modèles pour le transfert de connaissances et l'optimisation de l'efficacité
+- Appliquer des techniques d'affinage pour la personnalisation de modèles spécifiques au domaine
 - Déployer des solutions SLM prêtes pour la production avec des stratégies de surveillance et de maintenance
 
 ### Résultats d'apprentissage du Module 06 :
 - Comprendre les concepts fondamentaux des agents IA et de l'architecture des petits modèles de langage
-- Maîtriser l'implémentation des appels de fonctions sur plusieurs plateformes et frameworks
+- Maîtriser la mise en œuvre des appels de fonctions sur plusieurs plateformes et frameworks
 - Intégrer le protocole de contexte de modèle (MCP) pour une interaction standardisée avec des outils externes
 - Construire des systèmes agentiques sophistiqués nécessitant une intervention humaine minimale
 
 ### Résultats d'apprentissage du Module 07 :
+- Maîtriser l'outil IA pour Visual Studio Code pour des flux de travail de développement Edge AI complets
+- Acquérir une expertise sur la plateforme Windows AI Foundry et les stratégies d'optimisation NPU
 - Acquérir une expérience pratique avec diverses plateformes EdgeAI et stratégies d'implémentation
-- Maîtriser les techniques d'optimisation spécifiques au matériel sur les plateformes NVIDIA, mobiles, Azure et Windows
-- Comprendre les compromis de déploiement entre performance, coût et exigences de confidentialité
+- Maîtriser les techniques d'optimisation spécifiques au matériel sur NVIDIA, mobile, Azure et Windows
+- Comprendre les compromis de déploiement entre performances, coûts et exigences de confidentialité
 - Développer des compétences pratiques pour construire des applications EdgeAI réelles dans différents écosystèmes
 
 ## Résultats attendus du cours
@@ -383,14 +411,14 @@ En complétant ce cours complet sur EdgeAI, vous développerez l'expertise néce
 ### Préparation professionnelle
 
 **Leadership technique**
-- **Architecture de solution** : Concevoir des systèmes EdgeAI complets répondant aux exigences d'entreprise
+- **Architecture de solutions** : Concevoir des systèmes EdgeAI complets répondant aux exigences de l'entreprise
 - **Optimisation des performances** : Atteindre un équilibre optimal entre précision, vitesse et consommation de ressources
-- **Déploiement multiplateforme** : Implémenter des solutions sur Windows, Linux, mobile et plateformes embarquées
+- **Déploiement multiplateforme** : Mettre en œuvre des solutions sur Windows, Linux, mobile et plateformes embarquées
 - **Opérations de production** : Maintenir et faire évoluer des systèmes EdgeAI avec une fiabilité de niveau entreprise
 
 **Expertise industrielle**
 - **Évaluation technologique** : Évaluer et recommander des solutions EdgeAI pour des défis commerciaux spécifiques
-- **Planification d'implémentation** : Développer des calendriers réalistes et des besoins en ressources pour des projets EdgeAI
+- **Planification de mise en œuvre** : Développer des calendriers réalistes et des besoins en ressources pour les projets EdgeAI
 - **Gestion des risques** : Identifier et atténuer les risques techniques et opérationnels dans les déploiements EdgeAI
 - **Optimisation du ROI** : Démontrer une valeur commerciale mesurable grâce aux implémentations EdgeAI
 
@@ -413,16 +441,16 @@ En complétant ce cours complet sur EdgeAI, vous développerez l'expertise néce
 ### Certification et validation
 
 **Développement de portefeuille**
-- Compléter des projets EdgeAI de bout en bout démontrant une compétence pratique
+- Réaliser des projets EdgeAI de bout en bout démontrant une compétence pratique
 - Déployer des solutions prêtes pour la production sur plusieurs plateformes matérielles
-- Documenter les stratégies d'optimisation et les améliorations de performance obtenues
+- Documenter les stratégies d'optimisation et les améliorations de performances obtenues
 
 **Chemin d'apprentissage continu**
 - Base pour des spécialisations avancées en IA
 - Préparation aux architectures hybrides cloud-edge
 - Porte d'entrée vers les technologies et frameworks IA émergents
 
-Ce cours vous positionne à l'avant-garde du déploiement de la technologie IA, où des capacités intelligentes sont intégrées de manière transparente dans les dispositifs et systèmes qui alimentent la vie moderne.
+Ce cours vous positionne à l'avant-garde du déploiement de technologies IA, où des capacités intelligentes sont intégrées de manière transparente dans les dispositifs et systèmes qui alimentent la vie moderne.
 
 ## Diagramme de structure de fichier
 
@@ -453,7 +481,9 @@ edgeai-for-beginners/
 │   ├── 01.Introduce.md
 │   ├── 02.Llamacpp.md
 │   ├── 03.MicrosoftOlive.md
-│   ├── 04.AppleMLX.md
+│   ├── 04.openvino.md
+│   ├── 05.AppleMLX.md
+│   ├── 06.workflow-synthesis.md
 │   └── README.md
 ├── Module05/ (SLMOps - Small Language Model Operations)
 │   ├── 01.IntroduceSLMOps.md
@@ -467,6 +497,8 @@ edgeai-for-beginners/
 │   ├── 03.IntroduceMCP.md
 │   └── README.md
 ├── Module07/ (EdgeAI Implementation Samples)
+│   ├── aitoolkit.md
+│   ├── windowdeveloper.md
 │   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
@@ -482,19 +514,19 @@ edgeai-for-beginners/
 - **Intégration théorie et pratique** : Chaque module contient des bases théoriques et des opérations pratiques
 - **Études de cas réelles** : Basées sur des cas réels de Microsoft, Alibaba, Google et autres
 - **Pratique concrète** : Fichiers de configuration complets, procédures de test API et scripts de déploiement
-- **Benchmarks de performance** : Comparaisons détaillées de vitesse d'inférence, utilisation mémoire et exigences en ressources
+- **Benchmarks de performance** : Comparaisons détaillées de vitesse d'inférence, utilisation mémoire et besoins en ressources
 - **Considérations de niveau entreprise** : Pratiques de sécurité, cadres de conformité et stratégies de protection des données
 
-## Premiers pas
+## Démarrage
 
 Chemin d'apprentissage recommandé :
-1. Commencez par **Module01** pour construire une compréhension fondamentale de EdgeAI
+1. Commencez par **Module01** pour acquérir une compréhension fondamentale de EdgeAI
 2. Passez à **Module02** pour comprendre en profondeur les différentes familles de modèles SLM
 3. Apprenez **Module03** pour maîtriser les compétences pratiques de déploiement
-4. Continuez avec **Module04** pour l'optimisation avancée des modèles et la conversion de formats
+4. Continuez avec **Module04** pour l'optimisation avancée des modèles, la conversion de formats et la synthèse de frameworks
 5. Complétez **Module05** pour maîtriser SLMOps pour des implémentations prêtes pour la production
 6. Explorez **Module06** pour comprendre les systèmes agentiques SLM et les capacités d'appel de fonctions
-7. Terminez avec **Module07** pour acquérir une expérience pratique avec des exemples d'implémentation EdgeAI diversifiés
+7. Terminez avec **Module07** pour acquérir une expérience pratique avec l'outil IA et divers exemples d'implémentation EdgeAI
 
 Chaque module est conçu pour être complet indépendamment, mais un apprentissage séquentiel fournira les meilleurs résultats.
 
@@ -508,33 +540,32 @@ Un [Guide d'étude](STUDY_GUIDE.md) complet est disponible pour vous aider à ma
 - **Outils d'auto-évaluation** : Questions et exercices pour tester votre compréhension
 - **Idées de mini-projets** : Applications pratiques pour renforcer votre apprentissage
 
-Le guide d'étude est conçu pour s'adapter à un apprentissage intensif (1 semaine) ou à un apprentissage à temps partiel (3 semaines), avec des indications claires sur la manière de répartir votre temps efficacement, même si vous ne pouvez consacrer que 10 heures au cours.
+Le guide d'étude est conçu pour s'adapter à un apprentissage intensif (1 semaine) ou à une étude à temps partiel (3 semaines), avec des indications claires sur la manière d'allouer votre temps efficacement même si vous ne pouvez consacrer que 10 heures au cours.
 
 ---
+**L'avenir de l'EdgeAI repose sur l'amélioration continue des architectures de modèles, des techniques de quantification et des stratégies de déploiement qui privilégient l'efficacité et la spécialisation plutôt que des capacités généralistes. Les organisations qui adoptent ce changement de paradigme seront bien placées pour exploiter le potentiel transformateur de l'IA tout en gardant le contrôle sur leurs données et leurs opérations.**
 
-**L'avenir de EdgeAI réside dans l'amélioration continue des architectures de modèles, des techniques de quantification et des stratégies de déploiement qui privilégient l'efficacité et la spécialisation plutôt que les capacités généralistes. Les organisations qui adoptent ce changement de paradigme seront bien positionnées pour exploiter le potentiel transformateur de l'IA tout en gardant le contrôle sur leurs données et leurs opérations.**
-
-## Autres cours
+## Autres Cours
 
 Notre équipe propose d'autres cours ! Découvrez :
 
-- [MCP pour débutants](https://github.com/microsoft/mcp-for-beginners)
-- [Agents IA pour débutants](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [IA générative pour débutants avec .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [IA générative pour débutants avec JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [IA générative pour débutants](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML pour débutants](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science pour débutants](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [IA pour débutants](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersécurité pour débutants](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Développement web pour débutants](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT pour les débutants](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Développement XR pour les débutants](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Maîtriser GitHub Copilot pour la programmation assistée par IA](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
-- [Maîtriser GitHub Copilot pour les développeurs C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
-- [Choisissez votre propre aventure avec Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+- [MCP pour Débutants](https://github.com/microsoft/mcp-for-beginners)
+- [Agents IA pour Débutants](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [IA Générative pour Débutants avec .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [IA Générative pour Débutants avec JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+- [IA Générative pour Débutants](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [ML pour Débutants](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [Science des Données pour Débutants](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+- [IA pour Débutants](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+- [Cybersécurité pour Débutants](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
+- [Développement Web pour Débutants](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [IoT pour Débutants](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+- [Développement XR pour Débutants](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Maîtriser GitHub Copilot pour la Programmation Assistée par IA](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Maîtriser GitHub Copilot pour les Développeurs C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Choisissez Votre Propre Aventure avec Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ---
 
 **Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de faire appel à une traduction professionnelle humaine. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction professionnelle réalisée par un humain. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.

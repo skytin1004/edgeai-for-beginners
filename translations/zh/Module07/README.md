@@ -1,102 +1,138 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "f921854683b0ba903972831f6e61c28f",
-  "translation_date": "2025-07-22T05:22:30+00:00",
+  "original_hash": "142e0d1a5b794b8333cfd4895804ced5",
+  "translation_date": "2025-09-15T16:38:17+00:00",
   "source_file": "Module07/README.md",
   "language_code": "zh"
 }
 -->
 # 第七章：EdgeAI 示例
 
-Edge AI 是人工智能与边缘计算的结合，使得设备能够直接进行智能处理，而无需依赖云端连接。本章将探讨五种不同平台和框架上的 EdgeAI 实现，展示在边缘运行 AI 模型的多样性和强大功能。
+边缘人工智能（Edge AI）是人工智能与边缘计算的结合，使设备能够直接进行智能处理，而无需依赖云连接。本章将探讨五种不同平台和框架上的EdgeAI实现，展示在边缘运行AI模型的多样性和强大功能。
 
-## 1. NVIDIA Jetson Orin Nano 的 EdgeAI
+## 1. NVIDIA Jetson Orin Nano上的EdgeAI
 
-NVIDIA Jetson Orin Nano 是边缘 AI 计算领域的一次突破，提供高达 67 TOPS 的 AI 性能，体积仅有信用卡大小。这款强大的边缘 AI 平台让生成式 AI 的开发变得更加普及，无论是爱好者、学生还是专业开发者都能轻松使用。
+NVIDIA Jetson Orin Nano是边缘AI计算领域的一次突破，它在信用卡大小的紧凑设备中提供高达67 TOPS的AI性能。这款强大的边缘AI平台为爱好者、学生和专业开发者提供了开发生成式AI的机会。
 
 ### 主要特点
-- 提供高达 67 TOPS 的 AI 性能，比前代产品提升 1.7 倍
-- 配备 1024 个 CUDA 核心和最多 32 个 Tensor 核心，用于 AI 处理
-- 6 核 Arm Cortex-A78AE v8.2 64 位 CPU，最高频率 1.5 GHz
-- 售价仅 $249，为开发者、学生和创客提供最实惠且易用的平台
+- 提供高达67 TOPS的AI性能，比前代产品提升1.7倍
+- 配备1024个CUDA核心和最多32个Tensor核心用于AI处理
+- 6核Arm Cortex-A78AE v8.2 64位CPU，最高频率为1.5 GHz
+- 售价仅为249美元，为开发者、学生和创客提供最实惠且易于使用的平台
 
 ### 应用场景
-Jetson Orin Nano 擅长运行现代生成式 AI 模型，包括视觉变换器、大型语言模型和视觉-语言模型。它专为生成式 AI（GenAI）用例设计，现在可以在掌上设备上运行多个 LLM。常见应用包括 AI 驱动的机器人、智能无人机、智能摄像头和自主边缘设备。
+Jetson Orin Nano擅长运行现代生成式AI模型，包括视觉变换器、大型语言模型和视觉语言模型。它专为生成式AI（GenAI）用例设计，现在可以在掌上设备上运行多个LLM。常见应用包括AI驱动的机器人、智能无人机、智能摄像头和自主边缘设备。
 
-**了解更多**：[NVIDIA 的 Jetson Orin Nano 超级计算机：EdgeAI 的下一次飞跃](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
+**了解更多**：[NVIDIA的Jetson Orin Nano超级计算机：边缘AI的下一步](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
-## 2. 使用 .NET MAUI 和 ONNX Runtime GenAI 的移动应用 EdgeAI
+## 2. 使用.NET MAUI和ONNX Runtime GenAI的移动应用EdgeAI
 
-该解决方案展示了如何使用 .NET MAUI（多平台应用 UI）和 ONNX Runtime GenAI 将生成式 AI 和大型语言模型（LLMs）集成到跨平台移动应用中。这种方法使 .NET 开发者能够构建运行于 Android 和 iOS 设备上的复杂 AI 驱动移动应用。
+此解决方案展示了如何将生成式AI和大型语言模型（LLMs）集成到跨平台移动应用中，使用.NET MAUI（多平台应用UI）和ONNX Runtime GenAI。这种方法使.NET开发者能够构建在Android和iOS设备上原生运行的复杂AI驱动移动应用。
 
 ### 主要特点
-- 基于 .NET MAUI 框架，提供单一代码库支持 Android 和 iOS 应用
-- 集成 ONNX Runtime GenAI，可直接在移动设备上运行生成式 AI 模型
-- 支持多种针对移动设备的硬件加速器，包括 CPU、GPU 和专用移动 AI 处理器
-- 通过 ONNX Runtime 实现平台特定优化，例如 iOS 的 CoreML 和 Android 的 NNAPI
-- 实现完整的生成式 AI 流程，包括预处理和后处理、推理、logits 处理、搜索和采样以及 KV 缓存管理
+- 基于.NET MAUI框架，提供单一代码库支持Android和iOS应用
+- 集成ONNX Runtime GenAI，可直接在移动设备上运行生成式AI模型
+- 支持针对移动设备的各种硬件加速器，包括CPU、GPU和专用移动AI处理器
+- 通过ONNX Runtime实现平台特定优化，例如iOS的CoreML和Android的NNAPI
+- 实现完整的生成式AI流程，包括预处理和后处理、推理、logits处理、搜索和采样以及KV缓存管理
 
 ### 开发优势
-使用 .NET MAUI 方法，开发者可以利用现有的 C# 和 .NET 技能构建跨平台 AI 应用。ONNX Runtime GenAI 框架支持多种模型架构，包括 Llama、Mistral、Phi、Gemma 等。优化的 ARM64 内核加速了 INT4 量化矩阵乘法，确保在移动硬件上高效运行，同时保持熟悉的 .NET 开发体验。
+.NET MAUI方法允许开发者利用现有的C#和.NET技能，同时构建跨平台AI应用。ONNX Runtime GenAI框架支持多种模型架构，包括Llama、Mistral、Phi、Gemma等。优化的ARM64内核加速INT4量化矩阵乘法，确保在移动硬件上高效运行，同时保持熟悉的.NET开发体验。
 
 ### 应用场景
-该解决方案非常适合希望使用 .NET 技术构建 AI 驱动移动应用的开发者，包括智能聊天机器人、图像识别应用、语言翻译工具和个性化推荐系统，这些应用完全在设备上运行，增强了隐私性和离线能力。
+此解决方案非常适合希望使用.NET技术构建AI驱动移动应用的开发者，包括智能聊天机器人、图像识别应用、语言翻译工具和完全在设备上运行的个性化推荐系统，以增强隐私和离线能力。
 
 **了解更多**：[.NET MAUI ONNX Runtime GenAI 示例](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
-## 3. Azure 中的小型语言模型引擎 EdgeAI
+## 3. Azure上的EdgeAI与小型语言模型引擎
 
-微软基于 Azure 的 EdgeAI 解决方案专注于在云-边缘混合环境中高效部署小型语言模型（SLMs）。这种方法弥合了云规模 AI 服务与边缘部署需求之间的差距。
+微软基于Azure的EdgeAI解决方案专注于在云边混合环境中高效部署小型语言模型（SLMs）。这种方法弥合了云规模AI服务与边缘部署需求之间的差距。
 
 ### 架构优势
-- 与 Azure AI 服务无缝集成
-- 使用 ONNX Runtime 在设备和云端运行 SLMs/LLMs 以及多模态模型
-- 针对企业级部署进行了优化
+- 与Azure AI服务无缝集成
+- 使用ONNX Runtime在设备和云端运行SLMs/LLMs以及多模态模型
+- 针对企业级部署进行优化
 - 支持持续的模型更新和管理
 
 ### 应用场景
-Azure EdgeAI 实现非常适合需要企业级 AI 部署和云管理能力的场景，包括智能文档处理、实时分析以及结合云和边缘计算资源的混合 AI 工作流。
+Azure EdgeAI实现擅长需要企业级AI部署和云管理能力的场景，包括智能文档处理、实时分析以及结合云和边缘计算资源的混合AI工作流。
 
-**了解更多**：[Azure EdgeAI SLM 引擎](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
+**了解更多**：[Azure EdgeAI SLM引擎](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
-## 4. 使用 Windows ML 的 EdgeAI
+## 4. 使用Windows ML的EdgeAI
 
-Windows ML 是微软优化的运行时，专为高效的设备端模型推理和简化部署而设计，是 Windows AI Foundry 的基础。该平台使开发者能够创建利用 PC 硬件全能力的 AI 驱动 Windows 应用。
+Windows ML是微软优化的运行时，专为高效的设备端模型推理和简化部署而设计，是Windows AI Foundry的基础。此平台使开发者能够创建利用PC硬件的AI驱动Windows应用。
 
 ### 平台能力
-- 适用于所有运行 Windows 11 版本 24H2（构建 26100）或更高版本的 PC
-- 支持所有 x64 和 ARM64 PC 硬件，即使是没有 NPU 或 GPU 的 PC
-- 开发者可以自带模型，并高效部署到包括 AMD、Intel、NVIDIA 和 Qualcomm 在内的硅片合作伙伴生态系统中，涵盖 CPU、GPU 和 NPU
-- 借助基础设施 API，开发者无需为不同的硅片目标创建多个应用构建版本
+- 适用于所有运行版本24H2（构建26100）或更高版本的Windows 11 PC
+- 适用于所有x64和ARM64 PC硬件，即使是没有NPU或GPU的PC
+- 允许开发者使用自己的模型，并高效部署到包括AMD、Intel、NVIDIA和Qualcomm在内的硅合作伙伴生态系统，涵盖CPU、GPU、NPU
+- 利用基础设施API，开发者无需为不同的硅目标创建多个应用构建版本
 
 ### 开发者优势
-Windows ML 抽象了硬件和执行提供程序，因此开发者可以专注于编写代码。此外，Windows ML 会自动更新以支持最新的 NPU、GPU 和 CPU。该平台为跨 Windows 硬件生态系统的 AI 开发提供了统一框架。
+Windows ML抽象了硬件和执行提供者，因此开发者可以专注于编写代码。此外，Windows ML会自动更新以支持最新的NPU、GPU和CPU。该平台为跨Windows硬件生态系统的AI开发提供了统一框架。
 
-**了解更多**：[Windows ML 概述](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
+**了解更多**：
+- [Windows ML概述](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
+- [Windows EdgeAI开发指南](../windowdeveloper.md) - Windows Edge AI开发的全面指南
 
-## 5. 使用 Foundry Local 应用的 EdgeAI
+## 5. 使用Foundry Local应用的EdgeAI
 
-Foundry Local 使开发者能够使用本地资源在 .NET 中构建检索增强生成（RAG）应用，将本地语言模型与语义搜索功能结合。这种方法提供了完全基于本地基础设施运行的隐私保护 AI 解决方案。
+Foundry Local使开发者能够使用本地资源在.NET中构建检索增强生成（RAG）应用，将本地语言模型与语义搜索功能相结合。这种方法提供了完全基于本地基础设施的隐私保护AI解决方案。
 
 ### 技术架构
-- 结合 Phi-3 语言模型、本地嵌入和语义内核，创建 RAG 场景
-- 使用嵌入作为浮点值数组（向量），表示内容及其语义含义
-- 语义内核作为主要协调器，集成 Phi-3 和智能组件，创建无缝的 RAG 管道
-- 支持包括 SQLite 和 Qdrant 在内的本地向量数据库
+- 结合Phi-3语言模型、本地嵌入和语义内核创建RAG场景
+- 使用嵌入作为浮点值数组，表示内容及其语义意义
+- 语义内核作为主要协调器，集成Phi-3和智能组件以创建无缝的RAG管道
+- 支持包括SQLite和Qdrant在内的本地向量数据库
 
 ### 实现优势
-RAG（检索增强生成）实际上就是“查找一些内容并将其放入提示中”的一种方式。这种本地实现确保了数据隐私，同时提供基于自定义知识库的智能响应。该方法在需要数据主权和离线操作能力的企业场景中尤为有价值。
+RAG，即检索增强生成，本质上是“查找一些内容并将其放入提示中”。这种本地实现确保数据隐私，同时提供基于自定义知识库的智能响应。此方法在需要数据主权和离线操作能力的企业场景中特别有价值。
 
-**了解更多**：[Foundry Local RAG 示例](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+**了解更多**：[Foundry Local RAG示例](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+
+## Windows EdgeAI开发资源
+
+针对专门面向Windows平台的开发者，我们创建了一份全面指南，涵盖完整的Windows EdgeAI生态系统。此资源提供有关Windows AI Foundry的详细信息，包括API、工具和Windows EdgeAI开发的最佳实践。
+
+### Windows AI Foundry平台
+Windows AI Foundry平台提供了一套专门为Windows设备上的Edge AI开发设计的工具和API。这包括对NPU加速硬件的专门支持、Windows ML集成以及平台特定的优化技术。
+
+**全面指南**：[Windows EdgeAI开发指南](../windowdeveloper.md)
+
+此指南涵盖：
+- Windows AI Foundry平台概述及组件
+- Phi Silica API，用于NPU硬件上的高效推理
+- 计算机视觉API，用于图像处理和OCR
+- Windows ML运行时集成与优化
+- Foundry Local CLI，用于本地开发和测试
+- Windows设备的硬件优化策略
+- 实际实施示例和最佳实践
+
+### Edge AI开发的AI工具包
+对于使用Visual Studio Code的开发者，AI工具包扩展提供了专门为构建、测试和部署Edge AI应用设计的全面开发环境。此工具包简化了整个Edge AI开发工作流。
+
+**开发指南**：[Edge AI开发的AI工具包](../aitoolkit.md)
+
+AI工具包指南涵盖：
+- 边缘部署的模型发现与选择
+- 本地测试与优化工作流
+- ONNX和Ollama集成，用于边缘模型
+- 模型转换与量化技术
+- 边缘场景的代理开发
+- 性能评估与监控
+- 部署准备与最佳实践
 
 ## 结论
 
-这五种 EdgeAI 实现展示了当前边缘 AI 解决方案的成熟度和多样性。从像 Jetson Orin Nano 这样的硬件加速边缘设备，到像 ONNX Runtime GenAI 和 Windows ML 这样的软件框架，开发者拥有了前所未有的选择，可以在边缘部署智能应用。
+这五种EdgeAI实现展示了当今边缘AI解决方案的成熟度和多样性。从像Jetson Orin Nano这样的硬件加速边缘设备到像ONNX Runtime GenAI和Windows ML这样的软件框架，开发者拥有前所未有的选择来在边缘部署智能应用。
 
-这些平台的共同点在于 AI 能力的普及化，使得不同技能水平和用例的开发者都能轻松使用先进的机器学习技术。无论是构建移动应用、桌面软件还是嵌入式系统，这些 EdgeAI 解决方案为下一代高效且私密的边缘智能应用奠定了基础。
+这些平台的共同点是AI能力的普及，使复杂的机器学习对不同技能水平和用例的开发者都变得可及。无论是构建移动应用、桌面软件还是嵌入式系统，这些EdgeAI解决方案都为下一代高效且隐私保护的智能应用提供了基础。
 
-每个平台都有其独特优势：Jetson Orin Nano 专注于硬件加速边缘计算，ONNX Runtime GenAI 支持跨平台移动开发，Azure EdgeAI 提供企业级云-边缘集成，Windows ML 面向 Windows 原生应用，Foundry Local 则专注于隐私保护的 RAG 实现。它们共同构成了一个全面的 EdgeAI 开发生态系统。
+每个平台都有其独特优势：Jetson Orin Nano适用于硬件加速边缘计算，ONNX Runtime GenAI适用于跨平台移动开发，Azure EdgeAI适用于企业云边集成，Windows ML适用于Windows原生应用，Foundry Local适用于隐私保护的RAG实现。它们共同构成了一个全面的EdgeAI开发生态系统。
+
+---
 
 **免责声明**：  
-本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原文档的原始语言版本为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而引起的任何误解或误读不承担责任。
+本文档使用AI翻译服务[Co-op Translator](https://github.com/Azure/co-op-translator)进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们不对因使用此翻译而产生的任何误解或误读承担责任。
