@@ -189,11 +189,23 @@ They unlock powerful NLP capabilities while meeting the constraints of:
   - Enterprise integration with Azure ML workflows
   - Popular model support (Llama, Phi, selected Qwen models, Gemma)
 
-- [**Section 4: Apple MLX Framework Deep Dive**](./Module04/04.AppleMLX.md)
+- [**Section 4: OpenVINO Toolkit Optimization Suite**](./Module04/04.openvino.md)
+  - Intel's open-source toolkit for cross-platform AI deployment
+  - Neural Network Compression Framework (NNCF) for advanced optimization
+  - OpenVINO GenAI for large language model deployment
+  - Hardware acceleration across CPU, GPU, VPU, and AI accelerators
+
+- [**Section 5: Apple MLX Framework Deep Dive**](./Module04/05.AppleMLX.md)
   - Unified memory architecture for Apple Silicon
   - Support for LLaMA, Mistral, Phi-3, selected Qwen models
   - LoRA fine-tuning and model customization
   - Hugging Face integration with 4-bit/8-bit quantization
+
+- [**Section 6: Edge AI Development Workflow Synthesis**](./Module04/06.workflow-synthesis.md)
+  - Unified workflow architecture integrating multiple optimization frameworks
+  - Framework selection decision trees and performance trade-off analysis
+  - Production readiness validation and comprehensive deployment strategies
+  - Future-proofing strategies for emerging hardware and model architectures
 
 ---
 
@@ -255,6 +267,18 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 **Theme**: Comprehensive EdgeAI implementations across diverse platforms and frameworks
 
 #### Chapter Structure:
+- [**AI Toolkit for Visual Studio Code**](./Module07/aitoolkit.md)
+  - Comprehensive Edge AI development environment within VS Code
+  - Model catalog and discovery for edge deployment
+  - Local testing, optimization, and agent development workflows
+  - Performance monitoring and evaluation for edge scenarios
+
+- [**Windows EdgeAI Development Guide**](./Module07/windowdeveloper.md)
+  - Windows AI Foundry platform comprehensive overview
+  - Phi Silica API for efficient NPU inference
+  - Computer Vision APIs for image processing and OCR
+  - Foundry Local CLI for local development and testing
+
 - [**EdgeAI in NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
   - 67 TOPS AI performance in credit-card-sized form factor
   - Generative AI models support (vision transformers, LLMs, vision-language models)
@@ -349,9 +373,11 @@ By completing this comprehensive EdgeAI course, you will develop the expertise t
 
 ### Module 04 Learning Outcomes:
 - Deep understanding of quantization boundaries and practical applications
-- Hands-on experience with multiple optimization frameworks (Llama.cpp, Olive, MLX)
-- Hardware-aware optimization selection capabilities
+- Hands-on experience with multiple optimization frameworks (Llama.cpp, Olive, OpenVINO, MLX)
+- Master Intel hardware optimization with OpenVINO and NNCF
+- Hardware-aware optimization selection capabilities across diverse platforms
 - Production deployment skills for cross-platform edge computing environments
+- Strategic framework selection and workflow synthesis for optimal Edge AI solutions
 
 ### Module 05 Learning Outcomes:
 - Master SLMOps paradigm and operational principles
@@ -366,7 +392,9 @@ By completing this comprehensive EdgeAI course, you will develop the expertise t
 - Build sophisticated agentic systems with minimal human intervention requirements
 
 ### Module 07 Learning Outcomes:
-- Gain hands-on experience with diverse EdgeAI platforms and implementation strategies
+- Master AI Toolkit for Visual Studio Code for comprehensive Edge AI development workflows
+- Gain expertise in Windows AI Foundry platform and NPU optimization strategies
+- Acquire hands-on experience with diverse EdgeAI platforms and implementation strategies
 - Master hardware-specific optimization techniques across NVIDIA, mobile, Azure, and Windows platforms
 - Understand deployment trade-offs between performance, cost, and privacy requirements
 - Develop practical skills for building real-world EdgeAI applications across different ecosystems
@@ -448,7 +476,9 @@ edgeai-for-beginners/
 │   ├── 01.Introduce.md
 │   ├── 02.Llamacpp.md
 │   ├── 03.MicrosoftOlive.md
-│   ├── 04.AppleMLX.md
+│   ├── 04.openvino.md
+│   ├── 05.AppleMLX.md
+│   ├── 06.workflow-synthesis.md
 │   └── README.md
 ├── Module05/ (SLMOps - Small Language Model Operations)
 │   ├── 01.IntroduceSLMOps.md
@@ -462,6 +492,8 @@ edgeai-for-beginners/
 │   ├── 03.IntroduceMCP.md
 │   └── README.md
 ├── Module07/ (EdgeAI Implementation Samples)
+│   ├── aitoolkit.md
+│   ├── windowdeveloper.md
 │   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
@@ -486,10 +518,10 @@ Recommended Learning Path:
 1. Start with **Module01** to build fundamental understanding of EdgeAI
 2. Proceed to **Module02** to deeply understand various SLM model families
 3. Learn **Module03** to master practical deployment skills
-4. Continue with **Module04** for advanced model optimization and format conversion
+4. Continue with **Module04** for advanced model optimization, format conversion, and framework synthesis
 5. Complete **Module05** to master SLMOps for production-ready implementations
 6. Explore **Module06** to understand SLM agentic systems and function calling capabilities
-7. Finish with **Module07** to gain practical experience with diverse EdgeAI implementation samples
+7. Finish with **Module07** to gain practical experience with AI Toolkit and diverse EdgeAI implementation samples
 
 Each module is designed to be independently complete, but sequential learning will provide the best results.
 
