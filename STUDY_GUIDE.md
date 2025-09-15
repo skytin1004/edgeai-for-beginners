@@ -52,7 +52,7 @@
 | Module 6: SLM Agentic Systems | | | |
 | Module 7: EdgeAI Implementation Samples | | | |
 | Hands-on Exercises | | | |
-| Mini-Project | | | || |
+| Mini-Project | | | |
 
 ### Part-time Study (4 weeks)
 
