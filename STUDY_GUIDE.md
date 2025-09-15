@@ -40,7 +40,7 @@
 | Day 7-8 | Module 4: Model Optimization | 4 hours |
 | Day 9-10 | Module 5: SLMOps | 3 hours |
 | Day 11-12 | Module 6: SLM Agentic Systems | 2 hours |
-| Day 13-14 | Module 7 : EdgeAI Implementation Samples | 2 hours |
+| Day 13-14 | Module 7: EdgeAI Implementation Samples | 2 hours |
 
 | Module | Completion Date | Hours Spent | Key Takeaways |
 |--------|----------------|-------------|--------------|
