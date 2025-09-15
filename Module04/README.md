@@ -4,7 +4,7 @@ The emergence of EdgeAI has made model format conversion and quantization essent
 
 ## 📚 Chapter Structure and Learning Path
 
-This chapter is organized into four progressive sections, each building upon the previous to create a comprehensive understanding of model optimization for edge computing:
+This chapter is organized into five progressive sections, each building upon the previous to create a comprehensive understanding of model optimization for edge computing:
 
 ---
 
@@ -62,7 +62,25 @@ Exploration of Microsoft Olive, a hardware-aware model optimization toolkit with
 
 ---
 
-## [Section 4: Apple MLX Framework Deep Dive](./04.AppleMLX.md)
+## [Section 4: OpenVINO Toolkit Optimization Suite](./04.openvino.md)
+
+### 🎯 Overview
+Comprehensive exploration of Intel's OpenVINO toolkit, an open-source platform for deploying performant AI solutions across cloud, on-premises, and edge environments with advanced Neural Network Compression Framework (NNCF) capabilities.
+
+**Key Topics:**
+- Cross-platform deployment with hardware acceleration (CPU, GPU, VPU, AI accelerators)
+- Neural Network Compression Framework (NNCF) for advanced quantization and pruning
+- OpenVINO GenAI for large language model optimization and deployment
+- Enterprise-grade model server capabilities and scalable deployment strategies
+
+**Learning Outcomes:**
+- Master OpenVINO model conversion and optimization workflows
+- Implement advanced quantization techniques with NNCF
+- Deploy optimized models across diverse hardware platforms with Model Server
+
+---
+
+## [Section 5: Apple MLX Framework Deep Dive](./05.AppleMLX.md)
 
 ### 🎯 Overview
 Comprehensive coverage of Apple MLX, a revolutionary framework specifically designed for efficient machine learning on Apple Silicon, with emphasis on Large Language Model capabilities and local deployment.
@@ -100,6 +118,7 @@ Upon completing this comprehensive chapter, readers will achieve:
 |-----------|-------------|--------------|-------------------|----------|
 | Llama.cpp | Q4_K_M | ~4GB | 2-3x | Cross-platform deployment |
 | Olive | INT4 | 60-75% reduction | 2-6x | Enterprise workflows |
+| OpenVINO | INT8/INT4 | 50-75% reduction | 2-5x | Intel hardware optimization |
 | MLX | 4-bit | ~4GB | 2-4x | Apple Silicon optimization |
 
 ## 🚀 Next Steps and Advanced Applications
@@ -110,4 +129,4 @@ This chapter provides a complete foundation for:
 - Commercial AI application development
 - Large-scale enterprise edge AI deployments
 
-The knowledge from these four sections offers a comprehensive toolkit for navigating the rapidly evolving landscape of edge AI model optimization and deployment.
+The knowledge from these five sections offers a comprehensive toolkit for navigating the rapidly evolving landscape of edge AI model optimization and deployment.
