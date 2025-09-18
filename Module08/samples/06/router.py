@@ -1,26 +1,32 @@
 import os
 import sys
+import re
 import json
+import subprocess
 import requests
 from typing import Dict, Any
-from pathlib import Path
 
-# Ensure Module08 utils are importable when running as a script
-MODULE08_DIR = Path(__file__).resolve().parents[2]
-if str(MODULE08_DIR) not in sys.path:
-    sys.path.insert(0, str(MODULE08_DIR))
 
-try:
-    from utils.smoke_test import discover_base_url, check_foundry
-except Exception:
-    # Fallbacks if utils are unavailable
-    def discover_base_url(default: str = "http://localhost:8000") -> str:
-        return os.environ.get("BASE_URL", default)
+def discover_base_url(default: str = "http://localhost:8000") -> str:
+    env = os.environ.get("BASE_URL")
+    if env:
+        return env
+    try:
+        out = subprocess.check_output([
+            "foundry", "service", "status"
+        ], stderr=subprocess.STDOUT, text=True, timeout=3)
+        m = re.search(r"https?://[\w\.-]+(?::\d+)?", out)
+        if m:
+            return m.group(0)
+    except Exception:
+        pass
+    return default
 
-    def check_foundry(base_url: str) -> dict:
-        r = requests.get(f"{base_url}/v1/models", timeout=5)
-        r.raise_for_status()
-        return r.json()
+
+def check_foundry(base_url: str) -> dict:
+    r = requests.get(f"{base_url}/v1/models", timeout=5)
+    r.raise_for_status()
+    return r.json()
 
 BASE_URL = discover_base_url("http://localhost:8000")
 API_KEY = os.environ.get("API_KEY", "")

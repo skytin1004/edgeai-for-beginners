@@ -19,3 +19,8 @@ chainlit run samples\04\app.py -w
 ```cmd
 curl http://localhost:8000/v1/models
 ```
+
+## Troubleshooting
+- If VS Code shows "chainlit could not be resolved":
+	- Select the interpreter `Module08/.venv/Scripts/python.exe` (Ctrl+Shift+P → Python: Select Interpreter)
+	- Ensure deps are installed: `pip install -r Module08\requirements.txt`
