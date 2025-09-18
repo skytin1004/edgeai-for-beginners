@@ -197,7 +197,7 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 - [**Section 5: Apple MLX Framework Deep Dive**](./Module04/05.AppleMLX.md)
   - Unified memory architecture for Apple Silicon
-  - Support for LLaMA, Mistral, Phi-3, selected Qwen models
+  - Support for LLaMA, Mistral, Phi, selected Qwen models
   - LoRA fine-tuning and model customization
   - Hugging Face integration with 4-bit/8-bit quantization
 
@@ -305,9 +305,20 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 - [**EdgeAI with Foundry Local Applications**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
   - Privacy-focused RAG implementation with local resources
-  - Phi-3 language model integration with semantic search (Phi models only)
+  - Phi-4 language model integration with semantic search (Phi models only)
   - Local vector databases support (SQLite, Qdrant)
   - Data sovereignty and offline operation capabilities
+
+### [Module 08: Microsoft Foundry Local – Complete Developer Toolkit](./Module08/README.md)
+**Theme**: Build, run, and integrate AI locally with Foundry Local; scale and hybridize with Azure AI Foundry
+
+#### Chapter Structure:
+- [**1: Getting Started with Foundry Local**](./Module08/01.FoundryLocalSetup.md)
+- [**2: Build AI Solutions with Azure AI Foundry**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**3: Open-Source Models Foundry Local**](./Module08/03.OpenSourceModels.md)
+- [**4: Cutting-Edge Models and On-Device Inference**](./Module08/04.CuttingEdgeModels.md)
+- [**5: AI-Powered Agents with Foundry Local**](./Module08/05.AIPoweredAgents.md)
+- [**6: Models as Tools**](./Module08/06.ModelsAsTools.md)
 
 ## Course Learning Objectives
 
@@ -495,6 +506,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -522,6 +541,7 @@ Recommended Learning Path:
 5. Complete **Module05** to master SLMOps for production-ready implementations
 6. Explore **Module06** to understand SLM agentic systems and function calling capabilities
 7. Finish with **Module07** to gain practical experience with AI Toolkit and diverse EdgeAI implementation samples
+8. Explore **Module08** for a complete Foundry Local developer toolkit (local-first development with hybrid Azure integration)
 
 Each module is designed to be independently complete, but sequential learning will provide the best results.
 
