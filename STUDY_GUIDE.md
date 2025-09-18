@@ -61,7 +61,7 @@
 | Week 1 | Module 1-2: Fundamentals & SLM Foundations | 6 hours |
 | Week 2 | Module 3-4: Deployment & Optimization | 6 hours |
 | Week 3 | Module 5-6: SLMOps & AI Agents | 5 hours |
-| Week 4 | Module 7: Development Tools & Integration | 3 hours |udy Guide
+| Week 4 | Module 7: Development Tools & Integration | 3 hours |
 
 ## Introduction
 
@@ -80,6 +80,7 @@ This course is organized into seven comprehensive modules:
 5. **SLMOps - Small Language Model Operations** - Production lifecycle management and deployment
 6. **SLM Agentic Systems** - AI agents, function calling, and Model Context Protocol
 7. **EdgeAI Implementation Samples** - AI Toolkit, Windows development, and platform-specific implementations
+8. **Microsoft Foundry Local – Complete Developer Toolkit** - Local-first development with hybrid Azure integration (Module 08)
 
 ## How to Use This Study Guide
 
@@ -96,7 +97,8 @@ This course is organized into seven comprehensive modules:
 |------|-------|-----------------|
 | Day 1-2 | Module 1: EdgeAI Fundamentals | 6 hours |
 | Day 3-4 | Module 2: SLM Foundations | 8 hours |
-| Day 5-6 | Module 3: SLM Deployment | 6 hours |
+| Day 5 | Module 3: SLM Deployment | 3 hours |
+| Day 6 | Module 8: Foundry Local Toolkit | 3 hours |
 
 ### Part-time Study (3 weeks)
 
@@ -104,7 +106,7 @@ This course is organized into seven comprehensive modules:
 |------|-------|-----------------|
 | Week 1 | Module 1: EdgeAI Fundamentals | 6-7 hours |
 | Week 2 | Module 2: SLM Foundations | 7-8 hours |
-| Week 3 | Module 3: SLM Deployment | 5-6 hours |
+| Week 3 | Module 3: SLM Deployment (3h) + Module 8: Foundry Local Toolkit (2-3h) | 5-6 hours |
 
 ## Module 1: EdgeAI Fundamentals and Transformation
 
@@ -470,6 +472,41 @@ This course is organized into seven comprehensive modules:
 3. **Cross-Platform Deployment**: Deploy the same model on two different platforms (1 hour)
 4. **NPU Optimization**: Test NPU performance with Windows AI Foundry tools (30 minutes)
 
+## Module 8: Microsoft Foundry Local – Complete Developer Toolkit
+
+### Key Learning Objectives
+
+- Install and configure Foundry Local on Windows
+- Run, discover, and manage models locally via the Foundry CLI
+- Integrate with OpenAI-compatible REST and SDK clients
+- Build practical samples: Chainlit chat, agents, and model router
+- Understand hybrid patterns with Azure AI Foundry
+
+### Study Focus Areas
+
+- Installation and CLI essentials (model, service, cache)
+- SDK integration (OpenAI-compatible clients and Azure OpenAI)
+- Open WebUI quick validation
+- Agents and function-calling patterns
+- Models-as-tools (router and registry design)
+
+### Self-Assessment Questions
+
+1. How do you discover the local endpoint and list available models?
+2. What are the differences between Foundry Local REST and Azure OpenAI usage?
+3. How would you design a simple router to select models as tools?
+4. Which CLI categories are most relevant to day-to-day development?
+5. How do you validate Foundry Local readiness before running apps?
+
+### Hands-on Exercises
+
+1. Install/upgrade Foundry Local and run `phi-4-mini` locally (30 minutes)
+2. Call `/v1/models` and run a simple chat via REST (30 minutes)
+3. Launch the Chainlit app sample and chat locally (30 minutes)
+4. Run the multi-agent coordinator and inspect outputs (30 minutes)
+5. Try the models-as-tools router with env-based overrides (30 minutes)
+
+
 ## Time Allocation Guide
 
 To help you make the most of the 20-hour course timeline, here's a suggested breakdown of how to allocate your time:
@@ -533,6 +570,7 @@ Use this simplified template to track your learning progress through the 20-hour
 | Module 5: SLMOps | | | |
 | Module 6: AI Agents | | | |
 | Module 7: Development Tools | | | |
+| Module 8: Foundry Local Toolkit | | | |
 | Hands-on Exercises | | | |
 | Mini-Project | | | |
 
@@ -556,6 +594,34 @@ Consider completing one of these projects to practice EdgeAI concepts (each desi
 9. **SLMOps Pipeline**: Implement a complete model lifecycle from training to edge deployment
 10. **Multi-Model Edge System**: Deploy multiple specialized models working together on edge hardware
 11. **MCP Integration System**: Build an agentic system using Model Context Protocol for tool interaction
+
+## References
+
+- Microsoft Learn (Foundry Local)
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+  - Get started: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+  - CLI reference: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
+  - Integrate with inference SDKs: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+  - Open WebUI how-to: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+  - Compile Hugging Face models: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Azure AI Foundry
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/
+  - Agents (overview): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
+- Optimization and Inference Tooling
+  - Microsoft Olive (docs): https://microsoft.github.io/Olive/
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
+  - ONNX Runtime (getting started): https://onnxruntime.ai/docs/get-started/with-python.html
+  - ONNX Runtime Olive integration: https://onnxruntime.ai/docs/performance/olive.html
+  - OpenVINO (docs): https://docs.openvino.ai/2025/index.html
+  - Apple MLX (docs): https://ml-explore.github.io/mlx/build/html/index.html
+- Deployment Frameworks and Models
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
+  - vLLM (docs): https://docs.vllm.ai/
+  - Ollama (quick start): https://github.com/ollama/ollama#get-started
+- Developer Tools (Windows and VS Code)
+  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
+  - Windows ML (overview): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
 
 ## Learning Community
 
