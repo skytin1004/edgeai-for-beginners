@@ -19,3 +19,8 @@ curl http://localhost:8000/v1/models
 - If VS Code flags `import specialists` unresolved in `coordinator.py`, ensure you run as a module and the interpreter points to `Module08/.venv`:
 	- Run: `python -m samples.05.agents.coordinator`
 	- Select interpreter: `Module08/.venv/Scripts/python.exe` (Ctrl+Shift+P → Python: Select Interpreter)
+
+## References
+- Foundry Local (Learn): https://learn.microsoft.com/azure/ai-foundry/foundry-local/
+- Azure AI Agents overview: https://learn.microsoft.com/azure/ai-services/agents/overview
+- Function calling sample (Foundry Local): https://github.com/microsoft/Foundry-Local/tree/main/samples/python/functioncalling

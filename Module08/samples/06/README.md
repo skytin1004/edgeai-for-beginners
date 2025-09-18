@@ -30,3 +30,7 @@ set CODE_MODEL=qwen2.5-7b-instruct
 REM Or provide a full JSON registry
 set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-distill-qwen-7b"},"code":{"model":"qwen2.5-7b-instruct"}}
 ```
+
+## References
+- Foundry Local (Learn): https://learn.microsoft.com/azure/ai-foundry/foundry-local/
+- Integrate with inference SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks

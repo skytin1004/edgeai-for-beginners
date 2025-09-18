@@ -24,3 +24,7 @@ curl http://localhost:8000/v1/models
 - If VS Code shows "chainlit could not be resolved":
 	- Select the interpreter `Module08/.venv/Scripts/python.exe` (Ctrl+Shift+P → Python: Select Interpreter)
 	- Ensure deps are installed: `pip install -r Module08\requirements.txt`
+
+## References
+- Open WebUI how-to (chat app with Open WebUI): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+- Foundry Local (Learn): https://learn.microsoft.com/azure/ai-foundry/foundry-local/
