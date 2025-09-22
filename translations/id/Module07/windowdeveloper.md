@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-18T15:02:40+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T22:23:42+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "id"
 }
@@ -19,19 +19,19 @@ Windows AI Foundry adalah platform yang terpadu, andal, dan aman yang mendukung 
 
 - **Abstraksi Perangkat Keras**: Penerapan yang mulus di silikon AMD, Intel, NVIDIA, dan Qualcomm
 - **Kecerdasan di Perangkat**: AI yang menjaga privasi dan berjalan sepenuhnya di perangkat lokal
-- **Performa Optimal**: Model yang telah dioptimalkan untuk konfigurasi perangkat keras Windows
+- **Performa yang Dioptimalkan**: Model yang telah dioptimalkan untuk konfigurasi perangkat keras Windows
 - **Siap untuk Perusahaan**: Fitur keamanan dan kepatuhan tingkat produksi
 
 ### Mengapa Windows untuk Edge AI?
 
 **Dukungan Perangkat Keras Universal**  
-Windows ML menyediakan optimasi perangkat keras otomatis di seluruh ekosistem Windows, memastikan aplikasi AI Anda bekerja secara optimal terlepas dari arsitektur silikon yang mendasarinya.
+Windows ML menyediakan optimasi perangkat keras otomatis di seluruh ekosistem Windows, memastikan aplikasi AI Anda bekerja optimal terlepas dari arsitektur silikon yang digunakan.
 
 **Runtime AI Terintegrasi**  
-Mesin inferensi Windows ML bawaan menghilangkan kebutuhan pengaturan yang kompleks, memungkinkan pengembang untuk fokus pada logika aplikasi daripada masalah infrastruktur.
+Mesin inferensi Windows ML bawaan menghilangkan kebutuhan pengaturan yang kompleks, memungkinkan pengembang fokus pada logika aplikasi daripada masalah infrastruktur.
 
 **Optimasi PC Copilot+**  
-API yang dirancang khusus untuk perangkat Windows generasi berikutnya dengan Unit Pemrosesan Neural (NPU) yang memberikan performa luar biasa per watt.
+API yang dirancang khusus untuk perangkat Windows generasi berikutnya dengan Neural Processing Units (NPUs) yang memberikan performa luar biasa per watt.
 
 **Ekosistem Pengembang**  
 Alat yang kaya termasuk integrasi Visual Studio, dokumentasi yang komprehensif, dan aplikasi contoh yang mempercepat siklus pengembangan.
@@ -44,7 +44,7 @@ Dengan menyelesaikan panduan pengembangan Windows Edge AI ini, Anda akan menguas
 
 **Penguasaan Windows AI Foundry**  
 - Memahami arsitektur dan komponen platform Windows AI Foundry  
-- Menavigasi seluruh siklus hidup pengembangan AI dalam ekosistem Windows  
+- Menavigasi seluruh siklus pengembangan AI dalam ekosistem Windows  
 - Menerapkan praktik terbaik keamanan untuk aplikasi AI di perangkat  
 - Mengoptimalkan aplikasi untuk berbagai konfigurasi perangkat keras Windows  
 
@@ -75,7 +75,7 @@ Dengan menyelesaikan panduan pengembangan Windows Edge AI ini, Anda akan menguas
 - Menangani operasi AI asinkron dengan pola pengalaman pengguna yang tepat  
 
 **Optimasi Performa**  
-- Melakukan profiling dan optimasi performa inferensi AI di berbagai konfigurasi perangkat keras  
+- Memprofil dan mengoptimalkan performa inferensi AI di berbagai konfigurasi perangkat keras  
 - Menerapkan manajemen memori yang efisien untuk model bahasa besar  
 - Merancang aplikasi yang secara elegan menyesuaikan berdasarkan kemampuan perangkat keras yang tersedia  
 - Menerapkan strategi caching untuk operasi AI yang sering digunakan  
@@ -95,7 +95,7 @@ Dengan menyelesaikan panduan pengembangan Windows Edge AI ini, Anda akan menguas
 - Menerapkan solusi AI yang hemat biaya dan skalabel sesuai permintaan pengguna  
 
 **Posisi Pasar**  
-- Memahami keunggulan kompetitif aplikasi AI native Windows  
+- Memahami keunggulan kompetitif aplikasi AI asli Windows  
 - Mengidentifikasi kasus penggunaan di mana AI di perangkat memberikan pengalaman pengguna yang unggul  
 - Mengembangkan strategi go-to-market untuk aplikasi Windows yang ditingkatkan AI  
 - Memposisikan aplikasi untuk memanfaatkan manfaat ekosistem Windows  
@@ -104,7 +104,7 @@ Dengan menyelesaikan panduan pengembangan Windows Edge AI ini, Anda akan menguas
 
 ### 1. API Windows AI
 
-API Windows AI menyediakan kemampuan AI siap pakai yang didukung oleh model di perangkat, dioptimalkan untuk efisiensi dan performa pada perangkat PC Copilot+ dengan pengaturan minimal.
+API Windows AI menyediakan kemampuan AI siap pakai yang didukung oleh model di perangkat, dioptimalkan untuk efisiensi dan performa pada perangkat Copilot+ PC dengan pengaturan minimal.
 
 #### Kategori API Inti
 
@@ -118,8 +118,8 @@ API Windows AI menyediakan kemampuan AI siap pakai yang didukung oleh model di p
 - **Pengenalan Teks (OCR)**: Mengekstrak teks dari gambar dengan akurasi tinggi  
 - **Super Resolusi Gambar**: Meningkatkan resolusi gambar menggunakan model AI lokal  
 - **Segmentasi Gambar**: Mengidentifikasi dan mengisolasi objek tertentu dalam gambar  
-- **Deskripsi Gambar**: Menghasilkan deskripsi teks rinci untuk konten visual  
-- **Penghapusan Objek**: Menghapus objek yang tidak diinginkan dari gambar dengan inpainting bertenaga AI  
+- **Deskripsi Gambar**: Menghasilkan deskripsi teks yang rinci untuk konten visual  
+- **Penghapusan Objek**: Menghapus objek yang tidak diinginkan dari gambar dengan inpainting berbasis AI  
 
 **Kemampuan Multimodal**  
 - **Integrasi Visi-Bahasa**: Menggabungkan pemahaman teks dan gambar  
@@ -128,7 +128,7 @@ API Windows AI menyediakan kemampuan AI siap pakai yang didukung oleh model di p
 
 ### 2. Foundry Local
 
-Foundry Local memberikan akses cepat kepada pengembang ke model bahasa open-source siap pakai di Windows Silicon, menawarkan kemampuan untuk menjelajahi, menguji, berinteraksi, dan menerapkan model dalam aplikasi lokal.
+Foundry Local memberikan pengembang akses cepat ke model bahasa open-source siap pakai di Windows Silicon, menawarkan kemampuan untuk menjelajahi, menguji, berinteraksi, dan menerapkan model dalam aplikasi lokal.
 
 #### Fitur Utama
 
@@ -155,11 +155,11 @@ Windows ML berfungsi sebagai platform AI inti dan runtime inferensi terintegrasi
 
 **Dukungan Perangkat Keras Universal**  
 - Optimasi otomatis untuk silikon AMD, Intel, NVIDIA, dan Qualcomm  
-- Dukungan untuk eksekusi CPU, GPU, dan NPU dengan switching transparan  
+- Dukungan untuk eksekusi CPU, GPU, dan NPU dengan peralihan transparan  
 - Abstraksi perangkat keras yang menghilangkan pekerjaan optimasi spesifik platform  
 
 **Fleksibilitas Model**  
-- Dukungan untuk format model ONNX dengan konversi otomatis dari framework populer  
+- Dukungan untuk format model ONNX dengan konversi otomatis dari kerangka kerja populer  
 - Penerapan model kustom dengan performa tingkat produksi  
 - Integrasi dengan arsitektur aplikasi Windows yang ada  
 
@@ -176,7 +176,7 @@ Windows ML berfungsi sebagai platform AI inti dan runtime inferensi terintegrasi
 1. Instal Visual Studio dengan ekstensi AI Toolkit  
 2. Konfigurasikan alat CLI Windows AI Foundry  
 3. Siapkan lingkungan pengujian model lokal  
-4. Tetapkan alat profiling performa dan pemantauan  
+4. Tetapkan alat pemantauan dan profil performa  
 
 **Eksplorasi Galeri Dev AI**  
 - Jelajahi aplikasi contoh dan implementasi referensi  
@@ -256,7 +256,7 @@ Buat sistem inventaris bertenaga AI untuk aplikasi ritel:
 
 **Pendekatan Implementasi:**  
 - Membangun integrasi kamera untuk pemindaian produk secara real-time  
-- Menerapkan pengenalan produk melalui barcode dan visual  
+- Menerapkan pengenalan produk visual dan barcode  
 - Menambahkan kueri inventaris bahasa alami menggunakan model bahasa lokal  
 - Merancang arsitektur yang skalabel untuk penerapan multi-toko  
 
@@ -282,7 +282,7 @@ Kembangkan alat dokumentasi kesehatan yang menjaga privasi:
 
 **Optimasi NPU**  
 - Merancang aplikasi untuk memanfaatkan kemampuan NPU pada PC Copilot+  
-- Menerapkan fallback yang elegan ke GPU/CPU pada perangkat tanpa NPU  
+- Menerapkan fallback yang mulus ke GPU/CPU pada perangkat tanpa NPU  
 - Mengoptimalkan format model untuk akselerasi spesifik NPU  
 - Memantau pemanfaatan NPU dan karakteristik termal  
 
@@ -296,7 +296,7 @@ Kembangkan alat dokumentasi kesehatan yang menjaga privasi:
 - Mengoptimalkan operasi AI untuk konsumsi daya minimal  
 - Menerapkan pemrosesan adaptif berdasarkan status baterai  
 - Merancang pemrosesan latar belakang yang efisien untuk operasi AI berkelanjutan  
-- Menggunakan alat profiling daya untuk mengoptimalkan penggunaan energi  
+- Menggunakan alat profil daya untuk mengoptimalkan penggunaan energi  
 
 ### Pertimbangan Skalabilitas
 
@@ -304,7 +304,7 @@ Kembangkan alat dokumentasi kesehatan yang menjaga privasi:
 - Merancang operasi AI yang aman untuk thread untuk pemrosesan bersamaan  
 - Menerapkan distribusi kerja yang efisien di inti yang tersedia  
 - Menggunakan pola async/await untuk operasi AI yang tidak memblokir  
-- Merencanakan optimasi pool thread untuk berbagai konfigurasi perangkat keras  
+- Merencanakan optimasi thread pool untuk berbagai konfigurasi perangkat keras  
 
 **Strategi Caching**  
 - Menerapkan caching cerdas untuk operasi AI yang sering digunakan  
@@ -330,7 +330,7 @@ Kembangkan alat dokumentasi kesehatan yang menjaga privasi:
 
 ### Pertimbangan Kepatuhan
 
-**Keselarasan Regulasi**  
+**Kesesuaian Regulasi**  
 - Merancang aplikasi untuk memenuhi persyaratan GDPR, HIPAA, dan regulasi lainnya  
 - Menerapkan pencatatan audit untuk proses pengambilan keputusan AI  
 - Menyediakan fitur transparansi untuk hasil yang dihasilkan AI  
@@ -368,77 +368,77 @@ Kembangkan alat dokumentasi kesehatan yang menjaga privasi:
 
 **Integrasi Visual Studio**  
 - Menggunakan debugger AI Toolkit untuk analisis eksekusi model  
-- Menerapkan profiling performa untuk operasi AI  
+- Menerapkan profil performa untuk operasi AI  
 - Debug operasi AI asinkron dengan penanganan pengecualian yang tepat  
-- Menggunakan alat profiling memori untuk optimasi  
+- Menggunakan alat profil memori untuk optimasi  
 
 **Alat Windows AI Foundry**
-- Manfaatkan Foundry Local CLI untuk pengujian dan validasi model  
-- Gunakan alat pengujian Windows AI API untuk verifikasi integrasi  
-- Terapkan pencatatan khusus untuk pemantauan operasi AI  
-- Buat pengujian otomatis untuk keandalan fungsi AI  
+- Manfaatkan Foundry Local CLI untuk pengujian dan validasi model
+- Gunakan alat pengujian Windows AI API untuk verifikasi integrasi
+- Terapkan pencatatan khusus untuk pemantauan operasi AI
+- Buat pengujian otomatis untuk keandalan fungsi AI
 
-## Mempersiapkan Aplikasi untuk Masa Depan  
+## Mempersiapkan Aplikasi untuk Masa Depan
 
-### Teknologi yang Berkembang  
+### Teknologi yang Berkembang
 
-**Perangkat Keras Generasi Berikutnya**  
-- Rancang aplikasi untuk memanfaatkan kemampuan NPU di masa depan  
-- Rencanakan untuk ukuran model yang lebih besar dan kompleksitas yang meningkat  
-- Terapkan arsitektur adaptif untuk perangkat keras yang terus berkembang  
-- Pertimbangkan algoritma yang siap untuk kuantum demi kompatibilitas masa depan  
+**Perangkat Keras Generasi Berikutnya**
+- Rancang aplikasi untuk memanfaatkan kemampuan NPU di masa depan
+- Rencanakan untuk ukuran model yang lebih besar dan kompleksitas yang meningkat
+- Terapkan arsitektur adaptif untuk perangkat keras yang terus berkembang
+- Pertimbangkan algoritma yang siap untuk kuantum demi kompatibilitas di masa depan
 
-**Kemampuan AI Lanjutan**  
-- Persiapkan integrasi AI multimodal untuk lebih banyak jenis data  
-- Rencanakan kolaborasi AI secara real-time antara beberapa perangkat  
-- Rancang untuk kemampuan pembelajaran federasi  
-- Pertimbangkan arsitektur kecerdasan hibrid edge-cloud  
+**Kemampuan AI Lanjutan**
+- Persiapkan integrasi AI multimodal untuk lebih banyak jenis data
+- Rencanakan AI kolaboratif secara real-time antara beberapa perangkat
+- Rancang untuk kemampuan pembelajaran federasi
+- Pertimbangkan arsitektur kecerdasan hibrida edge-cloud
 
-### Pembelajaran dan Adaptasi Berkelanjutan  
+### Pembelajaran dan Adaptasi Berkelanjutan
 
-**Pembaruan Model**  
-- Terapkan mekanisme pembaruan model yang mulus  
-- Rancang aplikasi untuk beradaptasi dengan kemampuan model yang lebih baik  
-- Rencanakan kompatibilitas mundur dengan model yang sudah ada  
-- Terapkan pengujian A/B untuk evaluasi kinerja model  
+**Pembaruan Model**
+- Terapkan mekanisme pembaruan model yang mulus
+- Rancang aplikasi untuk beradaptasi dengan kemampuan model yang lebih baik
+- Rencanakan kompatibilitas mundur dengan model yang sudah ada
+- Terapkan pengujian A/B untuk evaluasi kinerja model
 
-**Evolusi Fitur**  
-- Rancang arsitektur modular yang dapat mengakomodasi kemampuan AI baru  
-- Rencanakan integrasi API Windows AI yang sedang berkembang  
-- Terapkan fitur flags untuk peluncuran kemampuan secara bertahap  
-- Rancang antarmuka pengguna yang beradaptasi dengan fitur AI yang ditingkatkan  
+**Evolusi Fitur**
+- Rancang arsitektur modular yang dapat mengakomodasi kemampuan AI baru
+- Rencanakan integrasi API Windows AI yang sedang berkembang
+- Terapkan fitur flags untuk peluncuran kemampuan secara bertahap
+- Rancang antarmuka pengguna yang dapat beradaptasi dengan fitur AI yang ditingkatkan
 
-## Kesimpulan  
+## Kesimpulan
 
-Pengembangan Windows Edge AI mewakili konvergensi kemampuan AI yang kuat dengan platform Windows yang tangguh, aman, dan skalabel. Dengan menguasai ekosistem Windows AI Foundry, pengembang dapat menciptakan aplikasi cerdas yang memberikan pengalaman pengguna luar biasa sambil mempertahankan standar privasi, keamanan, dan kinerja tertinggi.  
+Pengembangan Windows Edge AI mewakili konvergensi kemampuan AI yang kuat dengan platform Windows yang tangguh, aman, dan skalabel. Dengan menguasai ekosistem Windows AI Foundry, pengembang dapat menciptakan aplikasi cerdas yang memberikan pengalaman pengguna yang luar biasa sambil mempertahankan standar privasi, keamanan, dan kinerja tertinggi.
 
-Kombinasi Windows AI APIs, Foundry Local, dan Windows ML menyediakan fondasi yang tak tertandingi untuk membangun generasi berikutnya dari aplikasi Windows yang cerdas. Seiring AI terus berkembang, platform Windows memastikan bahwa aplikasi Anda akan berkembang dengan teknologi yang muncul sambil mempertahankan kompatibilitas dan kinerja di seluruh ekosistem perangkat keras Windows yang beragam.  
+Kombinasi Windows AI APIs, Foundry Local, dan Windows ML menyediakan fondasi yang tak tertandingi untuk membangun generasi berikutnya dari aplikasi Windows yang cerdas. Seiring AI terus berkembang, platform Windows memastikan bahwa aplikasi Anda akan berkembang dengan teknologi yang muncul sambil mempertahankan kompatibilitas dan kinerja di seluruh ekosistem perangkat keras Windows yang beragam.
 
-Baik Anda membangun aplikasi konsumen, solusi perusahaan, atau alat industri khusus, pengembangan Windows Edge AI memberdayakan Anda untuk menciptakan pengalaman yang cerdas, responsif, dan terintegrasi secara mendalam yang memanfaatkan potensi penuh perangkat Windows modern.  
+Baik Anda membangun aplikasi konsumen, solusi perusahaan, atau alat industri khusus, pengembangan Windows Edge AI memberdayakan Anda untuk menciptakan pengalaman yang cerdas, responsif, dan terintegrasi secara mendalam yang memanfaatkan potensi penuh perangkat Windows modern.
 
-## Sumber Daya Tambahan  
+## Sumber Daya Tambahan
 
-### Dokumentasi dan Pembelajaran  
-- [Windows AI Foundry Documentation](https://learn.microsoft.com/windows/ai/)  
-- [Windows AI APIs Reference](https://learn.microsoft.com/windows/ai/apis/)  
-- [Foundry Local Getting Started](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)  
-- [Windows ML Overview](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)  
+Untuk panduan langkah demi langkah Windows tentang Foundry Local (instalasi, CLI, endpoint dinamis, penggunaan SDK), lihat panduan repo: [foundrylocal.md](./foundrylocal.md).
 
-### Alat Pengembangan  
-- [AI Toolkit for Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)  
-- [AI Dev Gallery](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)  
-- [Windows AI Samples](https://learn.microsoft.com/windows/ai/samples/)  
+### Dokumentasi dan Pembelajaran
+- [Dokumentasi Windows AI Foundry](https://learn.microsoft.com/windows/ai/)
+- [Referensi Windows AI APIs](https://learn.microsoft.com/windows/ai/apis/)
+- [Foundry Local Getting Started](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)
+- [Ikhtisar Windows ML](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)
 
-### Komunitas dan Dukungan  
-- [Windows Developer Community](https://developer.microsoft.com/en-us/windows/)  
-- [Windows AI Foundry Blog](https://blogs.windows.com/windowsdeveloper/)  
-- [Microsoft Learn AI Training](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)  
+### Alat Pengembangan
+- [AI Toolkit untuk Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)
+- [AI Dev Gallery](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)
+- [Contoh Windows AI](https://learn.microsoft.com/windows/ai/samples/)
 
----  
-
-*Panduan ini dirancang untuk berkembang seiring dengan ekosistem Windows AI yang terus maju. Pembaruan rutin memastikan keselarasan dengan kemampuan platform terbaru dan praktik terbaik pengembangan.*  
+### Komunitas dan Dukungan
+- [Komunitas Pengembang Windows](https://developer.microsoft.com/en-us/windows/)
+- [Blog Windows AI Foundry](https://blogs.windows.com/windowsdeveloper/)
+- [Pelatihan Microsoft Learn AI](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)
 
 ---
 
-**Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berusaha untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan profesional oleh manusia. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.
+*Panduan ini dirancang untuk berkembang seiring dengan ekosistem Windows AI yang terus maju. Pembaruan rutin memastikan keselarasan dengan kemampuan platform terbaru dan praktik terbaik pengembangan.*
+
+---
+
