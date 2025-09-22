@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-15T17:18:50+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T12:03:07+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "fr"
 }
@@ -31,10 +31,10 @@ Windows ML offre une optimisation matérielle automatique sur l'ensemble de l'é
 Le moteur d'inférence Windows ML intégré élimine les exigences de configuration complexes, permettant aux développeurs de se concentrer sur la logique applicative plutôt que sur les préoccupations d'infrastructure.
 
 **Optimisation Copilot+ PC**  
-Des API spécialement conçues pour les appareils Windows de nouvelle génération équipés de processeurs neuronaux (NPU), offrant des performances exceptionnelles par watt.
+Des API spécialement conçues pour les appareils Windows de nouvelle génération avec des unités de traitement neuronal (NPU) dédiées, offrant des performances exceptionnelles par watt.
 
 **Écosystème de développeurs**  
-Outils riches, y compris l'intégration à Visual Studio, une documentation complète et des applications d'exemple qui accélèrent les cycles de développement.
+Des outils riches, notamment l'intégration à Visual Studio, une documentation complète et des applications d'exemple qui accélèrent les cycles de développement.
 
 ## Objectifs d'apprentissage
 
@@ -51,10 +51,10 @@ En suivant ce guide de développement Windows Edge AI, vous maîtriserez les com
 **Expertise en intégration d'API**  
 - Maîtriser les API Windows AI pour les applications textuelles, visuelles et multimodales  
 - Intégrer le modèle linguistique Phi Silica pour la génération de texte et le raisonnement  
-- Déployer des capacités de vision par ordinateur en utilisant les API de traitement d'images intégrées  
-- Personnaliser les modèles pré-entraînés avec des techniques LoRA (Low-Rank Adaptation)  
+- Déployer des capacités de vision par ordinateur à l'aide des API de traitement d'image intégrées  
+- Personnaliser des modèles pré-entraînés en utilisant des techniques LoRA (Low-Rank Adaptation)  
 
-**Implémentation locale avec Foundry**  
+**Implémentation locale Foundry**  
 - Explorer, évaluer et déployer des modèles linguistiques open-source à l'aide de Foundry Local CLI  
 - Comprendre l'optimisation et la quantification des modèles pour un déploiement local  
 - Implémenter des capacités IA hors ligne fonctionnant sans connectivité Internet  
@@ -68,7 +68,7 @@ En suivant ce guide de développement Windows Edge AI, vous maîtriserez les com
 
 ### Compétences en développement d'applications
 
-**Développement multiplateforme sur Windows**  
+**Développement Windows multiplateforme**  
 - Créer des applications alimentées par l'IA en utilisant .NET MAUI pour un déploiement universel sur Windows  
 - Intégrer des capacités IA dans les applications Win32, UWP et Web progressives  
 - Implémenter des conceptions d'interface utilisateur réactives adaptées aux états de traitement IA  
@@ -77,25 +77,25 @@ En suivant ce guide de développement Windows Edge AI, vous maîtriserez les com
 **Optimisation des performances**  
 - Profiler et optimiser les performances d'inférence IA sur différentes configurations matérielles  
 - Implémenter une gestion efficace de la mémoire pour les grands modèles linguistiques  
-- Concevoir des applications qui s'adaptent aux capacités matérielles disponibles  
+- Concevoir des applications qui se dégradent gracieusement en fonction des capacités matérielles disponibles  
 - Appliquer des stratégies de mise en cache pour les opérations IA fréquemment utilisées  
 
 **Prêt pour la production**  
 - Implémenter une gestion complète des erreurs et des mécanismes de secours  
 - Concevoir une télémétrie et un suivi des performances des applications IA  
 - Appliquer les meilleures pratiques de sécurité pour le stockage et l'exécution des modèles IA locaux  
-- Planifier des stratégies de déploiement pour les applications destinées aux entreprises et aux consommateurs  
+- Planifier des stratégies de déploiement pour les applications d'entreprise et grand public  
 
 ### Compréhension stratégique et commerciale
 
 **Architecture des applications IA**  
-- Concevoir des architectures hybrides optimisant entre le traitement IA local et cloud  
+- Concevoir des architectures hybrides optimisant le traitement IA local et cloud  
 - Évaluer les compromis entre la taille des modèles, la précision et la vitesse d'inférence  
 - Planifier des architectures de flux de données qui préservent la confidentialité tout en permettant l'intelligence  
 - Implémenter des solutions IA rentables qui évoluent avec les demandes des utilisateurs  
 
 **Positionnement sur le marché**  
-- Comprendre les avantages compétitifs des applications IA natives Windows  
+- Comprendre les avantages concurrentiels des applications IA natives Windows  
 - Identifier les cas d'utilisation où l'IA embarquée offre des expériences utilisateur supérieures  
 - Développer des stratégies de mise sur le marché pour les applications Windows enrichies par l'IA  
 - Positionner les applications pour tirer parti des avantages de l'écosystème Windows  
@@ -110,19 +110,19 @@ Les API Windows AI offrent des capacités IA prêtes à l'emploi alimentées par
 
 **Modèle linguistique Phi Silica**  
 - Modèle linguistique compact mais puissant pour la génération de texte et le raisonnement  
-- Optimisé pour une inférence en temps réel avec une consommation énergétique minimale  
+- Optimisé pour une inférence en temps réel avec une consommation d'énergie minimale  
 - Support de la personnalisation via des techniques LoRA  
 - Intégration avec la recherche sémantique et la récupération de connaissances Windows  
 
 **API de vision par ordinateur**  
-- **Reconnaissance de texte (OCR)** : Extraire du texte d'images avec une grande précision  
+- **Reconnaissance de texte (OCR)** : Extraire du texte des images avec une grande précision  
 - **Super résolution d'image** : Améliorer la qualité des images grâce à des modèles IA locaux  
-- **Segmentation d'image** : Identifier et isoler des objets spécifiques dans des images  
+- **Segmentation d'image** : Identifier et isoler des objets spécifiques dans les images  
 - **Description d'image** : Générer des descriptions textuelles détaillées pour du contenu visuel  
-- **Effacement d'objets** : Supprimer des objets indésirables des images grâce à des techniques IA  
+- **Effacement d'objets** : Supprimer des objets indésirables des images grâce à l'inpainting IA  
 
 **Capacités multimodales**  
-- **Intégration vision-langage** : Combiner la compréhension textuelle et visuelle  
+- **Intégration vision-langage** : Combiner la compréhension du texte et des images  
 - **Recherche sémantique** : Permettre des requêtes en langage naturel sur du contenu multimédia  
 - **Récupération de connaissances** : Construire des expériences de recherche intelligentes avec des données locales  
 
@@ -135,7 +135,7 @@ Foundry Local offre aux développeurs un accès rapide à des modèles linguisti
 **Catalogue de modèles**  
 - Collection complète de modèles open-source pré-optimisés  
 - Modèles optimisés pour les CPU, GPU et NPU pour un déploiement immédiat  
-- Support des familles de modèles populaires, y compris Llama, Mistral, Phi et modèles spécialisés  
+- Support des familles de modèles populaires, notamment Llama, Mistral, Phi et des modèles spécialisés  
 
 **Intégration CLI**  
 - Interface en ligne de commande pour la gestion et le déploiement des modèles  
@@ -149,13 +149,13 @@ Foundry Local offre aux développeurs un accès rapide à des modèles linguisti
 
 ### 3. Windows ML
 
-Windows ML constitue la plateforme IA centrale et le runtime d'inférence intégré sur Windows, permettant aux développeurs de déployer des modèles personnalisés efficacement sur l'écosystème matériel Windows.
+Windows ML est la plateforme IA centrale et le runtime d'inférence intégré sur Windows, permettant aux développeurs de déployer efficacement des modèles personnalisés sur l'écosystème matériel Windows.
 
 #### Avantages de l'architecture
 
 **Support matériel universel**  
 - Optimisation automatique pour les technologies AMD, Intel, NVIDIA et Qualcomm  
-- Support pour l'exécution sur CPU, GPU et NPU avec basculement transparent  
+- Support de l'exécution sur CPU, GPU et NPU avec basculement transparent  
 - Abstraction matérielle éliminant le travail d'optimisation spécifique à la plateforme  
 
 **Flexibilité des modèles**  
@@ -163,9 +163,9 @@ Windows ML constitue la plateforme IA centrale et le runtime d'inférence intég
 - Déploiement de modèles personnalisés avec des performances de niveau production  
 - Intégration avec les architectures d'applications Windows existantes  
 
-**Intégration entreprise**  
+**Intégration d'entreprise**  
 - Compatible avec les cadres de sécurité et de conformité Windows  
-- Support pour le déploiement et la gestion d'entreprise  
+- Support des outils de déploiement et de gestion d'entreprise  
 - Intégration avec les systèmes de gestion et de surveillance des appareils Windows  
 
 ## Flux de travail de développement
@@ -175,7 +175,7 @@ Windows ML constitue la plateforme IA centrale et le runtime d'inférence intég
 **Préparation de l'environnement de développement**  
 1. Installer Visual Studio avec l'extension AI Toolkit  
 2. Configurer les outils CLI Windows AI Foundry  
-3. Configurer l'environnement de test des modèles locaux  
+3. Configurer un environnement de test de modèles locaux  
 4. Établir des outils de profilage et de surveillance des performances  
 
 **Exploration de la galerie de développement IA**  
@@ -194,7 +194,7 @@ Windows ML constitue la plateforme IA centrale et le runtime d'inférence intég
 
 **Évaluation des modèles**  
 - Utiliser Foundry Local pour tester des modèles open-source adaptés à votre cas d'utilisation  
-- Comparer les API Windows AI avec les exigences des modèles personnalisés  
+- Comparer les API Windows AI aux exigences des modèles personnalisés  
 - Évaluer les compromis entre la taille des modèles, la précision et la vitesse d'inférence  
 - Prototyper des approches d'intégration avec les modèles sélectionnés  
 
@@ -217,7 +217,7 @@ Windows ML constitue la plateforme IA centrale et le runtime d'inférence intég
 **Optimisation des performances**  
 - Profiler les performances des applications sur les configurations matérielles cibles  
 - Optimiser l'utilisation de la mémoire et les stratégies de chargement des modèles  
-- Implémenter des comportements adaptatifs en fonction des capacités matérielles disponibles  
+- Implémenter un comportement adaptatif en fonction des capacités matérielles disponibles  
 - Affiner l'expérience utilisateur pour différents scénarios de performance  
 
 **Déploiement en production**  
@@ -250,14 +250,14 @@ Créer un système d'inventaire alimenté par l'IA pour les applications de comm
 
 **Technologies utilisées :**  
 - Segmentation d'image pour l'identification des produits  
-- Modèles de vision personnalisés pour la classification par marque et catégorie  
-- Déploiement local de modèles linguistiques spécialisés pour le commerce de détail via Foundry Local  
+- Modèles de vision personnalisés pour la classification des marques et des catégories  
+- Déploiement Foundry Local de modèles linguistiques spécialisés pour le commerce de détail  
 - Intégration avec les systèmes de point de vente (POS) et d'inventaire existants  
 
 **Approche d'implémentation :**  
 - Intégrer des caméras pour la numérisation en temps réel des produits  
-- Implémenter la reconnaissance de produits par code-barres et visuel  
-- Ajouter des requêtes d'inventaire en langage naturel en utilisant des modèles linguistiques locaux  
+- Implémenter la reconnaissance visuelle et par code-barres des produits  
+- Ajouter des requêtes d'inventaire en langage naturel à l'aide de modèles linguistiques locaux  
 - Concevoir une architecture évolutive pour un déploiement multi-magasins  
 
 ### Exemple 3 : Assistant de documentation médicale
@@ -282,7 +282,7 @@ Développer un outil de documentation médicale respectueux de la vie privée :
 
 **Optimisation NPU**  
 - Concevoir des applications exploitant les capacités NPU sur les PC Copilot+  
-- Implémenter un basculement fluide vers GPU/CPU sur les appareils sans NPU  
+- Implémenter un basculement gracieux vers GPU/CPU sur les appareils sans NPU  
 - Optimiser les formats de modèles pour l'accélération spécifique au NPU  
 - Surveiller l'utilisation du NPU et les caractéristiques thermiques  
 
@@ -290,10 +290,10 @@ Développer un outil de documentation médicale respectueux de la vie privée :
 - Implémenter des stratégies efficaces de chargement et de mise en cache des modèles  
 - Utiliser le mappage mémoire pour les grands modèles afin de réduire le temps de démarrage  
 - Concevoir des applications conscientes de la mémoire pour les appareils à ressources limitées  
-- Implémenter la quantification des modèles pour l'optimisation de la mémoire  
+- Implémenter la quantification des modèles pour optimiser la mémoire  
 
 **Efficacité énergétique**  
-- Optimiser les opérations IA pour une consommation énergétique minimale  
+- Optimiser les opérations IA pour une consommation d'énergie minimale  
 - Implémenter un traitement adaptatif en fonction de l'état de la batterie  
 - Concevoir un traitement en arrière-plan efficace pour des opérations IA continues  
 - Utiliser des outils de profilage énergétique pour optimiser l'utilisation de l'énergie  
@@ -324,17 +324,17 @@ Développer un outil de documentation médicale respectueux de la vie privée :
 
 **Sécurité des modèles**  
 - Valider l'intégrité des modèles avant leur chargement et leur exécution  
-- Implémenter des mécanismes de mise à jour sécurisés pour les modèles  
+- Implémenter des mécanismes sécurisés de mise à jour des modèles  
 - Utiliser des modèles signés pour prévenir les altérations  
 - Appliquer des contrôles d'accès pour les fichiers de modèles et les configurations  
 
 ### Considérations de conformité
 
 **Alignement réglementaire**  
-- Concevoir des applications conformes au RGPD, HIPAA et autres exigences réglementaires  
+- Concevoir des applications conformes au RGPD, HIPAA et autres réglementations  
 - Implémenter une journalisation des audits pour les processus décisionnels IA  
 - Fournir des fonctionnalités de transparence pour les résultats générés par l'IA  
-- Permettre aux utilisateurs de contrôler le traitement des données par l'IA  
+- Permettre aux utilisateurs de contrôler le traitement des données IA  
 
 **Sécurité d'entreprise**  
 - Intégrer les politiques de sécurité d'entreprise Windows  
@@ -350,7 +350,7 @@ Développer un outil de documentation médicale respectueux de la vie privée :
 - Valider la compatibilité des modèles ONNX avec Windows ML  
 - Vérifier l'intégrité des fichiers de modèles et les exigences de format  
 - Confirmer les exigences matérielles pour des modèles spécifiques  
-- Déboguer les problèmes d'allocation mémoire lors du chargement des modèles  
+- Déboguer les problèmes d'allocation de mémoire lors du chargement des modèles  
 
 **Problèmes de performance**  
 - Profiler les performances des applications sur différentes configurations matérielles  
@@ -359,45 +359,45 @@ Développer un outil de documentation médicale respectueux de la vie privée :
 - Implémenter une surveillance des performances et des alertes  
 
 **Difficultés d'intégration**  
-- Déboguer les problèmes d'intégration des API avec
-- Utilisez Foundry Local CLI pour tester et valider les modèles  
-- Utilisez les outils de test de l'API Windows AI pour vérifier l'intégration  
-- Implémentez une journalisation personnalisée pour surveiller les opérations d'IA  
-- Créez des tests automatisés pour garantir la fiabilité des fonctionnalités d'IA  
+- Déboguer les problèmes d'intégration des API avec une gestion appropriée des
+- Exploiter Foundry Local CLI pour tester et valider les modèles  
+- Utiliser les outils de test de l'API Windows AI pour vérifier l'intégration  
+- Implémenter une journalisation personnalisée pour surveiller les opérations d'IA  
+- Créer des tests automatisés pour garantir la fiabilité des fonctionnalités d'IA  
 
 ## Préparer vos applications pour l'avenir  
 
 ### Technologies émergentes  
 
 **Matériel de nouvelle génération**  
-- Concevez des applications pour tirer parti des futures capacités des NPU  
-- Préparez-vous à des modèles de taille et de complexité accrues  
-- Implémentez des architectures adaptatives pour du matériel en évolution  
-- Envisagez des algorithmes compatibles avec l'informatique quantique  
+- Concevoir des applications pour tirer parti des futures capacités des NPU  
+- Prévoir une augmentation de la taille et de la complexité des modèles  
+- Implémenter des architectures adaptatives pour s'adapter au matériel en évolution  
+- Envisager des algorithmes compatibles avec les technologies quantiques  
 
 **Capacités avancées de l'IA**  
-- Préparez-vous à l'intégration multimodale de l'IA sur davantage de types de données  
-- Planifiez une collaboration en temps réel entre plusieurs appareils via l'IA  
-- Concevez pour des capacités d'apprentissage fédéré  
-- Envisagez des architectures hybrides intelligence edge-cloud  
+- Se préparer à l'intégration multimodale de l'IA sur davantage de types de données  
+- Planifier une collaboration en temps réel entre plusieurs appareils via l'IA  
+- Concevoir pour des capacités d'apprentissage fédéré  
+- Envisager des architectures hybrides intelligence edge-cloud  
 
 ### Apprentissage et adaptation continus  
 
 **Mises à jour des modèles**  
-- Implémentez des mécanismes de mise à jour des modèles sans interruption  
-- Concevez des applications capables de s'adapter aux améliorations des modèles  
-- Préparez la compatibilité rétroactive avec les modèles existants  
-- Implémentez des tests A/B pour évaluer les performances des modèles  
+- Implémenter des mécanismes de mise à jour des modèles sans interruption  
+- Concevoir des applications capables de s'adapter aux améliorations des modèles  
+- Prévoir une compatibilité rétroactive avec les modèles existants  
+- Mettre en place des tests A/B pour évaluer les performances des modèles  
 
 **Évolution des fonctionnalités**  
-- Concevez des architectures modulaires qui intègrent de nouvelles capacités d'IA  
-- Planifiez l'intégration des nouvelles API Windows AI émergentes  
-- Implémentez des indicateurs de fonctionnalités pour un déploiement progressif des capacités  
-- Concevez des interfaces utilisateur qui s'adaptent aux fonctionnalités améliorées de l'IA  
+- Concevoir des architectures modulaires pour intégrer de nouvelles capacités d'IA  
+- Planifier l'intégration des nouvelles API Windows AI émergentes  
+- Implémenter des indicateurs de fonctionnalités pour un déploiement progressif des capacités  
+- Concevoir des interfaces utilisateur capables de s'adapter aux fonctionnalités améliorées de l'IA  
 
 ## Conclusion  
 
-Le développement de l'IA Edge sur Windows représente la convergence de capacités puissantes d'IA avec la plateforme Windows robuste, sécurisée et évolutive. En maîtrisant l'écosystème Windows AI Foundry, les développeurs peuvent créer des applications intelligentes offrant des expériences utilisateur exceptionnelles tout en respectant les normes les plus élevées en matière de confidentialité, sécurité et performance.  
+Le développement de l'IA Edge sur Windows représente la convergence de capacités puissantes d'IA avec la plateforme Windows robuste, sécurisée et évolutive. En maîtrisant l'écosystème Windows AI Foundry, les développeurs peuvent créer des applications intelligentes offrant des expériences utilisateur exceptionnelles tout en respectant les normes les plus élevées en matière de confidentialité, de sécurité et de performance.  
 
 La combinaison des API Windows AI, Foundry Local et Windows ML offre une base inégalée pour construire la prochaine génération d'applications intelligentes sur Windows. Alors que l'IA continue d'évoluer, la plateforme Windows garantit que vos applications évolueront avec les technologies émergentes tout en maintenant la compatibilité et les performances sur l'écosystème matériel diversifié de Windows.  
 
@@ -405,21 +405,23 @@ Que vous développiez des applications grand public, des solutions d'entreprise 
 
 ## Ressources supplémentaires  
 
+Pour un guide pas à pas sur Foundry Local (installation, CLI, point de terminaison dynamique, utilisation du SDK), consultez le guide du dépôt : [foundrylocal.md](./foundrylocal.md).  
+
 ### Documentation et apprentissage  
-- [Windows AI Foundry Documentation](https://learn.microsoft.com/windows/ai/)  
-- [Windows AI APIs Reference](https://learn.microsoft.com/windows/ai/apis/)  
-- [Foundry Local Getting Started](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)  
-- [Windows ML Overview](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)  
+- [Documentation Windows AI Foundry](https://learn.microsoft.com/windows/ai/)  
+- [Référence des API Windows AI](https://learn.microsoft.com/windows/ai/apis/)  
+- [Guide de démarrage Foundry Local](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)  
+- [Aperçu de Windows ML](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)  
 
 ### Outils de développement  
-- [AI Toolkit for Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)  
-- [AI Dev Gallery](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)  
-- [Windows AI Samples](https://learn.microsoft.com/windows/ai/samples/)  
+- [Toolkit IA pour Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)  
+- [Galerie de développement IA](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)  
+- [Exemples Windows AI](https://learn.microsoft.com/windows/ai/samples/)  
 
 ### Communauté et support  
-- [Windows Developer Community](https://developer.microsoft.com/en-us/windows/)  
-- [Windows AI Foundry Blog](https://blogs.windows.com/windowsdeveloper/)  
-- [Microsoft Learn AI Training](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)  
+- [Communauté des développeurs Windows](https://developer.microsoft.com/en-us/windows/)  
+- [Blog Windows AI Foundry](https://blogs.windows.com/windowsdeveloper/)  
+- [Formation IA sur Microsoft Learn](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)  
 
 ---  
 
@@ -427,5 +429,3 @@ Que vous développiez des applications grand public, des solutions d'entreprise 
 
 ---
 
-**Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction professionnelle réalisée par un humain. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
