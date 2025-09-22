@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-17T16:10:29+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T13:20:15+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "pl"
 }
@@ -11,30 +11,30 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Wprowadzenie
 
-Witamy w Windows Edge AI Development - kompleksowym przewodniku po tworzeniu inteligentnych aplikacji wykorzystujących moc sztucznej inteligencji na urządzeniach dzięki platformie Windows AI Foundry firmy Microsoft. Ten przewodnik jest przeznaczony dla programistów Windows, którzy chcą zintegrować najnowocześniejsze funkcje Edge AI w swoich aplikacjach, korzystając z pełnego zakresu akceleracji sprzętowej Windows.
+Witamy w Windows Edge AI Development - kompleksowym przewodniku po tworzeniu inteligentnych aplikacji wykorzystujących moc AI na urządzeniach dzięki platformie Windows AI Foundry firmy Microsoft. Ten przewodnik jest przeznaczony dla programistów Windows, którzy chcą zintegrować najnowocześniejsze funkcje Edge AI w swoich aplikacjach, korzystając z pełnego zakresu akceleracji sprzętowej Windows.
 
 ### Zalety Windows AI
 
-Windows AI Foundry to zintegrowana, niezawodna i bezpieczna platforma wspierająca pełny cykl życia programisty AI - od wyboru i dostosowania modelu po optymalizację i wdrożenie na CPU, GPU, NPU oraz hybrydowych architekturach chmurowych. Platforma ta demokratyzuje rozwój AI, oferując:
+Windows AI Foundry to zintegrowana, niezawodna i bezpieczna platforma wspierająca pełny cykl życia programisty AI - od wyboru modelu i jego dostosowania, po optymalizację i wdrożenie na CPU, GPU, NPU oraz hybrydowych architekturach chmurowych. Platforma ta demokratyzuje rozwój AI, oferując:
 
 - **Abstrakcję sprzętową**: Bezproblemowe wdrożenie na układach AMD, Intel, NVIDIA i Qualcomm
-- **Inteligencję na urządzeniu**: AI zachowujące prywatność, działające wyłącznie na lokalnym sprzęcie
+- **Inteligencję na urządzeniu**: AI działające lokalnie, chroniące prywatność użytkownika
 - **Optymalizację wydajności**: Modele zoptymalizowane dla konfiguracji sprzętowych Windows
 - **Gotowość dla przedsiębiorstw**: Funkcje bezpieczeństwa i zgodności na poziomie produkcyjnym
 
 ### Dlaczego Windows dla Edge AI?
 
 **Uniwersalne wsparcie sprzętowe**  
-Windows ML automatycznie optymalizuje sprzęt w całym ekosystemie Windows, zapewniając, że aplikacje AI działają optymalnie niezależnie od architektury układów.
+Windows ML automatycznie optymalizuje sprzęt w całym ekosystemie Windows, zapewniając, że aplikacje AI działają optymalnie niezależnie od architektury układu.
 
 **Zintegrowany runtime AI**  
-Wbudowany silnik inferencyjny Windows ML eliminuje skomplikowane wymagania konfiguracji, pozwalając programistom skupić się na logice aplikacji zamiast na kwestiach infrastrukturalnych.
+Wbudowany silnik inferencji Windows ML eliminuje skomplikowane wymagania konfiguracji, pozwalając programistom skupić się na logice aplikacji, a nie na problemach infrastrukturalnych.
 
 **Optymalizacja Copilot+ PC**  
 Dedykowane API zaprojektowane specjalnie dla urządzeń Windows nowej generacji z wbudowanymi jednostkami przetwarzania neuronowego (NPU), oferujące wyjątkową wydajność na wat.
 
 **Ekosystem dla programistów**  
-Bogate narzędzia, w tym integracja z Visual Studio, kompleksowa dokumentacja i przykładowe aplikacje przyspieszające cykle rozwoju.
+Bogate narzędzia, w tym integracja z Visual Studio, kompleksowa dokumentacja i przykładowe aplikacje, które przyspieszają cykle rozwoju.
 
 ## Cele nauki
 
@@ -56,9 +56,9 @@ Po ukończeniu tego przewodnika rozwoju Windows Edge AI, opanujesz kluczowe umie
 
 **Implementacja Foundry Local**  
 - Przeglądanie, ocenianie i wdrażanie otwartych modeli językowych za pomocą Foundry Local CLI  
-- Zrozumienie optymalizacji modeli i kwantyzacji dla lokalnego wdrożenia  
+- Zrozumienie optymalizacji modeli i ich kwantyzacji dla lokalnego wdrożenia  
 - Wdrażanie funkcji AI offline działających bez połączenia z internetem  
-- Zarządzanie cyklami życia modeli i ich aktualizacjami w środowiskach produkcyjnych  
+- Zarządzanie cyklem życia modeli i ich aktualizacjami w środowiskach produkcyjnych  
 
 **Wdrożenie Windows ML**  
 - Wprowadzanie niestandardowych modeli ONNX do aplikacji Windows za pomocą Windows ML  
@@ -76,7 +76,7 @@ Po ukończeniu tego przewodnika rozwoju Windows Edge AI, opanujesz kluczowe umie
 
 **Optymalizacja wydajności**  
 - Profilowanie i optymalizacja wydajności inferencji AI na różnych konfiguracjach sprzętowych  
-- Implementacja efektywnego zarządzania pamięcią dla dużych modeli językowych  
+- Wdrażanie efektywnego zarządzania pamięcią dla dużych modeli językowych  
 - Projektowanie aplikacji, które łagodnie degradują się w zależności od dostępnych możliwości sprzętowych  
 - Stosowanie strategii buforowania dla często używanych operacji AI  
 
@@ -89,10 +89,10 @@ Po ukończeniu tego przewodnika rozwoju Windows Edge AI, opanujesz kluczowe umie
 ### Zrozumienie biznesowe i strategiczne
 
 **Architektura aplikacji AI**  
-- Projektowanie hybrydowych architektur optymalizujących między lokalnym a chmurowym przetwarzaniem AI  
+- Projektowanie hybrydowych architektur optymalizujących przetwarzanie lokalne i chmurowe AI  
 - Ocena kompromisów między rozmiarem modelu, dokładnością a szybkością inferencji  
 - Planowanie architektur przepływu danych, które zachowują prywatność przy jednoczesnym umożliwieniu inteligencji  
-- Implementacja opłacalnych rozwiązań AI skalujących się wraz z wymaganiami użytkowników  
+- Wdrażanie opłacalnych rozwiązań AI, które skalują się wraz z wymaganiami użytkowników  
 
 **Pozycjonowanie na rynku**  
 - Zrozumienie przewag konkurencyjnych aplikacji AI natywnych dla Windows  
@@ -123,7 +123,7 @@ API Windows AI oferują gotowe funkcje AI zasilane modelami na urządzeniu, zopt
 
 **Funkcje multimodalne**  
 - **Integracja wizji i języka**: Łączenie rozumienia tekstu i obrazu  
-- **Wyszukiwanie semantyczne**: Umożliwienie zapytań w języku naturalnym w multimediach  
+- **Wyszukiwanie semantyczne**: Umożliwienie zapytań w języku naturalnym w treściach multimedialnych  
 - **Odzyskiwanie wiedzy**: Tworzenie inteligentnych doświadczeń wyszukiwania z lokalnymi danymi  
 
 ### 2. Foundry Local
@@ -144,18 +144,18 @@ Foundry Local zapewnia programistom szybki dostęp do gotowych modeli językowyc
 
 **Lokalne wdrożenie**  
 - Pełna operacja offline bez zależności od chmury  
-- Wsparcie dla niestandardowych formatów modeli i konfiguracji  
+- Wsparcie dla niestandardowych formatów i konfiguracji modeli  
 - Efektywne serwowanie modeli z automatyczną optymalizacją sprzętową  
 
 ### 3. Windows ML
 
-Windows ML działa jako podstawowa platforma AI i zintegrowany runtime inferencyjny na Windows, umożliwiając programistom efektywne wdrażanie niestandardowych modeli w szerokim ekosystemie sprzętowym Windows.
+Windows ML jest podstawową platformą AI i zintegrowanym runtime inferencji na Windows, umożliwiając programistom efektywne wdrażanie niestandardowych modeli w szerokim ekosystemie sprzętowym Windows.
 
 #### Korzyści architektury
 
 **Uniwersalne wsparcie sprzętowe**  
 - Automatyczna optymalizacja dla układów AMD, Intel, NVIDIA i Qualcomm  
-- Wsparcie dla wykonania na CPU, GPU i NPU z przejrzystym przełączaniem  
+- Wsparcie dla CPU, GPU i NPU z przejrzystym przełączaniem  
 - Abstrakcja sprzętowa eliminująca konieczność optymalizacji specyficznej dla platformy  
 
 **Elastyczność modeli**  
@@ -167,6 +167,141 @@ Windows ML działa jako podstawowa platforma AI i zintegrowany runtime inferency
 - Zgodność z ramami bezpieczeństwa i zgodności Windows  
 - Wsparcie dla narzędzi wdrożeniowych i zarządzania przedsiębiorstwem  
 - Integracja z systemami zarządzania i monitorowania urządzeń Windows  
+
+## Przepływ pracy rozwoju
+
+### Faza 1: Przygotowanie środowiska i konfiguracja narzędzi
+
+**Przygotowanie środowiska programistycznego**  
+1. Zainstaluj Visual Studio z rozszerzeniem AI Toolkit  
+2. Skonfiguruj narzędzia CLI Windows AI Foundry  
+3. Ustaw lokalne środowisko testowania modeli  
+4. Skonfiguruj narzędzia do profilowania wydajności i monitorowania  
+
+**Eksploracja AI Dev Gallery**  
+- Przeglądaj przykładowe aplikacje i implementacje referencyjne  
+- Testuj API Windows AI za pomocą interaktywnych demonstracji  
+- Przeglądaj kod źródłowy w poszukiwaniu najlepszych praktyk i wzorców  
+- Identyfikuj odpowiednie przykłady dla swojego konkretnego przypadku użycia  
+
+### Faza 2: Wybór i integracja modelu
+
+**Analiza wymagań**  
+- Zdefiniuj wymagania funkcjonalne dla funkcji AI  
+- Ustal ograniczenia wydajności i cele optymalizacji  
+- Oceń wymagania dotyczące prywatności i bezpieczeństwa  
+- Zaplanuj architekturę wdrożenia i strategie skalowania  
+
+**Ocena modelu**  
+- Użyj Foundry Local do testowania modeli open-source dla swojego przypadku użycia  
+- Porównaj API Windows AI z wymaganiami niestandardowych modeli  
+- Oceń kompromisy między rozmiarem modelu, dokładnością a szybkością inferencji  
+- Prototypuj podejścia integracyjne z wybranymi modelami  
+
+### Faza 3: Tworzenie aplikacji
+
+**Podstawowa integracja**  
+- Implementuj integrację API Windows AI z odpowiednią obsługą błędów  
+- Projektuj interfejsy użytkownika uwzględniające przepływy pracy przetwarzania AI  
+- Wdrażaj strategie buforowania i optymalizacji dla inferencji modeli  
+- Dodaj telemetrię i monitorowanie wydajności operacji AI  
+
+**Testowanie i walidacja**  
+- Testuj aplikacje na różnych konfiguracjach sprzętowych Windows  
+- Waliduj metryki wydajności w różnych warunkach obciążenia  
+- Implementuj automatyczne testowanie dla niezawodności funkcji AI  
+- Przeprowadzaj testy doświadczenia użytkownika z funkcjami wzbogaconymi o AI  
+
+### Faza 4: Optymalizacja i wdrożenie
+
+**Optymalizacja wydajności**  
+- Profiluj wydajność aplikacji na docelowych konfiguracjach sprzętowych  
+- Optymalizuj wykorzystanie pamięci i strategie ładowania modeli  
+- Implementuj adaptacyjne zachowanie w zależności od dostępnych możliwości sprzętowych  
+- Dostosuj doświadczenie użytkownika do różnych scenariuszy wydajności  
+
+**Wdrożenie produkcyjne**  
+- Pakuj aplikacje z odpowiednimi zależnościami modeli AI  
+- Implementuj mechanizmy aktualizacji dla modeli i logiki aplikacji  
+- Konfiguruj monitorowanie i analitykę dla środowisk produkcyjnych  
+- Planuj strategie wdrożenia dla przedsiębiorstw i konsumentów  
+
+## Praktyczne przykłady implementacji
+
+### Przykład 1: Inteligentna aplikacja do przetwarzania dokumentów
+
+Stwórz aplikację Windows, która przetwarza dokumenty za pomocą wielu funkcji AI:
+
+**Wykorzystane technologie:**  
+- Phi Silica do podsumowywania dokumentów i odpowiadania na pytania  
+- API OCR do wyodrębniania tekstu ze skanowanych dokumentów  
+- API Opisu Obrazu do analizy wykresów i diagramów  
+- Niestandardowe modele ONNX do klasyfikacji dokumentów  
+
+**Podejście do implementacji:**  
+- Projektuj modułową architekturę z wtyczkowymi komponentami AI  
+- Implementuj asynchroniczne przetwarzanie dla dużych partii dokumentów  
+- Dodaj wskaźniki postępu i wsparcie anulowania dla długotrwałych operacji  
+- Uwzględnij funkcję offline dla przetwarzania wrażliwych dokumentów  
+
+### Przykład 2: System zarządzania zapasami w handlu detalicznym
+
+Stwórz system zarządzania zapasami zasilany AI dla aplikacji handlowych:
+
+**Wykorzystane technologie:**  
+- Segmentacja obrazu do identyfikacji produktów  
+- Niestandardowe modele wizji do klasyfikacji marek i kategorii  
+- Wdrożenie specjalistycznych modeli językowych handlu detalicznego za pomocą Foundry Local  
+- Integracja z istniejącymi systemami POS i zarządzania zapasami  
+
+**Podejście do implementacji:**  
+- Buduj integrację z kamerami do skanowania produktów w czasie rzeczywistym  
+- Implementuj rozpoznawanie kodów kreskowych i wizualne rozpoznawanie produktów  
+- Dodaj naturalne zapytania dotyczące zapasów za pomocą lokalnych modeli językowych  
+- Projektuj skalowalną architekturę dla wdrożenia w wielu sklepach  
+
+### Przykład 3: Asystent dokumentacji medycznej
+
+Opracuj narzędzie do dokumentacji medycznej chroniące prywatność:
+
+**Wykorzystane technologie:**  
+- Phi Silica do generowania notatek medycznych i wsparcia decyzji klinicznych  
+- OCR do digitalizacji ręcznie pisanych dokumentów medycznych  
+- Niestandardowe modele językowe medyczne wdrożone za pomocą Windows ML  
+- Lokalna pamięć wektorowa do odzyskiwania wiedzy medycznej  
+
+**Podejście do implementacji:**  
+- Zapewnij pełną operację offline dla ochrony prywatności pacjenta  
+- Implementuj walidację terminologii medycznej i sugestie  
+- Dodaj rejestrowanie audytowe dla zgodności regulacyjnej  
+- Projektuj integrację z istniejącymi systemami elektronicznej dokumentacji medycznej  
+
+## Strategie optymalizacji wydajności
+
+### Rozwój świadomy sprzętu
+
+**Optymalizacja NPU**  
+- Projektuj aplikacje wykorzystujące możliwości NPU na urządzeniach Copilot+ PC  
+- Implementuj łagodne przejście na GPU/CPU na urządzeniach bez NPU  
+- Optymalizuj formaty modeli dla przyspieszenia specyficznego dla NPU  
+- Monitoruj wykorzystanie NPU i charakterystyki termiczne  
+
+**Zarządzanie pamięcią**  
+- Implementuj efektywne strategie ładowania i buforowania modeli  
+- Używaj mapowania pamięci dla dużych modeli, aby skrócić czas uruchamiania  
+- Projektuj aplikacje świadome pamięci dla urządzeń o ograniczonych zasobach  
+- Implementuj kwantyzację modeli dla optymalizacji pamięci  
+
+**Efektywność baterii**  
+- Optymalizuj operacje AI pod kątem minimalnego zużycia energii  
+- Implementuj adaptacyjne przetwarzanie w zależności od stanu baterii  
+- Projektuj efektywne przetwarzanie w tle dla ciągłych operacji AI  
+- Używaj narzędzi do profilowania energii, aby zoptymalizować zużycie energii  
+
+### Rozważania dotyczące skalowalności
+
+**Wielowątkowość**  
+- Projektuj
 - Wykorzystaj Foundry Local CLI do testowania i walidacji modeli
 - Użyj narzędzi testowych Windows AI API do weryfikacji integracji
 - Zaimplementuj niestandardowe logowanie do monitorowania operacji AI
@@ -183,16 +318,16 @@ Windows ML działa jako podstawowa platforma AI i zintegrowany runtime inferency
 - Rozważ algorytmy gotowe na technologie kwantowe dla przyszłej kompatybilności
 
 **Zaawansowane możliwości AI**
-- Przygotuj się na integrację multimodalnej AI z większą ilością typów danych
+- Przygotuj się na integrację multimodalnej AI z większą liczbą typów danych
 - Planuj współpracę AI w czasie rzeczywistym między wieloma urządzeniami
-- Projektuj dla możliwości uczenia federacyjnego
+- Projektuj z myślą o możliwościach uczenia federacyjnego
 - Rozważ hybrydowe architektury inteligencji edge-cloud
 
 ### Ciągłe uczenie się i adaptacja
 
 **Aktualizacje modeli**
 - Wdrażaj mechanizmy płynnych aktualizacji modeli
-- Projektuj aplikacje, aby dostosowywały się do ulepszonych możliwości modeli
+- Projektuj aplikacje, które dostosowują się do ulepszonych możliwości modeli
 - Planuj kompatybilność wsteczną z istniejącymi modelami
 - Wdrażaj testy A/B do oceny wydajności modeli
 
@@ -204,13 +339,15 @@ Windows ML działa jako podstawowa platforma AI i zintegrowany runtime inferency
 
 ## Podsumowanie
 
-Rozwój Windows Edge AI reprezentuje połączenie potężnych możliwości AI z solidną, bezpieczną i skalowalną platformą Windows. Opanowując ekosystem Windows AI Foundry, deweloperzy mogą tworzyć inteligentne aplikacje, które zapewniają wyjątkowe doświadczenia użytkownika, jednocześnie utrzymując najwyższe standardy prywatności, bezpieczeństwa i wydajności.
+Rozwój Windows Edge AI reprezentuje połączenie potężnych możliwości AI z solidną, bezpieczną i skalowalną platformą Windows. Opanowując ekosystem Windows AI Foundry, programiści mogą tworzyć inteligentne aplikacje, które zapewniają wyjątkowe doświadczenia użytkownika, jednocześnie utrzymując najwyższe standardy prywatności, bezpieczeństwa i wydajności.
 
-Połączenie Windows AI API, Foundry Local i Windows ML zapewnia niezrównaną podstawę do budowy kolejnej generacji inteligentnych aplikacji na Windows. W miarę jak AI nadal się rozwija, platforma Windows gwarantuje, że Twoje aplikacje będą skalować się wraz z nowymi technologiami, zachowując kompatybilność i wydajność w różnorodnym ekosystemie sprzętu Windows.
+Połączenie Windows AI API, Foundry Local i Windows ML zapewnia niezrównaną podstawę do budowy kolejnej generacji inteligentnych aplikacji na Windows. W miarę jak AI się rozwija, platforma Windows gwarantuje, że Twoje aplikacje będą skalować się wraz z nowymi technologiami, zachowując kompatybilność i wydajność w różnorodnym ekosystemie sprzętu Windows.
 
 Niezależnie od tego, czy tworzysz aplikacje konsumenckie, rozwiązania dla przedsiębiorstw, czy specjalistyczne narzędzia branżowe, rozwój Windows Edge AI umożliwia tworzenie inteligentnych, responsywnych i głęboko zintegrowanych doświadczeń, które wykorzystują pełny potencjał nowoczesnych urządzeń Windows.
 
 ## Dodatkowe zasoby
+
+Aby uzyskać szczegółowy przewodnik po Foundry Local (instalacja, CLI, dynamiczne punkty końcowe, użycie SDK), zobacz przewodnik repozytorium: [foundrylocal.md](./foundrylocal.md).
 
 ### Dokumentacja i nauka
 - [Windows AI Foundry Documentation](https://learn.microsoft.com/windows/ai/)
@@ -234,5 +371,3 @@ Niezależnie od tego, czy tworzysz aplikacje konsumenckie, rozwiązania dla prze
 
 ---
 
-**Zastrzeżenie**:  
-Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za źródło autorytatywne. W przypadku informacji o kluczowym znaczeniu zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.
