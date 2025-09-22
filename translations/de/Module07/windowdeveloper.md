@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-17T13:55:03+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T12:48:56+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "de"
 }
@@ -11,26 +11,26 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Einführung
 
-Willkommen bei Windows Edge AI Development – Ihrem umfassenden Leitfaden zum Erstellen intelligenter Anwendungen, die die Leistung von KI direkt auf dem Gerät nutzen, basierend auf der Windows AI Foundry-Plattform von Microsoft. Dieser Leitfaden richtet sich speziell an Windows-Entwickler, die modernste Edge-KI-Funktionen in ihre Anwendungen integrieren möchten und dabei die gesamte Bandbreite der Windows-Hardwarebeschleunigung nutzen.
+Willkommen bei der Windows Edge AI Entwicklung – Ihrem umfassenden Leitfaden zum Erstellen intelligenter Anwendungen, die die Leistung von KI direkt auf dem Gerät nutzen, basierend auf der Windows AI Foundry Plattform von Microsoft. Dieser Leitfaden richtet sich speziell an Windows-Entwickler, die modernste Edge-KI-Funktionen in ihre Anwendungen integrieren möchten und dabei die gesamte Hardware-Beschleunigung von Windows nutzen.
 
 ### Der Vorteil von Windows AI
 
-Windows AI Foundry bietet eine einheitliche, zuverlässige und sichere Plattform, die den gesamten Lebenszyklus eines KI-Entwicklers unterstützt – von der Modellauswahl und Feinabstimmung bis hin zur Optimierung und Bereitstellung über CPU-, GPU-, NPU- und hybride Cloud-Architekturen. Diese Plattform demokratisiert die KI-Entwicklung durch folgende Vorteile:
+Windows AI Foundry bietet eine einheitliche, zuverlässige und sichere Plattform, die den gesamten Lebenszyklus der KI-Entwicklung unterstützt – von der Modellauswahl und Feinabstimmung bis hin zur Optimierung und Bereitstellung auf CPU-, GPU-, NPU- und hybriden Cloud-Architekturen. Diese Plattform demokratisiert die KI-Entwicklung durch:
 
-- **Hardware-Abstraktion**: Nahtlose Bereitstellung auf AMD-, Intel-, NVIDIA- und Qualcomm-Chipsätzen
+- **Hardware-Abstraktion**: Nahtlose Bereitstellung auf AMD-, Intel-, NVIDIA- und Qualcomm-Chips
 - **Intelligenz auf dem Gerät**: Datenschutzfreundliche KI, die vollständig auf lokaler Hardware läuft
 - **Optimierte Leistung**: Modelle, die speziell für Windows-Hardwarekonfigurationen optimiert sind
 - **Unternehmensbereit**: Sicherheits- und Compliance-Funktionen auf Produktionsniveau
 
-### Warum Windows für Edge-KI?
+### Warum Windows für Edge AI?
 
 **Universelle Hardware-Unterstützung**  
 Windows ML bietet automatische Hardware-Optimierung im gesamten Windows-Ökosystem, sodass Ihre KI-Anwendungen unabhängig von der zugrunde liegenden Chip-Architektur optimal funktionieren.
 
 **Integrierte KI-Laufzeit**  
-Die integrierte Windows ML-Inferenz-Engine eliminiert komplexe Setup-Anforderungen, sodass Entwickler sich auf die Anwendungslogik statt auf Infrastrukturprobleme konzentrieren können.
+Die integrierte Windows ML Inferenz-Engine eliminiert komplexe Setup-Anforderungen, sodass Entwickler sich auf die Anwendungslogik statt auf Infrastrukturprobleme konzentrieren können.
 
-**Copilot+ PC-Optimierung**  
+**Copilot+ PC Optimierung**  
 Speziell entwickelte APIs für die nächste Generation von Windows-Geräten mit dedizierten Neural Processing Units (NPUs), die außergewöhnliche Leistung pro Watt bieten.
 
 **Entwickler-Ökosystem**  
@@ -38,73 +38,73 @@ Umfangreiche Tools wie die Integration in Visual Studio, umfassende Dokumentatio
 
 ## Lernziele
 
-Durch das Durcharbeiten dieses Windows Edge AI Entwicklungsleitfadens werden Sie die wesentlichen Fähigkeiten für die Erstellung produktionsreifer KI-Anwendungen auf der Windows-Plattform beherrschen.
+Durch das Abschließen dieses Leitfadens zur Windows Edge AI Entwicklung werden Sie die wesentlichen Fähigkeiten für die Erstellung produktionsreifer KI-Anwendungen auf der Windows-Plattform beherrschen.
 
 ### Kerntechnische Kompetenzen
 
 **Beherrschung der Windows AI Foundry**  
-- Verstehen der Architektur und Komponenten der Windows AI Foundry-Plattform  
-- Navigation durch den gesamten KI-Entwicklungslebenszyklus im Windows-Ökosystem  
-- Implementierung von Sicherheitsbest-Practices für KI-Anwendungen auf dem Gerät  
-- Optimierung von Anwendungen für verschiedene Windows-Hardwarekonfigurationen  
+- Verstehen der Architektur und Komponenten der Windows AI Foundry Plattform  
+- Navigieren durch den gesamten KI-Entwicklungszyklus im Windows-Ökosystem  
+- Implementieren von Sicherheitsbest-Practices für KI-Anwendungen auf dem Gerät  
+- Optimieren von Anwendungen für verschiedene Windows-Hardwarekonfigurationen  
 
 **API-Integrationskompetenz**  
-- Beherrschung der Windows AI APIs für Text-, Bild- und multimodale Anwendungen  
-- Implementierung der Phi Silica Sprachmodell-Integration für Textgenerierung und logisches Denken  
-- Bereitstellung von Computer-Vision-Funktionen mit integrierten Bildverarbeitungs-APIs  
-- Anpassung vortrainierter Modelle mit LoRA (Low-Rank Adaptation)-Techniken  
+- Beherrschen der Windows AI APIs für Text-, Bild- und multimodale Anwendungen  
+- Implementieren der Phi Silica Sprachmodell-Integration für Textgenerierung und logisches Denken  
+- Bereitstellen von Computer-Vision-Funktionen mit integrierten Bildverarbeitungs-APIs  
+- Anpassen vortrainierter Modelle mit LoRA (Low-Rank Adaptation) Techniken  
 
 **Lokale Implementierung der Foundry**  
 - Durchsuchen, Bewerten und Bereitstellen von Open-Source-Sprachmodellen mit Foundry Local CLI  
 - Verstehen von Modelloptimierung und Quantisierung für lokale Bereitstellung  
-- Implementierung von Offline-KI-Funktionen, die ohne Internetverbindung funktionieren  
-- Verwaltung von Modelllebenszyklen und Updates in Produktionsumgebungen  
+- Implementieren von Offline-KI-Funktionen, die ohne Internetverbindung funktionieren  
+- Verwalten von Modell-Lebenszyklen und Updates in Produktionsumgebungen  
 
-**Windows ML-Bereitstellung**  
-- Integration benutzerdefinierter ONNX-Modelle in Windows-Anwendungen mit Windows ML  
-- Nutzung automatischer Hardwarebeschleunigung über CPU-, GPU- und NPU-Architekturen  
-- Implementierung von Echtzeit-Inferenz mit optimaler Ressourcennutzung  
-- Design skalierbarer KI-Anwendungen für verschiedene Windows-Gerätekategorien  
+**Windows ML Bereitstellung**  
+- Eigene ONNX-Modelle in Windows-Anwendungen mit Windows ML einbringen  
+- Automatische Hardware-Beschleunigung über CPU-, GPU- und NPU-Architekturen nutzen  
+- Echtzeit-Inferenz mit optimaler Ressourcennutzung implementieren  
+- Skalierbare KI-Anwendungen für verschiedene Windows-Gerätekategorien entwerfen  
 
-### Fähigkeiten in der Anwendungsentwicklung
+### Fähigkeiten zur Anwendungsentwicklung
 
 **Plattformübergreifende Windows-Entwicklung**  
-- Erstellung KI-gestützter Anwendungen mit .NET MAUI für universelle Windows-Bereitstellung  
-- Integration von KI-Funktionen in Win32-, UWP- und Progressive Web Applications  
-- Implementierung responsiver UI-Designs, die sich an KI-Verarbeitungszustände anpassen  
-- Umgang mit asynchronen KI-Operationen unter Berücksichtigung der Benutzererfahrung  
+- KI-gestützte Anwendungen mit .NET MAUI für universelle Windows-Bereitstellung erstellen  
+- KI-Funktionen in Win32-, UWP- und Progressive Web Applications integrieren  
+- Responsive UI-Designs implementieren, die sich an KI-Verarbeitungszustände anpassen  
+- Asynchrone KI-Operationen mit geeigneten Benutzererfahrungsmustern handhaben  
 
 **Leistungsoptimierung**  
-- Profilierung und Optimierung der KI-Inferenzleistung über verschiedene Hardwarekonfigurationen  
-- Implementierung effizienter Speicherverwaltung für große Sprachmodelle  
-- Design von Anwendungen, die sich basierend auf verfügbaren Hardwarekapazitäten anpassen  
-- Anwendung von Caching-Strategien für häufig genutzte KI-Operationen  
+- Profilieren und Optimieren der KI-Inferenzleistung über verschiedene Hardwarekonfigurationen  
+- Effizientes Speichermanagement für große Sprachmodelle implementieren  
+- Anwendungen entwerfen, die sich basierend auf verfügbaren Hardware-Funktionen anpassen  
+- Caching-Strategien für häufig genutzte KI-Operationen anwenden  
 
 **Produktionsreife**  
-- Implementierung umfassender Fehlerbehandlungs- und Fallback-Mechanismen  
-- Design von Telemetrie und Monitoring für die Leistung von KI-Anwendungen  
-- Anwendung von Sicherheitsbest-Practices für lokale KI-Modellspeicherung und -ausführung  
-- Planung von Bereitstellungsstrategien für Unternehmens- und Verbraucheranwendungen  
+- Umfassendes Fehlerhandling und Fallback-Mechanismen implementieren  
+- Telemetrie und Monitoring für die Leistung von KI-Anwendungen entwerfen  
+- Sicherheitsbest-Practices für lokale KI-Modellspeicherung und -ausführung anwenden  
+- Bereitstellungsstrategien für Unternehmens- und Verbraucheranwendungen planen  
 
 ### Geschäftliches und strategisches Verständnis
 
 **Architektur von KI-Anwendungen**  
-- Design hybrider Architekturen, die lokale und Cloud-KI-Verarbeitung optimieren  
-- Bewertung von Kompromissen zwischen Modellgröße, Genauigkeit und Inferenzgeschwindigkeit  
-- Planung von Datenflussarchitekturen, die Datenschutz gewährleisten und gleichzeitig Intelligenz ermöglichen  
-- Implementierung kosteneffizienter KI-Lösungen, die sich an Benutzeranforderungen anpassen  
+- Hybride Architekturen entwerfen, die lokale und Cloud-KI-Verarbeitung optimieren  
+- Abwägungen zwischen Modellgröße, Genauigkeit und Inferenzgeschwindigkeit bewerten  
+- Datenflussarchitekturen planen, die Datenschutz wahren und gleichzeitig Intelligenz ermöglichen  
+- Kostenwirksame KI-Lösungen implementieren, die mit Benutzeranforderungen skalieren  
 
 **Marktpositionierung**  
-- Verstehen der Wettbewerbsvorteile von Windows-nativen KI-Anwendungen  
-- Identifizierung von Anwendungsfällen, bei denen KI auf dem Gerät überlegene Benutzererfahrungen bietet  
-- Entwicklung von Go-to-Market-Strategien für KI-gestützte Windows-Anwendungen  
-- Positionierung von Anwendungen zur Nutzung der Vorteile des Windows-Ökosystems  
+- Wettbewerbsvorteile von Windows-nativen KI-Anwendungen verstehen  
+- Anwendungsfälle identifizieren, bei denen KI auf dem Gerät überlegene Benutzererfahrungen bietet  
+- Go-to-Market-Strategien für KI-gestützte Windows-Anwendungen entwickeln  
+- Anwendungen positionieren, um die Vorteile des Windows-Ökosystems zu nutzen  
 
-## Komponenten der Windows AI Foundry-Plattform
+## Komponenten der Windows AI Foundry Plattform
 
 ### 1. Windows AI APIs
 
-Windows AI APIs bieten einsatzbereite KI-Funktionen, die von lokal ausgeführten Modellen unterstützt werden und für Effizienz und Leistung auf Copilot+ PC-Geräten optimiert sind – mit minimalem Setup-Aufwand.
+Windows AI APIs bieten einsatzbereite KI-Funktionen, die von Modellen auf dem Gerät unterstützt werden und für Effizienz und Leistung auf Copilot+ PC-Geräten optimiert sind, mit minimalem Setup-Aufwand.
 
 #### Kern-API-Kategorien
 
@@ -114,23 +114,23 @@ Windows AI APIs bieten einsatzbereite KI-Funktionen, die von lokal ausgeführten
 - Unterstützung für benutzerdefinierte Feinabstimmung mit LoRA-Techniken  
 - Integration mit Windows semantischer Suche und Wissensabruf  
 
-**Computer-Vision-APIs**  
-- **Texterkennung (OCR)**: Extrahieren von Text aus Bildern mit hoher Genauigkeit  
-- **Bild-Superauflösung**: Hochskalieren von Bildern mit lokalen KI-Modellen  
-- **Bildsegmentierung**: Identifizieren und Isolieren spezifischer Objekte in Bildern  
-- **Bildbeschreibung**: Erstellen detaillierter Textbeschreibungen für visuelle Inhalte  
-- **Objektentfernung**: Entfernen unerwünschter Objekte aus Bildern mit KI-gestütztem Inpainting  
+**Computer Vision APIs**  
+- **Texterkennung (OCR)**: Text aus Bildern mit hoher Genauigkeit extrahieren  
+- **Bild-Superauflösung**: Bilder mit lokalen KI-Modellen hochskalieren  
+- **Bildsegmentierung**: Spezifische Objekte in Bildern identifizieren und isolieren  
+- **Bildbeschreibung**: Detaillierte Textbeschreibungen für visuelle Inhalte generieren  
+- **Objektentfernung**: Unerwünschte Objekte aus Bildern mit KI-gestütztem Inpainting entfernen  
 
-**Multimodale Funktionen**  
-- **Integration von Vision und Sprache**: Kombination von Text- und Bildverständnis  
-- **Semantische Suche**: Ermöglichen natürlicher Sprachabfragen über Multimedia-Inhalte  
-- **Wissensabruf**: Aufbau intelligenter Sucherlebnisse mit lokalen Daten  
+**Multimodale Fähigkeiten**  
+- **Integration von Vision und Sprache**: Text- und Bildverständnis kombinieren  
+- **Semantische Suche**: Natürliche Sprachabfragen über Multimedia-Inhalte ermöglichen  
+- **Wissensabruf**: Intelligente Sucherlebnisse mit lokalen Daten erstellen  
 
 ### 2. Foundry Local
 
 Foundry Local bietet Entwicklern schnellen Zugriff auf einsatzbereite Open-Source-Sprachmodelle auf Windows-Silicon und ermöglicht das Durchsuchen, Testen, Interagieren und Bereitstellen von Modellen in lokalen Anwendungen.
 
-#### Hauptfunktionen
+#### Hauptmerkmale
 
 **Modellkatalog**  
 - Umfassende Sammlung voroptimierter Open-Source-Modelle  
@@ -140,11 +140,11 @@ Foundry Local bietet Entwicklern schnellen Zugriff auf einsatzbereite Open-Sourc
 **CLI-Integration**  
 - Befehlszeilenschnittstelle für Modellverwaltung und Bereitstellung  
 - Automatisierte Workflows für Optimierung und Quantisierung  
-- Integration mit beliebten Entwicklungsumgebungen und CI/CD-Pipelines  
+- Integration in beliebte Entwicklungsumgebungen und CI/CD-Pipelines  
 
 **Lokale Bereitstellung**  
 - Vollständiger Offline-Betrieb ohne Cloud-Abhängigkeiten  
-- Unterstützung für benutzerdefinierte Modellformate und -konfigurationen  
+- Unterstützung für benutzerdefinierte Modellformate und Konfigurationen  
 - Effiziente Modellbereitstellung mit automatischer Hardware-Optimierung  
 
 ### 3. Windows ML
@@ -154,7 +154,7 @@ Windows ML dient als zentrale KI-Plattform und integrierte Inferenz-Laufzeit auf
 #### Vorteile der Architektur
 
 **Universelle Hardware-Unterstützung**  
-- Automatische Optimierung für AMD-, Intel-, NVIDIA- und Qualcomm-Chipsätze  
+- Automatische Optimierung für AMD-, Intel-, NVIDIA- und Qualcomm-Chips  
 - Unterstützung für CPU-, GPU- und NPU-Ausführung mit transparentem Wechsel  
 - Hardware-Abstraktion, die plattformspezifische Optimierungsarbeit eliminiert  
 
@@ -164,105 +164,105 @@ Windows ML dient als zentrale KI-Plattform und integrierte Inferenz-Laufzeit auf
 - Integration in bestehende Windows-Anwendungsarchitekturen  
 
 **Unternehmensintegration**  
-- Kompatibilität mit Windows-Sicherheits- und Compliance-Frameworks  
+- Kompatibel mit Windows-Sicherheits- und Compliance-Frameworks  
 - Unterstützung für Unternehmensbereitstellungs- und Verwaltungstools  
-- Integration mit Windows-Geräteverwaltung und Überwachungssystemen  
+- Integration in Windows-Geräteverwaltung und Überwachungssysteme  
 
 ## Entwicklungsworkflow
 
 ### Phase 1: Einrichtung der Umgebung und Konfiguration der Tools
 
 **Vorbereitung der Entwicklungsumgebung**  
-1. Installation von Visual Studio mit der AI Toolkit-Erweiterung  
-2. Konfiguration der Windows AI Foundry CLI-Tools  
-3. Einrichtung einer lokalen Testumgebung für Modelle  
-4. Einrichtung von Tools zur Leistungsprofilierung und Überwachung  
+1. Visual Studio mit AI Toolkit-Erweiterung installieren  
+2. Windows AI Foundry CLI-Tools konfigurieren  
+3. Lokale Testumgebung für Modelle einrichten  
+4. Tools für Leistungsprofilierung und Monitoring einrichten  
 
 **Erkundung der AI Dev Gallery**  
-- Durchsuchen von Beispielanwendungen und Referenzimplementierungen  
-- Testen der Windows AI APIs mit interaktiven Demonstrationen  
-- Überprüfung des Quellcodes für Best-Practices und Muster  
-- Identifizierung relevanter Beispiele für Ihren spezifischen Anwendungsfall  
+- Beispielanwendungen und Referenzimplementierungen erkunden  
+- Windows AI APIs mit interaktiven Demonstrationen testen  
+- Quellcode für Best-Practices und Muster überprüfen  
+- Relevante Beispiele für Ihren spezifischen Anwendungsfall identifizieren  
 
 ### Phase 2: Modellauswahl und Integration
 
 **Anforderungsanalyse**  
-- Definition funktionaler Anforderungen für KI-Funktionen  
-- Festlegung von Leistungsbeschränkungen und Optimierungszielen  
-- Bewertung von Datenschutz- und Sicherheitsanforderungen  
-- Planung der Bereitstellungsarchitektur und Skalierungsstrategien  
+- Funktionale Anforderungen für KI-Funktionen definieren  
+- Leistungsbeschränkungen und Optimierungsziele festlegen  
+- Datenschutz- und Sicherheitsanforderungen bewerten  
+- Bereitstellungsarchitektur und Skalierungsstrategien planen  
 
 **Modellbewertung**  
-- Verwendung von Foundry Local zum Testen von Open-Source-Modellen für Ihren Anwendungsfall  
-- Benchmarking der Windows AI APIs im Vergleich zu benutzerdefinierten Modellanforderungen  
-- Bewertung von Kompromissen zwischen Modellgröße, Genauigkeit und Inferenzgeschwindigkeit  
-- Prototyping von Integrationsansätzen mit ausgewählten Modellen  
+- Foundry Local verwenden, um Open-Source-Modelle für Ihren Anwendungsfall zu testen  
+- Windows AI APIs gegen benutzerdefinierte Modellanforderungen benchmarken  
+- Abwägungen zwischen Modellgröße, Genauigkeit und Inferenzgeschwindigkeit bewerten  
+- Prototyp-Integrationsansätze mit ausgewählten Modellen entwickeln  
 
 ### Phase 3: Anwendungsentwicklung
 
 **Kernintegration**  
-- Implementierung der Windows AI API-Integration mit ordnungsgemäßer Fehlerbehandlung  
-- Design von Benutzeroberflächen, die KI-Verarbeitungsworkflows berücksichtigen  
-- Implementierung von Caching- und Optimierungsstrategien für Modellinferenz  
-- Hinzufügen von Telemetrie und Überwachung für die Leistung von KI-Operationen  
+- Integration der Windows AI APIs mit geeignetem Fehlerhandling implementieren  
+- Benutzeroberflächen entwerfen, die KI-Verarbeitungsworkflows berücksichtigen  
+- Caching- und Optimierungsstrategien für Modellinferenz implementieren  
+- Telemetrie und Monitoring für die Leistung von KI-Operationen hinzufügen  
 
 **Testen und Validierung**  
-- Testen von Anwendungen auf verschiedenen Windows-Hardwarekonfigurationen  
-- Validierung von Leistungskennzahlen unter verschiedenen Lastbedingungen  
-- Implementierung automatisierter Tests für die Zuverlässigkeit von KI-Funktionen  
-- Durchführung von Benutzererfahrungstests mit KI-gestützten Funktionen  
+- Anwendungen auf verschiedenen Windows-Hardwarekonfigurationen testen  
+- Leistungskennzahlen unter verschiedenen Lastbedingungen validieren  
+- Automatisierte Tests für die Zuverlässigkeit der KI-Funktionalität implementieren  
+- Benutzererfahrungstests mit KI-gestützten Funktionen durchführen  
 
 ### Phase 4: Optimierung und Bereitstellung
 
 **Leistungsoptimierung**  
-- Profilierung der Anwendungsleistung über Zielhardwarekonfigurationen  
-- Optimierung der Speichernutzung und Modelllade-Strategien  
-- Implementierung adaptiven Verhaltens basierend auf verfügbaren Hardwarekapazitäten  
-- Feinabstimmung der Benutzererfahrung für verschiedene Leistungsszenarien  
+- Anwendungsleistung über Zielhardwarekonfigurationen profilieren  
+- Speicherverbrauch und Modelllade-Strategien optimieren  
+- Adaptive Verhaltensweisen basierend auf verfügbaren Hardware-Funktionen implementieren  
+- Benutzererfahrung für verschiedene Leistungsszenarien feinabstimmen  
 
 **Produktionsbereitstellung**  
-- Verpackung von Anwendungen mit den richtigen KI-Modellabhängigkeiten  
-- Implementierung von Aktualisierungsmechanismen für Modelle und Anwendungslogik  
-- Konfiguration von Überwachung und Analytik für Produktionsumgebungen  
-- Planung von Rollout-Strategien für Unternehmens- und Verbraucherbereitstellungen  
+- Anwendungen mit den richtigen KI-Modellabhängigkeiten paketieren  
+- Aktualisierungsmechanismen für Modelle und Anwendungslogik implementieren  
+- Monitoring und Analytik für Produktionsumgebungen konfigurieren  
+- Rollout-Strategien für Unternehmens- und Verbraucherbereitstellungen planen  
 
 ## Praktische Implementierungsbeispiele
 
 ### Beispiel 1: Intelligente Dokumentenverarbeitungsanwendung
 
-Erstellen einer Windows-Anwendung, die Dokumente mit mehreren KI-Funktionen verarbeitet:
+Erstellen Sie eine Windows-Anwendung, die Dokumente mit mehreren KI-Funktionen verarbeitet:
 
 **Verwendete Technologien:**  
-- Phi Silica für Dokumentzusammenfassung und Beantwortung von Fragen  
-- OCR-APIs für Textextraktion aus gescannten Dokumenten  
-- Bildbeschreibungs-APIs für Analyse von Diagrammen und Grafiken  
-- Benutzerdefinierte ONNX-Modelle für Dokumentklassifizierung  
+- Phi Silica für Dokumentzusammenfassung und Fragenbeantwortung  
+- OCR APIs für Textextraktion aus gescannten Dokumenten  
+- Bildbeschreibung APIs für Analyse von Diagrammen und Grafiken  
+- Benutzerdefinierte ONNX-Modelle für Dokumentklassifikation  
 
 **Implementierungsansatz:**  
-- Design einer modularen Architektur mit einsteckbaren KI-Komponenten  
-- Implementierung asynchroner Verarbeitung für große Dokumentenstapel  
-- Hinzufügen von Fortschrittsanzeigen und Abbruchunterstützung für langlaufende Operationen  
-- Einschluss von Offline-Funktionen für die Verarbeitung sensibler Dokumente  
+- Modulare Architektur mit austauschbaren KI-Komponenten entwerfen  
+- Asynchrone Verarbeitung für große Dokumentenstapel implementieren  
+- Fortschrittsanzeigen und Abbruchunterstützung für langlaufende Operationen hinzufügen  
+- Offline-Funktionalität für die Verarbeitung sensibler Dokumente einbeziehen  
 
 ### Beispiel 2: Einzelhandels-Inventarverwaltungssystem
 
-Erstellen eines KI-gestützten Inventarsystems für Einzelhandelsanwendungen:
+Erstellen Sie ein KI-gestütztes Inventarsystem für Einzelhandelsanwendungen:
 
 **Verwendete Technologien:**  
 - Bildsegmentierung für Produktidentifikation  
-- Benutzerdefinierte Vision-Modelle für Marken- und Kategorienklassifizierung  
-- Foundry Local-Bereitstellung spezialisierter Einzelhandels-Sprachmodelle  
+- Benutzerdefinierte Vision-Modelle für Marken- und Kategorienklassifikation  
+- Foundry Local Bereitstellung spezialisierter Einzelhandels-Sprachmodelle  
 - Integration mit bestehenden POS- und Inventarsystemen  
 
 **Implementierungsansatz:**  
-- Aufbau einer Kameraintegration für Echtzeit-Produktscanning  
-- Implementierung von Barcode- und visueller Produktidentifikation  
-- Hinzufügen natürlicher Sprachabfragen für Inventar mit lokalen Sprachmodellen  
-- Design einer skalierbaren Architektur für den Einsatz in mehreren Filialen  
+- Kameraintegration für Echtzeit-Produktscanning erstellen  
+- Barcode- und visuelle Produktidentifikation implementieren  
+- Natürliche Sprachabfragen für Inventar mit lokalen Sprachmodellen hinzufügen  
+- Skalierbare Architektur für Multi-Store-Bereitstellung entwerfen  
 
-### Beispiel 3: Dokumentationsassistent im Gesundheitswesen
+### Beispiel 3: Dokumentationsassistent für das Gesundheitswesen
 
-Entwicklung eines datenschutzfreundlichen Dokumentationstools für das Gesundheitswesen:
+Entwickeln Sie ein datenschutzfreundliches Dokumentationstool für das Gesundheitswesen:
 
 **Verwendete Technologien:**  
 - Phi Silica für medizinische Notizenerstellung und klinische Entscheidungsunterstützung  
@@ -271,103 +271,109 @@ Entwicklung eines datenschutzfreundlichen Dokumentationstools für das Gesundhei
 - Lokale Vektorspeicherung für medizinischen Wissensabruf  
 
 **Implementierungsansatz:**  
-- Sicherstellung vollständiger Offline-Funktionalität für Patientendatenschutz  
-- Implementierung von Validierung und Vorschlägen für medizinische Terminologie  
-- Hinzufügen von Audit-Logging für regulatorische Compliance  
-- Design der Integration mit bestehenden elektronischen Patientenakten-Systemen  
+- Vollständigen Offline-Betrieb für Patientendatenschutz sicherstellen  
+- Validierung und Vorschläge für medizinische Terminologie implementieren  
+- Audit-Logging für regulatorische Compliance hinzufügen  
+- Integration mit bestehenden elektronischen Patientenakten-Systemen entwerfen  
 
-## Leistungsoptimierungsstrategien
+## Strategien zur Leistungsoptimierung
 
 ### Hardwarebewusste Entwicklung
 
 **NPU-Optimierung**  
-- Design von Anwendungen zur Nutzung von NPU-Funktionen auf Copilot+ PCs  
-- Implementierung eines sanften Rückfalls auf GPU/CPU bei Geräten ohne NPU  
-- Optimierung von Modellformaten für NPU-spezifische Beschleunigung  
-- Überwachung der NPU-Auslastung und thermischen Eigenschaften  
+- Anwendungen entwerfen, die NPU-Funktionen auf Copilot+ PCs nutzen  
+- Sanften Rückfall auf GPU/CPU bei Geräten ohne NPU implementieren  
+- Modellformate für NPU-spezifische Beschleunigung optimieren  
+- NPU-Auslastung und thermische Eigenschaften überwachen  
 
-**Speicherverwaltung**  
-- Implementierung effizienter Modelllade- und Caching-Strategien  
-- Verwendung von Speicher-Mapping für große Modelle zur Reduzierung der Startzeit  
-- Design speicherbewusster Anwendungen für ressourcenbeschränkte Geräte  
-- Implementierung von Modellquantisierung zur Speicheroptimierung  
+**Speichermanagement**  
+- Effiziente Modelllade- und Caching-Strategien implementieren  
+- Speicher-Mapping für große Modelle verwenden, um Startzeit zu reduzieren  
+- Speicherbewusste Anwendungen für ressourcenbeschränkte Geräte entwerfen  
+- Modellquantisierung für Speicheroptimierung implementieren  
 
 **Batterieeffizienz**  
-- Optimierung von KI-Operationen für minimalen Stromverbrauch  
-- Implementierung adaptiver Verarbeitung basierend auf Batteriestatus  
-- Design effizienter Hintergrundverarbeitung für kontinuierliche KI-Operationen  
-- Verwendung von Stromprofilierungs-Tools zur Optimierung des Energieverbrauchs  
+- KI-Operationen für minimalen Stromverbrauch optimieren  
+- Adaptive Verarbeitung basierend auf Batteriestatus implementieren  
+- Effiziente Hintergrundverarbeitung für kontinuierliche KI-Operationen entwerfen  
+- Stromprofilierungs-Tools verwenden, um Energieverbrauch zu optimieren  
 
 ### Skalierbarkeitsüberlegungen
 
 **Multithreading**  
-- Design von threadsicheren KI-Operationen für parallele Verarbeitung  
-- Implementierung effizienter Arbeitsverteilung über verfügbare Kerne  
-- Verwendung von async/await-Mustern für nicht blockierende KI-Operationen  
-- Planung der Threadpool-Optimierung für verschiedene Hardwarekonfigurationen  
+- Thread-sichere KI-Operationen für parallele Verarbeitung entwerfen  
+- Effiziente Arbeitsverteilung über verfügbare Kerne implementieren  
+- Async/Await-Muster für nicht blockierende KI-Operationen verwenden  
+- Thread-Pool-Optimierung für verschiedene Hardwarekonfigurationen planen  
 
 **Caching-Strategien**  
-- Implementierung intelligenter Caching-Mechanismen für häufig genutzte KI-Operationen  
-- Design von Cache-Invalidierungsstrategien für Modellupdates  
-- Verwendung von persistentem Caching für teure Vorverarbeitungsoperationen  
-- Implementierung von verteiltem Caching für Mehrbenutzerszenarien  
+- Intelligentes Caching für häufig genutzte KI-Operationen implementieren  
+- Cache-Invalidierungsstrategien für Modellupdates entwerfen  
+- Persistentes Caching für teure Vorverarbeitungsoperationen verwenden  
+- Verteiltes Caching für Multi-User-Szenarien implementieren  
 
 ## Sicherheits- und Datenschutzbest-Practices
 
 ### Datenschutz
 
 **Lokale Verarbeitung**  
-- Sicherstellen, dass sensible Daten niemals das lokale Gerät verlassen  
-- Implementierung sicherer Speicherung für KI-Modelle und temporäre Daten  
-- Verwendung von Windows-Sicherheitsfunktionen für Anwendungssandboxing  
-- Anwendung von Verschlüsselung für gespeicherte Modelle und Zwischenergebnisse  
+- Sicherstellen, dass sensible Daten das lokale Gerät niemals verlassen  
+- Sichere Speicherung für KI-Modelle und temporäre Daten implementieren  
+- Windows-Sicherheitsfunktionen für Anwendungssandboxing verwenden  
+- Verschlüsselung für gespeicherte Modelle und Zwischenergebnisse anwenden  
 
 **Modellsicherheit**  
-- Validierung der Modellintegrität vor dem Laden und der Ausführung  
-- Implementierung sicherer Mechanismen für Modellupdates  
-- Verwendung signierter Modelle zur Verhinderung von Manipulationen  
-- Anwendung von Zugriffskontrollen für Modelfiles und Konfigurationen  
+- Modellintegrität vor dem Laden und der Ausführung validieren  
+- Sichere Mechanismen für Modellupdates implementieren  
+- Signierte Modelle verwenden, um Manipulationen zu verhindern  
+- Zugriffskontrollen für Modelldateien und Konfiguration anwenden  
 
 ### Compliance-Überlegungen
 
 **Regulatorische Ausrichtung**  
-- Design von Anwendungen zur Einhaltung von GDPR, HIPAA und anderen Vorschriften  
-- Implementierung von Audit-Logging für KI-Entscheidungsprozesse  
-- Bereitstellung von Transparenzfunktionen für KI-generierte Ergebnisse  
-- Ermöglichung der Benutzerkontrolle über KI-Datenverarbeitung  
+- Anwendungen entwerfen, die GDPR-, HIPAA- und andere regulatorische Anforderungen erfüllen  
+- Audit-Logging für KI-Entscheidungsprozesse implementieren  
+- Transparenzfunktionen für KI-generierte Ergebnisse bereitstellen  
+- Benutzerkontrolle über KI-Datenverarbeitung ermöglichen  
 
 **Unternehmenssicherheit**  
 - Integration mit Windows-Unternehmenssicherheitsrichtlinien  
-- Unterstützung verwalteter Bereitstellung durch Unternehmensverwaltungstools  
-- Implementierung rollenbasierter Zugriffskontrollen für KI-Funktionen  
-- Bereitstellung administrativer Steuerungen für KI-Funktionalität  
+- Unterstützung für verwaltete Bereitstellung durch Unternehmensverwaltungstools  
+- Rollenbasierte Zugriffskontrollen für KI-Funktionen implementieren  
+- Administrative Steuerungen für KI-Funktionalität bereitstellen  
 
 ## Fehlerbehebung und Debugging
 
 ### Häufige Entwicklungsprobleme
 
 **Probleme beim Modell-Laden**  
-- Validierung der ONNX-Modellkompatibilität mit Windows ML  
-- Überprüfung der Modelldatei-Integrität und Formatanforderungen  
-- Verifizierung der Hardwarekapazitätsanforderungen für spezifische Modelle  
-- Debugging von Speicherzuweisungsproblemen beim Modell-Laden  
+- ONNX-Modellkompatibilität mit Windows ML validieren  
+- Modelldateiintegrität und Formatanforderungen überprüfen  
+- Hardwareanforderungen für spezifische Modelle verifizieren  
+- Speicherzuweisungsprobleme beim Modell-Laden debuggen  
 
 **Leistungsprobleme**  
-- Profilierung der Anwendungsleistung über verschiedene Hardwarekonfigurationen  
-- Identifizierung von Engpässen in KI-Verarbeitungspipelines  
-- Optimierung von Datenvorverarbeitungs- und Nachverarbeitungsoperationen  
-- Implementierung von Leistungsüberwachung und Alarmierung  
+- Anwendungsleistung über verschiedene Hardwarekonfigurationen profilieren  
+- Engpässe in KI-Verarbeitungspipelines identifizieren  
+- Datenvorverarbeitungs- und Nachverarbeitungsoperationen optimieren  
+- Leistungsüberwachung und Alarmierung implementieren  
 
 **Integrationsschwierigkeiten**  
-- Debugging von API-Integrationsproblemen mit ordnungsgemäßer Fehlerbehandlung  
-- Validierung von Eingabedatenformaten und Vorverarbeitungsanforderungen  
-- Umfassendes Testen von Randfällen und Fehlerbedingungen  
-- Implementierung umfassender Protokollierung zur Fehlerbehebung in Produktionsumgebungen  
+- API-Integrationsprobleme mit geeignetem Fehlerhandling debuggen  
+- Eingabedatenformate und Vorverarbeitungsanforderungen validieren  
+- Randfälle und Fehlerbedingungen gründlich testen  
+- Umfassendes Logging für Debugging von Produktionsproblemen implementieren  
 
 ### Debugging-Tools und Techniken
 
-**Visual
-- Nutzen Sie das Foundry Local CLI für Modelltests und Validierung  
+**Visual Studio Integration**  
+- AI Toolkit-Debugger für Analyse der Modellausführung verwenden  
+- Leistungsprofilierung für KI-Operationen implementieren  
+- Asynchrone KI-Operationen mit geeignetem Ausnahmehandling debuggen  
+- Speicherprofilierungs-Tools für Optimierung verwenden  
+
+**Windows AI Foundry Tools**  
+- Nutzen Sie die Foundry Local CLI für Modelltests und Validierung  
 - Verwenden Sie die Windows AI API-Testtools zur Überprüfung der Integration  
 - Implementieren Sie benutzerdefiniertes Logging zur Überwachung von KI-Operationen  
 - Erstellen Sie automatisierte Tests für die Zuverlässigkeit der KI-Funktionalität  
@@ -380,12 +386,12 @@ Entwicklung eines datenschutzfreundlichen Dokumentationstools für das Gesundhei
 - Entwickeln Sie Anwendungen, die zukünftige NPU-Funktionen nutzen können  
 - Planen Sie für größere Modellgrößen und höhere Komplexität  
 - Implementieren Sie adaptive Architekturen für sich weiterentwickelnde Hardware  
-- Berücksichtigen Sie quantenfähige Algorithmen für zukünftige Kompatibilität  
+- Berücksichtigen Sie quantenbereite Algorithmen für zukünftige Kompatibilität  
 
 **Fortschrittliche KI-Fähigkeiten**  
-- Bereiten Sie sich auf die Integration multimodaler KI über mehr Datentypen vor  
+- Bereiten Sie sich auf die Integration multimodaler KI über mehr Datentypen hinweg vor  
 - Planen Sie für Echtzeit-Kollaborationen zwischen mehreren Geräten  
-- Entwickeln Sie für Fähigkeiten des föderierten Lernens  
+- Entwickeln Sie für föderierte Lernfähigkeiten  
 - Berücksichtigen Sie hybride Intelligenzarchitekturen zwischen Edge und Cloud  
 
 ### Kontinuierliches Lernen und Anpassung  
@@ -393,14 +399,14 @@ Entwicklung eines datenschutzfreundlichen Dokumentationstools für das Gesundhei
 **Modell-Updates**  
 - Implementieren Sie nahtlose Mechanismen für Modellaktualisierungen  
 - Entwickeln Sie Anwendungen, die sich an verbesserte Modellfähigkeiten anpassen  
-- Planen Sie die Abwärtskompatibilität mit bestehenden Modellen  
-- Führen Sie A/B-Tests zur Bewertung der Modellleistung durch  
+- Planen Sie für Abwärtskompatibilität mit bestehenden Modellen  
+- Implementieren Sie A/B-Tests zur Bewertung der Modellleistung  
 
 **Feature-Entwicklung**  
-- Entwickeln Sie modulare Architekturen, die neue KI-Fähigkeiten aufnehmen können  
-- Planen Sie die Integration neuer Windows AI APIs  
-- Implementieren Sie Feature-Flags für eine schrittweise Einführung von Funktionen  
-- Entwickeln Sie Benutzeroberflächen, die sich an erweiterte KI-Funktionen anpassen  
+- Entwickeln Sie modulare Architekturen, die neue KI-Funktionen aufnehmen können  
+- Planen Sie die Integration aufkommender Windows AI APIs  
+- Implementieren Sie Feature-Flags für eine schrittweise Einführung neuer Funktionen  
+- Gestalten Sie Benutzeroberflächen, die sich an erweiterte KI-Funktionen anpassen  
 
 ## Fazit  
 
@@ -408,9 +414,11 @@ Die Entwicklung von Windows Edge AI repräsentiert die Verbindung leistungsstark
 
 Die Kombination aus Windows AI APIs, Foundry Local und Windows ML bietet eine unvergleichliche Grundlage für die Entwicklung der nächsten Generation intelligenter Windows-Anwendungen. Während sich die KI weiterentwickelt, stellt die Windows-Plattform sicher, dass Ihre Anwendungen mit aufkommenden Technologien skalieren und gleichzeitig Kompatibilität und Leistung über die vielfältige Windows-Hardwarelandschaft hinweg beibehalten.  
 
-Egal, ob Sie Verbraucheranwendungen, Unternehmenslösungen oder spezialisierte Branchenwerkzeuge entwickeln – die Windows Edge AI-Entwicklung ermöglicht es Ihnen, intelligente, reaktionsschnelle und tief integrierte Erlebnisse zu schaffen, die das volle Potenzial moderner Windows-Geräte ausschöpfen.  
+Egal, ob Sie Verbraucheranwendungen, Unternehmenslösungen oder spezialisierte Branchentools entwickeln – die Windows Edge AI-Entwicklung ermöglicht es Ihnen, intelligente, reaktionsfähige und tief integrierte Erlebnisse zu schaffen, die das volle Potenzial moderner Windows-Geräte ausschöpfen.  
 
 ## Zusätzliche Ressourcen  
+
+Für eine Schritt-für-Schritt-Anleitung zur Nutzung von Foundry Local (Installation, CLI, dynamischer Endpunkt, SDK-Nutzung) sehen Sie sich die Repo-Anleitung an: [foundrylocal.md](./foundrylocal.md).  
 
 ### Dokumentation und Lernen  
 - [Windows AI Foundry Dokumentation](https://learn.microsoft.com/windows/ai/)  
@@ -430,9 +438,7 @@ Egal, ob Sie Verbraucheranwendungen, Unternehmenslösungen oder spezialisierte B
 
 ---  
 
-*Dieser Leitfaden ist darauf ausgelegt, sich mit dem schnell fortschreitenden Windows AI-Ökosystem weiterzuentwickeln. Regelmäßige Updates gewährleisten die Ausrichtung an den neuesten Plattformfähigkeiten und bewährten Entwicklungspraktiken.*  
+*Dieser Leitfaden ist darauf ausgelegt, sich mit dem schnell voranschreitenden Windows AI-Ökosystem weiterzuentwickeln. Regelmäßige Updates gewährleisten die Ausrichtung an den neuesten Plattformfähigkeiten und Entwicklungsbest-Practices.*  
 
 ---
 
-**Haftungsausschluss**:  
-Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die sich aus der Nutzung dieser Übersetzung ergeben.
