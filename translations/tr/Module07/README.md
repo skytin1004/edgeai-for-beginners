@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "142e0d1a5b794b8333cfd4895804ced5",
-  "translation_date": "2025-09-18T00:10:03+00:00",
+  "original_hash": "cb6eadc312d5658a0cd71c0085b43742",
+  "translation_date": "2025-09-22T18:19:48+00:00",
   "source_file": "Module07/README.md",
   "language_code": "tr"
 }
 -->
 # Bölüm 07: EdgeAI Örnekleri
 
-Edge AI, yapay zekanın edge computing ile birleşimini temsil eder ve cihazlarda bulut bağlantısına ihtiyaç duymadan akıllı işlem yapmayı mümkün kılar. Bu bölüm, farklı platformlar ve çerçeveler üzerinde beş farklı EdgeAI uygulamasını inceleyerek, yapay zeka modellerini edge'de çalıştırmanın esnekliğini ve gücünü gözler önüne seriyor.
+Edge AI, yapay zekanın edge computing ile birleşimini temsil eder ve cihazlarda bulut bağlantısına ihtiyaç duymadan akıllı işlem yapmayı mümkün kılar. Bu bölüm, farklı platformlar ve çerçeveler üzerinde beş farklı EdgeAI uygulamasını inceleyerek, yapay zeka modellerini uçta çalıştırmanın esnekliğini ve gücünü gözler önüne seriyor.
 
 ## 1. NVIDIA Jetson Orin Nano ile EdgeAI
 
-NVIDIA Jetson Orin Nano, erişilebilir edge AI hesaplama alanında bir dönüm noktasıdır. Kredi kartı boyutunda kompakt bir form faktöründe 67 TOPS'a kadar yapay zeka performansı sunar. Bu güçlü edge AI platformu, hobi meraklıları, öğrenciler ve profesyonel geliştiriciler için üretken yapay zeka geliştirmeyi demokratikleştirir.
+NVIDIA Jetson Orin Nano, erişilebilir edge AI hesaplama alanında bir dönüm noktasıdır ve kredi kartı boyutunda kompakt bir form faktöründe 67 TOPS'a kadar yapay zeka performansı sunar. Bu güçlü edge AI platformu, hobi sahipleri, öğrenciler ve profesyonel geliştiriciler için üretken yapay zeka geliştirmeyi demokratikleştirir.
 
 ### Temel Özellikler
 - 67 TOPS'a kadar yapay zeka performansı sunar—önceki modeline göre 1.7 kat iyileştirme
@@ -22,26 +22,26 @@ NVIDIA Jetson Orin Nano, erişilebilir edge AI hesaplama alanında bir dönüm n
 - Sadece $249 fiyatıyla geliştiricilere, öğrencilere ve üreticilere en uygun ve erişilebilir platformu sunar
 
 ### Uygulamalar
-Jetson Orin Nano, modern üretken yapay zeka modellerini çalıştırmada mükemmeldir; bunlar arasında görsel dönüştürücüler, büyük dil modelleri ve görsel-dil modelleri bulunur. Özellikle GenAI kullanım senaryoları için tasarlanmıştır ve artık avuç içi boyutundaki bir cihazda birkaç LLM çalıştırabilirsiniz. Popüler kullanım alanları arasında yapay zeka destekli robotlar, akıllı dronlar, akıllı kameralar ve otonom edge cihazları yer alır.
+Jetson Orin Nano, modern üretken yapay zeka modellerini çalıştırmada mükemmeldir; bunlar arasında görsel dönüştürücüler, büyük dil modelleri ve görsel-dil modelleri bulunur. GenAI kullanım senaryoları için özel olarak tasarlanmıştır ve artık avuç içi boyutundaki bir cihazda birkaç LLM çalıştırabilirsiniz. Popüler kullanım alanları arasında yapay zeka destekli robotlar, akıllı dronlar, akıllı kameralar ve otonom edge cihazlar yer alır.
 
 **Daha Fazla Bilgi Edinin**: [NVIDIA'nın Jetson Orin Nano Süper Bilgisayarı: EdgeAI'deki Bir Sonraki Büyük Adım](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
 ## 2. .NET MAUI ve ONNX Runtime GenAI ile Mobil Uygulamalarda EdgeAI
 
-Bu çözüm, .NET MAUI (Multi-platform App UI) ve ONNX Runtime GenAI kullanarak üretken yapay zekayı ve büyük dil modellerini (LLM'ler) çapraz platform mobil uygulamalara entegre etmenin nasıl mümkün olduğunu gösterir. Bu yaklaşım, .NET geliştiricilerinin Android ve iOS cihazlarında yerel olarak çalışan gelişmiş yapay zeka destekli mobil uygulamalar oluşturmasını sağlar.
+Bu çözüm, .NET MAUI (Multi-platform App UI) ve ONNX Runtime GenAI kullanarak üretken yapay zeka ve büyük dil modellerini (LLM'ler) çapraz platform mobil uygulamalara entegre etmenin nasıl mümkün olduğunu gösterir. Bu yaklaşım, .NET geliştiricilerinin Android ve iOS cihazlarında yerel olarak çalışan gelişmiş yapay zeka destekli mobil uygulamalar oluşturmasını sağlar.
 
 ### Temel Özellikler
 - Hem Android hem de iOS uygulamaları için tek bir kod tabanı sağlayan .NET MAUI çerçevesi üzerine inşa edilmiştir
 - ONNX Runtime GenAI entegrasyonu, üretken yapay zeka modellerini doğrudan mobil cihazlarda çalıştırmayı mümkün kılar
-- CPU, GPU ve özel mobil yapay zeka işlemcileri dahil olmak üzere mobil cihazlara özel donanım hızlandırıcılarını destekler
+- CPU, GPU ve mobil yapay zeka işlemcileri gibi mobil cihazlara özel donanım hızlandırıcılarını destekler
 - ONNX Runtime aracılığıyla iOS için CoreML ve Android için NNAPI gibi platforma özgü optimizasyonlar
-- Ön ve son işleme, çıkarım, logits işleme, arama ve örnekleme, KV önbellek yönetimi dahil olmak üzere tam üretken yapay zeka döngüsünü uygular
+- Ön ve son işleme, çıkarım, logits işleme, arama ve örnekleme, KV önbellek yönetimi gibi üretken yapay zeka döngüsünün tamamını uygular
 
 ### Geliştirme Avantajları
-.NET MAUI yaklaşımı, geliştiricilerin mevcut C# ve .NET becerilerini kullanarak çapraz platform yapay zeka uygulamaları oluşturmasına olanak tanır. ONNX Runtime GenAI çerçevesi, Llama, Mistral, Phi, Gemma ve diğer birçok model mimarisini destekler. Optimize edilmiş ARM64 çekirdekleri, INT4 kuantize matris çarpımını hızlandırarak mobil donanımda verimli performans sağlar ve tanıdık .NET geliştirme deneyimini korur.
+.NET MAUI yaklaşımı, geliştiricilerin mevcut C# ve .NET becerilerini kullanarak çapraz platform yapay zeka uygulamaları oluşturmasına olanak tanır. ONNX Runtime GenAI çerçevesi, Llama, Mistral, Phi, Gemma ve daha birçok model mimarisini destekler. Optimize edilmiş ARM64 çekirdekleri, INT4 kuantize matris çarpımını hızlandırarak mobil donanımda verimli performans sağlar ve tanıdık .NET geliştirme deneyimini korur.
 
 ### Kullanım Alanları
-Bu çözüm, .NET teknolojilerini kullanarak yapay zeka destekli mobil uygulamalar oluşturmak isteyen geliştiriciler için idealdir. Akıllı sohbet botları, görüntü tanıma uygulamaları, dil çeviri araçları ve tamamen cihaz üzerinde çalışan, gizliliği artırılmış ve çevrimdışı çalışabilen kişiselleştirilmiş öneri sistemleri gibi uygulamalar bu kapsamda yer alır.
+Bu çözüm, .NET teknolojilerini kullanarak yapay zeka destekli mobil uygulamalar oluşturmak isteyen geliştiriciler için idealdir. Akıllı sohbet botları, görüntü tanıma uygulamaları, dil çeviri araçları ve tamamen cihaz üzerinde çalışan, gizliliği artırılmış ve çevrimdışı çalışabilen kişiselleştirilmiş öneri sistemleri gibi uygulamalar için uygundur.
 
 **Daha Fazla Bilgi Edinin**: [.NET MAUI ONNX Runtime GenAI Örneği](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
@@ -62,16 +62,16 @@ Azure EdgeAI uygulaması, bulut yönetim yetenekleriyle kurumsal düzeyde yapay 
 
 ## 4. Windows ML ile EdgeAI
 
-Windows ML, Microsoft'un cihazda model çıkarımı için optimize edilmiş ve basitleştirilmiş dağıtım sağlayan en son çalışma zamanı olup, Windows AI Foundry'nin temelini oluşturur. Bu platform, geliştiricilerin PC donanımının tüm spektrumundan yararlanan yapay zeka destekli Windows uygulamaları oluşturmasını sağlar.
+Windows ML, Microsoft'un cihazda model çıkarımı için optimize edilmiş ve basitleştirilmiş dağıtım sağlayan en son teknolojisidir ve Windows AI Foundry'nin temelini oluşturur. Bu platform, geliştiricilerin PC donanımının tüm spektrumundan yararlanan yapay zeka destekli Windows uygulamaları oluşturmasını sağlar.
 
-### Platform Yetenekleri
-- Windows 11'in 24H2 (26100 yapı numarası) veya daha yüksek sürümünü çalıştıran tüm PC'lerde çalışır
-- NPUs veya GPU'lara sahip olmayan PC'ler dahil tüm x64 ve ARM64 PC donanımında çalışır
-- Geliştiricilerin kendi modellerini getirip AMD, Intel, NVIDIA ve Qualcomm gibi silikon ortak ekosistemi genelinde verimli bir şekilde dağıtmasını sağlar
+### Platform Yetkinlikleri
+- Windows 11 çalıştıran tüm PC'lerde (sürüm 24H2, yapı 26100 veya üzeri) çalışır
+- NPUs veya GPU'lara sahip olmayan PC'ler dahil tüm x64 ve ARM64 PC donanımlarında çalışır
+- Geliştiricilerin kendi modellerini getirip AMD, Intel, NVIDIA ve Qualcomm gibi CPU, GPU, NPU'yu kapsayan silikon ortak ekosistemi genelinde verimli bir şekilde dağıtmasını sağlar
 - Altyapı API'lerini kullanarak, geliştiricilerin farklı silikonları hedeflemek için birden fazla uygulama derlemesi oluşturmasına gerek kalmaz
 
 ### Geliştirici Avantajları
-Windows ML, donanım ve yürütme sağlayıcılarını soyutlayarak kod yazmaya odaklanmanızı sağlar. Ayrıca, Windows ML, piyasaya sürülen en son NPUs, GPUs ve CPUs'u desteklemek için otomatik olarak güncellenir. Platform, çeşitli Windows donanım ekosistemi genelinde yapay zeka geliştirme için birleşik bir çerçeve sunar.
+Windows ML, donanım ve yürütme sağlayıcılarını soyutlar, böylece kodunuzu yazmaya odaklanabilirsiniz. Ayrıca, Windows ML, piyasaya sürüldükçe en son NPUs, GPU'lar ve CPU'ları desteklemek için otomatik olarak güncellenir. Platform, çeşitli Windows donanım ekosistemi genelinde yapay zeka geliştirme için birleşik bir çerçeve sağlar.
 
 **Daha Fazla Bilgi Edinin**: 
 - [Windows ML Genel Bakış](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
@@ -79,12 +79,12 @@ Windows ML, donanım ve yürütme sağlayıcılarını soyutlayarak kod yazmaya 
 
 ## 5. Foundry Local Uygulamaları ile EdgeAI
 
-Foundry Local, yerel dil modellerini semantik arama yetenekleriyle birleştirerek .NET kullanarak Retrieval Augmented Generation (RAG) uygulamaları oluşturmayı mümkün kılar. Bu yaklaşım, tamamen yerel altyapıda çalışan gizlilik odaklı yapay zeka çözümleri sunar.
+Foundry Local, yerel kaynakları kullanarak .NET'te Retrieval Augmented Generation (RAG) uygulamaları oluşturmayı sağlar ve yerel dil modellerini semantik arama yetenekleriyle birleştirir. Bu yaklaşım, tamamen yerel altyapıda çalışan gizlilik odaklı yapay zeka çözümleri sunar.
 
 ### Teknik Mimari
-- Phi-3 dil modeli, Yerel Gömüler ve Semantik Kernel'i birleştirerek bir RAG senaryosu oluşturur
-- İçeriği ve semantik anlamını temsil eden kayan noktalı değerlerden oluşan diziler (vektörler) olarak gömüler kullanır
-- Semantik Kernel, Phi-3 ve Akıllı Bileşenleri entegre ederek sorunsuz bir RAG hattı oluşturur
+- Phi dil modeli, Yerel Gömüler ve Semantik Kernel'i birleştirerek bir RAG senaryosu oluşturur
+- İçeriği ve semantik anlamını temsil eden kayan nokta değerlerinden oluşan diziler (vektörler) olarak gömüler kullanır
+- Semantik Kernel, Phi ve Akıllı Bileşenleri entegre ederek sorunsuz bir RAG hattı oluşturur
 - SQLite ve Qdrant gibi yerel vektör veritabanlarını destekler
 
 ### Uygulama Avantajları
@@ -92,9 +92,47 @@ RAG, yani Retrieval Augmented Generation, "bir şeyler arayıp isteme eklemek" a
 
 **Daha Fazla Bilgi Edinin**: [Foundry Local RAG Örnekleri](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
+### Windows Foundry Local
+
+Microsoft Foundry Local, Windows'da modelleri yerel olarak çalıştırmak için ONNX Runtime tarafından desteklenen OpenAI uyumlu bir REST sunucusu sağlar. Aşağıda hızlı bir özet verilmiştir; tam detaylar için resmi belgeleri inceleyin.
+
+- Başlangıç: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Mimari: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
+- CLI referansı: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
+- Bu depoda tam Windows kılavuzu: [foundrylocal.md](./foundrylocal.md)
+
+Windows'da yükleme veya yükseltme (cmd.exe):
+```cmd
+winget install Microsoft.FoundryLocal
+winget upgrade --id Microsoft.FoundryLocal
+foundry --version
+```
+
+CLI kategorilerini keşfedin:
+```cmd
+foundry model --help
+foundry service --help
+foundry cache --help
+```
+
+Bir modeli çalıştırın ve dinamik uç noktayı keşfedin:
+```cmd
+foundry model run gpt-oss-20b
+foundry service status
+```
+
+Modelleri listelemek için hızlı REST kontrolü (durumdan PORT'u değiştirin):
+```cmd
+curl -s http://localhost:PORT/v1/models
+```
+
+İpuçları:
+- SDK entegrasyonu: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- Kendi modelinizi getirin (derleme): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+
 ## Windows EdgeAI Geliştirme Kaynakları
 
-Özellikle Windows platformunu hedefleyen geliştiriciler için, Windows EdgeAI ekosistemini kapsayan kapsamlı bir kılavuz oluşturduk. Bu kaynak, Windows AI Foundry hakkında API'ler, araçlar ve Windows üzerinde EdgeAI geliştirme için en iyi uygulamalar hakkında ayrıntılı bilgi sağlar.
+Özellikle Windows platformunu hedefleyen geliştiriciler için, Windows EdgeAI ekosistemini kapsayan kapsamlı bir kılavuz oluşturduk. Bu kaynak, Windows AI Foundry hakkında detaylı bilgiler, API'ler, araçlar ve Windows'da EdgeAI geliştirme için en iyi uygulamaları sunar.
 
 ### Windows AI Foundry Platformu
 Windows AI Foundry platformu, Windows cihazlarında Edge AI geliştirme için özel olarak tasarlanmış araçlar ve API'lerden oluşan kapsamlı bir paket sunar. Buna NPU hızlandırmalı donanım, Windows ML entegrasyonu ve platforma özgü optimizasyon teknikleri dahildir.
@@ -126,13 +164,11 @@ AI Toolkit kılavuzu şunları kapsar:
 
 ## Sonuç
 
-Bu beş EdgeAI uygulaması, günümüzde mevcut olan edge yapay zeka çözümlerinin olgunluğunu ve çeşitliliğini göstermektedir. Jetson Orin Nano gibi donanım hızlandırmalı edge cihazlardan ONNX Runtime GenAI ve Windows ML gibi yazılım çerçevelerine kadar, geliştiriciler edge'de akıllı uygulamalar dağıtmak için benzeri görülmemiş seçeneklere sahiptir.
+Bu beş EdgeAI uygulaması, günümüzde mevcut olan edge yapay zeka çözümlerinin olgunluğunu ve çeşitliliğini göstermektedir. Jetson Orin Nano gibi donanım hızlandırmalı edge cihazlardan ONNX Runtime GenAI ve Windows ML gibi yazılım çerçevelerine kadar, geliştiriciler yapay zeka destekli uygulamaları uçta dağıtmak için benzeri görülmemiş seçeneklere sahiptir.
 
-Tüm bu platformlar arasında ortak bir tema, yapay zeka yeteneklerinin demokratikleşmesidir; bu, farklı beceri seviyelerine ve kullanım senaryolarına sahip geliştiriciler için sofistike makine öğrenimini erişilebilir hale getirir. Mobil uygulamalar, masaüstü yazılımlar veya gömülü sistemler oluştururken, bu EdgeAI çözümleri edge'de verimli ve gizlilik odaklı çalışan bir sonraki nesil akıllı uygulamalar için temel sağlar.
+Tüm bu platformlar arasında ortak bir nokta, yapay zeka yeteneklerinin demokratikleşmesidir; bu, farklı beceri seviyelerine ve kullanım senaryolarına sahip geliştiriciler için gelişmiş makine öğrenimini erişilebilir hale getirir. Mobil uygulamalar, masaüstü yazılımlar veya gömülü sistemler oluştururken, bu EdgeAI çözümleri, uçta verimli ve gizlilik odaklı çalışan bir sonraki nesil akıllı uygulamalar için temel sağlar.
 
-Her platform benzersiz avantajlar sunar: Jetson Orin Nano donanım hızlandırmalı edge hesaplama için, ONNX Runtime GenAI çapraz platform mobil geliştirme için, Azure EdgeAI kurumsal bulut-edge entegrasyonu için, Windows ML Windows'a özgü uygulamalar için ve Foundry Local gizlilik odaklı RAG uygulamaları için. Birlikte, EdgeAI geliştirme için kapsamlı bir ekosistem oluştururlar.
+Her platform benzersiz avantajlar sunar: Jetson Orin Nano donanım hızlandırmalı edge computing için, ONNX Runtime GenAI çapraz platform mobil geliştirme için, Azure EdgeAI kurumsal bulut-edge entegrasyonu için, Windows ML Windows'a özgü uygulamalar için ve Foundry Local gizlilik odaklı RAG uygulamaları için. Birlikte, EdgeAI geliştirme için kapsamlı bir ekosistemi temsil ederler.
 
 ---
 
-**Feragatname**:  
-Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul edilmez.
