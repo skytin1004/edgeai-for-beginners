@@ -73,15 +73,53 @@ Windows ML abstracts the hardware and execution providers, so you can focus on w
 Foundry Local enables developers to build Retrieval Augmented Generation (RAG) applications using local resources in .NET, combining local language models with semantic search capabilities. This approach provides privacy-focused AI solutions that operate entirely on local infrastructure.
 
 ### Technical Architecture
-- Combines the Phi-3 language model, Local Embeddings, and Semantic Kernel to create a RAG scenario
+- Combines the Phi language model, Local Embeddings, and Semantic Kernel to create a RAG scenario
 - Uses embeddings as vectors (arrays) of floating-point values that represent content and its semantic meaning
-- Semantic Kernel acts as the main orchestrator, integrating Phi-3 and Smart Components to create a seamless RAG pipeline
+- Semantic Kernel acts as the main orchestrator, integrating Phi and Smart Components to create a seamless RAG pipeline
 - Support for local vector databases including SQLite and Qdrant
 
 ### Implementation Benefits
 RAG, or Retrieval Augmented Generation, is just a fancy way of saying "look up some stuff and put it into the prompt". This local implementation ensures data privacy while providing intelligent responses grounded in custom knowledge bases. The approach is particularly valuable for enterprise scenarios requiring data sovereignty and offline operation capabilities.
 
 **Learn More**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+
+### Windows Foundry Local
+
+Microsoft Foundry Local provides an OpenAI‑compatible REST server powered by ONNX Runtime for running models locally on Windows. Below is a quick, validated summary; see official docs for full details.
+
+- Get started: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Architecture: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
+- CLI reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
+- Full Windows guide in this repo: [foundrylocal.md](./foundrylocal.md)
+
+Install or upgrade on Windows (cmd.exe):
+```cmd
+winget install Microsoft.FoundryLocal
+winget upgrade --id Microsoft.FoundryLocal
+foundry --version
+```
+
+Explore CLI categories:
+```cmd
+foundry model --help
+foundry service --help
+foundry cache --help
+```
+
+Run a model and discover the dynamic endpoint:
+```cmd
+foundry model run gpt-oss-20b
+foundry service status
+```
+
+Quick REST check to list models (replace PORT from status):
+```cmd
+curl -s http://localhost:PORT/v1/models
+```
+
+Tips:
+- SDK integration: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- Bring your own model (compile): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
 ## Windows EdgeAI Development Resources
 

@@ -409,6 +409,8 @@ Whether you're building consumer applications, enterprise solutions, or speciali
 
 ## Additional Resources
 
+For a step-by-step Windows walkthrough of Foundry Local (install, CLI, dynamic endpoint, SDK usage), see the repo guide: [foundrylocal.md](./foundrylocal.md).
+
 ### Documentation and Learning
 - [Windows AI Foundry Documentation](https://learn.microsoft.com/windows/ai/)
 - [Windows AI APIs Reference](https://learn.microsoft.com/windows/ai/apis/)
