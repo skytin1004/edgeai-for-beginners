@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-18T00:16:21+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T18:21:11+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "tr"
 }
@@ -11,24 +11,24 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Giriş
 
-Windows Edge AI Geliştirme'ye hoş geldiniz - Microsoft'un Windows AI Foundry platformunu kullanarak cihaz üzerinde yapay zeka gücünden yararlanan akıllı uygulamalar oluşturmak için kapsamlı rehberiniz. Bu rehber, Windows geliştiricilerinin en son Edge AI yeteneklerini uygulamalarına entegre ederken Windows donanım hızlandırmasının tam spektrumundan faydalanmalarını sağlamak için özel olarak tasarlanmıştır.
+Windows Edge AI Geliştirme'ye hoş geldiniz - Microsoft'un Windows AI Foundry platformunu kullanarak cihaz üzerinde yapay zeka gücünden yararlanan akıllı uygulamalar oluşturmanız için kapsamlı rehberiniz. Bu rehber, Windows geliştiricilerinin en son Edge AI özelliklerini uygulamalarına entegre ederken Windows donanım hızlandırmasının tüm avantajlarından faydalanmalarını sağlamak için özel olarak tasarlanmıştır.
 
 ### Windows AI Avantajı
 
-Windows AI Foundry, model seçimi ve ince ayar yapmaktan optimizasyon ve CPU, GPU, NPU ve hibrit bulut mimarileri arasında dağıtıma kadar tüm yapay zeka geliştirici yaşam döngüsünü destekleyen birleşik, güvenilir ve güvenli bir platform sunar. Bu platform, aşağıdaki özelliklerle yapay zeka geliştirmeyi demokratikleştirir:
+Windows AI Foundry, model seçimi ve ince ayarından optimizasyon ve CPU, GPU, NPU ve hibrit bulut mimarileri üzerinde dağıtıma kadar tüm yapay zeka geliştirici yaşam döngüsünü destekleyen birleşik, güvenilir ve güvenli bir platform sunar. Bu platform, yapay zeka geliştirmeyi demokratikleştirerek şu avantajları sağlar:
 
-- **Donanım Soyutlama**: AMD, Intel, NVIDIA ve Qualcomm silikonlarında sorunsuz dağıtım
+- **Donanım Soyutlama**: AMD, Intel, NVIDIA ve Qualcomm silikonları arasında sorunsuz dağıtım
 - **Cihaz Üzerinde Zeka**: Tamamen yerel donanımda çalışan, gizliliği koruyan yapay zeka
-- **Optimize Edilmiş Performans**: Windows donanım yapılandırmaları için önceden optimize edilmiş modeller
+- **Optimize Performans**: Windows donanım yapılandırmaları için önceden optimize edilmiş modeller
 - **Kurumsal Hazırlık**: Üretim seviyesinde güvenlik ve uyumluluk özellikleri
 
-### Edge AI için Neden Windows?
+### Neden Windows Edge AI için?
 
 **Evrensel Donanım Desteği**  
-Windows ML, tüm Windows ekosistemi genelinde otomatik donanım optimizasyonu sağlar, böylece yapay zeka uygulamalarınız altta yatan silikon mimarisinden bağımsız olarak en iyi şekilde çalışır.
+Windows ML, tüm Windows ekosistemi genelinde otomatik donanım optimizasyonu sağlar, böylece yapay zeka uygulamalarınız altta yatan silikon mimarisinden bağımsız olarak en iyi performansı gösterir.
 
 **Entegre AI Çalışma Zamanı**  
-Yerleşik Windows ML çıkarım motoru, karmaşık kurulum gereksinimlerini ortadan kaldırır ve geliştiricilerin altyapı endişeleri yerine uygulama mantığına odaklanmasını sağlar.
+Yerleşik Windows ML çıkarım motoru, karmaşık kurulum gereksinimlerini ortadan kaldırır ve geliştiricilerin altyapı yerine uygulama mantığına odaklanmasını sağlar.
 
 **Copilot+ PC Optimizasyonu**  
 Özel Neural Processing Unit'lere (NPU'lar) sahip yeni nesil Windows cihazları için tasarlanmış API'ler, watt başına olağanüstü performans sunar.
@@ -63,21 +63,21 @@ Bu Windows Edge AI geliştirme rehberini tamamlayarak, Windows platformunda üre
 **Windows ML Dağıtımı**  
 - Özel ONNX modellerini Windows uygulamalarına getirin  
 - CPU, GPU ve NPU mimarileri arasında otomatik donanım hızlandırmasından yararlanın  
-- Optimal kaynak kullanımı ile gerçek zamanlı çıkarım uygulayın  
+- Gerçek zamanlı çıkarımı optimal kaynak kullanımı ile uygulayın  
 - Çeşitli Windows cihaz kategorileri için ölçeklenebilir yapay zeka uygulamaları tasarlayın  
 
 ### Uygulama Geliştirme Becerileri
 
 **Çapraz Platform Windows Geliştirme**  
 - Evrensel Windows dağıtımı için .NET MAUI kullanarak yapay zeka destekli uygulamalar oluşturun  
-- Yapay zeka yeteneklerini Win32, UWP ve İlerici Web Uygulamalarına entegre edin  
-- Yapay zeka işleme durumlarına uyum sağlayan duyarlı UI tasarımları uygulayın  
+- Yapay zeka yeteneklerini Win32, UWP ve İlerleyici Web Uygulamalarına entegre edin  
+- Yapay zeka işlem durumlarına uyum sağlayan duyarlı UI tasarımları uygulayın  
 - Asenkron yapay zeka işlemlerini uygun kullanıcı deneyimi desenleriyle yönetin  
 
 **Performans Optimizasyonu**  
 - Farklı donanım yapılandırmaları arasında yapay zeka çıkarım performansını profilleyin ve optimize edin  
 - Büyük dil modelleri için verimli bellek yönetimi uygulayın  
-- Mevcut donanım yeteneklerine göre zarif bir şekilde bozulabilen uygulamalar tasarlayın  
+- Mevcut donanım yeteneklerine göre zarif bir şekilde degrade olan uygulamalar tasarlayın  
 - Sık kullanılan yapay zeka işlemleri için önbellek stratejileri uygulayın  
 
 **Üretim Hazırlığı**  
@@ -89,14 +89,14 @@ Bu Windows Edge AI geliştirme rehberini tamamlayarak, Windows platformunda üre
 ### İş ve Stratejik Anlayış
 
 **Yapay Zeka Uygulama Mimarisi**  
-- Yerel ve bulut yapay zeka işlemleri arasında optimize edilmiş hibrit mimariler tasarlayın  
+- Yerel ve bulut yapay zeka işlemleri arasında optimize eden hibrit mimariler tasarlayın  
 - Model boyutu, doğruluk ve çıkarım hızı arasındaki ödünleşimleri değerlendirin  
-- Gizliliği korurken zekayı etkinleştiren veri akışı mimarileri planlayın  
+- Gizliliği korurken zekayı mümkün kılan veri akışı mimarilerini planlayın  
 - Kullanıcı talepleriyle ölçeklenen maliyet etkin yapay zeka çözümleri uygulayın  
 
 **Pazar Konumlandırması**  
 - Windows'a özgü yapay zeka uygulamalarının rekabet avantajlarını anlayın  
-- Cihaz üzerinde yapay zekanın üstün kullanıcı deneyimleri sağladığı kullanım durumlarını belirleyin  
+- Cihaz üzerinde yapay zekanın üstün kullanıcı deneyimleri sağladığı kullanım senaryolarını belirleyin  
 - Yapay zeka destekli Windows uygulamaları için pazara giriş stratejileri geliştirin  
 - Uygulamaları Windows ekosisteminin avantajlarından yararlanacak şekilde konumlandırın  
 
@@ -119,28 +119,28 @@ Windows AI API'leri, Copilot+ PC cihazlarında minimum kurulum gereksinimiyle ve
 - **Görüntü Süper Çözünürlük**: Yerel yapay zeka modelleri kullanarak görüntüleri yükseltme  
 - **Görüntü Segmentasyonu**: Görüntülerdeki belirli nesneleri tanımlama ve ayırma  
 - **Görüntü Açıklaması**: Görsel içerik için ayrıntılı metin açıklamaları oluşturma  
-- **Nesne Silme**: Görüntülerden istenmeyen nesneleri yapay zeka destekli doldurma ile kaldırma  
+- **Nesne Silme**: Görüntülerden istenmeyen nesneleri yapay zeka destekli boyama ile kaldırma  
 
 **Çok Modlu Yetkinlikler**  
 - **Görsel-Metin Entegrasyonu**: Metin ve görüntü anlayışını birleştirme  
 - **Semantik Arama**: Multimedya içerik üzerinde doğal dil sorguları etkinleştirme  
-- **Bilgi Alma**: Yerel verilerle akıllı arama deneyimleri oluşturma  
+- **Bilgi Alma**: Yerel veriyle akıllı arama deneyimleri oluşturma  
 
 ### 2. Foundry Local
 
-Foundry Local, geliştiricilere Windows Silicon üzerinde yerel uygulamalarda modelleri gözden geçirme, test etme, etkileşim kurma ve dağıtma yeteneği sunan kullanıma hazır açık kaynaklı dil modellerine hızlı erişim sağlar.
+Foundry Local, geliştiricilere Windows Silicon üzerinde yerel uygulamalarda modelleri gözden geçirme, test etme, etkileşimde bulunma ve dağıtma yeteneği sunan kullanıma hazır açık kaynaklı dil modellerine hızlı erişim sağlar.
 
 #### Temel Özellikler
 
 **Model Kataloğu**  
 - Önceden optimize edilmiş açık kaynaklı modellerin kapsamlı koleksiyonu  
 - Anında dağıtım için CPU, GPU ve NPU'lar arasında optimize edilmiş modeller  
-- Llama, Mistral, Phi ve özel alan modelleri dahil popüler model aileleri için destek  
+- Llama, Mistral, Phi ve özel alan modelleri gibi popüler model aileleri için destek  
 
 **CLI Entegrasyonu**  
 - Model yönetimi ve dağıtımı için komut satırı arayüzü  
 - Otomatik optimizasyon ve kuantizasyon iş akışları  
-- Popüler geliştirme ortamları ve CI/CD hatları ile entegrasyon  
+- Popüler geliştirme ortamları ve CI/CD boru hatları ile entegrasyon  
 
 **Yerel Dağıtım**  
 - Bulut bağımlılıkları olmadan tamamen çevrimdışı çalışma  
@@ -149,9 +149,9 @@ Foundry Local, geliştiricilere Windows Silicon üzerinde yerel uygulamalarda mo
 
 ### 3. Windows ML
 
-Windows ML, geliştiricilerin geniş Windows donanım ekosistemi genelinde özel modelleri verimli bir şekilde dağıtmasına olanak tanıyan Windows'taki temel yapay zeka platformu ve entegre çıkarım çalışma zamanıdır.
+Windows ML, geliştiricilerin geniş Windows donanım ekosistemi genelinde özel modelleri verimli bir şekilde dağıtmasına olanak tanıyan temel yapay zeka platformu ve entegre çıkarım çalışma zamanıdır.
 
-#### Mimari Faydalar
+#### Mimari Avantajlar
 
 **Evrensel Donanım Desteği**  
 - AMD, Intel, NVIDIA ve Qualcomm silikonları için otomatik optimizasyon  
@@ -182,7 +182,7 @@ Windows ML, geliştiricilerin geniş Windows donanım ekosistemi genelinde özel
 - Örnek uygulamaları ve referans uygulamaları keşfedin  
 - Windows AI API'lerini etkileşimli demolarla test edin  
 - En iyi uygulamalar ve desenler için kaynak kodu inceleyin  
-- Belirli kullanım durumunuz için ilgili örnekleri belirleyin  
+- Özel kullanım senaryonuz için ilgili örnekleri belirleyin  
 
 ### Aşama 2: Model Seçimi ve Entegrasyonu
 
@@ -193,16 +193,16 @@ Windows ML, geliştiricilerin geniş Windows donanım ekosistemi genelinde özel
 - Dağıtım mimarisi ve ölçekleme stratejilerini planlayın  
 
 **Model Değerlendirme**  
-- Kullanım durumunuz için açık kaynaklı modelleri test etmek için Foundry Local'ı kullanın  
+- Kullanım senaryonuz için açık kaynaklı modelleri test etmek için Foundry Local'i kullanın  
 - Özel model gereksinimlerine karşı Windows AI API'lerini karşılaştırın  
 - Model boyutu, doğruluk ve çıkarım hızı arasındaki ödünleşimleri değerlendirin  
-- Seçilen modellerle prototip entegrasyon yaklaşımları oluşturun  
+- Seçilen modellerle entegrasyon yaklaşımlarını prototipleyin  
 
 ### Aşama 3: Uygulama Geliştirme
 
 **Temel Entegrasyon**  
 - Windows AI API entegrasyonunu uygun hata işleme ile uygulayın  
-- Yapay zeka işleme iş akışlarını barındıran kullanıcı arayüzleri tasarlayın  
+- Yapay zeka işlem iş akışlarını barındıran kullanıcı arayüzleri tasarlayın  
 - Model çıkarımı için önbellek ve optimizasyon stratejileri uygulayın  
 - Yapay zeka işlem performansı için telemetri ve izleme ekleyin  
 
@@ -233,20 +233,20 @@ Windows ML, geliştiricilerin geniş Windows donanım ekosistemi genelinde özel
 Birden fazla yapay zeka yeteneği kullanarak belgeleri işleyen bir Windows uygulaması oluşturun:
 
 **Kullanılan Teknolojiler:**  
-- Phi Silica ile belge özetleme ve soru yanıtlama  
-- OCR API'leri ile taranmış belgelerden metin çıkarma  
-- Görüntü Açıklama API'leri ile grafik ve diyagram analizi  
+- Belge özetleme ve soru yanıtlama için Phi Silica  
+- Tarama belgelerinden metin çıkarma için OCR API'leri  
+- Grafik ve diyagram analizi için Görüntü Açıklama API'leri  
 - Belge sınıflandırması için özel ONNX modelleri  
 
 **Uygulama Yaklaşımı:**  
-- Modüler yapay zeka bileşenleri ile modüler mimari tasarlayın  
+- Modüler yapay zeka bileşenleriyle tasarım mimarisi oluşturun  
 - Büyük belge grupları için asenkron işlem uygulayın  
 - Uzun süreli işlemler için ilerleme göstergeleri ve iptal desteği ekleyin  
 - Hassas belge işleme için çevrimdışı yetenekler dahil edin  
 
 ### Örnek 2: Perakende Envanter Yönetim Sistemi
 
-Perakende uygulamaları için yapay zeka destekli bir envanter sistemi oluşturun:
+Perakende uygulamalar için yapay zeka destekli bir envanter sistemi oluşturun:
 
 **Kullanılan Teknolojiler:**  
 - Ürün tanımlama için Görüntü Segmentasyonu  
@@ -265,7 +265,7 @@ Perakende uygulamaları için yapay zeka destekli bir envanter sistemi oluşturu
 Gizliliği koruyan bir sağlık belgeleri aracı geliştirin:
 
 **Kullanılan Teknolojiler:**  
-- Phi Silica ile tıbbi not oluşturma ve klinik karar desteği  
+- Tıbbi not oluşturma ve klinik karar desteği için Phi Silica  
 - El yazısı tıbbi kayıtları dijitalleştirmek için OCR  
 - Windows ML aracılığıyla dağıtılan özel tıbbi dil modelleri  
 - Tıbbi bilgi alma için yerel vektör depolama  
@@ -282,20 +282,20 @@ Gizliliği koruyan bir sağlık belgeleri aracı geliştirin:
 
 **NPU Optimizasyonu**  
 - Copilot+ PC'lerde NPU yeteneklerinden yararlanacak uygulamalar tasarlayın  
-- NPU olmayan cihazlarda GPU/CPU'ya zarif bir şekilde geri dönüş uygulayın  
+- NPU olmayan cihazlarda GPU/CPU'ya zarif bir şekilde geçiş yapın  
 - NPU'ya özgü hızlandırma için model formatlarını optimize edin  
 - NPU kullanımını ve termal özelliklerini izleyin  
 
 **Bellek Yönetimi**  
-- Verimli model yükleme ve önbellek stratejileri uygulayın  
-- Başlangıç süresini azaltmak için büyük modeller için bellek eşleme kullanın  
-- Kaynak kısıtlı cihazlar için bellek bilinci olan uygulamalar tasarlayın  
+- Büyük modeller için verimli model yükleme ve önbellek stratejileri uygulayın  
+- Başlangıç süresini azaltmak için bellek eşleme kullanın  
+- Kaynak kısıtlı cihazlar için bellek bilinci uygulamalar tasarlayın  
 - Bellek optimizasyonu için model kuantizasyonu uygulayın  
 
 **Pil Verimliliği**  
 - Minimum güç tüketimi için yapay zeka işlemlerini optimize edin  
 - Pil durumuna dayalı uyarlanabilir işlem uygulayın  
-- Sürekli yapay zeka işlemleri için verimli arka plan işleme tasarlayın  
+- Sürekli yapay zeka işlemleri için verimli arka plan işlem tasarlayın  
 - Enerji kullanımını optimize etmek için güç profilleme araçlarını kullanın  
 
 ### Ölçeklenebilirlik Düşünceleri
@@ -308,10 +308,11 @@ Gizliliği koruyan bir sağlık belgeleri aracı geliştirin:
 
 **Önbellek Stratejileri**  
 - Sık kullanılan yapay zeka işlemleri için akıllı önbellek uygulayın  
-- Model güncellemeleri için önbellek geçersiz k
-- Model testi ve doğrulama için Foundry Local CLI'den yararlanın  
+- Model güncellemeleri için önbellek geçersiz kılma stratejileri tasarlayın  
+-
+- Model test etme ve doğrulama için Foundry Local CLI'yi kullanın  
 - Entegrasyon doğrulaması için Windows AI API test araçlarını kullanın  
-- AI operasyon takibi için özel günlük kaydı uygulayın  
+- AI operasyon takibi için özel loglama uygulayın  
 - AI işlevselliğinin güvenilirliği için otomatik testler oluşturun  
 
 ## Uygulamalarınızı Geleceğe Hazırlama  
@@ -319,10 +320,10 @@ Gizliliği koruyan bir sağlık belgeleri aracı geliştirin:
 ### Gelişen Teknolojiler  
 
 **Yeni Nesil Donanım**  
-- Uygulamaları gelecekteki NPU yeteneklerinden yararlanacak şekilde tasarlayın  
+- Uygulamaları gelecekteki NPU yeteneklerinden faydalanacak şekilde tasarlayın  
 - Artan model boyutları ve karmaşıklığı için plan yapın  
-- Gelişen donanımlar için uyarlanabilir mimariler uygulayın  
-- Gelecekteki uyumluluk için kuantum hazır algoritmaları göz önünde bulundurun  
+- Gelişen donanımlara uyum sağlayacak adaptif mimariler uygulayın  
+- Gelecekte uyumluluk için kuantum hazır algoritmaları göz önünde bulundurun  
 
 **Gelişmiş AI Yetenekleri**  
 - Daha fazla veri türü arasında çok modlu AI entegrasyonuna hazırlanın  
@@ -336,23 +337,25 @@ Gizliliği koruyan bir sağlık belgeleri aracı geliştirin:
 - Sorunsuz model güncelleme mekanizmaları uygulayın  
 - Uygulamaları geliştirilmiş model yeteneklerine uyum sağlayacak şekilde tasarlayın  
 - Mevcut modellerle geriye dönük uyumluluk için plan yapın  
-- Model performans değerlendirmesi için A/B testi uygulayın  
+- Model performans değerlendirmesi için A/B testleri uygulayın  
 
 **Özellik Gelişimi**  
-- Yeni AI yeteneklerini barındıracak modüler mimariler tasarlayın  
+- Yeni AI yeteneklerini destekleyecek modüler mimariler tasarlayın  
 - Gelişen Windows AI API'lerinin entegrasyonu için plan yapın  
 - Kademeli yetenek sunumu için özellik bayrakları uygulayın  
 - Gelişmiş AI özelliklerine uyum sağlayan kullanıcı arayüzleri tasarlayın  
 
 ## Sonuç  
 
-Windows Edge AI geliştirme, güçlü AI yeteneklerinin sağlam, güvenli ve ölçeklenebilir Windows platformuyla birleşimini temsil eder. Windows AI Foundry ekosistemine hakim olarak, geliştiriciler üstün kullanıcı deneyimleri sunan ve en yüksek gizlilik, güvenlik ve performans standartlarını koruyan akıllı uygulamalar oluşturabilirler.  
+Windows Edge AI geliştirme, güçlü AI yeteneklerini sağlam, güvenli ve ölçeklenebilir Windows platformuyla birleştirir. Windows AI Foundry ekosistemine hakim olarak, geliştiriciler hem üstün kullanıcı deneyimleri sunan hem de gizlilik, güvenlik ve performans standartlarını en üst düzeyde tutan akıllı uygulamalar oluşturabilirler.  
 
-Windows AI API'leri, Foundry Local ve Windows ML'nin birleşimi, bir sonraki nesil akıllı Windows uygulamalarını oluşturmak için benzersiz bir temel sağlar. AI gelişmeye devam ederken, Windows platformu uygulamalarınızın gelişen teknolojilerle ölçeklenmesini ve çeşitli Windows donanım ekosisteminde uyumluluk ve performansını korumasını garanti eder.  
+Windows AI API'leri, Foundry Local ve Windows ML'nin birleşimi, bir sonraki nesil akıllı Windows uygulamalarını oluşturmak için eşsiz bir temel sağlar. AI sürekli gelişirken, Windows platformu uygulamalarınızın gelişen teknolojilerle ölçeklenmesini ve çeşitli Windows donanım ekosisteminde uyumluluk ve performansını korumasını garanti eder.  
 
-İster tüketici uygulamaları, ister kurumsal çözümler, isterse özel endüstri araçları geliştiriyor olun, Windows Edge AI geliştirme, modern Windows cihazlarının tam potansiyelinden yararlanan akıllı, duyarlı ve derinlemesine entegre deneyimler oluşturmanızı sağlar.  
+İster tüketici uygulamaları, ister kurumsal çözümler, isterse özel endüstri araçları geliştiriyor olun, Windows Edge AI geliştirme, modern Windows cihazlarının tam potansiyelinden faydalanan akıllı, duyarlı ve derinlemesine entegre deneyimler oluşturmanızı sağlar.  
 
 ## Ek Kaynaklar  
+
+Foundry Local'ın adım adım Windows rehberi (kurulum, CLI, dinamik endpoint, SDK kullanımı) için repo kılavuzuna bakın: [foundrylocal.md](./foundrylocal.md).  
 
 ### Dokümantasyon ve Öğrenme  
 - [Windows AI Foundry Dokümantasyonu](https://learn.microsoft.com/windows/ai/)  
@@ -376,5 +379,3 @@ Windows AI API'leri, Foundry Local ve Windows ML'nin birleşimi, bir sonraki nes
 
 ---
 
-**Feragatname**:  
-Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.
