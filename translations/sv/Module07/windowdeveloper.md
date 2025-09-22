@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-18T08:35:37+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T19:13:13+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "sv"
 }
@@ -11,30 +11,30 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introduktion
 
-Välkommen till Windows Edge AI-utveckling - din omfattande guide för att bygga intelligenta applikationer som utnyttjar kraften av AI direkt på enheten med hjälp av Microsofts Windows AI Foundry-plattform. Denna guide är specifikt utformad för Windows-utvecklare som vill integrera avancerade Edge AI-funktioner i sina applikationer samtidigt som de drar nytta av hela spektrumet av Windows hårdvaruacceleration.
+Välkommen till Windows Edge AI-utveckling – din omfattande guide till att bygga intelligenta applikationer som utnyttjar kraften i AI direkt på enheten med hjälp av Microsofts Windows AI Foundry-plattform. Denna guide är särskilt utformad för Windows-utvecklare som vill integrera avancerade Edge AI-funktioner i sina applikationer samtidigt som de drar nytta av hela spektrumet av Windows hårdvaruacceleration.
 
 ### Fördelarna med Windows AI
 
-Windows AI Foundry representerar en enhetlig, pålitlig och säker plattform som stödjer hela AI-utvecklingslivscykeln - från modellval och finjustering till optimering och distribution över CPU, GPU, NPU och hybridmolnarkitekturer. Denna plattform demokratiserar AI-utveckling genom att erbjuda:
+Windows AI Foundry erbjuder en enhetlig, pålitlig och säker plattform som stödjer hela AI-utvecklingslivscykeln – från modellval och finjustering till optimering och distribution över CPU, GPU, NPU och hybridmolnarkitekturer. Denna plattform demokratiserar AI-utveckling genom att tillhandahålla:
 
-- **Hårdvaruabstraktion**: Smidig distribution över AMD-, Intel-, NVIDIA- och Qualcomm-kretsar
+- **Hårdvaruabstraktion**: Smidig distribution över AMD-, Intel-, NVIDIA- och Qualcomm-chip
 - **Intelligens på enheten**: AI som bevarar integriteten och körs helt på lokal hårdvara
-- **Optimerad prestanda**: Modeller som är föroptimerade för Windows hårdvarukonfigurationer
+- **Optimerad prestanda**: Modeller föroptimerade för Windows hårdvarukonfigurationer
 - **Färdig för företag**: Säkerhets- och efterlevnadsfunktioner i produktionsklass
 
 ### Varför Windows för Edge AI?
 
-**Universellt stöd för hårdvara**  
-Windows ML erbjuder automatisk hårdvaruoptimering över hela Windows-ekosystemet, vilket säkerställer att dina AI-applikationer presterar optimalt oavsett den underliggande kretsarkitekturen.
+**Universellt hårdvarustöd**  
+Windows ML erbjuder automatisk hårdvaruoptimering över hela Windows-ekosystemet, vilket säkerställer att dina AI-applikationer presterar optimalt oavsett den underliggande chiparkitekturen.
 
 **Integrerad AI-runtime**  
 Den inbyggda Windows ML-inferensmotorn eliminerar komplexa installationskrav, vilket gör att utvecklare kan fokusera på applikationslogik istället för infrastrukturbekymmer.
 
 **Copilot+ PC-optimering**  
-Skräddarsydda API:er designade specifikt för nästa generations Windows-enheter med dedikerade neurala processorenheter (NPUs) som levererar exceptionell prestanda per watt.
+Specialdesignade API:er för nästa generations Windows-enheter med dedikerade neurala processorenheter (NPUs) som levererar exceptionell prestanda per watt.
 
 **Utvecklarekosystem**  
-Rika verktyg inklusive integration med Visual Studio, omfattande dokumentation och exempelapplikationer som påskyndar utvecklingscykler.
+Rika verktyg inklusive Visual Studio-integration, omfattande dokumentation och exempelapplikationer som påskyndar utvecklingscykler.
 
 ## Lärandemål
 
@@ -42,7 +42,7 @@ Genom att slutföra denna Windows Edge AI-utvecklingsguide kommer du att bemäst
 
 ### Kärntekniska kompetenser
 
-**Windows AI Foundry-expertis**  
+**Windows AI Foundry-färdigheter**  
 - Förstå arkitekturen och komponenterna i Windows AI Foundry-plattformen  
 - Navigera genom hela AI-utvecklingslivscykeln inom Windows-ekosystemet  
 - Implementera säkerhetsbästa praxis för AI-applikationer på enheten  
@@ -57,7 +57,7 @@ Genom att slutföra denna Windows Edge AI-utvecklingsguide kommer du att bemäst
 **Foundry Local-implementering**  
 - Bläddra, utvärdera och distribuera öppna språkmodeller med Foundry Local CLI  
 - Förstå modelloptimering och kvantisering för lokal distribution  
-- Implementera offline-AI-funktioner som fungerar utan internetanslutning  
+- Implementera offline AI-funktioner som fungerar utan internetanslutning  
 - Hantera modellers livscykler och uppdateringar i produktionsmiljöer  
 
 **Windows ML-distribution**  
@@ -72,7 +72,7 @@ Genom att slutföra denna Windows Edge AI-utvecklingsguide kommer du att bemäst
 - Bygg AI-drivna applikationer med .NET MAUI för universell Windows-distribution  
 - Integrera AI-funktioner i Win32-, UWP- och progressiva webbapplikationer  
 - Implementera responsiva UI-designs som anpassar sig till AI-bearbetningstillstånd  
-- Hantera asynkrona AI-operationer med rätt användarupplevelsemönster  
+- Hantera asynkrona AI-operationer med lämpliga användarmönster  
 
 **Prestandaoptimering**  
 - Profilera och optimera AI-inferensprestanda över olika hårdvarukonfigurationer  
@@ -92,7 +92,7 @@ Genom att slutföra denna Windows Edge AI-utvecklingsguide kommer du att bemäst
 - Designa hybridarkitekturer som optimerar mellan lokal och molnbaserad AI-bearbetning  
 - Utvärdera avvägningar mellan modellstorlek, noggrannhet och inferenshastighet  
 - Planera dataflödesarkitekturer som bevarar integritet samtidigt som de möjliggör intelligens  
-- Implementera kostnadseffektiva AI-lösningar som skalar med användarnas behov  
+- Implementera kostnadseffektiva AI-lösningar som skalar med användarbehov  
 
 **Marknadspositionering**  
 - Förstå konkurrensfördelarna med Windows-nativa AI-applikationer  
@@ -104,7 +104,7 @@ Genom att slutföra denna Windows Edge AI-utvecklingsguide kommer du att bemäst
 
 ### 1. Windows AI API:er
 
-Windows AI API:er erbjuder färdiga AI-funktioner som drivs av modeller på enheten, optimerade för effektivitet och prestanda på Copilot+ PC-enheter med minimal installation.
+Windows AI API:er erbjuder färdiga AI-funktioner drivna av modeller på enheten, optimerade för effektivitet och prestanda på Copilot+ PC-enheter med minimal installation.
 
 #### Kärnkategorier av API:er
 
@@ -119,11 +119,11 @@ Windows AI API:er erbjuder färdiga AI-funktioner som drivs av modeller på enhe
 - **Bildsuperupplösning**: Skala upp bilder med lokala AI-modeller  
 - **Bildsegmentering**: Identifiera och isolera specifika objekt i bilder  
 - **Bildbeskrivning**: Generera detaljerade textbeskrivningar för visuellt innehåll  
-- **Objektborttagning**: Ta bort oönskade objekt från bilder med AI-drivet inpainting  
+- **Objektborttagning**: Ta bort oönskade objekt från bilder med AI-driven inpainting  
 
 **Multimodala funktioner**  
 - **Integration av bild och text**: Kombinera förståelse av text och bild  
-- **Semantisk sökning**: Möjliggör naturliga språkfrågor över multimediainnehåll  
+- **Semantisk sökning**: Möjliggör naturliga språkfrågor över multimedia-innehåll  
 - **Kunskapsåtervinning**: Bygg intelligenta sökupplevelser med lokal data  
 
 ### 2. Foundry Local
@@ -135,7 +135,7 @@ Foundry Local ger utvecklare snabb tillgång till färdiga öppna språkmodeller
 **Modellkatalog**  
 - Omfattande samling av föroptimerade öppna modeller  
 - Modeller optimerade över CPU, GPU och NPU för omedelbar distribution  
-- Stöd för populära modelfamiljer inklusive Llama, Mistral, Phi och specialiserade domänmodeller  
+- Stöd för populära modellfamiljer inklusive Llama, Mistral, Phi och specialiserade domänmodeller  
 
 **CLI-integration**  
 - Kommandoradsgränssnitt för modellhantering och distribution  
@@ -143,7 +143,7 @@ Foundry Local ger utvecklare snabb tillgång till färdiga öppna språkmodeller
 - Integration med populära utvecklingsmiljöer och CI/CD-pipelines  
 
 **Lokal distribution**  
-- Fullständig offline-drift utan molnberoenden  
+- Fullständig offlinefunktionalitet utan molnberoenden  
 - Stöd för anpassade modellformat och konfigurationer  
 - Effektiv modellservering med automatisk hårdvaruoptimering  
 
@@ -151,12 +151,12 @@ Foundry Local ger utvecklare snabb tillgång till färdiga öppna språkmodeller
 
 Windows ML fungerar som den centrala AI-plattformen och integrerade inferensmotorn på Windows, vilket gör det möjligt för utvecklare att distribuera anpassade modeller effektivt över det breda Windows hårdvaruekosystemet.
 
-#### Arkitekturella fördelar
+#### Fördelar med arkitekturen
 
-**Universellt stöd för hårdvara**  
-- Automatisk optimering för AMD-, Intel-, NVIDIA- och Qualcomm-kretsar  
+**Universellt hårdvarustöd**  
+- Automatisk optimering för AMD-, Intel-, NVIDIA- och Qualcomm-chip  
 - Stöd för CPU-, GPU- och NPU-exekvering med transparent växling  
-- Hårdvaruabstraktion som eliminerar plattformspecifik optimeringsarbete  
+- Hårdvaruabstraktion som eliminerar plattformsspecifikt optimeringsarbete  
 
 **Modellflexibilitet**  
 - Stöd för ONNX-modellformat med automatisk konvertering från populära ramverk  
@@ -194,7 +194,7 @@ Windows ML fungerar som den centrala AI-plattformen och integrerade inferensmoto
 
 **Modellevaluering**  
 - Använd Foundry Local för att testa öppna modeller för ditt användningsfall  
-- Benchmarka Windows AI API:er mot anpassade modellkrav  
+- Benchmarka Windows AI API:er mot krav på anpassade modeller  
 - Utvärdera avvägningar mellan modellstorlek, noggrannhet och inferenshastighet  
 - Prototypa integrationsmetoder med valda modeller  
 
@@ -202,7 +202,7 @@ Windows ML fungerar som den centrala AI-plattformen och integrerade inferensmoto
 
 **Kärnintegration**  
 - Implementera Windows AI API-integration med korrekt felhantering  
-- Designa användargränssnitt som rymmer AI-bearbetningsarbetsflöden  
+- Designa användargränssnitt som anpassar sig till AI-bearbetningsarbetsflöden  
 - Implementera caching och optimeringsstrategier för modellinferens  
 - Lägg till telemetri och övervakning för AI-operationers prestanda  
 
@@ -221,10 +221,10 @@ Windows ML fungerar som den centrala AI-plattformen och integrerade inferensmoto
 - Finjustera användarupplevelsen för olika prestandascenarier  
 
 **Produktionsdistribution**  
-- Paketera applikationer med rätt AI-modellberoenden  
+- Paketera applikationer med korrekta AI-modellberoenden  
 - Implementera uppdateringsmekanismer för modeller och applikationslogik  
 - Konfigurera övervakning och analys för produktionsmiljöer  
-- Planera utrullningsstrategier för företags- och konsumentdistributioner  
+- Planera lanseringsstrategier för företags- och konsumentdistributioner  
 
 ## Praktiska implementeringsexempel
 
@@ -242,7 +242,7 @@ Bygg en Windows-applikation som bearbetar dokument med flera AI-funktioner:
 - Designa modulär arkitektur med pluggbara AI-komponenter  
 - Implementera asynkron bearbetning för stora dokumentbatcher  
 - Lägg till progressindikatorer och avbrytningsstöd för långvariga operationer  
-- Inkludera offlinekapacitet för känslig dokumentbearbetning  
+- Inkludera offlinefunktionalitet för känslig dokumentbearbetning  
 
 ### Exempel 2: Detaljhandelsinventeringssystem
 
@@ -255,7 +255,7 @@ Skapa ett AI-drivet inventeringssystem för detaljhandelsapplikationer:
 - Integration med befintliga POS- och inventeringssystem  
 
 **Implementeringsmetod:**  
-- Bygg kameraintegration för realtidsprodukskanning  
+- Bygg kameraintegration för realtidsproduktskanning  
 - Implementera streckkod och visuell produktigenkänning  
 - Lägg till naturliga språkfrågor för inventering med lokala språkmodeller  
 - Designa skalbar arkitektur för distribution i flera butiker  
@@ -271,7 +271,7 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 - Lokal vektorlagring för medicinsk kunskapsåtervinning  
 
 **Implementeringsmetod:**  
-- Säkerställ fullständig offline-drift för patientintegritet  
+- Säkerställ fullständig offlinefunktionalitet för patientintegritet  
 - Implementera validering och förslag av medicinsk terminologi  
 - Lägg till granskningsloggning för regulatorisk efterlevnad  
 - Designa integration med befintliga elektroniska patientjournalsystem  
@@ -287,7 +287,7 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 - Övervaka NPU-användning och termiska egenskaper  
 
 **Minneshantering**  
-- Implementera effektiva strategier för modellinläsning och caching  
+- Implementera effektiva modellinläsnings- och cachingstrategier  
 - Använd minnesmappning för stora modeller för att minska starttiden  
 - Designa minnesmedvetna applikationer för resursbegränsade enheter  
 - Implementera modellkvantisering för minnesoptimering  
@@ -308,8 +308,8 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 
 **Cachingstrategier**  
 - Implementera intelligent caching för ofta använda AI-operationer  
-- Designa strategier för cacheinvalidering vid modelluppdateringar  
-- Använd persistent caching för kostsamma förbearbetningsoperationer  
+- Designa cacheinvalideringsstrategier för modelluppdateringar  
+- Använd persistent caching för dyra förbearbetningsoperationer  
 - Implementera distribuerad caching för scenarier med flera användare  
 
 ## Säkerhets- och integritetsbästa praxis
@@ -323,7 +323,7 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 - Applicera kryptering för lagrade modeller och mellanliggande bearbetningsresultat  
 
 **Modellsäkerhet**  
-- Validera modellintegritet innan inläsning och exekvering  
+- Validera modellintegritet före inläsning och exekvering  
 - Implementera säkra mekanismer för modelluppdateringar  
 - Använd signerade modeller för att förhindra manipulering  
 - Applicera åtkomstkontroller för modellfiler och konfiguration  
@@ -333,8 +333,9 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 **Regulatorisk anpassning**  
 - Designa applikationer för att uppfylla GDPR, HIPAA och andra regulatoriska krav  
 - Implementera granskningsloggning för AI-beslutsprocesser  
-- Tillhandahåll
-- Använd Foundry Local CLI för modelltestning och validering  
+- Tillhandahåll transparensfunktioner för AI-genererade resultat  
+- Möjligg
+- Utnyttja Foundry Local CLI för modelltestning och validering  
 - Använd Windows AI API-testverktyg för att verifiera integration  
 - Implementera anpassad loggning för övervakning av AI-operationer  
 - Skapa automatiserade tester för att säkerställa AI-funktionens tillförlitlighet  
@@ -345,13 +346,13 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 
 **Nästa generations hårdvara**  
 - Utforma applikationer för att dra nytta av framtida NPU-funktioner  
-- Planera för ökade modellstorlekar och komplexitet  
-- Implementera adaptiva arkitekturer för utvecklande hårdvara  
+- Planera för större modellstorlekar och ökad komplexitet  
+- Implementera adaptiva arkitekturer för att möta utvecklande hårdvara  
 - Överväg kvantberäkningsklara algoritmer för framtida kompatibilitet  
 
 **Avancerade AI-funktioner**  
 - Förbered för multimodal AI-integration över fler datatyper  
-- Planera för realtids-samarbete mellan flera enheter  
+- Planera för realtids samarbets-AI mellan flera enheter  
 - Utforma för federerade inlärningsmöjligheter  
 - Överväg hybridintelligensarkitekturer mellan edge och moln  
 
@@ -367,33 +368,35 @@ Utveckla ett integritetsbevarande dokumentationsverktyg för sjukvården:
 - Utforma modulära arkitekturer som kan integrera nya AI-funktioner  
 - Planera för integration av framväxande Windows AI API:er  
 - Implementera funktionsflaggor för gradvis utrullning av kapabiliteter  
-- Utforma användargränssnitt som anpassar sig till förbättrade AI-funktioner  
+- Utforma användargränssnitt som kan anpassa sig till förbättrade AI-funktioner  
 
 ## Slutsats  
 
 Windows Edge AI-utveckling representerar en sammansmältning av kraftfulla AI-funktioner med den robusta, säkra och skalbara Windows-plattformen. Genom att bemästra Windows AI Foundry-ekosystemet kan utvecklare skapa intelligenta applikationer som erbjuder exceptionella användarupplevelser samtidigt som de upprätthåller högsta standard för integritet, säkerhet och prestanda.  
 
-Kombinationen av Windows AI API:er, Foundry Local och Windows ML ger en oöverträffad grund för att bygga nästa generation av intelligenta Windows-applikationer. När AI fortsätter att utvecklas säkerställer Windows-plattformen att dina applikationer kan skala med framväxande teknologier samtidigt som de bibehåller kompatibilitet och prestanda över det mångsidiga Windows-hårdvaruekosystemet.  
+Kombinationen av Windows AI API:er, Foundry Local och Windows ML ger en oöverträffad grund för att bygga nästa generations intelligenta Windows-applikationer. När AI fortsätter att utvecklas säkerställer Windows-plattformen att dina applikationer kan skala med framväxande teknologier samtidigt som de bibehåller kompatibilitet och prestanda över det mångsidiga Windows-hårdvaruekosystemet.  
 
 Oavsett om du bygger konsumentapplikationer, företagslösningar eller specialiserade industriverktyg, ger Windows Edge AI-utveckling dig möjlighet att skapa intelligenta, responsiva och djupt integrerade upplevelser som utnyttjar den fulla potentialen hos moderna Windows-enheter.  
 
 ## Ytterligare resurser  
 
+För en steg-för-steg-guide för Foundry Local (installation, CLI, dynamiska endpoints, SDK-användning), se repo-guiden: [foundrylocal.md](./foundrylocal.md).  
+
 ### Dokumentation och lärande  
-- [Windows AI Foundry Dokumentation](https://learn.microsoft.com/windows/ai/)  
-- [Windows AI API:er Referens](https://learn.microsoft.com/windows/ai/apis/)  
+- [Windows AI Foundry-dokumentation](https://learn.microsoft.com/windows/ai/)  
+- [Windows AI API-referens](https://learn.microsoft.com/windows/ai/apis/)  
 - [Kom igång med Foundry Local](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)  
-- [Windows ML Översikt](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)  
+- [Windows ML-översikt](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)  
 
 ### Utvecklingsverktyg  
 - [AI Toolkit för Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)  
 - [AI Dev Gallery](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)  
-- [Windows AI Exempel](https://learn.microsoft.com/windows/ai/samples/)  
+- [Windows AI-exempel](https://learn.microsoft.com/windows/ai/samples/)  
 
 ### Community och support  
-- [Windows Utvecklarcommunity](https://developer.microsoft.com/en-us/windows/)  
-- [Windows AI Foundry Blogg](https://blogs.windows.com/windowsdeveloper/)  
-- [Microsoft Learn AI Utbildning](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)  
+- [Windows Developer Community](https://developer.microsoft.com/en-us/windows/)  
+- [Windows AI Foundry Blog](https://blogs.windows.com/windowsdeveloper/)  
+- [Microsoft Learn AI-utbildning](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)  
 
 ---  
 
@@ -401,5 +404,3 @@ Oavsett om du bygger konsumentapplikationer, företagslösningar eller specialis
 
 ---
 
-**Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller inexaktheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
