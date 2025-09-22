@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3ec2b092ed161fd4d3907e010f8cf544",
-  "translation_date": "2025-09-18T13:16:19+00:00",
+  "original_hash": "9c2dacb560380677a2c923171d3e423d",
+  "translation_date": "2025-09-22T21:33:51+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "nl"
 }
@@ -11,21 +11,21 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introductie
 
-Welkom bij Windows Edge AI Development - jouw uitgebreide gids voor het bouwen van intelligente applicaties die gebruikmaken van de kracht van on-device AI via het Windows AI Foundry-platform van Microsoft. Deze gids is speciaal ontworpen voor Windows-ontwikkelaars die geavanceerde Edge AI-functionaliteiten willen integreren in hun applicaties, terwijl ze profiteren van de volledige hardwareversnelling van Windows.
+Welkom bij Windows Edge AI Development - jouw uitgebreide gids voor het bouwen van intelligente applicaties die gebruikmaken van on-device AI via het Windows AI Foundry-platform van Microsoft. Deze gids is speciaal ontworpen voor Windows-ontwikkelaars die geavanceerde Edge AI-functionaliteiten willen integreren in hun applicaties, terwijl ze profiteren van de volledige hardwareversnelling van Windows.
 
 ### Het Windows AI Voordeel
 
-Windows AI Foundry biedt een verenigd, betrouwbaar en veilig platform dat de volledige AI-ontwikkelingscyclus ondersteunt - van modelselectie en verfijning tot optimalisatie en implementatie op CPU, GPU, NPU en hybride cloudarchitecturen. Dit platform democratiseert AI-ontwikkeling door het volgende te bieden:
+Windows AI Foundry biedt een verenigd, betrouwbaar en veilig platform dat de volledige AI-ontwikkelingscyclus ondersteunt - van modelselectie en verfijning tot optimalisatie en implementatie op CPU-, GPU-, NPU- en hybride cloudarchitecturen. Dit platform democratiseert AI-ontwikkeling door het volgende te bieden:
 
-- **Hardware Abstractie**: Naadloze implementatie op AMD-, Intel-, NVIDIA- en Qualcomm-chips
+- **Hardwareabstractie**: Naadloze implementatie op AMD-, Intel-, NVIDIA- en Qualcomm-silicium
 - **On-Device Intelligentie**: Privacyvriendelijke AI die volledig op lokale hardware draait
 - **Geoptimaliseerde Prestaties**: Modellen vooraf geoptimaliseerd voor Windows-hardwareconfiguraties
-- **Enterprise-Klaar**: Productieklare beveiligings- en compliancefuncties
+- **Enterprise-Klaar**: Productiekwaliteit beveiliging en compliancefuncties
 
 ### Waarom Windows voor Edge AI?
 
 **Universele Hardwareondersteuning**  
-Windows ML biedt automatische hardwareoptimalisatie binnen het gehele Windows-ecosysteem, zodat jouw AI-applicaties optimaal presteren, ongeacht de onderliggende chiparchitectuur.
+Windows ML biedt automatische hardwareoptimalisatie binnen het gehele Windows-ecosysteem, zodat jouw AI-applicaties optimaal presteren, ongeacht de onderliggende siliciumarchitectuur.
 
 **Geïntegreerde AI Runtime**  
 De ingebouwde Windows ML-inferentie-engine elimineert complexe installatievereisten, waardoor ontwikkelaars zich kunnen concentreren op applicatielogica in plaats van infrastructuurproblemen.
@@ -33,12 +33,12 @@ De ingebouwde Windows ML-inferentie-engine elimineert complexe installatievereis
 **Copilot+ PC Optimalisatie**  
 Speciaal ontworpen API's voor de nieuwste generatie Windows-apparaten met dedicated Neural Processing Units (NPU's) die uitzonderlijke prestaties per watt leveren.
 
-**Ontwikkelaars Ecosysteem**  
+**Ontwikkelaar Ecosysteem**  
 Uitgebreide tools, waaronder Visual Studio-integratie, uitgebreide documentatie en voorbeeldapplicaties die ontwikkelingscycli versnellen.
 
 ## Leerdoelen
 
-Door deze Windows Edge AI ontwikkelingsgids te voltooien, beheers je de essentiële vaardigheden voor het bouwen van productieklare AI-applicaties op het Windows-platform.
+Door deze Windows Edge AI ontwikkelingsgids te voltooien, beheers je de essentiële vaardigheden om productieklare AI-applicaties te bouwen op het Windows-platform.
 
 ### Kerntechnische Competenties
 
@@ -50,9 +50,9 @@ Door deze Windows Edge AI ontwikkelingsgids te voltooien, beheers je de essenti�
 
 **API Integratie Expertise**  
 - Beheers Windows AI API's voor tekst-, visuele en multimodale applicaties  
-- Implementeer Phi Silica taalmodelintegratie voor tekstgeneratie en redenering  
+- Implementeer Phi Silica-taalmodelintegratie voor tekstgeneratie en redenering  
 - Gebruik computervisiefunctionaliteiten via ingebouwde beeldverwerkings-API's  
-- Pas vooraf getrainde modellen aan met LoRA (Low-Rank Adaptation) technieken  
+- Pas vooraf getrainde modellen aan met LoRA (Low-Rank Adaptation)-technieken  
 
 **Foundry Local Implementatie**  
 - Blader, evalueer en implementeer open-source taalmodellen met Foundry Local CLI  
@@ -78,7 +78,7 @@ Door deze Windows Edge AI ontwikkelingsgids te voltooien, beheers je de essenti�
 - Profiel en optimaliseer AI-inferentieprestaties op verschillende hardwareconfiguraties  
 - Implementeer efficiënt geheugenbeheer voor grote taalmodellen  
 - Ontwerp applicaties die gracieus degraderen op basis van beschikbare hardwarecapaciteiten  
-- Pas cachingstrategieën toe voor veelgebruikte AI-operaties  
+- Pas cachingstrategieën toe voor vaak gebruikte AI-operaties  
 
 **Productieklaarheid**  
 - Implementeer uitgebreide foutafhandeling en fallbackmechanismen  
@@ -91,13 +91,13 @@ Door deze Windows Edge AI ontwikkelingsgids te voltooien, beheers je de essenti�
 **AI Applicatie Architectuur**  
 - Ontwerp hybride architecturen die optimaliseren tussen lokale en cloud AI-verwerking  
 - Evalueer afwegingen tussen modelgrootte, nauwkeurigheid en inferentiesnelheid  
-- Plan dataflow-architecturen die privacy behouden terwijl ze intelligentie mogelijk maken  
-- Implementeer kosteneffectieve AI-oplossingen die schaalbaar zijn met gebruikersvraag  
+- Plan datastroomarchitecturen die privacy behouden terwijl ze intelligentie mogelijk maken  
+- Implementeer kosteneffectieve AI-oplossingen die schalen met gebruikersvraag  
 
 **Marktpositionering**  
 - Begrijp de concurrentievoordelen van Windows-native AI-applicaties  
 - Identificeer use cases waar on-device AI superieure gebruikerservaringen biedt  
-- Ontwikkel go-to-market strategieën voor AI-verrijkte Windows-applicaties  
+- Ontwikkel go-to-marketstrategieën voor AI-verrijkte Windows-applicaties  
 - Positioneer applicaties om te profiteren van de voordelen van het Windows-ecosysteem  
 
 ## Windows AI Foundry Platform Componenten
@@ -116,10 +116,10 @@ Windows AI API's bieden kant-en-klare AI-functionaliteiten aangedreven door on-d
 
 **Computervisie API's**  
 - **Tekstherkenning (OCR)**: Haal tekst uit afbeeldingen met hoge nauwkeurigheid  
-- **Beeld Superresolutie**: Schaal afbeeldingen op met lokale AI-modellen  
+- **Beeldsuperresolutie**: Schaal afbeeldingen op met lokale AI-modellen  
 - **Beeldsegmentatie**: Identificeer en isoleer specifieke objecten in afbeeldingen  
 - **Beeldbeschrijving**: Genereer gedetailleerde tekstbeschrijvingen voor visuele inhoud  
-- **Object Verwijderen**: Verwijder ongewenste objecten uit afbeeldingen met AI-aangedreven inpainting  
+- **Objectverwijdering**: Verwijder ongewenste objecten uit afbeeldingen met AI-aangedreven inpainting  
 
 **Multimodale Functionaliteiten**  
 - **Visie-Taal Integratie**: Combineer tekst- en beeldbegrip  
@@ -128,7 +128,7 @@ Windows AI API's bieden kant-en-klare AI-functionaliteiten aangedreven door on-d
 
 ### 2. Foundry Local
 
-Foundry Local biedt ontwikkelaars snelle toegang tot kant-en-klare open-source taalmodellen op Windows Silicon, met de mogelijkheid om modellen te bladeren, testen, gebruiken en implementeren in lokale applicaties.
+Foundry Local biedt ontwikkelaars snelle toegang tot kant-en-klare open-source taalmodellen op Windows Silicon, met de mogelijkheid om modellen te bekijken, testen, gebruiken en implementeren in lokale applicaties.
 
 #### Belangrijke Functies
 
@@ -139,34 +139,34 @@ Foundry Local biedt ontwikkelaars snelle toegang tot kant-en-klare open-source t
 
 **CLI Integratie**  
 - Command-line interface voor modelbeheer en implementatie  
-- Geautomatiseerde optimalisatie- en kwantisatieworkflows  
+- Geautomatiseerde optimalisatie- en kwantiseringworkflows  
 - Integratie met populaire ontwikkelomgevingen en CI/CD-pijplijnen  
 
 **Lokale Implementatie**  
 - Volledige offline werking zonder cloudafhankelijkheden  
-- Ondersteuning voor aangepaste modelindelingen en configuraties  
+- Ondersteuning voor aangepaste modelformaten en configuraties  
 - Efficiënte modelservering met automatische hardwareoptimalisatie  
 
 ### 3. Windows ML
 
-Windows ML fungeert als het kern-AI-platform en geïntegreerde inferentieruntime op Windows, waarmee ontwikkelaars aangepaste modellen efficiënt kunnen implementeren binnen het brede Windows-hardware-ecosysteem.
+Windows ML fungeert als het kern-AI-platform en geïntegreerde inferentieruntime op Windows, waarmee ontwikkelaars aangepaste modellen efficiënt kunnen implementeren binnen het brede Windows-hardwareecosysteem.
 
 #### Voordelen van de Architectuur
 
 **Universele Hardwareondersteuning**  
-- Automatische optimalisatie voor AMD-, Intel-, NVIDIA- en Qualcomm-chips  
+- Automatische optimalisatie voor AMD-, Intel-, NVIDIA- en Qualcomm-silicium  
 - Ondersteuning voor CPU-, GPU- en NPU-uitvoering met transparante schakeling  
-- Hardwareabstractie die platformspecifiek optimalisatiewerk elimineert  
+- Hardwareabstractie die platformspecifieke optimalisatiewerkzaamheden elimineert  
 
 **Model Flexibiliteit**  
-- Ondersteuning voor ONNX-modelindeling met automatische conversie vanuit populaire frameworks  
-- Aangepaste modelimplementatie met productieklare prestaties  
+- Ondersteuning voor ONNX-modelformaat met automatische conversie vanuit populaire frameworks  
+- Aangepaste modelimplementatie met prestaties van productiekwaliteit  
 - Integratie met bestaande Windows-applicatiearchitecturen  
 
 **Enterprise Integratie**  
 - Compatibel met Windows beveiligings- en complianceframeworks  
 - Ondersteuning voor zakelijke implementatie- en beheertools  
-- Integratie met Windows apparaatbeheer- en monitoringsystemen  
+- Integratie met Windows-apparaatbeheer- en monitoringsystemen  
 
 ## Ontwikkelingsworkflow
 
@@ -218,7 +218,7 @@ Windows ML fungeert als het kern-AI-platform en geïntegreerde inferentieruntime
 - Profiel applicatieprestaties op doelhardwareconfiguraties  
 - Optimaliseer geheugengebruik en modelladingsstrategieën  
 - Implementeer adaptief gedrag op basis van beschikbare hardwarecapaciteiten  
-- Fijn afstemmen gebruikerservaring voor verschillende prestatiescenario's  
+- Fijnstem gebruikerservaring voor verschillende prestatiescenario's  
 
 **Productie-implementatie**  
 - Verpak applicaties met correcte AI-modelafhankelijkheden  
@@ -239,25 +239,25 @@ Bouw een Windows-applicatie die documenten verwerkt met meerdere AI-functionalit
 - Aangepaste ONNX-modellen voor documentclassificatie  
 
 **Implementatiebenadering:**  
-- Ontwerp modulaire architectuur met plugbare AI-componenten  
+- Ontwerp modulaire architectuur met inplugbare AI-componenten  
 - Implementeer asynchrone verwerking voor grote documentbatches  
 - Voeg voortgangsindicatoren en annuleringsondersteuning toe voor langdurige operaties  
 - Inclusief offline functionaliteit voor gevoelige documentverwerking  
 
 ### Voorbeeld 2: Retail Inventarisbeheersysteem
 
-Creëer een AI-aangedreven inventarissysteem voor retailtoepassingen:
+Creëer een AI-aangedreven inventarisbeheersysteem voor retailtoepassingen:
 
 **Gebruikte Technologieën:**  
 - Beeldsegmentatie voor productidentificatie  
 - Aangepaste visiemodellen voor merk- en categorieclassificatie  
 - Foundry Local implementatie van gespecialiseerde retailtaalmodellen  
-- Integratie met bestaande POS- en inventarissystemen  
+- Integratie met bestaande POS- en inventarisbeheersystemen  
 
 **Implementatiebenadering:**  
 - Bouw cameraintegratie voor realtime productscanning  
 - Implementeer barcode- en visuele productherkenning  
-- Voeg natuurlijke taalvoorraadqueries toe met lokale taalmodellen  
+- Voeg natuurlijke taal inventarisqueries toe met lokale taalmodellen  
 - Ontwerp schaalbare architectuur voor multi-store implementatie  
 
 ### Voorbeeld 3: Zorgdocumentatie Assistent
@@ -274,7 +274,7 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 - Zorg voor volledige offline werking voor patiëntprivacy  
 - Implementeer validatie en suggestie van medische terminologie  
 - Voeg auditlogging toe voor naleving van regelgeving  
-- Ontwerp integratie met bestaande elektronische patiëntendossiers  
+- Ontwerp integratie met bestaande elektronische patiëntendossiersystemen  
 
 ## Prestatieoptimalisatiestrategieën
 
@@ -283,11 +283,11 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 **NPU Optimalisatie**  
 - Ontwerp applicaties om NPU-functionaliteiten op Copilot+ PC's te benutten  
 - Implementeer gracieus fallback naar GPU/CPU op apparaten zonder NPU  
-- Optimaliseer modelindelingen voor NPU-specifieke versnelling  
+- Optimaliseer modelformaten voor NPU-specifieke versnelling  
 - Monitor NPU-gebruik en thermische kenmerken  
 
 **Geheugenbeheer**  
-- Implementeer efficiënte modelladings- en cachingstrategieën  
+- Implementeer efficiënte modellading- en cachingstrategieën  
 - Gebruik geheugenmapping voor grote modellen om opstarttijd te verminderen  
 - Ontwerp geheugenbewuste applicaties voor apparaten met beperkte middelen  
 - Implementeer modelkwantisering voor geheugenoptimalisatie  
@@ -303,11 +303,11 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 **Multithreading**  
 - Ontwerp thread-veilige AI-operaties voor gelijktijdige verwerking  
 - Implementeer efficiënte werkverdeling over beschikbare cores  
-- Gebruik async/await patronen voor niet-blokkerende AI-operaties  
+- Gebruik async/await-patronen voor niet-blokkerende AI-operaties  
 - Plan threadpool-optimalisatie voor verschillende hardwareconfiguraties  
 
 **Cachingstrategieën**  
-- Implementeer intelligente caching voor veelgebruikte AI-operaties  
+- Implementeer intelligente caching voor vaak gebruikte AI-operaties  
 - Ontwerp cache-invalidatiestrategieën voor modelupdates  
 - Gebruik persistente caching voor dure preprocessing-operaties  
 - Implementeer gedistribueerde caching voor multi-gebruikersscenario's  
@@ -328,13 +328,13 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 - Gebruik ondertekende modellen om manipulatie te voorkomen  
 - Pas toegangscontroles toe voor modelfiles en configuratie  
 
-### Nalevingsoverwegingen
+### Compliance Overwegingen
 
 **Regelgevingsuitlijning**  
 - Ontwerp applicaties om te voldoen aan GDPR, HIPAA en andere regelgeving  
 - Implementeer auditlogging voor AI-besluitvormingsprocessen  
 - Bied transparantiefuncties voor AI-gegenereerde resultaten  
-- Maak gebruikerscontrole mogelijk over AI-gegevensverwerking  
+- Maak gebruikerscontrole over AI-dataverwerking mogelijk  
 
 **Enterprise Beveiliging**  
 - Integreer met Windows enterprise beveiligingsbeleid  
@@ -346,16 +346,16 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 
 ### Veelvoorkomende Ontwikkelingsuitdagingen
 
-**Problemen met Modelladen**  
+**Problemen met Modellading**  
 - Valideer ONNX-modelcompatibiliteit met Windows ML  
 - Controleer modelbestandintegriteit en formaatvereisten  
 - Verifieer hardwarevereisten voor specifieke modellen  
-- Debug geheugenallocatieproblemen tijdens modelladen  
+- Debug geheugenallocatieproblemen tijdens modellading  
 
 **Prestatieproblemen**  
 - Profiel applicatieprestaties op verschillende hardwareconfiguraties  
 - Identificeer knelpunten in AI-verwerkingspijplijnen  
-- Optimaliseer gegevensvoorverwerking en nabewerking  
+- Optimaliseer datavoorverwerking en nabewerking  
 - Implementeer prestatiemonitoring en waarschuwingen  
 
 **Integratieproblemen**  
@@ -373,16 +373,16 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 - Gebruik geheugenprofileringshulpmiddelen voor optimalisatie  
 
 **Windows AI Foundry Tools**  
-- Gebruik Foundry Local CLI voor het testen en valideren van modellen  
-- Gebruik Windows AI API-testtools voor verificatie van integratie  
-- Implementeer aangepaste logging voor het monitoren van AI-operaties  
-- Creëer geautomatiseerde tests voor de betrouwbaarheid van AI-functionaliteit  
+- Gebruik Foundry Local CLI voor modeltesten en validatie  
+- Gebruik Windows AI API-testtools voor integratieverificatie  
+- Implementeer aangepaste logging voor monitoring van AI-operaties  
+- Creëer geautomatiseerde tests voor betrouwbaarheid van AI-functionaliteit  
 
 ## Toekomstbestendig maken van je applicaties  
 
 ### Opkomende technologieën  
 
-**Hardware van de volgende generatie**  
+**Next-Generation Hardware**  
 - Ontwerp applicaties om toekomstige NPU-mogelijkheden te benutten  
 - Plan voor grotere modelgroottes en complexiteit  
 - Implementeer adaptieve architecturen voor evoluerende hardware  
@@ -391,8 +391,8 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 **Geavanceerde AI-mogelijkheden**  
 - Bereid je voor op multimodale AI-integratie over meer datatypes  
 - Plan voor real-time collaboratieve AI tussen meerdere apparaten  
-- Ontwerp voor mogelijkheden voor federatief leren  
-- Overweeg hybride intelligentie-architecturen tussen edge en cloud  
+- Ontwerp voor federated learning-mogelijkheden  
+- Overweeg edge-cloud hybride intelligentie-architecturen  
 
 ### Continu leren en aanpassen  
 
@@ -406,17 +406,19 @@ Ontwikkel een privacyvriendelijke zorgdocumentatietool:
 - Ontwerp modulaire architecturen die nieuwe AI-mogelijkheden accommoderen  
 - Plan voor integratie van opkomende Windows AI API's  
 - Implementeer feature flags voor geleidelijke uitrol van mogelijkheden  
-- Ontwerp gebruikersinterfaces die zich aanpassen aan verbeterde AI-functionaliteiten  
+- Ontwerp gebruikersinterfaces die zich aanpassen aan verbeterde AI-functies  
 
 ## Conclusie  
 
-Windows Edge AI-ontwikkeling vertegenwoordigt de samensmelting van krachtige AI-mogelijkheden met het robuuste, veilige en schaalbare Windows-platform. Door het Windows AI Foundry-ecosysteem te beheersen, kunnen ontwikkelaars intelligente applicaties creëren die uitzonderlijke gebruikerservaringen bieden, terwijl ze de hoogste normen van privacy, beveiliging en prestaties handhaven.  
+Windows Edge AI-ontwikkeling vertegenwoordigt de samensmelting van krachtige AI-mogelijkheden met het robuuste, veilige en schaalbare Windows-platform. Door het Windows AI Foundry-ecosysteem te beheersen, kunnen ontwikkelaars intelligente applicaties creëren die uitzonderlijke gebruikerservaringen bieden, terwijl ze voldoen aan de hoogste normen van privacy, beveiliging en prestaties.  
 
 De combinatie van Windows AI API's, Foundry Local en Windows ML biedt een ongeëvenaarde basis voor het bouwen van de volgende generatie intelligente Windows-applicaties. Terwijl AI blijft evolueren, zorgt het Windows-platform ervoor dat je applicaties meegroeien met opkomende technologieën, terwijl compatibiliteit en prestaties behouden blijven binnen het diverse Windows-hardware-ecosysteem.  
 
 Of je nu consumententoepassingen, bedrijfsoplossingen of gespecialiseerde industriële tools bouwt, Windows Edge AI-ontwikkeling stelt je in staat om intelligente, responsieve en diep geïntegreerde ervaringen te creëren die het volledige potentieel van moderne Windows-apparaten benutten.  
 
 ## Aanvullende bronnen  
+
+Voor een stapsgewijze Windows-walkthrough van Foundry Local (installatie, CLI, dynamische endpoint, SDK-gebruik), zie de repo-gids: [foundrylocal.md](./foundrylocal.md).  
 
 ### Documentatie en leren  
 - [Windows AI Foundry Documentatie](https://learn.microsoft.com/windows/ai/)  
@@ -440,5 +442,3 @@ Of je nu consumententoepassingen, bedrijfsoplossingen of gespecialiseerde indust
 
 ---
 
-**Disclaimer**:  
-Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, willen we u erop wijzen dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor kritieke informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.
