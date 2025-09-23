@@ -9,7 +9,8 @@
 | Day 3 | Module 3: SLM Deployment | 2 hours |
 | Day 4-5 | Module 4: Model Optimization (6 frameworks) | 4 hours |
 | Day 6 | Module 5: SLMOps | 3 hours |
-| Day 7 | Module 6-7: AI Agents & Development Tools | 5 hours |
+| Day 7 | Module 6-7: AI Agents & Development Tools | 4 hours |
+| Day 8 | Module 8: Foundry Local Toolkit (Modern Implementation) | 1 hour |
 
 ### Concentrated Learning Path (2 weeks)
 
@@ -472,39 +473,64 @@ This course is organized into seven comprehensive modules:
 3. **Cross-Platform Deployment**: Deploy the same model on two different platforms (1 hour)
 4. **NPU Optimization**: Test NPU performance with Windows AI Foundry tools (30 minutes)
 
-## Module 8: Microsoft Foundry Local – Complete Developer Toolkit
+## Module 8: Microsoft Foundry Local – Complete Developer Toolkit (Modernized)
 
 ### Key Learning Objectives
 
-- Install and configure Foundry Local on Windows
-- Run, discover, and manage models locally via the Foundry CLI
-- Integrate with OpenAI-compatible REST and SDK clients
-- Build practical samples: Chainlit chat, agents, and model router
-- Understand hybrid patterns with Azure AI Foundry
+- Install and configure Foundry Local with modern SDK integration
+- Implement advanced multi-agent systems with coordinator patterns
+- Build intelligent model routers with automatic task-based selection
+- Deploy production-ready AI solutions with comprehensive monitoring
+- Integrate with Azure AI Foundry for hybrid deployment scenarios
+- Master modern SDK patterns with FoundryLocalManager and OpenAI client
 
 ### Study Focus Areas
 
-- Installation and CLI essentials (model, service, cache)
-- SDK integration (OpenAI-compatible clients and Azure OpenAI)
-- Open WebUI quick validation
-- Agents and function-calling patterns
-- Models-as-tools (router and registry design)
+#### Section 1: Modern Installation and Configuration
+- **Priority Concepts**: 
+  - FoundryLocalManager SDK integration
+  - Automatic service discovery and health monitoring
+  - Environment-based configuration patterns
+  - Production deployment considerations
+
+#### Section 2: Advanced Multi-Agent Systems
+- **Priority Concepts**: 
+  - Coordinator pattern with specialist agents
+  - Retrieval, reasoning, and execution agent specialization
+  - Feedback loop mechanisms for refinement
+  - Performance monitoring and statistics tracking
+
+#### Section 3: Intelligent Model Routing
+- **Priority Concepts**: 
+  - Keyword-based model selection algorithms
+  - Multiple model support (general, reasoning, code, creative)
+  - Environment variable configuration for flexibility
+  - Service health checking and error handling
+
+#### Section 4: Production-Ready Implementation
+- **Priority Concepts**: 
+  - Comprehensive error handling and fallback mechanisms
+  - Request monitoring and performance tracking
+  - Interactive Jupyter notebook examples with benchmarks
+  - Integration patterns with existing applications
 
 ### Self-Assessment Questions
 
-1. How do you discover the local endpoint and list available models?
-2. What are the differences between Foundry Local REST and Azure OpenAI usage?
-3. How would you design a simple router to select models as tools?
-4. Which CLI categories are most relevant to day-to-day development?
-5. How do you validate Foundry Local readiness before running apps?
+1. How does the modern FoundryLocalManager approach differ from manual REST calls?
+2. Explain the coordinator pattern and how it orchestrates specialist agents.
+3. How does the intelligent router select appropriate models based on query content?
+4. What are the key components of a production-ready AI agent system?
+5. How do you implement comprehensive health monitoring for Foundry Local services?
+6. Compare the benefits of the modernized approach vs. traditional implementation patterns.
 
 ### Hands-on Exercises
 
-1. Install/upgrade Foundry Local and run `phi-4-mini` locally (30 minutes)
-2. Call `/v1/models` and run a simple chat via REST (30 minutes)
-3. Launch the Chainlit app sample and chat locally (30 minutes)
-4. Run the multi-agent coordinator and inspect outputs (30 minutes)
-5. Try the models-as-tools router with env-based overrides (30 minutes)
+1. **Modern SDK Setup**: Configure FoundryLocalManager with automatic service discovery (30 minutes)
+2. **Multi-Agent System**: Run the advanced coordinator with specialist agents (30 minutes)
+3. **Intelligent Routing**: Test the model router with different query types (30 minutes)
+4. **Interactive Exploration**: Use the Jupyter notebooks to explore advanced features (45 minutes)
+5. **Production Deployment**: Implement monitoring and error handling patterns (30 minutes)
+6. **Hybrid Integration**: Configure Azure AI Foundry fallback scenarios (30 minutes)
 
 
 ## Time Allocation Guide
