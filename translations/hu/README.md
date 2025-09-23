@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c817161ba08864340737d623f761b9ae",
-  "translation_date": "2025-09-18T15:24:32+00:00",
+  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
+  "translation_date": "2025-09-22T23:20:18+00:00",
   "source_file": "README.md",
   "language_code": "hu"
 }
@@ -38,7 +38,7 @@ Kövesd az alábbi lépéseket, hogy elkezdhesd használni ezeket az erőforrás
 
 ## Bevezetés
 
-Üdvözlünk az **EdgeAI kezdőknek** kurzuson – egy átfogó utazáson az Edge Mesterséges Intelligencia átalakító világába. Ez a kurzus összekapcsolja a hatékony AI képességeket a gyakorlati, valós környezetben történő alkalmazással, lehetővé téve, hogy közvetlenül ott használd az AI-t, ahol az adatok keletkeznek, és ahol döntéseket kell hozni.
+Üdvözlünk az **EdgeAI kezdőknek** kurzuson – egy átfogó utazás az Edge Mesterséges Intelligencia átalakító világába. Ez a kurzus összekapcsolja az erőteljes AI képességeket a gyakorlati, valós alkalmazásokkal, lehetővé téve, hogy közvetlenül ott használd az AI-t, ahol az adatok keletkeznek és döntéseket kell hozni.
 
 ### Amit elsajátíthatsz
 
@@ -51,7 +51,7 @@ Ez a kurzus az alapfogalmaktól a gyártásra kész megvalósításokig vezet, a
 ### Miért fontos az EdgeAI?
 
 Az Edge AI egy paradigmaváltást képvisel, amely a modern kihívásokra ad választ:
-- **Adatvédelem és biztonság**: Érzékeny adatok helyi feldolgozása, felhőbe való továbbítás nélkül
+- **Adatvédelem és biztonság**: Érzékeny adatok helyi feldolgozása, felhő használata nélkül
 - **Valós idejű teljesítmény**: Hálózati késleltetés kiküszöbölése időkritikus alkalmazásokhoz
 - **Költséghatékonyság**: Sávszélesség és felhőalapú számítási költségek csökkentése
 - **Rugalmas működés**: Funkcionalitás fenntartása hálózati kimaradások esetén
@@ -59,13 +59,13 @@ Az Edge AI egy paradigmaváltást képvisel, amely a modern kihívásokra ad vá
 
 ### Edge AI
 
-Az Edge AI az AI algoritmusok és nyelvi modellek helyi futtatását jelenti hardveren – közel ahhoz, ahol az adatok keletkeznek –, anélkül, hogy a felhő erőforrásaira támaszkodnánk a következtetéshez. Ez csökkenti a késleltetést, növeli az adatvédelmet, és lehetővé teszi a valós idejű döntéshozatalt.
+Az Edge AI az AI algoritmusok és nyelvi modellek helyi futtatását jelenti hardveren – közel az adatok keletkezési helyéhez –, anélkül, hogy a felhő erőforrásaira támaszkodna a következtetéshez. Csökkenti a késleltetést, javítja az adatvédelmet, és lehetővé teszi a valós idejű döntéshozatalt.
 
 ### Alapelvek:
 - **Eszközön történő következtetés**: AI modellek futtatása edge eszközökön (telefonok, routerek, mikrokontrollerek, ipari PC-k)
 - **Offline képesség**: Internetkapcsolat nélküli működés
 - **Alacsony késleltetés**: Azonnali válaszok valós idejű rendszerekhez
-- **Adatszuverenitás**: Érzékeny adatok helyben tartása, a biztonság és megfelelés javítása érdekében
+- **Adatszuverenitás**: Érzékeny adatok helyben tartása, javítva a biztonságot és megfelelőséget
 
 ### Kis nyelvi modellek (SLM-ek)
 
@@ -77,7 +77,7 @@ Az olyan SLM-ek, mint a Phi-4, Mistral-7B és Gemma, nagyobb LLM-ek optimalizál
 Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi korlátoknak:
 - **Beágyazott rendszerek**: IoT eszközök és ipari vezérlők
 - **Mobil eszközök**: Okostelefonok és tabletek offline képességekkel
-- **IoT eszközök**: Szenzorok és okoseszközök korlátozott erőforrásokkal
+- **IoT eszközök**: Szenzorok és okos eszközök korlátozott erőforrásokkal
 - **Edge szerverek**: Helyi feldolgozó egységek korlátozott GPU erőforrásokkal
 - **Személyi számítógépek**: Asztali és laptop telepítési forgatókönyvek
 
@@ -90,8 +90,8 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 - [**1. szekció: EdgeAI alapok**](./Module01/01.EdgeAIFundamentals.md)
   - Hagyományos felhő AI vs edge AI összehasonlítás
   - Edge számítási kihívások és korlátok
-  - Kulcstechnológiák: modell kvantálás, tömörítési optimalizálás, kis nyelvi modellek (SLM-ek)
-  - Hardveres gyorsítás: NPU-k, GPU optimalizálás, CPU optimalizálás
+  - Kulcstechnológiák: modellek kvantálása, tömörítési optimalizáció, kis nyelvi modellek (SLM-ek)
+  - Hardvergyorsítás: NPU-k, GPU optimalizáció, CPU optimalizáció
   - Előnyök: adatvédelem, alacsony késleltetés, offline képességek, költséghatékonyság
 
 - [**2. szekció: Valós esettanulmányok**](./Module01/02.RealWorldCaseStudies.md)
@@ -103,17 +103,17 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 - [**3. szekció: Gyakorlati megvalósítási útmutató**](./Module01/03.PracticalImplementationGuide.md)
   - Fejlesztési környezet beállítása (Python 3.10+, .NET 8+)
   - Hardverkövetelmények és ajánlott konfigurációk
-  - Alapmodell család erőforrásai
-  - Kvantálási és optimalizálási eszközök (Llama.cpp, Microsoft Olive, Apple MLX)
+  - Alapmodell családi erőforrások
+  - Kvantálási és optimalizációs eszközök (Llama.cpp, Microsoft Olive, Apple MLX)
   - Értékelési és ellenőrzési ellenőrzőlista
 
 - [**4. szekció: Edge AI telepítési hardverplatformok**](./Module01/04.EdgeDeployment.md)
   - Edge AI telepítési szempontok és követelmények
-  - Intel edge AI hardver és optimalizálási technikák
+  - Intel edge AI hardver és optimalizációs technikák
   - Qualcomm AI megoldások mobil és beágyazott rendszerekhez
   - NVIDIA Jetson és edge számítási platformok
   - Windows AI PC platformok NPU gyorsítással
-  - Hardver-specifikus optimalizálási stratégiák
+  - Hardver-specifikus optimalizációs stratégiák
 
 ---
 
@@ -159,7 +159,7 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 #### Fejezetek:
 - [**1. szekció: SLM fejlett tanulás**](./Module03/01.SLMAdvancedLearning.md)
   - Paraméterosztályozási keretrendszer (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
-  - Fejlett optimalizálási technikák (kvantálási módszerek, BitNET 1-bit kvantálás)
+  - Fejlett optimalizációs technikák (kvantálási módszerek, BitNET 1-bit kvantálás)
   - Modellbeszerzési stratégiák (Azure AI Foundry Phi modellekhez, Hugging Face kiválasztott modellekhez)
 
 - [**2. szekció: Helyi környezet telepítése**](./Module03/02.DeployingSLMinLocalEnv.md)
@@ -175,22 +175,22 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 ---
 
 ### [04. modul: Modellformátum átalakítás és kvantálás](./Module04/README.md)
-**Téma**: Teljes modelloptimalizálási eszköztár edge telepítéshez különböző platformokon
+**Téma**: Teljes modelloptimalizációs eszköztár edge telepítéshez különböző platformokon
 
 #### Fejezetek:
 - [**1. szekció: Modellformátum átalakítás és kvantálás alapjai**](./Module04/01.Introduce.md)
   - Pontossági osztályozási keretrendszer (ultra-alacsony, alacsony, közepes pontosság)
-  - GGUF és ONNX formátum előnyei és felhasználási esetei
-  - Kvantálás előnyei az operatív hatékonyság érdekében
+  - GGUF és ONNX formátum előnyei és felhasználási esetek
+  - Kvantálás előnyei az operációs hatékonyság érdekében
   - Teljesítmény benchmarkok és memóriaigény összehasonlítások
 - [**2. szakasz: Llama.cpp megvalósítási útmutató**](./Module04/02.Llamacpp.md)
   - Többplatformos telepítés (Windows, macOS, Linux)
   - GGUF formátum konverzió és kvantálási szintek (Q2_K-tól Q8_0-ig)
-  - Hardvergyorsítás (CUDA, Metal, OpenCL, Vulkan)
+  - Hardveres gyorsítás (CUDA, Metal, OpenCL, Vulkan)
   - Python integráció és REST API telepítés
 
 - [**3. szakasz: Microsoft Olive optimalizációs csomag**](./Module04/03.MicrosoftOlive.md)
-  - Hardverre szabott modelloptimalizáció 40+ beépített komponenssel
+  - Hardverre szabott modelloptimalizáció több mint 40 beépített komponenssel
   - Automatikus optimalizáció dinamikus és statikus kvantálással
   - Vállalati integráció Azure ML munkafolyamatokkal
   - Népszerű modellek támogatása (Llama, Phi, kiválasztott Qwen modellek, Gemma)
@@ -199,13 +199,13 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
   - Intel nyílt forráskódú eszközkészlete többplatformos AI telepítéshez
   - Neural Network Compression Framework (NNCF) fejlett optimalizációhoz
   - OpenVINO GenAI nagy nyelvi modellek telepítéséhez
-  - Hardvergyorsítás CPU, GPU, VPU és AI gyorsítók között
+  - Hardveres gyorsítás CPU, GPU, VPU és AI gyorsítók között
 
 - [**5. szakasz: Apple MLX keretrendszer mélyreható elemzése**](./Module04/05.AppleMLX.md)
   - Egységes memóriaarchitektúra az Apple Silicon számára
-  - Támogatás LLaMA, Mistral, Phi-3, kiválasztott Qwen modellekhez
+  - LLaMA, Mistral, Phi, kiválasztott Qwen modellek támogatása
   - LoRA finomhangolás és modell testreszabás
-  - Hugging Face integráció 4-bit/8-bit kvantálással
+  - Hugging Face integráció 4-bites/8-bites kvantálással
 
 - [**6. szakasz: Edge AI fejlesztési munkafolyamat szintézise**](./Module04/06.workflow-synthesis.md)
   - Egységes munkafolyamat-architektúra több optimalizációs keretrendszer integrálásával
@@ -223,10 +223,10 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
   - Az SLMOps paradigmaváltása az AI működtetésében
   - Költséghatékonyság és adatvédelem-központú architektúra
   - Stratégiai üzleti hatás és versenyelőnyök
-  - Valós megvalósítási kihívások és megoldások
+  - Valós implementációs kihívások és megoldások
 
 - [**2. szakasz: Modell desztilláció - Elmélettől a gyakorlatig**](./Module05/02.SLMOps-Distillation.md)
-  - Tudásátadás tanár és diák modellek között
+  - Tudás átadása tanár és diák modellek között
   - Kétlépcsős desztillációs folyamat megvalósítása
   - Azure ML desztillációs munkafolyamatok gyakorlati példákkal
   - 85%-os inferenciaidő csökkentés 92%-os pontosság megtartásával
@@ -235,18 +235,18 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
   - Paraméter-hatékony finomhangolási (PEFT) technikák
   - LoRA és QLoRA fejlett módszerek
   - Microsoft Olive finomhangolási megvalósítás
-  - Többadapteres tréning és hiperparaméter optimalizáció
+  - Többadapteres tanítás és hiperparaméter optimalizáció
 
 - [**4. szakasz: Telepítés - Gyártásra kész megvalósítás**](./Module05/04.SLMOps.Deployment.md)
-  - Modell konverzió és kvantálás gyártásra
+  - Modell konverzió és kvantálás gyártási célokra
   - Foundry Local telepítési konfiguráció
   - Teljesítmény benchmarking és minőség validálás
   - 75%-os méretcsökkentés gyártási monitorozással
 
 ---
 
-### [6. modul: SLM Agentikus rendszerek - AI ügynökök és funkcióhívás](./Module06/README.md)
-**Téma**: SLM agentikus rendszerek megvalósítása az alapoktól a fejlett funkcióhívásig és Model Context Protocol integrációig
+### [6. modul: SLM Agentic Systems - AI ügynökök és funkcióhívás](./Module06/README.md)
+**Téma**: SLM ügynöki rendszerek megvalósítása az alapoktól a fejlett funkcióhívásig és Model Context Protocol integrációig
 
 #### Fejezetstruktúra:
 - [**1. szakasz: AI ügynökök és kis nyelvi modellek alapjai**](./Module06/01.IntroduceAgent.md)
@@ -256,7 +256,7 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
   - Gyakorlati telepítés Ollama, VLLM és Microsoft edge megoldásokkal
 
 - [**2. szakasz: Funkcióhívás kis nyelvi modellekben**](./Module06/02.FunctionCalling.md)
-  - Szisztematikus munkafolyamat megvalósítása (szándék felismerés, JSON kimenet, külső végrehajtás)
+  - Szisztematikus munkafolyamat megvalósítás (szándék felismerés, JSON kimenet, külső végrehajtás)
   - Platform-specifikus megvalósítások (Phi-4-mini, kiválasztott Qwen modellek, Microsoft Foundry Local)
   - Fejlett példák (többügynök együttműködés, dinamikus eszközválasztás)
   - Gyártási szempontok (sebességkorlátozás, naplózás, biztonsági intézkedések)
@@ -287,13 +287,13 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 
 - [**EdgeAI az NVIDIA Jetson Orin Nano platformon**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
   - 67 TOPS AI teljesítmény hitelkártya méretű formátumban
-  - Generatív AI modellek támogatása (vision transformers, LLM-ek, vision-language modellek)
+  - Generatív AI modellek támogatása (vision transformer-ek, LLM-ek, vision-language modellek)
   - Alkalmazások robotikában, drónokban, intelligens kamerákban, autonóm eszközökben
   - Megfizethető $249 platform demokratizált AI fejlesztéshez
 
-- [**EdgeAI mobil alkalmazásokban .NET MAUI-val és ONNX Runtime GenAI-val**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
+- [**EdgeAI mobil alkalmazásokban .NET MAUI és ONNX Runtime GenAI segítségével**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
   - Többplatformos mobil AI egyetlen C# kódbázissal
-  - Hardvergyorsítás támogatása (CPU, GPU, mobil AI processzorok)
+  - Hardveres gyorsítás támogatása (CPU, GPU, mobil AI processzorok)
   - Platform-specifikus optimalizációk (CoreML iOS-hez, NNAPI Androidhoz)
   - Teljes generatív AI ciklus megvalósítása
 
@@ -303,56 +303,67 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
   - Vállalati szintű telepítés és folyamatos modellkezelés
   - Hibrid AI munkafolyamatok intelligens dokumentumfeldolgozáshoz
 
-- [**EdgeAI a Windows ML-lel**](./Module07/README.md#4-edgeai-with-windows-ml)
+- [**EdgeAI a Windows ML segítségével**](./Module07/README.md#4-edgeai-with-windows-ml)
   - Windows AI Foundry alapok hatékony eszközön történő inferenciához
   - Univerzális hardver támogatás (AMD, Intel, NVIDIA, Qualcomm szilícium)
   - Automatikus hardver absztrakció és optimalizáció
-  - Egységes keretrendszer a Windows hardver ökoszisztéma számára
+  - Egységes keretrendszer a különböző Windows hardver ökoszisztémához
 
 - [**EdgeAI Foundry Local alkalmazásokkal**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
   - Adatvédelem-központú RAG megvalósítás helyi erőforrásokkal
-  - Phi-3 nyelvi modell integráció szemantikus kereséssel (csak Phi modellek)
-  - Helyi vektor adatbázisok támogatása (SQLite, Qdrant)
+  - Phi-4 nyelvi modell integráció szemantikus kereséssel (csak Phi modellek)
+  - Helyi vektoradatbázisok támogatása (SQLite, Qdrant)
   - Adatszuverenitás és offline működési képességek
 
-## Kurzus tanulási célkitűzések
+### [8. modul: Microsoft Foundry Local – Teljes fejlesztői eszközkészlet](./Module08/README.md)
+**Téma**: AI helyi építése, futtatása és integrálása Foundry Local segítségével; skálázás és hibridizáció Azure AI Foundry-val
 
-A teljes EdgeAI kurzus elvégzésével szakértelmet szerezhet a gyártásra kész EdgeAI megoldások tervezésében, megvalósításában és telepítésében. Strukturált megközelítésünk biztosítja, hogy elsajátítsa az elméleti alapokat és a gyakorlati megvalósítási készségeket.
+#### Fejezetstruktúra:
+- [**1: Kezdés a Foundry Local-lal**](./Module08/01.FoundryLocalSetup.md)
+- [**2: AI megoldások építése Azure AI Foundry-val**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**3: Nyílt forráskódú modellek Foundry Local-ban**](./Module08/03.OpenSourceModels.md)
+- [**4: Legmodernebb modellek és eszközön történő inferencia**](./Module08/04.CuttingEdgeModels.md)
+- [**5: AI-alapú ügynökök Foundry Local-lal**](./Module08/05.AIPoweredAgents.md)
+- [**6: Modellek mint eszközök**](./Module08/06.ModelsAsTools.md)
+
+## Kurzus tanulási célkitűzései
+
+A teljes EdgeAI kurzus elvégzésével szakértelmet szerezhetsz gyártásra kész EdgeAI megoldások tervezésében, megvalósításában és telepítésében. Strukturált megközelítésünk biztosítja, hogy elsajátítsd az elméleti alapokat és a gyakorlati megvalósítási készségeket.
 
 ### Technikai kompetenciák
 
 **Alapvető ismeretek**
 - Értsd meg a felhőalapú és edge-alapú AI architektúrák közötti alapvető különbségeket
 - Sajátítsd el a modell kvantálás, tömörítés és optimalizáció elveit erőforrás-korlátozott környezetekhez
-- Ismerd meg a hardvergyorsítási lehetőségeket (NPU-k, GPU-k, CPU-k) és azok telepítési következményeit
+- Ismerd meg a hardveres gyorsítási lehetőségeket (NPU-k, GPU-k, CPU-k) és azok telepítési következményeit
 
 **Megvalósítási készségek**
 - Telepíts kis nyelvi modelleket különböző edge platformokon (mobil, beágyazott, IoT, edge szerverek)
-- Alkalmazz optimalizációs keretrendszereket, mint Llama.cpp, Microsoft Olive, ONNX Runtime és Apple MLX
+- Alkalmazz optimalizációs keretrendszereket, mint például Llama.cpp, Microsoft Olive, ONNX Runtime és Apple MLX
 - Valósíts meg valós idejű inferencia rendszereket szubszekundumos válaszidővel
 
 **Gyártási szakértelem**
 - Tervezd meg skálázható EdgeAI architektúrákat vállalati alkalmazásokhoz
-- Valósíts meg monitorozási, karbantartási és frissítési stratégiákat telepített rendszerekhez
+- Valósíts meg monitorozási, karbantartási és frissítési stratégiákat a telepített rendszerekhez
 - Alkalmazz biztonsági legjobb gyakorlatokat adatvédelem-központú EdgeAI megvalósításokhoz
 
 ### Stratégiai képességek
 
 **Döntéshozatali keretrendszer**
 - Értékeld az EdgeAI lehetőségeket és azonosítsd az üzleti alkalmazásokhoz megfelelő felhasználási eseteket
-- Mérlegeld a kompromisszumokat modell pontosság, inferencia sebesség, energiafogyasztás és hardverköltségek között
+- Mérlegeld a kompromisszumokat a modell pontosság, inferencia sebesség, energiafogyasztás és hardverköltségek között
 - Válassz megfelelő SLM családokat és konfigurációkat specifikus telepítési korlátok alapján
 
 **Rendszerarchitektúra**
 - Tervezd meg az end-to-end EdgeAI megoldásokat, amelyek integrálódnak a meglévő infrastruktúrával
-- Tervezd meg a hibrid edge-felhő architektúrákat optimális teljesítmény és költséghatékonyság érdekében
+- Tervezd meg a hibrid edge-felhő architektúrákat az optimális teljesítmény és költséghatékonyság érdekében
 - Valósíts meg adatáramlási és feldolgozási csatornákat valós idejű AI alkalmazásokhoz
 
-### Ipari alkalmazások
+### Iparági alkalmazások
 
 **Gyakorlati telepítési forgatókönyvek**
 - **Gyártás**: Minőségellenőrzési rendszerek, prediktív karbantartás és folyamatoptimalizáció
-- **Egészségügy**: Adatvédelem-központú diagnosztikai eszközök és betegmonitorozási rendszerek
+- **Egészségügy**: Adatvédelem-központú diagnosztikai eszközök és betegmegfigyelő rendszerek
 - **Közlekedés**: Autonóm járművek döntéshozatala és forgalomirányítás
 - **Okos városok**: Intelligens infrastruktúra és erőforrás-kezelési rendszerek
 - **Fogyasztói elektronika**: AI-alapú mobil alkalmazások és okos otthoni eszközök
@@ -362,14 +373,14 @@ A teljes EdgeAI kurzus elvégzésével szakértelmet szerezhet a gyártásra ké
 ### 1. modul tanulási eredményei:
 - Értsd meg a felhő és edge AI architektúrák közötti alapvető különbségeket
 - Sajátítsd el az edge telepítéshez szükséges alapvető optimalizációs technikákat
-- Ismerd meg a valós alkalmazásokat és sikertörténeteket
+- Ismerd fel a valós alkalmazásokat és sikertörténeteket
 - Szerezz gyakorlati készségeket EdgeAI megoldások megvalósításához
 
 ### 2. modul tanulási eredményei:
 - Mély megértés a különböző SLM tervezési filozófiákról és azok telepítési következményeiről
 - Sajátítsd el a stratégiai döntéshozatali képességeket számítási korlátok és teljesítménykövetelmények alapján
 - Értsd meg a telepítési rugalmasság kompromisszumait
-- Rendelkezz jövőbiztos betekintéssel hatékony AI architektúrákba
+- Rendelkezz jövőbiztos betekintéssel a hatékony AI architektúrákba
 
 ### 3. modul tanulási eredményei:
 - Stratégiai modellválasztási képességek
@@ -387,23 +398,41 @@ A teljes EdgeAI kurzus elvégzésével szakértelmet szerezhet a gyártásra ké
 
 ### 5. modul tanulási eredményei:
 - Sajátítsd el az SLMOps paradigmát és működési elveit
-- Valósíts meg modell desztillációt tudásátadás és hatékonyság optimalizáció céljából
-- Alkalmazz finomhangolási technikákat domain-specifikus modell testreszabásához
-- Telepíts gyártásra kész SLM megoldásokat monitorozási és karbantartási stratégiákkal
+- Valós
+- **Kockázatkezelés**: Az EdgeAI telepítések technikai és operatív kockázatainak azonosítása és csökkentése  
+- **ROI Optimalizálás**: Mérhető üzleti érték bemutatása az EdgeAI megvalósításokból  
 
-### 6. modul tanulási eredményei:
-- Értsd meg az AI ügynökök és kis nyelvi modellek architektúrájának alapvető fogalmait
-- Sajátítsd el a funkcióhívás megvalósítását több platformon és keretrendszeren
-- Integráld a Model Context Protocol-t (MCP) szabványos külső eszköz interakcióhoz
-- Építs kifinomult agentikus rendszereket minimális emberi beavatkozási igénnyel
+### Karrierfejlesztési lehetőségek  
 
-### 7. modul tanulási eredményei:
-- Sajátítsd el az AI Toolkit-et a Visual Studio Code-hoz átfogó Edge AI fejlesztési munkafolyamatokhoz
-- Szerezz szakértelmet a Windows AI Foundry platformon és NPU optimalizációs stratégiákban
--
-Ez a kurzus az AI technológia bevezetésének élvonalába helyez, ahol az intelligens képességek zökkenőmentesen integrálódnak a modern életet működtető eszközökbe és rendszerekbe.
+**Szakmai szerepkörök**  
+- EdgeAI megoldásépítész  
+- Gépi tanulási mérnök (Edge specializációval)  
+- IoT AI fejlesztő  
+- Mobil AI alkalmazásfejlesztő  
+- Vállalati AI tanácsadó  
 
-## Fájlstruktúra fa diagram
+**Iparágak**  
+- Okosgyártás és Ipar 4.0  
+- Autonóm járművek és közlekedés  
+- Egészségügyi technológia és orvosi eszközök  
+- Pénzügyi technológia és biztonság  
+- Fogyasztói elektronika és mobilalkalmazások  
+
+### Tanúsítvány és validáció  
+
+**Portfólió fejlesztése**  
+- Teljes körű EdgeAI projektek befejezése, amelyek gyakorlati kompetenciát mutatnak  
+- Termelésre kész megoldások telepítése több hardverplatformon  
+- Optimalizálási stratégiák és elért teljesítményjavítások dokumentálása  
+
+**Folyamatos tanulási út**  
+- Alapozás a fejlett AI specializációkhoz  
+- Felkészülés a felhő-edge hibrid architektúrákra  
+- Kapu az új AI technológiákhoz és keretrendszerekhez  
+
+Ez a kurzus az AI technológia telepítésének élvonalába helyez, ahol az intelligens képességek zökkenőmentesen integrálódnak a modern életet működtető eszközökbe és rendszerekbe.  
+
+## Fájlstruktúra fa diagram  
 
 ```
 edgeai-for-beginners/
@@ -451,6 +480,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -458,66 +495,65 @@ edgeai-for-beginners/
 ├── STUDY_GUIDE.md
 └── SUPPORT.md
 ```
+  
+## Kurzus jellemzői  
 
-## Kurzus jellemzői
+- **Fokozatos tanulás**: Alapfogalmaktól kezdve halad az összetett telepítésekig  
+- **Elmélet és gyakorlat integrációja**: Minden modul tartalmaz elméleti alapokat és gyakorlati műveleteket  
+- **Valós esettanulmányok**: Microsoft, Alibaba, Google és mások tényleges esetei alapján  
+- **Gyakorlati tapasztalat**: Konfigurációs fájlok, API tesztelési eljárások és telepítési szkriptek elkészítése  
+- **Teljesítmény mérföldkövek**: Részletes összehasonlítások az inferencia sebességéről, memóriahasználatról és erőforrásigényekről  
+- **Vállalati szintű szempontok**: Biztonsági gyakorlatok, megfelelőségi keretrendszerek és adatvédelmi stratégiák  
 
-- **Fokozatos tanulás**: Lépésről lépésre haladás az alapfogalmaktól a fejlett bevezetésig
-- **Elmélet és gyakorlat integrációja**: Minden modul tartalmaz elméleti alapokat és gyakorlati műveleteket
-- **Valós esettanulmányok**: Microsoft, Alibaba, Google és mások tényleges esetei alapján
-- **Gyakorlati tapasztalat**: Konfigurációs fájlok, API tesztelési eljárások és bevezetési szkriptek elkészítése
-- **Teljesítmény-összehasonlítások**: Részletes elemzések az inferencia sebességéről, memóriahasználatról és erőforrásigényekről
-- **Vállalati szintű szempontok**: Biztonsági gyakorlatok, megfelelőségi keretrendszerek és adatvédelmi stratégiák
+## Első lépések  
 
-## Kezdés
+Ajánlott tanulási út:  
+1. Kezdje a **Module01**-el, hogy alapvető ismereteket szerezzen az EdgeAI-ról  
+2. Folytassa a **Module02**-vel, hogy mélyebben megértse a különböző SLM modellcsaládokat  
+3. Tanulja meg a **Module03**-at, hogy elsajátítsa a gyakorlati telepítési készségeket  
+4. Folytassa a **Module04**-el, hogy fejlett modelloptimalizálást, formátumkonverziót és keretrendszer-szintézist tanuljon  
+5. Fejezze be a **Module05**-öt, hogy elsajátítsa az SLMOps-t termelésre kész megvalósításokhoz  
+6. Fedezze fel a **Module06**-ot, hogy megértse az SLM ügynöki rendszereket és funkcióhívási képességeket  
+7. Zárja a **Module07**-tel, hogy gyakorlati tapasztalatot szerezzen az AI Toolkit használatával és különféle EdgeAI megvalósítási mintákkal  
+8. Fedezze fel a **Module08**-at, hogy teljes Foundry Local fejlesztői eszköztárat kapjon (helyi elsődleges fejlesztés hibrid Azure integrációval)  
 
-Ajánlott tanulási útvonal:
-1. Kezdj a **Module01**-el, hogy megalapozd az EdgeAI alapjait
-2. Folytasd a **Module02**-vel, hogy mélyebben megértsd a különböző SLM modellcsaládokat
-3. Tanuld meg a **Module03**-at, hogy elsajátítsd a gyakorlati bevezetési készségeket
-4. Haladj tovább a **Module04**-el, hogy fejlett modelloptimalizálást, formátumkonverziót és keretrendszer-szintézist tanulj
-5. Fejezd be a **Module05**-öt, hogy elsajátítsd az SLMOps-t a gyártásra kész megvalósításokhoz
-6. Fedezd fel a **Module06**-ot, hogy megértsd az SLM ügynöki rendszereket és funkcióhívási képességeket
-7. Zárd a **Module07**-tel, hogy gyakorlati tapasztalatot szerezz az AI Toolkit használatával és különféle EdgeAI megvalósítási mintákkal
+Minden modul önállóan is teljes, de a sorrendben történő tanulás hozza a legjobb eredményeket.  
 
-Minden modul önállóan is teljes, de az egymásra épülő tanulás hozza a legjobb eredményeket.
+## Tanulási útmutató  
 
-## Tanulási útmutató
+Egy átfogó [Tanulási Útmutató](STUDY_GUIDE.md) elérhető, hogy maximalizálja tanulási élményét. Az útmutató tartalmazza:  
 
-Egy átfogó [Tanulási Útmutató](STUDY_GUIDE.md) elérhető, hogy maximalizáld a tanulási élményedet. Az útmutató tartalmazza:
+- **Strukturált tanulási utak**: Optimalizált ütemezések a kurzus 20 órás befejezéséhez  
+- **Időbeosztási útmutató**: Konkrét ajánlások az olvasás, gyakorlatok és projektek egyensúlyának megtartásához  
+- **Kulcsfogalmakra fókuszálás**: Prioritást élvező tanulási célok minden modulhoz  
+- **Önértékelési eszközök**: Kérdések és gyakorlatok a megértés tesztelésére  
+- **Mini-projekt ötletek**: Gyakorlati alkalmazások a tanulás megerősítésére  
 
-- **Strukturált tanulási útvonalak**: Optimalizált ütemtervek a kurzus 20 órás elvégzéséhez
-- **Időbeosztási iránymutatások**: Konkrét ajánlások az olvasás, gyakorlatok és projektek egyensúlyának megtartásához
-- **Kulcsfontosságú fogalmakra fókuszálás**: Prioritást élvező tanulási célok minden modulhoz
-- **Önértékelési eszközök**: Kérdések és gyakorlatok a megértésed teszteléséhez
-- **Mini-projekt ötletek**: Gyakorlati alkalmazások a tanulás megerősítésére
-
-Az útmutató alkalmas intenzív tanulásra (1 hét) és részidős tanulásra (3 hét), egyértelmű iránymutatással arra vonatkozóan, hogyan oszd be hatékonyan az idődet, még akkor is, ha csak 10 órát tudsz a kurzusra szánni.
-
----
-
-**Az EdgeAI jövője a modellarchitektúrák, kvantálási technikák és bevezetési stratégiák folyamatos fejlesztésében rejlik, amelyek az általános célú képességek helyett a hatékonyságot és a specializációt helyezik előtérbe. Azok a szervezetek, amelyek elfogadják ezt a paradigmaváltást, jól pozícionálják magukat arra, hogy kihasználják az AI átalakító potenciálját, miközben megőrzik az irányítást adataik és működésük felett.**
-
-## Egyéb kurzusok
-
-Csapatunk más kurzusokat is készít! Nézd meg:
-
-- [MCP kezdőknek](https://github.com/microsoft/mcp-for-beginners)
-- [AI ügynökök kezdőknek](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generatív AI kezdőknek .NET használatával](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generatív AI kezdőknek JavaScript használatával](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generatív AI kezdőknek](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML kezdőknek](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Adattudomány kezdőknek](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI kezdőknek](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Kiberbiztonság kezdőknek](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Webfejlesztés kezdőknek](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT kezdőknek](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR fejlesztés kezdőknek](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [GitHub Copilot mesterfokon AI páros programozáshoz](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [GitHub Copilot mesterfokon C#/.NET fejlesztőknek](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Válaszd ki saját Copilot kalandodat](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+Az útmutató alkalmas intenzív tanulásra (1 hét) és részidős tanulmányokra (3 hét), egyértelmű útmutatással arról, hogyan ossza be hatékonyan az idejét, még akkor is, ha csak 10 órát tud a kurzusra szánni.  
 
 ---
 
-**Felelősség kizárása**:  
-Ez a dokumentum az AI fordítási szolgáltatás, a [Co-op Translator](https://github.com/Azure/co-op-translator) segítségével lett lefordítva. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
+**Az EdgeAI jövője a modellarchitektúrák, kvantálási technikák és telepítési stratégiák folyamatos fejlesztésében rejlik, amelyek az általános célú képességek helyett a hatékonyságot és specializációt helyezik előtérbe. Azok a szervezetek, amelyek elfogadják ezt a paradigmaváltást, jól pozícionálják magukat arra, hogy kihasználják az AI átalakító potenciálját, miközben megőrzik az adat- és működési kontrollt.**  
+
+## Egyéb kurzusok  
+
+Csapatunk más kurzusokat is készít! Nézze meg:  
+
+- [MCP kezdőknek](https://github.com/microsoft/mcp-for-beginners)  
+- [AI ügynökök kezdőknek](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generatív AI kezdőknek .NET használatával](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generatív AI kezdőknek JavaScript használatával](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generatív AI kezdőknek](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML kezdőknek](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Adattudomány kezdőknek](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI kezdőknek](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Kiberbiztonság kezdőknek](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Webfejlesztés kezdőknek](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT kezdőknek](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [XR fejlesztés kezdőknek](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [GitHub Copilot elsajátítása AI páros programozáshoz](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [GitHub Copilot elsajátítása C#/.NET fejlesztők számára](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Válassza ki saját Copilot kalandját](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+
+---
+

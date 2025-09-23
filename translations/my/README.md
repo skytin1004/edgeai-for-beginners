@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c817161ba08864340737d623f761b9ae",
-  "translation_date": "2025-09-18T21:16:37+00:00",
+  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
+  "translation_date": "2025-09-23T00:19:09+00:00",
   "source_file": "README.md",
   "language_code": "my"
 }
@@ -11,75 +11,75 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![သင်ခန်းစာအဖုံးပုံ](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.my.png)
 
-[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)  
-[![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)  
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)  
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)  
-[![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
-[![GitHub stars](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)  
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 ဤအရင်းအမြစ်များကို အသုံးပြုရန်အဆင့်များကို လိုက်နာပါ-
 
-1. **Repository ကို Fork လုပ်ပါ**: [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork) ကိုနှိပ်ပါ  
-2. **Repository ကို Clone လုပ်ပါ**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Azure AI Foundry Discord ကို Join လုပ်ပြီး ကျွမ်းကျင်သူများနှင့် ဖွံ့ဖြိုးရေးသူများနှင့် တွေ့ဆုံပါ**](https://discord.com/invite/ByRwuEEgH4)
+1. **Repository ကို Fork လုပ်ပါ**: [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork) ကိုနှိပ်ပါ။
+2. **Repository ကို Clone လုပ်ပါ**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
+3. [**Azure AI Foundry Discord ကို Join လုပ်ပြီး ကျွမ်းကျင်သူများနှင့် Developer မိတ်ဆွေများနှင့် တွေ့ဆုံပါ**](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 ဘာသာစကားများ အထောက်အပံ့
+### 🌐 ဘာသာစကားများအထောက်အပံ့
 
 #### GitHub Action မှတဆင့် အလိုအလျောက် (အမြဲ Update ဖြစ်နေသော)
 
 [Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](./README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
 
-**အပိုဘာသာစကားများကို ထည့်သွင်းလိုပါက [ဒီမှာ](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) ရှိသော ဘာသာစကားများကို ကြည့်ပါ။**
+**ထပ်မံသော ဘာသာစကားများအထောက်အပံ့လိုအပ်ပါက [ဒီမှာ](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) ရှိသောစာရင်းကိုကြည့်ပါ။**
 
 ## အကျဉ်းချုပ်
 
-**EdgeAI for Beginners** သို့ ကြိုဆိုပါသည်။ Edge Artificial Intelligence ၏ ပြောင်းလဲမှုအပေါ် အခြေခံသင်ခန်းစာများကို သင်ယူနိုင်မည့် သင်ခန်းစာဖြစ်သည်။ ဤသင်ခန်းစာသည် အင်အားကြီး AI စွမ်းရည်များနှင့် အ-edge device များတွင် အကောင်အထည်ဖော်နိုင်သော နည်းလမ်းများကို ဆက်သွယ်ပေးပြီး၊ ဒေတာထုတ်လုပ်ရာနေရာတွင် AI ၏စွမ်းရည်ကို အသုံးချနိုင်ရန် သင်အား အခွင့်အရေးပေးသည်။
+**EdgeAI for Beginners** သို့ ကြိုဆိုပါသည်။ Edge Artificial Intelligence ၏ ပြောင်းလဲမှုအလောကသို့ ခရီးစဉ်တစ်ခုဖြစ်ပြီး AI ၏ အင်အားကို edge devices တွင် အကျိုးရှိရှိ အသုံးချနိုင်ရန် အတန်းလေးဖြစ်သည်။ ဒေတာထုတ်လုပ်ရာနေရာတွင် AI ကို တိုက်ရိုက်အသုံးချနိုင်ရန် အခြေခံအဆင့်မှ စတင်ပြီး အလုပ်လုပ်နိုင်သော အဆင့်အထိ သင်ယူနိုင်မည်ဖြစ်သည်။
 
 ### သင်လေ့လာနိုင်မည့်အရာများ
 
-ဤသင်ခန်းစာသည် အခြေခံအယူအဆများမှ စ၍ ထုတ်လုပ်မှုအဆင့်အထိ လေ့လာနိုင်မည့်အရာများကို ဖုံးအုပ်ထားသည်-
-- **Small Language Models (SLMs)** အ-edge deployment အတွက် အထူးပြုထားသော
-- **Hardware-aware optimization** အမျိုးမျိုးသော platform များအတွက်
-- **Real-time inference** ကို privacy ကို ထိန်းသိမ်းထားနိုင်သော စွမ်းရည်ဖြင့်
-- **Production deployment** အတွက် စီးပွားရေးလုပ်ငန်းများအတွက် မဟာဗျူဟာများ
+ဤသင်ခန်းစာသည် အခြေခံအဆင့်မှ စတင်ပြီး အလုပ်လုပ်နိုင်သော အဆင့်အထိ လေ့လာနိုင်မည့်အရာများကို ဖုံးအုပ်ထားသည်-
+- **Small Language Models (SLMs)** ကို edge deployment အတွက် အထူးပြုထားခြင်း
+- **Hardware-aware optimization** ကို platform များအပေါ်တွင် အသုံးပြုခြင်း
+- **Real-time inference** နှင့် privacy ကို ထိန်းသိမ်းထားနိုင်သော စွမ်းရည်များ
+- **Production deployment** ကို စီးပွားရေးလုပ်ငန်းများအတွက် အကောင်းဆုံးနည်းလမ်းများဖြင့် ပြုလုပ်ခြင်း
 
-### EdgeAI အရေးကြီးမှု
+### EdgeAI အရေးပါမှု
 
-Edge AI သည် အရေးကြီးသော ခေတ်သစ် စိန်ခေါ်မှုများကို ဖြေရှင်းပေးသော ပြောင်းလဲမှုဖြစ်သည်-
-- **Privacy & Security**: Cloud သို့ မပို့ဘဲ ဒေတာကို ဒေသတွင် အ処理လုပ်ခြင်း
-- **Real-time Performance**: အရေးကြီးသော အချိန်-sensitive application များအတွက် latency ကို ဖယ်ရှားခြင်း
+Edge AI သည် အရေးကြီးသော ခေတ်မီပြဿနာများကို ဖြေရှင်းပေးနိုင်သော နည်းလမ်းအသစ်တစ်ခုဖြစ်သည်-
+- **Privacy & Security**: Cloud သို့ မပို့ပဲ ဒေတာကို ဒေသတွင်းတွင် အ処理လုပ်ခြင်း
+- **Real-time Performance**: အရေးကြီးသော အချိန်တွင် latency မရှိဘဲ အလုပ်လုပ်နိုင်ခြင်း
 - **Cost Efficiency**: Bandwidth နှင့် cloud computing ကုန်ကျစရိတ်ကို လျှော့ချခြင်း
-- **Resilient Operations**: Network ပြဿနာများရှိစဉ်တွင် လုပ်ဆောင်နိုင်စွမ်းကို ထိန်းသိမ်းခြင်း
-- **Regulatory Compliance**: ဒေတာကို ဒေသတွင် ထိန်းသိမ်းခြင်းအားဖြင့် စည်းမျဉ်းများကို လိုက်နာခြင်း
+- **Resilient Operations**: Network ပြဿနာများရှိစဉ်တွင် အလုပ်လုပ်နိုင်ခြင်း
+- **Regulatory Compliance**: ဒေတာကို ဒေသတွင်းတွင် ထိန်းသိမ်းထားခြင်း
 
 ### Edge AI
 
-Edge AI သည် AI algorithm များနှင့် language model များကို hardware တွင် ဒေတာထုတ်လုပ်ရာနေရာတွင် local အ処理လုပ်ခြင်းကို ဆိုလိုသည်။ Cloud resource များကို မလိုအပ်ဘဲ latency ကို လျှော့ချပြီး privacy ကို တိုးတက်စေသည်။
+Edge AI သည် AI algorithm များနှင့် language models များကို hardware တွင် ဒေတာထုတ်လုပ်ရာနေရာတွင် တိုက်ရိုက် အ処理လုပ်ခြင်းဖြစ်သည်။ Cloud resources မလိုအပ်ဘဲ latency ကို လျှော့ချပြီး privacy ကို တိုးတက်စေသည်။
 
 ### အဓိကအချက်များ:
-- **On-device inference**: AI model များကို edge device (ဖုန်းများ၊ router များ၊ microcontroller များ၊ စက်မှုလုပ်ငန်း PC များ) တွင် အ処理လုပ်ခြင်း
-- **Offline capability**: အင်တာနက် ချိတ်ဆက်မှုမရှိဘဲ လုပ်ဆောင်နိုင်စွမ်း
-- **Low latency**: အချိန်-sensitive စနစ်များအတွက် ချက်ချင်းတုံ့ပြန်မှု
-- **Data sovereignty**: ဒေတာကို ဒေသတွင် ထိန်းသိမ်းခြင်းအားဖြင့် လုံခြုံမှုနှင့် စည်းမျဉ်းလိုက်နာမှုကို တိုးတက်စေသည်
+- **On-device inference**: AI models များကို edge devices (ဖုန်းများ၊ routers၊ microcontrollers၊ industrial PCs) တွင် အ処理လုပ်ခြင်း
+- **Offline capability**: အင်တာနက်မရှိဘဲ အလုပ်လုပ်နိုင်ခြင်း
+- **Low latency**: Real-time systems အတွက် အမြန်တုံ့ပြန်မှု
+- **Data sovereignty**: ဒေတာကို ဒေသတွင်းတွင် ထိန်းသိမ်းထားခြင်း
 
 ### Small Language Models (SLMs)
 
-Phi-4, Mistral-7B, Gemma ကဲ့သို့သော SLM များသည် LLM များ၏ optimized version ဖြစ်ပြီး-
-- **Reduced memory footprint**: Edge device memory ကို ထိရောက်စွာ အသုံးပြုခြင်း
-- **Lower compute demand**: CPU နှင့် edge GPU performance အတွက် optimized ဖြစ်ခြင်း
-- **Faster startup times**: အမြန်စတင်နိုင်သော responsive application များအတွက်
+SLMs များဖြစ်သော Phi-4, Mistral-7B, Gemma စသည်တို့သည် LLM များ၏ optimized version များဖြစ်ပြီး-
+- **Reduced memory footprint**: Edge device memory ကို အကျိုးရှိရှိ အသုံးပြုခြင်း
+- **Lower compute demand**: CPU နှင့် edge GPU performance အတွက် optimization
+- **Faster startup times**: အမြန်တုံ့ပြန်မှုအတွက် initialization ကို မြန်ဆန်စေခြင်း
 
-SLM များသည် အောက်ပါအကန့်အသတ်များကို ဖြေရှင်းပေးသည်-
-- **Embedded systems**: IoT device များနှင့် စက်မှုလုပ်ငန်း controller များ
-- **Mobile devices**: ဖုန်းများနှင့် tablet များ
-- **IoT Devices**: Sensor များနှင့် စွမ်းရည်ကန့်သတ်ထားသော smart device များ
-- **Edge servers**: GPU resource ကန့်သတ်ထားသော local processing unit များ
-- **Personal Computers**: Desktop နှင့် laptop deployment အခြေအနေများ
+SLMs များသည် အောက်ပါအကန့်အသတ်များကို ဖြည့်ဆည်းနိုင်သည်-
+- **Embedded systems**: IoT devices နှင့် industrial controllers
+- **Mobile devices**: Smartphones နှင့် tablets
+- **IoT Devices**: Sensors နှင့် resource အကန့်အသတ်ရှိသော smart devices
+- **Edge servers**: GPU resources အကန့်အသတ်ရှိသော local processing units
+- **Personal Computers**: Desktop နှင့် laptop deployment အတွက်
 
 ## သင်ခန်းစာဖွဲ့စည်းမှု
 
@@ -87,87 +87,87 @@ SLM များသည် အောက်ပါအကန့်အသတ်မျ
 **အဓိကအကြောင်းအရာ**: Edge AI deployment ၏ ပြောင်းလဲမှု
 
 #### အခန်းဖွဲ့စည်းမှု:
-- [**Section 1: EdgeAI အခြေခံအယူအဆများ**](./Module01/01.EdgeAIFundamentals.md)
-  - Cloud AI နှင့် edge AI ၏ နှိုင်းယှဉ်မှု
-  - Edge computing ၏ စိန်ခေါ်မှုများနှင့် ကန့်သတ်ချက်များ
-  - အဓိကနည်းပညာများ: model quantization, compression optimization, Small Language Models (SLMs)
+- [**Section 1: EdgeAI အခြေခံအချက်များ**](./Module01/01.EdgeAIFundamentals.md)
+  - Cloud AI နှင့် Edge AI ၏ နှိုင်းယှဉ်မှု
+  - Edge computing ၏ စိန်ခေါ်မှုများနှင့် အကန့်အသတ်များ
+  - Model quantization, compression optimization, Small Language Models (SLMs) စသည်တို့၏ အရေးပါမှု
   - Hardware acceleration: NPUs, GPU optimization, CPU optimization
-  - အကျိုးကျေးဇူးများ: privacy security, low latency, offline capabilities, cost efficiency
+  - Privacy, security, low latency, offline capabilities, cost efficiency ၏ အကျိုးကျေးဇူးများ
 
-- [**Section 2: အမှန်တကယ် Case Study များ**](./Module01/02.RealWorldCaseStudies.md)
+- [**Section 2: အမှန်တကယ် Case Studies**](./Module01/02.RealWorldCaseStudies.md)
   - Microsoft Phi & Mu model ecosystem
   - Japan Airlines AI reporting system case study
   - စျေးကွက်အကျိုးသက်ရောက်မှုနှင့် အနာဂတ်လမ်းကြောင်းများ
-  - Deployment အတွက် အကောင်းဆုံးလေ့ကျင့်မှုများ
+  - Deployment အတွက် အကောင်းဆုံးနည်းလမ်းများ
 
-- [**Section 3: လက်တွေ့အကောင်အထည်ဖော်လမ်းညွှန်**](./Module01/03.PracticalImplementationGuide.md)
+- [**Section 3: အကန့်အသတ်ရှိသော လက်တွေ့လမ်းညွှန်**](./Module01/03.PracticalImplementationGuide.md)
   - Development environment setup (Python 3.10+, .NET 8+)
-  - Hardware လိုအပ်ချက်များနှင့် အကြံပြု configuration များ
+  - Hardware requirements နှင့် အကြံပြု configuration များ
   - Core model family resources
   - Quantization နှင့် optimization tools (Llama.cpp, Microsoft Olive, Apple MLX)
-  - အကဲဖြတ်ခြင်းနှင့် အတည်ပြုခြင်း checklist
+  - Assessment နှင့် verification checklist
 
 - [**Section 4: Edge AI Deployment Hardware Platforms**](./Module01/04.EdgeDeployment.md)
-  - Edge AI deployment အတွက် စဉ်ဆက်မပြတ်လိုအပ်ချက်များ
+  - Edge AI deployment အတွက် အရေးပါအချက်များ
   - Intel edge AI hardware နှင့် optimization နည်းလမ်းများ
-  - Qualcomm AI solution များ (mobile နှင့် embedded systems)
-  - NVIDIA Jetson နှင့် edge computing platform များ
-  - Windows AI PC platform များ (NPU acceleration)
-  - Hardware-specific optimization strategy များ
+  - Qualcomm AI solutions for mobile နှင့် embedded systems
+  - NVIDIA Jetson နှင့် edge computing platforms
+  - Windows AI PC platforms with NPU acceleration
+  - Hardware-specific optimization strategies
 
 ---
 
-### [Module 02: Small Language Model အခြေခံအယူအဆများ](./Module02/README.md)
-**အဓိကအကြောင်းအရာ**: SLM ၏ သီအိုရီအခြေခံ၊ အကောင်အထည်ဖော်နည်းလမ်းများနှင့် ထုတ်လုပ်မှု deployment
+### [Module 02: Small Language Model အခြေခံ](./Module02/README.md)
+**အဓိကအကြောင်းအရာ**: SLM ၏ သီအိုရီအခြေခံများ၊ အကန့်အသတ်ရှိသော လက်တွေ့နည်းလမ်းများနှင့် production deployment
 
 #### အခန်းဖွဲ့စည်းမှု:
-- [**Section 1: Microsoft Phi Model Family အခြေခံအယူအဆများ**](./Module02/01.PhiFamily.md)
-  - Design philosophy evolution (Phi-1 မှ Phi-4)
+- [**Section 1: Microsoft Phi Model Family အခြေခံအချက်များ**](./Module02/01.PhiFamily.md)
+  - Design philosophy evolution (Phi-1 to Phi-4)
   - Efficiency-first architecture design
-  - အထူးပြုစွမ်းရည်များ (reasoning, multimodal, edge deployment)
+  - Specialized capabilities (reasoning, multimodal, edge deployment)
 
-- [**Section 2: Qwen Family အခြေခံအယူအဆများ**](./Module02/02.QwenFamily.md)
-  - Open source excellence (Qwen 1.0 မှ Qwen3) - Hugging Face မှရရှိနိုင်
-  - Advanced reasoning architecture (thinking mode capabilities)
+- [**Section 2: Qwen Family အခြေခံအချက်များ**](./Module02/02.QwenFamily.md)
+  - Open source excellence (Qwen 1.0 to Qwen3) - Hugging Face မှရရှိနိုင်
+  - Advanced reasoning architecture with thinking mode capabilities
   - Scalable deployment options (0.5B-235B parameters)
 
-- [**Section 3: Gemma Family အခြေခံအယူအဆများ**](./Module02/03.GemmaFamily.md)
+- [**Section 3: Gemma Family အခြေခံအချက်များ**](./Module02/03.GemmaFamily.md)
   - Research-driven innovation (Gemma 3 & 3n)
   - Multimodal excellence
   - Mobile-first architecture
 
-- [**Section 4: BitNET Family အခြေခံအယူအဆများ**](./Module02/04.BitNETFamily.md)
+- [**Section 4: BitNET Family အခြေခံအချက်များ**](./Module02/04.BitNETFamily.md)
   - Revolutionary quantization technology (1.58-bit)
-  - Specialized inference framework (https://github.com/microsoft/BitNet)
-  - Sustainable AI leadership (extreme efficiency)
+  - Specialized inference framework from https://github.com/microsoft/BitNet
+  - Sustainable AI leadership through extreme efficiency
 
-- [**Section 5: Microsoft Mu Model အခြေခံအယူအဆများ**](./Module02/05.mumodel.md)
-  - Device-first architecture (Windows 11 built-in)
-  - System integration (Windows 11 Settings)
+- [**Section 5: Microsoft Mu Model အခြေခံအချက်များ**](./Module02/05.mumodel.md)
+  - Device-first architecture built into Windows 11
+  - System integration with Windows 11 Settings
   - Privacy-preserving offline operation
 
-- [**Section 6: Phi-Silica အခြေခံအယူအဆများ**](./Module02/06.phisilica.md)
-  - NPU-optimized architecture (Windows 11 Copilot+ PCs)
+- [**Section 6: Phi-Silica အခြေခံအချက်များ**](./Module02/06.phisilica.md)
+  - NPU-optimized architecture built into Windows 11 Copilot+ PCs
   - Exceptional efficiency (650 tokens/second at 1.5W)
-  - Developer integration (Windows App SDK)
+  - Developer integration with Windows App SDK
 
 ---
 
 ### [Module 03: Small Language Model Deployment](./Module03/README.md)
-**အဓိကအကြောင်းအရာ**: SLM lifecycle deployment (သီအိုရီမှ ထုတ်လုပ်မှုအဆင့်အထိ)
+**အဓိကအကြောင်းအရာ**: SLM ၏ အပြည့်အစုံ lifecycle deployment, သီအိုရီမှ production environment အထိ
 
 #### အခန်းဖွဲ့စည်းမှု:
 - [**Section 1: SLM အဆင့်မြင့်သင်ယူမှု**](./Module03/01.SLMAdvancedLearning.md)
   - Parameter classification framework (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
   - Advanced optimization techniques (quantization methods, BitNET 1-bit quantization)
-  - Model acquisition strategies (Azure AI Foundry, Hugging Face)
+  - Model acquisition strategies (Azure AI Foundry for Phi models, Hugging Face for selected models)
 
-- [**Section 2: Local Environment Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)
+- [**Section 2: ဒေသတွင်းပတ်ဝန်းကျင်တွင် Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)
   - Ollama universal platform deployment
   - Microsoft Foundry local enterprise-grade solutions
   - Framework comparative analysis
 
-- [**Section 3: Containerized Cloud Deployment**](./Module03/03.DeployingSLMinCloud.md)
+- [**Section 3: Cloud တွင် Containerized Deployment**](./Module03/03.DeployingSLMinCloud.md)
   - vLLM high-performance inference deployment
   - Ollama container orchestration
   - ONNX Runtime edge-optimized implementation
@@ -175,91 +175,91 @@ SLM များသည် အောက်ပါအကန့်အသတ်မျ
 ---
 
 ### [Module 04: Model Format Conversion နှင့် Quantization](./Module04/README.md)
-**အဓိကအကြောင်းအရာ**: Edge deployment အတွက် platform များအနှံ့ model optimization toolkit
+**အဓိကအကြောင်းအရာ**: Edge deployment အတွက် platform များအပေါ် model optimization toolkit အပြည့်အစုံ
 
 #### အခန်းဖွဲ့စည်းမှု:
-- [**Section 1: Model Format Conversion နှင့် Quantization အခြေခံအယူအဆများ**](./Module04/01.Introduce.md)
+- [**Section 1: Model Format Conversion နှင့် Quantization အခြေခံအချက်များ**](./Module04/01.Introduce.md)
   - Precision classification framework (ultra-low, low, medium precision)
-  - GGUF နှင့် ONNX format ၏ အကျိုးကျေးဇူးများ
-  - Quantization ၏ operational efficiency အပေါ် အကျိုးသက်ရောက်မှု
-  - Performance benchmark နှင့် memory footprint comparison
+  - GGUF နှင့် ONNX format ၏ အကျိုးကျေးဇူးများနှင့် အသုံးပြုမှု
+  - Quantization ၏ operational efficiency အတွက် အရေးပါမှု
+  - Performance benchmarks နှင့် memory footprint comparisons
 - [**အပိုင်း ၂: Llama.cpp အကောင်အထည်ဖော်လမ်းညွှန်**](./Module04/02.Llamacpp.md)
   - Cross-platform တပ်ဆင်ခြင်း (Windows, macOS, Linux)
   - GGUF ဖော်မတ်ပြောင်းလဲခြင်းနှင့် quantization အဆင့်များ (Q2_K မှ Q8_0)
   - Hardware acceleration (CUDA, Metal, OpenCL, Vulkan)
-  - Python အထောက်အပံ့နှင့် REST API တင်သွင်းခြင်း
+  - Python နှင့် REST API ပေါင်းစည်းခြင်း
 
 - [**အပိုင်း ၃: Microsoft Olive Optimization Suite**](./Module04/03.MicrosoftOlive.md)
-  - Hardware-aware မော်ဒယ်အကောင်းဆုံးဖြစ်စေရန် 40+ built-in components
+  - Hardware-aware မော်ဒယ်အကောင်းမြင်ခြင်း 40+ built-in components ဖြင့်
   - Auto-optimization နှင့် dynamic နှင့် static quantization
-  - Azure ML workflows နှင့် စီးပွားရေးအဆင့်တွဲဖက်ခြင်း
-  - လူကြိုက်များသော မော်ဒယ်များ (Llama, Phi, selected Qwen models, Gemma)
+  - Azure ML workflows နှင့် စီးပွားရေးပေါင်းစည်းမှု
+  - လူကြိုက်များသော မော်ဒယ်များ (Llama, Phi, Qwen မော်ဒယ်များ, Gemma)
 
 - [**အပိုင်း ၄: OpenVINO Toolkit Optimization Suite**](./Module04/04.openvino.md)
   - Intel ၏ open-source toolkit ဖြင့် cross-platform AI တင်သွင်းခြင်း
-  - Neural Network Compression Framework (NNCF) ဖြင့် အဆင့်မြှင့်တင်ခြင်း
-  - OpenVINO GenAI ဖြင့် အကြီးစားဘာသာစကားမော်ဒယ်များ တင်သွင်းခြင်း
-  - CPU, GPU, VPU နှင့် AI accelerators အတွင်း hardware acceleration
+  - Neural Network Compression Framework (NNCF) ဖြင့် အဆင့်မြင့် optimization
+  - OpenVINO GenAI ဖြင့် အကြီးစားဘာသာစကားမော်ဒယ်များ deployment
+  - Hardware acceleration (CPU, GPU, VPU, AI accelerators)
 
 - [**အပိုင်း ၅: Apple MLX Framework အနက်ရှိုင်းလေ့လာခြင်း**](./Module04/05.AppleMLX.md)
   - Apple Silicon အတွက် Unified memory architecture
-  - LLaMA, Mistral, Phi-3, selected Qwen models အထောက်အပံ့
-  - LoRA fine-tuning နှင့် မော်ဒယ်စိတ်ကြိုက်ပြင်ဆင်ခြင်း
+  - LLaMA, Mistral, Phi, Qwen မော်ဒယ်များအတွက် ပံ့ပိုးမှု
+  - LoRA fine-tuning နှင့် မော်ဒယ် customization
   - Hugging Face integration နှင့် 4-bit/8-bit quantization
 
-- [**အပိုင်း ၆: Edge AI ဖွံ့ဖြိုးတိုးတက်မှုလုပ်ငန်းစဉ်များ**](./Module04/06.workflow-synthesis.md)
-  - အမျိုးမျိုးသော optimization frameworks တွဲဖက်ထားသော Unified workflow architecture
-  - Framework ရွေးချယ်မှုဆုံးဖြတ်ပုံနှင့် စွမ်းဆောင်ရည် trade-off ချိန်ဆ
-  - ထုတ်လုပ်မှုအဆင့်အတည်ပြုခြင်းနှင့် တင်သွင်းမှုနည်းလမ်းများ
-  - ပေါ်ပေါက်လာသော hardware နှင့် မော်ဒယ် architectures အတွက် အနာဂတ်အာမခံမှု
+- [**အပိုင်း ၆: Edge AI Development Workflow Synthesis**](./Module04/06.workflow-synthesis.md)
+  - အမျိုးမျိုးသော optimization frameworks ပေါင်းစည်းထားသော workflow architecture
+  - Framework ရွေးချယ်မှု decision trees နှင့် performance trade-off analysis
+  - Production readiness validation နှင့် deployment strategies
+  - Emerging hardware နှင့် မော်ဒယ် architectures အတွက် future-proofing strategies
 
 ---
 
 ### [Module 05: SLMOps - Small Language Model Operations](./Module05/README.md)
-**အဓိကအကြောင်းအရာ**: SLM lifecycle အပြည့်အစုံကို distillation မှ production deployment အထိ
+**အဓိကအကြောင်းအရာ**: SLM lifecycle operations ကို distillation မှ production deployment အထိ ပြည့်စုံစွာ လုပ်ဆောင်ခြင်း
 
-#### အခန်းဖွဲ့စည်းပုံ:
+#### အခန်းဖွဲ့စည်းမှု:
 - [**အပိုင်း ၁: SLMOps အကျဉ်းချုပ်**](./Module05/01.IntroduceSLMOps.md)
   - AI operations တွင် SLMOps paradigm shift
   - ကုန်ကျစရိတ်သက်သာမှုနှင့် privacy-first architecture
-  - စီးပွားရေးရလဒ်များနှင့် ယှဉ်ပြိုင်မှုအားသာချက်များ
-  - အကောင်အထည်ဖော်မှုအခက်အခဲများနှင့် ဖြေရှင်းနည်းများ
+  - စီးပွားရေးအကျိုးသက်ရောက်မှုနှင့် ယှဉ်ပြိုင်မှုအားသာချက်များ
+  - အကောင်အထည်ဖော်ရာတွင် ရှေ့ဆောင်သော စိန်ခေါ်မှုများနှင့် ဖြေရှင်းနည်းများ
 
 - [**အပိုင်း ၂: Model Distillation - သီအိုရီမှ လက်တွေ့အကောင်အထည်ဖော်ခြင်း**](./Module05/02.SLMOps-Distillation.md)
   - Teacher မှ Student မော်ဒယ်များသို့ Knowledge transfer
-  - Two-stage distillation process အကောင်အထည်ဖော်ခြင်း
+  - Two-stage distillation process implementation
   - Azure ML distillation workflows နှင့် လက်တွေ့နမူနာများ
-  - 85% inference အချိန်လျှော့ချမှုနှင့် 92% တိကျမှုထိန်းသိမ်းမှု
+  - 85% inference time လျှော့ချခြင်းနှင့် 92% accuracy ထိန်းသိမ်းမှု
 
-- [**အပိုင်း ၃: Fine-Tuning - အထူးလုပ်ငန်းများအတွက် မော်ဒယ်များစိတ်ကြိုက်ပြင်ဆင်ခြင်း**](./Module05/03.SLMOps-Finetuing.md)
+- [**အပိုင်း ၃: Fine-Tuning - အထူးလုပ်ငန်းများအတွက် မော်ဒယ်များကို Customize လုပ်ခြင်း**](./Module05/03.SLMOps-Finetuing.md)
   - Parameter-efficient fine-tuning (PEFT) နည်းလမ်းများ
   - LoRA နှင့် QLoRA အဆင့်မြင့်နည်းလမ်းများ
-  - Microsoft Olive fine-tuning အကောင်အထည်ဖော်ခြင်း
+  - Microsoft Olive fine-tuning implementation
   - Multi-adapter training နှင့် hyperparameter optimization
 
-- [**အပိုင်း ၄: Deployment - ထုတ်လုပ်မှုအဆင့်အကောင်အထည်ဖော်ခြင်း**](./Module05/04.SLMOps.Deployment.md)
-  - Model conversion နှင့် quantization အတွက် production
+- [**အပိုင်း ၄: Deployment - Production-Ready Implementation**](./Module05/04.SLMOps.Deployment.md)
+  - Production အတွက် မော်ဒယ် conversion နှင့် quantization
   - Foundry Local deployment configuration
-  - စွမ်းဆောင်ရည် benchmarking နှင့် အရည်အသွေးအတည်ပြုခြင်း
-  - 75% အရွယ်အစားလျှော့ချမှုနှင့် production monitoring
+  - Performance benchmarking နှင့် quality validation
+  - 75% အရွယ်အစားလျှော့ချခြင်းနှင့် production monitoring
 
 ---
 
 ### [Module 06: SLM Agentic Systems - AI Agents နှင့် Function Calling](./Module06/README.md)
-**အဓိကအကြောင်းအရာ**: SLM agentic systems အခြေခံမှ အဆင့်မြင့် function calling နှင့် Model Context Protocol ပေါင်းစပ်ခြင်း
+**အဓိကအကြောင်းအရာ**: SLM agentic systems ကို အခြေခံမှ အဆင့်မြင့် function calling နှင့် Model Context Protocol integration အထိ အကောင်အထည်ဖော်ခြင်း
 
-#### အခန်းဖွဲ့စည်းပုံ:
-- [**အပိုင်း ၁: AI Agents နှင့် Small Language Models အခြေခံ**](./Module06/01.IntroduceAgent.md)
+#### အခန်းဖွဲ့စည်းမှု:
+- [**အပိုင်း ၁: AI Agents နှင့် Small Language Models အခြေခံအဆင့်**](./Module06/01.IntroduceAgent.md)
   - Agent classification framework (reflex, model-based, goal-based, learning agents)
-  - SLM အခြေခံနှင့် optimization နည်းလမ်းများ (GGUF, quantization, edge frameworks)
-  - SLM နှင့် LLM trade-offs ချိန်ဆ (10-30× ကုန်ကျစရိတ်လျှော့ချမှု၊ 70-80% task effectiveness)
+  - SLM အခြေခံအဆင့်များနှင့် optimization strategies (GGUF, quantization, edge frameworks)
+  - SLM နှင့် LLM trade-offs analysis (ကုန်ကျစရိတ် 10-30× လျှော့ချခြင်း၊ task effectiveness 70-80%)
   - Ollama, VLLM, Microsoft edge solutions ဖြင့် လက်တွေ့ deployment
 
 - [**အပိုင်း ၂: Function Calling in Small Language Models**](./Module06/02.FunctionCalling.md)
-  - Systematic workflow အကောင်အထည်ဖော်ခြင်း (intent detection, JSON output, external execution)
-  - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)
+  - Systematic workflow implementation (intent detection, JSON output, external execution)
+  - Platform-specific implementations (Phi-4-mini, Qwen မော်ဒယ်များ, Microsoft Foundry Local)
   - အဆင့်မြင့်နမူနာများ (multi-agent collaboration, dynamic tool selection)
-  - Production အတွက်စဉ်းစားရန် (rate limiting, audit logging, security measures)
+  - Production အတွက် စဉ်းစားရန် (rate limiting, audit logging, security measures)
 
 - [**အပိုင်း ၃: Model Context Protocol (MCP) Integration**](./Module06/03.IntroduceMCP.md)
   - Protocol architecture နှင့် layered system design
@@ -270,106 +270,117 @@ SLM များသည် အောက်ပါအကန့်အသတ်မျ
 ---
 
 ### [Module 07: EdgeAI Implementation Samples](./Module07/README.md)
-**အဓိကအကြောင်းအရာ**: အမျိုးမျိုးသော platform နှင့် frameworks များအတွက် EdgeAI အကောင်အထည်ဖော်မှုများ
+**အဓိကအကြောင်းအရာ**: အမျိုးမျိုးသော platform နှင့် frameworks များအတွက် EdgeAI implementation များ
 
-#### အခန်းဖွဲ့စည်းပုံ:
+#### အခန်းဖွဲ့စည်းမှု:
 - [**AI Toolkit for Visual Studio Code**](./Module07/aitoolkit.md)
-  - VS Code အတွင်း Comprehensive Edge AI ဖွံ့ဖြိုးတိုးတက်မှုပတ်ဝန်းကျင်
-  - Edge deployment အတွက် Model catalog နှင့် discovery
+  - VS Code အတွင်း Comprehensive Edge AI development environment
+  - Edge deployment အတွက် မော်ဒယ် catalog နှင့် discovery
   - Local testing, optimization, နှင့် agent development workflows
-  - Edge scenarios အတွက် စွမ်းဆောင်ရည် monitoring နှင့် အကဲဖြတ်ခြင်း
+  - Edge scenarios အတွက် performance monitoring နှင့် evaluation
 
 - [**Windows EdgeAI Development Guide**](./Module07/windowdeveloper.md)
-  - Windows AI Foundry platform အပြည့်အစုံအကျဉ်းချုပ်
-  - Phi Silica API ဖြင့် NPU inference အကျိုးရှိစွာလုပ်ဆောင်ခြင်း
+  - Windows AI Foundry platform အကြောင်းအကျဉ်းချုပ်
+  - Phi Silica API ဖြင့် NPU inference ကို ထိရောက်စွာလုပ်ဆောင်ခြင်း
   - Computer Vision APIs ဖြင့် image processing နှင့် OCR
   - Foundry Local CLI ဖြင့် local development နှင့် testing
 
 - [**EdgeAI in NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
-  - 67 TOPS AI စွမ်းဆောင်ရည်ကို credit-card အရွယ်အစား platform တွင်
-  - Generative AI မော်ဒယ်များအထောက်အပံ့ (vision transformers, LLMs, vision-language models)
-  - Robotics, drones, intelligent cameras, autonomous devices အတွက် အသုံးချမှုများ
-  - $249 စျေးနှုန်းဖြင့် AI ဖွံ့ဖြိုးတိုးတက်မှုကို လူတိုင်းရောက်နိုင်စေရန်
+  - 67 TOPS AI performance ကို credit-card အရွယ်အစား platform တွင်
+  - Generative AI မော်ဒယ်များပံ့ပိုးမှု (vision transformers, LLMs, vision-language models)
+  - Robotics, drones, intelligent cameras, autonomous devices အတွက် အသုံးချမှု
+  - $249 တန်ဖိုးဖြင့် AI development ကို democratize လုပ်ခြင်း
 
 - [**EdgeAI in Mobile Applications with .NET MAUI and ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
-  - Single C# codebase ဖြင့် Cross-platform mobile AI
-  - Hardware acceleration အထောက်အပံ့ (CPU, GPU, mobile AI processors)
+  - Single C# codebase ဖြင့် cross-platform mobile AI
+  - Hardware acceleration support (CPU, GPU, mobile AI processors)
   - Platform-specific optimizations (CoreML for iOS, NNAPI for Android)
-  - Generative AI loop အပြည့်အစုံအကောင်အထည်ဖော်ခြင်း
+  - Generative AI loop ကို ပြည့်စုံစွာ အကောင်အထည်ဖော်ခြင်း
 
 - [**EdgeAI in Azure with Small Language Models Engine**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
   - Cloud-edge hybrid deployment architecture
-  - Azure AI services နှင့် ONNX Runtime ပေါင်းစပ်ခြင်း
-  - Enterprise-scale deployment နှင့် မော်ဒယ်စီမံခန့်ခွဲမှုဆက်လက်လုပ်ဆောင်ခြင်း
-  - Intelligent document processing အတွက် Hybrid AI workflows
+  - Azure AI services integration with ONNX Runtime
+  - Enterprise-scale deployment နှင့် continuous model management
+  - Hybrid AI workflows for intelligent document processing
 
 - [**EdgeAI with Windows ML**](./Module07/README.md#4-edgeai-with-windows-ml)
-  - Windows AI Foundry အခြေခံဖြင့် on-device inference
-  - Universal hardware အထောက်အပံ့ (AMD, Intel, NVIDIA, Qualcomm silicon)
+  - Windows AI Foundry foundation ဖြင့် performant on-device inference
+  - Universal hardware support (AMD, Intel, NVIDIA, Qualcomm silicon)
   - Automatic hardware abstraction နှင့် optimization
-  - Windows hardware ecosystem အမျိုးမျိုးအတွက် Unified framework
+  - Windows hardware ecosystem အတွက် Unified framework
 
 - [**EdgeAI with Foundry Local Applications**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
-  - Privacy-focused RAG implementation နှင့် local resources
-  - Phi-3 language model integration နှင့် semantic search (Phi models only)
-  - Local vector databases အထောက်အပံ့ (SQLite, Qdrant)
-  - Data sovereignty နှင့် offline operation အစွမ်းသတ္တိ
+  - Privacy-focused RAG implementation with local resources
+  - Phi-4 language model integration with semantic search (Phi models only)
+  - Local vector databases support (SQLite, Qdrant)
+  - Data sovereignty နှင့် offline operation capabilities
 
-## သင်ခန်းစာရည်မှန်းချက်များ
+### [Module 08: Microsoft Foundry Local – Complete Developer Toolkit](./Module08/README.md)
+**အဓိကအကြောင်းအရာ**: Foundry Local ဖြင့် AI ကို locally တည်ဆောက်၊ run လုပ်၊ ပေါင်းစည်းခြင်းနှင့် Azure AI Foundry ဖြင့် scale နှင့် hybridize လုပ်ခြင်း
 
-EdgeAI သင်ခန်းစာကိုပြီးမြောက်စွာတက်ရောက်ပြီးပါက၊ သင်သည် EdgeAI ဖြင့် ထုတ်လုပ်မှုအဆင့်အဆင့်ဖြစ်စေရန် အတတ်ပညာများနှင့် ကျွမ်းကျင်မှုများရရှိမည်ဖြစ်သည်။ 
+#### အခန်းဖွဲ့စည်းမှု:
+- [**၁: Foundry Local ဖြင့် စတင်ခြင်း**](./Module08/01.FoundryLocalSetup.md)
+- [**၂: Azure AI Foundry ဖြင့် AI Solutions တည်ဆောက်ခြင်း**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**၃: Open-Source Models Foundry Local**](./Module08/03.OpenSourceModels.md)
+- [**၄: Cutting-Edge Models နှင့် On-Device Inference**](./Module08/04.CuttingEdgeModels.md)
+- [**၅: Foundry Local ဖြင့် AI-Powered Agents**](./Module08/05.AIPoweredAgents.md)
+- [**၆: Models as Tools**](./Module08/06.ModelsAsTools.md)
 
-### နည်းပညာကျွမ်းကျင်မှုများ
+## သင်ခန်းစာ၏ သင်ယူရမည့်ရည်မှန်းချက်များ
+
+EdgeAI သင်ခန်းစာကို ပြည့်စုံစွာပြီးစီးခြင်းဖြင့်၊ သင်သည် production-ready EdgeAI solutions များကို ဒီဇိုင်းဆွဲခြင်း၊ အကောင်အထည်ဖော်ခြင်းနှင့် တင်သွင်းခြင်းအတွက် ကျွမ်းကျင်မှုရရှိမည်ဖြစ်သည်။ 
+
+### နည်းပညာဆိုင်ရာ ကျွမ်းကျင်မှုများ
 
 **အခြေခံသိမှတ်စရာများ**
-- Cloud-based နှင့် edge-based AI architectures အကြားအခြေခံကွာခြားချက်များကိုနားလည်ခြင်း
-- Model quantization, compression, နှင့် optimization ကို resource-constrained ပတ်ဝန်းကျင်များအတွက် ကျွမ်းကျင်စွာအသုံးချနိုင်ခြင်း
-- Hardware acceleration ရွေးချယ်မှုများ (NPUs, GPUs, CPUs) နှင့် deployment အကျိုးသက်ရောက်မှုများကိုနားလည်ခြင်း
+- Cloud-based နှင့် edge-based AI architectures အကြား အခြေခံကွာခြားချက်များကို နားလည်ခြင်း
+- Model quantization, compression, နှင့် optimization ကို resource-constrained ပတ်ဝန်းကျင်များအတွက် ကျွမ်းကျင်စွာ အသုံးချခြင်း
+- Hardware acceleration options (NPUs, GPUs, CPUs) နှင့် deployment အကျိုးသက်ရောက်မှုများကို နားလည်ခြင်း
 
-**အကောင်အထည်ဖော်မှုကျွမ်းကျင်မှုများ**
-- Small Language Models များကို edge platforms များ (mobile, embedded, IoT, edge servers) အမျိုးမျိုးတွင် တင်သွင်းနိုင်ခြင်း
-- Optimization frameworks များ (Llama.cpp, Microsoft Olive, ONNX Runtime, Apple MLX) ကိုအသုံးပြုနိုင်ခြင်း
-- Sub-second response requirements ဖြင့် real-time inference systems များကို အကောင်အထည်ဖော်နိုင်ခြင်း
+**အကောင်အထည်ဖော်နိုင်စွမ်းများ**
+- Small Language Models များကို mobile, embedded, IoT, edge servers စသည့် edge platforms များတွင် တင်သွင်းခြင်း
+- Optimization frameworks များ (Llama.cpp, Microsoft Olive, ONNX Runtime, Apple MLX) ကို အသုံးပြုခြင်း
+- Sub-second response requirements ဖြင့် real-time inference systems များကို အကောင်အထည်ဖော်ခြင်း
 
-**ထုတ်လုပ်မှုကျွမ်းကျင်မှုများ**
-- Enterprise applications အတွက် scalable EdgeAI architectures ကိုဒီဇိုင်းဆွဲနိုင်ခြင်း
-- တင်သွင်းပြီးသော systems များအတွက် monitoring, maintenance, နှင့် updating strategies ကိုအကောင်အထည်ဖော်နိုင်ခြင်း
-- Privacy-preserving EdgeAI implementations အတွက် security အကောင်းဆုံးနည်းလမ်းများကိုအသုံးပြုနိုင်ခြင်း
+**Production ကျွမ်းကျင်မှု**
+- Enterprise applications အတွက် scalable EdgeAI architectures ကို ဒီဇိုင်းဆွဲခြင်း
+- တင်သွင်းထားသော systems များအတွက် monitoring, maintenance, နှင့် updating strategies ကို အကောင်အထည်ဖော်ခြင်း
+- Privacy-preserving EdgeAI implementations အတွက် security best practices ကို အသုံးပြုခြင်း
 
-### မဟာဗျူဟာဆိုင်ရာစွမ်းရည်များ
+### မဟာဗျူဟာဆိုင်ရာ စွမ်းရည်များ
 
-**ဆုံးဖြတ်မှုလုပ်ဆောင်မှု Framework**
-- EdgeAI အခွင့်အလမ်းများကိုအကဲဖြတ်ပြီး စီးပွားရေးအတွက်သင့်လျော်သော use cases များကိုရှာဖွေနိုင်ခြင်း
-- Model accuracy, inference speed, power consumption, နှင့် hardware costs အကြား trade-offs ကိုအကဲဖြတ်နိုင်ခြင်း
-- Deployment constraints အပေါ်မူတည်၍ သင့်လျော်သော SLM families နှင့် configurations ကိုရွေးချယ်နိုင်ခြင်း
+**ဆုံးဖြတ်ချက်ချနိုင်စွမ်း**
+- EdgeAI အခွင့်အလမ်းများကို အကဲဖြတ်ပြီး စီးပွားရေးလျှောက်လွှာများအတွက် သင့်လျော်သော use cases များကို ရွေးချယ်ခြင်း
+- Model accuracy, inference speed, power consumption, နှင့် hardware costs အကြား trade-offs များကို အကဲဖြတ်ခြင်း
+- Deployment constraints အပေါ်မူတည်၍ သင့်လျော်သော SLM families နှင့် configurations ကို ရွေးချယ်ခြင်း
 
 **System Architecture**
-- ရှိပြီးသား infrastructure နှင့်ပေါင်းစပ်ထားသော end-to-end EdgeAI solutions ကိုဒီဇိုင်းဆွဲနိုင်ခြင်း
-- Performance နှင့် cost efficiency အတွက် hybrid edge-cloud architectures ကိုစီစဉ်နိုင်ခြင်း
-- Real-time AI applications အတွက် data flow နှင့် processing pipelines ကိုအကောင်အထည်ဖော်နိုင်ခြင်း
+- ရှိပြီးသား infrastructure နှင့် ပေါင်းစည်းထားသော end-to-end EdgeAI solutions များကို ဒီဇိုင်းဆွဲခြင်း
+- Performance နှင့် cost efficiency အတွက် hybrid edge-cloud architectures ကို စီမံခြင်း
+- Real-time AI applications အတွက် data flow နှင့် processing pipelines များကို အကောင်အထည်ဖော်ခြင်း
 
-### စက်မှုလုပ်ငန်းအသုံးချမှုများ
+### စက်မှုလုပ်ငန်းလျှောက်လွှာများ
 
-**လက်တွေ့ Deployment နမူနာများ**
-- **ထုတ်လုပ်မှု**: အရည်အသွေးထိန်းချုပ်မှုစနစ်များ၊ predictive maintenance နှင့်လုပ်ငန်းစဉ်အကောင်းဆုံးဖြစ်စေရန်
-- **ကျန်းမာရေး**: Privacy-preserving diagnostic tools နှင့်လူနာစောင့်ကြည့်မှုစနစ်များ
-- **သယ်ယူပို့ဆောင်ရေး**: Autonomous vehicle ဆုံးဖြတ်ချက်များနှင့် traffic စီမံခန့်ခွဲမှု
+**လက်တွေ့အသုံးချမှုများ**
+- **ထုတ်လုပ်မှု**: အရည်အသွေးထိန်းချုပ်မှုစနစ်များ၊ predictive maintenance နှင့် process optimization
+- **ကျန်းမာရေး**: Privacy-preserving diagnostic tools နှင့် လူနာစောင့်ကြည့်မှုစနစ်များ
+- **သယ်ယူပို့ဆောင်ရေး**: Autonomous vehicle decision-making နှင့် traffic management
 - **Smart Cities**: Intelligent infrastructure နှင့် resource management systems
 - **စားသုံးသူအီလက်ထရောနစ်ပစ္စည်းများ**: AI-powered mobile applications နှင့် smart home devices
 
 ## သင်ခန်းစာရလဒ်အကျဉ်းချုပ်
 
 ### Module 01 သင်ခန်းစာရလဒ်များ:
-- Cloud နှင့် edge AI architectures အကြားအခြေခံကွာခြားချက်များကိုနားလည်ခြင်း
-- Edge deployment အတွက် core optimization techniques ကျွမ်းကျင်စွာအသုံးပြုနိုင်ခြင်း
-- လက်တွေ့အသုံးချမှုများနှင့်အောင်မြင်မှုဇာတ်လမ်းများကိုသိရှိခြင်း
-- EdgeAI solutions များကိုအကောင်အထည်ဖော်နိုင်ရန် လက်တွေ့ကျွမ်းကျင်မှုရရှိခြင်း
+- Cloud နှင့် edge AI architectures အကြား အခြေခံကွာခြားချက်များကို နားလည်ခြင်း
+- Edge deployment အတွက် core optimization techniques များကို ကျွမ်းကျင်စွာ အသုံးချခြင်း
+- လက်တွေ့အသုံးချမှုများနှင့် အောင်မြင်မှုဇာတ်လမ်းများကို အသိအမှတ်ပြုခြင်း
+- EdgeAI solutions များကို အကောင်အထည်ဖော်ရန် လက်တွေ့ကျွမ်းကျင်မှုရရှိခြင်း
 
 ### Module 02 သင်ခန်းစာရလဒ်များ:
-- SLM design philosophies များနှင့် deployment အကျိုးသက်ရောက်မှုများကိုနက်နက်ရှိုင်းရှင်းနားလည်ခြင်း
-- Computational constraints နှင့် performance requirements အပေါ်မူတည်၍ မဟာဗျူဟာဆိုင်ရာဆုံးဖြတ်မှုစွမ်းရည်ရရှိခြင်း
-- Deployment flexibility trade-offs ကိုနားလည်ခြင်း
-- Efficient AI architecture အတွက် အနာဂတ်အမြင်များရရှိခြင်း
+- SLM design philosophies များနှင့် deployment အကျိုးသက်ရောက်မှုများကို နက်နက်ရှိုင်းရှိုင်း နားလည်ခြင်း
+- Computational constraints နှင့် performance requirements အပေါ်မူတည်၍ မဟာဗျူဟာဆိုင်ရာဆုံးဖြတ်ချက်ချနိုင်စွမ်းရရှိခြင်း
+- Deployment flexibility trade-offs များကို နားလည်ခြင်း
+- Efficient AI architecture အတွက် အနာဂတ်အဆင့်မြှင့်တင်မှုအမြင်ရရှိခြင်း
 
 ### Module 03 သင်ခန်းစာရလဒ်များ:
 - မော်ဒယ်ရွေးချယ်မှုဆိုင်ရာ မဟာဗျူဟာကျွမ်းကျင်မှု
@@ -378,29 +389,60 @@ EdgeAI သင်ခန်းစာကိုပြီးမြောက်စွ�
 - Production-ready configuration ကျွမ်းကျင်မှု
 
 ### Module 04 သင်ခန်းစာရလဒ်များ:
-- Quantization boundaries နှင့် လက်တွေ့အသုံးချမှုများကိုနက်နက်ရှိုင်းရှင်းနားလည်ခြင်း
-- Optimization frameworks များ (Llama.cpp, Olive, OpenVINO, MLX) ကိုအသုံးပြုနိုင်ရန် လက်တွေ့ကျွမ်းကျင်မှုရရှိခြင်း
-- OpenVINO နှင့် NNCF ဖြင့် Intel hardware optimization ကျွမ်းကျင်မှုရရှိခြင်း
-- အမျိုးမျိုးသော platform များအတွက် hardware-aware optimization ရွေးချယ်မှုစွမ်းရည်ရရှိခြင်း
-- Cross-platform edge computing ပတ်ဝန်းကျင်များအတွက် production deployment ကျွမ်းကျင်မှုရရှိခြင်း
-- Edge AI solutions အတွက် မဟာဗျူဟာဆိုင်ရာ framework ရွေးချယ်မှုနှင့် workflow synthesis
+- Quantization boundaries နှင့် လက်တွေ့အသုံးချမှုများကို နက်နက်ရှိုင်းရှိုင်း နားလည်ခြင်း
+- Optimization frameworks များ (Llama.cpp, Olive, OpenVINO, MLX) ကို လက်တွေ့ကျွမ်းကျင်မှုရရှိခြင်း
+- OpenVINO နှင့် NNCF ဖြင့် Intel hardware optimization ကို ကျွမ်းကျင်စွာ အသုံးချခြင်း
+- အမျိုးမျိုးသော platform များအတွက် hardware-aware optimization ရွေးချယ်မှုကျွမ်းကျင်မှု
+- Cross-platform edge computing ပတ်ဝန်းကျင်များအတွက် production deployment ကျွမ်းကျင်မှု
+- Optimal Edge AI solutions အတွက် framework ရွေးချယ်မှုနှင့် workflow synthesis ကျွမ်းကျင်မှု
 
 ### Module 05 သင်ခန်းစာရလဒ်များ:
-- SLMOps paradigm နှင့် operational principles ကျွမ်းကျင်မှုရရှိခြင်း
-- Model distillation ကို knowledge transfer နှင့် efficiency optimization အတွက် အကောင်အထည်ဖော်နိုင်ခြင်း
-- Domain-specific model customization အတွက် fine-tuning techniques ကိုအသုံးပြုနိုင်ခြင်း
-- Monitoring နှင့် maintenance strategies ဖြင့် production-ready SLM solutions ကိုတင်သွင်းနိုင်ခြင်း
+- SLMOps paradigm နှင့် operational principles ကို ကျွမ်းကျင်စွာ နားလည်ခြင်း
+- Knowledge transfer နှင့် efficiency optimization အတွက် model distillation ကို အကောင်အထည်ဖော်ခြင်း
+- Domain-specific model customization အတွက် fine-tuning techniques ကို အသုံးပြုခြင်း
+- Monitoring နှင့် maintenance strategies ဖြင့် production-ready SLM solutions များကို တင်သွင်းခြင်း
 
 ### Module 06 သင်ခန်းစာရလဒ်များ:
-- AI agents နှင့် Small Language Models architecture အခြေခံအယူအဆများကိုနားလည်ခြင်း
-- Function calling implementation ကို platform နှင့် frameworks များအမျိုးမျိုးတွင်ကျွမ်းကျင်စွာအသုံးပြုနိုင်ခြင်း
-- Model Context Protocol (MCP) ကို standardized external tool interaction အတွက် ပေါင်းစပ်နိုင်ခြင်း
-- Human intervention အနည်းဆုံးလိုအပ်သော sophisticated agentic systems များကိုတည်ဆောက်နိုင်ခြင်း
+- AI agents နှင့် Small Language Models architecture အခြေခံအဆင့်များကို နားလည်ခြင်း
+- Function calling implementation ကို အမျိုးမျိုးသော platform နှင့် frameworks များတွင် ကျွမ်းကျင်စွာ အသုံးချခြင်း
+- Model Context Protocol (MCP) ကို external tool interaction အတွက် ပေါင်းစည်းခြင်း
+- Human intervention အနည်းဆုံးလိုအပ်သော sophisticated agentic systems များကို တည်ဆောက်ခြင်း
 
 ### Module 07 သင်ခန်းစာရလဒ်များ:
-- Visual Studio Code အတွက် AI Toolkit ကို Comprehensive Edge AI development workflows အတွက်ကျွမ်းကျင်စွာအသုံးပြုနိုင်ခြင်း
-- Windows AI Foundry platform နှင့် NPU optimization strategies အတွက်
-ဒီသင်တန်းက သင့်ကို AI နည်းပညာအသုံးချမှုရဲ့ အရှေ့တန်းမှာ ရပ်တည်စေပြီး၊ ဉာဏ်ရည်ရှိတဲ့စွမ်းရည်များကို ခေတ်မီဘဝကို အားပေးနေတဲ့ စက်ပစ္စည်းများနှင့် စနစ်များထဲမှာ အလွယ်တကူ ပေါင်းစည်းနိုင်စေပါတယ်။
+- Visual Studio Code အတွက် AI Toolkit ကို Edge AI development workflows အတွက် ကျွမ်းကျင်စွာ အသုံးချခြင်း
+- Windows AI Foundry platform နှင့် NPU optimization strategies ကို ကျွမ်းကျင်စွာ အသ
+- **Risk Management**: EdgeAI ကို အသုံးပြုရာတွင် နည်းပညာနှင့် လုပ်ငန်းဆိုင်ရာ အန္တရာယ်များကို ရှာဖွေပြီး လျှော့ချပါ။
+- **ROI Optimization**: EdgeAI အကောင်အထည်ဖော်မှုများမှ လုပ်ငန်းဆိုင်ရာ တန်ဖိုးကို တိုင်းတာနိုင်သော အကျိုးကျေးဇူးများကို ပြသပါ။
+
+### အလုပ်အကိုင် တိုးတက်မှု အခွင့်အလမ်းများ
+
+**ပရော်ဖက်ရှင်နယ် အလုပ်အကိုင်များ**
+- EdgeAI Solutions Architect
+- Machine Learning Engineer (Edge Specialization)
+- IoT AI Developer
+- Mobile AI Application Developer
+- Enterprise AI Consultant
+
+**စက်မှုလုပ်ငန်းကဏ္ဍများ**
+- Smart Manufacturing နှင့် Industry 4.0
+- အလိုအလျောက်မောင်းနှင်သော ယာဉ်များနှင့် သယ်ယူပို့ဆောင်ရေး
+- ကျန်းမာရေးနည်းပညာနှင့် ဆေးဘက်ဆိုင်ရာ ပစ္စည်းများ
+- ဘဏ္ဍာရေးနည်းပညာနှင့် လုံခြုံရေး
+- စားသုံးသူ အီလက်ထရောနစ်ပစ္စည်းများနှင့် မိုဘိုင်းအက်ပလီကေးရှင်းများ
+
+### လက်မှတ်နှင့် အတည်ပြုမှု
+
+**Portfolio တိုးတက်မှု**
+- EdgeAI ကို အဆုံးအထိ အကောင်အထည်ဖော်ထားသော ပရောဂျက်များကို ပြီးမြောက်စွာ ပြသပါ။
+- အမျိုးမျိုးသော ဟာ့ဒ်ဝဲပလက်ဖောင်းများတွင် ထုတ်လုပ်မှုအဆင်သင့်ဖြစ်သော ဖြေရှင်းချက်များကို တင်ဆက်ပါ။
+- အကောင်းဆုံးလုပ်ဆောင်မှုများနှင့် အဆင်ပြေမှုများကို ရှင်းလင်းစွာ မှတ်တမ်းတင်ပါ။
+
+**ဆက်လက်လေ့လာမှု လမ်းကြောင်း**
+- အဆင့်မြင့် AI အထူးပြုမှုများအတွက် အခြေခံအဆောက်အအုံ
+- Cloud-edge အရောအနှော အဆောက်အအုံများအတွက် ပြင်ဆင်မှု
+- ပေါ်ပေါက်လာသော AI နည်းပညာများနှင့် Framework များအတွက် တံခါးပေါက်
+
+ဒီသင်တန်းသည် EdgeAI နည်းပညာကို အခိုင်အမာ အသုံးချနိုင်သော နေရာတွင် သင့်ကို ရှေ့ဆောင်အနေဖြင့် တင်ထားပေးမည်ဖြစ်ပြီး၊ ခေတ်မီဘဝကို အားပေးသော စက်ပစ္စည်းများနှင့် စနစ်များတွင် ဉာဏ်ရည်ရှိသော စွမ်းရည်များကို ပေါင်းစပ်ထားသည်။
 
 ## ဖိုင်ဖွဲ့စည်းမှု အပုံကြမ်း
 
@@ -450,6 +492,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -460,45 +510,46 @@ edgeai-for-beginners/
 
 ## သင်တန်းအင်္ဂါရပ်များ
 
-- **တိုးတက်မှုအဆင့်လိုက်သင်ယူမှု**: အခြေခံအယူအဆများမှ စတင်ပြီး အဆင့်မြင့် deployment အထိ တဖြည်းဖြည်းတိုးတက်သင်ယူပါ
-- **သီအိုရီနှင့် လက်တွေ့အလုပ်များ ပေါင်းစည်းမှု**: Module တစ်ခုစီမှာ သီအိုရီအခြေခံများနှင့် လက်တွေ့လုပ်ငန်းများ ပါဝင်သည်
-- **အမှန်တကယ်ဖြစ်ရပ်များ**: Microsoft, Alibaba, Google စသည်တို့မှ အမှန်တကယ်ဖြစ်ရပ်များအပေါ် အခြေခံထားသည်
-- **လက်တွေ့လုပ်ငန်းများ**: Configuration files, API testing procedures, deployment scripts အပြည့်အစုံကို ပြီးမြောက်စေပါ
-- **စွမ်းဆောင်ရည်အတိုင်းအတာများ**: Inference အမြန်နှုန်း, memory အသုံးပြုမှု, resource လိုအပ်ချက်များကို အသေးစိတ်နှိုင်းယှဉ်မှု
-- **လုပ်ငန်းအဆင့်အတွက် စဉ်းစားမှုများ**: လုံခြုံရေးအလေ့အကျင့်များ, compliance frameworks, နှင့် data ကာကွယ်မှုနည်းလမ်းများ
+- **တိုးတက်မှုအဆင့်လိုက်လေ့လာမှု**: အခြေခံအကြောင်းအရာများမှ စတင်ပြီး အဆင့်မြင့် Deployment အထိ တိုးတက်ပါ။
+- **သီအိုရီနှင့် လက်တွေ့လုပ်ဆောင်မှု ပေါင်းစပ်မှု**: Module တစ်ခုစီတွင် သီအိုရီအခြေခံအဆောက်အအုံနှင့် လက်တွေ့လုပ်ဆောင်မှုများ ပါဝင်သည်။
+- **အမှန်တကယ် Case Study များ**: Microsoft, Alibaba, Google စသည်တို့မှ အမှန်တကယ် Case များအပေါ် အခြေခံထားသည်။
+- **လက်တွေ့လုပ်ဆောင်မှု**: Configuration ဖိုင်များ၊ API စမ်းသပ်မှုလုပ်ငန်းစဉ်များနှင့် Deployment Scripts များကို ပြီးမြောက်ပါ။
+- **စွမ်းဆောင်မှု Benchmarks**: Inference အမြန်နှုန်း၊ မှတ်ဉာဏ်အသုံးပြုမှုနှင့် အရင်းအမြစ်လိုအပ်ချက်များကို အသေးစိတ်နှိုင်းယှဉ်ပါ။
+- **လုပ်ငန်းအဆင့်အတန်းအတွက် စဉ်းစားမှုများ**: လုံခြုံရေးအလေ့အထများ၊ အညီအဖွဲ့ Framework များနှင့် ဒေတာကာကွယ်မှု မူဝါဒများ
 
-## စတင်ရန်
+## စတင်လေ့လာခြင်း
 
-အကြံပြုသင်ယူလမ်းကြောင်း:
-1. **Module01** ကို စတင်သင်ယူပြီး EdgeAI အခြေခံကို တည်ဆောက်ပါ
-2. **Module02** ကို ဆက်လက်သင်ယူပြီး SLM model မျိုးစုံကို နက်နက်ရှိုင်းရှိုင်းနားလည်ပါ
-3. **Module03** ကို သင်ယူပြီး လက်တွေ့ deployment ကျွမ်းကျင်မှုကို အထူးကျွမ်းကျင်ပါ
-4. **Module04** ကို ဆက်လက်သင်ယူပြီး model optimization, format conversion, framework synthesis အဆင့်မြင့်နည်းလမ်းများကို နားလည်ပါ
-5. **Module05** ကို ပြီးမြောက်စေပြီး production-ready SLMOps ကို ကျွမ်းကျင်ပါ
-6. **Module06** ကို လေ့လာပြီး SLM agentic systems နှင့် function calling capabilities ကို နားလည်ပါ
-7. **Module07** ကို ပြီးမြောက်စေပြီး AI Toolkit နှင့် EdgeAI implementation မျိုးစုံကို လက်တွေ့ကျွမ်းကျင်ပါ
+အကြံပြုထားသော လေ့လာမှု လမ်းကြောင်း:
+1. **Module01** ဖြင့် EdgeAI အခြေခံအမြင်ကို တည်ဆောက်ပါ။
+2. **Module02** သို့ ဆက်လက်လေ့လာပြီး SLM မော်ဒယ် မျိုးစုံကို နက်နက်ရှိုင်းရှိုင်း နားလည်ပါ။
+3. **Module03** ကို လေ့လာပြီး လက်တွေ့ Deployment ကျွမ်းကျင်မှုကို ကျွမ်းကျင်ပါ။
+4. **Module04** ကို ဆက်လက်လေ့လာပြီး မော်ဒယ် Optimization အဆင့်မြင့်၊ Format Conversion နှင့် Framework Synthesis ကို ကျွမ်းကျင်ပါ။
+5. **Module05** ကို ပြီးမြောက်ပြီး SLMOps ကို ထုတ်လုပ်မှုအဆင်သင့်ဖြစ်သော အကောင်အထည်ဖော်မှုများအတွက် ကျွမ်းကျင်ပါ။
+6. **Module06** ကို လေ့လာပြီး SLM Agentic Systems နှင့် Function Calling စွမ်းရည်များကို နားလည်ပါ။
+7. **Module07** ကို ပြီးမြောက်ပြီး AI Toolkit နှင့် EdgeAI အကောင်အထည်ဖော်မှု မျိုးစုံကို လက်တွေ့ကျွမ်းကျင်ပါ။
+8. **Module08** ကို လေ့လာပြီး Foundry Local Developer Toolkit (Azure အရောအနှောဖြင့် Local-first Development) ကို ပြည့်စုံစွာ နားလည်ပါ။
 
-Module တစ်ခုစီမှာ အပြည့်အစုံဖြစ်စေဖို့ ရည်ရွယ်ထားပြီး၊ အဆင့်လိုက်သင်ယူမှုက အကောင်းဆုံးရလဒ်ကို ရရှိစေပါမည်။
+Module တစ်ခုစီသည် အပြည့်အစုံဖြစ်ရန် ရည်ရွယ်ထားပြီး၊ အဆင့်လိုက်လေ့လာမှုသည် အကောင်းဆုံးရလဒ်များကို ပေးစွမ်းပါမည်။
 
 ## လေ့လာမှုလမ်းညွှန်
 
-သင့်ရဲ့ သင်ယူမှုအတွေ့အကြုံကို အများဆုံးရရှိစေဖို့ Comprehensive [Study Guide](STUDY_GUIDE.md) ရရှိနိုင်ပါသည်။ Study Guide မှာ ပါဝင်သည်မှာ:
+[Study Guide](STUDY_GUIDE.md) တစ်ခုကို သင်၏လေ့လာမှု အတွေ့အကြုံကို အများဆုံးအကျိုးရှိစေရန် အကူအညီပေးရန် ရရှိနိုင်ပါသည်။ Study Guide တွင် ပါဝင်သည်-
 
-- **ဖွဲ့စည်းထားသော သင်ယူလမ်းကြောင်းများ**: သင်တန်းကို ၂၀ နာရီအတွင်း ပြီးမြောက်စေဖို့ အချိန်ဇယားများ
-- **အချိန်ခွဲဝေမှုအကြံပြုချက်များ**: Reading, exercises, projects အတွက် အချိန်ခွဲဝေမှုအကြံပြုချက်များ
-- **အဓိကအယူအဆများအပေါ် အာရုံစိုက်မှု**: Module တစ်ခုစီအတွက် အဓိကသင်ယူရမည့်ရည်ရွယ်ချက်များ
-- **ကိုယ်တိုင်အကဲဖြတ်မှုကိရိယာများ**: နားလည်မှုကို စမ်းသပ်ရန် မေးခွန်းများနှင့် လေ့ကျင့်မှုများ
-- **Mini-Project အကြံပြုချက်များ**: သင်ယူမှုကို အတည်ပြုရန် လက်တွေ့ကျင့်သုံးမှုများ
+- **ဖွဲ့စည်းထားသော လေ့လာမှုလမ်းကြောင်းများ**: သင်တန်းကို ၂၀ နာရီအတွင်း ပြီးမြောက်ရန် အချိန်ဇယားများ
+- **အချိန်ခွဲဝေမှု အကြံပြုချက်များ**: ဖတ်ရှုခြင်း၊ လေ့ကျင့်မှုများနှင့် ပရောဂျက်များကို ချိန်ညှိရန် အထူးအကြံပြုချက်များ
+- **အဓိကအကြောင်းအရာ အာရုံစိုက်မှု**: Module တစ်ခုစီအတွက် အဓိကလေ့လာမှု ရည်မှန်းချက်များ
+- **ကိုယ်တိုင်အကဲဖြတ်မှု ကိရိယာများ**: သင်၏နားလည်မှုကို စမ်းသပ်ရန် မေးခွန်းများနှင့် လေ့ကျင့်မှုများ
+- **Mini-Project အကြံပြုချက်များ**: သင်၏လေ့လာမှုကို အတည်ပြုရန် လက်တွေ့ကျင့်မှုများ
 
-Study Guide ကို တစ်ပတ်အတွင်း အလျင်အမြန်သင်ယူမှုနှင့် သုံးပတ်အတွင်း အချိန်ပိုင်းသင်ယူမှုနှစ်မျိုးအတွက် ရည်ရွယ်ထားပြီး၊ သင်တန်းကို ၁၀ နာရီသာ သင်ယူနိုင်ပါကလည်း အချိန်ကို ထိရောက်စွာ ခွဲဝေနိုင်ရန် ရှင်းလင်းသော လမ်းညွှန်ချက်များ ပါဝင်သည်။
+Study Guide သည် တစ်ပတ်အတွင်း အလျင်အမြန်လေ့လာမှုနှင့် ၃ ပတ်အတွင်း အချိန်ပိုင်းလေ့လာမှုကို အဆင်ပြေစေရန် ရည်ရွယ်ထားပြီး၊ သင်တန်းကို ၁၀ နာရီသာ အချိန်ပေးနိုင်ပါကလည်း အချိန်ကို ထိရောက်စွာ ခွဲဝေနိုင်ရန် ရှင်းလင်းလမ်းညွှန်ပေးပါသည်။
 
 ---
 
-**EdgeAI ရဲ့ အနာဂတ်က Model architectures, quantization techniques, နှင့် deployment strategies များကို အဆက်မပြတ်တိုးတက်စေခြင်းမှာ ရှိပြီး၊ အထွေထွေစွမ်းရည်များထက် ထူးခြားမှုနှင့် ထိရောက်မှုကို ဦးစားပေးထားသည်။ ဒီ paradigm shift ကို လက်ခံသော အဖွဲ့အစည်းများသည် AI ရဲ့ ပြောင်းလဲမှုစွမ်းရည်ကို အထူးကျွမ်းကျင်စွာ အသုံးချနိုင်ပြီး၊ data နှင့် operations ကို ထိန်းချုပ်ထားနိုင်မည်ဖြစ်သည်။**
+**EdgeAI ၏ အနာဂတ်သည် မော်ဒယ် Architecture များ၊ Quantization နည်းလမ်းများနှင့် Deployment Strategies များကို အဆက်မပြတ် တိုးတက်မှုအပေါ် အခြေခံထားပြီး၊ အထူးပြုစွမ်းရည်များကို ဦးစားပေးကာ General-purpose စွမ်းရည်များကို လျှော့ချထားသည်။ ဒီအမြင်ပြောင်းလဲမှုကို လက်ခံသော အဖွဲ့အစည်းများသည် AI ၏ ပြောင်းလဲမှုစွမ်းရည်ကို အကျိုးရှိစွာ အသုံးချနိုင်မည်ဖြစ်ပြီး၊ ၎င်းတို့၏ ဒေတာနှင့် လုပ်ငန်းများကို ထိန်းချုပ်ထားနိုင်မည်ဖြစ်သည်။**
 
 ## အခြားသင်တန်းများ
 
-ကျွန်ုပ်တို့၏အဖွဲ့သည် အခြားသင်တန်းများကို ထုတ်လုပ်ပါသည်! ကြည့်ရှုပါ:
+ကျွန်ုပ်တို့၏အဖွဲ့သည် အခြားသင်တန်းများကိုလည်း ထုတ်လုပ်ပါသည်! ကြည့်ရှုပါ-
 
 - [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
 - [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -518,5 +569,3 @@ Study Guide ကို တစ်ပတ်အတွင်း အလျင်အမ
 
 ---
 
-**အကြောင်းကြားချက်**:  
-ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက် ဘာသာပြန်မှုများတွင် အမှားများ သို့မဟုတ် မတိကျမှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းစာရွက်စာတမ်းကို ၎င်း၏ မူရင်းဘာသာစကားဖြင့် အာဏာတရားရှိသော အရင်းအမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူ့ဘာသာပြန်ပညာရှင်များမှ ပရော်ဖက်ရှင်နယ် ဘာသာပြန်မှုကို အကြံပြုပါသည်။ ဤဘာသာပြန်မှုကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအလွတ်များ သို့မဟုတ် အနားလွဲမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။

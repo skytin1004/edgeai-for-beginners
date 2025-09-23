@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c817161ba08864340737d623f761b9ae",
-  "translation_date": "2025-09-18T21:00:42+00:00",
+  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
+  "translation_date": "2025-09-22T23:08:12+00:00",
   "source_file": "README.md",
   "language_code": "en"
 }
@@ -11,10 +11,21 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![Course cover image](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.en.png)
 
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)  
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)  
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)  
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  
+
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)  
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)  
+
+[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+
 Follow these steps to get started using these resources:
 
-1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
-2. **Clone the Repository**:   `git clone https://github.com/microsoft/edgeai-for-beginners.git`
+1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
+2. **Clone the Repository**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
 3. [**Join The Azure AI Foundry Discord and meet experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Multi-Language Support
@@ -23,7 +34,7 @@ Follow these steps to get started using these resources:
 
 [Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
 
-**If you wish to have additional translations languages supported are listed [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**If you wish to have additional translations, languages supported are listed [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introduction
 
@@ -31,147 +42,147 @@ Welcome to **EdgeAI for Beginners** – your comprehensive journey into the tran
 
 ### What You'll Master
 
-This course takes you from fundamental concepts to production-ready implementations, covering:
-- **Small Language Models (SLMs)** optimized for edge deployment
-- **Hardware-aware optimization** across diverse platforms
-- **Real-time inference** with privacy-preserving capabilities
-- **Production deployment** strategies for enterprise applications
+This course takes you from fundamental concepts to production-ready implementations, covering:  
+- **Small Language Models (SLMs)** optimized for edge deployment  
+- **Hardware-aware optimization** across diverse platforms  
+- **Real-time inference** with privacy-preserving capabilities  
+- **Production deployment** strategies for enterprise applications  
 
 ### Why EdgeAI Matters
 
-Edge AI represents a paradigm shift that addresses critical modern challenges:
-- **Privacy & Security**: Process sensitive data locally without cloud exposure
-- **Real-time Performance**: Eliminate network latency for time-critical applications
-- **Cost Efficiency**: Reduce bandwidth and cloud computing expenses
-- **Resilient Operations**: Maintain functionality during network outages
-- **Regulatory Compliance**: Meet data sovereignty requirements
+Edge AI represents a paradigm shift that addresses critical modern challenges:  
+- **Privacy & Security**: Process sensitive data locally without cloud exposure  
+- **Real-time Performance**: Eliminate network latency for time-critical applications  
+- **Cost Efficiency**: Reduce bandwidth and cloud computing expenses  
+- **Resilient Operations**: Maintain functionality during network outages  
+- **Regulatory Compliance**: Meet data sovereignty requirements  
 
 ### Edge AI
 
 Edge AI refers to running AI algorithms and language models locally on hardware—close to where data is generated—without relying on cloud resources for inference. It reduces latency, enhances privacy, and enables real-time decision-making.
 
 ### Core Principles:
-- **On-device inference**: AI models run on edge devices (phones, routers, microcontrollers, industrial PCs)
-- **Offline capability**: Functions without persistent internet connectivity
-- **Low latency**: Immediate responses suited for real-time systems
-- **Data sovereignty**: Keeps sensitive data local, improving security and compliance
+- **On-device inference**: AI models run on edge devices (phones, routers, microcontrollers, industrial PCs)  
+- **Offline capability**: Functions without persistent internet connectivity  
+- **Low latency**: Immediate responses suited for real-time systems  
+- **Data sovereignty**: Keeps sensitive data local, improving security and compliance  
 
 ### Small Language Models (SLMs)
 
-SLMs like Phi-4, Mistral-7B, and Gemma are optimized versions of larger LLMs—trained or distilled for:
-- **Reduced memory footprint**: Efficient use of limited edge device memory
-- **Lower compute demand**: Optimized for CPU and edge GPU performance
-- **Faster startup times**: Quick initialization for responsive applications
+SLMs like Phi-4, Mistral-7B, and Gemma are optimized versions of larger LLMs—trained or distilled for:  
+- **Reduced memory footprint**: Efficient use of limited edge device memory  
+- **Lower compute demand**: Optimized for CPU and edge GPU performance  
+- **Faster startup times**: Quick initialization for responsive applications  
 
-They unlock powerful NLP capabilities while meeting the constraints of:
-- **Embedded systems**: IoT devices and industrial controllers
-- **Mobile devices**: Smartphones and tablets with offline capabilities
-- **IoT Devices**: Sensors and smart devices with limited resources
-- **Edge servers**: Local processing units with limited GPU resources
-- **Personal Computers**: Desktop and laptop deployment scenarios
+They unlock powerful NLP capabilities while meeting the constraints of:  
+- **Embedded systems**: IoT devices and industrial controllers  
+- **Mobile devices**: Smartphones and tablets with offline capabilities  
+- **IoT Devices**: Sensors and smart devices with limited resources  
+- **Edge servers**: Local processing units with limited GPU resources  
+- **Personal Computers**: Desktop and laptop deployment scenarios  
 
 ## Course Architecture
 
-### [Module 01: EdgeAI Fundamentals and Transformation](./Module01/README.md)
-**Theme**: The transformative shift of edge AI deployment
+### [Module 01: EdgeAI Fundamentals and Transformation](./Module01/README.md)  
+**Theme**: The transformative shift of edge AI deployment  
 
 #### Chapter Structure:
-- [**Section 1: EdgeAI Fundamentals**](./Module01/01.EdgeAIFundamentals.md)
-  - Traditional cloud AI vs edge AI comparison
-  - Edge computing challenges and constraints
-  - Key technologies: model quantization, compression optimization, Small Language Models (SLMs)
-  - Hardware acceleration: NPUs, GPU optimization, CPU optimization
-  - Advantages: privacy security, low latency, offline capabilities, cost efficiency
+- [**Section 1: EdgeAI Fundamentals**](./Module01/01.EdgeAIFundamentals.md)  
+  - Traditional cloud AI vs edge AI comparison  
+  - Edge computing challenges and constraints  
+  - Key technologies: model quantization, compression optimization, Small Language Models (SLMs)  
+  - Hardware acceleration: NPUs, GPU optimization, CPU optimization  
+  - Advantages: privacy security, low latency, offline capabilities, cost efficiency  
 
-- [**Section 2: Real-World Case Studies**](./Module01/02.RealWorldCaseStudies.md)
-  - Microsoft Phi & Mu model ecosystem
-  - Japan Airlines AI reporting system case study
-  - Market impact and future directions
-  - Deployment considerations and best practices
+- [**Section 2: Real-World Case Studies**](./Module01/02.RealWorldCaseStudies.md)  
+  - Microsoft Phi & Mu model ecosystem  
+  - Japan Airlines AI reporting system case study  
+  - Market impact and future directions  
+  - Deployment considerations and best practices  
 
-- [**Section 3: Practical Implementation Guide**](./Module01/03.PracticalImplementationGuide.md)
-  - Development environment setup (Python 3.10+, .NET 8+)
-  - Hardware requirements and recommended configurations
-  - Core model family resources
-  - Quantization and optimization tools (Llama.cpp, Microsoft Olive, Apple MLX)
-  - Assessment and verification checklist
+- [**Section 3: Practical Implementation Guide**](./Module01/03.PracticalImplementationGuide.md)  
+  - Development environment setup (Python 3.10+, .NET 8+)  
+  - Hardware requirements and recommended configurations  
+  - Core model family resources  
+  - Quantization and optimization tools (Llama.cpp, Microsoft Olive, Apple MLX)  
+  - Assessment and verification checklist  
 
-- [**Section 4: Edge AI Deployment Hardware Platforms**](./Module01/04.EdgeDeployment.md)
-  - Edge AI deployment considerations and requirements
-  - Intel edge AI hardware and optimization techniques
-  - Qualcomm AI solutions for mobile and embedded systems
-  - NVIDIA Jetson and edge computing platforms
-  - Windows AI PC platforms with NPU acceleration
-  - Hardware-specific optimization strategies
+- [**Section 4: Edge AI Deployment Hardware Platforms**](./Module01/04.EdgeDeployment.md)  
+  - Edge AI deployment considerations and requirements  
+  - Intel edge AI hardware and optimization techniques  
+  - Qualcomm AI solutions for mobile and embedded systems  
+  - NVIDIA Jetson and edge computing platforms  
+  - Windows AI PC platforms with NPU acceleration  
+  - Hardware-specific optimization strategies  
 
 ---
 
-### [Module 02: Small Language Model Foundations](./Module02/README.md)
-**Theme**: SLM theoretical principles, implementation strategies, and production deployment
+### [Module 02: Small Language Model Foundations](./Module02/README.md)  
+**Theme**: SLM theoretical principles, implementation strategies, and production deployment  
 
 #### Chapter Structure:
-- [**Section 1: Microsoft Phi Model Family Fundamentals**](./Module02/01.PhiFamily.md)
-  - Design philosophy evolution (Phi-1 to Phi-4)
-  - Efficiency-first architecture design
-  - Specialized capabilities (reasoning, multimodal, edge deployment)
+- [**Section 1: Microsoft Phi Model Family Fundamentals**](./Module02/01.PhiFamily.md)  
+  - Design philosophy evolution (Phi-1 to Phi-4)  
+  - Efficiency-first architecture design  
+  - Specialized capabilities (reasoning, multimodal, edge deployment)  
 
-- [**Section 2: Qwen Family Fundamentals**](./Module02/02.QwenFamily.md)
-  - Open source excellence (Qwen 1.0 to Qwen3) - available through Hugging Face
-  - Advanced reasoning architecture with thinking mode capabilities
-  - Scalable deployment options (0.5B-235B parameters)
+- [**Section 2: Qwen Family Fundamentals**](./Module02/02.QwenFamily.md)  
+  - Open source excellence (Qwen 1.0 to Qwen3) - available through Hugging Face  
+  - Advanced reasoning architecture with thinking mode capabilities  
+  - Scalable deployment options (0.5B-235B parameters)  
 
-- [**Section 3: Gemma Family Fundamentals**](./Module02/03.GemmaFamily.md)
-  - Research-driven innovation (Gemma 3 & 3n)
-  - Multimodal excellence
-  - Mobile-first architecture
+- [**Section 3: Gemma Family Fundamentals**](./Module02/03.GemmaFamily.md)  
+  - Research-driven innovation (Gemma 3 & 3n)  
+  - Multimodal excellence  
+  - Mobile-first architecture  
 
-- [**Section 4: BitNET Family Fundamentals**](./Module02/04.BitNETFamily.md)
-  - Revolutionary quantization technology (1.58-bit)
-  - Specialized inference framework from https://github.com/microsoft/BitNet
-  - Sustainable AI leadership through extreme efficiency
+- [**Section 4: BitNET Family Fundamentals**](./Module02/04.BitNETFamily.md)  
+  - Revolutionary quantization technology (1.58-bit)  
+  - Specialized inference framework from https://github.com/microsoft/BitNet  
+  - Sustainable AI leadership through extreme efficiency  
 
-- [**Section 5: Microsoft Mu Model Fundamentals**](./Module02/05.mumodel.md)
-  - Device-first architecture built into Windows 11
-  - System integration with Windows 11 Settings
-  - Privacy-preserving offline operation
+- [**Section 5: Microsoft Mu Model Fundamentals**](./Module02/05.mumodel.md)  
+  - Device-first architecture built into Windows 11  
+  - System integration with Windows 11 Settings  
+  - Privacy-preserving offline operation  
 
-- [**Section 6: Phi-Silica Fundamentals**](./Module02/06.phisilica.md)
-  - NPU-optimized architecture built into Windows 11 Copilot+ PCs
-  - Exceptional efficiency (650 tokens/second at 1.5W)
-  - Developer integration with Windows App SDK
+- [**Section 6: Phi-Silica Fundamentals**](./Module02/06.phisilica.md)  
+  - NPU-optimized architecture built into Windows 11 Copilot+ PCs  
+  - Exceptional efficiency (650 tokens/second at 1.5W)  
+  - Developer integration with Windows App SDK  
 
 ---
 
-### [Module 03: Small Language Model Deployment](./Module03/README.md)
-**Theme**: Complete SLM lifecycle deployment, from theory to production environment
+### [Module 03: Small Language Model Deployment](./Module03/README.md)  
+**Theme**: Complete SLM lifecycle deployment, from theory to production environment  
 
 #### Chapter Structure:
-- [**Section 1: SLM Advanced Learning**](./Module03/01.SLMAdvancedLearning.md)
-  - Parameter classification framework (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
-  - Advanced optimization techniques (quantization methods, BitNET 1-bit quantization)
-  - Model acquisition strategies (Azure AI Foundry for Phi models, Hugging Face for selected models)
+- [**Section 1: SLM Advanced Learning**](./Module03/01.SLMAdvancedLearning.md)  
+  - Parameter classification framework (Micro SLM 100M-1.4B, Medium SLM 14B-30B)  
+  - Advanced optimization techniques (quantization methods, BitNET 1-bit quantization)  
+  - Model acquisition strategies (Azure AI Foundry for Phi models, Hugging Face for selected models)  
 
-- [**Section 2: Local Environment Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)
-  - Ollama universal platform deployment
-  - Microsoft Foundry local enterprise-grade solutions
-  - Framework comparative analysis
+- [**Section 2: Local Environment Deployment**](./Module03/02.DeployingSLMinLocalEnv.md)  
+  - Ollama universal platform deployment  
+  - Microsoft Foundry local enterprise-grade solutions  
+  - Framework comparative analysis  
 
-- [**Section 3: Containerized Cloud Deployment**](./Module03/03.DeployingSLMinCloud.md)
-  - vLLM high-performance inference deployment
-  - Ollama container orchestration
-  - ONNX Runtime edge-optimized implementation
+- [**Section 3: Containerized Cloud Deployment**](./Module03/03.DeployingSLMinCloud.md)  
+  - vLLM high-performance inference deployment  
+  - Ollama container orchestration  
+  - ONNX Runtime edge-optimized implementation  
 
 ---
 
-### [Module 04: Model Format Conversion and Quantization](./Module04/README.md)
-**Theme**: Complete model optimization toolkit for edge deployment across platforms
+### [Module 04: Model Format Conversion and Quantization](./Module04/README.md)  
+**Theme**: Complete model optimization toolkit for edge deployment across platforms  
 
 #### Chapter Structure:
-- [**Section 1: Model Format Conversion and Quantization Foundations**](./Module04/01.Introduce.md)
-  - Precision classification framework (ultra-low, low, medium precision)
-  - GGUF and ONNX format advantages and use cases
-  - Quantization benefits for operational efficiency
-  - Performance benchmarks and memory footprint comparisons
+- [**Section 1: Model Format Conversion and Quantization Foundations**](./Module04/01.Introduce.md)  
+  - Precision classification framework (ultra-low, low, medium precision)  
+  - GGUF and ONNX format advantages and use cases  
+  - Quantization benefits for operational efficiency  
+  - Performance benchmarks and memory footprint comparisons  
 - [**Section 2: Llama.cpp Implementation Guide**](./Module04/02.Llamacpp.md)
   - Cross-platform installation (Windows, macOS, Linux)
   - GGUF format conversion and quantization levels (Q2_K to Q8_0)
@@ -192,7 +203,7 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 - [**Section 5: Apple MLX Framework Deep Dive**](./Module04/05.AppleMLX.md)
   - Unified memory architecture for Apple Silicon
-  - Support for LLaMA, Mistral, Phi-3, selected Qwen models
+  - Support for LLaMA, Mistral, Phi, selected Qwen models
   - LoRA fine-tuning and model customization
   - Hugging Face integration with 4-bit/8-bit quantization
 
@@ -300,9 +311,20 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 - [**EdgeAI with Foundry Local Applications**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
   - Privacy-focused RAG implementation with local resources
-  - Phi-3 language model integration with semantic search (Phi models only)
+  - Phi-4 language model integration with semantic search (Phi models only)
   - Local vector databases support (SQLite, Qdrant)
   - Data sovereignty and offline operation capabilities
+
+### [Module 08: Microsoft Foundry Local – Complete Developer Toolkit](./Module08/README.md)
+**Theme**: Build, run, and integrate AI locally with Foundry Local; scale and hybridize with Azure AI Foundry
+
+#### Chapter Structure:
+- [**1: Getting Started with Foundry Local**](./Module08/01.FoundryLocalSetup.md)
+- [**2: Build AI Solutions with Azure AI Foundry**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**3: Open-Source Models Foundry Local**](./Module08/03.OpenSourceModels.md)
+- [**4: Cutting-Edge Models and On-Device Inference**](./Module08/04.CuttingEdgeModels.md)
+- [**5: AI-Powered Agents with Foundry Local**](./Module08/05.AIPoweredAgents.md)
+- [**6: Models as Tools**](./Module08/06.ModelsAsTools.md)
 
 ## Course Learning Objectives
 
@@ -409,39 +431,40 @@ Upon successful completion of this course, you will be equipped with the knowled
 **Industry Expertise**
 - **Technology Evaluation**: Assess and recommend EdgeAI solutions for specific business challenges
 - **Implementation Planning**: Develop realistic timelines and resource requirements for EdgeAI projects
-- **Risk Management**: Identify and mitigate technical and operational risks in EdgeAI deployments
-- **ROI Optimization**: Demonstrate measurable business value from EdgeAI implementations
+- **Risk Management**: Identify and address technical and operational risks in EdgeAI deployments  
+- **ROI Optimization**: Showcase measurable business value from EdgeAI implementations  
 
-### Career Advancement Opportunities
+### Career Advancement Opportunities  
 
-**Professional Roles**
-- EdgeAI Solutions Architect
-- Machine Learning Engineer (Edge Specialization)
-- IoT AI Developer
-- Mobile AI Application Developer
-- Enterprise AI Consultant
+**Professional Roles**  
+- EdgeAI Solutions Architect  
+- Machine Learning Engineer (Edge Specialization)  
+- IoT AI Developer  
+- Mobile AI Application Developer  
+- Enterprise AI Consultant  
 
-**Industry Sectors**
-- Smart Manufacturing and Industry 4.0
-- Autonomous Vehicles and Transportation
-- Healthcare Technology and Medical Devices
-- Financial Technology and Security
-- Consumer Electronics and Mobile Applications
+**Industry Sectors**  
+- Smart Manufacturing and Industry 4.0  
+- Autonomous Vehicles and Transportation  
+- Healthcare Technology and Medical Devices  
+- Financial Technology and Security  
+- Consumer Electronics and Mobile Applications  
 
-### Certification and Validation
+### Certification and Validation  
 
-**Portfolio Development**
-- Complete end-to-end EdgeAI projects demonstrating practical competency
-- Deploy production-ready solutions across multiple hardware platforms
-- Document optimization strategies and performance improvements achieved
+**Portfolio Development**  
+- Complete comprehensive EdgeAI projects to demonstrate practical expertise  
+- Deploy production-ready solutions across various hardware platforms  
+- Document optimization strategies and performance improvements  
 
-**Continuous Learning Path**
-- Foundation for advanced AI specializations
-- Preparation for cloud-edge hybrid architectures
-- Gateway to emerging AI technologies and frameworks
-This course places you at the cutting edge of AI technology implementation, where intelligent features are seamlessly integrated into the devices and systems that drive modern life.
+**Continuous Learning Path**  
+- Foundation for advanced AI specializations  
+- Preparation for cloud-edge hybrid architectures  
+- Gateway to emerging AI technologies and frameworks  
 
-## File Structure Tree Diagram
+This course places you at the cutting edge of AI technology deployment, where intelligent capabilities are seamlessly integrated into the devices and systems that drive modern life.  
+
+## File Structure Tree Diagram  
 
 ```
 edgeai-for-beginners/
@@ -489,6 +512,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -496,66 +527,66 @@ edgeai-for-beginners/
 ├── STUDY_GUIDE.md
 └── SUPPORT.md
 ```
+  
 
-## Course Features
+## Course Features  
 
-- **Step-by-Step Learning**: Progressively move from foundational concepts to advanced deployment techniques
-- **Blending Theory and Practice**: Each module combines theoretical knowledge with hands-on exercises
-- **Real-World Case Studies**: Drawn from companies like Microsoft, Alibaba, Google, and others
-- **Practical Exercises**: Includes configuration files, API testing workflows, and deployment scripts
-- **Performance Metrics**: Detailed comparisons of inference speed, memory usage, and resource demands
-- **Enterprise-Level Insights**: Covers security protocols, compliance standards, and data protection strategies
+- **Progressive Learning**: Gradually progress from foundational concepts to advanced deployment techniques  
+- **Theory and Practice Integration**: Each module combines theoretical knowledge with practical applications  
+- **Real Case Studies**: Drawn from real-world examples at Microsoft, Alibaba, Google, and others  
+- **Hands-on Practice**: Includes configuration files, API testing procedures, and deployment scripts  
+- **Performance Benchmarks**: Detailed comparisons of inference speed, memory usage, and resource requirements  
+- **Enterprise-grade Considerations**: Covers security practices, compliance frameworks, and data protection strategies  
 
-## Getting Started
+## Getting Started  
 
-Suggested Learning Path:
-1. Begin with **Module01** to establish a solid foundation in EdgeAI
-2. Move on to **Module02** for an in-depth exploration of various SLM model families
-3. Study **Module03** to gain expertise in practical deployment techniques
-4. Advance to **Module04** for model optimization, format conversion, and framework integration
-5. Complete **Module05** to master SLMOps for production-ready solutions
-6. Dive into **Module06** to understand SLM agentic systems and function-calling capabilities
-7. Wrap up with **Module07** to gain hands-on experience with the AI Toolkit and diverse EdgeAI implementation examples
+Recommended Learning Path:  
+1. Begin with **Module01** to build a solid understanding of EdgeAI fundamentals  
+2. Move on to **Module02** for an in-depth look at various SLM model families  
+3. Study **Module03** to master practical deployment techniques  
+4. Continue with **Module04** for advanced model optimization, format conversion, and framework integration  
+5. Complete **Module05** to learn SLMOps for production-ready implementations  
+6. Explore **Module06** to understand SLM agentic systems and function-calling capabilities  
+7. Wrap up with **Module07** to gain hands-on experience with AI Toolkit and diverse EdgeAI implementation examples  
+8. Dive into **Module08** for a comprehensive Foundry Local developer toolkit (local-first development with hybrid Azure integration)  
 
-Each module is self-contained, but following the sequence will yield the best learning outcomes.
+Each module is self-contained, but following the sequence will yield the best learning outcomes.  
 
-## Study Guide
+## Study Guide  
 
-A detailed [Study Guide](STUDY_GUIDE.md) is available to help you make the most of this course. The guide includes:
+A detailed [Study Guide](STUDY_GUIDE.md) is available to help you make the most of your learning experience. The study guide includes:  
 
-- **Organized Learning Paths**: Optimized plans for completing the course in 20 hours
-- **Time Management Tips**: Recommendations for balancing reading, exercises, and projects
-- **Focus on Key Concepts**: Prioritized objectives for each module
-- **Self-Evaluation Tools**: Questions and exercises to assess your understanding
-- **Mini-Project Suggestions**: Practical applications to reinforce your learning
+- **Structured Learning Paths**: Optimized schedules for completing the course in 20 hours  
+- **Time Allocation Guidance**: Recommendations for balancing reading, exercises, and projects  
+- **Key Concept Focus**: Prioritized learning objectives for each module  
+- **Self-Assessment Tools**: Questions and exercises to evaluate your understanding  
+- **Mini-Project Ideas**: Practical applications to reinforce your learning  
 
-The study guide is designed to support both intensive learning (1 week) and part-time study (3 weeks), with clear instructions on how to effectively allocate your time, even if you can only dedicate 10 hours to the course.
+The study guide accommodates both intensive learning (1 week) and part-time study (3 weeks), with clear instructions on how to effectively allocate your time, even if you can only dedicate 10 hours to the course.  
+
+---  
+
+**The future of EdgeAI lies in the continuous evolution of model architectures, quantization techniques, and deployment strategies that emphasize efficiency and specialization over general-purpose capabilities. Organizations that embrace this shift will be well-positioned to harness AI's transformative potential while maintaining control over their data and operations.**  
+
+## Other Courses  
+
+Our team offers additional courses! Check out:  
+
+- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)  
+- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 
-**The future of EdgeAI depends on the continuous evolution of model architectures, quantization methods, and deployment strategies that emphasize efficiency and specialization over general-purpose solutions. Organizations that embrace this shift will be well-positioned to harness AI's transformative power while maintaining control over their data and operations.**
-
-## Other Courses
-
-Our team offers additional courses! Explore:
-
-- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
-
----
-
-**Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

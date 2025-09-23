@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c817161ba08864340737d623f761b9ae",
-  "translation_date": "2025-09-18T17:59:38+00:00",
+  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
+  "translation_date": "2025-09-22T23:33:59+00:00",
   "source_file": "README.md",
   "language_code": "sk"
 }
@@ -43,38 +43,38 @@ Vitajte v **EdgeAI pre začiatočníkov** – vašej komplexnej ceste do transfo
 ### Čo sa naučíte
 
 Tento kurz vás prevedie od základných konceptov až po implementácie pripravené na produkciu, vrátane:
-- **Malé jazykové modely (SLMs)** optimalizované pre nasadenie na edge zariadeniach
+- **Malé jazykové modely (SLMs)** optimalizované pre nasadenie na edge
 - **Optimalizácia zohľadňujúca hardvér** na rôznych platformách
 - **Inferencia v reálnom čase** s ochranou súkromia
 - **Stratégie nasadenia do produkcie** pre podnikové aplikácie
 
 ### Prečo je EdgeAI dôležitá
 
-Edge AI predstavuje paradigmatickú zmenu, ktorá rieši kritické moderné výzvy:
+Edge AI predstavuje posun paradigmy, ktorý rieši kľúčové moderné výzvy:
 - **Súkromie a bezpečnosť**: Spracovanie citlivých dát lokálne bez vystavenia cloudu
-- **Výkon v reálnom čase**: Eliminácia latencie siete pre aplikácie citlivé na čas
+- **Výkon v reálnom čase**: Eliminácia latencie siete pre aplikácie kritické na čas
 - **Efektívnosť nákladov**: Zníženie nákladov na šírku pásma a cloudové výpočty
 - **Odolné operácie**: Zachovanie funkčnosti počas výpadkov siete
 - **Regulačné požiadavky**: Splnenie požiadaviek na suverenitu dát
 
 ### Edge AI
 
-Edge AI označuje spúšťanie AI algoritmov a jazykových modelov lokálne na hardvéri – blízko miesta, kde sa generujú dáta – bez spoliehania sa na cloudové zdroje pre inferenciu. Znižuje latenciu, zlepšuje súkromie a umožňuje rozhodovanie v reálnom čase.
+Edge AI sa týka spúšťania AI algoritmov a jazykových modelov lokálne na hardvéri – blízko miesta, kde sa generujú dáta – bez spoliehania sa na cloudové zdroje pre inferenciu. Znižuje latenciu, zlepšuje súkromie a umožňuje rozhodovanie v reálnom čase.
 
 ### Základné princípy:
 - **Inferencia na zariadení**: AI modely bežia na edge zariadeniach (telefóny, routery, mikrokontroléry, priemyselné PC)
-- **Offline schopnosti**: Funguje bez neustáleho pripojenia na internet
+- **Offline schopnosti**: Funguje bez trvalého pripojenia na internet
 - **Nízka latencia**: Okamžité reakcie vhodné pre systémy v reálnom čase
 - **Suverenita dát**: Uchováva citlivé dáta lokálne, čím zlepšuje bezpečnosť a súlad s predpismi
 
 ### Malé jazykové modely (SLMs)
 
 SLMs ako Phi-4, Mistral-7B a Gemma sú optimalizované verzie väčších LLMs – trénované alebo destilované pre:
-- **Znížené pamäťové nároky**: Efektívne využitie obmedzenej pamäte edge zariadení
+- **Zníženú pamäťovú náročnosť**: Efektívne využitie obmedzenej pamäte edge zariadení
 - **Nižšie výpočtové požiadavky**: Optimalizované pre výkon CPU a edge GPU
 - **Rýchlejšie spúšťanie**: Rýchla inicializácia pre pohotové aplikácie
 
-Otvárajú silné NLP schopnosti pri splnení obmedzení:
+Umožňujú silné NLP schopnosti pri splnení obmedzení:
 - **Vstavané systémy**: IoT zariadenia a priemyselné kontroléry
 - **Mobilné zariadenia**: Smartfóny a tablety s offline schopnosťami
 - **IoT zariadenia**: Senzory a inteligentné zariadenia s obmedzenými zdrojmi
@@ -84,13 +84,13 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
 ## Architektúra kurzu
 
 ### [Modul 01: Základy EdgeAI a transformácia](./Module01/README.md)
-**Téma**: Transformujúci posun v nasadení Edge AI
+**Téma**: Transformujúci posun nasadenia Edge AI
 
-#### Štruktúra kapitoly:
+#### Štruktúra kapitol:
 - [**Sekcia 1: Základy EdgeAI**](./Module01/01.EdgeAIFundamentals.md)
   - Porovnanie tradičnej cloud AI a Edge AI
   - Výzvy a obmedzenia edge computingu
-  - Kľúčové technológie: kvantizácia modelov, kompresná optimalizácia, malé jazykové modely (SLMs)
+  - Kľúčové technológie: kvantizácia modelov, optimalizácia kompresie, malé jazykové modely (SLMs)
   - Hardvérová akcelerácia: NPUs, optimalizácia GPU, optimalizácia CPU
   - Výhody: bezpečnosť súkromia, nízka latencia, offline schopnosti, efektívnosť nákladov
 
@@ -98,20 +98,20 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
   - Ekosystém modelov Microsoft Phi & Mu
   - Prípadová štúdia AI reportovacieho systému Japan Airlines
   - Dopad na trh a budúce smerovanie
-  - Úvahy o nasadení a osvedčené postupy
+  - Úvahy o nasadení a najlepšie postupy
 
 - [**Sekcia 3: Praktický sprievodca implementáciou**](./Module01/03.PracticalImplementationGuide.md)
   - Nastavenie vývojového prostredia (Python 3.10+, .NET 8+)
   - Hardvérové požiadavky a odporúčané konfigurácie
   - Zdroje rodiny základných modelov
   - Nástroje na kvantizáciu a optimalizáciu (Llama.cpp, Microsoft Olive, Apple MLX)
-  - Kontrolný zoznam hodnotenia a overenia
+  - Kontrolný zoznam hodnotenia a overovania
 
 - [**Sekcia 4: Hardvérové platformy na nasadenie Edge AI**](./Module01/04.EdgeDeployment.md)
   - Úvahy a požiadavky na nasadenie Edge AI
-  - Hardvér Edge AI od Intelu a optimalizačné techniky
-  - AI riešenia Qualcomm pre mobilné a vstavané systémy
-  - NVIDIA Jetson a platformy edge computingu
+  - Hardvér Intel pre Edge AI a optimalizačné techniky
+  - Qualcomm AI riešenia pre mobilné a vstavané systémy
+  - NVIDIA Jetson a platformy pre edge computing
   - Windows AI PC platformy s akceleráciou NPU
   - Hardvérovo špecifické optimalizačné stratégie
 
@@ -120,9 +120,9 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
 ### [Modul 02: Základy malých jazykových modelov](./Module02/README.md)
 **Téma**: Teoretické princípy SLM, stratégie implementácie a nasadenie do produkcie
 
-#### Štruktúra kapitoly:
+#### Štruktúra kapitol:
 - [**Sekcia 1: Základy rodiny modelov Microsoft Phi**](./Module02/01.PhiFamily.md)
-  - Vývoj dizajnovej filozofie (Phi-1 až Phi-4)
+  - Vývoj filozofie dizajnu (Phi-1 až Phi-4)
   - Dizajn architektúry s dôrazom na efektívnosť
   - Špecializované schopnosti (uvažovanie, multimodálne, nasadenie na edge)
 
@@ -144,7 +144,7 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
 - [**Sekcia 5: Základy modelu Microsoft Mu**](./Module02/05.mumodel.md)
   - Architektúra orientovaná na zariadenia zabudovaná do Windows 11
   - Systémová integrácia s nastaveniami Windows 11
-  - Ochrana súkromia pri offline operáciách
+  - Offline operácia s ochranou súkromia
 
 - [**Sekcia 6: Základy Phi-Silica**](./Module02/06.phisilica.md)
   - Architektúra optimalizovaná pre NPU zabudovaná do Windows 11 Copilot+ PC
@@ -156,7 +156,7 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
 ### [Modul 03: Nasadenie malých jazykových modelov](./Module03/README.md)
 **Téma**: Kompletný životný cyklus nasadenia SLM, od teórie po produkčné prostredie
 
-#### Štruktúra kapitoly:
+#### Štruktúra kapitol:
 - [**Sekcia 1: Pokročilé učenie SLM**](./Module03/01.SLMAdvancedLearning.md)
   - Rámec klasifikácie parametrov (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
   - Pokročilé optimalizačné techniky (metódy kvantizácie, BitNET 1-bit kvantizácia)
@@ -168,76 +168,76 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
   - Porovnávacia analýza rámcov
 
 - [**Sekcia 3: Kontajnerizované nasadenie v cloude**](./Module03/03.DeployingSLMinCloud.md)
-  - Nasadenie inferencie s vysokým výkonom vLLM
+  - vLLM nasadenie inferencie s vysokým výkonom
   - Orchestrace kontajnerov Ollama
-  - Implementácia optimalizovaná pre edge pomocou ONNX Runtime
+  - Implementácia optimalizovaná pre ONNX Runtime
 
 ---
 
 ### [Modul 04: Konverzia formátu modelu a kvantizácia](./Module04/README.md)
-**Téma**: Kompletná sada nástrojov na optimalizáciu modelov pre nasadenie na edge platformách
+**Téma**: Kompletná sada nástrojov na optimalizáciu modelov pre nasadenie na edge naprieč platformami
 
-#### Štruktúra kapitoly:
+#### Štruktúra kapitol:
 - [**Sekcia 1: Základy konverzie formátu modelu a kvantizácie**](./Module04/01.Introduce.md)
   - Rámec klasifikácie presnosti (ultra-nízka, nízka, stredná presnosť)
   - Výhody a použitie formátov GGUF a ONNX
   - Výhody kvantizácie pre operačnú efektívnosť
-  - Porovnania výkonu a pamäťových nárokov
-- [**Sekcia 2: Llama.cpp Implementačný Sprievodca**](./Module04/02.Llamacpp.md)
-  - Inštalácia na viacerých platformách (Windows, macOS, Linux)
+  - Porovnania výkonu a pamäťovej náročnosti
+- [**Sekcia 2: Llama.cpp Implementačný sprievodca**](./Module04/02.Llamacpp.md)
+  - Inštalácia na rôznych platformách (Windows, macOS, Linux)
   - Konverzia do formátu GGUF a úrovne kvantizácie (Q2_K až Q8_0)
   - Hardvérová akcelerácia (CUDA, Metal, OpenCL, Vulkan)
   - Integrácia s Pythonom a nasadenie REST API
 
-- [**Sekcia 3: Microsoft Olive Optimalizačný Balík**](./Module04/03.MicrosoftOlive.md)
+- [**Sekcia 3: Microsoft Olive Optimalizačný balík**](./Module04/03.MicrosoftOlive.md)
   - Optimalizácia modelov prispôsobená hardvéru s viac ako 40 zabudovanými komponentmi
   - Automatická optimalizácia s dynamickou a statickou kvantizáciou
   - Integrácia do podnikových procesov s Azure ML
   - Podpora populárnych modelov (Llama, Phi, vybrané modely Qwen, Gemma)
 
-- [**Sekcia 4: OpenVINO Toolkit Optimalizačný Balík**](./Module04/04.openvino.md)
-  - Intelov open-source nástroj na nasadenie AI na viacerých platformách
+- [**Sekcia 4: OpenVINO Toolkit Optimalizačný balík**](./Module04/04.openvino.md)
+  - Open-source nástroj od Intelu pre nasadenie AI na rôznych platformách
   - Neural Network Compression Framework (NNCF) pre pokročilú optimalizáciu
   - OpenVINO GenAI pre nasadenie veľkých jazykových modelov
   - Hardvérová akcelerácia na CPU, GPU, VPU a AI akcelerátoroch
 
-- [**Sekcia 5: Apple MLX Framework Detailný Rozbor**](./Module04/05.AppleMLX.md)
+- [**Sekcia 5: Apple MLX Framework - Detailný pohľad**](./Module04/05.AppleMLX.md)
   - Jednotná pamäťová architektúra pre Apple Silicon
-  - Podpora modelov LLaMA, Mistral, Phi-3, vybrané modely Qwen
+  - Podpora modelov LLaMA, Mistral, Phi, vybrané modely Qwen
   - LoRA jemné doladenie a prispôsobenie modelov
-  - Integrácia s Hugging Face s kvantizáciou 4-bit/8-bit
+  - Integrácia s Hugging Face s kvantizáciou na 4-bit/8-bit
 
-- [**Sekcia 6: Syntéza Workflow Vývoja Edge AI**](./Module04/06.workflow-synthesis.md)
-  - Jednotná architektúra workflowu integrujúca viaceré optimalizačné balíky
-  - Rozhodovacie stromy pre výber frameworku a analýza kompromisov výkonu
+- [**Sekcia 6: Syntéza pracovného postupu pre Edge AI vývoj**](./Module04/06.workflow-synthesis.md)
+  - Jednotná architektúra pracovného postupu integrujúca rôzne optimalizačné rámce
+  - Rozhodovacie stromy pre výber rámca a analýza kompromisov výkonu
   - Validácia pripravenosti na produkciu a komplexné stratégie nasadenia
-  - Stratégie odolnosti voči budúcim hardvérovým a modelovým architektúram
+  - Stratégie pre budúce hardvérové a modelové architektúry
 
 ---
 
-### [Modul 05: SLMOps - Operácie Malých Jazykových Modelov](./Module05/README.md)
+### [Modul 05: SLMOps - Operácie malých jazykových modelov](./Module05/README.md)
 **Téma**: Kompletné operácie životného cyklu SLM od destilácie po produkčné nasadenie
 
-#### Štruktúra Kapitoly:
+#### Štruktúra kapitol:
 - [**Sekcia 1: Úvod do SLMOps**](./Module05/01.IntroduceSLMOps.md)
   - Paradigma SLMOps v AI operáciách
-  - Nákladová efektívnosť a architektúra zameraná na súkromie
+  - Nákladová efektívnosť a architektúra zameraná na ochranu súkromia
   - Strategický obchodný dopad a konkurenčné výhody
-  - Výzvy a riešenia pri implementácii v reálnom svete
+  - Výzvy a riešenia pri reálnom nasadení
 
-- [**Sekcia 2: Destilácia Modelov - Od Teórie k Praxi**](./Module05/02.SLMOps-Distillation.md)
+- [**Sekcia 2: Destilácia modelov - Od teórie k praxi**](./Module05/02.SLMOps-Distillation.md)
   - Prenos znalostí z učiteľských na študentské modely
   - Implementácia dvojstupňového procesu destilácie
-  - Azure ML destilačné workflowy s praktickými príkladmi
+  - Pracovné postupy destilácie v Azure ML s praktickými príkladmi
   - 85% zníženie času inferencie pri zachovaní 92% presnosti
 
-- [**Sekcia 3: Jemné Doladenie - Prispôsobenie Modelov na Konkrétne Úlohy**](./Module05/03.SLMOps-Finetuing.md)
-  - Techniky jemného doladenia efektívne na parametre (PEFT)
+- [**Sekcia 3: Jemné doladenie - Prispôsobenie modelov pre špecifické úlohy**](./Module05/03.SLMOps-Finetuing.md)
+  - Techniky jemného doladenia s efektívnym využitím parametrov (PEFT)
   - Pokročilé metódy LoRA a QLoRA
   - Implementácia jemného doladenia pomocou Microsoft Olive
   - Tréning s viacerými adaptérmi a optimalizácia hyperparametrov
 
-- [**Sekcia 4: Nasadenie - Implementácia Pripravená na Produkciu**](./Module05/04.SLMOps.Deployment.md)
+- [**Sekcia 4: Nasadenie - Implementácia pripravená na produkciu**](./Module05/04.SLMOps.Deployment.md)
   - Konverzia modelov a kvantizácia pre produkciu
   - Konfigurácia nasadenia Foundry Local
   - Benchmarking výkonu a validácia kvality
@@ -245,181 +245,209 @@ Otvárajú silné NLP schopnosti pri splnení obmedzení:
 
 ---
 
-### [Modul 06: SLM Agentické Systémy - AI Agenti a Volanie Funkcií](./Module06/README.md)
-**Téma**: Implementácia agentických systémov SLM od základov po pokročilé volanie funkcií a integráciu Model Context Protocol
+### [Modul 06: SLM Agentické systémy - AI agenti a volanie funkcií](./Module06/README.md)
+**Téma**: Implementácia SLM agentických systémov od základov po pokročilé volanie funkcií a integráciu Model Context Protocol
 
-#### Štruktúra Kapitoly:
-- [**Sekcia 1: AI Agenti a Základy Malých Jazykových Modelov**](./Module06/01.IntroduceAgent.md)
-  - Rámec klasifikácie agentov (reflexní, modelovo založení, cieľovo orientovaní, učiaci sa agenti)
-  - Základy SLM a optimalizačné stratégie (GGUF, kvantizácia, edge frameworky)
+#### Štruktúra kapitol:
+- [**Sekcia 1: AI agenti a základy malých jazykových modelov**](./Module06/01.IntroduceAgent.md)
+  - Rámec klasifikácie agentov (reflexní, modelovo orientovaní, cieľovo orientovaní, učiaci sa agenti)
+  - Základy SLM a optimalizačné stratégie (GGUF, kvantizácia, edge rámce)
   - Analýza kompromisov medzi SLM a LLM (10-30× zníženie nákladov, 70-80% efektívnosť úloh)
   - Praktické nasadenie s Ollama, VLLM a Microsoft edge riešeniami
 
-- [**Sekcia 2: Volanie Funkcií v Malých Jazykových Modeloch**](./Module06/02.FunctionCalling.md)
-  - Systematická implementácia workflowu (detekcia zámeru, výstup JSON, externé vykonanie)
+- [**Sekcia 2: Volanie funkcií v malých jazykových modeloch**](./Module06/02.FunctionCalling.md)
+  - Systematická implementácia pracovného postupu (detekcia zámeru, výstup JSON, externé vykonanie)
   - Implementácie špecifické pre platformu (Phi-4-mini, vybrané modely Qwen, Microsoft Foundry Local)
   - Pokročilé príklady (spolupráca viacerých agentov, dynamický výber nástrojov)
-  - Produkčné úvahy (obmedzenie rýchlosti, auditné logovanie, bezpečnostné opatrenia)
+  - Produkčné aspekty (obmedzenie rýchlosti, auditovanie, bezpečnostné opatrenia)
 
 - [**Sekcia 3: Integrácia Model Context Protocol (MCP)**](./Module06/03.IntroduceMCP.md)
   - Architektúra protokolu a vrstvený systémový dizajn
   - Podpora viacerých backendov (Ollama pre vývoj, vLLM pre produkciu)
   - Protokoly pripojenia (režimy STDIO a SSE)
-  - Aplikácie v reálnom svete (webová automatizácia, spracovanie dát, integrácia API)
+  - Reálne aplikácie (webová automatizácia, spracovanie dát, integrácia API)
 
 ---
 
-### [Modul 07: Ukážky Implementácie EdgeAI](./Module07/README.md)
-**Téma**: Komplexné implementácie EdgeAI na rôznych platformách a frameworkoch
+### [Modul 07: Ukážky implementácie EdgeAI](./Module07/README.md)
+**Téma**: Komplexné implementácie EdgeAI na rôznych platformách a rámcoch
 
-#### Štruktúra Kapitoly:
+#### Štruktúra kapitol:
 - [**AI Toolkit pre Visual Studio Code**](./Module07/aitoolkit.md)
   - Komplexné prostredie pre vývoj Edge AI vo VS Code
   - Katalóg modelov a ich objavovanie pre nasadenie na edge
   - Lokálne testovanie, optimalizácia a vývoj agentov
   - Monitorovanie výkonu a hodnotenie pre edge scenáre
 
-- [**Windows EdgeAI Vývojársky Sprievodca**](./Module07/windowdeveloper.md)
+- [**Windows EdgeAI Vývojársky sprievodca**](./Module07/windowdeveloper.md)
   - Komplexný prehľad platformy Windows AI Foundry
   - Phi Silica API pre efektívnu inferenciu na NPU
   - API pre počítačové videnie na spracovanie obrazu a OCR
   - Foundry Local CLI pre lokálny vývoj a testovanie
 
-- [**EdgeAI v NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
+- [**EdgeAI na NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
   - 67 TOPS AI výkon v rozmere kreditnej karty
   - Podpora generatívnych AI modelov (vision transformers, LLMs, vision-language models)
   - Aplikácie v robotike, dronoch, inteligentných kamerách, autonómnych zariadeniach
   - Cenovo dostupná platforma za $249 pre demokratizovaný vývoj AI
 
-- [**EdgeAI v Mobilných Aplikáciách s .NET MAUI a ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
-  - Cross-platform mobilná AI s jednotnou C# kódbázou
+- [**EdgeAI v mobilných aplikáciách s .NET MAUI a ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
+  - Cross-platform mobilná AI s jednotným C# kódom
   - Podpora hardvérovej akcelerácie (CPU, GPU, mobilné AI procesory)
   - Optimalizácie špecifické pre platformu (CoreML pre iOS, NNAPI pre Android)
   - Kompletná implementácia generatívneho AI cyklu
 
-- [**EdgeAI v Azure s Malým Jazykovým Modelovým Enginom**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
+- [**EdgeAI v Azure s Small Language Models Engine**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
   - Hybridná architektúra nasadenia cloud-edge
   - Integrácia Azure AI služieb s ONNX Runtime
   - Nasadenie v podnikovej škále a kontinuálne riadenie modelov
-  - Hybridné AI workflowy pre inteligentné spracovanie dokumentov
+  - Hybridné AI pracovné postupy pre inteligentné spracovanie dokumentov
 
 - [**EdgeAI s Windows ML**](./Module07/README.md#4-edgeai-with-windows-ml)
   - Základy Windows AI Foundry pre výkonnú inferenciu na zariadení
   - Univerzálna podpora hardvéru (AMD, Intel, NVIDIA, Qualcomm silicon)
-  - Automatická abstrakcia hardvéru a optimalizácia
-  - Jednotný framework pre rôznorodý ekosystém Windows hardvéru
+  - Automatická abstrakcia a optimalizácia hardvéru
+  - Jednotný rámec pre rôznorodý ekosystém Windows hardvéru
 
-- [**EdgeAI s Foundry Local Aplikáciami**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
-  - Implementácia RAG zameraná na súkromie s lokálnymi zdrojmi
-  - Integrácia jazykového modelu Phi-3 so semantickým vyhľadávaním (iba Phi modely)
+- [**EdgeAI s Foundry Local aplikáciami**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
+  - Implementácia RAG zameraná na ochranu súkromia s lokálnymi zdrojmi
+  - Integrácia jazykového modelu Phi-4 s semantickým vyhľadávaním (iba Phi modely)
   - Podpora lokálnych vektorových databáz (SQLite, Qdrant)
-  - Schopnosti suverenity dát a offline operácie
+  - Schopnosti pre suverenitu dát a offline operácie
 
-## Ciele Kurzu
+### [Modul 08: Microsoft Foundry Local – Kompletný vývojársky balík](./Module08/README.md)
+**Téma**: Vytvárajte, spúšťajte a integrujte AI lokálne s Foundry Local; škálujte a hybridizujte s Azure AI Foundry
 
-Po absolvovaní tohto komplexného kurzu EdgeAI získate odborné znalosti na návrh, implementáciu a nasadenie produkčne pripravených EdgeAI riešení. Naša štruktúrovaná metodika zabezpečí, že zvládnete teoretické základy aj praktické zručnosti implementácie.
+#### Štruktúra kapitol:
+- [**1: Začíname s Foundry Local**](./Module08/01.FoundryLocalSetup.md)
+- [**2: Vytváranie AI riešení s Azure AI Foundry**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**3: Open-source modely Foundry Local**](./Module08/03.OpenSourceModels.md)
+- [**4: Najmodernejšie modely a inferencia na zariadení**](./Module08/04.CuttingEdgeModels.md)
+- [**5: AI agenti s Foundry Local**](./Module08/05.AIPoweredAgents.md)
+- [**6: Modely ako nástroje**](./Module08/06.ModelsAsTools.md)
 
-### Technické Kompetencie
+## Ciele kurzu
 
-**Základné Znalosti**
+Po absolvovaní tohto komplexného kurzu EdgeAI získate odborné znalosti na navrhovanie, implementáciu a nasadenie produkčne pripravených EdgeAI riešení. Naša štruktúrovaná metodika vám zabezpečí zvládnutie teoretických základov aj praktických zručností.
+
+### Technické kompetencie
+
+**Základné znalosti**
 - Pochopenie základných rozdielov medzi cloudovými a edge AI architektúrami
 - Ovládanie princípov kvantizácie, kompresie a optimalizácie modelov pre prostredia s obmedzenými zdrojmi
-- Porozumenie možnostiam hardvérovej akcelerácie (NPUs, GPUs, CPUs) a ich dopadom na nasadenie
+- Porozumenie možnostiam hardvérovej akcelerácie (NPU, GPU, CPU) a ich dopadom na nasadenie
 
-**Implementačné Zručnosti**
-- Nasadenie Malých Jazykových Modelov na rôznych edge platformách (mobilné, embedded, IoT, edge servery)
-- Aplikácia optimalizačných frameworkov vrátane Llama.cpp, Microsoft Olive, ONNX Runtime a Apple MLX
+**Implementačné zručnosti**
+- Nasadenie malých jazykových modelov na rôznych edge platformách (mobilné, embedded, IoT, edge servery)
+- Aplikácia optimalizačných rámcov vrátane Llama.cpp, Microsoft Olive, ONNX Runtime a Apple MLX
 - Implementácia systémov inferencie v reálnom čase s požiadavkami na sub-sekundovú odozvu
 
-**Produkčné Znalosti**
+**Produkčné znalosti**
 - Návrh škálovateľných EdgeAI architektúr pre podnikové aplikácie
-- Implementácia stratégií monitorovania, údržby a aktualizácie nasadených systémov
+- Implementácia monitorovacích, údržbových a aktualizačných stratégií pre nasadené systémy
 - Aplikácia bezpečnostných najlepších praktík pre ochranu súkromia v EdgeAI implementáciách
 
-### Strategické Schopnosti
+### Strategické schopnosti
 
-**Rámec Rozhodovania**
+**Rámec rozhodovania**
 - Hodnotenie príležitostí EdgeAI a identifikácia vhodných prípadov použitia pre obchodné aplikácie
 - Posúdenie kompromisov medzi presnosťou modelu, rýchlosťou inferencie, spotrebou energie a nákladmi na hardvér
-- Výber vhodných rodín SLM a konfigurácií na základe konkrétnych obmedzení nasadenia
+- Výber vhodných rodín SLM a konfigurácií na základe špecifických obmedzení nasadenia
 
-**Systémová Architektúra**
+**Systémová architektúra**
 - Návrh end-to-end EdgeAI riešení, ktoré sa integrujú do existujúcej infraštruktúry
 - Plánovanie hybridných edge-cloud architektúr pre optimálny výkon a nákladovú efektívnosť
 - Implementácia dátových tokov a spracovateľských pipeline pre AI aplikácie v reálnom čase
 
-### Priemyselné Aplikácie
+### Priemyselné aplikácie
 
-**Praktické Scenáre Nasadenia**
+**Praktické scenáre nasadenia**
 - **Výroba**: Systémy kontroly kvality, prediktívna údržba a optimalizácia procesov
-- **Zdravotníctvo**: Diagnostické nástroje zamerané na ochranu súkromia a systémy monitorovania pacientov
+- **Zdravotníctvo**: Diagnostické nástroje s ochranou súkromia a systémy monitorovania pacientov
 - **Doprava**: Rozhodovanie autonómnych vozidiel a riadenie dopravy
-- **Inteligentné Mestá**: Inteligentná infraštruktúra a systémy riadenia zdrojov
-- **Spotrebná Elektronika**: Mobilné aplikácie poháňané AI a inteligentné domáce zariadenia
+- **Inteligentné mestá**: Inteligentná infraštruktúra a systémy riadenia zdrojov
+- **Spotrebná elektronika**: Mobilné aplikácie poháňané AI a inteligentné domáce zariadenia
 
-## Prehľad Očakávaných Výsledkov Kurzu
+## Prehľad očakávaných výsledkov kurzu
 
-### Výsledky Modulu 01:
+### Výsledky učenia Modulu 01:
 - Pochopenie základných rozdielov medzi cloudovými a edge AI architektúrami
-- Ovládanie základných techník optimalizácie pre nasadenie na edge
-- Rozpoznanie aplikácií v reálnom svete a úspešných prípadov
-- Získanie praktických zručností na implementáciu EdgeAI riešení
+- Ovládanie základných optimalizačných techník pre edge nasadenie
+- Rozpoznanie reálnych aplikácií a úspešných prípadov
+- Získanie praktických zručností pre implementáciu EdgeAI riešení
 
-### Výsledky Modulu 02:
+### Výsledky učenia Modulu 02:
 - Hlboké pochopenie rôznych filozofií návrhu SLM a ich dopadov na nasadenie
-- Ovládanie strategických schopností rozhodovania na základe výpočtových obmedzení a požiadaviek na výkon
-- Porozumenie kompromisom flexibility nasadenia
-- Získanie poznatkov pripravených na budúcnosť o efektívnych AI architektúrach
+- Ovládanie strategických rozhodovacích schopností na základe výpočtových obmedzení a požiadaviek na výkon
+- Pochopenie kompromisov flexibility nasadenia
+- Získanie poznatkov pripravených na budúcnosť o efektívnej AI architektúre
 
-### Výsledky Modulu 03:
+### Výsledky učenia Modulu 03:
 - Schopnosti strategického výberu modelov
 - Ovládanie techník optimalizácie
 - Ovládanie flexibility nasadenia
 - Schopnosti konfigurácie pripravené na produkciu
 
-### Výsledky Modulu 04:
+### Výsledky učenia Modulu 04:
 - Hlboké pochopenie hraníc kvantizácie a praktických aplikácií
-- Praktické skúsenosti s viacerými optimalizačnými frameworkmi (Llama.cpp, Olive, OpenVINO, MLX)
-- Ovládanie optimalizácie Intel hardvéru s OpenVINO a NNCF
+- Praktické skúsenosti s viacerými optimalizačnými rámcami (Llama.cpp, Olive, OpenVINO, MLX)
+- Ovládanie optimalizácie hardvéru Intel pomocou OpenVINO a NNCF
 - Schopnosti výberu optimalizácie prispôsobenej hardvéru na rôznych platformách
-- Zručnosti produkčného nasadenia pre edge computing prostredia na viacerých platformách
-- Strategický výber frameworku a syntéza workflowu pre optimálne Edge AI riešenia
+- Zručnosti nasadenia pre cross-platform edge výpočtové prostredia
+- Strategický výber rámca a syntéza pracovného postupu pre optimálne Edge AI riešenia
 
-### Výsledky Modulu 05:
+### Výsledky učenia Modulu 05:
 - Ovládanie paradigmy SLMOps a operačných princípov
-- Implementácia destilácie modelov na prenos znalostí a optimalizáciu efektívnosti
-- Aplikácia techník jemného doladenia na prispôsobenie modelov pre konkrétne domény
-- Nasadenie produkčne pripravených SLM riešení so stratégiami monitorovania a údržby
+- Implementácia destilácie modelov pre prenos znalostí a optimalizáciu efektívnosti
+- Aplikácia techník jemného doladenia pre prispôsobenie modelov konkrétnym doménam
+- Nasadenie produkčne pripravených SLM riešení s monitorovacími a údržbovými stratégiami
 
-### Výsledky Modulu 06:
-- Pochopenie základných konceptov AI agentov a architektúry Malých Jazykových Modelov
-- Ovládanie implementácie volania funkcií na viacerých platformách a frameworkoch
+### Výsledky učenia Modulu 06:
+- Pochopenie základných konceptov AI agentov a architektúry malých jazykových modelov
+- Ovládanie implementácie volania funkcií na rôznych platformách a rámcoch
 - Integrácia Model Context Protocol (MCP) pre štandardizovanú interakciu s externými nástrojmi
-- Budovanie sofistikovaných agentických systémov s minimálnymi požiadavkami na ľudskú intervenciu
+- Vytváranie sofistikovaných agentických systémov s minimálnymi požiadavkami na ľudskú intervenciu
 
-### Výsledky Modulu 07:
-- Ovládanie AI Toolkit pre Visual Studio Code pre komplexné workflowy vývoja Edge AI
+### Výsledky učenia Modulu 07:
+- Ovládanie AI Toolkit pre Visual Studio Code pre komplexné pracovné postupy vývoja Edge AI
 - Získanie odborných znalostí o platforme Windows AI Foundry a optimalizačných stratégiách NPU
 - Získanie praktických skúseností s rôznymi EdgeAI platformami a implementačnými stratégiami
 - Ovládanie techník optimalizácie špecifických pre hardvér na platformách NVIDIA, mobilných zariadeniach, Azure a Windows
-- Porozumenie kompromisom nasadenia medzi výkonom, nákladmi a požiadavkami na ochranu súkromia
-- Rozvoj praktických zručností na budovanie reálnych EdgeAI aplikácií v rôznych ekosystémoch
+- Pochopenie kompromisov nasadenia medzi výkonom, nákladmi a požiadavkami na ochranu súkromia
+- Rozvoj praktických zručností pre budovanie reálnych EdgeAI aplikácií v rôznych ekosystémoch
 
-## Očakávané Výsledky Kurzu
+## Očakávané výsledky kur
+- **Riadenie rizík**: Identifikácia a zmiernenie technických a prevádzkových rizík pri nasadení EdgeAI
+- **Optimalizácia ROI**: Preukázanie merateľnej obchodnej hodnoty z implementácií EdgeAI
 
-Po úspešnom absolvovaní tohto kurzu budete vybavení znalosťami, zručnosťami a sebadôverou na vedenie iniciatív EdgeAI v profesionálnych prostrediach.
+### Príležitosti na kariérny rozvoj
 
-### Profesionálna Pripravenosť
+**Profesionálne pozície**
+- Architekt riešení EdgeAI
+- Inžinier strojového učenia (špecializácia na Edge)
+- Vývojár IoT AI
+- Vývojár mobilných AI aplikácií
+- Konzultant pre podnikové AI
 
-**Technické Vedenie**
-- **Architektúra Riešení**: Návrh komplexných EdgeAI systémov, ktoré spĺňajú podnikové požiadavky
-- **Optimalizácia Výkonu**: Dosiahnutie optimálnej rovnováhy medzi presnosťou, rýchlosťou a spotrebou zdrojov
-- **Nasadenie na Viacerých Platformách**: Implementácia riešení na Windows, Linux, mobilných a embedded platformách
-- **Produkčné Operácie**: Údržba a škálovanie EdgeAI systémov s podnikovou spoľahlivosťou
+**Priemyselné sektory**
+- Inteligentná výroba a Priemysel 4.0
+- Autonómne vozidlá a doprava
+- Zdravotnícka technológia a medicínske zariadenia
+- Finančné technológie a bezpečnosť
+- Spotrebná elektronika a mobilné aplikácie
 
-**Odbornosť v Priemysle**
-- **Hodnotenie Technológií**: Posúdenie a odporúčanie EdgeAI riešení pre konkrétne obchodné výzvy
-- **Plán
+### Certifikácia a validácia
+
+**Rozvoj portfólia**
+- Dokončenie komplexných EdgeAI projektov preukazujúcich praktické zručnosti
+- Nasadenie produkčne pripravených riešení na rôznych hardvérových platformách
+- Dokumentácia optimalizačných stratégií a dosiahnutých zlepšení výkonu
+
+**Cesta neustáleho vzdelávania**
+- Základ pre pokročilé špecializácie v oblasti AI
+- Príprava na hybridné architektúry cloud-edge
+- Brána k novým technológiám a rámcom AI
+
 Tento kurz vás umiestni na čelo nasadzovania AI technológií, kde inteligentné schopnosti sú bezproblémovo integrované do zariadení a systémov, ktoré poháňajú moderný život.
 
 ## Diagram štruktúry súborov
@@ -470,6 +498,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -480,23 +516,24 @@ edgeai-for-beginners/
 
 ## Vlastnosti kurzu
 
-- **Progresívne učenie**: Postupne prechádzajte od základných konceptov k pokročilému nasadzovaniu
+- **Progresívne učenie**: Postupný prechod od základných konceptov k pokročilému nasadeniu
 - **Integrácia teórie a praxe**: Každý modul obsahuje teoretické základy aj praktické operácie
 - **Reálne prípadové štúdie**: Na základe skutočných prípadov od Microsoftu, Alibaba, Google a ďalších
-- **Praktické cvičenia**: Kompletné konfiguračné súbory, postupy testovania API a nasadzovacie skripty
-- **Výkonnostné porovnania**: Detailné porovnania rýchlosti inferencie, využitia pamäte a požiadaviek na zdroje
-- **Podnikové aspekty**: Praktiky bezpečnosti, rámce súladu a stratégie ochrany dát
+- **Praktické cvičenia**: Kompletné konfiguračné súbory, postupy testovania API a skripty na nasadenie
+- **Výkonnostné benchmarky**: Podrobné porovnania rýchlosti inferencie, využitia pamäte a požiadaviek na zdroje
+- **Podnikové aspekty**: Praktiky bezpečnosti, rámce súladu a stratégie ochrany údajov
 
 ## Začíname
 
 Odporúčaný študijný plán:
 1. Začnite s **Module01**, aby ste si vybudovali základné porozumenie EdgeAI
 2. Pokračujte s **Module02**, aby ste hlbšie pochopili rôzne rodiny modelov SLM
-3. Naučte sa **Module03**, aby ste zvládli praktické zručnosti nasadzovania
+3. Naučte sa **Module03**, aby ste zvládli praktické zručnosti nasadenia
 4. Pokračujte s **Module04** pre pokročilú optimalizáciu modelov, konverziu formátov a syntézu rámcov
-5. Dokončite **Module05**, aby ste zvládli SLMOps pre implementácie pripravené na produkciu
+5. Dokončite **Module05**, aby ste zvládli SLMOps pre produkčne pripravené implementácie
 6. Preskúmajte **Module06**, aby ste pochopili agentické systémy SLM a schopnosti volania funkcií
 7. Ukončite s **Module07**, aby ste získali praktické skúsenosti s AI Toolkit a rôznymi príkladmi implementácie EdgeAI
+8. Preskúmajte **Module08** pre kompletnú sadu nástrojov Foundry Local pre vývojárov (lokálne zameraný vývoj s hybridnou integráciou Azure)
 
 Každý modul je navrhnutý tak, aby bol samostatne kompletný, ale postupné učenie poskytne najlepšie výsledky.
 
@@ -506,37 +543,35 @@ Komplexný [Študijný sprievodca](STUDY_GUIDE.md) je k dispozícii, aby vám po
 
 - **Štruktúrované študijné plány**: Optimalizované rozvrhy na dokončenie kurzu za 20 hodín
 - **Odporúčania na rozdelenie času**: Konkrétne návrhy na vyváženie čítania, cvičení a projektov
-- **Zameranie na kľúčové koncepty**: Prioritné študijné ciele pre každý modul
+- **Zameranie na kľúčové koncepty**: Prioritné učebné ciele pre každý modul
 - **Nástroje na sebahodnotenie**: Otázky a cvičenia na testovanie vášho porozumenia
 - **Nápady na mini-projekty**: Praktické aplikácie na posilnenie vášho učenia
 
-Študijný sprievodca je navrhnutý tak, aby vyhovoval intenzívnemu učeniu (1 týždeň) aj štúdiu na čiastočný úväzok (3 týždne), s jasnými pokynmi, ako efektívne rozvrhnúť čas, aj keď môžete kurzu venovať len 10 hodín.
+Študijný sprievodca je navrhnutý tak, aby vyhovoval intenzívnemu učeniu (1 týždeň) aj štúdiu na čiastočný úväzok (3 týždne), s jasnými pokynmi, ako efektívne rozložiť čas, aj keď môžete kurzu venovať len 10 hodín.
 
 ---
 
-**Budúcnosť EdgeAI spočíva v neustálom zlepšovaní architektúr modelov, techník kvantizácie a stratégií nasadzovania, ktoré uprednostňujú efektivitu a špecializáciu pred všeobecnými schopnosťami. Organizácie, ktoré prijmú tento posun paradigmy, budú dobre pripravené využiť transformačný potenciál AI a zároveň si zachovať kontrolu nad svojimi dátami a operáciami.**
+**Budúcnosť EdgeAI spočíva v neustálom zlepšovaní architektúr modelov, techník kvantizácie a stratégií nasadenia, ktoré uprednostňujú efektivitu a špecializáciu pred všeobecnými schopnosťami. Organizácie, ktoré prijmú tento posun paradigmy, budú dobre pripravené využiť transformačný potenciál AI a zároveň si zachovať kontrolu nad svojimi údajmi a operáciami.**
 
 ## Ďalšie kurzy
 
 Náš tím vytvára aj ďalšie kurzy! Pozrite si:
 
-- [MCP pre začiatočníkov](https://github.com/microsoft/mcp-for-beginners)
-- [AI agenti pre začiatočníkov](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generatívna AI pre začiatočníkov pomocou .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generatívna AI pre začiatočníkov pomocou JavaScriptu](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generatívna AI pre začiatočníkov](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML pre začiatočníkov](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science pre začiatočníkov](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI pre začiatočníkov](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Kybernetická bezpečnosť pre začiatočníkov](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Webový vývoj pre začiatočníkov](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT pre začiatočníkov](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR vývoj pre začiatočníkov](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Ovládnutie GitHub Copilot pre AI párové programovanie](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Ovládnutie GitHub Copilot pre vývojárov C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Vyberte si vlastné dobrodružstvo s Copilotom](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
+- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
+- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ---
 
-**Upozornenie**:  
-Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, prosím, berte na vedomie, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nie sme zodpovední za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
