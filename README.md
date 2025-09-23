@@ -52,7 +52,7 @@ Edge AI represents a paradigm shift that addresses critical modern challenges:
 
 ### Edge AI
 
-Edge AI refers to running AI algorithms and language models locally on hardware—close to where data is generated—without relying on cloud resources for inference. It reduces latency, enhances privacy, and enables real-time decision-making.
+Edge AI refers to running AI algorithms and language models locally on hardware, close to where data is generated without relying on cloud resources for inference. It reduces latency, enhances privacy, and enables real-time decision-making.
 
 ### Core Principles:
 - **On-device inference**: AI models run on edge devices (phones, routers, microcontrollers, industrial PCs)
