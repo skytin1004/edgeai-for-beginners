@@ -1,138 +1,174 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "142e0d1a5b794b8333cfd4895804ced5",
-  "translation_date": "2025-09-19T01:49:53+00:00",
+  "original_hash": "cb6eadc312d5658a0cd71c0085b43742",
+  "translation_date": "2025-09-23T00:24:52+00:00",
   "source_file": "Module07/README.md",
   "language_code": "my"
 }
 -->
 # အခန်း ၀၇ : EdgeAI နမူနာများ
 
-Edge AI သည် အတန်းမြင့် ဉာဏ်ရည်တုကို edge computing နှင့် ပေါင်းစပ်ထားသော နည်းပညာဖြစ်ပြီး၊ cloud ချိတ်ဆက်မှုမရှိဘဲ စက်ပစ္စည်းပေါ်တွင် တိုက်ရိုက် အဆင့်မြင့် အချက်အလက်များကို အဆင်ပြေစွာ ဆောင်ရွက်နိုင်စေသည်။ ဒီအခန်းမှာ EdgeAI ကို အခြားအခြားသော ပလက်ဖောင်းများနှင့် framework များတွင် အသုံးပြုထားသော နမူနာ ၅ ခုကို လေ့လာပြီး၊ AI မော်ဒယ်များကို edge ပေါ်တွင် အဆင်ပြေစွာ လုပ်ဆောင်နိုင်စွမ်းနှင့် အကျိုးကျေးဇူးများကို ပြသထားသည်။
+Edge AI သည် အတန်းမြင့် ဉာဏ်ရည်တုနှင့် edge computing တို့ပေါင်းစပ်မှုကို ကိုယ်စားပြုပြီး cloud ချိတ်ဆက်မှုမရှိဘဲ စက်ပစ္စည်းများပေါ်တွင် တိုက်ရိုက် အတန်းမြင့် အချက်အလက်များကို အဆင့်မြင့်လုပ်ဆောင်နိုင်စေသည်။ ဒီအခန်းမှာ EdgeAI ကို အခြေခံပြီး platform နှင့် framework များအမျိုးမျိုးတွင် အသုံးပြုထားသော နမူနာ ၅ ခုကို လေ့လာမည်ဖြစ်ပြီး edge တွင် AI မော်ဒယ်များကို အတန်းမြင့်အောင် လုပ်ဆောင်နိုင်မှုနှင့် အကျိုးကျေးဇူးများကို ပြသထားသည်။
 
 ## ၁။ NVIDIA Jetson Orin Nano တွင် EdgeAI
 
-NVIDIA Jetson Orin Nano သည် edge AI computing အတွက် အလွန်တန်ဖိုးရှိသော နည်းပညာတစ်ခုဖြစ်ပြီး၊ 67 TOPS အထိ AI စွမ်းဆောင်ရည်ကို credit-card အရွယ်အစားဖြင့် ပေးစွမ်းနိုင်သည်။ ဒီ platform သည် hobbyists, ကျောင်းသားများနှင့် professional developers များအတွက် Generative AI ဖန်တီးမှုကို ပိုမိုလွယ်ကူစေသည်။
+NVIDIA Jetson Orin Nano သည် edge AI computing အတွက် အရေးပါသော တိုးတက်မှုတစ်ခုကို ကိုယ်စားပြုပြီး 67 TOPS အထိ AI စွမ်းဆောင်ရည်ကို credit-card အရွယ်အစားဖြင့် ပေးစွမ်းနိုင်သည်။ ဒီအတန်းမြင့် edge AI platform သည် hobbyist, ကျောင်းသားများနှင့် professional developer များအတွက် Generative AI ဖွံ့ဖြိုးတိုးတက်မှုကို ပိုမိုလွယ်ကူစေသည်။
 
 ### အဓိက အင်္ဂါရပ်များ
-- 67 TOPS အထိ AI စွမ်းဆောင်ရည်ကို ပေးစွမ်းနိုင်ပြီး၊ ယခင်မော်ဒယ်ထက် 1.7X ပိုမိုတိုးတက်မှုရှိသည်။
-- 1024 CUDA cores နှင့် 32 Tensor Cores အထိ AI စွမ်းဆောင်ရည်အတွက် ထောက်ပံ့မှု
+- 67 TOPS အထိ AI စွမ်းဆောင်ရည်ပေးစွမ်းခြင်း—ယခင်မော်ဒယ်ထက် 1.7X တိုးတက်မှု
+- AI လုပ်ဆောင်မှုအတွက် 1024 CUDA cores နှင့် 32 Tensor Cores အထိ
 - 6-core Arm Cortex-A78AE v8.2 64-bit CPU (1.5 GHz အမြင့်ဆုံး frequency)
 - $249 သာရှိသော စျေးနှုန်းဖြင့် developer, ကျောင်းသားများနှင့် maker များအတွက် အလွယ်တကူရရှိနိုင်သော platform
 
-### အသုံးပြုမှုများ
-Jetson Orin Nano သည် vision transformers, large language models, vision-language models စသည့် နောက်ဆုံးပေါ် Generative AI မော်ဒယ်များကို အလွန်ကောင်းစွာ run လုပ်နိုင်သည်။ GenAI အတွက် အထူးပြုထားပြီး၊ palm device ပေါ်တွင် LLM များ run လုပ်နိုင်သည်။ အသုံးပြုမှုများတွင် AI-powered robotics, smart drones, intelligent cameras, autonomous edge devices စသည်တို့ ပါဝင်သည်။
+### အသုံးချမှုများ
+Jetson Orin Nano သည် vision transformers, large language models, vision-language models အပါအဝင် ယနေ့ခေတ် Generative AI မော်ဒယ်များကို အထူးကောင်းမွန်စွာ လုပ်ဆောင်နိုင်သည်။ GenAI အသုံးချမှုများအတွက် အထူးဒီဇိုင်းပြုလုပ်ထားပြီး palm device ပေါ်တွင် LLM များစွာကို လုပ်ဆောင်နိုင်သည်။ အထူးအသုံးချမှုများမှာ AI-powered robotics, smart drones, intelligent cameras, autonomous edge devices တို့ဖြစ်သည်။
 
 **ပိုမိုလေ့လာရန်**: [NVIDIA's Jetson Orin Nano SuperComputer: The Next Big Thing in EdgeAI](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
 ## ၂။ .NET MAUI နှင့် ONNX Runtime GenAI ဖြင့် Mobile Applications တွင် EdgeAI
 
-ဒီ solution သည် Generative AI နှင့် Large Language Models (LLMs) ကို .NET MAUI (Multi-platform App UI) နှင့် ONNX Runtime GenAI အသုံးပြု၍ cross-platform mobile applications တွင် ပေါင်းစပ်အသုံးပြုနည်းကို ပြသထားသည်။ ဒီနည်းလမ်းသည် Android နှင့် iOS စက်ပစ္စည်းများပေါ်တွင် AI-powered mobile applications ကို native အနေဖြင့် ဖန်တီးနိုင်စေသည်။
+ဒီနမူနာသည် Generative AI နှင့် Large Language Models (LLMs) ကို .NET MAUI (Multi-platform App UI) နှင့် ONNX Runtime GenAI အသုံးပြု၍ cross-platform mobile applications တွင် ပေါင်းစပ်အသုံးပြုနည်းကို ပြသသည်။ ဒီနည်းလမ်းသည် .NET developer များအတွက် Android နှင့် iOS စက်ပစ္စည်းများပေါ်တွင် native အတန်းမြင့် AI-powered mobile applications ဖန်တီးနိုင်စေသည်။
 
 ### အဓိက အင်္ဂါရပ်များ
-- .NET MAUI framework ပေါ်တွင် တည်ဆောက်ထားပြီး၊ Android နှင့် iOS applications အတွက် single codebase ပေးစွမ်းသည်။
-- ONNX Runtime GenAI integration ဖြင့် mobile devices ပေါ်တွင် Generative AI မော်ဒယ်များ run လုပ်နိုင်သည်။
-- CPU, GPU, mobile AI processors စသည်တို့အတွက် hardware accelerators များကို ထောက်ပံ့သည်။
-- ONNX Runtime မှတဆင့် iOS အတွက် CoreML နှင့် Android အတွက် NNAPI အထိ platform-specific optimizations
-- Generative AI loop အပြည့်အစုံကို implement လုပ်ထားပြီး၊ pre/post processing, inference, logits processing, search and sampling, KV cache management စသည်တို့ ပါဝင်သည်။
+- .NET MAUI framework အပေါ် အခြေခံပြီး Android နှင့် iOS application များအတွက် single codebase ပေးစွမ်းခြင်း
+- ONNX Runtime GenAI ပေါင်းစပ်မှုသည် mobile devices ပေါ်တွင် Generative AI မော်ဒယ်များကို တိုက်ရိုက် လုပ်ဆောင်နိုင်စေသည်
+- CPU, GPU နှင့် mobile AI processor အထူးပြု hardware accelerators များကို ပံ့ပိုးပေးခြင်း
+- ONNX Runtime မှတဆင့် iOS အတွက် CoreML နှင့် Android အတွက် NNAPI ကဲ့သို့သော platform-specific optimizations
+- Generative AI loop အပြည့်အစုံကို pre/post processing, inference, logits processing, search and sampling, KV cache management အပါအဝင် လုပ်ဆောင်နိုင်ခြင်း
 
-### ဖွံ့ဖြိုးရေး အကျိုးကျေးဇူးများ
-.NET MAUI နည်းလမ်းသည် developer များကို C# နှင့် .NET ကျွမ်းကျင်မှုများကို အသုံးပြု၍ cross-platform AI applications ဖန်တီးနိုင်စေသည်။ ONNX Runtime GenAI framework သည် Llama, Mistral, Phi, Gemma စသည်တို့အပါအဝင် မော်ဒယ် architecture များစွာကို ထောက်ပံ့သည်။ ARM64 kernels optimization ဖြင့် INT4 quantized matrix multiplication ကို အလွန်မြန်ဆန်စွာ run လုပ်နိုင်စေပြီး၊ mobile hardware ပေါ်တွင် စွမ်းဆောင်ရည်မြင့်မားစေသည်။
+### ဖွံ့ဖြိုးတိုးတက်မှု အကျိုးကျေးဇူးများ
+.NET MAUI နည်းလမ်းသည် developer များအတွက် ရှိပြီးသား C# နှင့် .NET ကျွမ်းကျင်မှုများကို အသုံးပြု၍ cross-platform AI applications ဖန်တီးနိုင်စေသည်။ ONNX Runtime GenAI framework သည် Llama, Mistral, Phi, Gemma အပါအဝင် မော်ဒယ် architecture များစွာကို ပံ့ပိုးပေးသည်။ ARM64 kernels များကို optimize လုပ်ခြင်းဖြင့် INT4 quantized matrix multiplication ကို မြန်ဆန်စွာ လုပ်ဆောင်နိုင်စေပြီး mobile hardware ပေါ်တွင် စွမ်းဆောင်ရည်မြင့်မားစေသည်။
 
-### အသုံးပြုမှုများ
-ဒီ solution သည် .NET technologies အသုံးပြု၍ AI-powered mobile applications ဖန်တီးလိုသော developer များအတွက် အထူးသင့်လျော်သည်။ intelligent chatbots, image recognition apps, language translation tools, personalized recommendation systems စသည်တို့ကို on-device ပေါ်တွင် run လုပ်နိုင်ပြီး privacy နှင့် offline capability ပိုမိုကောင်းမွန်စေသည်။
+### အသုံးချမှုများ
+ဒီနည်းလမ်းသည် .NET နည်းပညာများကို အသုံးပြု၍ AI-powered mobile applications ဖန်တီးလိုသော developer များအတွက် အထူးသင့်လျော်သည်။ intelligent chatbots, image recognition apps, language translation tools, personalized recommendation systems တို့ကို offline အခြေအနေတွင် privacy မြင့်မားစွာ လုပ်ဆောင်နိုင်စေသည်။
 
 **ပိုမိုလေ့လာရန်**: [.NET MAUI ONNX Runtime GenAI Example](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
 ## ၃။ Azure EdgeAI နှင့် Small Language Models Engine
 
-Microsoft ရဲ့ Azure-based EdgeAI solution သည် Small Language Models (SLMs) ကို cloud-edge hybrid ပတ်ဝန်းကျင်တွင် ထိရောက်စွာ deploy လုပ်နိုင်စေသည်။ ဒီနည်းလမ်းသည် cloud-scale AI services နှင့် edge deployment အတွက် လိုအပ်ချက်များကို တစ်နေရာတည်းတွင် ပေါင်းစပ်ထားသည်။
+Microsoft ၏ Azure-based EdgeAI ဖြေရှင်းနည်းသည် Small Language Models (SLMs) များကို cloud-edge hybrid ပတ်ဝန်းကျင်တွင် ထိရောက်စွာ အသုံးချနိုင်ရန် အဓိကထားသည်။ ဒီနည်းလမ်းသည် cloud-scale AI services နှင့် edge deployment လိုအပ်ချက်များအကြား ချိတ်ဆက်မှုကို ပံ့ပိုးပေးသည်။
 
 ### Architecture အကျိုးကျေးဇူးများ
 - Azure AI services နှင့် seamless integration
-- ONNX Runtime ဖြင့် SLMs/LLMs နှင့် multi-modal models ကို on-device နှင့် cloud ပေါ်တွင် run လုပ်နိုင်သည်။
-- Enterprise-scale deployment အတွက် optimization
-- Model updates နှင့် management အဆင့်ဆင့် ထောက်ပံ့မှု
+- ONNX Runtime ဖြင့် SLMs/LLMs နှင့် multi-modal models ကို စက်ပစ္စည်းပေါ်တွင်နှင့် cloud တွင် လုပ်ဆောင်နိုင်ခြင်း
+- Enterprise-scale deployment အတွက် optimize လုပ်ထားခြင်း
+- မော်ဒယ်များကို ဆက်လက် update နှင့် စီမံခန့်ခွဲနိုင်ခြင်း
 
-### အသုံးပြုမှုများ
-Azure EdgeAI implementation သည် enterprise-grade AI deployment လိုအပ်ချက်များနှင့် cloud management capabilities အတွက် အထူးကောင်းမွန်သည်။ intelligent document processing, real-time analytics, hybrid AI workflows စသည်တို့တွင် အသုံးပြုနိုင်သည်။
+### အသုံးချမှုများ
+Azure EdgeAI implementation သည် enterprise-grade AI deployment လိုအပ်ချက်များနှင့် cloud management capabilities ရှိသော အခြေအနေများတွင် အထူးကောင်းမွန်သည်။ intelligent document processing, real-time analytics, hybrid AI workflows တို့ကို cloud နှင့် edge computing resources နှစ်ခုလုံးကို အသုံးပြု၍ လုပ်ဆောင်နိုင်သည်။
 
 **ပိုမိုလေ့လာရန်**: [Azure EdgeAI SLM Engine](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
 ## ၄။ Windows ML ဖြင့် EdgeAI
 
-Windows ML သည် Microsoft ရဲ့ on-device model inference အတွက် optimized runtime ဖြစ်ပြီး၊ Windows AI Foundry ရဲ့ အခြေခံအဆောက်အအုံအဖြစ် တည်ဆောက်ထားသည်။ ဒီ platform သည် developer များကို PC hardware အပြည့်အဝ အသုံးချနိုင်သော AI-powered Windows applications ဖန်တီးနိုင်စေသည်။
+Windows ML သည် Microsoft ၏ cutting-edge runtime ဖြစ်ပြီး on-device model inference ကို အထူး optimize လုပ်ထားပြီး deployment ကို လွယ်ကူစေသည်။ Windows AI Foundry ၏ အခြေခံအဆောက်အအုံအဖြစ် တည်ရှိသည်။ ဒီ platform သည် PC hardware အပြည့်အဝကို အသုံးပြုနိုင်သော AI-powered Windows applications ဖန်တီးရန် developer များကို အခွင့်အရေးပေးသည်။
 
 ### Platform စွမ်းဆောင်ရည်များ
-- Windows 11 PCs (version 24H2 build 26100) အထက်တွင် အလုပ်လုပ်နိုင်သည်။
-- x64 နှင့် ARM64 PC hardware အားလုံးတွင် အလုပ်လုပ်နိုင်သည်၊ NPU/GPU မပါသော PCs တွင်ပါ run လုပ်နိုင်သည်။
-- Developer များကို မိမိတို့ model များကို သက်သာစွာ deploy လုပ်နိုင်စေပြီး၊ AMD, Intel, NVIDIA, Qualcomm စသည်တို့၏ silicon partner ecosystem အတွင်း run လုပ်နိုင်သည်။
-- Infrastructure APIs အသုံးပြု၍ silicon မတူကွဲပြားမှုများအတွက် app build များကို မတူကွဲပြားစွာ ဖန်တီးရန် မလိုအပ်တော့ပါ။
+- Windows 11 PCs (version 24H2, build 26100) အထက်တွင် အလုပ်လုပ်နိုင်ခြင်း
+- x64 နှင့် ARM64 PC hardware အားလုံးတွင် အလုပ်လုပ်နိုင်ခြင်း၊ NPU/GPU မရှိသော PCs တွင်ပါ အလုပ်လုပ်နိုင်ခြင်း
+- Developer များအတွက် မော်ဒယ်များကို ကိုယ်ပိုင်ဖန်တီးပြီး AMD, Intel, NVIDIA, Qualcomm စသည်တို့၏ silicon partner ecosystem အတွင်း အထိရောက်ဆုံး deployment လုပ်နိုင်ခြင်း
+- Infrastructure APIs ကို အသုံးပြု၍ silicon မျိုးစုံ targeting အတွက် app builds များကို မတည်ဆောက်ရတော့ပဲ လွယ်ကူစေခြင်း
 
 ### Developer အကျိုးကျေးဇူးများ
-Windows ML သည် hardware နှင့် execution providers ကို abstract လုပ်ထားပြီး၊ developer များကို ကိုယ်ပိုင် code ရေးသားရန် အလွယ်ကူဆုံးဖြစ်စေသည်။ Windows ML သည် NPU, GPU, CPU များကို အဆင့်မြှင့်တင်မှုများနှင့်အတူ အလိုအလျောက် update လုပ်ပေးသည်။ Windows hardware ecosystem အတွင်း AI development အတွက် unified framework တစ်ခုကို ပေးစွမ်းသည်။
+Windows ML သည် hardware နှင့် execution providers ကို abstract လုပ်ပေးပြီး developer များအတွက် code ရေးသားခြင်းကို အလွယ်ကူစေသည်။ Windows ML သည် NPU, GPU, CPU များကို အဆက်မပြတ် update လုပ်ပေးပြီး အသစ်ထွက်လာသော hardware များကို support လုပ်ပေးသည်။ Windows hardware ecosystem အတွင်း AI development အတွက် unified framework ကို ပံ့ပိုးပေးသည်။
 
 **ပိုမိုလေ့လာရန်**: 
 - [Windows ML Overview](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
-- [Windows EdgeAI Development Guide](../windowdeveloper.md) - Windows Edge AI ဖွံ့ဖြိုးရေးအတွက် လမ်းညွှန်ချက်
+- [Windows EdgeAI Development Guide](../windowdeveloper.md) - Windows Edge AI ဖွံ့ဖြိုးတိုးတက်မှုအတွက် လမ်းညွှန်ချက်
 
 ## ၅။ Foundry Local Applications ဖြင့် EdgeAI
 
-Foundry Local သည် Retrieval Augmented Generation (RAG) applications ကို .NET အသုံးပြု၍ local resources ဖြင့် ဖန်တီးနိုင်စေသည်။ ဒီနည်းလမ်းသည် local language models နှင့် semantic search capabilities ကို ပေါင်းစပ်ထားပြီး privacy-focused AI solutions ကို local infrastructure ပေါ်တွင် run လုပ်နိုင်စေသည်။
+Foundry Local သည် Retrieval Augmented Generation (RAG) applications များကို .NET အသုံးပြု၍ local resources တွင် ဖန်တီးနိုင်စေသည်။ ဒီနည်းလမ်းသည် local language models နှင့် semantic search capabilities ကို ပေါင်းစပ်ထားပြီး privacy-focused AI solutions များကို local infrastructure ပေါ်တွင် လုပ်ဆောင်နိုင်စေသည်။
 
 ### Technical Architecture
-- Phi-3 language model, Local Embeddings, Semantic Kernel ကို ပေါင်းစပ်ထားပြီး RAG scenario တစ်ခုကို ဖန်တီးထားသည်။
-- Embeddings ကို floating-point values (vectors) အဖြစ် အသုံးပြု၍ content နှင့် semantic meaning ကို ကိုယ်စားပြုသည်။
-- Semantic Kernel သည် Phi-3 နှင့် Smart Components ကို ပေါင်းစပ်ထားပြီး seamless RAG pipeline တစ်ခုကို ဖန်တီးထားသည်။
-- SQLite နှင့် Qdrant အပါအဝင် local vector databases များကို ထောက်ပံ့သည်။
+- Phi language model, Local Embeddings, Semantic Kernel တို့ကို ပေါင်းစပ်၍ RAG scenario ဖန်တီးခြင်း
+- Embeddings ကို floating-point values (vectors) အဖြစ် အသုံးပြု၍ content နှင့် semantic meaning ကို ကိုယ်စားပြုခြင်း
+- Semantic Kernel သည် Phi နှင့် Smart Components ကို ပေါင်းစပ်၍ seamless RAG pipeline ဖန်တီးရန် အဓိက orchestrator အဖြစ် လုပ်ဆောင်ခြင်း
+- SQLite နှင့် Qdrant ကဲ့သို့သော local vector databases များကို ပံ့ပိုးပေးခြင်း
 
 ### Implementation အကျိုးကျေးဇူးများ
-RAG သည် "အချက်အလက်များကို ရှာဖွေပြီး prompt ထဲသို့ ထည့်ခြင်း" ကို ရိုးရှင်းစွာ ရှင်းပြထားသော နည်းလမ်းဖြစ်သည်။ ဒီ local implementation သည် data privacy ကို အထူးပြုထားပြီး၊ custom knowledge bases အပေါ် အခြေခံထားသော intelligent responses ကို ပေးစွမ်းနိုင်သည်။ Enterprise scenarios များအတွက် data sovereignty နှင့် offline operation capabilities လိုအပ်သောအခါ အထူးအသုံးဝင်သည်။
+RAG သည် "အချက်အလက်များကို ရှာဖွေပြီး prompt ထဲသို့ ထည့်ခြင်း" ဆိုသော အလွယ်ကူဆုံးနည်းလမ်းဖြစ်သည်။ ဒီ local implementation သည် data privacy ကို အထူးကောင်းမွန်စွာ ထိန်းသိမ်းပေးပြီး custom knowledge bases အပေါ် အခြေခံထားသော intelligent responses ကို ပေးစွမ်းနိုင်သည်။ ဒီနည်းလမ်းသည် data sovereignty နှင့် offline operation လိုအပ်သော enterprise scenarios များအတွက် အထူးတန်ဖိုးရှိသည်။
 
 **ပိုမိုလေ့လာရန်**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
+### Windows Foundry Local
+
+Microsoft Foundry Local သည် ONNX Runtime powered OpenAI-compatible REST server ကို Windows ပေါ်တွင် local မော်ဒယ်များကို run လုပ်ရန် ပံ့ပိုးပေးသည်။ အောက်တွင် validated အကျဉ်းချုပ်ကို ဖော်ပြထားပြီး အပြည့်အစုံကို official docs တွင် ကြည့်ရှုနိုင်သည်။
+
+- စတင်အသုံးပြုရန်: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Architecture: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
+- CLI reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
+- Windows အတွက် လမ်းညွှန်ချက်: [foundrylocal.md](./foundrylocal.md)
+
+Windows (cmd.exe) တွင် install သို့မဟုတ် upgrade:
+```cmd
+winget install Microsoft.FoundryLocal
+winget upgrade --id Microsoft.FoundryLocal
+foundry --version
+```
+
+CLI categories ကို explore လုပ်ရန်:
+```cmd
+foundry model --help
+foundry service --help
+foundry cache --help
+```
+
+မော်ဒယ် run လုပ်ပြီး dynamic endpoint ကို ရှာဖွေရန်:
+```cmd
+foundry model run gpt-oss-20b
+foundry service status
+```
+
+REST check ကို models list လုပ်ရန် (status မှ PORT ကို အစားထိုးပါ):
+```cmd
+curl -s http://localhost:PORT/v1/models
+```
+
+Tips:
+- SDK integration: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- ကိုယ်ပိုင်မော်ဒယ် (compile): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+
 ## Windows EdgeAI Development Resources
 
-Windows platform ကို အထူးပြုထားသော developer များအတွက် Windows EdgeAI ecosystem အပြည့်အစုံကို ဖော်ပြထားသော လမ်းညွှန်ချက်တစ်ခုကို ဖန်တီးထားသည်။ ဒီ resource သည် Windows AI Foundry, APIs, tools, EdgeAI development best practices စသည်တို့အကြောင်းကို အသေးစိတ်ဖော်ပြထားသည်။
+Windows platform ကို အထူးပစ်မှတ်ထားသော developer များအတွက် Windows EdgeAI ecosystem အပြည့်အစုံကို ဖော်ပြထားသော လမ်းညွှန်ချက်ကို ဖန်တီးထားသည်။ ဒီ resource သည် Windows AI Foundry အပါအဝင် APIs, tools, EdgeAI ဖွံ့ဖြိုးတိုးတက်မှုအတွက် အကောင်းဆုံးနည်းလမ်းများကို အသေးစိတ်ဖော်ပြထားသည်။
 
 ### Windows AI Foundry Platform
-Windows AI Foundry platform သည် Windows devices တွင် Edge AI development အတွက် အထူးပြုထားသော tools နှင့် APIs များကို ပေးစွမ်းသည်။ NPU-accelerated hardware, Windows ML integration, platform-specific optimization techniques စသည်တို့ကို ထောက်ပံ့သည်။
+Windows AI Foundry platform သည် Windows စက်ပစ္စည်းများပေါ်တွင် Edge AI ဖွံ့ဖြိုးတိုးတက်မှုအတွက် အထူးဒီဇိုင်းပြုလုပ်ထားသော tools နှင့် APIs များကို ပံ့ပိုးပေးသည်။ NPU-accelerated hardware, Windows ML integration, platform-specific optimization techniques အထူးပံ့ပိုးပေးထားသည်။
 
 **Comprehensive Guide**: [Windows EdgeAI Development Guide](../windowdeveloper.md)
 
-ဒီ guide တွင် ပါဝင်သည်များ:
+ဒီလမ်းညွှန်ချက်တွင် ပါဝင်သည်-
 - Windows AI Foundry platform overview နှင့် components
-- Phi Silica API ကို NPU hardware ပေါ်တွင် ထိရောက်စွာ inference လုပ်ရန်
-- Computer Vision APIs ကို image processing နှင့် OCR အတွက်
+- NPU hardware ပေါ်တွင် အထိရောက်ဆုံး inference အတွက် Phi Silica API
+- Computer Vision APIs (image processing နှင့် OCR)
 - Windows ML runtime integration နှင့် optimization
-- Foundry Local CLI ကို local development နှင့် testing အတွက်
+- Foundry Local CLI (local development နှင့် testing)
 - Windows devices အတွက် hardware optimization strategies
-- Practical implementation examples နှင့် best practices
+- Practical implementation examples နှင့် အကောင်းဆုံးနည်းလမ်းများ
 
-### AI Toolkit for Edge AI Development
-Visual Studio Code အသုံးပြု developer များအတွက် AI Toolkit extension သည် Edge AI applications ဖန်တီးခြင်း၊ စမ်းသပ်ခြင်း၊ deploy လုပ်ခြင်း အတွက် အထူးပြု development environment ကို ပေးစွမ်းသည်။ ဒီ toolkit သည် Edge AI development workflow အားလုံးကို VS Code အတွင်း streamline လုပ်ပေးသည်။
+### Edge AI Development အတွက် AI Toolkit
+Visual Studio Code ကို အသုံးပြုသော developer များအတွက် AI Toolkit extension သည် Edge AI applications ဖန်တီးခြင်း, စမ်းသပ်ခြင်း, deployment အတွက် အထူးဒီဇိုင်းပြုလုပ်ထားသော development environment ကို ပံ့ပိုးပေးသည်။ ဒီ toolkit သည် Edge AI development workflow အားလုံးကို VS Code အတွင်း streamline လုပ်ပေးသည်။
 
 **Development Guide**: [AI Toolkit for Edge AI Development](../aitoolkit.md)
 
-AI Toolkit guide တွင် ပါဝင်သည်များ:
-- Edge deployment အတွက် model ရွေးချယ်ခြင်းနှင့် ရှာဖွေခြင်း
+AI Toolkit လမ်းညွှန်ချက်တွင် ပါဝင်သည်-
+- Edge deployment အတွက် မော်ဒယ် ရှာဖွေခြင်းနှင့် ရွေးချယ်ခြင်း
 - Local testing နှင့် optimization workflows
-- ONNX နှင့် Ollama integration ကို edge models အတွက်
-- Model conversion နှင့် quantization techniques
+- Edge မော်ဒယ်များအတွက် ONNX နှင့် Ollama integration
+- မော်ဒယ် conversion နှင့် quantization techniques
 - Edge scenarios အတွက် agent development
-- Performance evaluation နှင့် monitoring
-- Deployment preparation နှင့် best practices
+- စွမ်းဆောင်ရည် အကဲဖြတ်ခြင်းနှင့် monitoring
+- Deployment ပြင်ဆင်ခြင်းနှင့် အကောင်းဆုံးနည်းလမ်းများ
 
 ## နိဂုံး
 
-ဒီ EdgeAI implementations ၅ ခုသည် edge AI solutions များ၏ အဆင့်မြင့်မှုနှင့် အမျိုးမျိုးသော အသုံးချနိုင်မှုများကို ပြသထားသည်။ Jetson Orin Nano ကဲ့သို့ hardware-accelerated edge devices မှ ONNX Runtime GenAI နှင့် Windows ML ကဲ့သို့ software frameworks အထိ၊ developer များအတွက် intelligent applications များကို edge ပေါ်တွင် deploy လုပ်နိုင်စေသည်။
+ဒီ EdgeAI implementation ၅ ခုသည် ယနေ့ခေတ် Edge AI ဖြေရှင်းနည်းများ၏ အဆင့်မြင့်မှုနှင့် အမျိုးမျိုးသော diversity ကို ပြသသည်။ Jetson Orin Nano ကဲ့သို့ hardware-accelerated edge devices မှ ONNX Runtime GenAI နှင့် Windows ML ကဲ့သို့ software frameworks အထိ developer များအတွက် edge တွင် intelligent applications ဖန်တီးရန် များစွာသော ရွေးချယ်မှုများကို ပေးစွမ်းသည်။
 
-ဒီ platform များအားလုံးတွင် AI စွမ်းရည်များကို democratize လုပ်ထားပြီး၊ developer များအတွက် skill level များနှင့် use case များအမျိုးမျိုးအတွက် အလွယ်တကူ အသုံးပြုနိုင်စေသည်။ Mobile applications, desktop software, embedded systems စသည်တို့ကို ဖန်တီးလိုသော developer များအတွက် EdgeAI solutions များသည် intelligent applications များကို edge ပေါ်တွင် privacy နှင့် efficiency ဖြင့် run လုပ်နိုင်စေသည်။
+ဒီ platform များအားလုံးတွင် AI စွမ်းရည်များကို democratize လုပ်ခြင်းသည် အဓိကဖြစ်ပြီး developer များအတွက် skill level မျိုးစုံနှင့် use case မျိုးစုံအတွက် sophisticated machine learning ကို လွယ်ကူစွာ အသုံးပြုနိုင်စေသည်။ Mobile applications, desktop software, embedded systems တို့ကို ဖန်တီးလိုသော developer များအတွက် ဒီ EdgeAI solutions များသည် edge တွင် privacy နှင့် efficiency ရှိသော next-generation intelligent applications ဖန်တီးရန် အခြေခံအဆောက်အအုံကို ပံ့ပိုးပေးသည်။
 
-Jetson Orin Nano သည် hardware-accelerated edge computing အတွက်၊ ONNX Runtime GenAI သည် cross-platform mobile development အတွက်၊ Azure EdgeAI သည် enterprise cloud-edge integration အတွက်၊ Windows ML သည် Windows-native applications အတွက်၊ Foundry Local သည် privacy-focused RAG implementations အတွက် အထူးပြုထားသည်။ ဒီ platform များသည် EdgeAI development အတွက် comprehensive ecosystem တစ်ခုကို ဖန်တီးပေးထားသည်။
+Jetson Orin Nano သည် hardware-accelerated edge computing အတွက် အထူးကောင်းမွန်ပြီး ONNX Runtime GenAI သည် cross-platform mobile development အတွက် အထူးသင့်လျော်သည်။ Azure EdgeAI သည် enterprise cloud-edge integration အတွက် အထူးကောင်းမွန်ပြီး Windows ML သည် Windows-native applications အတွက် အထူးသင့်လျော်သည်။ Foundry Local သည် privacy-focused RAG implementations အတွက် အထူးတန်ဖိုးရှိသည်။ EdgeAI development အတွက် comprehensive ecosystem ကို ပေါင်းစပ်ထားသော platform များဖြစ်သည်။
 
 ---
 
-**အကြောင်းကြားချက်**:  
-ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက် ဘာသာပြန်မှုများတွင် အမှားများ သို့မဟုတ် မတိကျမှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းဘာသာစကားဖြင့် ရေးသားထားသော စာရွက်စာတမ်းကို အာဏာတရ အရင်းအမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူ့ဘာသာပြန်ပညာရှင်များမှ ပရော်ဖက်ရှင်နယ် ဘာသာပြန်မှုကို အကြံပြုပါသည်။ ဤဘာသာပြန်မှုကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအမှားများ သို့မဟုတ် အနားယူမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။

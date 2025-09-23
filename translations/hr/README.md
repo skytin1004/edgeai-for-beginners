@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c817161ba08864340737d623f761b9ae",
-  "translation_date": "2025-09-18T21:10:12+00:00",
+  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
+  "translation_date": "2025-09-23T00:05:14+00:00",
   "source_file": "README.md",
   "language_code": "hr"
 }
 -->
 # EdgeAI za početnike
 
-![Slika naslovnice tečaja](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.hr.png)
+![Naslovna slika tečaja](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.hr.png)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)  
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)  
@@ -26,34 +26,34 @@ Slijedite ove korake kako biste započeli s korištenjem ovih resursa:
 
 1. **Forkajte repozitorij**: Kliknite [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Klonirajte repozitorij**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Pridružite se Azure AI Foundry Discordu i upoznajte stručnjake i kolege programere**](https://discord.com/invite/ByRwuEEgH4)  
+3. [**Pridružite se Azure AI Foundry Discordu i upoznajte stručnjake i kolege developere**](https://discord.com/invite/ByRwuEEgH4)  
 
 ### 🌐 Podrška za više jezika
 
 #### Podržano putem GitHub Action (Automatizirano i uvijek ažurirano)
 
-[Arapski](../ar/README.md) | [Bengalski](../bn/README.md) | [Bugarski](../bg/README.md) | [Burmanski (Mjanmar)](../my/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Makao)](../mo/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Hrvatski](./README.md) | [Češki](../cs/README.md) | [Danski](../da/README.md) | [Nizozemski](../nl/README.md) | [Finski](../fi/README.md) | [Francuski](../fr/README.md) | [Njemački](../de/README.md) | [Grčki](../el/README.md) | [Hebrejski](../he/README.md) | [Hindski](../hi/README.md) | [Mađarski](../hu/README.md) | [Indonezijski](../id/README.md) | [Talijanski](../it/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Malajski](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Norveški](../no/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Poljski](../pl/README.md) | [Portugalski (Brazil)](../br/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Rumunjski](../ro/README.md) | [Ruski](../ru/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Slovački](../sk/README.md) | [Slovenski](../sl/README.md) | [Španjolski](../es/README.md) | [Svahili](../sw/README.md) | [Švedski](../sv/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Tajlandski](../th/README.md) | [Turski](../tr/README.md) | [Ukrajinski](../uk/README.md) | [Urdu](../ur/README.md) | [Vijetnamski](../vi/README.md)
+[Arapski](../ar/README.md) | [Bengalski](../bn/README.md) | [Bugarski](../bg/README.md) | [Burmanski (Mjanmar)](../my/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Macau)](../mo/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Hrvatski](./README.md) | [Češki](../cs/README.md) | [Danski](../da/README.md) | [Nizozemski](../nl/README.md) | [Finski](../fi/README.md) | [Francuski](../fr/README.md) | [Njemački](../de/README.md) | [Grčki](../el/README.md) | [Hebrejski](../he/README.md) | [Hindski](../hi/README.md) | [Mađarski](../hu/README.md) | [Indonezijski](../id/README.md) | [Talijanski](../it/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Malajski](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Norveški](../no/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Poljski](../pl/README.md) | [Portugalski (Brazil)](../br/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Pandžapski (Gurmukhi)](../pa/README.md) | [Rumunjski](../ro/README.md) | [Ruski](../ru/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Slovački](../sk/README.md) | [Slovenski](../sl/README.md) | [Španjolski](../es/README.md) | [Svahili](../sw/README.md) | [Švedski](../sv/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Tajlandski](../th/README.md) | [Turski](../tr/README.md) | [Ukrajinski](../uk/README.md) | [Urdu](../ur/README.md) | [Vijetnamski](../vi/README.md)
 
-**Ako želite da se podrže dodatni jezici, popis podržanih jezika nalazi se [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Ako želite podršku za dodatne jezike, popis podržanih jezika nalazi se [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Uvod
 
-Dobrodošli u **EdgeAI za početnike** – vaš sveobuhvatan put u transformativni svijet rubne umjetne inteligencije. Ovaj tečaj povezuje moćne AI mogućnosti s praktičnom primjenom u stvarnom svijetu na rubnim uređajima, omogućujući vam da iskoristite potencijal AI-a tamo gdje se podaci generiraju i odluke trebaju donositi.
+Dobrodošli u **EdgeAI za početnike** – vaš sveobuhvatan vodič u transformativni svijet Edge umjetne inteligencije. Ovaj tečaj povezuje moćne AI mogućnosti s praktičnom primjenom na edge uređajima, omogućujući vam da iskoristite potencijal AI-a tamo gdje se podaci generiraju i odluke donose.
 
 ### Što ćete savladati
 
-Ovaj tečaj vas vodi od osnovnih pojmova do implementacija spremnih za proizvodnju, pokrivajući:
-- **Mali jezični modeli (SLM)** optimizirani za rubnu primjenu
+Ovaj tečaj vas vodi od osnovnih koncepata do implementacija spremnih za proizvodnju, pokrivajući:
+- **Mali jezični modeli (SLM)** optimizirani za edge primjenu
 - **Optimizacija prilagođena hardveru** na raznim platformama
 - **Inference u stvarnom vremenu** uz očuvanje privatnosti
-- **Strategije implementacije** za poslovne aplikacije
+- **Strategije za proizvodnu primjenu** u poslovnim aplikacijama
 
 ### Zašto je EdgeAI važan
 
-Edge AI predstavlja promjenu paradigme koja rješava ključne moderne izazove:
+Edge AI predstavlja promjenu paradigme koja rješava ključne suvremene izazove:
 - **Privatnost i sigurnost**: Obrada osjetljivih podataka lokalno, bez izlaganja oblaku
 - **Performanse u stvarnom vremenu**: Eliminacija mrežne latencije za aplikacije osjetljive na vrijeme
-- **Učinkovitost troškova**: Smanjenje troškova propusnosti i računalnih resursa u oblaku
+- **Učinkovitost troškova**: Smanjenje troškova za propusnost i računalstvo u oblaku
 - **Otpornost operacija**: Održavanje funkcionalnosti tijekom prekida mreže
 - **Regulatorna usklađenost**: Zadovoljavanje zahtjeva za suverenitetom podataka
 
@@ -61,8 +61,8 @@ Edge AI predstavlja promjenu paradigme koja rješava ključne moderne izazove:
 
 Edge AI odnosi se na pokretanje AI algoritama i jezičnih modela lokalno na hardveru – blizu mjesta gdje se podaci generiraju – bez oslanjanja na resurse oblaka za inference. Smanjuje latenciju, poboljšava privatnost i omogućuje donošenje odluka u stvarnom vremenu.
 
-### Osnovni principi:
-- **Inference na uređaju**: AI modeli se pokreću na rubnim uređajima (telefonima, ruterima, mikrokontrolerima, industrijskim PC-ima)
+### Temeljna načela:
+- **Inference na uređaju**: AI modeli se pokreću na edge uređajima (telefonima, ruterima, mikrokontrolerima, industrijskim PC-ima)
 - **Offline sposobnost**: Funkcionira bez stalne internetske povezanosti
 - **Niska latencija**: Trenutni odgovori prilagođeni sustavima u stvarnom vremenu
 - **Suverenitet podataka**: Zadržava osjetljive podatke lokalno, poboljšavajući sigurnost i usklađenost
@@ -70,124 +70,124 @@ Edge AI odnosi se na pokretanje AI algoritama i jezičnih modela lokalno na hard
 ### Mali jezični modeli (SLM)
 
 SLM-ovi poput Phi-4, Mistral-7B i Gemma su optimizirane verzije većih LLM-ova – trenirani ili destilirani za:
-- **Smanjeni memorijski otisak**: Učinkovito korištenje ograničene memorije rubnih uređaja
-- **Niži zahtjevi za računalnu snagu**: Optimizirani za performanse CPU-a i rubnih GPU-a
+- **Smanjeni memorijski otisak**: Učinkovito korištenje ograničene memorije edge uređaja
+- **Niži zahtjevi za računalnu snagu**: Optimizirani za performanse CPU-a i edge GPU-a
 - **Brže vrijeme pokretanja**: Brza inicijalizacija za responzivne aplikacije
 
-Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
+Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 - **Ugrađeni sustavi**: IoT uređaji i industrijski kontroleri
 - **Mobilni uređaji**: Pametni telefoni i tableti s offline sposobnostima
 - **IoT uređaji**: Senzori i pametni uređaji s ograničenim resursima
-- **Rubni serveri**: Lokalni procesni uređaji s ograničenim GPU resursima
-- **Osobna računala**: Scenariji implementacije na stolnim i prijenosnim računalima
+- **Edge serveri**: Lokalni procesni uređaji s ograničenim GPU resursima
+- **Osobna računala**: Scenariji primjene na stolnim i prijenosnim računalima
 
-## Struktura tečaja
+## Arhitektura tečaja
 
-### [Modul 01: Osnove EdgeAI i transformacija](./Module01/README.md)  
-**Tema**: Transformativna promjena u implementaciji Edge AI-a  
+### [Modul 01: Osnove EdgeAI i transformacija](./Module01/README.md)
+**Tema**: Transformativna promjena u primjeni Edge AI-a
 
 #### Struktura poglavlja:
-- [**Sekcija 1: Osnove EdgeAI**](./Module01/01.EdgeAIFundamentals.md)  
-  - Usporedba tradicionalnog AI-a u oblaku i Edge AI-a  
-  - Izazovi i ograničenja rubnog računalstva  
-  - Ključne tehnologije: kvantizacija modela, optimizacija kompresije, mali jezični modeli (SLM)  
-  - Hardverska akceleracija: NPU-ovi, optimizacija GPU-a, optimizacija CPU-a  
-  - Prednosti: privatnost, sigurnost, niska latencija, offline sposobnosti, troškovna učinkovitost  
+- [**Sekcija 1: Osnove EdgeAI**](./Module01/01.EdgeAIFundamentals.md)
+  - Usporedba tradicionalnog cloud AI-a i Edge AI-a
+  - Izazovi i ograničenja edge računalstva
+  - Ključne tehnologije: kvantizacija modela, optimizacija kompresije, mali jezični modeli (SLM)
+  - Hardverska akceleracija: NPUs, optimizacija GPU-a, optimizacija CPU-a
+  - Prednosti: sigurnost privatnosti, niska latencija, offline sposobnosti, troškovna učinkovitost
 
-- [**Sekcija 2: Studije slučaja iz stvarnog svijeta**](./Module01/02.RealWorldCaseStudies.md)  
-  - Ekosustav modela Microsoft Phi & Mu  
-  - Studija slučaja AI sustava izvještavanja Japan Airlinesa  
-  - Utjecaj na tržište i budući smjerovi  
-  - Razmatranja i najbolje prakse za implementaciju  
+- [**Sekcija 2: Studije slučaja iz stvarnog svijeta**](./Module01/02.RealWorldCaseStudies.md)
+  - Ekosustav modela Microsoft Phi & Mu
+  - Studija slučaja AI sustava izvještavanja Japan Airlinesa
+  - Utjecaj na tržište i budući smjerovi
+  - Razmatranja i najbolje prakse za primjenu
 
-- [**Sekcija 3: Praktični vodič za implementaciju**](./Module01/03.PracticalImplementationGuide.md)  
-  - Postavljanje razvojnog okruženja (Python 3.10+, .NET 8+)  
-  - Hardverski zahtjevi i preporučene konfiguracije  
-  - Resursi obitelji osnovnih modela  
-  - Alati za kvantizaciju i optimizaciju (Llama.cpp, Microsoft Olive, Apple MLX)  
-  - Popis za procjenu i provjeru  
+- [**Sekcija 3: Praktični vodič za implementaciju**](./Module01/03.PracticalImplementationGuide.md)
+  - Postavljanje razvojnog okruženja (Python 3.10+, .NET 8+)
+  - Hardverski zahtjevi i preporučene konfiguracije
+  - Resursi obitelji osnovnih modela
+  - Alati za kvantizaciju i optimizaciju (Llama.cpp, Microsoft Olive, Apple MLX)
+  - Lista za procjenu i provjeru
 
-- [**Sekcija 4: Hardverske platforme za implementaciju Edge AI-a**](./Module01/04.EdgeDeployment.md)  
-  - Razmatranja i zahtjevi za implementaciju Edge AI-a  
-  - Intel hardver za Edge AI i tehnike optimizacije  
-  - Qualcomm AI rješenja za mobilne i ugrađene sustave  
-  - NVIDIA Jetson i platforme za rubno računalstvo  
-  - Windows AI PC platforme s NPU akceleracijom  
-  - Strategije optimizacije specifične za hardver  
+- [**Sekcija 4: Hardverske platforme za primjenu Edge AI-a**](./Module01/04.EdgeDeployment.md)
+  - Razmatranja i zahtjevi za primjenu Edge AI-a
+  - Intel hardver za Edge AI i tehnike optimizacije
+  - Qualcomm AI rješenja za mobilne i ugrađene sustave
+  - NVIDIA Jetson i platforme za edge računalstvo
+  - Windows AI PC platforme s NPU akceleracijom
+  - Strategije optimizacije specifične za hardver
 
 ---
 
-### [Modul 02: Osnove malih jezičnih modela](./Module02/README.md)  
-**Tema**: Teorijski principi SLM-a, strategije implementacije i primjena u proizvodnji  
+### [Modul 02: Osnove malih jezičnih modela](./Module02/README.md)
+**Tema**: Teorijski principi SLM-a, strategije implementacije i primjena u proizvodnji
 
 #### Struktura poglavlja:
-- [**Sekcija 1: Osnove obitelji modela Microsoft Phi**](./Module02/01.PhiFamily.md)  
-  - Evolucija filozofije dizajna (Phi-1 do Phi-4)  
-  - Dizajn arhitekture s naglaskom na učinkovitost  
-  - Specijalizirane sposobnosti (rezoniranje, multimodalnost, rubna primjena)  
+- [**Sekcija 1: Osnove obitelji modela Microsoft Phi**](./Module02/01.PhiFamily.md)
+  - Evolucija filozofije dizajna (Phi-1 do Phi-4)
+  - Dizajn arhitekture s naglaskom na učinkovitost
+  - Specijalizirane sposobnosti (rezoniranje, multimodalnost, primjena na edge uređajima)
 
-- [**Sekcija 2: Osnove obitelji modela Qwen**](./Module02/02.QwenFamily.md)  
-  - Izvrsnost otvorenog koda (Qwen 1.0 do Qwen3) – dostupno putem Hugging Face  
-  - Napredna arhitektura rezoniranja s mogućnostima "thinking mode"  
-  - Skalabilne opcije implementacije (0.5B-235B parametara)  
+- [**Sekcija 2: Osnove obitelji Qwen**](./Module02/02.QwenFamily.md)
+  - Izvrsnost otvorenog koda (Qwen 1.0 do Qwen3) – dostupno putem Hugging Face-a
+  - Napredna arhitektura rezoniranja s mogućnostima "thinking mode"
+  - Skalabilne opcije primjene (0.5B-235B parametara)
 
-- [**Sekcija 3: Osnove obitelji modela Gemma**](./Module02/03.GemmaFamily.md)  
-  - Inovacija vođena istraživanjem (Gemma 3 & 3n)  
-  - Multimodalna izvrsnost  
-  - Arhitektura prilagođena mobilnim uređajima  
+- [**Sekcija 3: Osnove obitelji Gemma**](./Module02/03.GemmaFamily.md)
+  - Inovacija vođena istraživanjem (Gemma 3 & 3n)
+  - Multimodalna izvrsnost
+  - Arhitektura prilagođena mobilnim uređajima
 
-- [**Sekcija 4: Osnove obitelji modela BitNET**](./Module02/04.BitNETFamily.md)  
-  - Revolucionarna tehnologija kvantizacije (1.58-bit)  
-  - Specijalizirani okvir za inference s https://github.com/microsoft/BitNet  
-  - Održivo AI vodstvo kroz ekstremnu učinkovitost  
+- [**Sekcija 4: Osnove obitelji BitNET**](./Module02/04.BitNETFamily.md)
+  - Revolucionarna tehnologija kvantizacije (1.58-bit)
+  - Specijalizirani okvir za inference s https://github.com/microsoft/BitNet
+  - Održivo AI vodstvo kroz ekstremnu učinkovitost
 
-- [**Sekcija 5: Osnove modela Microsoft Mu**](./Module02/05.mumodel.md)  
-  - Arhitektura prilagođena uređajima ugrađena u Windows 11  
-  - Integracija sustava s postavkama Windows 11  
-  - Offline operacija uz očuvanje privatnosti  
+- [**Sekcija 5: Osnove modela Microsoft Mu**](./Module02/05.mumodel.md)
+  - Arhitektura prilagođena uređajima ugrađena u Windows 11
+  - Integracija sustava s postavkama Windows 11
+  - Offline operacija uz očuvanje privatnosti
 
-- [**Sekcija 6: Osnove Phi-Silica modela**](./Module02/06.phisilica.md)  
-  - Arhitektura optimizirana za NPU ugrađena u Windows 11 Copilot+ PC-e  
-  - Izvanredna učinkovitost (650 tokena/sekundi pri 1.5W)  
-  - Integracija za programere s Windows App SDK-om  
+- [**Sekcija 6: Osnove Phi-Silica**](./Module02/06.phisilica.md)
+  - Arhitektura optimizirana za NPU ugrađena u Windows 11 Copilot+ PC-e
+  - Izvanredna učinkovitost (650 tokena/sekundi pri 1.5W)
+  - Integracija za developere s Windows App SDK-om
 
 ---
 
-### [Modul 03: Implementacija malih jezičnih modela](./Module03/README.md)  
-**Tema**: Cjelokupni životni ciklus implementacije SLM-a, od teorije do proizvodnog okruženja  
+### [Modul 03: Primjena malih jezičnih modela](./Module03/README.md)
+**Tema**: Cjelokupni životni ciklus primjene SLM-a, od teorije do proizvodnog okruženja
 
 #### Struktura poglavlja:
-- [**Sekcija 1: Napredno učenje SLM-a**](./Module03/01.SLMAdvancedLearning.md)  
-  - Okvir za klasifikaciju parametara (Mikro SLM 100M-1.4B, Srednji SLM 14B-30B)  
-  - Napredne tehnike optimizacije (metode kvantizacije, BitNET 1-bit kvantizacija)  
-  - Strategije nabave modela (Azure AI Foundry za Phi modele, Hugging Face za odabrane modele)  
+- [**Sekcija 1: Napredno učenje SLM-a**](./Module03/01.SLMAdvancedLearning.md)
+  - Okvir za klasifikaciju parametara (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
+  - Napredne tehnike optimizacije (metode kvantizacije, BitNET 1-bit kvantizacija)
+  - Strategije za nabavu modela (Azure AI Foundry za Phi modele, Hugging Face za odabrane modele)
 
-- [**Sekcija 2: Implementacija u lokalnom okruženju**](./Module03/02.DeployingSLMinLocalEnv.md)  
-  - Ollama univerzalna platforma za implementaciju  
-  - Microsoft Foundry lokalna rješenja za poslovnu primjenu  
-  - Komparativna analiza okvira  
+- [**Sekcija 2: Primjena u lokalnom okruženju**](./Module03/02.DeployingSLMinLocalEnv.md)
+  - Ollama univerzalna platforma za primjenu
+  - Microsoft Foundry lokalna rješenja za poslovnu primjenu
+  - Komparativna analiza okvira
 
-- [**Sekcija 3: Implementacija u oblaku s kontejnerima**](./Module03/03.DeployingSLMinCloud.md)  
-  - vLLM implementacija za inference visokih performansi  
-  - Orkestracija kontejnera Ollama  
-  - ONNX Runtime optimizirana implementacija za rub  
+- [**Sekcija 3: Primjena u oblaku putem kontejnera**](./Module03/03.DeployingSLMinCloud.md)
+  - vLLM primjena za inference visokih performansi
+  - Orkestracija kontejnera Ollama
+  - ONNX Runtime edge-optimizirana implementacija
 
 ---
 
-### [Modul 04: Konverzija formata modela i kvantizacija](./Module04/README.md)  
-**Tema**: Kompletan alat za optimizaciju modela za rubnu primjenu na različitim platformama  
+### [Modul 04: Konverzija formata modela i kvantizacija](./Module04/README.md)
+**Tema**: Kompletan alat za optimizaciju modela za edge primjenu na različitim platformama
 
 #### Struktura poglavlja:
-- [**Sekcija 1: Osnove konverzije formata modela i kvantizacije**](./Module04/01.Introduce.md)  
-  - Okvir za klasifikaciju preciznosti (ultra-niska, niska, srednja preciznost)  
-  - Prednosti i primjene GGUF i ONNX formata  
-  - Prednosti kvantizacije za operativnu učinkovitost  
-  - Usporedbe performansi i memorijskog otiska  
+- [**Sekcija 1: Osnove konverzije formata modela i kvantizacije**](./Module04/01.Introduce.md)
+  - Okvir za klasifikaciju preciznosti (ultra-niska, niska, srednja preciznost)
+  - Prednosti i slučajevi upotrebe GGUF i ONNX formata
+  - Prednosti kvantizacije za operativnu učinkovitost
+  - Benchmarkovi performansi i usporedbe memorijskog otiska
 - [**Odjeljak 2: Vodič za implementaciju Llama.cpp**](./Module04/02.Llamacpp.md)
   - Instalacija na više platformi (Windows, macOS, Linux)
-  - Konverzija u GGUF format i razine kvantizacije (Q2_K do Q8_0)
+  - Pretvorba u GGUF format i razine kvantizacije (Q2_K do Q8_0)
   - Hardverska akceleracija (CUDA, Metal, OpenCL, Vulkan)
-  - Integracija s Pythonom i implementacija REST API-ja
+  - Integracija s Pythonom i postavljanje REST API-ja
 
 - [**Odjeljak 3: Microsoft Olive Optimization Suite**](./Module04/03.MicrosoftOlive.md)
   - Optimizacija modela prilagođena hardveru s više od 40 ugrađenih komponenti
@@ -197,26 +197,26 @@ Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
 
 - [**Odjeljak 4: OpenVINO Toolkit Optimization Suite**](./Module04/04.openvino.md)
   - Intelov otvoreni alat za implementaciju AI-a na više platformi
-  - Okvir za kompresiju neuronskih mreža (NNCF) za naprednu optimizaciju
+  - Neural Network Compression Framework (NNCF) za naprednu optimizaciju
   - OpenVINO GenAI za implementaciju velikih jezičnih modela
   - Hardverska akceleracija na CPU, GPU, VPU i AI akceleratorima
 
 - [**Odjeljak 5: Apple MLX Framework - Detaljna analiza**](./Module04/05.AppleMLX.md)
-  - Arhitektura unificirane memorije za Apple Silicon
-  - Podrška za LLaMA, Mistral, Phi-3, odabrane Qwen modele
+  - Jedinstvena memorijska arhitektura za Apple Silicon
+  - Podrška za LLaMA, Mistral, Phi, odabrane Qwen modele
   - LoRA fino podešavanje i prilagodba modela
   - Integracija s Hugging Face uz kvantizaciju od 4-bit/8-bit
 
 - [**Odjeljak 6: Sinteza radnog tijeka za razvoj Edge AI-a**](./Module04/06.workflow-synthesis.md)
-  - Unificirana arhitektura radnog tijeka koja integrira više okvira za optimizaciju
+  - Jedinstvena arhitektura radnog tijeka koja integrira više okvira za optimizaciju
   - Stabla odluka za odabir okvira i analiza kompromisa u performansama
-  - Validacija spremnosti za proizvodnju i strategije za implementaciju
+  - Validacija spremnosti za proizvodnju i sveobuhvatne strategije implementacije
   - Strategije za buduću prilagodbu novim hardverskim i modelskim arhitekturama
 
 ---
 
 ### [Modul 05: SLMOps - Operacije malih jezičnih modela](./Module05/README.md)
-**Tema**: Cjelokupni životni ciklus SLM-a od destilacije do implementacije u proizvodnji
+**Tema**: Cjelokupne operacije životnog ciklusa SLM-a, od destilacije do implementacije u proizvodnji
 
 #### Struktura poglavlja:
 - [**Odjeljak 1: Uvod u SLMOps**](./Module05/01.IntroduceSLMOps.md)
@@ -226,20 +226,20 @@ Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
   - Izazovi i rješenja u stvarnoj implementaciji
 
 - [**Odjeljak 2: Destilacija modela - Od teorije do prakse**](./Module05/02.SLMOps-Distillation.md)
-  - Prijenos znanja s učiteljskih na učeničke modele
+  - Prijenos znanja s učitelja na studentske modele
   - Implementacija dvostupanjskog procesa destilacije
   - Azure ML radni tijekovi destilacije s praktičnim primjerima
   - Smanjenje vremena inferencije za 85% uz zadržavanje 92% točnosti
 
 - [**Odjeljak 3: Fino podešavanje - Prilagodba modela za specifične zadatke**](./Module05/03.SLMOps-Finetuing.md)
-  - Tehnike učinkovitog finog podešavanja parametara (PEFT)
+  - Tehnike učinkovitog fino podešavanja parametara (PEFT)
   - Napredne metode LoRA i QLoRA
-  - Implementacija finog podešavanja putem Microsoft Olive
+  - Implementacija fino podešavanja pomoću Microsoft Olive
   - Trening s više adaptera i optimizacija hiperparametara
 
 - [**Odjeljak 4: Implementacija - Spremnost za proizvodnju**](./Module05/04.SLMOps.Deployment.md)
-  - Konverzija i kvantizacija modela za proizvodnju
-  - Konfiguracija za lokalnu implementaciju putem Foundry Local
+  - Pretvorba modela i kvantizacija za proizvodnju
+  - Konfiguracija za lokalnu implementaciju Foundry Local
   - Benchmarking performansi i validacija kvalitete
   - Smanjenje veličine za 75% uz praćenje u proizvodnji
 
@@ -250,21 +250,21 @@ Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
 
 #### Struktura poglavlja:
 - [**Odjeljak 1: AI agenti i temelji malih jezičnih modela**](./Module06/01.IntroduceAgent.md)
-  - Okvir za klasifikaciju agenata (refleksni, temeljeni na modelu, temeljeni na cilju, učeni agenti)
-  - Temelji SLM-a i strategije optimizacije (GGUF, kvantizacija, edge okviri)
-  - Analiza kompromisa između SLM-a i LLM-a (10-30× smanjenje troškova, 70-80% učinkovitosti zadatka)
+  - Okvir za klasifikaciju agenata (refleksni, temeljeni na modelu, temeljeni na cilju, učni agenti)
+  - Temelji SLM-a i strategije optimizacije (GGUF, kvantizacija, okviri za rubne uređaje)
+  - Analiza kompromisa između SLM-a i LLM-a (10-30× smanjenje troškova, 70-80% učinkovitost zadataka)
   - Praktična implementacija s Ollama, VLLM i Microsoft edge rješenjima
 
 - [**Odjeljak 2: Pozivanje funkcija u malim jezičnim modelima**](./Module06/02.FunctionCalling.md)
-  - Sustavna implementacija radnog tijeka (detekcija namjere, JSON izlaz, vanjsko izvršenje)
+  - Sustavna implementacija radnog tijeka (detekcija namjere, JSON izlaz, vanjsko izvršavanje)
   - Implementacije specifične za platformu (Phi-4-mini, odabrani Qwen modeli, Microsoft Foundry Local)
   - Napredni primjeri (suradnja više agenata, dinamički odabir alata)
-  - Razmatranja za proizvodnju (ograničavanje brzine, zapisivanje revizija, sigurnosne mjere)
+  - Razmatranja za proizvodnju (ograničenje brzine, zapisivanje revizije, sigurnosne mjere)
 
 - [**Odjeljak 3: Integracija Model Context Protocol-a (MCP)**](./Module06/03.IntroduceMCP.md)
   - Arhitektura protokola i dizajn slojevitog sustava
   - Podrška za više backend sustava (Ollama za razvoj, vLLM za proizvodnju)
-  - Protokoli povezivanja (STDIO i SSE modovi)
+  - Protokoli povezivanja (STDIO i SSE načini)
   - Primjene u stvarnom svijetu (automatizacija weba, obrada podataka, integracija API-ja)
 
 ---
@@ -275,9 +275,9 @@ Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
 #### Struktura poglavlja:
 - [**AI alat za Visual Studio Code**](./Module07/aitoolkit.md)
   - Sveobuhvatno razvojno okruženje za Edge AI unutar VS Code-a
-  - Katalog modela i otkrivanje za implementaciju na rubu
+  - Katalog modela i otkrivanje za implementaciju na rubnim uređajima
   - Lokalno testiranje, optimizacija i radni tijekovi razvoja agenata
-  - Praćenje performansi i evaluacija za rubne scenarije
+  - Praćenje performansi i evaluacija za scenarije na rubnim uređajima
 
 - [**Vodič za razvoj EdgeAI-a na Windowsu**](./Module07/windowdeveloper.md)
   - Sveobuhvatan pregled Windows AI Foundry platforme
@@ -292,60 +292,71 @@ Oni omogućuju moćne NLP mogućnosti dok zadovoljavaju ograničenja:
   - Pristupačna platforma od $249 za demokratizirani AI razvoj
 
 - [**EdgeAI u mobilnim aplikacijama s .NET MAUI i ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
-  - AI na mobilnim uređajima s jedinstvenom C# bazom koda
+  - AI na mobilnim uređajima na više platformi s jedinstvenom C# bazom koda
   - Podrška za hardversku akceleraciju (CPU, GPU, mobilni AI procesori)
   - Optimizacije specifične za platformu (CoreML za iOS, NNAPI za Android)
-  - Kompletna implementacija generativnog AI ciklusa
+  - Potpuna implementacija generativnog AI ciklusa
 
 - [**EdgeAI u Azureu s motorom malih jezičnih modela**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
-  - Hibridna arhitektura implementacije između oblaka i ruba
+  - Hibridna arhitektura implementacije između oblaka i rubnih uređaja
   - Integracija Azure AI usluga s ONNX Runtime-om
   - Implementacija na razini poduzeća i kontinuirano upravljanje modelima
   - Hibridni AI radni tijekovi za inteligentnu obradu dokumenata
 
 - [**EdgeAI s Windows ML-om**](./Module07/README.md#4-edgeai-with-windows-ml)
   - Temelj Windows AI Foundry-a za učinkovitu inferenciju na uređaju
-  - Univerzalna podrška za hardver (AMD, Intel, NVIDIA, Qualcomm čipovi)
+  - Univerzalna podrška za hardver (AMD, Intel, NVIDIA, Qualcomm)
   - Automatska apstrakcija i optimizacija hardvera
-  - Unificirani okvir za raznoliki Windows hardverski ekosustav
+  - Jedinstveni okvir za raznoliki Windows hardverski ekosustav
 
-- [**EdgeAI s lokalnim aplikacijama Foundry-a**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
+- [**EdgeAI s lokalnim aplikacijama Foundry Local**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
   - Implementacija usmjerena na privatnost s lokalnim resursima
-  - Integracija Phi-3 jezičnog modela sa semantičkom pretragom (samo Phi modeli)
+  - Integracija Phi-4 jezičnog modela sa semantičkom pretragom (samo Phi modeli)
   - Podrška za lokalne vektorske baze podataka (SQLite, Qdrant)
-  - Suverenitet podataka i mogućnosti rada izvan mreže
+  - Suverenitet podataka i mogućnosti offline rada
+
+### [Modul 08: Microsoft Foundry Local – Kompletan alat za razvojne programere](./Module08/README.md)
+**Tema**: Izgradnja, pokretanje i integracija AI-a lokalno s Foundry Local; skaliranje i hibridizacija s Azure AI Foundry
+
+#### Struktura poglavlja:
+- [**1: Početak rada s Foundry Local**](./Module08/01.FoundryLocalSetup.md)
+- [**2: Izgradnja AI rješenja s Azure AI Foundry**](./Module08/02.AzureAIFoundryIntegration.md)
+- [**3: Open-source modeli u Foundry Local**](./Module08/03.OpenSourceModels.md)
+- [**4: Najnoviji modeli i inferencija na uređaju**](./Module08/04.CuttingEdgeModels.md)
+- [**5: AI-pokretani agenti s Foundry Local**](./Module08/05.AIPoweredAgents.md)
+- [**6: Modeli kao alati**](./Module08/06.ModelsAsTools.md)
 
 ## Ciljevi učenja tečaja
 
-Završetkom ovog sveobuhvatnog tečaja EdgeAI-a, razvijat ćete stručnost u dizajnu, implementaciji i implementaciji proizvodno spremnih EdgeAI rješenja. Naš strukturirani pristup osigurava da savladate i teorijske temelje i praktične vještine implementacije.
+Završetkom ovog sveobuhvatnog tečaja EdgeAI-a, razvijat ćete stručnost u dizajniranju, implementaciji i implementaciji EdgeAI rješenja spremnih za proizvodnju. Naš strukturirani pristup osigurava da savladate i teorijske temelje i praktične vještine implementacije.
 
 ### Tehničke kompetencije
 
 **Temeljno znanje**
-- Razumijevanje temeljnih razlika između AI arhitektura temeljenih na oblaku i rubu
+- Razumijevanje temeljnih razlika između AI arhitektura temeljenih na oblaku i rubnim uređajima
 - Ovladavanje principima kvantizacije modela, kompresije i optimizacije za okruženja s ograničenim resursima
 - Razumijevanje opcija hardverske akceleracije (NPU, GPU, CPU) i njihovih implikacija na implementaciju
 
 **Vještine implementacije**
-- Implementacija malih jezičnih modela na raznim rubnim platformama (mobilne, ugrađene, IoT, rubni serveri)
-- Primjena okvira za optimizaciju uključujući Llama.cpp, Microsoft Olive, ONNX Runtime i Apple MLX
+- Implementacija malih jezičnih modela na raznim rubnim platformama (mobilni uređaji, ugrađeni sustavi, IoT, rubni serveri)
+- Primjena okvira za optimizaciju, uključujući Llama.cpp, Microsoft Olive, ONNX Runtime i Apple MLX
 - Implementacija sustava za inferenciju u stvarnom vremenu s zahtjevima za odziv ispod sekunde
 
-**Ekspertiza u proizvodnji**
+**Stručnost u proizvodnji**
 - Dizajn skalabilnih EdgeAI arhitektura za poslovne aplikacije
-- Implementacija strategija za praćenje, održavanje i ažuriranje sustava
+- Implementacija strategija za praćenje, održavanje i ažuriranje implementiranih sustava
 - Primjena najboljih sigurnosnih praksi za implementacije EdgeAI-a koje čuvaju privatnost
 
 ### Strateške sposobnosti
 
 **Okvir za donošenje odluka**
-- Procjena EdgeAI prilika i identifikacija prikladnih slučajeva upotrebe za poslovne aplikacije
+- Procjena EdgeAI prilika i identifikacija odgovarajućih slučajeva upotrebe za poslovne aplikacije
 - Procjena kompromisa između točnosti modela, brzine inferencije, potrošnje energije i troškova hardvera
 - Odabir odgovarajućih obitelji SLM-a i konfiguracija na temelju specifičnih ograničenja implementacije
 
 **Arhitektura sustava**
 - Dizajn end-to-end EdgeAI rješenja koja se integriraju s postojećom infrastrukturom
-- Planiranje hibridnih arhitektura oblaka i ruba za optimalne performanse i troškovnu učinkovitost
+- Planiranje hibridnih arhitektura rub-oblak za optimalne performanse i troškovnu učinkovitost
 - Implementacija tijekova podataka i obrada za AI aplikacije u stvarnom vremenu
 
 ### Industrijske primjene
@@ -359,45 +370,45 @@ Završetkom ovog sveobuhvatnog tečaja EdgeAI-a, razvijat ćete stručnost u diz
 
 ## Pregled ishoda učenja
 
-### Ishodi učenja Modula 01:
-- Razumijevanje temeljnih razlika između AI arhitektura temeljenih na oblaku i rubu
-- Ovladavanje osnovnim tehnikama optimizacije za implementaciju na rubu
+### Ishodi učenja modula 01:
+- Razumijevanje temeljnih razlika između AI arhitektura temeljenih na oblaku i rubnim uređajima
+- Ovladavanje osnovnim tehnikama optimizacije za implementaciju na rubnim uređajima
 - Prepoznavanje stvarnih primjena i uspješnih priča
 - Stjecanje praktičnih vještina za implementaciju EdgeAI rješenja
 
-### Ishodi učenja Modula 02:
+### Ishodi učenja modula 02:
 - Duboko razumijevanje različitih filozofija dizajna SLM-a i njihovih implikacija na implementaciju
 - Ovladavanje strateškim sposobnostima donošenja odluka na temelju računalnih ograničenja i zahtjeva za performansama
 - Razumijevanje kompromisa u fleksibilnosti implementacije
-- Posjedovanje uvida u budućnost učinkovitih AI arhitektura
+- Posjedovanje uvida u budućnost za učinkovitu AI arhitekturu
 
-### Ishodi učenja Modula 03:
+### Ishodi učenja modula 03:
 - Strateške sposobnosti odabira modela
 - Ovladavanje tehnikama optimizacije
 - Ovladavanje fleksibilnošću implementacije
 - Sposobnosti konfiguracije spremne za proizvodnju
 
-### Ishodi učenja Modula 04:
+### Ishodi učenja modula 04:
 - Duboko razumijevanje granica kvantizacije i praktičnih primjena
 - Praktično iskustvo s više okvira za optimizaciju (Llama.cpp, Olive, OpenVINO, MLX)
-- Ovladavanje Intelovom hardverskom optimizacijom putem OpenVINO-a i NNCF-a
+- Ovladavanje Intelovom hardverskom optimizacijom pomoću OpenVINO-a i NNCF-a
 - Sposobnosti odabira optimizacije prilagođene hardveru na raznim platformama
-- Vještine implementacije za proizvodnju u okruženjima za računalstvo na rubu
+- Vještine implementacije u proizvodnji za računalna okruženja na više platformi
 - Strateški odabir okvira i sinteza radnog tijeka za optimalna Edge AI rješenja
 
-### Ishodi učenja Modula 05:
+### Ishodi učenja modula 05:
 - Ovladavanje paradigmom SLMOps-a i operativnim principima
 - Implementacija destilacije modela za prijenos znanja i optimizaciju učinkovitosti
 - Primjena tehnika finog podešavanja za prilagodbu modela specifičnim domenama
-- Implementacija proizvodno spremnih SLM rješenja s strategijama za praćenje i održavanje
+- Implementacija SLM rješenja spremnih za proizvodnju uz strategije praćenja i održavanja
 
-### Ishodi učenja Modula 06:
+### Ishodi učenja modula 06:
 - Razumijevanje temeljnih koncepata AI agenata i arhitekture malih jezičnih modela
 - Ovladavanje implementacijom pozivanja funkcija na više platformi i okvira
 - Integracija Model Context Protocol-a (MCP) za standardiziranu interakciju s vanjskim alatima
 - Izgradnja sofisticiranih agentnih sustava s minimalnim zahtjevima za ljudsku intervenciju
 
-### Ishodi učenja Modula 07:
+### Ishodi učenja modula 07:
 - Ovladavanje AI alatom za Visual Studio Code za sveobuhvatne radne tijekove razvoja Edge AI-a
 - Stjecanje stručnosti u Windows AI Foundry platformi i strategijama optimizacije NPU-a
 - Praktično iskustvo s raznim EdgeAI platformama i strategijama implementacije
@@ -409,22 +420,42 @@ Završetkom ovog sveobuhvatnog tečaja EdgeAI-a, razvijat ćete stručnost u diz
 
 Nakon uspješnog završetka ovog tečaja, bit ćete opremljeni znanjem, vještinama i samopouzdanjem za vođenje EdgeAI inicijativa u profesionalnim okruženjima.
 
-### Spremnost za profesionalni rad
+### Profesionalna spremnost
 
 **Tehničko vodstvo**
-- **Arhitektura rješenja**: Dizajn sveobuhvatnih EdgeAI sustava koji zadovoljavaju poslovne zahtjeve
-- **Optimizacija performansi**: Postizanje optimalne ravnoteže između točnosti, brzine i potrošnje resursa
-- **Implementacija na više platformi**: Implementacija rješenja na Windows, Linux, mobilnim i ugrađenim platformama
-- **Operacije u proizvodnji**: Održavanje i skaliranje EdgeAI sustava s pouzdanošću na razini poduzeća
+-
+- **Upravljanje rizicima**: Identificirajte i ublažite tehničke i operativne rizike u EdgeAI implementacijama
+- **Optimizacija ROI-a**: Pokažite mjerljivu poslovnu vrijednost EdgeAI implementacija
 
-**Industrijska stručnost**
-- **Procjena tehnologije**: Procjena i preporuka EdgeAI rješenja za specifične poslovne izazove
-- **Planiranje implementacije**: Razvoj realističnih vremenskih okvira i zahtjeva za resursima za EdgeAI projekte
-- **Upravljanje rizicima**: Identifikacija i ublažavanje tehničkih i operativnih rizika u EdgeAI implementacijama
-- **Optimizacija ROI-a**: Demonstracija mjerljive poslovne vrijednosti od EdgeAI implementacija
+### Mogućnosti za napredovanje u karijeri
 
-### Mogućnosti za napredovanje u kar
-Ovaj tečaj postavlja vas na čelo primjene AI tehnologije, gdje se inteligentne sposobnosti besprijekorno integriraju u uređaje i sustave koji pokreću suvremeni život.
+**Profesionalne uloge**
+- EdgeAI arhitekt rješenja
+- Inženjer strojnog učenja (specijalizacija za Edge)
+- IoT AI programer
+- Programer mobilnih AI aplikacija
+- Konzultant za AI u poduzećima
+
+**Industrijski sektori**
+- Pametna proizvodnja i Industrija 4.0
+- Autonomna vozila i transport
+- Tehnologija u zdravstvu i medicinski uređaji
+- Financijska tehnologija i sigurnost
+- Potrošačka elektronika i mobilne aplikacije
+
+### Certifikacija i validacija
+
+**Razvoj portfelja**
+- Završite EdgeAI projekte od početka do kraja koji demonstriraju praktične vještine
+- Implementirajte rješenja spremna za proizvodnju na različitim hardverskim platformama
+- Dokumentirajte strategije optimizacije i postignuta poboljšanja performansi
+
+**Put kontinuiranog učenja**
+- Temelj za napredne AI specijalizacije
+- Priprema za hibridne arhitekture oblaka i rubnih uređaja
+- Ulaz u nove AI tehnologije i okvire
+
+Ovaj tečaj vas pozicionira na čelo implementacije AI tehnologije, gdje se inteligentne sposobnosti besprijekorno integriraju u uređaje i sustave koji pokreću suvremeni život.
 
 ## Dijagram strukture datoteka
 
@@ -474,6 +505,14 @@ edgeai-for-beginners/
 │   ├── aitoolkit.md
 │   ├── windowdeveloper.md
 │   └── README.md
+├── Module08/ (Hands on with Foundry Local)
+│   ├── 01.FoundryLocalSetup.md
+│   ├── 02.AzureAIFoundryIntegration.md
+│   ├── 03.OpenSourceModels.md
+│   ├── 04.CuttingEdgeModels.md
+│   ├── 05.AIPoweredAgents.md
+│   ├── 06.ModelsAsTools.md
+│   └── README.md
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md (This file)
@@ -484,29 +523,30 @@ edgeai-for-beginners/
 
 ## Značajke tečaja
 
-- **Progresivno učenje**: Postupno napredovanje od osnovnih pojmova do napredne primjene
+- **Progresivno učenje**: Postupno napredujte od osnovnih pojmova do napredne implementacije
 - **Integracija teorije i prakse**: Svaki modul sadrži teorijske temelje i praktične operacije
 - **Stvarne studije slučaja**: Temeljene na stvarnim slučajevima iz Microsofta, Alibabe, Googlea i drugih
-- **Praktična vježba**: Kompletne konfiguracijske datoteke, postupci testiranja API-ja i skripte za primjenu
+- **Praktična vježba**: Završite konfiguracijske datoteke, postupke testiranja API-ja i skripte za implementaciju
 - **Referentne performanse**: Detaljne usporedbe brzine zaključivanja, korištenja memorije i zahtjeva za resursima
 - **Razmatranja na razini poduzeća**: Prakse sigurnosti, okviri usklađenosti i strategije zaštite podataka
 
-## Početak
+## Početak rada
 
 Preporučeni put učenja:
 1. Započnite s **Module01** kako biste izgradili temeljno razumijevanje EdgeAI-a
-2. Nastavite s **Module02** za dubinsko razumijevanje različitih obitelji SLM modela
-3. Naučite **Module03** kako biste savladali praktične vještine primjene
+2. Nastavite s **Module02** za dubinsko razumijevanje različitih SLM modela
+3. Naučite **Module03** kako biste savladali praktične vještine implementacije
 4. Nastavite s **Module04** za naprednu optimizaciju modela, konverziju formata i sintezu okvira
 5. Završite **Module05** kako biste savladali SLMOps za implementacije spremne za proizvodnju
 6. Istražite **Module06** kako biste razumjeli SLM agentne sustave i mogućnosti pozivanja funkcija
-7. Završite s **Module07** kako biste stekli praktično iskustvo s AI Toolkitom i raznovrsnim primjerima primjene EdgeAI-a
+7. Završite s **Module07** kako biste stekli praktično iskustvo s AI alatima i raznovrsnim EdgeAI primjerima implementacije
+8. Istražite **Module08** za kompletan Foundry Local alat za razvoj (lokalni razvoj s hibridnom integracijom Azurea)
 
-Svaki modul je dizajniran da bude samostalno cjelovit, ali sekvencijalno učenje pružit će najbolje rezultate.
+Svaki modul je dizajniran da bude samostalno dovršen, ali sekvencijalno učenje pružit će najbolje rezultate.
 
 ## Vodič za učenje
 
-Sveobuhvatan [Vodič za učenje](STUDY_GUIDE.md) dostupan je kako bi vam pomogao da maksimalno iskoristite svoje iskustvo učenja. Vodič za učenje pruža:
+Dostupan je sveobuhvatan [Vodič za učenje](STUDY_GUIDE.md) koji će vam pomoći da maksimalno iskoristite svoje iskustvo učenja. Vodič za učenje pruža:
 
 - **Strukturirane putove učenja**: Optimizirani rasporedi za završetak tečaja u 20 sati
 - **Smjernice za raspodjelu vremena**: Specifične preporuke za balansiranje čitanja, vježbi i projekata
@@ -514,15 +554,15 @@ Sveobuhvatan [Vodič za učenje](STUDY_GUIDE.md) dostupan je kako bi vam pomogao
 - **Alati za samoprocjenu**: Pitanja i vježbe za testiranje vašeg razumijevanja
 - **Ideje za mini-projekte**: Praktične primjene za učvršćivanje vašeg znanja
 
-Vodič za učenje prilagođen je intenzivnom učenju (1 tjedan) i učenju u slobodno vrijeme (3 tjedna), s jasnim smjernicama o tome kako učinkovito raspodijeliti vrijeme čak i ako možete posvetiti samo 10 sati tečaju.
+Vodič za učenje je dizajniran da odgovara intenzivnom učenju (1 tjedan) i učenju na pola radnog vremena (3 tjedna), s jasnim smjernicama kako učinkovito raspodijeliti vrijeme čak i ako možete posvetiti samo 10 sati tečaju.
 
 ---
 
-**Budućnost EdgeAI-a leži u kontinuiranom poboljšanju arhitektura modela, tehnika kvantizacije i strategija primjene koje daju prednost učinkovitosti i specijalizaciji nad općim sposobnostima. Organizacije koje prihvate ovu promjenu paradigme bit će u dobroj poziciji da iskoriste transformativni potencijal AI-a, dok istovremeno zadržavaju kontrolu nad svojim podacima i operacijama.**
+**Budućnost EdgeAI-a leži u kontinuiranom poboljšavanju arhitektura modela, tehnika kvantizacije i strategija implementacije koje prioritiziraju učinkovitost i specijalizaciju nad općim sposobnostima. Organizacije koje prihvate ovu promjenu paradigme bit će dobro pozicionirane za iskorištavanje transformativnog potencijala AI-a uz zadržavanje kontrole nad svojim podacima i operacijama.**
 
 ## Ostali tečajevi
 
-Naš tim proizvodi i druge tečajeve! Pogledajte:
+Naš tim nudi i druge tečajeve! Pogledajte:
 
 - [MCP za početnike](https://github.com/microsoft/mcp-for-beginners)
 - [AI agenti za početnike](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -542,5 +582,3 @@ Naš tim proizvodi i druge tečajeve! Pogledajte:
 
 ---
 
-**Odricanje od odgovornosti**:  
-Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane čovjeka. Ne preuzimamo odgovornost za bilo kakve nesporazume ili pogrešne interpretacije koje proizlaze iz korištenja ovog prijevoda.
