@@ -29,6 +29,8 @@ By completing this module, you will:
 
 **Key Topics**: Complete installation • CLI commands • Model caching • Hardware acceleration • Multi-model deployment
 
+**Sample**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
+
 **Duration**: 2-3 hours | **Level**: Beginner
 
 ---
@@ -37,6 +39,8 @@ By completing this module, you will:
 **Focus**: Advanced prompt engineering, data integration, and cloud connectivity
 
 **Key Topics**: Prompt engineering • Data integration • Azure workflows • Performance optimization • Monitoring
+
+**Sample**: [Chainlit RAG Application](./samples/04/README.md)
 
 **Duration**: 2-3 hours | **Level**: Intermediate
 
@@ -47,6 +51,8 @@ By completing this module, you will:
 
 **Key Topics**: HuggingFace integration • Bring-your-own-model • Model Mondays insights • Community contributions • Model selection
 
+**Sample**: [Multi-Agent Orchestration](./samples/05/README.md)
+
 **Duration**: 2-3 hours | **Level**: Intermediate
 
 ---
@@ -55,6 +61,8 @@ By completing this module, you will:
 **Focus**: LLMs vs SLMs, EdgeAI implementation, and advanced demos
 
 **Key Topics**: Model comparison • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimization
+
+**Sample**: [Models-as-Tools Router](./samples/06/README.md)
 
 **Duration**: 3-4 hours | **Level**: Advanced
 
@@ -65,6 +73,8 @@ By completing this module, you will:
 
 **Key Topics**: Agent design patterns • System prompt engineering • Grounding techniques • Multi-agent systems • Production deployment
 
+**Sample**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
+
 **Duration**: 3-4 hours | **Level**: Advanced
 
 ---
@@ -74,7 +84,53 @@ By completing this module, you will:
 
 **Key Topics**: Models as tools • On-device deployment • SDK/API integration • Enterprise architectures • Scaling strategies
 
+**Sample**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
+
 **Duration**: 3-4 hours | **Level**: Expert
+
+---
+
+### [7: Direct API Integration Patterns](./samples/07/README.md)
+**Focus**: Pure REST API integration without SDK dependencies for maximum control
+
+**Key Topics**: HTTP client implementation • Custom authentication • Model health monitoring • Streaming responses • Production error handling
+
+**Sample**: [Direct API Client](./samples/07/README.md)
+
+**Duration**: 2-3 hours | **Level**: Intermediate
+
+---
+
+### [8: Windows 11 Native Chat Application](./samples/08/README.md)
+**Focus**: Building modern native chat applications with Foundry Local integration
+
+**Key Topics**: Electron development • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design
+
+**Sample**: [Windows 11 Chat Application](./samples/08/README.md)
+
+**Duration**: 3-4 hours | **Level**: Advanced
+
+---
+
+### [9: Advanced Multi-Agent Orchestration](./samples/09/README.md)
+**Focus**: Sophisticated agent coordination, specialized task delegation, and collaborative AI workflows
+
+**Key Topics**: Intelligent agent coordination • Function calling patterns • Cross-agent communication • Workflow orchestration • Quality assurance mechanisms
+
+**Sample**: [Advanced Multi-Agent System](./samples/09/README.md)
+
+**Duration**: 4-5 hours | **Level**: Expert
+
+---
+
+### [10: Foundry Local as Tools Framework](./samples/10/README.md)
+**Focus**: Tool-first architecture for integrating Foundry Local into existing applications and frameworks
+
+**Key Topics**: LangChain integration • Semantic Kernel functions • REST API frameworks • CLI tools • Jupyter integration • Production deployment patterns
+
+**Sample**: [Foundry Tools Framework](./samples/10/README.md)
+
+**Duration**: 4-5 hours | **Level**: Expert
 
 ## Prerequisites
 
@@ -101,16 +157,20 @@ By completing this module, you will:
 
 ## Module Timeline
 
-**Total Estimated Time**: 15-20 hours
+**Total Estimated Time**: 30-38 hours
 
-| Session | Focus Area | Time | Complexity |
-|---------|------------|------|------------|
-|  1 | Setup & Basics | 2-3 hours | Beginner |
-|  2 | AI Solutions | 2-3 hours | Intermediate |
-|  3 | Open Source | 2-3 hours | Intermediate |
-|  4 | Advanced Models | 3-4 hours | Advanced |
-|  5 | AI Agents | 3-4 hours | Advanced |
-|  6 | Enterprise Tools | 3-4 hours | Expert |
+| Session | Focus Area | Samples | Time | Complexity |
+|---------|------------|---------|------|------------|
+|  1 | Setup & Basics | 01, 02, 03 | 2-3 hours | Beginner |
+|  2 | AI Solutions | 04 | 2-3 hours | Intermediate |
+|  3 | Open Source | 05 | 2-3 hours | Intermediate |
+|  4 | Advanced Models | 06 | 3-4 hours | Advanced |
+|  5 | AI Agents | 05, 09 | 3-4 hours | Advanced |
+|  6 | Enterprise Tools | 06, 10 | 3-4 hours | Expert |
+|  7 | Direct API Integration | 07 | 2-3 hours | Intermediate |
+|  8 | Windows 11 Chat App | 08 | 3-4 hours | Advanced |
+|  9 | Advanced Multi-Agent | 09 | 4-5 hours | Expert |
+| 10 | Tools Framework | 10 | 4-5 hours | Expert |
 
 ## Key Resources
 
