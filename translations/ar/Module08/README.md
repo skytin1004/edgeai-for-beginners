@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T14:17:40+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T13:22:47+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ar"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## نظرة عامة
 
-يمثل Microsoft Foundry Local الجيل الجديد من تطوير الذكاء الاصطناعي على الحافة، حيث يوفر للمطورين أدوات قوية لبناء وتوزيع وتوسيع تطبيقات الذكاء الاصطناعي محليًا مع الحفاظ على تكامل سلس مع Azure AI Foundry. تقدم هذه الوحدة تغطية شاملة لـ Foundry Local بدءًا من التثبيت وصولاً إلى تطوير الوكلاء المتقدم.
+يمثل Microsoft Foundry Local الجيل القادم من تطوير الذكاء الاصطناعي على الحافة، حيث يوفر للمطورين أدوات قوية لبناء وتوزيع وتوسيع تطبيقات الذكاء الاصطناعي محليًا مع الحفاظ على تكامل سلس مع Azure AI Foundry. تقدم هذه الوحدة تغطية شاملة لـ Foundry Local بدءًا من التثبيت وصولاً إلى تطوير الوكلاء المتقدم.
 
 **التقنيات الرئيسية:**
 - Microsoft Foundry Local CLI و SDK
@@ -20,111 +20,126 @@ CO_OP_TRANSLATOR_METADATA:
 - تخزين وتحسين النماذج محليًا
 - بنى تعتمد على الوكلاء
 
-## أهداف التعلم للوحدة
+## أهداف التعلم
 
 عند إكمال هذه الوحدة، ستتمكن من:
 
-- **إتقان إعداد Foundry Local**: تثبيت، تكوين، وتحسين Foundry Local لتطوير Windows 11
-- **توزيع نماذج متنوعة**: تشغيل نماذج phi، qwen، deepseek، و GPT-OSS-20B محليًا باستخدام أوامر CLI
-- **بناء حلول إنتاجية**: إنشاء تطبيقات ذكاء اصطناعي باستخدام هندسة متقدمة للمطالبات وتكامل البيانات
-- **الاستفادة من النظام المفتوح المصدر**: دمج نماذج Hugging Face وإضافات المجتمع
-- **مقارنة بنى الذكاء الاصطناعي**: فهم المفاضلات بين LLMs و SLMs واستراتيجيات التوزيع
-- **تطوير وكلاء الذكاء الاصطناعي**: بناء وكلاء ذكيين باستخدام بنية Foundry Local وقدرات التأسيس
-- **تنفيذ النماذج كأدوات**: إنشاء حلول ذكاء اصطناعي معيارية وقابلة للتخصيص لتطبيقات المؤسسات
+- **إتقان Foundry Local**: تثبيت، تكوين، وتحسين التطوير على Windows 11
+- **توزيع نماذج متنوعة**: تشغيل نماذج phi، qwen، deepseek، و GPT محليًا باستخدام أوامر CLI
+- **بناء حلول إنتاجية**: إنشاء تطبيقات ذكاء اصطناعي باستخدام هندسة المطالبات المتقدمة وتكامل البيانات
+- **الاستفادة من النظام المفتوح المصدر**: دمج نماذج Hugging Face ومساهمات المجتمع
+- **تطوير وكلاء ذكاء اصطناعي**: بناء وكلاء ذكيين بقدرات التأسيس والتنظيم
+- **تنفيذ أنماط المؤسسات**: إنشاء حلول ذكاء اصطناعي معيارية وقابلة للتوسع للتوزيع الإنتاجي
 
 ## هيكل الجلسة
 
 ### [1: البدء مع Foundry Local](./01.FoundryLocalSetup.md)
-**التركيز**: التثبيت، إعداد CLI، تخزين النماذج، وتسريع الأجهزة
+**التركيز**: التثبيت، إعداد CLI، توزيع النماذج، وتحسين الأجهزة
 
-**ما ستتعلمه:**
-- تثبيت كامل لـ Foundry Local على Windows 11
-- تكوين CLI وهيكل الأوامر
-- استراتيجيات تخزين النماذج لتحسين الأداء
-- إعداد وتحسين تسريع الأجهزة
-- تجربة عملية لتوزيع نماذج phi، qwen، deepseek، و GPT-OSS-20B
+**المواضيع الرئيسية**: التثبيت الكامل • أوامر CLI • تخزين النماذج • تسريع الأجهزة • توزيع نماذج متعددة
 
-**المدة**: 2-3 ساعات  
-**المتطلبات الأساسية**: Windows 11، معرفة أساسية بسطر الأوامر
+**العينة**: [بدء سريع للدردشة REST](./samples/01/README.md) • [تكامل OpenAI SDK](./samples/02/README.md) • [اكتشاف النماذج ومعايير الأداء](./samples/03/README.md)
+
+**المدة**: 2-3 ساعات | **المستوى**: مبتدئ
 
 ---
 
-### [2: بناء حلول الذكاء الاصطناعي مع Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**التركيز**: هندسة المطالبات المتقدمة، تكامل البيانات، والمهام القابلة للتنفيذ
+### [2: بناء حلول ذكاء اصطناعي مع Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+**التركيز**: هندسة المطالبات المتقدمة، تكامل البيانات، والاتصال بالسحابة
 
-**ما ستتعلمه:**
-- تقنيات هندسة المطالبات المتقدمة
-- أنماط تكامل البيانات وأفضل الممارسات
-- بناء مهام ذكاء اصطناعي قابلة للتنفيذ باستخدام Foundry Local
-- سير عمل تكامل سلس مع Azure AI Foundry
-- تحسين الأداء والمراقبة
+**المواضيع الرئيسية**: هندسة المطالبات • تكامل البيانات • سير عمل Azure • تحسين الأداء • المراقبة
 
-**المدة**: 2-3 ساعات  
-**المتطلبات الأساسية**: إكمال الجلسة 1، حساب Azure (اختياري)
+**العينة**: [تطبيق Chainlit RAG](./samples/04/README.md)
+
+**المدة**: 2-3 ساعات | **المستوى**: متوسط
 
 ---
 
-### [3: نماذج مفتوحة المصدر مع Foundry Local](./03.OpenSourceModels.md)
-**التركيز**: تكامل Hugging Face، استراتيجيات اختيار النماذج، وإضافات المجتمع
+### [3: نماذج مفتوحة المصدر في Foundry Local](./03.OpenSourceModels.md)
+**التركيز**: تكامل Hugging Face، استراتيجيات BYOM، ونماذج المجتمع
 
-**ما ستتعلمه:**
-- تكامل نماذج Hugging Face مع Foundry Local
-- استراتيجيات "إحضار النموذج الخاص بك" (BYOM) والتنفيذ
-- رؤى سلسلة Model Mondays ومساهمات المجتمع
-- توزيع وتحسين النماذج المخصصة
-- معايير تقييم واختيار نماذج المجتمع
+**المواضيع الرئيسية**: تكامل HuggingFace • جلب النموذج الخاص بك • رؤى Model Mondays • مساهمات المجتمع • اختيار النماذج
 
-**المدة**: 2-3 ساعات  
-**المتطلبات الأساسية**: إكمال الجلسات 1-2، حساب Hugging Face
+**العينة**: [تنظيم متعدد الوكلاء](./samples/05/README.md)
+
+**المدة**: 2-3 ساعات | **المستوى**: متوسط
 
 ---
 
-### [4: استكشاف النماذج المتقدمة - LLMs، SLMs، واستنتاج على الجهاز](./04.CuttingEdgeModels.md)
-**التركيز**: مقارنة النماذج، EdgeAI مع Phi و ONNX Runtime، عروض متقدمة
+### [4: استكشاف النماذج المتقدمة](./04.CuttingEdgeModels.md)
+**التركيز**: مقارنة LLMs و SLMs، تنفيذ EdgeAI، والعروض التوضيحية المتقدمة
 
-**ما ستتعلمه:**
-- مقارنة شاملة بين LLMs و SLMs وحالات الاستخدام
-- مفاضلات الاستنتاج المحلي مقابل السحابي وأطر اتخاذ القرار
-- تنفيذ EdgeAI مع Phi و ONNX Runtime
-- تطوير وتوزيع تطبيق Chainlit RAG Chat
-- تقنيات تحسين الاستنتاج باستخدام WebGPU
-- تكامل وقدرات AI PC SDK
+**المواضيع الرئيسية**: مقارنة النماذج • الاستنتاج على الحافة مقابل السحابة • Phi + ONNX Runtime • تطبيق Chainlit RAG • تحسين WebGPU
 
-**المدة**: 3-4 ساعات  
-**المتطلبات الأساسية**: إكمال الجلسات 1-3، فهم مفاهيم الاستنتاج
+**العينة**: [موجه النماذج كأدوات](./samples/06/README.md)
+
+**المدة**: 3-4 ساعات | **المستوى**: متقدم
 
 ---
 
-### [5: بناء وكلاء مدعومين بالذكاء الاصطناعي بسرعة مع Foundry Local](./05.AIPoweredAgents.md)
-**التركيز**: تطوير تطبيقات GenAI بسرعة، مطالبات النظام، التأسيس، وبنى الوكلاء
+### [5: بناء وكلاء ذكاء اصطناعي بسرعة](./05.AIPoweredAgents.md)
+**التركيز**: بنى الوكلاء، مطالبات النظام، التأسيس، والتنظيم
 
-**ما ستتعلمه:**
-- بنية الوكلاء في Foundry Local وأنماط التصميم
-- هندسة مطالبات النظام لسلوك الوكلاء
-- تقنيات التأسيس لاستجابات موثوقة من الوكلاء
-- سير عمل تطوير تطبيقات GenAI بسرعة
-- تنسيق الوكلاء وأنظمة الوكلاء المتعددة
-- استراتيجيات التوزيع الإنتاجي لوكلاء الذكاء الاصطناعي
+**المواضيع الرئيسية**: أنماط تصميم الوكلاء • هندسة مطالبات النظام • تقنيات التأسيس • أنظمة متعددة الوكلاء • التوزيع الإنتاجي
 
-**المدة**: 3-4 ساعات  
-**المتطلبات الأساسية**: إكمال الجلسات 1-4، فهم أساسي لوكلاء الذكاء الاصطناعي
+**العينة**: [تنظيم متعدد الوكلاء](./samples/05/README.md) • [نظام متعدد الوكلاء المتقدم](./samples/09/README.md)
+
+**المدة**: 3-4 ساعات | **المستوى**: متقدم
 
 ---
 
 ### [6: Foundry Local - النماذج كأدوات](./06.ModelsAsTools.md)
-**التركيز**: حلول ذكاء اصطناعي معيارية، توزيع على الجهاز، وتوسيع المؤسسات
+**التركيز**: حلول ذكاء اصطناعي معيارية، التوسع المؤسسي، وأنماط الإنتاج
 
-**ما ستتعلمه:**
-- التعامل مع نماذج الذكاء الاصطناعي كأدوات معيارية وقابلة للتخصيص
-- توزيع على الجهاز بدون الاعتماد على السحابة
-- استنتاج منخفض التأخير، فعال من حيث التكلفة، ويحافظ على الخصوصية
-- أنماط تكامل SDK، API، و CLI
-- تخصيص النماذج لحالات الاستخدام المحددة
-- استراتيجيات التوسيع من المحلي إلى Azure AI Foundry
-- بنى تطبيقات ذكاء اصطناعي جاهزة للمؤسسات
+**المواضيع الرئيسية**: النماذج كأدوات • التوزيع على الجهاز • تكامل SDK/API • بنى المؤسسات • استراتيجيات التوسع
 
-**المدة**: 3-4 ساعات  
-**المتطلبات الأساسية**: جميع الجلسات السابقة، خبرة تطوير المؤسسات مفيدة
+**العينة**: [موجه النماذج كأدوات](./samples/06/README.md) • [إطار أدوات Foundry](./samples/10/README.md)
+
+**المدة**: 3-4 ساعات | **المستوى**: خبير
+
+---
+
+### [7: أنماط تكامل API المباشر](./samples/07/README.md)
+**التركيز**: تكامل REST API النقي بدون اعتماد على SDK لتحقيق أقصى قدر من التحكم
+
+**المواضيع الرئيسية**: تنفيذ عميل HTTP • المصادقة المخصصة • مراقبة صحة النموذج • استجابات البث • معالجة أخطاء الإنتاج
+
+**العينة**: [عميل API المباشر](./samples/07/README.md)
+
+**المدة**: 2-3 ساعات | **المستوى**: متوسط
+
+---
+
+### [8: تطبيق دردشة أصلي على Windows 11](./samples/08/README.md)
+**التركيز**: بناء تطبيقات دردشة حديثة مع تكامل Foundry Local
+
+**المواضيع الرئيسية**: تطوير Electron • نظام تصميم Fluent • تكامل Windows الأصلي • البث في الوقت الحقيقي • تصميم واجهة الدردشة
+
+**العينة**: [تطبيق دردشة Windows 11](./samples/08/README.md)
+
+**المدة**: 3-4 ساعات | **المستوى**: متقدم
+
+---
+
+### [9: تنظيم متعدد الوكلاء المتقدم](./samples/09/README.md)
+**التركيز**: تنسيق الوكلاء المتقدم، تفويض المهام المتخصصة، وسير عمل الذكاء الاصطناعي التعاوني
+
+**المواضيع الرئيسية**: تنسيق الوكلاء الذكي • أنماط استدعاء الوظائف • التواصل بين الوكلاء • تنظيم سير العمل • آليات ضمان الجودة
+
+**العينة**: [نظام متعدد الوكلاء المتقدم](./samples/09/README.md)
+
+**المدة**: 4-5 ساعات | **المستوى**: خبير
+
+---
+
+### [10: Foundry Local كإطار أدوات](./samples/10/README.md)
+**التركيز**: بنية تعتمد على الأدوات لتكامل Foundry Local مع التطبيقات والأطر الحالية
+
+**المواضيع الرئيسية**: تكامل LangChain • وظائف Semantic Kernel • أطر REST API • أدوات CLI • تكامل Jupyter • أنماط التوزيع الإنتاجي
+
+**العينة**: [إطار أدوات Foundry](./samples/10/README.md)
+
+**المدة**: 4-5 ساعات | **المستوى**: خبير
 
 ## المتطلبات الأساسية
 
@@ -132,8 +147,8 @@ CO_OP_TRANSLATOR_METADATA:
 - **نظام التشغيل**: Windows 11 (22H2 أو أحدث)
 - **الذاكرة**: 16GB RAM (32GB موصى بها للنماذج الأكبر)
 - **التخزين**: 50GB مساحة خالية لتخزين النماذج
-- **الأجهزة**: جهاز يدعم NPU (مثل Copilot+ PC)، GPU اختياري
-- **الشبكة**: إنترنت عالي السرعة لتنزيل النماذج الأولي
+- **الأجهزة**: جهاز يدعم NPU موصى به (Copilot+ PC)، GPU اختياري
+- **الشبكة**: إنترنت عالي السرعة لتنزيل النماذج الأولية
 
 ### بيئة التطوير
 - Visual Studio Code مع امتداد AI Toolkit
@@ -144,137 +159,309 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### المعرفة الأساسية
 - فهم أساسي لمفاهيم الذكاء الاصطناعي/التعلم الآلي
-- معرفة بسطر الأوامر
+- الإلمام بسطر الأوامر
 - أساسيات برمجة Python
 - مفاهيم REST API
 - معرفة أساسية بالمطالبات واستنتاج النماذج
 
 ## الجدول الزمني للوحدة
 
-**الوقت الإجمالي المقدر**: 15-20 ساعة
+**الوقت الإجمالي المقدر**: 30-38 ساعة
 
-| الجلسة | مجال التركيز | الوقت | التعقيد |
-|--------|--------------|-------|---------|
-|  1 | الإعداد والأساسيات | 2-3 ساعات | مبتدئ |
-|  2 | حلول الذكاء الاصطناعي | 2-3 ساعات | متوسط |
-|  3 | المصدر المفتوح | 2-3 ساعات | متوسط |
-|  4 | النماذج المتقدمة | 3-4 ساعات | متقدم |
-|  5 | وكلاء الذكاء الاصطناعي | 3-4 ساعات | متقدم |
-|  6 | أدوات المؤسسات | 3-4 ساعات | خبير |
+| الجلسة | مجال التركيز | العينات | الوقت | التعقيد |
+|---------|------------|---------|------|------------|
+|  1 | الإعداد والأساسيات | 01، 02، 03 | 2-3 ساعات | مبتدئ |
+|  2 | حلول الذكاء الاصطناعي | 04 | 2-3 ساعات | متوسط |
+|  3 | المصدر المفتوح | 05 | 2-3 ساعات | متوسط |
+|  4 | النماذج المتقدمة | 06 | 3-4 ساعات | متقدم |
+|  5 | وكلاء الذكاء الاصطناعي | 05، 09 | 3-4 ساعات | متقدم |
+|  6 | أدوات المؤسسات | 06، 10 | 3-4 ساعات | خبير |
+|  7 | تكامل API المباشر | 07 | 2-3 ساعات | متوسط |
+|  8 | تطبيق دردشة Windows 11 | 08 | 3-4 ساعات | متقدم |
+|  9 | تنظيم متعدد الوكلاء المتقدم | 09 | 4-5 ساعات | خبير |
+| 10 | إطار الأدوات | 10 | 4-5 ساعات | خبير |
 
 ## الموارد الرئيسية
 
-### الوثائق الأساسية
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays Series](https://aka.ms/model-mondays)
+**التوثيق الرسمي:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - الكود المصدر والعينات الرسمية
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - دليل الإعداد والاستخدام الكامل
+- [Model Mondays Series](https://aka.ms/model-mondays) - أبرز النماذج الأسبوعية والدروس التعليمية
 
-### موارد المجتمع
-- [Foundry Local Community Discussions](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry Samples](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence)
+**المجتمع والدعم:**
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - أسئلة وأجوبة المجتمع وطلبات الميزات
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - أحدث الأخبار وأفضل الممارسات
 
 ## نتائج التعلم
 
 عند إكمال هذه الوحدة، ستكون مجهزًا لـ:
 
-### الإتقان التقني
+### الإتقان الفني
 - **التوزيع والإدارة**: تثبيت وإدارة Foundry Local عبر بيئات التطوير والإنتاج
-- **تكامل النماذج**: العمل بسلاسة مع عائلات نماذج متنوعة من Microsoft، Hugging Face، ومصادر المجتمع
+- **تكامل النماذج**: العمل بسلاسة مع عائلات النماذج المتنوعة من Microsoft، Hugging Face، ومصادر المجتمع
 - **بناء التطبيقات**: إنشاء تطبيقات ذكاء اصطناعي جاهزة للإنتاج بميزات وتحسينات متقدمة
-- **تطوير الوكلاء**: تنفيذ وكلاء ذكاء اصطناعي متطورين مع التأسيس، التفكير، وتكامل الأدوات
+- **تطوير الوكلاء**: تنفيذ وكلاء ذكاء اصطناعي متقدمين بقدرات التأسيس، التفكير، وتكامل الأدوات
 
 ### الفهم الاستراتيجي
-- **قرارات البنية**: اتخاذ خيارات مستنيرة بين التوزيع المحلي مقابل السحابي
+- **قرارات البنية**: اتخاذ خيارات مستنيرة بين التوزيع المحلي مقابل السحابة
 - **تحسين الأداء**: تحسين أداء الاستنتاج عبر تكوينات الأجهزة المختلفة
-- **توسيع المؤسسات**: تصميم تطبيقات تتوسع من النماذج الأولية المحلية إلى التوزيع المؤسسي
+- **التوسع المؤسسي**: تصميم تطبيقات تتوسع من النماذج الأولية المحلية إلى التوزيعات المؤسسية
 - **الخصوصية والأمان**: تنفيذ حلول ذكاء اصطناعي تحافظ على الخصوصية مع الاستنتاج المحلي
 
 ### قدرات الابتكار
-- **النماذج الأولية السريعة**: بناء واختبار مفاهيم تطبيقات الذكاء الاصطناعي بسرعة
+- **النماذج الأولية السريعة**: بناء واختبار مفاهيم تطبيقات الذكاء الاصطناعي بسرعة عبر جميع أنماط العينات العشرة
 - **تكامل المجتمع**: الاستفادة من نماذج المصدر المفتوح والمساهمة في النظام البيئي
-- **أنماط متقدمة**: تنفيذ أنماط ذكاء اصطناعي متطورة بما في ذلك RAG، الوكلاء، وتكامل الأدوات
-- **تطوير جاهز للمستقبل**: بناء تطبيقات جاهزة للتقنيات والأنماط الناشئة في الذكاء الاصطناعي
+- **أنماط متقدمة**: تنفيذ أنماط ذكاء اصطناعي متقدمة بما في ذلك RAG، الوكلاء، وتكامل الأدوات
+- **إتقان الأطر**: تكامل على مستوى الخبراء مع LangChain، Semantic Kernel، Chainlit، و Electron
+- **التوزيع الإنتاجي**: توزيع حلول ذكاء اصطناعي قابلة للتوسع من النماذج الأولية المحلية إلى الأنظمة المؤسسية
+- **التطوير المستقبلي**: بناء تطبيقات جاهزة للتقنيات والأنماط الناشئة في الذكاء الاصطناعي
 
 ## البدء
 
-1. **تحضير البيئة**: تأكد من وجود Windows 11 مع المواصفات الموصى بها
-2. **تثبيت المتطلبات الأساسية**: إعداد أدوات التطوير والاعتماديات
-3. **ابدأ مع الجلسة 1**: ابدأ بتثبيت Foundry Local والإعداد الأساسي
-4. **التقدم بشكل متسلسل**: أكمل الجلسات بالترتيب لتحقيق تقدم تعليمي مثالي
-5. **الممارسة المستمرة**: تطبيق المفاهيم من خلال التمارين العملية والمشاريع
+1. **إعداد البيئة**: تأكد من وجود Windows 11 مع الأجهزة الموصى بها (راجع المتطلبات الأساسية)
+2. **تثبيت Foundry Local**: اتبع الجلسة 1 للتثبيت والتكوين الكامل
+3. **تشغيل العينة 01**: ابدأ بتكامل REST API الأساسي للتحقق من الإعداد
+4. **التقدم عبر العينات**: أكمل العينات 01-10 لتحقيق الإتقان الشامل
 
 ## مقاييس النجاح
 
-تتبع تقدمك خلال الوحدة:
+تتبع تقدمك عبر جميع العينات العشرة الشاملة:
 
+### مستوى الأساس (العينات 01-03)
 - [ ] تثبيت وتكوين Foundry Local بنجاح
-- [ ] توزيع وتشغيل 4 عائلات نماذج مختلفة على الأقل
-- [ ] بناء حل ذكاء اصطناعي كامل مع تكامل البيانات
-- [ ] دمج نموذجين مفتوحين المصدر على الأقل
-- [ ] إنشاء تطبيق دردشة RAG وظيفي
-- [ ] تطوير وتوزيع وكيل ذكاء اصطناعي
-- [ ] تنفيذ بنية النماذج كأدوات
+- [ ] إكمال تكامل REST API (العينة 01)
+- [ ] تنفيذ توافق OpenAI SDK (العينة 02)
+- [ ] إجراء اكتشاف النماذج ومعايير الأداء (العينة 03)
 
-## البدء السريع للعينات
+### مستوى التطبيق (العينات 04-06)
+- [ ] توزيع وتشغيل ما لا يقل عن 4 عائلات نماذج مختلفة
+- [ ] بناء تطبيق دردشة RAG وظيفي (العينة 04)
+- [ ] إنشاء نظام تنظيم متعدد الوكلاء (العينة 05)
+- [ ] تنفيذ توجيه النماذج الذكي (العينة 06)
 
-### 1) إعداد البيئة (Windows cmd.exe)
-```cmd
+### مستوى التكامل المتقدم (العينات 07-10)
+- [ ] بناء عميل API جاهز للإنتاج (العينة 07)
+- [ ] تطوير تطبيق دردشة أصلي على Windows 11 (العينة 08)
+- [ ] تنفيذ نظام متعدد الوكلاء المتقدم (العينة 09)
+- [ ] إنشاء إطار أدوات شامل (العينة 10)
+
+### مؤشرات الإتقان
+- [ ] تشغيل جميع العينات العشرة بنجاح دون أخطاء
+- [ ] تخصيص ما لا يقل عن 3 عينات لحالات استخدام محددة
+- [ ] توزيع أكثر من عينتين في بيئات مشابهة للإنتاج
+- [ ] المساهمة بتحسينات أو إضافات على كود العينات
+- [ ] دمج أنماط Foundry Local في المشاريع الشخصية/المهنية
+
+## دليل البدء السريع - جميع العينات العشرة
+
+### إعداد البيئة (مطلوب لجميع العينات)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) بدء نموذج محلي (نافذة جديدة)
-```cmd
-foundry model list
+### عينات الأساس الأساسية (01-06)
+
+**العينة 01: بدء سريع للدردشة REST**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**العينة 02: تكامل OpenAI SDK**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**العينة 03: اكتشاف النماذج ومعايير الأداء**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**العينة 04: تطبيق Chainlit RAG**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**العينة 05: تنظيم متعدد الوكلاء**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**العينة 06: موجه النماذج كأدوات**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### عينات التكامل المتقدم (07-10)
+
+**العينة 07: عميل API المباشر**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**العينة 08: تطبيق دردشة Windows 11**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**العينة 09: نظام متعدد الوكلاء المتقدم**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**العينة 10: إطار أدوات Foundry**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### استكشاف الأخطاء الشائعة وإصلاحها
+
+**أخطاء اتصال Foundry Local**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**مشاكل تحميل النماذج**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) تشغيل عرض Chainlit (الجلسة 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**مشاكل التبعيات**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) تشغيل منسق الوكلاء المتعددين (الجلسة 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## الملخص
+يمثل هذا الوحدة أحدث ما توصلت إليه تقنيات الذكاء الاصطناعي الطرفي، حيث تجمع بين أدوات مايكروسوفت ذات المستوى المؤسسي ومرونة وابتكار النظام المفتوح المصدر. من خلال إتقان Foundry Local عبر جميع العينات العشر الشاملة، ستكون في مقدمة تطوير تطبيقات الذكاء الاصطناعي.
 
-إذا رأيت أخطاء اتصال، تحقق من Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**مسار التعلم الكامل:**
+- **الأساسيات** (العينات 01-03): تكامل API وإدارة النماذج
+- **التطبيقات** (العينات 04-06): RAG، الوكلاء، والتوجيه الذكي
+- **المتقدم** (العينات 07-10): أطر الإنتاج والتكامل المؤسسي
 
-### تكوين الموجه (الجلسة 6)
-يقوم الموجه بإجراء فحص سريع للصحة ويدعم التكوين المستند إلى البيئة:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-تمثل هذه الوحدة أحدث ما توصل إليه تطوير الذكاء الاصطناعي على الحافة، حيث تجمع بين أدوات Microsoft ذات المستوى المؤسسي ومرونة وابتكار النظام المفتوح المصدر. من خلال إتقان Foundry Local، ستكون في مقدمة تطوير تطبيقات الذكاء الاصطناعي.
-
-بالنسبة لـ Azure OpenAI (الجلسة 2)، راجع ملف README الخاص بالعينة للحصول على المتغيرات البيئية المطلوبة وإعدادات إصدار API.
-
-## نظرة عامة على العينات
-
-- `samples/01`: دردشة REST سريعة مع Foundry Local (`chat_quickstart.py`).
-- `samples/02`: تكامل OpenAI SDK (`sdk_quickstart.py`).
-- `samples/03`: اكتشاف النماذج + اختبار سريع (`list_and_bench.cmd`).
-- `samples/04`: عرض Chainlit RAG (`app.py`).
-- `samples/05`: تنسيق الوكلاء المتعددين (`python -m samples.05.agents.coordinator`).
-- `samples/06`: موجه النماذج كأدوات (`python samples\06\router.py`).
+لدمج Azure OpenAI (الجلسة 2)، يرجى الرجوع إلى ملفات README الخاصة بكل عينة للحصول على المتغيرات البيئية المطلوبة وإعدادات إصدار API.
 
 ---
 
