@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T12:51:36+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T11:40:46+00:00",
   "source_file": "Module08/README.md",
   "language_code": "de"
 }
@@ -20,111 +20,126 @@ Microsoft Foundry Local repräsentiert die nächste Generation der Edge-AI-Entwi
 - Lokale Modell-Caching und Optimierung
 - Agentenbasierte Architekturen
 
-## Lernziele des Moduls
+## Lernziele
 
-Nach Abschluss dieses Moduls werden Sie:
+Nach Abschluss dieses Moduls wirst du:
 
-- **Foundry Local Setup meistern**: Foundry Local für die Entwicklung unter Windows 11 installieren, konfigurieren und optimieren
-- **Vielfältige Modelle bereitstellen**: Phi-, Qwen-, Deepseek- und GPT-OSS-20B-Modelle lokal mit CLI-Befehlen ausführen
+- **Foundry Local meistern**: Installation, Konfiguration und Optimierung für die Entwicklung unter Windows 11
+- **Vielfältige Modelle bereitstellen**: Phi-, Qwen-, Deepseek- und GPT-Modelle lokal mit CLI-Befehlen ausführen
 - **Produktionslösungen erstellen**: KI-Anwendungen mit fortschrittlichem Prompt-Engineering und Datenintegration entwickeln
-- **Open-Source-Ökosystem nutzen**: Hugging Face-Modelle und Community-Erweiterungen integrieren
-- **KI-Architekturen vergleichen**: Unterschiede zwischen LLMs und SLMs sowie deren Einsatzstrategien verstehen
-- **KI-Agenten entwickeln**: Intelligente Agenten mit der Architektur und den Grounding-Funktionen von Foundry Local erstellen
-- **Modelle als Werkzeuge implementieren**: Modulare, anpassbare KI-Lösungen für Unternehmensanwendungen entwickeln
+- **Open-Source-Ökosystem nutzen**: Hugging Face-Modelle und Community-Beiträge integrieren
+- **KI-Agenten entwickeln**: Intelligente Agenten mit Grounding- und Orchestrierungsfähigkeiten erstellen
+- **Enterprise-Muster implementieren**: Modulare, skalierbare KI-Lösungen für den Produktionseinsatz entwickeln
 
 ## Sitzungsstruktur
 
 ### [1: Einstieg in Foundry Local](./01.FoundryLocalSetup.md)
-**Schwerpunkt**: Installation, CLI-Setup, Modell-Caching und Hardware-Beschleunigung
+**Schwerpunkt**: Installation, CLI-Setup, Modellbereitstellung und Hardware-Optimierung
 
-**Was Sie lernen werden:**
-- Vollständige Installation von Foundry Local unter Windows 11
-- CLI-Konfiguration und Befehlsstruktur
-- Strategien für Modell-Caching zur Leistungsoptimierung
-- Einrichtung und Optimierung der Hardware-Beschleunigung
-- Praxisnahe Bereitstellung von Phi-, Qwen-, Deepseek- und GPT-OSS-20B-Modellen
+**Wichtige Themen**: Vollständige Installation • CLI-Befehle • Modell-Caching • Hardware-Beschleunigung • Multi-Modell-Bereitstellung
 
-**Dauer**: 2-3 Stunden  
-**Voraussetzungen**: Windows 11, Grundkenntnisse der Kommandozeile
+**Beispiele**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Modellentdeckung & Benchmarking](./samples/03/README.md)
+
+**Dauer**: 2-3 Stunden | **Level**: Anfänger
 
 ---
 
 ### [2: KI-Lösungen mit Azure AI Foundry erstellen](./02.AzureAIFoundryIntegration.md)
-**Schwerpunkt**: Fortgeschrittenes Prompt-Engineering, Datenintegration und umsetzbare Aufgaben
+**Schwerpunkt**: Fortgeschrittenes Prompt-Engineering, Datenintegration und Cloud-Konnektivität
 
-**Was Sie lernen werden:**
-- Fortgeschrittene Techniken des Prompt-Engineering
-- Muster und Best Practices für die Datenintegration
-- Erstellung umsetzbarer KI-Aufgaben mit Foundry Local
-- Nahtlose Workflows für die Integration mit Azure AI Foundry
-- Leistungsoptimierung und Überwachung
+**Wichtige Themen**: Prompt-Engineering • Datenintegration • Azure-Workflows • Leistungsoptimierung • Überwachung
 
-**Dauer**: 2-3 Stunden  
-**Voraussetzungen**: Abschluss von Sitzung 1, Azure-Konto (optional)
+**Beispiel**: [Chainlit RAG Anwendung](./samples/04/README.md)
+
+**Dauer**: 2-3 Stunden | **Level**: Mittelstufe
 
 ---
 
 ### [3: Open-Source-Modelle mit Foundry Local](./03.OpenSourceModels.md)
-**Schwerpunkt**: Hugging Face-Integration, Modell-Auswahlstrategien und Community-Erweiterungen
+**Schwerpunkt**: Hugging Face-Integration, BYOM-Strategien und Community-Modelle
 
-**Was Sie lernen werden:**
-- Integration von Hugging Face-Modellen mit Foundry Local
-- Strategien und Implementierung für "Bring-your-own-model" (BYOM)
-- Einblicke in die "Model Mondays"-Serie und Community-Beiträge
-- Bereitstellung und Optimierung benutzerdefinierter Modelle
-- Bewertungskriterien und Auswahl von Community-Modellen
+**Wichtige Themen**: Hugging Face-Integration • Bring-your-own-model • Model Mondays Einblicke • Community-Beiträge • Modellauswahl
 
-**Dauer**: 2-3 Stunden  
-**Voraussetzungen**: Abschluss von Sitzung 1-2, Hugging Face-Konto
+**Beispiel**: [Multi-Agent Orchestrierung](./samples/05/README.md)
+
+**Dauer**: 2-3 Stunden | **Level**: Mittelstufe
 
 ---
 
-### [4: Erkundung modernster Modelle - LLMs, SLMs und Inferenz auf dem Gerät](./04.CuttingEdgeModels.md)
-**Schwerpunkt**: Modellvergleich, EdgeAI mit Phi und ONNX Runtime, fortgeschrittene Demos
+### [4: Erkundung modernster Modelle](./04.CuttingEdgeModels.md)
+**Schwerpunkt**: LLMs vs SLMs, EdgeAI-Implementierung und fortgeschrittene Demos
 
-**Was Sie lernen werden:**
-- Umfassender Vergleich von LLMs und SLMs sowie deren Anwendungsfälle
-- Abwägungen zwischen lokaler und Cloud-Inferenz sowie Entscheidungsrahmen
-- EdgeAI-Implementierung mit Phi und ONNX Runtime
-- Entwicklung und Bereitstellung der Chainlit RAG Chat App
-- Optimierungstechniken für WebGPU-Inferenz
-- Integration und Funktionen des AI PC SDK
+**Wichtige Themen**: Modellvergleich • Edge- vs Cloud-Inferenz • Phi + ONNX Runtime • Chainlit RAG App • WebGPU-Optimierung
 
-**Dauer**: 3-4 Stunden  
-**Voraussetzungen**: Abschluss von Sitzung 1-3, Verständnis von Inferenzkonzepten
+**Beispiel**: [Models-as-Tools Router](./samples/06/README.md)
+
+**Dauer**: 3-4 Stunden | **Level**: Fortgeschritten
 
 ---
 
-### [5: Schnelle Entwicklung KI-gestützter Agenten mit Foundry Local](./05.AIPoweredAgents.md)
-**Schwerpunkt**: Schnelle Entwicklung von GenAI-Apps, System-Prompts, Grounding und Agentenarchitekturen
+### [5: Schnelle Entwicklung KI-gestützter Agenten](./05.AIPoweredAgents.md)
+**Schwerpunkt**: Agentenarchitekturen, System-Prompts, Grounding und Orchestrierung
 
-**Was Sie lernen werden:**
-- Architektur und Designmuster von Foundry Local-Agenten
-- System-Prompt-Engineering für das Verhalten von Agenten
-- Grounding-Techniken für zuverlässige Agentenantworten
-- Workflows für die schnelle Entwicklung von GenAI-Anwendungen
-- Orchestrierung von Agenten und Multi-Agenten-Systemen
-- Strategien für die Produktionsbereitstellung von KI-Agenten
+**Wichtige Themen**: Agenten-Design-Muster • System-Prompt-Engineering • Grounding-Techniken • Multi-Agent-Systeme • Produktionsbereitstellung
 
-**Dauer**: 3-4 Stunden  
-**Voraussetzungen**: Abschluss von Sitzung 1-4, Grundkenntnisse über KI-Agenten
+**Beispiele**: [Multi-Agent Orchestrierung](./samples/05/README.md) • [Fortgeschrittenes Multi-Agent-System](./samples/09/README.md)
+
+**Dauer**: 3-4 Stunden | **Level**: Fortgeschritten
 
 ---
 
 ### [6: Foundry Local - Modelle als Werkzeuge](./06.ModelsAsTools.md)
-**Schwerpunkt**: Modulare KI-Lösungen, Bereitstellung auf dem Gerät und Skalierung für Unternehmen
+**Schwerpunkt**: Modulare KI-Lösungen, Unternehmensskalierung und Produktionsmuster
 
-**Was Sie lernen werden:**
-- KI-Modelle als modulare, anpassbare Werkzeuge behandeln
-- Bereitstellung auf dem Gerät ohne Cloud-Abhängigkeit
-- Inferenz mit niedriger Latenz, kosteneffizient und datenschutzfreundlich
-- Muster für SDK-, API- und CLI-Integration
-- Anpassung von Modellen für spezifische Anwendungsfälle
-- Skalierungsstrategien von lokal bis Azure AI Foundry
-- Unternehmensgerechte Architekturen für KI-Anwendungen
+**Wichtige Themen**: Modelle als Werkzeuge • Bereitstellung auf dem Gerät • SDK/API-Integration • Unternehmensarchitekturen • Skalierungsstrategien
 
-**Dauer**: 3-4 Stunden  
-**Voraussetzungen**: Alle vorherigen Sitzungen, Erfahrung in der Unternehmensentwicklung hilfreich
+**Beispiele**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
+
+**Dauer**: 3-4 Stunden | **Level**: Experte
+
+---
+
+### [7: Direkte API-Integrationsmuster](./samples/07/README.md)
+**Schwerpunkt**: Pure REST-API-Integration ohne SDK-Abhängigkeiten für maximale Kontrolle
+
+**Wichtige Themen**: HTTP-Client-Implementierung • Benutzerdefinierte Authentifizierung • Modell-Gesundheitsüberwachung • Streaming-Antworten • Fehlerbehandlung in der Produktion
+
+**Beispiel**: [Direkter API-Client](./samples/07/README.md)
+
+**Dauer**: 2-3 Stunden | **Level**: Mittelstufe
+
+---
+
+### [8: Windows 11 Native Chat-Anwendung](./samples/08/README.md)
+**Schwerpunkt**: Entwicklung moderner nativer Chat-Anwendungen mit Foundry Local-Integration
+
+**Wichtige Themen**: Electron-Entwicklung • Fluent Design System • Native Windows-Integration • Echtzeit-Streaming • Chat-Oberflächendesign
+
+**Beispiel**: [Windows 11 Chat-Anwendung](./samples/08/README.md)
+
+**Dauer**: 3-4 Stunden | **Level**: Fortgeschritten
+
+---
+
+### [9: Fortgeschrittene Multi-Agent-Orchestrierung](./samples/09/README.md)
+**Schwerpunkt**: Komplexe Agentenkoordination, spezialisierte Aufgabenverteilung und kollaborative KI-Workflows
+
+**Wichtige Themen**: Intelligente Agentenkoordination • Funktionsaufruf-Muster • Kommunikation zwischen Agenten • Workflow-Orchestrierung • Qualitätssicherungsmechanismen
+
+**Beispiel**: [Fortgeschrittenes Multi-Agent-System](./samples/09/README.md)
+
+**Dauer**: 4-5 Stunden | **Level**: Experte
+
+---
+
+### [10: Foundry Local als Tools-Framework](./samples/10/README.md)
+**Schwerpunkt**: Tool-zentrierte Architektur zur Integration von Foundry Local in bestehende Anwendungen und Frameworks
+
+**Wichtige Themen**: LangChain-Integration • Semantic Kernel-Funktionen • REST-API-Frameworks • CLI-Tools • Jupyter-Integration • Produktionsbereitstellungsmuster
+
+**Beispiel**: [Foundry Tools Framework](./samples/10/README.md)
+
+**Dauer**: 4-5 Stunden | **Level**: Experte
 
 ## Voraussetzungen
 
@@ -133,13 +148,13 @@ Nach Abschluss dieses Moduls werden Sie:
 - **Speicher**: 16GB RAM (32GB empfohlen für größere Modelle)
 - **Speicherplatz**: 50GB freier Speicherplatz für Modell-Caching
 - **Hardware**: NPU-fähiges Gerät empfohlen (Copilot+ PC), GPU optional
-- **Netzwerk**: Hochgeschwindigkeitsinternet für den anfänglichen Modell-Download
+- **Netzwerk**: Hochgeschwindigkeitsinternet für den ersten Modell-Download
 
 ### Entwicklungsumgebung
 - Visual Studio Code mit AI Toolkit-Erweiterung
 - Python 3.10+ und pip
 - Git für Versionskontrolle
-- PowerShell oder Kommandozeile
+- PowerShell oder Eingabeaufforderung
 - Azure CLI (optional für Cloud-Integration)
 
 ### Wissensvoraussetzungen
@@ -147,42 +162,45 @@ Nach Abschluss dieses Moduls werden Sie:
 - Vertrautheit mit der Kommandozeile
 - Grundkenntnisse in Python-Programmierung
 - REST-API-Konzepte
-- Grundkenntnisse in Prompting und Modell-Inferenz
+- Grundkenntnisse in Prompting und Modellinferenz
 
-## Zeitplan des Moduls
+## Modul-Zeitplan
 
-**Gesamtdauer**: 15-20 Stunden
+**Gesamte geschätzte Zeit**: 30-38 Stunden
 
-| Sitzung | Schwerpunkt | Zeit | Komplexität |
-|---------|-------------|------|-------------|
-|  1 | Einrichtung & Grundlagen | 2-3 Stunden | Anfänger |
-|  2 | KI-Lösungen | 2-3 Stunden | Mittelstufe |
-|  3 | Open Source | 2-3 Stunden | Mittelstufe |
-|  4 | Fortgeschrittene Modelle | 3-4 Stunden | Fortgeschritten |
-|  5 | KI-Agenten | 3-4 Stunden | Fortgeschritten |
-|  6 | Unternehmenswerkzeuge | 3-4 Stunden | Experte |
+| Sitzung | Schwerpunkt | Beispiele | Zeit | Komplexität |
+|---------|-------------|-----------|------|-------------|
+|  1 | Einrichtung & Grundlagen | 01, 02, 03 | 2-3 Stunden | Anfänger |
+|  2 | KI-Lösungen | 04 | 2-3 Stunden | Mittelstufe |
+|  3 | Open Source | 05 | 2-3 Stunden | Mittelstufe |
+|  4 | Fortgeschrittene Modelle | 06 | 3-4 Stunden | Fortgeschritten |
+|  5 | KI-Agenten | 05, 09 | 3-4 Stunden | Fortgeschritten |
+|  6 | Unternehmenswerkzeuge | 06, 10 | 3-4 Stunden | Experte |
+|  7 | Direkte API-Integration | 07 | 2-3 Stunden | Mittelstufe |
+|  8 | Windows 11 Chat-App | 08 | 3-4 Stunden | Fortgeschritten |
+|  9 | Fortgeschrittene Multi-Agenten | 09 | 4-5 Stunden | Experte |
+| 10 | Tools-Framework | 10 | 4-5 Stunden | Experte |
 
 ## Wichtige Ressourcen
 
-### Primäre Dokumentation
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays Serie](https://aka.ms/model-mondays)
+**Offizielle Dokumentation:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Quellcode und offizielle Beispiele
+- [Azure AI Foundry Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Vollständige Einrichtung und Nutzung
+- [Model Mondays Serie](https://aka.ms/model-mondays) - Wöchentliche Modell-Highlights und Tutorials
 
-### Community-Ressourcen
-- [Foundry Local Community Diskussionen](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry Beispiele](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI Entwickler-Community](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Community & Support:**
+- [Foundry Local Diskussionen](https://github.com/microsoft/Foundry-Local/discussions) - Community-Fragen und Feature-Anfragen
+- [Microsoft AI Entwickler-Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Neuigkeiten und Best Practices
 
 ## Lernergebnisse
 
-Nach Abschluss dieses Moduls sind Sie in der Lage:
+Nach Abschluss dieses Moduls wirst du in der Lage sein:
 
 ### Technische Fähigkeiten
 - **Bereitstellen und Verwalten**: Foundry Local-Installationen in Entwicklungs- und Produktionsumgebungen
-- **Modelle integrieren**: Nahtlos mit verschiedenen Modellfamilien von Microsoft, Hugging Face und Community-Quellen arbeiten
+- **Modelle integrieren**: Nahtlose Arbeit mit verschiedenen Modellfamilien von Microsoft, Hugging Face und Community-Quellen
 - **Anwendungen erstellen**: Produktionsreife KI-Anwendungen mit fortschrittlichen Funktionen und Optimierungen entwickeln
-- **Agenten entwickeln**: Komplexe KI-Agenten mit Grounding, Argumentation und Werkzeugintegration implementieren
+- **Agenten entwickeln**: Komplexe KI-Agenten mit Grounding-, Reasoning- und Tool-Integration implementieren
 
 ### Strategisches Verständnis
 - **Architekturentscheidungen**: Informierte Entscheidungen zwischen lokaler und Cloud-Bereitstellung treffen
@@ -191,90 +209,259 @@ Nach Abschluss dieses Moduls sind Sie in der Lage:
 - **Datenschutz und Sicherheit**: Datenschutzfreundliche KI-Lösungen mit lokaler Inferenz implementieren
 
 ### Innovationsfähigkeiten
-- **Schnelles Prototyping**: KI-Anwendungskonzepte schnell erstellen und testen
+- **Schnelles Prototyping**: KI-Anwendungskonzepte schnell erstellen und testen, basierend auf allen 10 Beispielmustern
 - **Community-Integration**: Open-Source-Modelle nutzen und zum Ökosystem beitragen
-- **Fortgeschrittene Muster**: Modernste KI-Muster wie RAG, Agenten und Werkzeugintegration implementieren
+- **Fortgeschrittene Muster**: Modernste KI-Muster wie RAG, Agenten und Tool-Integration implementieren
+- **Framework-Beherrschung**: Expertenintegration mit LangChain, Semantic Kernel, Chainlit und Electron
+- **Produktionsbereitstellung**: Skalierbare KI-Lösungen von lokalen Prototypen bis zu Unternehmenssystemen bereitstellen
 - **Zukunftssichere Entwicklung**: Anwendungen entwickeln, die für aufkommende KI-Technologien und Muster bereit sind
 
 ## Erste Schritte
 
-1. **Vorbereitung der Umgebung**: Stellen Sie sicher, dass Windows 11 mit den empfohlenen Hardware-Spezifikationen installiert ist
-2. **Installieren Sie die Voraussetzungen**: Richten Sie Entwicklungswerkzeuge und Abhängigkeiten ein
-3. **Beginnen Sie mit Sitzung 1**: Starten Sie mit der Installation und Grundkonfiguration von Foundry Local
-4. **Fortschreiten in Reihenfolge**: Absolvieren Sie die Sitzungen der Reihe nach für einen optimalen Lernfortschritt
-5. **Kontinuierlich üben**: Wenden Sie die Konzepte durch praktische Übungen und Projekte an
+1. **Umgebung einrichten**: Stelle sicher, dass Windows 11 mit empfohlener Hardware vorhanden ist (siehe Voraussetzungen)
+2. **Foundry Local installieren**: Folge Sitzung 1 für vollständige Installation und Konfiguration
+3. **Beispiel 01 ausführen**: Beginne mit der grundlegenden REST-API-Integration, um die Einrichtung zu überprüfen
+4. **Fortschritt durch Beispiele**: Schließe die Beispiele 01-10 ab, um umfassende Kenntnisse zu erlangen
 
 ## Erfolgskriterien
 
-Verfolgen Sie Ihren Fortschritt durch das Modul:
+Verfolge deinen Fortschritt durch alle 10 umfassenden Beispiele:
 
-- [ ] Erfolgreiche Installation und Konfiguration von Foundry Local
-- [ ] Bereitstellung und Ausführung von mindestens 4 verschiedenen Modellfamilien
-- [ ] Erstellung einer vollständigen KI-Lösung mit Datenintegration
-- [ ] Integration von mindestens 2 Open-Source-Modellen
-- [ ] Erstellung einer funktionalen RAG-Chat-Anwendung
-- [ ] Entwicklung und Bereitstellung eines KI-Agenten
-- [ ] Implementierung einer Architektur für Modelle-als-Werkzeuge
+### Grundlagen-Level (Beispiele 01-03)
+- [ ] Foundry Local erfolgreich installieren und konfigurieren
+- [ ] REST-API-Integration abschließen (Beispiel 01)
+- [ ] OpenAI SDK-Kompatibilität implementieren (Beispiel 02)
+- [ ] Modellentdeckung und Benchmarking durchführen (Beispiel 03)
 
-## Schnellstart für Beispiele
+### Anwendungs-Level (Beispiele 04-06)
+- [ ] Mindestens 4 verschiedene Modellfamilien bereitstellen und ausführen
+- [ ] Funktionale RAG-Chat-Anwendung erstellen (Beispiel 04)
+- [ ] Multi-Agent-Orchestrierungssystem erstellen (Beispiel 05)
+- [ ] Intelligentes Modell-Routing implementieren (Beispiel 06)
 
-### 1) Umgebung einrichten (Windows cmd.exe)
-```cmd
+### Fortgeschrittenes Integrations-Level (Beispiele 07-10)
+- [ ] Produktionsreife API-Clients erstellen (Beispiel 07)
+- [ ] Windows 11 native Chat-Anwendung entwickeln (Beispiel 08)
+- [ ] Fortgeschrittenes Multi-Agent-System implementieren (Beispiel 09)
+- [ ] Umfassendes Tools-Framework erstellen (Beispiel 10)
+
+### Meisterschaftsindikatoren
+- [ ] Alle 10 Beispiele erfolgreich ohne Fehler ausführen
+- [ ] Mindestens 3 Beispiele für spezifische Anwendungsfälle anpassen
+- [ ] Mindestens 2 Beispiele in produktionsähnlichen Umgebungen bereitstellen
+- [ ] Verbesserungen oder Erweiterungen zum Beispielcode beitragen
+- [ ] Foundry Local-Muster in persönliche/professionelle Projekte integrieren
+
+## Schnellstart-Anleitung - Alle 10 Beispiele
+
+### Umgebungseinrichtung (Erforderlich für alle Beispiele)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Lokales Modell starten (neues Terminal)
-```cmd
-foundry model list
+### Kern-Grundlagen-Beispiele (01-06)
+
+**Beispiel 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Beispiel 02: OpenAI SDK-Integration**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Beispiel 03: Modellentdeckung & Benchmarking**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Beispiel 04: Chainlit RAG-Anwendung**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Beispiel 05: Multi-Agent-Orchestrierung**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Beispiel 06: Models-as-Tools Router**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Fortgeschrittene Integrations-Beispiele (07-10)
+
+**Beispiel 07: Direkter API-Client**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Beispiel 08: Windows 11 Chat-Anwendung**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Beispiel 09: Fortgeschrittenes Multi-Agent-System**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Beispiel 10: Foundry Tools Framework**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Häufige Probleme beheben
+
+**Foundry Local-Verbindungsfehler**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Probleme beim Laden von Modellen**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Chainlit-Demo ausführen (Sitzung 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Abhängigkeitsprobleme**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Multi-Agent-Koordinator ausführen (Sitzung 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## Zusammenfassung
+Dieses Modul repräsentiert den neuesten Stand der Edge-AI-Entwicklung und kombiniert Microsofts Unternehmenslösungen mit der Flexibilität und Innovation des Open-Source-Ökosystems. Wenn Sie Foundry Local durch alle 10 umfassenden Beispiele meistern, werden Sie an der Spitze der Entwicklung von KI-Anwendungen stehen.
 
-Falls Verbindungsfehler auftreten, validieren Sie Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**Vollständiger Lernpfad:**
+- **Grundlagen** (Beispiele 01-03): API-Integration und Modellverwaltung
+- **Anwendungen** (Beispiele 04-06): RAG, Agenten und intelligente Weiterleitung
+- **Fortgeschritten** (Beispiele 07-10): Produktionsframeworks und Unternehmensintegration
 
-### Router-Konfiguration (Sitzung 6)
-Der Router führt einen schnellen Gesundheitscheck durch und unterstützt konfigurationsbasierte Umgebungen:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-Dieses Modul repräsentiert den neuesten Stand der Edge-AI-Entwicklung und kombiniert die Unternehmenswerkzeuge von Microsoft mit der Flexibilität und Innovation des Open-Source-Ökosystems. Mit der Beherrschung von Foundry Local stehen Sie an der Spitze der KI-Anwendungsentwicklung.
-
-Für Azure OpenAI (Sitzung 2) finden Sie die erforderlichen Umgebungsvariablen und API-Versionseinstellungen in der README-Datei des Beispiels.
-
-## Übersicht der Beispiele
-
-- `samples/01`: Schneller REST-Chat mit Foundry Local (`chat_quickstart.py`).
-- `samples/02`: OpenAI SDK-Integration (`sdk_quickstart.py`).
-- `samples/03`: Modellentdeckung + schneller Benchmark (`list_and_bench.cmd`).
-- `samples/04`: Chainlit RAG-Demo (`app.py`).
-- `samples/05`: Multi-Agenten-Orchestrierung (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Router für Modelle-als-Werkzeuge (`python samples\06\router.py`).
+Für die Integration von Azure OpenAI (Session 2) finden Sie die erforderlichen Umgebungsvariablen und API-Versionseinstellungen in den README-Dateien der einzelnen Beispiele.
 
 ---
 
