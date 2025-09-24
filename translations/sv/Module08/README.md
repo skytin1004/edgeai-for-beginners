@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T19:16:14+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T22:46:25+00:00",
   "source_file": "Module08/README.md",
   "language_code": "sv"
 }
@@ -15,124 +15,139 @@ Microsoft Foundry Local representerar nästa generation av edge AI-utveckling oc
 
 **Nyckelteknologier:**
 - Microsoft Foundry Local CLI och SDK
-- Integration med Azure AI Foundry
+- Azure AI Foundry-integration
 - Modellinferens på enheten
 - Lokal modellcaching och optimering
 - Agentbaserade arkitekturer
 
-## Modulens lärandemål
+## Lärandemål
 
 Genom att slutföra denna modul kommer du att:
 
-- **Behärska Foundry Local-setup**: Installera, konfigurera och optimera Foundry Local för utveckling på Windows 11
-- **Distribuera olika modeller**: Köra phi, qwen, deepseek och GPT-OSS-20B-modeller lokalt med CLI-kommandon
+- **Behärska Foundry Local**: Installera, konfigurera och optimera för utveckling på Windows 11
+- **Distribuera olika modeller**: Kör phi, qwen, deepseek och GPT-modeller lokalt med CLI-kommandon
 - **Bygga produktionslösningar**: Skapa AI-applikationer med avancerad promptteknik och dataintegration
-- **Utnyttja open source-ekosystemet**: Integrera Hugging Face-modeller och community-drivna tillägg
-- **Jämföra AI-arkitekturer**: Förstå för- och nackdelar med LLMs kontra SLMs och strategier för distribution
-- **Utveckla AI-agenter**: Bygga intelligenta agenter med Foundry Locals arkitektur och grundningsfunktioner
-- **Implementera modeller som verktyg**: Skapa modulära, anpassningsbara AI-lösningar för företagsapplikationer
+- **Utnyttja öppen källkod**: Integrera Hugging Face-modeller och bidrag från communityn
+- **Utveckla AI-agenter**: Bygga intelligenta agenter med grounding och orkestreringsfunktioner
+- **Implementera företagsmönster**: Skapa modulära, skalbara AI-lösningar för produktionsdistribution
 
 ## Sessionsstruktur
 
 ### [1: Kom igång med Foundry Local](./01.FoundryLocalSetup.md)
-**Fokus**: Installation, CLI-setup, modellcaching och hårdvaruacceleration
+**Fokus**: Installation, CLI-setup, modelldistribution och hårdvaruoptimering
 
-**Vad du kommer att lära dig:**
-- Komplett installation av Foundry Local på Windows 11
-- CLI-konfiguration och kommandostruktur
-- Strategier för modellcaching för optimal prestanda
-- Setup och optimering av hårdvaruacceleration
-- Praktisk distribution av phi, qwen, deepseek och GPT-OSS-20B-modeller
+**Nyckelämnen**: Komplett installation • CLI-kommandon • Modellcaching • Hårdvaruacceleration • Multimodell-distribution
 
-**Varaktighet**: 2-3 timmar  
-**Förkunskaper**: Windows 11, grundläggande kunskaper om kommandoraden
+**Exempel**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
+
+**Varaktighet**: 2-3 timmar | **Nivå**: Nybörjare
 
 ---
 
 ### [2: Bygg AI-lösningar med Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Fokus**: Avancerad promptteknik, dataintegration och handlingsbara uppgifter
+**Fokus**: Avancerad promptteknik, dataintegration och molnanslutning
 
-**Vad du kommer att lära dig:**
-- Avancerade tekniker för promptteknik
-- Mönster och bästa praxis för dataintegration
-- Bygga handlingsbara AI-uppgifter med Foundry Local
-- Sömlösa arbetsflöden för integration med Azure AI Foundry
-- Optimering och övervakning av prestanda
+**Nyckelämnen**: Promptteknik • Dataintegration • Azure-arbetsflöden • Prestandaoptimering • Övervakning
 
-**Varaktighet**: 2-3 timmar  
-**Förkunskaper**: Slutförande av session 1, Azure-konto (valfritt)
+**Exempel**: [Chainlit RAG Application](./samples/04/README.md)
+
+**Varaktighet**: 2-3 timmar | **Nivå**: Mellanliggande
 
 ---
 
-### [3: Open Source-modeller i Foundry Local](./03.OpenSourceModels.md)
-**Fokus**: Hugging Face-integration, strategier för modellval och community-drivna tillägg
+### [3: Öppen källkod-modeller i Foundry Local](./03.OpenSourceModels.md)
+**Fokus**: Hugging Face-integration, BYOM-strategier och community-modeller
 
-**Vad du kommer att lära dig:**
-- Integration av Hugging Face-modeller med Foundry Local
-- Strategier och implementering för "Bring-your-own-model" (BYOM)
-- Insikter från Model Mondays-serien och community-bidrag
-- Anpassad modelldistribution och optimering
-- Utvärderingskriterier för community-modeller
+**Nyckelämnen**: Hugging Face-integration • Bring-your-own-model • Model Mondays-insikter • Community-bidrag • Modellval
 
-**Varaktighet**: 2-3 timmar  
-**Förkunskaper**: Slutförande av session 1-2, Hugging Face-konto
+**Exempel**: [Multi-Agent Orchestration](./samples/05/README.md)
+
+**Varaktighet**: 2-3 timmar | **Nivå**: Mellanliggande
 
 ---
 
-### [4: Utforska banbrytande modeller - LLMs, SLMs och inferens på enheten](./04.CuttingEdgeModels.md)
-**Fokus**: Modelljämförelse, EdgeAI med Phi och ONNX Runtime, avancerade demos
+### [4: Utforska banbrytande modeller](./04.CuttingEdgeModels.md)
+**Fokus**: LLMs vs SLMs, EdgeAI-implementering och avancerade demos
 
-**Vad du kommer att lära dig:**
-- Omfattande jämförelse mellan LLMs och SLMs samt användningsfall
-- Trade-offs mellan lokal och molnbaserad inferens och beslutsramverk
-- EdgeAI-implementering med Phi och ONNX Runtime
-- Utveckling och distribution av Chainlit RAG Chat App
-- Optimeringstekniker för WebGPU-inferens
-- Integration och kapabiliteter för AI PC SDK
+**Nyckelämnen**: Modelljämförelse • Edge vs molninferens • Phi + ONNX Runtime • Chainlit RAG-app • WebGPU-optimering
 
-**Varaktighet**: 3-4 timmar  
-**Förkunskaper**: Slutförande av session 1-3, förståelse för inferenskoncept
+**Exempel**: [Models-as-Tools Router](./samples/06/README.md)
+
+**Varaktighet**: 3-4 timmar | **Nivå**: Avancerad
 
 ---
 
-### [5: Bygg AI-drivna agenter snabbt med Foundry Local](./05.AIPoweredAgents.md)
-**Fokus**: Snabb utveckling av GenAI-appar, systemprompter, grundning och agentarkitekturer
+### [5: Bygg AI-drivna agenter snabbt](./05.AIPoweredAgents.md)
+**Fokus**: Agentarkitekturer, systemprompter, grounding och orkestrering
 
-**Vad du kommer att lära dig:**
-- Foundry Locals agentarkitektur och designmönster
-- Tekniker för systemprompter för agentbeteende
-- Grundningstekniker för tillförlitliga agentresponser
-- Snabba arbetsflöden för utveckling av GenAI-applikationer
-- Orkestrering av agenter och system med flera agenter
-- Strategier för produktionsdistribution av AI-agenter
+**Nyckelämnen**: Agentdesignmönster • Systempromptteknik • Groundingtekniker • Multi-agent-system • Produktionsdistribution
 
-**Varaktighet**: 3-4 timmar  
-**Förkunskaper**: Slutförande av session 1-4, grundläggande förståelse för AI-agenter
+**Exempel**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
+
+**Varaktighet**: 3-4 timmar | **Nivå**: Avancerad
 
 ---
 
 ### [6: Foundry Local - Modeller som verktyg](./06.ModelsAsTools.md)
-**Fokus**: Modulära AI-lösningar, distribution på enheten och företagsmässig skalning
+**Fokus**: Modulära AI-lösningar, företagsanpassning och produktionsmönster
 
-**Vad du kommer att lära dig:**
-- Behandla AI-modeller som modulära, anpassningsbara verktyg
-- Distribution på enheten utan molnberoende
-- Inferens med låg latens, kostnadseffektivitet och integritetsskydd
-- Mönster för integration av SDK, API och CLI
-- Anpassning av modeller för specifika användningsfall
-- Skalningsstrategier från lokal till Azure AI Foundry
-- Företagsklara AI-applikationsarkitekturer
+**Nyckelämnen**: Modeller som verktyg • Distribution på enheten • SDK/API-integration • Företagsarkitekturer • Skalningsstrategier
 
-**Varaktighet**: 3-4 timmar  
-**Förkunskaper**: Alla tidigare sessioner, erfarenhet av företagsutveckling är användbart
+**Exempel**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
-## Förkunskaper
+**Varaktighet**: 3-4 timmar | **Nivå**: Expert
+
+---
+
+### [7: Direkt API-integrationsmönster](./samples/07/README.md)
+**Fokus**: Ren REST API-integration utan SDK-beroenden för maximal kontroll
+
+**Nyckelämnen**: HTTP-klientimplementering • Anpassad autentisering • Modellhälsokontroll • Strömmande svar • Produktionsfelhantering
+
+**Exempel**: [Direct API Client](./samples/07/README.md)
+
+**Varaktighet**: 2-3 timmar | **Nivå**: Mellanliggande
+
+---
+
+### [8: Windows 11 Native Chat Application](./samples/08/README.md)
+**Fokus**: Bygga moderna, inhemska chattapplikationer med Foundry Local-integration
+
+**Nyckelämnen**: Electron-utveckling • Fluent Design System • Inhemsk Windows-integration • Realtidsströmning • Chattgränssnittsdesign
+
+**Exempel**: [Windows 11 Chat Application](./samples/08/README.md)
+
+**Varaktighet**: 3-4 timmar | **Nivå**: Avancerad
+
+---
+
+### [9: Avancerad multi-agent orkestrering](./samples/09/README.md)
+**Fokus**: Sofistikerad agentkoordinering, specialiserad uppgiftsdelegering och samarbetsbaserade AI-arbetsflöden
+
+**Nyckelämnen**: Intelligent agentkoordinering • Funktionsanropsmönster • Kommunikation mellan agenter • Arbetsflödesorkestrering • Kvalitetssäkringsmekanismer
+
+**Exempel**: [Advanced Multi-Agent System](./samples/09/README.md)
+
+**Varaktighet**: 4-5 timmar | **Nivå**: Expert
+
+---
+
+### [10: Foundry Local som verktygsramverk](./samples/10/README.md)
+**Fokus**: Verktygsfokuserad arkitektur för att integrera Foundry Local i befintliga applikationer och ramverk
+
+**Nyckelämnen**: LangChain-integration • Semantiska Kernel-funktioner • REST API-ramverk • CLI-verktyg • Jupyter-integration • Produktionsdistributionsmönster
+
+**Exempel**: [Foundry Tools Framework](./samples/10/README.md)
+
+**Varaktighet**: 4-5 timmar | **Nivå**: Expert
+
+## Förkunskapskrav
 
 ### Systemkrav
 - **Operativsystem**: Windows 11 (22H2 eller senare)
 - **Minne**: 16GB RAM (32GB rekommenderas för större modeller)
 - **Lagring**: 50GB ledigt utrymme för modellcaching
-- **Hårdvara**: Enhet med NPU rekommenderas (Copilot+ PC), GPU valfritt
+- **Hårdvara**: NPU-aktiverad enhet rekommenderas (Copilot+ PC), GPU valfritt
 - **Nätverk**: Snabb internetanslutning för initiala modellnedladdningar
 
 ### Utvecklingsmiljö
@@ -142,139 +157,311 @@ Genom att slutföra denna modul kommer du att:
 - PowerShell eller Kommandotolken
 - Azure CLI (valfritt för molnintegration)
 
-### Kunskapsförkunskaper
+### Kunskapsförutsättningar
 - Grundläggande förståelse för AI/ML-koncept
 - Bekantskap med kommandoraden
 - Grundläggande Python-programmering
 - REST API-koncept
-- Grundläggande kunskaper om promptteknik och modellinferens
+- Grundläggande kunskap om promptteknik och modellinferens
 
 ## Modulens tidslinje
 
-**Total uppskattad tid**: 15-20 timmar
+**Total uppskattad tid**: 30-38 timmar
 
-| Session | Fokusområde | Tid | Svårighetsgrad |
-|---------|-------------|-----|----------------|
-|  1 | Setup & Grunder | 2-3 timmar | Nybörjare |
-|  2 | AI-lösningar | 2-3 timmar | Mellanliggande |
-|  3 | Open Source | 2-3 timmar | Mellanliggande |
-|  4 | Avancerade modeller | 3-4 timmar | Avancerad |
-|  5 | AI-agenter | 3-4 timmar | Avancerad |
-|  6 | Företagsverktyg | 3-4 timmar | Expert |
+| Session | Fokusområde | Exempel | Tid | Komplexitet |
+|---------|-------------|---------|-----|-------------|
+|  1 | Setup & Grunder | 01, 02, 03 | 2-3 timmar | Nybörjare |
+|  2 | AI-lösningar | 04 | 2-3 timmar | Mellanliggande |
+|  3 | Öppen källkod | 05 | 2-3 timmar | Mellanliggande |
+|  4 | Avancerade modeller | 06 | 3-4 timmar | Avancerad |
+|  5 | AI-agenter | 05, 09 | 3-4 timmar | Avancerad |
+|  6 | Företagsverktyg | 06, 10 | 3-4 timmar | Expert |
+|  7 | Direkt API-integration | 07 | 2-3 timmar | Mellanliggande |
+|  8 | Windows 11 Chattapp | 08 | 3-4 timmar | Avancerad |
+|  9 | Avancerad multi-agent | 09 | 4-5 timmar | Expert |
+| 10 | Verktygsramverk | 10 | 4-5 timmar | Expert |
 
 ## Viktiga resurser
 
-### Primär dokumentation
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays Series](https://aka.ms/model-mondays)
+**Officiell dokumentation:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Källkod och officiella exempel
+- [Azure AI Foundry Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Komplett installations- och användarguide
+- [Model Mondays Series](https://aka.ms/model-mondays) - Veckovisa modellhöjdpunkter och handledningar
 
-### Community-resurser
-- [Foundry Local Community Discussions](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry Samples](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Community & Support:**
+- [Foundry Local Diskussioner](https://github.com/microsoft/Foundry-Local/discussions) - Community Q&A och funktionsförfrågningar
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Senaste nyheter och bästa praxis
 
-## Lärandemål
+## Läranderesultat
 
 Efter att ha slutfört denna modul kommer du att vara utrustad för att:
 
 ### Teknisk kompetens
 - **Distribuera och hantera**: Foundry Local-installationer i utvecklings- och produktionsmiljöer
-- **Integrera modeller**: Arbeta sömlöst med olika modelfamiljer från Microsoft, Hugging Face och community-källor
+- **Integrera modeller**: Arbeta sömlöst med olika modelfamiljer från Microsoft, Hugging Face och communityn
 - **Bygga applikationer**: Skapa produktionsklara AI-applikationer med avancerade funktioner och optimeringar
-- **Utveckla agenter**: Implementera sofistikerade AI-agenter med grundning, resonemang och verktygsintegration
+- **Utveckla agenter**: Implementera sofistikerade AI-agenter med grounding, resonemang och verktygsintegration
 
 ### Strategisk förståelse
-- **Arkitekturval**: Göra informerade val mellan lokal och molnbaserad distribution
+- **Arkitekturval**: Göra informerade val mellan lokal och molndistribution
 - **Prestandaoptimering**: Optimera inferensprestanda över olika hårdvarukonfigurationer
 - **Företagsskalning**: Designa applikationer som skalar från lokala prototyper till företagsdistributioner
-- **Integritet och säkerhet**: Implementera integritetsskyddande AI-lösningar med lokal inferens
+- **Integritet och säkerhet**: Implementera integritetsbevarande AI-lösningar med lokal inferens
 
 ### Innovationsförmåga
-- **Snabb prototypframtagning**: Bygga och testa AI-applikationskoncept snabbt
-- **Community-integration**: Utnyttja open source-modeller och bidra till ekosystemet
+- **Snabb prototypframställning**: Bygga och testa AI-applikationskoncept snabbt med alla 10 exempelmönster
+- **Community-integration**: Utnyttja öppen källkod-modeller och bidra till ekosystemet
 - **Avancerade mönster**: Implementera banbrytande AI-mönster inklusive RAG, agenter och verktygsintegration
+- **Ramverkskompetens**: Expertintegration med LangChain, Semantic Kernel, Chainlit och Electron
+- **Produktionsdistribution**: Distribuera skalbara AI-lösningar från lokala prototyper till företagsystem
 - **Framtidsredo utveckling**: Bygga applikationer redo för framväxande AI-teknologier och mönster
 
 ## Kom igång
 
-1. **Förbered din miljö**: Säkerställ Windows 11 med rekommenderade hårdvaruspecifikationer
-2. **Installera förutsättningar**: Ställ in utvecklingsverktyg och beroenden
-3. **Börja med session 1**: Starta med installation och grundläggande setup av Foundry Local
-4. **Fortsätt sekventiellt**: Slutför sessionerna i ordning för optimal inlärningsprogression
-5. **Öva kontinuerligt**: Tillämpa koncept genom praktiska övningar och projekt
+1. **Miljöinställning**: Säkerställ Windows 11 med rekommenderad hårdvara (se Förkunskapskrav)
+2. **Installera Foundry Local**: Följ Session 1 för komplett installation och konfiguration
+3. **Kör Exempel 01**: Börja med grundläggande REST API-integration för att verifiera installationen
+4. **Fortsätt genom exemplen**: Slutför exempel 01-10 för omfattande kompetens
 
 ## Framgångsmått
 
-Följ din framgång genom modulen:
+Följ din framgång genom alla 10 omfattande exempel:
 
+### Grundläggande nivå (Exempel 01-03)
 - [ ] Installera och konfigurera Foundry Local framgångsrikt
-- [ ] Distribuera och köra minst 4 olika modelfamiljer
-- [ ] Bygga en komplett AI-lösning med dataintegration
-- [ ] Integrera minst 2 open source-modeller
-- [ ] Skapa en fungerande RAG-chatapplikation
-- [ ] Utveckla och distribuera en AI-agent
-- [ ] Implementera en arkitektur för modeller-som-verktyg
+- [ ] Slutför REST API-integration (Exempel 01)
+- [ ] Implementera OpenAI SDK-kompatibilitet (Exempel 02)
+- [ ] Utför modellupptäckt och benchmarking (Exempel 03)
 
-## Snabbstart för exempel
+### Applikationsnivå (Exempel 04-06)
+- [ ] Distribuera och kör minst 4 olika modelfamiljer
+- [ ] Bygg en funktionell RAG-chattapplikation (Exempel 04)
+- [ ] Skapa ett multi-agent orkestreringssystem (Exempel 05)
+- [ ] Implementera intelligent modellrouting (Exempel 06)
 
-### 1) Miljösetup (Windows cmd.exe)
-```cmd
+### Avancerad integrationsnivå (Exempel 07-10)
+- [ ] Bygg en produktionsklar API-klient (Exempel 07)
+- [ ] Utveckla en inhemsk Windows 11 chattapplikation (Exempel 08)
+- [ ] Implementera ett avancerat multi-agent-system (Exempel 09)
+- [ ] Skapa ett omfattande verktygsramverk (Exempel 10)
+
+### Mästerskapsindikatorer
+- [ ] Kör alla 10 exempel utan fel
+- [ ] Anpassa minst 3 exempel för specifika användningsfall
+- [ ] Distribuera 2+ exempel i produktionsliknande miljöer
+- [ ] Bidra med förbättringar eller utökningar till exempelkod
+- [ ] Integrera Foundry Local-mönster i personliga/professionella projekt
+
+## Snabbstartsguide - Alla 10 exempel
+
+### Miljöinställning (Krävs för alla exempel)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Starta en lokal modell (ny terminal)
-```cmd
-foundry model list
+### Grundläggande exempel (01-06)
+
+**Exempel 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Exempel 02: OpenAI SDK Integration**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Exempel 03: Model Discovery & Benchmarking**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Exempel 04: Chainlit RAG Application**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Exempel 05: Multi-Agent Orchestration**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Exempel 06: Models-as-Tools Router**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Avancerade integrations-exempel (07-10)
+
+**Exempel 07: Direct API Client**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Exempel 08: Windows 11 Chat Application**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Exempel 09: Advanced Multi-Agent System**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Exempel 10: Foundry Tools Framework**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Felsökning av vanliga problem
+
+**Foundry Local-anslutningsfel**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Problem med modellinläsning**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Kör Chainlit-demo (Session 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Beroendeproblem**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Kör multi-agent-koordinatorn (Session 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## Sammanfattning
+Den här modulen representerar det senaste inom edge AI-utveckling, där Microsofts verktyg i företagsklass kombineras med flexibiliteten och innovationen från den öppna källkodens ekosystem. Genom att bemästra Foundry Local via alla 10 omfattande exempel kommer du att vara i framkant av AI-applikationsutveckling.
 
-Om du ser anslutningsfel, validera Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**Komplett lärandebana:**
+- **Grundläggande** (Exempel 01-03): API-integration och modellhantering
+- **Applikationer** (Exempel 04-06): RAG, agenter och intelligent routing
+- **Avancerat** (Exempel 07-10): Produktionsramverk och företagsintegration
 
-### Routerkonfiguration (Session 6)
-Routern utför en snabb hälsokontroll och stödjer konfiguration baserad på miljövariabler:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-Denna modul representerar det senaste inom edge AI-utveckling och kombinerar Microsofts företagsklassade verktyg med flexibiliteten och innovationen från open source-ekosystemet. Genom att behärska Foundry Local kommer du att vara i framkant av AI-applikationsutveckling.
-
-För Azure OpenAI (Session 2), se README för exempel på nödvändiga miljövariabler och API-versionsinställningar.
-
-## Översikt över exempel
-
-- `samples/01`: Snabb REST-chat till Foundry Local (`chat_quickstart.py`).
-- `samples/02`: OpenAI SDK-integration (`sdk_quickstart.py`).
-- `samples/03`: Modellupptäckt + snabb benchmark (`list_and_bench.cmd`).
-- `samples/04`: Chainlit RAG-demo (`app.py`).
-- `samples/05`: Multi-agent-orkestrering (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Router för modeller-som-verktyg (`python samples\06\router.py`).
+För Azure OpenAI-integration (Session 2), se README-filerna för de enskilda exemplen för nödvändiga miljövariabler och inställningar för API-version.
 
 ---
 
