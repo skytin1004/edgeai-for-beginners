@@ -85,8 +85,20 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 | [🔧 05](./Module05/) | [SLMOps Production](./Module05/README.md) | Production operations | SLMOps Introduction • Model Distillation • Fine-tuning • Production Deployment | Advanced | 5-6 hrs |
 | [🤖 06](./Module06/) | [AI Agents & Function Calling](./Module06/README.md) | Agent frameworks & MCP | Agent Introduction • Function Calling • Model Context Protocol | Advanced | 4-5 hrs |
 | [💻 07](./Module07/) | [Platform Implementation](./Module07/README.md) | Cross-platform samples | AI Toolkit • Foundry Local • Windows Development | Advanced | 3-4 hrs |
-| [🏭 08](./Module08/) | [Foundry Local Toolkit](./Module08/README.md) | Production-ready samples | • [01: REST Chat Quickstart](./Module08/samples/01/README.md)<br>• [02: OpenAI SDK Integration](./Module08/samples/02/README.md)<br>• [03: Model Discovery & Benchmarking](./Module08/samples/03/README.md)<br>• [04: Chainlit RAG Application](./Module08/samples/04/README.md)<br>• [05: Multi-Agent Orchestration](./Module08/samples/05/README.md)<br>• [06: Models-as-Tools Router](./Module08/samples/06/README.md)<br>• [07: Direct API Client](./Module08/samples/07/README.md)<br>• [08: Windows 11 Chat App](./Module08/samples/08/README.md)<br>• [09: Advanced Multi-Agent System](./Module08/samples/09/README.md)<br>• [10: Foundry Tools Framework](./Module08/samples/10/README.md) | Expert | 8-10 hrs |
+| [🏭 08](./Module08/) | [Foundry Local Toolkit](./Module08/README.md) | Production-ready samples | Sample applications (see details below) | Expert | 8-10 hrs |
 
+### 🏭 **Module 08: Sample Applications**
+
+- [01: REST Chat Quickstart](./Module08/samples/01/README.md)
+- [02: OpenAI SDK Integration](./Module08/samples/02/README.md)
+- [03: Model Discovery & Benchmarking](./Module08/samples/03/README.md)
+- [04: Chainlit RAG Application](./Module08/samples/04/README.md)
+- [05: Multi-Agent Orchestration](./Module08/samples/05/README.md)
+- [06: Models-as-Tools Router](./Module08/samples/06/README.md)
+- [07: Direct API Client](./Module08/samples/07/README.md)
+- [08: Windows 11 Chat App](./Module08/samples/08/README.md)
+- [09: Advanced Multi-Agent System](./Module08/samples/09/README.md)
+- [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 ### 📊 **Learning Path Summary**
 - **Total Duration**: 36-45 hours
 - **Beginner Path**: Modules 01-02 (7-9 hours)  
