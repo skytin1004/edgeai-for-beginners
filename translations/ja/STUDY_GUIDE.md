@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e94a6b6e8c8f3f9c881b7d6222cd9c6b",
-  "translation_date": "2025-09-22T12:09:41+00:00",
+  "original_hash": "ef04a48f3f1428fa008738033017e0e8",
+  "translation_date": "2025-09-24T10:25:15+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "ja"
 }
@@ -18,7 +18,8 @@ CO_OP_TRANSLATOR_METADATA:
 | 3日目 | モジュール3: SLMの展開 | 2時間 |
 | 4-5日目 | モジュール4: モデル最適化 (6つのフレームワーク) | 4時間 |
 | 6日目 | モジュール5: SLMOps | 3時間 |
-| 7日目 | モジュール6-7: AIエージェントと開発ツール | 5時間 |
+| 7日目 | モジュール6-7: AIエージェントと開発ツール | 4時間 |
+| 8日目 | モジュール8: Foundry Local Toolkit (最新の実装) | 1時間 |
 
 ### 集中学習パス (2週間)
 
@@ -76,22 +77,22 @@ CO_OP_TRANSLATOR_METADATA:
 
 初心者向けEdgeAI学習ガイドへようこそ！このドキュメントは、コース教材を効率的に活用し、学習体験を最大化するための手助けをするために作成されています。構造化された学習パス、推奨される学習スケジュール、重要な概念の要約、そしてEdgeAI技術の理解を深めるための補足リソースを提供します。
 
-このコースは、EdgeAIに関する基本的な知識を効率的に学べる20時間の短期集中型コースです。忙しいプロフェッショナルや学生が、この新しい分野で実践的なスキルを迅速に習得するのに最適です。
+このコースは、EdgeAIに関する基本的な知識を効率的に学べる20時間の凝縮された内容で、忙しいプロフェッショナルや学生がこの新興分野で実践的なスキルを迅速に習得するのに最適です。
 
 ## コース概要
 
-このコースは、7つの包括的なモジュールで構成されています：
+このコースは、以下の7つの包括的なモジュールで構成されています：
 
-1. **EdgeAIの基礎と変革** - コアコンセプトと技術の変化を理解する
+1. **EdgeAIの基礎と変革** - 基本概念と技術の変化を理解する
 2. **小型言語モデル(SLM)の基礎** - 様々なSLMファミリーとそのアーキテクチャを探る
 3. **小型言語モデルの展開** - 実践的な展開戦略を実装する
 4. **モデル形式変換と量子化** - OpenVINOを含む6つのフレームワークでの高度な最適化
-5. **SLMOps - 小型言語モデルの運用管理** - 生産ライフサイクル管理と展開
+5. **SLMOps - 小型言語モデルの運用** - 生産ライフサイクル管理と展開
 6. **SLMエージェントシステム** - AIエージェント、関数呼び出し、モデルコンテキストプロトコル
 7. **EdgeAI実装サンプル** - AIツールキット、Windows開発、プラットフォーム固有の実装
-8. **Microsoft Foundry Local – 完全な開発者ツールキット** - ローカルファースト開発とハイブリッドAzure統合 (モジュール08)
+8. **Microsoft Foundry Local – 完全な開発者ツールキット** - ローカル優先の開発とハイブリッドAzure統合 (モジュール08)
 
-## 学習ガイドの使い方
+## この学習ガイドの使い方
 
 - **段階的学習**: モジュールを順番に進めることで、最も一貫性のある学習体験を得られます
 - **知識チェックポイント**: 各セクション後の自己評価質問を活用してください
@@ -107,7 +108,7 @@ CO_OP_TRANSLATOR_METADATA:
 | 1-2日目 | モジュール1: EdgeAIの基礎 | 6時間 |
 | 3-4日目 | モジュール2: SLMの基礎 | 8時間 |
 | 5日目 | モジュール3: SLMの展開 | 3時間 |
-| 6日目 | モジュール8: Foundry Localツールキット | 3時間 |
+| 6日目 | モジュール8: Foundry Local Toolkit | 3時間 |
 
 ### パートタイム学習 (3週間)
 
@@ -115,14 +116,14 @@ CO_OP_TRANSLATOR_METADATA:
 |------|-------|-----------------|
 | 1週目 | モジュール1: EdgeAIの基礎 | 6-7時間 |
 | 2週目 | モジュール2: SLMの基礎 | 7-8時間 |
-| 3週目 | モジュール3: SLMの展開 (3時間) + モジュール8: Foundry Localツールキット (2-3時間) | 5-6時間 |
+| 3週目 | モジュール3: SLMの展開 (3時間) + モジュール8: Foundry Local Toolkit (2-3時間) | 5-6時間 |
 
 ## モジュール1: EdgeAIの基礎と変革
 
 ### 主な学習目標
 
 - クラウドベースAIとエッジベースAIの違いを理解する
-- リソース制約環境向けのコア最適化技術を習得する
+- リソース制約環境向けの基本的な最適化技術を習得する
 - EdgeAI技術の実際の応用例を分析する
 - EdgeAIプロジェクトの開発環境を設定する
 
@@ -163,8 +164,8 @@ CO_OP_TRANSLATOR_METADATA:
 1. クラウドベースAIとエッジベースAIの実装を比較してください。
 2. エッジ展開向けモデルを最適化するための3つの主要技術を説明してください。
 3. エッジでAIモデルを実行する主な利点は何ですか？
-4. モデルを量子化するプロセスを説明し、それが性能にどのように影響するかを述べてください。
-5. NPU、GPU、CPUなどの異なるハードウェアアクセラレーターがEdgeAI展開にどのように影響するかを説明してください。
+4. モデルを量子化するプロセスを説明し、それが性能に与える影響を述べてください。
+5. NPU、GPU、CPUなどの異なるハードウェアアクセラレーターがEdgeAI展開にどのように影響するか説明してください。
 
 ### 実践演習
 
@@ -205,11 +206,11 @@ CO_OP_TRANSLATOR_METADATA:
 - **重要な概念**: 
   - 1ビット量子化技術
   - 推論最適化フレームワーク
-  - 持続可能性の考慮
+  - 持続可能性の考慮事項
 
 #### セクション5: Microsoft Muモデル
 - **重要な概念**: 
-  - デバイス重視のアーキテクチャ
+  - デバイス優先のアーキテクチャ
   - Windowsとのシステム統合
   - プライバシー保護の運用
 
@@ -222,16 +223,16 @@ CO_OP_TRANSLATOR_METADATA:
 ### 自己評価質問
 
 1. PhiモデルファミリーとQwenモデルファミリーのアーキテクチャアプローチを比較してください。
-2. BitNETの量子化技術が従来の量子化とどのように異なるかを説明してください。
+2. BitNETの量子化技術が従来の量子化とどのように異なるか説明してください。
 3. Windows統合におけるMuモデルのユニークな利点は何ですか？
 4. Phi-SilicaがNPUハードウェアを活用して性能を最適化する方法を説明してください。
-5. 接続性が限られたモバイルアプリケーションに最も適したモデルファミリーはどれで、なぜですか？
+5. 接続性が限られたモバイルアプリケーションに最も適したモデルファミリーはどれで、その理由を述べてください。
 
 ### 実践演習
 
 1. **モデル比較**: 2つの異なるSLMモデルの簡易ベンチマークを実施する (1時間)
-2. **簡易テキスト生成**: 小型モデルを使用した基本的なテキスト生成を実装する (1時間)
-3. **高速最適化**: 推論速度を向上させるための最適化技術を1つ適用する (1時間)
+2. **簡易テキスト生成**: 小型モデルを使用して基本的なテキスト生成を実装する (1時間)
+3. **高速最適化**: 推論速度を向上させる最適化技術を1つ適用する (1時間)
 
 ## モジュール3: 小型言語モデルの展開
 
@@ -239,8 +240,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 - 展開制約に基づいて適切なモデルを選択する
 - 様々な展開シナリオにおける最適化技術を習得する
-- ローカルおよびクラウド環境でSLMを実装する
-- EdgeAIアプリケーション向けの生産準備済み構成を設計する
+- SLMをローカルおよびクラウド環境で実装する
+- EdgeAIアプリケーション向けの生産準備が整った構成を設計する
 
 ### 学習の重点領域
 
@@ -254,7 +255,7 @@ CO_OP_TRANSLATOR_METADATA:
 - **重要な概念**: 
   - Ollamaプラットフォーム展開
   - Microsoft Foundryローカルソリューション
-  - フレームワーク比較分析
+  - フレームワークの比較分析
 
 #### セクション3: コンテナ化されたクラウド展開
 - **重要な概念**: 
@@ -272,8 +273,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 実践演習
 
-1. **基本的なローカル展開**: Ollamaを使用して簡易SLMを展開する (1時間)
-2. **性能チェック**: 展開したモデルの簡易ベンチマークを実行する (30分)
+1. **基本的なローカル展開**: Ollamaを使用して簡単なSLMを展開する (1時間)
+2. **性能チェック**: 展開したモデルで簡易ベンチマークを実施する (30分)
 3. **簡易統合**: 展開したモデルを使用する最小限のアプリケーションを作成する (1時間)
 
 ## モジュール4: モデル形式変換と量子化
@@ -302,321 +303,342 @@ CO_OP_TRANSLATOR_METADATA:
 #### セクション3: Microsoft Olive Suite
 - **重要な概念**: 
   - ハードウェア対応の最適化
-  - エンタープライズグレードの展開
-  - 自動化された最適化ワークフロー
+  - エンタープライズグレードの
+  - OpenVINO GenAIによるLLM展開
 
-
-- **優先コンセプト**:  
-  - Apple Siliconの最適化  
-  - 統一メモリアーキテクチャ  
-  - LoRA微調整機能  
+#### セクション5: Apple MLXフレームワーク
+- **優先概念**: 
+  - Apple Siliconの最適化
+  - 統合メモリアーキテクチャ
+  - LoRAによる微調整機能
 
 #### セクション6: Edge AI開発ワークフローの統合
-- **優先コンセプト**:  
-  - 統一されたワークフローアーキテクチャ  
-  - フレームワーク選択の意思決定ツリー  
-  - 本番環境の準備確認  
-  - 将来性を考慮した戦略  
+- **優先概念**: 
+  - 統一されたワークフローアーキテクチャ
+  - フレームワーク選択の意思決定ツリー
+  - 本番環境の準備確認
+  - 将来を見据えた戦略
 
 ### 自己評価質問
 
-1. 異なる精度レベル（1ビットから8ビット）の量子化戦略を比較してください。  
-2. Edge展開におけるGGUFフォーマットの利点を説明してください。  
-3. Microsoft Oliveのハードウェア対応最適化が展開効率をどのように向上させるか説明してください。  
-4. モデル圧縮におけるOpenVINOのNNCFの主な利点は何ですか？  
-5. Apple MLXが統一メモリアーキテクチャを活用して最適化を行う方法を説明してください。  
-6. ワークフロー統合が最適な最適化フレームワークの選択にどのように役立つか説明してください。  
+1. 異なる精度レベル（1ビットから8ビット）での量子化戦略を比較してください。
+2. Edge展開におけるGGUF形式の利点を説明してください。
+3. Microsoft Oliveのハードウェア対応最適化が展開効率をどのように向上させるか説明してください。
+4. OpenVINOのNNCFがモデル圧縮において提供する主な利点は何ですか？
+5. Apple MLXが統合メモリアーキテクチャを活用して最適化を行う方法を説明してください。
+6. ワークフロー統合が最適な最適化フレームワークの選択にどのように役立つか説明してください。
 
 ### 実践演習
 
-1. **モデル量子化**: 異なる量子化レベルをモデルに適用し、結果を比較する（1時間）  
-2. **OpenVINO最適化**: NNCFを使用してIntelハードウェア向けにモデルを圧縮する（1時間）  
-3. **フレームワーク比較**: 同じモデルを3つの異なる最適化フレームワークでテストする（1時間）  
-4. **性能ベンチマーク**: 推論速度とメモリ使用量に対する最適化の影響を測定する（1時間）  
+1. **モデル量子化**: 異なる量子化レベルをモデルに適用し、結果を比較する（1時間）
+2. **OpenVINO最適化**: NNCFを使用してIntelハードウェア向けにモデルを圧縮する（1時間）
+3. **フレームワーク比較**: 同じモデルを3つの異なる最適化フレームワークでテストする（1時間）
+4. **性能ベンチマーク**: 推論速度とメモリ使用量に対する最適化の影響を測定する（1時間）
 
-## モジュール5: SLMOps - 小型言語モデル運用
+## モジュール5: SLMOps - 小型言語モデルの運用
 
 ### 主な学習目標
 
-- SLMOpsライフサイクル管理の原則を理解する  
-- Edge展開のための蒸留と微調整技術を習得する  
-- 監視を伴う本番展開戦略を実装する  
-- 企業向けのSLM運用および保守ワークフローを構築する  
+- SLMOpsライフサイクル管理の原則を理解する
+- Edge展開のための蒸留と微調整技術を習得する
+- 監視付きの本番展開戦略を実装する
+- 企業向けのSLM運用および保守ワークフローを構築する
 
 ### 学習重点領域
 
 #### セクション1: SLMOpsの概要
-- **優先コンセプト**:  
-  - AI運用におけるSLMOpsのパラダイムシフト  
-  - コスト効率とプライバシー重視のアーキテクチャ  
-  - 戦略的なビジネスインパクトと競争上の優位性  
+- **優先概念**: 
+  - AI運用におけるSLMOpsのパラダイムシフト
+  - コスト効率とプライバシー重視のアーキテクチャ
+  - 戦略的なビジネスインパクトと競争上の優位性
 
 #### セクション2: モデル蒸留
-- **優先コンセプト**:  
-  - 知識移転技術  
-  - 2段階蒸留プロセスの実装  
-  - Azure ML蒸留ワークフロー  
+- **優先概念**: 
+  - 知識移転技術
+  - 2段階蒸留プロセスの実装
+  - Azure ML蒸留ワークフロー
 
 #### セクション3: 微調整戦略
-- **優先コンセプト**:  
-  - パラメータ効率の良い微調整（PEFT）  
-  - LoRAおよびQLoRAの高度な手法  
-  - マルチアダプタートレーニングとハイパーパラメータ最適化  
+- **優先概念**: 
+  - パラメータ効率の良い微調整（PEFT）
+  - LoRAおよびQLoRAの高度な手法
+  - マルチアダプタートレーニングとハイパーパラメータ最適化
 
 #### セクション4: 本番展開
-- **優先コンセプト**:  
-  - 本番向けのモデル変換と量子化  
-  - Foundry Local展開構成  
-  - 性能ベンチマークと品質確認  
+- **優先概念**: 
+  - 本番向けのモデル変換と量子化
+  - Foundry Local展開構成
+  - 性能ベンチマークと品質検証
 
 ### 自己評価質問
 
-1. SLMOpsは従来のMLOpsとどう異なりますか？  
-2. Edge展開におけるモデル蒸留の利点を説明してください。  
-3. リソースが限られた環境でSLMを微調整する際の重要な考慮事項は何ですか？  
-4. Edge AIアプリケーションの完全な本番展開パイプラインを説明してください。  
+1. SLMOpsは従来のMLOpsとどのように異なりますか？
+2. Edge展開におけるモデル蒸留の利点を説明してください。
+3. リソースが制約された環境でSLMを微調整する際の主な考慮事項は何ですか？
+4. Edge AIアプリケーションの完全な本番展開パイプラインを説明してください。
 
 ### 実践演習
 
-1. **基本的な蒸留**: 大きな教師モデルから小型モデルを作成する（1時間）  
-2. **微調整実験**: 特定のドメイン向けにモデルを微調整する（1時間）  
-3. **展開パイプライン**: モデル展開のための基本的なCI/CDパイプラインを設定する（1時間）  
+1. **基本的な蒸留**: 大きな教師モデルから小型モデルを作成する（1時間）
+2. **微調整実験**: 特定のドメイン向けにモデルを微調整する（1時間）
+3. **展開パイプライン**: モデル展開のための基本的なCI/CDパイプラインを設定する（1時間）
 
 ## モジュール6: SLMエージェントシステム - AIエージェントと関数呼び出し
 
 ### 主な学習目標
 
-- 小型言語モデルを使用してEdge環境向けのインテリジェントAIエージェントを構築する  
-- システマティックなワークフローで関数呼び出し機能を実装する  
-- 標準化されたツールとの相互作用のためのModel Context Protocol (MCP)統合を習得する  
-- 最小限の人間の介入で高度なエージェントシステムを作成する  
+- 小型言語モデルを使用してEdge環境向けのインテリジェントAIエージェントを構築する
+- 系統的なワークフローで関数呼び出し機能を実装する
+- 標準化されたツールとの相互作用のためのModel Context Protocol (MCP)統合を習得する
+- 最小限の人間の介入で高度なエージェントシステムを作成する
 
 ### 学習重点領域
 
 #### セクション1: AIエージェントとSLMの基礎
-- **優先コンセプト**:  
-  - エージェント分類フレームワーク（反射型、モデルベース型、目標ベース型、学習型エージェント）  
-  - SLMとLLMのトレードオフ分析  
-  - Edge特化型エージェント設計パターン  
-  - エージェントのリソース最適化  
+- **優先概念**: 
+  - エージェント分類フレームワーク（反射型、モデルベース型、目標ベース型、学習型エージェント）
+  - SLMとLLMのトレードオフ分析
+  - Edge特有のエージェント設計パターン
+  - エージェントのリソース最適化
 
 #### セクション2: 小型言語モデルにおける関数呼び出し
-- **優先コンセプト**:  
-  - システマティックなワークフロー実装（意図検出、JSON出力、外部実行）  
-  - プラットフォーム特化型実装（Phi-4-mini、選択されたQwenモデル、Microsoft Foundry Local）  
-  - 高度な例（マルチエージェント協力、動的ツール選択）  
-  - 本番環境の考慮事項（レート制限、監査ログ、セキュリティ対策）  
+- **優先概念**: 
+  - 系統的なワークフローの実装（意図検出、JSON出力、外部実行）
+  - プラットフォーム固有の実装（Phi-4-mini、選択されたQwenモデル、Microsoft Foundry Local）
+  - 高度な例（マルチエージェント協力、動的ツール選択）
+  - 本番環境の考慮事項（レート制限、監査ログ、セキュリティ対策）
 
 #### セクション3: Model Context Protocol (MCP)統合
-- **優先コンセプト**:  
-  - プロトコルアーキテクチャと階層型システム設計  
-  - マルチバックエンドサポート（開発用Ollama、本番用vLLM）  
-  - 接続プロトコル（STDIOおよびSSEモード）  
-  - 実世界のアプリケーション（ウェブ自動化、データ処理、API統合）  
+- **優先概念**: 
+  - プロトコルアーキテクチャと階層型システム設計
+  - マルチバックエンドサポート（開発用Ollama、本番用vLLM）
+  - 接続プロトコル（STDIOおよびSSEモード）
+  - 実世界のアプリケーション（ウェブ自動化、データ処理、API統合）
 
 ### 自己評価質問
 
-1. Edge AIエージェントの主要なアーキテクチャ上の考慮事項は何ですか？  
-2. 関数呼び出しがエージェントの能力をどのように向上させますか？  
-3. エージェント通信におけるModel Context Protocolの役割を説明してください。  
+1. Edge AIエージェントの主要なアーキテクチャ上の考慮事項は何ですか？
+2. 関数呼び出しがエージェントの能力をどのように向上させるか説明してください。
+3. エージェント通信におけるModel Context Protocolの役割を説明してください。
 
 ### 実践演習
 
-1. **シンプルなエージェント**: 関数呼び出しを備えた基本的なAIエージェントを構築する（1時間）  
-2. **MCP統合**: エージェントアプリケーションにMCPを実装する（30分）  
+1. **シンプルなエージェント**: 関数呼び出しを備えた基本的なAIエージェントを構築する（1時間）
+2. **MCP統合**: エージェントアプリケーションにMCPを実装する（30分）
 
 ## モジュール7: EdgeAI実装サンプル
 
 ### 主な学習目標
 
-- Visual Studio Code用AI Toolkitを習得し、包括的なEdgeAI開発ワークフローを構築する  
-- Windows AI FoundryプラットフォームとNPU最適化戦略に精通する  
-- 複数のハードウェアプラットフォームと展開シナリオでEdgeAIを実装する  
-- プラットフォーム特化型の最適化を備えた本番対応のEdgeAIアプリケーションを構築する  
+- Visual Studio Code用AI Toolkitを習得し、包括的なEdgeAI開発ワークフローを構築する
+- Windows AI FoundryプラットフォームとNPU最適化戦略に精通する
+- 複数のハードウェアプラットフォームと展開シナリオでEdgeAIを実装する
+- プラットフォーム固有の最適化を活用して本番対応のEdgeAIアプリケーションを構築する
 
 ### 学習重点領域
 
 #### セクション1: Visual Studio Code用AI Toolkit
-- **優先コンセプト**:  
-  - VS Code内での包括的なEdge AI開発環境  
-  - Edge展開向けのモデルカタログと発見  
-  - ローカルテスト、最適化、エージェント開発ワークフロー  
-  - Edgeシナリオ向けの性能監視と評価  
+- **優先概念**: 
+  - VS Code内での包括的なEdge AI開発環境
+  - Edge展開向けのモデルカタログと発見
+  - ローカルテスト、最適化、エージェント開発ワークフロー
+  - Edgeシナリオ向けの性能監視と評価
 
 #### セクション2: Windows EdgeAI開発ガイド
-- **優先コンセプト**:  
-  - Windows AI Foundryプラットフォームの包括的な概要  
-  - Phi Silica APIによる効率的なNPU推論  
-  - 画像処理とOCR向けのコンピュータビジョンAPI  
-  - Foundry Local CLIによるローカル開発とテスト  
+- **優先概念**: 
+  - Windows AI Foundryプラットフォームの包括的な概要
+  - 効率的なNPU推論のためのPhi Silica API
+  - 画像処理とOCRのためのコンピュータビジョンAPI
+  - ローカル開発とテストのためのFoundry Local CLI
 
-#### セクション3: プラットフォーム特化型実装
-- **優先コンセプト**:  
-  - NVIDIA Jetson Orin Nano展開（67 TOPS AI性能）  
-  - .NET MAUIとONNX Runtime GenAIを使用したモバイルアプリケーション  
-  - クラウドとエッジのハイブリッドアーキテクチャを備えたAzure EdgeAIソリューション  
-  - ユニバーサルハードウェアサポートを備えたWindows ML最適化  
-  - プライバシー重視のRAG実装を備えたFoundry Localアプリケーション  
+#### セクション3: プラットフォーム固有の実装
+- **優先概念**: 
+  - NVIDIA Jetson Orin Nano展開（67 TOPS AI性能）
+  - .NET MAUIとONNX Runtime GenAIを使用したモバイルアプリケーション
+  - クラウドとエッジのハイブリッドアーキテクチャを活用したAzure EdgeAIソリューション
+  - ユニバーサルハードウェアサポートによるWindows ML最適化
+  - プライバシー重視のRAG実装を備えたFoundry Localアプリケーション
 
 ### 自己評価質問
 
-1. AI ToolkitはEdgeAI開発ワークフローをどのように簡素化しますか？  
-2. 異なるハードウェアプラットフォーム間での展開戦略を比較してください。  
-3. Edge開発におけるWindows AI Foundryの利点は何ですか？  
-4. 現代のEdge AIアプリケーションにおけるNPU最適化の役割を説明してください。  
-5. Phi Silica APIがNPUハードウェアを活用して性能を最適化する方法を説明してください。  
-6. プライバシーに敏感なアプリケーションにおけるローカル展開とクラウド展開の利点を比較してください。  
+1. AI ToolkitはEdgeAI開発ワークフローをどのように簡素化しますか？
+2. 異なるハードウェアプラットフォーム間での展開戦略を比較してください。
+3. Edge開発におけるWindows AI Foundryの利点は何ですか？
+4. 現代のEdge AIアプリケーションにおけるNPU最適化の役割を説明してください。
+5. Phi Silica APIがNPUハードウェアを活用して性能を最適化する方法を説明してください。
+6. プライバシーに敏感なアプリケーションにおけるローカル展開とクラウド展開の利点を比較してください。
 
 ### 実践演習
 
-1. **AI Toolkitセットアップ**: AI Toolkitを構成し、モデルを最適化する（1時間）  
-2. **Windows AI Foundry**: Phi Silica APIを使用して簡単なWindows AIアプリケーションを構築する（1時間）  
-3. **クロスプラットフォーム展開**: 同じモデルを2つの異なるプラットフォームに展開する（1時間）  
-4. **NPU最適化**: Windows AI Foundryツールを使用してNPU性能をテストする（30分）  
+1. **AI Toolkitセットアップ**: AI Toolkitを構成し、モデルを最適化する（1時間）
+2. **Windows AI Foundry**: Phi Silica APIを使用して簡単なWindows AIアプリケーションを構築する（1時間）
+3. **クロスプラットフォーム展開**: 同じモデルを2つの異なるプラットフォームに展開する（1時間）
+4. **NPU最適化**: Windows AI Foundryツールを使用してNPU性能をテストする（30分）
 
-## モジュール8: Microsoft Foundry Local – 完全な開発者ツールキット
+## モジュール8: Microsoft Foundry Local – 完全な開発者ツールキット（現代化版）
 
 ### 主な学習目標
 
-- Windows上でFoundry Localをインストールおよび構成する  
-- Foundry CLIを使用してローカルでモデルを実行、発見、管理する  
-- OpenAI互換のRESTおよびSDKクライアントと統合する  
-- 実用的なサンプルを構築する: Chainlitチャット、エージェント、モデルルーター  
-- Azure AI Foundryとのハイブリッドパターンを理解する  
+- 最新のSDK統合を使用してFoundry Localをインストールおよび構成する
+- コーディネーターパターンを使用して高度なマルチエージェントシステムを実装する
+- 自動タスクベース選択を備えたインテリジェントモデルルーターを構築する
+- 包括的な監視を備えた本番対応のAIソリューションを展開する
+- Azure AI Foundryとの統合によるハイブリッド展開シナリオを実現する
+- FoundryLocalManagerとOpenAIクライアントを使用した最新のSDKパターンを習得する
 
 ### 学習重点領域
 
-- インストールとCLIの基本（モデル、サービス、キャッシュ）  
-- SDK統合（OpenAI互換クライアントとAzure OpenAI）  
-- Open WebUIによる迅速な検証  
-- エージェントと関数呼び出しパターン  
-- ツールとしてのモデル（ルーターとレジストリ設計）  
+#### セクション1: 最新のインストールと構成
+- **優先概念**: 
+  - FoundryLocalManager SDK統合
+  - 自動サービス検出とヘルスモニタリング
+  - 環境ベースの構成パターン
+  - 本番展開の考慮事項
+
+#### セクション2: 高度なマルチエージェントシステム
+- **優先概念**: 
+  - 専門エージェントを備えたコーディネーターパターン
+  - 検索、推論、実行エージェントの専門化
+  - 改善のためのフィードバックループメカニズム
+  - 性能監視と統計追跡
+
+#### セクション3: インテリジェントモデルルーティング
+- **優先概念**: 
+  - キーワードベースのモデル選択アルゴリズム
+  - 複数モデルのサポート（一般、推論、コード、クリエイティブ）
+  - 柔軟性のための環境変数構成
+  - サービスのヘルスチェックとエラーハンドリング
+
+#### セクション4: 本番対応の実装
+- **優先概念**: 
+  - 包括的なエラーハンドリングとフォールバックメカニズム
+  - リクエスト監視と性能追跡
+  - ベンチマーク付きのインタラクティブなJupyterノートブック例
+  - 既存アプリケーションとの統合パターン
 
 ### 自己評価質問
 
-1. ローカルエンドポイントを発見し、利用可能なモデルをリストする方法は？  
-2. Foundry Local RESTとAzure OpenAIの使用の違いは何ですか？  
-3. ツールとしてモデルを選択する簡単なルーターをどのように設計しますか？  
-4. 日常の開発に最も関連するCLIカテゴリはどれですか？  
-5. アプリを実行する前にFoundry Localの準備をどのように確認しますか？  
+1. 最新のFoundryLocalManagerアプローチは手動のRESTコールとどのように異なりますか？
+2. コーディネーターパターンが専門エージェントをどのように調整するか説明してください。
+3. インテリジェントルーターがクエリ内容に基づいて適切なモデルを選択する方法を説明してください。
+4. 本番対応のAIエージェントシステムの主要な構成要素は何ですか？
+5. Foundry Localサービスの包括的なヘルスモニタリングをどのように実装しますか？
+6. 現代化されたアプローチと従来の実装パターンの利点を比較してください。
 
 ### 実践演習
 
-1. Foundry Localをインストール/アップグレードし、`phi-4-mini`をローカルで実行する（30分）  
-2. `/v1/models`を呼び出し、RESTを介して簡単なチャットを実行する（30分）  
-3. Chainlitアプリのサンプルを起動し、ローカルでチャットする（30分）  
-4. マルチエージェントコーディネーターを実行し、出力を確認する（30分）  
-5. 環境ベースのオーバーライドを使用してツールとしてのモデルルーターを試す（30分）  
+1. **最新SDKセットアップ**: FoundryLocalManagerを構成し、自動サービス検出を実行する（30分）
+2. **マルチエージェントシステム**: 専門エージェントを備えた高度なコーディネータを実行する（30分）
+3. **インテリジェントルーティング**: 異なるクエリタイプでモデルルーターをテストする（30分）
+4. **インタラクティブな探索**: Jupyterノートブックを使用して高度な機能を探索する（45分）
+5. **本番展開**: 監視とエラーハンドリングパターンを実装する（30分）
+6. **ハイブリッド統合**: Azure AI Foundryのフォールバックシナリオを構成する（30分）
 
 ## 時間配分ガイド
 
-20時間のコースタイムラインを最大限に活用するための推奨時間配分は以下の通りです:
+20時間のコースタイムラインを最大限に活用するための推奨配分は以下の通りです：
 
 | アクティビティ | 時間配分 | 説明 |
-|---------------|----------|------|
+|----------------|----------|------|
 | コア資料の読解 | 9時間 | 各モジュールの重要な概念に集中 |
 | 実践演習 | 6時間 | 主要技術の実践的な実装 |
-| 自己評価 | 2時間 | 質問と反省を通じて理解をテスト |
-| ミニプロジェクト | 3時間 | 小規模な実践的な実装に知識を適用 |
+| 自己評価 | 2時間 | 質問と振り返りを通じて理解をテスト |
+| ミニプロジェクト | 3時間 | 小規模な実践的実装に知識を応用 |
 
 ### 時間制約別の重点領域
 
-**10時間しかない場合:**  
-- モジュール1、2、3を完了（EdgeAIの基本概念）  
-- 各モジュールで少なくとも1つの実践演習を行う  
-- 実装の詳細よりもコア概念の理解に集中  
+**10時間しかない場合:**
+- モジュール1、2、3を完了（EdgeAIの基本概念）
+- 各モジュールで少なくとも1つの実践演習を行う
+- 実装の詳細よりも基本概念の理解に集中
 
-**20時間を確保できる場合:**  
-- すべてのモジュールを完了  
-- 各モジュールの主要な実践演習を実施  
-- モジュール7のミニプロジェクトを1つ完了  
-- 補足リソースを2～3つ探索  
+**20時間を確保できる場合:**
+- すべてのモジュールを完了
+- 各モジュールの主要な実践演習を実施
+- モジュール7のミニプロジェクトを1つ完了
+- 補足リソースを2～3つ探索
 
-**20時間以上ある場合:**  
-- 詳細な演習を伴うすべてのモジュールを完了  
-- 複数のミニプロジェクトを構築  
-- モジュール4で高度な最適化技術を探索  
-- モジュール5から本番展開を実装  
+**20時間以上ある場合:**
+- 詳細な演習を含むすべてのモジュールを完了
+- 複数のミニプロジェクトを構築
+- モジュール4で高度な最適化技術を探索
+- モジュール5から本番展開を実装
 
 ## 必須リソース
 
-限られた学習時間で最大の価値を提供する厳選されたリソース:
+限られた学習時間で最大の価値を提供する厳選されたリソース：
 
 ### 必読ドキュメント
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - 最も効率的なモデル最適化ツール  
-- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - SLMをローカルで迅速に展開する方法  
-- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - 先進的なEdge最適化モデルの参考資料  
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intelの包括的な最適化ツールキット  
-- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - 統合されたEdgeAI開発環境  
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows特化型EdgeAI開発プラットフォーム  
+- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - 最も効率的なモデル最適化ツール
+- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - SLMをローカルに迅速に展開する方法
+- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Edge最適化モデルのリファレンス
+- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intelの包括的な最適化ツールキット
+- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - 統合されたEdgeAI開発環境
+- [Windows AI Foundry](https://docs.microsoft.com/en
+| 実践演習 | | | |
+| ミニプロジェクト | | | |
 
-### 時間節約ツール
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - モデルの迅速なアクセスと展開  
-- [Gradio](https://www.gradio.app/docs/interface) - AIデモのための迅速なUI開発  
-- [Microsoft Olive](https://github.com/microsoft/Olive) - 簡素化されたモデル最適化  
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - 効率的なCPU推論  
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - ニューラルネットワーク圧縮フレームワーク  
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - 大型言語モデル展開ツールキット  
+## ミニプロジェクトのアイデア
 
-## 進捗追跡テンプレート
+EdgeAIの概念を練習するために、以下のプロジェクトのいずれかを完了することを検討してください（各プロジェクトは2～4時間で完了するよう設計されています）。
 
-20時間のコースを通じて学習進捗を追跡するための簡易テンプレート:
+### 初級プロジェクト（各2～3時間）
+1. **エッジテキストアシスタント**: 小型の言語モデルを使用して、オフラインの簡単なテキスト補完ツールを作成する
+2. **モデル比較ダッシュボード**: 異なるSLMのパフォーマンス指標を視覚化する基本的なダッシュボードを構築する
+3. **最適化実験**: 同じベースモデルに対する異なる量子化レベルの影響を測定する
 
-| モジュール | 完了日 | 費やした時間 | 主な学び |
-|-----------|--------|-------------|----------|
-| モジュール1: EdgeAIの基礎 | | | |
-| モジュール2: SLMの基礎 | | | |
-| モジュール3: SLMの展開 | | | |
-| モジュール4: モデル最適化 | | | |
-| モジュール5: SLMOps | | | |
-| モジュール6: AIエージェント | | | |
-| モジュール7: 開発ツール | | | |
-| モジュール8: Found
-8. **OpenVINO最適化パイプライン**: NNCFとGenAIツールキットを使用して完全なモデル最適化を実装する  
-9. **SLMOpsパイプライン**: トレーニングからエッジ展開までの完全なモデルライフサイクルを実装する  
-10. **マルチモデルエッジシステム**: エッジハードウェア上で複数の専門モデルを協調して動作させる  
-11. **MCP統合システム**: ツールとの相互作用のためにModel Context Protocolを使用したエージェントシステムを構築する  
+### 中級プロジェクト（各3～4時間）
+4. **AIツールキットワークフロー**: VS Code AI Toolkitを使用して、モデルの最適化とデプロイを最初から最後まで行う
+5. **Windows AI Foundryアプリケーション**: Phi Silica APIとNPU最適化を使用してWindowsアプリを作成する
+6. **クロスプラットフォームデプロイ**: 最適化されたモデルをWindows（OpenVINO）とモバイル（.NET MAUI）にデプロイする
+7. **関数呼び出しエージェント**: エッジシナリオ向けに関数呼び出し機能を備えたAIエージェントを構築する
+
+### 上級統合プロジェクト（各4～5時間）
+8. **OpenVINO最適化パイプライン**: NNCFとGenAIツールキットを使用して完全なモデル最適化を実装する
+9. **SLMOpsパイプライン**: トレーニングからエッジデプロイまでの完全なモデルライフサイクルを実装する
+10. **マルチモデルエッジシステム**: エッジハードウェア上で協調動作する複数の専門モデルをデプロイする
+11. **MCP統合システム**: ツールとの相互作用のためにModel Context Protocolを使用したエージェントシステムを構築する
 
 ## 参考資料
 
-- Microsoft Learn (Foundry Local)  
-  - 概要: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
-  - はじめに: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
-  - CLIリファレンス: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
-  - 推論SDKとの統合: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
-  - Open WebUIの使い方: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
-  - Hugging Faceモデルのコンパイル: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
-- Azure AI Foundry  
-  - 概要: https://learn.microsoft.com/en-us/azure/ai-foundry/  
-  - エージェント (概要): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
-- 最適化と推論ツール  
-  - Microsoft Olive (ドキュメント): https://microsoft.github.io/Olive/  
-  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive  
-  - ONNX Runtime (はじめに): https://onnxruntime.ai/docs/get-started/with-python.html  
-  - ONNX Runtime Olive統合: https://onnxruntime.ai/docs/performance/olive.html  
-  - OpenVINO (ドキュメント): https://docs.openvino.ai/2025/index.html  
-  - Apple MLX (ドキュメント): https://ml-explore.github.io/mlx/build/html/index.html  
-- 展開フレームワークとモデル  
-  - Llama.cpp: https://github.com/ggml-ai/llama.cpp  
-  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index  
-  - vLLM (ドキュメント): https://docs.vllm.ai/  
-  - Ollama (クイックスタート): https://github.com/ollama/ollama#get-started  
-- 開発者ツール (WindowsとVS Code)  
-  - VS Code用AIツールキット: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
-  - Windows ML (概要): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
+- Microsoft Learn (Foundry Local)
+  - 概要: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+  - 始め方: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+  - CLIリファレンス: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
+  - 推論SDKとの統合: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+  - Open WebUIの使い方: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+  - Hugging Faceモデルのコンパイル: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Azure AI Foundry
+  - 概要: https://learn.microsoft.com/en-us/azure/ai-foundry/
+  - エージェント（概要）: https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
+- 最適化と推論ツール
+  - Microsoft Olive (ドキュメント): https://microsoft.github.io/Olive/
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
+  - ONNX Runtime (始め方): https://onnxruntime.ai/docs/get-started/with-python.html
+  - ONNX Runtime Olive統合: https://onnxruntime.ai/docs/performance/olive.html
+  - OpenVINO (ドキュメント): https://docs.openvino.ai/2025/index.html
+  - Apple MLX (ドキュメント): https://ml-explore.github.io/mlx/build/html/index.html
+- デプロイフレームワークとモデル
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
+  - vLLM (ドキュメント): https://docs.vllm.ai/
+  - Ollama (クイックスタート): https://github.com/ollama/ollama#get-started
+- 開発者ツール（WindowsとVS Code）
+  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
+  - Windows ML (概要): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
 
 ## 学習コミュニティ
 
-ディスカッションに参加し、他の学習者とつながりましょう:  
-- [EdgeAI for Beginnersリポジトリ](https://github.com/microsoft/edgeai-for-beginners/discussions)のGitHubディスカッション  
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
+ディスカッションに参加し、他の学習者とつながりましょう:
+- [EdgeAI for Beginnersリポジトリ](https://github.com/microsoft/edgeai-for-beginners/discussions)のGitHubディスカッション
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
 
 ## 結論
 
-EdgeAIは人工知能の実装の最前線を代表し、プライバシー、遅延、接続性といった重要な課題に対応しながら、強力な機能をデバイスに直接提供します。この20時間のコースでは、EdgeAI技術をすぐに活用できる基本的な知識と実践的なスキルを提供します。
+EdgeAIは人工知能の実装の最前線を代表し、プライバシー、遅延、接続性に関する重要な課題に対応しながら、強力な機能をデバイスに直接提供します。この20時間のコースは、EdgeAI技術をすぐに活用するための基本的な知識と実践的なスキルを提供します。
 
-このコースは意図的に簡潔で、最も重要な概念に焦点を当てているため、圧倒的な時間の負担をかけずに貴重な専門知識を迅速に習得できます。学んだことを強化するには、簡単な例でも構わないので実際に手を動かして練習することが鍵です。
+このコースは意図的に簡潔で、最も重要な概念に焦点を当てており、圧倒的な時間の負担をかけずに貴重な専門知識を迅速に習得できるように設計されています。学んだことを強化するためには、簡単な例でも実践的な練習が鍵となります。
 
 学習を楽しんでください！
 
