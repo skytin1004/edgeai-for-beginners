@@ -1,280 +1,467 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T11:42:24+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T09:51:01+00:00",
   "source_file": "Module08/README.md",
   "language_code": "hk"
 }
 -->
-# 模組 08：深入了解 Microsoft Foundry Local - 完整開發者工具包
+# 模組 08：Microsoft Foundry Local 實作 - 完整開發者工具包
 
 ## 概述
 
-Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發者提供強大的工具，能夠在本地構建、部署及擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋了 Foundry Local 的全面內容，從安裝到高級代理開發。
+Microsoft Foundry Local 是下一代邊緣 AI 開發工具，提供開發者強大的工具來本地化建構、部署及擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋 Foundry Local 的完整內容，從安裝到進階代理開發。
 
 **核心技術：**
 - Microsoft Foundry Local CLI 和 SDK
 - Azure AI Foundry 整合
-- 設備上的模型推理
-- 本地模型緩存及優化
+- 裝置上的模型推理
+- 本地模型快取及優化
 - 基於代理的架構
 
-## 模組學習目標
+## 學習目標
 
-完成此模組後，您將能夠：
+完成本模組後，您將能：
 
-- **掌握 Foundry Local 設置**：安裝、配置及優化 Foundry Local 以進行 Windows 11 開發
-- **部署多樣化模型**：使用 CLI 命令在本地運行 phi、qwen、deepseek 和 GPT-OSS-20B 模型
-- **構建生產解決方案**：使用高級提示工程和數據整合創建 AI 應用
-- **利用開源生態系統**：整合 Hugging Face 模型及社群驅動的擴展
-- **比較 AI 架構**：理解 LLMs 與 SLMs 的權衡及部署策略
-- **開發 AI 代理**：使用 Foundry Local 的架構及基礎能力構建智能代理
-- **實現模型作為工具**：創建模組化、可定制的 AI 解決方案以應對企業應用
+- **精通 Foundry Local**：安裝、配置及優化 Windows 11 開發環境
+- **部署多樣化模型**：使用 CLI 命令本地運行 phi、qwen、deepseek 和 GPT 模型
+- **建構生產解決方案**：利用進階提示工程及數據整合創建 AI 應用
+- **利用開源生態系統**：整合 Hugging Face 模型及社群貢獻
+- **開發 AI 代理**：建構具備基礎能力及編排功能的智能代理
+- **實施企業模式**：創建模組化、可擴展的 AI 解決方案以進行生產部署
 
 ## 課程結構
 
 ### [1: 開始使用 Foundry Local](./01.FoundryLocalSetup.md)
-**重點**：安裝、CLI 設置、模型緩存及硬件加速
+**重點**：安裝、CLI 設置、模型部署及硬體優化
 
-**您將學到：**
-- 在 Windows 11 上完成 Foundry Local 安裝
-- CLI 配置及命令結構
-- 優化性能的模型緩存策略
-- 硬件加速設置及優化
-- 實際部署 phi、qwen、deepseek 和 GPT-OSS-20B 模型
+**核心主題**：完整安裝 • CLI 命令 • 模型快取 • 硬體加速 • 多模型部署
 
-**時長**：2-3 小時  
-**先決條件**：Windows 11，基本命令行知識
+**範例**：[REST 聊天快速入門](./samples/01/README.md) • [OpenAI SDK 整合](./samples/02/README.md) • [模型探索與基準測試](./samples/03/README.md)
+
+**時長**：2-3 小時 | **等級**：初學者
 
 ---
 
-### [2: 使用 Azure AI Foundry 構建 AI 解決方案](./02.AzureAIFoundryIntegration.md)
-**重點**：高級提示工程、數據整合及可操作任務
+### [2: 使用 Azure AI Foundry 建構 AI 解決方案](./02.AzureAIFoundryIntegration.md)
+**重點**：進階提示工程、數據整合及雲端連接
 
-**您將學到：**
-- 高級提示工程技術
-- 數據整合模式及最佳實踐
-- 使用 Foundry Local 構建可操作的 AI 任務
-- 無縫的 Azure AI Foundry 整合工作流程
-- 性能優化及監控
+**核心主題**：提示工程 • 數據整合 • Azure 工作流程 • 性能優化 • 監控
 
-**時長**：2-3 小時  
-**先決條件**：完成第一節課程，Azure 帳戶（可選）
+**範例**：[Chainlit RAG 應用](./samples/04/README.md)
+
+**時長**：2-3 小時 | **等級**：中級
 
 ---
 
 ### [3: Foundry Local 的開源模型](./03.OpenSourceModels.md)
-**重點**：Hugging Face 整合、模型選擇策略及社群驅動的擴展
+**重點**：Hugging Face 整合、BYOM 策略及社群模型
 
-**您將學到：**
-- Hugging Face 模型與 Foundry Local 的整合
-- 自帶模型（BYOM）策略及實施
-- Model Mondays 系列的洞察及社群貢獻
-- 自定義模型部署及優化
-- 社群模型評估及選擇標準
+**核心主題**：Hugging Face 整合 • 自帶模型 • Model Mondays 洞察 • 社群貢獻 • 模型選擇
 
-**時長**：2-3 小時  
-**先決條件**：完成第一至第二節課程，Hugging Face 帳戶
+**範例**：[多代理編排](./samples/05/README.md)
+
+**時長**：2-3 小時 | **等級**：中級
 
 ---
 
-### [4: 探索尖端模型 - LLMs、SLMs 及設備推理](./04.CuttingEdgeModels.md)
-**重點**：模型比較、使用 Phi 和 ONNX Runtime 的 EdgeAI、高級演示
+### [4: 探索尖端模型](./04.CuttingEdgeModels.md)
+**重點**：LLM 與 SLM 比較、EdgeAI 實作及進階演示
 
-**您將學到：**
-- 全面比較 LLMs 與 SLMs 的使用案例
-- 本地與雲端推理的權衡及決策框架
-- 使用 Phi 和 ONNX Runtime 的 EdgeAI 實施
-- Chainlit RAG 聊天應用的開發及部署
-- WebGPU 推理優化技術
-- AI PC SDK 整合及功能
+**核心主題**：模型比較 • 邊緣與雲端推理 • Phi + ONNX Runtime • Chainlit RAG 應用 • WebGPU 優化
 
-**時長**：3-4 小時  
-**先決條件**：完成第一至第三節課程，理解推理概念
+**範例**：[模型工具路由器](./samples/06/README.md)
+
+**時長**：3-4 小時 | **等級**：進階
 
 ---
 
-### [5: 使用 Foundry Local 快速構建 AI 驅動代理](./05.AIPoweredAgents.md)
-**重點**：快速 GenAI 應用開發、系統提示、基礎及代理架構
+### [5: 快速建構 AI 驅動代理](./05.AIPoweredAgents.md)
+**重點**：代理架構、系統提示、基礎能力及編排
 
-**您將學到：**
-- Foundry Local 代理架構及設計模式
-- 系統提示工程以設計代理行為
-- 基礎技術以確保代理可靠回應
-- 快速 GenAI 應用開發工作流程
-- 代理協調及多代理系統
-- AI 代理的生產部署策略
+**核心主題**：代理設計模式 • 系統提示工程 • 基礎技術 • 多代理系統 • 生產部署
 
-**時長**：3-4 小時  
-**先決條件**：完成第一至第四節課程，基本了解 AI 代理
+**範例**：[多代理編排](./samples/05/README.md) • [進階多代理系統](./samples/09/README.md)
+
+**時長**：3-4 小時 | **等級**：進階
 
 ---
 
-### [6: Foundry Local - 模型作為工具](./06.ModelsAsTools.md)
-**重點**：模組化 AI 解決方案、設備部署及企業擴展
+### [6: Foundry Local - 作為工具的模型](./06.ModelsAsTools.md)
+**重點**：模組化 AI 解決方案、企業擴展及生產模式
 
-**您將學到：**
-- 將 AI 模型視為模組化、可定制的工具
-- 無需雲端依賴的設備部署
-- 低延遲、成本效益及隱私保護的推理
-- SDK、API 和 CLI 整合模式
-- 為特定使用案例定制模型
-- 從本地到 Azure AI Foundry 的擴展策略
-- 企業級 AI 應用架構
+**核心主題**：作為工具的模型 • 裝置上的部署 • SDK/API 整合 • 企業架構 • 擴展策略
 
-**時長**：3-4 小時  
-**先決條件**：完成所有前述課程，有企業開發經驗更佳
+**範例**：[模型工具路由器](./samples/06/README.md) • [Foundry 工具框架](./samples/10/README.md)
+
+**時長**：3-4 小時 | **等級**：專家
+
+---
+
+### [7: 直接 API 整合模式](./samples/07/README.md)
+**重點**：純 REST API 整合，無需 SDK 依賴以獲得最大控制
+
+**核心主題**：HTTP 客戶端實作 • 自訂身份驗證 • 模型健康監控 • 流式響應 • 生產錯誤處理
+
+**範例**：[直接 API 客戶端](./samples/07/README.md)
+
+**時長**：2-3 小時 | **等級**：中級
+
+---
+
+### [8: Windows 11 原生聊天應用](./samples/08/README.md)
+**重點**：使用 Foundry Local 整合建構現代原生聊天應用
+
+**核心主題**：Electron 開發 • Fluent 設計系統 • 原生 Windows 整合 • 實時流式傳輸 • 聊天界面設計
+
+**範例**：[Windows 11 聊天應用](./samples/08/README.md)
+
+**時長**：3-4 小時 | **等級**：進階
+
+---
+
+### [9: 進階多代理編排](./samples/09/README.md)
+**重點**：複雜代理協調、專業任務分配及協作式 AI 工作流程
+
+**核心主題**：智能代理協調 • 函數調用模式 • 跨代理通信 • 工作流程編排 • 品質保證機制
+
+**範例**：[進階多代理系統](./samples/09/README.md)
+
+**時長**：4-5 小時 | **等級**：專家
+
+---
+
+### [10: Foundry Local 作為工具框架](./samples/10/README.md)
+**重點**：以工具為核心的架構，將 Foundry Local 整合到現有應用及框架中
+
+**核心主題**：LangChain 整合 • Semantic Kernel 函數 • REST API 框架 • CLI 工具 • Jupyter 整合 • 生產部署模式
+
+**範例**：[Foundry 工具框架](./samples/10/README.md)
+
+**時長**：4-5 小時 | **等級**：專家
 
 ## 先決條件
 
-### 系統要求
-- **操作系統**：Windows 11（22H2 或更高版本）
-- **內存**：16GB RAM（建議 32GB 以支持更大模型）
-- **存儲**：50GB 可用空間以進行模型緩存
-- **硬件**：建議使用支持 NPU 的設備（如 Copilot+ PC），GPU 可選
-- **網絡**：高速網絡以進行初始模型下載
+### 系統需求
+- **作業系統**：Windows 11 (22H2 或更新版本)
+- **記憶體**：16GB RAM（建議 32GB 以運行更大型模型）
+- **儲存空間**：50GB 可用空間以進行模型快取
+- **硬體**：建議使用具 NPU 的裝置（Copilot+ PC），GPU 為選項
+- **網路**：高速網路以進行初始模型下載
 
 ### 開發環境
-- Visual Studio Code 及 AI Toolkit 擴展
-- Python 3.10+ 及 pip
-- Git 以進行版本控制
+- Visual Studio Code，安裝 AI Toolkit 擴展
+- Python 3.10+ 和 pip
+- Git 進行版本控制
 - PowerShell 或命令提示符
 - Azure CLI（可選，用於雲端整合）
 
-### 知識要求
-- 基本了解 AI/ML 概念
-- 熟悉命令行操作
-- Python 編程基礎
+### 知識需求
+- 基本 AI/ML 概念理解
+- 命令行操作熟悉
+- Python 程式設計基礎
 - REST API 概念
-- 基本了解提示工程及模型推理
+- 提示及模型推理的基本知識
 
 ## 模組時間表
 
-**總預估時間**：15-20 小時
+**總預估時間**：30-38 小時
 
-| 課程 | 重點領域 | 時間 | 複雜度 |
-|------|----------|------|--------|
-|  1 | 設置及基礎 | 2-3 小時 | 初學者 |
-|  2 | AI 解決方案 | 2-3 小時 | 中級 |
-|  3 | 開源模型 | 2-3 小時 | 中級 |
-|  4 | 高級模型 | 3-4 小時 | 高級 |
-|  5 | AI 代理 | 3-4 小時 | 高級 |
-|  6 | 企業工具 | 3-4 小時 | 專家 |
+| 課程 | 重點領域 | 範例 | 時間 | 複雜度 |
+|------|----------|------|------|--------|
+|  1 | 設置與基礎 | 01, 02, 03 | 2-3 小時 | 初學者 |
+|  2 | AI 解決方案 | 04 | 2-3 小時 | 中級 |
+|  3 | 開源模型 | 05 | 2-3 小時 | 中級 |
+|  4 | 進階模型 | 06 | 3-4 小時 | 進階 |
+|  5 | AI 代理 | 05, 09 | 3-4 小時 | 進階 |
+|  6 | 企業工具 | 06, 10 | 3-4 小時 | 專家 |
+|  7 | 直接 API 整合 | 07 | 2-3 小時 | 中級 |
+|  8 | Windows 11 聊天應用 | 08 | 3-4 小時 | 進階 |
+|  9 | 進階多代理 | 09 | 4-5 小時 | 專家 |
+| 10 | 工具框架 | 10 | 4-5 小時 | 專家 |
 
 ## 核心資源
 
-### 主要文檔
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local 文檔](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays 系列](https://aka.ms/model-mondays)
+**官方文件：**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - 原始碼及官方範例
+- [Azure AI Foundry 文件](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - 完整設置及使用指南
+- [Model Mondays 系列](https://aka.ms/model-mondays) - 每週模型亮點及教程
 
-### 社群資源
-- [Foundry Local 社群討論](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry 示例](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI 開發者社群](https://techcommunity.microsoft.com/category/artificialintelligence)
+**社群與支援：**
+- [Foundry Local 討論區](https://github.com/microsoft/Foundry-Local/discussions) - 社群問答及功能請求
+- [Microsoft AI 開發者社群](https://techcommunity.microsoft.com/category/artificialintelligence) - 最新消息及最佳實踐
 
 ## 學習成果
 
-完成此模組後，您將具備以下能力：
+完成本模組後，您將具備以下能力：
 
-### 技術掌握
-- **部署及管理**：在開發及生產環境中安裝及管理 Foundry Local
+### 技術精通
+- **部署與管理**：在開發及生產環境中安裝及管理 Foundry Local
 - **整合模型**：無縫使用 Microsoft、Hugging Face 及社群來源的多樣化模型
-- **構建應用**：創建具備高級功能及優化的生產級 AI 應用
-- **開發代理**：實施具備基礎、推理及工具整合的高級 AI 代理
+- **建構應用**：創建具備進階功能及優化的生產級 AI 應用
+- **開發代理**：實作具備基礎能力、推理及工具整合的複雜 AI 代理
 
 ### 策略理解
 - **架構決策**：在本地與雲端部署間做出明智選擇
-- **性能優化**：在不同硬件配置中優化推理性能
-- **企業擴展**：設計能從本地原型擴展到企業部署的應用
-- **隱私及安全**：實施隱私保護的 AI 解決方案，使用本地推理
+- **性能優化**：根據不同硬體配置優化推理性能
+- **企業擴展**：設計應用，從本地原型擴展至企業部署
+- **隱私與安全**：實施隱私保護的 AI 解決方案，使用本地推理
 
 ### 創新能力
-- **快速原型**：快速構建及測試 AI 應用概念
+- **快速原型**：快速建構及測試 AI 應用概念，涵蓋所有 10 種範例模式
 - **社群整合**：利用開源模型並為生態系統做出貢獻
-- **高級模式**：實施尖端 AI 模式，包括 RAG、代理及工具整合
-- **面向未來的開發**：構建適應新興 AI 技術及模式的應用
+- **進階模式**：實作尖端 AI 模式，包括 RAG、代理及工具整合
+- **框架精通**：專家級整合 LangChain、Semantic Kernel、Chainlit 及 Electron
+- **生產部署**：從本地原型部署可擴展的 AI 解決方案至企業系統
+- **未來準備開發**：建構應用，準備迎接新興 AI 技術及模式
 
 ## 開始使用
 
-1. **準備您的環境**：確保使用 Windows 11 並符合建議的硬件規格
-2. **安裝先決條件**：設置開發工具及依賴項
-3. **從第一節開始**：從 Foundry Local 安裝及基礎設置開始
-4. **按順序進行**：按課程順序完成以獲得最佳學習效果
-5. **持續練習**：通過實際操作及項目應用所學概念
+1. **環境設置**：確保使用 Windows 11 並符合建議硬體要求（見先決條件）
+2. **安裝 Foundry Local**：按照課程 1 完成完整安裝及配置
+3. **運行範例 01**：從基本 REST API 整合開始，驗證設置
+4. **完成範例**：完成範例 01-10，全面掌握技能
 
 ## 成功指標
 
-通過以下方式追蹤您的進度：
+透過所有 10 個完整範例追蹤您的進度：
 
+### 基礎層級（範例 01-03）
 - [ ] 成功安裝及配置 Foundry Local
-- [ ] 部署並運行至少 4 種不同的模型系列
-- [ ] 使用數據整合構建完整的 AI 解決方案
-- [ ] 整合至少 2 個開源模型
-- [ ] 創建功能性 RAG 聊天應用
-- [ ] 開發並部署 AI 代理
-- [ ] 實施模型作為工具的架構
+- [ ] 完成 REST API 整合（範例 01）
+- [ ] 實作 OpenAI SDK 相容性（範例 02）
+- [ ] 執行模型探索及基準測試（範例 03）
 
-## 示例快速入門
+### 應用層級（範例 04-06）
+- [ ] 部署並運行至少 4 種不同模型系列
+- [ ] 建構功能性 RAG 聊天應用（範例 04）
+- [ ] 創建多代理編排系統（範例 05）
+- [ ] 實作智能模型路由（範例 06）
 
-### 1) 環境設置（Windows cmd.exe）
-```cmd
+### 進階整合層級（範例 07-10）
+- [ ] 建構生產級 API 客戶端（範例 07）
+- [ ] 開發 Windows 11 原生聊天應用（範例 08）
+- [ ] 實作進階多代理系統（範例 09）
+- [ ] 創建全面工具框架（範例 10）
+
+### 精通指標
+- [ ] 成功運行所有 10 個範例且無錯誤
+- [ ] 為特定使用案例自訂至少 3 個範例
+- [ ] 在類生產環境中部署 2+ 範例
+- [ ] 為範例代碼貢獻改進或擴展
+- [ ] 將 Foundry Local 模式整合至個人/專業項目
+
+## 快速入門指南 - 所有 10 個範例
+
+### 環境設置（所有範例必需）
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) 啟動本地模型（新終端）
-```cmd
-foundry model list
+### 核心基礎範例（01-06）
+
+**範例 01：REST 聊天快速入門**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**範例 02：OpenAI SDK 整合**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**範例 03：模型探索與基準測試**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**範例 04：Chainlit RAG 應用**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**範例 05：多代理編排**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**範例 06：模型工具路由器**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### 進階整合範例（07-10）
+
+**範例 07：直接 API 客戶端**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**範例 08：Windows 11 聊天應用**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**範例 09：進階多代理系統**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**範例 10：Foundry 工具框架**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### 常見問題排解
+
+**Foundry Local 連接錯誤**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**模型加載問題**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) 運行 Chainlit 演示（第四節課程）
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**依賴問題**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) 運行多代理協調器（第五節課程）
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## 總結
+此模組代表了邊緣人工智能開發的最前沿，結合了微軟企業級工具的穩定性與開源生態系統的靈活性與創新性。透過掌握 Foundry Local 的全部 10 個綜合範例，您將站在人工智能應用開發的最前線。
 
-如果出現連接錯誤，請驗證 Foundry Local：
-```cmd
-curl http://localhost:8000/v1/models
-```
+**完整學習路徑：**
+- **基礎**（範例 01-03）：API 整合與模型管理
+- **應用**（範例 04-06）：RAG、代理和智能路由
+- **進階**（範例 07-10）：生產框架與企業整合
 
-### 路由器配置（第六節課程）
-路由器執行快速健康檢查並支持基於環境的配置：
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-此模組代表了邊緣 AI 開發的尖端技術，結合了 Microsoft 的企業級工具與開源生態系統的靈活性及創新性。通過掌握 Foundry Local，您將站在 AI 應用開發的最前沿。
-
-關於 Azure OpenAI（第二節課程），請參閱示例 README 以了解所需的環境變數及 API 版本設置。
-
-## 示例概述
-
-- `samples/01`: 快速 REST 聊天至 Foundry Local (`chat_quickstart.py`)。
-- `samples/02`: OpenAI SDK 整合 (`sdk_quickstart.py`)。
-- `samples/03`: 模型發現 + 快速基準測試 (`list_and_bench.cmd`)。
-- `samples/04`: Chainlit RAG 演示 (`app.py`)。
-- `samples/05`: 多代理協調 (`python -m samples.05.agents.coordinator`)。
-- `samples/06`: 模型作為工具的路由器 (`python samples\06\router.py`)。
+有關 Azure OpenAI 整合（第二節），請參閱各範例的 README 文件以了解所需的環境變數和 API 版本設定。
 
 ---
 
