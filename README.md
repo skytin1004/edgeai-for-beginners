@@ -74,57 +74,25 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 - **Edge servers**: Local processing units with limited GPU resources
 - **Personal Computers**: Desktop and laptop deployment scenarios
 
-## Course Modules & Samples
+## Course Modules & Navigation
 
-### [📚 Module 01: EdgeAI Fundamentals](./Module01/README.md)
-**Focus**: Cloud vs Edge AI • Real-world case studies • Hardware platforms • Implementation guide
+| Module | Topic | Focus Area | Key Content | Level | Duration |
+|--------|-------|------------|-------------|--------|----------|
+| **[📚 01](./Module01/)** | **[EdgeAI Fundamentals](./Module01/README.md)** | Cloud vs Edge AI comparison | • [EdgeAI Fundamentals](./Module01/01.EdgeAIFundamentals.md)<br>• [Real World Case Studies](./Module01/02.RealWorldCaseStudies.md)<br>• [Implementation Guide](./Module01/03.PracticalImplementationGuide.md)<br>• [Edge Deployment](./Module01/04.EdgeDeployment.md) | Beginner | 3-4 hrs |
+| **[🧠 02](./Module02/)** | **[SLM Model Foundations](./Module02/README.md)** | Model families & architecture | • [Phi Family](./Module02/01.PhiFamily.md)<br>• [Qwen Family](./Module02/02.QwenFamily.md)<br>• [Gemma Family](./Module02/03.GemmaFamily.md)<br>• [BitNET](./Module02/04.BitNETFamily.md)<br>• [μModel](./Module02/05.mumodel.md)<br>• [Phi-Silica](./Module02/06.phisilica.md) | Beginner | 4-5 hrs |
+| **[🚀 03](./Module03/)** | **[SLM Deployment Practice](./Module03/README.md)** | Local & cloud deployment | • [Advanced Learning](./Module03/01.SLMAdvancedLearning.md)<br>• [Local Environment](./Module03/02.DeployingSLMinLocalEnv.md)<br>• [Cloud Deployment](./Module03/03.DeployingSLMinCloud.md) | Intermediate | 4-5 hrs |
+| **[⚙️ 04](./Module04/)** | **[Model Optimization Toolkit](./Module04/README.md)** | Cross-platform optimization | • [Introduction](./Module04/01.Introduce.md)<br>• [Llama.cpp](./Module04/02.Llamacpp.md)<br>• [Microsoft Olive](./Module04/03.MicrosoftOlive.md)<br>• [OpenVINO](./Module04/04.Openvino.md)<br>• [Apple MLX](./Module04/05.AppleMLX.md)<br>• [Workflow Synthesis](./Module04/06.workflow-synthesis.md) | Intermediate | 5-6 hrs |
+| **[🔧 05](./Module05/)** | **[SLMOps Production](./Module05/README.md)** | Production operations | • [SLMOps Introduction](./Module05/01.IntroduceSLMOps.md)<br>• [Model Distillation](./Module05/02.SLMOps-Distillation.md)<br>• [Fine-tuning](./Module05/03.SLMOps-Finetuing.md)<br>• [Production Deployment](./Module05/04.SLMOps.Deployment.md) | Advanced | 5-6 hrs |
+| **[🤖 06](./Module06/)** | **[AI Agents & Function Calling](./Module06/README.md)** | Agent frameworks & MCP | • [Agent Introduction](./Module06/01.IntroduceAgent.md)<br>• [Function Calling](./Module06/02.FunctionCalling.md)<br>• [Model Context Protocol](./Module06/03.IntroduceMCP.md) | Advanced | 4-5 hrs |
+| **[💻 07](./Module07/)** | **[Platform Implementation](./Module07/README.md)** | Cross-platform samples | • [AI Toolkit](./Module07/aitoolkit.md)<br>• [Foundry Local](./Module07/foundrylocal.md)<br>• [Windows Development](./Module07/windowdeveloper.md) | Advanced | 3-4 hrs |
+| **[🏭 08](./Module08/)** | **[Foundry Local Toolkit](./Module08/README.md)** | Production-ready samples | **10 Comprehensive Samples:**<br>• [01-03: Foundation](./Module08/samples/) (REST, SDK, Discovery)<br>• [04-06: Applications](./Module08/samples/) (RAG, Agents, Routing)<br>• [07-10: Advanced](./Module08/samples/) (API, Chat App, Enterprise) | Expert | 8-10 hrs |
 
-**Key Topics**: NPU/GPU optimization • Quantization techniques • Privacy & latency benefits • Enterprise deployment strategies
-
-### [🧠 Module 02: Small Language Model Foundations](./Module02/README.md)
-**Focus**: Model families (Phi, Qwen, Gemma, BitNET) • Architecture design • NPU optimization
-
-**Key Models**: Phi-4 (reasoning) • Qwen3 (0.5B-235B) • Gemma3n (multimodal) • BitNET (1.58-bit) • Phi-Silica (650 tokens/s at 1.5W)
-
-### [🚀 Module 03: SLM Deployment Practice](./Module03/README.md)
-**Focus**: Local & cloud deployment • Ollama & Foundry Local • Production strategies
-
-**Deployment Platforms**: Ollama universal • Microsoft Foundry Local • vLLM inference • Container orchestration
-
-### [⚙️ Module 04: Model Optimization Toolkit](./Module04/README.md)
-**Focus**: Cross-platform optimization • GGUF/ONNX formats • Hardware acceleration
-
-**Frameworks**: Llama.cpp (GGUF) • Microsoft Olive (Azure ML) • OpenVINO (Intel) • Apple MLX (Silicon)
-
-### [🔧 Module 05: SLMOps - Production Operations](./Module05/README.md)
-**Focus**: Model distillation • Fine-tuning (LoRA/QLoRA) • Production deployment
-
-**Key Results**: 85% faster inference • 92% accuracy retention • 75% size reduction
-
-### [🤖 Module 06: AI Agents & Function Calling](./Module06/README.md)
-**Focus**: Agent frameworks • Function calling • Model Context Protocol (MCP)
-
-**Capabilities**: Multi-agent systems • Dynamic tool selection • 10-30× cost reduction vs LLMs
-
-### [💻 Module 07: Platform Implementation Samples](./Module07/README.md)
-**Focus**: AI Toolkit (VS Code) • Windows development • Cross-platform deployment
-
-**Platforms**: NVIDIA Jetson (67 TOPS) • .NET MAUI mobile • Azure hybrid • Windows ML • Foundry Local RAG
-
-### [🏭 Module 08: Foundry Local - Complete Toolkit](./Module08/README.md)
-**Focus**: Local-first development • Azure integration • Production-ready samples
-
-**🎯 10 Comprehensive Samples:**
-- **01-06**: Foundation (REST API, SDK, RAG, Multi-agents, Model routing)
-- **07-10**: Advanced (Direct API client, Windows 11 chat app, Enterprise agents, Tools framework)
-
-**Key Features**:
-- ✅ Modern `FoundryLocalManager` SDK integration
-- ✅ Advanced multi-agent coordinator with specialist agents  
-- ✅ Intelligent model routing (keyword-based selection)
-- ✅ Windows 11 Electron chat app with Fluent Design
-- ✅ Production API clients with streaming & health monitoring
-- ✅ LangChain/Semantic Kernel tools framework
+### 📊 **Learning Path Summary**
+- **Total Duration**: 36-45 hours
+- **Beginner Path**: Modules 01-02 (7-9 hours)  
+- **Intermediate Path**: Modules 03-04 (9-11 hours)
+- **Advanced Path**: Modules 05-07 (12-15 hours)
+- **Expert Path**: Module 08 (8-10 hours)
 
 ## What You'll Build
 
