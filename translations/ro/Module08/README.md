@@ -1,280 +1,467 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-23T00:49:22+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-25T01:35:02+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ro"
 }
 -->
-# Modulul 08: Practică cu Microsoft Foundry Local - Kit complet pentru dezvoltatori
+# Modulul 08: Practică cu Microsoft Foundry Local - Kit Complet pentru Dezvoltatori
 
-## Prezentare generală
+## Prezentare Generală
 
-Microsoft Foundry Local reprezintă generația următoare în dezvoltarea AI la margine, oferind dezvoltatorilor instrumente puternice pentru a construi, implementa și scala aplicații AI local, menținând în același timp integrarea fluidă cu Azure AI Foundry. Acest modul acoperă în detaliu Foundry Local, de la instalare până la dezvoltarea avansată a agenților.
+Microsoft Foundry Local reprezintă generația următoare în dezvoltarea AI la margine, oferind dezvoltatorilor instrumente puternice pentru a construi, implementa și scala aplicații AI local, menținând în același timp integrarea fluidă cu Azure AI Foundry. Acest modul oferă o acoperire completă a Foundry Local, de la instalare până la dezvoltarea avansată a agenților.
 
-**Tehnologii cheie:**
+**Tehnologii Cheie:**
 - Microsoft Foundry Local CLI și SDK
 - Integrare cu Azure AI Foundry
 - Inferență de modele pe dispozitiv
 - Cache local de modele și optimizare
 - Arhitecturi bazate pe agenți
 
-## Obiectivele de învățare ale modulului
+## Obiective de Învățare
 
-După finalizarea acestui modul, vei putea:
+Prin completarea acestui modul, vei:
 
-- **Stăpâni configurarea Foundry Local**: Instala, configura și optimiza Foundry Local pentru dezvoltarea pe Windows 11
-- **Implementa modele diverse**: Rula modele phi, qwen, deepseek și GPT-OSS-20B local folosind comenzi CLI
-- **Construi soluții de producție**: Crea aplicații AI cu inginerie avansată a prompturilor și integrare de date
-- **Valorifica ecosistemul open-source**: Integra modele Hugging Face și contribuții comunitare
-- **Compara arhitecturi AI**: Înțelege compromisurile între LLM-uri și SLM-uri și strategiile de implementare
-- **Dezvolta agenți AI**: Construi agenți inteligenți folosind arhitectura și capacitățile de ancorare ale Foundry Local
-- **Implementa modele ca instrumente**: Crea soluții AI modulare și personalizabile pentru aplicații enterprise
+- **Stăpâni Foundry Local**: Instala, configura și optimiza pentru dezvoltarea pe Windows 11
+- **Implementa Diverse Modele**: Rula modele phi, qwen, deepseek și GPT local folosind comenzi CLI
+- **Construi Soluții de Producție**: Crea aplicații AI cu inginerie avansată de prompturi și integrare de date
+- **Valorifica Ecosistemul Open-Source**: Integra modele Hugging Face și contribuții comunitare
+- **Dezvolta Agenți AI**: Construi agenți inteligenți cu capabilități de ancorare și orchestrare
+- **Implementa Modele Enterprise**: Crea soluții AI modulare și scalabile pentru implementare în producție
 
-## Structura sesiunii
+## Structura Sesiunii
 
-### [1: Începutul cu Foundry Local](./01.FoundryLocalSetup.md)
-**Focus**: Instalare, configurare CLI, cache de modele și accelerare hardware
+### [1: Început cu Foundry Local](./01.FoundryLocalSetup.md)
+**Focus**: Instalare, configurare CLI, implementare de modele și optimizare hardware
 
-**Ce vei învăța:**
-- Instalarea completă a Foundry Local pe Windows 11
-- Configurarea CLI și structura comenzilor
-- Strategii de cache pentru performanță optimă
-- Configurarea și optimizarea accelerării hardware
-- Implementarea practică a modelelor phi, qwen, deepseek și GPT-OSS-20B
+**Subiecte Cheie**: Instalare completă • Comenzi CLI • Cache de modele • Accelerare hardware • Implementare multi-model
 
-**Durată**: 2-3 ore  
-**Cerințe preliminare**: Windows 11, cunoștințe de bază despre linia de comandă
+**Exemple**: [REST Chat Quickstart](./samples/01/README.md) • [Integrare OpenAI SDK](./samples/02/README.md) • [Descoperire și Benchmarking de Modele](./samples/03/README.md)
+
+**Durată**: 2-3 ore | **Nivel**: Începător
 
 ---
 
-### [2: Construirea soluțiilor AI cu Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Focus**: Inginerie avansată a prompturilor, integrare de date și sarcini acționabile
+### [2: Construirea Soluțiilor AI cu Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+**Focus**: Inginerie avansată de prompturi, integrare de date și conectivitate cloud
 
-**Ce vei învăța:**
-- Tehnici avansate de inginerie a prompturilor
-- Modele de integrare a datelor și bune practici
-- Construirea sarcinilor AI acționabile cu Foundry Local
-- Fluxuri de lucru pentru integrarea fluidă cu Azure AI Foundry
-- Optimizarea performanței și monitorizare
+**Subiecte Cheie**: Inginerie de prompturi • Integrare de date • Fluxuri de lucru Azure • Optimizare performanță • Monitorizare
 
-**Durată**: 2-3 ore  
-**Cerințe preliminare**: Finalizarea sesiunii 1, cont Azure (opțional)
+**Exemplu**: [Aplicație Chainlit RAG](./samples/04/README.md)
+
+**Durată**: 2-3 ore | **Nivel**: Intermediar
 
 ---
 
-### [3: Modele open-source în Foundry Local](./03.OpenSourceModels.md)
-**Focus**: Integrarea Hugging Face, strategii de selecție a modelelor și contribuții comunitare
+### [3: Modele Open-Source în Foundry Local](./03.OpenSourceModels.md)
+**Focus**: Integrare Hugging Face, strategii BYOM și modele comunitare
 
-**Ce vei învăța:**
-- Integrarea modelelor Hugging Face cu Foundry Local
-- Strategii și implementare BYOM (adu-ți propriul model)
-- Perspective din seria Model Mondays și contribuții comunitare
-- Implementarea și optimizarea modelelor personalizate
-- Criterii de evaluare și selecție a modelelor comunitare
+**Subiecte Cheie**: Integrare HuggingFace • Bring-your-own-model • Perspective Model Mondays • Contribuții comunitare • Selecție de modele
 
-**Durată**: 2-3 ore  
-**Cerințe preliminare**: Finalizarea sesiunilor 1-2, cont Hugging Face
+**Exemplu**: [Orchestrare Multi-Agent](./samples/05/README.md)
+
+**Durată**: 2-3 ore | **Nivel**: Intermediar
 
 ---
 
-### [4: Explorarea modelelor de ultimă generație - LLM-uri, SLM-uri și inferență pe dispozitiv](./04.CuttingEdgeModels.md)
-**Focus**: Compararea modelelor, EdgeAI cu Phi și ONNX Runtime, demonstrații avansate
+### [4: Explorarea Modelelor de Ultimă Generație](./04.CuttingEdgeModels.md)
+**Focus**: LLM-uri vs SLM-uri, implementare EdgeAI și demonstrații avansate
 
-**Ce vei învăța:**
-- Compararea completă între LLM-uri și SLM-uri și cazuri de utilizare
-- Compromisuri între inferența locală și cea în cloud și cadre de decizie
-- Implementarea EdgeAI cu Phi și ONNX Runtime
-- Dezvoltarea și implementarea aplicației Chainlit RAG Chat
-- Tehnici de optimizare a inferenței WebGPU
-- Integrarea și capacitățile SDK AI PC
+**Subiecte Cheie**: Comparare modele • Inferență la margine vs cloud • Phi + ONNX Runtime • Aplicație Chainlit RAG • Optimizare WebGPU
 
-**Durată**: 3-4 ore  
-**Cerințe preliminare**: Finalizarea sesiunilor 1-3, înțelegerea conceptelor de inferență
+**Exemplu**: [Router pentru Modele ca Instrumente](./samples/06/README.md)
+
+**Durată**: 3-4 ore | **Nivel**: Avansat
 
 ---
 
-### [5: Construirea rapidă a agenților AI cu Foundry Local](./05.AIPoweredAgents.md)
-**Focus**: Dezvoltarea rapidă a aplicațiilor GenAI, prompturi de sistem, ancorare și arhitecturi de agenți
+### [5: Construirea Rapidă a Agenților AI](./05.AIPoweredAgents.md)
+**Focus**: Arhitecturi de agenți, prompturi de sistem, ancorare și orchestrare
 
-**Ce vei învăța:**
-- Arhitectura și modelele de design ale agenților Foundry Local
-- Ingineria prompturilor de sistem pentru comportamentul agenților
-- Tehnici de ancorare pentru răspunsuri fiabile ale agenților
-- Fluxuri de lucru pentru dezvoltarea rapidă a aplicațiilor GenAI
-- Orchestrarea agenților și sisteme multi-agent
-- Strategii de implementare în producție pentru agenți AI
+**Subiecte Cheie**: Modele de design pentru agenți • Inginerie de prompturi de sistem • Tehnici de ancorare • Sisteme multi-agent • Implementare în producție
 
-**Durată**: 3-4 ore  
-**Cerințe preliminare**: Finalizarea sesiunilor 1-4, înțelegerea de bază a agenților AI
+**Exemplu**: [Orchestrare Multi-Agent](./samples/05/README.md) • [Sistem Multi-Agent Avansat](./samples/09/README.md)
+
+**Durată**: 3-4 ore | **Nivel**: Avansat
 
 ---
 
-### [6: Foundry Local - Modele ca instrumente](./06.ModelsAsTools.md)
-**Focus**: Soluții AI modulare, implementare pe dispozitiv și scalare enterprise
+### [6: Foundry Local - Modele ca Instrumente](./06.ModelsAsTools.md)
+**Focus**: Soluții AI modulare, scalare enterprise și modele de producție
 
-**Ce vei învăța:**
-- Tratarea modelelor AI ca instrumente modulare și personalizabile
-- Implementare pe dispozitiv fără dependență de cloud
-- Inferență cu latență redusă, eficientă din punct de vedere al costurilor și care protejează confidențialitatea
-- Modele de integrare SDK, API și CLI
-- Personalizarea modelelor pentru cazuri de utilizare specifice
-- Strategii de scalare de la local la Azure AI Foundry
-- Arhitecturi de aplicații AI pregătite pentru enterprise
+**Subiecte Cheie**: Modele ca instrumente • Implementare pe dispozitiv • Integrare SDK/API • Arhitecturi enterprise • Strategii de scalare
 
-**Durată**: 3-4 ore  
-**Cerințe preliminare**: Toate sesiunile anterioare, experiența în dezvoltare enterprise este utilă
+**Exemplu**: [Router pentru Modele ca Instrumente](./samples/06/README.md) • [Framework Foundry Tools](./samples/10/README.md)
 
-## Cerințe preliminare
+**Durată**: 3-4 ore | **Nivel**: Expert
 
-### Cerințe de sistem
-- **Sistem de operare**: Windows 11 (22H2 sau mai recent)
+---
+
+### [7: Modele de Integrare Directă API](./samples/07/README.md)
+**Focus**: Integrare REST API pură fără dependențe SDK pentru control maxim
+
+**Subiecte Cheie**: Implementare client HTTP • Autentificare personalizată • Monitorizare sănătate modele • Răspunsuri în streaming • Gestionare erori în producție
+
+**Exemplu**: [Client API Direct](./samples/07/README.md)
+
+**Durată**: 2-3 ore | **Nivel**: Intermediar
+
+---
+
+### [8: Aplicație Chat Nativă Windows 11](./samples/08/README.md)
+**Focus**: Construirea aplicațiilor moderne de chat native cu integrare Foundry Local
+
+**Subiecte Cheie**: Dezvoltare Electron • Fluent Design System • Integrare nativă Windows • Streaming în timp real • Design interfață chat
+
+**Exemplu**: [Aplicație Chat Windows 11](./samples/08/README.md)
+
+**Durată**: 3-4 ore | **Nivel**: Avansat
+
+---
+
+### [9: Orchestrare Multi-Agent Avansată](./samples/09/README.md)
+**Focus**: Coordonare sofisticată a agenților, delegare de sarcini specializate și fluxuri de lucru AI colaborative
+
+**Subiecte Cheie**: Coordonare inteligentă a agenților • Modele de apelare funcții • Comunicare între agenți • Orchestrare fluxuri de lucru • Mecanisme de asigurare a calității
+
+**Exemplu**: [Sistem Multi-Agent Avansat](./samples/09/README.md)
+
+**Durată**: 4-5 ore | **Nivel**: Expert
+
+---
+
+### [10: Foundry Local ca Framework de Instrumente](./samples/10/README.md)
+**Focus**: Arhitectură orientată pe instrumente pentru integrarea Foundry Local în aplicații și framework-uri existente
+
+**Subiecte Cheie**: Integrare LangChain • Funcții Semantic Kernel • Framework-uri REST API • Instrumente CLI • Integrare Jupyter • Modele de implementare în producție
+
+**Exemplu**: [Framework Foundry Tools](./samples/10/README.md)
+
+**Durată**: 4-5 ore | **Nivel**: Expert
+
+## Cerințe Prealabile
+
+### Cerințe de Sistem
+- **Sistem de Operare**: Windows 11 (22H2 sau mai recent)
 - **Memorie**: 16GB RAM (32GB recomandat pentru modele mai mari)
-- **Spațiu de stocare**: 50GB spațiu liber pentru cache-ul modelelor
+- **Spațiu de Stocare**: 50GB liber pentru cache de modele
 - **Hardware**: Dispozitiv cu NPU recomandat (Copilot+ PC), GPU opțional
 - **Rețea**: Internet de mare viteză pentru descărcarea inițială a modelelor
 
-### Mediu de dezvoltare
+### Mediu de Dezvoltare
 - Visual Studio Code cu extensia AI Toolkit
 - Python 3.10+ și pip
 - Git pentru controlul versiunilor
 - PowerShell sau Command Prompt
-- Azure CLI (opțional pentru integrarea în cloud)
+- Azure CLI (opțional pentru integrare cloud)
 
-### Cunoștințe preliminare
+### Cunoștințe Prealabile
 - Înțelegere de bază a conceptelor AI/ML
 - Familiaritate cu linia de comandă
 - Noțiuni de bază de programare în Python
 - Concepte REST API
-- Cunoștințe de bază despre prompturi și inferența modelelor
+- Cunoștințe de bază despre prompturi și inferență de modele
 
-## Cronologia modulului
+## Cronologia Modulului
 
-**Timp estimat total**: 15-20 ore
+**Timp Estimat Total**: 30-38 ore
 
-| Sesiune | Domeniu de focus | Timp | Complexitate |
-|---------|------------------|------|--------------|
-|  1 | Configurare & Baze | 2-3 ore | Începător |
-|  2 | Soluții AI | 2-3 ore | Intermediar |
-|  3 | Open Source | 2-3 ore | Intermediar |
-|  4 | Modele avansate | 3-4 ore | Avansat |
-|  5 | Agenți AI | 3-4 ore | Avansat |
-|  6 | Instrumente enterprise | 3-4 ore | Expert |
+| Sesiune | Domeniu de Focus | Exemple | Timp | Complexitate |
+|---------|------------------|---------|------|-------------|
+|  1 | Configurare & Bazele | 01, 02, 03 | 2-3 ore | Începător |
+|  2 | Soluții AI | 04 | 2-3 ore | Intermediar |
+|  3 | Open Source | 05 | 2-3 ore | Intermediar |
+|  4 | Modele Avansate | 06 | 3-4 ore | Avansat |
+|  5 | Agenți AI | 05, 09 | 3-4 ore | Avansat |
+|  6 | Instrumente Enterprise | 06, 10 | 3-4 ore | Expert |
+|  7 | Integrare Directă API | 07 | 2-3 ore | Intermediar |
+|  8 | Aplicație Chat Windows 11 | 08 | 3-4 ore | Avansat |
+|  9 | Multi-Agent Avansat | 09 | 4-5 ore | Expert |
+| 10 | Framework de Instrumente | 10 | 4-5 ore | Expert |
 
-## Resurse cheie
+## Resurse Cheie
 
-### Documentație principală
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Documentația Azure AI Foundry Local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Seria Model Mondays](https://aka.ms/model-mondays)
+**Documentație Oficială:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Cod sursă și exemple oficiale
+- [Documentație Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Ghid complet de configurare și utilizare
+- [Seria Model Mondays](https://aka.ms/model-mondays) - Evidențieri și tutoriale săptămânale despre modele
 
-### Resurse comunitare
-- [Discuții comunitare Foundry Local](https://github.com/microsoft/Foundry-Local/discussions)
-- [Exemple Azure AI Foundry](https://github.com/Azure-Samples/ai-foundry)
-- [Comunitatea Microsoft AI Developer](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Comunitate & Suport:**
+- [Discuții Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Întrebări și cereri de funcționalități ale comunității
+- [Comunitatea Microsoft AI Developer](https://techcommunity.microsoft.com/category/artificialintelligence) - Știri și bune practici recente
 
-## Rezultate ale învățării
+## Rezultate de Învățare
 
 După finalizarea acestui modul, vei fi pregătit să:
 
-### Stăpânire tehnică
-- **Implementa și gestiona**: Instalări Foundry Local în medii de dezvoltare și producție
-- **Integra modele**: Lucrezi fără probleme cu diverse familii de modele de la Microsoft, Hugging Face și surse comunitare
-- **Construiești aplicații**: Creezi aplicații AI pregătite pentru producție cu funcționalități avansate și optimizări
-- **Dezvolți agenți**: Implementa agenți AI sofisticați cu ancorare, raționament și integrare de instrumente
+### Stăpânire Tehnică
+- **Implementa și Gestiona**: Instalări Foundry Local în medii de dezvoltare și producție
+- **Integra Modele**: Lucrezi fără probleme cu diverse familii de modele de la Microsoft, Hugging Face și surse comunitare
+- **Construi Aplicații**: Creezi aplicații AI gata de producție cu funcționalități avansate și optimizări
+- **Dezvolta Agenți**: Implementa agenți AI sofisticați cu ancorare, raționament și integrare de instrumente
 
-### Înțelegere strategică
-- **Decizii de arhitectură**: Alegi între implementarea locală și cea în cloud
-- **Optimizare performanță**: Optimizezi performanța inferenței pe diferite configurații hardware
-- **Scalare enterprise**: Proiectezi aplicații care se extind de la prototipuri locale la implementări enterprise
-- **Confidențialitate și securitate**: Implementa soluții AI care protejează confidențialitatea prin inferență locală
+### Înțelegere Strategică
+- **Decizii Arhitecturale**: Alegi între implementare locală vs cloud
+- **Optimizare Performanță**: Optimizezi performanța inferenței pe diferite configurații hardware
+- **Scalare Enterprise**: Proiectezi aplicații care se extind de la prototipuri locale la implementări enterprise
+- **Confidențialitate și Securitate**: Implementa soluții AI care protejează confidențialitatea prin inferență locală
 
-### Capacități de inovare
-- **Prototipare rapidă**: Construiești și testezi rapid concepte de aplicații AI
-- **Integrare comunitară**: Valorifici modele open-source și contribui la ecosistem
-- **Modele avansate**: Implementa modele AI de ultimă generație, inclusiv RAG, agenți și integrare de instrumente
-- **Dezvoltare pregătită pentru viitor**: Construiești aplicații pregătite pentru tehnologii și modele AI emergente
+### Capacități de Inovare
+- **Prototipare Rapidă**: Construiești și testezi rapid concepte de aplicații AI pe toate cele 10 modele de exemple
+- **Integrare Comunitară**: Valorifici modele open-source și contribui la ecosistem
+- **Modele Avansate**: Implementa modele AI de ultimă generație, inclusiv RAG, agenți și integrare de instrumente
+- **Stăpânirea Framework-urilor**: Integrare la nivel expert cu LangChain, Semantic Kernel, Chainlit și Electron
+- **Implementare în Producție**: Implementa soluții AI scalabile de la prototipuri locale la sisteme enterprise
+- **Dezvoltare Pregătită pentru Viitor**: Construiești aplicații pregătite pentru tehnologii și modele AI emergente
 
-## Începe acum
+## Începe
 
-1. **Pregătește mediul**: Asigură-te că ai Windows 11 cu specificațiile hardware recomandate
-2. **Instalează cerințele preliminare**: Configurează instrumentele de dezvoltare și dependențele
-3. **Începe cu Sesiunea 1**: Începe cu instalarea și configurarea de bază a Foundry Local
-4. **Progresează secvențial**: Completează sesiunile în ordine pentru o progresie optimă a învățării
-5. **Exersează continuu**: Aplică conceptele prin exerciții practice și proiecte
+1. **Configurare Mediu**: Asigură-te că ai Windows 11 cu hardware recomandat (vezi Cerințe Prealabile)
+2. **Instalează Foundry Local**: Urmează Sesiunea 1 pentru instalare și configurare completă
+3. **Rulează Exemplul 01**: Începe cu integrarea de bază REST API pentru a verifica configurarea
+4. **Progresează Prin Exemple**: Completează exemplele 01-10 pentru stăpânire completă
 
-## Metrice de succes
+## Metrice de Succes
 
-Urmărește progresul tău prin modul:
+Urmărește progresul tău prin toate cele 10 exemple cuprinzătoare:
 
+### Nivel de Bază (Exemple 01-03)
 - [ ] Instalează și configurează cu succes Foundry Local
-- [ ] Implementează și rulează cel puțin 4 familii de modele diferite
-- [ ] Construiește o soluție AI completă cu integrare de date
-- [ ] Integrează cel puțin 2 modele open-source
-- [ ] Creează o aplicație funcțională RAG chat
-- [ ] Dezvoltă și implementează un agent AI
-- [ ] Implementa o arhitectură de tip modele-ca-instrumente
+- [ ] Completează integrarea REST API (Exemplul 01)
+- [ ] Implementa compatibilitatea OpenAI SDK (Exemplul 02)
+- [ ] Realizează descoperirea și benchmarking-ul modelelor (Exemplul 03)
 
-## Start rapid pentru exemple
+### Nivel de Aplicație (Exemple 04-06)
+- [ ] Implementa și rulează cel puțin 4 familii diferite de modele
+- [ ] Construiește o aplicație funcțională RAG chat (Exemplul 04)
+- [ ] Creează un sistem de orchestrare multi-agent (Exemplul 05)
+- [ ] Implementa rutarea inteligentă a modelelor (Exemplul 06)
 
-### 1) Configurarea mediului (Windows cmd.exe)
-```cmd
+### Nivel de Integrare Avansată (Exemple 07-10)
+- [ ] Construiește un client API gata de producție (Exemplul 07)
+- [ ] Dezvoltă o aplicație chat nativă Windows 11 (Exemplul 08)
+- [ ] Implementa un sistem multi-agent avansat (Exemplul 09)
+- [ ] Creează un framework de instrumente cuprinzător (Exemplul 10)
+
+### Indicatori de Stăpânire
+- [ ] Rulează cu succes toate cele 10 exemple fără erori
+- [ ] Personalizează cel puțin 3 exemple pentru cazuri de utilizare specifice
+- [ ] Implementa 2+ exemple în medii similare producției
+- [ ] Contribuie cu îmbunătățiri sau extensii la codul exemplului
+- [ ] Integrează modelele Foundry Local în proiecte personale/profesionale
+
+## Ghid de Start Rapid - Toate cele 10 Exemple
+
+### Configurare Mediu (Necesar pentru Toate Exemplele)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Pornește un model local (terminal nou)
-```cmd
-foundry model list
+### Exemple de Bază (01-06)
+
+**Exemplul 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Exemplul 02: Integrare OpenAI SDK**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Exemplul 03: Descoperire și Benchmarking de Modele**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Exemplul 04: Aplicație Chainlit RAG**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Exemplul 05: Orchestrare Multi-Agent**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Exemplul 06: Router pentru Modele ca Instrumente**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Exemple de Integrare Avansată (07-10)
+
+**Exemplul 07: Client API Direct**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Exemplul 08: Aplicație Chat Windows 11**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Exemplul 09: Sistem Multi-Agent Avansat**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Exemplul 10: Framework Foundry Tools**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Rezolvarea Problemelor Comune
+
+**Erori de Conexiune Foundry Local**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Probleme la Încărcarea Modelelor**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Rulează demonstrația Chainlit (Sesiunea 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Probleme de Dependențe**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Rulează coordonatorul multi-agent (Sesiunea 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## Rezumat
+Acest modul reprezintă vârful dezvoltării AI la margine, combinând instrumentele de nivel enterprise de la Microsoft cu flexibilitatea și inovația ecosistemului open-source. Prin stăpânirea Foundry Local prin toate cele 10 exemple cuprinzătoare, vei fi poziționat în avangarda dezvoltării aplicațiilor AI.
 
-Dacă vezi erori de conexiune, validează Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**Calea completă de învățare:**
+- **Fundament** (Exemplele 01-03): Integrarea API-urilor și gestionarea modelelor
+- **Aplicații** (Exemplele 04-06): RAG, agenți și rutare inteligentă
+- **Avansat** (Exemplele 07-10): Framework-uri de producție și integrare enterprise
 
-### Configurarea routerului (Sesiunea 6)
-Routerul efectuează un control rapid al stării și suportă configurarea bazată pe mediu:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-Acest modul reprezintă vârful dezvoltării AI la margine, combinând instrumentele de nivel enterprise ale Microsoft cu flexibilitatea și inovația ecosistemului open-source. Prin stăpânirea Foundry Local, vei fi poziționat în fruntea dezvoltării aplicațiilor AI.
-
-Pentru Azure OpenAI (Sesiunea 2), vezi README-ul exemplului pentru variabilele de mediu necesare și setările versiunii API.
-
-## Prezentare generală a exemplelor
-
-- `samples/01`: Chat REST rapid cu Foundry Local (`chat_quickstart.py`).
-- `samples/02`: Integrare SDK OpenAI (`sdk_quickstart.py`).
-- `samples/03`: Descoperirea modelelor + test rapid (`list_and_bench.cmd`).
-- `samples/04`: Demonstrație Chainlit RAG (`app.py`).
-- `samples/05`: Orchestrare multi-agent (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Router pentru modele-ca-instrumente (`python samples\06\router.py`).
+Pentru integrarea Azure OpenAI (Sesiunea 2), consultă fișierele README individuale ale exemplelor pentru variabilele de mediu necesare și setările versiunii API.
 
 ---
 

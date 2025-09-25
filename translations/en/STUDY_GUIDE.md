@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e94a6b6e8c8f3f9c881b7d6222cd9c6b",
-  "translation_date": "2025-09-22T23:09:21+00:00",
+  "original_hash": "ef04a48f3f1428fa008738033017e0e8",
+  "translation_date": "2025-09-25T00:32:39+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "en"
 }
@@ -18,7 +18,8 @@ CO_OP_TRANSLATOR_METADATA:
 | Day 3 | Module 3: SLM Deployment | 2 hours |
 | Day 4-5 | Module 4: Model Optimization (6 frameworks) | 4 hours |
 | Day 6 | Module 5: SLMOps | 3 hours |
-| Day 7 | Module 6-7: AI Agents & Development Tools | 5 hours |
+| Day 7 | Module 6-7: AI Agents & Development Tools | 4 hours |
+| Day 8 | Module 8: Foundry Local Toolkit (Modern Implementation) | 1 hour |
 
 ### Intensive Learning Path (2 weeks)
 
@@ -82,7 +83,7 @@ This is a compact 20-hour course that delivers essential knowledge about EdgeAI 
 
 This course is divided into seven comprehensive modules:
 
-1. **EdgeAI Basics and Transformation** - Understanding core concepts and the shift in technology
+1. **EdgeAI Basics and Transformation** - Understanding the core concepts and technological shift
 2. **Small Language Model Foundations** - Exploring various SLM families and their architectures
 3. **Small Language Model Deployment** - Implementing practical deployment strategies
 4. **Model Format Conversion and Quantization** - Advanced optimization using six frameworks, including OpenVINO
@@ -93,7 +94,7 @@ This course is divided into seven comprehensive modules:
 
 ## How to Use This Study Guide
 
-- **Progressive Learning**: Follow the modules in order for the most cohesive learning experience
+- **Progressive Learning**: Follow the modules in order for the most coherent learning experience
 - **Knowledge Checkpoints**: Use the self-assessment questions after each section
 - **Hands-on Practice**: Complete the suggested exercises to reinforce theoretical concepts
 - **Supplementary Resources**: Explore additional materials for topics that interest you most
@@ -310,20 +311,20 @@ This course is divided into seven comprehensive modules:
   - Intel hardware optimization
   - Neural Network Compression Framework (NNCF)
   - Cross-platform inference deployment
-  - OpenVINO GenAI for LLM deployment
+- OpenVINO GenAI for LLM deployment
 
 #### Section 5: Apple MLX Framework
 - **Priority Concepts**: 
-  - Apple Silicon optimization
+  - Optimization for Apple Silicon
   - Unified memory architecture
   - LoRA fine-tuning capabilities
 
 #### Section 6: Edge AI Development Workflow Synthesis
 - **Priority Concepts**: 
   - Unified workflow architecture
-  - Framework selection decision trees
-  - Production readiness validation
-  - Future-proofing strategies
+  - Decision trees for framework selection
+  - Validation for production readiness
+  - Strategies for future-proofing
 
 ### Self-Assessment Questions
 
@@ -345,35 +346,35 @@ This course is divided into seven comprehensive modules:
 
 ### Key Learning Objectives
 
-- Understand SLMOps lifecycle management principles
+- Understand lifecycle management principles for SLMOps
 - Master distillation and fine-tuning techniques for edge deployment
 - Implement production deployment strategies with monitoring
-- Build enterprise-grade SLM operations and maintenance workflows
+- Build enterprise-grade workflows for SLM operations and maintenance
 
 ### Study Focus Areas
 
 #### Section 1: Introduction to SLMOps
 - **Priority Concepts**: 
-  - SLMOps paradigm shift in AI operations
+  - Paradigm shift in AI operations with SLMOps
   - Cost efficiency and privacy-first architecture
   - Strategic business impact and competitive advantages
 
 #### Section 2: Model Distillation
 - **Priority Concepts**: 
-  - Knowledge transfer techniques
-  - Two-stage distillation process implementation
-  - Azure ML distillation workflows
+  - Techniques for knowledge transfer
+  - Implementation of a two-stage distillation process
+  - Distillation workflows in Azure ML
 
 #### Section 3: Fine-tuning Strategies
 - **Priority Concepts**: 
   - Parameter-efficient fine-tuning (PEFT)
-  - LoRA and QLoRA advanced methods
+  - Advanced methods like LoRA and QLoRA
   - Multi-adapter training and hyperparameter optimization
 
 #### Section 4: Production Deployment
 - **Priority Concepts**: 
   - Model conversion and quantization for production
-  - Foundry Local deployment configuration
+  - Configuration for Foundry Local deployment
   - Performance benchmarking and quality validation
 
 ### Self-Assessment Questions
@@ -402,14 +403,14 @@ This course is divided into seven comprehensive modules:
 
 #### Section 1: AI Agents and SLM Foundations
 - **Priority Concepts**: 
-  - Agent classification framework (reflex, model-based, goal-based, learning agents)
-  - SLM vs LLM trade-offs analysis
-  - Edge-specific agent design patterns
+  - Framework for classifying agents (reflex, model-based, goal-based, learning agents)
+  - Trade-offs analysis between SLMs and LLMs
+  - Design patterns for edge-specific agents
   - Resource optimization for agents
 
 #### Section 2: Function Calling in Small Language Models
 - **Priority Concepts**: 
-  - Systematic workflow implementation (intent detection, JSON output, external execution)
+  - Implementation of systematic workflows (intent detection, JSON output, external execution)
   - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)
   - Advanced examples (multi-agent collaboration, dynamic tool selection)
   - Production considerations (rate limiting, audit logging, security measures)
@@ -452,18 +453,18 @@ This course is divided into seven comprehensive modules:
 
 #### Section 2: Windows EdgeAI Development Guide
 - **Priority Concepts**: 
-  - Windows AI Foundry platform comprehensive overview
+  - Comprehensive overview of Windows AI Foundry platform
   - Phi Silica API for efficient NPU inference
   - Computer Vision APIs for image processing and OCR
   - Foundry Local CLI for local development and testing
 
 #### Section 3: Platform-Specific Implementations
 - **Priority Concepts**: 
-  - NVIDIA Jetson Orin Nano deployment (67 TOPS AI performance)
+  - Deployment on NVIDIA Jetson Orin Nano (67 TOPS AI performance)
   - Mobile applications with .NET MAUI and ONNX Runtime GenAI
   - Azure EdgeAI solutions with cloud-edge hybrid architecture
   - Windows ML optimization with universal hardware support
-  - Foundry Local applications with privacy-focused RAG implementation
+  - Privacy-focused RAG implementation with Foundry Local applications
 
 ### Self-Assessment Questions
 
@@ -481,40 +482,64 @@ This course is divided into seven comprehensive modules:
 3. **Cross-Platform Deployment**: Deploy the same model on two different platforms (1 hour)
 4. **NPU Optimization**: Test NPU performance with Windows AI Foundry tools (30 minutes)
 
-## Module 8: Microsoft Foundry Local – Complete Developer Toolkit
+## Module 8: Microsoft Foundry Local – Complete Developer Toolkit (Modernized)
 
 ### Key Learning Objectives
 
-- Install and configure Foundry Local on Windows
-- Run, discover, and manage models locally via the Foundry CLI
-- Integrate with OpenAI-compatible REST and SDK clients
-- Build practical samples: Chainlit chat, agents, and model router
-- Understand hybrid patterns with Azure AI Foundry
+- Install and configure Foundry Local with modern SDK integration
+- Implement advanced multi-agent systems with coordinator patterns
+- Build intelligent model routers with automatic task-based selection
+- Deploy production-ready AI solutions with comprehensive monitoring
+- Integrate with Azure AI Foundry for hybrid deployment scenarios
+- Master modern SDK patterns with FoundryLocalManager and OpenAI client
 
 ### Study Focus Areas
 
-- Installation and CLI essentials (model, service, cache)
-- SDK integration (OpenAI-compatible clients and Azure OpenAI)
-- Open WebUI quick validation
-- Agents and function-calling patterns
-- Models-as-tools (router and registry design)
+#### Section 1: Modern Installation and Configuration
+- **Priority Concepts**: 
+  - FoundryLocalManager SDK integration
+  - Automatic service discovery and health monitoring
+  - Environment-based configuration patterns
+  - Production deployment considerations
+
+#### Section 2: Advanced Multi-Agent Systems
+- **Priority Concepts**: 
+  - Coordinator pattern with specialist agents
+  - Retrieval, reasoning, and execution agent specialization
+  - Feedback loop mechanisms for refinement
+  - Performance monitoring and statistics tracking
+
+#### Section 3: Intelligent Model Routing
+- **Priority Concepts**: 
+  - Keyword-based model selection algorithms
+  - Support for multiple models (general, reasoning, code, creative)
+  - Flexible configuration using environment variables
+  - Service health checking and error handling
+
+#### Section 4: Production-Ready Implementation
+- **Priority Concepts**: 
+  - Comprehensive error handling and fallback mechanisms
+  - Request monitoring and performance tracking
+  - Interactive Jupyter notebook examples with benchmarks
+  - Integration patterns with existing applications
 
 ### Self-Assessment Questions
 
-1. How do you discover the local endpoint and list available models?
-2. What are the differences between Foundry Local REST and Azure OpenAI usage?
-3. How would you design a simple router to select models as tools?
-4. Which CLI categories are most relevant to day-to-day development?
-5. How do you validate Foundry Local readiness before running apps?
+1. How does the modern FoundryLocalManager approach differ from manual REST calls?
+2. Explain the coordinator pattern and how it orchestrates specialist agents.
+3. How does the intelligent router select appropriate models based on query content?
+4. What are the key components of a production-ready AI agent system?
+5. How do you implement comprehensive health monitoring for Foundry Local services?
+6. Compare the benefits of the modernized approach vs. traditional implementation patterns.
 
 ### Hands-on Exercises
 
-1. Install/upgrade Foundry Local and run `phi-4-mini` locally (30 minutes)
-2. Call `/v1/models` and run a simple chat via REST (30 minutes)
-3. Launch the Chainlit app sample and chat locally (30 minutes)
-4. Run the multi-agent coordinator and inspect outputs (30 minutes)
-5. Try the models-as-tools router with env-based overrides (30 minutes)
-
+1. **Modern SDK Setup**: Configure FoundryLocalManager with automatic service discovery (30 minutes)
+2. **Multi-Agent System**: Run the advanced coordinator with specialist agents (30 minutes)
+3. **Intelligent Routing**: Test the model router with different query types (30 minutes)
+4. **Interactive Exploration**: Use the Jupyter notebooks to explore advanced features (45 minutes)
+5. **Production Deployment**: Implement monitoring and error handling patterns (30 minutes)
+6. **Hybrid Integration**: Configure Azure AI Foundry fallback scenarios (30 minutes)
 
 ## Time Allocation Guide
 
@@ -588,64 +613,64 @@ Use this simplified template to track your learning progress through the 20-hour
 Consider completing one of these projects to practice EdgeAI concepts (each designed to take 2-4 hours):
 
 ### Beginner Projects (2-3 hours each)
-1. **Edge Text Assistant**: Create a simple offline text completion tool using a small language model
-2. **Model Comparison Dashboard**: Build a basic visualization of performance metrics across different SLMs
-3. **Optimization Experiment**: Measure the impact of different quantization levels on the same base model
+1. **Edge Text Assistant**: Develop a simple offline text completion tool using a small language model.
+2. **Model Comparison Dashboard**: Create a basic visualization to compare performance metrics across different small language models (SLMs).
+3. **Optimization Experiment**: Analyze the impact of various quantization levels on the same base model.
 
 ### Intermediate Projects (3-4 hours each)
-4. **AI Toolkit Workflow**: Use VS Code AI Toolkit to optimize and deploy a model from start to finish
-5. **Windows AI Foundry Application**: Create a Windows app using Phi Silica API and NPU optimization
-6. **Cross-Platform Deployment**: Deploy the same optimized model on Windows (OpenVINO) and mobile (.NET MAUI)
-7. **Function Calling Agent**: Build an AI agent with function calling capabilities for edge scenarios
+4. **AI Toolkit Workflow**: Use the VS Code AI Toolkit to optimize and deploy a model from start to finish.
+5. **Windows AI Foundry Application**: Build a Windows application using the Phi Silica API and NPU optimization.
+6. **Cross-Platform Deployment**: Deploy the same optimized model on Windows (OpenVINO) and mobile platforms (.NET MAUI).
+7. **Function Calling Agent**: Create an AI agent with function-calling capabilities tailored for edge scenarios.
 
 ### Advanced Integration Projects (4-5 hours each)
-8. **OpenVINO Optimization Pipeline**: Execute full model optimization using NNCF and the GenAI toolkit  
-9. **SLMOps Pipeline**: Manage the complete model lifecycle, from training to deployment on edge devices  
-10. **Multi-Model Edge System**: Deploy multiple specialized models collaboratively on edge hardware  
-11. **MCP Integration System**: Develop an agent-based system using Model Context Protocol for tool interaction  
+8. **OpenVINO Optimization Pipeline**: Implement a complete model optimization pipeline using NNCF and the GenAI toolkit.
+9. **SLMOps Pipeline**: Build a full model lifecycle pipeline, from training to edge deployment.
+10. **Multi-Model Edge System**: Deploy multiple specialized models working collaboratively on edge hardware.
+11. **MCP Integration System**: Develop an agentic system using the Model Context Protocol for tool interaction.
 
-## References  
+## References
 
-- Microsoft Learn (Foundry Local)  
-  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
-  - Get started: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
-  - CLI reference: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
-  - Integrate with inference SDKs: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
-  - Open WebUI how-to: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
-  - Compile Hugging Face models: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
-- Azure AI Foundry  
-  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/  
-  - Agents (overview): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
-- Optimization and Inference Tooling  
-  - Microsoft Olive (docs): https://microsoft.github.io/Olive/  
-  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive  
-  - ONNX Runtime (getting started): https://onnxruntime.ai/docs/get-started/with-python.html  
-  - ONNX Runtime Olive integration: https://onnxruntime.ai/docs/performance/olive.html  
-  - OpenVINO (docs): https://docs.openvino.ai/2025/index.html  
-  - Apple MLX (docs): https://ml-explore.github.io/mlx/build/html/index.html  
-- Deployment Frameworks and Models  
-  - Llama.cpp: https://github.com/ggml-ai/llama.cpp  
-  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index  
-  - vLLM (docs): https://docs.vllm.ai/  
-  - Ollama (quick start): https://github.com/ollama/ollama#get-started  
-- Developer Tools (Windows and VS Code)  
-  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
-  - Windows ML (overview): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
+- Microsoft Learn (Foundry Local)
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+  - Get started: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+  - CLI reference: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
+  - Integrate with inference SDKs: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+  - Open WebUI how-to: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+  - Compile Hugging Face models: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Azure AI Foundry
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/
+  - Agents (overview): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
+- Optimization and Inference Tooling
+  - Microsoft Olive (docs): https://microsoft.github.io/Olive/
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
+  - ONNX Runtime (getting started): https://onnxruntime.ai/docs/get-started/with-python.html
+  - ONNX Runtime Olive integration: https://onnxruntime.ai/docs/performance/olive.html
+  - OpenVINO (docs): https://docs.openvino.ai/2025/index.html
+  - Apple MLX (docs): https://ml-explore.github.io/mlx/build/html/index.html
+- Deployment Frameworks and Models
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
+  - vLLM (docs): https://docs.vllm.ai/
+  - Ollama (quick start): https://github.com/ollama/ollama#get-started
+- Developer Tools (Windows and VS Code)
+  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
+  - Windows ML (overview): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
 
-## Learning Community  
+## Learning Community
 
-Join the conversation and connect with other learners:  
-- GitHub Discussions on the [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions)  
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
+Join the discussion and connect with fellow learners:
+- GitHub Discussions on the [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
 
-## Conclusion  
+## Conclusion
 
-EdgeAI is at the forefront of artificial intelligence, enabling powerful capabilities directly on devices while addressing key concerns like privacy, latency, and connectivity. This 20-hour course equips you with the foundational knowledge and practical skills to start working with EdgeAI technologies right away.  
+EdgeAI represents the cutting edge of artificial intelligence, enabling powerful capabilities directly on devices while addressing key concerns like privacy, latency, and connectivity. This 20-hour course equips you with the foundational knowledge and practical skills to start working with EdgeAI technologies right away.
 
-The course is intentionally concise, focusing on the most critical concepts to help you quickly gain valuable expertise without requiring a significant time investment. Remember, hands-on practice—even with simple examples—is essential for solidifying your understanding.  
+The course is intentionally concise and focused on the most critical concepts, allowing you to quickly gain valuable expertise without requiring a significant time investment. Remember, hands-on practice—even with simple examples—is essential for solidifying your understanding.
 
-Happy learning!  
+Happy learning!
 
 ---
 

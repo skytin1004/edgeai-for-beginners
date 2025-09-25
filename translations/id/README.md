@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "9a189d7d9d47816a518ca119d79dc19b",
-  "translation_date": "2025-09-22T22:20:06+00:00",
+  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
+  "translation_date": "2025-09-25T00:39:42+00:00",
   "source_file": "README.md",
   "language_code": "id"
 }
@@ -11,21 +11,21 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![Gambar sampul kursus](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.id.png)
 
-[![Kontributor GitHub](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)  
-[![Masalah GitHub](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)  
-[![Permintaan tarik GitHub](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)  
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  
+[![Kontributor GitHub](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
+[![Masalah GitHub](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
+[![Permintaan tarik GitHub](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![Pengamat GitHub](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)  
-[![Fork GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
-[![Bintang GitHub](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)  
+[![Pengamat GitHub](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)
+[![Fork GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+[![Bintang GitHub](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Ikuti langkah-langkah ini untuk mulai menggunakan sumber daya ini:
+Ikuti langkah-langkah berikut untuk mulai menggunakan sumber daya ini:
 
-1. **Fork Repository**: Klik [![Fork GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
-2. **Clone Repository**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
+1. **Fork Repository**: Klik [![Fork GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+2. **Clone Repository**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
 3. [**Bergabunglah dengan Azure AI Foundry Discord dan temui para ahli serta pengembang lainnya**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Dukungan Multi-Bahasa
@@ -53,13 +53,13 @@ Kursus ini membawa Anda dari konsep dasar hingga implementasi siap produksi, men
 Edge AI mewakili perubahan paradigma yang mengatasi tantangan modern yang kritis:
 - **Privasi & Keamanan**: Memproses data sensitif secara lokal tanpa eksposur ke cloud
 - **Performa Waktu Nyata**: Menghilangkan latensi jaringan untuk aplikasi yang membutuhkan waktu respons cepat
-- **Efisiensi Biaya**: Mengurangi biaya bandwidth dan komputasi cloud
+- **Efisiensi Biaya**: Mengurangi penggunaan bandwidth dan biaya komputasi cloud
 - **Operasi Tangguh**: Tetap berfungsi selama gangguan jaringan
 - **Kepatuhan Regulasi**: Memenuhi persyaratan kedaulatan data
 
 ### Edge AI
 
-Edge AI mengacu pada menjalankan algoritma AI dan model bahasa secara lokal di perangkat keras—dekat dengan tempat data dihasilkan—tanpa bergantung pada sumber daya cloud untuk inferensi. Ini mengurangi latensi, meningkatkan privasi, dan memungkinkan pengambilan keputusan waktu nyata.
+Edge AI mengacu pada menjalankan algoritma AI dan model bahasa secara lokal di perangkat keras, dekat dengan tempat data dihasilkan tanpa bergantung pada sumber daya cloud untuk inferensi. Ini mengurangi latensi, meningkatkan privasi, dan memungkinkan pengambilan keputusan waktu nyata.
 
 ### Prinsip Utama:
 - **Inferensi di perangkat**: Model AI berjalan di perangkat edge (ponsel, router, mikrokontroler, PC industri)
@@ -69,523 +69,136 @@ Edge AI mengacu pada menjalankan algoritma AI dan model bahasa secara lokal di p
 
 ### Small Language Models (SLMs)
 
-SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LLM yang lebih besar—dilatih atau disaring untuk:
+SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LLM yang lebih besar—dilatih atau didistilasi untuk:
 - **Jejak memori yang lebih kecil**: Penggunaan memori perangkat edge yang terbatas secara efisien
 - **Permintaan komputasi lebih rendah**: Dioptimalkan untuk performa CPU dan GPU edge
 - **Waktu startup lebih cepat**: Inisialisasi cepat untuk aplikasi yang responsif
 
-Mereka membuka kemampuan NLP yang kuat sambil memenuhi batasan:
+SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - **Sistem tertanam**: Perangkat IoT dan pengontrol industri
 - **Perangkat seluler**: Smartphone dan tablet dengan kemampuan offline
 - **Perangkat IoT**: Sensor dan perangkat pintar dengan sumber daya terbatas
 - **Server edge**: Unit pemrosesan lokal dengan sumber daya GPU terbatas
-- **Komputer pribadi**: Skenario penerapan di desktop dan laptop
-
-## Arsitektur Kursus
-
-### [Modul 01: Dasar-dasar EdgeAI dan Transformasi](./Module01/README.md)
-**Tema**: Perubahan transformasi penerapan Edge AI
-
-#### Struktur Bab:
-- [**Bagian 1: Dasar-dasar EdgeAI**](./Module01/01.EdgeAIFundamentals.md)
-  - Perbandingan AI cloud tradisional vs Edge AI
-  - Tantangan dan kendala komputasi edge
-  - Teknologi utama: kuantisasi model, optimasi kompresi, Small Language Models (SLMs)
-  - Akselerasi perangkat keras: NPUs, optimasi GPU, optimasi CPU
-  - Keuntungan: keamanan privasi, latensi rendah, kemampuan offline, efisiensi biaya
-
-- [**Bagian 2: Studi Kasus Dunia Nyata**](./Module01/02.RealWorldCaseStudies.md)
-  - Ekosistem model Microsoft Phi & Mu
-  - Studi kasus sistem pelaporan AI Japan Airlines
-  - Dampak pasar dan arah masa depan
-  - Pertimbangan penerapan dan praktik terbaik
-
-- [**Bagian 3: Panduan Implementasi Praktis**](./Module01/03.PracticalImplementationGuide.md)
-  - Pengaturan lingkungan pengembangan (Python 3.10+, .NET 8+)
-  - Persyaratan perangkat keras dan konfigurasi yang direkomendasikan
-  - Sumber daya keluarga model inti
-  - Alat kuantisasi dan optimasi (Llama.cpp, Microsoft Olive, Apple MLX)
-  - Daftar periksa penilaian dan verifikasi
-
-- [**Bagian 4: Platform Perangkat Keras Penerapan Edge AI**](./Module01/04.EdgeDeployment.md)
-  - Pertimbangan dan persyaratan penerapan Edge AI
-  - Perangkat keras Edge AI Intel dan teknik optimasi
-  - Solusi AI Qualcomm untuk sistem seluler dan tertanam
-  - NVIDIA Jetson dan platform komputasi edge
-  - Platform PC AI Windows dengan akselerasi NPU
-  - Strategi optimasi spesifik perangkat keras
-
----
-
-### [Modul 02: Dasar-dasar Small Language Model](./Module02/README.md)
-**Tema**: Prinsip teoretis SLM, strategi implementasi, dan penerapan produksi
-
-#### Struktur Bab:
-- [**Bagian 1: Dasar-dasar Keluarga Model Microsoft Phi**](./Module02/01.PhiFamily.md)
-  - Evolusi filosofi desain (Phi-1 hingga Phi-4)
-  - Desain arsitektur yang mengutamakan efisiensi
-  - Kemampuan khusus (penalaran, multimodal, penerapan edge)
-
-- [**Bagian 2: Dasar-dasar Keluarga Qwen**](./Module02/02.QwenFamily.md)
-  - Keunggulan sumber terbuka (Qwen 1.0 hingga Qwen3) - tersedia melalui Hugging Face
-  - Arsitektur penalaran canggih dengan kemampuan mode berpikir
-  - Opsi penerapan yang skalabel (0.5B-235B parameter)
-
-- [**Bagian 3: Dasar-dasar Keluarga Gemma**](./Module02/03.GemmaFamily.md)
-  - Inovasi berbasis penelitian (Gemma 3 & 3n)
-  - Keunggulan multimodal
-  - Arsitektur yang mengutamakan perangkat seluler
-
-- [**Bagian 4: Dasar-dasar Keluarga BitNET**](./Module02/04.BitNETFamily.md)
-  - Teknologi kuantisasi revolusioner (1.58-bit)
-  - Kerangka inferensi khusus dari https://github.com/microsoft/BitNet
-  - Kepemimpinan AI yang berkelanjutan melalui efisiensi ekstrem
-
-- [**Bagian 5: Dasar-dasar Model Microsoft Mu**](./Module02/05.mumodel.md)
-  - Arsitektur yang mengutamakan perangkat, terintegrasi ke Windows 11
-  - Integrasi sistem dengan Pengaturan Windows 11
-  - Operasi offline yang menjaga privasi
-
-- [**Bagian 6: Dasar-dasar Phi-Silica**](./Module02/06.phisilica.md)
-  - Arsitektur yang dioptimalkan NPU, terintegrasi ke PC Windows 11 Copilot+
-  - Efisiensi luar biasa (650 token/detik pada 1.5W)
-  - Integrasi pengembang dengan Windows App SDK
-
----
-
-### [Modul 03: Penerapan Small Language Model](./Module03/README.md)
-**Tema**: Siklus penerapan SLM lengkap, dari teori hingga lingkungan produksi
-
-#### Struktur Bab:
-- [**Bagian 1: Pembelajaran Lanjutan SLM**](./Module03/01.SLMAdvancedLearning.md)
-  - Kerangka klasifikasi parameter (Micro SLM 100M-1.4B, Medium SLM 14B-30B)
-  - Teknik optimasi lanjutan (metode kuantisasi, kuantisasi BitNET 1-bit)
-  - Strategi akuisisi model (Azure AI Foundry untuk model Phi, Hugging Face untuk model tertentu)
-
-- [**Bagian 2: Penerapan Lingkungan Lokal**](./Module03/02.DeployingSLMinLocalEnv.md)
-  - Penerapan platform universal Ollama
-  - Solusi lokal kelas perusahaan Microsoft Foundry
-  - Analisis perbandingan kerangka kerja
-
-- [**Bagian 3: Penerapan Cloud yang Terkontainerisasi**](./Module03/03.DeployingSLMinCloud.md)
-  - Penerapan inferensi berkinerja tinggi vLLM
-  - Orkestrasi kontainer Ollama
-  - Implementasi yang dioptimalkan ONNX Runtime untuk edge
-
----
-
-### [Modul 04: Konversi Format Model dan Kuantisasi](./Module04/README.md)
-**Tema**: Toolkit optimasi model lengkap untuk penerapan edge di berbagai platform
-
-#### Struktur Bab:
-- [**Bagian 1: Dasar-dasar Konversi Format Model dan Kuantisasi**](./Module04/01.Introduce.md)
-  - Kerangka klasifikasi presisi (ultra-rendah, rendah, presisi sedang)
-  - Keunggulan dan kasus penggunaan format GGUF dan ONNX
-  - Manfaat kuantisasi untuk efisiensi operasional
-  - Tolok ukur performa dan perbandingan jejak memori
-- [**Bagian 2: Panduan Implementasi Llama.cpp**](./Module04/02.Llamacpp.md)
-  - Instalasi lintas platform (Windows, macOS, Linux)
-  - Konversi format GGUF dan tingkat kuantisasi (Q2_K hingga Q8_0)
-  - Akselerasi perangkat keras (CUDA, Metal, OpenCL, Vulkan)
-  - Integrasi Python dan penerapan REST API
-
-- [**Bagian 3: Microsoft Olive Optimization Suite**](./Module04/03.MicrosoftOlive.md)
-  - Optimasi model berbasis perangkat keras dengan lebih dari 40 komponen bawaan
-  - Auto-optimasi dengan kuantisasi dinamis dan statis
-  - Integrasi perusahaan dengan alur kerja Azure ML
-  - Dukungan model populer (Llama, Phi, model Qwen tertentu, Gemma)
-
-- [**Bagian 4: OpenVINO Toolkit Optimization Suite**](./Module04/04.openvino.md)
-  - Toolkit open-source Intel untuk penerapan AI lintas platform
-  - Neural Network Compression Framework (NNCF) untuk optimasi lanjutan
-  - OpenVINO GenAI untuk penerapan model bahasa besar
-  - Akselerasi perangkat keras di CPU, GPU, VPU, dan akselerator AI
-
-- [**Bagian 5: Pendalaman Framework Apple MLX**](./Module04/05.AppleMLX.md)
-  - Arsitektur memori terpadu untuk Apple Silicon
-  - Dukungan untuk LLaMA, Mistral, Phi, model Qwen tertentu
-  - Fine-tuning LoRA dan kustomisasi model
-  - Integrasi Hugging Face dengan kuantisasi 4-bit/8-bit
-
-- [**Bagian 6: Sintesis Alur Kerja Pengembangan Edge AI**](./Module04/06.workflow-synthesis.md)
-  - Arsitektur alur kerja terpadu yang mengintegrasikan berbagai kerangka optimasi
-  - Pohon keputusan pemilihan kerangka kerja dan analisis trade-off kinerja
-  - Validasi kesiapan produksi dan strategi penerapan yang komprehensif
-  - Strategi masa depan untuk perangkat keras dan arsitektur model yang sedang berkembang
-
----
-
-### [Module 05: SLMOps - Operasi Model Bahasa Kecil](./Module05/README.md)
-**Tema**: Operasi siklus hidup SLM lengkap dari distilasi hingga penerapan produksi
-
-#### Struktur Bab:
-- [**Bagian 1: Pengantar SLMOps**](./Module05/01.IntroduceSLMOps.md)
-  - Pergeseran paradigma SLMOps dalam operasi AI
-  - Efisiensi biaya dan arsitektur yang mengutamakan privasi
-  - Dampak strategis bisnis dan keunggulan kompetitif
-  - Tantangan implementasi dunia nyata dan solusinya
-
-- [**Bagian 2: Distilasi Model - Dari Teori ke Praktik**](./Module05/02.SLMOps-Distillation.md)
-  - Transfer pengetahuan dari model guru ke model siswa
-  - Implementasi proses distilasi dua tahap
-  - Alur kerja distilasi Azure ML dengan contoh praktis
-  - Pengurangan waktu inferensi hingga 85% dengan retensi akurasi 92%
-
-- [**Bagian 3: Fine-Tuning - Kustomisasi Model untuk Tugas Spesifik**](./Module05/03.SLMOps-Finetuing.md)
-  - Teknik fine-tuning yang efisien parameter (PEFT)
-  - Metode lanjutan LoRA dan QLoRA
-  - Implementasi fine-tuning Microsoft Olive
-  - Pelatihan multi-adapter dan optimasi hyperparameter
-
-- [**Bagian 4: Penerapan - Implementasi Siap Produksi**](./Module05/04.SLMOps.Deployment.md)
-  - Konversi model dan kuantisasi untuk produksi
-  - Konfigurasi penerapan Foundry Local
-  - Benchmarking kinerja dan validasi kualitas
-  - Pengurangan ukuran hingga 75% dengan pemantauan produksi
-
----
-
-### [Module 06: Sistem Agenik SLM - Agen AI dan Pemanggilan Fungsi](./Module06/README.md)
-**Tema**: Implementasi sistem agenik SLM dari dasar hingga pemanggilan fungsi lanjutan dan integrasi Model Context Protocol
-
-#### Struktur Bab:
-- [**Bagian 1: Dasar Agen AI dan Model Bahasa Kecil**](./Module06/01.IntroduceAgent.md)
-  - Kerangka klasifikasi agen (refleks, berbasis model, berbasis tujuan, agen pembelajaran)
-  - Dasar-dasar SLM dan strategi optimasi (GGUF, kuantisasi, kerangka kerja edge)
-  - Analisis trade-off SLM vs LLM (pengurangan biaya 10-30×, efektivitas tugas 70-80%)
-  - Penerapan praktis dengan Ollama, VLLM, dan solusi edge Microsoft
-
-- [**Bagian 2: Pemanggilan Fungsi dalam Model Bahasa Kecil**](./Module06/02.FunctionCalling.md)
-  - Implementasi alur kerja sistematis (deteksi intent, output JSON, eksekusi eksternal)
-  - Implementasi spesifik platform (Phi-4-mini, model Qwen tertentu, Microsoft Foundry Local)
-  - Contoh lanjutan (kolaborasi multi-agen, pemilihan alat dinamis)
-  - Pertimbangan produksi (pembatasan tingkat, pencatatan audit, langkah keamanan)
-
-- [**Bagian 3: Integrasi Model Context Protocol (MCP)**](./Module06/03.IntroduceMCP.md)
-  - Arsitektur protokol dan desain sistem berlapis
-  - Dukungan multi-backend (Ollama untuk pengembangan, vLLM untuk produksi)
-  - Protokol koneksi (mode STDIO dan SSE)
-  - Aplikasi dunia nyata (otomasi web, pemrosesan data, integrasi API)
-
----
-
-### [Module 07: Contoh Implementasi EdgeAI](./Module07/README.md)
-**Tema**: Implementasi EdgeAI yang komprehensif di berbagai platform dan kerangka kerja
-
-#### Struktur Bab:
-- [**Toolkit AI untuk Visual Studio Code**](./Module07/aitoolkit.md)
-  - Lingkungan pengembangan Edge AI yang komprehensif dalam VS Code
-  - Katalog model dan penemuan untuk penerapan edge
-  - Pengujian lokal, optimasi, dan alur kerja pengembangan agen
-  - Pemantauan kinerja dan evaluasi untuk skenario edge
-
-- [**Panduan Pengembangan EdgeAI di Windows**](./Module07/windowdeveloper.md)
-  - Gambaran komprehensif platform Windows AI Foundry
-  - API Phi Silica untuk inferensi NPU yang efisien
-  - API Computer Vision untuk pemrosesan gambar dan OCR
-  - CLI Foundry Local untuk pengembangan dan pengujian lokal
-
-- [**EdgeAI di NVIDIA Jetson Orin Nano**](./Module07/README.md#1-edgeai-in-nvidia-jetson-orin-nano)
-  - Performa AI 67 TOPS dalam bentuk seukuran kartu kredit
-  - Dukungan model AI generatif (vision transformers, LLMs, model vision-language)
-  - Aplikasi dalam robotika, drone, kamera pintar, perangkat otonom
-  - Platform terjangkau seharga $249 untuk pengembangan AI yang terdemokratisasi
-
-- [**EdgeAI dalam Aplikasi Mobile dengan .NET MAUI dan ONNX Runtime GenAI**](./Module07/README.md#2-edgeai-in-mobile-applications-with-net-maui-and-onnx-runtime-genai)
-  - AI mobile lintas platform dengan basis kode C# tunggal
-  - Dukungan akselerasi perangkat keras (CPU, GPU, prosesor AI mobile)
-  - Optimasi spesifik platform (CoreML untuk iOS, NNAPI untuk Android)
-  - Implementasi loop AI generatif yang lengkap
-
-- [**EdgeAI di Azure dengan Mesin Model Bahasa Kecil**](./Module07/README.md#3-edgeai-in-azure-with-small-language-models-engine)
-  - Arsitektur penerapan hybrid cloud-edge
-  - Integrasi layanan AI Azure dengan ONNX Runtime
-  - Penerapan skala perusahaan dan manajemen model berkelanjutan
-  - Alur kerja AI hybrid untuk pemrosesan dokumen cerdas
-
-- [**EdgeAI dengan Windows ML**](./Module07/README.md#4-edgeai-with-windows-ml)
-  - Fondasi Windows AI Foundry untuk inferensi on-device yang berkinerja tinggi
-  - Dukungan perangkat keras universal (AMD, Intel, NVIDIA, Qualcomm silicon)
-  - Abstraksi perangkat keras otomatis dan optimasi
-  - Kerangka kerja terpadu untuk ekosistem perangkat keras Windows yang beragam
-
-- [**EdgeAI dengan Aplikasi Foundry Local**](./Module07/README.md#5-edgeai-with-foundry-local-applications)
-  - Implementasi RAG yang berfokus pada privasi dengan sumber daya lokal
-  - Integrasi model bahasa Phi-4 dengan pencarian semantik (hanya model Phi)
-  - Dukungan basis data vektor lokal (SQLite, Qdrant)
-  - Kemampuan operasi offline dan kedaulatan data
-
-### [Module 08: Microsoft Foundry Local – Toolkit Pengembang Lengkap](./Module08/README.md)
-**Tema**: Bangun, jalankan, dan integrasikan AI secara lokal dengan Foundry Local; skalakan dan hybridkan dengan Azure AI Foundry
-
-#### Struktur Bab:
-- [**1: Memulai dengan Foundry Local**](./Module08/01.FoundryLocalSetup.md)
-- [**2: Bangun Solusi AI dengan Azure AI Foundry**](./Module08/02.AzureAIFoundryIntegration.md)
-- [**3: Model Open-Source Foundry Local**](./Module08/03.OpenSourceModels.md)
-- [**4: Model Terkini dan Inferensi On-Device**](./Module08/04.CuttingEdgeModels.md)
-- [**5: Agen Bertenaga AI dengan Foundry Local**](./Module08/05.AIPoweredAgents.md)
-- [**6: Model sebagai Alat**](./Module08/06.ModelsAsTools.md)
-
-## Tujuan Pembelajaran Kursus
-
-Dengan menyelesaikan kursus EdgeAI yang komprehensif ini, Anda akan mengembangkan keahlian untuk merancang, mengimplementasikan, dan menerapkan solusi EdgeAI yang siap produksi. Pendekatan terstruktur kami memastikan Anda menguasai baik dasar teori maupun keterampilan implementasi praktis.
-
-### Kompetensi Teknis
-
-**Pengetahuan Dasar**
-- Memahami perbedaan mendasar antara arsitektur AI berbasis cloud dan berbasis edge
-- Menguasai prinsip kuantisasi model, kompresi, dan optimasi untuk lingkungan dengan sumber daya terbatas
-- Memahami opsi akselerasi perangkat keras (NPUs, GPUs, CPUs) dan implikasi penerapannya
-
-**Keterampilan Implementasi**
-- Menerapkan Model Bahasa Kecil di berbagai platform edge (mobile, embedded, IoT, server edge)
-- Menggunakan kerangka optimasi termasuk Llama.cpp, Microsoft Olive, ONNX Runtime, dan Apple MLX
-- Mengimplementasikan sistem inferensi real-time dengan kebutuhan respons sub-detik
-
-**Keahlian Produksi**
-- Merancang arsitektur EdgeAI yang skalabel untuk aplikasi perusahaan
-- Menerapkan strategi pemantauan, pemeliharaan, dan pembaruan untuk sistem yang diterapkan
-- Menggunakan praktik terbaik keamanan untuk implementasi EdgeAI yang menjaga privasi
-
-### Kemampuan Strategis
-
-**Kerangka Pengambilan Keputusan**
-- Mengevaluasi peluang EdgeAI dan mengidentifikasi kasus penggunaan yang sesuai untuk aplikasi bisnis
-- Menilai trade-off antara akurasi model, kecepatan inferensi, konsumsi daya, dan biaya perangkat keras
-- Memilih keluarga SLM dan konfigurasi yang sesuai berdasarkan kendala penerapan spesifik
-
-**Arsitektur Sistem**
-- Merancang solusi EdgeAI end-to-end yang terintegrasi dengan infrastruktur yang ada
-- Merencanakan arsitektur hybrid edge-cloud untuk kinerja optimal dan efisiensi biaya
-- Mengimplementasikan alur data dan pipeline pemrosesan untuk aplikasi AI real-time
-
-### Aplikasi Industri
-
-**Skenario Penerapan Praktis**
-- **Manufaktur**: Sistem kontrol kualitas, pemeliharaan prediktif, dan optimasi proses
-- **Kesehatan**: Alat diagnostik yang menjaga privasi dan sistem pemantauan pasien
-- **Transportasi**: Pengambilan keputusan kendaraan otonom dan manajemen lalu lintas
-- **Kota Cerdas**: Infrastruktur cerdas dan sistem pengelolaan sumber daya
-- **Elektronik Konsumen**: Aplikasi mobile bertenaga AI dan perangkat rumah pintar
-
-## Ikhtisar Hasil Pembelajaran
-
-### Hasil Pembelajaran Modul 01:
-- Memahami perbedaan mendasar antara arsitektur AI cloud dan edge
-- Menguasai teknik optimasi inti untuk penerapan edge
-- Mengenali aplikasi dunia nyata dan kisah sukses
-- Memperoleh keterampilan praktis untuk mengimplementasikan solusi EdgeAI
-
-### Hasil Pembelajaran Modul 02:
-- Pemahaman mendalam tentang filosofi desain SLM yang berbeda dan implikasi penerapannya
-- Menguasai kemampuan pengambilan keputusan strategis berdasarkan kendala komputasi dan persyaratan kinerja
-- Memahami trade-off fleksibilitas penerapan
-- Memiliki wawasan masa depan tentang arsitektur AI yang efisien
-
-### Hasil Pembelajaran Modul 03:
-- Kemampuan pemilihan model strategis
-- Penguasaan teknik optimasi
-- Penguasaan fleksibilitas penerapan
-- Kemampuan konfigurasi siap produksi
-
-### Hasil Pembelajaran Modul 04:
-- Pemahaman mendalam tentang batas kuantisasi dan aplikasi praktis
-- Pengalaman langsung dengan berbagai kerangka optimasi (Llama.cpp, Olive, OpenVINO, MLX)
-- Menguasai optimasi perangkat keras Intel dengan OpenVINO dan NNCF
-- Kemampuan pemilihan optimasi berbasis perangkat keras di berbagai platform
-- Keterampilan penerapan produksi untuk lingkungan komputasi edge lintas platform
-- Pemilihan kerangka kerja strategis dan sintesis alur kerja untuk solusi Edge AI yang optimal
-
-### Hasil Pembelajaran Modul 05:
-- Menguasai paradigma SLMOps dan prinsip operasionalnya
-- Menerapkan distilasi model untuk transfer pengetahuan dan optimasi efisiensi
-- Menggunakan teknik fine-tuning untuk kustomisasi model spesifik domain
-- Menerapkan solusi SLM siap produksi dengan strategi pemantauan dan pemeliharaan
-
-### Hasil Pembelajaran Modul 06:
-- Memahami konsep dasar agen AI dan arsitektur Model Bahasa Kecil
-- Menguasai implementasi pemanggilan fungsi di berbagai platform dan kerangka kerja
-- Mengintegrasikan Model Context Protocol (MCP) untuk interaksi alat eksternal yang terstandarisasi
-- Membangun sistem agenik yang canggih dengan kebutuhan intervensi manusia minimal
-
-### Hasil Pembelajaran Modul 07:
-- Menguasai AI Toolkit untuk Visual Studio Code untuk alur kerja pengembangan Edge AI yang komprehensif
-- Mendapatkan keahlian dalam platform Windows AI Foundry dan strategi optimasi NPU
-- Memperoleh pengalaman langsung dengan berbagai platform EdgeAI dan strategi implementasi
-- Menguasai teknik optimasi spesifik perangkat keras di platform NVIDIA, mobile, Azure, dan Windows
-- Memahami trade-off penerapan antara kinerja, biaya, dan persyaratan privasi
-- Mengembangkan keterampilan praktis untuk membangun aplikasi EdgeAI dunia nyata di berbagai ekosistem
-
-## Hasil Kursus yang Diharapkan
-
-Setelah berhasil menyelesaikan kursus ini, Anda akan dilengkapi dengan pengetahuan, keterampilan, dan kepercayaan diri untuk memimpin inisiatif EdgeAI di lingkungan profesional.
-
-### Kesiapan Profesional
-
-**Kepemimpinan Teknis**
-- **Arsitektur Solusi**: Merancang sistem EdgeAI yang komprehensif yang memenuhi kebutuhan perusahaan
-- **Optimasi Kinerja**: Mencapai keseimbangan optimal antara akurasi, kecepatan, dan konsumsi sumber daya
-- **Penerapan Lintas Platform**: Mengimplementasikan solusi di Windows, Linux, mobile, dan platform embedded
-- **Operasi Produksi**: Memelihara dan menskalakan sistem EdgeAI dengan keandalan tingkat perusahaan
-
-**Keahlian Industri**
-- **Evaluasi Teknologi**: Menilai dan merekomendasikan solusi EdgeAI untuk tantangan bisnis tertentu
-- **Perencanaan Implementasi**: Mengembangkan timeline realistis dan kebutuhan sumber daya untuk proyek EdgeAI
-- **Manajemen Risiko**: Identifikasi dan kurangi risiko teknis serta operasional dalam penerapan EdgeAI
-- **Optimalisasi ROI**: Tunjukkan nilai bisnis yang terukur dari implementasi EdgeAI
-
-### Peluang Pengembangan Karir
-
-**Peran Profesional**
-- EdgeAI Solutions Architect
-- Machine Learning Engineer (Spesialisasi Edge)
-- IoT AI Developer
-- Mobile AI Application Developer
-- Enterprise AI Consultant
-
-**Sektor Industri**
-- Manufaktur Cerdas dan Industri 4.0
-- Kendaraan Otonom dan Transportasi
-- Teknologi Kesehatan dan Perangkat Medis
-- Teknologi Finansial dan Keamanan
-- Elektronik Konsumen dan Aplikasi Mobile
-
-### Sertifikasi dan Validasi
-
-**Pengembangan Portofolio**
-- Selesaikan proyek EdgeAI end-to-end yang menunjukkan kompetensi praktis
-- Terapkan solusi siap produksi di berbagai platform perangkat keras
-- Dokumentasikan strategi optimasi dan peningkatan kinerja yang dicapai
-
-**Jalur Pembelajaran Berkelanjutan**
-- Dasar untuk spesialisasi AI tingkat lanjut
-- Persiapan untuk arsitektur hybrid cloud-edge
-- Gerbang menuju teknologi dan kerangka kerja AI yang sedang berkembang
-
-Kursus ini menempatkan Anda di garis depan penerapan teknologi AI, di mana kemampuan cerdas terintegrasi secara mulus ke dalam perangkat dan sistem yang mendukung kehidupan modern.
-
-## Diagram Struktur File
+- **Komputer pribadi**: Skenario penerapan desktop dan laptop
+
+## Modul Kursus & Navigasi
+
+| Modul | Topik | Area Fokus | Konten Utama | Tingkat | Durasi |
+|-------|-------|------------|--------------|---------|--------|
+| [📚 01](../../Module01) | [Dasar-dasar EdgeAI](./Module01/README.md) | Perbandingan Cloud vs Edge AI | Dasar-dasar EdgeAI • Studi Kasus Dunia Nyata • Panduan Implementasi • Penerapan Edge | Pemula | 3-4 jam |
+| [🧠 02](../../Module02) | [Dasar Model SLM](./Module02/README.md) | Keluarga model & arsitektur | Keluarga Phi • Keluarga Qwen • Keluarga Gemma • BitNET • μModel • Phi-Silica | Pemula | 4-5 jam |
+| [🚀 03](../../Module03) | [Praktik Penerapan SLM](./Module03/README.md) | Penerapan lokal & cloud | Pembelajaran Lanjutan • Lingkungan Lokal • Penerapan Cloud | Menengah | 4-5 jam |
+| [⚙️ 04](../../Module04) | [Toolkit Optimasi Model](./Module04/README.md) | Optimasi lintas platform | Pengantar • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sintesis Alur Kerja | Menengah | 5-6 jam |
+| [🔧 05](../../Module05) | [Produksi SLMOps](./Module05/README.md) | Operasi produksi | Pengantar SLMOps • Distilasi Model • Fine-tuning • Penerapan Produksi | Lanjutan | 5-6 jam |
+| [🤖 06](../../Module06) | [Agen AI & Pemanggilan Fungsi](./Module06/README.md) | Kerangka kerja agen & MCP | Pengantar Agen • Pemanggilan Fungsi • Protokol Konteks Model | Lanjutan | 4-5 jam |
+| [💻 07](../../Module07) | [Implementasi Platform](./Module07/README.md) | Contoh lintas platform | Toolkit AI • Foundry Lokal • Pengembangan Windows | Lanjutan | 3-4 jam |
+| [🏭 08](../../Module08) | [Toolkit Foundry Lokal](./Module08/README.md) | Contoh siap produksi | Aplikasi contoh (lihat detail di bawah) | Ahli | 8-10 jam |
+
+### 🏭 **Modul 08: Aplikasi Contoh**
+
+- [01: REST Chat Quickstart](./Module08/samples/01/README.md)
+- [02: Integrasi OpenAI SDK](./Module08/samples/02/README.md)
+- [03: Penemuan & Benchmarking Model](./Module08/samples/03/README.md)
+- [04: Aplikasi Chainlit RAG](./Module08/samples/04/README.md)
+- [05: Orkestrasi Multi-Agen](./Module08/samples/05/README.md)
+- [06: Router Model-as-Tools](./Module08/samples/06/README.md)
+- [07: Klien API Langsung](./Module08/samples/07/README.md)
+- [08: Aplikasi Chat Windows 11](./Module08/samples/08/README.md)
+- [09: Sistem Multi-Agen Lanjutan](./Module08/samples/09/README.md)
+- [10: Kerangka Kerja Foundry Tools](./Module08/samples/10/README.md)
+
+### 📊 **Ringkasan Jalur Pembelajaran**
+- **Total Durasi**: 36-45 jam
+- **Jalur Pemula**: Modul 01-02 (7-9 jam)  
+- **Jalur Menengah**: Modul 03-04 (9-11 jam)
+- **Jalur Lanjutan**: Modul 05-07 (12-15 jam)
+- **Jalur Ahli**: Modul 08 (8-10 jam)
+
+## Apa yang Akan Anda Bangun
+
+### 🎯 Kompetensi Inti
+- **Arsitektur Edge AI**: Merancang sistem AI yang berorientasi lokal dengan integrasi cloud
+- **Optimasi Model**: Kuantisasi dan kompresi model untuk penerapan di edge (peningkatan kecepatan 85%, pengurangan ukuran 75%)
+- **Penerapan Multi-Platform**: Windows, seluler, tertanam, dan sistem hybrid cloud-edge
+- **Operasi Produksi**: Pemantauan, penskalaan, dan pemeliharaan AI edge dalam produksi
+
+### 🏗️ Proyek Praktis
+- **Aplikasi Chat Foundry Lokal**: Aplikasi native Windows 11 dengan pengalihan model
+- **Sistem Multi-Agen**: Koordinator dengan agen spesialis untuk alur kerja kompleks  
+- **Aplikasi RAG**: Pemrosesan dokumen lokal dengan pencarian vektor
+- **Router Model**: Pemilihan cerdas antara model berdasarkan analisis tugas
+- **Kerangka API**: Klien siap produksi dengan streaming dan pemantauan kesehatan
+- **Alat Lintas Platform**: Pola integrasi LangChain/Semantic Kernel
+
+### 🏢 Aplikasi Industri
+**Manufaktur** • **Kesehatan** • **Kendaraan Otonom** • **Kota Pintar** • **Aplikasi Seluler**
+
+## Mulai Cepat
+
+**Jalur Pembelajaran yang Direkomendasikan** (total 20-30 jam):
+
+1. **📚 Dasar** (Modul 01-02): Konsep EdgeAI + keluarga model SLM
+2. **⚙️ Optimasi** (Modul 03-04): Penerapan + kerangka kuantisasi  
+3. **🚀 Produksi** (Modul 05-06): SLMOps + agen AI + pemanggilan fungsi
+4. **💻 Implementasi** (Modul 07-08): Contoh platform + toolkit Foundry Lokal
+
+Setiap modul mencakup teori, latihan langsung, dan contoh kode siap produksi.
+
+## Dampak Karir
+**Peran Teknis**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer
+
+**Sektor Industri**: Manufaktur 4.0 • Teknologi Kesehatan • Sistem Otonom • FinTech • Elektronik Konsumen
+
+**Proyek Portofolio**: Sistem multi-agen • Aplikasi RAG produksi • Deployment lintas platform • Optimisasi performa
+
+## Struktur Repository
 
 ```
 edgeai-for-beginners/
-├── imgs/
-│   └── cover.png
-├── Module01/ (EdgeAI Fundamentals and Transformation)
-│   ├── 01.EdgeAIFundamentals.md
-│   ├── 02.RealWorldCaseStudies.md
-│   ├── 03.PracticalImplementationGuide.md
-│   ├── 04.EdgeDeployment.md
-│   └── README.md
-├── Module02/ (Small Language Model Foundations)
-│   ├── 01.PhiFamily.md
-│   ├── 02.QwenFamily.md
-│   ├── 03.GemmaFamily.md
-│   ├── 04.BitNETFamily.md
-│   ├── 05.mumodel.md
-│   ├── 06.phisilica.md
-│   └── README.md
-├── Module03/ (SLM Deployment Practice)
-│   ├── 01.SLMAdvancedLearning.md
-│   ├── 02.DeployingSLMinLocalEnv.md
-│   ├── 03.DeployingSLMinCloud.md
-│   └── README.md
-├── Module04/ (Model Format Conversion and Quantization)
-│   ├── 01.Introduce.md
-│   ├── 02.Llamacpp.md
-│   ├── 03.MicrosoftOlive.md
-│   ├── 04.openvino.md
-│   ├── 05.AppleMLX.md
-│   ├── 06.workflow-synthesis.md
-│   └── README.md
-├── Module05/ (SLMOps - Small Language Model Operations)
-│   ├── 01.IntroduceSLMOps.md
-│   ├── 02.SLMOps-Distillation.md
-│   ├── 03.SLMOps-Finetuing.md
-│   ├── 04.SLMOps.Deployment.md
-│   └── README.md
-├── Module06/ (SLM Agentic Systems)
-│   ├── 01.IntroduceAgent.md
-│   ├── 02.FunctionCalling.md
-│   ├── 03.IntroduceMCP.md
-│   └── README.md
-├── Module07/ (EdgeAI Implementation Samples)
-│   ├── aitoolkit.md
-│   ├── windowdeveloper.md
-│   └── README.md
-├── Module08/ (Hands on with Foundry Local)
-│   ├── 01.FoundryLocalSetup.md
-│   ├── 02.AzureAIFoundryIntegration.md
-│   ├── 03.OpenSourceModels.md
-│   ├── 04.CuttingEdgeModels.md
-│   ├── 05.AIPoweredAgents.md
-│   ├── 06.ModelsAsTools.md
-│   └── README.md
-├── CODE_OF_CONDUCT.md
-├── LICENSE
-├── README.md (This file)
-├── SECURITY.md
-├── STUDY_GUIDE.md
-└── SUPPORT.md
+├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
+├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
+├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
+├── 🏭 Module08/        # Foundry Local Toolkit + 10 Comprehensive Samples
+│   ├── samples/01-06/  # Foundation: REST, SDK, RAG, Agents, Routing
+│   └── samples/07-10/  # Advanced: API Client, Windows App, Enterprise Agents, Tools
+├── 🌐 translations/    # Multi-language support (8+ languages)
+└── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
 
-## Fitur Kursus
+## Sorotan Kursus
 
-- **Pembelajaran Bertahap**: Meningkatkan pemahaman dari konsep dasar hingga penerapan tingkat lanjut
-- **Integrasi Teori dan Praktik**: Setiap modul mencakup dasar teori dan operasi praktis
-- **Studi Kasus Nyata**: Berdasarkan kasus nyata dari Microsoft, Alibaba, Google, dan lainnya
-- **Latihan Praktis**: Konfigurasi file lengkap, prosedur pengujian API, dan skrip penerapan
-- **Tolok Ukur Kinerja**: Perbandingan rinci kecepatan inferensi, penggunaan memori, dan kebutuhan sumber daya
-- **Pertimbangan Kelas Enterprise**: Praktik keamanan, kerangka kerja kepatuhan, dan strategi perlindungan data
+✅ **Pembelajaran Progresif**: Teori → Praktik → Deployment produksi  
+✅ **Studi Kasus Nyata**: Microsoft, Japan Airlines, implementasi perusahaan  
+✅ **Contoh Praktis**: 50+ contoh, 10 demo Foundry Local yang komprehensif  
+✅ **Fokus Performa**: Peningkatan kecepatan hingga 85%, pengurangan ukuran hingga 75%  
+✅ **Multi-Platform**: Windows, mobile, embedded, cloud-edge hybrid  
+✅ **Siap Produksi**: Pemantauan, skalabilitas, keamanan, kerangka kerja kepatuhan
 
-## Memulai
-
-Jalur Pembelajaran yang Direkomendasikan:
-1. Mulai dengan **Module01** untuk membangun pemahaman dasar tentang EdgeAI
-2. Lanjutkan ke **Module02** untuk memahami secara mendalam berbagai keluarga model SLM
-3. Pelajari **Module03** untuk menguasai keterampilan penerapan praktis
-4. Lanjutkan dengan **Module04** untuk optimasi model tingkat lanjut, konversi format, dan sintesis kerangka kerja
-5. Selesaikan **Module05** untuk menguasai SLMOps dalam implementasi siap produksi
-6. Jelajahi **Module06** untuk memahami sistem agentik SLM dan kemampuan pemanggilan fungsi
-7. Akhiri dengan **Module07** untuk mendapatkan pengalaman praktis dengan AI Toolkit dan berbagai contoh implementasi EdgeAI
-8. Jelajahi **Module08** untuk toolkit pengembang Foundry Local yang lengkap (pengembangan lokal dengan integrasi hybrid Azure)
-
-Setiap modul dirancang untuk dapat diselesaikan secara mandiri, tetapi pembelajaran berurutan akan memberikan hasil terbaik.
-
-## Panduan Belajar
-
-Panduan [Panduan Belajar](STUDY_GUIDE.md) tersedia untuk membantu Anda memaksimalkan pengalaman belajar. Panduan ini menyediakan:
-
-- **Jalur Pembelajaran Terstruktur**: Jadwal yang dioptimalkan untuk menyelesaikan kursus dalam 20 jam
-- **Panduan Alokasi Waktu**: Rekomendasi spesifik untuk menyeimbangkan membaca, latihan, dan proyek
-- **Fokus Konsep Utama**: Tujuan pembelajaran yang diprioritaskan untuk setiap modul
-- **Alat Penilaian Mandiri**: Pertanyaan dan latihan untuk menguji pemahaman Anda
-- **Ide Proyek Mini**: Aplikasi praktis untuk memperkuat pembelajaran Anda
-
-Panduan belajar ini dirancang untuk mendukung pembelajaran intensif (1 minggu) maupun studi paruh waktu (3 minggu), dengan panduan jelas tentang cara mengalokasikan waktu secara efektif bahkan jika Anda hanya memiliki 10 jam untuk kursus ini.
+📖 **[Panduan Belajar Tersedia](STUDY_GUIDE.md)**: Jalur pembelajaran terstruktur selama 20 jam dengan panduan alokasi waktu dan alat penilaian mandiri.
 
 ---
 
-**Masa depan EdgeAI terletak pada peningkatan berkelanjutan arsitektur model, teknik kuantisasi, dan strategi penerapan yang memprioritaskan efisiensi dan spesialisasi dibandingkan kemampuan serba guna. Organisasi yang mengadopsi perubahan paradigma ini akan berada dalam posisi yang baik untuk memanfaatkan potensi transformasi AI sambil tetap menjaga kontrol atas data dan operasional mereka.**
+**EdgeAI adalah masa depan deployment AI**: lokal terlebih dahulu, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun aplikasi cerdas generasi berikutnya.
 
 ## Kursus Lainnya
 
 Tim kami juga menyediakan kursus lainnya! Lihat:
 
-- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)
+- [AI Agents Untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula menggunakan .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula menggunakan JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [ML untuk Pemula](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+- [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+- [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
+- [Web Dev untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+- [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Menguasai GitHub Copilot untuk Pemrograman AI Berpasangan](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ---
 
