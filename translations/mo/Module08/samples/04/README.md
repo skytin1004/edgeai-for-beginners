@@ -1,42 +1,372 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "f9e55b8feba71ce09355b66e3a25b6ff",
-  "translation_date": "2025-09-22T16:57:15+00:00",
+  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
+  "translation_date": "2025-09-24T14:29:24+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "mo"
 }
 -->
-# 第四節範例：Chainlit RAG 演示
+# 範例 04：使用 Chainlit 建構生產級聊天應用程式
 
-在 Foundry Local 上運行最簡化的 Chainlit 應用程式。
+這是一個全面的範例，展示了多種方法來使用 Microsoft Foundry Local 建構生產級聊天應用程式，包含現代化的網頁介面、串流回應以及最新的瀏覽器技術。
+
+## 包含內容
+
+- **🚀 Chainlit 聊天應用程式** (`app.py`)：具備串流功能的生產級聊天應用程式
+- **🌐 WebGPU 範例** (`webgpu-demo/`)：基於瀏覽器的 AI 推理，支援硬體加速
+- **🎨 Open WebUI 整合** (`open-webui-guide.md`)：專業的 ChatGPT 風格介面
+- **📚 教學筆記本** (`chainlit_app.ipynb`)：互動式學習材料
+
+## 快速開始
+
+### 1. Chainlit 聊天應用程式
+
+```cmd
+# Navigate to Module08 directory
+cd Module08
+
+# Start your model
+foundry model run phi-4-mini
+
+# Run Chainlit app (using port 8080 to avoid conflicts)
+chainlit run samples\04\app.py -w --port 8080
+```
+
+開啟於：`http://localhost:8080`
+
+### 2. WebGPU 瀏覽器範例
+
+```cmd
+# Navigate to WebGPU demo
+cd Module08\samples\04\webgpu-demo
+
+# Serve the demo
+python -m http.server 5173
+```
+
+開啟於：`http://localhost:5173`
+
+### 3. Open WebUI 設定
+
+```cmd
+# Run Open WebUI with Docker
+docker run -d --name open-webui -p 3000:8080 \
+  -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
+  -e OPENAI_API_KEY=foundry-local-key \
+  ghcr.io/open-webui/open-webui:main
+```
+
+開啟於：`http://localhost:3000`
+
+## 架構模式
+
+### 本地與雲端決策矩陣
+
+| 情境 | 推薦 | 原因 |
+|------|------|------|
+| **隱私敏感數據** | 🏠 本地 (Foundry) | 數據不會離開設備 |
+| **複雜推理** | ☁️ 雲端 (Azure OpenAI) | 可使用更大的模型 |
+| **即時聊天** | 🏠 本地 (Foundry) | 延遲更低，回應更快 |
+| **文件分析** | 🔄 混合 | 本地提取，雲端分析 |
+| **代碼生成** | 🏠 本地 (Foundry) | 隱私保護 + 專用模型 |
+| **研究任務** | ☁️ 雲端 (Azure OpenAI) | 需要廣泛的知識庫 |
+
+### 技術比較
+
+| 技術 | 使用場景 | 優點 | 缺點 |
+|------|----------|------|------|
+| **Chainlit** | Python 開發者、快速原型設計 | 設定簡單，支援串流 | 僅限 Python |
+| **WebGPU** | 最大隱私、離線場景 | 瀏覽器原生，無需伺服器 | 模型大小有限 |
+| **Open WebUI** | 生產部署、團隊使用 | 專業 UI，支援用戶管理 | 需要 Docker |
 
 ## 先決條件
-- Windows 11，Python 3.10+
-- 已安裝 Foundry Local 並有可用模型（例如：`phi-4-mini`）
-- 執行 `pip install -r Module08\requirements.txt`
 
-## 運行 (cmd.exe)
+- **Foundry Local**：已安裝並運行 ([下載](https://aka.ms/foundry-local-installer))
+- **Python**：3.10+ 並啟用虛擬環境
+- **模型**：至少載入一個模型 (`foundry model run phi-4-mini`)
+- **瀏覽器**：支援 WebGPU 的 Chrome/Edge，用於範例演示
+- **Docker**：用於 Open WebUI（可選）
+
+## 安裝與設定
+
+### 1. Python 環境設定
+
 ```cmd
+# Navigate to Module08 directory
 cd Module08
-.\.venv\Scripts\activate
-foundry model run phi-4-mini
-chainlit run samples\04\app.py -w
+
+# Create and activate virtual environment
+py -m venv .venv
+.venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-## 驗證
+### 2. Foundry Local 設定
+
 ```cmd
-curl http://localhost:8000/v1/models
+# Verify Foundry Local installation
+foundry --version
+
+# Start the service
+foundry service start
+
+# Load a model
+foundry model run phi-4-mini
+
+# Verify model is running
+foundry service ps
 ```
+
+## 範例應用程式
+
+### Chainlit 聊天應用程式
+
+**功能：**
+- 🚀 **即時串流**：生成的 token 即時顯示
+- 🛡️ **強健的錯誤處理**：優雅降級與恢復
+- 🎨 **現代化 UI**：開箱即用的專業聊天介面
+- 🔧 **靈活配置**：支援環境變數與自動檢測
+- 📱 **響應式設計**：適用於桌面與行動設備
+
+**快速開始：**
+```cmd
+# Run with default settings (recommended)
+chainlit run samples\04\app.py -w --port 8080
+
+# Use specific model
+set MODEL=qwen2.5-7b-instruct
+chainlit run samples\04\app.py -w --port 8080
+
+# Manual endpoint configuration
+set BASE_URL=http://localhost:51211
+set API_KEY=your-api-key
+chainlit run samples\04\app.py -w --port 8080
+```
+
+### WebGPU 瀏覽器範例
+
+**功能：**
+- 🌐 **瀏覽器原生 AI**：無需伺服器，完全在瀏覽器中運行
+- ⚡ **WebGPU 加速**：支援硬體加速
+- 🔒 **最大隱私**：數據不會離開設備
+- 🎯 **零安裝**：適用於任何兼容的瀏覽器
+- 🔄 **優雅回退**：若 WebGPU 不可用，回退至 CPU
+
+**運行：**
+```cmd
+cd samples\04\webgpu-demo
+python -m http.server 5173
+# Open http://localhost:5173
+```
+
+### Open WebUI 整合
+
+**功能：**
+- 🎨 **ChatGPT 風格介面**：專業且熟悉的 UI
+- 👥 **多用戶支援**：用戶帳號與對話歷史
+- 📁 **文件處理**：上傳並分析文件
+- 🔄 **模型切換**：輕鬆切換不同模型
+- 🐳 **Docker 部署**：生產級容器化設置
+
+**快速設定：**
+```cmd
+docker run -d --name open-webui -p 3000:8080 \
+  -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
+  -e OPENAI_API_KEY=foundry-local-key \
+  ghcr.io/open-webui/open-webui:main
+```
+
+## 配置參考
+
+### 環境變數
+
+| 變數 | 描述 | 預設值 | 範例 |
+|------|------|--------|------|
+| `MODEL` | 使用的模型別名 | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `BASE_URL` | Foundry Local 端點 | 自動檢測 | `http://localhost:51211` |
+| `API_KEY` | API 金鑰（本地可選） | `""` | `your-api-key` |
 
 ## 疑難排解
-- 如果 VS Code 顯示 "chainlit could not be resolved":
-	- 選擇解釋器 `Module08/.venv/Scripts/python.exe`（Ctrl+Shift+P → Python: Select Interpreter）
-	- 確保已安裝依賴項：`pip install -r Module08\requirements.txt`
 
-## 參考資料
-- Open WebUI 使用指南（使用 Open WebUI 的聊天應用程式）：https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-- Foundry Local（學習資源）：https://learn.microsoft.com/azure/ai-foundry/foundry-local/
+### 常見問題
+
+**Chainlit 應用程式：**
+
+1. **服務不可用：**
+   ```cmd
+   # Check Foundry Local status
+   foundry service status
+   foundry service ps
+   
+   # Validate API endpoint (note: port 51211)
+   curl http://localhost:51211/v1/models
+   ```
+
+2. **埠衝突：**
+   ```cmd
+   # Check what's using port 8080
+   netstat -ano | findstr :8080
+   
+   # Use different port if needed
+   chainlit run samples\04\app.py -w --port 3000
+   ```
+
+3. **Python 環境問題：**
+   ```cmd
+   # Verify correct interpreter in VS Code
+   # Ctrl+Shift+P → Python: Select Interpreter
+   # Choose: Module08/.venv/Scripts/python.exe
+   
+   # Reinstall dependencies
+   pip install -r requirements.txt
+   ```
+
+**WebGPU 範例：**
+
+1. **WebGPU 不支援：**
+   - 更新至 Chrome/Edge 113+
+   - 啟用 WebGPU：`chrome://flags/#enable-unsafe-webgpu`
+   - 檢查 GPU 狀態：`chrome://gpu`
+   - 範例將自動回退至 CPU
+
+2. **模型載入錯誤：**
+   - 確保網路連接以下載模型
+   - 檢查瀏覽器控制台是否有 CORS 錯誤
+   - 確認使用 HTTP 提供服務（而非 file://）
+
+**Open WebUI：**
+
+1. **連接被拒絕：**
+   ```cmd
+   # Check Docker is running
+   docker --version
+   
+   # Check container status
+   docker ps | findstr open-webui
+   
+   # View container logs
+   docker logs open-webui
+   ```
+
+2. **模型未顯示：**
+   ```cmd
+   # Verify Foundry Local endpoint
+   curl http://localhost:51211/v1/models
+   
+   # Restart Open WebUI
+   docker restart open-webui
+   ```
+
+### 驗證清單
+
+```cmd
+# ✅ 1. Foundry Local Setup
+foundry --version                    # Should show version
+foundry service status               # Should show "running"
+foundry model list                   # Should show loaded models
+curl http://localhost:51211/v1/models  # Should return JSON
+
+# ✅ 2. Python Environment  
+python --version                     # Should be 3.10+
+pip list | findstr chainlit         # Should show chainlit package
+pip list | findstr openai           # Should show openai package
+
+# ✅ 3. Application Testing
+chainlit run samples\04\app.py -w --port 8080  # Should open browser
+# Test WebGPU demo at localhost:5173
+# Test Open WebUI at localhost:3000
+```
+
+## 高級用法
+
+### 性能優化
+
+**Chainlit：**
+- 使用串流以提升感知性能
+- 實現連接池以支援高併發
+- 緩存模型回應以處理重複查詢
+- 監控大規模對話歷史的記憶體使用
+
+**WebGPU：**
+- 使用 WebGPU 以實現最大隱私與速度
+- 實現模型量化以縮小模型大小
+- 使用 Web Workers 進行背景處理
+- 在瀏覽器存儲中緩存已編譯的模型
+
+**Open WebUI：**
+- 使用持久化卷保存對話歷史
+- 為 Docker 容器配置資源限制
+- 實現用戶數據的備份策略
+- 設置反向代理以實現 SSL 終止
+
+### 整合模式
+
+**本地/雲端混合：**
+```python
+# Route based on complexity and privacy requirements
+async def intelligent_routing(prompt: str, metadata: dict):
+    if metadata.get("contains_pii"):
+        return await foundry_local_completion(prompt)  # Privacy-sensitive
+    elif len(prompt.split()) > 200:
+        return await azure_openai_completion(prompt)   # Complex reasoning
+    else:
+        return await foundry_local_completion(prompt)  # Default local
+```
+
+**多模態管道：**
+```python
+# Combine different AI capabilities
+async def analyze_document(file_path: str):
+    # 1. OCR with WebGPU (browser-based)
+    text = await webgpu_ocr(file_path)
+    
+    # 2. Analysis with Foundry Local (private)
+    summary = await foundry_local_analyze(text)
+    
+    # 3. Enhancement with cloud (if needed)
+    if summary.confidence < 0.8:
+        summary = await azure_openai_enhance(summary)
+    
+    return summary
+```
+
+## 生產部署
+
+### 安全考量
+
+- **API 金鑰**：使用環境變數，切勿硬編碼
+- **網路**：生產環境使用 HTTPS，考慮使用 VPN 提供團隊訪問
+- **訪問控制**：為 Open WebUI 實現身份驗證
+- **數據隱私**：審核哪些數據留在本地，哪些發送至雲端
+- **更新**：保持 Foundry Local 和容器的更新
+
+### 監控與維護
+
+- **健康檢查**：實現端點監控
+- **日誌記錄**：集中管理所有組件的日誌
+- **指標**：追蹤回應時間、錯誤率、資源使用情況
+- **備份**：定期備份對話數據與配置
+
+## 參考與資源
+
+### 文件
+- [Chainlit 文件](https://docs.chainlit.io/) - 完整框架指南
+- [Foundry Local 文件](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - 微軟官方文檔
+- [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - WebGPU 整合
+- [Open WebUI 文件](https://docs.openwebui.com/) - 高級配置指南
+
+### 範例文件
+- [`app.py`](../../../../../Module08/samples/04/app.py) - 生產級 Chainlit 應用程式
+- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - 教學筆記本
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - 基於瀏覽器的 AI 推理
+- [`open-webui-guide.md`](./open-webui-guide.md) - 完整的 Open WebUI 設定指南
+
+### 相關範例
+- [Session 4 文件](../../04.CuttingEdgeModels.md) - 完整課程指南
+- [Foundry Local 範例](https://github.com/microsoft/foundry-local/tree/main/samples) - 官方範例
 
 ---
 

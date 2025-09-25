@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-23T00:46:46+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-25T00:34:27+00:00",
   "source_file": "Module08/README.md",
   "language_code": "en"
 }
@@ -11,120 +11,135 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Overview
 
-Microsoft Foundry Local is the next generation of edge AI development, offering developers powerful tools to create, deploy, and scale AI applications locally while maintaining seamless integration with Azure AI Foundry. This module provides a comprehensive guide to Foundry Local, from installation to advanced agent development.
+Microsoft Foundry Local is the next step in edge AI development, offering developers robust tools to create, deploy, and scale AI applications locally while ensuring smooth integration with Azure AI Foundry. This module provides a detailed guide to Foundry Local, from installation to advanced agent development.
 
 **Key Technologies:**
 - Microsoft Foundry Local CLI and SDK
-- Azure AI Foundry integration
+- Integration with Azure AI Foundry
 - On-device model inference
 - Local model caching and optimization
 - Agent-based architectures
 
-## Module Learning Objectives
+## Learning Objectives
 
 By completing this module, you will:
 
-- **Master Foundry Local Setup**: Install, configure, and optimize Foundry Local for Windows 11 development.
-- **Deploy Diverse Models**: Run phi, qwen, deepseek, and GPT-OSS-20B models locally using CLI commands.
+- **Master Foundry Local**: Learn how to install, configure, and optimize it for Windows 11 development.
+- **Deploy Diverse Models**: Run phi, qwen, deepseek, and GPT models locally using CLI commands.
 - **Build Production Solutions**: Develop AI applications with advanced prompt engineering and data integration.
-- **Leverage Open-Source Ecosystem**: Integrate Hugging Face models and community-driven contributions.
-- **Compare AI Architectures**: Understand the trade-offs between LLMs and SLMs and their deployment strategies.
-- **Develop AI Agents**: Create intelligent agents using Foundry Local's architecture and grounding capabilities.
-- **Implement Models as Tools**: Build modular, customizable AI solutions for enterprise applications.
+- **Leverage Open-Source Ecosystem**: Integrate Hugging Face models and community contributions.
+- **Develop AI Agents**: Create intelligent agents with grounding and orchestration capabilities.
+- **Implement Enterprise Patterns**: Design modular, scalable AI solutions for production deployment.
 
 ## Session Structure
 
 ### [1: Getting Started with Foundry Local](./01.FoundryLocalSetup.md)
-**Focus**: Installation, CLI setup, model caching, and hardware acceleration.
+**Focus**: Installation, CLI setup, model deployment, and hardware optimization.
 
-**What You'll Learn:**
-- Complete Foundry Local installation on Windows 11.
-- CLI configuration and command structure.
-- Model caching strategies for optimal performance.
-- Hardware acceleration setup and optimization.
-- Hands-on deployment of phi, qwen, deepseek, and GPT-OSS-20B models.
+**Key Topics**: Complete installation • CLI commands • Model caching • Hardware acceleration • Multi-model deployment.
 
-**Duration**: 2-3 hours  
-**Prerequisites**: Windows 11, basic command line knowledge.
+**Sample**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md).
+
+**Duration**: 2-3 hours | **Level**: Beginner
 
 ---
 
 ### [2: Build AI Solutions with Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Focus**: Advanced prompt engineering, data integration, and actionable tasks.
+**Focus**: Advanced prompt engineering, data integration, and cloud connectivity.
 
-**What You'll Learn:**
-- Advanced prompt engineering techniques.
-- Data integration patterns and best practices.
-- Building actionable AI tasks with Foundry Local.
-- Seamless Azure AI Foundry integration workflows.
-- Performance optimization and monitoring.
+**Key Topics**: Prompt engineering • Data integration • Azure workflows • Performance optimization • Monitoring.
 
-**Duration**: 2-3 hours  
-**Prerequisites**: Session 1 completion, Azure account (optional).
+**Sample**: [Chainlit RAG Application](./samples/04/README.md).
+
+**Duration**: 2-3 hours | **Level**: Intermediate
 
 ---
 
 ### [3: Open-Source Models Foundry Local](./03.OpenSourceModels.md)
-**Focus**: Hugging Face integration, model selection strategies, and community-driven contributions.
+**Focus**: Hugging Face integration, BYOM strategies, and community models.
 
-**What You'll Learn:**
-- Hugging Face model integration with Foundry Local.
-- Bring-your-own-model (BYOM) strategies and implementation.
-- Insights from the Model Mondays series and community contributions.
-- Custom model deployment and optimization.
-- Community model evaluation and selection criteria.
+**Key Topics**: Hugging Face integration • Bring-your-own-model • Model Mondays insights • Community contributions • Model selection.
 
-**Duration**: 2-3 hours  
-**Prerequisites**: Session 1-2 completion, Hugging Face account.
+**Sample**: [Multi-Agent Orchestration](./samples/05/README.md).
+
+**Duration**: 2-3 hours | **Level**: Intermediate
 
 ---
 
-### [4: Explore Cutting-Edge Models - LLMs, SLMs, and On-Device Inference](./04.CuttingEdgeModels.md)
-**Focus**: Model comparison, EdgeAI with Phi and ONNX Runtime, advanced demos.
+### [4: Explore Cutting-Edge Models](./04.CuttingEdgeModels.md)
+**Focus**: LLMs vs SLMs, EdgeAI implementation, and advanced demos.
 
-**What You'll Learn:**
-- Comprehensive comparison of LLMs vs SLMs and their use cases.
-- Local vs cloud inference trade-offs and decision frameworks.
-- EdgeAI implementation with Phi and ONNX Runtime.
-- Development and deployment of the Chainlit RAG Chat App.
-- WebGPU inference optimization techniques.
-- AI PC SDK integration and capabilities.
+**Key Topics**: Model comparison • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimization.
 
-**Duration**: 3-4 hours  
-**Prerequisites**: Session 1-3 completion, understanding of inference concepts.
+**Sample**: [Models-as-Tools Router](./samples/06/README.md).
+
+**Duration**: 3-4 hours | **Level**: Advanced
 
 ---
 
-### [5: Build AI-Powered Agents Fast with Foundry Local](./05.AIPoweredAgents.md)
-**Focus**: Rapid GenAI app development, system prompts, grounding, and agent architectures.
+### [5: Build AI-Powered Agents Fast](./05.AIPoweredAgents.md)
+**Focus**: Agent architectures, system prompts, grounding, and orchestration.
 
-**What You'll Learn:**
-- Foundry Local agent architecture and design patterns.
-- System prompt engineering for agent behavior.
-- Grounding techniques for reliable agent responses.
-- Rapid GenAI application development workflows.
-- Agent orchestration and multi-agent systems.
-- Production deployment strategies for AI agents.
+**Key Topics**: Agent design patterns • System prompt engineering • Grounding techniques • Multi-agent systems • Production deployment.
 
-**Duration**: 3-4 hours  
-**Prerequisites**: Session 1-4 completion, basic understanding of AI agents.
+**Sample**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md).
+
+**Duration**: 3-4 hours | **Level**: Advanced
 
 ---
 
 ### [6: Foundry Local - Models as Tools](./06.ModelsAsTools.md)
-**Focus**: Modular AI solutions, on-device deployment, and enterprise scaling.
+**Focus**: Modular AI solutions, enterprise scaling, and production patterns.
 
-**What You'll Learn:**
-- Treating AI models as modular, customizable tools.
-- On-device deployment without cloud dependency.
-- Low-latency, cost-efficient, and privacy-preserving inference.
-- SDK, API, and CLI integration patterns.
-- Model customization for specific use cases.
-- Scaling strategies from local to Azure AI Foundry.
-- Enterprise-ready AI application architectures.
+**Key Topics**: Models as tools • On-device deployment • SDK/API integration • Enterprise architectures • Scaling strategies.
 
-**Duration**: 3-4 hours  
-**Prerequisites**: All previous sessions, enterprise development experience helpful.
+**Sample**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md).
+
+**Duration**: 3-4 hours | **Level**: Expert
+
+---
+
+### [7: Direct API Integration Patterns](./samples/07/README.md)
+**Focus**: Pure REST API integration without SDK dependencies for maximum control.
+
+**Key Topics**: HTTP client implementation • Custom authentication • Model health monitoring • Streaming responses • Production error handling.
+
+**Sample**: [Direct API Client](./samples/07/README.md).
+
+**Duration**: 2-3 hours | **Level**: Intermediate
+
+---
+
+### [8: Windows 11 Native Chat Application](./samples/08/README.md)
+**Focus**: Building modern native chat applications with Foundry Local integration.
+
+**Key Topics**: Electron development • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design.
+
+**Sample**: [Windows 11 Chat Application](./samples/08/README.md).
+
+**Duration**: 3-4 hours | **Level**: Advanced
+
+---
+
+### [9: Advanced Multi-Agent Orchestration](./samples/09/README.md)
+**Focus**: Sophisticated agent coordination, specialized task delegation, and collaborative AI workflows.
+
+**Key Topics**: Intelligent agent coordination • Function calling patterns • Cross-agent communication • Workflow orchestration • Quality assurance mechanisms.
+
+**Sample**: [Advanced Multi-Agent System](./samples/09/README.md).
+
+**Duration**: 4-5 hours | **Level**: Expert
+
+---
+
+### [10: Foundry Local as Tools Framework](./samples/10/README.md)
+**Focus**: Tool-first architecture for integrating Foundry Local into existing applications and frameworks.
+
+**Key Topics**: LangChain integration • Semantic Kernel functions • REST API frameworks • CLI tools • Jupyter integration • Production deployment patterns.
+
+**Sample**: [Foundry Tools Framework](./samples/10/README.md).
+
+**Duration**: 4-5 hours | **Level**: Expert
 
 ## Prerequisites
 
@@ -144,137 +159,309 @@ By completing this module, you will:
 
 ### Knowledge Prerequisites
 - Basic understanding of AI/ML concepts.
-- Command line familiarity.
-- Python programming basics.
+- Familiarity with command line tools.
+- Basic Python programming knowledge.
 - REST API concepts.
-- Basic knowledge of prompting and model inference.
+- Basic understanding of prompting and model inference.
 
 ## Module Timeline
 
-**Total Estimated Time**: 15-20 hours
+**Total Estimated Time**: 30-38 hours
 
-| Session | Focus Area | Time | Complexity |
-|---------|------------|------|------------|
-|  1 | Setup & Basics | 2-3 hours | Beginner |
-|  2 | AI Solutions | 2-3 hours | Intermediate |
-|  3 | Open Source | 2-3 hours | Intermediate |
-|  4 | Advanced Models | 3-4 hours | Advanced |
-|  5 | AI Agents | 3-4 hours | Advanced |
-|  6 | Enterprise Tools | 3-4 hours | Expert |
+| Session | Focus Area | Samples | Time | Complexity |
+|---------|------------|---------|------|------------|
+|  1 | Setup & Basics | 01, 02, 03 | 2-3 hours | Beginner |
+|  2 | AI Solutions | 04 | 2-3 hours | Intermediate |
+|  3 | Open Source | 05 | 2-3 hours | Intermediate |
+|  4 | Advanced Models | 06 | 3-4 hours | Advanced |
+|  5 | AI Agents | 05, 09 | 3-4 hours | Advanced |
+|  6 | Enterprise Tools | 06, 10 | 3-4 hours | Expert |
+|  7 | Direct API Integration | 07 | 2-3 hours | Intermediate |
+|  8 | Windows 11 Chat App | 08 | 3-4 hours | Advanced |
+|  9 | Advanced Multi-Agent | 09 | 4-5 hours | Expert |
+| 10 | Tools Framework | 10 | 4-5 hours | Expert |
 
 ## Key Resources
 
-### Primary Documentation
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays Series](https://aka.ms/model-mondays)
+**Official Documentation:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Source code and official samples.
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Complete setup and usage guide.
+- [Model Mondays Series](https://aka.ms/model-mondays) - Weekly model highlights and tutorials.
 
-### Community Resources
-- [Foundry Local Community Discussions](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry Samples](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Community & Support:**
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Community Q&A and feature requests.
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Latest news and best practices.
 
 ## Learning Outcomes
 
 Upon completing this module, you will be equipped to:
 
 ### Technical Mastery
-- **Deploy and Manage**: Foundry Local installations across development and production environments.
-- **Integrate Models**: Seamlessly work with diverse model families from Microsoft, Hugging Face, and community sources.
-- **Build Applications**: Create production-ready AI applications with advanced features and optimizations.
-- **Develop Agents**: Implement sophisticated AI agents with grounding, reasoning, and tool integration.
+- **Deploy and Manage**: Install and manage Foundry Local across development and production environments.
+- **Integrate Models**: Work seamlessly with diverse model families from Microsoft, Hugging Face, and community sources.
+- **Build Applications**: Develop production-ready AI applications with advanced features and optimizations.
+- **Develop Agents**: Create sophisticated AI agents with grounding, reasoning, and tool integration.
 
 ### Strategic Understanding
-- **Architecture Decisions**: Make informed choices between local vs cloud deployment.
-- **Performance Optimization**: Optimize inference performance across different hardware configurations.
+- **Architecture Decisions**: Make informed choices between local and cloud deployment.
+- **Performance Optimization**: Enhance inference performance across various hardware configurations.
 - **Enterprise Scaling**: Design applications that scale from local prototypes to enterprise deployments.
-- **Privacy and Security**: Implement privacy-preserving AI solutions with local inference.
+- **Privacy and Security**: Build privacy-preserving AI solutions with local inference.
 
 ### Innovation Capabilities
-- **Rapid Prototyping**: Quickly build and test AI application concepts.
-- **Community Integration**: Leverage open-source models and contribute to the ecosystem.
-- **Advanced Patterns**: Implement cutting-edge AI patterns including RAG, agents, and tool integration.
-- **Future-Ready Development**: Build applications ready for emerging AI technologies and patterns.
+- **Rapid Prototyping**: Quickly create and test AI application concepts using all 10 sample patterns.
+- **Community Integration**: Utilize open-source models and contribute to the ecosystem.
+- **Advanced Patterns**: Implement cutting-edge AI patterns like RAG, agents, and tool integration.
+- **Framework Mastery**: Achieve expert-level integration with LangChain, Semantic Kernel, Chainlit, and Electron.
+- **Production Deployment**: Deploy scalable AI solutions from local prototypes to enterprise systems.
+- **Future-Ready Development**: Build applications prepared for emerging AI technologies and patterns.
 
 ## Getting Started
 
-1. **Prepare Your Environment**: Ensure Windows 11 with recommended hardware specifications.
-2. **Install Prerequisites**: Set up development tools and dependencies.
-3. **Begin with Session 1**: Start with Foundry Local installation and basic setup.
-4. **Progress Sequentially**: Complete sessions in order for optimal learning progression.
-5. **Practice Continuously**: Apply concepts through hands-on exercises and projects.
+1. **Environment Setup**: Ensure Windows 11 with recommended hardware (see Prerequisites).
+2. **Install Foundry Local**: Follow Session 1 for complete installation and configuration.
+3. **Run Sample 01**: Start with basic REST API integration to verify setup.
+4. **Progress Through Samples**: Complete samples 01-10 for comprehensive mastery.
 
 ## Success Metrics
 
-Track your progress through the module:
+Track your progress through all 10 comprehensive samples:
 
+### Foundation Level (Samples 01-03)
 - [ ] Successfully install and configure Foundry Local.
+- [ ] Complete REST API integration (Sample 01).
+- [ ] Implement OpenAI SDK compatibility (Sample 02).
+- [ ] Perform model discovery and benchmarking (Sample 03).
+
+### Application Level (Samples 04-06)
 - [ ] Deploy and run at least 4 different model families.
-- [ ] Build a complete AI solution with data integration.
-- [ ] Integrate at least 2 open-source models.
-- [ ] Create a functional RAG chat application.
-- [ ] Develop and deploy an AI agent.
-- [ ] Implement a models-as-tools architecture.
+- [ ] Build a functional RAG chat application (Sample 04).
+- [ ] Create multi-agent orchestration system (Sample 05).
+- [ ] Implement intelligent model routing (Sample 06).
 
-## Quick Start for Samples
+### Advanced Integration Level (Samples 07-10)
+- [ ] Build production-ready API client (Sample 07).
+- [ ] Develop Windows 11 native chat application (Sample 08).
+- [ ] Implement advanced multi-agent system (Sample 09).
+- [ ] Create comprehensive tools framework (Sample 10).
 
-### 1) Environment setup (Windows cmd.exe)
-```cmd
+### Mastery Indicators
+- [ ] Successfully run all 10 samples without errors.
+- [ ] Customize at least 3 samples for specific use cases.
+- [ ] Deploy 2+ samples in production-like environments.
+- [ ] Contribute improvements or extensions to sample code.
+- [ ] Integrate Foundry Local patterns into personal/professional projects.
+
+## Quick Start Guide - All 10 Samples
+
+### Environment Setup (Required for All Samples)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Start a local model (new terminal)
-```cmd
-foundry model list
+### Core Foundation Samples (01-06)
+
+**Sample 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Sample 02: OpenAI SDK Integration**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Sample 03: Model Discovery & Benchmarking**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Sample 04: Chainlit RAG Application**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Sample 05: Multi-Agent Orchestration**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Sample 06: Models-as-Tools Router**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Advanced Integration Samples (07-10)
+
+**Sample 07: Direct API Client**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Sample 08: Windows 11 Chat Application**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Sample 09: Advanced Multi-Agent System**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Sample 10: Foundry Tools Framework**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Troubleshooting Common Issues
+
+**Foundry Local Connection Errors**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Model Loading Issues**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Run the Chainlit demo (Session 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Dependency Issues**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Run the multi-agent coordinator (Session 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## Summary
+This module represents the latest advancements in edge AI development, blending Microsoft's enterprise-grade tools with the adaptability and creativity of the open-source ecosystem. By mastering Foundry Local through all 10 detailed samples, you'll be at the forefront of AI application development.
 
-If you see connection errors, validate Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**Complete Learning Path:**
+- **Foundation** (Samples 01-03): API integration and model management
+- **Applications** (Samples 04-06): RAG, agents, and intelligent routing
+- **Advanced** (Samples 07-10): Production frameworks and enterprise integration
 
-### Router configuration (Session 6)
-The router performs a quick health check and supports env-based config:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-This module represents the cutting edge of edge AI development, combining Microsoft's enterprise-grade tools with the flexibility and innovation of the open-source ecosystem. By mastering Foundry Local, you'll be positioned at the forefront of AI application development.
-
-For Azure OpenAI (Session 2), see the sample README for required environment variables and API version settings.
-
-## Samples Overview
-
-- `samples/01`: Quick REST chat to Foundry Local (`chat_quickstart.py`).
-- `samples/02`: OpenAI SDK integration (`sdk_quickstart.py`).
-- `samples/03`: Model discovery + quick bench (`list_and_bench.cmd`).
-- `samples/04`: Chainlit RAG demo (`app.py`).
-- `samples/05`: Multi-agent orchestration (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Models-as-Tools router (`python samples\06\router.py`).
+For Azure OpenAI integration (Session 2), refer to the README files for each sample to find the required environment variables and API version settings.
 
 ---
 

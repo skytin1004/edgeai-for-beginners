@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T13:32:19+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T12:28:37+00:00",
   "source_file": "Module08/README.md",
   "language_code": "pl"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Przegląd
 
-Microsoft Foundry Local to nowa generacja rozwoju AI na urządzeniach brzegowych, oferująca programistom potężne narzędzia do tworzenia, wdrażania i skalowania aplikacji AI lokalnie, przy jednoczesnym zachowaniu płynnej integracji z Azure AI Foundry. Ten moduł obejmuje Foundry Local od instalacji po zaawansowane tworzenie agentów.
+Microsoft Foundry Local to nowa generacja rozwoju AI na krawędzi, oferująca programistom potężne narzędzia do budowy, wdrażania i skalowania aplikacji AI lokalnie, przy jednoczesnym zachowaniu płynnej integracji z Azure AI Foundry. Ten moduł obejmuje Foundry Local od instalacji po zaawansowane tworzenie agentów.
 
 **Kluczowe technologie:**
 - Microsoft Foundry Local CLI i SDK
@@ -20,118 +20,133 @@ Microsoft Foundry Local to nowa generacja rozwoju AI na urządzeniach brzegowych
 - Lokalna pamięć podręczna modeli i ich optymalizacja
 - Architektury oparte na agentach
 
-## Cele nauki modułu
+## Cele nauki
 
 Po ukończeniu tego modułu będziesz w stanie:
 
-- **Opanować konfigurację Foundry Local**: Zainstalować, skonfigurować i zoptymalizować Foundry Local dla rozwoju na Windows 11
-- **Wdrażać różnorodne modele**: Uruchamiać lokalnie modele phi, qwen, deepseek i GPT-OSS-20B za pomocą poleceń CLI
+- **Opanować Foundry Local**: Zainstalować, skonfigurować i zoptymalizować dla rozwoju na Windows 11
+- **Wdrażać różnorodne modele**: Uruchamiać lokalnie modele phi, qwen, deepseek i GPT za pomocą poleceń CLI
 - **Tworzyć rozwiązania produkcyjne**: Budować aplikacje AI z zaawansowaną inżynierią promptów i integracją danych
-- **Wykorzystywać ekosystem open-source**: Integracja modeli Hugging Face i dodatków społecznościowych
-- **Porównywać architektury AI**: Zrozumieć kompromisy między LLM a SLM oraz strategie wdrażania
-- **Tworzyć agentów AI**: Budować inteligentnych agentów korzystając z architektury Foundry Local i technik ugruntowania
-- **Implementować modele jako narzędzia**: Tworzyć modułowe, dostosowywalne rozwiązania AI dla aplikacji korporacyjnych
+- **Wykorzystywać ekosystem open-source**: Integracja modeli Hugging Face i wkład społeczności
+- **Rozwijać agentów AI**: Tworzyć inteligentnych agentów z funkcjami ugruntowania i orkiestracji
+- **Wdrażać wzorce korporacyjne**: Tworzyć modułowe, skalowalne rozwiązania AI do wdrożeń produkcyjnych
 
 ## Struktura sesji
 
 ### [1: Pierwsze kroki z Foundry Local](./01.FoundryLocalSetup.md)
-**Temat**: Instalacja, konfiguracja CLI, pamięć podręczna modeli i akceleracja sprzętowa
+**Temat**: Instalacja, konfiguracja CLI, wdrażanie modeli i optymalizacja sprzętu
 
-**Czego się nauczysz:**
-- Kompletną instalację Foundry Local na Windows 11
-- Konfigurację CLI i strukturę poleceń
-- Strategie pamięci podręcznej modeli dla optymalnej wydajności
-- Konfigurację i optymalizację akceleracji sprzętowej
-- Praktyczne wdrażanie modeli phi, qwen, deepseek i GPT-OSS-20B
+**Kluczowe zagadnienia**: Kompletny proces instalacji • Polecenia CLI • Pamięć podręczna modeli • Przyspieszenie sprzętowe • Wdrażanie wielu modeli
 
-**Czas trwania**: 2-3 godziny  
-**Wymagania wstępne**: Windows 11, podstawowa znajomość wiersza poleceń
+**Przykłady**: [REST Chat Quickstart](./samples/01/README.md) • [Integracja OpenAI SDK](./samples/02/README.md) • [Odkrywanie i testowanie modeli](./samples/03/README.md)
+
+**Czas trwania**: 2-3 godziny | **Poziom**: Początkujący
 
 ---
 
 ### [2: Tworzenie rozwiązań AI z Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Temat**: Zaawansowana inżynieria promptów, integracja danych i zadania do wykonania
+**Temat**: Zaawansowana inżynieria promptów, integracja danych i łączność z chmurą
 
-**Czego się nauczysz:**
-- Zaawansowane techniki inżynierii promptów
-- Wzorce integracji danych i najlepsze praktyki
-- Tworzenie zadań AI z Foundry Local
-- Płynne przepływy pracy integracji z Azure AI Foundry
-- Optymalizacja wydajności i monitorowanie
+**Kluczowe zagadnienia**: Inżynieria promptów • Integracja danych • Przepływy pracy Azure • Optymalizacja wydajności • Monitorowanie
 
-**Czas trwania**: 2-3 godziny  
-**Wymagania wstępne**: Ukończenie sesji 1, konto Azure (opcjonalne)
+**Przykłady**: [Aplikacja Chainlit RAG](./samples/04/README.md)
+
+**Czas trwania**: 2-3 godziny | **Poziom**: Średniozaawansowany
 
 ---
 
 ### [3: Modele open-source w Foundry Local](./03.OpenSourceModels.md)
-**Temat**: Integracja Hugging Face, strategie wyboru modeli i dodatki społecznościowe
+**Temat**: Integracja Hugging Face, strategie BYOM i modele społecznościowe
 
-**Czego się nauczysz:**
-- Integracja modeli Hugging Face z Foundry Local
-- Strategie i implementacja BYOM (Bring-Your-Own-Model)
-- Wgląd w serię Model Mondays i wkład społeczności
-- Wdrażanie i optymalizacja modeli niestandardowych
-- Kryteria oceny i wyboru modeli społecznościowych
+**Kluczowe zagadnienia**: Integracja Hugging Face • Bring-your-own-model • Wgląd w Model Mondays • Wkład społeczności • Wybór modeli
 
-**Czas trwania**: 2-3 godziny  
-**Wymagania wstępne**: Ukończenie sesji 1-2, konto Hugging Face
+**Przykłady**: [Orkiestracja wielu agentów](./samples/05/README.md)
+
+**Czas trwania**: 2-3 godziny | **Poziom**: Średniozaawansowany
 
 ---
 
-### [4: Eksploracja najnowocześniejszych modeli - LLM, SLM i wnioskowanie na urządzeniu](./04.CuttingEdgeModels.md)
-**Temat**: Porównanie modeli, EdgeAI z Phi i ONNX Runtime, zaawansowane demonstracje
+### [4: Eksploracja najnowocześniejszych modeli](./04.CuttingEdgeModels.md)
+**Temat**: LLM vs SLM, implementacja EdgeAI i zaawansowane demonstracje
 
-**Czego się nauczysz:**
-- Kompleksowe porównanie LLM i SLM oraz ich zastosowania
-- Kompromisy między wnioskowaniem lokalnym a w chmurze oraz ramy decyzyjne
-- Implementacja EdgeAI z Phi i ONNX Runtime
-- Tworzenie i wdrażanie aplikacji Chainlit RAG Chat
-- Techniki optymalizacji wnioskowania WebGPU
-- Integracja i możliwości SDK AI PC
+**Kluczowe zagadnienia**: Porównanie modeli • Wnioskowanie na krawędzi vs w chmurze • Phi + ONNX Runtime • Aplikacja Chainlit RAG • Optymalizacja WebGPU
 
-**Czas trwania**: 3-4 godziny  
-**Wymagania wstępne**: Ukończenie sesji 1-3, zrozumienie koncepcji wnioskowania
+**Przykłady**: [Router Models-as-Tools](./samples/06/README.md)
+
+**Czas trwania**: 3-4 godziny | **Poziom**: Zaawansowany
 
 ---
 
-### [5: Szybkie tworzenie agentów AI z Foundry Local](./05.AIPoweredAgents.md)
-**Temat**: Szybki rozwój aplikacji GenAI, systemowe prompty, ugruntowanie i architektury agentów
+### [5: Szybkie tworzenie agentów AI](./05.AIPoweredAgents.md)
+**Temat**: Architektury agentów, systemowe prompty, ugruntowanie i orkiestracja
 
-**Czego się nauczysz:**
-- Architektura agentów Foundry Local i wzorce projektowe
-- Inżynieria promptów systemowych dla zachowań agentów
-- Techniki ugruntowania dla wiarygodnych odpowiedzi agentów
-- Przepływy pracy szybkiego rozwoju aplikacji GenAI
-- Orkiestracja agentów i systemy wieloagentowe
-- Strategie wdrażania produkcyjnego dla agentów AI
+**Kluczowe zagadnienia**: Wzorce projektowania agentów • Inżynieria systemowych promptów • Techniki ugruntowania • Systemy wieloagentowe • Wdrożenie produkcyjne
 
-**Czas trwania**: 3-4 godziny  
-**Wymagania wstępne**: Ukończenie sesji 1-4, podstawowa znajomość agentów AI
+**Przykłady**: [Orkiestracja wielu agentów](./samples/05/README.md) • [Zaawansowany system wieloagentowy](./samples/09/README.md)
+
+**Czas trwania**: 3-4 godziny | **Poziom**: Zaawansowany
 
 ---
 
 ### [6: Foundry Local - Modele jako narzędzia](./06.ModelsAsTools.md)
-**Temat**: Modułowe rozwiązania AI, wdrażanie na urządzeniu i skalowanie w przedsiębiorstwie
+**Temat**: Modułowe rozwiązania AI, skalowanie korporacyjne i wzorce produkcyjne
 
-**Czego się nauczysz:**
-- Traktowanie modeli AI jako modułowych, dostosowywalnych narzędzi
-- Wdrażanie na urządzeniu bez zależności od chmury
-- Wnioskowanie o niskim opóźnieniu, efektywne kosztowo i chroniące prywatność
-- Wzorce integracji SDK, API i CLI
-- Dostosowywanie modeli do konkretnych przypadków użycia
-- Strategie skalowania od lokalnych prototypów do Azure AI Foundry
-- Architektury aplikacji AI gotowe dla przedsiębiorstw
+**Kluczowe zagadnienia**: Modele jako narzędzia • Wdrażanie na urządzeniu • Integracja SDK/API • Architektury korporacyjne • Strategie skalowania
 
-**Czas trwania**: 3-4 godziny  
-**Wymagania wstępne**: Wszystkie poprzednie sesje, pomocne doświadczenie w rozwoju dla przedsiębiorstw
+**Przykłady**: [Router Models-as-Tools](./samples/06/README.md) • [Framework narzędzi Foundry](./samples/10/README.md)
+
+**Czas trwania**: 3-4 godziny | **Poziom**: Ekspert
+
+---
+
+### [7: Wzorce integracji bezpośredniego API](./samples/07/README.md)
+**Temat**: Integracja REST API bez zależności od SDK dla maksymalnej kontroli
+
+**Kluczowe zagadnienia**: Implementacja klienta HTTP • Niestandardowe uwierzytelnianie • Monitorowanie zdrowia modeli • Odpowiedzi strumieniowe • Obsługa błędów w produkcji
+
+**Przykłady**: [Bezpośredni klient API](./samples/07/README.md)
+
+**Czas trwania**: 2-3 godziny | **Poziom**: Średniozaawansowany
+
+---
+
+### [8: Natywna aplikacja czatu na Windows 11](./samples/08/README.md)
+**Temat**: Tworzenie nowoczesnych natywnych aplikacji czatu z integracją Foundry Local
+
+**Kluczowe zagadnienia**: Rozwój Electron • Fluent Design System • Integracja z Windows • Strumieniowanie w czasie rzeczywistym • Projektowanie interfejsu czatu
+
+**Przykłady**: [Aplikacja czatu na Windows 11](./samples/08/README.md)
+
+**Czas trwania**: 3-4 godziny | **Poziom**: Zaawansowany
+
+---
+
+### [9: Zaawansowana orkiestracja wieloagentowa](./samples/09/README.md)
+**Temat**: Zaawansowana koordynacja agentów, delegowanie zadań i współpraca AI
+
+**Kluczowe zagadnienia**: Inteligentna koordynacja agentów • Wzorce wywoływania funkcji • Komunikacja między agentami • Orkiestracja przepływów pracy • Mechanizmy zapewnienia jakości
+
+**Przykłady**: [Zaawansowany system wieloagentowy](./samples/09/README.md)
+
+**Czas trwania**: 4-5 godzin | **Poziom**: Ekspert
+
+---
+
+### [10: Foundry Local jako framework narzędzi](./samples/10/README.md)
+**Temat**: Architektura oparta na narzędziach do integracji Foundry Local z istniejącymi aplikacjami i frameworkami
+
+**Kluczowe zagadnienia**: Integracja LangChain • Funkcje Semantic Kernel • Frameworky REST API • Narzędzia CLI • Integracja Jupyter • Wzorce wdrożenia produkcyjnego
+
+**Przykłady**: [Framework narzędzi Foundry](./samples/10/README.md)
+
+**Czas trwania**: 4-5 godzin | **Poziom**: Ekspert
 
 ## Wymagania wstępne
 
 ### Wymagania systemowe
 - **System operacyjny**: Windows 11 (22H2 lub nowszy)
 - **Pamięć**: 16GB RAM (32GB zalecane dla większych modeli)
-- **Miejsce na dysku**: 50GB wolnego miejsca na pamięć podręczną modeli
+- **Przestrzeń dyskowa**: 50GB wolnego miejsca na pamięć podręczną modeli
 - **Sprzęt**: Zalecane urządzenie z NPU (Copilot+ PC), GPU opcjonalne
 - **Sieć**: Szybki internet do początkowego pobierania modeli
 
@@ -139,40 +154,43 @@ Po ukończeniu tego modułu będziesz w stanie:
 - Visual Studio Code z rozszerzeniem AI Toolkit
 - Python 3.10+ i pip
 - Git do kontroli wersji
-- PowerShell lub Wiersz poleceń
-- Azure CLI (opcjonalne dla integracji z chmurą)
+- PowerShell lub Command Prompt
+- Azure CLI (opcjonalnie do integracji z chmurą)
 
 ### Wymagana wiedza
-- Podstawowe zrozumienie koncepcji AI/ML
-- Znajomość wiersza poleceń
+- Podstawowa znajomość koncepcji AI/ML
+- Znajomość linii poleceń
 - Podstawy programowania w Pythonie
 - Koncepcje REST API
 - Podstawowa wiedza o promptach i wnioskowaniu modeli
 
 ## Harmonogram modułu
 
-**Całkowity szacowany czas**: 15-20 godzin
+**Całkowity szacowany czas**: 30-38 godzin
 
-| Sesja | Obszar tematyczny | Czas | Poziom trudności |
-|-------|-------------------|------|------------------|
-|  1 | Konfiguracja i podstawy | 2-3 godziny | Początkujący |
-|  2 | Rozwiązania AI | 2-3 godziny | Średniozaawansowany |
-|  3 | Open Source | 2-3 godziny | Średniozaawansowany |
-|  4 | Zaawansowane modele | 3-4 godziny | Zaawansowany |
-|  5 | Agenci AI | 3-4 godziny | Zaawansowany |
-|  6 | Narzędzia dla przedsiębiorstw | 3-4 godziny | Ekspert |
+| Sesja | Obszar tematyczny | Przykłady | Czas | Złożoność |
+|-------|-------------------|-----------|------|-----------|
+|  1 | Instalacja i podstawy | 01, 02, 03 | 2-3 godziny | Początkujący |
+|  2 | Rozwiązania AI | 04 | 2-3 godziny | Średniozaawansowany |
+|  3 | Open Source | 05 | 2-3 godziny | Średniozaawansowany |
+|  4 | Zaawansowane modele | 06 | 3-4 godziny | Zaawansowany |
+|  5 | Agenci AI | 05, 09 | 3-4 godziny | Zaawansowany |
+|  6 | Narzędzia korporacyjne | 06, 10 | 3-4 godziny | Ekspert |
+|  7 | Integracja API | 07 | 2-3 godziny | Średniozaawansowany |
+|  8 | Aplikacja czatu | 08 | 3-4 godziny | Zaawansowany |
+|  9 | Wieloagentowa orkiestracja | 09 | 4-5 godzin | Ekspert |
+| 10 | Framework narzędzi | 10 | 4-5 godzin | Ekspert |
 
 ## Kluczowe zasoby
 
-### Dokumentacja podstawowa
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Dokumentacja Azure AI Foundry Local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Seria Model Mondays](https://aka.ms/model-mondays)
+**Oficjalna dokumentacja:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Kod źródłowy i oficjalne przykłady
+- [Dokumentacja Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Kompletny przewodnik instalacji i użytkowania
+- [Seria Model Mondays](https://aka.ms/model-mondays) - Cotygodniowe przeglądy modeli i samouczki
 
-### Zasoby społecznościowe
-- [Dyskusje społeczności Foundry Local](https://github.com/microsoft/Foundry-Local/discussions)
-- [Przykłady Azure AI Foundry](https://github.com/Azure-Samples/ai-foundry)
-- [Społeczność programistów Microsoft AI](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Społeczność i wsparcie:**
+- [Dyskusje Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Pytania i odpowiedzi społeczności oraz prośby o funkcje
+- [Społeczność programistów AI Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Najnowsze wiadomości i najlepsze praktyki
 
 ## Wyniki nauki
 
@@ -187,94 +205,224 @@ Po ukończeniu tego modułu będziesz w stanie:
 ### Zrozumienie strategiczne
 - **Decyzje architektoniczne**: Dokonywanie świadomych wyborów między wdrożeniem lokalnym a w chmurze
 - **Optymalizacja wydajności**: Optymalizacja wydajności wnioskowania na różnych konfiguracjach sprzętowych
-- **Skalowanie w przedsiębiorstwie**: Projektowanie aplikacji skalowalnych od lokalnych prototypów do wdrożeń korporacyjnych
-- **Prywatność i bezpieczeństwo**: Implementacja rozwiązań AI chroniących prywatność z wnioskowaniem lokalnym
+- **Skalowanie korporacyjne**: Projektowanie aplikacji skalowalnych od prototypów lokalnych do wdrożeń korporacyjnych
+- **Prywatność i bezpieczeństwo**: Implementacja rozwiązań AI zachowujących prywatność dzięki lokalnemu wnioskowaniu
 
 ### Zdolności innowacyjne
-- **Szybkie prototypowanie**: Szybkie tworzenie i testowanie koncepcji aplikacji AI
+- **Szybkie prototypowanie**: Szybkie budowanie i testowanie koncepcji aplikacji AI w oparciu o wszystkie 10 wzorców
 - **Integracja społecznościowa**: Wykorzystanie modeli open-source i wkład w ekosystem
 - **Zaawansowane wzorce**: Implementacja najnowocześniejszych wzorców AI, w tym RAG, agentów i integracji narzędzi
-- **Rozwój gotowy na przyszłość**: Tworzenie aplikacji gotowych na nowe technologie i wzorce AI
+- **Opanowanie frameworków**: Ekspercka integracja z LangChain, Semantic Kernel, Chainlit i Electron
+- **Wdrożenie produkcyjne**: Wdrażanie skalowalnych rozwiązań AI od prototypów lokalnych do systemów korporacyjnych
+- **Rozwój przyszłościowy**: Tworzenie aplikacji gotowych na nowe technologie i wzorce AI
 
 ## Pierwsze kroki
 
-1. **Przygotuj środowisko**: Upewnij się, że masz Windows 11 z zalecanymi specyfikacjami sprzętowymi
-2. **Zainstaluj wymagania wstępne**: Skonfiguruj narzędzia programistyczne i zależności
-3. **Rozpocznij od sesji 1**: Zacznij od instalacji Foundry Local i podstawowej konfiguracji
-4. **Postępuj sekwencyjnie**: Ukończ sesje w kolejności dla optymalnego postępu nauki
-5. **Ćwicz regularnie**: Zastosuj koncepcje w praktycznych ćwiczeniach i projektach
+1. **Konfiguracja środowiska**: Upewnij się, że masz Windows 11 z zalecanym sprzętem (patrz Wymagania wstępne)
+2. **Instalacja Foundry Local**: Postępuj zgodnie z Sesją 1, aby przeprowadzić pełną instalację i konfigurację
+3. **Uruchom Przykład 01**: Rozpocznij od podstawowej integracji REST API, aby zweryfikować konfigurację
+4. **Przejdź przez przykłady**: Ukończ przykłady 01-10, aby osiągnąć pełne opanowanie
 
 ## Metryki sukcesu
 
-Śledź swoje postępy w module:
+Śledź swoje postępy przez wszystkie 10 kompleksowych przykładów:
 
+### Poziom podstawowy (Przykłady 01-03)
 - [ ] Pomyślnie zainstaluj i skonfiguruj Foundry Local
+- [ ] Ukończ integrację REST API (Przykład 01)
+- [ ] Implementuj kompatybilność z OpenAI SDK (Przykład 02)
+- [ ] Przeprowadź odkrywanie i testowanie modeli (Przykład 03)
+
+### Poziom aplikacyjny (Przykłady 04-06)
 - [ ] Wdróż i uruchom co najmniej 4 różne rodziny modeli
-- [ ] Zbuduj kompletne rozwiązanie AI z integracją danych
-- [ ] Zintegruj co najmniej 2 modele open-source
-- [ ] Stwórz funkcjonalną aplikację RAG chat
-- [ ] Rozwiń i wdroż agenta AI
-- [ ] Zaimplementuj architekturę modeli jako narzędzi
+- [ ] Zbuduj funkcjonalną aplikację RAG czatu (Przykład 04)
+- [ ] Stwórz system orkiestracji wieloagentowej (Przykład 05)
+- [ ] Implementuj inteligentne trasowanie modeli (Przykład 06)
 
-## Szybki start dla przykładów
+### Poziom zaawansowanej integracji (Przykłady 07-10)
+- [ ] Zbuduj gotowego do produkcji klienta API (Przykład 07)
+- [ ] Rozwiń natywną aplikację czatu na Windows 11 (Przykład 08)
+- [ ] Implementuj zaawansowany system wieloagentowy (Przykład 09)
+- [ ] Stwórz kompleksowy framework narzędzi (Przykład 10)
 
-### 1) Konfiguracja środowiska (Windows cmd.exe)
-```cmd
+### Wskaźniki opanowania
+- [ ] Pomyślnie uruchom wszystkie 10 przykładów bez błędów
+- [ ] Dostosuj co najmniej 3 przykłady do konkretnych przypadków użycia
+- [ ] Wdróż 2+ przykłady w środowiskach produkcyjnych
+- [ ] Wnieś ulepszenia lub rozszerzenia do kodu przykładowego
+- [ ] Zintegruj wzorce Foundry Local w projektach osobistych/profesjonalnych
+
+## Przewodnik szybkiego startu - Wszystkie 10 przykładów
+
+### Konfiguracja środowiska (Wymagana dla wszystkich przykładów)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
-```
 
-### 2) Uruchom lokalny model (nowe okno terminala)
-```cmd
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
 foundry model list
+```
+
+### Podstawowe przykłady (01-06)
+
+**Przykład 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
 foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
 ```
 
-### 3) Uruchom demo Chainlit (Sesja 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Przykład 02: Integracja OpenAI SDK**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
 ```
 
-### 4) Uruchom koordynatora wieloagentowego (Sesja 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
+**Przykład 03: Odkrywanie i testowanie modeli**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Przykład 04: Aplikacja Chainlit RAG**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Przykład 05: Orkiestracja wielu agentów**
+```powershell
+# Run agent coordinator demo
 python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
 ```
 
-Jeśli pojawią się błędy połączenia, zweryfikuj Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
-
-### Konfiguracja routera (Sesja 6)
-Router wykonuje szybki test zdrowia i obsługuje konfigurację opartą na środowisku:
-```cmd
+**Przykład 06: Router Models-as-Tools**
+```powershell
+# Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
 set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
 ```
 
-Ten moduł reprezentuje najnowocześniejsze podejście do rozwoju AI na urządzeniach brzegowych, łącząc narzędzia klasy korporacyjnej Microsoft z elastycznością i innowacyjnością ekosystemu open-source. Opanowując Foundry Local, znajdziesz się na czele rozwoju aplikacji AI.
+### Zaawansowane przykłady integracji (07-10)
 
-Dla Azure OpenAI (Sesja 2), zobacz README przykładu, aby uzyskać wymagane zmienne środowiskowe i ustawienia wersji API.
+**Przykład 07: Bezpośredni klient API**
+```powershell
+# Navigate to sample directory
+cd samples/07
 
-## Przegląd przykładów
+# Install additional dependencies
+pip install -r requirements.txt
 
-- `samples/01`: Szybki REST chat z Foundry Local (`chat_quickstart.py`).
-- `samples/02`: Integracja SDK OpenAI (`sdk_quickstart.py`).
-- `samples/03`: Odkrywanie modeli + szybki test (`list_and_bench.cmd`).
-- `samples/04`: Demo Chainlit RAG (`app.py`).
-- `samples/05`: Orkiestracja wieloagentowa (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Router modeli jako narzędzi (`python samples\06\router.py`).
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Przykład 08: Aplikacja czatu na Windows 11**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Przykład 09: Zaawansowany system wieloagentowy**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Przykład 10: Framework narzędzi Foundry**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Rozwiązywanie typowych problem
+Ten moduł reprezentuje najnowsze osiągnięcia w rozwoju AI na krawędzi, łącząc narzędzia klasy korporacyjnej Microsoftu z elastycznością i innowacyjnością ekosystemu open-source. Opanowując Foundry Local poprzez wszystkie 10 kompleksowych przykładów, znajdziesz się na czele rozwoju aplikacji AI.
+
+**Kompletny plan nauki:**
+- **Podstawy** (Przykłady 01-03): Integracja API i zarządzanie modelami
+- **Aplikacje** (Przykłady 04-06): RAG, agenci i inteligentne kierowanie
+- **Zaawansowane** (Przykłady 07-10): Ramy produkcyjne i integracja korporacyjna
+
+W przypadku integracji z Azure OpenAI (Sesja 2), zapoznaj się z plikami README poszczególnych przykładów, aby uzyskać informacje o wymaganych zmiennych środowiskowych i ustawieniach wersji API.
 
 ---
 

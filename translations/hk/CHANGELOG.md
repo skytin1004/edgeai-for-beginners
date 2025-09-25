@@ -1,75 +1,120 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "b02a49f9b47dc500f1b4791c01bb9501",
-  "translation_date": "2025-09-22T11:41:12+00:00",
+  "original_hash": "906e890232c6c2e1dac4cccfeb449acd",
+  "translation_date": "2025-09-24T09:50:36+00:00",
   "source_file": "CHANGELOG.md",
   "language_code": "hk"
 }
 -->
 # 更新日誌
 
-這裡記錄了 EdgeAI for Beginners 的所有重要變更。本專案採用基於日期的條目和 Keep a Changelog 的風格（新增、變更、修復、移除、文件、移動）。
+所有關於 EdgeAI for Beginners 的重要更新都記錄於此。本項目採用基於日期的條目以及 Keep a Changelog 的風格（新增、變更、修復、移除、文檔、移動）。
+
+## 2025-09-23
+
+### 變更 - 模塊 08 的重大現代化更新
+- **全面對齊 Microsoft Foundry-Local 的倉庫模式**
+  - 更新所有代碼示例以使用現代化的 `FoundryLocalManager` 和 OpenAI SDK 集成
+  - 用正確的 SDK 使用方式替代已棄用的手動 `requests` 調用
+  - 實現模式與官方 Microsoft 文檔和示例保持一致
+
+- **05.AIPoweredAgents.md 的現代化**：
+  - 更新多代理協作以使用現代 SDK 模式
+  - 增強協調器實現，加入高級功能（反饋循環、性能監控）
+  - 添加全面的錯誤處理和服務健康檢查
+  - 正確引用本地示例（`samples/05/multi_agent_orchestration.ipynb`）
+  - 更新函數調用示例以使用現代化的 `tools` 參數，替代已棄用的 `functions`
+  - 添加生產級模式，包括監控和統計跟蹤
+
+- **06.ModelsAsTools.md 的全面重寫**：
+  - 用智能模型路由器實現替代基本工具註冊
+  - 添加基於關鍵字的模型選擇，用於不同任務類型（通用、推理、代碼、創意）
+  - 集成基於環境的配置，提供靈活的模型分配
+  - 增強全面的服務健康監控和錯誤處理
+  - 添加生產部署模式，包括請求監控和性能跟蹤
+  - 與本地實現保持一致（`samples/06/router.py` 和 `samples/06/model_router.ipynb`）
+
+- **文檔結構改進**：
+  - 添加概述部分，突出現代化和 SDK 對齊
+  - 使用表情符號和更好的格式提升可讀性
+  - 在文檔中正確引用本地示例文件
+  - 包括生產級實現指導和最佳實踐
+
+### 新增
+- 模塊 08 文件中的全面概述部分，突出現代 SDK 集成
+- 架構亮點，展示高級功能（多代理系統、智能路由）
+- 直接引用本地示例實現，提供實踐經驗
+- 生產部署指導，包括監控和錯誤處理模式
+- 帶有高級功能和基準測試的交互式 Jupyter notebook 示例
+
+### 修復
+- 文檔與實際示例實現之間的對齊差異
+- 模塊 08 中過時的 SDK 使用模式
+- 缺少對全面本地示例庫的引用
+- 不同部分之間實現方法的不一致性
+
+---
 
 ## 2025-09-18
 
 ### 新增
-- 模組 08：Microsoft Foundry Local – 完整開發者工具包
-  - 六個課程：設置、Azure AI Foundry 整合、開源模型、前沿演示、代理和模型作為工具
-  - 可執行範例位於 `Module08/samples/01`–`06`，附有 Windows cmd 指令
+- 模塊 08：Microsoft Foundry Local – 完整開發者工具包
+  - 六個課程：設置、Azure AI Foundry 集成、開源模型、尖端演示、代理和模型作為工具
+  - 可運行的示例位於 `Module08/samples/01`–`06`，附帶 Windows cmd 指令
     - `01` REST 快速聊天（`chat_quickstart.py`）
-    - `02` SDK 快速入門，支援 OpenAI/Foundry Local 和 Azure OpenAI（`sdk_quickstart.py`）
-    - `03` CLI 列表與基準測試（`list_and_bench.cmd`）
+    - `02` SDK 快速入門，支持 OpenAI/Foundry Local 和 Azure OpenAI（`sdk_quickstart.py`）
+    - `03` CLI 列表和基準測試（`list_and_bench.cmd`）
     - `04` Chainlit 演示（`app.py`）
-    - `05` 多代理協調（`python -m samples.05.agents.coordinator`）
+    - `05` 多代理協作（`python -m samples.05.agents.coordinator`）
     - `06` 模型作為工具的路由器（`router.py`）
-- 在課程 2 的 SDK 範例中新增 Azure OpenAI 支援，並可透過環境變數進行配置
-- `.vscode/settings.json` 指向 `Module08/.venv`，以改善 Python 分析解析
-- `.env` 文件新增 `PYTHONPATH` 提示，提升 VS Code/Pylance 的辨識能力
+- Session 2 SDK 示例中新增 Azure OpenAI 支持，使用環境變量配置
+- `.vscode/settings.json` 指向 `Module08/.venv`，改善 Python 分析解析
+- `.env` 文件中添加 `PYTHONPATH` 提示，提升 VS Code/Pylance 的識別能力
 
 ### 變更
-- 模組 08 文件和範例的預設模型更新為 `phi-4-mini`，移除所有 `phi-3.5` 的相關提及
+- 模塊 08 文檔和示例中的默認模型更新為 `phi-4-mini`；移除模塊 08 中剩餘的 `phi-3.5` 提及
 - 路由器（`Module08/samples/06/router.py`）改進：
-  - 通過 `foundry service status` 和正則表達式解析進行端點發現
-  - 啟動時執行 `/v1/models` 健康檢查
-  - 支援環境變數配置的模型註冊表（`GENERAL_MODEL`、`REASONING_MODEL`、`CODE_MODEL`、`TOOL_REGISTRY` JSON）
-- 更新需求：`Module08/requirements.txt` 現在包含 `openai`（與 `requests`、`chainlit` 一同列入）
-- 明確 Chainlit 範例指導並新增故障排除；通過工作區設置解決導入問題
+  - 通過 `foundry service status` 使用正則表達式解析進行端點發現
+  - 啟動時進行 `/v1/models` 健康檢查
+  - 環境可配置的模型註冊（`GENERAL_MODEL`、`REASONING_MODEL`、`CODE_MODEL`、`TOOL_REGISTRY` JSON）
+- 需求更新：`Module08/requirements.txt` 現在包括 `openai`（以及 `requests`、`chainlit`）
+- Chainlit 示例指導進一步明確，並添加故障排除；通過工作區設置解決導入問題
 
 ### 修復
 - 解決導入問題：
-  - 路由器不再依賴不存在的 `utils` 模組；相關功能已內嵌
-  - 協調器使用相對導入（`from .specialists import ...`），並通過模組路徑調用
-  - 配置 VS Code/Pylance 以解決 `chainlit` 和套件導入問題
-- 修正 `STUDY_GUIDE.md` 中的小錯字，並新增模組 08 的相關內容
+  - 路由器不再依賴不存在的 `utils` 模塊；函數已內聯
+  - 協調器使用相對導入（`from .specialists import ...`），並通過模塊路徑調用
+  - VS Code/Pylance 配置解決 `chainlit` 和包導入問題
+- 修正 `STUDY_GUIDE.md` 中的小錯字，並添加模塊 08 的覆蓋範圍
 
 ### 移除
-- 刪除未使用的 `Module08/infra/obs.py`，並移除空的 `infra/` 目錄；觀察性模式作為可選內容保留在文件中
+- 刪除未使用的 `Module08/infra/obs.py`，並移除空的 `infra/` 目錄；可選的可觀察性模式保留在文檔中
 
 ### 移動
-- 將模組 08 的演示統一整合到 `Module08/samples`，並按課程編號分文件夾
+- 將模塊 08 演示統一移至 `Module08/samples`，並按課程編號分文件夾
   - 將 Chainlit 應用移至 `samples/04`
-  - 將代理移至 `samples/05`，並新增 `__init__.py` 文件以解決套件解析問題
+  - 將代理移至 `samples/05`，並添加 `__init__.py` 文件以解決包解析問題
 
-### 文件
-- 豐富模組 08 的課程文件和所有範例的 README，新增 Microsoft Learn 和可信供應商的參考資料
-- 更新 `Module08/README.md`，新增範例概覽、路由器配置和驗證提示
-- 驗證 `Module07/README.md` 中的 Windows Foundry Local 部分與 Learn 文件的一致性
-- 更新 `STUDY_GUIDE.md`：
-  - 在概覽、時間表和進度追蹤中新增模組 08
-  - 新增全面的參考資料部分（Foundry Local、Azure AI、Olive、ONNX Runtime、OpenVINO、MLX、Llama.cpp、vLLM、Ollama、AI Toolkit、Windows ML）
+### 文檔
+- 模塊 08 的課程文檔和所有示例 README 增強，加入 Microsoft Learn 和可信供應商的引用
+- `Module08/README.md` 更新，包含示例概述、路由器配置和驗證提示
+- `Module07/README.md` 的 Windows Foundry Local 部分已根據 Learn 文檔進行驗證
+- `STUDY_GUIDE.md` 更新：
+  - 添加模塊 08 至概述、時間表、進度追蹤器
+  - 添加全面的參考部分（Foundry Local、Azure AI、Olive、ONNX Runtime、OpenVINO、MLX、Llama.cpp、vLLM、Ollama、AI Toolkit、Windows ML）
 
 ---
 
 ## 歷史記錄（摘要）
-- 建立課程架構和模組（模組 01–07）
-- 持續更新內容，標準化格式，並新增案例研究
-- 擴展優化框架的覆蓋範圍（Llama.cpp、Olive、OpenVINO、Apple MLX）
+- 課程架構和模塊建立（模塊 01–07）
+- 內容逐步現代化、格式標準化，並新增案例研究
+- 擴展優化框架覆蓋範圍（Llama.cpp、Olive、OpenVINO、Apple MLX）
 
 ## 未發布 / 待辦事項（建議）
-- 為每個範例新增可選的煙霧測試，以驗證 Foundry Local 的可用性
-- 審核翻譯內容，確保模型參考（如 `phi-4-mini`）的一致性
-- 如果團隊偏好全域嚴格模式，新增最小化的 pyright 配置
+- 可選的每個示例煙霧測試以驗證 Foundry Local 的可用性
+- 審查翻譯以對齊模型引用（例如 `phi-4-mini`）
+- 添加最小的 pyright 配置，以便團隊偏好工作區範圍的嚴格性
 
 ---
 

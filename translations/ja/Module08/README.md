@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T12:20:59+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-24T10:28:39+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ja"
 }
@@ -11,270 +11,418 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 概要
 
-Microsoft Foundry Local は、エッジAI開発の次世代を担うプラットフォームであり、開発者がローカル環境でAIアプリケーションを構築、展開、スケールできる強力なツールを提供します。同時に、Azure AI Foundry とのシームレスな統合も可能です。このモジュールでは、Foundry Local のインストールから高度なエージェント開発までを包括的にカバーします。
+Microsoft Foundry Localは、次世代のエッジAI開発を代表するものであり、開発者がAIアプリケーションをローカルで構築、展開、スケールするための強力なツールを提供します。同時にAzure AI Foundryとのシームレスな統合を維持します。このモジュールでは、Foundry Localのインストールから高度なエージェント開発までを包括的にカバーします。
 
 **主要技術:**
-- Microsoft Foundry Local CLI と SDK
-- Azure AI Foundry との統合
+- Microsoft Foundry Local CLIとSDK
+- Azure AI Foundryとの統合
 - デバイス上でのモデル推論
-- ローカルモデルのキャッシングと最適化
+- ローカルモデルのキャッシュと最適化
 - エージェントベースのアーキテクチャ
 
-## モジュール学習目標
+## 学習目標
 
-このモジュールを完了することで、以下を習得できます:
+このモジュールを完了することで、以下を達成できます:
 
-- **Foundry Local のセットアップをマスター**: Windows 11 開発環境でのインストール、設定、最適化
-- **多様なモデルの展開**: phi、qwen、deepseek、GPT-OSS-20B モデルを CLI コマンドでローカル実行
+- **Foundry Localの習得**: Windows 11開発向けにインストール、設定、最適化を行う
+- **多様なモデルの展開**: phi、qwen、deepseek、GPTモデルをCLIコマンドでローカルで実行
 - **実用的なソリューションの構築**: 高度なプロンプトエンジニアリングとデータ統合を活用したAIアプリケーションの作成
-- **オープンソースエコシステムの活用**: Hugging Face モデルやコミュニティ主導の追加機能の統合
-- **AIアーキテクチャの比較**: LLM と SLM のトレードオフと展開戦略の理解
-- **AIエージェントの開発**: Foundry Local のアーキテクチャとグラウンディング機能を活用したインテリジェントエージェントの構築
-- **ツールとしてのモデルの実装**: エンタープライズアプリケーション向けのモジュール型でカスタマイズ可能なAIソリューションの作成
+- **オープンソースエコシステムの活用**: Hugging Faceモデルやコミュニティの貢献を統合
+- **AIエージェントの開発**: グラウンディングとオーケストレーション機能を備えたインテリジェントエージェントの構築
+- **企業向けパターンの実装**: モジュール化されたスケーラブルなAIソリューションを構築し、実運用に展開
 
 ## セッション構成
 
-### [1: Foundry Local の始め方](./01.FoundryLocalSetup.md)
-**フォーカス**: インストール、CLI セットアップ、モデルキャッシング、ハードウェアアクセラレーション
+### [1: Foundry Localの始め方](./01.FoundryLocalSetup.md)
+**焦点**: インストール、CLI設定、モデル展開、ハードウェア最適化
 
-**学べる内容:**
-- Windows 11 での Foundry Local の完全インストール
-- CLI の設定とコマンド構造
-- 最適なパフォーマンスのためのモデルキャッシング戦略
-- ハードウェアアクセラレーションの設定と最適化
-- phi、qwen、deepseek、GPT-OSS-20B モデルの実践的な展開
+**主要トピック**: 完全なインストール • CLIコマンド • モデルキャッシュ • ハードウェアアクセラレーション • 複数モデルの展開
 
-**所要時間**: 2～3時間  
-**前提条件**: Windows 11、基本的なコマンドライン知識
+**サンプル**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
+
+**所要時間**: 2-3時間 | **レベル**: 初級
 
 ---
 
-### [2: Azure AI Foundry を使ったAIソリューションの構築](./02.AzureAIFoundryIntegration.md)
-**フォーカス**: 高度なプロンプトエンジニアリング、データ統合、実行可能なタスク
+### [2: Azure AI Foundryを使ったAIソリューションの構築](./02.AzureAIFoundryIntegration.md)
+**焦点**: 高度なプロンプトエンジニアリング、データ統合、クラウド接続
 
-**学べる内容:**
-- 高度なプロンプトエンジニアリング技術
-- データ統合パターンとベストプラクティス
-- Foundry Local を使った実行可能なAIタスクの構築
-- シームレスな Azure AI Foundry 統合ワークフロー
-- パフォーマンスの最適化とモニタリング
+**主要トピック**: プロンプトエンジニアリング • データ統合 • Azureワークフロー • パフォーマンス最適化 • モニタリング
 
-**所要時間**: 2～3時間  
-**前提条件**: セッション1の完了、Azureアカウント（任意）
+**サンプル**: [Chainlit RAG Application](./samples/04/README.md)
+
+**所要時間**: 2-3時間 | **レベル**: 中級
 
 ---
 
-### [3: Foundry Local とオープンソースモデル](./03.OpenSourceModels.md)
-**フォーカス**: Hugging Face の統合、モデル選択戦略、コミュニティ主導の追加機能
+### [3: Foundry Localでのオープンソースモデル](./03.OpenSourceModels.md)
+**焦点**: Hugging Face統合、BYOM戦略、コミュニティモデル
 
-**学べる内容:**
-- Foundry Local での Hugging Face モデル統合
-- 独自モデル（BYOM）の戦略と実装
-- Model Mondays シリーズの洞察とコミュニティ貢献
-- カスタムモデルの展開と最適化
-- コミュニティモデルの評価と選択基準
+**主要トピック**: HuggingFace統合 • 独自モデルの持ち込み • Model Mondaysの洞察 • コミュニティの貢献 • モデル選択
 
-**所要時間**: 2～3時間  
-**前提条件**: セッション1～2の完了、Hugging Face アカウント
+**サンプル**: [Multi-Agent Orchestration](./samples/05/README.md)
+
+**所要時間**: 2-3時間 | **レベル**: 中級
 
 ---
 
-### [4: 最先端モデルの探求 - LLM、SLM、オンデバイス推論](./04.CuttingEdgeModels.md)
-**フォーカス**: モデル比較、Phi と ONNX Runtime を使った EdgeAI、高度なデモ
+### [4: 最先端モデルの探求](./04.CuttingEdgeModels.md)
+**焦点**: LLMsとSLMsの比較、EdgeAIの実装、高度なデモ
 
-**学べる内容:**
-- LLM と SLM の包括的な比較とユースケース
-- ローカル推論とクラウド推論のトレードオフと意思決定フレームワーク
-- Phi と ONNX Runtime を使った EdgeAI の実装
-- Chainlit RAG チャットアプリの開発と展開
-- WebGPU 推論の最適化技術
-- AI PC SDK の統合と機能
+**主要トピック**: モデル比較 • エッジとクラウド推論 • Phi + ONNX Runtime • Chainlit RAGアプリ • WebGPU最適化
 
-**所要時間**: 3～4時間  
-**前提条件**: セッション1～3の完了、推論概念の理解
+**サンプル**: [Models-as-Tools Router](./samples/06/README.md)
+
+**所要時間**: 3-4時間 | **レベル**: 上級
 
 ---
 
-### [5: Foundry Local を使ったAIエージェントの迅速な構築](./05.AIPoweredAgents.md)
-**フォーカス**: 高速な GenAI アプリ開発、システムプロンプト、グラウンディング、エージェントアーキテクチャ
+### [5: AI駆動エージェントの迅速な構築](./05.AIPoweredAgents.md)
+**焦点**: エージェントアーキテクチャ、システムプロンプト、グラウンディング、オーケストレーション
 
-**学べる内容:**
-- Foundry Local のエージェントアーキテクチャと設計パターン
-- エージェントの挙動を制御するシステムプロンプトエンジニアリング
-- 信頼性の高いエージェント応答のためのグラウンディング技術
-- 高速な GenAI アプリケーション開発ワークフロー
-- エージェントのオーケストレーションとマルチエージェントシステム
-- AIエージェントの本番展開戦略
+**主要トピック**: エージェント設計パターン • システムプロンプトエンジニアリング • グラウンディング技術 • 複数エージェントシステム • 実運用展開
 
-**所要時間**: 3～4時間  
-**前提条件**: セッション1～4の完了、AIエージェントの基本的な理解
+**サンプル**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
+
+**所要時間**: 3-4時間 | **レベル**: 上級
 
 ---
 
 ### [6: Foundry Local - ツールとしてのモデル](./06.ModelsAsTools.md)
-**フォーカス**: モジュール型AIソリューション、オンデバイス展開、エンタープライズスケーリング
+**焦点**: モジュール型AIソリューション、企業向けスケーリング、実運用パターン
 
-**学べる内容:**
-- AIモデルをモジュール型でカスタマイズ可能なツールとして扱う方法
-- クラウド依存なしのオンデバイス展開
-- 低遅延、コスト効率、プライバシー保護を実現する推論
-- SDK、API、CLI の統合パターン
-- 特定のユースケースに合わせたモデルのカスタマイズ
-- ローカルから Azure AI Foundry へのスケーリング戦略
-- エンタープライズ対応のAIアプリケーションアーキテクチャ
+**主要トピック**: ツールとしてのモデル • デバイス上での展開 • SDK/API統合 • 企業アーキテクチャ • スケーリング戦略
 
-**所要時間**: 3～4時間  
-**前提条件**: すべての前セッションの完了、エンタープライズ開発経験があると望ましい
+**サンプル**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
+
+**所要時間**: 3-4時間 | **レベル**: エキスパート
+
+---
+
+### [7: 直接API統合パターン](./samples/07/README.md)
+**焦点**: SDK依存なしで最大限の制御を可能にする純粋なREST API統合
+
+**主要トピック**: HTTPクライアント実装 • カスタム認証 • モデルのヘルスモニタリング • ストリーミングレスポンス • 実運用エラー処理
+
+**サンプル**: [Direct API Client](./samples/07/README.md)
+
+**所要時間**: 2-3時間 | **レベル**: 中級
+
+---
+
+### [8: Windows 11ネイティブチャットアプリケーション](./samples/08/README.md)
+**焦点**: Foundry Local統合を活用したモダンなネイティブチャットアプリケーションの構築
+
+**主要トピック**: Electron開発 • Fluent Design System • ネイティブWindows統合 • リアルタイムストリーミング • チャットインターフェース設計
+
+**サンプル**: [Windows 11 Chat Application](./samples/08/README.md)
+
+**所要時間**: 3-4時間 | **レベル**: 上級
+
+---
+
+### [9: 高度なマルチエージェントオーケストレーション](./samples/09/README.md)
+**焦点**: 高度なエージェントの調整、専門的なタスクの委任、協調的なAIワークフロー
+
+**主要トピック**: インテリジェントエージェントの調整 • 関数呼び出しパターン • エージェント間通信 • ワークフローオーケストレーション • 品質保証メカニズム
+
+**サンプル**: [Advanced Multi-Agent System](./samples/09/README.md)
+
+**所要時間**: 4-5時間 | **レベル**: エキスパート
+
+---
+
+### [10: Foundry Localをツールフレームワークとして活用](./samples/10/README.md)
+**焦点**: Foundry Localを既存のアプリケーションやフレームワークに統合するツール優先アーキテクチャ
+
+**主要トピック**: LangChain統合 • Semantic Kernel関数 • REST APIフレームワーク • CLIツール • Jupyter統合 • 実運用展開パターン
+
+**サンプル**: [Foundry Tools Framework](./samples/10/README.md)
+
+**所要時間**: 4-5時間 | **レベル**: エキスパート
 
 ## 前提条件
 
 ### システム要件
 - **オペレーティングシステム**: Windows 11 (22H2以降)
-- **メモリ**: 16GB RAM（大規模モデルには32GB推奨）
-- **ストレージ**: モデルキャッシング用に50GBの空き容量
-- **ハードウェア**: NPU対応デバイス推奨（Copilot+ PC）、GPUは任意
+- **メモリ**: 16GB RAM (大規模モデルには32GB推奨)
+- **ストレージ**: モデルキャッシュ用に50GBの空き容量
+- **ハードウェア**: NPU対応デバイス推奨 (Copilot+ PC)、GPUはオプション
 - **ネットワーク**: 初回モデルダウンロード用の高速インターネット
 
 ### 開発環境
-- Visual Studio Code（AI Toolkit 拡張機能付き）
-- Python 3.10+ と pip
-- Git（バージョン管理用）
-- PowerShell またはコマンドプロンプト
-- Azure CLI（クラウド統合用、任意）
+- AI Toolkit拡張機能付きVisual Studio Code
+- Python 3.10+とpip
+- バージョン管理用Git
+- PowerShellまたはコマンドプロンプト
+- Azure CLI (クラウド統合用にオプション)
 
-### 知識要件
-- AI/ML 概念の基本的な理解
-- コマンドラインの基本的な操作
-- Python プログラミングの基礎
-- REST API の概念
+### 知識の前提条件
+- AI/MLの基本概念の理解
+- コマンドラインの基本操作
+- Pythonプログラミングの基礎
+- REST APIの概念
 - プロンプトとモデル推論の基本知識
 
 ## モジュールタイムライン
 
-**総所要時間**: 15～20時間
+**総所要時間**: 30-38時間
 
-| セッション | フォーカスエリア | 時間 | 難易度 |
-|------------|------------------|------|--------|
-|  1 | セットアップと基礎 | 2～3時間 | 初級 |
-|  2 | AIソリューション | 2～3時間 | 中級 |
-|  3 | オープンソース | 2～3時間 | 中級 |
-|  4 | 高度なモデル | 3～4時間 | 上級 |
-|  5 | AIエージェント | 3～4時間 | 上級 |
-|  6 | エンタープライズツール | 3～4時間 | エキスパート |
+| セッション | フォーカスエリア | サンプル | 時間 | 複雑さ |
+|------------|------------------|----------|------|--------|
+|  1 | セットアップと基礎 | 01, 02, 03 | 2-3時間 | 初級 |
+|  2 | AIソリューション | 04 | 2-3時間 | 中級 |
+|  3 | オープンソース | 05 | 2-3時間 | 中級 |
+|  4 | 高度なモデル | 06 | 3-4時間 | 上級 |
+|  5 | AIエージェント | 05, 09 | 3-4時間 | 上級 |
+|  6 | 企業向けツール | 06, 10 | 3-4時間 | エキスパート |
+|  7 | 直接API統合 | 07 | 2-3時間 | 中級 |
+|  8 | Windows 11チャットアプリ | 08 | 3-4時間 | 上級 |
+|  9 | 高度なマルチエージェント | 09 | 4-5時間 | エキスパート |
+| 10 | ツールフレームワーク | 10 | 4-5時間 | エキスパート |
 
 ## 主要リソース
 
-### 主要ドキュメント
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local ドキュメント](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays シリーズ](https://aka.ms/model-mondays)
+**公式ドキュメント:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - ソースコードと公式サンプル
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - 完全なセットアップと使用ガイド
+- [Model Mondays Series](https://aka.ms/model-mondays) - 毎週のモデルハイライトとチュートリアル
 
-### コミュニティリソース
-- [Foundry Local コミュニティディスカッション](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry サンプル](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI 開発者コミュニティ](https://techcommunity.microsoft.com/category/artificialintelligence)
+**コミュニティとサポート:**
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - コミュニティQ&Aと機能リクエスト
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - 最新ニュースとベストプラクティス
 
 ## 学習成果
 
 このモジュールを完了すると、以下のスキルを習得できます:
 
-### 技術的スキル
-- **展開と管理**: 開発および本番環境での Foundry Local のインストールと管理
-- **モデル統合**: Microsoft、Hugging Face、コミュニティソースの多様なモデルファミリーとのシームレスな連携
-- **アプリケーション構築**: 高度な機能と最適化を備えた本番対応のAIアプリケーションの作成
-- **エージェント開発**: グラウンディング、推論、ツール統合を備えた高度なAIエージェントの実装
+### 技術的習熟
+- **展開と管理**: 開発および実運用環境でのFoundry Localインストール
+- **モデル統合**: Microsoft、Hugging Face、コミュニティソースの多様なモデルファミリーをシームレスに活用
+- **アプリケーション構築**: 高度な機能と最適化を備えた実運用対応のAIアプリケーションを作成
+- **エージェント開発**: グラウンディング、推論、ツール統合を備えた高度なAIエージェントを実装
 
 ### 戦略的理解
-- **アーキテクチャの選択**: ローカル展開とクラウド展開の間での適切な選択
-- **パフォーマンス最適化**: 異なるハードウェア構成での推論パフォーマンスの最適化
-- **エンタープライズスケーリング**: ローカルプロトタイプからエンタープライズ展開までスケール可能なアプリケーションの設計
-- **プライバシーとセキュリティ**: ローカル推論を活用したプライバシー保護型AIソリューションの実装
+- **アーキテクチャの選択**: ローカル展開とクラウド展開の間で情報に基づいた選択を行う
+- **パフォーマンス最適化**: 異なるハードウェア構成で推論性能を最適化
+- **企業向けスケーリング**: ローカルプロトタイプから企業展開までスケールするアプリケーションを設計
+- **プライバシーとセキュリティ**: ローカル推論を活用したプライバシー保護型AIソリューションを実装
 
 ### イノベーション能力
-- **迅速なプロトタイピング**: AIアプリケーションコンセプトの迅速な構築とテスト
-- **コミュニティ統合**: オープンソースモデルの活用とエコシステムへの貢献
-- **高度なパターン**: RAG、エージェント、ツール統合を含む最先端のAIパターンの実装
-- **未来志向の開発**: 新たなAI技術やパターンに対応可能なアプリケーションの構築
+- **迅速なプロトタイピング**: 10のサンプルパターンを活用してAIアプリケーションのコンセプトを迅速に構築・テスト
+- **コミュニティ統合**: オープンソースモデルを活用し、エコシステムに貢献
+- **高度なパターン**: RAG、エージェント、ツール統合を含む最先端のAIパターンを実装
+- **フレームワーク習熟**: LangChain、Semantic Kernel、Chainlit、Electronとのエキスパートレベルの統合
+- **実運用展開**: ローカルプロトタイプから企業システムまでスケーラブルなAIソリューションを展開
+- **未来対応開発**: 新興AI技術とパターンに対応可能なアプリケーションを構築
 
 ## 始め方
 
-1. **環境を準備**: 推奨ハードウェア仕様を備えた Windows 11 を用意
-2. **前提条件をインストール**: 開発ツールと依存関係をセットアップ
-3. **セッション1から開始**: Foundry Local のインストールと基本設定から始める
-4. **順序通りに進める**: 最適な学習進行のためにセッションを順番に完了
-5. **継続的に練習**: 実践的な演習やプロジェクトを通じて概念を適用
+1. **環境セットアップ**: 推奨ハードウェアを備えたWindows 11を準備 (前提条件を参照)
+2. **Foundry Localのインストール**: セッション1に従い、完全なインストールと設定を実施
+3. **サンプル01を実行**: 基本的なREST API統合からセットアップを確認
+4. **サンプルを順次進める**: サンプル01-10を完了し、包括的な習熟を目指す
 
 ## 成功指標
 
-モジュールの進捗を以下で追跡:
+10の包括的なサンプルを通じて進捗を追跡:
 
-- [ ] Foundry Local のインストールと設定を成功させる
-- [ ] 少なくとも4つの異なるモデルファミリーを展開して実行
-- [ ] データ統合を含む完全なAIソリューションを構築
-- [ ] 少なくとも2つのオープンソースモデルを統合
-- [ ] 機能的なRAGチャットアプリケーションを作成
-- [ ] AIエージェントを開発して展開
-- [ ] モデルをツールとして活用するアーキテクチャを実装
+### 基礎レベル (サンプル01-03)
+- [ ] Foundry Localのインストールと設定を成功させる
+- [ ] REST API統合を完了 (サンプル01)
+- [ ] OpenAI SDK互換性を実装 (サンプル02)
+- [ ] モデルの発見とベンチマークを実施 (サンプル03)
 
-## サンプルのクイックスタート
+### アプリケーションレベル (サンプル04-06)
+- [ ] 少なくとも4つの異なるモデルファミリーを展開・実行
+- [ ] 機能的なRAGチャットアプリケーションを構築 (サンプル04)
+- [ ] マルチエージェントオーケストレーションシステムを作成 (サンプル05)
+- [ ] インテリジェントモデルルーティングを実装 (サンプル06)
 
-### 1) 環境セットアップ (Windows cmd.exe)
-```cmd
+### 高度な統合レベル (サンプル07-10)
+- [ ] 実運用対応のAPIクライアントを構築 (サンプル07)
+- [ ] Windows 11ネイティブチャットアプリケーションを開発 (サンプル08)
+- [ ] 高度なマルチエージェントシステムを実装 (サンプル09)
+- [ ] 包括的なツールフレームワークを作成 (サンプル10)
+
+### 習熟指標
+- [ ] すべての10サンプルをエラーなく実行
+- [ ] 特定のユースケースに合わせて少なくとも3つのサンプルをカスタマイズ
+- [ ] 実運用環境に2つ以上のサンプルを展開
+- [ ] サンプルコードに改善や拡張を貢献
+- [ ] Foundry Localのパターンを個人/プロジェクトに統合
+
+## クイックスタートガイド - 全10サンプル
+
+### 環境セットアップ (すべてのサンプルに必要)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
-```
 
-### 2) ローカルモデルの起動 (新しいターミナル)
-```cmd
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
 foundry model list
+```
+
+### 基礎サンプル (01-06)
+
+**サンプル01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
 foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
 ```
 
-### 3) Chainlit デモの実行 (セッション4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**サンプル02: OpenAI SDK Integration**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
 ```
 
-### 4) マルチエージェントコーディネーターの実行 (セッション5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
+**サンプル03: Model Discovery & Benchmarking**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**サンプル04: Chainlit RAG Application**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**サンプル05: Multi-Agent Orchestration**
+```powershell
+# Run agent coordinator demo
 python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
 ```
 
-接続エラーが発生した場合、Foundry Local を検証:
-```cmd
-curl http://localhost:8000/v1/models
-```
-
-### ルーター設定 (セッション6)
-ルーターはクイックヘルスチェックを実行し、環境ベースの設定をサポート:
-```cmd
+**サンプル06: Models-as-Tools Router**
+```powershell
+# Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
 set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
 ```
 
-このモジュールは、Microsoft のエンタープライズグレードのツールとオープンソースエコシステムの柔軟性と革新性を組み合わせた、エッジAI開発の最前線を表しています。Foundry Local をマスターすることで、AIアプリケーション開発の最前線に立つことができます。
+### 高度な統合サンプル (07-10)
 
-Azure OpenAI (セッション2) に関しては、必要な環境変数とAPIバージョン設定についてサンプルREADMEを参照してください。
+**サンプル07: Direct API Client**
+```powershell
+# Navigate to sample directory
+cd samples/07
 
-## サンプル概要
+# Install additional dependencies
+pip install -r requirements.txt
 
-- `samples/01`: Foundry Local へのクイックRESTチャット (`chat_quickstart.py`)。
-- `samples/02`: OpenAI SDK 統合 (`sdk_quickstart.py`)。
-- `samples/03`: モデル探索 + クイックベンチ (`list_and_bench.cmd`)。
-- `samples/04`: Chainlit RAG デモ (`app.py`)。
-- `samples/05`: マルチエージェントオーケストレーション (`python -m samples.05.agents.coordinator`)。
-- `samples/06`: ツールとしてのモデルルーター (`python samples\06\router.py`)。
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**サンプル08: Windows 11 Chat Application**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**サンプル09: Advanced Multi-Agent System**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**サンプル10: Foundry Tools Framework**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### よくある問題のトラブルシューティング
+このモジュールは、Microsoftのエンタープライズ向けツールとオープンソースエコシステムの柔軟性と革新性を組み合わせた、エッジAI開発の最前線を表しています。Foundry Localの10個の包括的なサンプルを習得することで、AIアプリケーション開発の最前線に立つことができます。
+
+**学習パスの全体像:**
+- **基礎** (サンプル 01-03): API統合とモデル管理
+- **応用** (サンプル 04-06): RAG、エージェント、インテリジェントルーティング
+- **高度** (サンプル 07-10): プロダクションフレームワークとエンタープライズ統合
+
+Azure OpenAIの統合 (セッション2) については、必要な環境変数やAPIバージョン設定について各サンプルのREADMEファイルを参照してください。
 
 ---
 
