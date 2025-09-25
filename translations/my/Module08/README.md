@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-23T00:52:07+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-25T02:18:49+00:00",
   "source_file": "Module08/README.md",
   "language_code": "my"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## အကျဉ်းချုပ်
 
-Microsoft Foundry Local သည် edge AI ဖွံ့ဖြိုးတိုးတက်မှု၏ နောက်ဆုံးမျိုးဆက်ကို ကိုယ်စားပြုသည်။ ဒါဟာ developer များအတွက် Azure AI Foundry နှင့် အဆက်မပြတ် ပေါင်းစည်းမှုကို ထိန်းသိမ်းထားပြီး၊ AI application များကို ဒေသတွင်းတွင် ဖန်တီး၊ တင်သွင်း၊ နှင့် အတိုင်းအတာချဲ့ထွင်နိုင်ရန် အင်အားကြီး tools များကို ပေးစွမ်းသည်။ ဒီ module မှာ Foundry Local ကို installation မှ စ၍ အဆင့်မြင့် agent ဖွံ့ဖြိုးတိုးတက်မှုအထိ အကျယ်အဝန်းကို ဖော်ပြထားသည်။
+Microsoft Foundry Local သည် edge AI ဖွံ့ဖြိုးတိုးတက်မှု၏ နောက်ဆုံးမျိုးဆက်ကို ကိုယ်စားပြုသည်။ ဒါဟာ developer များအတွက် Azure AI Foundry နှင့် seamless integration ကို ထိန်းသိမ်းထားပြီး၊ AI application များကို ဒေသတွင်းတွင် ဖန်တီး၊ တင်သွင်း၊ နှင့် အတိုင်းအတာချဲ့ထွင်နိုင်ရန် အင်အားကြီး tools များကို ပေးစွမ်းသည်။ ဒီ module မှာ Foundry Local ကို installation မှ advanced agent ဖွံ့ဖြိုးတိုးတက်မှုအထိ အပြည့်အစုံကို ဖော်ပြထားပါတယ်။
 
 **အဓိကနည်းပညာများ:**
 - Microsoft Foundry Local CLI နှင့် SDK
@@ -20,261 +20,448 @@ Microsoft Foundry Local သည် edge AI ဖွံ့ဖြိုးတို�
 - Local model caching နှင့် optimization
 - Agent-based architectures
 
-## Module Learning Objectives
+## သင်ယူရမည့်ရည်ရွယ်ချက်များ
 
-ဒီ module ကို ပြီးမြောက်စွာ လေ့လာပြီးနောက်၊ သင်သည်:
+ဒီ module ကို ပြီးမြောက်ပါက၊ သင်သည် -
 
-- **Foundry Local Setup ကို ကျွမ်းကျင်စွာ လုပ်ဆောင်နိုင်မည်**: Windows 11 အတွက် Foundry Local ကို install, configure, နှင့် optimize လုပ်ခြင်း
-- **မတူကွဲပြားသော Models များကို Deploy လုပ်ခြင်း**: phi, qwen, deepseek, နှင့် GPT-OSS-20B models များကို CLI commands ဖြင့် ဒေသတွင်းတွင် run လုပ်ခြင်း
-- **Production Solutions ဖန်တီးခြင်း**: Prompt engineering နှင့် data integration ကို အသုံးပြု၍ AI applications ဖန်တီးခြင်း
-- **Open-Source Ecosystem ကို အသုံးချခြင်း**: Hugging Face models နှင့် community-driven additions များကို ပေါင်းစည်းခြင်း
-- **AI Architectures များကို နှိုင်းယှဉ်ခြင်း**: LLMs နှင့် SLMs အကြား trade-offs နှင့် deployment strategies ကို နားလည်ခြင်း
-- **AI Agents ဖွံ့ဖြိုးတိုးတက်မှု**: Foundry Local ၏ architecture နှင့် grounding capabilities ကို အသုံးပြု၍ intelligent agents ဖန်တီးခြင်း
-- **Models ကို Tools အဖြစ် အသုံးချခြင်း**: Enterprise applications အတွက် modular, customizable AI solutions ဖန်တီးခြင်း
+- **Foundry Local ကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်မည်**: Windows 11 development အတွက် install, configure, နှင့် optimize လုပ်ခြင်း
+- **မတူကွဲပြားသော Models များကို Deploy လုပ်နိုင်မည်**: phi, qwen, deepseek, နှင့် GPT models များကို CLI commands ဖြင့် ဒေသတွင်းတွင် run လုပ်ခြင်း
+- **Production Solutions ဖန်တီးနိုင်မည်**: Advanced prompt engineering နှင့် data integration ဖြင့် AI applications ဖန်တီးခြင်း
+- **Open-Source Ecosystem ကို အသုံးချနိုင်မည်**: Hugging Face models နှင့် community contributions များကို ပေါင်းစပ်ခြင်း
+- **AI Agents ဖွံ့ဖြိုးတိုးတက်မှု**: Grounding နှင့် orchestration capabilities ဖြင့် intelligent agents ဖန်တီးခြင်း
+- **Enterprise Patterns ကို အကောင်အထည်ဖော်နိုင်မည်**: Modular, scalable AI solutions များကို production deployment အတွက် ဖန်တီးခြင်း
 
-## Session Structure
+## အစီအစဉ်ဖွဲ့စည်းမှု
 
 ### [1: Foundry Local ကို စတင်အသုံးပြုခြင်း](./01.FoundryLocalSetup.md)
-**အဓိကအချက်**: Installation, CLI setup, model caching, နှင့် hardware acceleration
+**အဓိကအချက်**: Installation, CLI setup, model deployment, နှင့် hardware optimization
 
-**သင်လေ့လာမည့်အရာများ:**
-- Windows 11 တွင် Foundry Local ကို အပြည့်အစုံ install လုပ်ခြင်း
-- CLI configuration နှင့် command structure
-- Model caching strategies များကို အသုံးပြု၍ performance ကို အကောင်းဆုံးဖြစ်စေရန်
-- Hardware acceleration setup နှင့် optimization
-- phi, qwen, deepseek, နှင့် GPT-OSS-20B models များကို လက်တွေ့ deploy လုပ်ခြင်း
+**အဓိကအကြောင်းအရာများ**: Complete installation • CLI commands • Model caching • Hardware acceleration • Multi-model deployment
 
-**ကြာမြင့်ချိန်**: 2-3 နာရီ  
-**လိုအပ်ချက်များ**: Windows 11, basic command line knowledge
+**နမူနာ**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
+
+**ကြာမြင့်ချိန်**: 2-3 နာရီ | **အဆင့်**: Beginner
 
 ---
 
 ### [2: Azure AI Foundry ဖြင့် AI Solutions ဖန်တီးခြင်း](./02.AzureAIFoundryIntegration.md)
-**အဓိကအချက်**: Advanced prompt engineering, data integration, နှင့် actionable tasks
+**အဓိကအချက်**: Advanced prompt engineering, data integration, နှင့် cloud connectivity
 
-**သင်လေ့လာမည့်အရာများ:**
-- Advanced prompt engineering techniques
-- Data integration patterns နှင့် အကောင်းဆုံး လုပ်ဆောင်နည်းများ
-- Foundry Local ဖြင့် actionable AI tasks ဖန်တီးခြင်း
-- Azure AI Foundry integration workflows ကို seamless အဖြစ်လုပ်ဆောင်ခြင်း
-- Performance optimization နှင့် monitoring
+**အဓိကအကြောင်းအရာများ**: Prompt engineering • Data integration • Azure workflows • Performance optimization • Monitoring
 
-**ကြာမြင့်ချိန်**: 2-3 နာရီ  
-**လိုအပ်ချက်များ**: Session 1 ကို ပြီးမြောက်ထားရမည်၊ Azure account (optional)
+**နမူနာ**: [Chainlit RAG Application](./samples/04/README.md)
+
+**ကြာမြင့်ချိန်**: 2-3 နာရီ | **အဆင့်**: Intermediate
 
 ---
 
 ### [3: Open-Source Models Foundry Local](./03.OpenSourceModels.md)
-**အဓိကအချက်**: Hugging Face integration, model selection strategies, နှင့် community-driven additions
+**အဓိကအချက်**: Hugging Face integration, BYOM strategies, နှင့် community models
 
-**သင်လေ့လာမည့်အရာများ:**
-- Hugging Face model integration ကို Foundry Local နှင့် ပေါင်းစည်းခြင်း
-- Bring-your-own-model (BYOM) strategies နှင့် implementation
-- Model Mondays series insights နှင့် community contributions
-- Custom model deployment နှင့် optimization
-- Community model များကို အကဲဖြတ်ခြင်းနှင့် ရွေးချယ်ခြင်း criteria
+**အဓိကအကြောင်းအရာများ**: HuggingFace integration • Bring-your-own-model • Model Mondays insights • Community contributions • Model selection
 
-**ကြာမြင့်ချိန်**: 2-3 နာရီ  
-**လိုအပ်ချက်များ**: Session 1-2 ကို ပြီးမြောက်ထားရမည်၊ Hugging Face account
+**နမူနာ**: [Multi-Agent Orchestration](./samples/05/README.md)
+
+**ကြာမြင့်ချိန်**: 2-3 နာရီ | **အဆင့်**: Intermediate
 
 ---
 
-### [4: Cutting-Edge Models - LLMs, SLMs, နှင့် On-Device Inference ကို လေ့လာခြင်း](./04.CuttingEdgeModels.md)
-**အဓိကအချက်**: Model comparison, EdgeAI with Phi နှင့် ONNX Runtime, advanced demos
+### [4: Cutting-Edge Models ကို ရှာဖွေခြင်း](./04.CuttingEdgeModels.md)
+**အဓိကအချက်**: LLMs vs SLMs, EdgeAI implementation, နှင့် advanced demos
 
-**သင်လေ့လာမည့်အရာများ:**
-- LLMs နှင့် SLMs အကြား အပြည့်အစုံ နှိုင်းယှဉ်ခြင်းနှင့် အသုံးပြုမှုများ
-- Local နှင့် cloud inference trade-offs နှင့် decision frameworks
-- EdgeAI implementation ကို Phi နှင့် ONNX Runtime ဖြင့် လုပ်ဆောင်ခြင်း
-- Chainlit RAG Chat App ဖန်တီးခြင်းနှင့် deploy လုပ်ခြင်း
-- WebGPU inference optimization techniques
-- AI PC SDK integration နှင့် capabilities
+**အဓိကအကြောင်းအရာများ**: Model comparison • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimization
 
-**ကြာမြင့်ချိန်**: 3-4 နာရီ  
-**လိုအပ်ချက်များ**: Session 1-3 ကို ပြီးမြောက်ထားရမည်၊ inference concepts ကို နားလည်ထားရမည်
+**နမူနာ**: [Models-as-Tools Router](./samples/06/README.md)
+
+**ကြာမြင့်ချိန်**: 3-4 နာရီ | **အဆင့်**: Advanced
 
 ---
 
-### [5: Foundry Local ဖြင့် AI-Powered Agents ကို အလျင်အမြန် ဖန်တီးခြင်း](./05.AIPoweredAgents.md)
-**အဓိကအချက်**: Rapid GenAI app development, system prompts, grounding, နှင့် agent architectures
+### [5: AI-Powered Agents ကို အလျင်အမြန် ဖန်တီးခြင်း](./05.AIPoweredAgents.md)
+**အဓိကအချက်**: Agent architectures, system prompts, grounding, နှင့် orchestration
 
-**သင်လေ့လာမည့်အရာများ:**
-- Foundry Local agent architecture နှင့် design patterns
-- Agent behavior အတွက် system prompt engineering
-- Agent responses အတွက် grounding techniques
-- Rapid GenAI application development workflows
-- Agent orchestration နှင့် multi-agent systems
-- Production deployment strategies for AI agents
+**အဓိကအကြောင်းအရာများ**: Agent design patterns • System prompt engineering • Grounding techniques • Multi-agent systems • Production deployment
 
-**ကြာမြင့်ချိန်**: 3-4 နာရီ  
-**လိုအပ်ချက်များ**: Session 1-4 ကို ပြီးမြောက်ထားရမည်၊ AI agents ကို အခြေခံနားလည်ထားရမည်
+**နမူနာ**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
+
+**ကြာမြင့်ချိန်**: 3-4 နာရီ | **အဆင့်**: Advanced
 
 ---
 
 ### [6: Foundry Local - Models as Tools](./06.ModelsAsTools.md)
-**အဓိကအချက်**: Modular AI solutions, on-device deployment, နှင့် enterprise scaling
+**အဓိကအချက်**: Modular AI solutions, enterprise scaling, နှင့် production patterns
 
-**သင်လေ့လာမည့်အရာများ:**
-- AI models ကို modular, customizable tools အဖြစ် အသုံးချခြင်း
-- Cloud မလိုအပ်သော on-device deployment
-- Low-latency, cost-efficient, နှင့် privacy-preserving inference
-- SDK, API, နှင့် CLI integration patterns
-- Specific use cases အတွက် model customization
-- Local မှ Azure AI Foundry အထိ scaling strategies
-- Enterprise-ready AI application architectures
+**အဓိကအကြောင်းအရာများ**: Models as tools • On-device deployment • SDK/API integration • Enterprise architectures • Scaling strategies
 
-**ကြာမြင့်ချိန်**: 3-4 နာရီ  
-**လိုအပ်ချက်များ**: အရင် session များအားလုံးကို ပြီးမြောက်ထားရမည်၊ enterprise development အတွေ့အကြုံရှိရမည် (optional)
+**နမူနာ**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
-## Prerequisites
+**ကြာမြင့်ချိန်**: 3-4 နာရီ | **အဆင့်**: Expert
+
+---
+
+### [7: Direct API Integration Patterns](./samples/07/README.md)
+**အဓိကအချက်**: SDK မလိုအပ်သော REST API integration ကို အမြင့်ဆုံးထိန်းချုပ်မှုအတွက် အသုံးပြုခြင်း
+
+**အဓိကအကြောင်းအရာများ**: HTTP client implementation • Custom authentication • Model health monitoring • Streaming responses • Production error handling
+
+**နမူနာ**: [Direct API Client](./samples/07/README.md)
+
+**ကြာမြင့်ချိန်**: 2-3 နာရီ | **အဆင့်**: Intermediate
+
+---
+
+### [8: Windows 11 Native Chat Application](./samples/08/README.md)
+**အဓိကအချက်**: Foundry Local integration ဖြင့် modern native chat applications ဖန်တီးခြင်း
+
+**အဓိကအကြောင်းအရာများ**: Electron development • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design
+
+**နမူနာ**: [Windows 11 Chat Application](./samples/08/README.md)
+
+**ကြာမြင့်ချိန်**: 3-4 နာရီ | **အဆင့်**: Advanced
+
+---
+
+### [9: Advanced Multi-Agent Orchestration](./samples/09/README.md)
+**အဓိကအချက်**: Agent များကို စနစ်တကျ ပေါင်းစပ်ခြင်း၊ အထူးလုပ်ငန်းတာဝန်များကို ခွဲဝေခြင်း၊ နှင့် AI workflows တွင် ပူးပေါင်းဆောင်ရွက်ခြင်း
+
+**အဓိကအကြောင်းအရာများ**: Intelligent agent coordination • Function calling patterns • Cross-agent communication • Workflow orchestration • Quality assurance mechanisms
+
+**နမူနာ**: [Advanced Multi-Agent System](./samples/09/README.md)
+
+**ကြာမြင့်ချိန်**: 4-5 နာရီ | **အဆင့်**: Expert
+
+---
+
+### [10: Foundry Local as Tools Framework](./samples/10/README.md)
+**အဓိကအချက်**: Foundry Local ကို ရှိပြီးသား applications နှင့် frameworks များတွင် ပေါင်းစပ်ရန် tool-first architecture
+
+**အဓိကအကြောင်းအရာများ**: LangChain integration • Semantic Kernel functions • REST API frameworks • CLI tools • Jupyter integration • Production deployment patterns
+
+**နမူနာ**: [Foundry Tools Framework](./samples/10/README.md)
+
+**ကြာမြင့်ချိန်**: 4-5 နာရီ | **အဆင့်**: Expert
+
+## လိုအပ်ချက်များ
 
 ### System Requirements
 - **Operating System**: Windows 11 (22H2 or later)
 - **Memory**: 16GB RAM (32GB recommended for larger models)
-- **Storage**: Model caching အတွက် 50GB free space
-- **Hardware**: NPU-enabled device (Copilot+ PC) အကြံပြုထားသည်၊ GPU optional
-- **Network**: Model များကို download လုပ်ရန် အတွက် high-speed internet
+- **Storage**: 50GB free space for model caching
+- **Hardware**: NPU-enabled device recommended (Copilot+ PC), GPU optional
+- **Network**: High-speed internet for initial model downloads
 
 ### Development Environment
 - Visual Studio Code with AI Toolkit extension
-- Python 3.10+ နှင့် pip
+- Python 3.10+ and pip
 - Git for version control
 - PowerShell or Command Prompt
 - Azure CLI (optional for cloud integration)
 
 ### Knowledge Prerequisites
-- AI/ML concepts အခြေခံနားလည်မှု
-- Command line အသုံးပြုမှု
-- Python programming အခြေခံ
-- REST API concepts
-- Prompting နှင့် model inference အခြေခံနားလည်မှု
+- AI/ML အခြေခံအကြောင်းအရာများကို နားလည်ထားခြင်း
+- Command line အသုံးပြုမှုအတွေ့အကြုံရှိခြင်း
+- Python programming အခြေခံများ
+- REST API အကြောင်းအရာများ
+- Prompting နှင့် model inference အခြေခံများကို နားလည်ထားခြင်း
 
 ## Module Timeline
 
-**စုစုပေါင်း ခန့်မှန်းကြာမြင့်ချိန်**: 15-20 နာရီ
+**စုစုပေါင်း ခန့်မှန်းချိန်**: 30-38 နာရီ
 
-| Session | အဓိကအချက် | ကြာမြင့်ချိန် | အဆင့် |
-|---------|------------|------|------------|
-|  1 | Setup & Basics | 2-3 နာရီ | Beginner |
-|  2 | AI Solutions | 2-3 နာရီ | Intermediate |
-|  3 | Open Source | 2-3 နာရီ | Intermediate |
-|  4 | Advanced Models | 3-4 နာရီ | Advanced |
-|  5 | AI Agents | 3-4 နာရီ | Advanced |
-|  6 | Enterprise Tools | 3-4 နာရီ | Expert |
+| Session | အဓိကအချက် | နမူနာများ | ကြာမြင့်ချိန် | အဆင့် |
+|---------|------------|---------|------|------------|
+|  1 | Setup & Basics | 01, 02, 03 | 2-3 နာရီ | Beginner |
+|  2 | AI Solutions | 04 | 2-3 နာရီ | Intermediate |
+|  3 | Open Source | 05 | 2-3 နာရီ | Intermediate |
+|  4 | Advanced Models | 06 | 3-4 နာရီ | Advanced |
+|  5 | AI Agents | 05, 09 | 3-4 နာရီ | Advanced |
+|  6 | Enterprise Tools | 06, 10 | 3-4 နာရီ | Expert |
+|  7 | Direct API Integration | 07 | 2-3 နာရီ | Intermediate |
+|  8 | Windows 11 Chat App | 08 | 3-4 နာရီ | Advanced |
+|  9 | Advanced Multi-Agent | 09 | 4-5 နာရီ | Expert |
+| 10 | Tools Framework | 10 | 4-5 နာရီ | Expert |
 
-## Key Resources
+## အဓိကအရင်းအမြစ်များ
 
-### Primary Documentation
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Azure AI Foundry Local Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Model Mondays Series](https://aka.ms/model-mondays)
+**Official Documentation:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Source code နှင့် official samples
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Complete setup နှင့် usage guide
+- [Model Mondays Series](https://aka.ms/model-mondays) - Weekly model highlights နှင့် tutorials
 
-### Community Resources
-- [Foundry Local Community Discussions](https://github.com/microsoft/Foundry-Local/discussions)
-- [Azure AI Foundry Samples](https://github.com/Azure-Samples/ai-foundry)
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Community & Support:**
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Community Q&A နှင့် feature requests
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - နောက်ဆုံးရသတင်းများနှင့် အကောင်းဆုံးအလေ့အကျင့်များ
 
-## Learning Outcomes
+## သင်ယူပြီးရလဒ်များ
 
-ဒီ module ကို ပြီးမြောက်ပြီးနောက်၊ သင်သည်:
+ဒီ module ကို ပြီးမြောက်ပါက၊ သင်သည် -
 
 ### Technical Mastery
-- **Deploy နှင့် Manage**: Development နှင့် production environments များတွင် Foundry Local installations ကို လုပ်ဆောင်ခြင်း
-- **Integrate Models**: Microsoft, Hugging Face, နှင့် community sources မှ model များကို seamless အဖြစ် အသုံးပြုခြင်း
-- **Build Applications**: Advanced features နှင့် optimizations ဖြင့် production-ready AI applications ဖန်တီးခြင်း
-- **Develop Agents**: Grounding, reasoning, နှင့် tool integration ဖြင့် sophisticated AI agents ဖန်တီးခြင်း
+- **Deploy နှင့် Manage**: Development နှင့် production environments များတွင် Foundry Local installations ကို စနစ်တကျ ထိန်းချုပ်နိုင်ခြင်း
+- **Integrate Models**: Microsoft, Hugging Face, နှင့် community sources မှ မတူကွဲပြားသော model families များနှင့် seamless အလုပ်လုပ်နိုင်ခြင်း
+- **Build Applications**: Advanced features နှင့် optimizations ဖြင့် production-ready AI applications ဖန်တီးနိုင်ခြင်း
+- **Develop Agents**: Grounding, reasoning, နှင့် tool integration ဖြင့် sophisticated AI agents များကို အကောင်အထည်ဖော်နိုင်ခြင်း
 
 ### Strategic Understanding
-- **Architecture Decisions**: Local နှင့် cloud deployment အကြား informed choices လုပ်ဆောင်နိုင်ခြင်း
-- **Performance Optimization**: Hardware configurations များအတွက် inference performance ကို optimize လုပ်ခြင်း
-- **Enterprise Scaling**: Local prototypes မှ enterprise deployments အထိ scale လုပ်နိုင်သော applications ကို design လုပ်ခြင်း
-- **Privacy နှင့် Security**: Local inference ဖြင့် privacy-preserving AI solutions ကို implement လုပ်ခြင်း
+- **Architecture Decisions**: Local vs cloud deployment အကြား အကောင်းဆုံးရွေးချယ်မှုများကို ဆုံးဖြတ်နိုင်ခြင်း
+- **Performance Optimization**: Hardware configurations များအကြား inference performance ကို optimize လုပ်နိုင်ခြင်း
+- **Enterprise Scaling**: Local prototypes မှ enterprise deployments အထိ applications များကို design လုပ်နိုင်ခြင်း
+- **Privacy နှင့် Security**: Local inference ဖြင့် privacy-preserving AI solutions များကို အကောင်အထည်ဖော်နိုင်ခြင်း
 
 ### Innovation Capabilities
-- **Rapid Prototyping**: AI application concepts များကို အလျင်အမြန် ဖန်တီးနှင့် စမ်းသပ်ခြင်း
-- **Community Integration**: Open-source models ကို အသုံးချခြင်းနှင့် ecosystem ကို အထောက်အကူပြုခြင်း
-- **Advanced Patterns**: RAG, agents, နှင့် tool integration အပါအဝင် cutting-edge AI patterns များကို implement လုပ်ခြင်း
-- **Future-Ready Development**: ပေါ်ပေါက်လာမည့် AI technologies နှင့် patterns များအတွက် အသင့်ဖြစ်သော applications ကို ဖန်တီးခြင်း
+- **Rapid Prototyping**: AI application concepts များကို အလျင်အမြန် ဖန်တီးပြီး စမ်းသပ်နိုင်ခြင်း
+- **Community Integration**: Open-source models ကို အသုံးချပြီး ecosystem ကို ပံ့ပိုးနိုင်ခြင်း
+- **Advanced Patterns**: RAG, agents, နှင့် tool integration အပါအဝင် cutting-edge AI patterns များကို အကောင်အထည်ဖော်နိုင်ခြင်း
+- **Framework Mastery**: LangChain, Semantic Kernel, Chainlit, နှင့် Electron တို့နှင့် expert-level integration
+- **Production Deployment**: Local prototypes မှ enterprise systems အထိ scalable AI solutions များကို deploy လုပ်နိုင်ခြင်း
+- **Future-Ready Development**: ပေါ်ပေါက်လာမည့် AI technologies နှင့် patterns များအတွက် အသင့်ဖြစ်စေခြင်း
 
-## Getting Started
+## စတင်အသုံးပြုခြင်း
 
-1. **Prepare Your Environment**: Windows 11 နှင့် အကြံပြုထားသော hardware specifications ကို အဆင်သင့်ဖြစ်စေရန်
-2. **Install Prerequisites**: Development tools နှင့် dependencies များကို install လုပ်ခြင်း
-3. **Begin with Session 1**: Foundry Local installation နှင့် basic setup ကို စတင်ခြင်း
-4. **Progress Sequentially**: အကောင်းဆုံး learning progression အတွက် sessions များကို အစဉ်လိုက် ပြီးမြောက်စွာ လုပ်ဆောင်ခြင်း
-5. **Practice Continuously**: Hands-on exercises နှင့် projects များကို အသုံးပြု၍ concepts များကို လေ့ကျင့်ခြင်း
+1. **Environment Setup**: Windows 11 နှင့် recommend hardware (Prerequisites ကို ကြည့်ပါ)
+2. **Foundry Local ကို Install လုပ်ပါ**: Session 1 ကို လိုက်နာပြီး installation နှင့် configuration ကို ပြီးမြောက်ပါစေ
+3. **Sample 01 ကို Run လုပ်ပါ**: Basic REST API integration ဖြင့် setup ကို စစ်ဆေးပါ
+4. **Samples များကို ဆက်လက်လုပ်ဆောင်ပါ**: Comprehensive mastery အတွက် samples 01-10 ကို ပြီးမြောက်ပါစေ
 
 ## Success Metrics
 
-Module ၏ progress ကို အောက်ပါအတိုင်း tracking လုပ်ပါ:
+10 ခုလုံးကို အပြည့်အဝ စမ်းသပ်ပြီး သင်၏ progress ကို tracking လုပ်ပါ:
 
-- [ ] Foundry Local ကို အောင်မြင်စွာ install နှင့် configure လုပ်ခြင်း
-- [ ] Model families 4 ခုကို အနည်းဆုံး deploy နှင့် run လုပ်ခြင်း
-- [ ] Data integration ဖြင့် အပြည့်အစုံ AI solution တစ်ခုကို ဖန်တီးခြင်း
-- [ ] Open-source models 2 ခုကို အနည်းဆုံး integrate လုပ်ခြင်း
-- [ ] Functional RAG chat application တစ်ခုကို ဖန်တီးခြင်း
-- [ ] AI agent တစ်ခုကို ဖန်တီးနှင့် deploy လုပ်ခြင်း
-- [ ] Models-as-tools architecture ကို implement လုပ်ခြင်း
+### Foundation Level (Samples 01-03)
+- [ ] Foundry Local ကို install နှင့် configure လုပ်ပြီးစီးခြင်း
+- [ ] REST API integration ကို ပြီးမြောက်စွာ လုပ်ဆောင်ခြင်း (Sample 01)
+- [ ] OpenAI SDK compatibility ကို အကောင်အထည်ဖော်ခြင်း (Sample 02)
+- [ ] Model discovery နှင့် benchmarking ကို ပြုလုပ်ခြင်း (Sample 03)
 
-## Quick Start for Samples
+### Application Level (Samples 04-06)
+- [ ] မတူကွဲပြားသော model families 4 ခုကို deploy နှင့် run လုပ်ခြင်း
+- [ ] Functional RAG chat application ကို ဖန်တီးခြင်း (Sample 04)
+- [ ] Multi-agent orchestration system ကို ဖန်တီးခြင်း (Sample 05)
+- [ ] Intelligent model routing ကို အကောင်အထည်ဖော်ခြင်း (Sample 06)
 
-### 1) Environment setup (Windows cmd.exe)
-```cmd
+### Advanced Integration Level (Samples 07-10)
+- [ ] Production-ready API client ကို ဖန်တီးခြင်း (Sample 07)
+- [ ] Windows 11 native chat application ကို ဖွံ့ဖြိုးတိုးတက်စေခြင်း (Sample 08)
+- [ ] Advanced multi-agent system ကို အကောင်အထည်ဖော်ခြင်း (Sample 09)
+- [ ] Comprehensive tools framework ကို ဖန်တီးခြင်း (Sample 10)
+
+### Mastery Indicators
+- [ ] Samples 10 ခုလုံးကို error မရှိဘဲ run လုပ်နိုင်ခြင်း
+- [ ] Specific use cases အတွက် samples 3 ခုကို customize လုပ်နိုင်ခြင်း
+- [ ] Production-like environments တွင် samples 2+ ခုကို deploy လုပ်နိုင်ခြင်း
+- [ ] Sample code ကို တိုးတက်မှုများ သို့မဟုတ် extension များဖြင့် ပံ့ပိုးနိုင်ခြင်း
+- [ ] Foundry Local patterns များကို ကိုယ်ပိုင်/ပရော်ဖက်ရှင်နယ် project များတွင် ပေါင်းစပ်နိုင်ခြင်း
+
+## Quick Start Guide - All 10 Samples
+
+### Environment Setup (Required for All Samples)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Start a local model (new terminal)
-```cmd
-foundry model list
+### Core Foundation Samples (01-06)
+
+**Sample 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Sample 02: OpenAI SDK Integration**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Sample 03: Model Discovery & Benchmarking**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Sample 04: Chainlit RAG Application**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Sample 05: Multi-Agent Orchestration**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Sample 06: Models-as-Tools Router**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Advanced Integration Samples (07-10)
+
+**Sample 07: Direct API Client**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Sample 08: Windows 11 Chat Application**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Sample 09: Advanced Multi-Agent System**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Sample 10: Foundry Tools Framework**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Troubleshooting Common Issues
+
+**Foundry Local Connection Errors**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Model Loading Issues**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Run the Chainlit demo (Session 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Dependency Issues**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Run the multi-agent coordinator (Session 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## အကျဉ်းချုပ်
+ဤမော်ဂျူးသည် အနာဂတ် Edge AI ဖွံ့ဖြိုးတိုးတက်မှုကို ကိုယ်စားပြုပြီး Microsoft ၏ စီးပွားရေးအဆင့်မြင့် tools များနှင့် အခွင့်အလမ်းများနှင့် ဖန်တီးမှုများကို ပေါင်းစပ်ထားသော open-source ecosystem ၏ အကျိုးကျေးဇူးများကို ပေါင်းစပ်ထားသည်။ Foundry Local ၏ ၁၀ ခုလုံးသော စုံလင်သော နမူနာများကို ကျွမ်းကျင်စွာ လေ့လာပြီးနောက်၊ သင်သည် AI အက်ပလီကေးရှင်း ဖွံ့ဖြိုးတိုးတက်မှု၏ အရှေ့တန်းတွင် ရပ်တည်နိုင်မည်ဖြစ်သည်။
 
-Connection errors တွေ့ရင် Foundry Local ကို validate လုပ်ပါ:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**လေ့လာမှု လမ်းကြောင်း အပြည့်အစုံ:**
+- **အခြေခံ** (နမူနာ 01-03): API ပေါင်းစည်းမှုနှင့် မော်ဒယ် စီမံခန့်ခွဲမှု
+- **အက်ပလီကေးရှင်းများ** (နမူနာ 04-06): RAG, agents, နှင့် အာရုံစိုက်မှု လမ်းကြောင်းချမှတ်ခြင်း
+- **အဆင့်မြင့်** (နမူနာ 07-10): ထုတ်လုပ်မှု ဖွဲ့စည်းမှုများနှင့် စီးပွားရေး ပေါင်းစည်းမှု
 
-### Router configuration (Session 6)
-Router သည် quick health check ကို လုပ်ဆောင်ပြီး env-based config ကို support လုပ်ပါသည်:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-ဒီ module သည် edge AI development ၏ cutting edge ကို ကိုယ်စားပြုသည်။ ဒါဟာ Microsoft's enterprise-grade tools များနှင့် open-source ecosystem ၏ flexibility နှင့် innovation ကို ပေါင်းစည်းထားသည်။ Foundry Local ကို ကျွမ်းကျင်စွာ လေ့လာခြင်းဖြင့် သင်သည် AI application development ၏ အရှေ့တန်းတွင် ရပ်တည်နိုင်မည်ဖြစ်သည်။
-
-Azure OpenAI (Session 2) အတွက် လိုအပ်သော environment variables နှင့် API version settings များကို sample README တွင် ကြည့်ပါ။
-
-## Samples Overview
-
-- `samples/01`: Foundry Local သို့ Quick REST chat (`chat_quickstart.py`)။
-- `samples/02`: OpenAI SDK integration (`sdk_quickstart.py`)။
-- `samples/03`: Model discovery + quick bench (`list_and_bench.cmd`)။
-- `samples/04`: Chainlit RAG demo (`app.py`)။
-- `samples/05`: Multi-agent orchestration (`python -m samples.05.agents.coordinator`)။
-- `samples/06`: Models-as-Tools router (`python samples\06\router.py`)။
+Azure OpenAI ပေါင်းစည်းမှု (Session 2) အတွက် လိုအပ်သော ပတ်ဝန်းကျင် variable များနှင့် API version အပြင်အဆင်များကို တစ်ခုချင်း README ဖိုင်များတွင် ကြည့်ရှုပါ။
 
 ---
 

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e94a6b6e8c8f3f9c881b7d6222cd9c6b",
-  "translation_date": "2025-09-23T00:39:29+00:00",
+  "original_hash": "ef04a48f3f1428fa008738033017e0e8",
+  "translation_date": "2025-09-25T02:36:56+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "lt"
 }
@@ -16,9 +16,10 @@ CO_OP_TRANSLATOR_METADATA:
 | 1 diena | 1 modulis: EdgeAI pagrindai | 3 valandos |
 | 2 diena | 2 modulis: SLM pagrindai | 3 valandos |
 | 3 diena | 3 modulis: SLM diegimas | 2 valandos |
-| 4-5 diena | 4 modulis: Modelio optimizavimas (6 platformos) | 4 valandos |
+| 4-5 diena | 4 modulis: Modelio optimizavimas (6 sistemos) | 4 valandos |
 | 6 diena | 5 modulis: SLMOps | 3 valandos |
-| 7 diena | 6-7 moduliai: AI agentai ir kūrimo įrankiai | 5 valandos |
+| 7 diena | 6-7 modulis: AI agentai ir kūrimo įrankiai | 4 valandos |
+| 8 diena | 8 modulis: Foundry vietinis įrankių rinkinys (moderni įgyvendinimo versija) | 1 valanda |
 
 ### Intensyvus mokymosi kelias (2 savaitės)
 
@@ -30,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 | 7-8 diena | 4 modulis: Modelio optimizavimas | 4 valandos |
 | 9-10 diena | 5 modulis: SLMOps | 3 valandos |
 | 11-12 diena | 6 modulis: AI agentai | 2 valandos |
-| 13-14 diena | 7 modulis: Kūrimo įrankiai | 3 valandos |
+| 13-14 diena | 7 modulis: Kūrybos įrankiai | 3 valandos |
 
 ### Dalinis studijų planas (4 savaitės)
 
@@ -39,7 +40,7 @@ CO_OP_TRANSLATOR_METADATA:
 | 1 savaitė | 1-2 moduliai: Pagrindai ir SLM pagrindai | 6 valandos |
 | 2 savaitė | 3-4 moduliai: Diegimas ir optimizavimas | 6 valandos |
 | 3 savaitė | 5-6 moduliai: SLMOps ir AI agentai | 5 valandos |
-| 4 savaitė | 7 modulis: Kūrimo įrankiai ir integracija | 3 valandos |
+| 4 savaitė | 7 modulis: Kūrybos įrankiai ir integracija | 3 valandos |
 
 | Diena | Dėmesys | Numatytos valandos |
 |------|-------|------------------|
@@ -51,12 +52,12 @@ CO_OP_TRANSLATOR_METADATA:
 | 11-12 diena | 6 modulis: SLM agentų sistemos | 2 valandos |
 | 13-14 diena | 7 modulis: EdgeAI įgyvendinimo pavyzdžiai | 2 valandos |
 
-| Modulis | Užbaigimo data | Praleistos valandos | Pagrindinės įžvalgos |
+| Modulis | Užbaigimo data | Praleistos valandos | Pagrindinės išvados |
 |--------|----------------|-------------|--------------|
 | 1 modulis: EdgeAI pagrindai | | | |
 | 2 modulis: SLM pagrindai | | | |
 | 3 modulis: SLM diegimas | | | |
-| 4 modulis: Modelio optimizavimas (6 platformos) | | | |
+| 4 modulis: Modelio optimizavimas (6 sistemos) | | | |
 | 5 modulis: SLMOps | | | |
 | 6 modulis: SLM agentų sistemos | | | |
 | 7 modulis: EdgeAI įgyvendinimo pavyzdžiai | | | |
@@ -70,13 +71,13 @@ CO_OP_TRANSLATOR_METADATA:
 | 1 savaitė | 1-2 moduliai: Pagrindai ir SLM pagrindai | 6 valandos |
 | 2 savaitė | 3-4 moduliai: Diegimas ir optimizavimas | 6 valandos |
 | 3 savaitė | 5-6 moduliai: SLMOps ir AI agentai | 5 valandos |
-| 4 savaitė | 7 modulis: Kūrimo įrankiai ir integracija | 3 valandos |
+| 4 savaitė | 7 modulis: Kūrybos įrankiai ir integracija | 3 valandos |
 
 ## Įvadas
 
-Sveiki atvykę į EdgeAI pradedantiesiems studijų vadovą! Šis dokumentas sukurtas tam, kad padėtų jums efektyviai naršyti kurso medžiagą ir maksimaliai išnaudoti mokymosi patirtį. Jame pateikiami struktūrizuoti mokymosi keliai, rekomenduojami studijų tvarkaraščiai, pagrindinių sąvokų santraukos ir papildomi ištekliai, skirti gilinti jūsų supratimą apie EdgeAI technologijas.
+Sveiki atvykę į EdgeAI pradedantiesiems studijų vadovą! Šis dokumentas sukurtas tam, kad padėtų jums efektyviai naršyti kursų medžiagą ir maksimaliai išnaudoti mokymosi patirtį. Jame pateikiami struktūruoti mokymosi keliai, siūlomi studijų tvarkaraščiai, pagrindinių sąvokų santraukos ir papildomi ištekliai, skirti gilinti jūsų supratimą apie EdgeAI technologijas.
 
-Tai koncentruotas 20 valandų kursas, kuris suteikia esminių žinių apie EdgeAI efektyviu laiko formatu, todėl jis puikiai tinka užimtiems profesionalams ir studentams, norintiems greitai įgyti praktinių įgūdžių šioje augančioje srityje.
+Tai yra glaustas 20 valandų kursas, kuris suteikia esminių žinių apie EdgeAI efektyviu laiko formatu, todėl jis puikiai tinka užimtiems profesionalams ir studentams, norintiems greitai įgyti praktinių įgūdžių šioje augančioje srityje.
 
 ## Kurso apžvalga
 
@@ -85,18 +86,18 @@ Kursas suskirstytas į septynis išsamius modulius:
 1. **EdgeAI pagrindai ir transformacija** - Pagrindinių sąvokų ir technologijų pokyčių supratimas
 2. **Mažų kalbos modelių pagrindai** - Įvairių SLM šeimų ir jų architektūrų tyrinėjimas
 3. **Mažų kalbos modelių diegimas** - Praktinių diegimo strategijų įgyvendinimas
-4. **Modelio formato konvertavimas ir kvantizacija** - Pažangus optimizavimas naudojant 6 platformas, įskaitant OpenVINO
+4. **Modelio formato konvertavimas ir kvantizacija** - Pažangus optimizavimas naudojant 6 sistemas, įskaitant OpenVINO
 5. **SLMOps - Mažų kalbos modelių operacijos** - Gamybos ciklo valdymas ir diegimas
-6. **SLM agentų sistemos** - AI agentai, funkcijų iškvietimas ir modelio konteksto protokolas
+6. **SLM agentų sistemos** - AI agentai, funkcijų kvietimas ir modelio konteksto protokolas
 7. **EdgeAI įgyvendinimo pavyzdžiai** - AI įrankių rinkinys, Windows kūrimas ir platformai specifiniai įgyvendinimai
-8. **Microsoft Foundry Local – pilnas kūrėjo įrankių rinkinys** - Vietinis kūrimas su hibridine Azure integracija (08 modulis)
+8. **Microsoft Foundry vietinis – pilnas kūrėjo įrankių rinkinys** - Vietinis kūrimas su hibridine Azure integracija (8 modulis)
 
 ## Kaip naudotis šiuo studijų vadovu
 
 - **Progresyvus mokymasis**: Sekite modulius iš eilės, kad mokymasis būtų nuoseklus
 - **Žinių patikrinimo taškai**: Naudokite savęs vertinimo klausimus po kiekvieno skyriaus
-- **Praktika**: Atlikite siūlomus pratimus, kad sustiprintumėte teorines sąvokas
-- **Papildomi ištekliai**: Tyrinėkite papildomą medžiagą apie temas, kurios jus labiausiai domina
+- **Praktinis mokymasis**: Atlikite siūlomus pratimus, kad sustiprintumėte teorines sąvokas
+- **Papildomi ištekliai**: Tyrinėkite papildomą medžiagą temoms, kurios jus labiausiai domina
 
 ## Studijų tvarkaraščio rekomendacijos
 
@@ -122,11 +123,11 @@ Kursas suskirstytas į septynis išsamius modulius:
 ### Pagrindiniai mokymosi tikslai
 
 - Suprasti skirtumus tarp debesų pagrindu veikiančio ir Edge pagrindu veikiančio AI
-- Įvaldyti pagrindines optimizavimo technikas, skirtas ribotų resursų aplinkoms
+- Įvaldyti pagrindines optimizavimo technikas, skirtas ribotų išteklių aplinkoms
 - Analizuoti EdgeAI technologijų realaus pasaulio taikymus
 - Paruošti kūrimo aplinką EdgeAI projektams
 
-### Studijų akcentai
+### Studijų dėmesio sritys
 
 #### 1 skyrius: EdgeAI pagrindai
 - **Prioritetinės sąvokos**: 
@@ -150,19 +151,19 @@ Kursas suskirstytas į septynis išsamius modulius:
 - **Prioritetinės sąvokos**: 
   - Kūrimo aplinkos paruošimas
   - Kvantizacijos ir optimizavimo įrankiai
-  - EdgeAI įgyvendinimų vertinimo metodai
+  - Vertinimo metodai EdgeAI įgyvendinimams
 
-#### 4 skyrius: Edge diegimo aparatinė įranga
+#### 4 skyrius: Edge diegimo aparatūra
 - **Prioritetinės sąvokos**: 
-  - Aparatinės platformos palyginimai
-  - Optimizavimo strategijos konkrečiai aparatinei įrangai
+  - Aparatūros platformų palyginimai
+  - Optimizavimo strategijos konkrečiai aparatūrai
   - Diegimo aspektai
 
 ### Savęs vertinimo klausimai
 
 1. Palyginkite ir kontrastuokite debesų pagrindu veikiančio AI ir Edge pagrindu veikiančio AI įgyvendinimus.
 2. Paaiškinkite tris pagrindines technikas, skirtas modelių optimizavimui Edge diegimui.
-3. Kokie yra pagrindiniai privalumai, kai AI modeliai veikia Edge aplinkoje?
+3. Kokie yra pagrindiniai AI modelių veikimo Edge aplinkoje privalumai?
 4. Apibūdinkite modelio kvantizacijos procesą ir kaip jis veikia našumą.
 5. Paaiškinkite, kaip skirtingi aparatūros pagreitintuvai (NPU, GPU, CPU) daro įtaką EdgeAI diegimui.
 
@@ -181,7 +182,7 @@ Kursas suskirstytas į septynis išsamius modulius:
 - Įvertinti modelius pagal efektyvumą, galimybes ir diegimo reikalavimus
 - Atpažinti tinkamus naudojimo atvejus skirtingoms modelių šeimoms
 
-### Studijų akcentai
+### Studijų dėmesio sritys
 
 #### 1 skyrius: Microsoft Phi modelių šeima
 - **Prioritetinės sąvokos**: 
@@ -211,12 +212,12 @@ Kursas suskirstytas į septynis išsamius modulius:
 - **Prioritetinės sąvokos**: 
   - Įrenginio pirmumo architektūra
   - Sistemos integracija su Windows
-  - Privatumo išsaugojimo operacija
+  - Privatumo išsaugojimo veikimas
 
 #### 6 skyrius: Phi-Silica
 - **Prioritetinės sąvokos**: 
   - NPU optimizuota architektūra
-  - Našumo metrikos
+  - Našumo metrika
   - Kūrėjo integracija
 
 ### Savęs vertinimo klausimai
@@ -239,10 +240,10 @@ Kursas suskirstytas į septynis išsamius modulius:
 
 - Pasirinkti tinkamus modelius pagal diegimo apribojimus
 - Įvaldyti optimizavimo technikas įvairiems diegimo scenarijams
-- Įgyvendinti SLM tiek vietinėje, tiek debesų aplinkoje
-- Kurti gamybai paruoštas konfigūracijas EdgeAI programoms
+- Įgyvendinti SLM tiek vietiniuose, tiek debesų aplinkose
+- Sukurti gamybai paruoštas konfigūracijas EdgeAI programoms
 
-### Studijų akcentai
+### Studijų dėmesio sritys
 
 #### 1 skyrius: SLM pažangus mokymasis
 - **Prioritetinės sąvokos**: 
@@ -250,11 +251,11 @@ Kursas suskirstytas į septynis išsamius modulius:
   - Pažangios optimizavimo technikos
   - Modelio įsigijimo strategijos
 
-#### 2 skyrius: Vietinės aplinkos diegimas
+#### 2 skyrius: Vietinio aplinkos diegimas
 - **Prioritetinės sąvokos**: 
   - Ollama platformos diegimas
   - Microsoft Foundry vietiniai sprendimai
-  - Platformų palyginamoji analizė
+  - Sistemų palyginamoji analizė
 
 #### 3 skyrius: Konteinerizuotas debesų diegimas
 - **Prioritetinės sąvokos**: 
@@ -265,14 +266,14 @@ Kursas suskirstytas į septynis išsamius modulius:
 ### Savęs vertinimo klausimai
 
 1. Kokius veiksnius reikia apsvarstyti renkantis tarp vietinio diegimo ir debesų diegimo?
-2. Palyginkite Ollama ir Microsoft Foundry Local kaip diegimo galimybes.
+2. Palyginkite Ollama ir Microsoft Foundry vietinius kaip diegimo galimybes.
 3. Paaiškinkite konteinerizacijos privalumus SLM diegimui.
-4. Kokios yra pagrindinės našumo metrikos, kurias reikia stebėti Edge diegtam SLM?
+4. Kokie yra pagrindiniai našumo rodikliai, kuriuos reikia stebėti Edge diegtam SLM?
 5. Apibūdinkite pilną diegimo darbo eigą nuo modelio pasirinkimo iki gamybos įgyvendinimo.
 
 ### Praktiniai pratimai
 
-1. **Pagrindinis vietinis diegimas**: Diegti paprastą SLM naudojant Ollama (1 valanda)
+1. **Pagrindinis vietinis diegimas**: Diegkite paprastą SLM naudodami Ollama (1 valanda)
 2. **Našumo patikrinimas**: Greitas jūsų diegto modelio našumo testas (30 minučių)
 3. **Paprasta integracija**: Sukurkite minimalią programą, kuri naudoja jūsų diegtą modelį (1 valanda)
 
@@ -282,33 +283,35 @@ Kursas suskirstytas į septynis išsamius modulius:
 
 - Įvaldyti pažangias kvantizacijos technikas nuo 1-bit iki 8-bit tikslumo
 - Suprasti formato konvertavimo strategijas (GGUF, ONNX)
-- Įgyvendinti optimizaciją per šešias platformas (Llama.cpp, Olive, OpenVINO, MLX, darbo eigos sintezė)
-- Diegti optimizuotus model
-- **Prioritetinės sąvokos**: 
-  - Apple Silicon optimizacija
+- Įgy
+- OpenVINO GenAI LLM diegimui
+
+#### 5 skyrius: Apple MLX sistema
+- **Svarbiausios sąvokos**: 
+  - Apple Silicon optimizavimas
   - Vieninga atminties architektūra
-  - LoRA smulkus derinimas
+  - LoRA smulkus modelio derinimas
 
 #### 6 skyrius: Edge AI kūrimo darbo eigos sintezė
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Vieninga darbo eigos architektūra
-  - Sprendimų medžiai renkantis sistemas
-  - Parengties gamybai patikrinimas
-  - Strategijos ateities užtikrinimui
+  - Sprendimų medžiai sistemų pasirinkimui
+  - Paruošimo gamybai patvirtinimas
+  - Ateities užtikrinimo strategijos
 
-### Savęs vertinimo klausimai
+### Savarankiško vertinimo klausimai
 
-1. Palyginkite kvantizacijos strategijas skirtinguose tikslumo lygiuose (nuo 1 bit iki 8 bitų).
+1. Palyginkite kvantizavimo strategijas skirtinguose tikslumo lygiuose (nuo 1 bit iki 8 bitų).
 2. Paaiškinkite GGUF formato privalumus diegiant Edge aplinkoje.
 3. Kaip Microsoft Olive techninė optimizacija pagerina diegimo efektyvumą?
 4. Kokie yra pagrindiniai OpenVINO NNCF privalumai modelio suspaudimui?
-5. Apibūdinkite, kaip Apple MLX naudoja vieningą atminties architektūrą optimizacijai.
+5. Apibūdinkite, kaip Apple MLX naudoja vieningą atminties architektūrą optimizavimui.
 6. Kaip darbo eigos sintezė padeda pasirinkti optimalias optimizavimo sistemas?
 
 ### Praktinės užduotys
 
-1. **Modelio kvantizacija**: Taikykite skirtingus kvantizacijos lygius modeliui ir palyginkite rezultatus (1 valanda)
-2. **OpenVINO optimizacija**: Naudokite NNCF modelio suspaudimui Intel įrangai (1 valanda)
+1. **Modelio kvantizavimas**: Taikykite skirtingus kvantizavimo lygius modeliui ir palyginkite rezultatus (1 valanda)
+2. **OpenVINO optimizavimas**: Naudokite NNCF modelio suspaudimui Intel įrangai (1 valanda)
 3. **Sistemų palyginimas**: Išbandykite tą patį modelį trijose skirtingose optimizavimo sistemose (1 valanda)
 4. **Našumo testavimas**: Išmatuokite optimizavimo poveikį įžvalgų greičiui ir atminties naudojimui (1 valanda)
 
@@ -318,41 +321,41 @@ Kursas suskirstytas į septynis išsamius modulius:
 
 - Suprasti SLMOps gyvavimo ciklo valdymo principus
 - Įvaldyti distiliavimo ir smulkaus derinimo technikas Edge diegimui
-- Įgyvendinti gamybos diegimo strategijas su stebėsena
+- Įgyvendinti gamybos diegimo strategijas su stebėjimu
 - Sukurti įmonės lygio SLM operacijų ir priežiūros darbo eigas
 
 ### Studijų akcentai
 
 #### 1 skyrius: Įvadas į SLMOps
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - SLMOps paradigmos pokytis AI operacijose
   - Kaštų efektyvumas ir privatumo pirmumo architektūra
   - Strateginis verslo poveikis ir konkurenciniai pranašumai
 
 #### 2 skyrius: Modelio distiliavimas
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Žinių perdavimo technikos
   - Dviejų etapų distiliavimo proceso įgyvendinimas
   - Azure ML distiliavimo darbo eigos
 
 #### 3 skyrius: Smulkaus derinimo strategijos
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Parametrų efektyvus smulkus derinimas (PEFT)
   - LoRA ir QLoRA pažangūs metodai
   - Daugiaadapterinis mokymas ir hiperparametrų optimizavimas
 
 #### 4 skyrius: Gamybos diegimas
-- **Prioritetinės sąvokos**: 
-  - Modelio konvertavimas ir kvantizacija gamybai
+- **Svarbiausios sąvokos**: 
+  - Modelio konvertavimas ir kvantizavimas gamybai
   - Foundry Local diegimo konfigūracija
-  - Našumo testavimas ir kokybės patikrinimas
+  - Našumo testavimas ir kokybės patvirtinimas
 
-### Savęs vertinimo klausimai
+### Savarankiško vertinimo klausimai
 
 1. Kaip SLMOps skiriasi nuo tradicinio MLOps?
 2. Paaiškinkite modelio distiliavimo privalumus Edge diegimui.
-3. Kokie yra pagrindiniai smulkaus derinimo SLM modeliams aspektai ribotų resursų aplinkoje?
-4. Apibūdinkite pilną gamybos diegimo darbo eigą Edge AI programoms.
+3. Kokie yra pagrindiniai smulkaus derinimo SLM aspektai ribotų resursų aplinkoje?
+4. Apibūdinkite pilną gamybos diegimo procesą Edge AI programoms.
 
 ### Praktinės užduotys
 
@@ -360,47 +363,47 @@ Kursas suskirstytas į septynis išsamius modulius:
 2. **Smulkaus derinimo eksperimentas**: Smulkiai suderinkite modelį konkrečiai sričiai (1 valanda)
 3. **Diegimo darbo eiga**: Sukurkite pagrindinę CI/CD darbo eigą modelio diegimui (1 valanda)
 
-## 6 modulis: SLM agentinės sistemos - AI agentai ir funkcijų iškvietimas
+## 6 modulis: SLM agentinės sistemos - AI agentai ir funkcijų kvietimas
 
 ### Pagrindiniai mokymosi tikslai
 
-- Kurti intelektualius AI agentus Edge aplinkoms naudojant mažus kalbos modelius
-- Įgyvendinti funkcijų iškvietimo galimybes su sisteminėmis darbo eigomis
+- Sukurti intelektualius AI agentus Edge aplinkoms naudojant mažus kalbos modelius
+- Įgyvendinti funkcijų kvietimo galimybes su sisteminėmis darbo eigomis
 - Įvaldyti Model Context Protocol (MCP) integraciją standartizuotam įrankių sąveikavimui
-- Kurti sudėtingas agentines sistemas su minimaliu žmogaus įsikišimu
+- Sukurti sudėtingas agentines sistemas su minimaliu žmogaus įsikišimu
 
 ### Studijų akcentai
 
 #### 1 skyrius: AI agentai ir SLM pagrindai
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Agentų klasifikavimo sistema (refleksiniai, modeliu pagrįsti, tiksliniai, mokymosi agentai)
   - SLM ir LLM kompromisų analizė
-  - Edge specifiniai agentų dizaino šablonai
+  - Edge specifiniai agentų dizaino modeliai
   - Resursų optimizavimas agentams
 
-#### 2 skyrius: Funkcijų iškvietimas mažuose kalbos modeliuose
-- **Prioritetinės sąvokos**: 
-  - Sisteminių darbo eigų įgyvendinimas (ketinimų aptikimas, JSON išvestis, išorinis vykdymas)
+#### 2 skyrius: Funkcijų kvietimas mažuose kalbos modeliuose
+- **Svarbiausios sąvokos**: 
+  - Sisteminių darbo eigų įgyvendinimas (ketinimų nustatymas, JSON išvestis, išorinis vykdymas)
   - Platformai specifiniai įgyvendinimai (Phi-4-mini, pasirinkti Qwen modeliai, Microsoft Foundry Local)
-  - Pažangūs pavyzdžiai (daugelio agentų bendradarbiavimas, dinaminis įrankių pasirinkimas)
+  - Pažangūs pavyzdžiai (daugiaagentinė bendradarbiavimas, dinaminis įrankių pasirinkimas)
   - Gamybos aspektai (greičio ribojimas, audito žurnalai, saugumo priemonės)
 
 #### 3 skyrius: Model Context Protocol (MCP) integracija
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Protokolo architektūra ir sluoksniuota sistemos konstrukcija
-  - Daugelio galinių sistemų palaikymas (Ollama kūrimui, vLLM gamybai)
-  - Jungties protokolai (STDIO ir SSE režimai)
+  - Daugiafunkcinė palaikymas (Ollama kūrimui, vLLM gamybai)
+  - Ryšio protokolai (STDIO ir SSE režimai)
   - Realūs pritaikymai (interneto automatizavimas, duomenų apdorojimas, API integracija)
 
-### Savęs vertinimo klausimai
+### Savarankiško vertinimo klausimai
 
 1. Kokie yra pagrindiniai architektūriniai aspektai Edge AI agentams?
-2. Kaip funkcijų iškvietimas pagerina agentų galimybes?
+2. Kaip funkcijų kvietimas pagerina agentų galimybes?
 3. Paaiškinkite Model Context Protocol vaidmenį agentų komunikacijoje.
 
 ### Praktinės užduotys
 
-1. **Paprastas agentas**: Sukurkite pagrindinį AI agentą su funkcijų iškvietimu (1 valanda)
+1. **Paprastas agentas**: Sukurkite pagrindinį AI agentą su funkcijų kvietimu (1 valanda)
 2. **MCP integracija**: Įgyvendinkite MCP agento programoje (30 minučių)
 
 ## 7 modulis: EdgeAI įgyvendinimo pavyzdžiai
@@ -409,92 +412,117 @@ Kursas suskirstytas į septynis išsamius modulius:
 
 - Įvaldyti AI Toolkit Visual Studio Code visapusiškam EdgeAI kūrimo darbo eigų valdymui
 - Įgyti patirties Windows AI Foundry platformoje ir NPU optimizavimo strategijose
-- Įgyvendinti EdgeAI įvairiose aparatūros platformose ir diegimo scenarijuose
-- Kurti gamybai paruoštas EdgeAI programas su platformai specifinėmis optimizacijomis
+- Įgyvendinti EdgeAI įvairiose aparatinės įrangos platformose ir diegimo scenarijuose
+- Sukurti gamybai paruoštas EdgeAI programas su platformai specifinėmis optimizacijomis
 
 ### Studijų akcentai
 
 #### 1 skyrius: AI Toolkit Visual Studio Code
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Visapusiška Edge AI kūrimo aplinka VS Code
   - Modelių katalogas ir atradimas Edge diegimui
   - Vietinis testavimas, optimizavimas ir agentų kūrimo darbo eigos
   - Našumo stebėjimas ir vertinimas Edge scenarijams
 
 #### 2 skyrius: Windows EdgeAI kūrimo vadovas
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - Windows AI Foundry platformos visapusiška apžvalga
   - Phi Silica API efektyviam NPU įžvalgų vykdymui
   - Kompiuterinės vizijos API vaizdų apdorojimui ir OCR
   - Foundry Local CLI vietiniam kūrimui ir testavimui
 
 #### 3 skyrius: Platformai specifiniai įgyvendinimai
-- **Prioritetinės sąvokos**: 
+- **Svarbiausios sąvokos**: 
   - NVIDIA Jetson Orin Nano diegimas (67 TOPS AI našumas)
   - Mobiliosios programos su .NET MAUI ir ONNX Runtime GenAI
   - Azure EdgeAI sprendimai su debesų ir Edge hibridine architektūra
-  - Windows ML optimizavimas su universaliu aparatūros palaikymu
+  - Windows ML optimizavimas su universalia aparatinės įrangos palaikymu
   - Foundry Local programos su privatumo orientuotu RAG įgyvendinimu
 
-### Savęs vertinimo klausimai
+### Savarankiško vertinimo klausimai
 
 1. Kaip AI Toolkit supaprastina EdgeAI kūrimo darbo eigą?
-2. Palyginkite diegimo strategijas skirtingose aparatūros platformose.
+2. Palyginkite diegimo strategijas skirtingose aparatinės įrangos platformose.
 3. Kokie yra Windows AI Foundry privalumai Edge kūrimui?
 4. Paaiškinkite NPU optimizavimo vaidmenį šiuolaikinėse Edge AI programose.
-5. Kaip Phi Silica API naudoja NPU aparatūrą našumo optimizavimui?
+5. Kaip Phi Silica API naudoja NPU aparatinę įrangą našumo optimizavimui?
 6. Palyginkite vietinio ir debesų diegimo privalumus privatumo jautrioms programoms.
 
 ### Praktinės užduotys
 
 1. **AI Toolkit nustatymas**: Konfigūruokite AI Toolkit ir optimizuokite modelį (1 valanda)
-2. **Windows AI Foundry**: Sukurkite paprastą Windows AI programą naudojant Phi Silica API (1 valanda)
-3. **Kryžminės platformos diegimas**: Diegkite tą patį modelį dviejose skirtingose platformose (1 valanda)
+2. **Windows AI Foundry**: Sukurkite paprastą Windows AI programą naudodami Phi Silica API (1 valanda)
+3. **Kryžminė platformų diegimas**: Diegkite tą patį modelį dviejose skirtingose platformose (1 valanda)
 4. **NPU optimizavimas**: Testuokite NPU našumą su Windows AI Foundry įrankiais (30 minučių)
 
-## 8 modulis: Microsoft Foundry Local – pilnas kūrėjo įrankių rinkinys
+## 8 modulis: Microsoft Foundry Local – pilnas kūrėjų įrankių rinkinys (modernizuotas)
 
 ### Pagrindiniai mokymosi tikslai
 
-- Įdiegti ir konfigūruoti Foundry Local Windows aplinkoje
-- Paleisti, atrasti ir valdyti modelius vietoje per Foundry CLI
-- Integruoti su OpenAI suderinamais REST ir SDK klientais
-- Kurti praktinius pavyzdžius: Chainlit pokalbius, agentus ir modelių maršrutizatorių
-- Suprasti hibridinius modelius su Azure AI Foundry
+- Įdiegti ir konfigūruoti Foundry Local su modernizuota SDK integracija
+- Įgyvendinti pažangias daugiaagentines sistemas su koordinatorių modeliais
+- Sukurti intelektualius modelių maršrutizatorius su automatiniu užduočių pasirinkimu
+- Diegti gamybai paruoštus AI sprendimus su visapusišku stebėjimu
+- Integruoti su Azure AI Foundry hibridiniams diegimo scenarijams
+- Įvaldyti modernizuotus SDK modelius su FoundryLocalManager ir OpenAI klientu
 
 ### Studijų akcentai
 
-- Įdiegimas ir CLI pagrindai (modelis, paslauga, talpykla)
-- SDK integracija (OpenAI suderinami klientai ir Azure OpenAI)
-- Greitas Open WebUI patikrinimas
-- Agentai ir funkcijų iškvietimo šablonai
-- Modeliai kaip įrankiai (maršrutizatoriaus ir registro dizainas)
+#### 1 skyrius: Modernus diegimas ir konfigūracija
+- **Svarbiausios sąvokos**: 
+  - FoundryLocalManager SDK integracija
+  - Automatinis paslaugų atradimas ir sveikatos stebėjimas
+  - Konfigūracijos modeliai pagal aplinką
+  - Gamybos diegimo aspektai
 
-### Savęs vertinimo klausimai
+#### 2 skyrius: Pažangios daugiaagentinės sistemos
+- **Svarbiausios sąvokos**: 
+  - Koordinatorių modelis su specializuotais agentais
+  - Informacijos paieška, samprotavimas ir vykdymo agentų specializacija
+  - Grįžtamojo ryšio mechanizmai tobulinimui
+  - Našumo stebėjimas ir statistikos sekimas
 
-1. Kaip atrasti vietinį galinį tašką ir peržiūrėti galimus modelius?
-2. Kokie yra Foundry Local REST ir Azure OpenAI naudojimo skirtumai?
-3. Kaip suprojektuotumėte paprastą maršrutizatorių modeliams kaip įrankiams pasirinkti?
-4. Kokios CLI kategorijos yra svarbiausios kasdieniam kūrimui?
-5. Kaip patikrinti Foundry Local parengtį prieš paleidžiant programas?
+#### 3 skyrius: Intelektualus modelių maršrutizavimas
+- **Svarbiausios sąvokos**: 
+  - Modelių pasirinkimo algoritmai pagal raktinius žodžius
+  - Daugiamodelinis palaikymas (bendras, samprotavimas, kodas, kūrybinis)
+  - Konfigūracija pagal aplinkos kintamuosius lankstumui
+  - Paslaugų sveikatos tikrinimas ir klaidų tvarkymas
+
+#### 4 skyrius: Gamybai paruoštas įgyvendinimas
+- **Svarbiausios sąvokos**: 
+  - Visapusiškas klaidų tvarkymas ir atsarginiai mechanizmai
+  - Užklausų stebėjimas ir našumo sekimas
+  - Interaktyvūs Jupyter užrašų knygelės pavyzdžiai su testais
+  - Integracijos modeliai su esamomis programomis
+
+### Savarankiško vertinimo klausimai
+
+1. Kaip modernizuotas FoundryLocalManager požiūris skiriasi nuo rankinių REST užklausų?
+2. Paaiškinkite koordinatorių modelį ir kaip jis organizuoja specializuotus agentus.
+3. Kaip intelektualus maršrutizatorius pasirenka tinkamus modelius pagal užklausos turinį?
+4. Kokie yra pagrindiniai gamybai paruoštos AI agentų sistemos komponentai?
+5. Kaip įgyvendinti visapusišką sveikatos stebėjimą Foundry Local paslaugoms?
+6. Palyginkite modernizuoto požiūrio privalumus su tradiciniais įgyvendinimo modeliais.
 
 ### Praktinės užduotys
 
-1. Įdiekite/atnaujinkite Foundry Local ir paleiskite `phi-4-mini` vietoje (30 minučių)
-2. Iškvieskite `/v1/models` ir paleiskite paprastą pokalbį per REST (30 minučių)
-3. Paleiskite Chainlit programos pavyzdį ir bendraukite vietoje (30 minučių)
-4. Paleiskite daugelio agentų koordinatorių ir patikrinkite išvestis (30 minučių)
-5. Išbandykite modelių kaip įrankių maršrutizatorių su aplinkos pagrindu nustatytais pakeitimais (30 minučių)
+1. **Modernizuoto SDK nustatymas**: Konfigūruokite FoundryLocalManager su automatiniu paslaugų atradimu (30 minučių)
+2. **Daugiaagentinė sistema**: Paleiskite pažangų koordinatorių su specializuotais agentais (30 minučių)
+3. **Intelektualus maršrutizavimas**: Testuokite modelių maršrutizatorių su skirtingais užklausų tipais (30 minučių)
+4. **Interaktyvus tyrinėjimas**: Naudokite Jupyter užrašų knygeles pažangių funkcijų tyrinėjimui (45 minutės)
+5. **Gamybos diegimas**: Įgyvendinkite stebėjimo ir klaidų tvarkymo modelius (30 minučių)
+6. **Hibridinė integracija**: Konfigūruokite Azure AI Foundry atsarginių scenarijų (30 minučių)
 
 ## Laiko paskirstymo vadovas
 
-Kad maksimaliai išnaudotumėte 20 valandų kursą, pateikiame siūlomą laiko paskirstymą:
+Norėdami maksimaliai išnaudoti 20 valandų kursą, pateikiame siūlomą laiko paskirstymo planą:
 
 | Veikla | Laiko paskirstymas | Aprašymas |
 |--------|--------------------|-----------|
-| Pagrindinių medžiagų skaitymas | 9 valandos | Dėmesys esminėms sąvokoms kiekviename modulyje |
+| Pagrindinės medžiagos skaitymas | 9 valandos | Dėmesys esminėms sąvokoms kiekviename modulyje |
 | Praktinės užduotys | 6 valandos | Pagrindinių technikų praktinis įgyvendinimas |
-| Savęs vertinimas | 2 valandos | Supratimo testavimas per klausimus ir apmąstymus |
+| Savarankiškas vertinimas | 2 valandos | Supratimo testavimas per klausimus ir apmąstymus |
 | Mini projektas | 3 valandos | Žinių pritaikymas mažame praktiniame įgyvendinime |
 
 ### Pagrindiniai akcentai pagal laiko apribojimus
@@ -511,7 +539,7 @@ Kad maksimaliai išnaudotumėte 20 valandų kursą, pateikiame siūlomą laiko p
 - Išnagrinėkite bent 2-3 papildomus išteklius
 
 **Jei turite daugiau nei 20 valandų:**
-- Užbaikite visus modulius su išsamiomis užduotimis
+- Užbaikite visus modulius su išsamiais pratimais
 - Sukurkite kelis mini projektus
 - Išnagrinėkite pažangias optimizavimo technikas 4 modulyje
 - Įgyvendinkite gamybos diegimą iš 5 modulio
@@ -520,82 +548,74 @@ Kad maksimaliai išnaudotumėte 20 valandų kursą, pateikiame siūlomą laiko p
 
 Šie kruopščiai atrinkti ištekliai suteikia didžiausią vertę jūsų ribotam studijų laikui:
 
-### Privaloma perskaityti dokumentacija
+### Privaloma dokumentacija
 - [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Efektyviausias modelio optimizavimo įrankis
 - [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - Greičiausias būdas diegti SLM vietoje
-- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Nuoroda į pirmaujantį Edge optimizuotą modelį
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intel visapusiškas optimizavimo įrankių rinkinys
-- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Integruota EdgeAI kūrimo aplinka
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows specifinė EdgeAI kūrimo platforma
+- [Microsoft Phi
+| Praktinės užduotys | | | |
+| Mini projektas | | | |
 
-### Laiką taupantys įrankiai
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Greitas modelių pasiekiamumas ir diegimas
-- [Gradio](https://www.gradio.app/docs/interface) - Greitas UI kūrimas AI demonstracijoms
-- [Microsoft Olive](https://github.com/microsoft/Olive) - Supaprastintas modelio optimizavimas
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Efektyvus CPU įžvalgų vykdymas
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Neuroninių tinklų suspaudimo sistema
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Didelių kalbos modelių diegimo įrankių rinkinys
+## Mini projektų idėjos
 
-## Progreso sekimo šablonas
+Apsvarstykite galimybę atlikti vieną iš šių projektų, kad praktikuotumėte EdgeAI koncepcijas (kiekvienas projektas skirtas 2–4 valandoms):
 
-Naudokite šį supaprastintą šabloną, kad stebėtumėte savo mokymosi progresą per 20 valandų kursą:
+### Pradedančiųjų projektai (po 2–3 valandas)
+1. **Edge teksto asistentas**: Sukurkite paprastą neprisijungus veikiantį teksto užbaigimo įrankį, naudodami mažą kalbos modelį
+2. **Modelių palyginimo prietaisų skydelis**: Sukurkite pagrindinę vizualizaciją, kurioje būtų rodomi skirtingų SLM našumo rodikliai
+3. **Optimizavimo eksperimentas**: Išmatuokite skirtingų kvantizacijos lygių poveikį tam pačiam baziniam modeliui
 
-| Modulis | Užbaigimo data | Praleistos valandos | Pagrindinės įžvalgos |
-|---------|----------------|---------------------|----------------------|
-| 1 modulis: EdgeAI pagrindai | | | |
-| 2 modulis: SLM pagrindai | | | |
-| 3 modulis: SLM diegimas | | | |
-| 4 modulis: Modelio optimizavimas | | | |
-| 5 modulis: SLMOps | | | |
-| 6 modulis: AI agentai | | | |
-| 7 modulis: Kūrimo įrankiai | | | |
-| 8 modulis: Foundry Local įrankių rinkinys | | | |
-| Prakt
-8. **OpenVINO optimizavimo procesas**: Įgyvendinkite pilną modelio optimizavimą naudodami NNCF ir GenAI įrankių rinkinį  
-9. **SLMOps procesas**: Įgyvendinkite pilną modelio gyvavimo ciklą nuo mokymo iki diegimo kraštiniuose įrenginiuose  
-10. **Daugiamodelinė kraštinė sistema**: Diegkite kelis specializuotus modelius, veikiančius kartu kraštinėje įrangoje  
-11. **MCP integracijos sistema**: Sukurkite agentinę sistemą, naudojant Model Context Protocol sąveikai su įrankiais  
+### Vidutinio sudėtingumo projektai (po 3–4 valandas)
+4. **AI įrankių rinkinys**: Naudokite VS Code AI Toolkit, kad optimizuotumėte ir įdiegtumėte modelį nuo pradžios iki pabaigos
+5. **Windows AI Foundry aplikacija**: Sukurkite Windows programą, naudodami Phi Silica API ir NPU optimizaciją
+6. **Kryžminė platformų diegimas**: Įdiekite tą patį optimizuotą modelį Windows (OpenVINO) ir mobiliajame (.NET MAUI)
+7. **Funkcijų kvietimo agentas**: Sukurkite AI agentą su funkcijų kvietimo galimybėmis, skirtą Edge scenarijams
+
+### Pažangūs integracijos projektai (po 4–5 valandas)
+8. **OpenVINO optimizavimo procesas**: Įgyvendinkite pilną modelio optimizavimą, naudodami NNCF ir GenAI įrankių rinkinį
+9. **SLMOps procesas**: Įgyvendinkite pilną modelio gyvavimo ciklą nuo mokymo iki diegimo Edge aplinkoje
+10. **Daugiamodelinė Edge sistema**: Įdiekite kelis specializuotus modelius, kurie veikia kartu Edge įrangoje
+11. **MCP integracijos sistema**: Sukurkite agentinę sistemą, naudodami Model Context Protocol įrankių sąveikai
 
 ## Nuorodos
 
-- Microsoft Learn (Foundry Local)  
-  - Apžvalga: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
-  - Pradžia: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
-  - CLI nuoroda: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
-  - Integracija su inferencijos SDK: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
-  - Open WebUI naudojimo instrukcija: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
-  - Hugging Face modelių kompiliavimas: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
-- Azure AI Foundry  
-  - Apžvalga: https://learn.microsoft.com/en-us/azure/ai-foundry/  
-  - Agentai (apžvalga): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
-- Optimizavimo ir inferencijos įrankiai  
-  - Microsoft Olive (dokumentacija): https://microsoft.github.io/Olive/  
-  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive  
-  - ONNX Runtime (pradžia): https://onnxruntime.ai/docs/get-started/with-python.html  
-  - ONNX Runtime Olive integracija: https://onnxruntime.ai/docs/performance/olive.html  
-  - OpenVINO (dokumentacija): https://docs.openvino.ai/2025/index.html  
-  - Apple MLX (dokumentacija): https://ml-explore.github.io/mlx/build/html/index.html  
-- Diegimo sistemos ir modeliai  
-  - Llama.cpp: https://github.com/ggml-ai/llama.cpp  
-  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index  
-  - vLLM (dokumentacija): https://docs.vllm.ai/  
-  - Ollama (greita pradžia): https://github.com/ollama/ollama#get-started  
-- Kūrėjų įrankiai (Windows ir VS Code)  
-  - AI įrankių rinkinys VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
-  - Windows ML (apžvalga): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
+- Microsoft Learn (Foundry Local)
+  - Apžvalga: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+  - Pradžia: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+  - CLI nuoroda: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
+  - Integracija su inferencijos SDK: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+  - Open WebUI naudojimo instrukcija: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+  - Hugging Face modelių kompiliavimas: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Azure AI Foundry
+  - Apžvalga: https://learn.microsoft.com/en-us/azure/ai-foundry/
+  - Agentai (apžvalga): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
+- Optimizavimo ir inferencijos įrankiai
+  - Microsoft Olive (dokumentacija): https://microsoft.github.io/Olive/
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
+  - ONNX Runtime (pradžia): https://onnxruntime.ai/docs/get-started/with-python.html
+  - ONNX Runtime Olive integracija: https://onnxruntime.ai/docs/performance/olive.html
+  - OpenVINO (dokumentacija): https://docs.openvino.ai/2025/index.html
+  - Apple MLX (dokumentacija): https://ml-explore.github.io/mlx/build/html/index.html
+- Diegimo sistemos ir modeliai
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
+  - vLLM (dokumentacija): https://docs.vllm.ai/
+  - Ollama (greita pradžia): https://github.com/ollama/ollama#get-started
+- Kūrėjų įrankiai (Windows ir VS Code)
+  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
+  - Windows ML (apžvalga): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
 
 ## Mokymosi bendruomenė
 
-Prisijunkite prie diskusijų ir susisiekite su kitais mokymosi entuziastais:  
-- GitHub diskusijos [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions)  
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
+Prisijunkite prie diskusijų ir susisiekite su kitais besimokančiais:
+- GitHub diskusijos [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
 
 ## Išvada
 
-EdgeAI yra dirbtinio intelekto įgyvendinimo pažanga, suteikianti galingas galimybes tiesiogiai įrenginiuose, tuo pačiu sprendžiant svarbius privatumo, vėlavimo ir ryšio klausimus. Šis 20 valandų kursas suteikia jums esmines žinias ir praktinius įgūdžius, kad galėtumėte nedelsiant pradėti dirbti su EdgeAI technologijomis.
+EdgeAI yra dirbtinio intelekto įgyvendinimo pažanga, suteikianti galingas galimybes tiesiogiai įrenginiuose, tuo pačiu sprendžiant svarbius privatumo, vėlavimo ir ryšio klausimus. Šis 20 valandų kursas suteikia jums esminių žinių ir praktinių įgūdžių, kad galėtumėte nedelsiant pradėti dirbti su EdgeAI technologijomis.
 
-Kursas yra sąmoningai glaustas ir orientuotas į svarbiausius konceptus, leidžiantis greitai įgyti vertingą patirtį be pernelyg didelio laiko įsipareigojimo. Nepamirškite, kad praktika, net ir su paprastais pavyzdžiais, yra raktas į tai, ką išmokote.
+Kursas yra sąmoningai glaustas ir orientuotas į svarbiausias koncepcijas, leidžiantis greitai įgyti vertingų žinių be pernelyg didelio laiko įsipareigojimo. Atminkite, kad praktika, net ir su paprastais pavyzdžiais, yra raktas į tai, kad įgytos žinios būtų įtvirtintos.
 
 Sėkmės mokantis!
 

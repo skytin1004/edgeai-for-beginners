@@ -1,130 +1,145 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "63f595a56e534d0b164e313e360afab5",
-  "translation_date": "2025-09-22T22:35:02+00:00",
+  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
+  "translation_date": "2025-09-25T00:46:32+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ms"
 }
 -->
-# Modul 08: Hands-on Dengan Microsoft Foundry Local - Toolkit Pembangun Lengkap
+# Modul 08: Hands on Dengan Microsoft Foundry Local - Toolkit Pembangun Lengkap
 
-## Gambaran Umum
+## Gambaran Keseluruhan
 
-Microsoft Foundry Local mewakili generasi baharu pembangunan AI di tepi, memberikan pembangun alat yang berkuasa untuk membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini menyediakan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen yang maju.
+Microsoft Foundry Local mewakili generasi seterusnya dalam pembangunan AI di peranti, memberikan pembangun alat yang berkuasa untuk membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini menyediakan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen lanjutan.
 
 **Teknologi Utama:**
 - Microsoft Foundry Local CLI dan SDK
 - Integrasi Azure AI Foundry
-- Inferens model pada peranti
+- Inferens model di peranti
 - Cache dan pengoptimuman model tempatan
 - Seni bina berasaskan agen
 
-## Objektif Pembelajaran Modul
+## Objektif Pembelajaran
 
 Dengan melengkapkan modul ini, anda akan:
 
-- **Menguasai Pemasangan Foundry Local**: Pasang, konfigurasikan, dan optimalkan Foundry Local untuk pembangunan Windows 11
-- **Melancarkan Pelbagai Model**: Jalankan model phi, qwen, deepseek, dan GPT-OSS-20B secara tempatan dengan arahan CLI
-- **Membina Penyelesaian Pengeluaran**: Cipta aplikasi AI dengan kejuruteraan prompt yang maju dan integrasi data
+- **Menguasai Foundry Local**: Pasang, konfigurasikan, dan optimalkan untuk pembangunan Windows 11
+- **Melancarkan Pelbagai Model**: Jalankan model phi, qwen, deepseek, dan GPT secara tempatan dengan arahan CLI
+- **Membina Penyelesaian Pengeluaran**: Cipta aplikasi AI dengan kejuruteraan prompt lanjutan dan integrasi data
 - **Manfaatkan Ekosistem Sumber Terbuka**: Integrasi model Hugging Face dan sumbangan komuniti
-- **Bandingkan Seni Bina AI**: Fahami perbandingan LLMs vs SLMs dan strategi pelancaran
-- **Membangunkan Agen AI**: Bina agen pintar menggunakan seni bina dan kemampuan grounding Foundry Local
-- **Laksanakan Model Sebagai Alat**: Cipta penyelesaian AI modular dan boleh disesuaikan untuk aplikasi perusahaan
+- **Membangunkan Agen AI**: Bina agen pintar dengan keupayaan grounding dan orkestrasi
+- **Laksanakan Corak Perusahaan**: Cipta penyelesaian AI modular dan boleh diskalakan untuk pelancaran pengeluaran
 
 ## Struktur Sesi
 
-### [1: Memulakan Dengan Foundry Local](./01.FoundryLocalSetup.md)
-**Fokus**: Pemasangan, persediaan CLI, cache model, dan pecutan perkakasan
+### [1: Memulakan dengan Foundry Local](./01.FoundryLocalSetup.md)
+**Fokus**: Pemasangan, persediaan CLI, pelancaran model, dan pengoptimuman perkakasan
 
-**Apa Yang Akan Anda Pelajari:**
-- Pemasangan lengkap Foundry Local pada Windows 11
-- Konfigurasi CLI dan struktur arahan
-- Strategi cache model untuk prestasi optimum
-- Persediaan dan pengoptimuman pecutan perkakasan
-- Pelancaran model phi, qwen, deepseek, dan GPT-OSS-20B secara praktikal
+**Topik Utama**: Pemasangan lengkap • Arahan CLI • Cache model • Pecutan perkakasan • Pelancaran pelbagai model
 
-**Durasi**: 2-3 jam  
-**Prasyarat**: Windows 11, pengetahuan asas baris arahan
+**Contoh**: [REST Chat Quickstart](./samples/01/README.md) • [Integrasi OpenAI SDK](./samples/02/README.md) • [Penemuan & Penanda Aras Model](./samples/03/README.md)
+
+**Tempoh**: 2-3 jam | **Tahap**: Pemula
 
 ---
 
-### [2: Membina Penyelesaian AI Dengan Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Fokus**: Kejuruteraan prompt yang maju, integrasi data, dan tugas yang boleh diambil tindakan
+### [2: Bina Penyelesaian AI dengan Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+**Fokus**: Kejuruteraan prompt lanjutan, integrasi data, dan sambungan awan
 
-**Apa Yang Akan Anda Pelajari:**
-- Teknik kejuruteraan prompt yang maju
-- Corak integrasi data dan amalan terbaik
-- Membina tugas AI yang boleh diambil tindakan dengan Foundry Local
-- Aliran kerja integrasi Azure AI Foundry yang lancar
-- Pengoptimuman prestasi dan pemantauan
+**Topik Utama**: Kejuruteraan prompt • Integrasi data • Aliran kerja Azure • Pengoptimuman prestasi • Pemantauan
 
-**Durasi**: 2-3 jam  
-**Prasyarat**: Penyelesaian Sesi 1, akaun Azure (pilihan)
+**Contoh**: [Aplikasi Chainlit RAG](./samples/04/README.md)
+
+**Tempoh**: 2-3 jam | **Tahap**: Pertengahan
 
 ---
 
 ### [3: Model Sumber Terbuka Foundry Local](./03.OpenSourceModels.md)
-**Fokus**: Integrasi Hugging Face, strategi pemilihan model, dan sumbangan komuniti
+**Fokus**: Integrasi Hugging Face, strategi BYOM, dan model komuniti
 
-**Apa Yang Akan Anda Pelajari:**
-- Integrasi model Hugging Face dengan Foundry Local
-- Strategi dan pelaksanaan bawa model anda sendiri (BYOM)
-- Wawasan siri Model Mondays dan sumbangan komuniti
-- Pelancaran dan pengoptimuman model tersuai
-- Kriteria penilaian dan pemilihan model komuniti
+**Topik Utama**: Integrasi HuggingFace • Bawa model anda sendiri • Wawasan Model Mondays • Sumbangan komuniti • Pemilihan model
 
-**Durasi**: 2-3 jam  
-**Prasyarat**: Penyelesaian Sesi 1-2, akaun Hugging Face
+**Contoh**: [Orkestrasi Multi-Agen](./samples/05/README.md)
+
+**Tempoh**: 2-3 jam | **Tahap**: Pertengahan
 
 ---
 
-### [4: Terokai Model Terkini - LLMs, SLMs, dan Inferens Pada Peranti](./04.CuttingEdgeModels.md)
-**Fokus**: Perbandingan model, EdgeAI dengan Phi dan ONNX Runtime, demo yang maju
+### [4: Terokai Model Terkini](./04.CuttingEdgeModels.md)
+**Fokus**: LLM vs SLM, pelaksanaan EdgeAI, dan demo lanjutan
 
-**Apa Yang Akan Anda Pelajari:**
-- Perbandingan menyeluruh LLMs vs SLMs dan kes penggunaan
-- Perdagangan inferens tempatan vs awan dan rangka kerja keputusan
-- Pelaksanaan EdgeAI dengan Phi dan ONNX Runtime
-- Pembangunan dan pelancaran Aplikasi Chat Chainlit RAG
-- Teknik pengoptimuman inferens WebGPU
-- Integrasi dan kemampuan SDK AI PC
+**Topik Utama**: Perbandingan model • Inferens di peranti vs awan • Phi + ONNX Runtime • Aplikasi Chainlit RAG • Pengoptimuman WebGPU
 
-**Durasi**: 3-4 jam  
-**Prasyarat**: Penyelesaian Sesi 1-3, pemahaman konsep inferens
+**Contoh**: [Router Model-as-Tools](./samples/06/README.md)
+
+**Tempoh**: 3-4 jam | **Tahap**: Lanjutan
 
 ---
 
-### [5: Bina Agen Berkuasa AI Dengan Cepat Menggunakan Foundry Local](./05.AIPoweredAgents.md)
-**Fokus**: Pembangunan aplikasi GenAI yang pantas, prompt sistem, grounding, dan seni bina agen
+### [5: Bina Agen AI dengan Cepat](./05.AIPoweredAgents.md)
+**Fokus**: Seni bina agen, prompt sistem, grounding, dan orkestrasi
 
-**Apa Yang Akan Anda Pelajari:**
-- Seni bina dan corak reka bentuk agen Foundry Local
-- Kejuruteraan prompt sistem untuk tingkah laku agen
-- Teknik grounding untuk respons agen yang boleh dipercayai
-- Aliran kerja pembangunan aplikasi GenAI yang pantas
-- Orkestrasi agen dan sistem multi-agen
-- Strategi pelancaran pengeluaran untuk agen AI
+**Topik Utama**: Corak reka bentuk agen • Kejuruteraan prompt sistem • Teknik grounding • Sistem multi-agen • Pelancaran pengeluaran
 
-**Durasi**: 3-4 jam  
-**Prasyarat**: Penyelesaian Sesi 1-4, pemahaman asas tentang agen AI
+**Contoh**: [Orkestrasi Multi-Agen](./samples/05/README.md) • [Sistem Multi-Agen Lanjutan](./samples/09/README.md)
+
+**Tempoh**: 3-4 jam | **Tahap**: Lanjutan
 
 ---
 
-### [6: Foundry Local - Model Sebagai Alat](./06.ModelsAsTools.md)
-**Fokus**: Penyelesaian AI modular, pelancaran pada peranti, dan penskalaan perusahaan
+### [6: Foundry Local - Model sebagai Alat](./06.ModelsAsTools.md)
+**Fokus**: Penyelesaian AI modular, penskalaan perusahaan, dan corak pengeluaran
 
-**Apa Yang Akan Anda Pelajari:**
-- Menganggap model AI sebagai alat modular dan boleh disesuaikan
-- Pelancaran pada peranti tanpa kebergantungan awan
-- Inferens yang rendah latensi, kos efisien, dan melindungi privasi
-- Corak integrasi SDK, API, dan CLI
-- Penyesuaian model untuk kes penggunaan tertentu
-- Strategi penskalaan dari tempatan ke Azure AI Foundry
-- Seni bina aplikasi AI yang sedia untuk perusahaan
+**Topik Utama**: Model sebagai alat • Pelancaran di peranti • Integrasi SDK/API • Seni bina perusahaan • Strategi penskalaan
 
-**Durasi**: 3-4 jam  
-**Prasyarat**: Semua sesi sebelumnya, pengalaman pembangunan perusahaan berguna
+**Contoh**: [Router Model-as-Tools](./samples/06/README.md) • [Kerangka Alat Foundry](./samples/10/README.md)
+
+**Tempoh**: 3-4 jam | **Tahap**: Pakar
+
+---
+
+### [7: Corak Integrasi API Langsung](./samples/07/README.md)
+**Fokus**: Integrasi API REST tulen tanpa kebergantungan SDK untuk kawalan maksimum
+
+**Topik Utama**: Pelaksanaan klien HTTP • Pengesahan tersuai • Pemantauan kesihatan model • Respons streaming • Pengendalian ralat pengeluaran
+
+**Contoh**: [Klien API Langsung](./samples/07/README.md)
+
+**Tempoh**: 2-3 jam | **Tahap**: Pertengahan
+
+---
+
+### [8: Aplikasi Chat Asli Windows 11](./samples/08/README.md)
+**Fokus**: Membina aplikasi chat asli moden dengan integrasi Foundry Local
+
+**Topik Utama**: Pembangunan Electron • Sistem Reka Bentuk Fluent • Integrasi asli Windows • Penstriman masa nyata • Reka bentuk antara muka chat
+
+**Contoh**: [Aplikasi Chat Windows 11](./samples/08/README.md)
+
+**Tempoh**: 3-4 jam | **Tahap**: Lanjutan
+
+---
+
+### [9: Orkestrasi Multi-Agen Lanjutan](./samples/09/README.md)
+**Fokus**: Koordinasi agen yang canggih, delegasi tugas khusus, dan aliran kerja AI kolaboratif
+
+**Topik Utama**: Koordinasi agen pintar • Corak panggilan fungsi • Komunikasi antara agen • Orkestrasi aliran kerja • Mekanisme jaminan kualiti
+
+**Contoh**: [Sistem Multi-Agen Lanjutan](./samples/09/README.md)
+
+**Tempoh**: 4-5 jam | **Tahap**: Pakar
+
+---
+
+### [10: Foundry Local sebagai Kerangka Alat](./samples/10/README.md)
+**Fokus**: Seni bina berorientasikan alat untuk mengintegrasikan Foundry Local ke dalam aplikasi dan kerangka kerja sedia ada
+
+**Topik Utama**: Integrasi LangChain • Fungsi Kernel Semantik • Kerangka kerja API REST • Alat CLI • Integrasi Jupyter • Corak pelancaran pengeluaran
+
+**Contoh**: [Kerangka Alat Foundry](./samples/10/README.md)
+
+**Tempoh**: 4-5 jam | **Tahap**: Pakar
 
 ## Prasyarat
 
@@ -144,35 +159,38 @@ Dengan melengkapkan modul ini, anda akan:
 
 ### Pengetahuan Prasyarat
 - Pemahaman asas tentang konsep AI/ML
-- Familiariti dengan baris arahan
+- Kebiasaan dengan baris arahan
 - Asas pengaturcaraan Python
-- Konsep REST API
+- Konsep API REST
 - Pengetahuan asas tentang prompt dan inferens model
 
 ## Garis Masa Modul
 
-**Anggaran Masa Keseluruhan**: 15-20 jam
+**Jumlah Masa Anggaran**: 30-38 jam
 
-| Sesi | Kawasan Fokus | Masa | Kerumitan |
-|------|---------------|------|-----------|
-|  1 | Persediaan & Asas | 2-3 jam | Pemula |
-|  2 | Penyelesaian AI | 2-3 jam | Pertengahan |
-|  3 | Sumber Terbuka | 2-3 jam | Pertengahan |
-|  4 | Model Lanjutan | 3-4 jam | Lanjutan |
-|  5 | Agen AI | 3-4 jam | Lanjutan |
-|  6 | Alat Perusahaan | 3-4 jam | Pakar |
+| Sesi | Kawasan Fokus | Contoh | Masa | Kerumitan |
+|------|---------------|--------|------|-----------|
+|  1 | Persediaan & Asas | 01, 02, 03 | 2-3 jam | Pemula |
+|  2 | Penyelesaian AI | 04 | 2-3 jam | Pertengahan |
+|  3 | Sumber Terbuka | 05 | 2-3 jam | Pertengahan |
+|  4 | Model Lanjutan | 06 | 3-4 jam | Lanjutan |
+|  5 | Agen AI | 05, 09 | 3-4 jam | Lanjutan |
+|  6 | Alat Perusahaan | 06, 10 | 3-4 jam | Pakar |
+|  7 | Integrasi API Langsung | 07 | 2-3 jam | Pertengahan |
+|  8 | Aplikasi Chat Windows 11 | 08 | 3-4 jam | Lanjutan |
+|  9 | Multi-Agen Lanjutan | 09 | 4-5 jam | Pakar |
+| 10 | Kerangka Alat | 10 | 4-5 jam | Pakar |
 
 ## Sumber Utama
 
-### Dokumentasi Utama
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local)
-- [Dokumentasi Azure AI Foundry Local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
-- [Siri Model Mondays](https://aka.ms/model-mondays)
+**Dokumentasi Rasmi:**
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Kod sumber dan contoh rasmi
+- [Dokumentasi Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Panduan lengkap pemasangan dan penggunaan
+- [Siri Model Mondays](https://aka.ms/model-mondays) - Sorotan model mingguan dan tutorial
 
-### Sumber Komuniti
-- [Perbincangan Komuniti Foundry Local](https://github.com/microsoft/Foundry-Local/discussions)
-- [Contoh Azure AI Foundry](https://github.com/Azure-Samples/ai-foundry)
-- [Komuniti Pembangun AI Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence)
+**Komuniti & Sokongan:**
+- [Perbincangan Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Q&A komuniti dan permintaan ciri
+- [Komuniti Pembangun AI Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Berita terkini dan amalan terbaik
 
 ## Hasil Pembelajaran
 
@@ -181,100 +199,269 @@ Setelah melengkapkan modul ini, anda akan dilengkapi untuk:
 ### Penguasaan Teknikal
 - **Melancarkan dan Mengurus**: Pemasangan Foundry Local di persekitaran pembangunan dan pengeluaran
 - **Integrasi Model**: Bekerja dengan keluarga model yang pelbagai dari Microsoft, Hugging Face, dan sumber komuniti
-- **Membina Aplikasi**: Cipta aplikasi AI yang sedia untuk pengeluaran dengan ciri dan pengoptimuman yang maju
+- **Membina Aplikasi**: Cipta aplikasi AI sedia pengeluaran dengan ciri dan pengoptimuman lanjutan
 - **Membangunkan Agen**: Laksanakan agen AI yang canggih dengan grounding, penaakulan, dan integrasi alat
 
 ### Pemahaman Strategik
-- **Keputusan Seni Bina**: Membuat pilihan yang bijak antara pelancaran tempatan vs awan
-- **Pengoptimuman Prestasi**: Mengoptimumkan prestasi inferens di pelbagai konfigurasi perkakasan
-- **Penskalaan Perusahaan**: Reka aplikasi yang menskalakan dari prototaip tempatan ke pelancaran perusahaan
-- **Privasi dan Keselamatan**: Laksanakan penyelesaian AI yang melindungi privasi dengan inferens tempatan
+- **Keputusan Seni Bina**: Buat pilihan yang bijak antara pelancaran tempatan vs awan
+- **Pengoptimuman Prestasi**: Optimumkan prestasi inferens di pelbagai konfigurasi perkakasan
+- **Penskalaan Perusahaan**: Reka aplikasi yang boleh diskalakan dari prototaip tempatan ke pelancaran perusahaan
+- **Privasi dan Keselamatan**: Laksanakan penyelesaian AI yang memelihara privasi dengan inferens tempatan
 
 ### Keupayaan Inovasi
-- **Prototip Pantas**: Cepat membina dan menguji konsep aplikasi AI
-- **Integrasi Komuniti**: Manfaatkan model sumber terbuka dan menyumbang kepada ekosistem
+- **Prototip Cepat**: Bina dan uji konsep aplikasi AI dengan pantas di semua 10 corak contoh
+- **Integrasi Komuniti**: Manfaatkan model sumber terbuka dan sumbang kepada ekosistem
 - **Corak Lanjutan**: Laksanakan corak AI terkini termasuk RAG, agen, dan integrasi alat
+- **Penguasaan Kerangka**: Integrasi tahap pakar dengan LangChain, Kernel Semantik, Chainlit, dan Electron
+- **Pelancaran Pengeluaran**: Melancarkan penyelesaian AI yang boleh diskalakan dari prototaip tempatan ke sistem perusahaan
 - **Pembangunan Sedia Masa Depan**: Bina aplikasi yang sedia untuk teknologi dan corak AI yang muncul
 
 ## Memulakan
 
-1. **Sediakan Persekitaran Anda**: Pastikan Windows 11 dengan spesifikasi perkakasan yang disyorkan
-2. **Pasang Prasyarat**: Sediakan alat pembangunan dan kebergantungan
-3. **Mulakan Dengan Sesi 1**: Mulakan dengan pemasangan dan persediaan asas Foundry Local
-4. **Teruskan Secara Berurutan**: Lengkapkan sesi mengikut urutan untuk perkembangan pembelajaran yang optimum
-5. **Berlatih Secara Berterusan**: Terapkan konsep melalui latihan praktikal dan projek
+1. **Persediaan Persekitaran**: Pastikan Windows 11 dengan perkakasan yang disyorkan (lihat Prasyarat)
+2. **Pasang Foundry Local**: Ikuti Sesi 1 untuk pemasangan dan konfigurasi lengkap
+3. **Jalankan Contoh 01**: Mulakan dengan integrasi API REST asas untuk mengesahkan persediaan
+4. **Teruskan Melalui Contoh**: Lengkapkan contoh 01-10 untuk penguasaan menyeluruh
 
 ## Metrik Kejayaan
 
-Jejak kemajuan anda melalui modul:
+Jejak kemajuan anda melalui semua 10 contoh menyeluruh:
 
+### Tahap Asas (Contoh 01-03)
 - [ ] Berjaya memasang dan mengkonfigurasi Foundry Local
+- [ ] Lengkapkan integrasi API REST (Contoh 01)
+- [ ] Laksanakan keserasian OpenAI SDK (Contoh 02)
+- [ ] Lakukan penemuan dan penanda aras model (Contoh 03)
+
+### Tahap Aplikasi (Contoh 04-06)
 - [ ] Melancarkan dan menjalankan sekurang-kurangnya 4 keluarga model yang berbeza
-- [ ] Membina penyelesaian AI lengkap dengan integrasi data
-- [ ] Mengintegrasi sekurang-kurangnya 2 model sumber terbuka
-- [ ] Mencipta aplikasi chat RAG yang berfungsi
-- [ ] Membangunkan dan melancarkan agen AI
-- [ ] Melaksanakan seni bina model-sebagai-alat
+- [ ] Bina aplikasi chat RAG yang berfungsi (Contoh 04)
+- [ ] Cipta sistem orkestrasi multi-agen (Contoh 05)
+- [ ] Laksanakan penghalaan model pintar (Contoh 06)
 
-## Permulaan Cepat untuk Contoh
+### Tahap Integrasi Lanjutan (Contoh 07-10)
+- [ ] Bina klien API sedia pengeluaran (Contoh 07)
+- [ ] Bangunkan aplikasi chat asli Windows 11 (Contoh 08)
+- [ ] Laksanakan sistem multi-agen lanjutan (Contoh 09)
+- [ ] Cipta kerangka alat yang komprehensif (Contoh 10)
 
-### 1) Persediaan persekitaran (Windows cmd.exe)
-```cmd
+### Petunjuk Penguasaan
+- [ ] Berjaya menjalankan semua 10 contoh tanpa ralat
+- [ ] Sesuaikan sekurang-kurangnya 3 contoh untuk kes penggunaan tertentu
+- [ ] Melancarkan 2+ contoh dalam persekitaran seperti pengeluaran
+- [ ] Menyumbang penambahbaikan atau sambungan kepada kod contoh
+- [ ] Mengintegrasikan corak Foundry Local ke dalam projek peribadi/profesional
+
+## Panduan Permulaan Cepat - Semua 10 Contoh
+
+### Persediaan Persekitaran (Diperlukan untuk Semua Contoh)
+
+```powershell
+# 1. Clone and navigate to Module08
 cd Module08
+
+# 2. Create Python virtual environment
 py -m venv .venv
 .\.venv\Scripts\activate
+
+# 3. Install base dependencies
 pip install -r requirements.txt
+
+# 4. Install Foundry Local (if not already installed)
+winget install Microsoft.FoundryLocal
+
+# 5. Verify Foundry Local installation
+foundry --version
+foundry model list
 ```
 
-### 2) Mulakan model tempatan (terminal baru)
-```cmd
-foundry model list
+### Contoh Asas Teras (01-06)
+
+**Contoh 01: REST Chat Quickstart**
+```powershell
+# Start Foundry Local service
+foundry model run phi-4-mini
+
+# Run REST chat demo
+python samples/01/chat_quickstart.py
+```
+
+**Contoh 02: Integrasi OpenAI SDK**
+```powershell
+# Ensure model is running
+foundry status
+
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**Contoh 03: Penemuan & Penanda Aras Model**
+```powershell
+# Run comprehensive model testing
+samples/03/list_and_bench.cmd
+
+# Or run individual components
+foundry model list --available
+foundry model download qwen2.5-0.5b
+foundry model benchmark phi-4-mini
+```
+
+**Contoh 04: Aplikasi Chainlit RAG**
+```powershell
+# Install Chainlit dependencies
+pip install chainlit langchain chromadb
+
+# Start RAG chat application
+chainlit run samples/04/app.py -w
+# Opens browser at http://localhost:8000
+```
+
+**Contoh 05: Orkestrasi Multi-Agen**
+```powershell
+# Run agent coordinator demo
+python -m samples.05.agents.coordinator
+
+# Run specific agent examples
+python samples/05/examples/specialists_demo.py
+```
+
+**Contoh 06: Router Model-as-Tools**
+```powershell
+# Configure environment
+set BASE_URL=http://localhost:8000
+set GENERAL_MODEL=phi-4-mini
+set CODE_MODEL=qwen2.5-7b-instruct
+
+# Run intelligent router
+python samples/06/router.py "Analyze this Python code for performance issues"
+```
+
+### Contoh Integrasi Lanjutan (07-10)
+
+**Contoh 07: Klien API Langsung**
+```powershell
+# Navigate to sample directory
+cd samples/07
+
+# Install additional dependencies
+pip install -r requirements.txt
+
+# Run basic API examples
+python examples/basic_usage.py
+
+# Try streaming responses
+python examples/streaming.py
+
+# Test production patterns
+python examples/production.py
+```
+
+**Contoh 08: Aplikasi Chat Windows 11**
+```powershell
+# Navigate to sample directory
+cd samples/08
+
+# Install Node.js dependencies
+npm install
+
+# Start Electron application
+npm start
+
+# Or build for production
+npm run build
+```
+
+**Contoh 09: Sistem Multi-Agen Lanjutan**
+```powershell
+# Navigate to sample directory
+cd samples/09
+
+# Install agent system dependencies
+pip install -r requirements.txt
+
+# Run basic coordination example
+python examples/basic_coordination.py
+
+# Try complex workflow
+python examples/complex_workflow.py
+
+# Interactive agent demo
+python examples/interactive_demo.py
+```
+
+**Contoh 10: Kerangka Alat Foundry**
+```powershell
+# Navigate to sample directory
+cd samples/10
+
+# Install framework dependencies
+pip install -r requirements.txt
+
+# Run basic tools demo
+python examples/basic_tools.py
+
+# Start REST API server
+python examples/rest_api_server.py
+# API available at http://localhost:8080
+
+# Try CLI application
+python examples/cli_application.py --help
+
+# Launch Jupyter notebook
+jupyter notebook examples/jupyter_notebook.ipynb
+
+# Test LangChain integration
+python examples/langchain_demo.py
+```
+
+### Penyelesaian Masalah Isu Biasa
+
+**Ralat Sambungan Foundry Local**
+```powershell
+# Check service status
+foundry status
+
+# Restart if needed
+foundry restart
+
+# Verify endpoint accessibility
+curl http://localhost:5273/v1/models
+```
+
+**Isu Pemuatan Model**
+```powershell
+# Check available models
+foundry model list --cached
+
+# Download missing models
+foundry model download phi-4-mini
+foundry model download qwen2.5-0.5b
+
+# Force reload if needed
+foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-### 3) Jalankan demo Chainlit (Sesi 4)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-chainlit run samples\04\app.py -w
+**Isu Kebergantungan**
+```powershell
+# Upgrade pip and reinstall
+python -m pip install --upgrade pip
+pip install -r requirements.txt --force-reinstall
+
+# For Node.js samples
+npm cache clean --force
+npm install
 ```
 
-### 4) Jalankan penyelaras multi-agen (Sesi 5)
-```cmd
-cd Module08
-.\.venv\Scripts\activate
-python -m samples.05.agents.coordinator
-```
+## Ringkasan
+Modul ini mewakili kemajuan terkini dalam pembangunan AI tepi, menggabungkan alat Microsoft bertaraf perusahaan dengan fleksibiliti dan inovasi ekosistem sumber terbuka. Dengan menguasai Foundry Local melalui kesemua 10 sampel yang komprehensif, anda akan berada di barisan hadapan dalam pembangunan aplikasi AI.
 
-Jika anda melihat ralat sambungan, sahkan Foundry Local:
-```cmd
-curl http://localhost:8000/v1/models
-```
+**Laluan Pembelajaran Lengkap:**
+- **Asas** (Sampel 01-03): Integrasi API dan pengurusan model
+- **Aplikasi** (Sampel 04-06): RAG, agen, dan penghalaan pintar
+- **Lanjutan** (Sampel 07-10): Kerangka kerja pengeluaran dan integrasi perusahaan
 
-### Konfigurasi router (Sesi 6)
-Router melakukan pemeriksaan kesihatan pantas dan menyokong konfigurasi berdasarkan persekitaran:
-```cmd
-set BASE_URL=http://localhost:8000
-set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
-REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"}}
-python samples\06\router.py "Pick the best model for code refactoring"
-```
-
-Modul ini mewakili kemajuan terkini dalam pembangunan AI di tepi, menggabungkan alat Microsoft yang sedia perusahaan dengan fleksibiliti dan inovasi ekosistem sumber terbuka. Dengan menguasai Foundry Local, anda akan berada di barisan hadapan pembangunan aplikasi AI.
-
-Untuk Azure OpenAI (Sesi 2), lihat README contoh untuk pembolehubah persekitaran yang diperlukan dan tetapan versi API.
-
-## Gambaran Umum Contoh
-
-- `samples/01`: Chat REST cepat ke Foundry Local (`chat_quickstart.py`).
-- `samples/02`: Integrasi SDK OpenAI (`sdk_quickstart.py`).
-- `samples/03`: Penemuan model + bench cepat (`list_and_bench.cmd`).
-- `samples/04`: Demo Chainlit RAG (`app.py`).
-- `samples/05`: Orkestrasi multi-agen (`python -m samples.05.agents.coordinator`).
-- `samples/06`: Router model-sebagai-alat (`python samples\06\router.py`).
+Untuk integrasi Azure OpenAI (Sesi 2), sila rujuk fail README sampel individu untuk pembolehubah persekitaran yang diperlukan dan tetapan versi API.
 
 ---
 
