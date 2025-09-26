@@ -82,8 +82,8 @@ Foundry Local enables Windows and Mac developers to build Retrieval Augmented Ge
 RAG, or Retrieval Augmented Generation, is just a fancy way of saying "look up some stuff and put it into the prompt". This local implementation ensures data privacy while providing intelligent responses grounded in custom knowledge bases. The approach is particularly valuable for enterprise scenarios requiring data sovereignty and offline operation capabilities.
 
 **Learn More**: 
-[Foundry Local](./foundrylocal.md)
-[Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+- [Foundry Local](./foundrylocal.md)
+- [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Windows Foundry Local
 
