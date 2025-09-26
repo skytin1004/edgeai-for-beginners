@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "cb6eadc312d5658a0cd71c0085b43742",
-  "translation_date": "2025-09-22T19:11:47+00:00",
+  "original_hash": "e9e31a2b5ff0f6a682a258fa859a8ff5",
+  "translation_date": "2025-09-26T19:35:55+00:00",
   "source_file": "Module07/README.md",
   "language_code": "sv"
 }
@@ -11,9 +11,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 Edge AI kombinerar artificiell intelligens med edge computing, vilket möjliggör intelligent bearbetning direkt på enheter utan att vara beroende av molnanslutning. Detta kapitel utforskar fem olika EdgeAI-implementeringar på olika plattformar och ramverk, och visar mångsidigheten och kraften i att köra AI-modeller vid kanten.
 
-## 1. EdgeAI på NVIDIA Jetson Orin Nano
+## 1. EdgeAI med NVIDIA Jetson Orin Nano
 
-NVIDIA Jetson Orin Nano representerar ett genombrott inom tillgänglig edge AI-datoranvändning, med upp till 67 TOPS AI-prestanda i ett kompakt format lika stort som ett kreditkort. Denna kraftfulla edge AI-plattform demokratiserar utvecklingen av generativ AI för hobbyister, studenter och professionella utvecklare.
+NVIDIA Jetson Orin Nano representerar ett genombrott inom tillgänglig edge AI-datoranvändning och levererar upp till 67 TOPS AI-prestanda i ett kompakt format, lika stort som ett kreditkort. Denna kraftfulla edge AI-plattform demokratiserar utvecklingen av generativ AI för hobbyister, studenter och professionella utvecklare.
 
 ### Viktiga funktioner
 - Levererar upp till 67 TOPS AI-prestanda—en 1,7X förbättring jämfört med föregångaren
@@ -22,13 +22,13 @@ NVIDIA Jetson Orin Nano representerar ett genombrott inom tillgänglig edge AI-d
 - Prissatt till endast $249, vilket gör det till den mest prisvärda och tillgängliga plattformen för utvecklare, studenter och skapare
 
 ### Användningsområden
-Jetson Orin Nano utmärker sig vid körning av moderna generativa AI-modeller, inklusive vision transformers, stora språkmodeller och vision-språkmodeller. Den är specifikt designad för GenAI-användningsfall och gör det möjligt att köra flera LLM:er på en enhet som får plats i handen. Populära användningsområden inkluderar AI-drivna robotar, smarta drönare, intelligenta kameror och autonoma edge-enheter.
+Jetson Orin Nano utmärker sig vid körning av moderna generativa AI-modeller, inklusive vision transformers, stora språkmodeller och vision-språkmodeller. Den är specifikt designad för GenAI-användningsområden och gör det möjligt att köra flera LLM:er på en handhållen enhet. Populära användningsområden inkluderar AI-drivna robotar, smarta drönare, intelligenta kameror och autonoma edge-enheter.
 
 **Läs mer**: [NVIDIA:s Jetson Orin Nano SuperComputer: Nästa stora grej inom EdgeAI](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
 ## 2. EdgeAI i mobila applikationer med .NET MAUI och ONNX Runtime GenAI
 
-Denna lösning visar hur man integrerar Generativ AI och stora språkmodeller (LLM:er) i plattformsoberoende mobilapplikationer med hjälp av .NET MAUI (Multi-platform App UI) och ONNX Runtime GenAI. Detta tillvägagångssätt gör det möjligt för .NET-utvecklare att bygga avancerade AI-drivna mobilapplikationer som körs nativt på Android- och iOS-enheter.
+Denna lösning visar hur man integrerar Generativ AI och stora språkmodeller (LLM:er) i plattformsoberoende mobila applikationer med hjälp av .NET MAUI (Multi-platform App UI) och ONNX Runtime GenAI. Detta tillvägagångssätt gör det möjligt för .NET-utvecklare att bygga avancerade AI-drivna mobila applikationer som körs nativt på Android- och iOS-enheter.
 
 ### Viktiga funktioner
 - Byggd på .NET MAUI-ramverket, vilket ger en enda kodbas för både Android- och iOS-applikationer
@@ -38,10 +38,10 @@ Denna lösning visar hur man integrerar Generativ AI och stora språkmodeller (L
 - Implementerar hela generativa AI-loopen inklusive för- och efterbearbetning, inferens, logitsbearbetning, sökning och sampling samt KV-cachehantering
 
 ### Fördelar för utveckling
-.NET MAUI-ansatsen gör det möjligt för utvecklare att använda sina befintliga C#- och .NET-kunskaper samtidigt som de bygger plattformsoberoende AI-applikationer. ONNX Runtime GenAI-ramverket stöder flera modellarkitekturer, inklusive Llama, Mistral, Phi, Gemma och många fler. Optimerade ARM64-kärnor accelererar INT4-kvantiserad matrismultiplikation, vilket säkerställer effektiv prestanda på mobil hårdvara samtidigt som den välbekanta .NET-utvecklingsupplevelsen bibehålls.
+Med .NET MAUI kan utvecklare använda sina befintliga C#- och .NET-kunskaper för att bygga plattformsoberoende AI-applikationer. ONNX Runtime GenAI-ramverket stöder flera modellarkitekturer, inklusive Llama, Mistral, Phi, Gemma och många fler. Optimerade ARM64-kärnor accelererar INT4-kvantiserad matrismultiplikation, vilket säkerställer effektiv prestanda på mobil hårdvara samtidigt som den välbekanta .NET-utvecklingsupplevelsen bibehålls.
 
 ### Användningsområden
-Denna lösning är idealisk för utvecklare som vill bygga AI-drivna mobilapplikationer med .NET-teknologier, inklusive intelligenta chatbotar, bildigenkänningsappar, språköversättningsverktyg och personliga rekommendationssystem som körs helt på enheten för förbättrad integritet och offlinekapacitet.
+Denna lösning är idealisk för utvecklare som vill bygga AI-drivna mobila applikationer med .NET-teknologier, inklusive intelligenta chatbotar, bildigenkänningsappar, språköversättningsverktyg och personliga rekommendationssystem som körs helt på enheten för förbättrad integritet och offlinekapacitet.
 
 **Läs mer**: [.NET MAUI ONNX Runtime GenAI Exempel](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
@@ -60,9 +60,9 @@ Azure EdgeAI-implementeringen utmärker sig i scenarier som kräver AI-distribut
 
 **Läs mer**: [Azure EdgeAI SLM Engine](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
-## 4. EdgeAI med Windows ML
+## [4. EdgeAI med Windows ML](./windowdeveloper.md)
 
-Windows ML representerar Microsofts avancerade runtime optimerad för effektiv modellinferens på enheten och förenklad distribution, och fungerar som grunden för Windows AI Foundry. Denna plattform gör det möjligt för utvecklare att skapa AI-drivna Windows-applikationer som utnyttjar hela spektrumet av PC-hårdvara.
+Windows ML är Microsofts avancerade runtime som är optimerad för effektiv modellinferens på enheten och förenklad distribution, och fungerar som grunden för Windows AI Foundry. Denna plattform gör det möjligt för utvecklare att skapa AI-drivna Windows-applikationer som utnyttjar hela spektrumet av PC-hårdvara.
 
 ### Plattformens kapabiliteter
 - Fungerar på alla Windows 11-datorer som kör version 24H2 (build 26100) eller senare
@@ -75,11 +75,11 @@ Windows ML abstraherar hårdvaran och exekveringsleverantörerna, så att du kan
 
 **Läs mer**: 
 - [Windows ML Översikt](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
-- [Windows EdgeAI Utvecklingsguide](../windowdeveloper.md) - Omfattande guide för Windows Edge AI-utveckling
+- [Windows EdgeAI Utvecklingsguide](./windowdeveloper.md) - Omfattande guide för Windows Edge AI-utveckling
 
-## 5. EdgeAI med Foundry Local-applikationer
+## [5. EdgeAI med Foundry Local Applications](./foundrylocal.md)
 
-Foundry Local gör det möjligt för utvecklare att bygga Retrieval Augmented Generation (RAG)-applikationer med lokala resurser i .NET, och kombinerar lokala språkmodeller med semantiska sökfunktioner. Detta tillvägagångssätt erbjuder integritetsfokuserade AI-lösningar som fungerar helt på lokal infrastruktur.
+Foundry Local gör det möjligt för Windows- och Mac-utvecklare att bygga Retrieval Augmented Generation (RAG)-applikationer med lokala resurser i .NET, och kombinerar lokala språkmodeller med semantiska sökfunktioner. Detta tillvägagångssätt erbjuder integritetsfokuserade AI-lösningar som fungerar helt på lokal infrastruktur.
 
 ### Teknisk arkitektur
 - Kombinerar Phi-språkmodellen, lokala embeddings och Semantic Kernel för att skapa ett RAG-scenario
@@ -88,9 +88,11 @@ Foundry Local gör det möjligt för utvecklare att bygga Retrieval Augmented Ge
 - Stöd för lokala vektordatabaser inklusive SQLite och Qdrant
 
 ### Implementeringsfördelar
-RAG, eller Retrieval Augmented Generation, är bara ett snyggt sätt att säga "sök upp något och lägg till det i prompten". Denna lokala implementering säkerställer dataintegritet samtidigt som den ger intelligenta svar baserade på anpassade kunskapsbaser. Tillvägagångssättet är särskilt värdefullt för företagsmiljöer som kräver datasuveränitet och offlinekapacitet.
+RAG, eller Retrieval Augmented Generation, är bara ett snyggt sätt att säga "sök upp något och lägg till det i prompten". Denna lokala implementering säkerställer dataintegritet samtidigt som den erbjuder intelligenta svar baserade på anpassade kunskapsbaser. Tillvägagångssättet är särskilt värdefullt för företagsmiljöer som kräver datasuveränitet och offlinekapacitet.
 
-**Läs mer**: [Foundry Local RAG Exempel](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+**Läs mer**: 
+- [Foundry Local](./foundrylocal.md)
+- [Foundry Local RAG Exempel](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Windows Foundry Local
 
@@ -135,11 +137,11 @@ Tips:
 För utvecklare som specifikt riktar sig mot Windows-plattformen har vi skapat en omfattande guide som täcker hela Windows EdgeAI-ekosystemet. Denna resurs ger detaljerad information om Windows AI Foundry, inklusive API:er, verktyg och bästa praxis för EdgeAI-utveckling på Windows.
 
 ### Windows AI Foundry Plattform
-Windows AI Foundry-plattformen erbjuder en omfattande uppsättning verktyg och API:er specifikt designade för Edge AI-utveckling på Windows-enheter. Detta inkluderar specialiserat stöd för NPU-accelererad hårdvara, Windows ML-integrering och plattformsspecifika optimeringstekniker.
+Windows AI Foundry-plattformen erbjuder en omfattande uppsättning verktyg och API:er som är specifikt designade för Edge AI-utveckling på Windows-enheter. Detta inkluderar specialiserat stöd för NPU-accelererad hårdvara, Windows ML-integrering och plattformsspecifika optimeringstekniker.
 
 **Omfattande guide**: [Windows EdgeAI Utvecklingsguide](../windowdeveloper.md)
 
-Denna guide täcker:
+Guiden täcker:
 - Översikt och komponenter för Windows AI Foundry-plattformen
 - Phi Silica API för effektiv inferens på NPU-hårdvara
 - Datorvisions-API:er för bildbearbetning och OCR
@@ -148,15 +150,15 @@ Denna guide täcker:
 - Strategier för hårdvaruoptimering för Windows-enheter
 - Praktiska implementeringsexempel och bästa praxis
 
-### AI Toolkit för Edge AI-utveckling
-För utvecklare som använder Visual Studio Code erbjuder AI Toolkit-tillägget en omfattande utvecklingsmiljö specifikt designad för att bygga, testa och distribuera Edge AI-applikationer. Detta verktyg förenklar hela Edge AI-utvecklingsarbetsflödet inom VS Code.
+### [AI Toolkit för Edge AI-utveckling](./aitoolkit.md)
+För utvecklare som använder Visual Studio Code erbjuder AI Toolkit-tillägget en omfattande utvecklingsmiljö som är specifikt designad för att bygga, testa och distribuera Edge AI-applikationer. Detta verktyg förenklar hela Edge AI-utvecklingsarbetsflödet inom VS Code.
 
-**Utvecklingsguide**: [AI Toolkit för Edge AI-utveckling](../aitoolkit.md)
+**Utvecklingsguide**: [AI Toolkit för Edge AI-utveckling](./aitoolkit.md)
 
 AI Toolkit-guiden täcker:
 - Modellupptäckt och urval för edge-distribution
 - Lokala test- och optimeringsarbetsflöden
-- ONNX och Ollama-integrering för edge-modeller
+- ONNX- och Ollama-integrering för edge-modeller
 - Modellkonvertering och kvantiseringstekniker
 - Agentutveckling för edge-scenarier
 - Prestandautvärdering och övervakning
@@ -164,9 +166,9 @@ AI Toolkit-guiden täcker:
 
 ## Slutsats
 
-Dessa fem EdgeAI-implementeringar visar mognaden och mångfalden av edge AI-lösningar som finns tillgängliga idag. Från hårdvaruaccelererade edge-enheter som Jetson Orin Nano till mjukvaruramverk som ONNX Runtime GenAI och Windows ML, har utvecklare oöverträffade alternativ för att distribuera intelligenta applikationer vid kanten.
+Dessa fem EdgeAI-implementeringar visar mognaden och mångfalden av edge AI-lösningar som finns tillgängliga idag. Från hårdvaruaccelererade edge-enheter som Jetson Orin Nano till mjukvaruramverk som ONNX Runtime GenAI och Windows ML, har utvecklare oöverträffade möjligheter att distribuera intelligenta applikationer vid kanten.
 
-Den gemensamma nämnaren för alla dessa plattformar är demokratiseringen av AI-kapaciteter, vilket gör sofistikerad maskininlärning tillgänglig för utvecklare med olika färdighetsnivåer och användningsområden. Oavsett om du bygger mobilapplikationer, skrivbordsprogram eller inbyggda system, erbjuder dessa EdgeAI-lösningar grunden för nästa generation av intelligenta applikationer som fungerar effektivt och privat vid kanten.
+Den gemensamma nämnaren för alla dessa plattformar är demokratiseringen av AI-kapaciteter, vilket gör avancerad maskininlärning tillgänglig för utvecklare med olika kompetensnivåer och användningsområden. Oavsett om du bygger mobila applikationer, skrivbordsprogram eller inbyggda system, erbjuder dessa EdgeAI-lösningar grunden för nästa generation av intelligenta applikationer som fungerar effektivt och privat vid kanten.
 
 Varje plattform erbjuder unika fördelar: Jetson Orin Nano för hårdvaruaccelererad edge computing, ONNX Runtime GenAI för plattformsoberoende mobilutveckling, Azure EdgeAI för företagsintegration mellan moln och edge, Windows ML för Windows-nativa applikationer och Foundry Local för integritetsfokuserade RAG-implementeringar. Tillsammans representerar de ett omfattande ekosystem för EdgeAI-utveckling.
 

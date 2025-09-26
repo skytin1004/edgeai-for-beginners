@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "cb6eadc312d5658a0cd71c0085b43742",
-  "translation_date": "2025-09-22T22:27:59+00:00",
+  "original_hash": "e9e31a2b5ff0f6a682a258fa859a8ff5",
+  "translation_date": "2025-09-26T19:40:02+00:00",
   "source_file": "Module07/README.md",
   "language_code": "ms"
 }
 -->
 # Bab 07: Contoh EdgeAI
 
-Edge AI menggabungkan kecerdasan buatan dengan pengkomputeran tepi, membolehkan pemprosesan pintar terus pada peranti tanpa bergantung kepada sambungan awan. Bab ini meneroka lima pelaksanaan EdgeAI yang berbeza merentasi platform dan rangka kerja yang berbeza, menunjukkan kepelbagaian dan kekuatan menjalankan model AI di tepi.
+Edge AI menggabungkan kecerdasan buatan dengan pengkomputeran tepi, membolehkan pemprosesan pintar terus pada peranti tanpa bergantung kepada sambungan awan. Bab ini meneroka lima pelaksanaan EdgeAI yang berbeza merentasi pelbagai platform dan rangka kerja, menunjukkan kepelbagaian dan kekuatan menjalankan model AI di tepi.
 
 ## 1. EdgeAI dalam NVIDIA Jetson Orin Nano
 
@@ -47,27 +47,27 @@ Penyelesaian ini sesuai untuk pembangun yang ingin membina aplikasi mudah alih b
 
 ## 3. EdgeAI dalam Azure dengan Enjin Model Bahasa Kecil
 
-Penyelesaian EdgeAI berasaskan Azure Microsoft memberi tumpuan kepada penggunaan Model Bahasa Kecil (SLM) secara cekap dalam persekitaran hibrid awan-tepi. Pendekatan ini merapatkan jurang antara perkhidmatan AI berskala awan dan keperluan penggunaan tepi.
+Penyelesaian EdgeAI berasaskan Azure oleh Microsoft memberi tumpuan kepada penggunaan Model Bahasa Kecil (SLM) secara cekap dalam persekitaran hibrid awan-tepi. Pendekatan ini merapatkan jurang antara perkhidmatan AI berskala awan dan keperluan penggunaan tepi.
 
 ### Kelebihan Seni Bina
 - Integrasi lancar dengan perkhidmatan AI Azure
 - Menjalankan SLM/LLM dan model multi-modal pada peranti dan di awan dengan ONNX Runtime
 - Dioptimumkan untuk penggunaan berskala perusahaan
-- Sokongan untuk kemas kini dan pengurusan model berterusan
+- Sokongan untuk kemas kini dan pengurusan model yang berterusan
 
 ### Kes Penggunaan
-Pelaksanaan Azure EdgeAI cemerlang dalam senario yang memerlukan penggunaan AI berskala perusahaan dengan keupayaan pengurusan awan. Ini termasuk pemprosesan dokumen pintar, analitik masa nyata, dan aliran kerja AI hibrid yang memanfaatkan sumber pengkomputeran awan dan tepi.
+Pelaksanaan EdgeAI Azure cemerlang dalam senario yang memerlukan penggunaan AI berskala perusahaan dengan keupayaan pengurusan awan. Ini termasuk pemprosesan dokumen pintar, analitik masa nyata, dan aliran kerja AI hibrid yang memanfaatkan sumber pengkomputeran awan dan tepi.
 
 **Ketahui Lebih Lanjut**: [Azure EdgeAI SLM Engine](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
-## 4. EdgeAI dengan Windows ML
+## [4. EdgeAI dengan Windows ML](./windowdeveloper.md)
 
-Windows ML mewakili runtime terkini Microsoft yang dioptimumkan untuk inferens model pada peranti dan penggunaan yang dipermudahkan, berfungsi sebagai asas Windows AI Foundry. Platform ini membolehkan pembangun mencipta aplikasi Windows berkuasa AI yang memanfaatkan sepenuhnya perkakasan PC.
+Windows ML mewakili runtime terkini Microsoft yang dioptimumkan untuk inferens model pada peranti dan penyebaran yang dipermudahkan, berfungsi sebagai asas Windows AI Foundry. Platform ini membolehkan pembangun mencipta aplikasi Windows berkuasa AI yang memanfaatkan sepenuhnya perkakasan PC.
 
 ### Keupayaan Platform
-- Berfungsi pada semua PC Windows 11 yang menjalankan versi 24H2 (bina 26100) atau lebih tinggi
+- Berfungsi pada semua PC Windows 11 yang menjalankan versi 24H2 (binaan 26100) atau lebih tinggi
 - Berfungsi pada semua perkakasan PC x64 dan ARM64, termasuk PC yang tidak mempunyai NPU atau GPU
-- Membolehkan pembangun membawa model mereka sendiri dan menggunakannya dengan cekap merentasi ekosistem rakan kongsi silikon termasuk AMD, Intel, NVIDIA, dan Qualcomm yang merangkumi CPU, GPU, NPU
+- Membolehkan pembangun membawa model mereka sendiri dan menyebarkannya dengan cekap merentasi ekosistem rakan kongsi silikon termasuk AMD, Intel, NVIDIA, dan Qualcomm yang merangkumi CPU, GPU, NPU
 - Dengan memanfaatkan API infrastruktur, pembangun tidak lagi perlu mencipta pelbagai binaan aplikasi mereka untuk menyasarkan silikon yang berbeza
 
 ### Faedah Pembangun
@@ -75,11 +75,11 @@ Windows ML mengabstrakkan perkakasan dan penyedia pelaksanaan, jadi anda boleh m
 
 **Ketahui Lebih Lanjut**: 
 - [Windows ML Overview](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
-- [Windows EdgeAI Development Guide](../windowdeveloper.md) - Panduan komprehensif untuk pembangunan Windows Edge AI
+- [Windows EdgeAI Development Guide](./windowdeveloper.md) - Panduan komprehensif untuk pembangunan Windows Edge AI
 
-## 5. EdgeAI dengan Aplikasi Tempatan Foundry
+## [5. EdgeAI dengan Aplikasi Tempatan Foundry](./foundrylocal.md)
 
-Foundry Local membolehkan pembangun membina aplikasi Retrieval Augmented Generation (RAG) menggunakan sumber tempatan dalam .NET, menggabungkan model bahasa tempatan dengan keupayaan carian semantik. Pendekatan ini menyediakan penyelesaian AI yang berfokuskan privasi yang beroperasi sepenuhnya pada infrastruktur tempatan.
+Foundry Local membolehkan pembangun Windows dan Mac membina aplikasi Retrieval Augmented Generation (RAG) menggunakan sumber tempatan dalam .NET, menggabungkan model bahasa tempatan dengan keupayaan carian semantik. Pendekatan ini menyediakan penyelesaian AI yang berfokuskan privasi yang beroperasi sepenuhnya pada infrastruktur tempatan.
 
 ### Seni Bina Teknikal
 - Menggabungkan model bahasa Phi, Embedding Tempatan, dan Kernel Semantik untuk mencipta senario RAG
@@ -88,9 +88,11 @@ Foundry Local membolehkan pembangun membina aplikasi Retrieval Augmented Generat
 - Sokongan untuk pangkalan data vektor tempatan termasuk SQLite dan Qdrant
 
 ### Faedah Pelaksanaan
-RAG, atau Retrieval Augmented Generation, hanyalah cara canggih untuk mengatakan "cari beberapa maklumat dan masukkan ke dalam prompt". Pelaksanaan tempatan ini memastikan privasi data sambil memberikan respons pintar yang berasaskan pangkalan pengetahuan tersuai. Pendekatan ini amat bernilai untuk senario perusahaan yang memerlukan kedaulatan data dan keupayaan operasi luar talian.
+RAG, atau Retrieval Augmented Generation, hanyalah cara untuk "mencari maklumat dan memasukkannya ke dalam prompt". Pelaksanaan tempatan ini memastikan privasi data sambil menyediakan respons pintar yang berasaskan pangkalan pengetahuan tersuai. Pendekatan ini amat bernilai untuk senario perusahaan yang memerlukan kedaulatan data dan keupayaan operasi luar talian.
 
-**Ketahui Lebih Lanjut**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+**Ketahui Lebih Lanjut**: 
+- [Foundry Local](./foundrylocal.md)
+- [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Windows Foundry Local
 
@@ -140,33 +142,33 @@ Platform Windows AI Foundry menyediakan suite alat dan API yang komprehensif yan
 **Panduan Komprehensif**: [Windows EdgeAI Development Guide](../windowdeveloper.md)
 
 Panduan ini merangkumi:
-- Gambaran keseluruhan platform Windows AI Foundry dan komponennya
-- API Phi Silica untuk inferens yang cekap pada perkakasan NPU
+- Gambaran keseluruhan dan komponen platform Windows AI Foundry
+- API Phi Silica untuk inferens cekap pada perkakasan NPU
 - API Penglihatan Komputer untuk pemprosesan imej dan OCR
 - Integrasi dan pengoptimuman runtime Windows ML
 - CLI Foundry Local untuk pembangunan dan ujian tempatan
 - Strategi pengoptimuman perkakasan untuk peranti Windows
 - Contoh pelaksanaan praktikal dan amalan terbaik
 
-### Toolkit AI untuk Pembangunan Edge AI
-Untuk pembangun yang menggunakan Visual Studio Code, sambungan AI Toolkit menyediakan persekitaran pembangunan yang komprehensif yang direka khusus untuk membina, menguji, dan menggunakan aplikasi Edge AI. Toolkit ini mempermudahkan keseluruhan aliran kerja pembangunan Edge AI dalam VS Code.
+### [Toolkit AI untuk Pembangunan Edge AI](./aitoolkit.md)
+Untuk pembangun yang menggunakan Visual Studio Code, sambungan AI Toolkit menyediakan persekitaran pembangunan yang komprehensif yang direka khusus untuk membina, menguji, dan menyebarkan aplikasi Edge AI. Toolkit ini mempermudahkan keseluruhan aliran kerja pembangunan Edge AI dalam VS Code.
 
-**Panduan Pembangunan**: [AI Toolkit for Edge AI Development](../aitoolkit.md)
+**Panduan Pembangunan**: [AI Toolkit untuk Pembangunan Edge AI](./aitoolkit.md)
 
 Panduan AI Toolkit merangkumi:
-- Penemuan dan pemilihan model untuk penggunaan tepi
+- Penemuan dan pemilihan model untuk penyebaran tepi
 - Aliran kerja ujian dan pengoptimuman tempatan
 - Integrasi ONNX dan Ollama untuk model tepi
-- Teknik penukaran dan pengkuantitian model
+- Teknik penukaran dan kuantisasi model
 - Pembangunan agen untuk senario tepi
 - Penilaian prestasi dan pemantauan
-- Persediaan penggunaan dan amalan terbaik
+- Persediaan penyebaran dan amalan terbaik
 
 ## Kesimpulan
 
-Lima pelaksanaan EdgeAI ini menunjukkan kematangan dan kepelbagaian penyelesaian AI tepi yang tersedia hari ini. Daripada peranti tepi yang dipercepatkan perkakasan seperti Jetson Orin Nano kepada rangka kerja perisian seperti ONNX Runtime GenAI dan Windows ML, pembangun mempunyai pilihan yang belum pernah ada sebelumnya untuk menggunakan aplikasi pintar di tepi.
+Lima pelaksanaan EdgeAI ini menunjukkan kematangan dan kepelbagaian penyelesaian AI tepi yang tersedia hari ini. Daripada peranti tepi yang dipercepatkan perkakasan seperti Jetson Orin Nano kepada rangka kerja perisian seperti ONNX Runtime GenAI dan Windows ML, pembangun mempunyai pilihan yang belum pernah ada untuk menyebarkan aplikasi pintar di tepi.
 
-Benang merah di semua platform ini adalah pendemokrasian keupayaan AI, menjadikan pembelajaran mesin yang canggih dapat diakses oleh pembangun merentasi tahap kemahiran dan kes penggunaan yang berbeza. Sama ada membina aplikasi mudah alih, perisian desktop, atau sistem terbenam, penyelesaian EdgeAI ini menyediakan asas untuk generasi seterusnya aplikasi pintar yang beroperasi dengan cekap dan secara peribadi di tepi.
+Benang merah di semua platform ini adalah pendemokrasian keupayaan AI, menjadikan pembelajaran mesin yang canggih dapat diakses oleh pembangun merentasi pelbagai tahap kemahiran dan kes penggunaan. Sama ada membina aplikasi mudah alih, perisian desktop, atau sistem terbenam, penyelesaian EdgeAI ini menyediakan asas untuk generasi seterusnya aplikasi pintar yang beroperasi dengan cekap dan secara peribadi di tepi.
 
 Setiap platform menawarkan kelebihan unik: Jetson Orin Nano untuk pengkomputeran tepi yang dipercepatkan perkakasan, ONNX Runtime GenAI untuk pembangunan mudah alih merentas platform, Azure EdgeAI untuk integrasi awan-tepi perusahaan, Windows ML untuk aplikasi asli Windows, dan Foundry Local untuk pelaksanaan RAG yang berfokuskan privasi. Bersama-sama, mereka mewakili ekosistem yang komprehensif untuk pembangunan EdgeAI.
 

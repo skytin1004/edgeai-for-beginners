@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "cb6eadc312d5658a0cd71c0085b43742",
-  "translation_date": "2025-09-22T20:00:52+00:00",
+  "original_hash": "e9e31a2b5ff0f6a682a258fa859a8ff5",
+  "translation_date": "2025-09-26T19:36:29+00:00",
   "source_file": "Module07/README.md",
   "language_code": "da"
 }
@@ -22,7 +22,7 @@ NVIDIA Jetson Orin Nano er et gennembrud inden for tilgængelig edge AI-computin
 - Prissat til kun $249, hvilket gør det til den mest overkommelige og tilgængelige platform for udviklere, studerende og skabere
 
 ### Anvendelser
-Jetson Orin Nano er fremragende til at køre moderne generative AI-modeller, herunder vision transformers, store sprogmodeller og vision-sprogmodeller. Den er specifikt designet til GenAI-brugsscenarier, og nu kan du køre flere LLM'er på en håndholdt enhed. Populære anvendelser inkluderer AI-drevne robotter, smarte droner, intelligente kameraer og autonome edge-enheder.
+Jetson Orin Nano er fremragende til at køre moderne generative AI-modeller, herunder vision transformers, store sprogmodeller og vision-sprog-modeller. Den er specifikt designet til GenAI-brugsscenarier, og nu kan du køre flere LLM'er på en håndholdt enhed. Populære anvendelser inkluderer AI-drevne robotter, smarte droner, intelligente kameraer og autonome edge-enheder.
 
 **Læs mere**: [NVIDIA's Jetson Orin Nano SuperComputer: The Next Big Thing in EdgeAI](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
@@ -35,7 +35,7 @@ Denne løsning viser, hvordan man integrerer Generativ AI og Store Sprogmodeller
 - ONNX Runtime GenAI-integration muliggør kørsel af generative AI-modeller direkte på mobile enheder
 - Understøtter forskellige hardwareacceleratorer tilpasset mobile enheder, herunder CPU, GPU og specialiserede mobile AI-processorer
 - Platformsspecifikke optimeringer som CoreML til iOS og NNAPI til Android via ONNX Runtime
-- Implementerer hele den generative AI-loop, herunder for- og efterbehandling, inferens, logits-behandling, søgning og sampling samt KV-cachehåndtering
+- Implementerer hele den generative AI-loop, herunder for- og efterbehandling, inferens, logits-behandling, søgning og sampling samt KV-cache-håndtering
 
 ### Udviklingsfordele
 .NET MAUI-tilgangen giver udviklere mulighed for at udnytte deres eksisterende C#- og .NET-kompetencer, mens de bygger tværplatforms AI-applikationer. ONNX Runtime GenAI-frameworket understøtter flere modelarkitekturer, herunder Llama, Mistral, Phi, Gemma og mange andre. Optimerede ARM64-kerner accelererer INT4-kvantiseret matrixmultiplikation, hvilket sikrer effektiv ydeevne på mobilhardware, samtidig med at den velkendte .NET-udviklingsoplevelse bevares.
@@ -43,7 +43,7 @@ Denne løsning viser, hvordan man integrerer Generativ AI og Store Sprogmodeller
 ### Brugsscenarier
 Denne løsning er ideel for udviklere, der ønsker at bygge AI-drevne mobilapplikationer ved hjælp af .NET-teknologier, herunder intelligente chatbots, billedgenkendelsesapps, sprogover-sættelsesværktøjer og personlige anbefalingssystemer, der kører helt lokalt for forbedret privatliv og offline-funktionalitet.
 
-**Læs mere**: [.NET MAUI ONNX Runtime GenAI Example](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
+**Læs mere**: [.NET MAUI ONNX Runtime GenAI Eksempel](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
 ## 3. EdgeAI i Azure med Small Language Models Engine
 
@@ -56,13 +56,13 @@ Microsofts Azure-baserede EdgeAI-løsning fokuserer på effektivt at implementer
 - Understøttelse af kontinuerlige modelopdateringer og -styring
 
 ### Brugsscenarier
-Azure EdgeAI-implementeringen er fremragende i scenarier, der kræver AI-implementering i virksomhedsklasse med cloud-styringsmuligheder. Dette inkluderer intelligent dokumentbehandling, realtidsanalyse og hybride AI-arbejdsgange, der udnytter både cloud- og edge-computingressourcer.
+Azure EdgeAI-implementeringen er fremragende i scenarier, der kræver AI-implementering i virksomhedsklasse med cloud-styringsmuligheder. Dette inkluderer intelligent dokumentbehandling, realtidsanalyse og hybride AI-arbejdsgange, der udnytter både cloud- og edge-computing-ressourcer.
 
 **Læs mere**: [Azure EdgeAI SLM Engine](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
-## 4. EdgeAI med Windows ML
+## [4. EdgeAI med Windows ML](./windowdeveloper.md)
 
-Windows ML repræsenterer Microsofts avancerede runtime, der er optimeret til effektiv modelinferens på enheder og forenklet implementering. Det fungerer som fundamentet for Windows AI Foundry og giver udviklere mulighed for at skabe AI-drevne Windows-applikationer, der udnytter hele spektret af PC-hardware.
+Windows ML repræsenterer Microsofts avancerede runtime, der er optimeret til effektiv modelinferens på enheder og forenklet implementering. Det fungerer som fundamentet for Windows AI Foundry og gør det muligt for udviklere at skabe AI-drevne Windows-applikationer, der udnytter hele spektret af PC-hardware.
 
 ### Platformens kapaciteter
 - Fungerer på alle Windows 11-PC'er, der kører version 24H2 (build 26100) eller nyere
@@ -75,28 +75,30 @@ Windows ML abstraherer hardware og eksekveringsudbydere, så du kan fokusere på
 
 **Læs mere**: 
 - [Windows ML Oversigt](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
-- [Windows EdgeAI Udviklingsguide](../windowdeveloper.md) - Omfattende guide til Windows Edge AI-udvikling
+- [Windows EdgeAI Udviklingsguide](./windowdeveloper.md) - Omfattende guide til Windows Edge AI-udvikling
 
-## 5. EdgeAI med Foundry Local Applikationer
+## [5. EdgeAI med Foundry Local Applikationer](./foundrylocal.md)
 
-Foundry Local gør det muligt for udviklere at bygge Retrieval Augmented Generation (RAG)-applikationer ved hjælp af lokale ressourcer i .NET, der kombinerer lokale sprogmodeller med semantiske søgefunktioner. Denne tilgang giver privatlivsfokuserede AI-løsninger, der fungerer helt på lokal infrastruktur.
+Foundry Local gør det muligt for Windows- og Mac-udviklere at bygge Retrieval Augmented Generation (RAG)-applikationer ved hjælp af lokale ressourcer i .NET, der kombinerer lokale sprogmodeller med semantiske søgefunktioner. Denne tilgang giver privatlivsfokuserede AI-løsninger, der fungerer helt på lokal infrastruktur.
 
 ### Teknisk Arkitektur
 - Kombinerer Phi-sprogmodellen, lokale embeddings og Semantic Kernel for at skabe et RAG-scenarie
 - Bruger embeddings som vektorer (arrays) af flydende punktværdier, der repræsenterer indhold og dets semantiske betydning
-- Semantic Kernel fungerer som den primære orkestrator, der integrerer Phi og Smart Components for at skabe en problemfri RAG-pipeline
+- Semantic Kernel fungerer som hovedorkestrator, der integrerer Phi og Smart Components for at skabe en problemfri RAG-pipeline
 - Understøttelse af lokale vektordatabaser, herunder SQLite og Qdrant
 
 ### Implementeringsfordele
-RAG, eller Retrieval Augmented Generation, er blot en fancy måde at sige "slå noget op og inkludér det i prompten". Denne lokale implementering sikrer dataprivacy, samtidig med at den leverer intelligente svar baseret på skræddersyede vidensbaser. Tilgangen er særlig værdifuld for virksomhedsscenarier, der kræver datasuverænitet og offline-funktionalitet.
+RAG, eller Retrieval Augmented Generation, er blot en fancy måde at sige "slå noget op og inkludér det i prompten". Denne lokale implementering sikrer dataprivacy, samtidig med at den leverer intelligente svar baseret på brugerdefinerede vidensbaser. Tilgangen er særlig værdifuld for virksomhedsscenarier, der kræver datasuverænitet og offline-funktionalitet.
 
-**Læs mere**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+**Læs mere**: 
+- [Foundry Local](./foundrylocal.md)
+- [Foundry Local RAG Eksempler](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Windows Foundry Local
 
 Microsoft Foundry Local tilbyder en OpenAI-kompatibel REST-server drevet af ONNX Runtime til at køre modeller lokalt på Windows. Nedenfor er en hurtig, valideret oversigt; se officielle dokumenter for fulde detaljer.
 
-- Kom godt i gang: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Kom i gang: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI-reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Fuld Windows-guide i dette repo: [foundrylocal.md](./foundrylocal.md)
@@ -132,7 +134,7 @@ Tips:
 
 ## Windows EdgeAI Udviklingsressourcer
 
-For udviklere, der specifikt målretter Windows-platformen, har vi skabt en omfattende guide, der dækker hele Windows EdgeAI-økosystemet. Denne ressource giver detaljeret information om Windows AI Foundry, herunder API'er, værktøjer og bedste praksis for EdgeAI-udvikling på Windows.
+For udviklere, der specifikt målretter Windows-platformen, har vi oprettet en omfattende guide, der dækker hele Windows EdgeAI-økosystemet. Denne ressource giver detaljeret information om Windows AI Foundry, herunder API'er, værktøjer og bedste praksis for EdgeAI-udvikling på Windows.
 
 ### Windows AI Foundry Platform
 Windows AI Foundry-platformen tilbyder en omfattende suite af værktøjer og API'er, der er specielt designet til Edge AI-udvikling på Windows-enheder. Dette inkluderer specialiseret understøttelse af NPU-accelereret hardware, Windows ML-integration og platformsspecifikke optimeringsteknikker.
@@ -148,10 +150,10 @@ Denne guide dækker:
 - Hardwareoptimeringsstrategier for Windows-enheder
 - Praktiske implementeringseksempler og bedste praksis
 
-### AI Toolkit til Edge AI-udvikling
+### [AI Toolkit til Edge AI Udvikling](./aitoolkit.md)
 For udviklere, der bruger Visual Studio Code, tilbyder AI Toolkit-udvidelsen et omfattende udviklingsmiljø, der er specielt designet til at bygge, teste og implementere Edge AI-applikationer. Dette værktøjssæt strømliner hele Edge AI-udviklingsarbejdsgangen inden for VS Code.
 
-**Udviklingsguide**: [AI Toolkit til Edge AI-udvikling](../aitoolkit.md)
+**Udviklingsguide**: [AI Toolkit til Edge AI Udvikling](./aitoolkit.md)
 
 AI Toolkit-guiden dækker:
 - Modelopdagelse og -valg til edge-implementering
@@ -164,11 +166,11 @@ AI Toolkit-guiden dækker:
 
 ## Konklusion
 
-Disse fem EdgeAI-implementeringer demonstrerer modenheden og mangfoldigheden af edge AI-løsninger, der er tilgængelige i dag. Fra hardwareaccelererede edge-enheder som Jetson Orin Nano til softwareframeworks som ONNX Runtime GenAI og Windows ML har udviklere enestående muligheder for at implementere intelligente applikationer på kanten.
+Disse fem EdgeAI-implementeringer demonstrerer modenheden og mangfoldigheden af de edge AI-løsninger, der er tilgængelige i dag. Fra hardware-accelererede edge-enheder som Jetson Orin Nano til softwareframeworks som ONNX Runtime GenAI og Windows ML har udviklere enestående muligheder for at implementere intelligente applikationer på kanten.
 
 Den fælles tråd på tværs af alle disse platforme er demokratiseringen af AI-kapaciteter, der gør avanceret maskinlæring tilgængelig for udviklere på tværs af forskellige kompetenceniveauer og brugsscenarier. Uanset om du bygger mobilapplikationer, desktopsoftware eller indlejrede systemer, giver disse EdgeAI-løsninger fundamentet for næste generation af intelligente applikationer, der fungerer effektivt og privat på kanten.
 
-Hver platform tilbyder unikke fordele: Jetson Orin Nano til hardwareaccelereret edge computing, ONNX Runtime GenAI til tværplatforms mobiludvikling, Azure EdgeAI til virksomhedens cloud-edge-integration, Windows ML til Windows-native applikationer og Foundry Local til privatlivsfokuserede RAG-implementeringer. Sammen repræsenterer de et omfattende økosystem for EdgeAI-udvikling.
+Hver platform tilbyder unikke fordele: Jetson Orin Nano til hardware-accelereret edge computing, ONNX Runtime GenAI til tværplatforms mobiludvikling, Azure EdgeAI til virksomhedens cloud-edge-integration, Windows ML til Windows-native applikationer og Foundry Local til privatlivsfokuserede RAG-implementeringer. Sammen repræsenterer de et omfattende økosystem for EdgeAI-udvikling.
 
 ---
 
