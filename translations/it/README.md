@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-24T21:20:44+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T08:37:43+00:00",
   "source_file": "README.md",
   "language_code": "it"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![Immagine di copertina del corso](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.it.png)
 
-[![Contributori GitHub](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
+[![Collaboratori GitHub](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
 [![Problemi GitHub](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
 [![Richieste di pull GitHub](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -43,14 +43,14 @@ Benvenuto in **EdgeAI per Principianti** – il tuo viaggio completo nel mondo t
 ### Cosa Imparerai
 
 Questo corso ti guida dai concetti fondamentali alle implementazioni pronte per la produzione, trattando:
-- **Small Language Models (SLMs)** ottimizzati per il deployment su edge
+- **Small Language Models (SLMs)** ottimizzati per il deployment edge
 - **Ottimizzazione hardware-aware** su diverse piattaforme
 - **Inferenza in tempo reale** con capacità di preservare la privacy
 - **Strategie di deployment in produzione** per applicazioni aziendali
 
 ### Perché EdgeAI è Importante
 
-Edge AI rappresenta un cambiamento di paradigma che affronta sfide moderne fondamentali:
+Edge AI rappresenta un cambiamento di paradigma che affronta sfide moderne cruciali:
 - **Privacy e Sicurezza**: Processa dati sensibili localmente senza esposizione al cloud
 - **Prestazioni in tempo reale**: Elimina la latenza di rete per applicazioni critiche
 - **Efficienza dei costi**: Riduce la larghezza di banda e le spese di calcolo nel cloud
@@ -85,27 +85,28 @@ Sbloccano potenti capacità NLP rispettando i vincoli di:
 
 | Modulo | Argomento | Area di Focus | Contenuti Chiave | Livello | Durata |
 |--------|-----------|---------------|------------------|---------|--------|
-| [📚 01](../../Module01) | [Fondamenti di EdgeAI](./Module01/README.md) | Confronto tra Cloud e Edge AI | Fondamenti di EdgeAI • Casi di Studio Reali • Guida all'Implementazione • Deployment su Edge | Principiante | 3-4 ore |
+| [📖 00 ](./introduction.md) | [Introduzione a EdgeAI](./introduction.md) | Fondamenti e Contesto | Panoramica EdgeAI • Applicazioni Industriali • Introduzione agli SLM • Obiettivi di Apprendimento | Principiante | 1-2 ore |
+| [📚 01](../../Module01) | [Fondamenti di EdgeAI](./Module01/README.md) | Confronto Cloud vs Edge AI | Fondamenti di EdgeAI • Casi di Studio Reali • Guida all'Implementazione • Deployment Edge | Principiante | 3-4 ore |
 | [🧠 02](../../Module02) | [Fondamenti dei Modelli SLM](./Module02/README.md) | Famiglie di modelli e architettura | Famiglia Phi • Famiglia Qwen • Famiglia Gemma • BitNET • μModel • Phi-Silica | Principiante | 4-5 ore |
 | [🚀 03](../../Module03) | [Pratica di Deployment SLM](./Module03/README.md) | Deployment locale e cloud | Apprendimento Avanzato • Ambiente Locale • Deployment Cloud | Intermedio | 4-5 ore |
-| [⚙️ 04](../../Module04) | [Toolkit di Ottimizzazione dei Modelli](./Module04/README.md) | Ottimizzazione cross-platform | Introduzione • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sintesi del Workflow | Intermedio | 5-6 ore |
-| [🔧 05](../../Module05) | [SLMOps in Produzione](./Module05/README.md) | Operazioni di produzione | Introduzione a SLMOps • Distillazione dei Modelli • Fine-tuning • Deployment in Produzione | Avanzato | 5-6 ore |
-| [🤖 06](../../Module06) | [Agenti AI e Chiamata di Funzioni](./Module06/README.md) | Framework di agenti e MCP | Introduzione agli Agenti • Chiamata di Funzioni • Protocollo di Contesto del Modello | Avanzato | 4-5 ore |
-| [💻 07](../../Module07) | [Implementazione su Piattaforma](./Module07/README.md) | Esempi cross-platform | Toolkit AI • Foundry Local • Sviluppo su Windows | Avanzato | 3-4 ore |
-| [🏭 08](../../Module08) | [Toolkit Foundry Local](./Module08/README.md) | Esempi pronti per la produzione | Applicazioni di esempio (vedi dettagli sotto) | Esperto | 8-10 ore |
+| [⚙️ 04](../../Module04) | [Toolkit di Ottimizzazione Modelli](./Module04/README.md) | Ottimizzazione cross-platform | Introduzione • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sintesi del Workflow | Intermedio | 5-6 ore |
+| [🔧 05](../../Module05) | [Produzione SLMOps](./Module05/README.md) | Operazioni di produzione | Introduzione SLMOps • Distillazione Modelli • Fine-tuning • Deployment in Produzione | Avanzato | 5-6 ore |
+| [🤖 06](../../Module06) | [Agenti AI e Chiamata Funzioni](./Module06/README.md) | Framework agenti & MCP | Introduzione agli Agenti • Chiamata Funzioni • Protocollo di Contesto Modelli | Avanzato | 4-5 ore |
+| [💻 07](../../Module07) | [Implementazione Piattaforma](./Module07/README.md) | Esempi cross-platform | Toolkit AI • Foundry Locale • Sviluppo Windows | Avanzato | 3-4 ore |
+| [🏭 08](../../Module08) | [Toolkit Foundry Locale](./Module08/README.md) | Esempi pronti per la produzione | Applicazioni di esempio (vedi dettagli sotto) | Esperto | 8-10 ore |
 
 ### 🏭 **Modulo 08: Applicazioni di Esempio**
 
-- [01: Avvio Rapido REST Chat](./Module08/samples/01/README.md)
+- [01: REST Chat Quickstart](./Module08/samples/01/README.md)
 - [02: Integrazione SDK OpenAI](./Module08/samples/02/README.md)
-- [03: Scoperta e Benchmarking dei Modelli](./Module08/samples/03/README.md)
+- [03: Scoperta e Benchmarking Modelli](./Module08/samples/03/README.md)
 - [04: Applicazione Chainlit RAG](./Module08/samples/04/README.md)
 - [05: Orchestrazione Multi-Agente](./Module08/samples/05/README.md)
 - [06: Router Modelli-come-Strumenti](./Module08/samples/06/README.md)
 - [07: Client API Diretto](./Module08/samples/07/README.md)
 - [08: App Chat Windows 11](./Module08/samples/08/README.md)
 - [09: Sistema Multi-Agente Avanzato](./Module08/samples/09/README.md)
-- [10: Framework Foundry Tools](./Module08/samples/10/README.md)
+- [10: Framework Strumenti Foundry](./Module08/samples/10/README.md)
 
 ### 📊 **Riassunto del Percorso di Apprendimento**
 - **Durata Totale**: 36-45 ore
@@ -118,15 +119,15 @@ Sbloccano potenti capacità NLP rispettando i vincoli di:
 
 ### 🎯 Competenze Chiave
 - **Architettura Edge AI**: Progetta sistemi AI local-first con integrazione cloud
-- **Ottimizzazione dei Modelli**: Quantizza e comprimi modelli per deployment su edge (85% di aumento velocità, 75% di riduzione dimensioni)
+- **Ottimizzazione Modelli**: Quantizza e comprimi modelli per deployment edge (85% di aumento velocità, 75% di riduzione dimensioni)
 - **Deployment Multi-Piattaforma**: Windows, mobile, embedded e sistemi ibridi cloud-edge
-- **Operazioni in Produzione**: Monitoraggio, scalabilità e manutenzione di Edge AI in produzione
+- **Operazioni di Produzione**: Monitoraggio, scalabilità e manutenzione di Edge AI in produzione
 
 ### 🏗️ Progetti Pratici
-- **App Chat Foundry Local**: Applicazione nativa Windows 11 con cambio modello
+- **App Chat Foundry Locale**: Applicazione nativa Windows 11 con cambio modello
 - **Sistemi Multi-Agente**: Coordinatore con agenti specialisti per flussi di lavoro complessi  
 - **Applicazioni RAG**: Elaborazione documenti locali con ricerca vettoriale
-- **Router Modelli**: Selezione intelligente tra modelli basata sull'analisi del compito
+- **Router Modelli**: Selezione intelligente tra modelli basata sull'analisi dei compiti
 - **Framework API**: Client pronti per la produzione con streaming e monitoraggio della salute
 - **Strumenti Cross-Piattaforma**: Modelli di integrazione LangChain/Semantic Kernel
 
@@ -137,24 +138,27 @@ Sbloccano potenti capacità NLP rispettando i vincoli di:
 
 **Percorso di Apprendimento Consigliato** (20-30 ore totali):
 
-1. **📚 Fondamenti** (Moduli 01-02): Concetti EdgeAI + Famiglie di modelli SLM
+0. **📖 Introduzione** ([Introduction.md](./introduction.md)): Fondamenti EdgeAI + contesto industriale + framework di apprendimento
+1. **📚 Fondamenti** (Moduli 01-02): Concetti EdgeAI + famiglie di modelli SLM
 2. **⚙️ Ottimizzazione** (Moduli 03-04): Deployment + framework di quantizzazione  
-3. **🚀 Produzione** (Moduli 05-06): SLMOps + agenti AI + chiamata di funzioni
-4. **💻 Implementazione** (Moduli 07-08): Esempi di piattaforma + toolkit Foundry Local
+3. **🚀 Produzione** (Moduli 05-06): SLMOps + agenti AI + chiamata di funzioni  
+4. **💻 Implementazione** (Moduli 07-08): Esempi di piattaforma + toolkit Foundry Local  
 
-Ogni modulo include teoria, esercizi pratici e esempi di codice pronti per la produzione.
+Ogni modulo include teoria, esercizi pratici e campioni di codice pronti per la produzione.
 
 ## Impatto sulla Carriera
-**Ruoli Tecnici**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer
 
-**Settori Industriali**: Manifattura 4.0 • Tecnologia Sanitaria • Sistemi Autonomi • FinTech • Elettronica di Consumo
+**Ruoli Tecnici**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer  
 
-**Progetti del Portfolio**: Sistemi multi-agente • App RAG per la produzione • Deployment cross-platform • Ottimizzazione delle prestazioni
+**Settori Industriali**: Manifattura 4.0 • Tecnologia sanitaria • Sistemi autonomi • FinTech • Elettronica di consumo  
+
+**Progetti Portfolio**: Sistemi multi-agente • App RAG in produzione • Deployment cross-platform • Ottimizzazione delle prestazioni  
 
 ## Struttura del Repository
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -164,41 +168,42 @@ edgeai-for-beginners/
 ├── 🌐 translations/    # Multi-language support (8+ languages)
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
+  
 
 ## Punti Salienti del Corso
 
 ✅ **Apprendimento Progressivo**: Teoria → Pratica → Deployment in produzione  
-✅ **Casi Studio Reali**: Microsoft, Japan Airlines, implementazioni aziendali  
-✅ **Esempi Pratici**: Oltre 50 esempi, 10 demo complete Foundry Local  
+✅ **Case Study Reali**: Microsoft, Japan Airlines, implementazioni aziendali  
+✅ **Esempi Pratici**: Oltre 50 esempi, 10 demo complete di Foundry Local  
 ✅ **Focus sulle Prestazioni**: Miglioramenti di velocità dell'85%, riduzioni di dimensioni del 75%  
 ✅ **Multi-Piattaforma**: Windows, mobile, embedded, cloud-edge ibrido  
-✅ **Pronto per la Produzione**: Monitoraggio, scalabilità, sicurezza, framework di conformità
+✅ **Pronto per la Produzione**: Monitoraggio, scalabilità, sicurezza, framework di conformità  
 
 📖 **[Guida allo Studio Disponibile](STUDY_GUIDE.md)**: Percorso di apprendimento strutturato di 20 ore con indicazioni per la gestione del tempo e strumenti di autovalutazione.
 
 ---
 
-**EdgeAI rappresenta il futuro del deployment AI**: locale, rispettoso della privacy ed efficiente. Acquisisci queste competenze per creare la prossima generazione di applicazioni intelligenti.
+**EdgeAI rappresenta il futuro del deployment AI**: locale, rispettoso della privacy ed efficiente. Acquisisci queste competenze per costruire la prossima generazione di applicazioni intelligenti.
 
 ## Altri Corsi
 
 Il nostro team produce altri corsi! Dai un'occhiata:
 
-- [MCP per Principianti](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents Per Principianti](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI per Principianti con .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI per Principianti con JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI per Principianti](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML per Principianti](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science per Principianti](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI per Principianti](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersecurity per Principianti](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev per Principianti](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT per Principianti](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [Sviluppo XR per Principianti](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot per AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot per Sviluppatori C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Scegli la Tua Avventura con Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP per Principianti](https://github.com/microsoft/mcp-for-beginners)  
+- [Agenti AI per Principianti](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI per Principianti con .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI per Principianti con JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI per Principianti](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML per Principianti](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Data Science per Principianti](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI per Principianti](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Cybersecurity per Principianti](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Web Dev per Principianti](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT per Principianti](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Sviluppo XR per Principianti](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot per AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot per Sviluppatori C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Scegli la Tua Avventura con Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 

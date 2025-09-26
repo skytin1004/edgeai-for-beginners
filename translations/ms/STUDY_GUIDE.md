@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ef04a48f3f1428fa008738033017e0e8",
-  "translation_date": "2025-09-25T00:44:22+00:00",
+  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
+  "translation_date": "2025-09-26T09:22:16+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "ms"
 }
@@ -12,7 +12,8 @@ CO_OP_TRANSLATOR_METADATA:
 ### Laluan Pembelajaran Tertumpu (1 minggu)
 
 | Hari | Fokus | Anggaran Jam |
-|------|-------|--------------|
+|------|-------|------------------|
+| Hari 0 | Modul 0: Pengenalan kepada EdgeAI | 1-2 jam |
 | Hari 1 | Modul 1: Asas EdgeAI | 3 jam |
 | Hari 2 | Modul 2: Asas SLM | 3 jam |
 | Hari 3 | Modul 3: Penggunaan SLM | 2 jam |
@@ -24,7 +25,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### Laluan Pembelajaran Tertumpu (2 minggu)
 
 | Hari | Fokus | Anggaran Jam |
-|------|-------|--------------|
+|------|-------|------------------|
 | Hari 1-2 | Modul 1: Asas EdgeAI | 3 jam |
 | Hari 3-4 | Modul 2: Asas SLM | 3 jam |
 | Hari 5-6 | Modul 3: Penggunaan SLM | 2 jam |
@@ -36,14 +37,15 @@ CO_OP_TRANSLATOR_METADATA:
 ### Kajian Separuh Masa (4 minggu)
 
 | Minggu | Fokus | Anggaran Jam |
-|--------|-------|--------------|
+|------|-------|------------------|
 | Minggu 1 | Modul 1-2: Asas & Asas SLM | 6 jam |
 | Minggu 2 | Modul 3-4: Penggunaan & Pengoptimuman | 6 jam |
 | Minggu 3 | Modul 5-6: SLMOps & Ejen AI | 5 jam |
 | Minggu 4 | Modul 7: Alat Pembangunan & Integrasi | 3 jam |
 
 | Hari | Fokus | Anggaran Jam |
-|------|-------|--------------|
+|------|-------|------------------|
+| Hari 0 | Modul 0: Pengenalan kepada EdgeAI | 1-2 jam |
 | Hari 1-2 | Modul 1: Asas EdgeAI | 3 jam |
 | Hari 3-4 | Modul 2: Asas SLM | 3 jam |
 | Hari 5-6 | Modul 3: Penggunaan SLM | 2 jam |
@@ -52,8 +54,9 @@ CO_OP_TRANSLATOR_METADATA:
 | Hari 11-12 | Modul 6: Sistem Ejen SLM | 2 jam |
 | Hari 13-14 | Modul 7: Contoh Pelaksanaan EdgeAI | 2 jam |
 
-| Modul | Tarikh Siap | Jam Dihabiskan | Pengajaran Utama |
-|-------|-------------|----------------|-----------------|
+| Modul | Tarikh Siap | Masa Dihabiskan | Penemuan Utama |
+|--------|----------------|-------------|--------------|
+| Modul 0: Pengenalan kepada EdgeAI | | | |
 | Modul 1: Asas EdgeAI | | | |
 | Modul 2: Asas SLM | | | |
 | Modul 3: Penggunaan SLM | | | |
@@ -67,7 +70,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### Kajian Separuh Masa (4 minggu)
 
 | Minggu | Fokus | Anggaran Jam |
-|--------|-------|--------------|
+|------|-------|------------------|
 | Minggu 1 | Modul 1-2: Asas & Asas SLM | 6 jam |
 | Minggu 2 | Modul 3-4: Penggunaan & Pengoptimuman | 6 jam |
 | Minggu 3 | Modul 5-6: SLMOps & Ejen AI | 5 jam |
@@ -75,28 +78,29 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Pengenalan
 
-Selamat datang ke panduan kajian EdgeAI untuk Pemula! Dokumen ini direka untuk membantu anda menavigasi bahan kursus dengan berkesan dan memaksimumkan pengalaman pembelajaran anda. Ia menyediakan laluan pembelajaran yang terstruktur, jadual kajian yang disyorkan, ringkasan konsep utama, dan sumber tambahan untuk memperdalam pemahaman anda tentang teknologi EdgeAI.
+Selamat datang ke panduan kajian EdgeAI untuk Pemula! Dokumen ini direka untuk membantu anda menavigasi bahan kursus dengan berkesan dan memaksimumkan pengalaman pembelajaran anda. Ia menyediakan laluan pembelajaran yang terstruktur, jadual kajian yang disyorkan, ringkasan konsep utama, dan sumber tambahan untuk memperdalam pemahaman anda tentang teknologi Edge AI.
 
 Ini adalah kursus ringkas selama 20 jam yang menyampaikan pengetahuan penting tentang EdgeAI dalam format yang efisien masa, sesuai untuk profesional dan pelajar yang sibuk yang ingin memperoleh kemahiran praktikal dengan cepat dalam bidang yang sedang berkembang ini.
 
 ## Gambaran Keseluruhan Kursus
 
-Kursus ini disusun dalam tujuh modul komprehensif:
+Kursus ini diatur dalam lapan modul komprehensif:
 
+0. **Pengenalan kepada EdgeAI** - Asas dan penetapan konteks dengan aplikasi industri dan objektif pembelajaran
 1. **Asas dan Transformasi EdgeAI** - Memahami konsep utama dan perubahan teknologi
 2. **Asas Model Bahasa Kecil (SLM)** - Meneroka pelbagai keluarga SLM dan seni bina mereka
 3. **Penggunaan Model Bahasa Kecil** - Melaksanakan strategi penggunaan praktikal
 4. **Penukaran Format Model dan Kuantisasi** - Pengoptimuman lanjutan dengan 6 rangka kerja termasuk OpenVINO
 5. **SLMOps - Operasi Model Bahasa Kecil** - Pengurusan kitaran hayat pengeluaran dan penggunaan
-6. **Sistem Ejen SLM** - Ejen AI, panggilan fungsi, dan Protokol Konteks Model
-7. **Contoh Pelaksanaan EdgeAI** - Alat AI, pembangunan Windows, dan pelaksanaan khusus platform
+6. **Sistem Ejen SLM** - Ejen AI, pemanggilan fungsi, dan Protokol Konteks Model
+7. **Contoh Pelaksanaan EdgeAI** - Toolkit AI, pembangunan Windows, dan pelaksanaan khusus platform
 8. **Microsoft Foundry Local – Toolkit Pembangun Lengkap** - Pembangunan tempatan dengan integrasi Azure hibrid (Modul 08)
 
 ## Cara Menggunakan Panduan Kajian Ini
 
 - **Pembelajaran Progresif**: Ikuti modul secara berurutan untuk pengalaman pembelajaran yang paling koheren
 - **Titik Pemeriksaan Pengetahuan**: Gunakan soalan penilaian diri selepas setiap bahagian
-- **Latihan Praktikal**: Lengkapkan latihan yang disyorkan untuk mengukuhkan konsep teori
+- **Latihan Praktikal**: Lengkapkan latihan yang disarankan untuk mengukuhkan konsep teori
 - **Sumber Tambahan**: Terokai bahan tambahan untuk topik yang paling menarik minat anda
 
 ## Cadangan Jadual Kajian
@@ -104,7 +108,8 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 ### Laluan Pembelajaran Tertumpu (1 minggu)
 
 | Hari | Fokus | Anggaran Jam |
-|------|-------|--------------|
+|------|-------|------------------|
+| Hari 0 | Modul 0: Pengenalan kepada EdgeAI | 1-2 jam |
 | Hari 1-2 | Modul 1: Asas EdgeAI | 6 jam |
 | Hari 3-4 | Modul 2: Asas SLM | 8 jam |
 | Hari 5 | Modul 3: Penggunaan SLM | 3 jam |
@@ -113,10 +118,69 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 ### Kajian Separuh Masa (3 minggu)
 
 | Minggu | Fokus | Anggaran Jam |
-|--------|-------|--------------|
-| Minggu 1 | Modul 1: Asas EdgeAI | 6-7 jam |
+|------|-------|------------------|
+| Minggu 1 | Modul 0: Pengenalan + Modul 1: Asas EdgeAI | 7-9 jam |
 | Minggu 2 | Modul 2: Asas SLM | 7-8 jam |
 | Minggu 3 | Modul 3: Penggunaan SLM (3j) + Modul 8: Foundry Local Toolkit (2-3j) | 5-6 jam |
+
+## Modul 0: Pengenalan kepada EdgeAI
+
+### Objektif Pembelajaran Utama
+
+- Memahami apa itu Edge AI dan mengapa ia penting dalam landskap teknologi hari ini
+- Mengenal pasti industri utama yang diubah oleh Edge AI dan kes penggunaan spesifik mereka
+- Memahami kelebihan Model Bahasa Kecil (SLM) untuk penggunaan di edge
+- Menetapkan jangkaan pembelajaran dan hasil yang jelas untuk keseluruhan kursus
+- Mengenali peluang kerjaya dan keperluan kemahiran dalam bidang Edge AI
+
+### Kawasan Fokus Kajian
+
+#### Bahagian 1: Paradigma dan Definisi Edge AI
+- **Konsep Utama**: 
+  - Edge AI vs. pemprosesan AI berasaskan awan tradisional
+  - Konvergensi perkakasan, pengoptimuman model, dan permintaan perniagaan
+  - Penggunaan AI secara masa nyata, privasi terpelihara, dan kos yang efisien
+
+#### Bahagian 2: Aplikasi Industri
+- **Konsep Utama**: 
+  - Pembuatan & Industri 4.0: Penyelenggaraan ramalan dan kawalan kualiti
+  - Penjagaan Kesihatan: Pengimejan diagnostik dan pemantauan pesakit
+  - Sistem Autonomi: Kenderaan pandu sendiri dan pengangkutan
+  - Bandar Pintar: Pengurusan trafik dan keselamatan awam
+  - Teknologi Pengguna: Telefon pintar, peranti boleh pakai, dan rumah pintar
+
+#### Bahagian 3: Asas Model Bahasa Kecil
+- **Konsep Utama**: 
+  - Ciri-ciri SLM dan perbandingan prestasi
+  - Kecekapan parameter vs. kompromi keupayaan
+  - Kekangan penggunaan di edge dan strategi pengoptimuman
+
+#### Bahagian 4: Rangka Pembelajaran dan Laluan Kerjaya
+- **Konsep Utama**: 
+  - Seni bina kursus dan pendekatan penguasaan progresif
+  - Kemahiran teknikal dan matlamat pelaksanaan praktikal
+  - Peluang kemajuan kerjaya dan aplikasi industri
+
+### Soalan Penilaian Diri
+
+1. Apakah tiga trend teknologi utama yang telah memungkinkan Edge AI?
+2. Bandingkan kelebihan dan cabaran Edge AI vs. AI berasaskan awan.
+3. Namakan tiga industri di mana Edge AI memberikan nilai perniagaan kritikal dan jelaskan mengapa.
+4. Bagaimana Model Bahasa Kecil menjadikan Edge AI praktikal untuk penggunaan dunia nyata?
+5. Apakah kemahiran teknikal utama yang akan anda kembangkan sepanjang kursus ini?
+6. Terangkan pendekatan pembelajaran empat fasa yang digunakan dalam kursus ini.
+
+### Latihan Praktikal
+
+1. **Penyelidikan Industri**: Pilih satu aplikasi industri dan kaji pelaksanaan Edge AI dunia nyata (30 minit)
+2. **Penerokaan Model**: Layari Model Bahasa Kecil yang tersedia di Hugging Face dan bandingkan jumlah parameter dan keupayaan mereka (30 minit)
+3. **Perancangan Pembelajaran**: Semak struktur kursus lengkap dan buat jadual kajian peribadi anda (15 minit)
+
+### Bahan Tambahan
+
+- [Gambaran Keseluruhan Pasaran Edge AI - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
+- [Gambaran Keseluruhan Model Bahasa Kecil - Hugging Face](https://huggingface.co/blog/small-language-models)
+- [Asas Pengkomputeran Edge](https://www.edgecomputing.org/)
 
 ## Modul 1: Asas dan Transformasi EdgeAI
 
@@ -124,10 +188,10 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 - Memahami perbezaan antara AI berasaskan awan dan AI berasaskan edge
 - Menguasai teknik pengoptimuman utama untuk persekitaran yang terhad sumber
-- Menganalisis aplikasi dunia sebenar teknologi EdgeAI
+- Menganalisis aplikasi dunia nyata teknologi EdgeAI
 - Menyediakan persekitaran pembangunan untuk projek EdgeAI
 
-### Fokus Kajian
+### Kawasan Fokus Kajian
 
 #### Bahagian 1: Asas EdgeAI
 - **Konsep Utama**: 
@@ -141,7 +205,7 @@ Kursus ini disusun dalam tujuh modul komprehensif:
   - [GitHub ONNX Runtime](https://github.com/microsoft/onnxruntime)
   - [Dokumentasi Edge Impulse](https://docs.edgeimpulse.com)
 
-#### Bahagian 2: Kajian Kes Dunia Sebenar
+#### Bahagian 2: Kajian Kes Dunia Nyata
 - **Konsep Utama**: 
   - Ekosistem model Microsoft Phi & Mu
   - Pelaksanaan praktikal merentasi industri
@@ -162,10 +226,10 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 ### Soalan Penilaian Diri
 
 1. Bandingkan dan bezakan AI berasaskan awan dengan pelaksanaan AI berasaskan edge.
-2. Terangkan tiga teknik utama untuk mengoptimumkan model untuk penggunaan edge.
+2. Terangkan tiga teknik utama untuk mengoptimumkan model untuk penggunaan di edge.
 3. Apakah kelebihan utama menjalankan model AI di edge?
-4. Huraikan proses kuantisasi model dan bagaimana ia mempengaruhi prestasi.
-5. Terangkan bagaimana pecutan perkakasan yang berbeza (NPU, GPU, CPU) mempengaruhi penggunaan EdgeAI.
+4. Terangkan proses kuantisasi model dan bagaimana ia mempengaruhi prestasi.
+5. Jelaskan bagaimana pecutan perkakasan yang berbeza (NPU, GPU, CPU) mempengaruhi penggunaan EdgeAI.
 
 ### Latihan Praktikal
 
@@ -182,7 +246,7 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 - Menilai model berdasarkan kecekapan, keupayaan, dan keperluan penggunaan
 - Mengenali kes penggunaan yang sesuai untuk pelbagai keluarga model
 
-### Fokus Kajian
+### Kawasan Fokus Kajian
 
 #### Bahagian 1: Keluarga Model Microsoft Phi
 - **Konsep Utama**: 
@@ -210,9 +274,9 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 #### Bahagian 5: Model Microsoft Mu
 - **Konsep Utama**: 
-  - Seni bina pertama peranti
+  - Seni bina peranti pertama
   - Integrasi sistem dengan Windows
-  - Operasi yang memelihara privasi
+  - Operasi privasi terpelihara
 
 #### Bahagian 6: Phi-Silica
 - **Konsep Utama**: 
@@ -225,14 +289,14 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 1. Bandingkan pendekatan seni bina keluarga model Phi dan Qwen.
 2. Terangkan bagaimana teknologi kuantisasi BitNET berbeza daripada kuantisasi tradisional.
 3. Apakah kelebihan unik model Mu untuk integrasi Windows?
-4. Huraikan bagaimana Phi-Silica memanfaatkan perkakasan NPU untuk pengoptimuman prestasi.
+4. Terangkan bagaimana Phi-Silica memanfaatkan perkakasan NPU untuk pengoptimuman prestasi.
 5. Untuk aplikasi mudah alih dengan sambungan terhad, keluarga model mana yang paling sesuai dan mengapa?
 
 ### Latihan Praktikal
 
-1. **Perbandingan Model**: Penanda aras cepat dua model SLM yang berbeza (1 jam)
+1. **Perbandingan Model**: Penanda aras pantas dua model SLM yang berbeza (1 jam)
 2. **Penjanaan Teks Mudah**: Pelaksanaan asas penjanaan teks dengan model kecil (1 jam)
-3. **Pengoptimuman Cepat**: Terapkan satu teknik pengoptimuman untuk meningkatkan kelajuan inferens (1 jam)
+3. **Pengoptimuman Pantas**: Gunakan satu teknik pengoptimuman untuk meningkatkan kelajuan inferens (1 jam)
 
 ## Modul 3: Penggunaan Model Bahasa Kecil
 
@@ -245,27 +309,27 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 ### Fokus Kajian
 
-#### Bahagian 1: Pembelajaran Lanjutan SLM
-- **Konsep Utama**: 
-  - Rangka kerja klasifikasi parameter
+#### Seksyen 1: Pembelajaran Lanjutan SLM
+- **Konsep Keutamaan**: 
+  - Kerangka klasifikasi parameter
   - Teknik pengoptimuman lanjutan
   - Strategi pemerolehan model
 
-#### Bahagian 2: Penggunaan Persekitaran Tempatan
-- **Konsep Utama**: 
+#### Seksyen 2: Penggunaan Persekitaran Tempatan
+- **Konsep Keutamaan**: 
   - Penggunaan platform Ollama
   - Penyelesaian tempatan Microsoft Foundry
-  - Analisis perbandingan rangka kerja
+  - Analisis perbandingan kerangka kerja
 
-#### Bahagian 3: Penggunaan Awan Berkontena
-- **Konsep Utama**: 
+#### Seksyen 3: Penggunaan Awan Berkontena
+- **Konsep Keutamaan**: 
   - Inferens berprestasi tinggi vLLM
   - Orkestrasi kontena
   - Pelaksanaan ONNX Runtime
 
-### Soalan Penilaian Diri
+### Soalan Penilaian Kendiri
 
-1. Apakah faktor yang perlu dipertimbangkan semasa memilih antara penggunaan tempatan dan penggunaan awan?
+1. Apakah faktor yang perlu dipertimbangkan semasa memilih antara penggunaan tempatan dan awan?
 2. Bandingkan Ollama dan Microsoft Foundry Local sebagai pilihan penggunaan.
 3. Terangkan manfaat kontena untuk penggunaan SLM.
 4. Apakah metrik prestasi utama yang perlu dipantau untuk SLM yang digunakan di edge?
@@ -274,46 +338,46 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 ### Latihan Praktikal
 
 1. **Penggunaan Tempatan Asas**: Gunakan SLM mudah menggunakan Ollama (1 jam)
-2. **Semakan Prestasi**: Jalankan penanda aras cepat pada model yang digunakan (30 minit)
-3. **Integrasi Mudah**: Cipta aplikasi minimum yang menggunakan model yang digunakan (1 jam)
+2. **Semakan Prestasi**: Jalankan penanda aras pantas pada model yang digunakan (30 minit)
+3. **Integrasi Mudah**: Cipta aplikasi minimal yang menggunakan model yang digunakan (1 jam)
 
 ## Modul 4: Penukaran Format Model dan Kuantisasi
 
 ### Objektif Pembelajaran Utama
 
-- Menguasai teknik kuantisasi lanjutan dari ketepatan 1-bit hingga 8-bit
-- Memahami strategi penukaran format (GGUF, ONNX)
-- Melaksanakan pengoptimuman merentasi enam rangka kerja (Llama.cpp, Olive, OpenVINO, MLX, sintesis aliran kerja)
-- Menggunakan model yang dioptimumkan untuk persekitaran edge pengeluaran merentasi perkakasan Intel, Apple, dan pelbagai platform
+- Kuasai teknik kuantisasi lanjutan dari ketepatan 1-bit hingga 8-bit
+- Fahami strategi penukaran format (GGUF, ONNX)
+- Laksanakan pengoptimuman merentasi enam kerangka kerja (Llama.cpp, Olive, OpenVINO, MLX, sintesis aliran kerja)
+- Gunakan model yang dioptimumkan untuk persekitaran edge pengeluaran merentasi perkakasan Intel, Apple, dan pelbagai platform
 
 ### Fokus Kajian
 
-#### Bahagian 1: Asas Kuantisasi
-- **Konsep Utama**: 
-  - Rangka kerja klasifikasi ketepatan
+#### Seksyen 1: Asas Kuantisasi
+- **Konsep Keutamaan**: 
+  - Kerangka klasifikasi ketepatan
   - Perdagangan antara prestasi dan ketepatan
   - Pengoptimuman jejak memori
 
-#### Bahagian 2: Pelaksanaan Llama.cpp
-- **Konsep Utama**: 
-  - Penggunaan merentasi platform
+#### Seksyen 2: Pelaksanaan Llama.cpp
+- **Konsep Keutamaan**: 
+  - Penggunaan merentas platform
   - Pengoptimuman format GGUF
   - Teknik pecutan perkakasan
 
-#### Bahagian 3: Suite Microsoft Olive
-- **Konsep Utama**: 
+#### Seksyen 3: Suite Microsoft Olive
+- **Konsep Keutamaan**: 
   - Pengoptimuman yang sedar perkakasan
   - Penggunaan gred perusahaan
   - Aliran kerja pengoptimuman automatik
 
-#### Bahagian 4: Toolkit OpenVINO
-- **Konsep Utama**: 
+#### Seksyen 4: Toolkit OpenVINO
+- **Konsep Keutamaan**: 
   - Pengoptimuman perkakasan Intel
-  - Rangka Kerja Pemampatan Rangkaian Neural (NNCF)
-  - Penggunaan inferens merentasi platform
-- OpenVINO GenAI untuk pelaksanaan LLM
+  - Kerangka Pemampatan Rangkaian Neural (NNCF)
+  - Penggunaan inferens merentas platform
+  - OpenVINO GenAI untuk penggunaan LLM
 
-#### Seksyen 5: Rangka Kerja Apple MLX
+#### Seksyen 5: Kerangka Apple MLX
 - **Konsep Keutamaan**: 
   - Pengoptimuman Apple Silicon
   - Seni bina memori bersatu
@@ -322,41 +386,41 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 #### Seksyen 6: Sintesis Aliran Kerja Pembangunan Edge AI
 - **Konsep Keutamaan**: 
   - Seni bina aliran kerja bersatu
-  - Pokok keputusan pemilihan rangka kerja
+  - Pokok keputusan pemilihan kerangka kerja
   - Pengesahan kesediaan pengeluaran
-  - Strategi masa depan yang tahan lama
+  - Strategi masa depan
 
 ### Soalan Penilaian Kendiri
 
 1. Bandingkan strategi kuantisasi merentasi tahap ketepatan yang berbeza (1-bit hingga 8-bit).
-2. Terangkan kelebihan format GGUF untuk pelaksanaan di edge.
-3. Bagaimana pengoptimuman yang sedar perkakasan dalam Microsoft Olive meningkatkan kecekapan pelaksanaan?
+2. Terangkan kelebihan format GGUF untuk penggunaan edge.
+3. Bagaimana pengoptimuman yang sedar perkakasan dalam Microsoft Olive meningkatkan kecekapan penggunaan?
 4. Apakah manfaat utama NNCF OpenVINO untuk pemampatan model?
 5. Huraikan bagaimana Apple MLX memanfaatkan seni bina memori bersatu untuk pengoptimuman.
-6. Bagaimana sintesis aliran kerja membantu dalam memilih rangka kerja pengoptimuman yang optimum?
+6. Bagaimana sintesis aliran kerja membantu dalam memilih kerangka kerja pengoptimuman yang optimum?
 
 ### Latihan Praktikal
 
-1. **Kuantisasi Model**: Terapkan tahap kuantisasi yang berbeza pada model dan bandingkan hasilnya (1 jam)
-2. **Pengoptimuman OpenVINO**: Gunakan NNCF untuk memampatkan model bagi perkakasan Intel (1 jam)
-3. **Perbandingan Rangka Kerja**: Uji model yang sama merentasi tiga rangka kerja pengoptimuman yang berbeza (1 jam)
-4. **Penanda Aras Prestasi**: Ukur kesan pengoptimuman terhadap kelajuan inferens dan penggunaan memori (1 jam)
+1. **Kuantisasi Model**: Gunakan tahap kuantisasi yang berbeza pada model dan bandingkan hasilnya (1 jam)
+2. **Pengoptimuman OpenVINO**: Gunakan NNCF untuk memampatkan model untuk perkakasan Intel (1 jam)
+3. **Perbandingan Kerangka Kerja**: Uji model yang sama merentasi tiga kerangka kerja pengoptimuman yang berbeza (1 jam)
+4. **Penanda Aras Prestasi**: Ukur kesan pengoptimuman pada kelajuan inferens dan penggunaan memori (1 jam)
 
 ## Modul 5: SLMOps - Operasi Model Bahasa Kecil
 
 ### Objektif Pembelajaran Utama
 
-- Memahami prinsip pengurusan kitaran hayat SLMOps
-- Kuasai teknik distilasi dan penalaan halus untuk pelaksanaan di edge
-- Laksanakan strategi pelaksanaan pengeluaran dengan pemantauan
-- Bina aliran kerja operasi dan penyelenggaraan SLM bertaraf perusahaan
+- Fahami prinsip pengurusan kitaran hayat SLMOps
+- Kuasai teknik distilasi dan penalaan halus untuk penggunaan edge
+- Laksanakan strategi penggunaan pengeluaran dengan pemantauan
+- Bina aliran kerja operasi dan penyelenggaraan SLM gred perusahaan
 
-### Kawasan Fokus Kajian
+### Fokus Kajian
 
 #### Seksyen 1: Pengenalan kepada SLMOps
 - **Konsep Keutamaan**: 
   - Peralihan paradigma SLMOps dalam operasi AI
-  - Seni bina yang cekap kos dan mengutamakan privasi
+  - Seni bina yang mengutamakan kos dan privasi
   - Kesan strategik perniagaan dan kelebihan daya saing
 
 #### Seksyen 2: Distilasi Model
@@ -368,51 +432,51 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 #### Seksyen 3: Strategi Penalaan Halus
 - **Konsep Keutamaan**: 
   - Penalaan halus yang cekap parameter (PEFT)
-  - Kaedah maju LoRA dan QLoRA
+  - Kaedah lanjutan LoRA dan QLoRA
   - Latihan multi-adapter dan pengoptimuman hiperparameter
 
-#### Seksyen 4: Pelaksanaan Pengeluaran
+#### Seksyen 4: Penggunaan Pengeluaran
 - **Konsep Keutamaan**: 
   - Penukaran model dan kuantisasi untuk pengeluaran
-  - Konfigurasi pelaksanaan Foundry Local
+  - Konfigurasi penggunaan Foundry Local
   - Penanda aras prestasi dan pengesahan kualiti
 
 ### Soalan Penilaian Kendiri
 
 1. Bagaimana SLMOps berbeza daripada MLOps tradisional?
-2. Terangkan manfaat distilasi model untuk pelaksanaan di edge.
+2. Terangkan manfaat distilasi model untuk penggunaan edge.
 3. Apakah pertimbangan utama untuk penalaan halus SLM dalam persekitaran yang terhad sumber?
-4. Huraikan saluran pelaksanaan pengeluaran lengkap untuk aplikasi AI di edge.
+4. Huraikan aliran kerja penggunaan pengeluaran lengkap untuk aplikasi AI edge.
 
 ### Latihan Praktikal
 
 1. **Distilasi Asas**: Cipta model yang lebih kecil daripada model guru yang lebih besar (1 jam)
-2. **Eksperimen Penalaan Halus**: Lakukan penalaan halus pada model untuk domain tertentu (1 jam)
-3. **Saluran Pelaksanaan**: Sediakan saluran CI/CD asas untuk pelaksanaan model (1 jam)
+2. **Eksperimen Penalaan Halus**: Talaan halus model untuk domain tertentu (1 jam)
+3. **Aliran Kerja Penggunaan**: Sediakan aliran kerja CI/CD asas untuk penggunaan model (1 jam)
 
-## Modul 6: Sistem SLM Agentic - Ejen AI dan Panggilan Fungsi
+## Modul 6: Sistem Agenik SLM - Ejen AI dan Panggilan Fungsi
 
 ### Objektif Pembelajaran Utama
 
 - Bina ejen AI pintar untuk persekitaran edge menggunakan Model Bahasa Kecil
 - Laksanakan keupayaan panggilan fungsi dengan aliran kerja sistematik
 - Kuasai integrasi Protokol Konteks Model (MCP) untuk interaksi alat yang standard
-- Cipta sistem agentic yang canggih dengan campur tangan manusia yang minimum
+- Cipta sistem agenik yang canggih dengan campur tangan manusia yang minimum
 
-### Kawasan Fokus Kajian
+### Fokus Kajian
 
 #### Seksyen 1: Ejen AI dan Asas SLM
 - **Konsep Keutamaan**: 
-  - Rangka kerja pengelasan ejen (refleks, berasaskan model, berasaskan matlamat, ejen pembelajaran)
-  - Analisis kompromi SLM vs LLM
-  - Corak reka bentuk ejen khusus untuk edge
+  - Kerangka klasifikasi ejen (refleks, berasaskan model, berasaskan matlamat, ejen pembelajaran)
+  - Analisis perdagangan antara SLM dan LLM
+  - Corak reka bentuk ejen khusus edge
   - Pengoptimuman sumber untuk ejen
 
 #### Seksyen 2: Panggilan Fungsi dalam Model Bahasa Kecil
 - **Konsep Keutamaan**: 
   - Pelaksanaan aliran kerja sistematik (pengesanan niat, output JSON, pelaksanaan luaran)
   - Pelaksanaan khusus platform (Phi-4-mini, model Qwen terpilih, Microsoft Foundry Local)
-  - Contoh maju (kerjasama multi-ejen, pemilihan alat dinamik)
+  - Contoh lanjutan (kerjasama multi-ejen, pemilihan alat dinamik)
   - Pertimbangan pengeluaran (had kadar, log audit, langkah keselamatan)
 
 #### Seksyen 3: Integrasi Protokol Konteks Model (MCP)
@@ -424,7 +488,7 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 ### Soalan Penilaian Kendiri
 
-1. Apakah pertimbangan seni bina utama untuk ejen AI di edge?
+1. Apakah pertimbangan seni bina utama untuk ejen AI edge?
 2. Bagaimana panggilan fungsi meningkatkan keupayaan ejen?
 3. Terangkan peranan Protokol Konteks Model dalam komunikasi ejen.
 
@@ -439,16 +503,16 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 - Kuasai AI Toolkit untuk Visual Studio Code untuk aliran kerja pembangunan EdgeAI yang komprehensif
 - Dapatkan kepakaran dalam platform Windows AI Foundry dan strategi pengoptimuman NPU
-- Laksanakan EdgeAI merentasi pelbagai platform perkakasan dan senario pelaksanaan
-- Bina aplikasi EdgeAI yang sedia untuk pengeluaran dengan pengoptimuman khusus platform
+- Laksanakan EdgeAI merentasi pelbagai platform perkakasan dan senario penggunaan
+- Bina aplikasi EdgeAI sedia pengeluaran dengan pengoptimuman khusus platform
 
-### Kawasan Fokus Kajian
+### Fokus Kajian
 
 #### Seksyen 1: AI Toolkit untuk Visual Studio Code
 - **Konsep Keutamaan**: 
   - Persekitaran pembangunan Edge AI yang komprehensif dalam VS Code
-  - Katalog model dan penemuan untuk pelaksanaan di edge
-  - Aliran kerja ujian tempatan, pengoptimuman, dan pembangunan ejen
+  - Katalog model dan penemuan untuk penggunaan edge
+  - Ujian tempatan, pengoptimuman, dan aliran kerja pembangunan ejen
   - Pemantauan prestasi dan penilaian untuk senario edge
 
 #### Seksyen 2: Panduan Pembangunan Windows EdgeAI
@@ -460,52 +524,52 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 #### Seksyen 3: Pelaksanaan Khusus Platform
 - **Konsep Keutamaan**: 
-  - Pelaksanaan NVIDIA Jetson Orin Nano (prestasi AI 67 TOPS)
+  - Penggunaan NVIDIA Jetson Orin Nano (prestasi AI 67 TOPS)
   - Aplikasi mudah alih dengan .NET MAUI dan ONNX Runtime GenAI
-  - Penyelesaian Azure EdgeAI dengan seni bina hibrid cloud-edge
+  - Penyelesaian Azure EdgeAI dengan seni bina hibrid awan-edge
   - Pengoptimuman Windows ML dengan sokongan perkakasan sejagat
   - Aplikasi Foundry Local dengan pelaksanaan RAG yang mengutamakan privasi
 
 ### Soalan Penilaian Kendiri
 
 1. Bagaimana AI Toolkit mempermudah aliran kerja pembangunan EdgeAI?
-2. Bandingkan strategi pelaksanaan merentasi platform perkakasan yang berbeza.
-3. Apakah kelebihan Windows AI Foundry untuk pembangunan di edge?
+2. Bandingkan strategi penggunaan merentasi platform perkakasan yang berbeza.
+3. Apakah kelebihan Windows AI Foundry untuk pembangunan edge?
 4. Terangkan peranan pengoptimuman NPU dalam aplikasi AI edge moden.
 5. Bagaimana API Phi Silica memanfaatkan perkakasan NPU untuk pengoptimuman prestasi?
-6. Bandingkan manfaat pelaksanaan tempatan vs cloud untuk aplikasi yang sensitif terhadap privasi.
+6. Bandingkan manfaat penggunaan tempatan vs. awan untuk aplikasi yang sensitif terhadap privasi.
 
 ### Latihan Praktikal
 
 1. **Persediaan AI Toolkit**: Konfigurasikan AI Toolkit dan optimumkan model (1 jam)
 2. **Windows AI Foundry**: Bina aplikasi AI Windows mudah menggunakan API Phi Silica (1 jam)
-3. **Pelaksanaan Merentas Platform**: Laksanakan model yang sama pada dua platform berbeza (1 jam)
+3. **Penggunaan Merentas Platform**: Gunakan model yang sama pada dua platform yang berbeza (1 jam)
 4. **Pengoptimuman NPU**: Uji prestasi NPU dengan alat Windows AI Foundry (30 minit)
 
-## Modul 8: Microsoft Foundry Local – Alat Pembangunan Lengkap (Moden)
+## Modul 8: Microsoft Foundry Local – Alat Pembangunan Lengkap (Dimodenkan)
 
 ### Objektif Pembelajaran Utama
 
 - Pasang dan konfigurasikan Foundry Local dengan integrasi SDK moden
-- Laksanakan sistem multi-ejen maju dengan corak penyelaras
-- Bina penghala model pintar dengan pemilihan automatik berdasarkan tugas
-- Laksanakan penyelesaian AI sedia pengeluaran dengan pemantauan komprehensif
-- Integrasi dengan Azure AI Foundry untuk senario pelaksanaan hibrid
+- Laksanakan sistem multi-ejen lanjutan dengan corak penyelaras
+- Bina penghala model pintar dengan pemilihan tugas automatik
+- Gunakan penyelesaian AI sedia pengeluaran dengan pemantauan yang komprehensif
+- Integrasi dengan Azure AI Foundry untuk senario penggunaan hibrid
 - Kuasai corak SDK moden dengan FoundryLocalManager dan klien OpenAI
 
-### Kawasan Fokus Kajian
+### Fokus Kajian
 
 #### Seksyen 1: Pemasangan dan Konfigurasi Moden
 - **Konsep Keutamaan**: 
   - Integrasi SDK FoundryLocalManager
   - Penemuan perkhidmatan automatik dan pemantauan kesihatan
   - Corak konfigurasi berdasarkan persekitaran
-  - Pertimbangan pelaksanaan pengeluaran
+  - Pertimbangan penggunaan pengeluaran
 
-#### Seksyen 2: Sistem Multi-Ejen Maju
+#### Seksyen 2: Sistem Multi-Ejen Lanjutan
 - **Konsep Keutamaan**: 
   - Corak penyelaras dengan ejen pakar
-  - Pengkhususan ejen untuk pengambilan, penaakulan, dan pelaksanaan
+  - Pengkhususan ejen pengambilan, penaakulan, dan pelaksanaan
   - Mekanisme gelung maklum balas untuk penambahbaikan
   - Pemantauan prestasi dan penjejakan statistik
 
@@ -518,7 +582,7 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 
 #### Seksyen 4: Pelaksanaan Sedia Pengeluaran
 - **Konsep Keutamaan**: 
-  - Pengendalian ralat komprehensif dan mekanisme sandaran
+  - Pengendalian ralat yang komprehensif dan mekanisme sandaran
   - Pemantauan permintaan dan penjejakan prestasi
   - Contoh Jupyter notebook interaktif dengan penanda aras
   - Corak integrasi dengan aplikasi sedia ada
@@ -528,75 +592,76 @@ Kursus ini disusun dalam tujuh modul komprehensif:
 1. Bagaimana pendekatan FoundryLocalManager moden berbeza daripada panggilan REST manual?
 2. Terangkan corak penyelaras dan bagaimana ia mengatur ejen pakar.
 3. Bagaimana penghala pintar memilih model yang sesuai berdasarkan kandungan pertanyaan?
-4. Apakah komponen utama sistem ejen AI yang sedia pengeluaran?
+4. Apakah komponen utama sistem ejen AI sedia pengeluaran?
 5. Bagaimana anda melaksanakan pemantauan kesihatan yang komprehensif untuk perkhidmatan Foundry Local?
-6. Bandingkan manfaat pendekatan moden dengan corak pelaksanaan tradisional.
+6. Bandingkan manfaat pendekatan yang dimodenkan vs. corak pelaksanaan tradisional.
 
 ### Latihan Praktikal
 
 1. **Persediaan SDK Moden**: Konfigurasikan FoundryLocalManager dengan penemuan perkhidmatan automatik (30 minit)
-2. **Sistem Multi-Ejen**: Jalankan penyelaras maju dengan ejen pakar (30 minit)
+2. **Sistem Multi-Ejen**: Jalankan penyelaras lanjutan dengan ejen pakar (30 minit)
 3. **Penghala Pintar**: Uji penghala model dengan jenis pertanyaan yang berbeza (30 minit)
-4. **Eksplorasi Interaktif**: Gunakan Jupyter notebook untuk meneroka ciri maju (45 minit)
-5. **Pelaksanaan Pengeluaran**: Laksanakan corak pemantauan dan pengendalian ralat (30 minit)
+4. **Eksplorasi Interaktif**: Gunakan Jupyter notebook untuk meneroka ciri lanjutan (45 minit)
+5. **Penggunaan Pengeluaran**: Laksanakan corak pemantauan dan pengendalian ralat (30 minit)
 6. **Integrasi Hibrid**: Konfigurasikan senario sandaran Azure AI Foundry (30 minit)
 
 ## Panduan Peruntukan Masa
 
-Untuk membantu anda memanfaatkan masa 20 jam kursus, berikut adalah cadangan pecahan masa:
+Untuk membantu anda memanfaatkan masa kursus 20 jam, berikut adalah cadangan pecahan masa:
 
 | Aktiviti | Peruntukan Masa | Penerangan |
 |----------|----------------|-------------|
-| Membaca Bahan Teras | 9 jam | Fokus pada konsep penting dalam setiap modul |
+| Membaca Bahan Teras | 9 jam | Memberi tumpuan kepada konsep penting dalam setiap modul |
 | Latihan Praktikal | 6 jam | Pelaksanaan praktikal teknik utama |
-| Penilaian Kendiri | 2 jam | Uji pemahaman anda melalui soalan dan refleksi |
-| Mini-Projek | 3 jam | Terapkan pengetahuan kepada pelaksanaan praktikal kecil |
+| Penilaian Kendiri | 2 jam | Menguji pemahaman anda melalui soalan dan refleksi |
+| Projek Mini | 3 jam | Mengaplikasikan pengetahuan kepada pelaksanaan praktikal kecil |
 
-### Kawasan Fokus Utama Berdasarkan Kekangan Masa
+### Fokus Utama Berdasarkan Kekangan Masa
 
 **Jika anda hanya mempunyai 10 jam:**
-- Lengkapkan Modul 1, 2, dan 3 (konsep teras EdgeAI)
-- Lakukan sekurang-kurangnya satu latihan praktikal setiap modul
-- Fokus pada pemahaman konsep teras daripada butiran pelaksanaan
+- Lengkapkan Modul 0 (Pengenalan) dan Modul 1, 2, dan 3 (konsep utama EdgeAI)
+- Lakukan sekurang-kurangnya satu latihan praktikal bagi setiap modul
+- Fokus pada memahami konsep utama daripada perincian pelaksanaan
 
-**Jika anda boleh memperuntukkan masa penuh 20 jam:**
-- Lengkapkan semua tujuh modul
+**Jika anda boleh meluangkan masa penuh 20 jam:**
+- Lengkapkan semua lapan modul (termasuk Pengenalan)
 - Lakukan latihan praktikal utama dari setiap modul
-- Lengkapkan satu mini-projek dari Modul 7
+- Lengkapkan satu projek mini dari Modul 7
 - Terokai sekurang-kurangnya 2-3 sumber tambahan
 
 **Jika anda mempunyai lebih daripada 20 jam:**
-- Lengkapkan semua modul dengan latihan terperinci
-- Bina pelbagai mini-projek
-- Terokai teknik pengoptimuman maju dalam Modul 4
-- Laksanakan pelaksanaan pengeluaran dari Modul 5
+- Lengkapkan semua modul (termasuk Pengenalan) dengan latihan terperinci
+- Bangunkan beberapa projek mini
+- Terokai teknik pengoptimuman lanjutan dalam Modul 4
+- Laksanakan pengeluaran dari Modul 5
 
 ## Sumber Penting
 
-Sumber-sumber yang dipilih dengan teliti ini memberikan nilai terbaik untuk masa belajar anda yang terhad:
+Sumber-sumber yang dipilih dengan teliti ini memberikan nilai terbaik untuk masa pembelajaran anda yang terhad:
 
 ### Dokumentasi Wajib Baca
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Alat pengoptimuman model yang paling cekap
+- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Alat pengoptimuman model yang paling efisien
 - [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - Cara terpantas untuk melaksanakan SLM secara tempatan
 - [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Rujukan untuk model yang dioptimumkan untuk edge
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Alat pengoptimuman komprehensif Intel
+- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Toolkit pengoptimuman komprehensif dari Intel
 - [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Persekitaran pembangunan EdgeAI yang terintegrasi
 - [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Platform pembangunan EdgeAI khusus Windows
 
 ### Alat Penjimat Masa
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Akses model dan pelaksanaan yang cepat
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Akses dan pelaksanaan model dengan cepat
 - [Gradio](https://www.gradio.app/docs/interface) - Pembangunan UI pantas untuk demo AI
 - [Microsoft Olive](https://github.com/microsoft/Olive) - Pengoptimuman model yang dipermudahkan
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inferens CPU yang cekap
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inferens CPU yang efisien
 - [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Rangka kerja pemampatan rangkaian neural
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Alat pelaksanaan model bahasa besar
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Toolkit pelaksanaan model bahasa besar
 
 ## Templat Penjejakan Kemajuan
 
-Gunakan templat ringkas ini untuk menjejaki kemajuan pembelajaran anda sepanjang kursus 20 jam:
+Gunakan templat ringkas ini untuk menjejaki kemajuan pembelajaran anda melalui kursus 20 jam:
 
 | Modul | Tarikh Selesai | Masa Diluangkan | Pengajaran Utama |
-|--------|----------------|-------------|---------------|
+|-------|----------------|-----------------|------------------|
+| Modul 0: Pengenalan kepada EdgeAI | | | |
 | Modul 1: Asas EdgeAI | | | |
 | Modul 2: Asas SLM | | | |
 | Modul 3: Pelaksanaan SLM | | | |
@@ -604,34 +669,34 @@ Gunakan templat ringkas ini untuk menjejaki kemajuan pembelajaran anda sepanjang
 | Modul 5: SLMOps | | | |
 | Modul 6: Ejen AI | | | |
 | Modul 7: Alat Pembangunan | | | |
-| Modul 8: Alat Foundry Local | | | |
+| Modul 8: Toolkit Tempatan Foundry | | | |
 | Latihan Praktikal | | | |
-| Mini-Projek | | | |
+| Projek Mini | | | |
 
-## Idea Mini-Projek
+## Idea Projek Mini
 
-Pertimbangkan untuk menyelesaikan salah satu projek ini untuk mempraktikkan konsep EdgeAI (setiap projek direka untuk mengambil masa 2-4 jam):
+Pertimbangkan untuk melengkapkan salah satu projek ini untuk mempraktikkan konsep EdgeAI (setiap satu direka untuk mengambil masa 2-4 jam):
 
 ### Projek Pemula (2-3 jam setiap satu)
 1. **Pembantu Teks Edge**: Cipta alat pelengkap teks luar talian yang mudah menggunakan model bahasa kecil
-2. **Papan Pemuka Perbandingan Model**: Bina visualisasi asas metrik prestasi merentasi pelbagai SLM
+2. **Dashboard Perbandingan Model**: Bangunkan visualisasi asas metrik prestasi merentasi pelbagai SLM
 3. **Eksperimen Pengoptimuman**: Ukur kesan tahap kuantisasi yang berbeza pada model asas yang sama
 
 ### Projek Pertengahan (3-4 jam setiap satu)
-4. **Aliran Kerja AI Toolkit**: Gunakan VS Code AI Toolkit untuk mengoptimumkan dan melaksanakan model dari awal hingga akhir
+4. **Aliran Kerja AI Toolkit**: Gunakan AI Toolkit VS Code untuk mengoptimumkan dan melaksanakan model dari awal hingga akhir
 5. **Aplikasi Windows AI Foundry**: Cipta aplikasi Windows menggunakan API Phi Silica dan pengoptimuman NPU
 6. **Pelaksanaan Merentas Platform**: Laksanakan model yang dioptimumkan yang sama pada Windows (OpenVINO) dan mudah alih (.NET MAUI)
-7. **Ejen Panggilan Fungsi**: Bina ejen AI dengan keupayaan panggilan fungsi untuk senario edge
+7. **Ejen Pemanggilan Fungsi**: Bangunkan ejen AI dengan keupayaan pemanggilan fungsi untuk senario edge
 
 ### Projek Integrasi Lanjutan (4-5 jam setiap satu)
-8. **Saluran Pengoptimuman OpenVINO**: Laksanakan pengoptimuman model lengkap menggunakan NNCF dan toolkit GenAI
-9. **Saluran SLMOps**: Laksanakan kitaran hayat model lengkap dari latihan hingga pelaksanaan edge
+8. **Pipeline Pengoptimuman OpenVINO**: Laksanakan pengoptimuman model lengkap menggunakan NNCF dan toolkit GenAI
+9. **Pipeline SLMOps**: Laksanakan kitaran hayat model lengkap dari latihan hingga pelaksanaan edge
 10. **Sistem Edge Multi-Model**: Laksanakan pelbagai model khusus yang bekerjasama pada perkakasan edge
-11. **Sistem Integrasi MCP**: Bina sistem ejen menggunakan Model Context Protocol untuk interaksi alat
+11. **Sistem Integrasi MCP**: Bangunkan sistem ejen menggunakan Protokol Konteks Model untuk interaksi alat
 
 ## Rujukan
 
-- Microsoft Learn (Foundry Local)
+- Microsoft Learn (Foundry Tempatan)
   - Gambaran keseluruhan: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
   - Bermula: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
   - Rujukan CLI: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
@@ -666,9 +731,9 @@ Sertai perbincangan dan berhubung dengan pelajar lain:
 
 ## Kesimpulan
 
-EdgeAI mewakili sempadan pelaksanaan kecerdasan buatan, membawa keupayaan yang hebat terus ke peranti sambil menangani kebimbangan kritikal tentang privasi, kependaman, dan sambungan. Kursus 20 jam ini menyediakan anda dengan pengetahuan penting dan kemahiran praktikal untuk mula bekerja dengan teknologi EdgeAI dengan segera.
+EdgeAI mewakili sempadan pelaksanaan kecerdasan buatan, membawa keupayaan yang kuat terus ke peranti sambil menangani kebimbangan kritikal tentang privasi, latensi, dan sambungan. Kursus 20 jam ini menyediakan anda dengan pengetahuan penting dan kemahiran praktikal untuk mula bekerja dengan teknologi EdgeAI dengan segera.
 
-Kursus ini sengaja ringkas dan fokus pada konsep yang paling penting, membolehkan anda memperoleh kepakaran yang bernilai dengan cepat tanpa komitmen masa yang berlebihan. Ingatlah bahawa latihan praktikal, walaupun dengan contoh yang mudah, adalah kunci untuk mengukuhkan apa yang telah anda pelajari.
+Kursus ini sengaja ringkas dan fokus pada konsep yang paling penting, membolehkan anda memperoleh kepakaran yang bernilai dengan cepat tanpa komitmen masa yang berlebihan. Ingatlah bahawa latihan praktikal, walaupun dengan contoh yang mudah, adalah kunci untuk memperkukuhkan apa yang telah anda pelajari.
 
 Selamat belajar!
 

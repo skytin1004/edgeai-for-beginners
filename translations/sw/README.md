@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-25T00:59:57+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T09:31:13+00:00",
   "source_file": "README.md",
   "language_code": "sw"
 }
@@ -40,74 +40,76 @@ Fuata hatua hizi kuanza kutumia rasilimali hizi:
 **Ikiwa unataka lugha za ziada za tafsiri, lugha zinazoungwa mkono zimeorodheshwa [hapa](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 ## Utangulizi
 
-Karibu kwenye **EdgeAI kwa Kompyuta** – safari yako ya kina katika ulimwengu wa mabadiliko wa Akili Bandia ya Edge. Kozi hii inaunganisha uwezo wa AI wenye nguvu na utekelezaji wa vitendo wa ulimwengu halisi kwenye vifaa vya edge, ikikuwezesha kutumia uwezo wa AI moja kwa moja pale data inapotengenezwa na maamuzi yanapohitajika.
+Karibu kwenye **EdgeAI kwa Kompyuta** – safari yako ya kina katika ulimwengu wa kubadilisha wa Akili Bandia ya Edge. Kozi hii inaunganisha uwezo wa AI wenye nguvu na utekelezaji wa vitendo wa ulimwengu halisi kwenye vifaa vya edge, ikikuwezesha kutumia uwezo wa AI moja kwa moja mahali data inazalishwa na maamuzi yanahitaji kufanywa.
 
 ### Unachojifunza
 
 Kozi hii inakuchukua kutoka dhana za msingi hadi utekelezaji tayari kwa uzalishaji, ikijumuisha:
 - **Small Language Models (SLMs)** zilizoboreshwa kwa ajili ya utekelezaji wa edge
 - **Uboreshaji unaozingatia vifaa** kwenye majukwaa mbalimbali
-- **Utabiri wa wakati halisi** na uwezo wa kuhifadhi faragha
-- **Mikakati ya utekelezaji wa uzalishaji** kwa programu za biashara
+- **Utoaji wa matokeo kwa wakati halisi** na uwezo wa kuhifadhi faragha
+- **Mikakati ya utekelezaji wa uzalishaji** kwa matumizi ya biashara
 
 ### Kwa Nini EdgeAI Ni Muhimu
 
 Edge AI inawakilisha mabadiliko ya dhana yanayoshughulikia changamoto muhimu za kisasa:
 - **Faragha & Usalama**: Kusindika data nyeti ndani bila kufichuliwa kwa wingu
-- **Utendaji wa Wakati Halisi**: Kuondoa ucheleweshaji wa mtandao kwa programu muhimu kwa wakati
+- **Utendaji wa Wakati Halisi**: Kuondoa ucheleweshaji wa mtandao kwa matumizi yanayohitaji muda
 - **Ufanisi wa Gharama**: Kupunguza matumizi ya bandwidth na gharama za kompyuta za wingu
 - **Uendeshaji Imara**: Kudumisha utendaji wakati wa kukatika kwa mtandao
 - **Kuzingatia Kanuni**: Kukidhi mahitaji ya uhuru wa data
 
 ### Edge AI
 
-Edge AI inahusu kuendesha algoriti za AI na mifano ya lugha ndani ya vifaa, karibu na pale data inapotengenezwa bila kutegemea rasilimali za wingu kwa utabiri. Inapunguza ucheleweshaji, inaboresha faragha, na kuwezesha maamuzi ya wakati halisi.
+Edge AI inahusu kuendesha algoriti za AI na mifano ya lugha ndani ya vifaa, karibu na mahali data inazalishwa bila kutegemea rasilimali za wingu kwa utoaji wa matokeo. Inapunguza ucheleweshaji, inaboresha faragha, na kuwezesha maamuzi ya wakati halisi.
 
 ### Kanuni za Msingi:
-- **Utabiri kwenye kifaa**: Mifano ya AI inaendeshwa kwenye vifaa vya edge (simu, router, microcontrollers, PC za viwandani)
+- **Utoaji wa matokeo kwenye kifaa**: Mifano ya AI inaendeshwa kwenye vifaa vya edge (simu, router, microcontroller, PC za viwandani)
 - **Uwezo wa nje ya mtandao**: Inafanya kazi bila muunganisho wa mtandao wa kudumu
 - **Ucheleweshaji wa chini**: Majibu ya haraka yanayofaa kwa mifumo ya wakati halisi
-- **Uhuru wa data**: Inahifadhi data nyeti ndani, ikiboresha usalama na uzingatiaji
+- **Uhuru wa data**: Inahifadhi data nyeti ndani, kuboresha usalama na uzingatiaji
 
 ### Small Language Models (SLMs)
 
 SLMs kama Phi-4, Mistral-7B, na Gemma ni matoleo yaliyoboreshwa ya LLM kubwa—yaliyofundishwa au kupunguzwa kwa:
 - **Matumizi ya kumbukumbu yaliyopunguzwa**: Matumizi bora ya kumbukumbu ndogo ya kifaa cha edge
 - **Mahitaji ya kompyuta yaliyopunguzwa**: Yameboreshwa kwa utendaji wa CPU na GPU za edge
-- **Nyakati za kuanza haraka**: Uanzishaji wa haraka kwa programu zinazojibu haraka
+- **Nyakati za kuanza haraka**: Uanzishaji wa haraka kwa matumizi yanayojibu haraka
 
 Zinatoa uwezo wa NLP wenye nguvu huku zikikidhi vikwazo vya:
-- **Mifumo iliyojengwa**: Vifaa vya IoT na vidhibiti vya viwandani
+- **Mifumo iliyojengwa ndani**: Vifaa vya IoT na vidhibiti vya viwandani
 - **Vifaa vya rununu**: Simu za mkononi na vidonge vyenye uwezo wa nje ya mtandao
-- **Vifaa vya IoT**: Sensor na vifaa mahiri vyenye rasilimali ndogo
-- **Seva za Edge**: Vitengo vya usindikaji wa ndani vyenye rasilimali ndogo za GPU
-- **Kompyuta za Kibinafsi**: Matukio ya utekelezaji wa desktop na laptop
+- **Vifaa vya IoT**: Vihisi na vifaa vya smart vyenye rasilimali ndogo
+- **Seva za edge**: Vitengo vya usindikaji wa ndani vyenye rasilimali ndogo za GPU
+- **Kompyuta za Kibinafsi**: Matukio ya utekelezaji kwenye desktop na laptop
 
 ## Moduli za Kozi & Uelekezaji
 
 | Moduli | Mada | Eneo la Kuzingatia | Maudhui Muhimu | Kiwango | Muda |
 |--------|-------|------------|-------------|--------|----------|
-| [📚 01](../../Module01) | [Misingi ya EdgeAI](./Module01/README.md) | Ulinganisho wa Cloud vs Edge AI | Misingi ya EdgeAI • Uchunguzi wa Kesi za Ulimwengu Halisi • Mwongozo wa Utekelezaji • Utekelezaji wa Edge | Kompyuta | 3-4 hrs |
+| [📖 00 ](./introduction.md) | [Utangulizi wa EdgeAI](./introduction.md) | Msingi & Muktadha | Muhtasari wa EdgeAI • Matumizi ya Viwanda • Utangulizi wa SLM • Malengo ya Kujifunza | Kompyuta | 1-2 hrs |
+| [📚 01](../../Module01) | [Misingi ya EdgeAI](./Module01/README.md) | Ulinganisho wa Cloud vs Edge AI | Misingi ya EdgeAI • Masomo ya Kesi ya Ulimwengu Halisi • Mwongozo wa Utekelezaji • Utekelezaji wa Edge | Kompyuta | 3-4 hrs |
 | [🧠 02](../../Module02) | [Misingi ya Mfano wa SLM](./Module02/README.md) | Familia za mifano & usanifu | Familia ya Phi • Familia ya Qwen • Familia ya Gemma • BitNET • μModel • Phi-Silica | Kompyuta | 4-5 hrs |
 | [🚀 03](../../Module03) | [Mazoezi ya Utekelezaji wa SLM](./Module03/README.md) | Utekelezaji wa ndani & wingu | Kujifunza kwa Kina • Mazingira ya Ndani • Utekelezaji wa Wingu | Kati | 4-5 hrs |
 | [⚙️ 04](../../Module04) | [Kifaa cha Uboreshaji wa Mfano](./Module04/README.md) | Uboreshaji wa majukwaa mbalimbali | Utangulizi • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Muundo wa Mtiririko wa Kazi | Kati | 5-6 hrs |
 | [🔧 05](../../Module05) | [SLMOps Uzalishaji](./Module05/README.md) | Uendeshaji wa uzalishaji | Utangulizi wa SLMOps • Kupunguza Mfano • Kurekebisha • Utekelezaji wa Uzalishaji | Juu | 5-6 hrs |
 | [🤖 06](../../Module06) | [Wakala wa AI & Kuita Kazi](./Module06/README.md) | Mfumo wa wakala & MCP | Utangulizi wa Wakala • Kuita Kazi • Itifaki ya Muktadha wa Mfano | Juu | 4-5 hrs |
 | [💻 07](../../Module07) | [Utekelezaji wa Jukwaa](./Module07/README.md) | Sampuli za majukwaa mbalimbali | Kifaa cha AI • Foundry Local • Maendeleo ya Windows | Juu | 3-4 hrs |
-| [🏭 08](../../Module08) | [Kifaa cha Foundry Local](./Module08/README.md) | Sampuli tayari kwa uzalishaji | Programu za sampuli (tazama maelezo hapa chini) | Mtaalamu | 8-10 hrs |
+| [🏭 08](../../Module08) | [Kifaa cha Foundry Local](./Module08/README.md) | Sampuli tayari kwa uzalishaji | Matumizi ya sampuli (angalia maelezo hapa chini) | Mtaalamu | 8-10 hrs |
 
-### 🏭 **Moduli 08: Programu za Sampuli**
+### 🏭 **Moduli 08: Matumizi ya Sampuli**
 
 - [01: Mwanzo wa Haraka wa REST Chat](./Module08/samples/01/README.md)
-- [02: Ujumuishaji wa OpenAI SDK](./Module08/samples/02/README.md)
+- [02: Ushirikiano wa OpenAI SDK](./Module08/samples/02/README.md)
 - [03: Ugunduzi wa Mfano & Upimaji](./Module08/samples/03/README.md)
-- [04: Programu ya Chainlit RAG](./Module08/samples/04/README.md)
+- [04: Chainlit RAG Application](./Module08/samples/04/README.md)
 - [05: Uratibu wa Wakala Wengi](./Module08/samples/05/README.md)
-- [06: Router ya Mifano-kama-Vifaa](./Module08/samples/06/README.md)
+- [06: Router ya Models-as-Tools](./Module08/samples/06/README.md)
 - [07: Mteja wa API ya Moja kwa Moja](./Module08/samples/07/README.md)
 - [08: Programu ya Chat ya Windows 11](./Module08/samples/08/README.md)
 - [09: Mfumo wa Wakala Wengi wa Juu](./Module08/samples/09/README.md)
-- [10: Mfumo wa Vifaa vya Foundry](./Module08/samples/10/README.md)
+- [10: Mfumo wa Zana za Foundry](./Module08/samples/10/README.md)
+
 ### 📊 **Muhtasari wa Njia ya Kujifunza**
 - **Muda Jumla**: Masaa 36-45
 - **Njia ya Kompyuta**: Moduli 01-02 (masaa 7-9)  
@@ -118,44 +120,47 @@ Zinatoa uwezo wa NLP wenye nguvu huku zikikidhi vikwazo vya:
 ## Unachojenga
 
 ### 🎯 Uwezo wa Msingi
-- **Usanifu wa Edge AI**: Buni mifumo ya AI inayozingatia ndani na ujumuishaji wa wingu
-- **Uboreshaji wa Mfano**: Punguza ukubwa wa mifano na kuongeza kasi kwa utekelezaji wa edge (ongezeko la kasi 85%, upunguzaji wa ukubwa 75%)
-- **Utekelezaji wa Majukwaa Mengi**: Windows, rununu, vifaa vilivyojengwa, na mifumo mseto ya wingu-edge
+- **Usanifu wa Edge AI**: Buni mifumo ya AI inayozingatia ndani na ushirikiano wa wingu
+- **Uboreshaji wa Mfano**: Punguza na compress mifano kwa utekelezaji wa edge (ongezeko la kasi 85%, upunguzaji wa ukubwa 75%)
+- **Utekelezaji wa Majukwaa Mengi**: Windows, rununu, vifaa vilivyojengwa ndani, na mifumo ya mseto ya wingu-edge
 - **Uendeshaji wa Uzalishaji**: Ufuatiliaji, upanuzi, na matengenezo ya Edge AI katika uzalishaji
 
 ### 🏗️ Miradi ya Vitendo
 - **Programu za Chat za Foundry Local**: Programu ya asili ya Windows 11 yenye kubadilisha mifano
 - **Mifumo ya Wakala Wengi**: Mratibu na mawakala maalum kwa mtiririko wa kazi tata  
-- **Programu za RAG**: Usindikaji wa hati za ndani na utafutaji wa vector
+- **Matumizi ya RAG**: Usindikaji wa hati za ndani na utafutaji wa vector
 - **Router za Mfano**: Uchaguzi wa akili kati ya mifano kulingana na uchambuzi wa kazi
 - **Mifumo ya API**: Wateja tayari kwa uzalishaji wenye utiririshaji na ufuatiliaji wa afya
-- **Vifaa vya Majukwaa Mengi**: Mifumo ya ujumuishaji ya LangChain/Semantic Kernel
+- **Zana za Majukwaa Mengi**: Mifumo ya ushirikiano ya LangChain/Semantic Kernel
 
 ### 🏢 Matumizi ya Viwanda
-**Utengenezaji** • **Huduma za Afya** • **Magari Yanayojitegemea** • **Miji Mahiri** • **Programu za Rununu**
+**Utengenezaji** • **Huduma za Afya** • **Magari Yanayojitegemea** • **Miji Smart** • **Programu za Rununu**
 
 ## Mwanzo wa Haraka
 
-**Njia ya Kujifunza Inayopendekezwa** (jumla ya masaa 20-30):
+**Njia ya Kujifunza Inayopendekezwa** (masaa 20-30 jumla):
 
+0. **📖 Utangulizi** ([Introduction.md](./introduction.md)): Msingi wa EdgeAI + muktadha wa viwanda + mfumo wa kujifunza
 1. **📚 Msingi** (Moduli 01-02): Dhana za EdgeAI + familia za mifano ya SLM
-2. **⚙️ Uboreshaji** (Moduli 03-04): Utekelezaji + mifumo ya kupunguza ukubwa  
-3. **🚀 Uzalishaji** (Moduli 05-06): SLMOps + mawakala wa AI + kuita kazi
-4. **💻 Utekelezaji** (Moduli 07-08): Sampuli za majukwaa + kifaa cha Foundry Local
+2. **⚙️ Uboreshaji** (Moduli 03-04): Utekelezaji + mifumo ya kupunguza  
+3. **🚀 Uzalishaji** (Moduli 05-06): SLMOps + Mawakala wa AI + Kuita kazi  
+4. **💻 Utekelezaji** (Moduli 07-08): Sampuli za jukwaa + Zana za Foundry Local  
 
-Kila moduli inajumuisha nadharia, mazoezi ya vitendo, na sampuli za msimbo tayari kwa uzalishaji.
+Kila moduli inajumuisha nadharia, mazoezi ya vitendo, na mifano ya msimbo tayari kwa uzalishaji.
 
 ## Athari kwa Kazi
-**Majukumu ya Kitaalamu**: EdgeAI Solutions Architect • Mhandisi wa ML (Edge) • Msanidi wa IoT AI • Msanidi wa AI ya Simu
 
-**Sekta za Viwanda**: Utengenezaji 4.0 • Teknolojia ya Afya • Mifumo ya Kujitegemea • FinTech • Elektroniki ya Watumiaji
+**Majukumu ya Kiufundi**: Mbunifu wa Suluhisho za EdgeAI • Mhandisi wa ML (Edge) • Msanidi wa IoT AI • Msanidi wa AI wa Simu  
 
-**Miradi ya Portfolio**: Mifumo ya mawakala wengi • Programu za RAG za uzalishaji • Utekelezaji wa majukwaa mbalimbali • Uboreshaji wa utendaji
+**Sekta za Viwanda**: Utengenezaji 4.0 • Teknolojia ya Afya • Mifumo ya Kujitegemea • FinTech • Elektroniki za Watumiaji  
+
+**Miradi ya Kwingineko**: Mifumo ya mawakala wengi • Programu za RAG za uzalishaji • Utekelezaji wa majukwaa mbalimbali • Uboreshaji wa utendaji  
 
 ## Muundo wa Hifadhi
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -166,16 +171,17 @@ edgeai-for-beginners/
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
 
-## Vipengele vya Kozi
+
+## Vipengele Muhimu vya Kozi
 
 ✅ **Kujifunza kwa Hatua**: Nadharia → Mazoezi → Utekelezaji wa uzalishaji  
 ✅ **Masomo Halisi ya Kesi**: Microsoft, Japan Airlines, utekelezaji wa biashara  
-✅ **Mifano ya Vitendo**: Mifano 50+, maonyesho 10 ya kina ya Foundry Local  
-✅ **Mtazamo wa Utendaji**: Uboreshaji wa kasi wa 85%, upunguzaji wa ukubwa wa 75%  
-✅ **Majukwaa Mbalimbali**: Windows, simu, vifaa vilivyopachikwa, mseto wa ukungu na wingu  
-✅ **Tayari kwa Uzalishaji**: Ufuatiliaji, upanuzi, usalama, mifumo ya kufuata kanuni
+✅ **Sampuli za Vitendo**: Zaidi ya mifano 50, maonyesho 10 ya kina ya Foundry Local  
+✅ **Mtazamo wa Utendaji**: Uboreshaji wa kasi kwa 85%, upunguzaji wa ukubwa kwa 75%  
+✅ **Majukwaa Mbalimbali**: Windows, simu, vifaa vilivyopachikwa, mseto wa wingu na ukingo  
+✅ **Tayari kwa Uzalishaji**: Ufuatiliaji, upanuzi, usalama, mifumo ya kufuata  
 
-📖 **[Mwongozo wa Kujifunza Unapatikana](STUDY_GUIDE.md)**: Njia ya kujifunza ya saa 20 iliyopangwa na mwongozo wa kugawa muda na zana za kujitathmini.
+📖 **[Mwongozo wa Kujifunza Unapatikana](STUDY_GUIDE.md)**: Njia ya kujifunza ya saa 20 iliyo na mwongozo wa mgawanyo wa muda na zana za kujitathmini.
 
 ---
 
@@ -185,21 +191,21 @@ edgeai-for-beginners/
 
 Timu yetu inazalisha kozi nyingine! Angalia:
 
-- [MCP kwa Kompyuta](https://github.com/microsoft/mcp-for-beginners)
-- [Mawakala wa AI kwa Kompyuta](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI kwa Kompyuta kwa kutumia .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI kwa Kompyuta kwa kutumia JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI kwa Kompyuta](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML kwa Kompyuta](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Sayansi ya Takwimu kwa Kompyuta](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI kwa Kompyuta](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Usalama wa Mtandao kwa Kompyuta](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Maendeleo ya Wavuti kwa Kompyuta](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT kwa Kompyuta](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [Maendeleo ya XR kwa Kompyuta](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Kumiliki GitHub Copilot kwa Uprogramu wa Pamoja wa AI](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Kumiliki GitHub Copilot kwa Wasanidi wa C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Chagua Safari Yako ya Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP kwa Kompyuta](https://github.com/microsoft/mcp-for-beginners)  
+- [Mawakala wa AI kwa Kompyuta](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI kwa Kompyuta kwa kutumia .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI kwa Kompyuta kwa kutumia JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI kwa Kompyuta](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML kwa Kompyuta](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Sayansi ya Takwimu kwa Kompyuta](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI kwa Kompyuta](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Usalama wa Mtandao kwa Kompyuta](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Uendelezaji wa Wavuti kwa Kompyuta](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT kwa Kompyuta](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Uendelezaji wa XR kwa Kompyuta](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Kumudu GitHub Copilot kwa Uandishi wa Programu wa AI](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Kumudu GitHub Copilot kwa Wasanidi wa C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Chagua Safari Yako ya Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ef04a48f3f1428fa008738033017e0e8",
-  "translation_date": "2025-09-25T02:16:12+00:00",
+  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
+  "translation_date": "2025-09-26T10:05:32+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "my"
 }
@@ -12,23 +12,24 @@ CO_OP_TRANSLATOR_METADATA:
 ### အကျုံးကျယ်သော သင်ကြားမှုလမ်းကြောင်း (၁ ပတ်)
 
 | နေ့ | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|------------------|
-| နေ့ ၁ | Module 1: EdgeAI အခြေခံ | ၃ နာရီ |
-| နေ့ ၂ | Module 2: SLM အခြေခံ | ၃ နာရီ |
-| နေ့ ၃ | Module 3: SLM တပ်ဆင်မှု | ၂ နာရီ |
-| နေ့ ၄-၅ | Module 4: မော်ဒယ်အကောင်းဆုံးဖြစ်စေရေး (Framework ၆ ခု) | ၄ နာရီ |
+|------|-------|------------------|
+| နေ့ ၀ | Module 0: EdgeAI အကြောင်းအကျဉ်း | ၁-၂ နာရီ |
+| နေ့ ၁ | Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | ၃ နာရီ |
+| နေ့ ၂ | Module 2: SLM အခြေခံအဆောက်အအုံများ | ၃ နာရီ |
+| နေ့ ၃ | Module 3: SLM တင်သွင်းခြင်း | ၂ နာရီ |
+| နေ့ ၄-၅ | Module 4: Model Optimization (Framework ၆ ခု) | ၄ နာရီ |
 | နေ့ ၆ | Module 5: SLMOps | ၃ နာရီ |
 | နေ့ ၇ | Module 6-7: AI Agents & Development Tools | ၄ နာရီ |
-| နေ့ ၈ | Module 8: Foundry Local Toolkit (ခေတ်မီအကောင်အထည်ဖော်မှု) | ၁ နာရီ |
+| နေ့ ၈ | Module 8: Foundry Local Toolkit (Modern Implementation) | ၁ နာရီ |
 
 ### အကျုံးကျယ်သော သင်ကြားမှုလမ်းကြောင်း (၂ ပတ်)
 
 | နေ့ | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|------------------|
-| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံ | ၃ နာရီ |
-| နေ့ ၃-၄ | Module 2: SLM အခြေခံ | ၃ နာရီ |
-| နေ့ ၅-၆ | Module 3: SLM တပ်ဆင်မှု | ၂ နာရီ |
-| နေ့ ၇-၈ | Module 4: မော်ဒယ်အကောင်းဆုံးဖြစ်စေရေး | ၄ နာရီ |
+|------|-------|------------------|
+| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | ၃ နာရီ |
+| နေ့ ၃-၄ | Module 2: SLM အခြေခံအဆောက်အအုံများ | ၃ နာရီ |
+| နေ့ ၅-၆ | Module 3: SLM တင်သွင်းခြင်း | ၂ နာရီ |
+| နေ့ ၇-၈ | Module 4: Model Optimization | ၄ နာရီ |
 | နေ့ ၉-၁၀ | Module 5: SLMOps | ၃ နာရီ |
 | နေ့ ၁၁-၁၂ | Module 6: AI Agents | ၂ နာရီ |
 | နေ့ ၁၃-၁၄ | Module 7: Development Tools | ၃ နာရီ |
@@ -36,477 +37,513 @@ CO_OP_TRANSLATOR_METADATA:
 ### အချိန်ပိုင်း သင်ကြားမှု (၄ ပတ်)
 
 | ပတ် | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|------------------|
-| ပတ် ၁ | Module 1-2: အခြေခံများနှင့် SLM အခြေခံ | ၆ နာရီ |
-| ပတ် ၂ | Module 3-4: တပ်ဆင်မှုနှင့် အကောင်းဆုံးဖြစ်စေရေး | ၆ နာရီ |
+|------|-------|------------------|
+| ပတ် ၁ | Module 1-2: အခြေခံအကြောင်းအရာများနှင့် SLM အခြေခံအဆောက်အအုံများ | ၆ နာရီ |
+| ပတ် ၂ | Module 3-4: တင်သွင်းခြင်းနှင့် Optimization | ၆ နာရီ |
 | ပတ် ၃ | Module 5-6: SLMOps နှင့် AI Agents | ၅ နာရီ |
-| ပတ် ၄ | Module 7: Development Tools နှင့် ပေါင်းစပ်မှု | ၃ နာရီ |
+| ပတ် ၄ | Module 7: Development Tools နှင့် Integration | ၃ နာရီ |
 
 | နေ့ | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|------------------|
-| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံ | ၃ နာရီ |
-| နေ့ ၃-၄ | Module 2: SLM အခြေခံ | ၃ နာရီ |
-| နေ့ ၅-၆ | Module 3: SLM တပ်ဆင်မှု | ၂ နာရီ |
-| နေ့ ၇-၈ | Module 4: မော်ဒယ်အကောင်းဆုံးဖြစ်စေရေး | ၄ နာရီ |
+|------|-------|------------------|
+| နေ့ ၀ | Module 0: EdgeAI အကြောင်းအကျဉ်း | ၁-၂ နာရီ |
+| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | ၃ နာရီ |
+| နေ့ ၃-၄ | Module 2: SLM အခြေခံအဆောက်အအုံများ | ၃ နာရီ |
+| နေ့ ၅-၆ | Module 3: SLM တင်သွင်းခြင်း | ၂ နာရီ |
+| နေ့ ၇-၈ | Module 4: Model Optimization | ၄ နာရီ |
 | နေ့ ၉-၁၀ | Module 5: SLMOps | ၃ နာရီ |
 | နေ့ ၁၁-၁၂ | Module 6: SLM Agentic Systems | ၂ နာရီ |
-| နေ့ ၁၃-၁၄ | Module 7: EdgeAI အကောင်အထည်ဖော်မှု နမူနာများ | ၂ နာရီ |
+| နေ့ ၁၃-၁၄ | Module 7: EdgeAI Implementation Samples | ၂ နာရီ |
 
 | Module | ပြီးစီးသည့်ရက် | အသုံးပြုသည့်နာရီ | အဓိကအကျဉ်းချုပ် |
-|--------|----------------|------------------|------------------|
-| Module 1: EdgeAI အခြေခံ | | | |
-| Module 2: SLM အခြေခံ | | | |
-| Module 3: SLM တပ်ဆင်မှု | | | |
-| Module 4: မော်ဒယ်အကောင်းဆုံးဖြစ်စေရေး (Framework ၆ ခု) | | | |
+|--------|----------------|-------------|--------------|
+| Module 0: EdgeAI အကြောင်းအကျဉ်း | | | |
+| Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | | | |
+| Module 2: SLM အခြေခံအဆောက်အအုံများ | | | |
+| Module 3: SLM တင်သွင်းခြင်း | | | |
+| Module 4: Model Optimization (Framework ၆ ခု) | | | |
 | Module 5: SLMOps | | | |
 | Module 6: SLM Agentic Systems | | | |
-| Module 7: EdgeAI အကောင်အထည်ဖော်မှု နမူနာများ | | | |
+| Module 7: EdgeAI Implementation Samples | | | |
 | လက်တွေ့လေ့ကျင့်မှုများ | | | |
 | Mini-Project | | | |
 
 ### အချိန်ပိုင်း သင်ကြားမှု (၄ ပတ်)
 
 | ပတ် | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|------------------|
-| ပတ် ၁ | Module 1-2: အခြေခံများနှင့် SLM အခြေခံ | ၆ နာရီ |
-| ပတ် ၂ | Module 3-4: တပ်ဆင်မှုနှင့် အကောင်းဆုံးဖြစ်စေရေး | ၆ နာရီ |
+|------|-------|------------------|
+| ပတ် ၁ | Module 1-2: အခြေခံအကြောင်းအရာများနှင့် SLM အခြေခံအဆောက်အအုံများ | ၆ နာရီ |
+| ပတ် ၂ | Module 3-4: တင်သွင်းခြင်းနှင့် Optimization | ၆ နာရီ |
 | ပတ် ၃ | Module 5-6: SLMOps နှင့် AI Agents | ၅ နာရီ |
-| ပတ် ၄ | Module 7: Development Tools နှင့် ပေါင်းစပ်မှု | ၃ နာရီ |
+| ပတ် ၄ | Module 7: Development Tools နှင့် Integration | ၃ နာရီ |
 
 ## အကျဉ်းချုပ်
 
-EdgeAI အတွက် အခြေခံသင်ခန်းစာများကို ကြိုဆိုပါတယ်! ဒီစာရွက်စာတမ်းက သင့်ကို သင်ခန်းစာများကို ထိရောက်စွာ လေ့လာနိုင်ရန်အတွက် လမ်းညွှန်ပေးပြီး သင့်ရဲ့ သင်ကြားမှုအတွေ့အကြုံကို အများဆုံးရရှိစေဖို့ ရည်ရွယ်ပါတယ်။ ဒီစာရွက်စာတမ်းမှာ သင်ကြားမှုလမ်းကြောင်းများ၊ အကြံပြုထားသော သင်ကြားမှုအချိန်ဇယားများ၊ အဓိကအကြောင်းအရာအကျဉ်းချုပ်များနှင့် EdgeAI နည်းပညာများကို နက်နက်ရှိုင်းရှိုင်းနားလည်စေရန် အထောက်အကူပြုသော အပိုဆောင်းအရင်းအမြစ်များ ပါဝင်ပါတယ်။
+EdgeAI အတွက် အခြေခံသင်ခန်းစာများကို ကြိုဆိုပါတယ်! ဒီစာရွက်စာတမ်းက သင့်ကို သင်ခန်းစာများကို ထိရောက်စွာ လေ့လာနိုင်ဖို့အတွက် လမ်းညွှန်ပေးပြီး သင့်ရဲ့ သင်ကြားမှုအတွေ့အကြုံကို အများဆုံးရရှိစေဖို့ ရည်ရွယ်ပါတယ်။ ဒီစာရွက်စာတမ်းမှာ သင်ကြားမှုလမ်းကြောင်းများ၊ အကြံပြုထားသော သင်ကြားမှုအချိန်ဇယားများ၊ အဓိကအကြောင်းအရာအကျဉ်းချုပ်များနှင့် Edge AI နည်းပညာများကို နက်နက်ရှိုင်းရှိုင်းနားလည်စေဖို့ အထောက်အကူပြုသော အရင်းအမြစ်များ ပါဝင်ပါတယ်။
 
-ဒီသင်ခန်းစာက ၂၀ နာရီသာ ကြာမြင့်ပြီး EdgeAI အကြောင်း အရေးကြီးသော အသိပညာများကို အချိန်တိုအတွင်း သင်ကြားပေးနိုင်တဲ့ အကျဉ်းချုပ်သင်ခန်းစာဖြစ်ပြီး အလုပ်ရှုပ်နေတဲ့ ပရော်ဖက်ရှင်နယ်များနှင့် ကျောင်းသားများအတွက် အထူးသင့်လျော်ပါတယ်။
+ဒီသင်ခန်းစာက ၂၀ နာရီသာ ကြာမြင့်ပြီး EdgeAI အကြောင်း အရေးကြီးသော အသိပညာများကို အချိန်တိုအတွင်း သင်ကြားပေးနိုင်တဲ့ အကျဉ်းချုပ်သင်ခန်းစာဖြစ်ပါတယ်။ အလုပ်ရှုပ်နေတဲ့ ပရော်ဖက်ရှင်နယ်များနှင့် ကျောင်းသားများအတွက် အထူးသင့်လျော်ပြီး ဒီနည်းပညာအသစ်ကို လက်တွေ့ကျွမ်းကျင်မှုရရှိစေဖို့ ရည်ရွယ်ပါတယ်။
 
 ## သင်ခန်းစာအကျဉ်းချုပ်
 
-ဒီသင်ခန်းစာကို Module ခုနစ်ခုအဖြစ် စီစဉ်ထားပါတယ်-
+ဒီသင်ခန်းစာကို အကျုံးကျယ်သော Module ၈ ခုအဖြစ် စီစဉ်ထားပါတယ်-
 
-1. **EdgeAI အခြေခံနှင့် ပြောင်းလဲမှု** - အဓိကအကြောင်းအရာများနှင့် နည်းပညာပြောင်းလဲမှုကို နားလည်ခြင်း
-2. **Small Language Model အခြေခံများ** - SLM မျိုးစဉ်များနှင့် ၎င်းတို့၏ Architecture များကို လေ့လာခြင်း
-3. **Small Language Model တပ်ဆင်မှု** - လက်တွေ့တပ်ဆင်မှုနည်းလမ်းများကို အကောင်အထည်ဖော်ခြင်း
+0. **EdgeAI အကြောင်းအကျဉ်း** - စက်မှုလုပ်ငန်းတွင် အသုံးချမှုများနှင့် သင်ကြားမှုရည်ရွယ်ချက်များ
+1. **EdgeAI အခြေခံအကြောင်းအရာများနှင့် ပြောင်းလဲမှု** - အဓိကအကြောင်းအရာများနှင့် နည်းပညာပြောင်းလဲမှုကို နားလည်ခြင်း
+2. **Small Language Model အခြေခံအဆောက်အအုံများ** - SLM မျိုးစဉ်များနှင့် ၎င်းတို့၏ အဆောက်အအုံများကို လေ့လာခြင်း
+3. **Small Language Model တင်သွင်းခြင်း** - လက်တွေ့တင်သွင်းမှုနည်းလမ်းများကို အကောင်အထည်ဖော်ခြင်း
 4. **Model Format Conversion နှင့် Quantization** - OpenVINO အပါအဝင် Framework ၆ ခုဖြင့် အဆင့်မြှင့်တင်ခြင်း
-5. **SLMOps - Small Language Model Operations** - ထုတ်လုပ်မှု Lifecycle စီမံခန့်ခွဲမှုနှင့် တပ်ဆင်မှု
+5. **SLMOps - Small Language Model Operations** - ထုတ်လုပ်မှုဘဝစဉ်ဆက်မှုနှင့် တင်သွင်းခြင်း
 6. **SLM Agentic Systems** - AI Agents, Function Calling နှင့် Model Context Protocol
-7. **EdgeAI အကောင်အထည်ဖော်မှု နမူနာများ** - AI Toolkit, Windows Development နှင့် Platform-specific Implementation များ
-8. **Microsoft Foundry Local – Developer Toolkit အပြည့်အစုံ** - Local-first Development နှင့် Hybrid Azure Integration (Module 08)
+7. **EdgeAI Implementation Samples** - AI Toolkit, Windows Development နှင့် Platform-specific Implementation
+8. **Microsoft Foundry Local – Complete Developer Toolkit** - Azure နှင့် ပေါင်းစပ်ထားသော Local-first Development
 
 ## ဒီသင်ခန်းစာလမ်းညွှန်ကို ဘယ်လိုအသုံးပြုမလဲ
 
-- **အဆင့်လိုက် သင်ကြားမှု**: Module များကို အစဉ်လိုက် လေ့လာပါ၊ သင့်ရဲ့ သင်ကြားမှုအတွေ့အကြုံကို ပိုမိုကျယ်ပြန့်စေပါမယ်။
-- **အသိပညာ စစ်ဆေးမှု**: အပိုင်းတိုင်းအပြီးမှာ ကိုယ်တိုင်စစ်ဆေးမေးခွန်းများကို အသုံးပြုပါ။
-- **လက်တွေ့လေ့ကျင့်မှု**: သီအိုရီအကြောင်းအရာများကို အတည်ပြုရန် အကြံပြုထားသော လေ့ကျင့်မှုများကို ပြီးမြောက်ပါ။
-- **အပိုဆောင်းအရင်းအမြစ်များ**: သင့်စိတ်ဝင်စားသော အကြောင်းအရာများအတွက် အပိုဆောင်းစာရွက်စာတမ်းများကို လေ့လာပါ။
+- **တိုးတက်မှုအဆင့်လိုက်သင်ကြားမှု**: Module များကို အစဉ်လိုက် လေ့လာပါ
+- **အသိပညာစစ်ဆေးမှု**: အပိုင်းတိုင်းပြီးနောက် ကိုယ်တိုင်စစ်ဆေးမေးခွန်းများကို အသုံးပြုပါ
+- **လက်တွေ့လေ့ကျင့်မှု**: သီအိုရီအကြောင်းအရာများကို အတည်ပြုရန် အကြံပြုထားသော လေ့ကျင့်မှုများကို ပြီးစီးပါ
+- **အထောက်အကူပြုအရင်းအမြစ်များ**: သင့်စိတ်ဝင်စားသော အကြောင်းအရာများအတွက် အပိုအရင်းအမြစ်များကို လေ့လာပါ
 
-## သင်ကြားမှုအချိန်ဇယား အကြံပြုချက်များ
+## သင်ကြားမှုအချိန်ဇယားအကြံပြုချက်များ
 
 ### အကျုံးကျယ်သော သင်ကြားမှုလမ်းကြောင်း (၁ ပတ်)
 
 | နေ့ | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|-----------------|
-| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံ | ၆ နာရီ |
-| နေ့ ၃-၄ | Module 2: SLM အခြေခံ | ၈ နာရီ |
-| နေ့ ၅ | Module 3: SLM တပ်ဆင်မှု | ၃ နာရီ |
+|------|-------|------------------|
+| နေ့ ၀ | Module 0: EdgeAI အကြောင်းအကျဉ်း | ၁-၂ နာရီ |
+| နေ့ ၁-၂ | Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | ၆ နာရီ |
+| နေ့ ၃-၄ | Module 2: SLM အခြေခံအဆောက်အအုံများ | ၈ နာရီ |
+| နေ့ ၅ | Module 3: SLM တင်သွင်းခြင်း | ၃ နာရီ |
 | နေ့ ၆ | Module 8: Foundry Local Toolkit | ၃ နာရီ |
 
 ### အချိန်ပိုင်း သင်ကြားမှု (၃ ပတ်)
 
 | ပတ် | အဓိကအကြောင်းအရာ | ခန့်မှန်းအချိန် |
-|------|----------------|-----------------|
-| ပတ် ၁ | Module 1: EdgeAI အခြေခံ | ၆-၇ နာရီ |
-| ပတ် ၂ | Module 2: SLM အခြေခံ | ၇-၈ နာရီ |
-| ပတ် ၃ | Module 3: SLM တပ်ဆင်မှု (၃ နာရီ) + Module 8: Foundry Local Toolkit (၂-၃ နာရီ) | ၅-၆ နာရီ |
+|------|-------|------------------|
+| ပတ် ၁ | Module 0: အကြောင်းအကျဉ်း + Module 1: EdgeAI အခြေခံအကြောင်းအရာများ | ၇-၉ နာရီ |
+| ပတ် ၂ | Module 2: SLM အခြေခံအဆောက်အအုံများ | ၇-၈ နာရီ |
+| ပတ် ၃ | Module 3: SLM တင်သွင်းခြင်း (၃ နာရီ) + Module 8: Foundry Local Toolkit (၂-၃ နာရီ) | ၅-၆ နာရီ |
 
-## Module 1: EdgeAI အခြေခံနှင့် ပြောင်းလဲမှု
+## Module 0: EdgeAI အကြောင်းအကျဉ်း
 
-### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
+### အဓိကသင်ကြားရမည့်ရည်ရွယ်ချက်များ
 
-- Cloud-based AI နှင့် Edge-based AI အကြား ကွာခြားချက်များကို နားလည်ပါ။
-- အရင်းအမြစ်ကန့်သတ်ထားသော ပတ်ဝန်းကျင်များအတွက် အဓိက Optimization နည်းလမ်းများကို ကျွမ်းကျင်ပါ။
-- EdgeAI နည်းပညာများ၏ လက်တွေ့အသုံးချမှုများကို ခွဲခြမ်းစိတ်ဖြာပါ။
-- EdgeAI Project များအတွက် Development Environment တစ်ခုကို စတင်တည်ဆောက်ပါ။
+- Edge AI ဆိုတာ ဘာလဲ၊ ယနေ့နည်းပညာလောကမှာ ဘာကြောင့် အရေးကြီးလဲဆိုတာ နားလည်ပါ
+- Edge AI က ပြောင်းလဲသွားတဲ့ စက်မှုလုပ်ငန်းများနှင့် ၎င်းတို့၏ အသုံးချမှုများကို ဖော်ထုတ်ပါ
+- Edge Deployment အတွက် Small Language Models (SLMs) ရဲ့ အကျိုးကျေးဇူးများကို နားလည်ပါ
+- သင့်ရဲ့ သင်ခန်းစာရဲ့ ရည်မှန်းချက်များနှင့် ရလဒ်များကို သတ်မှတ်ပါ
+- Edge AI လောကမှာ အလုပ်အကိုင်အခွင့်အလမ်းများနှင့် လိုအပ်သော ကျွမ်းကျင်မှုများကို သိရှိပါ
 
-### သင်ကြားမှု အဓိကအချက်များ
+### သင်ကြားမှုအဓိကအချက်များ
 
-#### အပိုင်း ၁: EdgeAI အခြေခံ
+#### အပိုင်း ၁: Edge AI Paradigm နှင့် အဓိပ္ပာယ်
 - **အဓိကအကြောင်းအရာများ**: 
-  - Edge vs. Cloud Computing Paradigms
-  - Model Quantization နည်းလမ်းများ
-  - Hardware Acceleration ရွေးချယ်မှုများ (NPUs, GPUs, CPUs)
-  - Privacy နှင့် Security အကျိုးကျေးဇူးများ
+  - Edge AI နှင့် Cloud AI အကြား ကွာခြားချက်များ
+  - Hardware, Model Optimization, Business Demand တို့ရဲ့ ပေါင်းစည်းမှု
+  - အချိန်နှင့်တပြေးညီ၊ Privacy ကို ထိန်းသိမ်းခြင်း၊ ကုန်ကျစရိတ်သက်သာသော AI တင်သွင်းမှု
 
-- **အပိုဆောင်းစာရွက်စာတမ်းများ**:
-  - [TensorFlow Lite Documentation](https://www.tensorflow.org/lite)
-  - [ONNX Runtime GitHub](https://github.com/microsoft/onnxruntime)
-  - [Edge Impulse Documentation](https://docs.edgeimpulse.com)
-
-#### အပိုင်း ၂: လက်တွေ့အသုံးချမှု Case Studies
+#### အပိုင်း ၂: စက်မှုလုပ်ငန်းအသုံးချမှုများ
 - **အဓိကအကြောင်းအရာများ**: 
-  - Microsoft Phi & Mu Model Ecosystem
-  - စက်မှုလုပ်ငန်းများအတွင်း လက်တွေ့အသုံးချမှုများ
-  - Deployment အချက်အလက်များ
+  - စက်မှုလုပ်ငန်း & Industry 4.0: Predictive Maintenance နှင့် Quality Control
+  - ကျန်းမာရေး: Diagnostic Imaging နှင့် လူနာကြည့်ရှုမှု
+  - အလိုအလျောက်စနစ်များ: Self-driving Vehicles နှင့် သယ်ယူပို့ဆောင်ရေး
+  - Smart Cities: Traffic Management နှင့် Public Safety
+  - စားသုံးသူနည်းပညာ: Smartphones, Wearables, Smart Homes
 
-#### အပိုင်း ၃: လက်တွေ့အကောင်အထည်ဖော်မှု လမ်းညွှန်
+#### အပိုင်း ၃: Small Language Models အခြေခံ
 - **အဓိကအကြောင်းအရာများ**: 
-  - Development Environment တည်ဆောက်ခြင်း
-  - Quantization နှင့် Optimization Tools
-  - EdgeAI အကောင်အထည်ဖော်မှုများအတွက် အကဲဖြတ်နည်းလမ်းများ
+  - SLM ရဲ့ လက္ခဏာများနှင့် Performance Comparisons
+  - Parameter Efficiency နှင့် Capability Trade-offs
+  - Edge Deployment အကန့်အသတ်များနှင့် Optimization Strategies
 
-#### အပိုင်း ၄: Edge Deployment Hardware
+#### အပိုင်း ၄: သင်ကြားမှု Framework နှင့် Career Path
 - **အဓိကအကြောင်းအရာများ**: 
-  - Hardware Platform များနှိုင်းယှဉ်ခြင်း
-  - Hardware-specific Optimization Strategies
-  - Deployment အချက်အလက်များ
+  - သင်ခန်းစာအဆောက်အအုံနှင့် တိုးတက်မှုအဆင့်လိုက် သင်ကြားမှု
+  - နည်းပညာကျွမ်းကျင်မှုများနှင့် လက်တွေ့အကောင်အထည်ဖော်မှုရည်မှန်းချက်များ
+  - အလုပ်အကိုင်တိုးတက်မှုအခွင့်အလမ်းများနှင့် စက်မှုလုပ်ငန်းအသုံးချမှုများ
 
 ### ကိုယ်တိုင်စစ်ဆေးမေးခွန်းများ
 
-1. Cloud-based AI နှင့် Edge-based AI တပ်ဆင်မှုများကို နှိုင်းယှဉ်ပါ။
-2. Edge Deployment အတွက် မော်ဒယ်များကို Optimization လုပ်ရန် အဓိကနည်းလမ်း ၃ ခုကို ရှင်းပြပါ။
-3. AI မော်ဒယ်များကို Edge မှာ Run လုပ်ခြင်း၏ အဓိကအကျိုးကျေးဇူးများက ဘာလဲ?
-4. မော်ဒယ် Quantization လုပ်ခြင်း၏ လုပ်ငန်းစဉ်ကို ရှင်းပြပါ။ ၎င်းသည် Performance ကို ဘယ်လို သက်ရောက်မှုရှိစေသလဲ?
-5. EdgeAI Deployment အတွက် Hardware Accelerators (NPUs, GPUs, CPUs) များက ဘယ်လို သက်ရောက်မှုရှိစေသလဲ?
+1. Edge AI ကို အားပေးတဲ့ နည်းပညာသုံးခုကို ဖော်ပြပါ။
+2. Edge AI နှင့် Cloud-based AI အကြား အကျိုးကျေးဇူးများနှင့် စိန်ခေါ်မှုများကို နှိုင်းယှဉ်ပါ။
+3. Edge AI က အရေးကြီးတဲ့ စီးပွားရေးတန်ဖိုးပေးတဲ့ စက်မှုလုပ်ငန်းသုံးခုကို ဖော်ပြပြီး အကြောင်းပြပါ။
+4. Small Language Models (SLMs) က Edge AI ကို လက်တွေ့အသုံးချမှုအတွက် ဘယ်လို အကျိုးကျေးဇူးပေးနိုင်သလဲ။
+5. ဒီသင်ခန်းစာတစ်ခုလုံးမှာ သင်ရရှိမယ့် အဓိကနည်းပညာကျွမ်းကျင်မှုများကို ဖော်ပြပါ။
+6. ဒီသင်ခန်းစာမှာ အသုံးပြုထားတဲ့ Learning Approach လေးခုကို ဖော်ပြပါ။
 
 ### လက်တွေ့လေ့ကျင့်မှုများ
 
-1. **Environment Setup လုပ်ခြင်း**: အဓိက Package များဖြင့် Development Environment တစ်ခုကို Configure လုပ်ပါ (၃၀ မိနစ်)
-2. **Model Exploration**: Pre-trained Small Language Model တစ်ခုကို Download လုပ်ပြီး စမ်းသပ်ပါ (၁ နာရီ)
-3. **Basic Quantization**: Small Model တစ်ခုကို Quantization လုပ်ပါ (၁ နာရီ)
-  - OpenVINO GenAI ကို LLM များ deploy လုပ်ရန်အတွက် အသုံးပြုခြင်း
+1. **စက်မှုလုပ်ငန်းသုတေသန**: စက်မှုလုပ်ငန်းအသုံးချမှုတစ်ခုကို ရွေးပြီး Edge AI ရဲ့ လက်တွေ့အသုံးချမှုကို သုတေသနလုပ်ပါ (၃၀ မိနစ်)
+2. **Model ရှာဖွေမှု**: Hugging Face မှာ ရရှိနိုင်တဲ့ Small Language Models များကို Browse လုပ်ပြီး Parameter Counts နှင့် Capabilities ကို နှိုင်းယှဉ်ပါ (၃၀ မိနစ်)
+3. **သင်ကြားမှုအစီအစဉ်ရေးဆွဲခြင်း**: သင်ခန်းစာအဆောက်အအုံကို ပြန်လည်သုံးသပ်ပြီး ကိုယ်ပိုင်သင်ကြားမှုဇယားကို ဖန်တီးပါ (၁၅ မိနစ်)
 
-#### အပိုင်း ၅: Apple MLX Framework
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Apple Silicon အတွက် အထူးပြု optimization
-  - Unified memory architecture
-  - LoRA fine-tuning အစွမ်းသတ္တိများ
+### အထောက်အကူပြုအရင်းအမြစ်များ
 
-#### အပိုင်း ၆: Edge AI Development Workflow Synthesis
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Unified workflow architecture
-  - Framework ရွေးချယ်မှုအတွက် ဆုံးဖြတ်ချက်ပုံစံများ
-  - ထုတ်လုပ်မှုအဆင်သင့်ဖြစ်မှု စစ်ဆေးခြင်း
-  - အနာဂတ်အတွက် အထောက်အထားရှိမှု ရေးဆွဲခြင်း
+- [Edge AI Market Overview - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
+- [Small Language Models Overview - Hugging Face](https://huggingface.co/blog/small-language-models)
+- [Edge Computing Foundation](https://www.edgecomputing.org/)
 
-### ကိုယ်တိုင်စစ်ဆေးရန် မေးခွန်းများ
+## Module 1: EdgeAI အခြေခံအကြောင်းအရာများနှင့် ပြောင်းလဲမှု
 
-1. Precision အဆင့်အမျိုးမျိုး (1-bit မှ 8-bit) အတွက် quantization များကို နှိုင်းယှဉ်ပါ။
-2. Edge deployment အတွက် GGUF format ၏ အကျိုးကျေးဇူးများကို ရှင်းပြပါ။
-3. Microsoft Olive ၏ hardware-aware optimization သည် deployment အကျိုးရှိမှုကို မည်သို့ တိုးတက်စေပါသလဲ။
-4. OpenVINO ၏ NNCF သည် model compression အတွက် အဓိက အကျိုးကျေးဇူးများကို ရှင်းပြပါ။
-5. Apple MLX သည် optimization အတွက် unified memory architecture ကို မည်သို့ အသုံးချပါသလဲ။
-6. Workflow synthesis သည် optimal optimization frameworks ရွေးချယ်ရာတွင် မည်သို့ အထောက်အကူပြုပါသလဲ။
+### အဓိကသင်ကြားရမည့်ရည်ရွယ်ချက်များ
 
-### လက်တွေ့လုပ်ငန်းများ
+- Cloud-based AI နှင့် Edge-based AI အကြား ကွာခြားချက်များကို နားလည်ပါ
+- Resource-constrained ပတ်ဝန်းကျင်များအတွက် Optimization Techniques များကို ကျွမ်းကျင်ပါ
+- EdgeAI နည်းပညာများ၏ လက်တွေ့အသုံးချမှုများကို ခွဲခြမ်းစိတ်ဖြာပါ
+- EdgeAI Project များအတွက် Development Environment ကို စတင်တည်ဆောက်ပါ
 
-1. **Model Quantization**: မော်ဒယ်တစ်ခုကို quantization အဆင့်အမျိုးမျိုးတွင် အသုံးပြုပြီး ရလဒ်များကို နှိုင်းယှဉ်ပါ (1 နာရီ)
-2. **OpenVINO Optimization**: Intel hardware အတွက် မော်ဒယ်တစ်ခုကို NNCF အသုံးပြု၍ compress လုပ်ပါ (1 နာရီ)
-3. **Framework Comparison**: မော်ဒယ်တစ်ခုကို optimization frameworks သုံးခုအတွင်း စမ်းသပ်ပါ (1 နာရီ)
-4. **Performance Benchmarking**: inference speed နှင့် memory usage အပေါ် optimization ၏ သက်ရောက်မှုကို တိုင်းတာပါ (1 နာရီ)
+### သင်ကြားမှုအဓိကအချက်များ
 
-## Module 5: SLMOps - Small Language Model Operations
+#### အပိုင်း ၁: EdgeAI အခြေခံအကြ
+3. Windows အတွက် Mu မော်ဒယ်၏ ထူးခြားသော အကျိုးကျေးဇူးများက ဘာတွေလဲ?  
+4. Phi-Silica သည် NPU ဟာ့ဒ်ဝဲကို အသုံးပြု၍ စွမ်းဆောင်ရည်ကို ဘယ်လို အကောင်းဆုံးလုပ်ဆောင်သလဲ?  
+5. ချိတ်ဆက်မှု အကန့်အသတ်ရှိသော မိုဘိုင်းအက်ပ်လီကေးရှင်းအတွက် မော်ဒယ်မိသားစုအဘယ်ဟာ အကောင်းဆုံးဖြစ်မည်နည်း၊ အကြောင်းရင်းကဘာလဲ?
 
-### အဓိက သင်ယူရမည့် ရည်ရွယ်ချက်များ
+### လက်တွေ့လေ့ကျင့်မှုများ
 
-- SLMOps lifecycle management principles ကို နားလည်ပါ
-- Edge deployment အတွက် distillation နှင့် fine-tuning နည်းလမ်းများကို ကျွမ်းကျင်ပါ
-- monitoring ဖြင့် production deployment strategies ကို အကောင်အထည်ဖော်ပါ
-- စီးပွားရေးအဆင့် SLM operations နှင့် maintenance workflows ကို တည်ဆောက်ပါ
+1. **မော်ဒယ်နှိုင်းယှဉ်မှု**: SLM မော်ဒယ်နှစ်ခုကို အမြန်စမ်းသပ်ခြင်း (1 နာရီ)  
+2. **ရိုးရှင်းသော စာသားဖန်တီးခြင်း**: မော်ဒယ်အသေးစားတစ်ခုဖြင့် စာသားဖန်တီးမှုကို အခြေခံအကောင်အထည်ဖော်ခြင်း (1 နာရီ)  
+3. **အမြန်အကောင်းဆုံးလုပ်ဆောင်ခြင်း**: စွမ်းဆောင်ရည်မြှင့်တင်ရန် အကောင်းဆုံးနည်းလမ်းတစ်ခုကို အသုံးပြုခြင်း (1 နာရီ)  
 
-### သင်ယူရန် အဓိက အကျဉ်းချုပ်များ
+## Module 3: အသေးစားဘာသာစကားမော်ဒယ် တင်သွင်းခြင်း
 
-#### အပိုင်း ၁: SLMOps အကျဉ်းချုပ်
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - AI operations တွင် SLMOps paradigm shift
-  - ကုန်ကျစရိတ်သက်သာမှုနှင့် privacy-first architecture
-  - စီးပွားရေးအပေါ် သက်ရောက်မှုနှင့် ယှဉ်ပြိုင်မှု အကျိုးကျေးဇူးများ
+### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
 
-#### အပိုင်း ၂: Model Distillation
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Knowledge transfer နည်းလမ်းများ
-  - Two-stage distillation process implementation
-  - Azure ML distillation workflows
+- တင်သွင်းမှု အကန့်အသတ်များအပေါ် မော်ဒယ်များကို သင့်တော်စွာ ရွေးချယ်နိုင်ခြင်း  
+- တင်သွင်းမှုအခြေအနေများအမျိုးမျိုးအတွက် အကောင်းဆုံးလုပ်ဆောင်နည်းများကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်း  
+- SLM များကို ဒေသတွင်းနှင့် cloud ပတ်ဝန်းကျင်များတွင် အကောင်အထည်ဖော်နိုင်ခြင်း  
+- EdgeAI အက်ပ်လီကေးရှင်းများအတွက် ထုတ်လုပ်မှုအဆင်သင့် configuration များကို ဒီဇိုင်းဆွဲနိုင်ခြင်း  
 
-#### အပိုင်း ၃: Fine-tuning Strategies
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Parameter-efficient fine-tuning (PEFT)
-  - LoRA နှင့် QLoRA အဆင့်မြင့်နည်းလမ်းများ
-  - Multi-adapter training နှင့် hyperparameter optimization
+### လေ့လာရန် အဓိက အစိတ်အပိုင်းများ
 
-#### အပိုင်း ၄: Production Deployment
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Production အတွက် model conversion နှင့် quantization
-  - Foundry Local deployment configuration
-  - Performance benchmarking နှင့် quality validation
+#### Section 1: SLM အဆင့်မြင့် သင်ယူမှု  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Parameter ခွဲခြားမှု framework  
+  - အဆင့်မြင့် optimization နည်းလမ်းများ  
+  - မော်ဒယ်ရယူမှု မဟာဗျူဟာများ  
 
-### ကိုယ်တိုင်စစ်ဆေးရန် မေးခွန်းများ
+#### Section 2: ဒေသတွင်းပတ်ဝန်းကျင်တွင် တင်သွင်းခြင်း  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Ollama ပလက်ဖောင်း တင်သွင်းခြင်း  
+  - Microsoft Foundry ဒေသတွင်းဖြေရှင်းချက်များ  
+  - Framework နှိုင်းယှဉ်မှု  
 
-1. SLMOps သည် ရိုးရိုး MLOps နှင့် မည်သို့ ကွဲပြားပါသလဲ။
-2. Edge deployment အတွက် model distillation ၏ အကျိုးကျေးဇူးများကို ရှင်းပြပါ။
-3. အရင်းအမြစ်ကန့်သတ်ထားသော ပတ်ဝန်းကျင်များတွင် SLM များ fine-tuning လုပ်ရာတွင် အဓိကစဉ်းစားရမည့်အချက်များက ဘာတွေလဲ။
-4. Edge AI applications အတွက် production deployment pipeline တစ်ခုကို ပြည့်စုံစွာ ရှင်းပြပါ။
+#### Section 3: Containerized Cloud Deployment  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - vLLM စွမ်းဆောင်ရည်မြင့် inference  
+  - Container orchestration  
+  - ONNX Runtime အကောင်အထည်ဖော်မှု  
 
-### လက်တွေ့လုပ်ငန်းများ
+### ကိုယ်တိုင်အကဲဖြတ်မေးခွန်းများ
 
-1. **Basic Distillation**: Teacher model တစ်ခုမှ မော်ဒယ်အသေးတစ်ခုကို ဖန်တီးပါ (1 နာရီ)
-2. **Fine-tuning Experiment**: မော်ဒယ်တစ်ခုကို အထူးပြု domain အတွက် fine-tune လုပ်ပါ (1 နာရီ)
-3. **Deployment Pipeline**: Model deployment အတွက် CI/CD pipeline တစ်ခုကို တည်ဆောက်ပါ (1 နာရီ)
+1. ဒေသတွင်း deployment နှင့် cloud deployment အကြား ရွေးချယ်ရာတွင် ဘာတွေကို စဉ်းစားသင့်သလဲ?  
+2. Ollama နှင့် Microsoft Foundry Local တင်သွင်းမှုအဖြစ် အကြောင်းအရာများကို နှိုင်းယှဉ်ပါ။  
+3. SLM တင်သွင်းမှုအတွက် containerization ၏ အကျိုးကျေးဇူးများက ဘာတွေလဲ?  
+4. EdgeAI တွင် တင်သွင်းထားသော SLM အတွက် စွမ်းဆောင်ရည် metrics အဓိကအချက်များက ဘာတွေလဲ?  
+5. မော်ဒယ်ရွေးချယ်မှုမှ ထုတ်လုပ်မှုအကောင်အထည်ဖော်မှုအထိ တင်သွင်းမှု workflow တစ်ခုကို ဖော်ပြပါ။  
+
+### လက်တွေ့လေ့ကျင့်မှုများ
+
+1. **ရိုးရှင်းသော ဒေသတွင်းတင်သွင်းမှု**: Ollama ကို အသုံးပြု၍ SLM တစ်ခုကို တင်သွင်းပါ (1 နာရီ)  
+2. **စွမ်းဆောင်ရည် စစ်ဆေးမှု**: တင်သွင်းထားသော မော်ဒယ်ကို အမြန်စမ်းသပ်ပါ (30 မိနစ်)  
+3. **ရိုးရှင်းသော ပေါင်းစည်းမှု**: တင်သွင်းထားသော မော်ဒယ်ကို အသုံးပြုသော အနည်းဆုံး application တစ်ခုကို ဖန်တီးပါ (1 နာရီ)  
+
+## Module 4: မော်ဒယ် Format ပြောင်းလဲခြင်းနှင့် Quantization
+
+### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
+
+- 1-bit မှ 8-bit precision အထိ အဆင့်မြင့် quantization နည်းလမ်းများကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်း  
+- Format ပြောင်းလဲမှု မဟာဗျူဟာများကို နားလည်ခြင်း (GGUF, ONNX)  
+- Framework ခြောက်ခုအတွင်း optimization ကို အကောင်အထည်ဖော်နိုင်ခြင်း (Llama.cpp, Olive, OpenVINO, MLX, workflow synthesis)  
+- Intel, Apple နှင့် cross-platform hardware များအတွက် ထုတ်လုပ်မှု edge ပတ်ဝန်းကျင်များတွင် optimized မော်ဒယ်များကို တင်သွင်းနိုင်ခြင်း  
+
+### လေ့လာရန် အဓိက အစိတ်အပိုင်းများ
+
+#### Section 1: Quantization အခြေခံ  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Precision ခွဲခြားမှု framework  
+  - စွမ်းဆောင်ရည်နှင့် တိကျမှု trade-offs  
+  - Memory footprint optimization  
+
+#### Section 2: Llama.cpp အကောင်အထည်ဖော်မှု  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Cross-platform တင်သွင်းမှု  
+  - GGUF format optimization  
+  - Hardware acceleration နည်းလမ်းများ  
+
+#### Section 3: Microsoft Olive Suite  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Hardware-aware optimization  
+  - Enterprise-grade တင်သွင်းမှု  
+  - Automated optimization workflows  
+
+#### Section 4: OpenVINO Toolkit  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Intel hardware optimization  
+  - Neural Network Compression Framework (NNCF)  
+  - Cross-platform inference တင်သွင်းမှု  
+  - OpenVINO GenAI for LLM တင်သွင်းမှု  
+
+#### Section 5: Apple MLX Framework  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Apple Silicon optimization  
+  - Unified memory architecture  
+  - LoRA fine-tuning စွမ်းရည်များ  
+
+#### Section 6: Edge AI Development Workflow Synthesis  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Unified workflow architecture  
+  - Framework ရွေးချယ်မှု ဆုံးဖြတ်ချက်ပုံစံများ  
+  - ထုတ်လုပ်မှုအဆင်သင့် validation  
+  - အနာဂတ်အတွက် အကောင်းဆုံးလုပ်ဆောင်မှု မဟာဗျူဟာများ  
+
+### ကိုယ်တိုင်အကဲဖြတ်မေးခွန်းများ
+
+1. Precision အဆင့်အမျိုးမျိုး (1-bit မှ 8-bit) အတွင်း Quantization မဟာဗျူဟာများကို နှိုင်းယှဉ်ပါ။  
+2. Edge တင်သွင်းမှုအတွက် GGUF format ၏ အကျိုးကျေးဇူးများက ဘာတွေလဲ?  
+3. Microsoft Olive ၏ hardware-aware optimization သည် တင်သွင်းမှု စွမ်းဆောင်ရည်ကို ဘယ်လို မြှင့်တင်ပေးသလဲ?  
+4. OpenVINO ၏ NNCF သည် မော်ဒယ် compression အတွက် အဓိက အကျိုးကျေးဇူးများက ဘာတွေလဲ?  
+5. Apple MLX သည် unified memory architecture ကို အသုံးပြု၍ optimization ကို ဘယ်လို လုပ်ဆောင်သလဲ?  
+6. Workflow synthesis သည် optimization frameworks ရွေးချယ်ရာတွင် ဘယ်လို အကောင်းဆုံးလုပ်ဆောင်ပေးသလဲ?  
+
+### လက်တွေ့လေ့ကျင့်မှုများ
+
+1. **မော်ဒယ် Quantization**: မော်ဒယ်တစ်ခုကို Quantization အဆင့်အမျိုးမျိုးကို အသုံးပြု၍ ရလဒ်များကို နှိုင်းယှဉ်ပါ (1 နာရီ)  
+2. **OpenVINO Optimization**: NNCF ကို အသုံးပြု၍ Intel hardware အတွက် မော်ဒယ်ကို compress လုပ်ပါ (1 နာရီ)  
+3. **Framework နှိုင်းယှဉ်မှု**: Optimization frameworks သုံးခုအတွင်း မော်ဒယ်တစ်ခုကို စမ်းသပ်ပါ (1 နာရီ)  
+4. **စွမ်းဆောင်ရည် Benchmarking**: Inference အမြန်နှုန်းနှင့် memory အသုံးပြုမှုအပေါ် optimization ၏ သက်ရောက်မှုကို တိုင်းတာပါ (1 နာရီ)  
+
+## Module 5: SLMOps - အသေးစားဘာသာစကားမော်ဒယ် လုပ်ဆောင်မှုများ
+
+### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
+
+- SLMOps lifecycle စီမံခန့်ခွဲမှု အခြေခံသဘောတရားများကို နားလည်ခြင်း  
+- Edge တင်သွင်းမှုအတွက် distillation နှင့် fine-tuning နည်းလမ်းများကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်း  
+- စောင့်ကြည့်မှုနှင့်အတူ ထုတ်လုပ်မှုတင်သွင်းမှု မဟာဗျူဟာများကို အကောင်အထည်ဖော်နိုင်ခြင်း  
+- စီးပွားရေးအဆင့် SLM လုပ်ဆောင်မှုများနှင့် ထိန်းသိမ်းမှု workflow များကို တည်ဆောက်နိုင်ခြင်း  
+
+### လေ့လာရန် အဓိက အစိတ်အပိုင်းများ
+
+#### Section 1: SLMOps အကျဉ်းချုပ်  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - AI လုပ်ဆောင်မှုများတွင် SLMOps paradigm shift  
+  - ကုန်ကျစရိတ်ထိရောက်မှုနှင့် privacy-first architecture  
+  - စီးပွားရေးအပေါ် မဟာဗျူဟာဆိုင်ရာ သက်ရောက်မှုနှင့် ယှဉ်ပြိုင်မှု အကျိုးကျေးဇူးများ  
+
+#### Section 2: မော်ဒယ် Distillation  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Knowledge transfer နည်းလမ်းများ  
+  - Two-stage distillation process အကောင်အထည်ဖော်မှု  
+  - Azure ML distillation workflows  
+
+#### Section 3: Fine-tuning Strategies  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Parameter-efficient fine-tuning (PEFT)  
+  - LoRA နှင့် QLoRA အဆင့်မြင့်နည်းလမ်းများ  
+  - Multi-adapter training နှင့် hyperparameter optimization  
+
+#### Section 4: ထုတ်လုပ်မှု တင်သွင်းမှု  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - ထုတ်လုပ်မှုအတွက် မော်ဒယ် conversion နှင့် quantization  
+  - Foundry Local တင်သွင်းမှု configuration  
+  - စွမ်းဆောင်ရည် benchmarking နှင့် အရည်အသွေး validation  
+
+### ကိုယ်တိုင်အကဲဖြတ်မေးခွန်းများ
+
+1. SLMOps သည် ရိုးရာ MLOps နှင့် ဘယ်လို ကွာခြားသလဲ?  
+2. Edge တင်သွင်းမှုအတွက် မော်ဒယ် distillation ၏ အကျိုးကျေးဇူးများက ဘာတွေလဲ?  
+3. အရင်းအမြစ် အကန့်အသတ်ရှိသော ပတ်ဝန်းကျင်များတွင် SLM များကို fine-tuning လုပ်ရာတွင် အဓိက စဉ်းစားရမည့်အချက်များက ဘာတွေလဲ?  
+4. Edge AI အက်ပ်လီကေးရှင်းများအတွက် ထုတ်လုပ်မှု တင်သွင်းမှု pipeline တစ်ခုကို ဖော်ပြပါ။  
+
+### လက်တွေ့လေ့ကျင့်မှုများ
+
+1. **ရိုးရှင်းသော Distillation**: Teacher မော်ဒယ်ကြီးမှ မော်ဒယ်အသေးကို ဖန်တီးပါ (1 နာရီ)  
+2. **Fine-tuning စမ်းသပ်မှု**: အထူး domain အတွက် မော်ဒယ်တစ်ခုကို fine-tune လုပ်ပါ (1 နာရီ)  
+3. **တင်သွင်းမှု Pipeline**: မော်ဒယ်တင်သွင်းမှုအတွက် အခြေခံ CI/CD pipeline တစ်ခုကို တည်ဆောက်ပါ (1 နာရီ)  
 
 ## Module 6: SLM Agentic Systems - AI Agents နှင့် Function Calling
 
-### အဓိက သင်ယူရမည့် ရည်ရွယ်ချက်များ
+### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
 
-- Small Language Models အသုံးပြု၍ edge environments အတွက် intelligent AI agents တည်ဆောက်ပါ
-- Systematic workflows ဖြင့် function calling capabilities ကို အကောင်အထည်ဖော်ပါ
-- Model Context Protocol (MCP) integration ကို ကျွမ်းကျင်ပါ
-- လူ့အကူအညီအနည်းဆုံးဖြင့် sophisticated agentic systems တည်ဆောက်ပါ
+- အသေးစားဘာသာစကားမော်ဒယ်များကို အသုံးပြု၍ Edge ပတ်ဝန်းကျင်အတွက် အတတ်နိုင်ဆုံး AI agents တည်ဆောက်နိုင်ခြင်း  
+- Function calling စွမ်းရည်များကို စနစ်တကျ workflow များဖြင့် အကောင်အထည်ဖော်နိုင်ခြင်း  
+- Model Context Protocol (MCP) integration ကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်း  
+- လူ့အကူအညီအနည်းဆုံးဖြင့် အဆင့်မြင့် agentic systems များကို ဖန်တီးနိုင်ခြင်း  
 
-### သင်ယူရန် အဓိက အကျဉ်းချုပ်များ
+### လေ့လာရန် အဓိက အစိတ်အပိုင်းများ
 
-#### အပိုင်း ၁: AI Agents နှင့် SLM Foundations
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Agent classification framework (reflex, model-based, goal-based, learning agents)
-  - SLM နှင့် LLM trade-offs analysis
-  - Edge-specific agent design patterns
-  - Agents အတွက် resource optimization
+#### Section 1: AI Agents နှင့် SLM အခြေခံ  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Agent ခွဲခြားမှု framework (reflex, model-based, goal-based, learning agents)  
+  - SLM နှင့် LLM trade-offs analysis  
+  - Edge-specific agent ဒီဇိုင်းပုံစံများ  
+  - Agents အတွက် resource optimization  
 
-#### အပိုင်း ၂: Function Calling in Small Language Models
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Systematic workflow implementation (intent detection, JSON output, external execution)
-  - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)
-  - Advanced examples (multi-agent collaboration, dynamic tool selection)
-  - Production considerations (rate limiting, audit logging, security measures)
+#### Section 2: Function Calling in Small Language Models  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - စနစ်တကျ workflow အကောင်အထည်ဖော်မှု (intent detection, JSON output, external execution)  
+  - Platform-specific implementations (Phi-4-mini, selected Qwen models, Microsoft Foundry Local)  
+  - အဆင့်မြင့် ဥပမာများ (multi-agent collaboration, dynamic tool selection)  
+  - ထုတ်လုပ်မှုအတွက် စဉ်းစားရမည့်အချက်များ (rate limiting, audit logging, security measures)  
 
-#### အပိုင်း ၃: Model Context Protocol (MCP) Integration
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Protocol architecture နှင့် layered system design
-  - Multi-backend support (Ollama for development, vLLM for production)
-  - Connection protocols (STDIO နှင့် SSE modes)
-  - အမှန်တကယ်အသုံးချမှုများ (web automation, data processing, API integration)
+#### Section 3: Model Context Protocol (MCP) Integration  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - Protocol architecture နှင့် layered system ဒီဇိုင်း  
+  - Multi-backend support (Ollama for development, vLLM for production)  
+  - Connection protocols (STDIO နှင့် SSE modes)  
+  - အမှန်တကယ်အသုံးချမှုများ (web automation, data processing, API integration)  
 
-### ကိုယ်တိုင်စစ်ဆေးရန် မေးခွန်းများ
+### ကိုယ်တိုင်အကဲဖြတ်မေးခွန်းများ
 
-1. Edge AI agents အတွက် အဓိက architectural considerations များက ဘာတွေလဲ။
-2. Function calling သည် agent capabilities ကို မည်သို့ တိုးတက်စေပါသလဲ။
-3. Model Context Protocol သည် agent communication တွင် မည်သို့ အရေးပါပါသလဲ။
+1. Edge AI agents အတွက် အဓိက architectural စဉ်းစားရမည့်အချက်များက ဘာတွေလဲ?  
+2. Function calling သည် agent စွမ်းရည်များကို ဘယ်လို မြှင့်တင်ပေးသလဲ?  
+3. Agent communication တွင် Model Context Protocol ၏ အခန်းကဏ္ဍကို ရှင်းပြပါ။  
 
-### လက်တွေ့လုပ်ငန်းများ
+### လက်တွေ့လေ့ကျင့်မှုများ
 
-1. **Simple Agent**: Function calling ပါဝင်သော basic AI agent တစ်ခုကို တည်ဆောက်ပါ (1 နာရီ)
-2. **MCP Integration**: Agent application တစ်ခုတွင် MCP ကို အကောင်အထည်ဖော်ပါ (30 မိနစ်)
+1. **ရိုးရှင်းသော Agent**: Function calling ပါဝင်သော အခြေခံ AI agent တစ်ခုကို တည်ဆောက်ပါ (1 နာရီ)  
+2. **MCP Integration**: Agent application တွင် MCP ကို အကောင်အထည်ဖော်ပါ (30 မိနစ်)  
 
 ## Module 7: EdgeAI Implementation Samples
 
-### အဓိက သင်ယူရမည့် ရည်ရွယ်ချက်များ
+### အဓိက သင်ယူရမည့် ရည်မှန်းချက်များ
 
-- EdgeAI development workflows အတွက် Visual Studio Code အတွက် AI Toolkit ကို ကျွမ်းကျင်ပါ
-- Windows AI Foundry platform နှင့် NPU optimization strategies ကို ကျွမ်းကျင်ပါ
-- Hardware platforms များနှင့် deployment scenarios များအတွင်း EdgeAI ကို အကောင်အထည်ဖော်ပါ
-- Platform-specific optimizations ဖြင့် production-ready EdgeAI applications တည်ဆောက်ပါ
+- Visual Studio Code အတွက် AI Toolkit ကို ကျွမ်းကျင်စွာ အသုံးပြု၍ EdgeAI တိုးတက်မှု workflow များကို ကျွမ်းကျင်စွာ တည်ဆောက်နိုင်ခြင်း  
+- Windows AI Foundry ပလက်ဖောင်းနှင့် NPU optimization မဟာဗျူဟာများကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်း  
+- Hardware ပလက်ဖောင်းအမျိုးမျိုးနှင့် တင်သွင်းမှုအခြေအနေများအတွင်း EdgeAI ကို အကောင်အထည်ဖော်နိုင်ခြင်း  
+- ပလက်ဖောင်း-specific optimization များဖြင့် ထုတ်လုပ်မှုအဆင်သင့် EdgeAI applications များကို တည်ဆောက်နိုင်ခြင်း  
 
-### သင်ယူရန် အဓိက အကျဉ်းချုပ်များ
+### လေ့လာရန် အဓိက အစိတ်အပိုင်းများ
 
-#### အပိုင်း ၁: AI Toolkit for Visual Studio Code
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - VS Code အတွင်း Comprehensive Edge AI development environment
-  - Edge deployment အတွက် model catalog နှင့် discovery
-  - Local testing, optimization, နှင့် agent development workflows
-  - Edge scenarios အတွက် performance monitoring နှင့် evaluation
+#### Section 1: AI Toolkit for Visual Studio Code  
+- **အရေးပါသော အကြောင်းအရာများ**:  
+  - VS Code အတွင်း Comprehensive Edge AI တိုးတက်မှု ပတ်ဝန်းကျင်  
+  - Edge တင်သွင်းမှုအတွက် မော်ဒယ် catalog နှင့် ရှာဖွေမှု  
+  - ဒေသတွင်း စမ်းသပ်မှု၊ optimization နှင့် agent တည်ဆောက်မှု workflow များ  
+  - Edge အခြေအနေများအတွက် စွမ်းဆောင်ရည် စော
+| လက်တွေ့လေ့ကျင့်မှု | ၆ နာရီ | အဓိကနည်းလမ်းများကို လက်တွေ့အသုံးချခြင်း |
+| ကိုယ်တိုင်အကဲဖြတ်မှု | ၂ နာရီ | မေးခွန်းများနှင့် အတွေးအခေါ်များမှတစ်ဆင့် နားလည်မှုကို စမ်းသပ်ခြင်း |
+| မီနီပရောဂျက် | ၃ နာရီ | အသိပညာကို သေးငယ်သော လက်တွေ့အကောင်အထည်ဖော်မှုတွင် အသုံးချခြင်း |
 
-#### အပိုင်း ၂: Windows EdgeAI Development Guide
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Windows AI Foundry platform ၏ Comprehensive overview
-  - Phi Silica API ၏ NPU inference အတွက် ထိရောက်မှု
-  - Computer Vision APIs ၏ image processing နှင့် OCR
-  - Foundry Local CLI ၏ local development နှင့် testing
+### အချိန်ကန့်သတ်မှုအလိုက် အဓိကအာရုံစိုက်ရန်
 
-#### အပိုင်း ၃: Platform-Specific Implementations
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - NVIDIA Jetson Orin Nano deployment (67 TOPS AI performance)
-  - Mobile applications များအတွက် .NET MAUI နှင့် ONNX Runtime GenAI
-  - Azure EdgeAI solutions ၏ cloud-edge hybrid architecture
-  - Windows ML optimization ၏ universal hardware support
-  - Foundry Local applications ၏ privacy-focused RAG implementation
-
-### ကိုယ်တိုင်စစ်ဆေးရန် မေးခွန်းများ
-
-1. AI Toolkit သည် EdgeAI development workflow ကို မည်သို့ streamline လုပ်ပါသလဲ။
-2. Hardware platforms များအတွင်း deployment strategies များကို နှိုင်းယှဉ်ပါ။
-3. Edge development အတွက် Windows AI Foundry ၏ အကျိုးကျေးဇူးများကို ရှင်းပြပါ။
-4. NPU optimization သည် ခေတ်မီ edge AI applications တွင် မည်သို့ အရေးပါပါသလဲ။
-5. Phi Silica API သည် NPU hardware ကို performance optimization အတွက် မည်သို့ အသုံးချပါသလဲ။
-6. Privacy-sensitive applications အတွက် local နှင့် cloud deployment ၏ အကျိုးကျေးဇူးများကို နှိုင်းယှဉ်ပါ။
-
-### လက်တွေ့လုပ်ငန်းများ
-
-1. **AI Toolkit Setup**: AI Toolkit ကို configure လုပ်ပြီး မော်ဒယ်တစ်ခုကို optimize လုပ်ပါ (1 နာရီ)
-2. **Windows AI Foundry**: Phi Silica API ကို အသုံးပြု၍ ရိုးရှင်းသော Windows AI application တစ်ခုကို တည်ဆောက်ပါ (1 နာရီ)
-3. **Cross-Platform Deployment**: မော်ဒယ်တစ်ခုကို platform နှစ်ခုအတွင်း deploy လုပ်ပါ (1 နာရီ)
-4. **NPU Optimization**: Windows AI Foundry tools ဖြင့် NPU performance ကို စမ်းသပ်ပါ (30 မိနစ်)
-
-## Module 8: Microsoft Foundry Local – Complete Developer Toolkit (Modernized)
-
-### အဓိက သင်ယူရမည့် ရည်ရွယ်ချက်များ
-
-- Foundry Local ကို modern SDK integration ဖြင့် install နှင့် configure လုပ်ပါ
-- Coordinator patterns ဖြင့် advanced multi-agent systems ကို အကောင်အထည်ဖော်ပါ
-- Automatic task-based selection ဖြင့် intelligent model routers တည်ဆောက်ပါ
-- Comprehensive monitoring ဖြင့် production-ready AI solutions deploy လုပ်ပါ
-- Hybrid deployment scenarios အတွက် Azure AI Foundry နှင့် ပေါင်းစပ်ပါ
-- FoundryLocalManager နှင့် OpenAI client ဖြင့် modern SDK patterns ကို ကျွမ်းကျင်ပါ
-
-### သင်ယူရန် အဓိက အကျဉ်းချုပ်များ
-
-#### အပိုင်း ၁: Modern Installation နှင့် Configuration
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - FoundryLocalManager SDK integration
-  - Automatic service discovery နှင့် health monitoring
-  - Environment-based configuration patterns
-  - Production deployment အတွက် စဉ်းစားရမည့်အချက်များ
-
-#### အပိုင်း ၂: Advanced Multi-Agent Systems
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Specialist agents များနှင့် Coordinator pattern
-  - Retrieval, reasoning, နှင့် execution agent specialization
-  - Feedback loop mechanisms for refinement
-  - Performance monitoring နှင့် statistics tracking
-
-#### အပိုင်း ၃: Intelligent Model Routing
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Keyword-based model selection algorithms
-  - Multiple model support (general, reasoning, code, creative)
-  - Environment variable configuration အတွက် flexibility
-  - Service health checking နှင့် error handling
-
-#### အပိုင်း ၄: Production-Ready Implementation
-- **အရေးပါသော အကြောင်းအရာများ**: 
-  - Comprehensive error handling နှင့် fallback mechanisms
-  - Request monitoring နှင့် performance tracking
-  - Interactive Jupyter notebook ตัวอย่างများနှင့် benchmarks
-  - Existing applications နှင့် integration patterns
-
-### ကိုယ်တိုင်စစ်ဆေးရန် မေးခွန်းများ
-
-1. Modern FoundryLocalManager approach သည် manual REST calls နှင့် မည်သို့ ကွဲပြားပါသလဲ။
-2. Coordinator pattern သည် specialist agents များကို မည်သို့ စီမံခန့်ခွဲပါသလဲ။
-3. Intelligent router သည် query content အပေါ် မော်ဒယ်များကို မည်သို့ ရွေးချယ်ပါသလဲ။
-4. Production-ready AI agent system ၏ အဓိက components များက ဘာတွေလဲ။
-5. Foundry Local services အတွက် comprehensive health monitoring ကို မည်သို့ အကောင်အထည်ဖော်ပါသလဲ။
-6. Modernized approach နှင့် traditional implementation patterns ကို နှိုင်းယှဉ်ပါ။
-
-### လက်တွေ့လုပ်ငန်းများ
-
-1. **Modern SDK Setup**: FoundryLocalManager ကို automatic service discovery ဖြင့် configure လုပ်ပါ (30 မိနစ်)
-2. **Multi-Agent System**: Specialist agents များပါဝင်သော advanced coordinator ကို run လုပ်ပါ (30 မိနစ်)
-3. **Intelligent Routing**: Query types များကို အသုံးပြု၍ model router ကို စမ်းသပ်ပါ (30 မိနစ်)
-4. **Interactive Exploration**: Jupyter notebooks ကို အသုံးပြု၍ advanced features များကို explore လုပ်ပါ (45 မိနစ်)
-5. **Production Deployment**: Monitoring နှင့် error handling patterns ကို အကောင်အထည်ဖော်ပါ (30 မိနစ်)
-6. **Hybrid Integration**: Azure AI Foundry fallback scenarios ကို configure လုပ်ပါ (30 မိနစ်)
-
-## အချိန်ခွဲဝေမှု လမ်းညွှန်
-
-20 နာရီအတွင်း သင်တန်းကို အကျိုးရှိစွာ သင်ယူနိုင်ရန်အတွက် အချိန်ခွဲဝေမှုအကြံပြုချက်ကို အောက်ပါအတိုင်း ဖော်ပြထားပါသည်:
-
-| လုပ်ဆောင်မှု | အချိန်ခွဲဝေမှု | ဖော်ပြချက် |
-|----------|----------------|-------------|
-| Core Materials ဖတ်ရှုခြင်း | 9 နာရီ | Module တစ်ခုစီ၏ အရေးပါသော အကြောင်းအရာများကို အာရုံစိုက်ခြင်း |
-| လက်တွေ့လုပ်ငန်းများ | 6 နာရီ | အဓိကနည်းလမ်းများကို လက်တွေ့အကောင်အထည်ဖော်ခြင်း |
-| ကိုယ်တိုင်စစ်ဆေးခြင်း | 2 နာရီ | မေးခွန်းများနှင့် အတွေးအခေါ်များဖြင့် နားလည်မှုကို စစ်ဆေးခြင်း |
-| Mini-Project | 3 နာရီ | လက်တွေ့အကောင်အထည်ဖော်မှုအတွက် အသေးစားလုပ်ငန်းတစ်ခု |
-
-### အချိန်ကန့်သတ်မှုအပေါ် အဓိက အာရုံစိုက်ရန်
-
-**10 နာရီသာ ရှိပါက:**
-- Module 1, 2, နှင့် 3 ကို ပြီးစီးပါ (core EdgeAI concepts)
-- Module တစ်ခုစီတွင် လက်တွေ့လုပ်ငန်းတစ်ခုကို လုပ်ဆောင်ပါ
+**အချိန် ၁၀ နာရီသာရှိပါက:**
+- Module 0 (Introduction) နှင့် Module 1, 2, 3 (EdgeAI အဓိကအကြောင်းအရာများ) ကို ပြီးစီးပါ
+- Module တစ်ခုစီတွင် လက်တွေ့လေ့ကျင့်မှုတစ်ခုခုကို လုပ်ဆောင်ပါ
 - အကောင်အထည်ဖော်မှုအသေးစိတ်များထက် အဓိကအကြောင်းအရာများကို နားလည်ရန် အာရုံစိုက်ပါ
 
-**20 နာရီအပြည့်အဝ ရှိပါက:**
-- Module ရှစ်ခုလုံးကို ပြီးစီးပါ
-- Module တစ်ခုစီမှ အဓိက လက်တွေ့လုပ်ငန်းများကို လုပ်ဆောင်ပါ
-- Module 7 မှ mini-project တစ်ခုကို ပြီးစီးပါ
-- Supplementary resources 2-3 ခုကို explore လုပ်ပါ
+**အချိန် ၂၀ နာရီအပြည့်ပေးနိုင်ပါက:**
+- Module ရှစ်ခုလုံး (Introduction အပါအဝင်) ကို ပြီးစီးပါ
+- Module တစ်ခုစီမှ အဓိကလက်တွေ့လေ့ကျင့်မှုများကို လုပ်ဆောင်ပါ
+- Module 7 မှ မီနီပရောဂျက်တစ်ခုကို ပြီးစီးပါ
+- အပိုရင်းအရင်းများ ၂-၃ ခုကို စူးစမ်းပါ
 
-**20 နာရီထက် ပိုမိုရှိပါက:**
-- Module အားလုံးကို အသေးစိတ် လုပ်ငန်းများနှင့်အတူ ပြီးစီးပါ
-- Mini-project များစွာ တည်ဆောက်ပါ
-- Module 4 မှ advanced optimization techniques ကို explore လုပ်ပါ
-- Module 5 မှ production deployment ကို အကောင်အထည်ဖော်ပါ
+**အချိန် ၂၀ နာရီထက်ပိုရှိပါက:**
+- Module အားလုံး (Introduction အပါအဝင်) ကို အသေးစိတ်လေ့ကျင့်မှုများနှင့်အတူ ပြီးစီးပါ
+- မီနီပရောဂျက်များစွာ တည်ဆောက်ပါ
+- Module 4 တွင် အဆင့်မြင့်အကောင်းမြှင့်နည်းလမ်းများကို စူးစမ်းပါ
+- Module 5 မှ ထုတ်လုပ်မှု deployment ကို အကောင်အထည်ဖော်ပါ
 
-## အရေးပါသော အရင်းအမြစ်များ
+## အရေးကြီးသော အရင်းအမြစ်များ
 
-ဤအရင်းအမြစ်များကို သင်၏ အချိန်ကန့်သတ်မှုအတွင်း အကျိုးရှိစွာ သင်ယူနိုင်ရန် ရွေးချယ်ထားပါသည်:
+ဤရွေးချယ်ထားသော အရင်းအမြစ်များသည် သင်၏ အချိန်ကန့်သတ်မှုအတွင်း အတော်လေးတန်ဖိုးရှိသော အကြောင်းအရာများကို ပေးစွမ်းပါသည်။
 
-### Must-Read Documentation
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Model optimization tool အထိရောက်ဆုံး
-- [Ollama Quick Start](https://github.com/ollama/ollama#get-started
-| လက်တွေ့လေ့ကျင့်မှုများ | | | |
+### ဖတ်ရန်မဖြစ်မနေလိုအပ်သော Documentation
+- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - အထိရောက်ဆုံး မော်ဒယ်အကောင်းမြှင့်စနစ်
+- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - SLM များကို ဒေသတွင်းတွင် အမြန်ဆုံး deploy လုပ်ရန်နည်းလမ်း
+- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Edge အတွက် အကောင်းဆုံး optimize လုပ်ထားသော မော်ဒယ်အညွှန်း
+- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intel ၏ အကျယ်အဝန်း optimization toolkit
+- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - EdgeAI အတွက် ပေါင်းစပ်ထားသော development environment
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows-specific EdgeAI development platform
+
+### အချိန်သက်သာစေသော Tools
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - မော်ဒယ်များကို အလွယ်တကူ access နှင့် deploy လုပ်ရန်
+- [Gradio](https://www.gradio.app/docs/interface) - AI demos အတွက် အမြန် UI တည်ဆောက်မှု
+- [Microsoft Olive](https://github.com/microsoft/Olive) - မော်ဒယ် optimization ကို လွယ်ကူစေသော tool
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - CPU အပေါ် အထိရောက်ဆုံး inference
+- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Neural network compression framework
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Large language model deployment toolkit
+
+## တိုးတက်မှုကို စစ်ဆေးရန် Template
+
+ဤရိုးရှင်းသော template ကို အသုံးပြု၍ ၂၀ နာရီသင်တန်းအတွင်း သင်၏လေ့လာမှုတိုးတက်မှုကို စစ်ဆေးပါ:
+
+| Module | ပြီးစီးသည့်ရက် | အသုံးပြုခဲ့သည့်နာရီ | အဓိကအကျဉ်းချုပ် |
+|--------|----------------|-------------|---------------|
+| Module 0: Introduction to EdgeAI | | | |
+| Module 1: EdgeAI Fundamentals | | | |
+| Module 2: SLM Foundations | | | |
+| Module 3: SLM Deployment | | | |
+| Module 4: Model Optimization | | | |
+| Module 5: SLMOps | | | |
+| Module 6: AI Agents | | | |
+| Module 7: Development Tools | | | |
+| Module 8: Foundry Local Toolkit | | | |
+| လက်တွေ့လေ့ကျင့်မှု | | | |
 | မီနီပရောဂျက် | | | |
 
-## မီနီပရောဂျက်အကြံပေးချက်များ
+## မီနီပရောဂျက်အကြံပြုချက်များ
 
-EdgeAI အကြောင်းအရာများကို လေ့ကျင့်ရန် အောက်ပါပရောဂျက်များကို ပြီးမြောက်စေဖို့ စဉ်းစားပါ (တစ်ခုချင်းစီ 2-4 နာရီကြာမြင့်ရန် ရည်ရွယ်ထားသည်)။
+EdgeAI အကြောင်းအရာများကို လက်တွေ့ကျင့်ရန် အောက်ပါပရောဂျက်များကို ပြီးစီးပါ (တစ်ခုစီ ၂-၄ နာရီကြာမည်):
 
-### အခြေခံပရောဂျက်များ (တစ်ခုချင်း 2-3 နာရီ)
-1. **Edge Text Assistant**: အနည်းငယ်သော ဘာသာစကားမော်ဒယ်ကို အသုံးပြု၍ ရိုးရှင်းသော အော့ဖ်လိုင်းစာသားဖြည့်စွက်မှုကိရိယာတစ်ခု ဖန်တီးပါ။
-2. **Model Comparison Dashboard**: SLM များအကြား စွမ်းဆောင်ရည်အချက်အလက်များကို ရိုးရှင်းသော ရှုထောင့်ဖြင့် ဖော်ပြပါ။
-3. **Optimization Experiment**: တစ်ခုတည်းသော အခြေခံမော်ဒယ်တွင် အရည်အသွေးအဆင့်များ၏ သက်ရောက်မှုကို တိုင်းတာပါ။
+### Beginner Projects (၂-၃ နာရီစီ)
+1. **Edge Text Assistant**: သေးငယ်သော language model ကို အသုံးပြု၍ ရိုးရှင်းသော offline text completion tool တစ်ခုကို ဖန်တီးပါ
+2. **Model Comparison Dashboard**: SLM များ၏ performance metrics များကို visualization အဖြစ် ဖန်တီးပါ
+3. **Optimization Experiment**: မော်ဒယ်တစ်ခုအပေါ် quantization အဆင့်များ၏ သက်ရောက်မှုကို တိုင်းတာပါ
 
-### အလယ်အလတ်ပရောဂျက်များ (တစ်ခုချင်း 3-4 နာရီ)
-4. **AI Toolkit Workflow**: VS Code AI Toolkit ကို အသုံးပြု၍ မော်ဒယ်တစ်ခုကို အကောင်းဆုံးအဆင့်သို့ ရောက်အောင်လုပ်ပြီး တင်သွင်းပါ။
-5. **Windows AI Foundry Application**: Phi Silica API နှင့် NPU အကောင်းဆုံးအဆင့်သို့ ရောက်အောင်လုပ်ပြီး Windows အက်ပ်တစ်ခု ဖန်တီးပါ။
-6. **Cross-Platform Deployment**: အကောင်းဆုံးအဆင့်သို့ ရောက်သော မော်ဒယ်တစ်ခုကို Windows (OpenVINO) နှင့် မိုဘိုင်း (.NET MAUI) တွင် တင်သွင်းပါ။
-7. **Function Calling Agent**: Edge အခြေအနေများအတွက် လုပ်ဆောင်မှုခေါ်ယူနိုင်သော AI Agent တစ်ခု ဖန်တီးပါ။
+### Intermediate Projects (၃-၄ နာရီစီ)
+4. **AI Toolkit Workflow**: VS Code AI Toolkit ကို အသုံးပြု၍ မော်ဒယ်တစ်ခုကို optimization နှင့် deployment လုပ်ပါ
+5. **Windows AI Foundry Application**: Phi Silica API နှင့် NPU optimization ကို အသုံးပြု၍ Windows app တစ်ခုကို ဖန်တီးပါ
+6. **Cross-Platform Deployment**: Optimize လုပ်ထားသော မော်ဒယ်တစ်ခုကို Windows (OpenVINO) နှင့် mobile (.NET MAUI) တစ်ပြိုင်နက် deploy လုပ်ပါ
+7. **Function Calling Agent**: Edge scenarios အတွက် function calling capabilities ရှိသော AI agent တစ်ခုကို တည်ဆောက်ပါ
 
-### အဆင့်မြင့်ပေါင်းစည်းမှုပရောဂျက်များ (တစ်ခုချင်း 4-5 နာရီ)
-8. **OpenVINO Optimization Pipeline**: NNCF နှင့် GenAI toolkit ကို အသုံးပြု၍ မော်ဒယ်အကောင်းဆုံးအဆင့်သို့ ရောက်အောင်လုပ်ပါ။
-9. **SLMOps Pipeline**: သင်ကြားမှုမှ Edge တင်သွင်းမှုအထိ မော်ဒယ်၏ အပြည့်အစုံသော အသက်တာကို အကောင်အထည်ဖော်ပါ။
-10. **Multi-Model Edge System**: Edge hardware တွင် အတူတကွ လုပ်ဆောင်သော အထူးပြုမော်ဒယ်များစွာကို တင်သွင်းပါ။
-11. **MCP Integration System**: Model Context Protocol ကို အသုံးပြု၍ ကိရိယာအပြန်အလှန်လုပ်ဆောင်မှုရှိသော Agentic System တစ်ခု ဖန်တီးပါ။
+### Advanced Integration Projects (၄-၅ နာရီစီ)
+8. **OpenVINO Optimization Pipeline**: NNCF နှင့် GenAI toolkit ကို အသုံးပြု၍ မော်ဒယ် optimization pipeline တစ်ခုကို အကောင်အထည်ဖော်ပါ
+9. **SLMOps Pipeline**: မော်ဒယ် training မှ edge deployment အထိ အပြည့်အစုံသော lifecycle ကို အကောင်အထည်ဖော်ပါ
+10. **Multi-Model Edge System**: Edge hardware အပေါ်တွင် အထူးပြုမော်ဒယ်များစွာကို ပေါင်းစပ်၍ deploy လုပ်ပါ
+11. **MCP Integration System**: Model Context Protocol ကို အသုံးပြု၍ tool interaction ရှိသော agentic system တစ်ခုကို တည်ဆောက်ပါ
 
-## ရင်းမြစ်များ
+## References
 
 - Microsoft Learn (Foundry Local)
-  - အကျဉ်းချုပ်: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
-  - စတင်ရန်: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
-  - CLI ရင်းမြစ်: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
-  - Inference SDKs နှင့် ပေါင်းစည်းမှု: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-  - Open WebUI အသုံးပြုနည်း: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-  - Hugging Face မော်ဒယ်များကို Compile လုပ်နည်း: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+  - Get started: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+  - CLI reference: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
+  - Integrate with inference SDKs: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+  - Open WebUI how-to: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
+  - Compile Hugging Face models: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Azure AI Foundry
-  - အကျဉ်းချုပ်: https://learn.microsoft.com/en-us/azure/ai-foundry/
-  - Agents (အကျဉ်းချုပ်): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
-- Optimization နှင့် Inference Tooling
+  - Overview: https://learn.microsoft.com/en-us/azure/ai-foundry/
+  - Agents (overview): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
+- Optimization and Inference Tooling
   - Microsoft Olive (docs): https://microsoft.github.io/Olive/
   - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
-  - ONNX Runtime (စတင်အသုံးပြုရန်): https://onnxruntime.ai/docs/get-started/with-python.html
+  - ONNX Runtime (getting started): https://onnxruntime.ai/docs/get-started/with-python.html
   - ONNX Runtime Olive integration: https://onnxruntime.ai/docs/performance/olive.html
   - OpenVINO (docs): https://docs.openvino.ai/2025/index.html
   - Apple MLX (docs): https://ml-explore.github.io/mlx/build/html/index.html
-- Deployment Frameworks နှင့် မော်ဒယ်များ
+- Deployment Frameworks and Models
   - Llama.cpp: https://github.com/ggml-ai/llama.cpp
   - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
   - vLLM (docs): https://docs.vllm.ai/
   - Ollama (quick start): https://github.com/ollama/ollama#get-started
-- Developer Tools (Windows နှင့် VS Code)
+- Developer Tools (Windows and VS Code)
   - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
-  - Windows ML (အကျဉ်းချုပ်): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+  - Windows ML (overview): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
 
-## သင်ကြားမှုအဖွဲ့အစည်း
+## Learning Community
 
-ဆွေးနွေးမှုတွင် ပါဝင်ပြီး သင်ကြားသူများနှင့် ချိတ်ဆက်ပါ:
-- [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions) တွင် GitHub Discussions
+ဆွေးနွေးမှုများတွင် ပါဝင်ပြီး အခြားလေ့လာသူများနှင့် ချိတ်ဆက်ပါ:
+- GitHub Discussions on the [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions)
 - [Microsoft Tech Community](https://techcommunity.microsoft.com/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
 
 ## နိဂုံး
 
-EdgeAI သည် အတတ်ပညာရပ်ဆိုင်ရာ အနာဂတ်ကို ကိုယ်စားပြုသည်။ အင်အားကြီးသော စွမ်းဆောင်ရည်များကို တိုက်ရိုက်ကိရိယာများသို့ ရောက်အောင်လုပ်ပြီး ကိုယ်ရေးကိုယ်တာအချက်အလက်များ၊ အချိန်နှင့် ချိတ်ဆက်မှုဆိုင်ရာ စိုးရိမ်မှုများကို ဖြေရှင်းပေးသည်။ 
+EdgeAI သည် artificial intelligence ကို စက်ပစ္စည်းများတွင် တိုက်ရိုက်အသုံးချနိုင်စေသော frontier ဖြစ်ပြီး privacy, latency, နှင့် connectivity ဆိုင်ရာ အရေးကြီးသော စိုးရိမ်မှုများကို ဖြေရှင်းပေးပါသည်။ ၂၀ နာရီသင်တန်းသည် EdgeAI နည်းပညာများကို ချက်ချင်းအသုံးချနိုင်ရန် အရေးကြီးသော အသိပညာနှင့် လက်တွေ့ကျင့်မှုကျွမ်းကျင်မှုများကို ပေးစွမ်းပါသည်။
 
-ဒီ 20 နာရီသင်တန်းသည် EdgeAI နည်းပညာများနှင့် ချက်ချင်းလုပ်ဆောင်နိုင်ရန် အရေးကြီးသော အသိပညာနှင့် လက်တွေ့ကျွမ်းကျင်မှုများကို ပေးစွမ်းသည်။
+ဤသင်တန်းသည် အချိန်အတော်လေးသက်သာစေပြီး အရေးကြီးသော အကြောင်းအရာများကို အဓိကထားသောကြောင့် အချိန်အလွန်မကုန်ဆုံးဘဲ တန်ဖိုးရှိသော ကျွမ်းကျင်မှုကို အလျင်အမြန်ရရှိစေပါသည်။ ရိုးရှင်းသော နမူနာများဖြင့် လက်တွေ့ကျင့်မှုကို လုပ်ဆောင်ခြင်းသည် သင်လေ့လာထားသောအရာများကို ခိုင်မာစေသော အဓိကသော့ချက်ဖြစ်သည်။
 
-သင်တန်းသည် အရေးကြီးသော အကြောင်းအရာများကို အကျဉ်းချုပ်ထားပြီး အချိန်အလွန်မကုန်ကျစေဘဲ တန်ဖိုးရှိသော ကျွမ်းကျင်မှုကို အလျင်အမြန် ရရှိစေသည်။ ရိုးရှင်းသော နမူနာများဖြင့် လက်တွေ့လေ့ကျင့်မှုသည် သင်လေ့လာထားသောအရာများကို ခိုင်မာစေသော အဓိကသော့ချက်ဖြစ်သည်။
-
-လေ့လာမှုကို ပျော်ရွှင်ပါ!
+လေ့လာမှုအောင်မြင်ပါစေ!
 
 ---
 
