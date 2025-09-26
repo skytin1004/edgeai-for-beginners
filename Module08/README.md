@@ -2,7 +2,7 @@
 
 ## Overview
 
-Microsoft Foundry Local represents the next generation of edge AI development, providing developers with powerful tools to build, deploy, and scale AI applications locally while maintaining seamless integration with Azure AI Foundry. This module provides comprehensive coverage of Foundry Local from installation to advanced agent development.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) represents the next generation of edge AI development, providing developers with powerful tools to build, deploy, and scale AI applications locally while maintaining seamless integration with Azure AI Foundry. This module provides comprehensive coverage of Foundry Local from installation to advanced agent development.
 
 **Key Technologies:**
 - Microsoft Foundry Local CLI and SDK
