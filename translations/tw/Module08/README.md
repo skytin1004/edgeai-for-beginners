@@ -1,23 +1,23 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T09:42:30+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:22:17+00:00",
   "source_file": "Module08/README.md",
   "language_code": "tw"
 }
 -->
-# 模組 08：深入體驗 Microsoft Foundry Local - 完整開發者工具包
+# 模組 08：深入了解 Microsoft Foundry Local - 完整開發者工具包
 
 ## 概述
 
-Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發者提供強大的工具，能夠在本地構建、部署和擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋了 Foundry Local 的完整內容，從安裝到進階代理開發。
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) 代表了邊緣 AI 開發的下一代技術，為開發者提供強大的工具，用於在本地構建、部署和擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋了 Foundry Local 的完整內容，從安裝到高級代理開發。
 
 **核心技術：**
 - Microsoft Foundry Local CLI 和 SDK
 - Azure AI Foundry 整合
-- 裝置上的模型推理
-- 本地模型快取與優化
+- 本地模型推理
+- 模型緩存與優化
 - 基於代理的架構
 
 ## 學習目標
@@ -26,17 +26,17 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 
 - **精通 Foundry Local**：安裝、配置並優化 Windows 11 開發環境
 - **部署多樣化模型**：使用 CLI 命令在本地運行 phi、qwen、deepseek 和 GPT 模型
-- **構建生產解決方案**：利用進階提示工程和數據整合創建 AI 應用
+- **構建生產解決方案**：利用高級提示工程和數據整合創建 AI 應用
 - **利用開源生態系統**：整合 Hugging Face 模型和社群貢獻
-- **開發 AI 代理**：構建具備基礎能力和編排功能的智能代理
-- **實現企業模式**：創建模組化、可擴展的 AI 解決方案以進行生產部署
+- **開發 AI 代理**：構建具有基礎和編排能力的智能代理
+- **實施企業模式**：創建模組化、可擴展的 AI 解決方案以進行生產部署
 
 ## 課程結構
 
 ### [1: 開始使用 Foundry Local](./01.FoundryLocalSetup.md)
-**重點**：安裝、CLI 設置、模型部署和硬體優化
+**重點**：安裝、CLI 設置、模型部署和硬件優化
 
-**核心主題**：完整安裝 • CLI 命令 • 模型快取 • 硬體加速 • 多模型部署
+**核心主題**：完整安裝 • CLI 命令 • 模型緩存 • 硬件加速 • 多模型部署
 
 **範例**：[REST 聊天快速入門](./samples/01/README.md) • [OpenAI SDK 整合](./samples/02/README.md) • [模型探索與基準測試](./samples/03/README.md)
 
@@ -45,7 +45,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ---
 
 ### [2: 使用 Azure AI Foundry 構建 AI 解決方案](./02.AzureAIFoundryIntegration.md)
-**重點**：進階提示工程、數據整合和雲端連接
+**重點**：高級提示工程、數據整合和雲端連接
 
 **核心主題**：提示工程 • 數據整合 • Azure 工作流程 • 性能優化 • 監控
 
@@ -58,7 +58,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ### [3: Foundry Local 的開源模型](./03.OpenSourceModels.md)
 **重點**：Hugging Face 整合、BYOM 策略和社群模型
 
-**核心主題**：Hugging Face 整合 • 自帶模型策略 • Model Mondays 洞察 • 社群貢獻 • 模型選擇
+**核心主題**：HuggingFace 整合 • 自帶模型 • Model Mondays 洞察 • 社群貢獻 • 模型選擇
 
 **範例**：[多代理編排](./samples/05/README.md)
 
@@ -67,31 +67,31 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ---
 
 ### [4: 探索尖端模型](./04.CuttingEdgeModels.md)
-**重點**：LLM 與 SLM 的比較、EdgeAI 實現和進階演示
+**重點**：LLM 與 SLM 比較、EdgeAI 實現和高級演示
 
 **核心主題**：模型比較 • 邊緣與雲端推理 • Phi + ONNX Runtime • Chainlit RAG 應用 • WebGPU 優化
 
 **範例**：[工具化模型路由器](./samples/06/README.md)
 
-**時長**：3-4 小時 | **等級**：進階
+**時長**：3-4 小時 | **等級**：高級
 
 ---
 
 ### [5: 快速構建 AI 驅動代理](./05.AIPoweredAgents.md)
-**重點**：代理架構、系統提示、基礎能力和編排
+**重點**：代理架構、系統提示、基礎和編排
 
 **核心主題**：代理設計模式 • 系統提示工程 • 基礎技術 • 多代理系統 • 生產部署
 
-**範例**：[多代理編排](./samples/05/README.md) • [進階多代理系統](./samples/09/README.md)
+**範例**：[多代理編排](./samples/05/README.md) • [高級多代理系統](./samples/09/README.md)
 
-**時長**：3-4 小時 | **等級**：進階
+**時長**：3-4 小時 | **等級**：高級
 
 ---
 
 ### [6: Foundry Local - 工具化模型](./06.ModelsAsTools.md)
 **重點**：模組化 AI 解決方案、企業擴展和生產模式
 
-**核心主題**：工具化模型 • 裝置上的部署 • SDK/API 整合 • 企業架構 • 擴展策略
+**核心主題**：工具化模型 • 本地部署 • SDK/API 整合 • 企業架構 • 擴展策略
 
 **範例**：[工具化模型路由器](./samples/06/README.md) • [Foundry 工具框架](./samples/10/README.md)
 
@@ -100,7 +100,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ---
 
 ### [7: 直接 API 整合模式](./samples/07/README.md)
-**重點**：純 REST API 整合，無需 SDK 依賴，提供最大控制力
+**重點**：純 REST API 整合，無需 SDK 依賴，提供最大控制
 
 **核心主題**：HTTP 客戶端實現 • 自定義身份驗證 • 模型健康監控 • 流式響應 • 生產錯誤處理
 
@@ -113,20 +113,20 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ### [8: Windows 11 原生聊天應用](./samples/08/README.md)
 **重點**：使用 Foundry Local 整合構建現代原生聊天應用
 
-**核心主題**：Electron 開發 • Fluent 設計系統 • 原生 Windows 整合 • 實時流式處理 • 聊天界面設計
+**核心主題**：Electron 開發 • Fluent 設計系統 • 原生 Windows 整合 • 實時流式傳輸 • 聊天界面設計
 
 **範例**：[Windows 11 聊天應用](./samples/08/README.md)
 
-**時長**：3-4 小時 | **等級**：進階
+**時長**：3-4 小時 | **等級**：高級
 
 ---
 
-### [9: 進階多代理編排](./samples/09/README.md)
-**重點**：複雜代理協調、專業任務分配和協作式 AI 工作流程
+### [9: 高級多代理編排](./samples/09/README.md)
+**重點**：複雜代理協調、專業任務分配和協作 AI 工作流程
 
 **核心主題**：智能代理協調 • 函數調用模式 • 跨代理通信 • 工作流程編排 • 質量保證機制
 
-**範例**：[進階多代理系統](./samples/09/README.md)
+**範例**：[高級多代理系統](./samples/09/README.md)
 
 **時長**：4-5 小時 | **等級**：專家
 
@@ -145,10 +145,10 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 
 ### 系統需求
 - **操作系統**：Windows 11 (22H2 或更高版本)
-- **記憶體**：16GB RAM（建議 32GB 用於較大模型）
-- **存儲**：50GB 可用空間用於模型快取
-- **硬體**：建議使用具備 NPU 的設備（Copilot+ PC），GPU 可選
-- **網路**：高速網路用於初始模型下載
+- **記憶體**：16GB RAM（建議 32GB 用於更大模型）
+- **存儲**：50GB 可用空間用於模型緩存
+- **硬件**：建議使用支持 NPU 的設備（Copilot+ PC），GPU 可選
+- **網絡**：高速網絡用於初始模型下載
 
 ### 開發環境
 - Visual Studio Code，安裝 AI Toolkit 擴展
@@ -157,10 +157,10 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 - PowerShell 或命令提示符
 - Azure CLI（可選，用於雲端整合）
 
-### 知識需求
+### 知識要求
 - 基本 AI/ML 概念理解
 - 命令行操作熟悉
-- Python 程式設計基礎
+- Python 編程基礎
 - REST API 概念
 - 提示工程和模型推理的基本知識
 
@@ -172,23 +172,23 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 |------|----------|------|------|--------|
 |  1 | 設置與基礎 | 01, 02, 03 | 2-3 小時 | 初學者 |
 |  2 | AI 解決方案 | 04 | 2-3 小時 | 中級 |
-|  3 | 開源模型 | 05 | 2-3 小時 | 中級 |
-|  4 | 進階模型 | 06 | 3-4 小時 | 進階 |
-|  5 | AI 代理 | 05, 09 | 3-4 小時 | 進階 |
+|  3 | 開源 | 05 | 2-3 小時 | 中級 |
+|  4 | 高級模型 | 06 | 3-4 小時 | 高級 |
+|  5 | AI 代理 | 05, 09 | 3-4 小時 | 高級 |
 |  6 | 企業工具 | 06, 10 | 3-4 小時 | 專家 |
 |  7 | 直接 API 整合 | 07 | 2-3 小時 | 中級 |
-|  8 | Windows 11 聊天應用 | 08 | 3-4 小時 | 進階 |
-|  9 | 進階多代理 | 09 | 4-5 小時 | 專家 |
+|  8 | Windows 11 聊天應用 | 08 | 3-4 小時 | 高級 |
+|  9 | 高級多代理 | 09 | 4-5 小時 | 專家 |
 | 10 | 工具框架 | 10 | 4-5 小時 | 專家 |
 
 ## 核心資源
 
-**官方文件：**
+**官方文檔：**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - 原始碼和官方範例
-- [Azure AI Foundry 文件](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - 完整設置和使用指南
+- [Azure AI Foundry 文檔](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - 完整設置和使用指南
 - [Model Mondays 系列](https://aka.ms/model-mondays) - 每週模型亮點和教程
 
-**社群與支援：**
+**社群與支持：**
 - [Foundry Local 討論區](https://github.com/microsoft/Foundry-Local/discussions) - 社群問答和功能請求
 - [Microsoft AI 開發者社群](https://techcommunity.microsoft.com/category/artificialintelligence) - 最新消息和最佳實踐
 
@@ -199,33 +199,33 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 ### 技術精通
 - **部署與管理**：在開發和生產環境中安裝和管理 Foundry Local
 - **整合模型**：無縫使用 Microsoft、Hugging Face 和社群來源的多樣化模型
-- **構建應用**：創建具備進階功能和優化的生產級 AI 應用
-- **開發代理**：實現具備基礎能力、推理和工具整合的複雜 AI 代理
+- **構建應用**：創建具有高級功能和優化的生產級 AI 應用
+- **開發代理**：實現具有基礎、推理和工具整合的高級 AI 代理
 
 ### 策略理解
 - **架構決策**：在本地與雲端部署之間做出明智選擇
-- **性能優化**：在不同硬體配置中優化推理性能
+- **性能優化**：在不同硬件配置中優化推理性能
 - **企業擴展**：設計從本地原型到企業部署的可擴展應用
-- **隱私與安全**：實現隱私保護的 AI 解決方案，使用本地推理
+- **隱私與安全**：實施隱私保護的 AI 解決方案，使用本地推理
 
 ### 創新能力
 - **快速原型**：快速構建和測試 AI 應用概念，涵蓋所有 10 個範例模式
 - **社群整合**：利用開源模型並為生態系統做出貢獻
-- **進階模式**：實現尖端 AI 模式，包括 RAG、代理和工具整合
+- **高級模式**：實現尖端 AI 模式，包括 RAG、代理和工具整合
 - **框架精通**：專家級整合 LangChain、Semantic Kernel、Chainlit 和 Electron
-- **生產部署**：從本地原型到企業系統部署可擴展的 AI 解決方案
-- **未來準備開發**：構建適應新興 AI 技術和模式的應用
+- **生產部署**：從本地原型到企業系統部署可擴展 AI 解決方案
+- **面向未來的開發**：構建適應新興 AI 技術和模式的應用
 
 ## 開始使用
 
-1. **環境設置**：確保使用 Windows 11 並符合建議硬體要求（見先決條件）
-2. **安裝 Foundry Local**：按照課程 1 完成完整安裝和配置
-3. **運行範例 01**：從基本 REST API 整合開始，驗證設置
+1. **環境設置**：確保使用推薦硬件的 Windows 11（參見先決條件）
+2. **安裝 Foundry Local**：按照課程 1 完成安裝和配置
+3. **運行範例 01**：從基本的 REST API 整合開始，驗證設置
 4. **完成範例**：完成範例 01-10，全面掌握技能
 
 ## 成功指標
 
-通過所有 10 個全面範例來追蹤您的進度：
+通過所有 10 個全面範例來跟蹤您的進度：
 
 ### 基礎級別（範例 01-03）
 - [ ] 成功安裝並配置 Foundry Local
@@ -239,17 +239,17 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，為開發�
 - [ ] 創建多代理編排系統（範例 05）
 - [ ] 實現智能模型路由（範例 06）
 
-### 進階整合級別（範例 07-10）
+### 高級整合級別（範例 07-10）
 - [ ] 構建生產級 API 客戶端（範例 07）
 - [ ] 開發 Windows 11 原生聊天應用（範例 08）
-- [ ] 實現進階多代理系統（範例 09）
-- [ ] 創建全面工具框架（範例 10）
+- [ ] 實現高級多代理系統（範例 09）
+- [ ] 創建全面的工具框架（範例 10）
 
 ### 精通指標
-- [ ] 成功運行所有 10 個範例且無錯誤
-- [ ] 為特定使用案例自定義至少 3 個範例
-- [ ] 在類生產環境中部署 2+ 範例
-- [ ] 為範例代碼貢獻改進或擴展
+- [ ] 成功運行所有 10 個範例，無錯誤
+- [ ] 為特定用例自定義至少 3 個範例
+- [ ] 在類似生產環境中部署 2+ 範例
+- [ ] 為範例代碼做出改進或擴展
 - [ ] 將 Foundry Local 模式整合到個人/專業項目中
 
 ## 快速入門指南 - 所有 10 個範例
@@ -336,7 +336,7 @@ set CODE_MODEL=qwen2.5-7b-instruct
 python samples/06/router.py "Analyze this Python code for performance issues"
 ```
 
-### 進階整合範例（07-10）
+### 高級整合範例（07-10）
 
 **範例 07：直接 API 客戶端**
 ```powershell
@@ -371,7 +371,7 @@ npm start
 npm run build
 ```
 
-**範例 09：進階多代理系統**
+**範例 09：高級多代理系統**
 ```powershell
 # Navigate to sample directory
 cd samples/09
@@ -454,11 +454,11 @@ npm install
 ```
 
 ## 總結
-此模組代表了邊緣 AI 開發的最前沿，結合了 Microsoft 的企業級工具與開源生態系統的靈活性與創新性。透過掌握 Foundry Local 的全部 10 個綜合範例，您將站在 AI 應用開發的最前線。
+此模組代表了邊緣 AI 開發的最前沿，結合了 Microsoft 企業級工具與開源生態系統的靈活性與創新性。透過掌握 Foundry Local 的全部 10 個綜合範例，您將站在 AI 應用開發的最前線。
 
 **完整學習路徑：**
 - **基礎**（範例 01-03）：API 整合與模型管理
-- **應用**（範例 04-06）：RAG、代理和智能路由
+- **應用**（範例 04-06）：RAG、代理與智能路由
 - **進階**（範例 07-10）：生產框架與企業整合
 
 關於 Azure OpenAI 整合（第二節），請參閱各範例的 README 文件以了解所需的環境變數和 API 版本設定。

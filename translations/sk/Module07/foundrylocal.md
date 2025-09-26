@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:22:25+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:55:53+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sk"
 }
 -->
-# Foundry Local na Windows (Overené)
+# Foundry Local na Windows a Mac
 
-Tento návod vám pomôže nainštalovať, spustiť a integrovať Microsoft Foundry Local na Windows. Všetky kroky a príkazy sú overené podľa dokumentácie Microsoft Learn.
+Tento návod vám pomôže nainštalovať, spustiť a integrovať Microsoft Foundry Local na Windows a Mac. Všetky kroky a príkazy sú overené podľa dokumentácie Microsoft Learn.
 
 - Začíname: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architektúra: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Kontrola verzie:
 ```cmd
 foundry --version
+```
+     
+**Inštalácia / Mac**
+
+**MacOS**: 
+Otvorte terminál a spustite nasledujúci príkaz:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Základy CLI (Tri kategórie)
@@ -54,10 +63,10 @@ foundry cache list
 ```
 
 Poznámky:
-- Služba poskytuje REST API kompatibilné s OpenAI. Port pre endpoint je dynamicky pridelený; použite `foundry service status` na jeho zistenie.
-- Používajte SDK pre pohodlie; automaticky spracujú zistenie endpointu tam, kde je to podporované.
+- Služba poskytuje REST API kompatibilné s OpenAI. Port koncového bodu je dynamicky pridelený; použite `foundry service status` na jeho zistenie.
+- Používajte SDK pre pohodlie; automaticky spracovávajú zistenie koncového bodu tam, kde je to podporované.
 
-## 3) Zistenie lokálneho endpointu (Dynamický port)
+## 3) Zistenie lokálneho koncového bodu (Dynamický port)
 
 Foundry Local priraďuje dynamický port pri každom spustení služby:
 ```cmd
@@ -109,16 +118,16 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Aktualizujte na najnovšiu preview verziu:
+- Aktualizujte na najnovšiu verziu preview:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
 ## 7) Súvisiace skúsenosti vývojárov na Windows
 
-- Možnosti lokálnej vs cloudovej AI na Windows, vrátane Foundry Local a Windows ML:
+- Lokálne vs cloudové AI možnosti na Windows, vrátane Foundry Local a Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit s Foundry Local (použite `foundry service status` na získanie URL endpointu pre chat):
+- VS Code AI Toolkit s Foundry Local (použite `foundry service status` na získanie URL koncového bodu pre chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

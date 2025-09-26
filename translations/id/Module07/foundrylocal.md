@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T22:41:48+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:48:58+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "id"
 }
 -->
-# Foundry Local di Windows (Tervalidasi)
+# Foundry Local di Windows & Mac
 
-Panduan ini membantu Anda menginstal, menjalankan, dan mengintegrasikan Microsoft Foundry Local di Windows. Semua langkah dan perintah telah divalidasi berdasarkan dokumen Microsoft Learn.
+Panduan ini membantu Anda menginstal, menjalankan, dan mengintegrasikan Microsoft Foundry Local di Windows dan Mac. Semua langkah dan perintah telah divalidasi berdasarkan dokumen Microsoft Learn.
 
 - Memulai: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arsitektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -18,7 +18,7 @@ Panduan ini membantu Anda menginstal, menjalankan, dan mengintegrasikan Microsof
 - Kompilasi Model HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Lokal vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Instalasi / Upgrade di Windows
+## 1) Instal / Upgrade di Windows
 
 - Instal:
 ```cmd
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Cek versi:
 ```cmd
 foundry --version
+```
+     
+**Instal / Mac**
+
+**MacOS**: 
+Buka terminal dan jalankan perintah berikut:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Dasar CLI (Tiga Kategori)

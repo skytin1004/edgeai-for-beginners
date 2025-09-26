@@ -1,22 +1,22 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:23:37+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T19:04:35+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "uk"
 }
 -->
-# Foundry Local на Windows (Перевірено)
+# Foundry Local на Windows і Mac
 
-Цей посібник допоможе вам встановити, запустити та інтегрувати Microsoft Foundry Local на Windows. Усі кроки та команди перевірені відповідно до документації Microsoft Learn.
+Цей посібник допоможе вам встановити, запустити та інтегрувати Microsoft Foundry Local на Windows і Mac. Усі кроки та команди перевірені відповідно до документації Microsoft Learn.
 
 - Початок роботи: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Архітектура: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Довідка CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Інтеграція SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Компіляція моделей HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Windows AI: Локально vs Хмара: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- Windows AI: локально vs хмара: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Встановлення / Оновлення на Windows
 
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Перевірка версії:
 ```cmd
 foundry --version
+```
+     
+**Встановлення / Mac**
+
+**MacOS**: 
+Відкрийте термінал і виконайте наступну команду:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Основи CLI (Три категорії)
@@ -54,10 +63,10 @@ foundry cache list
 ```
 
 Примітки:
-- Сервіс надає REST API, сумісний з OpenAI. Порт для доступу виділяється динамічно; використовуйте `foundry service status`, щоб дізнатися його.
+- Сервіс надає REST API, сумісний з OpenAI. Порт для кінцевої точки призначається динамічно; використовуйте `foundry service status`, щоб дізнатися його.
 - Використовуйте SDK для зручності; вони автоматично визначають кінцеву точку там, де це підтримується.
 
-## 3) Визначення локальної кінцевої точки (Динамічний порт)
+## 3) Визначення локальної кінцевої точки (динамічний порт)
 
 Foundry Local призначає динамічний порт кожного разу, коли сервіс запускається:
 ```cmd
@@ -83,7 +92,7 @@ PY
 Посилання:
 - Інтеграція SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Використання власної моделі (Компілірування за допомогою Olive)
+## 5) Використання власної моделі (компіляція за допомогою Olive)
 
 Якщо вам потрібна модель, якої немає в каталозі, скомпілюйте її в ONNX для Foundry Local за допомогою Olive.
 
@@ -98,7 +107,7 @@ foundry model run llama-3.2 --verbose
 
 ## 6) Вирішення проблем
 
-- Перевірка статусу сервісу та журналів:
+- Перевірка статусу сервісу та логів:
 ```cmd
 foundry service status
 foundry service diag
@@ -114,9 +123,9 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Супутній досвід розробника на Windows
+## 7) Супутній досвід розробки для Windows
 
-- Вибір між локальним та хмарним AI на Windows, включаючи Foundry Local та Windows ML:
+- Вибір між локальним і хмарним AI для Windows, включаючи Foundry Local і Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - AI Toolkit для VS Code із Foundry Local (використовуйте `foundry service status`, щоб отримати URL кінцевої точки для чату):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

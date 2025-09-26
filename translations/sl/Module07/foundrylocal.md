@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:23:15+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T19:02:44+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sl"
 }
 -->
-# Foundry Local na Windows (Preverjeno)
+# Foundry Local na Windows in Mac
 
-Ta vodič vam pomaga namestiti, zagnati in integrirati Microsoft Foundry Local na Windows. Vsi koraki in ukazi so preverjeni glede na dokumentacijo Microsoft Learn.
+Ta vodič vam pomaga namestiti, zagnati in integrirati Microsoft Foundry Local na Windows in Mac. Vsi koraki in ukazi so preverjeni glede na dokumentacijo Microsoft Learn.
 
 - Začetek: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arhitektura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
-- CLI Referenca: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
+- CLI referenca: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integracija SDK-jev: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Kompilacija HF modelov (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Lokalno vs oblak: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
@@ -28,9 +28,18 @@ winget install Microsoft.FoundryLocal
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
-- Preverjanje verzije:
+- Preverjanje različice:
 ```cmd
 foundry --version
+```
+     
+**Namestitev / Mac**
+
+**MacOS**: 
+Odprite terminal in zaženite naslednji ukaz:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Osnove CLI (Tri kategorije)
@@ -55,15 +64,15 @@ foundry cache list
 
 Opombe:
 - Storitev omogoča REST API, združljiv z OpenAI. Vrata za dostop so dinamično dodeljena; uporabite `foundry service status`, da jih odkrijete.
-- Uporabite SDK-je za lažjo uporabo; ti samodejno odkrijejo dostopne točke, kjer je to podprto.
+- Uporabite SDK-je za lažjo uporabo; ti samodejno upravljajo odkrivanje končnih točk, kjer je podprto.
 
-## 3) Odkrijte lokalno dostopno točko (Dinamična vrata)
+## 3) Odkrijte lokalno končno točko (dinamična vrata)
 
-Foundry Local dodeli dinamična vrata ob vsakem zagonu storitve:
+Foundry Local dodeli dinamična vrata vsakič, ko se storitev zažene:
 ```cmd
 foundry service status
 ```
-Uporabite poročani `http://localhost:<PORT>` kot vaš `base_url` z OpenAI združljivimi potmi (na primer, `/v1/chat/completions`).
+Uporabite poročano `http://localhost:<PORT>` kot vaš `base_url` z OpenAI-združljivimi potmi (na primer, `/v1/chat/completions`).
 
 ## 4) Hitri test prek OpenAI Python SDK
 
@@ -83,7 +92,7 @@ PY
 Reference:
 - Integracija SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Prinesite svoj model (Kompilacija z Olive)
+## 5) Prinesite svoj model (kompilacija z Olive)
 
 Če potrebujete model, ki ni v katalogu, ga kompilirajte v ONNX za Foundry Local z uporabo Olive.
 
@@ -98,7 +107,7 @@ Dokumentacija:
 
 ## 6) Odpravljanje težav
 
-- Preverite status storitve in dnevnike:
+- Preverite stanje storitve in dnevnike:
 ```cmd
 foundry service status
 foundry service diag
@@ -114,11 +123,11 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Povezana izkušnja za razvijalce na Windows
+## 7) Povezana izkušnja razvijalcev na Windows
 
 - Izbire med lokalno in oblačno AI na Windows, vključno s Foundry Local in Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit z Foundry Local (uporabite `foundry service status`, da pridobite URL dostopne točke za klepet):
+- VS Code AI Toolkit s Foundry Local (uporabite `foundry service status`, da pridobite URL končne točke za klepet):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

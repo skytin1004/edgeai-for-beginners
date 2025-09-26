@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T23:12:41+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:43:09+00:00",
   "source_file": "Module08/README.md",
   "language_code": "da"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Oversigt
 
-Microsoft Foundry Local repræsenterer næste generation af edge AI-udvikling og giver udviklere kraftfulde værktøjer til at bygge, implementere og skalere AI-applikationer lokalt, samtidig med at der opretholdes problemfri integration med Azure AI Foundry. Dette modul dækker Foundry Local fra installation til avanceret agentudvikling.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) repræsenterer næste generation af edge AI-udvikling og giver udviklere kraftfulde værktøjer til at bygge, implementere og skalere AI-applikationer lokalt, samtidig med at der opretholdes en problemfri integration med Azure AI Foundry. Dette modul dækker Foundry Local fra installation til avanceret agentudvikling.
 
 **Nøgleteknologier:**
 - Microsoft Foundry Local CLI og SDK
@@ -29,7 +29,7 @@ Ved at gennemføre dette modul vil du:
 - **Bygge produktionsløsninger**: Skabe AI-applikationer med avanceret prompt engineering og dataintegration
 - **Udnytte open source-økosystemet**: Integrere Hugging Face-modeller og bidrag fra fællesskabet
 - **Udvikle AI-agenter**: Bygge intelligente agenter med grounding og orkestreringsfunktioner
-- **Implementere virksomhedsmønstre**: Skabe modulære, skalerbare AI-løsninger til produktionsbrug
+- **Implementere virksomhedsmønstre**: Skabe modulære, skalerbare AI-løsninger til produktionsimplementering
 
 ## Sessionstruktur
 
@@ -58,7 +58,7 @@ Ved at gennemføre dette modul vil du:
 ### [3: Open Source-modeller i Foundry Local](./03.OpenSourceModels.md)
 **Fokus**: Hugging Face-integration, BYOM-strategier og fællesskabsmodeller
 
-**Nøgleemner**: Hugging Face-integration • Bring-your-own-model • Model Mondays indsigt • Fællesskabsbidrag • Modelvalg
+**Nøgleemner**: Hugging Face-integration • Bring-your-own-model • Model Mondays indsigter • Fællesskabsbidrag • Modelvalg
 
 **Eksempel**: [Multi-Agent Orchestration](./samples/05/README.md)
 
@@ -66,7 +66,7 @@ Ved at gennemføre dette modul vil du:
 
 ---
 
-### [4: Udforsk banebrydende modeller](./04.CuttingEdgeModels.md)
+### [4: Udforsk avancerede modeller](./04.CuttingEdgeModels.md)
 **Fokus**: LLMs vs SLMs, EdgeAI-implementering og avancerede demoer
 
 **Nøgleemner**: Model sammenligning • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimering
@@ -91,7 +91,7 @@ Ved at gennemføre dette modul vil du:
 ### [6: Foundry Local - Modeller som værktøjer](./06.ModelsAsTools.md)
 **Fokus**: Modulære AI-løsninger, virksomhedsskalerbarhed og produktionsmønstre
 
-**Nøgleemner**: Modeller som værktøjer • Implementering på enheden • SDK/API integration • Virksomhedsarkitekturer • Skaleringsstrategier
+**Nøgleemner**: Modeller som værktøjer • Implementering på enheden • SDK/API-integration • Virksomhedsarkitekturer • Skaleringsstrategier
 
 **Eksempel**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
@@ -102,7 +102,7 @@ Ved at gennemføre dette modul vil du:
 ### [7: Direkte API-integrationsmønstre](./samples/07/README.md)
 **Fokus**: Ren REST API-integration uden SDK-afhængigheder for maksimal kontrol
 
-**Nøgleemner**: HTTP-klientimplementering • Brugerdefineret autentifikation • Modelovervågning • Streaming-responser • Produktionsfejlhåndtering
+**Nøgleemner**: HTTP-klientimplementering • Brugerdefineret autentificering • Modelovervågning • Streaming-responser • Produktionsfejlhåndtering
 
 **Eksempel**: [Direct API Client](./samples/07/README.md)
 
@@ -111,9 +111,9 @@ Ved at gennemføre dette modul vil du:
 ---
 
 ### [8: Windows 11 Native Chat Application](./samples/08/README.md)
-**Fokus**: Bygge moderne native chat-applikationer med Foundry Local integration
+**Fokus**: Bygge moderne native chat-applikationer med Foundry Local-integration
 
-**Nøgleemner**: Electron-udvikling • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design
+**Nøgleemner**: Electron-udvikling • Fluent Design System • Native Windows-integration • Real-time streaming • Chat-interface design
 
 **Eksempel**: [Windows 11 Chat Application](./samples/08/README.md)
 
@@ -124,7 +124,7 @@ Ved at gennemføre dette modul vil du:
 ### [9: Avanceret multi-agent orkestrering](./samples/09/README.md)
 **Fokus**: Sofistikeret agentkoordinering, specialiseret opgavefordeling og samarbejdende AI-workflows
 
-**Nøgleemner**: Intelligent agentkoordinering • Funktionskaldsmønstre • Kommunikation mellem agenter • Workflow orkestrering • Kvalitetssikringsmekanismer
+**Nøgleemner**: Intelligent agentkoordinering • Funktionskaldsmønstre • Kommunikation mellem agenter • Workflow-orkestrering • Kvalitetssikringsmekanismer
 
 **Eksempel**: [Advanced Multi-Agent System](./samples/09/README.md)
 
@@ -133,9 +133,9 @@ Ved at gennemføre dette modul vil du:
 ---
 
 ### [10: Foundry Local som værktøjsramme](./samples/10/README.md)
-**Fokus**: Værktøjsfokuseret arkitektur til integration af Foundry Local i eksisterende applikationer og rammer
+**Fokus**: Værktøjsbaseret arkitektur til integration af Foundry Local i eksisterende applikationer og rammer
 
-**Nøgleemner**: LangChain integration • Semantic Kernel funktioner • REST API rammer • CLI værktøjer • Jupyter integration • Produktionsimplementeringsmønstre
+**Nøgleemner**: LangChain-integration • Semantiske Kernel-funktioner • REST API-rammer • CLI-værktøjer • Jupyter-integration • Produktionsimplementeringsmønstre
 
 **Eksempel**: [Foundry Tools Framework](./samples/10/README.md)
 
@@ -154,8 +154,8 @@ Ved at gennemføre dette modul vil du:
 - Visual Studio Code med AI Toolkit-udvidelse
 - Python 3.10+ og pip
 - Git til versionskontrol
-- PowerShell eller Kommandoprompt
-- Azure CLI (valgfrit til cloud-integration)
+- PowerShell eller Command Prompt
+- Azure CLI (valgfri til cloud-integration)
 
 ### Videnforudsætninger
 - Grundlæggende forståelse af AI/ML-koncepter
@@ -164,7 +164,7 @@ Ved at gennemføre dette modul vil du:
 - REST API-koncepter
 - Grundlæggende viden om prompting og modelinference
 
-## Modul Tidslinje
+## Modul tidslinje
 
 **Samlet estimeret tid**: 30-38 timer
 
@@ -181,7 +181,7 @@ Ved at gennemføre dette modul vil du:
 |  9 | Avanceret multi-agent | 09 | 4-5 timer | Ekspert |
 | 10 | Værktøjsramme | 10 | 4-5 timer | Ekspert |
 
-## Nøgleressourcer
+## Nøgle ressourcer
 
 **Officiel dokumentation:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Kildekode og officielle eksempler
@@ -194,7 +194,7 @@ Ved at gennemføre dette modul vil du:
 
 ## Læringsresultater
 
-Når du har gennemført dette modul, vil du være i stand til:
+Når du har gennemført dette modul, vil du være i stand til at:
 
 ### Teknisk ekspertise
 - **Implementere og administrere**: Foundry Local installationer på tværs af udviklings- og produktionsmiljøer
@@ -205,7 +205,7 @@ Når du har gennemført dette modul, vil du være i stand til:
 ### Strategisk forståelse
 - **Arkitekturvalg**: Træffe informerede beslutninger mellem lokal vs cloud-implementering
 - **Performanceoptimering**: Optimere inference-performance på tværs af forskellige hardwarekonfigurationer
-- **Virksomhedsskalerbarhed**: Designe applikationer, der skalerer fra lokale prototyper til virksomhedsløsninger
+- **Virksomhedsskalerbarhed**: Designe applikationer, der skalerer fra lokale prototyper til virksomhedsimplementeringer
 - **Privatliv og sikkerhed**: Implementere privatlivsbevarende AI-løsninger med lokal inference
 
 ### Innovationskapacitet
@@ -245,14 +245,14 @@ Følg din fremgang gennem alle 10 omfattende eksempler:
 - [ ] Implementér avanceret multi-agent system (Eksempel 09)
 - [ ] Skab omfattende værktøjsramme (Eksempel 10)
 
-### Mesterskabsindikatorer
+### Ekspertindikatorer
 - [ ] Kør alle 10 eksempler uden fejl
 - [ ] Tilpas mindst 3 eksempler til specifikke brugsscenarier
 - [ ] Implementér 2+ eksempler i produktionslignende miljøer
 - [ ] Bidrag med forbedringer eller udvidelser til eksempelkode
 - [ ] Integrér Foundry Local mønstre i personlige/professionelle projekter
 
-## Hurtig startguide - Alle 10 eksempler
+## Hurtig start guide - Alle 10 eksempler
 
 ### Miljøopsætning (Påkrævet for alle eksempler)
 
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Resumé
-Dette modul repræsenterer den nyeste udvikling inden for edge AI, hvor Microsofts værktøjer i virksomhedsklasse kombineres med fleksibiliteten og innovationen fra open source-økosystemet. Ved at mestre Foundry Local gennem alle 10 omfattende eksempler vil du være i frontlinjen inden for udvikling af AI-applikationer.
+Dette modul repræsenterer den nyeste udvikling inden for edge AI, hvor Microsofts værktøjer i virksomhedsklasse kombineres med fleksibiliteten og innovationen fra open source-økosystemet. Ved at mestre Foundry Local gennem alle 10 omfattende eksempler vil du være i spidsen for udviklingen af AI-applikationer.
 
 **Komplet læringssti:**
 - **Grundlag** (Eksempler 01-03): API-integration og modelstyring

@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:22:45+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:58:25+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "bg"
 }
 -->
-# Foundry Local на Windows (Проверено)
+# Foundry Local на Windows и Mac
 
-Това ръководство ви помага да инсталирате, стартирате и интегрирате Microsoft Foundry Local на Windows. Всички стъпки и команди са проверени спрямо документацията на Microsoft Learn.
+Това ръководство ви помага да инсталирате, стартирате и интегрирате Microsoft Foundry Local на Windows и Mac. Всички стъпки и команди са проверени спрямо документацията на Microsoft Learn.
 
 - Започнете: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Архитектура: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -18,19 +18,28 @@ CO_OP_TRANSLATOR_METADATA:
 - Компилиране на HF модели (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Локално срещу облачно: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Инсталиране / Актуализиране на Windows
+## 1) Инсталиране / Актуализация на Windows
 
 - Инсталиране:
 ```cmd
 winget install Microsoft.FoundryLocal
 ```
-- Актуализиране:
+- Актуализация:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 - Проверка на версията:
 ```cmd
 foundry --version
+```
+     
+**Инсталиране / Mac**
+
+**MacOS**: 
+Отворете терминал и изпълнете следната команда:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Основи на CLI (Три категории)
@@ -98,7 +107,7 @@ foundry model run llama-3.2 --verbose
 
 ## 6) Отстраняване на проблеми
 
-- Проверка на статус и логове на услугата:
+- Проверка на състоянието на услугата и логовете:
 ```cmd
 foundry service status
 foundry service diag
@@ -109,16 +118,16 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Актуализиране до последната предварителна версия:
+- Актуализация до последната предварителна версия:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
 ## 7) Свързано с Windows Developer Experience
 
-- Избор между локално и облачно AI на Windows, включително Foundry Local и Windows ML:
+- Локални срещу облачни AI решения за Windows, включително Foundry Local и Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit с Foundry Local (използвайте `foundry service status`, за да получите URL на крайна точка за чат):
+- VS Code AI Toolkit с Foundry Local (използвайте `foundry service status`, за да получите URL за чат крайна точка):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

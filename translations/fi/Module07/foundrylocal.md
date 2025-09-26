@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T20:27:01+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:44:38+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fi"
 }
 -->
-# Foundry Local Windowsilla (Vahvistettu)
+# Foundry Local Windowsilla ja Macilla
 
-Tämä opas auttaa sinua asentamaan, käyttämään ja integroimaan Microsoft Foundry Localin Windowsilla. Kaikki vaiheet ja komennot on vahvistettu Microsoft Learn -dokumentaation perusteella.
+Tämä opas auttaa sinua asentamaan, käyttämään ja integroimaan Microsoft Foundry Localin Windowsilla ja Macilla. Kaikki vaiheet ja komennot on vahvistettu Microsoft Learn -dokumentaation perusteella.
 
 - Aloita: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkkitehtuuri: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Versiotarkistus:
 ```cmd
 foundry --version
+```
+     
+**Asenna / Mac**
+
+**MacOS**: 
+Avaa terminaali ja suorita seuraava komento:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI-perusteet (Kolme kategoriaa)
@@ -54,8 +63,8 @@ foundry cache list
 ```
 
 Huomioita:
-- Palvelu tarjoaa OpenAI-yhteensopivan REST-rajapinnan. Endpoint-portti määritetään dynaamisesti; käytä `foundry service status` sen löytämiseksi.
-- Käytä SDK:ita helppouden vuoksi; ne hoitavat endpointin automaattisen tunnistamisen, jos tuettu.
+- Palvelu tarjoaa OpenAI-yhteensopivan REST-rajapinnan. Endpoint-portti määritetään dynaamisesti; käytä `foundry service status` löytääksesi sen.
+- Käytä SDK:ita mukavuuden vuoksi; ne hoitavat endpointin löytämisen automaattisesti, jos tuettu.
 
 ## 3) Paikallisen endpointin löytäminen (Dynaaminen portti)
 
@@ -63,7 +72,7 @@ Foundry Local määrittää dynaamisen portin aina, kun palvelu käynnistyy:
 ```cmd
 foundry service status
 ```
-Käytä ilmoitettua `http://localhost:<PORT>` osoitteena `base_url` OpenAI-yhteensopivilla poluilla (esimerkiksi `/v1/chat/completions`).
+Käytä raportoitua `http://localhost:<PORT>` osoitteena `base_url` OpenAI-yhteensopivilla poluilla (esimerkiksi `/v1/chat/completions`).
 
 ## 4) Pikatesti OpenAI Python SDK:lla
 
@@ -96,7 +105,7 @@ foundry model run llama-3.2 --verbose
 Dokumentaatio:
 - BYOM-kääntäminen: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) Vianmääritys
+## 6) Vianetsintä
 
 - Tarkista palvelun tila ja lokit:
 ```cmd

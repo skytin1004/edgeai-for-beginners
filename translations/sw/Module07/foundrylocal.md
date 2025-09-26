@@ -1,18 +1,18 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:21:55+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:51:29+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sw"
 }
 -->
-# Foundry Local kwenye Windows (Imethibitishwa)
+# Foundry Local kwenye Windows & Mac
 
-Mwongozo huu unakusaidia kusakinisha, kuendesha, na kuunganisha Microsoft Foundry Local kwenye Windows. Hatua zote na amri zimehakikiwa kulingana na nyaraka za Microsoft Learn.
+Mwongozo huu unakusaidia kusakinisha, kuendesha, na kuunganisha Microsoft Foundry Local kwenye Windows na Mac. Hatua zote na amri zimehakikiwa kulingana na nyaraka za Microsoft Learn.
 
 - Anza: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
-- Usanifu: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
+- Muundo: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Marejeleo ya CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Unganisha SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Kusanya HF Models (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Angalia toleo:
 ```cmd
 foundry --version
+```
+     
+**Sakinisha / Mac**
+
+**MacOS**: 
+Fungua terminal na endesha amri ifuatayo:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Misingi ya CLI (Makundi Matatu)
@@ -54,16 +63,16 @@ foundry cache list
 ```
 
 Maelezo:
-- Huduma inatoa API ya REST inayolingana na OpenAI. Bandari ya mwisho hutengwa kwa njia ya nguvu; tumia `foundry service status` kugundua.
+- Huduma inatoa API ya REST inayofanana na OpenAI. Bandari ya mwisho inatolewa kwa njia ya nguvu; tumia `foundry service status` kugundua.
 - Tumia SDKs kwa urahisi; zinashughulikia ugunduzi wa bandari kiotomatiki pale inapowezekana.
 
-## 3) Gundua Bandari ya Ndani (Dynamic Port)
+## 3) Gundua Endpoint ya Local (Dynamic Port)
 
-Foundry Local hutenga bandari ya nguvu kila wakati huduma inapoanza:
+Foundry Local inatoa bandari ya nguvu kila mara huduma inapoanza:
 ```cmd
 foundry service status
 ```
-Tumia `http://localhost:<PORT>` iliyoripotiwa kama `base_url` yako na njia zinazolingana na OpenAI (kwa mfano, `/v1/chat/completions`).
+Tumia `http://localhost:<PORT>` iliyoripotiwa kama `base_url` yako na njia zinazofanana na OpenAI (kwa mfano, `/v1/chat/completions`).
 
 ## 4) Jaribio la Haraka kupitia OpenAI Python SDK
 
@@ -83,9 +92,9 @@ PY
 Marejeleo:
 - SDK Integration: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Leta Modeli Yako Mwenyewe (Kusanya na Olive)
+## 5) Leta Modeli Yako (Kusanya na Olive)
 
-Ikiwa unahitaji modeli ambayo haipo kwenye katalogi, isanye kuwa ONNX kwa Foundry Local ukitumia Olive.
+Ikiwa unahitaji modeli ambayo haipo kwenye katalogi, iunganishe kwa ONNX kwa Foundry Local ukitumia Olive.
 
 Mtiririko wa kiwango cha juu (tazama nyaraka kwa hatua):
 ```cmd
@@ -98,7 +107,7 @@ Nyaraka:
 
 ## 6) Utatuzi wa Matatizo
 
-- Angalia hali ya huduma na magogo:
+- Angalia hali ya huduma na kumbukumbu:
 ```cmd
 foundry service status
 foundry service diag
@@ -109,16 +118,16 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Sasisha hadi hakikisho la hivi karibuni:
+- Sasisha hadi toleo la hivi karibuni la preview:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Uzoefu wa Mzalishaji wa Windows Unaohusiana
+## 7) Uzoefu Husika wa Mjenzi wa Windows
 
-- Chaguo za AI za ndani vs wingu kwenye Windows, ikijumuisha Foundry Local na Windows ML:
+- Chaguo za AI za local vs cloud kwenye Windows, ikijumuisha Foundry Local na Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit na Foundry Local (tumia `foundry service status` kupata URL ya mwisho ya mazungumzo):
+- VS Code AI Toolkit na Foundry Local (tumia `foundry service status` kupata URL ya endpoint ya mazungumzo):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

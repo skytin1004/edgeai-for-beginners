@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T19:24:02+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:40:23+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "th"
 }
 -->
-# Foundry Local บน Windows (ผ่านการตรวจสอบแล้ว)
+# Foundry Local บน Windows และ Mac
 
-คู่มือนี้ช่วยคุณติดตั้ง, รัน และรวม Microsoft Foundry Local บน Windows ขั้นตอนและคำสั่งทั้งหมดได้รับการตรวจสอบกับเอกสาร Microsoft Learn แล้ว
+คู่มือนี้ช่วยคุณติดตั้ง, รัน, และรวม Microsoft Foundry Local บน Windows และ Mac ขั้นตอนและคำสั่งทั้งหมดได้รับการตรวจสอบกับเอกสาร Microsoft Learn แล้ว
 
 - เริ่มต้นใช้งาน: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - สถาปัตยกรรม: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - ตรวจสอบเวอร์ชัน:
 ```cmd
 foundry --version
+```
+     
+**ติดตั้ง / Mac**
+
+**MacOS**: 
+เปิด terminal และรันคำสั่งต่อไปนี้:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) พื้นฐาน CLI (สามหมวดหมู่)
@@ -54,16 +63,16 @@ foundry cache list
 ```
 
 หมายเหตุ:
-- เซอร์วิสจะเปิดเผย REST API ที่เข้ากันได้กับ OpenAI พอร์ตของ endpoint จะถูกกำหนดแบบไดนามิก ใช้ `foundry service status` เพื่อค้นหา
+- เซอร์วิสนี้เปิด REST API ที่เข้ากันได้กับ OpenAI พอร์ต endpoint จะถูกจัดสรรแบบไดนามิก ใช้ `foundry service status` เพื่อค้นหา
 - ใช้ SDKs เพื่อความสะดวก; SDKs จะจัดการการค้นหา endpoint โดยอัตโนมัติในกรณีที่รองรับ
 
-## 3) ค้นหา Local Endpoint (พอร์ตไดนามิก)
+## 3) ค้นหา Local Endpoint (Dynamic Port)
 
-Foundry Local กำหนดพอร์ตไดนามิกทุกครั้งที่เซอร์วิสเริ่มต้น:
+Foundry Local จะจัดสรรพอร์ตแบบไดนามิกทุกครั้งที่เซอร์วิสเริ่มต้น:
 ```cmd
 foundry service status
 ```
-ใช้ `http://localhost:<PORT>` ที่รายงานเป็น `base_url` ของคุณ พร้อมเส้นทางที่เข้ากันได้กับ OpenAI (เช่น `/v1/chat/completions`)
+ใช้ `http://localhost:<PORT>` ที่รายงานเป็น `base_url` ของคุณพร้อมเส้นทางที่เข้ากันได้กับ OpenAI (เช่น `/v1/chat/completions`)
 
 ## 4) ทดสอบอย่างรวดเร็วผ่าน OpenAI Python SDK
 
@@ -83,7 +92,7 @@ PY
 อ้างอิง:
 - การรวม SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) ใช้โมเดลของคุณเอง (คอมไพล์ด้วย Olive)
+## 5) นำโมเดลของคุณมาใช้ (คอมไพล์ด้วย Olive)
 
 หากคุณต้องการโมเดลที่ไม่มีในแคตตาล็อก ให้คอมไพล์เป็น ONNX สำหรับ Foundry Local โดยใช้ Olive
 
@@ -98,7 +107,7 @@ foundry model run llama-3.2 --verbose
 
 ## 6) การแก้ไขปัญหา
 
-- ตรวจสอบสถานะและล็อกของเซอร์วิส:
+- ตรวจสอบสถานะเซอร์วิสและล็อก:
 ```cmd
 foundry service status
 foundry service diag
@@ -109,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- อัปเดตเป็นตัวอย่างล่าสุด:
+- อัปเดตเป็น preview ล่าสุด:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -118,7 +127,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - ตัวเลือก AI บน Windows ระหว่าง local และ cloud รวมถึง Foundry Local และ Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit กับ Foundry Local (ใช้ `foundry service status` เพื่อรับ URL endpoint สำหรับแชท):
+- VS Code AI Toolkit กับ Foundry Local (ใช้ `foundry service status` เพื่อรับ URL endpoint สำหรับ chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

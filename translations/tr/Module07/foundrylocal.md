@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T18:36:00+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:37:52+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "tr"
 }
 -->
-# Foundry Local Windows'da (Doğrulanmış)
+# Foundry Local Windows ve Mac'te
 
-Bu rehber, Microsoft Foundry Local'ı Windows'da nasıl kuracağınızı, çalıştıracağınızı ve entegre edeceğinizi anlatır. Tüm adımlar ve komutlar Microsoft Learn belgelerine göre doğrulanmıştır.
+Bu rehber, Microsoft Foundry Local'ı Windows ve Mac'te nasıl kuracağınızı, çalıştıracağınızı ve entegre edeceğinizi anlatır. Tüm adımlar ve komutlar Microsoft Learn belgelerine göre doğrulanmıştır.
 
 - Başlangıç: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Mimari: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -18,7 +18,7 @@ Bu rehber, Microsoft Foundry Local'ı Windows'da nasıl kuracağınızı, çalı
 - HF Modellerini Derleme (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Yerel vs Bulut: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Windows'da Kurulum / Güncelleme
+## 1) Windows'ta Kurulum / Güncelleme
 
 - Kurulum:
 ```cmd
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Sürüm kontrolü:
 ```cmd
 foundry --version
+```
+     
+**Kurulum / Mac**
+
+**MacOS**: 
+Bir terminal açın ve aşağıdaki komutu çalıştırın:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI Temelleri (Üç Kategori)
@@ -55,11 +64,11 @@ foundry cache list
 
 Notlar:
 - Servis, OpenAI uyumlu bir REST API sunar. Endpoint portu dinamik olarak atanır; bunu keşfetmek için `foundry service status` komutunu kullanın.
-- SDK'ları kullanarak endpoint keşfini otomatikleştirebilirsiniz; desteklenen yerlerde bu işlemi kolaylaştırır.
+- SDK'ları kullanarak kolaylık sağlayabilirsiniz; desteklenen yerlerde endpoint keşfini otomatik olarak yönetirler.
 
 ## 3) Yerel Endpoint'i Keşfetme (Dinamik Port)
 
-Foundry Local, servis her başlatıldığında dinamik bir port atar:
+Foundry Local, her servis başlatıldığında dinamik bir port atar:
 ```cmd
 foundry service status
 ```
@@ -85,7 +94,7 @@ Referanslar:
 
 ## 5) Kendi Modelinizi Getirin (Olive ile Derleme)
 
-Katalogda bulunmayan bir modele ihtiyacınız varsa, Olive kullanarak modeli ONNX formatına dönüştürüp Foundry Local için derleyebilirsiniz.
+Katalogda bulunmayan bir modele ihtiyacınız varsa, Olive kullanarak onu Foundry Local için ONNX formatına derleyin.
 
 Yüksek seviyeli akış (adımlar için belgeleri inceleyin):
 ```cmd
@@ -116,7 +125,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) İlgili Windows Geliştirici Deneyimi
 
-- Windows yerel ve bulut AI seçenekleri, Foundry Local ve Windows ML dahil:
+- Windows yerel vs bulut AI seçenekleri, Foundry Local ve Windows ML dahil:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit ile Foundry Local (chat endpoint URL'sini almak için `foundry service status` komutunu kullanın):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

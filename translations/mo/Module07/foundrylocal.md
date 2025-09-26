@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T16:57:23+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:20:28+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "mo"
 }
 -->
-# Foundry Local 在 Windows 上的使用指南（已驗證）
+# Foundry Local 在 Windows 和 Mac 上的使用指南
 
-本指南幫助您在 Windows 上安裝、運行並整合 Microsoft Foundry Local。所有步驟和命令均已根據 Microsoft Learn 文檔進行驗證。
+本指南幫助您在 Windows 和 Mac 上安裝、運行及整合 Microsoft Foundry Local。所有步驟和指令均已根據 Microsoft Learn 文檔進行驗證。
 
 - 入門指南：https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - 架構概念：https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI 參考文檔：https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - 整合 SDKs：https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-- 編譯 HF 模型（BYOM）：https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- 編譯 HF 模型 (BYOM)：https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI：本地 vs 雲端：https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) 在 Windows 上安裝 / 升級
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - 檢查版本：
 ```cmd
 foundry --version
+```
+     
+**在 Mac 上安裝**
+
+**MacOS**：  
+打開終端並執行以下指令：
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 
@@ -55,10 +64,10 @@ foundry cache list
 ```
 
 注意事項：
-- 該服務提供與 OpenAI 兼容的 REST API。端點的埠是動態分配的；使用 `foundry service status` 來查詢埠號。
-- 建議使用 SDKs，它們可以自動處理端點發現（在支持的情況下）。
+- 該服務提供與 OpenAI 兼容的 REST API。端點的埠是動態分配的；使用 `foundry service status` 來查詢。
+- 建議使用 SDKs，它們可以自動處理端點查詢（在支持的情況下）。
 
-## 3) 發現本地端點（動態埠）
+## 3) 查詢本地端點（動態埠）
 
 Foundry Local 每次啟動服務時都會分配一個動態埠：
 ```cmd
@@ -84,11 +93,11 @@ PY
 參考文檔：
 - SDK 整合：https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) 自帶模型（使用 Olive 編譯）
+## 5) 自帶模型 (使用 Olive 編譯)
 
-如果需要使用目錄中未包含的模型，可以使用 Olive 將其編譯為 ONNX 格式以供 Foundry Local 使用。
+如果需要使用目錄中未包含的模型，可使用 Olive 將其編譯為 ONNX 格式以供 Foundry Local 使用。
 
-高層次流程（具體步驟請參考文檔）：
+高層次流程（詳細步驟請參考文檔）：
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -110,7 +119,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- 更新至最新預覽版本：
+- 更新至最新預覽版：
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```

@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T20:26:53+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:43:52+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "no"
 }
 -->
-# Foundry Local på Windows (Validerte)
+# Foundry Local på Windows og Mac
 
-Denne veiledningen hjelper deg med å installere, kjøre og integrere Microsoft Foundry Local på Windows. Alle trinn og kommandoer er validert mot Microsoft Learn-dokumentasjon.
+Denne veiledningen hjelper deg med å installere, kjøre og integrere Microsoft Foundry Local på Windows og Mac. Alle trinn og kommandoer er validert mot Microsoft Learn-dokumentasjon.
 
 - Kom i gang: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Versjonskontroll:
 ```cmd
 foundry --version
+```
+     
+**Installere / Mac**
+
+**MacOS**: 
+Åpne et terminalvindu og kjør følgende kommando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI Grunnleggende (Tre kategorier)
@@ -63,7 +72,7 @@ Foundry Local tildeler en dynamisk port hver gang tjenesten starter:
 ```cmd
 foundry service status
 ```
-Bruk den rapporterte `http://localhost:<PORT>` som din `base_url` med OpenAI-kompatible stier (for eksempel, `/v1/chat/completions`).
+Bruk det rapporterte `http://localhost:<PORT>` som din `base_url` med OpenAI-kompatible stier (for eksempel, `/v1/chat/completions`).
 
 ## 4) Rask test via OpenAI Python SDK
 
@@ -87,7 +96,7 @@ Referanser:
 
 Hvis du trenger en modell som ikke finnes i katalogen, kompiler den til ONNX for Foundry Local ved hjelp av Olive.
 
-Høy-nivå flyt (se dokumentasjon for trinn):
+Overordnet flyt (se dokumentasjon for trinn):
 ```cmd
 foundry cache cd models
 foundry cache list

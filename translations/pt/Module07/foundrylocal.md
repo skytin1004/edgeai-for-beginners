@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T12:58:42+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:33:41+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "pt"
 }
 -->
-# Foundry Local no Windows (Validado)
+# Foundry Local no Windows e Mac
 
-Este guia ajuda a instalar, executar e integrar o Microsoft Foundry Local no Windows. Todos os passos e comandos foram validados com base na documentação do Microsoft Learn.
+Este guia ajuda a instalar, executar e integrar o Microsoft Foundry Local no Windows e Mac. Todos os passos e comandos foram validados com base na documentação do Microsoft Learn.
 
 - Introdução: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arquitetura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -32,8 +32,17 @@ winget upgrade --id Microsoft.FoundryLocal
 ```cmd
 foundry --version
 ```
+     
+**Instalar / Mac**
 
-## 2) Noções Básicas de CLI (Três Categorias)
+**MacOS**: 
+Abra um terminal e execute o seguinte comando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
+```
+
+## 2) Noções Básicas do CLI (Três Categorias)
 
 - Modelo:
 ```cmd
@@ -55,7 +64,7 @@ foundry cache list
 
 Notas:
 - O serviço expõe uma API REST compatível com OpenAI. A porta do endpoint é alocada dinamicamente; use `foundry service status` para descobri-la.
-- Utilize os SDKs para maior conveniência; eles lidam automaticamente com a descoberta de endpoints onde suportado.
+- Utilize os SDKs para maior comodidade; eles gerem automaticamente a descoberta do endpoint onde suportado.
 
 ## 3) Descobrir o Endpoint Local (Porta Dinâmica)
 
@@ -65,7 +74,7 @@ foundry service status
 ```
 Use o `http://localhost:<PORT>` reportado como o seu `base_url` com caminhos compatíveis com OpenAI (por exemplo, `/v1/chat/completions`).
 
-## 4) Teste Rápido via SDK Python OpenAI
+## 4) Teste Rápido via OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -83,7 +92,7 @@ PY
 Referências:
 - Integração com SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Trazer o Seu Próprio Modelo (Compilar com Olive)
+## 5) Traga o Seu Próprio Modelo (Compile com Olive)
 
 Se precisar de um modelo que não esteja no catálogo, compile-o para ONNX para uso no Foundry Local utilizando Olive.
 
@@ -114,7 +123,7 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Experiência Relacionada para Desenvolvedores Windows
+## 7) Experiência Relacionada para Desenvolvedores no Windows
 
 - Escolhas de IA local vs cloud no Windows, incluindo Foundry Local e Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers

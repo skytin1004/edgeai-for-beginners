@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T13:41:46+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:36:09+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "pl"
 }
 -->
-# Foundry Local na Windows (Zweryfikowane)
+# Foundry Local na Windows i Mac
 
-Ten przewodnik pomoże Ci zainstalować, uruchomić i zintegrować Microsoft Foundry Local na Windows. Wszystkie kroki i polecenia zostały zweryfikowane zgodnie z dokumentacją Microsoft Learn.
+Ten przewodnik pomoże Ci zainstalować, uruchomić i zintegrować Microsoft Foundry Local na Windows i Mac. Wszystkie kroki i polecenia zostały zweryfikowane zgodnie z dokumentacją Microsoft Learn.
 
 - Rozpocznij: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architektura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Sprawdzenie wersji:
 ```cmd
 foundry --version
+```
+     
+**Instalacja / Mac**
+
+**MacOS**: 
+Otwórz terminal i uruchom następujące polecenie:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Podstawy CLI (Trzy Kategorie)
@@ -54,18 +63,18 @@ foundry cache list
 ```
 
 Uwagi:
-- Usługa udostępnia REST API kompatybilne z OpenAI. Port punktu końcowego jest dynamicznie przydzielany; użyj `foundry service status`, aby go znaleźć.
-- Korzystaj z SDK dla wygody; automatycznie obsługują odkrywanie punktów końcowych tam, gdzie jest to wspierane.
+- Usługa udostępnia REST API kompatybilne z OpenAI. Port punktu końcowego jest dynamicznie przydzielany; użyj `foundry service status`, aby go odkryć.
+- Korzystaj z SDK dla wygody; automatycznie obsługują odkrywanie punktu końcowego tam, gdzie jest to wspierane.
 
-## 3) Odkrywanie Lokalnego Punktu Końcowego (Dynamiczny Port)
+## 3) Odkrywanie lokalnego punktu końcowego (Dynamiczny Port)
 
-Foundry Local przydziela dynamiczny port za każdym razem, gdy usługa jest uruchamiana:
+Foundry Local przydziela dynamiczny port za każdym razem, gdy usługa się uruchamia:
 ```cmd
 foundry service status
 ```
-Użyj zgłoszonego `http://localhost:<PORT>` jako swojego `base_url` z kompatybilnymi ścieżkami OpenAI (na przykład `/v1/chat/completions`).
+Użyj zgłoszonego `http://localhost:<PORT>` jako swojego `base_url` z kompatybilnymi ścieżkami OpenAI (na przykład, `/v1/chat/completions`).
 
-## 4) Szybki Test za pomocą OpenAI Python SDK
+## 4) Szybki test za pomocą OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -83,7 +92,7 @@ PY
 Referencje:
 - Integracja SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Własny Model (Kompilacja z Olive)
+## 5) Własny model (Kompilacja z Olive)
 
 Jeśli potrzebujesz modelu, którego nie ma w katalogu, skompiluj go do ONNX dla Foundry Local za pomocą Olive.
 
@@ -96,7 +105,7 @@ foundry model run llama-3.2 --verbose
 Dokumentacja:
 - Kompilacja BYOM: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) Rozwiązywanie Problemów
+## 6) Rozwiązywanie problemów
 
 - Sprawdź status usługi i logi:
 ```cmd
@@ -109,12 +118,12 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Zaktualizuj do najnowszej wersji preview:
+- Aktualizuj do najnowszej wersji preview:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Powiązane Doświadczenia Programistyczne na Windows
+## 7) Powiązane doświadczenia dla deweloperów Windows
 
 - Wybory AI lokalnie vs w chmurze, w tym Foundry Local i Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers

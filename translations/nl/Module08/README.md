@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T23:52:26+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:46:26+00:00",
   "source_file": "Module08/README.md",
   "language_code": "nl"
 }
 -->
-# Module 08: Praktisch aan de slag met Microsoft Foundry Local - Complete ontwikkeltoolkit
+# Module 08: Praktische ervaring met Microsoft Foundry Local - Complete ontwikkeltoolkit
 
 ## Overzicht
 
-Microsoft Foundry Local vertegenwoordigt de volgende generatie van edge AI-ontwikkeling en biedt ontwikkelaars krachtige tools om AI-toepassingen lokaal te bouwen, implementeren en opschalen, terwijl naadloze integratie met Azure AI Foundry behouden blijft. Deze module biedt een uitgebreide dekking van Foundry Local, van installatie tot geavanceerde agentontwikkeling.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) vertegenwoordigt de volgende generatie van edge AI-ontwikkeling. Het biedt ontwikkelaars krachtige tools om AI-toepassingen lokaal te bouwen, implementeren en schalen, terwijl naadloze integratie met Azure AI Foundry behouden blijft. Deze module biedt een uitgebreide dekking van Foundry Local, van installatie tot geavanceerde agentontwikkeling.
 
 **Belangrijke technologieën:**
 - Microsoft Foundry Local CLI en SDK
@@ -22,19 +22,19 @@ Microsoft Foundry Local vertegenwoordigt de volgende generatie van edge AI-ontwi
 
 ## Leerdoelen
 
-Na het voltooien van deze module kun je:
+Door deze module te voltooien, leer je:
 
-- **Foundry Local beheersen**: Installeren, configureren en optimaliseren voor ontwikkeling op Windows 11
-- **Diverse modellen implementeren**: Phi-, Qwen-, Deepseek- en GPT-modellen lokaal uitvoeren met CLI-commando's
-- **Productieoplossingen bouwen**: AI-toepassingen maken met geavanceerde prompt-engineering en gegevensintegratie
-- **Open-source ecosysteem benutten**: Hugging Face-modellen en bijdragen van de gemeenschap integreren
-- **AI-agents ontwikkelen**: Intelligente agents bouwen met grounding- en orkestratiecapaciteiten
-- **Enterprise-patronen implementeren**: Modulaire, schaalbare AI-oplossingen creëren voor productie-implementatie
+- **Beheers Foundry Local**: Installeer, configureer en optimaliseer voor Windows 11-ontwikkeling
+- **Implementeer diverse modellen**: Voer phi-, qwen-, deepseek- en GPT-modellen lokaal uit met CLI-commando's
+- **Bouw productietoepassingen**: Creëer AI-toepassingen met geavanceerde prompt-engineering en data-integratie
+- **Maak gebruik van open-source ecosystemen**: Integreer Hugging Face-modellen en bijdragen van de gemeenschap
+- **Ontwikkel AI-agents**: Bouw intelligente agents met grounding- en orkestratiecapaciteiten
+- **Implementeer bedrijfsmodellen**: Creëer modulaire, schaalbare AI-oplossingen voor productie-implementatie
 
 ## Sessiestructuur
 
 ### [1: Aan de slag met Foundry Local](./01.FoundryLocalSetup.md)
-**Focus**: Installatie, CLI-setup, modelimplementatie en hardwareoptimalisatie
+**Focus**: Installatie, CLI-configuratie, modelimplementatie en hardware-optimalisatie
 
 **Belangrijke onderwerpen**: Volledige installatie • CLI-commando's • Modelcaching • Hardwareversnelling • Multi-model implementatie
 
@@ -44,10 +44,10 @@ Na het voltooien van deze module kun je:
 
 ---
 
-### [2: AI-oplossingen bouwen met Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Focus**: Geavanceerde prompt-engineering, gegevensintegratie en cloudconnectiviteit
+### [2: Bouw AI-oplossingen met Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+**Focus**: Geavanceerde prompt-engineering, data-integratie en cloudconnectiviteit
 
-**Belangrijke onderwerpen**: Prompt-engineering • Gegevensintegratie • Azure-workflows • Prestatieoptimalisatie • Monitoring
+**Belangrijke onderwerpen**: Prompt-engineering • Data-integratie • Azure-workflows • Prestatieoptimalisatie • Monitoring
 
 **Voorbeeld**: [Chainlit RAG Applicatie](./samples/04/README.md)
 
@@ -69,7 +69,7 @@ Na het voltooien van deze module kun je:
 ### [4: Verken geavanceerde modellen](./04.CuttingEdgeModels.md)
 **Focus**: LLMs vs SLMs, EdgeAI-implementatie en geavanceerde demo's
 
-**Belangrijke onderwerpen**: Modelvergelijking • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG-app • WebGPU-optimalisatie
+**Belangrijke onderwerpen**: Modelvergelijking • Edge vs cloud-inference • Phi + ONNX Runtime • Chainlit RAG-app • WebGPU-optimalisatie
 
 **Voorbeeld**: [Models-as-Tools Router](./samples/06/README.md)
 
@@ -77,10 +77,10 @@ Na het voltooien van deze module kun je:
 
 ---
 
-### [5: Snel AI-aangedreven agents bouwen](./05.AIPoweredAgents.md)
+### [5: Bouw snel AI-aangedreven agents](./05.AIPoweredAgents.md)
 **Focus**: Agentarchitecturen, systeemprompts, grounding en orkestratie
 
-**Belangrijke onderwerpen**: Agentontwerp-patronen • Systeemprompt-engineering • Groundingtechnieken • Multi-agent systemen • Productie-implementatie
+**Belangrijke onderwerpen**: Agentontwerpmodellen • Systeemprompt-engineering • Groundingtechnieken • Multi-agent systemen • Productie-implementatie
 
 **Voorbeeld**: [Multi-Agent Orchestratie](./samples/05/README.md) • [Geavanceerd Multi-Agent Systeem](./samples/09/README.md)
 
@@ -89,9 +89,9 @@ Na het voltooien van deze module kun je:
 ---
 
 ### [6: Foundry Local - Modellen als tools](./06.ModelsAsTools.md)
-**Focus**: Modulaire AI-oplossingen, schaalbaarheid voor ondernemingen en productiepatronen
+**Focus**: Modulaire AI-oplossingen, bedrijfsopschaling en productiepatronen
 
-**Belangrijke onderwerpen**: Modellen als tools • Implementatie op apparaat • SDK/API-integratie • Enterprise-architecturen • Schaalstrategieën
+**Belangrijke onderwerpen**: Modellen als tools • Implementatie op apparaat • SDK/API-integratie • Bedrijfsarchitecturen • Opschalingsstrategieën
 
 **Voorbeeld**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
@@ -124,7 +124,7 @@ Na het voltooien van deze module kun je:
 ### [9: Geavanceerde multi-agent orkestratie](./samples/09/README.md)
 **Focus**: Geavanceerde agentcoördinatie, gespecialiseerde taakdelegatie en collaboratieve AI-workflows
 
-**Belangrijke onderwerpen**: Intelligente agentcoördinatie • Functieaanroep-patronen • Cross-agent communicatie • Workfloworkestratie • Mechanismen voor kwaliteitsborging
+**Belangrijke onderwerpen**: Intelligente agentcoördinatie • Functieaanroepmodellen • Cross-agent communicatie • Workfloworkestratie • Mechanismen voor kwaliteitsborging
 
 **Voorbeeld**: [Geavanceerd Multi-Agent Systeem](./samples/09/README.md)
 
@@ -132,7 +132,7 @@ Na het voltooien van deze module kun je:
 
 ---
 
-### [10: Foundry Local als tools-framework](./samples/10/README.md)
+### [10: Foundry Local als toolsframework](./samples/10/README.md)
 **Focus**: Tool-first architectuur voor integratie van Foundry Local in bestaande applicaties en frameworks
 
 **Belangrijke onderwerpen**: LangChain-integratie • Semantic Kernel-functies • REST API-frameworks • CLI-tools • Jupyter-integratie • Productie-implementatiepatronen
@@ -173,13 +173,13 @@ Na het voltooien van deze module kun je:
 |  1 | Setup & Basis | 01, 02, 03 | 2-3 uur | Beginner |
 |  2 | AI-oplossingen | 04 | 2-3 uur | Gemiddeld |
 |  3 | Open Source | 05 | 2-3 uur | Gemiddeld |
-|  4 | Geavanceerde Modellen | 06 | 3-4 uur | Geavanceerd |
+|  4 | Geavanceerde modellen | 06 | 3-4 uur | Geavanceerd |
 |  5 | AI-agents | 05, 09 | 3-4 uur | Geavanceerd |
-|  6 | Enterprise Tools | 06, 10 | 3-4 uur | Expert |
+|  6 | Bedrijfstools | 06, 10 | 3-4 uur | Expert |
 |  7 | Directe API-integratie | 07 | 2-3 uur | Gemiddeld |
 |  8 | Windows 11 Chat App | 08 | 3-4 uur | Geavanceerd |
-|  9 | Geavanceerde Multi-Agent | 09 | 4-5 uur | Expert |
-| 10 | Tools Framework | 10 | 4-5 uur | Expert |
+|  9 | Geavanceerde multi-agent | 09 | 4-5 uur | Expert |
+| 10 | Toolsframework | 10 | 4-5 uur | Expert |
 
 ## Belangrijke bronnen
 
@@ -197,28 +197,28 @@ Na het voltooien van deze module kun je:
 Na het voltooien van deze module ben je in staat om:
 
 ### Technische beheersing
-- **Implementeren en beheren**: Foundry Local-installaties in ontwikkel- en productieomgevingen
-- **Modellen integreren**: Naadloos werken met diverse modelfamilies van Microsoft, Hugging Face en gemeenschapsbronnen
-- **Toepassingen bouwen**: Productieklaar AI-toepassingen maken met geavanceerde functies en optimalisaties
-- **Agents ontwikkelen**: Geavanceerde AI-agents implementeren met grounding, redenering en toolintegratie
+- **Implementeer en beheer**: Foundry Local-installaties in ontwikkel- en productieomgevingen
+- **Integreer modellen**: Werk naadloos met diverse modelfamilies van Microsoft, Hugging Face en gemeenschapsbronnen
+- **Bouw toepassingen**: Creëer productieklare AI-toepassingen met geavanceerde functies en optimalisaties
+- **Ontwikkel agents**: Implementeer geavanceerde AI-agents met grounding, redenering en toolintegratie
 
 ### Strategisch inzicht
-- **Architectuurkeuzes**: Geïnformeerde beslissingen nemen tussen lokale en cloudimplementatie
-- **Prestatieoptimalisatie**: Inference-prestaties optimaliseren op verschillende hardwareconfiguraties
-- **Schaalbaarheid voor ondernemingen**: Toepassingen ontwerpen die schaalbaar zijn van lokale prototypes tot enterprise-implementaties
-- **Privacy en beveiliging**: Privacybeschermende AI-oplossingen implementeren met lokale inference
+- **Architectuurkeuzes**: Maak weloverwogen beslissingen tussen lokale en cloudimplementatie
+- **Prestatieoptimalisatie**: Optimaliseer inference-prestaties voor verschillende hardwareconfiguraties
+- **Bedrijfsopschaling**: Ontwerp toepassingen die schaalbaar zijn van lokale prototypes tot bedrijfsimplementaties
+- **Privacy en beveiliging**: Implementeer privacyvriendelijke AI-oplossingen met lokale inference
 
 ### Innovatiecapaciteiten
-- **Snel prototypen**: Snel AI-toepassingsconcepten bouwen en testen met alle 10 voorbeeldpatronen
-- **Community-integratie**: Open-source modellen benutten en bijdragen aan het ecosysteem
-- **Geavanceerde patronen**: Cutting-edge AI-patronen implementeren, waaronder RAG, agents en toolintegratie
-- **Framework-beheersing**: Expertintegratie met LangChain, Semantic Kernel, Chainlit en Electron
-- **Productie-implementatie**: Schaalbare AI-oplossingen implementeren van lokale prototypes tot enterprise-systemen
-- **Toekomstbestendige ontwikkeling**: Toepassingen bouwen die klaar zijn voor opkomende AI-technologieën en -patronen
+- **Snelle prototyping**: Bouw en test AI-toepassingsconcepten snel met alle 10 voorbeeldpatronen
+- **Community-integratie**: Maak gebruik van open-source modellen en draag bij aan het ecosysteem
+- **Geavanceerde patronen**: Implementeer cutting-edge AI-patronen zoals RAG, agents en toolintegratie
+- **Frameworkbeheersing**: Expertintegratie met LangChain, Semantic Kernel, Chainlit en Electron
+- **Productie-implementatie**: Implementeer schaalbare AI-oplossingen van lokale prototypes tot bedrijfsomgevingen
+- **Toekomstbestendige ontwikkeling**: Bouw toepassingen die klaar zijn voor opkomende AI-technologieën en -patronen
 
 ## Aan de slag
 
-1. **Omgevingssetup**: Zorg voor Windows 11 met aanbevolen hardware (zie vereisten)
+1. **Omgevingsinstelling**: Zorg voor Windows 11 met aanbevolen hardware (zie vereisten)
 2. **Installeer Foundry Local**: Volg sessie 1 voor volledige installatie en configuratie
 3. **Voer voorbeeld 01 uit**: Begin met basis REST API-integratie om de setup te verifiëren
 4. **Werk door de voorbeelden**: Voltooi voorbeelden 01-10 voor uitgebreide beheersing
@@ -228,33 +228,33 @@ Na het voltooien van deze module ben je in staat om:
 Volg je voortgang door alle 10 uitgebreide voorbeelden:
 
 ### Basisniveau (Voorbeelden 01-03)
-- [ ] Foundry Local succesvol installeren en configureren
-- [ ] REST API-integratie voltooien (Voorbeeld 01)
-- [ ] OpenAI SDK-compatibiliteit implementeren (Voorbeeld 02)
-- [ ] Modelontdekking en benchmarking uitvoeren (Voorbeeld 03)
+- [ ] Foundry Local succesvol geïnstalleerd en geconfigureerd
+- [ ] REST API-integratie voltooid (Voorbeeld 01)
+- [ ] OpenAI SDK-compatibiliteit geïmplementeerd (Voorbeeld 02)
+- [ ] Modelontdekking en benchmarking uitgevoerd (Voorbeeld 03)
 
 ### Applicatieniveau (Voorbeelden 04-06)
-- [ ] Minimaal 4 verschillende modelfamilies implementeren en uitvoeren
-- [ ] Een functionele RAG-chatapplicatie bouwen (Voorbeeld 04)
-- [ ] Een multi-agent orkestratiesysteem creëren (Voorbeeld 05)
-- [ ] Intelligente modelroutering implementeren (Voorbeeld 06)
+- [ ] Minimaal 4 verschillende modelfamilies geïmplementeerd en uitgevoerd
+- [ ] Functionele RAG-chatapplicatie gebouwd (Voorbeeld 04)
+- [ ] Multi-agent orkestratiesysteem gecreëerd (Voorbeeld 05)
+- [ ] Intelligente modelroutering geïmplementeerd (Voorbeeld 06)
 
 ### Geavanceerd integratieniveau (Voorbeelden 07-10)
-- [ ] Productieklaar API-client bouwen (Voorbeeld 07)
-- [ ] Windows 11 native chatapplicatie ontwikkelen (Voorbeeld 08)
-- [ ] Geavanceerd multi-agent systeem implementeren (Voorbeeld 09)
-- [ ] Uitgebreid tools-framework creëren (Voorbeeld 10)
+- [ ] Productieklaar API-client gebouwd (Voorbeeld 07)
+- [ ] Windows 11 native chatapplicatie ontwikkeld (Voorbeeld 08)
+- [ ] Geavanceerd multi-agent systeem geïmplementeerd (Voorbeeld 09)
+- [ ] Uitgebreid toolsframework gecreëerd (Voorbeeld 10)
 
 ### Beheersingsindicatoren
-- [ ] Alle 10 voorbeelden succesvol uitvoeren zonder fouten
-- [ ] Minimaal 3 voorbeelden aanpassen voor specifieke use cases
-- [ ] Minimaal 2 voorbeelden implementeren in productieachtige omgevingen
-- [ ] Verbeteringen of uitbreidingen bijdragen aan voorbeeldcode
-- [ ] Foundry Local-patronen integreren in persoonlijke/professionele projecten
+- [ ] Alle 10 voorbeelden succesvol uitgevoerd zonder fouten
+- [ ] Minimaal 3 voorbeelden aangepast voor specifieke use cases
+- [ ] Minimaal 2 voorbeelden geïmplementeerd in productieachtige omgevingen
+- [ ] Verbeteringen of uitbreidingen bijgedragen aan voorbeeldcode
+- [ ] Foundry Local-patronen geïntegreerd in persoonlijke/professionele projecten
 
 ## Snelle startgids - Alle 10 voorbeelden
 
-### Omgevingssetup (Vereist voor alle voorbeelden)
+### Omgevingsinstelling (Vereist voor alle voorbeelden)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -454,9 +454,9 @@ npm install
 ```
 
 ## Samenvatting
-Deze module vertegenwoordigt de nieuwste ontwikkelingen op het gebied van edge AI, waarbij Microsoft's tools van ondernemingsniveau worden gecombineerd met de flexibiliteit en innovatie van het open-source ecosysteem. Door Foundry Local volledig te beheersen via alle 10 uitgebreide voorbeelden, sta je aan de voorhoede van AI-toepassingsontwikkeling.
+Deze module vertegenwoordigt de nieuwste ontwikkelingen op het gebied van edge AI, waarbij de enterprise-grade tools van Microsoft worden gecombineerd met de flexibiliteit en innovatie van het open-source ecosysteem. Door Foundry Local volledig te beheersen via alle 10 uitgebreide voorbeelden, sta je aan de voorhoede van AI-toepassingsontwikkeling.
 
-**Volledig Leertraject:**
+**Volledig leertraject:**
 - **Basis** (Voorbeelden 01-03): API-integratie en modelbeheer
 - **Toepassingen** (Voorbeelden 04-06): RAG, agents en intelligente routering
 - **Geavanceerd** (Voorbeelden 07-10): Productiekaders en bedrijfsintegratie

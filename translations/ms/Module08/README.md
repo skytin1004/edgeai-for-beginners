@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T00:46:32+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:50:01+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ms"
 }
@@ -11,12 +11,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Gambaran Keseluruhan
 
-Microsoft Foundry Local mewakili generasi seterusnya dalam pembangunan AI di peranti, memberikan pembangun alat yang berkuasa untuk membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini menyediakan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen lanjutan.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) mewakili generasi baharu pembangunan AI di hujung, memberikan pembangun alat yang berkuasa untuk membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini menyediakan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen lanjutan.
 
 **Teknologi Utama:**
 - Microsoft Foundry Local CLI dan SDK
 - Integrasi Azure AI Foundry
-- Inferens model di peranti
+- Inferens model pada peranti
 - Cache dan pengoptimuman model tempatan
 - Seni bina berasaskan agen
 
@@ -44,7 +44,7 @@ Dengan melengkapkan modul ini, anda akan:
 
 ---
 
-### [2: Bina Penyelesaian AI dengan Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+### [2: Membina Penyelesaian AI dengan Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
 **Fokus**: Kejuruteraan prompt lanjutan, integrasi data, dan sambungan awan
 
 **Topik Utama**: Kejuruteraan prompt • Integrasi data • Aliran kerja Azure • Pengoptimuman prestasi • Pemantauan
@@ -69,7 +69,7 @@ Dengan melengkapkan modul ini, anda akan:
 ### [4: Terokai Model Terkini](./04.CuttingEdgeModels.md)
 **Fokus**: LLM vs SLM, pelaksanaan EdgeAI, dan demo lanjutan
 
-**Topik Utama**: Perbandingan model • Inferens di peranti vs awan • Phi + ONNX Runtime • Aplikasi Chainlit RAG • Pengoptimuman WebGPU
+**Topik Utama**: Perbandingan model • Inferens hujung vs awan • Phi + ONNX Runtime • Aplikasi Chainlit RAG • Pengoptimuman WebGPU
 
 **Contoh**: [Router Model-as-Tools](./samples/06/README.md)
 
@@ -77,7 +77,7 @@ Dengan melengkapkan modul ini, anda akan:
 
 ---
 
-### [5: Bina Agen AI dengan Cepat](./05.AIPoweredAgents.md)
+### [5: Bina Agen Berkuasa AI dengan Cepat](./05.AIPoweredAgents.md)
 **Fokus**: Seni bina agen, prompt sistem, grounding, dan orkestrasi
 
 **Topik Utama**: Corak reka bentuk agen • Kejuruteraan prompt sistem • Teknik grounding • Sistem multi-agen • Pelancaran pengeluaran
@@ -91,7 +91,7 @@ Dengan melengkapkan modul ini, anda akan:
 ### [6: Foundry Local - Model sebagai Alat](./06.ModelsAsTools.md)
 **Fokus**: Penyelesaian AI modular, penskalaan perusahaan, dan corak pengeluaran
 
-**Topik Utama**: Model sebagai alat • Pelancaran di peranti • Integrasi SDK/API • Seni bina perusahaan • Strategi penskalaan
+**Topik Utama**: Model sebagai alat • Pelancaran pada peranti • Integrasi SDK/API • Seni bina perusahaan • Strategi penskalaan
 
 **Contoh**: [Router Model-as-Tools](./samples/06/README.md) • [Kerangka Alat Foundry](./samples/10/README.md)
 
@@ -102,7 +102,7 @@ Dengan melengkapkan modul ini, anda akan:
 ### [7: Corak Integrasi API Langsung](./samples/07/README.md)
 **Fokus**: Integrasi API REST tulen tanpa kebergantungan SDK untuk kawalan maksimum
 
-**Topik Utama**: Pelaksanaan klien HTTP • Pengesahan tersuai • Pemantauan kesihatan model • Respons streaming • Pengendalian ralat pengeluaran
+**Topik Utama**: Pelaksanaan klien HTTP • Pengesahan tersuai • Pemantauan kesihatan model • Respons penstriman • Pengendalian ralat pengeluaran
 
 **Contoh**: [Klien API Langsung](./samples/07/README.md)
 
@@ -113,7 +113,7 @@ Dengan melengkapkan modul ini, anda akan:
 ### [8: Aplikasi Chat Asli Windows 11](./samples/08/README.md)
 **Fokus**: Membina aplikasi chat asli moden dengan integrasi Foundry Local
 
-**Topik Utama**: Pembangunan Electron • Sistem Reka Bentuk Fluent • Integrasi asli Windows • Penstriman masa nyata • Reka bentuk antara muka chat
+**Topik Utama**: Pembangunan Electron • Sistem Reka Bentuk Fluent • Integrasi Windows asli • Penstriman masa nyata • Reka bentuk antara muka chat
 
 **Contoh**: [Aplikasi Chat Windows 11](./samples/08/README.md)
 
@@ -122,9 +122,9 @@ Dengan melengkapkan modul ini, anda akan:
 ---
 
 ### [9: Orkestrasi Multi-Agen Lanjutan](./samples/09/README.md)
-**Fokus**: Koordinasi agen yang canggih, delegasi tugas khusus, dan aliran kerja AI kolaboratif
+**Fokus**: Penyelarasan agen yang canggih, delegasi tugas khusus, dan aliran kerja AI kolaboratif
 
-**Topik Utama**: Koordinasi agen pintar • Corak panggilan fungsi • Komunikasi antara agen • Orkestrasi aliran kerja • Mekanisme jaminan kualiti
+**Topik Utama**: Penyelarasan agen pintar • Corak panggilan fungsi • Komunikasi antara agen • Orkestrasi aliran kerja • Mekanisme jaminan kualiti
 
 **Contoh**: [Sistem Multi-Agen Lanjutan](./samples/09/README.md)
 
@@ -135,7 +135,7 @@ Dengan melengkapkan modul ini, anda akan:
 ### [10: Foundry Local sebagai Kerangka Alat](./samples/10/README.md)
 **Fokus**: Seni bina berorientasikan alat untuk mengintegrasikan Foundry Local ke dalam aplikasi dan kerangka kerja sedia ada
 
-**Topik Utama**: Integrasi LangChain • Fungsi Kernel Semantik • Kerangka kerja API REST • Alat CLI • Integrasi Jupyter • Corak pelancaran pengeluaran
+**Topik Utama**: Integrasi LangChain • Fungsi Kernel Semantik • Kerangka API REST • Alat CLI • Integrasi Jupyter • Corak pelancaran pengeluaran
 
 **Contoh**: [Kerangka Alat Foundry](./samples/10/README.md)
 
@@ -145,8 +145,8 @@ Dengan melengkapkan modul ini, anda akan:
 
 ### Keperluan Sistem
 - **Sistem Operasi**: Windows 11 (22H2 atau lebih baru)
-- **Memori**: 16GB RAM (32GB disyorkan untuk model yang lebih besar)
-- **Storan**: 50GB ruang kosong untuk cache model
+- **Memori**: RAM 16GB (32GB disyorkan untuk model yang lebih besar)
+- **Storan**: Ruang kosong 50GB untuk cache model
 - **Perkakasan**: Peranti dengan NPU disyorkan (Copilot+ PC), GPU pilihan
 - **Rangkaian**: Internet berkelajuan tinggi untuk muat turun model awal
 
@@ -214,7 +214,7 @@ Setelah melengkapkan modul ini, anda akan dilengkapi untuk:
 - **Corak Lanjutan**: Laksanakan corak AI terkini termasuk RAG, agen, dan integrasi alat
 - **Penguasaan Kerangka**: Integrasi tahap pakar dengan LangChain, Kernel Semantik, Chainlit, dan Electron
 - **Pelancaran Pengeluaran**: Melancarkan penyelesaian AI yang boleh diskalakan dari prototaip tempatan ke sistem perusahaan
-- **Pembangunan Sedia Masa Depan**: Bina aplikasi yang sedia untuk teknologi dan corak AI yang muncul
+- **Pembangunan Sedia Masa Depan**: Bina aplikasi yang bersedia untuk teknologi dan corak AI yang muncul
 
 ## Memulakan
 
@@ -225,7 +225,7 @@ Setelah melengkapkan modul ini, anda akan dilengkapi untuk:
 
 ## Metrik Kejayaan
 
-Jejak kemajuan anda melalui semua 10 contoh menyeluruh:
+Jejaki kemajuan anda melalui semua 10 contoh menyeluruh:
 
 ### Tahap Asas (Contoh 01-03)
 - [ ] Berjaya memasang dan mengkonfigurasi Foundry Local
@@ -235,13 +235,13 @@ Jejak kemajuan anda melalui semua 10 contoh menyeluruh:
 
 ### Tahap Aplikasi (Contoh 04-06)
 - [ ] Melancarkan dan menjalankan sekurang-kurangnya 4 keluarga model yang berbeza
-- [ ] Bina aplikasi chat RAG yang berfungsi (Contoh 04)
+- [ ] Membina aplikasi chat RAG yang berfungsi (Contoh 04)
 - [ ] Cipta sistem orkestrasi multi-agen (Contoh 05)
-- [ ] Laksanakan penghalaan model pintar (Contoh 06)
+- [ ] Laksanakan penghala model pintar (Contoh 06)
 
 ### Tahap Integrasi Lanjutan (Contoh 07-10)
-- [ ] Bina klien API sedia pengeluaran (Contoh 07)
-- [ ] Bangunkan aplikasi chat asli Windows 11 (Contoh 08)
+- [ ] Membina klien API sedia pengeluaran (Contoh 07)
+- [ ] Membangunkan aplikasi chat asli Windows 11 (Contoh 08)
 - [ ] Laksanakan sistem multi-agen lanjutan (Contoh 09)
 - [ ] Cipta kerangka alat yang komprehensif (Contoh 10)
 
@@ -414,7 +414,7 @@ jupyter notebook examples/jupyter_notebook.ipynb
 python examples/langchain_demo.py
 ```
 
-### Penyelesaian Masalah Isu Biasa
+### Menyelesaikan Isu Biasa
 
 **Ralat Sambungan Foundry Local**
 ```powershell
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Ringkasan
-Modul ini mewakili kemajuan terkini dalam pembangunan AI tepi, menggabungkan alat Microsoft bertaraf perusahaan dengan fleksibiliti dan inovasi ekosistem sumber terbuka. Dengan menguasai Foundry Local melalui kesemua 10 sampel yang komprehensif, anda akan berada di barisan hadapan dalam pembangunan aplikasi AI.
+Modul ini mewakili kemajuan terkini dalam pembangunan AI tepi, menggabungkan alat Microsoft yang bertaraf perusahaan dengan fleksibiliti dan inovasi ekosistem sumber terbuka. Dengan menguasai Foundry Local melalui kesemua 10 sampel yang komprehensif, anda akan berada di barisan hadapan dalam pembangunan aplikasi AI.
 
 **Laluan Pembelajaran Lengkap:**
 - **Asas** (Sampel 01-03): Integrasi API dan pengurusan model

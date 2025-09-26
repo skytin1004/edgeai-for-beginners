@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T12:58:52+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:13:54+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "es"
 }
 -->
-# Foundry Local en Windows (Validado)
+# Foundry Local en Windows y Mac
 
-Esta guía te ayuda a instalar, ejecutar e integrar Microsoft Foundry Local en Windows. Todos los pasos y comandos están validados según la documentación de Microsoft Learn.
+Esta guía te ayuda a instalar, ejecutar e integrar Microsoft Foundry Local en Windows y Mac. Todos los pasos y comandos están validados según la documentación de Microsoft Learn.
 
 - Comenzar: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arquitectura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Verificar versión:
 ```cmd
 foundry --version
+```
+     
+**Instalar / Mac**
+
+**MacOS**: 
+Abre una terminal y ejecuta el siguiente comando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Conceptos básicos de CLI (Tres categorías)
@@ -85,7 +94,7 @@ Referencias:
 
 ## 5) Trae tu propio modelo (Compilar con Olive)
 
-Si necesitas un modelo que no esté en el catálogo, compílalo a ONNX para Foundry Local usando Olive.
+Si necesitas un modelo que no está en el catálogo, compílalo a ONNX para Foundry Local usando Olive.
 
 Flujo general (consulta la documentación para los pasos):
 ```cmd
@@ -118,7 +127,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Opciones de IA local vs en la nube en Windows, incluyendo Foundry Local y Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit con Foundry Local (usa `foundry service status` para obtener la URL del endpoint de chat):
+- Toolkit de IA en VS Code con Foundry Local (usa `foundry service status` para obtener la URL del endpoint de chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

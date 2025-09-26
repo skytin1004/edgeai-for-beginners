@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T20:26:44+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:42:59+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "da"
 }
 -->
-# Foundry Local på Windows (Bekræftet)
+# Foundry Local på Windows & Mac
 
-Denne guide hjælper dig med at installere, køre og integrere Microsoft Foundry Local på Windows. Alle trin og kommandoer er valideret mod Microsoft Learn-dokumentation.
+Denne guide hjælper dig med at installere, køre og integrere Microsoft Foundry Local på Windows og Mac. Alle trin og kommandoer er valideret mod Microsoft Learn-dokumentation.
 
-- Kom i gang: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Kom godt i gang: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI-reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrer SDK'er: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
@@ -20,17 +20,26 @@ Denne guide hjælper dig med at installere, køre og integrere Microsoft Foundry
 
 ## 1) Installation / Opgradering på Windows
 
-- Installér:
+- Installation:
 ```cmd
 winget install Microsoft.FoundryLocal
 ```
-- Opgrader:
+- Opgradering:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 - Versionskontrol:
 ```cmd
 foundry --version
+```
+     
+**Installation / Mac**
+
+**MacOS**: 
+Åbn en terminal og kør følgende kommando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI-grundlæggende (Tre kategorier)
@@ -55,7 +64,7 @@ foundry cache list
 
 Noter:
 - Servicen eksponerer en OpenAI-kompatibel REST API. Endepunktets port tildeles dynamisk; brug `foundry service status` for at finde den.
-- Brug SDK'erne for nemhed; de håndterer automatisk opdagelse af endepunkter, hvor det er understøttet.
+- Brug SDK'erne for nemheds skyld; de håndterer automatisk opdagelse af endepunkter, hvor det er understøttet.
 
 ## 3) Find det lokale endepunkt (Dynamisk port)
 
@@ -98,7 +107,7 @@ Dokumentation:
 
 ## 6) Fejlfinding
 
-- Tjek servicestatus og logs:
+- Tjek servicestatus og logfiler:
 ```cmd
 foundry service status
 foundry service diag
@@ -109,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Opdater til den nyeste preview:
+- Opdater til den nyeste preview-version:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```

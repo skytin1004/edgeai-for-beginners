@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T00:52:57+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:50:51+00:00",
   "source_file": "Module08/README.md",
   "language_code": "tl"
 }
@@ -11,32 +11,32 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Pangkalahatang-ideya
 
-Ang Microsoft Foundry Local ay kumakatawan sa susunod na henerasyon ng edge AI development, na nagbibigay sa mga developer ng makapangyarihang mga tool upang bumuo, mag-deploy, at mag-scale ng mga AI application nang lokal habang nananatiling seamless ang integrasyon sa Azure AI Foundry. Ang module na ito ay nagbibigay ng komprehensibong saklaw ng Foundry Local mula sa pag-install hanggang sa advanced na pag-develop ng mga agent.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) ay kumakatawan sa susunod na henerasyon ng edge AI development, nagbibigay ng makapangyarihang mga tool para sa mga developer upang bumuo, mag-deploy, at mag-scale ng mga AI application nang lokal habang pinapanatili ang seamless integration sa Azure AI Foundry. Ang module na ito ay nagbibigay ng komprehensibong coverage ng Foundry Local mula sa pag-install hanggang sa advanced na pag-develop ng mga agent.
 
 **Pangunahing Teknolohiya:**
 - Microsoft Foundry Local CLI at SDK
 - Azure AI Foundry integration
 - On-device model inference
-- Lokal na pag-cache at pag-optimize ng modelo
+- Lokal na model caching at optimization
 - Arkitektura ng mga agent
 
-## Mga Layunin sa Pagkatuto
+## Mga Layunin sa Pag-aaral
 
 Sa pagtatapos ng module na ito, ikaw ay:
 
 - **Magiging bihasa sa Foundry Local**: I-install, i-configure, at i-optimize para sa Windows 11 development
-- **Mag-deploy ng Iba't Ibang Modelo**: Patakbuhin ang phi, qwen, deepseek, at GPT models nang lokal gamit ang mga CLI command
-- **Lumikha ng Mga Solusyon para sa Produksyon**: Gumawa ng mga AI application gamit ang advanced na prompt engineering at data integration
-- **Samantalahin ang Open-Source Ecosystem**: I-integrate ang mga Hugging Face model at kontribusyon ng komunidad
-- **Mag-develop ng AI Agents**: Gumawa ng mga intelligent agent na may grounding at orchestration capabilities
-- **Magpatupad ng Enterprise Patterns**: Gumawa ng modular, scalable na AI solutions para sa production deployment
+- **Mag-deploy ng Iba't Ibang Modelo**: Patakbuhin ang phi, qwen, deepseek, at GPT models nang lokal gamit ang CLI commands
+- **Bumuo ng Production Solutions**: Gumawa ng AI applications gamit ang advanced prompt engineering at data integration
+- **Samantalahin ang Open-Source Ecosystem**: I-integrate ang Hugging Face models at kontribusyon ng komunidad
+- **Mag-develop ng AI Agents**: Bumuo ng intelligent agents na may grounding at orchestration capabilities
+- **Magpatupad ng Enterprise Patterns**: Gumawa ng modular, scalable AI solutions para sa production deployment
 
 ## Estruktura ng Session
 
 ### [1: Pagsisimula sa Foundry Local](./01.FoundryLocalSetup.md)
-**Pokús**: Pag-install, pag-setup ng CLI, pag-deploy ng modelo, at pag-optimize ng hardware
+**Pokusan**: Pag-install, CLI setup, model deployment, at hardware optimization
 
-**Pangunahing Paksa**: Kumpletong pag-install • Mga CLI command • Pag-cache ng modelo • Hardware acceleration • Multi-model deployment
+**Pangunahing Paksa**: Kumpletong pag-install • CLI commands • Model caching • Hardware acceleration • Multi-model deployment
 
 **Halimbawa**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
 
@@ -44,8 +44,8 @@ Sa pagtatapos ng module na ito, ikaw ay:
 
 ---
 
-### [2: Gumawa ng AI Solutions gamit ang Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
-**Pokús**: Advanced na prompt engineering, data integration, at cloud connectivity
+### [2: Bumuo ng AI Solutions gamit ang Azure AI Foundry](./02.AzureAIFoundryIntegration.md)
+**Pokusan**: Advanced prompt engineering, data integration, at cloud connectivity
 
 **Pangunahing Paksa**: Prompt engineering • Data integration • Azure workflows • Performance optimization • Monitoring
 
@@ -56,9 +56,9 @@ Sa pagtatapos ng module na ito, ikaw ay:
 ---
 
 ### [3: Open-Source Models Foundry Local](./03.OpenSourceModels.md)
-**Pokús**: Hugging Face integration, BYOM strategies, at mga modelo mula sa komunidad
+**Pokusan**: Hugging Face integration, BYOM strategies, at community models
 
-**Pangunahing Paksa**: HuggingFace integration • Bring-your-own-model • Model Mondays insights • Mga kontribusyon ng komunidad • Pagpili ng modelo
+**Pangunahing Paksa**: HuggingFace integration • Bring-your-own-model • Model Mondays insights • Community contributions • Model selection
 
 **Halimbawa**: [Multi-Agent Orchestration](./samples/05/README.md)
 
@@ -67,9 +67,9 @@ Sa pagtatapos ng module na ito, ikaw ay:
 ---
 
 ### [4: Tuklasin ang Cutting-Edge Models](./04.CuttingEdgeModels.md)
-**Pokús**: LLMs vs SLMs, EdgeAI implementation, at advanced na mga demo
+**Pokusan**: LLMs vs SLMs, EdgeAI implementation, at advanced demos
 
-**Pangunahing Paksa**: Paghahambing ng modelo • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimization
+**Pangunahing Paksa**: Model comparison • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimization
 
 **Halimbawa**: [Models-as-Tools Router](./samples/06/README.md)
 
@@ -77,10 +77,10 @@ Sa pagtatapos ng module na ito, ikaw ay:
 
 ---
 
-### [5: Mabilis na Gumawa ng AI-Powered Agents](./05.AIPoweredAgents.md)
-**Pokús**: Arkitektura ng mga agent, system prompts, grounding, at orchestration
+### [5: Bumuo ng AI-Powered Agents nang Mabilis](./05.AIPoweredAgents.md)
+**Pokusan**: Agent architectures, system prompts, grounding, at orchestration
 
-**Pangunahing Paksa**: Mga disenyo ng agent • System prompt engineering • Grounding techniques • Multi-agent systems • Production deployment
+**Pangunahing Paksa**: Agent design patterns • System prompt engineering • Grounding techniques • Multi-agent systems • Production deployment
 
 **Halimbawa**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
 
@@ -89,18 +89,18 @@ Sa pagtatapos ng module na ito, ikaw ay:
 ---
 
 ### [6: Foundry Local - Models as Tools](./06.ModelsAsTools.md)
-**Pokús**: Modular na AI solutions, enterprise scaling, at production patterns
+**Pokusan**: Modular AI solutions, enterprise scaling, at production patterns
 
 **Pangunahing Paksa**: Models as tools • On-device deployment • SDK/API integration • Enterprise architectures • Scaling strategies
 
 **Halimbawa**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
-**Tagal**: 3-4 oras | **Antas**: Eksperto
+**Tagal**: 3-4 oras | **Antas**: Expert
 
 ---
 
-### [7: Mga Pattern ng Direktang API Integration](./samples/07/README.md)
-**Pokús**: Pure REST API integration na walang SDK dependencies para sa maximum na kontrol
+### [7: Direct API Integration Patterns](./samples/07/README.md)
+**Pokusan**: Pure REST API integration nang walang SDK dependencies para sa maximum control
 
 **Pangunahing Paksa**: HTTP client implementation • Custom authentication • Model health monitoring • Streaming responses • Production error handling
 
@@ -111,7 +111,7 @@ Sa pagtatapos ng module na ito, ikaw ay:
 ---
 
 ### [8: Windows 11 Native Chat Application](./samples/08/README.md)
-**Pokús**: Paggawa ng modernong native chat applications gamit ang Foundry Local integration
+**Pokusan**: Pagbuo ng modernong native chat applications gamit ang Foundry Local integration
 
 **Pangunahing Paksa**: Electron development • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design
 
@@ -122,33 +122,33 @@ Sa pagtatapos ng module na ito, ikaw ay:
 ---
 
 ### [9: Advanced Multi-Agent Orchestration](./samples/09/README.md)
-**Pokús**: Mas sopistikadong koordinasyon ng mga agent, espesyal na task delegation, at collaborative AI workflows
+**Pokusan**: Mas sopistikadong agent coordination, specialized task delegation, at collaborative AI workflows
 
 **Pangunahing Paksa**: Intelligent agent coordination • Function calling patterns • Cross-agent communication • Workflow orchestration • Quality assurance mechanisms
 
 **Halimbawa**: [Advanced Multi-Agent System](./samples/09/README.md)
 
-**Tagal**: 4-5 oras | **Antas**: Eksperto
+**Tagal**: 4-5 oras | **Antas**: Expert
 
 ---
 
-### [10: Foundry Local bilang Tools Framework](./samples/10/README.md)
-**Pokús**: Tool-first architecture para sa integrasyon ng Foundry Local sa mga umiiral na application at framework
+### [10: Foundry Local as Tools Framework](./samples/10/README.md)
+**Pokusan**: Tool-first architecture para sa pag-integrate ng Foundry Local sa mga umiiral na applications at frameworks
 
 **Pangunahing Paksa**: LangChain integration • Semantic Kernel functions • REST API frameworks • CLI tools • Jupyter integration • Production deployment patterns
 
 **Halimbawa**: [Foundry Tools Framework](./samples/10/README.md)
 
-**Tagal**: 4-5 oras | **Antas**: Eksperto
+**Tagal**: 4-5 oras | **Antas**: Expert
 
 ## Mga Kinakailangan
 
 ### Mga Kinakailangan sa Sistema
 - **Operating System**: Windows 11 (22H2 o mas bago)
-- **Memorya**: 16GB RAM (32GB inirerekomenda para sa mas malalaking modelo)
-- **Storage**: 50GB libreng espasyo para sa model caching
+- **Memory**: 16GB RAM (32GB inirerekomenda para sa mas malalaking modelo)
+- **Storage**: 50GB na libreng espasyo para sa model caching
 - **Hardware**: NPU-enabled device inirerekomenda (Copilot+ PC), GPU opsyonal
-- **Network**: High-speed internet para sa unang pag-download ng modelo
+- **Network**: High-speed internet para sa initial model downloads
 
 ### Kapaligiran sa Pag-develop
 - Visual Studio Code na may AI Toolkit extension
@@ -159,8 +159,8 @@ Sa pagtatapos ng module na ito, ikaw ay:
 
 ### Kaalaman na Kinakailangan
 - Pangunahing kaalaman sa AI/ML concepts
-- Kakayahan sa paggamit ng command line
-- Mga batayan sa Python programming
+- Pamilyar sa command line
+- Pangunahing kaalaman sa Python programming
 - Mga konsepto ng REST API
 - Pangunahing kaalaman sa prompting at model inference
 
@@ -168,93 +168,93 @@ Sa pagtatapos ng module na ito, ikaw ay:
 
 **Kabuuang Tinatayang Oras**: 30-38 oras
 
-| Session | Pokús | Mga Halimbawa | Oras | Antas |
-|---------|-------|---------------|------|-------|
+| Session | Pokusan | Mga Halimbawa | Oras | Antas |
+|---------|---------|---------------|------|-------|
 |  1 | Setup & Basics | 01, 02, 03 | 2-3 oras | Baguhan |
 |  2 | AI Solutions | 04 | 2-3 oras | Intermediate |
 |  3 | Open Source | 05 | 2-3 oras | Intermediate |
 |  4 | Advanced Models | 06 | 3-4 oras | Advanced |
 |  5 | AI Agents | 05, 09 | 3-4 oras | Advanced |
-|  6 | Enterprise Tools | 06, 10 | 3-4 oras | Eksperto |
-|  7 | Direktang API Integration | 07 | 2-3 oras | Intermediate |
+|  6 | Enterprise Tools | 06, 10 | 3-4 oras | Expert |
+|  7 | Direct API Integration | 07 | 2-3 oras | Intermediate |
 |  8 | Windows 11 Chat App | 08 | 3-4 oras | Advanced |
-|  9 | Advanced Multi-Agent | 09 | 4-5 oras | Eksperto |
-| 10 | Tools Framework | 10 | 4-5 oras | Eksperto |
+|  9 | Advanced Multi-Agent | 09 | 4-5 oras | Expert |
+| 10 | Tools Framework | 10 | 4-5 oras | Expert |
 
 ## Pangunahing Resources
 
 **Opisyal na Dokumentasyon:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Source code at opisyal na mga halimbawa
 - [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Kumpletong gabay sa setup at paggamit
-- [Model Mondays Series](https://aka.ms/model-mondays) - Lingguhang mga highlight at tutorial ng modelo
+- [Model Mondays Series](https://aka.ms/model-mondays) - Lingguhang model highlights at tutorials
 
 **Komunidad at Suporta:**
-- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Komunidad na Q&A at mga kahilingan sa feature
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Pinakabagong balita at pinakamahusay na mga kasanayan
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Komunidad Q&A at feature requests
+- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Pinakabagong balita at best practices
 
-## Mga Resulta sa Pagkatuto
+## Mga Resulta sa Pag-aaral
 
 Sa pagtatapos ng module na ito, ikaw ay magiging handa upang:
 
-### Teknikal na Kasanayan
-- **Mag-deploy at Mag-manage**: Mga Foundry Local installation sa development at production environments
-- **Mag-integrate ng Mga Modelo**: Gumamit ng iba't ibang pamilya ng modelo mula sa Microsoft, Hugging Face, at mga mapagkukunan ng komunidad
-- **Gumawa ng Mga Application**: Lumikha ng production-ready AI applications na may advanced na features at optimizations
-- **Mag-develop ng Mga Agent**: Magpatupad ng sopistikadong AI agents na may grounding, reasoning, at tool integration
+### Teknikal na Mastery
+- **Mag-deploy at Mag-manage**: Foundry Local installations sa development at production environments
+- **Mag-integrate ng Models**: Gumamit ng iba't ibang model families mula sa Microsoft, Hugging Face, at community sources
+- **Bumuo ng Applications**: Gumawa ng production-ready AI applications na may advanced features at optimizations
+- **Mag-develop ng Agents**: Magpatupad ng sopistikadong AI agents na may grounding, reasoning, at tool integration
 
-### Estratehikong Pag-unawa
-- **Mga Desisyon sa Arkitektura**: Gumawa ng tamang pagpili sa pagitan ng lokal at cloud deployment
-- **Pag-optimize ng Performance**: I-optimize ang inference performance sa iba't ibang hardware configurations
-- **Enterprise Scaling**: Magdisenyo ng mga application na maaaring mag-scale mula sa lokal na prototype hanggang sa enterprise deployments
-- **Privacy at Seguridad**: Magpatupad ng privacy-preserving AI solutions gamit ang lokal na inference
+### Strategic Understanding
+- **Mga Desisyon sa Arkitektura**: Gumawa ng tamang pagpili sa pagitan ng lokal vs cloud deployment
+- **Performance Optimization**: I-optimize ang inference performance sa iba't ibang hardware configurations
+- **Enterprise Scaling**: Magdisenyo ng applications na scalable mula sa lokal na prototypes hanggang sa enterprise deployments
+- **Privacy at Security**: Magpatupad ng privacy-preserving AI solutions gamit ang lokal na inference
 
 ### Kakayahan sa Inobasyon
-- **Mabilis na Prototyping**: Mabilis na bumuo at sumubok ng mga konsepto ng AI application sa lahat ng 10 sample patterns
-- **Integrasyon ng Komunidad**: Gamitin ang mga open-source na modelo at mag-ambag sa ecosystem
-- **Advanced na Mga Pattern**: Magpatupad ng cutting-edge AI patterns kabilang ang RAG, agents, at tool integration
-- **Framework Mastery**: Ekspertong integrasyon sa LangChain, Semantic Kernel, Chainlit, at Electron
-- **Production Deployment**: Mag-deploy ng scalable AI solutions mula sa lokal na prototype hanggang sa enterprise systems
-- **Handa para sa Hinaharap na Pag-develop**: Gumawa ng mga application na handa para sa mga umuusbong na teknolohiya at pattern ng AI
+- **Mabilis na Prototyping**: Mabilis na bumuo at mag-test ng AI application concepts sa lahat ng 10 sample patterns
+- **Komunidad na Integration**: Samantalahin ang open-source models at mag-ambag sa ecosystem
+- **Advanced Patterns**: Magpatupad ng cutting-edge AI patterns kabilang ang RAG, agents, at tool integration
+- **Framework Mastery**: Expert-level integration sa LangChain, Semantic Kernel, Chainlit, at Electron
+- **Production Deployment**: Mag-deploy ng scalable AI solutions mula sa lokal na prototypes hanggang sa enterprise systems
+- **Future-Ready Development**: Bumuo ng applications na handa para sa mga umuusbong na AI technologies at patterns
 
 ## Pagsisimula
 
-1. **Setup ng Kapaligiran**: Siguraduhing may Windows 11 at inirerekomendang hardware (tingnan ang Mga Kinakailangan)
+1. **Environment Setup**: Siguraduhing Windows 11 na may inirerekomendang hardware (tingnan ang Mga Kinakailangan)
 2. **I-install ang Foundry Local**: Sundin ang Session 1 para sa kumpletong pag-install at configuration
-3. **Patakbuhin ang Sample 01**: Magsimula sa basic REST API integration upang masiguro ang setup
-4. **Tapusin ang Mga Halimbawa**: Kumpletuhin ang mga halimbawa 01-10 para sa komprehensibong mastery
+3. **Patakbuhin ang Sample 01**: Simulan sa basic REST API integration upang i-verify ang setup
+4. **Magpatuloy sa Mga Halimbawa**: Kumpletuhin ang mga halimbawa 01-10 para sa komprehensibong mastery
 
 ## Mga Sukatan ng Tagumpay
 
 Subaybayan ang iyong progreso sa lahat ng 10 komprehensibong halimbawa:
 
 ### Foundation Level (Mga Halimbawa 01-03)
-- [ ] Matagumpay na mai-install at ma-configure ang Foundry Local
+- [ ] Matagumpay na i-install at i-configure ang Foundry Local
 - [ ] Kumpletuhin ang REST API integration (Halimbawa 01)
 - [ ] Magpatupad ng OpenAI SDK compatibility (Halimbawa 02)
 - [ ] Magsagawa ng model discovery at benchmarking (Halimbawa 03)
 
 ### Application Level (Mga Halimbawa 04-06)
-- [ ] Mag-deploy at magpatakbo ng hindi bababa sa 4 na iba't ibang pamilya ng modelo
-- [ ] Gumawa ng functional na RAG chat application (Halimbawa 04)
-- [ ] Lumikha ng multi-agent orchestration system (Halimbawa 05)
+- [ ] Mag-deploy at magpatakbo ng hindi bababa sa 4 na iba't ibang model families
+- [ ] Bumuo ng functional RAG chat application (Halimbawa 04)
+- [ ] Gumawa ng multi-agent orchestration system (Halimbawa 05)
 - [ ] Magpatupad ng intelligent model routing (Halimbawa 06)
 
 ### Advanced Integration Level (Mga Halimbawa 07-10)
-- [ ] Gumawa ng production-ready API client (Halimbawa 07)
+- [ ] Bumuo ng production-ready API client (Halimbawa 07)
 - [ ] Mag-develop ng Windows 11 native chat application (Halimbawa 08)
 - [ ] Magpatupad ng advanced multi-agent system (Halimbawa 09)
-- [ ] Lumikha ng komprehensibong tools framework (Halimbawa 10)
+- [ ] Gumawa ng komprehensibong tools framework (Halimbawa 10)
 
 ### Mga Palatandaan ng Mastery
-- [ ] Matagumpay na mapatakbo ang lahat ng 10 halimbawa nang walang error
-- [ ] I-customize ang hindi bababa sa 3 halimbawa para sa mga partikular na use case
+- [ ] Matagumpay na patakbuhin ang lahat ng 10 halimbawa nang walang errors
+- [ ] I-customize ang hindi bababa sa 3 halimbawa para sa partikular na use cases
 - [ ] Mag-deploy ng 2+ halimbawa sa production-like environments
-- [ ] Mag-ambag ng mga pagpapabuti o extension sa sample code
-- [ ] I-integrate ang Foundry Local patterns sa personal/propesyonal na mga proyekto
+- [ ] Mag-ambag ng improvements o extensions sa sample code
+- [ ] I-integrate ang Foundry Local patterns sa personal/professional projects
 
 ## Quick Start Guide - Lahat ng 10 Halimbawa
 
-### Setup ng Kapaligiran (Kinakailangan para sa Lahat ng Halimbawa)
+### Environment Setup (Kinakailangan para sa Lahat ng Halimbawa)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -414,7 +414,7 @@ jupyter notebook examples/jupyter_notebook.ipynb
 python examples/langchain_demo.py
 ```
 
-### Pag-troubleshoot ng Karaniwang Mga Isyu
+### Troubleshooting Common Issues
 
 **Foundry Local Connection Errors**
 ```powershell
@@ -428,7 +428,7 @@ foundry restart
 curl http://localhost:5273/v1/models
 ```
 
-**Mga Isyu sa Pag-load ng Modelo**
+**Model Loading Issues**
 ```powershell
 # Check available models
 foundry model list --cached
@@ -442,7 +442,7 @@ foundry model unload --all
 foundry model run phi-4-mini
 ```
 
-**Mga Isyu sa Dependency**
+**Dependency Issues**
 ```powershell
 # Upgrade pip and reinstall
 python -m pip install --upgrade pip
@@ -454,14 +454,14 @@ npm install
 ```
 
 ## Buod
-Ang module na ito ay kumakatawan sa pinakabagong teknolohiya sa pag-develop ng edge AI, pinagsasama ang mga enterprise-grade tools ng Microsoft sa kakayahang umangkop at inobasyon ng open-source ecosystem. Sa pamamagitan ng pag-master ng Foundry Local gamit ang lahat ng 10 komprehensibong halimbawa, ikaw ay magiging nangunguna sa pag-develop ng mga aplikasyon ng AI.
+Ang module na ito ay kumakatawan sa pinakabagong teknolohiya sa edge AI development, pinagsasama ang mga enterprise-grade tools ng Microsoft sa kakayahang umangkop at inobasyon ng open-source ecosystem. Sa pamamagitan ng pag-master ng Foundry Local gamit ang lahat ng 10 komprehensibong halimbawa, ikaw ay magiging nangunguna sa pag-develop ng AI applications.
 
 **Kumpletong Landas ng Pag-aaral:**
-- **Pundasyon** (Mga Halimbawa 01-03): Integrasyon ng API at pamamahala ng modelo
-- **Mga Aplikasyon** (Mga Halimbawa 04-06): RAG, mga ahente, at matalinong pag-route
-- **Advanced** (Mga Halimbawa 07-10): Mga framework para sa produksyon at integrasyon sa enterprise
+- **Pundasyon** (Mga Halimbawa 01-03): API integration at pamamahala ng modelo
+- **Aplikasyon** (Mga Halimbawa 04-06): RAG, mga ahente, at intelligent routing
+- **Advanced** (Mga Halimbawa 07-10): Production frameworks at enterprise integration
 
-Para sa integrasyon ng Azure OpenAI (Session 2), tingnan ang mga README file ng bawat indibidwal na halimbawa para sa mga kinakailangang environment variables at mga setting ng API version.
+Para sa Azure OpenAI integration (Session 2), tingnan ang mga indibidwal na README file ng mga halimbawa para sa kinakailangang environment variables at mga setting ng API version.
 
 ---
 

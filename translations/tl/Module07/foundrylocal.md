@@ -1,36 +1,45 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T22:42:05+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:50:41+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "tl"
 }
 -->
-# Foundry Local sa Windows (Validated)
+# Foundry Local sa Windows at Mac
 
-Ang gabay na ito ay tumutulong sa iyo na i-install, patakbuhin, at i-integrate ang Microsoft Foundry Local sa Windows. Ang lahat ng hakbang at mga utos ay na-validate batay sa Microsoft Learn docs.
+Ang gabay na ito ay tumutulong sa iyo na mag-install, magpatakbo, at mag-integrate ng Microsoft Foundry Local sa Windows at Mac. Ang lahat ng mga hakbang at utos ay na-validate batay sa Microsoft Learn docs.
 
-- Magsimula: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Simulan: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI Reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrate SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Compile HF Models (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Local vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) I-install / I-upgrade sa Windows
+## 1) Mag-install / Mag-upgrade sa Windows
 
-- I-install:
+- Mag-install:
 ```cmd
 winget install Microsoft.FoundryLocal
 ```
-- I-upgrade:
+- Mag-upgrade:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 - Suriin ang bersyon:
 ```cmd
 foundry --version
+```
+     
+**Mag-install / Mac**
+
+**MacOS**: 
+Buksan ang terminal at patakbuhin ang sumusunod na utos:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Mga Pangunahing Kaalaman sa CLI (Tatlong Kategorya)
@@ -63,7 +72,7 @@ Ang Foundry Local ay nag-aassign ng dynamic na port tuwing nagsisimula ang serbi
 ```cmd
 foundry service status
 ```
-Gamitin ang naiulat na `http://localhost:<PORT>` bilang iyong `base_url` kasama ang OpenAI-compatible paths (halimbawa, `/v1/chat/completions`).
+Gamitin ang iniulat na `http://localhost:<PORT>` bilang iyong `base_url` kasama ang OpenAI-compatible paths (halimbawa, `/v1/chat/completions`).
 
 ## 4) Mabilisang Pagsubok gamit ang OpenAI Python SDK
 

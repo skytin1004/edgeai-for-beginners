@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T00:05:36+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:48:18+00:00",
   "source_file": "Module08/README.md",
   "language_code": "vi"
 }
@@ -11,13 +11,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Tổng quan
 
-Microsoft Foundry Local đại diện cho thế hệ tiếp theo của phát triển AI tại biên, cung cấp cho các nhà phát triển các công cụ mạnh mẽ để xây dựng, triển khai và mở rộng ứng dụng AI tại địa phương, đồng thời duy trì tích hợp liền mạch với Azure AI Foundry. Module này cung cấp hướng dẫn toàn diện về Foundry Local từ cài đặt đến phát triển tác nhân nâng cao.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) đại diện cho thế hệ tiếp theo của phát triển AI tại biên, cung cấp cho các nhà phát triển các công cụ mạnh mẽ để xây dựng, triển khai và mở rộng ứng dụng AI tại chỗ, đồng thời duy trì tích hợp liền mạch với Azure AI Foundry. Module này cung cấp hướng dẫn toàn diện về Foundry Local từ cài đặt đến phát triển tác nhân nâng cao.
 
 **Công nghệ chính:**
 - Microsoft Foundry Local CLI và SDK
 - Tích hợp Azure AI Foundry
 - Suy luận mô hình trên thiết bị
-- Bộ nhớ đệm và tối ưu hóa mô hình tại địa phương
+- Bộ nhớ đệm và tối ưu hóa mô hình cục bộ
 - Kiến trúc dựa trên tác nhân
 
 ## Mục tiêu học tập
@@ -25,7 +25,7 @@ Microsoft Foundry Local đại diện cho thế hệ tiếp theo của phát tri
 Khi hoàn thành module này, bạn sẽ:
 
 - **Thành thạo Foundry Local**: Cài đặt, cấu hình và tối ưu hóa cho phát triển trên Windows 11
-- **Triển khai các mô hình đa dạng**: Chạy các mô hình phi, qwen, deepseek và GPT tại địa phương bằng lệnh CLI
+- **Triển khai nhiều mô hình**: Chạy các mô hình phi, qwen, deepseek và GPT tại chỗ bằng lệnh CLI
 - **Xây dựng giải pháp sản xuất**: Tạo ứng dụng AI với kỹ thuật nhắc nâng cao và tích hợp dữ liệu
 - **Tận dụng hệ sinh thái mã nguồn mở**: Tích hợp các mô hình Hugging Face và đóng góp từ cộng đồng
 - **Phát triển tác nhân AI**: Xây dựng các tác nhân thông minh với khả năng định hướng và điều phối
@@ -36,7 +36,7 @@ Khi hoàn thành module này, bạn sẽ:
 ### [1: Bắt đầu với Foundry Local](./01.FoundryLocalSetup.md)
 **Trọng tâm**: Cài đặt, thiết lập CLI, triển khai mô hình và tối ưu hóa phần cứng
 
-**Chủ đề chính**: Cài đặt hoàn chỉnh • Lệnh CLI • Bộ nhớ đệm mô hình • Tăng tốc phần cứng • Triển khai đa mô hình
+**Chủ đề chính**: Cài đặt hoàn chỉnh • Lệnh CLI • Bộ nhớ đệm mô hình • Tăng tốc phần cứng • Triển khai nhiều mô hình
 
 **Mẫu**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
 
@@ -55,7 +55,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 ---
 
-### [3: Mô hình mã nguồn mở Foundry Local](./03.OpenSourceModels.md)
+### [3: Mô hình mã nguồn mở với Foundry Local](./03.OpenSourceModels.md)
 **Trọng tâm**: Tích hợp Hugging Face, chiến lược BYOM và mô hình cộng đồng
 
 **Chủ đề chính**: Tích hợp HuggingFace • Mang mô hình của riêng bạn • Thông tin từ Model Mondays • Đóng góp cộng đồng • Lựa chọn mô hình
@@ -66,7 +66,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 ---
 
-### [4: Khám phá các mô hình tiên tiến](./04.CuttingEdgeModels.md)
+### [4: Khám phá mô hình tiên tiến](./04.CuttingEdgeModels.md)
 **Trọng tâm**: LLMs vs SLMs, triển khai EdgeAI và các bản demo nâng cao
 
 **Chủ đề chính**: So sánh mô hình • Suy luận tại biên vs đám mây • Phi + ONNX Runtime • Ứng dụng Chainlit RAG • Tối ưu hóa WebGPU
@@ -100,7 +100,7 @@ Khi hoàn thành module này, bạn sẽ:
 ---
 
 ### [7: Mẫu tích hợp API trực tiếp](./samples/07/README.md)
-**Trọng tâm**: Tích hợp API REST thuần túy không phụ thuộc SDK để kiểm soát tối đa
+**Trọng tâm**: Tích hợp API REST thuần túy không phụ thuộc vào SDK để kiểm soát tối đa
 
 **Chủ đề chính**: Triển khai HTTP client • Xác thực tùy chỉnh • Giám sát sức khỏe mô hình • Phản hồi streaming • Xử lý lỗi sản xuất
 
@@ -113,7 +113,7 @@ Khi hoàn thành module này, bạn sẽ:
 ### [8: Ứng dụng chat gốc Windows 11](./samples/08/README.md)
 **Trọng tâm**: Xây dựng ứng dụng chat gốc hiện đại với tích hợp Foundry Local
 
-**Chủ đề chính**: Phát triển Electron • Hệ thống thiết kế Fluent • Tích hợp Windows gốc • Streaming thời gian thực • Thiết kế giao diện chat
+**Chủ đề chính**: Phát triển Electron • Hệ thống thiết kế Fluent • Tích hợp gốc Windows • Streaming thời gian thực • Thiết kế giao diện chat
 
 **Mẫu**: [Windows 11 Chat Application](./samples/08/README.md)
 
@@ -122,9 +122,9 @@ Khi hoàn thành module này, bạn sẽ:
 ---
 
 ### [9: Điều phối đa tác nhân nâng cao](./samples/09/README.md)
-**Trọng tâm**: Phối hợp tác nhân tinh vi, phân công nhiệm vụ chuyên biệt và quy trình làm việc AI hợp tác
+**Trọng tâm**: Điều phối tác nhân phức tạp, phân công nhiệm vụ chuyên biệt và quy trình làm việc AI hợp tác
 
-**Chủ đề chính**: Phối hợp tác nhân thông minh • Mẫu gọi hàm • Giao tiếp giữa các tác nhân • Điều phối quy trình làm việc • Cơ chế đảm bảo chất lượng
+**Chủ đề chính**: Điều phối tác nhân thông minh • Mẫu gọi hàm • Giao tiếp giữa các tác nhân • Điều phối quy trình làm việc • Cơ chế đảm bảo chất lượng
 
 **Mẫu**: [Advanced Multi-Agent System](./samples/09/README.md)
 
@@ -146,7 +146,7 @@ Khi hoàn thành module này, bạn sẽ:
 ### Yêu cầu hệ thống
 - **Hệ điều hành**: Windows 11 (22H2 hoặc mới hơn)
 - **Bộ nhớ**: RAM 16GB (khuyến nghị 32GB cho các mô hình lớn hơn)
-- **Dung lượng lưu trữ**: 50GB trống để lưu bộ nhớ đệm mô hình
+- **Dung lượng lưu trữ**: 50GB trống để lưu trữ mô hình
 - **Phần cứng**: Thiết bị hỗ trợ NPU được khuyến nghị (Copilot+ PC), GPU tùy chọn
 - **Mạng**: Internet tốc độ cao để tải mô hình ban đầu
 
@@ -158,7 +158,7 @@ Khi hoàn thành module này, bạn sẽ:
 - Azure CLI (tùy chọn cho tích hợp đám mây)
 
 ### Kiến thức yêu cầu
-- Hiểu cơ bản về các khái niệm AI/ML
+- Hiểu cơ bản về khái niệm AI/ML
 - Quen thuộc với dòng lệnh
 - Kiến thức cơ bản về lập trình Python
 - Khái niệm API REST
@@ -166,7 +166,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 ## Lộ trình module
 
-**Tổng thời gian ước tính**: 30-38 giờ
+**Thời gian ước tính tổng cộng**: 30-38 giờ
 
 | Buổi học | Khu vực trọng tâm | Mẫu | Thời gian | Độ phức tạp |
 |----------|-------------------|------|-----------|-------------|
@@ -200,20 +200,20 @@ Khi hoàn thành module này, bạn sẽ có khả năng:
 - **Triển khai và quản lý**: Cài đặt Foundry Local trên các môi trường phát triển và sản xuất
 - **Tích hợp mô hình**: Làm việc liền mạch với các họ mô hình đa dạng từ Microsoft, Hugging Face và nguồn cộng đồng
 - **Xây dựng ứng dụng**: Tạo ứng dụng AI sẵn sàng sản xuất với các tính năng và tối ưu hóa nâng cao
-- **Phát triển tác nhân**: Triển khai các tác nhân AI tinh vi với định hướng, lý luận và tích hợp công cụ
+- **Phát triển tác nhân**: Triển khai các tác nhân AI phức tạp với định hướng, lý luận và tích hợp công cụ
 
 ### Hiểu biết chiến lược
-- **Quyết định kiến trúc**: Đưa ra lựa chọn thông minh giữa triển khai tại địa phương và đám mây
+- **Quyết định kiến trúc**: Đưa ra lựa chọn thông minh giữa triển khai tại chỗ và trên đám mây
 - **Tối ưu hóa hiệu suất**: Tối ưu hóa hiệu suất suy luận trên các cấu hình phần cứng khác nhau
-- **Mở rộng doanh nghiệp**: Thiết kế ứng dụng có khả năng mở rộng từ nguyên mẫu địa phương đến triển khai doanh nghiệp
-- **Bảo mật và quyền riêng tư**: Triển khai giải pháp AI bảo vệ quyền riêng tư với suy luận tại địa phương
+- **Mở rộng doanh nghiệp**: Thiết kế ứng dụng có khả năng mở rộng từ nguyên mẫu tại chỗ đến triển khai doanh nghiệp
+- **Bảo mật và quyền riêng tư**: Triển khai giải pháp AI bảo vệ quyền riêng tư với suy luận tại chỗ
 
 ### Khả năng đổi mới
-- **Tạo nguyên mẫu nhanh**: Nhanh chóng xây dựng và kiểm tra ý tưởng ứng dụng AI trên tất cả 10 mẫu
+- **Tạo nguyên mẫu nhanh**: Nhanh chóng xây dựng và thử nghiệm ý tưởng ứng dụng AI trên tất cả 10 mẫu
 - **Tích hợp cộng đồng**: Tận dụng các mô hình mã nguồn mở và đóng góp vào hệ sinh thái
 - **Mẫu nâng cao**: Triển khai các mẫu AI tiên tiến bao gồm RAG, tác nhân và tích hợp công cụ
 - **Thành thạo khung công tác**: Tích hợp chuyên sâu với LangChain, Semantic Kernel, Chainlit và Electron
-- **Triển khai sản xuất**: Triển khai giải pháp AI có khả năng mở rộng từ nguyên mẫu địa phương đến hệ thống doanh nghiệp
+- **Triển khai sản xuất**: Triển khai giải pháp AI có khả năng mở rộng từ nguyên mẫu tại chỗ đến hệ thống doanh nghiệp
 - **Phát triển sẵn sàng cho tương lai**: Xây dựng ứng dụng sẵn sàng cho các công nghệ và mẫu AI mới nổi
 
 ## Bắt đầu
@@ -225,12 +225,12 @@ Khi hoàn thành module này, bạn sẽ có khả năng:
 
 ## Chỉ số thành công
 
-Theo dõi tiến trình của bạn qua tất cả 10 mẫu toàn diện:
+Theo dõi tiến độ của bạn qua tất cả 10 mẫu toàn diện:
 
 ### Cấp độ cơ bản (Mẫu 01-03)
 - [ ] Cài đặt và cấu hình Foundry Local thành công
 - [ ] Hoàn thành tích hợp API REST (Mẫu 01)
-- [ ] Triển khai khả năng tương thích SDK OpenAI (Mẫu 02)
+- [ ] Triển khai khả năng tương thích OpenAI SDK (Mẫu 02)
 - [ ] Thực hiện khám phá và đánh giá mô hình (Mẫu 03)
 
 ### Cấp độ ứng dụng (Mẫu 04-06)
@@ -252,7 +252,7 @@ Theo dõi tiến trình của bạn qua tất cả 10 mẫu toàn diện:
 - [ ] Đóng góp cải tiến hoặc mở rộng mã mẫu
 - [ ] Tích hợp các mẫu Foundry Local vào dự án cá nhân/chuyên nghiệp
 
-## Hướng dẫn bắt đầu nhanh - Tất cả 10 mẫu
+## Hướng dẫn nhanh - Tất cả 10 mẫu
 
 ### Thiết lập môi trường (Yêu cầu cho tất cả các mẫu)
 
@@ -414,7 +414,7 @@ jupyter notebook examples/jupyter_notebook.ipynb
 python examples/langchain_demo.py
 ```
 
-### Xử lý các vấn đề thường gặp
+### Xử lý sự cố thường gặp
 
 **Lỗi kết nối Foundry Local**
 ```powershell
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Tóm tắt
-Module này đại diện cho bước tiến mới nhất trong phát triển AI biên, kết hợp các công cụ cấp doanh nghiệp của Microsoft với sự linh hoạt và sáng tạo của hệ sinh thái mã nguồn mở. Bằng cách nắm vững Foundry Local thông qua 10 mẫu toàn diện, bạn sẽ đứng ở vị trí tiên phong trong phát triển ứng dụng AI.
+Module này đại diện cho bước tiến mới nhất trong phát triển AI tại biên, kết hợp các công cụ cấp doanh nghiệp của Microsoft với sự linh hoạt và sáng tạo từ hệ sinh thái mã nguồn mở. Bằng cách nắm vững Foundry Local thông qua 10 mẫu toàn diện, bạn sẽ đứng ở vị trí tiên phong trong phát triển ứng dụng AI.
 
 **Lộ trình học tập hoàn chỉnh:**
 - **Nền tảng** (Mẫu 01-03): Tích hợp API và quản lý mô hình

@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T13:41:37+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:17:15+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fa"
 }
 -->
-# Foundry Local در ویندوز (تأیید شده)
+# Foundry Local در ویندوز و مک
 
-این راهنما به شما کمک می‌کند تا Microsoft Foundry Local را در ویندوز نصب، اجرا و یکپارچه کنید. تمامی مراحل و دستورات با مستندات Microsoft Learn تأیید شده‌اند.
+این راهنما به شما کمک می‌کند تا Microsoft Foundry Local را در ویندوز و مک نصب، اجرا و یکپارچه کنید. تمامی مراحل و دستورات با مستندات Microsoft Learn تأیید شده‌اند.
 
-- شروع کار: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- شروع به کار: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - معماری: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - مرجع CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - یکپارچه‌سازی SDKها: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - بررسی نسخه:
 ```cmd
 foundry --version
+```
+     
+**نصب / مک**
+
+**MacOS**: 
+یک ترمینال باز کنید و دستور زیر را اجرا کنید:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) اصول CLI (سه دسته)
@@ -54,12 +63,12 @@ foundry cache list
 ```
 
 نکات:
-- سرویس یک API REST سازگار با OpenAI ارائه می‌دهد. پورت نقطه پایانی به صورت پویا تخصیص داده می‌شود؛ از `foundry service status` برای کشف آن استفاده کنید.
-- از SDKها برای راحتی استفاده کنید؛ آنها کشف نقطه پایانی را به صورت خودکار انجام می‌دهند، جایی که پشتیبانی می‌شود.
+- سرویس یک API REST سازگار با OpenAI را ارائه می‌دهد. پورت نقطه پایانی به صورت پویا تخصیص داده می‌شود؛ از `foundry service status` برای کشف آن استفاده کنید.
+- برای راحتی از SDKها استفاده کنید؛ آن‌ها کشف نقطه پایانی را به صورت خودکار انجام می‌دهند، جایی که پشتیبانی می‌شود.
 
 ## 3) کشف نقطه پایانی محلی (پورت پویا)
 
-Foundry Local هر بار که سرویس شروع می‌شود، یک پورت پویا تخصیص می‌دهد:
+Foundry Local هر بار که سرویس شروع می‌شود یک پورت پویا تخصیص می‌دهد:
 ```cmd
 foundry service status
 ```
@@ -114,11 +123,11 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) تجربه مرتبط توسعه‌دهنده ویندوز
+## 7) تجربه مرتبط توسعه‌دهندگان ویندوز
 
 - انتخاب‌های هوش مصنوعی محلی در مقابل ابری ویندوز، شامل Foundry Local و Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- ابزارک هوش مصنوعی VS Code با Foundry Local (از `foundry service status` برای دریافت URL نقطه پایانی چت استفاده کنید):
+- ابزار هوش مصنوعی VS Code با Foundry Local (از `foundry service status` برای دریافت URL نقطه پایانی چت استفاده کنید):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

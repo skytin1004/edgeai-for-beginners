@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T21:16:39+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:34:37+00:00",
   "source_file": "Module08/README.md",
   "language_code": "br"
 }
@@ -11,13 +11,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Visão Geral
 
-Microsoft Foundry Local representa a próxima geração de desenvolvimento de IA na borda, oferecendo aos desenvolvedores ferramentas poderosas para criar, implantar e escalar aplicações de IA localmente, mantendo integração perfeita com o Azure AI Foundry. Este módulo fornece uma cobertura abrangente do Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na borda, oferecendo ferramentas poderosas para desenvolvedores criarem, implantarem e escalarem aplicações de IA localmente, mantendo integração perfeita com o Azure AI Foundry. Este módulo fornece uma cobertura abrangente do Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
 
 **Principais Tecnologias:**
 - CLI e SDK do Microsoft Foundry Local
 - Integração com Azure AI Foundry
 - Inferência de modelos no dispositivo
-- Cache e otimização de modelos locais
+- Cache e otimização de modelos localmente
 - Arquiteturas baseadas em agentes
 
 ## Objetivos de Aprendizagem
@@ -49,7 +49,7 @@ Ao concluir este módulo, você será capaz de:
 
 **Tópicos Principais**: Engenharia de prompts • Integração de dados • Fluxos de trabalho no Azure • Otimização de desempenho • Monitoramento
 
-**Exemplo**: [Aplicação RAG com Chainlit](./samples/04/README.md)
+**Exemplo**: [Aplicação Chainlit RAG](./samples/04/README.md)
 
 **Duração**: 2-3 horas | **Nível**: Intermediário
 
@@ -58,7 +58,7 @@ Ao concluir este módulo, você será capaz de:
 ### [3: Modelos Open-Source no Foundry Local](./03.OpenSourceModels.md)
 **Foco**: Integração com Hugging Face, estratégias BYOM e modelos da comunidade
 
-**Tópicos Principais**: Integração com Hugging Face • Traga seu próprio modelo (BYOM) • Insights do Model Mondays • Contribuições da comunidade • Seleção de modelos
+**Tópicos Principais**: Integração com Hugging Face • Bring-your-own-model • Insights do Model Mondays • Contribuições da comunidade • Seleção de modelos
 
 **Exemplo**: [Orquestração Multi-Agente](./samples/05/README.md)
 
@@ -67,11 +67,11 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [4: Explorando Modelos de Ponta](./04.CuttingEdgeModels.md)
-**Foco**: Comparação entre LLMs e SLMs, implementação de EdgeAI e demonstrações avançadas
+**Foco**: LLMs vs SLMs, implementação de EdgeAI e demonstrações avançadas
 
-**Tópicos Principais**: Comparação de modelos • Inferência na borda vs na nuvem • Phi + ONNX Runtime • Aplicação RAG com Chainlit • Otimização com WebGPU
+**Tópicos Principais**: Comparação de modelos • Inferência na borda vs na nuvem • Phi + ONNX Runtime • Aplicação Chainlit RAG • Otimização com WebGPU
 
-**Exemplo**: [Roteador de Modelos como Ferramentas](./samples/06/README.md)
+**Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md)
 
 **Duração**: 3-4 horas | **Nível**: Avançado
 
@@ -89,11 +89,11 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [6: Foundry Local - Modelos como Ferramentas](./06.ModelsAsTools.md)
-**Foco**: Soluções de IA modulares, escalabilidade empresarial e padrões de produção
+**Foco**: Soluções modulares de IA, escalabilidade empresarial e padrões de produção
 
-**Tópicos Principais**: Modelos como ferramentas • Implantação no dispositivo • Integração com SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
+**Tópicos Principais**: Modelos como ferramentas • Implantação no dispositivo • Integração SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
 
-**Exemplo**: [Roteador de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas do Foundry](./samples/10/README.md)
+**Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas Foundry](./samples/10/README.md)
 
 **Duração**: 3-4 horas | **Nível**: Especialista
 
@@ -104,7 +104,7 @@ Ao concluir este módulo, você será capaz de:
 
 **Tópicos Principais**: Implementação de cliente HTTP • Autenticação personalizada • Monitoramento de saúde de modelos • Respostas em streaming • Tratamento de erros em produção
 
-**Exemplo**: [Cliente de API Direta](./samples/07/README.md)
+**Exemplo**: [Cliente API Direto](./samples/07/README.md)
 
 **Duração**: 2-3 horas | **Nível**: Intermediário
 
@@ -113,7 +113,7 @@ Ao concluir este módulo, você será capaz de:
 ### [8: Aplicação de Chat Nativa no Windows 11](./samples/08/README.md)
 **Foco**: Construção de aplicações modernas de chat nativas com integração ao Foundry Local
 
-**Tópicos Principais**: Desenvolvimento com Electron • Sistema Fluent Design • Integração nativa com Windows • Streaming em tempo real • Design de interface de chat
+**Tópicos Principais**: Desenvolvimento com Electron • Fluent Design System • Integração nativa com Windows • Streaming em tempo real • Design de interface de chat
 
 **Exemplo**: [Aplicação de Chat no Windows 11](./samples/08/README.md)
 
@@ -133,11 +133,11 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [10: Foundry Local como Framework de Ferramentas](./samples/10/README.md)
-**Foco**: Arquitetura centrada em ferramentas para integrar o Foundry Local em aplicações e frameworks existentes
+**Foco**: Arquitetura centrada em ferramentas para integrar Foundry Local em aplicações e frameworks existentes
 
 **Tópicos Principais**: Integração com LangChain • Funções do Semantic Kernel • Frameworks de API REST • Ferramentas CLI • Integração com Jupyter • Padrões de implantação em produção
 
-**Exemplo**: [Framework de Ferramentas do Foundry](./samples/10/README.md)
+**Exemplo**: [Framework de Ferramentas Foundry](./samples/10/README.md)
 
 **Duração**: 4-5 horas | **Nível**: Especialista
 
@@ -147,7 +147,7 @@ Ao concluir este módulo, você será capaz de:
 - **Sistema Operacional**: Windows 11 (22H2 ou posterior)
 - **Memória**: 16GB RAM (32GB recomendados para modelos maiores)
 - **Armazenamento**: 50GB de espaço livre para cache de modelos
-- **Hardware**: Dispositivo com NPU recomendado (PC Copilot+), GPU opcional
+- **Hardware**: Dispositivo com NPU recomendado (Copilot+ PC), GPU opcional
 - **Rede**: Internet de alta velocidade para download inicial de modelos
 
 ### Ambiente de Desenvolvimento
@@ -166,7 +166,7 @@ Ao concluir este módulo, você será capaz de:
 
 ## Cronograma do Módulo
 
-**Tempo Total Estimado**: 30-38 horas
+**Tempo Estimado Total**: 30-38 horas
 
 | Sessão | Área de Foco | Exemplos | Tempo | Complexidade |
 |--------|--------------|----------|-------|--------------|
@@ -210,22 +210,22 @@ Ao concluir este módulo, você estará preparado para:
 
 ### Capacidades de Inovação
 - **Prototipagem Rápida**: Construir e testar conceitos de aplicações de IA rapidamente em todos os 10 padrões de exemplo
-- **Integração com a Comunidade**: Aproveitar modelos open-source e contribuir para o ecossistema
+- **Integração Comunitária**: Aproveitar modelos open-source e contribuir para o ecossistema
 - **Padrões Avançados**: Implementar padrões de IA de ponta, incluindo RAG, agentes e integração de ferramentas
-- **Domínio de Frameworks**: Integração em nível especialista com LangChain, Semantic Kernel, Chainlit e Electron
-- **Implantação em Produção**: Implantar soluções de IA escaláveis de protótipos locais para sistemas empresariais
+- **Domínio de Frameworks**: Integração de nível especialista com LangChain, Semantic Kernel, Chainlit e Electron
+- **Implantação em Produção**: Implantar soluções de IA escaláveis, desde protótipos locais até sistemas empresariais
 - **Desenvolvimento Preparado para o Futuro**: Construir aplicações prontas para tecnologias e padrões emergentes de IA
 
 ## Primeiros Passos
 
 1. **Configuração do Ambiente**: Certifique-se de ter o Windows 11 com hardware recomendado (veja os Pré-requisitos)
-2. **Instale o Foundry Local**: Siga a Sessão 1 para instalação e configuração completas
-3. **Execute o Exemplo 01**: Comece com a integração básica de API REST para verificar a configuração
-4. **Progrida pelos Exemplos**: Complete os exemplos 01-10 para domínio abrangente
+2. **Instalar Foundry Local**: Siga a Sessão 1 para instalação e configuração completas
+3. **Executar o Exemplo 01**: Comece com a integração básica de API REST para verificar a configuração
+4. **Progredir pelos Exemplos**: Complete os exemplos 01-10 para domínio abrangente
 
 ## Métricas de Sucesso
 
-Acompanhe seu progresso em todos os 10 exemplos abrangentes:
+Acompanhe seu progresso por todos os 10 exemplos abrangentes:
 
 ### Nível Fundamental (Exemplos 01-03)
 - [ ] Instalar e configurar com sucesso o Foundry Local
@@ -234,13 +234,13 @@ Acompanhe seu progresso em todos os 10 exemplos abrangentes:
 - [ ] Realizar descoberta e benchmarking de modelos (Exemplo 03)
 
 ### Nível de Aplicação (Exemplos 04-06)
-- [ ] Implantar e executar pelo menos 4 famílias diferentes de modelos
+- [ ] Implantar e executar pelo menos 4 famílias de modelos diferentes
 - [ ] Construir uma aplicação funcional de chat RAG (Exemplo 04)
-- [ ] Criar sistema de orquestração multi-agente (Exemplo 05)
+- [ ] Criar um sistema de orquestração multi-agente (Exemplo 05)
 - [ ] Implementar roteamento inteligente de modelos (Exemplo 06)
 
 ### Nível de Integração Avançada (Exemplos 07-10)
-- [ ] Construir cliente de API pronto para produção (Exemplo 07)
+- [ ] Construir cliente API pronto para produção (Exemplo 07)
 - [ ] Desenvolver aplicação de chat nativa no Windows 11 (Exemplo 08)
 - [ ] Implementar sistema multi-agente avançado (Exemplo 09)
 - [ ] Criar framework abrangente de ferramentas (Exemplo 10)
@@ -252,9 +252,9 @@ Acompanhe seu progresso em todos os 10 exemplos abrangentes:
 - [ ] Contribuir com melhorias ou extensões ao código dos exemplos
 - [ ] Integrar padrões do Foundry Local em projetos pessoais/profissionais
 
-## Guia Rápido - Todos os 10 Exemplos
+## Guia de Início Rápido - Todos os 10 Exemplos
 
-### Configuração do Ambiente (Requerido para Todos os Exemplos)
+### Configuração do Ambiente (Necessário para Todos os Exemplos)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Exemplo 04: Aplicação RAG com Chainlit**
+**Exemplo 04: Aplicação Chainlit RAG**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -325,7 +325,7 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Exemplo 06: Roteador de Modelos como Ferramentas**
+**Exemplo 06: Router de Modelos como Ferramentas**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
@@ -338,7 +338,7 @@ python samples/06/router.py "Analyze this Python code for performance issues"
 
 ### Exemplos de Integração Avançada (07-10)
 
-**Exemplo 07: Cliente de API Direta**
+**Exemplo 07: Cliente API Direto**
 ```powershell
 # Navigate to sample directory
 cd samples/07
@@ -389,7 +389,7 @@ python examples/complex_workflow.py
 python examples/interactive_demo.py
 ```
 
-**Exemplo 10: Framework de Ferramentas do Foundry**
+**Exemplo 10: Framework de Ferramentas Foundry**
 ```powershell
 # Navigate to sample directory
 cd samples/10

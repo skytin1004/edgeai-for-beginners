@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T19:24:11+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:42:04+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sv"
 }
 -->
-# Foundry Local på Windows (Verifierad)
+# Foundry Local på Windows och Mac
 
-Den här guiden hjälper dig att installera, köra och integrera Microsoft Foundry Local på Windows. Alla steg och kommandon är verifierade mot Microsoft Learn-dokumentation.
+Den här guiden hjälper dig att installera, köra och integrera Microsoft Foundry Local på Windows och Mac. Alla steg och kommandon är validerade mot Microsoft Learn-dokumentation.
 
 - Kom igång: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -32,6 +32,15 @@ winget upgrade --id Microsoft.FoundryLocal
 ```cmd
 foundry --version
 ```
+     
+**Installera / Mac**
+
+**MacOS**: 
+Öppna en terminal och kör följande kommando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
+```
 
 ## 2) CLI-grunder (Tre kategorier)
 
@@ -53,9 +62,9 @@ foundry cache --help
 foundry cache list
 ```
 
-Kommentarer:
+Anteckningar:
 - Tjänsten exponerar ett OpenAI-kompatibelt REST API. Porten för endpointen tilldelas dynamiskt; använd `foundry service status` för att upptäcka den.
-- Använd SDK:erna för enkelhet; de hanterar endpoint-upptäckt automatiskt där det stöds.
+- Använd SDK:erna för bekvämlighet; de hanterar endpoint-upptäckt automatiskt där det stöds.
 
 ## 3) Upptäck den lokala endpointen (Dynamisk port)
 
@@ -116,7 +125,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Relaterad Windows-utvecklarupplevelse
 
-- Val mellan lokal och molnbaserad AI på Windows, inklusive Foundry Local och Windows ML:
+- Windows lokalt vs moln AI-val, inklusive Foundry Local och Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit med Foundry Local (använd `foundry service status` för att få chat-endpointens URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
