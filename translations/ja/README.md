@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-24T10:22:09+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T08:00:56+00:00",
   "source_file": "README.md",
   "language_code": "ja"
 }
 -->
-# 初心者向けEdgeAI
+# EdgeAI 初心者向け
 
 ![コースカバー画像](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.ja.png)
 
@@ -22,7 +22,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-以下の手順に従って、このリソースを使い始めましょう：
+以下のステップに従って、このリソースを使い始めましょう：
 
 1. **リポジトリをフォークする**: [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork) をクリック
 2. **リポジトリをクローンする**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
@@ -32,7 +32,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 #### GitHub Actionによるサポート (自動化 & 常に最新)
 
-[アラビア語](../ar/README.md) | [ベンガル語](../bn/README.md) | [ブルガリア語](../bg/README.md) | [ビルマ語 (ミャンマー)](../my/README.md) | [中国語 (簡体字)](../zh/README.md) | [中国語 (繁体字, 香港)](../hk/README.md) | [中国語 (繁体字, マカオ)](../mo/README.md) | [中国語 (繁体字, 台湾)](../tw/README.md) | [クロアチア語](../hr/README.md) | [チェコ語](../cs/README.md) | [デンマーク語](../da/README.md) | [オランダ語](../nl/README.md) | [フィンランド語](../fi/README.md) | [フランス語](../fr/README.md) | [ドイツ語](../de/README.md) | [ギリシャ語](../el/README.md) | [ヘブライ語](../he/README.md) | [ヒンディー語](../hi/README.md) | [ハンガリー語](../hu/README.md) | [インドネシア語](../id/README.md) | [イタリア語](../it/README.md) | [日本語](./README.md) | [韓国語](../ko/README.md) | [マレー語](../ms/README.md) | [マラーティー語](../mr/README.md) | [ネパール語](../ne/README.md) | [ノルウェー語](../no/README.md) | [ペルシャ語 (ファルシー)](../fa/README.md) | [ポーランド語](../pl/README.md) | [ポルトガル語 (ブラジル)](../br/README.md) | [ポルトガル語 (ポルトガル)](../pt/README.md) | [パンジャブ語 (グルムキー)](../pa/README.md) | [ルーマニア語](../ro/README.md) | [ロシア語](../ru/README.md) | [セルビア語 (キリル文字)](../sr/README.md) | [スロバキア語](../sk/README.md) | [スロベニア語](../sl/README.md) | [スペイン語](../es/README.md) | [スワヒリ語](../sw/README.md) | [スウェーデン語](../sv/README.md) | [タガログ語 (フィリピン)](../tl/README.md) | [タイ語](../th/README.md) | [トルコ語](../tr/README.md) | [ウクライナ語](../uk/README.md) | [ウルドゥー語](../ur/README.md) | [ベトナム語](../vi/README.md)
+[アラビア語](../ar/README.md) | [ベンガル語](../bn/README.md) | [ブルガリア語](../bg/README.md) | [ビルマ語 (ミャンマー)](../my/README.md) | [中国語 (簡体字)](../zh/README.md) | [中国語 (繁体字, 香港)](../hk/README.md) | [中国語 (繁体字, マカオ)](../mo/README.md) | [中国語 (繁体字, 台湾)](../tw/README.md) | [クロアチア語](../hr/README.md) | [チェコ語](../cs/README.md) | [デンマーク語](../da/README.md) | [オランダ語](../nl/README.md) | [フィンランド語](../fi/README.md) | [フランス語](../fr/README.md) | [ドイツ語](../de/README.md) | [ギリシャ語](../el/README.md) | [ヘブライ語](../he/README.md) | [ヒンディー語](../hi/README.md) | [ハンガリー語](../hu/README.md) | [インドネシア語](../id/README.md) | [イタリア語](../it/README.md) | [日本語](./README.md) | [韓国語](../ko/README.md) | [マレー語](../ms/README.md) | [マラーティー語](../mr/README.md) | [ネパール語](../ne/README.md) | [ノルウェー語](../no/README.md) | [ペルシャ語 (ファルシ)](../fa/README.md) | [ポーランド語](../pl/README.md) | [ポルトガル語 (ブラジル)](../br/README.md) | [ポルトガル語 (ポルトガル)](../pt/README.md) | [パンジャブ語 (グルムキー)](../pa/README.md) | [ルーマニア語](../ro/README.md) | [ロシア語](../ru/README.md) | [セルビア語 (キリル文字)](../sr/README.md) | [スロバキア語](../sk/README.md) | [スロベニア語](../sl/README.md) | [スペイン語](../es/README.md) | [スワヒリ語](../sw/README.md) | [スウェーデン語](../sv/README.md) | [タガログ語 (フィリピン)](../tl/README.md) | [タイ語](../th/README.md) | [トルコ語](../tr/README.md) | [ウクライナ語](../uk/README.md) | [ウルドゥー語](../ur/README.md) | [ベトナム語](../vi/README.md)
 
 **追加の翻訳を希望する場合、サポートされている言語は [こちら](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) に記載されています**
 
@@ -43,7 +43,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### 学べる内容
 
 このコースでは、基本的な概念から実際の運用準備までをカバーします：
-- **エッジ展開に最適化された小型言語モデル (SLM)**
+- **エッジ展開に最適化された小型言語モデル (SLMs)**
 - **多様なプラットフォームでのハードウェア対応の最適化**
 - **プライバシーを保護するリアルタイム推論**
 - **企業向けアプリケーションの運用展開戦略**
@@ -51,48 +51,49 @@ CO_OP_TRANSLATOR_METADATA:
 ### EdgeAIが重要な理由
 
 EdgeAIは、現代の重要な課題に対応するパラダイムシフトを表しています：
-- **プライバシーとセキュリティ**: クラウドにデータを送信せずに、ローカルで機密データを処理
+- **プライバシーとセキュリティ**: データをクラウドに送信せずにローカルで処理
 - **リアルタイム性能**: 時間が重要なアプリケーションでネットワーク遅延を排除
 - **コスト効率**: 帯域幅とクラウドコンピューティングの費用を削減
 - **耐障害性**: ネットワーク障害時でも機能を維持
 - **規制遵守**: データ主権要件を満たす
 
-### EdgeAIとは
+### Edge AIとは
 
-EdgeAIは、AIアルゴリズムや言語モデルをローカルのハードウェア上で実行し、データが生成される場所でクラウドリソースに依存せずに推論を行うことを指します。これにより、遅延が減少し、プライバシーが向上し、リアルタイムの意思決定が可能になります。
+Edge AIは、AIアルゴリズムや言語モデルをローカルのハードウェア上で実行し、データが生成される場所でクラウドリソースに依存せずに推論を行うことを指します。これにより、遅延が減少し、プライバシーが向上し、リアルタイムの意思決定が可能になります。
 
 ### コア原則:
-- **デバイス上での推論**: AIモデルがエッジデバイス（スマートフォン、ルーター、マイクロコントローラー、産業用PC）で実行
-- **オフライン機能**: 常時インターネット接続なしで動作
+- **デバイス上での推論**: AIモデルがエッジデバイス（スマートフォン、ルーター、マイクロコントローラー、産業用PC）で実行される
+- **オフライン機能**: インターネット接続がなくても動作
 - **低遅延**: リアルタイムシステムに適した即時応答
-- **データ主権**: 機密データをローカルに保持し、セキュリティとコンプライアンスを向上
+- **データ主権**: 敏感なデータをローカルに保持し、セキュリティとコンプライアンスを向上
 
-### 小型言語モデル (SLM)
+### 小型言語モデル (SLMs)
 
-Phi-4、Mistral-7B、GemmaのようなSLMは、大型LLMの最適化バージョンであり、以下の目的でトレーニングまたは蒸留されています：
+Phi-4、Mistral-7B、GemmaのようなSLMsは、大型LLMsの最適化バージョンであり、以下の目的でトレーニングまたは蒸留されています：
 - **メモリ使用量の削減**: エッジデバイスの限られたメモリを効率的に使用
-- **計算負荷の軽減**: CPUやエッジGPUでの性能向上
+- **計算負荷の軽減**: CPUやエッジGPU性能に最適化
 - **起動時間の短縮**: 応答性の高いアプリケーションのための迅速な初期化
 
 これらは以下の制約を満たしながら強力なNLP機能を提供します：
 - **組み込みシステム**: IoTデバイスや産業用コントローラー
 - **モバイルデバイス**: オフライン機能を備えたスマートフォンやタブレット
-- **IoTデバイス**: リソースが限られたセンサーやスマートデバイス
+- **IoTデバイス**: 限られたリソースを持つセンサーやスマートデバイス
 - **エッジサーバー**: 限られたGPUリソースを持つローカル処理ユニット
 - **パーソナルコンピュータ**: デスクトップやラップトップでの展開シナリオ
 
-## コースモジュールとナビゲーション
+## コースモジュール & ナビゲーション
 
 | モジュール | トピック | フォーカスエリア | 主な内容 | レベル | 所要時間 |
 |--------|-------|------------|-------------|--------|----------|
-| [📚 01](../../Module01) | [EdgeAIの基礎](./Module01/README.md) | クラウドとエッジAIの比較 | EdgeAIの基礎 • 実世界のケーススタディ • 実装ガイド • エッジ展開 | 初級 | 3-4時間 |
-| [🧠 02](../../Module02) | [SLMモデルの基礎](./Module02/README.md) | モデルファミリーとアーキテクチャ | Phiファミリー • Qwenファミリー • Gemmaファミリー • BitNET • μModel • Phi-Silica | 初級 | 4-5時間 |
-| [🚀 03](../../Module03) | [SLM展開の実践](./Module03/README.md) | ローカルとクラウド展開 | 高度な学習 • ローカル環境 • クラウド展開 | 中級 | 4-5時間 |
-| [⚙️ 04](../../Module04) | [モデル最適化ツールキット](./Module04/README.md) | クロスプラットフォーム最適化 | 入門 • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • ワークフロー合成 | 中級 | 5-6時間 |
-| [🔧 05](../../Module05) | [SLMOpsの運用](./Module05/README.md) | 運用操作 | SLMOps入門 • モデル蒸留 • 微調整 • 運用展開 | 上級 | 5-6時間 |
-| [🤖 06](../../Module06) | [AIエージェントと関数呼び出し](./Module06/README.md) | エージェントフレームワークとMCP | エージェント入門 • 関数呼び出し • モデルコンテキストプロトコル | 上級 | 4-5時間 |
-| [💻 07](../../Module07) | [プラットフォーム実装](./Module07/README.md) | クロスプラットフォームサンプル | AIツールキット • Foundry Local • Windows開発 | 上級 | 3-4時間 |
-| [🏭 08](../../Module08) | [Foundry Localツールキット](./Module08/README.md) | 運用準備済みサンプル | サンプルアプリケーション (詳細は以下参照) | エキスパート | 8-10時間 |
+| [📖 00 ](./introduction.md) | [EdgeAIの概要](./introduction.md) | 基礎 & コンテキスト | EdgeAIの概要 • 業界アプリケーション • SLMの紹介 • 学習目標 | 初級 | 1-2 時間 |
+| [📚 01](../../Module01) | [EdgeAIの基本](./Module01/README.md) | クラウドとエッジAIの比較 | EdgeAIの基本 • 実世界のケーススタディ • 実装ガイド • エッジ展開 | 初級 | 3-4 時間 |
+| [🧠 02](../../Module02) | [SLMモデルの基礎](./Module02/README.md) | モデルファミリー & アーキテクチャ | Phiファミリー • Qwenファミリー • Gemmaファミリー • BitNET • μModel • Phi-Silica | 初級 | 4-5 時間 |
+| [🚀 03](../../Module03) | [SLM展開の実践](./Module03/README.md) | ローカル & クラウド展開 | 高度な学習 • ローカル環境 • クラウド展開 | 中級 | 4-5 時間 |
+| [⚙️ 04](../../Module04) | [モデル最適化ツールキット](./Module04/README.md) | クロスプラットフォーム最適化 | イントロダクション • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • ワークフロー合成 | 中級 | 5-6 時間 |
+| [🔧 05](../../Module05) | [SLMOpsの運用](./Module05/README.md) | 運用操作 | SLMOpsの紹介 • モデル蒸留 • ファインチューニング • 運用展開 | 上級 | 5-6 時間 |
+| [🤖 06](../../Module06) | [AIエージェント & 関数呼び出し](./Module06/README.md) | エージェントフレームワーク & MCP | エージェントの紹介 • 関数呼び出し • モデルコンテキストプロトコル | 上級 | 4-5 時間 |
+| [💻 07](../../Module07) | [プラットフォーム実装](./Module07/README.md) | クロスプラットフォームサンプル | AIツールキット • Foundry Local • Windows開発 | 上級 | 3-4 時間 |
+| [🏭 08](../../Module08) | [Foundry Localツールキット](./Module08/README.md) | 運用準備サンプル | サンプルアプリケーション (詳細は以下参照) | エキスパート | 8-10 時間 |
 
 ### 🏭 **モジュール08: サンプルアプリケーション**
 
@@ -108,53 +109,56 @@ Phi-4、Mistral-7B、GemmaのようなSLMは、大型LLMの最適化バージョ
 - [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 
 ### 📊 **学習パスの概要**
-- **総所要時間**: 36-45時間
-- **初級パス**: モジュール01-02 (7-9時間)  
-- **中級パス**: モジュール03-04 (9-11時間)
-- **上級パス**: モジュール05-07 (12-15時間)
-- **エキスパートパス**: モジュール08 (8-10時間)
+- **総所要時間**: 36-45 時間
+- **初級パス**: モジュール01-02 (7-9 時間)  
+- **中級パス**: モジュール03-04 (9-11 時間)
+- **上級パス**: モジュール05-07 (12-15 時間)
+- **エキスパートパス**: モジュール08 (8-10 時間)
 
 ## 作成するもの
 
 ### 🎯 コアスキル
-- **EdgeAIアーキテクチャ**: ローカル優先のAIシステムをクラウド統合で設計
+- **Edge AIアーキテクチャ**: ローカル優先のAIシステムをクラウド統合で設計
 - **モデル最適化**: モデルを量子化し、エッジ展開向けに圧縮 (85%の速度向上、75%のサイズ削減)
 - **マルチプラットフォーム展開**: Windows、モバイル、組み込み、クラウドエッジハイブリッドシステム
-- **運用操作**: EdgeAIの監視、スケーリング、運用維持
+- **運用操作**: Edge AIの監視、スケーリング、運用維持
 
 ### 🏗️ 実践プロジェクト
 - **Foundry Localチャットアプリ**: モデル切り替え可能なWindows 11ネイティブアプリケーション
-- **マルチエージェントシステム**: 複雑なワークフローのための専門エージェントを持つコーディネーター
-- **RAGアプリケーション**: ベクトル検索を使用したローカル文書処理
+- **マルチエージェントシステム**: 複雑なワークフローのための専門エージェントを持つコーディネーター  
+- **RAGアプリケーション**: ベクトル検索を使用したローカルドキュメント処理
 - **モデルルーター**: タスク分析に基づくモデルのインテリジェント選択
-- **APIフレームワーク**: ストリーミングとヘルスモニタリングを備えた運用準備済みクライアント
+- **APIフレームワーク**: ストリーミングとヘルスモニタリングを備えた運用準備クライアント
 - **クロスプラットフォームツール**: LangChain/Semantic Kernel統合パターン
 
-### 🏢 業界での応用
+### 🏢 業界アプリケーション
 **製造業** • **ヘルスケア** • **自動運転車** • **スマートシティ** • **モバイルアプリ**
 
 ## クイックスタート
 
 **推奨学習パス** (合計20-30時間):
 
+0. **📖 はじめに** ([Introduction.md](./introduction.md)): EdgeAIの基礎 + 業界コンテキスト + 学習フレームワーク
 1. **📚 基礎** (モジュール01-02): EdgeAIの概念 + SLMモデルファミリー
 2. **⚙️ 最適化** (モジュール03-04): 展開 + 量子化フレームワーク  
-3. **🚀 運用** (モジュール05-06): SLMOps + AIエージェント + 関数呼び出し
-4. **💻 実装** (モジュール07-08): プラットフォームサンプル + Foundry Localツールキット
+3. **🚀 本番環境** (モジュール 05-06): SLMOps + AIエージェント + 関数呼び出し  
+4. **💻 実装** (モジュール 07-08): プラットフォームサンプル + Foundry Localツールキット  
 
-各モジュールには理論、実践演習、運用準備済みコードサンプルが含まれています。
+各モジュールには理論、実践演習、そして本番環境対応のコードサンプルが含まれています。
 
 ## キャリアへの影響
-**技術的な役割**: EdgeAIソリューションアーキテクト • MLエンジニア（エッジ） • IoT AIデベロッパー • モバイルAIデベロッパー
 
-**産業分野**: 製造業4.0 • ヘルステック • 自律システム • フィンテック • 家電
+**技術職**: EdgeAIソリューションアーキテクト • MLエンジニア (エッジ) • IoT AIデベロッパー • モバイルAIデベロッパー  
 
-**ポートフォリオプロジェクト**: マルチエージェントシステム • 生産用RAGアプリ • クロスプラットフォーム展開 • パフォーマンス最適化
+**業界セクター**: 製造業4.0 • ヘルステック • 自律システム • フィンテック • 家電  
+
+**ポートフォリオプロジェクト**: マルチエージェントシステム • 本番環境対応RAGアプリ • クロスプラットフォーム展開 • パフォーマンス最適化  
 
 ## リポジトリ構造
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -165,40 +169,41 @@ edgeai-for-beginners/
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
 
-## コースのハイライト
 
-✅ **段階的学習**: 理論 → 実践 → 本番展開  
-✅ **実際のケーススタディ**: Microsoft、日本航空、企業実装例  
-✅ **ハンズオンサンプル**: 50以上の例、10の包括的なFoundry Localデモ  
+## コースの特徴
+
+✅ **段階的学習**: 理論 → 実践 → 本番環境展開  
+✅ **実際のケーススタディ**: Microsoft、日本航空、企業導入事例  
+✅ **実践サンプル**: 50以上の例、10の包括的なFoundry Localデモ  
 ✅ **パフォーマンス重視**: 85%の速度向上、75%のサイズ削減  
 ✅ **マルチプラットフォーム対応**: Windows、モバイル、組み込み、クラウドエッジハイブリッド  
-✅ **本番対応**: モニタリング、スケーリング、セキュリティ、コンプライアンスフレームワーク
+✅ **本番環境対応**: モニタリング、スケーリング、セキュリティ、コンプライアンスフレームワーク  
 
-📖 **[学習ガイドはこちら](STUDY_GUIDE.md)**: 20時間の学習計画、時間配分ガイド、自主評価ツールを含む構造化されたガイド。
+📖 **[学習ガイドはこちら](STUDY_GUIDE.md)**: 20時間の学習パスを構造化し、時間配分の指針や自己評価ツールを提供。
 
 ---
 
-**EdgeAIはAI展開の未来を象徴します**: ローカルファースト、プライバシー保護、効率的。これらのスキルを習得して、次世代のインテリジェントアプリケーションを構築しましょう。
+**EdgeAIはAI展開の未来を代表します**: ローカル優先、プライバシー保護、効率的。これらのスキルを習得して次世代のインテリジェントアプリケーションを構築しましょう。
 
 ## その他のコース
 
-私たちのチームが提供する他のコースもぜひご覧ください:
+私たちのチームは他にもコースを提供しています！ぜひチェックしてください:
 
-- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [GitHub Copilotを活用したAIペアプログラミングのマスター](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [C#/.NETデベロッパー向けGitHub Copilotのマスター](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [自分だけのCopilotアドベンチャーを選ぼう](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)  
+- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 

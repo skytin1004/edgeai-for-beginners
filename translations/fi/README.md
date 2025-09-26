@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-24T23:27:30+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T09:10:09+00:00",
   "source_file": "README.md",
   "language_code": "fi"
 }
@@ -26,7 +26,7 @@ Seuraa näitä ohjeita päästäksesi alkuun näiden resurssien käytössä:
 
 1. **Haarauta repositorio**: Klikkaa [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Kloonaa repositorio**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Liity Azure AI Foundry Discordiin ja tapaa asiantuntijoita sekä muita kehittäjiä**](https://discord.com/invite/ByRwuEEgH4)
+3. [**Liity Azure AI Foundry Discordiin ja tapaa asiantuntijoita sekä muita kehittäjiä**](https://discord.com/invite/ByRwuEEgH4)  
 
 ### 🌐 Monikielinen tuki
 
@@ -34,11 +34,11 @@ Seuraa näitä ohjeita päästäksesi alkuun näiden resurssien käytössä:
 
 [Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](./README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
 
-**Jos haluat lisätä uusia kieliä, tuetut kielet löytyvät [täältä](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jos haluat lisätä tuettuja kieliä, katso lista [täältä](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**  
 
 ## Johdanto
 
-Tervetuloa **EdgeAI aloittelijoille** -kurssille, joka tarjoaa kattavan matkan Edge-tekoälyn mullistavaan maailmaan. Tämä kurssi yhdistää tehokkaat tekoälyominaisuudet ja käytännönläheisen toteutuksen reunalaitteilla, antaen sinulle mahdollisuuden hyödyntää tekoälyn potentiaalia suoraan siellä, missä data syntyy ja päätöksiä tarvitaan.
+Tervetuloa **EdgeAI aloittelijoille** -kurssille, joka tarjoaa kattavan matkan Edge-tekoälyn mullistavaan maailmaan. Tämä kurssi yhdistää tehokkaat tekoälyominaisuudet ja käytännönläheisen toteutuksen reunalaitteilla, antaen sinulle mahdollisuuden hyödyntää tekoälyn potentiaalia suoraan siellä, missä data syntyy ja päätökset tehdään.
 
 ### Mitä opit hallitsemaan
 
@@ -46,51 +46,52 @@ Kurssi vie sinut peruskäsitteistä tuotantovalmiisiin toteutuksiin, kattaen:
 - **Pienet kielimallit (SLM)**, jotka on optimoitu reunalaitteille
 - **Laitteistotietoisen optimoinnin** eri alustoilla
 - **Reaaliaikaisen päättelyn**, joka säilyttää yksityisyyden
-- **Tuotantototeutuksen** strategiat yrityssovelluksiin
+- **Tuotantototeutuksen** strategiat yrityssovelluksille
 
 ### Miksi EdgeAI on tärkeää
 
 EdgeAI edustaa paradigman muutosta, joka vastaa nykyaikaisiin haasteisiin:
-- **Yksityisyys ja turvallisuus**: Käsittele arkaluontoista dataa paikallisesti ilman pilvipalveluja
+- **Yksityisyys ja turvallisuus**: Käsittele arkaluontoista dataa paikallisesti ilman pilveen siirtämistä
 - **Reaaliaikainen suorituskyky**: Poista verkkoviive kriittisissä sovelluksissa
-- **Kustannustehokkuus**: Vähennä kaistanleveyden ja pilvilaskennan kustannuksia
+- **Kustannustehokkuus**: Vähennä kaistanleveyden ja pilvilaskennan kuluja
 - **Toiminnan kestävyys**: Säilytä toiminnallisuus verkkokatkosten aikana
 - **Säädösten noudattaminen**: Täytä datan suvereniteettivaatimukset
 
 ### EdgeAI
 
-EdgeAI tarkoittaa tekoälyalgoritmien ja kielimallien suorittamista paikallisesti laitteistolla, lähellä datan syntypaikkaa, ilman pilvipalvelujen käyttöä päättelyyn. Se vähentää viivettä, parantaa yksityisyyttä ja mahdollistaa reaaliaikaisen päätöksenteon.
+EdgeAI tarkoittaa tekoälyalgoritmien ja kielimallien suorittamista paikallisesti laitteistolla, lähellä datan syntypaikkaa, ilman pilvipalveluiden käyttöä päättelyyn. Se vähentää viivettä, parantaa yksityisyyttä ja mahdollistaa reaaliaikaisen päätöksenteon.
 
 ### Keskeiset periaatteet:
-- **Laitteistopohjainen päättely**: Tekoälymallit toimivat reunalaitteilla (puhelimet, reitittimet, mikro-ohjaimet, teollisuus-PC:t)
-- **Offline-kyvykkyys**: Toimii ilman jatkuvaa internet-yhteyttä
+- **Laitteessa tapahtuva päättely**: Tekoälymallit toimivat reunalaitteilla (puhelimet, reitittimet, mikro-ohjaimet, teollisuus-PC:t)
+- **Offline-toiminnallisuus**: Toimii ilman jatkuvaa internet-yhteyttä
 - **Matala viive**: Välittömät vastaukset reaaliaikaisiin järjestelmiin
 - **Datan suvereniteetti**: Pitää arkaluontoisen datan paikallisena, parantaen turvallisuutta ja säädösten noudattamista
 
 ### Pienet kielimallit (SLM)
 
-SLM:t, kuten Phi-4, Mistral-7B ja Gemma, ovat optimoituja versioita suuremmista LLM-malleista, jotka on koulutettu tai tiivistetty:
-- **Pienempi muistijalanjälki**: Tehokas käyttö reunalaitteiden rajallisessa muistissa
+SLM:t kuten Phi-4, Mistral-7B ja Gemma ovat optimoituja versioita suuremmista LLM-malleista, jotka on koulutettu tai tiivistetty:
+- **Pienempi muistivaatimus**: Tehokas käyttö reunalaitteiden rajallisessa muistissa
 - **Vähemmän laskentatehon tarvetta**: Optimoitu CPU- ja reunalaitteiden GPU-suorituskykyyn
-- **Nopeammat käynnistysajat**: Nopeampi alustus reagoiville sovelluksille
+- **Nopeammat käynnistysajat**: Nopeampi alustus responsiivisiin sovelluksiin
 
-Ne avaavat tehokkaita NLP-ominaisuuksia samalla täyttäen seuraavat rajoitukset:
+Ne avaavat tehokkaita NLP-ominaisuuksia samalla kun täyttävät seuraavat rajoitukset:
 - **Sulautetut järjestelmät**: IoT-laitteet ja teollisuusohjaimet
-- **Mobiililaitteet**: Älypuhelimet ja tabletit offline-kyvykkyydellä
-- **IoT-laitteet**: Anturit ja älylaitteet rajallisilla resursseilla
-- **Reunapalvelimet**: Paikalliset käsittelyyksiköt rajallisilla GPU-resursseilla
-- **Henkilökohtaiset tietokoneet**: Työpöytä- ja kannettavat tietokoneet
+- **Mobiililaitteet**: Älypuhelimet ja tabletit offline-toiminnallisuudella
+- **IoT-laitteet**: Sensorit ja älylaitteet, joilla on rajalliset resurssit
+- **Reunapalvelimet**: Paikalliset käsittelyyksiköt, joilla on rajalliset GPU-resurssit
+- **Henkilökohtaiset tietokoneet**: Työpöytä- ja kannettavat käyttötilanteet
 
 ## Kurssin moduulit ja navigointi
 
 | Moduuli | Aihe | Painopistealue | Keskeinen sisältö | Taso | Kesto |
 |--------|-------|------------|-------------|--------|----------|
+| [📖 00 ](./introduction.md) | [Johdanto EdgeAI:hin](./introduction.md) | Perusta ja konteksti | EdgeAI yleiskatsaus • Teollisuussovellukset • SLM-esittely • Oppimistavoitteet | Aloittelija | 1-2 h |
 | [📚 01](../../Module01) | [EdgeAI perusteet](./Module01/README.md) | Pilvi vs EdgeAI vertailu | EdgeAI perusteet • Tosielämän tapaustutkimukset • Toteutusopas • Reunatoteutus | Aloittelija | 3-4 h |
 | [🧠 02](../../Module02) | [SLM-mallien perusteet](./Module02/README.md) | Malliperheet ja arkkitehtuuri | Phi-perhe • Qwen-perhe • Gemma-perhe • BitNET • μModel • Phi-Silica | Aloittelija | 4-5 h |
 | [🚀 03](../../Module03) | [SLM-toteutuskäytännöt](./Module03/README.md) | Paikallinen ja pilvitoteutus | Edistynyt oppiminen • Paikallinen ympäristö • Pilvitoteutus | Keskitaso | 4-5 h |
 | [⚙️ 04](../../Module04) | [Mallien optimointityökalut](./Module04/README.md) | Monialustaoptimointi | Johdanto • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Työnkulun synteesi | Keskitaso | 5-6 h |
 | [🔧 05](../../Module05) | [SLMOps tuotanto](./Module05/README.md) | Tuotantotoiminnot | SLMOps johdanto • Mallien tiivistäminen • Hienosäätö • Tuotantototeutus | Edistynyt | 5-6 h |
-| [🤖 06](../../Module06) | [AI-agentit ja toimintokutsut](./Module06/README.md) | Agenttikehykset ja MCP | Agenttien johdanto • Toimintokutsut • Mallikontekstiprotokolla | Edistynyt | 4-5 h |
+| [🤖 06](../../Module06) | [AI-agentit ja funktiokutsut](./Module06/README.md) | Agenttikehykset ja MCP | Agenttien johdanto • Funktiokutsut • Mallikontekstiprotokolla | Edistynyt | 4-5 h |
 | [💻 07](../../Module07) | [Alustatoteutus](./Module07/README.md) | Monialustan esimerkit | AI-työkalut • Foundry Local • Windows-kehitys | Edistynyt | 3-4 h |
 | [🏭 08](../../Module08) | [Foundry Local Toolkit](./Module08/README.md) | Tuotantovalmiit esimerkit | Esimerkkisovellukset (katso yksityiskohdat alla) | Asiantuntija | 8-10 h |
 
@@ -114,47 +115,50 @@ Ne avaavat tehokkaita NLP-ominaisuuksia samalla täyttäen seuraavat rajoitukset
 - **Edistynyt polku**: Moduulit 05-07 (12-15 tuntia)  
 - **Asiantuntijan polku**: Moduuli 08 (8-10 tuntia)  
 
-## Mitä rakennat
+## Mitä tulet rakentamaan
 
-### 🎯 Keskeiset osaamisalueet
+### 🎯 Keskeiset taidot
 - **EdgeAI-arkkitehtuuri**: Suunnittele paikallisuuteen keskittyviä tekoälyjärjestelmiä pilvi-integraatiolla  
 - **Mallien optimointi**: Kvantisoi ja tiivistä malleja reunatoteutukseen (85 % nopeuden parannus, 75 % koon pienennys)  
-- **Monialustatoteutus**: Windows, mobiili, sulautetut järjestelmät ja pilvi-reuna-hybridijärjestelmät  
-- **Tuotantotoiminnot**: Valvonta, skaalaus ja ylläpito EdgeAI-tuotannossa  
+- **Monialustainen toteutus**: Windows, mobiili, sulautetut järjestelmät ja pilvi-reuna-hybridijärjestelmät  
+- **Tuotantotoiminnot**: Seuranta, skaalaus ja EdgeAI:n ylläpito tuotannossa  
 
 ### 🏗️ Käytännön projektit
 - **Foundry Local Chat -sovellukset**: Windows 11 -natiivi sovellus mallien vaihtamisella  
 - **Moniagenttijärjestelmät**: Koordinaattori erikoistuneilla agenteilla monimutkaisiin työnkulkuihin  
 - **RAG-sovellukset**: Paikallinen dokumenttien käsittely vektorihakuominaisuuksilla  
-- **Mallireitittimet**: Älykäs mallien valinta tehtävän analyysin perusteella  
-- **API-kehykset**: Tuotantovalmiit asiakasohjelmat suoratoistolla ja terveysvalvonnalla  
-- **Monialustatyökalut**: LangChain/Semantic Kernel -integraatiomallit  
+- **Mallireitittimet**: Älykäs valinta mallien välillä tehtävän analyysin perusteella  
+- **API-kehykset**: Tuotantovalmiit asiakasohjelmat suoratoistolla ja terveysseurannalla  
+- **Monialustaiset työkalut**: LangChain/Semantic Kernel -integraatiomallit  
 
 ### 🏢 Teollisuussovellukset
 **Valmistus** • **Terveydenhuolto** • **Autonomiset ajoneuvot** • **Älykaupungit** • **Mobiilisovellukset**
 
 ## Nopea aloitus
 
-**Suositeltu oppimispolku** (20-30 tuntia yhteensä):
+**Suositeltu oppimispolku** (yhteensä 20-30 tuntia):
 
+0. **📖 Johdanto** ([Introduction.md](./introduction.md)): EdgeAI:n perusta + teollisuuskonteksti + oppimisrakenne  
 1. **📚 Perusteet** (Moduulit 01-02): EdgeAI-konseptit + SLM-malliperheet  
 2. **⚙️ Optimointi** (Moduulit 03-04): Toteutus + kvantisointikehykset  
 3. **🚀 Tuotanto** (Moduulit 05-06): SLMOps + AI-agentit + toimintokutsut  
-4. **💻 Toteutus** (Moduulit 07-08): Alustaesimerkit + Foundry Local -työkalut  
+4. **💻 Toteutus** (Moduulit 07-08): Alustamallit + Foundry Local -työkalupakki  
 
 Jokainen moduuli sisältää teoriaa, käytännön harjoituksia ja tuotantovalmiita koodiesimerkkejä.
 
-## Ura vaikutus
-**Tekniset roolit**: EdgeAI-ratkaisujen arkkitehti • ML-insinööri (Edge) • IoT AI -kehittäjä • Mobiili-AI-kehittäjä
+## Urahyödyt
 
-**Toimialat**: Teollisuus 4.0 • Terveydenhuollon teknologia • Autonomiset järjestelmät • FinTech • Kulutuselektroniikka
+**Tekniset roolit**: EdgeAI-ratkaisuarkkitehti • ML-insinööri (Edge) • IoT AI -kehittäjä • Mobiili-AI-kehittäjä  
 
-**Portfolioprojektit**: Multi-agent-järjestelmät • Tuotannon RAG-sovellukset • Alustojen välinen käyttöönotto • Suorituskyvyn optimointi
+**Toimialat**: Teollisuus 4.0 • Terveysteknologia • Autonomiset järjestelmät • FinTech • Kulutuselektroniikka  
+
+**Portfolioprojektit**: Multi-agenttijärjestelmät • Tuotantovalmiit RAG-sovellukset • Alustojen välinen käyttöönotto • Suorituskyvyn optimointi  
 
 ## Repositorion rakenne
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -167,38 +171,38 @@ edgeai-for-beginners/
 
 ## Kurssin kohokohdat
 
-✅ **Progressiivinen oppiminen**: Teoria → Käytäntö → Tuotantokäyttöön ottaminen  
-✅ **Todelliset tapaustutkimukset**: Microsoft, Japan Airlines, yritystoteutukset  
-✅ **Käytännön esimerkit**: Yli 50 esimerkkiä, 10 kattavaa Foundry Local -demoa  
-✅ **Suorituskykykeskeisyys**: 85 % nopeuden parannukset, 75 % koon pienennykset  
+✅ **Progressiivinen oppiminen**: Teoria → Käytäntö → Tuotantoon vienti  
+✅ **Aidot tapaustutkimukset**: Microsoft, Japan Airlines, yritystoteutukset  
+✅ **Käytännön esimerkit**: Yli 50 esimerkkiä, 10 kattavaa Foundry Local -demonstraatiota  
+✅ **Suorituskyky keskiössä**: 85 % nopeuden parannukset, 75 % koon pienennykset  
 ✅ **Monialustainen**: Windows, mobiili, sulautetut järjestelmät, pilvi-edge-hybridi  
 ✅ **Tuotantovalmius**: Seuranta, skaalaus, turvallisuus, vaatimustenmukaisuuskehykset  
 
-📖 **[Opintosuunnitelma saatavilla](STUDY_GUIDE.md)**: Jäsennelty 20 tunnin oppimispolku, sisältäen ajankäyttöohjeet ja itsearviointityökalut.
+📖 **[Opintosuunnitelma saatavilla](STUDY_GUIDE.md)**: Jäsennelty 20 tunnin oppimispolku, jossa on ajankäyttöohjeita ja itsearviointityökaluja.
 
 ---
 
-**EdgeAI edustaa AI:n tulevaisuutta**: paikallisuus etusijalla, yksityisyyttä kunnioittava ja tehokas. Hallitse nämä taidot rakentaaksesi seuraavan sukupolven älykkäitä sovelluksia.
+**EdgeAI edustaa tekoälyn tulevaisuutta**: paikallisuus etusijalla, yksityisyyttä kunnioittaen ja tehokkaasti. Hallitse nämä taidot rakentaaksesi seuraavan sukupolven älykkäitä sovelluksia.
 
 ## Muut kurssit
 
-Tiimimme tuottaa myös muita kursseja! Tutustu:
+Tiimimme tuottaa myös muita kursseja! Tutustu:  
 
-- [MCP aloittelijoille](https://github.com/microsoft/mcp-for-beginners)
-- [AI-agentit aloittelijoille](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generatiivinen AI aloittelijoille .NET:llä](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generatiivinen AI aloittelijoille JavaScriptillä](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generatiivinen AI aloittelijoille](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML aloittelijoille](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science aloittelijoille](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI aloittelijoille](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Kyberturvallisuus aloittelijoille](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web-kehitys aloittelijoille](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT aloittelijoille](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR-kehitys aloittelijoille](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [GitHub Copilotin hallinta AI-pariohjelmointiin](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [GitHub Copilotin hallinta C#/.NET-kehittäjille](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Valitse oma Copilot-seikkailusi](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP aloittelijoille](https://github.com/microsoft/mcp-for-beginners)  
+- [AI-agentit aloittelijoille](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generatiivinen AI aloittelijoille .NET:llä](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generatiivinen AI aloittelijoille JavaScriptillä](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generatiivinen AI aloittelijoille](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML aloittelijoille](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Data Science aloittelijoille](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI aloittelijoille](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Kyberturvallisuus aloittelijoille](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Web-kehitys aloittelijoille](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT aloittelijoille](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [XR-kehitys aloittelijoille](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [GitHub Copilotin hallinta AI-pariohjelmointiin](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [GitHub Copilotin hallinta C#/.NET-kehittäjille](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Valitse oma Copilot-seikkailusi](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 

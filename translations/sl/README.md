@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-25T02:09:05+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T10:03:11+00:00",
   "source_file": "README.md",
   "language_code": "sl"
 }
@@ -52,7 +52,7 @@ Ta tečaj vas vodi od osnovnih konceptov do implementacij, pripravljenih za proi
 
 Edge AI predstavlja premik paradigme, ki rešuje ključne sodobne izzive:
 - **Zasebnost in varnost**: Obdelava občutljivih podatkov lokalno, brez izpostavljanja v oblaku
-- **Zmogljivost v realnem času**: Odprava omrežne zakasnitve za časovno kritične aplikacije
+- **Zmogljivost v realnem času**: Odprava omrežne zakasnitve za aplikacije, kjer je čas ključnega pomena
 - **Učinkovitost stroškov**: Zmanjšanje stroškov pasovne širine in računalništva v oblaku
 - **Odporne operacije**: Ohranitev funkcionalnosti med izpadi omrežja
 - **Skladnost z regulativami**: Izpolnjevanje zahtev glede suverenosti podatkov
@@ -85,16 +85,17 @@ Omogočajo zmogljive NLP zmožnosti, hkrati pa izpolnjujejo omejitve:
 
 | Modul | Tema | Osrednje področje | Ključna vsebina | Stopnja | Trajanje |
 |-------|------|-------------------|-----------------|---------|----------|
-| [📚 01](../../Module01) | [Osnove EdgeAI](./Module01/README.md) | Primerjava med oblakom in Edge AI | Osnove EdgeAI • Študije primerov iz resničnega sveta • Vodnik za implementacijo • Robna uporaba | Začetnik | 3-4 ure |
+| [📖 00 ](./introduction.md) | [Uvod v EdgeAI](./introduction.md) | Osnove in kontekst | Pregled EdgeAI • Industrijske aplikacije • Uvod v SLM • Cilji učenja | Začetnik | 1-2 ure |
+| [📚 01](../../Module01) | [Osnove EdgeAI](./Module01/README.md) | Primerjava med oblakom in Edge AI | Osnove EdgeAI • Primeri iz resničnega sveta • Vodnik za implementacijo • Robna uporaba | Začetnik | 3-4 ure |
 | [🧠 02](../../Module02) | [Osnove modelov SLM](./Module02/README.md) | Družine modelov in arhitektura | Družina Phi • Družina Qwen • Družina Gemma • BitNET • μModel • Phi-Silica | Začetnik | 4-5 ur |
-| [🚀 03](../../Module03) | [Praksa uporabe SLM](./Module03/README.md) | Lokalna in oblačna uporaba | Napredno učenje • Lokalno okolje • Uporaba v oblaku | Srednje | 4-5 ur |
-| [⚙️ 04](../../Module04) | [Orodje za optimizacijo modelov](./Module04/README.md) | Optimizacija na različnih platformah | Uvod • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sinteza delovnih tokov | Srednje | 5-6 ur |
-| [🔧 05](../../Module05) | [SLMOps v proizvodnji](./Module05/README.md) | Operacije v proizvodnji | Uvod v SLMOps • Destilacija modelov • Fino prilagajanje • Uporaba v proizvodnji | Napredno | 5-6 ur |
+| [🚀 03](../../Module03) | [Praksa uporabe SLM](./Module03/README.md) | Lokalna in oblačna uporaba | Napredno učenje • Lokalno okolje • Uporaba v oblaku | Srednje zahtevno | 4-5 ur |
+| [⚙️ 04](../../Module04) | [Orodje za optimizacijo modelov](./Module04/README.md) | Optimizacija na različnih platformah | Uvod • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sinteza delovnih tokov | Srednje zahtevno | 5-6 ur |
+| [🔧 05](../../Module05) | [SLMOps v proizvodnji](./Module05/README.md) | Operacije v proizvodnji | Uvod v SLMOps • Destilacija modelov • Fino uglaševanje • Uporaba v proizvodnji | Napredno | 5-6 ur |
 | [🤖 06](../../Module06) | [AI agenti in klicanje funkcij](./Module06/README.md) | Okviri agentov in MCP | Uvod v agente • Klicanje funkcij • Protokol konteksta modela | Napredno | 4-5 ur |
-| [💻 07](../../Module07) | [Implementacija platforme](./Module07/README.md) | Primeri uporabe na različnih platformah | AI orodje • Foundry Local • Razvoj za Windows | Napredno | 3-4 ure |
-| [🏭 08](../../Module08) | [Orodje Foundry Local](./Module08/README.md) | Primeri, pripravljeni za proizvodnjo | Vzorčne aplikacije (glejte podrobnosti spodaj) | Strokovno | 8-10 ur |
+| [💻 07](../../Module07) | [Implementacija na platformi](./Module07/README.md) | Primeri na različnih platformah | AI orodje • Foundry Local • Razvoj na Windows | Napredno | 3-4 ure |
+| [🏭 08](../../Module08) | [Orodje Foundry Local](./Module08/README.md) | Primeri, pripravljeni za proizvodnjo | Primeri aplikacij (glejte podrobnosti spodaj) | Strokovno | 8-10 ur |
 
-### 🏭 **Modul 08: Vzorčne aplikacije**
+### 🏭 **Modul 08: Primeri aplikacij**
 
 - [01: REST Chat Quickstart](./Module08/samples/01/README.md)
 - [02: OpenAI SDK Integration](./Module08/samples/02/README.md)
@@ -110,15 +111,15 @@ Omogočajo zmogljive NLP zmožnosti, hkrati pa izpolnjujejo omejitve:
 ### 📊 **Povzetek učne poti**
 - **Skupno trajanje**: 36-45 ur
 - **Pot za začetnike**: Moduli 01-02 (7-9 ur)  
-- **Srednja pot**: Moduli 03-04 (9-11 ur)
-- **Napredna pot**: Moduli 05-07 (12-15 ur)
-- **Strokovna pot**: Modul 08 (8-10 ur)
+- **Pot za srednje zahtevne**: Moduli 03-04 (9-11 ur)
+- **Pot za napredne**: Moduli 05-07 (12-15 ur)
+- **Pot za strokovnjake**: Modul 08 (8-10 ur)
 
 ## Kaj boste ustvarili
 
 ### 🎯 Ključne kompetence
 - **Arhitektura Edge AI**: Oblikovanje sistemov AI, ki delujejo lokalno, z integracijo v oblak
-- **Optimizacija modelov**: Kvantizacija in stiskanje modelov za robno uporabo (85% hitrostna izboljšava, 75% zmanjšanje velikosti)
+- **Optimizacija modelov**: Kvantizacija in kompresija modelov za robno uporabo (85% hitrostna izboljšava, 75% zmanjšanje velikosti)
 - **Uporaba na več platformah**: Windows, mobilne naprave, vgrajeni sistemi in hibridni sistemi oblak-rob
 - **Operacije v proizvodnji**: Spremljanje, skaliranje in vzdrževanje Edge AI v proizvodnji
 
@@ -137,24 +138,27 @@ Omogočajo zmogljive NLP zmožnosti, hkrati pa izpolnjujejo omejitve:
 
 **Priporočena učna pot** (skupno 20-30 ur):
 
+0. **📖 Uvod** ([Introduction.md](./introduction.md)): Osnove EdgeAI + industrijski kontekst + učni okvir
 1. **📚 Osnove** (Moduli 01-02): Koncepti EdgeAI + družine modelov SLM
 2. **⚙️ Optimizacija** (Moduli 03-04): Uporaba + okviri za kvantizacijo  
-3. **🚀 Proizvodnja** (Moduli 05-06): SLMOps + AI agenti + klicanje funkcij
-4. **💻 Implementacija** (Moduli 07-08): Primeri uporabe na platformah + orodje Foundry Local
+3. **🚀 Proizvodnja** (Moduli 05-06): SLMOps + AI agenti + klicanje funkcij  
+4. **💻 Implementacija** (Moduli 07-08): Primeri platforme + Foundry Local orodja  
 
 Vsak modul vključuje teorijo, praktične vaje in vzorce kode, pripravljene za proizvodnjo.
 
 ## Vpliv na kariero
-**Tehnične vloge**: EdgeAI Solutions Architect • ML inženir (Edge) • IoT AI razvijalec • Mobilni AI razvijalec
 
-**Industrijski sektorji**: Industrija 4.0 • Zdravstvena tehnologija • Avtonomni sistemi • FinTech • Potrošniška elektronika
+**Tehnične vloge**: Arhitekt rešitev EdgeAI • ML inženir (Edge) • Razvijalec IoT AI • Razvijalec mobilne AI  
 
-**Portfeljski projekti**: Sistemi z več agenti • RAG aplikacije za proizvodnjo • Čezplatformska implementacija • Optimizacija zmogljivosti
+**Industrijski sektorji**: Industrija 4.0 • Zdravstvena tehnologija • Avtonomni sistemi • FinTech • Potrošniška elektronika  
+
+**Projekti za portfelj**: Sistemi z več agenti • Proizvodne RAG aplikacije • Navzkrižna platformna implementacija • Optimizacija zmogljivosti  
 
 ## Struktura repozitorija
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -164,17 +168,17 @@ edgeai-for-beginners/
 ├── 🌐 translations/    # Multi-language support (8+ languages)
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
-
+  
 ## Poudarki tečaja
 
-✅ **Progresivno učenje**: Teorija → Praksa → Implementacija v produkciji  
+✅ **Progresivno učenje**: Teorija → Praksa → Implementacija v proizvodnjo  
 ✅ **Resnične študije primerov**: Microsoft, Japan Airlines, implementacije v podjetjih  
-✅ **Praktični primeri**: 50+ primerov, 10 obsežnih Foundry Local demonstracij  
+✅ **Praktični primeri**: 50+ primerov, 10 obsežnih demo projektov Foundry Local  
 ✅ **Osredotočenost na zmogljivost**: 85% izboljšanje hitrosti, 75% zmanjšanje velikosti  
 ✅ **Večplatformska podpora**: Windows, mobilne naprave, vgrajeni sistemi, hibridni oblak-edge  
-✅ **Pripravljeno za produkcijo**: Spremljanje, skaliranje, varnost, okvirji skladnosti
+✅ **Pripravljeno za proizvodnjo**: Spremljanje, skaliranje, varnost, skladnost s standardi  
 
-📖 **[Na voljo učni vodič](STUDY_GUIDE.md)**: Strukturirana 20-urna učna pot z usmeritvami za razporeditev časa in orodji za samoocenjevanje.
+📖 **[Na voljo študijski vodič](STUDY_GUIDE.md)**: Strukturirana 20-urna učna pot z usmeritvami za razporeditev časa in orodji za samoocenjevanje.
 
 ---
 
@@ -182,23 +186,23 @@ edgeai-for-beginners/
 
 ## Drugi tečaji
 
-Naša ekipa ponuja tudi druge tečaje! Oglejte si:
+Naša ekipa ponuja tudi druge tečaje! Oglejte si:  
 
-- [MCP za začetnike](https://github.com/microsoft/mcp-for-beginners)
-- [AI agenti za začetnike](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike z uporabo .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike z uporabo JavaScripta](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML za začetnike](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Podatkovna znanost za začetnike](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI za začetnike](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Kibernetska varnost za začetnike](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Spletni razvoj za začetnike](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT za začetnike](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR razvoj za začetnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Obvladovanje GitHub Copilot za AI programiranje v paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Obvladovanje GitHub Copilot za C#/.NET razvijalce](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Izberite svojo Copilot pustolovščino](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP za začetnike](https://github.com/microsoft/mcp-for-beginners)  
+- [AI agenti za začetnike](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generativna AI za začetnike z uporabo .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generativna AI za začetnike z uporabo JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generativna AI za začetnike](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML za začetnike](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Podatkovna znanost za začetnike](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI za začetnike](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Kibernetska varnost za začetnike](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Razvoj spletnih aplikacij za začetnike](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT za začetnike](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Razvoj XR za začetnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Obvladovanje GitHub Copilot za AI programiranje v paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Obvladovanje GitHub Copilot za razvijalce C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Izberite svojo Copilot pustolovščino](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 

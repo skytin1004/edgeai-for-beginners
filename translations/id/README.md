@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ff006cd813df4152f5036e7b2bc5ed32",
-  "translation_date": "2025-09-25T00:39:42+00:00",
+  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
+  "translation_date": "2025-09-26T09:21:25+00:00",
   "source_file": "README.md",
   "language_code": "id"
 }
@@ -34,7 +34,7 @@ Ikuti langkah-langkah berikut untuk mulai menggunakan sumber daya ini:
 
 [Arab](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgaria](../bg/README.md) | [Burma (Myanmar)](../my/README.md) | [Cina (Sederhana)](../zh/README.md) | [Cina (Tradisional, Hong Kong)](../hk/README.md) | [Cina (Tradisional, Makau)](../mo/README.md) | [Cina (Tradisional, Taiwan)](../tw/README.md) | [Kroasia](../hr/README.md) | [Ceko](../cs/README.md) | [Denmark](../da/README.md) | [Belanda](../nl/README.md) | [Finlandia](../fi/README.md) | [Prancis](../fr/README.md) | [Jerman](../de/README.md) | [Yunani](../el/README.md) | [Ibrani](../he/README.md) | [Hindi](../hi/README.md) | [Hungaria](../hu/README.md) | [Indonesia](./README.md) | [Italia](../it/README.md) | [Jepang](../ja/README.md) | [Korea](../ko/README.md) | [Melayu](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegia](../no/README.md) | [Persia (Farsi)](../fa/README.md) | [Polandia](../pl/README.md) | [Portugis (Brasil)](../br/README.md) | [Portugis (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Rumania](../ro/README.md) | [Rusia](../ru/README.md) | [Serbia (Kiril)](../sr/README.md) | [Slovakia](../sk/README.md) | [Slovenia](../sl/README.md) | [Spanyol](../es/README.md) | [Swahili](../sw/README.md) | [Swedia](../sv/README.md) | [Tagalog (Filipina)](../tl/README.md) | [Thailand](../th/README.md) | [Turki](../tr/README.md) | [Ukraina](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnam](../vi/README.md)
 
-**Jika Anda ingin mendukung bahasa tambahan, daftar bahasa yang didukung tersedia [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jika Anda ingin menambahkan bahasa terjemahan lainnya, daftar bahasa yang didukung tersedia [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Pengantar
 
@@ -69,7 +69,7 @@ Edge AI mengacu pada menjalankan algoritma AI dan model bahasa secara lokal di p
 
 ### Small Language Models (SLMs)
 
-SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LLM yang lebih besar—dilatih atau didistilasi untuk:
+SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LLM yang lebih besar—dilatih atau disaring untuk:
 - **Jejak memori yang lebih kecil**: Penggunaan memori perangkat edge yang terbatas secara efisien
 - **Permintaan komputasi lebih rendah**: Dioptimalkan untuk performa CPU dan GPU edge
 - **Waktu startup lebih cepat**: Inisialisasi cepat untuk aplikasi yang responsif
@@ -85,6 +85,7 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 
 | Modul | Topik | Area Fokus | Konten Utama | Tingkat | Durasi |
 |-------|-------|------------|--------------|---------|--------|
+| [📖 00 ](./introduction.md) | [Pengantar EdgeAI](./introduction.md) | Dasar & Konteks | Gambaran EdgeAI • Aplikasi Industri • Pengantar SLM • Tujuan Pembelajaran | Pemula | 1-2 jam |
 | [📚 01](../../Module01) | [Dasar-dasar EdgeAI](./Module01/README.md) | Perbandingan Cloud vs Edge AI | Dasar-dasar EdgeAI • Studi Kasus Dunia Nyata • Panduan Implementasi • Penerapan Edge | Pemula | 3-4 jam |
 | [🧠 02](../../Module02) | [Dasar Model SLM](./Module02/README.md) | Keluarga model & arsitektur | Keluarga Phi • Keluarga Qwen • Keluarga Gemma • BitNET • μModel • Phi-Silica | Pemula | 4-5 jam |
 | [🚀 03](../../Module03) | [Praktik Penerapan SLM](./Module03/README.md) | Penerapan lokal & cloud | Pembelajaran Lanjutan • Lingkungan Lokal • Penerapan Cloud | Menengah | 4-5 jam |
@@ -105,7 +106,7 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - [07: Klien API Langsung](./Module08/samples/07/README.md)
 - [08: Aplikasi Chat Windows 11](./Module08/samples/08/README.md)
 - [09: Sistem Multi-Agen Lanjutan](./Module08/samples/09/README.md)
-- [10: Kerangka Kerja Foundry Tools](./Module08/samples/10/README.md)
+- [10: Kerangka Kerja Alat Foundry](./Module08/samples/10/README.md)
 
 ### 📊 **Ringkasan Jalur Pembelajaran**
 - **Total Durasi**: 36-45 jam
@@ -117,7 +118,7 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 ## Apa yang Akan Anda Bangun
 
 ### 🎯 Kompetensi Inti
-- **Arsitektur Edge AI**: Merancang sistem AI yang berorientasi lokal dengan integrasi cloud
+- **Arsitektur Edge AI**: Merancang sistem AI lokal dengan integrasi cloud
 - **Optimasi Model**: Kuantisasi dan kompresi model untuk penerapan di edge (peningkatan kecepatan 85%, pengurangan ukuran 75%)
 - **Penerapan Multi-Platform**: Windows, seluler, tertanam, dan sistem hybrid cloud-edge
 - **Operasi Produksi**: Pemantauan, penskalaan, dan pemeliharaan AI edge dalam produksi
@@ -137,24 +138,27 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 
 **Jalur Pembelajaran yang Direkomendasikan** (total 20-30 jam):
 
+0. **📖 Pengantar** ([Introduction.md](./introduction.md)): Dasar EdgeAI + konteks industri + kerangka pembelajaran
 1. **📚 Dasar** (Modul 01-02): Konsep EdgeAI + keluarga model SLM
 2. **⚙️ Optimasi** (Modul 03-04): Penerapan + kerangka kuantisasi  
-3. **🚀 Produksi** (Modul 05-06): SLMOps + agen AI + pemanggilan fungsi
-4. **💻 Implementasi** (Modul 07-08): Contoh platform + toolkit Foundry Lokal
+3. **🚀 Produksi** (Modul 05-06): SLMOps + Agen AI + Pemanggilan fungsi  
+4. **💻 Implementasi** (Modul 07-08): Contoh platform + Toolkit Foundry Local  
 
 Setiap modul mencakup teori, latihan langsung, dan contoh kode siap produksi.
 
-## Dampak Karir
-**Peran Teknis**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer
+## Dampak Karier
 
-**Sektor Industri**: Manufaktur 4.0 • Teknologi Kesehatan • Sistem Otonom • FinTech • Elektronik Konsumen
+**Peran Teknis**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer  
 
-**Proyek Portofolio**: Sistem multi-agen • Aplikasi RAG produksi • Deployment lintas platform • Optimisasi performa
+**Sektor Industri**: Manufaktur 4.0 • Teknologi Kesehatan • Sistem Otonom • FinTech • Elektronik Konsumen  
+
+**Proyek Portofolio**: Sistem multi-agen • Aplikasi RAG produksi • Deployment lintas platform • Optimisasi kinerja  
 
 ## Struktur Repository
 
 ```
 edgeai-for-beginners/
+├── 📖 introduction.md  # Foundation: EdgeAI Overview & Learning Framework
 ├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
@@ -170,35 +174,35 @@ edgeai-for-beginners/
 ✅ **Pembelajaran Progresif**: Teori → Praktik → Deployment produksi  
 ✅ **Studi Kasus Nyata**: Microsoft, Japan Airlines, implementasi perusahaan  
 ✅ **Contoh Praktis**: 50+ contoh, 10 demo Foundry Local yang komprehensif  
-✅ **Fokus Performa**: Peningkatan kecepatan hingga 85%, pengurangan ukuran hingga 75%  
-✅ **Multi-Platform**: Windows, mobile, embedded, cloud-edge hybrid  
-✅ **Siap Produksi**: Pemantauan, skalabilitas, keamanan, kerangka kerja kepatuhan
+✅ **Fokus Kinerja**: Peningkatan kecepatan 85%, pengurangan ukuran 75%  
+✅ **Multi-Platform**: Windows, mobile, embedded, hybrid cloud-edge  
+✅ **Siap Produksi**: Pemantauan, penskalaan, keamanan, kerangka kerja kepatuhan  
 
 📖 **[Panduan Belajar Tersedia](STUDY_GUIDE.md)**: Jalur pembelajaran terstruktur selama 20 jam dengan panduan alokasi waktu dan alat penilaian mandiri.
 
 ---
 
-**EdgeAI adalah masa depan deployment AI**: lokal terlebih dahulu, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun aplikasi cerdas generasi berikutnya.
+**EdgeAI mewakili masa depan penerapan AI**: lokal-pertama, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun generasi berikutnya dari aplikasi cerdas.
 
 ## Kursus Lainnya
 
-Tim kami juga menyediakan kursus lainnya! Lihat:
+Tim kami juga membuat kursus lainnya! Lihat:
 
-- [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents Untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI untuk Pemula menggunakan .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI untuk Pemula menggunakan JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI untuk Pemula](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML untuk Pemula](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Menguasai GitHub Copilot untuk Pemrograman AI Berpasangan](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)  
+- [Agen AI untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI untuk Pemula menggunakan .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI untuk Pemula menggunakan JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
+- [Generative AI untuk Pemula](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [ML untuk Pemula](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
+- [Pengembangan Web untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Menguasai GitHub Copilot untuk Pemrograman Berpasangan AI](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+- [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
 ---
 
