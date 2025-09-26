@@ -1,6 +1,6 @@
-# Foundry Local on Windows (Validated)
+# Foundry Local on Windows & Mac
 
-This guide helps you install, run, and integrate Microsoft Foundry Local on Windows. All steps and commands are validated against Microsoft Learn docs.
+This guide helps you install, run, and integrate Microsoft Foundry Local on Windows and Mac. All steps and commands are validated against Microsoft Learn docs.
 
 - Get Started: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architecture: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -22,6 +22,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Version check:
 ```cmd
 foundry --version
+```
+     
+**Install / Mac**
+
+**MacOS**: 
+Open a terminal and run the following command:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI Basics (Three Categories)
