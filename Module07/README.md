@@ -51,7 +51,7 @@ The Azure EdgeAI implementation excels in scenarios requiring enterprise-grade A
 
 **Learn More**: [Azure EdgeAI SLM Engine](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
-## 4. EdgeAI with Windows ML
+## [4. EdgeAI with Windows ML](./windowdeveloper.md)
 
 Windows ML represents Microsoft's cutting-edge runtime optimized for performant on-device model inference and simplified deployment, serving as the foundation of Windows AI Foundry. This platform enables developers to create AI-powered Windows applications that leverage the full spectrum of PC hardware.
 
@@ -66,11 +66,11 @@ Windows ML abstracts the hardware and execution providers, so you can focus on w
 
 **Learn More**: 
 - [Windows ML Overview](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
-- [Windows EdgeAI Development Guide](../windowdeveloper.md) - Comprehensive guide for Windows Edge AI development
+- [Windows EdgeAI Development Guide](./windowdeveloper.md) - Comprehensive guide for Windows Edge AI development
 
-## 5. EdgeAI with Foundry Local Applications
+## [5. EdgeAI with Foundry Local Applications](./foundrylocal.md)
 
-Foundry Local enables developers to build Retrieval Augmented Generation (RAG) applications using local resources in .NET, combining local language models with semantic search capabilities. This approach provides privacy-focused AI solutions that operate entirely on local infrastructure.
+Foundry Local enables Windows and Mac developers to build Retrieval Augmented Generation (RAG) applications using local resources in .NET, combining local language models with semantic search capabilities. This approach provides privacy-focused AI solutions that operate entirely on local infrastructure.
 
 ### Technical Architecture
 - Combines the Phi language model, Local Embeddings, and Semantic Kernel to create a RAG scenario
@@ -81,7 +81,9 @@ Foundry Local enables developers to build Retrieval Augmented Generation (RAG) a
 ### Implementation Benefits
 RAG, or Retrieval Augmented Generation, is just a fancy way of saying "look up some stuff and put it into the prompt". This local implementation ensures data privacy while providing intelligent responses grounded in custom knowledge bases. The approach is particularly valuable for enterprise scenarios requiring data sovereignty and offline operation capabilities.
 
-**Learn More**: [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+**Learn More**: 
+- [Foundry Local](./foundrylocal.md)
+- [Foundry Local RAG Samples](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Windows Foundry Local
 
@@ -139,10 +141,10 @@ This guide covers:
 - Hardware optimization strategies for Windows devices
 - Practical implementation examples and best practices
 
-### AI Toolkit for Edge AI Development
+### [AI Toolkit for Edge AI Development](./aitoolkit.md)
 For developers using Visual Studio Code, the AI Toolkit extension provides a comprehensive development environment specifically designed for building, testing, and deploying Edge AI applications. This toolkit streamlines the entire Edge AI development workflow within VS Code.
 
-**Development Guide**: [AI Toolkit for Edge AI Development](../aitoolkit.md)
+**Development Guide**: [AI Toolkit for Edge AI Development](./aitoolkit.md)
 
 The AI Toolkit guide covers:
 - Model discovery and selection for edge deployment
