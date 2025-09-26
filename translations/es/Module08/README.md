@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T11:33:06+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:14:02+00:00",
   "source_file": "Module08/README.md",
   "language_code": "es"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Resumen
 
-Microsoft Foundry Local representa la próxima generación en desarrollo de IA en el borde, proporcionando herramientas poderosas para que los desarrolladores construyan, implementen y escalen aplicaciones de IA localmente, manteniendo una integración fluida con Azure AI Foundry. Este módulo ofrece una cobertura completa de Foundry Local, desde la instalación hasta el desarrollo avanzado de agentes.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa la próxima generación en desarrollo de IA en el borde, proporcionando herramientas poderosas para que los desarrolladores construyan, implementen y escalen aplicaciones de IA localmente, manteniendo una integración fluida con Azure AI Foundry. Este módulo ofrece una cobertura completa de Foundry Local, desde la instalación hasta el desarrollo avanzado de agentes.
 
 **Tecnologías Clave:**
 - CLI y SDK de Microsoft Foundry Local
@@ -31,14 +31,14 @@ Al completar este módulo, podrás:
 - **Desarrollar Agentes de IA**: Construir agentes inteligentes con capacidades de grounding y orquestación
 - **Implementar Patrones Empresariales**: Crear soluciones de IA modulares y escalables para despliegues en producción
 
-## Estructura de la Sesión
+## Estructura de las Sesiones
 
 ### [1: Introducción a Foundry Local](./01.FoundryLocalSetup.md)
 **Enfoque**: Instalación, configuración de CLI, implementación de modelos y optimización de hardware
 
-**Temas Clave**: Instalación completa • Comandos CLI • Caché de modelos • Aceleración de hardware • Implementación de múltiples modelos
+**Temas Clave**: Instalación completa • Comandos CLI • Caché de modelos • Aceleración de hardware • Despliegue de múltiples modelos
 
-**Ejemplo**: [Inicio Rápido REST Chat](./samples/01/README.md) • [Integración SDK OpenAI](./samples/02/README.md) • [Descubrimiento y Benchmarking de Modelos](./samples/03/README.md)
+**Ejemplo**: [Inicio Rápido REST Chat](./samples/01/README.md) • [Integración con OpenAI SDK](./samples/02/README.md) • [Descubrimiento y Benchmarking de Modelos](./samples/03/README.md)
 
 **Duración**: 2-3 horas | **Nivel**: Principiante
 
@@ -69,7 +69,7 @@ Al completar este módulo, podrás:
 ### [4: Explorar Modelos de Vanguardia](./04.CuttingEdgeModels.md)
 **Enfoque**: Comparación entre LLMs y SLMs, implementación de EdgeAI y demos avanzados
 
-**Temas Clave**: Comparación de modelos • Inferencia en el borde vs en la nube • Phi + ONNX Runtime • Aplicación RAG con Chainlit • Optimización WebGPU
+**Temas Clave**: Comparación de modelos • Inferencia en el borde vs en la nube • Phi + ONNX Runtime • Aplicación RAG con Chainlit • Optimización con WebGPU
 
 **Ejemplo**: [Router de Modelos como Herramientas](./samples/06/README.md)
 
@@ -89,7 +89,7 @@ Al completar este módulo, podrás:
 ---
 
 ### [6: Foundry Local - Modelos como Herramientas](./06.ModelsAsTools.md)
-**Enfoque**: Soluciones modulares de IA, escalabilidad empresarial y patrones de producción
+**Enfoque**: Soluciones de IA modulares, escalabilidad empresarial y patrones de producción
 
 **Temas Clave**: Modelos como herramientas • Despliegue en el dispositivo • Integración SDK/API • Arquitecturas empresariales • Estrategias de escalabilidad
 
@@ -111,7 +111,7 @@ Al completar este módulo, podrás:
 ---
 
 ### [8: Aplicación Nativa de Chat en Windows 11](./samples/08/README.md)
-**Enfoque**: Construcción de aplicaciones modernas de chat nativo con integración Foundry Local
+**Enfoque**: Construcción de aplicaciones modernas de chat nativas con integración de Foundry Local
 
 **Temas Clave**: Desarrollo con Electron • Fluent Design System • Integración nativa en Windows • Streaming en tiempo real • Diseño de interfaz de chat
 
@@ -160,7 +160,7 @@ Al completar este módulo, podrás:
 ### Conocimientos Previos
 - Comprensión básica de conceptos de IA/ML
 - Familiaridad con la línea de comandos
-- Conocimientos básicos de programación en Python
+- Fundamentos de programación en Python
 - Conceptos de REST API
 - Conocimientos básicos de prompts e inferencia de modelos
 
@@ -170,7 +170,7 @@ Al completar este módulo, podrás:
 
 | Sesión | Área de Enfoque | Ejemplos | Tiempo | Complejidad |
 |--------|-----------------|----------|--------|-------------|
-|  1 | Configuración y Conceptos Básicos | 01, 02, 03 | 2-3 horas | Principiante |
+|  1 | Configuración y Básicos | 01, 02, 03 | 2-3 horas | Principiante |
 |  2 | Soluciones de IA | 04 | 2-3 horas | Intermedio |
 |  3 | Open Source | 05 | 2-3 horas | Intermedio |
 |  4 | Modelos Avanzados | 06 | 3-4 horas | Avanzado |
@@ -211,7 +211,7 @@ Al completar este módulo, estarás preparado para:
 ### Capacidades de Innovación
 - **Prototipado Rápido**: Construir y probar conceptos de aplicaciones de IA rápidamente utilizando los 10 patrones de ejemplo
 - **Integración Comunitaria**: Aprovechar modelos open-source y contribuir al ecosistema
-- **Patrones Avanzados**: Implementar patrones de IA de vanguardia como RAG, agentes e integración de herramientas
+- **Patrones Avanzados**: Implementar patrones de IA de vanguardia, incluyendo RAG, agentes e integración de herramientas
 - **Dominio de Frameworks**: Integración experta con LangChain, Semantic Kernel, Chainlit y Electron
 - **Despliegue en Producción**: Implementar soluciones de IA escalables desde prototipos locales hasta sistemas empresariales
 - **Desarrollo Preparado para el Futuro**: Construir aplicaciones listas para tecnologías y patrones emergentes de IA
@@ -229,8 +229,8 @@ Rastrea tu progreso a través de los 10 ejemplos completos:
 
 ### Nivel Básico (Ejemplos 01-03)
 - [ ] Instalar y configurar Foundry Local exitosamente
-- [ ] Completar la integración REST API (Ejemplo 01)
-- [ ] Implementar compatibilidad con SDK OpenAI (Ejemplo 02)
+- [ ] Completar la integración con REST API (Ejemplo 01)
+- [ ] Implementar compatibilidad con OpenAI SDK (Ejemplo 02)
 - [ ] Realizar descubrimiento y benchmarking de modelos (Ejemplo 03)
 
 ### Nivel de Aplicación (Ejemplos 04-06)
@@ -252,7 +252,7 @@ Rastrea tu progreso a través de los 10 ejemplos completos:
 - [ ] Contribuir mejoras o extensiones al código de ejemplo
 - [ ] Integrar patrones de Foundry Local en proyectos personales/profesionales
 
-## Guía Rápida - Los 10 Ejemplos
+## Guía Rápida - Todos los Ejemplos
 
 ### Configuración del Entorno (Requerido para Todos los Ejemplos)
 
@@ -275,7 +275,7 @@ foundry --version
 foundry model list
 ```
 
-### Ejemplos Fundamentales (01-06)
+### Ejemplos Básicos Fundamentales (01-06)
 
 **Ejemplo 01: Inicio Rápido REST Chat**
 ```powershell
@@ -286,7 +286,7 @@ foundry model run phi-4-mini
 python samples/01/chat_quickstart.py
 ```
 
-**Ejemplo 02: Integración SDK OpenAI**
+**Ejemplo 02: Integración con OpenAI SDK**
 ```powershell
 # Ensure model is running
 foundry status
@@ -416,7 +416,7 @@ python examples/langchain_demo.py
 
 ### Solución de Problemas Comunes
 
-**Errores de Conexión en Foundry Local**
+**Errores de Conexión con Foundry Local**
 ```powershell
 # Check service status
 foundry status
@@ -456,7 +456,7 @@ npm install
 ## Resumen
 Este módulo representa lo más avanzado en el desarrollo de IA en el borde, combinando las herramientas empresariales de Microsoft con la flexibilidad e innovación del ecosistema de código abierto. Al dominar Foundry Local a través de los 10 ejemplos completos, estarás en la vanguardia del desarrollo de aplicaciones de IA.
 
-**Ruta de aprendizaje completa:**
+**Ruta de Aprendizaje Completa:**
 - **Fundamentos** (Ejemplos 01-03): Integración de API y gestión de modelos
 - **Aplicaciones** (Ejemplos 04-06): RAG, agentes y enrutamiento inteligente
 - **Avanzado** (Ejemplos 07-10): Marcos de producción e integración empresarial

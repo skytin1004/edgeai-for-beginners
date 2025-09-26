@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T11:40:46+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:14:51+00:00",
   "source_file": "Module08/README.md",
   "language_code": "de"
 }
 -->
-# Modul 08: Praxis mit Microsoft Foundry Local - Komplettes Entwickler-Toolkit
+# Modul 08: Praktische Arbeit mit Microsoft Foundry Local - Komplettes Entwickler-Toolkit
 
 ## Überblick
 
-Microsoft Foundry Local repräsentiert die nächste Generation der Edge-AI-Entwicklung und bietet Entwicklern leistungsstarke Werkzeuge, um KI-Anwendungen lokal zu erstellen, bereitzustellen und zu skalieren, während eine nahtlose Integration mit Azure AI Foundry gewährleistet wird. Dieses Modul bietet eine umfassende Einführung in Foundry Local, von der Installation bis hin zur Entwicklung fortschrittlicher Agenten.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) repräsentiert die nächste Generation der Edge-AI-Entwicklung und bietet Entwicklern leistungsstarke Werkzeuge, um KI-Anwendungen lokal zu erstellen, bereitzustellen und zu skalieren, während eine nahtlose Integration mit Azure AI Foundry erhalten bleibt. Dieses Modul bietet eine umfassende Einführung in Foundry Local, von der Installation bis hin zur Entwicklung fortschrittlicher Agenten.
 
 **Wichtige Technologien:**
 - Microsoft Foundry Local CLI und SDK
@@ -22,19 +22,19 @@ Microsoft Foundry Local repräsentiert die nächste Generation der Edge-AI-Entwi
 
 ## Lernziele
 
-Nach Abschluss dieses Moduls wirst du:
+Nach Abschluss dieses Moduls werden Sie:
 
 - **Foundry Local meistern**: Installation, Konfiguration und Optimierung für die Entwicklung unter Windows 11
 - **Vielfältige Modelle bereitstellen**: Phi-, Qwen-, Deepseek- und GPT-Modelle lokal mit CLI-Befehlen ausführen
 - **Produktionslösungen erstellen**: KI-Anwendungen mit fortschrittlichem Prompt-Engineering und Datenintegration entwickeln
 - **Open-Source-Ökosystem nutzen**: Hugging Face-Modelle und Community-Beiträge integrieren
-- **KI-Agenten entwickeln**: Intelligente Agenten mit Grounding- und Orchestrierungsfähigkeiten erstellen
-- **Enterprise-Muster implementieren**: Modulare, skalierbare KI-Lösungen für den Produktionseinsatz entwickeln
+- **KI-Agenten entwickeln**: Intelligente Agenten mit Grounding- und Orchestrierungsfunktionen erstellen
+- **Enterprise-Muster implementieren**: Modulare, skalierbare KI-Lösungen für die Produktionsbereitstellung entwickeln
 
 ## Sitzungsstruktur
 
 ### [1: Einstieg in Foundry Local](./01.FoundryLocalSetup.md)
-**Schwerpunkt**: Installation, CLI-Setup, Modellbereitstellung und Hardware-Optimierung
+**Schwerpunkt**: Installation, CLI-Einrichtung, Modellbereitstellung und Hardware-Optimierung
 
 **Wichtige Themen**: Vollständige Installation • CLI-Befehle • Modell-Caching • Hardware-Beschleunigung • Multi-Modell-Bereitstellung
 
@@ -55,7 +55,7 @@ Nach Abschluss dieses Moduls wirst du:
 
 ---
 
-### [3: Open-Source-Modelle mit Foundry Local](./03.OpenSourceModels.md)
+### [3: Open-Source-Modelle in Foundry Local](./03.OpenSourceModels.md)
 **Schwerpunkt**: Hugging Face-Integration, BYOM-Strategien und Community-Modelle
 
 **Wichtige Themen**: Hugging Face-Integration • Bring-your-own-model • Model Mondays Einblicke • Community-Beiträge • Modellauswahl
@@ -77,12 +77,12 @@ Nach Abschluss dieses Moduls wirst du:
 
 ---
 
-### [5: Schnelle Entwicklung KI-gestützter Agenten](./05.AIPoweredAgents.md)
+### [5: KI-gestützte Agenten schnell erstellen](./05.AIPoweredAgents.md)
 **Schwerpunkt**: Agentenarchitekturen, System-Prompts, Grounding und Orchestrierung
 
-**Wichtige Themen**: Agenten-Design-Muster • System-Prompt-Engineering • Grounding-Techniken • Multi-Agent-Systeme • Produktionsbereitstellung
+**Wichtige Themen**: Agenten-Design-Muster • System-Prompt-Engineering • Grounding-Techniken • Multi-Agenten-Systeme • Produktionsbereitstellung
 
-**Beispiele**: [Multi-Agent Orchestrierung](./samples/05/README.md) • [Fortgeschrittenes Multi-Agent-System](./samples/09/README.md)
+**Beispiele**: [Multi-Agent Orchestrierung](./samples/05/README.md) • [Fortgeschrittenes Multi-Agenten-System](./samples/09/README.md)
 
 **Dauer**: 3-4 Stunden | **Level**: Fortgeschritten
 
@@ -100,7 +100,7 @@ Nach Abschluss dieses Moduls wirst du:
 ---
 
 ### [7: Direkte API-Integrationsmuster](./samples/07/README.md)
-**Schwerpunkt**: Pure REST-API-Integration ohne SDK-Abhängigkeiten für maximale Kontrolle
+**Schwerpunkt**: Pure REST API-Integration ohne SDK-Abhängigkeiten für maximale Kontrolle
 
 **Wichtige Themen**: HTTP-Client-Implementierung • Benutzerdefinierte Authentifizierung • Modell-Gesundheitsüberwachung • Streaming-Antworten • Fehlerbehandlung in der Produktion
 
@@ -121,21 +121,21 @@ Nach Abschluss dieses Moduls wirst du:
 
 ---
 
-### [9: Fortgeschrittene Multi-Agent-Orchestrierung](./samples/09/README.md)
+### [9: Fortgeschrittene Multi-Agenten-Orchestrierung](./samples/09/README.md)
 **Schwerpunkt**: Komplexe Agentenkoordination, spezialisierte Aufgabenverteilung und kollaborative KI-Workflows
 
-**Wichtige Themen**: Intelligente Agentenkoordination • Funktionsaufruf-Muster • Kommunikation zwischen Agenten • Workflow-Orchestrierung • Qualitätssicherungsmechanismen
+**Wichtige Themen**: Intelligente Agentenkoordination • Funktionsaufrufmuster • Kommunikation zwischen Agenten • Workflow-Orchestrierung • Qualitätssicherungsmechanismen
 
-**Beispiel**: [Fortgeschrittenes Multi-Agent-System](./samples/09/README.md)
+**Beispiel**: [Fortgeschrittenes Multi-Agenten-System](./samples/09/README.md)
 
 **Dauer**: 4-5 Stunden | **Level**: Experte
 
 ---
 
-### [10: Foundry Local als Tools-Framework](./samples/10/README.md)
-**Schwerpunkt**: Tool-zentrierte Architektur zur Integration von Foundry Local in bestehende Anwendungen und Frameworks
+### [10: Foundry Local als Tools Framework](./samples/10/README.md)
+**Schwerpunkt**: Tool-First-Architektur zur Integration von Foundry Local in bestehende Anwendungen und Frameworks
 
-**Wichtige Themen**: LangChain-Integration • Semantic Kernel-Funktionen • REST-API-Frameworks • CLI-Tools • Jupyter-Integration • Produktionsbereitstellungsmuster
+**Wichtige Themen**: LangChain-Integration • Semantic Kernel-Funktionen • REST API-Frameworks • CLI-Tools • Jupyter-Integration • Produktionsbereitstellungsmuster
 
 **Beispiel**: [Foundry Tools Framework](./samples/10/README.md)
 
@@ -148,7 +148,7 @@ Nach Abschluss dieses Moduls wirst du:
 - **Speicher**: 16GB RAM (32GB empfohlen für größere Modelle)
 - **Speicherplatz**: 50GB freier Speicherplatz für Modell-Caching
 - **Hardware**: NPU-fähiges Gerät empfohlen (Copilot+ PC), GPU optional
-- **Netzwerk**: Hochgeschwindigkeitsinternet für den ersten Modell-Download
+- **Netzwerk**: Hochgeschwindigkeitsinternet für anfängliche Modell-Downloads
 
 ### Entwicklungsumgebung
 - Visual Studio Code mit AI Toolkit-Erweiterung
@@ -161,7 +161,7 @@ Nach Abschluss dieses Moduls wirst du:
 - Grundlegendes Verständnis von KI/ML-Konzepten
 - Vertrautheit mit der Kommandozeile
 - Grundkenntnisse in Python-Programmierung
-- REST-API-Konzepte
+- REST API-Konzepte
 - Grundkenntnisse in Prompting und Modellinferenz
 
 ## Modul-Zeitplan
@@ -169,7 +169,7 @@ Nach Abschluss dieses Moduls wirst du:
 **Gesamte geschätzte Zeit**: 30-38 Stunden
 
 | Sitzung | Schwerpunkt | Beispiele | Zeit | Komplexität |
-|---------|-------------|-----------|------|-------------|
+|---------|-------------|-----------|------|------------|
 |  1 | Einrichtung & Grundlagen | 01, 02, 03 | 2-3 Stunden | Anfänger |
 |  2 | KI-Lösungen | 04 | 2-3 Stunden | Mittelstufe |
 |  3 | Open Source | 05 | 2-3 Stunden | Mittelstufe |
@@ -179,7 +179,7 @@ Nach Abschluss dieses Moduls wirst du:
 |  7 | Direkte API-Integration | 07 | 2-3 Stunden | Mittelstufe |
 |  8 | Windows 11 Chat-App | 08 | 3-4 Stunden | Fortgeschritten |
 |  9 | Fortgeschrittene Multi-Agenten | 09 | 4-5 Stunden | Experte |
-| 10 | Tools-Framework | 10 | 4-5 Stunden | Experte |
+| 10 | Tools Framework | 10 | 4-5 Stunden | Experte |
 
 ## Wichtige Ressourcen
 
@@ -194,7 +194,7 @@ Nach Abschluss dieses Moduls wirst du:
 
 ## Lernergebnisse
 
-Nach Abschluss dieses Moduls wirst du in der Lage sein:
+Nach Abschluss dieses Moduls sind Sie in der Lage:
 
 ### Technische Fähigkeiten
 - **Bereitstellen und Verwalten**: Foundry Local-Installationen in Entwicklungs- und Produktionsumgebungen
@@ -214,38 +214,38 @@ Nach Abschluss dieses Moduls wirst du in der Lage sein:
 - **Fortgeschrittene Muster**: Modernste KI-Muster wie RAG, Agenten und Tool-Integration implementieren
 - **Framework-Beherrschung**: Expertenintegration mit LangChain, Semantic Kernel, Chainlit und Electron
 - **Produktionsbereitstellung**: Skalierbare KI-Lösungen von lokalen Prototypen bis zu Unternehmenssystemen bereitstellen
-- **Zukunftssichere Entwicklung**: Anwendungen entwickeln, die für aufkommende KI-Technologien und Muster bereit sind
+- **Zukunftssichere Entwicklung**: Anwendungen erstellen, die für aufkommende KI-Technologien und Muster bereit sind
 
 ## Erste Schritte
 
-1. **Umgebung einrichten**: Stelle sicher, dass Windows 11 mit empfohlener Hardware vorhanden ist (siehe Voraussetzungen)
-2. **Foundry Local installieren**: Folge Sitzung 1 für vollständige Installation und Konfiguration
-3. **Beispiel 01 ausführen**: Beginne mit der grundlegenden REST-API-Integration, um die Einrichtung zu überprüfen
-4. **Fortschritt durch Beispiele**: Schließe die Beispiele 01-10 ab, um umfassende Kenntnisse zu erlangen
+1. **Umgebung einrichten**: Stellen Sie sicher, dass Windows 11 mit empfohlener Hardware vorhanden ist (siehe Voraussetzungen)
+2. **Foundry Local installieren**: Folgen Sie Sitzung 1 für vollständige Installation und Konfiguration
+3. **Beispiel 01 ausführen**: Beginnen Sie mit der grundlegenden REST API-Integration, um die Einrichtung zu überprüfen
+4. **Beispiele durchgehen**: Schließen Sie die Beispiele 01-10 für umfassende Beherrschung ab
 
 ## Erfolgskriterien
 
-Verfolge deinen Fortschritt durch alle 10 umfassenden Beispiele:
+Verfolgen Sie Ihren Fortschritt durch alle 10 umfassenden Beispiele:
 
 ### Grundlagen-Level (Beispiele 01-03)
 - [ ] Foundry Local erfolgreich installieren und konfigurieren
-- [ ] REST-API-Integration abschließen (Beispiel 01)
+- [ ] REST API-Integration abschließen (Beispiel 01)
 - [ ] OpenAI SDK-Kompatibilität implementieren (Beispiel 02)
 - [ ] Modellentdeckung und Benchmarking durchführen (Beispiel 03)
 
 ### Anwendungs-Level (Beispiele 04-06)
 - [ ] Mindestens 4 verschiedene Modellfamilien bereitstellen und ausführen
 - [ ] Funktionale RAG-Chat-Anwendung erstellen (Beispiel 04)
-- [ ] Multi-Agent-Orchestrierungssystem erstellen (Beispiel 05)
+- [ ] Multi-Agenten-Orchestrierungssystem erstellen (Beispiel 05)
 - [ ] Intelligentes Modell-Routing implementieren (Beispiel 06)
 
 ### Fortgeschrittenes Integrations-Level (Beispiele 07-10)
 - [ ] Produktionsreife API-Clients erstellen (Beispiel 07)
 - [ ] Windows 11 native Chat-Anwendung entwickeln (Beispiel 08)
-- [ ] Fortgeschrittenes Multi-Agent-System implementieren (Beispiel 09)
+- [ ] Fortgeschrittenes Multi-Agenten-System implementieren (Beispiel 09)
 - [ ] Umfassendes Tools-Framework erstellen (Beispiel 10)
 
-### Meisterschaftsindikatoren
+### Beherrschungsindikatoren
 - [ ] Alle 10 Beispiele erfolgreich ohne Fehler ausführen
 - [ ] Mindestens 3 Beispiele für spezifische Anwendungsfälle anpassen
 - [ ] Mindestens 2 Beispiele in produktionsähnlichen Umgebungen bereitstellen
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Beispiel 04: Chainlit RAG-Anwendung**
+**Beispiel 04: Chainlit RAG Anwendung**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -316,7 +316,7 @@ chainlit run samples/04/app.py -w
 # Opens browser at http://localhost:8000
 ```
 
-**Beispiel 05: Multi-Agent-Orchestrierung**
+**Beispiel 05: Multi-Agenten-Orchestrierung**
 ```powershell
 # Run agent coordinator demo
 python -m samples.05.agents.coordinator
@@ -371,7 +371,7 @@ npm start
 npm run build
 ```
 
-**Beispiel 09: Fortgeschrittenes Multi-Agent-System**
+**Beispiel 09: Fortgeschrittenes Multi-Agenten-System**
 ```powershell
 # Navigate to sample directory
 cd samples/09

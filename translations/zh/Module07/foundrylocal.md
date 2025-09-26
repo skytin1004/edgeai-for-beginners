@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T11:49:36+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:19:44+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "zh"
 }
 -->
-# Foundry Local 在 Windows 上的使用指南（已验证）
+# Foundry Local 在 Windows 和 Mac 上的使用指南
 
-本指南帮助您在 Windows 上安装、运行和集成 Microsoft Foundry Local。所有步骤和命令均已根据 Microsoft Learn 文档验证。
+本指南帮助您在 Windows 和 Mac 上安装、运行和集成 Microsoft Foundry Local。所有步骤和命令均已根据 Microsoft Learn 文档验证。
 
 - 入门指南: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - 架构概述: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - 版本检查:
 ```cmd
 foundry --version
+```
+     
+**安装 / Mac**
+
+**MacOS**: 
+打开终端并运行以下命令:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI 基础知识（三大类别）
@@ -54,7 +63,7 @@ foundry cache list
 ```
 
 注意事项:
-- 服务提供了一个兼容 OpenAI 的 REST API。端口是动态分配的，可使用 `foundry service status` 来查询。
+- 服务提供了一个兼容 OpenAI 的 REST API。端口是动态分配的；使用 `foundry service status` 来查询端口。
 - 推荐使用 SDKs，它们会自动处理端点发现（在支持的情况下）。
 
 ## 3) 查询本地端点（动态端口）
@@ -80,7 +89,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 PY
 ```
-参考资料:
+参考:
 - SDK 集成: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
 ## 5) 自定义模型（使用 Olive 编译）

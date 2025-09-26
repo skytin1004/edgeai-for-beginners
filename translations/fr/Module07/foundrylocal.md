@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T12:28:49+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:13:07+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fr"
 }
 -->
-# Foundry Local sur Windows (Validé)
+# Foundry Local sur Windows et Mac
 
-Ce guide vous aide à installer, exécuter et intégrer Microsoft Foundry Local sur Windows. Toutes les étapes et commandes ont été validées selon la documentation Microsoft Learn.
+Ce guide vous aide à installer, exécuter et intégrer Microsoft Foundry Local sur Windows et Mac. Toutes les étapes et commandes sont validées selon la documentation Microsoft Learn.
 
 - Commencer : https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architecture : https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Vérifier la version :
 ```cmd
 foundry --version
+```
+     
+**Installer / Mac**
+
+**MacOS** : 
+Ouvrez un terminal et exécutez la commande suivante :
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Bases de la CLI (Trois catégories)
@@ -54,7 +63,7 @@ foundry cache list
 ```
 
 Notes :
-- Le service expose une API REST compatible OpenAI. Le port de l'endpoint est attribué dynamiquement ; utilisez `foundry service status` pour le découvrir.
+- Le service expose une API REST compatible avec OpenAI. Le port de l'endpoint est attribué dynamiquement ; utilisez `foundry service status` pour le découvrir.
 - Utilisez les SDKs pour plus de commodité ; ils gèrent automatiquement la découverte des endpoints là où c'est pris en charge.
 
 ## 3) Découvrir l'endpoint local (Port dynamique)
@@ -96,7 +105,7 @@ foundry model run llama-3.2 --verbose
 Docs :
 - Compilation BYOM : https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) Résolution des problèmes
+## 6) Dépannage
 
 - Vérifiez le statut du service et les journaux :
 ```cmd
@@ -114,7 +123,7 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Expérience de développement liée à Windows
+## 7) Expérience développeur liée à Windows
 
 - Choix entre AI local et cloud sur Windows, y compris Foundry Local et Windows ML :
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers

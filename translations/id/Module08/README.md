@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T00:40:23+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:49:08+00:00",
   "source_file": "Module08/README.md",
   "language_code": "id"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Ikhtisar
 
-Microsoft Foundry Local adalah generasi terbaru pengembangan AI di edge, memberikan alat yang kuat bagi pengembang untuk membangun, menerapkan, dan mengembangkan aplikasi AI secara lokal sambil tetap terintegrasi dengan Azure AI Foundry. Modul ini mencakup Foundry Local secara menyeluruh, mulai dari instalasi hingga pengembangan agen tingkat lanjut.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) adalah generasi terbaru pengembangan AI di perangkat edge, memberikan alat yang kuat bagi pengembang untuk membangun, menerapkan, dan meningkatkan aplikasi AI secara lokal sambil tetap terintegrasi dengan Azure AI Foundry. Modul ini mencakup Foundry Local secara menyeluruh, mulai dari instalasi hingga pengembangan agen tingkat lanjut.
 
 **Teknologi Utama:**
 - Microsoft Foundry Local CLI dan SDK
@@ -24,12 +24,12 @@ Microsoft Foundry Local adalah generasi terbaru pengembangan AI di edge, memberi
 
 Dengan menyelesaikan modul ini, Anda akan:
 
-- **Menguasai Foundry Local**: Instal, konfigurasi, dan optimalkan untuk pengembangan di Windows 11
-- **Menerapkan Beragam Model**: Jalankan model phi, qwen, deepseek, dan GPT secara lokal dengan perintah CLI
-- **Membangun Solusi Produksi**: Buat aplikasi AI dengan teknik prompt engineering dan integrasi data tingkat lanjut
-- **Memanfaatkan Ekosistem Open-Source**: Integrasikan model Hugging Face dan kontribusi komunitas
-- **Mengembangkan Agen AI**: Bangun agen cerdas dengan kemampuan grounding dan orkestrasi
-- **Menerapkan Pola Perusahaan**: Ciptakan solusi AI modular dan skalabel untuk penerapan produksi
+- **Menguasai Foundry Local**: Instalasi, konfigurasi, dan optimasi untuk pengembangan di Windows 11
+- **Menerapkan Berbagai Model**: Menjalankan model phi, qwen, deepseek, dan GPT secara lokal dengan perintah CLI
+- **Membangun Solusi Produksi**: Membuat aplikasi AI dengan teknik prompt engineering dan integrasi data tingkat lanjut
+- **Memanfaatkan Ekosistem Open-Source**: Mengintegrasikan model Hugging Face dan kontribusi komunitas
+- **Mengembangkan Agen AI**: Membangun agen cerdas dengan kemampuan grounding dan orkestrasi
+- **Menerapkan Pola Perusahaan**: Membuat solusi AI modular dan skalabel untuk penerapan produksi
 
 ## Struktur Sesi
 
@@ -58,7 +58,7 @@ Dengan menyelesaikan modul ini, Anda akan:
 ### [3: Model Open-Source di Foundry Local](./03.OpenSourceModels.md)
 **Fokus**: Integrasi Hugging Face, strategi BYOM, dan model komunitas
 
-**Topik Utama**: Integrasi HuggingFace • Bring-your-own-model • Wawasan Model Mondays • Kontribusi komunitas • Pemilihan model
+**Topik Utama**: Integrasi Hugging Face • Bring-your-own-model • Wawasan Model Mondays • Kontribusi komunitas • Pemilihan model
 
 **Contoh**: [Orkestrasi Multi-Agen](./samples/05/README.md)
 
@@ -69,15 +69,15 @@ Dengan menyelesaikan modul ini, Anda akan:
 ### [4: Eksplorasi Model Terkini](./04.CuttingEdgeModels.md)
 **Fokus**: LLM vs SLM, implementasi EdgeAI, dan demo tingkat lanjut
 
-**Topik Utama**: Perbandingan model • Inferensi di edge vs cloud • Phi + ONNX Runtime • Aplikasi Chainlit RAG • Optimasi WebGPU
+**Topik Utama**: Perbandingan model • Inferensi edge vs cloud • Phi + ONNX Runtime • Aplikasi Chainlit RAG • Optimasi WebGPU
 
-**Contoh**: [Router Models-as-Tools](./samples/06/README.md)
+**Contoh**: [Router Model-as-Tools](./samples/06/README.md)
 
 **Durasi**: 3-4 jam | **Tingkat**: Lanjutan
 
 ---
 
-### [5: Bangun Agen AI dengan Cepat](./05.AIPoweredAgents.md)
+### [5: Membangun Agen AI dengan Cepat](./05.AIPoweredAgents.md)
 **Fokus**: Arsitektur agen, sistem prompt, grounding, dan orkestrasi
 
 **Topik Utama**: Pola desain agen • Teknik prompt sistem • Teknik grounding • Sistem multi-agen • Penerapan produksi
@@ -93,7 +93,7 @@ Dengan menyelesaikan modul ini, Anda akan:
 
 **Topik Utama**: Model sebagai alat • Penerapan di perangkat • Integrasi SDK/API • Arsitektur perusahaan • Strategi skalabilitas
 
-**Contoh**: [Router Models-as-Tools](./samples/06/README.md) • [Kerangka Alat Foundry](./samples/10/README.md)
+**Contoh**: [Router Model-as-Tools](./samples/06/README.md) • [Kerangka Alat Foundry](./samples/10/README.md)
 
 **Durasi**: 3-4 jam | **Tingkat**: Ahli
 
@@ -102,7 +102,7 @@ Dengan menyelesaikan modul ini, Anda akan:
 ### [7: Pola Integrasi API Langsung](./samples/07/README.md)
 **Fokus**: Integrasi API REST murni tanpa ketergantungan SDK untuk kontrol maksimal
 
-**Topik Utama**: Implementasi klien HTTP • Autentikasi kustom • Pemantauan kesehatan model • Respon streaming • Penanganan kesalahan produksi
+**Topik Utama**: Implementasi klien HTTP • Autentikasi kustom • Pemantauan kesehatan model • Respon streaming • Penanganan error produksi
 
 **Contoh**: [Klien API Langsung](./samples/07/README.md)
 
@@ -161,7 +161,7 @@ Dengan menyelesaikan modul ini, Anda akan:
 - Pemahaman dasar tentang konsep AI/ML
 - Familiaritas dengan command line
 - Dasar-dasar pemrograman Python
-- Konsep REST API
+- Konsep API REST
 - Pengetahuan dasar tentang prompting dan inferensi model
 
 ## Garis Waktu Modul
@@ -186,7 +186,7 @@ Dengan menyelesaikan modul ini, Anda akan:
 **Dokumentasi Resmi:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Kode sumber dan contoh resmi
 - [Dokumentasi Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Panduan pengaturan dan penggunaan lengkap
-- [Seri Model Mondays](https://aka.ms/model-mondays) - Sorotan model mingguan dan tutorial
+- [Seri Model Mondays](https://aka.ms/model-mondays) - Sorotan dan tutorial model mingguan
 
 **Komunitas & Dukungan:**
 - [Diskusi Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Tanya jawab komunitas dan permintaan fitur
@@ -205,7 +205,7 @@ Setelah menyelesaikan modul ini, Anda akan mampu:
 ### Pemahaman Strategis
 - **Keputusan Arsitektur**: Membuat pilihan yang tepat antara penerapan lokal vs cloud
 - **Optimasi Kinerja**: Mengoptimalkan kinerja inferensi di berbagai konfigurasi perangkat keras
-- **Skalabilitas Perusahaan**: Merancang aplikasi yang dapat berkembang dari prototipe lokal ke penerapan perusahaan
+- **Skalabilitas Perusahaan**: Merancang aplikasi yang dapat diskalakan dari prototipe lokal hingga penerapan perusahaan
 - **Privasi dan Keamanan**: Mengimplementasikan solusi AI yang menjaga privasi dengan inferensi lokal
 
 ### Kemampuan Inovasi
@@ -213,7 +213,7 @@ Setelah menyelesaikan modul ini, Anda akan mampu:
 - **Integrasi Komunitas**: Memanfaatkan model open-source dan berkontribusi pada ekosistem
 - **Pola Lanjutan**: Mengimplementasikan pola AI terkini termasuk RAG, agen, dan integrasi alat
 - **Penguasaan Kerangka Kerja**: Integrasi tingkat ahli dengan LangChain, Semantic Kernel, Chainlit, dan Electron
-- **Penerapan Produksi**: Menerapkan solusi AI yang skalabel dari prototipe lokal ke sistem perusahaan
+- **Penerapan Produksi**: Menerapkan solusi AI yang skalabel dari prototipe lokal hingga sistem perusahaan
 - **Pengembangan Siap Masa Depan**: Membangun aplikasi yang siap untuk teknologi dan pola AI yang sedang berkembang
 
 ## Memulai
@@ -234,8 +234,8 @@ Lacak kemajuan Anda melalui semua 10 contoh komprehensif:
 - [ ] Melakukan penemuan dan benchmarking model (Contoh 03)
 
 ### Tingkat Aplikasi (Contoh 04-06)
-- [ ] Menerapkan dan menjalankan setidaknya 4 keluarga model yang berbeda
-- [ ] Membangun aplikasi chat RAG yang fungsional (Contoh 04)
+- [ ] Menerapkan dan menjalankan setidaknya 4 keluarga model berbeda
+- [ ] Membangun aplikasi chat RAG yang berfungsi (Contoh 04)
 - [ ] Membuat sistem orkestrasi multi-agen (Contoh 05)
 - [ ] Mengimplementasikan routing model cerdas (Contoh 06)
 
@@ -246,13 +246,13 @@ Lacak kemajuan Anda melalui semua 10 contoh komprehensif:
 - [ ] Membuat kerangka alat yang komprehensif (Contoh 10)
 
 ### Indikator Penguasaan
-- [ ] Berhasil menjalankan semua 10 contoh tanpa kesalahan
+- [ ] Berhasil menjalankan semua 10 contoh tanpa error
 - [ ] Menyesuaikan setidaknya 3 contoh untuk kasus penggunaan spesifik
 - [ ] Menerapkan 2+ contoh di lingkungan seperti produksi
 - [ ] Berkontribusi pada peningkatan atau ekstensi kode contoh
 - [ ] Mengintegrasikan pola Foundry Local ke dalam proyek pribadi/profesional
 
-## Panduan Memulai Cepat - Semua 10 Contoh
+## Panduan Cepat - Semua 10 Contoh
 
 ### Pengaturan Lingkungan (Diperlukan untuk Semua Contoh)
 
@@ -325,7 +325,7 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Contoh 06: Router Models-as-Tools**
+**Contoh 06: Router Model-as-Tools**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
@@ -416,7 +416,7 @@ python examples/langchain_demo.py
 
 ### Pemecahan Masalah Umum
 
-**Kesalahan Koneksi Foundry Local**
+**Error Koneksi Foundry Local**
 ```powershell
 # Check service status
 foundry status

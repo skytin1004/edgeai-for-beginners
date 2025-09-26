@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T12:59:01+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:14:39+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "de"
 }
 -->
-# Foundry Local auf Windows (Validiert)
+# Foundry Local auf Windows & Mac
 
-Diese Anleitung hilft Ihnen, Microsoft Foundry Local auf Windows zu installieren, auszuführen und zu integrieren. Alle Schritte und Befehle wurden mit den Microsoft Learn-Dokumenten validiert.
+Diese Anleitung hilft Ihnen, Microsoft Foundry Local auf Windows und Mac zu installieren, auszuführen und zu integrieren. Alle Schritte und Befehle wurden anhand der Microsoft Learn-Dokumentation validiert.
 
 - Erste Schritte: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architektur: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Versionsprüfung:
 ```cmd
 foundry --version
+```
+     
+**Installation / Mac**
+
+**MacOS**: 
+Öffnen Sie ein Terminal und führen Sie den folgenden Befehl aus:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) CLI-Grundlagen (Drei Kategorien)
@@ -65,7 +74,7 @@ foundry service status
 ```
 Verwenden Sie die gemeldete URL `http://localhost:<PORT>` als Ihre `base_url` mit OpenAI-kompatiblen Pfaden (zum Beispiel `/v1/chat/completions`).
 
-## 4) Schneller Test mit OpenAI Python SDK
+## 4) Schneller Test über OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -87,7 +96,7 @@ Referenzen:
 
 Falls Sie ein Modell benötigen, das nicht im Katalog enthalten ist, können Sie es mit Olive zu ONNX für Foundry Local kompilieren.
 
-Ablauf auf hoher Ebene (Details siehe Dokumentation):
+Ablauf auf hoher Ebene (siehe Dokumentation für Schritte):
 ```cmd
 foundry cache cd models
 foundry cache list

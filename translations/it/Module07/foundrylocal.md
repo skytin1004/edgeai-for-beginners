@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T18:35:50+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:35:19+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "it"
 }
 -->
-# Foundry Local su Windows (Validato)
+# Foundry Local su Windows e Mac
 
-Questa guida ti aiuta a installare, eseguire e integrare Microsoft Foundry Local su Windows. Tutti i passaggi e i comandi sono stati validati con la documentazione Microsoft Learn.
+Questa guida ti aiuta a installare, eseguire e integrare Microsoft Foundry Local su Windows e Mac. Tutti i passaggi e i comandi sono stati verificati con la documentazione di Microsoft Learn.
 
 - Introduzione: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architettura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -32,8 +32,17 @@ winget upgrade --id Microsoft.FoundryLocal
 ```cmd
 foundry --version
 ```
+     
+**Installazione / Mac**
 
-## 2) Basi CLI (Tre Categorie)
+**MacOS**: 
+Apri un terminale ed esegui il seguente comando:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
+```
+
+## 2) Nozioni di base sulla CLI (Tre Categorie)
 
 - Modello:
 ```cmd
@@ -116,7 +125,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Esperienza Sviluppatore su Windows Correlata
 
-- Scelte AI locale vs cloud su Windows, inclusi Foundry Local e Windows ML:
+- Scelte tra AI locale e cloud su Windows, inclusi Foundry Local e Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - Toolkit AI di VS Code con Foundry Local (usa `foundry service status` per ottenere l'URL dell'endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

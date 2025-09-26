@@ -1,22 +1,22 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T14:24:32+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:20:38+00:00",
   "source_file": "Module08/README.md",
   "language_code": "mo"
 }
 -->
-# 模組 08：深入了解 Microsoft Foundry Local - 完整開發者工具包
+# 模組 08：Microsoft Foundry Local 實作 - 完整開發者工具包
 
 ## 概述
 
-Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開發者強大的工具來本地化建構、部署及擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋 Foundry Local 的完整內容，從安裝到進階代理開發。
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) 代表了邊緣 AI 開發的下一代技術，提供開發者強大的工具來本地化建構、部署及擴展 AI 應用，同時保持與 Azure AI Foundry 的無縫整合。本模組涵蓋 Foundry Local 的完整內容，從安裝到進階代理開發。
 
 **核心技術：**
 - Microsoft Foundry Local CLI 和 SDK
 - Azure AI Foundry 整合
-- 裝置上的模型推理
+- 裝置上的模型推論
 - 本地模型快取與優化
 - 基於代理的架構
 
@@ -26,10 +26,10 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 
 - **精通 Foundry Local**：安裝、配置並優化 Windows 11 開發環境
 - **部署多樣化模型**：使用 CLI 命令本地運行 phi、qwen、deepseek 和 GPT 模型
-- **建構生產解決方案**：利用進階提示工程和數據整合創建 AI 應用
+- **建構生產解決方案**：透過進階提示工程和數據整合創建 AI 應用
 - **利用開源生態系統**：整合 Hugging Face 模型及社群貢獻
 - **開發 AI 代理**：建構具備基礎能力和編排功能的智能代理
-- **實施企業模式**：創建模組化、可擴展的 AI 解決方案以進行生產部署
+- **實現企業模式**：創建模組化、可擴展的 AI 解決方案以進行生產部署
 
 ## 課程結構
 
@@ -58,7 +58,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 ### [3: Foundry Local 的開源模型](./03.OpenSourceModels.md)
 **重點**：Hugging Face 整合、BYOM 策略及社群模型
 
-**核心主題**：Hugging Face 整合 • 自帶模型策略 • Model Mondays 洞察 • 社群貢獻 • 模型選擇
+**核心主題**：HuggingFace 整合 • 自帶模型策略 • Model Mondays 洞察 • 社群貢獻 • 模型選擇
 
 **範例**：[多代理編排](./samples/05/README.md)
 
@@ -67,9 +67,9 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 ---
 
 ### [4: 探索尖端模型](./04.CuttingEdgeModels.md)
-**重點**：LLM 與 SLM 比較、EdgeAI 實施及進階演示
+**重點**：LLM 與 SLM 比較、EdgeAI 實作及進階演示
 
-**核心主題**：模型比較 • 邊緣與雲端推理 • Phi + ONNX Runtime • Chainlit RAG 應用 • WebGPU 優化
+**核心主題**：模型比較 • 邊緣與雲端推論 • Phi + ONNX Runtime • Chainlit RAG 應用 • WebGPU 優化
 
 **範例**：[工具化模型路由器](./samples/06/README.md)
 
@@ -102,7 +102,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 ### [7: 直接 API 整合模式](./samples/07/README.md)
 **重點**：純 REST API 整合，無需 SDK 依賴，提供最大控制力
 
-**核心主題**：HTTP 客戶端實現 • 自定義身份驗證 • 模型健康監控 • 流式響應 • 生產錯誤處理
+**核心主題**：HTTP 客戶端實作 • 自訂身份驗證 • 模型健康監控 • 流式響應 • 生產錯誤處理
 
 **範例**：[直接 API 客戶端](./samples/07/README.md)
 
@@ -122,9 +122,9 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 ---
 
 ### [9: 進階多代理編排](./samples/09/README.md)
-**重點**：複雜代理協作、專業任務分配及協作式 AI 工作流程
+**重點**：複雜代理協調、專業任務分配及協作式 AI 工作流程
 
-**核心主題**：智能代理協作 • 函數調用模式 • 跨代理通信 • 工作流程編排 • 質量保證機制
+**核心主題**：智能代理協調 • 函數調用模式 • 跨代理通信 • 工作流程編排 • 品質保證機制
 
 **範例**：[進階多代理系統](./samples/09/README.md)
 
@@ -144,25 +144,25 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 ## 先決條件
 
 ### 系統需求
-- **作業系統**：Windows 11 (22H2 或更高版本)
-- **記憶體**：16GB RAM（建議 32GB 以支持更大模型）
-- **存儲**：50GB 可用空間以進行模型快取
-- **硬體**：建議使用具備 NPU 的設備（如 Copilot+ PC），GPU 可選
-- **網絡**：高速網絡以進行初始模型下載
+- **作業系統**：Windows 11 (22H2 或更新版本)
+- **記憶體**：16GB RAM（建議 32GB 用於較大模型）
+- **儲存空間**：50GB 可用空間用於模型快取
+- **硬體**：建議使用具備 NPU 的裝置（Copilot+ PC），GPU 可選
+- **網路**：高速網路以進行初始模型下載
 
 ### 開發環境
 - Visual Studio Code，安裝 AI Toolkit 擴展
 - Python 3.10+ 和 pip
 - Git 用於版本控制
-- PowerShell 或命令提示符
+- PowerShell 或命令提示字元
 - Azure CLI（可選，用於雲端整合）
 
 ### 知識需求
 - 基本 AI/ML 概念理解
-- 命令行操作熟悉
+- 命令列操作熟悉
 - Python 程式設計基礎
 - REST API 概念
-- 提示工程和模型推理的基本知識
+- 提示工程和模型推論的基本知識
 
 ## 模組時間表
 
@@ -188,7 +188,7 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 - [Azure AI Foundry 文件](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - 完整設置及使用指南
 - [Model Mondays 系列](https://aka.ms/model-mondays) - 每週模型亮點及教程
 
-**社群與支持：**
+**社群與支援：**
 - [Foundry Local 討論區](https://github.com/microsoft/Foundry-Local/discussions) - 社群問答及功能請求
 - [Microsoft AI 開發者社群](https://techcommunity.microsoft.com/category/artificialintelligence) - 最新消息及最佳實踐
 
@@ -200,54 +200,54 @@ Microsoft Foundry Local 代表了邊緣 AI 開發的下一代技術，提供開�
 - **部署與管理**：在開發及生產環境中安裝和管理 Foundry Local
 - **整合模型**：無縫使用 Microsoft、Hugging Face 和社群來源的多樣化模型
 - **建構應用**：創建具備進階功能及優化的生產級 AI 應用
-- **開發代理**：實現具備基礎能力、推理及工具整合的複雜 AI 代理
+- **開發代理**：實作具備基礎能力、推理及工具整合的複雜 AI 代理
 
 ### 策略理解
 - **架構決策**：在本地與雲端部署之間做出明智選擇
-- **性能優化**：在不同硬體配置中優化推理性能
+- **性能優化**：在不同硬體配置中優化推論性能
 - **企業擴展**：設計從本地原型到企業部署的可擴展應用
-- **隱私與安全**：實施隱私保護的 AI 解決方案，使用本地推理
+- **隱私與安全**：實現隱私保護的 AI 解決方案，使用本地推論
 
 ### 創新能力
 - **快速原型**：快速建構並測試 AI 應用概念，涵蓋所有 10 種範例模式
 - **社群整合**：利用開源模型並為生態系統做出貢獻
-- **進階模式**：實現尖端 AI 模式，包括 RAG、代理及工具整合
+- **進階模式**：實作尖端 AI 模式，包括 RAG、代理及工具整合
 - **框架精通**：專家級整合 LangChain、Semantic Kernel、Chainlit 和 Electron
 - **生產部署**：從本地原型到企業系統部署可擴展的 AI 解決方案
 - **未來準備開發**：建構適應新興 AI 技術及模式的應用
 
 ## 開始使用
 
-1. **環境設置**：確保使用 Windows 11 並符合建議硬體要求（參見先決條件）
+1. **環境設置**：確保使用建議硬體的 Windows 11（參見先決條件）
 2. **安裝 Foundry Local**：按照課程 1 完成完整安裝及配置
-3. **運行範例 01**：從基本 REST API 整合開始，驗證設置
-4. **完成範例**：依次完成範例 01-10，全面掌握技能
+3. **運行範例 01**：從基本 REST API 整合開始驗證設置
+4. **完成範例**：完成範例 01-10 以全面掌握技能
 
 ## 成功指標
 
-通過所有 10 個全面範例來追蹤您的進度：
+透過所有 10 個完整範例追蹤您的進度：
 
-### 基礎級別（範例 01-03）
+### 基礎層級（範例 01-03）
 - [ ] 成功安裝並配置 Foundry Local
 - [ ] 完成 REST API 整合（範例 01）
-- [ ] 實現 OpenAI SDK 兼容性（範例 02）
+- [ ] 實作 OpenAI SDK 相容性（範例 02）
 - [ ] 執行模型探索及基準測試（範例 03）
 
-### 應用級別（範例 04-06）
+### 應用層級（範例 04-06）
 - [ ] 部署並運行至少 4 種不同模型系列
 - [ ] 建構功能性 RAG 聊天應用（範例 04）
 - [ ] 創建多代理編排系統（範例 05）
-- [ ] 實現智能模型路由（範例 06）
+- [ ] 實作智能模型路由（範例 06）
 
-### 進階整合級別（範例 07-10）
+### 進階整合層級（範例 07-10）
 - [ ] 建構生產級 API 客戶端（範例 07）
 - [ ] 開發 Windows 11 原生聊天應用（範例 08）
-- [ ] 實現進階多代理系統（範例 09）
+- [ ] 實作進階多代理系統（範例 09）
 - [ ] 創建全面工具框架（範例 10）
 
 ### 精通指標
 - [ ] 成功運行所有 10 個範例且無錯誤
-- [ ] 為特定使用案例自定義至少 3 個範例
+- [ ] 為特定使用案例自訂至少 3 個範例
 - [ ] 在類生產環境中部署 2+ 範例
 - [ ] 為範例代碼做出改進或擴展
 - [ ] 將 Foundry Local 模式整合到個人/專業項目中
@@ -414,7 +414,7 @@ jupyter notebook examples/jupyter_notebook.ipynb
 python examples/langchain_demo.py
 ```
 
-### 常見問題排查
+### 常見問題排解
 
 **Foundry Local 連接錯誤**
 ```powershell
@@ -454,14 +454,14 @@ npm install
 ```
 
 ## 總結
-此模組代表了邊緣人工智慧開發的最前沿，結合了微軟企業級工具與開源生態系統的靈活性與創新性。透過掌握 Foundry Local 的全部 10 個綜合範例，您將站在人工智慧應用開發的最前線。
+此模組代表了邊緣人工智慧開發的最前沿，結合了微軟企業級工具與開源生態系統的靈活性與創新性。透過掌握 Foundry Local 的全部 10 個完整範例，您將站在人工智慧應用開發的最前端。
 
 **完整學習路徑：**
 - **基礎**（範例 01-03）：API 整合與模型管理
-- **應用**（範例 04-06）：RAG、代理和智能路由
+- **應用**（範例 04-06）：RAG、代理與智能路由
 - **進階**（範例 07-10）：生產框架與企業整合
 
-有關 Azure OpenAI 整合（第 2 節），請參閱各範例的 README 文件以了解所需的環境變數和 API 版本設定。
+有關 Azure OpenAI 整合（第二節），請參閱各範例的 README 文件以了解所需的環境變數和 API 版本設定。
 
 ---
 

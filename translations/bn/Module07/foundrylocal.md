@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T17:48:18+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:27:01+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "bn"
 }
 -->
-# Windows-এ Foundry Local (যাচাই করা হয়েছে)
+# Windows এবং Mac-এ Foundry Local
 
-এই গাইডটি আপনাকে Windows-এ Microsoft Foundry Local ইনস্টল, চালানো এবং ইন্টিগ্রেট করতে সাহায্য করবে। সমস্ত ধাপ এবং কমান্ড Microsoft Learn ডকুমেন্টেশনের সাথে যাচাই করা হয়েছে।
+এই গাইডটি আপনাকে Windows এবং Mac-এ Microsoft Foundry Local ইনস্টল, চালানো এবং ইন্টিগ্রেট করতে সাহায্য করবে। সমস্ত ধাপ এবং কমান্ড Microsoft Learn ডকুমেন্টেশনের সাথে যাচাই করা হয়েছে।
 
 - শুরু করুন: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - আর্কিটেকচার: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -32,6 +32,15 @@ winget upgrade --id Microsoft.FoundryLocal
 ```cmd
 foundry --version
 ```
+     
+**Mac-এ ইনস্টল করুন**
+
+**MacOS**: 
+একটি টার্মিনাল খুলুন এবং নিচের কমান্ডটি চালান:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
+```
 
 ## ২) CLI বেসিকস (তিনটি বিভাগ)
 
@@ -53,7 +62,7 @@ foundry cache --help
 foundry cache list
 ```
 
-মন্তব্য:
+নোট:
 - সার্ভিসটি একটি OpenAI-সামঞ্জস্যপূর্ণ REST API প্রকাশ করে। এন্ডপয়েন্ট পোর্টটি ডাইনামিকভাবে বরাদ্দ করা হয়; এটি খুঁজে পেতে `foundry service status` ব্যবহার করুন।
 - SDKs ব্যবহার করুন সুবিধার জন্য; এটি যেখানে সমর্থিত, এন্ডপয়েন্ট ডিসকভারি স্বয়ংক্রিয়ভাবে পরিচালনা করে।
 
@@ -63,9 +72,9 @@ Foundry Local প্রতিবার সার্ভিস শুরু হল
 ```cmd
 foundry service status
 ```
-প্রতিবেদন করা `http://localhost:<PORT>` ব্যবহার করুন আপনার `base_url` হিসেবে OpenAI-সামঞ্জস্যপূর্ণ পাথগুলির সাথে (যেমন, `/v1/chat/completions`)।
+প্রতিবেদনকৃত `http://localhost:<PORT>` কে OpenAI-সামঞ্জস্যপূর্ণ পাথের সাথে `base_url` হিসেবে ব্যবহার করুন (যেমন, `/v1/chat/completions`)।
 
-## ৪) OpenAI Python SDK দিয়ে দ্রুত পরীক্ষা
+## ৪) OpenAI Python SDK দিয়ে দ্রুত পরীক্ষা
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -83,20 +92,20 @@ PY
 রেফারেন্স:
 - SDK ইন্টিগ্রেশন: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## ৫) আপনার নিজস্ব মডেল আনুন (Olive দিয়ে কম্পাইল করুন)
+## ৫) আপনার নিজস্ব মডেল আনুন (Olive দিয়ে কম্পাইল করুন)
 
-যদি আপনি ক্যাটালগে থাকা মডেলগুলির বাইরে কিছু প্রয়োজন হয়, তাহলে Olive ব্যবহার করে এটি ONNX-এ কম্পাইল করুন Foundry Local-এর জন্য।
+যদি ক্যাটালগে কোনো মডেল না থাকে, তাহলে Olive ব্যবহার করে সেটিকে ONNX-এ কম্পাইল করুন Foundry Local-এর জন্য।
 
-উচ্চ-স্তরের ফ্লো (ধাপগুলির জন্য ডক দেখুন):
+উচ্চ-স্তরের ফ্লো (ধাপগুলো ডকুমেন্টেশনে দেখুন):
 ```cmd
 foundry cache cd models
 foundry cache list
 foundry model run llama-3.2 --verbose
 ```
-ডক:
+ডকস:
 - BYOM কম্পাইল: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## ৬) সমস্যা সমাধান
+## ৬) সমস্যার সমাধান
 
 - সার্ভিস স্ট্যাটাস এবং লগ চেক করুন:
 ```cmd
@@ -114,9 +123,9 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## ৭) সংশ্লিষ্ট Windows ডেভেলপার অভিজ্ঞতা
+## ৭) সম্পর্কিত Windows ডেভেলপার অভিজ্ঞতা
 
-- Windows লোকাল বনাম ক্লাউড AI পছন্দগুলি, যার মধ্যে Foundry Local এবং Windows ML অন্তর্ভুক্ত:
+- Windows লোকাল বনাম ক্লাউড AI পছন্দসমূহ, যার মধ্যে Foundry Local এবং Windows ML অন্তর্ভুক্ত:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit Foundry Local-এর সাথে (চ্যাট এন্ডপয়েন্ট URL পেতে `foundry service status` ব্যবহার করুন):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

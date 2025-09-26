@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T12:29:10+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:24:30+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ko"
 }
 -->
-# Foundry Local on Windows (검증됨)
+# Foundry Local 설치 가이드 (Windows & Mac)
 
-이 가이드는 Microsoft Foundry Local을 Windows에서 설치, 실행 및 통합하는 방법을 안내합니다. 모든 단계와 명령은 Microsoft Learn 문서를 기준으로 검증되었습니다.
+이 가이드는 Windows와 Mac에서 Microsoft Foundry Local을 설치, 실행 및 통합하는 방법을 안내합니다. 모든 단계와 명령은 Microsoft Learn 문서를 기준으로 검증되었습니다.
 
 - 시작하기: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - 아키텍처: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -32,8 +32,17 @@ winget upgrade --id Microsoft.FoundryLocal
 ```cmd
 foundry --version
 ```
+     
+**Mac에서 설치**
 
-## 2) CLI 기본 사항 (세 가지 카테고리)
+**MacOS**: 
+터미널을 열고 다음 명령을 실행하세요:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
+```
+
+## 2) CLI 기본 사용법 (세 가지 카테고리)
 
 - 모델:
 ```cmd
@@ -54,10 +63,10 @@ foundry cache list
 ```
 
 참고:
-- 서비스는 OpenAI 호환 REST API를 제공합니다. 엔드포인트 포트는 동적으로 할당되며, `foundry service status`를 사용하여 확인할 수 있습니다.
+- 서비스는 OpenAI 호환 REST API를 제공합니다. 엔드포인트 포트는 동적으로 할당되며, `foundry service status` 명령을 사용하여 확인할 수 있습니다.
 - SDK를 사용하면 편리합니다. SDK는 지원되는 경우 엔드포인트 검색을 자동으로 처리합니다.
 
-## 3) 로컬 엔드포인트 발견 (동적 포트)
+## 3) 로컬 엔드포인트 확인 (동적 포트)
 
 Foundry Local은 서비스가 시작될 때마다 동적 포트를 할당합니다:
 ```cmd
@@ -85,7 +94,7 @@ PY
 
 ## 5) 사용자 모델 가져오기 (Olive로 컴파일)
 
-카탈로그에 없는 모델이 필요한 경우, Olive를 사용하여 Foundry Local에 맞게 ONNX로 컴파일하세요.
+카탈로그에 없는 모델이 필요한 경우, Olive를 사용하여 Foundry Local에서 사용할 수 있도록 ONNX로 컴파일하세요.
 
 고급 흐름 (단계는 문서를 참조하세요):
 ```cmd
@@ -103,7 +112,7 @@ foundry model run llama-3.2 --verbose
 foundry service status
 foundry service diag
 ```
-- 캐시 지우기 또는 이동:
+- 캐시 삭제 또는 이동:
 ```cmd
 foundry cache list
 foundry cache remove <model>
@@ -116,7 +125,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) 관련 Windows 개발자 경험
 
-- Foundry Local 및 Windows ML을 포함한 Windows 로컬 vs 클라우드 AI 선택:
+- Windows 로컬 vs 클라우드 AI 선택지, Foundry Local 및 Windows ML 포함:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit과 Foundry Local (채팅 엔드포인트 URL을 얻으려면 `foundry service status`를 사용하세요):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

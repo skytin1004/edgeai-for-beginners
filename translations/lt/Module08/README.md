@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T02:40:11+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T19:07:22+00:00",
   "source_file": "Module08/README.md",
   "language_code": "lt"
 }
 -->
-# Modulis 08: Praktinis darbas su Microsoft Foundry Local – Pilnas kūrėjo įrankių rinkinys
+# Modulis 08: Praktinis darbas su Microsoft Foundry Local - Pilnas kūrėjo įrankių rinkinys
 
 ## Apžvalga
 
-Microsoft Foundry Local yra naujos kartos Edge AI kūrimo platforma, suteikianti kūrėjams galingus įrankius kurti, diegti ir plėsti AI programas vietoje, išlaikant sklandžią integraciją su Azure AI Foundry. Šiame modulyje pateikiama išsami Foundry Local apžvalga – nuo diegimo iki pažangių agentų kūrimo.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) yra naujos kartos Edge AI kūrimo platforma, suteikianti kūrėjams galingus įrankius kurti, diegti ir plėsti AI programas vietoje, išlaikant sklandžią integraciją su Azure AI Foundry. Šiame modulyje pateikiama išsami Foundry Local apžvalga nuo diegimo iki pažangių agentų kūrimo.
 
 **Pagrindinės technologijos:**
 - Microsoft Foundry Local CLI ir SDK
@@ -25,7 +25,7 @@ Microsoft Foundry Local yra naujos kartos Edge AI kūrimo platforma, suteikianti
 Baigę šį modulį, jūs:
 
 - **Įvaldysite Foundry Local**: Įdiegsite, sukonfigūruosite ir optimizuosite Windows 11 kūrimui
-- **Diegsite įvairius modelius**: Vietoje vykdysite phi, qwen, deepseek ir GPT modelius naudodami CLI komandas
+- **Diegsite įvairius modelius**: Vietoje paleisite phi, qwen, deepseek ir GPT modelius naudodami CLI komandas
 - **Kursite gamybinius sprendimus**: Sukursite AI programas su pažangiu promptų kūrimu ir duomenų integracija
 - **Pasinaudosite atvirojo kodo ekosistema**: Integruosite Hugging Face modelius ir bendruomenės indėlius
 - **Kursite AI agentus**: Sukursite intelektualius agentus su pagrindimo ir orkestravimo galimybėmis
@@ -58,9 +58,9 @@ Baigę šį modulį, jūs:
 ### [3: Atvirojo kodo modeliai Foundry Local](./03.OpenSourceModels.md)
 **Dėmesys**: Hugging Face integracija, BYOM strategijos ir bendruomenės modeliai
 
-**Pagrindinės temos**: Hugging Face integracija • Bring-your-own-model • Model Mondays įžvalgos • Bendruomenės indėliai • Modelių pasirinkimas
+**Pagrindinės temos**: HuggingFace integracija • Bring-your-own-model • Model Mondays įžvalgos • Bendruomenės indėliai • Modelių pasirinkimas
 
-**Pavyzdys**: [Daugiagentinis orkestravimas](./samples/05/README.md)
+**Pavyzdys**: [Daugelio agentų orkestravimas](./samples/05/README.md)
 
 **Trukmė**: 2-3 valandos | **Lygis**: Vidutinis
 
@@ -80,15 +80,15 @@ Baigę šį modulį, jūs:
 ### [5: Greitas AI agentų kūrimas](./05.AIPoweredAgents.md)
 **Dėmesys**: Agentų architektūros, sisteminiai promptai, pagrindimas ir orkestravimas
 
-**Pagrindinės temos**: Agentų dizaino šablonai • Sisteminių promptų kūrimas • Pagrindimo technikos • Daugiagentinės sistemos • Gamybos diegimas
+**Pagrindinės temos**: Agentų dizaino šablonai • Sisteminių promptų kūrimas • Pagrindimo technikos • Daugelio agentų sistemos • Gamybos diegimas
 
-**Pavyzdys**: [Daugiagentinis orkestravimas](./samples/05/README.md) • [Pažangi daugiagentinė sistema](./samples/09/README.md)
+**Pavyzdys**: [Daugelio agentų orkestravimas](./samples/05/README.md) • [Pažangi daugelio agentų sistema](./samples/09/README.md)
 
 **Trukmė**: 3-4 valandos | **Lygis**: Pažengęs
 
 ---
 
-### [6: Foundry Local – Modeliai kaip įrankiai](./06.ModelsAsTools.md)
+### [6: Foundry Local - Modeliai kaip įrankiai](./06.ModelsAsTools.md)
 **Dėmesys**: Moduliniai AI sprendimai, įmonės mastelio didinimas ir gamybos šablonai
 
 **Pagrindinės temos**: Modeliai kaip įrankiai • Vietinis diegimas • SDK/API integracija • Įmonės architektūros • Mastelio didinimo strategijos
@@ -102,7 +102,7 @@ Baigę šį modulį, jūs:
 ### [7: Tiesioginės API integracijos šablonai](./samples/07/README.md)
 **Dėmesys**: Gryna REST API integracija be SDK priklausomybių, siekiant maksimalaus valdymo
 
-**Pagrindinės temos**: HTTP klientų įgyvendinimas • Individuali autentifikacija • Modelių sveikatos stebėjimas • Atsakymų srautinimas • Gamybos klaidų tvarkymas
+**Pagrindinės temos**: HTTP klientų įgyvendinimas • Individuali autentifikacija • Modelių sveikatos stebėjimas • Srautiniai atsakymai • Gamybos klaidų tvarkymas
 
 **Pavyzdys**: [Tiesioginis API klientas](./samples/07/README.md)
 
@@ -113,7 +113,7 @@ Baigę šį modulį, jūs:
 ### [8: Windows 11 vietinė pokalbių programa](./samples/08/README.md)
 **Dėmesys**: Modernių vietinių pokalbių programų kūrimas su Foundry Local integracija
 
-**Pagrindinės temos**: Electron kūrimas • Fluent Design System • Vietinė Windows integracija • Real-time srautinimas • Pokalbių sąsajos dizainas
+**Pagrindinės temos**: Electron kūrimas • Fluent Design System • Vietinė Windows integracija • Realaus laiko srautas • Pokalbių sąsajos dizainas
 
 **Pavyzdys**: [Windows 11 pokalbių programa](./samples/08/README.md)
 
@@ -121,19 +121,19 @@ Baigę šį modulį, jūs:
 
 ---
 
-### [9: Pažangus daugiagentinis orkestravimas](./samples/09/README.md)
+### [9: Pažangus daugelio agentų orkestravimas](./samples/09/README.md)
 **Dėmesys**: Sudėtinga agentų koordinacija, specializuotų užduočių delegavimas ir bendradarbiavimo AI darbo eigos
 
 **Pagrindinės temos**: Intelektuali agentų koordinacija • Funkcijų kvietimo šablonai • Kryžminė agentų komunikacija • Darbo eigos orkestravimas • Kokybės užtikrinimo mechanizmai
 
-**Pavyzdys**: [Pažangi daugiagentinė sistema](./samples/09/README.md)
+**Pavyzdys**: [Pažangi daugelio agentų sistema](./samples/09/README.md)
 
 **Trukmė**: 4-5 valandos | **Lygis**: Ekspertas
 
 ---
 
 ### [10: Foundry Local kaip įrankių sistema](./samples/10/README.md)
-**Dėmesys**: Įrankių pirmumo architektūra, integruojant Foundry Local į esamas programas ir sistemas
+**Dėmesys**: Įrankių pirmosios architektūros integravimas Foundry Local į esamas programas ir sistemas
 
 **Pagrindinės temos**: LangChain integracija • Semantinės branduolio funkcijos • REST API sistemos • CLI įrankiai • Jupyter integracija • Gamybos diegimo šablonai
 
@@ -158,11 +158,11 @@ Baigę šį modulį, jūs:
 - Azure CLI (neprivaloma debesų integracijai)
 
 ### Žinių reikalavimai
-- Pagrindinės AI/ML koncepcijos
-- Komandų eilutės pagrindai
+- Pagrindinis AI/ML koncepcijų supratimas
+- Komandinės eilutės pagrindai
 - Python programavimo pagrindai
 - REST API koncepcijos
-- Pagrindinės promptų ir modelių įžvalgų žinios
+- Pagrindinės žinios apie promptus ir modelių įžvalgas
 
 ## Modulio laiko planas
 
@@ -178,19 +178,19 @@ Baigę šį modulį, jūs:
 |  6 | Įmonės įrankiai | 06, 10 | 3-4 valandos | Ekspertas |
 |  7 | Tiesioginė API integracija | 07 | 2-3 valandos | Vidutinis |
 |  8 | Windows 11 pokalbių programa | 08 | 3-4 valandos | Pažengęs |
-|  9 | Pažangus daugiagentinis | 09 | 4-5 valandos | Ekspertas |
+|  9 | Pažangus daugelio agentų | 09 | 4-5 valandos | Ekspertas |
 | 10 | Įrankių sistema | 10 | 4-5 valandos | Ekspertas |
 
 ## Pagrindiniai ištekliai
 
 **Oficiali dokumentacija:**
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) – Šaltinio kodas ir oficialūs pavyzdžiai
-- [Azure AI Foundry dokumentacija](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) – Pilnas diegimo ir naudojimo vadovas
-- [Model Mondays serija](https://aka.ms/model-mondays) – Savaitiniai modelių akcentai ir mokymai
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Šaltinio kodas ir oficialūs pavyzdžiai
+- [Azure AI Foundry dokumentacija](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Pilnas diegimo ir naudojimo vadovas
+- [Model Mondays serija](https://aka.ms/model-mondays) - Savaitiniai modelių akcentai ir pamokos
 
 **Bendruomenė ir palaikymas:**
-- [Foundry Local diskusijos](https://github.com/microsoft/Foundry-Local/discussions) – Bendruomenės klausimai ir funkcijų prašymai
-- [Microsoft AI kūrėjų bendruomenė](https://techcommunity.microsoft.com/category/artificialintelligence) – Naujausios naujienos ir geriausios praktikos
+- [Foundry Local diskusijos](https://github.com/microsoft/Foundry-Local/discussions) - Bendruomenės klausimai ir funkcijų prašymai
+- [Microsoft AI kūrėjų bendruomenė](https://techcommunity.microsoft.com/category/artificialintelligence) - Naujausios naujienos ir geriausios praktikos
 
 ## Mokymosi rezultatai
 
@@ -208,20 +208,20 @@ Baigę šį modulį, jūs būsite pasiruošę:
 - **Įmonės mastelio didinimas**: Kurti programas, kurios plečiasi nuo vietinių prototipų iki įmonės diegimų
 - **Privatumas ir saugumas**: Įgyvendinti privatumo išsaugojimo AI sprendimus su vietinėmis įžvalgomis
 
-### Inovacijų gebėjimai
-- **Greitas prototipų kūrimas**: Greitai kurti ir testuoti AI programų koncepcijas pagal visus 10 pavyzdžių šablonų
+### Inovacijų galimybės
+- **Greitas prototipų kūrimas**: Greitai kurti ir testuoti AI programų koncepcijas pagal visus 10 pavyzdžių šablonus
 - **Bendruomenės integracija**: Pasinaudoti atvirojo kodo modeliais ir prisidėti prie ekosistemos
 - **Pažangūs šablonai**: Įgyvendinti pažangius AI šablonus, įskaitant RAG, agentus ir įrankių integraciją
 - **Sistemos meistriškumas**: Ekspertų lygio integracija su LangChain, Semantic Kernel, Chainlit ir Electron
 - **Gamybos diegimas**: Diegti plečiamus AI sprendimus nuo vietinių prototipų iki įmonės sistemų
-- **Ateities kūrimas**: Kurti programas, pasiruošusias naujoms AI technologijoms ir šablonams
+- **Ateities pasirengimas**: Kurti programas, pasiruošusias naujoms AI technologijoms ir šablonams
 
 ## Pradžia
 
-1. **Aplinkos paruošimas**: Užtikrinkite Windows 11 su rekomenduojama aparatūra (žr. Reikalavimus)
-2. **Įdiekite Foundry Local**: Sekite 1 sesiją, kad pilnai įdiegtumėte ir sukonfigūruotumėte
-3. **Vykdykite 01 pavyzdį**: Pradėkite nuo pagrindinės REST API integracijos, kad patikrintumėte nustatymus
-4. **Eikite per pavyzdžius**: Užbaikite 01-10 pavyzdžius, kad pilnai įvaldytumėte
+1. **Aplinkos nustatymas**: Užtikrinkite Windows 11 su rekomenduojama aparatūra (žr. Reikalavimus)
+2. **Įdiekite Foundry Local**: Sekite 1 sesiją pilnam diegimui ir konfigūracijai
+3. **Paleiskite pavyzdį 01**: Pradėkite nuo pagrindinės REST API integracijos, kad patikrintumėte nustatymą
+4. **Eikite per pavyzdžius**: Užbaikite pavyzdžius 01-10, kad įgytumėte išsamų meistriškumą
 
 ## Sėkmės rodikliai
 
@@ -234,27 +234,27 @@ Sekite savo pažangą per visus 10 išsamių pavyzdžių:
 - [ ] Atlikti modelių atradimą ir testavimą (Pavyzdys 03)
 
 ### Programų lygis (Pavyzdžiai 04-06)
-- [ ] Diegti ir vykdyti bent 4 skirtingas modelių šeimas
+- [ ] Diegti ir paleisti bent 4 skirtingas modelių šeimas
 - [ ] Sukurti funkcionalią RAG pokalbių programą (Pavyzdys 04)
-- [ ] Sukurti daugiagentinę orkestravimo sistemą (Pavyzdys 05)
+- [ ] Sukurti daugelio agentų orkestravimo sistemą (Pavyzdys 05)
 - [ ] Įgyvendinti intelektualų modelių maršrutizavimą (Pavyzdys 06)
 
 ### Pažangios integracijos lygis (Pavyzdžiai 07-10)
 - [ ] Sukurti gamybai paruoštą API klientą (Pavyzdys 07)
 - [ ] Sukurti Windows 11 vietinę pokalbių programą (Pavyzdys 08)
-- [ ] Įgyvendinti pažangią daugiagentinę sistemą (Pavyzdys 09)
+- [ ] Įgyvendinti pažangią daugelio agentų sistemą (Pavyzdys 09)
 - [ ] Sukurti išsamią įrankių sistemą (Pavyzdys 10)
 
-### Meistriškumo rodikliai
-- [ ] Sėkmingai vykdyti visus 10 pavyzdžių be klaidų
+### Meistriškumo indikatoriai
+- [ ] Sėkmingai paleisti visus 10 pavyzdžių be klaidų
 - [ ] Pritaikyti bent 3 pavyzdžius specifiniams naudojimo atvejams
-- [ ] Diegti 2+ pavyzdžius gamybos aplinkose
+- [ ] Diegti 2+ pavyzdžius gamybos tipo aplinkose
 - [ ] Prisidėti prie pavyzdžių kodo patobulinimų ar plėtinių
 - [ ] Integruoti Foundry Local šablonus į asmeninius/profesinius projektus
 
-## Greito starto vadovas – visi 10 pavyzdžių
+## Greito starto vadovas - Visi 10 pavyzdžių
 
-### Aplinkos paruošimas (Reikalinga visiems pavyzdžiams)
+### Aplinkos nustatymas (Reikalinga visiems pavyzdžiams)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -277,7 +277,7 @@ foundry model list
 
 ### Pagrindiniai pavyzdžiai (01-06)
 
-**Pavyzdys 01: REST Chat Quickstart**
+**Pavyzdys 01: REST pokalbių greitas startas**
 ```powershell
 # Start Foundry Local service
 foundry model run phi-4-mini
@@ -295,19 +295,8 @@ foundry status
 python samples/02/sdk_quickstart.py
 ```
 
-**Pavyzdys 03: Modelių atradimas ir testavimas**
-```powershell
-# Run comprehensive model testing
-samples/03/list_and_bench.cmd
-
-# Or run individual components
-foundry model list --available
-foundry model download qwen2.5-0.5b
-foundry model benchmark phi-4-mini
-```
-
-**P
-Šis modulis atspindi pažangiausius dirbtinio intelekto (DI) technologijų vystymosi pasiekimus, derindamas „Microsoft“ verslo lygio įrankius su atvirojo kodo ekosistemos lankstumu ir inovatyvumu. Įvaldę Foundry Local per visus 10 išsamių pavyzdžių, būsite DI taikymo kūrimo priešakyje.
+**Pavy
+Šis modulis atspindi pažangiausius dirbtinio intelekto (AI) vystymo pasiekimus, sujungdamas „Microsoft“ verslo lygio įrankius su atvirojo kodo ekosistemos lankstumu ir inovatyvumu. Įvaldę Foundry Local per visus 10 išsamių pavyzdžių, būsite pasiruošę dirbti pirmaujančiose AI taikymo kūrimo srityse.
 
 **Pilnas mokymosi kelias:**
 - **Pagrindai** (Pavyzdžiai 01-03): API integracija ir modelių valdymas

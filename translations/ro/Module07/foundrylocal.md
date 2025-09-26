@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:22:35+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:57:33+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ro"
 }
 -->
-# Foundry Local pe Windows (Validat)
+# Foundry Local pe Windows și Mac
 
-Acest ghid te ajută să instalezi, rulezi și integrezi Microsoft Foundry Local pe Windows. Toți pașii și comenzile sunt validate conform documentației Microsoft Learn.
+Acest ghid te ajută să instalezi, rulezi și integrezi Microsoft Foundry Local pe Windows și Mac. Toți pașii și comenzile sunt validate conform documentației Microsoft Learn.
 
 - Începe: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arhitectură: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Referință CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrare SDK-uri: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-- Compilare modele HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Compilează modele HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Local vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Instalare / Upgrade pe Windows
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Verificare versiune:
 ```cmd
 foundry --version
+```
+     
+**Instalare / Mac**
+
+**MacOS**: 
+Deschide un terminal și rulează următoarea comandă:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Bazele CLI (Trei Categorii)
@@ -57,7 +66,7 @@ Note:
 - Serviciul expune un API REST compatibil cu OpenAI. Portul endpoint-ului este alocat dinamic; folosește `foundry service status` pentru a-l descoperi.
 - Folosește SDK-urile pentru comoditate; acestea gestionează automat descoperirea endpoint-ului acolo unde este suportat.
 
-## 3) Descoperirea Endpoint-ului Local (Port Dinamic)
+## 3) Descoperă Endpoint-ul Local (Port Dinamic)
 
 Foundry Local alocă un port dinamic de fiecare dată când serviciul pornește:
 ```cmd
@@ -83,9 +92,9 @@ PY
 Referințe:
 - Integrare SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Adaugă Modelul Tău (Compilează cu Olive)
+## 5) Adu Propriul Model (Compilează cu Olive)
 
-Dacă ai nevoie de un model care nu este în catalog, compilează-l în ONNX pentru Foundry Local folosind Olive.
+Dacă ai nevoie de un model care nu se află în catalog, compilează-l în ONNX pentru Foundry Local folosind Olive.
 
 Flux de nivel înalt (vezi documentația pentru pași):
 ```cmd

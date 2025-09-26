@@ -1,22 +1,22 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T22:41:56+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:49:50+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ms"
 }
 -->
-# Foundry Local pada Windows (Disahkan)
+# Foundry Local pada Windows & Mac
 
-Panduan ini membantu anda memasang, menjalankan, dan mengintegrasikan Microsoft Foundry Local pada Windows. Semua langkah dan arahan telah disahkan berdasarkan dokumen Microsoft Learn.
+Panduan ini membantu anda memasang, menjalankan, dan mengintegrasikan Microsoft Foundry Local pada Windows dan Mac. Semua langkah dan arahan telah disahkan berdasarkan dokumen Microsoft Learn.
 
 - Bermula: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Seni bina: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Rujukan CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrasi SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Kompilasi Model HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- AI Windows: Tempatan vs Awan: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- Windows AI: Tempatan vs Awan: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Pasang / Tingkatkan pada Windows
 
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Semak versi:
 ```cmd
 foundry --version
+```
+     
+**Pasang / Mac**
+
+**MacOS**: 
+Buka terminal dan jalankan arahan berikut:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Asas CLI (Tiga Kategori)
@@ -54,7 +63,7 @@ foundry cache list
 ```
 
 Nota:
-- Perkhidmatan ini menyediakan API REST yang serasi dengan OpenAI. Port endpoint diperuntukkan secara dinamik; gunakan `foundry service status` untuk mengenal pasti port tersebut.
+- Perkhidmatan ini mendedahkan API REST yang serasi dengan OpenAI. Port endpoint diperuntukkan secara dinamik; gunakan `foundry service status` untuk mengenal pasti port tersebut.
 - Gunakan SDK untuk kemudahan; ia secara automatik menguruskan penemuan endpoint di mana disokong.
 
 ## 3) Kenal Pasti Endpoint Tempatan (Port Dinamik)
@@ -109,14 +118,14 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Kemas kini ke pratonton terkini:
+- Kemas kini kepada pratonton terkini:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
 ## 7) Pengalaman Pembangun Windows Berkaitan
 
-- Pilihan AI tempatan vs awan Windows, termasuk Foundry Local dan Windows ML:
+- Pilihan AI tempatan vs awan pada Windows, termasuk Foundry Local dan Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit dengan Foundry Local (gunakan `foundry service status` untuk mendapatkan URL endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

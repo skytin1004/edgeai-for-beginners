@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T01:18:07+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:55:11+00:00",
   "source_file": "Module08/README.md",
   "language_code": "cs"
 }
@@ -11,12 +11,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Přehled
 
-Microsoft Foundry Local představuje novou generaci vývoje edge AI, která poskytuje vývojářům výkonné nástroje pro vytváření, nasazení a škálování AI aplikací lokálně, přičemž zajišťuje bezproblémovou integraci s Azure AI Foundry. Tento modul nabízí komplexní přehled Foundry Local od instalace až po pokročilý vývoj agentů.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) představuje novou generaci vývoje AI na okraji, která poskytuje vývojářům výkonné nástroje pro vytváření, nasazení a škálování AI aplikací lokálně, přičemž zajišťuje bezproblémovou integraci s Azure AI Foundry. Tento modul nabízí komplexní přehled Foundry Local od instalace až po pokročilý vývoj agentů.
 
 **Klíčové technologie:**
 - Microsoft Foundry Local CLI a SDK
 - Integrace Azure AI Foundry
-- Lokální inferování modelů
+- Lokální inference modelů
 - Lokální ukládání a optimalizace modelů
 - Architektury založené na agentech
 
@@ -24,12 +24,12 @@ Microsoft Foundry Local představuje novou generaci vývoje edge AI, která posk
 
 Po dokončení tohoto modulu budete schopni:
 
-- **Ovládnout Foundry Local**: Nainstalovat, nakonfigurovat a optimalizovat pro vývoj na Windows 11
-- **Nasadit různé modely**: Spouštět modely phi, qwen, deepseek a GPT lokálně pomocí CLI příkazů
-- **Vytvářet produkční řešení**: Vytvářet AI aplikace s pokročilým návrhem promptů a integrací dat
+- **Ovládnout Foundry Local**: Instalovat, konfigurovat a optimalizovat pro vývoj na Windows 11
+- **Nasazovat různé modely**: Spouštět modely phi, qwen, deepseek a GPT lokálně pomocí CLI příkazů
+- **Vytvářet produkční řešení**: Vyvíjet AI aplikace s pokročilým návrhem promptů a integrací dat
 - **Využívat open-source ekosystém**: Integrovat modely Hugging Face a příspěvky komunity
 - **Vyvíjet AI agenty**: Vytvářet inteligentní agenty s možnostmi uzemnění a orchestrace
-- **Implementovat podnikové vzory**: Vytvářet modulární, škálovatelné AI řešení pro produkční nasazení
+- **Implementovat podnikové vzory**: Navrhovat modulární, škálovatelné AI řešení pro produkční nasazení
 
 ## Struktura lekcí
 
@@ -38,7 +38,7 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Kompletní instalace • CLI příkazy • Ukládání modelů • Akcelerace hardwaru • Nasazení více modelů
 
-**Ukázky**: [REST Chat Quickstart](./samples/01/README.md) • [Integrace OpenAI SDK](./samples/02/README.md) • [Objevování a benchmarking modelů](./samples/03/README.md)
+**Ukázka**: [REST Chat Quickstart](./samples/01/README.md) • [Integrace OpenAI SDK](./samples/02/README.md) • [Objevování a benchmarking modelů](./samples/03/README.md)
 
 **Délka**: 2-3 hodiny | **Úroveň**: Začátečník
 
@@ -49,7 +49,7 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Návrh promptů • Integrace dat • Azure workflows • Optimalizace výkonu • Monitoring
 
-**Ukázka**: [Chainlit RAG aplikace](./samples/04/README.md)
+**Ukázka**: [Chainlit RAG Application](./samples/04/README.md)
 
 **Délka**: 2-3 hodiny | **Úroveň**: Středně pokročilý
 
@@ -60,7 +60,7 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Integrace Hugging Face • Bring-your-own-model • Insights z Model Mondays • Příspěvky komunity • Výběr modelů
 
-**Ukázka**: [Orchestrace více agentů](./samples/05/README.md)
+**Ukázka**: [Multi-Agent Orchestration](./samples/05/README.md)
 
 **Délka**: 2-3 hodiny | **Úroveň**: Středně pokročilý
 
@@ -69,9 +69,9 @@ Po dokončení tohoto modulu budete schopni:
 ### [4: Prozkoumání špičkových modelů](./04.CuttingEdgeModels.md)
 **Zaměření**: LLMs vs SLMs, implementace EdgeAI a pokročilé ukázky
 
-**Klíčová témata**: Porovnání modelů • Inferování na edge vs v cloudu • Phi + ONNX Runtime • Chainlit RAG aplikace • Optimalizace WebGPU
+**Klíčová témata**: Porovnání modelů • Inference na okraji vs v cloudu • Phi + ONNX Runtime • Chainlit RAG aplikace • Optimalizace WebGPU
 
-**Ukázka**: [Router pro modely jako nástroje](./samples/06/README.md)
+**Ukázka**: [Models-as-Tools Router](./samples/06/README.md)
 
 **Délka**: 3-4 hodiny | **Úroveň**: Pokročilý
 
@@ -82,7 +82,7 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Návrhové vzory agentů • Návrh systémových promptů • Techniky uzemnění • Systémy více agentů • Produkční nasazení
 
-**Ukázky**: [Orchestrace více agentů](./samples/05/README.md) • [Pokročilý systém více agentů](./samples/09/README.md)
+**Ukázka**: [Multi-Agent Orchestration](./samples/05/README.md) • [Pokročilý systém více agentů](./samples/09/README.md)
 
 **Délka**: 3-4 hodiny | **Úroveň**: Pokročilý
 
@@ -93,18 +93,18 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Modely jako nástroje • Nasazení na zařízení • Integrace SDK/API • Podnikové architektury • Strategie škálování
 
-**Ukázky**: [Router pro modely jako nástroje](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
+**Ukázka**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
 **Délka**: 3-4 hodiny | **Úroveň**: Expert
 
 ---
 
 ### [7: Vzory přímé integrace API](./samples/07/README.md)
-**Zaměření**: Čistá integrace REST API bez závislosti na SDK pro maximální kontrolu
+**Zaměření**: Čistá integrace REST API bez závislostí na SDK pro maximální kontrolu
 
 **Klíčová témata**: Implementace HTTP klienta • Vlastní autentizace • Monitoring zdraví modelů • Streamování odpovědí • Řešení chyb v produkci
 
-**Ukázka**: [Přímý API klient](./samples/07/README.md)
+**Ukázka**: [Direct API Client](./samples/07/README.md)
 
 **Délka**: 2-3 hodiny | **Úroveň**: Středně pokročilý
 
@@ -115,7 +115,7 @@ Po dokončení tohoto modulu budete schopni:
 
 **Klíčová témata**: Vývoj v Electronu • Fluent Design System • Nativní integrace Windows • Streamování v reálném čase • Návrh chatovacího rozhraní
 
-**Ukázka**: [Chatovací aplikace pro Windows 11](./samples/08/README.md)
+**Ukázka**: [Windows 11 Chat Application](./samples/08/README.md)
 
 **Délka**: 3-4 hodiny | **Úroveň**: Pokročilý
 
@@ -132,10 +132,10 @@ Po dokončení tohoto modulu budete schopni:
 
 ---
 
-### [10: Foundry Local jako nástrojový framework](./samples/10/README.md)
+### [10: Foundry Local jako rámec nástrojů](./samples/10/README.md)
 **Zaměření**: Architektura zaměřená na nástroje pro integraci Foundry Local do existujících aplikací a frameworků
 
-**Klíčová témata**: Integrace LangChain • Funkce Semantic Kernel • REST API frameworky • CLI nástroje • Integrace Jupyter • Produkční vzory nasazení
+**Klíčová témata**: Integrace LangChain • Funkce Semantic Kernel • Rámce REST API • CLI nástroje • Integrace Jupyter • Produkční vzory nasazení
 
 **Ukázka**: [Foundry Tools Framework](./samples/10/README.md)
 
@@ -153,16 +153,16 @@ Po dokončení tohoto modulu budete schopni:
 ### Vývojové prostředí
 - Visual Studio Code s rozšířením AI Toolkit
 - Python 3.10+ a pip
-- Git pro správu verzí
+- Git pro verzování
 - PowerShell nebo Command Prompt
 - Azure CLI (volitelné pro integraci s cloudem)
 
 ### Znalostní požadavky
 - Základní porozumění konceptům AI/ML
-- Znalost práce s příkazovým řádkem
+- Znalost práce s příkazovou řádkou
 - Základy programování v Pythonu
 - Koncepty REST API
-- Základní znalosti návrhu promptů a inferování modelů
+- Základní znalosti návrhu promptů a inference modelů
 
 ## Časový plán modulu
 
@@ -170,7 +170,7 @@ Po dokončení tohoto modulu budete schopni:
 
 | Lekce | Oblast zaměření | Ukázky | Čas | Náročnost |
 |-------|-----------------|--------|------|-----------|
-|  1 | Nastavení a základy | 01, 02, 03 | 2-3 hodiny | Začátečník |
+|  1 | Nastavení & základy | 01, 02, 03 | 2-3 hodiny | Začátečník |
 |  2 | AI řešení | 04 | 2-3 hodiny | Středně pokročilý |
 |  3 | Open Source | 05 | 2-3 hodiny | Středně pokročilý |
 |  4 | Pokročilé modely | 06 | 3-4 hodiny | Pokročilý |
@@ -179,16 +179,16 @@ Po dokončení tohoto modulu budete schopni:
 |  7 | Přímá integrace API | 07 | 2-3 hodiny | Středně pokročilý |
 |  8 | Chatovací aplikace pro Windows 11 | 08 | 3-4 hodiny | Pokročilý |
 |  9 | Pokročilá orchestrace více agentů | 09 | 4-5 hodin | Expert |
-| 10 | Nástrojový framework | 10 | 4-5 hodin | Expert |
+| 10 | Rámec nástrojů | 10 | 4-5 hodin | Expert |
 
 ## Klíčové zdroje
 
 **Oficiální dokumentace:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Zdrojový kód a oficiální ukázky
-- [Dokumentace Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Kompletní průvodce nastavením a použitím
+- [Dokumentace Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Kompletní průvodce nastavením a používáním
 - [Model Mondays Series](https://aka.ms/model-mondays) - Týdenní přehledy modelů a tutoriály
 
-**Komunita a podpora:**
+**Komunita & podpora:**
 - [Diskuze o Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Q&A a požadavky na funkce
 - [Komunita vývojářů Microsoft AI](https://techcommunity.microsoft.com/category/artificialintelligence) - Novinky a osvědčené postupy
 
@@ -197,40 +197,40 @@ Po dokončení tohoto modulu budete schopni:
 Po dokončení tohoto modulu budete schopni:
 
 ### Technická zdatnost
-- **Nasazení a správa**: Instalace Foundry Local v prostředích pro vývoj i produkci
-- **Integrace modelů**: Práce s různými rodinami modelů od Microsoftu, Hugging Face a komunity
-- **Vytváření aplikací**: Tvorba produkčně připravených AI aplikací s pokročilými funkcemi a optimalizacemi
-- **Vývoj agentů**: Implementace sofistikovaných AI agentů s uzemněním, logikou a integrací nástrojů
+- **Nasazovat a spravovat**: Instalace Foundry Local v prostředích pro vývoj i produkci
+- **Integrovat modely**: Pracovat s různými rodinami modelů od Microsoftu, Hugging Face a komunity
+- **Vytvářet aplikace**: Vyvíjet produkčně připravené AI aplikace s pokročilými funkcemi a optimalizacemi
+- **Vyvíjet agenty**: Implementovat sofistikované AI agenty s uzemněním, logikou a integrací nástrojů
 
 ### Strategické porozumění
-- **Rozhodování o architektuře**: Informované volby mezi lokálním a cloudovým nasazením
-- **Optimalizace výkonu**: Optimalizace výkonu inferování na různých hardwarových konfiguracích
-- **Podnikové škálování**: Návrh aplikací, které škálují od lokálních prototypů po podniková nasazení
-- **Ochrana soukromí a bezpečnost**: Implementace AI řešení s ochranou soukromí díky lokálnímu inferování
+- **Rozhodování o architektuře**: Volit mezi lokálním a cloudovým nasazením
+- **Optimalizace výkonu**: Zlepšovat výkon inference na různých hardwarových konfiguracích
+- **Podnikové škálování**: Navrhovat aplikace, které škálují od lokálních prototypů po podniková nasazení
+- **Ochrana soukromí a bezpečnost**: Implementovat AI řešení s ochranou soukromí díky lokální inferenci
 
 ### Inovační schopnosti
-- **Rychlé prototypování**: Rychlá tvorba a testování konceptů AI aplikací napříč všemi 10 ukázkovými vzory
-- **Integrace komunity**: Využití open-source modelů a příspěvky do ekosystému
-- **Pokročilé vzory**: Implementace špičkových AI vzorů včetně RAG, agentů a integrace nástrojů
-- **Ovládnutí frameworků**: Expert na integraci LangChain, Semantic Kernel, Chainlit a Electron
-- **Produkční nasazení**: Nasazení škálovatelných AI řešení od lokálních prototypů po podnikové systémy
-- **Připravenost na budoucnost**: Tvorba aplikací připravených na nové AI technologie a vzory
+- **Rychlé prototypování**: Rychle vytvářet a testovat koncepty AI aplikací napříč všemi 10 vzory ukázek
+- **Integrace komunity**: Využívat open-source modely a přispívat do ekosystému
+- **Pokročilé vzory**: Implementovat špičkové AI vzory včetně RAG, agentů a integrace nástrojů
+- **Ovládnutí frameworků**: Expert na integraci s LangChain, Semantic Kernel, Chainlit a Electron
+- **Produkční nasazení**: Nasazovat škálovatelné AI řešení od lokálních prototypů po podnikové systémy
+- **Připravenost na budoucnost**: Vytvářet aplikace připravené na nové AI technologie a vzory
 
-## Jak začít
+## Začínáme
 
 1. **Nastavení prostředí**: Zajistěte Windows 11 s doporučeným hardwarem (viz Požadavky)
 2. **Instalace Foundry Local**: Postupujte podle lekce 1 pro kompletní instalaci a konfiguraci
-3. **Spuštění ukázky 01**: Začněte základní integrací REST API pro ověření nastavení
+3. **Spusťte ukázku 01**: Začněte základní integrací REST API pro ověření nastavení
 4. **Postupujte přes ukázky**: Dokončete ukázky 01-10 pro komplexní zvládnutí
 
 ## Metriky úspěchu
 
-Sledujte svůj pokrok prostřednictvím všech 10 komplexních ukázek:
+Sledujte svůj pokrok přes všech 10 komplexních ukázek:
 
 ### Základní úroveň (Ukázky 01-03)
-- [ ] Úspěšně nainstalovat a nakonfigurovat Foundry Local
+- [ ] Úspěšně nainstalovat a konfigurovat Foundry Local
 - [ ] Dokončit integraci REST API (Ukázka 01)
-- [ ] Implementovat kompatibilitu OpenAI SDK (Ukázka 02)
+- [ ] Implementovat kompatibilitu s OpenAI SDK (Ukázka 02)
 - [ ] Provést objevování a benchmarking modelů (Ukázka 03)
 
 ### Úroveň aplikací (Ukázky 04-06)
@@ -240,10 +240,10 @@ Sledujte svůj pokrok prostřednictvím všech 10 komplexních ukázek:
 - [ ] Implementovat inteligentní směrování modelů (Ukázka 06)
 
 ### Pokročilá úroveň integrace (Ukázky 07-10)
-- [ ] Vytvořit produkčně připraveného API klienta (Ukázka 07)
+- [ ] Vytvořit produkčně připraveného klienta API (Ukázka 07)
 - [ ] Vyvinout nativní chatovací aplikaci pro Windows 11 (Ukázka 08)
 - [ ] Implementovat pokročilý systém více agentů (Ukázka 09)
-- [ ] Vytvořit komplexní nástrojový framework (Ukázka 10)
+- [ ] Vytvořit komplexní rámec nástrojů (Ukázka 10)
 
 ### Indikátory zvládnutí
 - [ ] Úspěšně spustit všech 10 ukázek bez chyb
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Ukázka 04: Chainlit RAG aplikace**
+**Ukázka 04: Chainlit RAG Application**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -316,7 +316,7 @@ chainlit run samples/04/app.py -w
 # Opens browser at http://localhost:8000
 ```
 
-**Ukázka 05: Orchestrace více agentů**
+**Ukázka 05: Multi-Agent Orchestration**
 ```powershell
 # Run agent coordinator demo
 python -m samples.05.agents.coordinator
@@ -325,7 +325,7 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Ukázka 06: Router pro modely jako nástroje**
+**Ukázka 06: Models-as-Tools Router**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
@@ -338,7 +338,7 @@ python samples/06/router.py "Analyze this Python code for performance issues"
 
 ### Pokročilé ukázky (07-10)
 
-**Ukázka 07: Přímý API klient**
+**Ukázka 07: Direct API Client**
 ```powershell
 # Navigate to sample directory
 cd samples/07
@@ -356,7 +356,7 @@ python examples/streaming.py
 python examples/production.py
 ```
 
-**Ukázka 08: Chatovací aplikace pro Windows 11**
+**Ukázka 08: Windows 11 Chat Application**
 ```powershell
 # Navigate to sample directory
 cd samples/08
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Shrnutí
-Tento modul představuje špičku vývoje edge AI, spojující podnikové nástroje Microsoftu s flexibilitou a inovací open-source ekosystému. Osvojením Foundry Local prostřednictvím všech 10 komplexních ukázek se dostanete do čela vývoje AI aplikací.
+Tento modul představuje špičku vývoje edge AI, spojuje podnikové nástroje Microsoftu s flexibilitou a inovací open-source ekosystému. Osvojením Foundry Local prostřednictvím všech 10 komplexních ukázek se dostanete do čela vývoje AI aplikací.
 
 **Kompletní vzdělávací cesta:**
 - **Základy** (Ukázky 01-03): Integrace API a správa modelů

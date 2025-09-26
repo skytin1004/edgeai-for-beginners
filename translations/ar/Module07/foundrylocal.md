@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-22T14:26:44+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T18:16:26+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ar"
 }
 -->
-# Foundry Local على ويندوز (تم التحقق)
+# Foundry Local على ويندوز وماك
 
-هذا الدليل يساعدك في تثبيت وتشغيل ودمج Microsoft Foundry Local على نظام ويندوز. جميع الخطوات والأوامر تم التحقق منها وفقًا لوثائق Microsoft Learn.
+هذا الدليل يساعدك على تثبيت وتشغيل ودمج Microsoft Foundry Local على ويندوز وماك. جميع الخطوات والأوامر تم التحقق منها وفقًا لوثائق Microsoft Learn.
 
 - البدء: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - الهندسة المعمارية: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - التحقق من الإصدار:
 ```cmd
 foundry --version
+```
+     
+**التثبيت / ماك**
+
+**MacOS**: 
+افتح نافذة الطرفية وقم بتشغيل الأمر التالي:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) أساسيات CLI (ثلاث فئات)
@@ -63,7 +72,7 @@ foundry cache list
 ```cmd
 foundry service status
 ```
-استخدم `http://localhost:<PORT>` المبلغ عنه كـ `base_url` مع المسارات المتوافقة مع OpenAI (على سبيل المثال، `/v1/chat/completions`).
+استخدم `http://localhost:<PORT>` الذي تم الإبلاغ عنه كـ `base_url` مع المسارات المتوافقة مع OpenAI (على سبيل المثال، `/v1/chat/completions`).
 
 ## 4) اختبار سريع عبر OpenAI Python SDK
 
@@ -83,11 +92,11 @@ PY
 المراجع:
 - دمج SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) استخدم النموذج الخاص بك (تجميع باستخدام Olive)
+## 5) استخدم نموذجك الخاص (تجميع باستخدام Olive)
 
 إذا كنت بحاجة إلى نموذج غير موجود في الكتالوج، قم بتجميعه إلى ONNX لـ Foundry Local باستخدام Olive.
 
-التدفق العام (راجع الوثائق للخطوات):
+التدفق عالي المستوى (راجع الوثائق للخطوات):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -116,7 +125,7 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) تجربة المطورين ذات الصلة بويندوز
 
-- خيارات الذكاء الاصطناعي المحلي مقابل السحابة على ويندوز، بما في ذلك Foundry Local و Windows ML:
+- خيارات الذكاء الاصطناعي المحلي مقابل السحابة على ويندوز، بما في ذلك Foundry Local وWindows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - أدوات الذكاء الاصطناعي في VS Code مع Foundry Local (استخدم `foundry service status` للحصول على عنوان URL لنقطة نهاية الدردشة):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components

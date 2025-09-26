@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T11:25:22+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:33:51+00:00",
   "source_file": "Module08/README.md",
   "language_code": "pt"
 }
@@ -11,13 +11,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Visão Geral
 
-O Microsoft Foundry Local representa a próxima geração de desenvolvimento de IA na edge, oferecendo aos desenvolvedores ferramentas poderosas para criar, implementar e escalar aplicações de IA localmente, mantendo uma integração perfeita com o Azure AI Foundry. Este módulo fornece uma cobertura abrangente do Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na edge, oferecendo ferramentas poderosas para que os desenvolvedores criem, implementem e escalem aplicações de IA localmente, mantendo uma integração perfeita com o Azure AI Foundry. Este módulo cobre de forma abrangente o Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
 
 **Tecnologias Principais:**
 - CLI e SDK do Microsoft Foundry Local
 - Integração com Azure AI Foundry
 - Inferência de modelos no dispositivo
-- Cache e otimização de modelos localmente
+- Cache e otimização de modelos locais
 - Arquiteturas baseadas em agentes
 
 ## Objetivos de Aprendizagem
@@ -77,7 +77,7 @@ Ao concluir este módulo, você será capaz de:
 
 ---
 
-### [5: Construir Agentes de IA Rapidamente](./05.AIPoweredAgents.md)
+### [5: Construir Agentes de IA de Forma Rápida](./05.AIPoweredAgents.md)
 **Foco**: Arquiteturas de agentes, prompts de sistema, grounding e orquestração
 
 **Tópicos Principais**: Padrões de design de agentes • Engenharia de prompts de sistema • Técnicas de grounding • Sistemas multi-agentes • Implantação em produção
@@ -89,9 +89,9 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [6: Foundry Local - Modelos como Ferramentas](./06.ModelsAsTools.md)
-**Foco**: Soluções de IA modulares, escalabilidade empresarial e padrões de produção
+**Foco**: Soluções modulares de IA, escalabilidade empresarial e padrões de produção
 
-**Tópicos Principais**: Modelos como ferramentas • Implementação no dispositivo • Integração com SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
+**Tópicos Principais**: Modelos como ferramentas • Implementação no dispositivo • Integração SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
 
 **Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas Foundry](./samples/10/README.md)
 
@@ -100,7 +100,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [7: Padrões de Integração Direta com API](./samples/07/README.md)
-**Foco**: Integração pura com REST API sem dependências de SDK para máximo controle
+**Foco**: Integração pura com REST API sem dependências de SDK para controle máximo
 
 **Tópicos Principais**: Implementação de cliente HTTP • Autenticação personalizada • Monitorização de saúde de modelos • Respostas em streaming • Tratamento de erros em produção
 
@@ -111,7 +111,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [8: Aplicação de Chat Nativa no Windows 11](./samples/08/README.md)
-**Foco**: Construção de aplicações modernas de chat nativas com integração ao Foundry Local
+**Foco**: Construção de aplicações modernas de chat nativas com integração Foundry Local
 
 **Tópicos Principais**: Desenvolvimento com Electron • Fluent Design System • Integração nativa com Windows • Streaming em tempo real • Design de interface de chat
 
@@ -133,7 +133,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [10: Foundry Local como Framework de Ferramentas](./samples/10/README.md)
-**Foco**: Arquitetura orientada a ferramentas para integrar o Foundry Local em aplicações e frameworks existentes
+**Foco**: Arquitetura orientada a ferramentas para integrar Foundry Local em aplicações e frameworks existentes
 
 **Tópicos Principais**: Integração com LangChain • Funções do Semantic Kernel • Frameworks REST API • Ferramentas CLI • Integração com Jupyter • Padrões de implantação em produção
 
@@ -166,7 +166,7 @@ Ao concluir este módulo, você será capaz de:
 
 ## Cronograma do Módulo
 
-**Tempo Estimado Total**: 30-38 horas
+**Tempo Total Estimado**: 30-38 horas
 
 | Sessão | Área de Foco | Exemplos | Tempo | Complexidade |
 |--------|--------------|----------|-------|--------------|
@@ -199,26 +199,26 @@ Ao concluir este módulo, você estará preparado para:
 ### Domínio Técnico
 - **Implementar e Gerir**: Instalações do Foundry Local em ambientes de desenvolvimento e produção
 - **Integrar Modelos**: Trabalhar de forma integrada com diversas famílias de modelos da Microsoft, Hugging Face e fontes da comunidade
-- **Criar Aplicações**: Desenvolver aplicações de IA prontas para produção com recursos avançados e otimizações
+- **Construir Aplicações**: Desenvolver aplicações de IA prontas para produção com recursos avançados e otimizações
 - **Desenvolver Agentes**: Implementar agentes de IA sofisticados com grounding, raciocínio e integração de ferramentas
 
 ### Compreensão Estratégica
 - **Decisões Arquiteturais**: Fazer escolhas informadas entre implantação local e na cloud
 - **Otimização de Desempenho**: Melhorar o desempenho de inferência em diferentes configurações de hardware
-- **Escalabilidade Empresarial**: Projetar aplicações que escalam de protótipos locais para implantações empresariais
-- **Privacidade e Segurança**: Implementar soluções de IA que preservam a privacidade com inferência local
+- **Escalabilidade Empresarial**: Projetar aplicações que escalem de protótipos locais para implantações empresariais
+- **Privacidade e Segurança**: Implementar soluções de IA que preservem a privacidade com inferência local
 
 ### Capacidades de Inovação
-- **Prototipagem Rápida**: Construir e testar conceitos de aplicações de IA rapidamente com todos os 10 padrões de exemplo
+- **Prototipagem Rápida**: Construir e testar conceitos de aplicações de IA rapidamente em todos os 10 padrões de exemplo
 - **Integração Comunitária**: Aproveitar modelos open-source e contribuir para o ecossistema
 - **Padrões Avançados**: Implementar padrões de IA de ponta, incluindo RAG, agentes e integração de ferramentas
-- **Domínio de Frameworks**: Integração avançada com LangChain, Semantic Kernel, Chainlit e Electron
-- **Implantação em Produção**: Implantar soluções de IA escaláveis desde protótipos locais até sistemas empresariais
+- **Domínio de Frameworks**: Integração de nível especialista com LangChain, Semantic Kernel, Chainlit e Electron
+- **Implantação em Produção**: Implementar soluções de IA escaláveis, desde protótipos locais até sistemas empresariais
 - **Desenvolvimento Preparado para o Futuro**: Construir aplicações prontas para tecnologias e padrões emergentes de IA
 
 ## Primeiros Passos
 
-1. **Configuração do Ambiente**: Certifique-se de que está utilizando Windows 11 com o hardware recomendado (veja os Pré-requisitos)
+1. **Configuração do Ambiente**: Certifique-se de que está utilizando Windows 11 com hardware recomendado (veja Pré-requisitos)
 2. **Instalar Foundry Local**: Siga a Sessão 1 para instalação e configuração completas
 3. **Executar o Exemplo 01**: Comece com a integração básica de REST API para verificar a configuração
 4. **Progredir pelos Exemplos**: Complete os exemplos 01-10 para domínio abrangente
@@ -457,7 +457,7 @@ npm install
 Este módulo representa o estado da arte no desenvolvimento de IA de ponta, combinando as ferramentas empresariais da Microsoft com a flexibilidade e inovação do ecossistema de código aberto. Ao dominar o Foundry Local através dos 10 exemplos abrangentes, estará posicionado na vanguarda do desenvolvimento de aplicações de IA.
 
 **Percurso de Aprendizagem Completo:**
-- **Fundação** (Exemplos 01-03): Integração de API e gestão de modelos
+- **Fundamentos** (Exemplos 01-03): Integração de API e gestão de modelos
 - **Aplicações** (Exemplos 04-06): RAG, agentes e encaminhamento inteligente
 - **Avançado** (Exemplos 07-10): Estruturas de produção e integração empresarial
 

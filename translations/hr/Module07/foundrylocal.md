@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "070a706937c5ac9feb45693b8c572d25",
-  "translation_date": "2025-09-23T01:23:06+00:00",
+  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
+  "translation_date": "2025-09-26T19:01:46+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "hr"
 }
 -->
-# Foundry Local na Windowsu (Provjereno)
+# Foundry Local na Windowsu i Macu
 
-Ovaj vodič pomaže vam instalirati, pokrenuti i integrirati Microsoft Foundry Local na Windowsu. Svi koraci i naredbe provjereni su prema Microsoft Learn dokumentaciji.
+Ovaj vodič pomaže vam instalirati, pokrenuti i integrirati Microsoft Foundry Local na Windowsu i Macu. Svi koraci i naredbe provjereni su prema Microsoft Learn dokumentaciji.
 
 - Početak: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arhitektura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -31,6 +31,15 @@ winget upgrade --id Microsoft.FoundryLocal
 - Provjera verzije:
 ```cmd
 foundry --version
+```
+     
+**Instalacija / Mac**
+
+**MacOS**: 
+Otvorite terminal i pokrenite sljedeću naredbu:
+```bash
+   brew tap microsoft/foundrylocal
+   brew install foundrylocal
 ```
 
 ## 2) Osnove CLI-a (Tri kategorije)
@@ -54,8 +63,8 @@ foundry cache list
 ```
 
 Napomene:
-- Servis pruža REST API kompatibilan s OpenAI-jem. Port za endpoint se dinamički dodjeljuje; koristite `foundry service status` za otkrivanje.
-- Koristite SDK-ove radi praktičnosti; oni automatski otkrivaju endpoint gdje je podržano.
+- Servis izlaže REST API kompatibilan s OpenAI-jem. Port za endpoint se dinamički dodjeljuje; koristite `foundry service status` za otkrivanje.
+- Koristite SDK-ove radi praktičnosti; oni automatski upravljaju otkrivanjem endpointa gdje je podržano.
 
 ## 3) Otkrivanje lokalnog endpointa (Dinamički port)
 
@@ -94,7 +103,7 @@ foundry cache list
 foundry model run llama-3.2 --verbose
 ```
 Dokumentacija:
-- Kompilacija BYOM: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- BYOM kompilacija: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
 ## 6) Rješavanje problema
 
@@ -116,9 +125,9 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Povezano iskustvo za Windows developere
 
-- Lokalni vs cloud AI izbori na Windowsu, uključujući Foundry Local i Windows ML:
+- Windows lokalne vs cloud AI opcije, uključujući Foundry Local i Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit s Foundry Local (koristite `foundry service status` za dobivanje URL-a za chat endpoint):
+- VS Code AI Toolkit s Foundry Local (koristite `foundry service status` za dobivanje URL-a endpointa za chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
 ---

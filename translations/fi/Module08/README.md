@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-24T23:28:57+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:45:32+00:00",
   "source_file": "Module08/README.md",
   "language_code": "fi"
 }
 -->
-# Moduuli 08: Käytännön harjoituksia Microsoft Foundry Local - Täydellinen kehittäjätyökalupakki
+# Moduuli 08: Käytännön harjoituksia Microsoft Foundry Localilla - Täydellinen kehittäjätyökalupakki
 
 ## Yleiskatsaus
 
-Microsoft Foundry Local edustaa seuraavan sukupolven reunalaskennan AI-kehitystä, tarjoten kehittäjille tehokkaat työkalut AI-sovellusten rakentamiseen, käyttöönottoon ja skaalaamiseen paikallisesti samalla, kun säilytetään saumaton integraatio Azure AI Foundryn kanssa. Tämä moduuli kattaa Foundry Localin perusteellisesti asennuksesta edistyneeseen agenttikehitykseen.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) edustaa seuraavan sukupolven reunalaskennan AI-kehitystä, tarjoten kehittäjille tehokkaat työkalut AI-sovellusten rakentamiseen, käyttöönottoon ja skaalaamiseen paikallisesti samalla kun säilytetään saumaton integraatio Azure AI Foundryn kanssa. Tämä moduuli kattaa Foundry Localin perusteellisesti asennuksesta edistyneeseen agenttikehitykseen.
 
 **Keskeiset teknologiat:**
 - Microsoft Foundry Local CLI ja SDK
@@ -25,8 +25,8 @@ Microsoft Foundry Local edustaa seuraavan sukupolven reunalaskennan AI-kehityst�
 Tämän moduulin suorittamalla opit:
 
 - **Hallitsemaan Foundry Localia**: Asenna, konfiguroi ja optimoi Windows 11 -kehitystä varten
-- **Ottamaan käyttöön erilaisia malleja**: Suorita phi-, qwen-, deepseek- ja GPT-malleja paikallisesti CLI-komentojen avulla
-- **Rakentamaan tuotantoratkaisuja**: Luo AI-sovelluksia edistyneellä prompt-engineeringillä ja dataintegraatiolla
+- **Ottamaan käyttöön erilaisia malleja**: Käytä phi-, qwen-, deepseek- ja GPT-malleja paikallisesti CLI-komentojen avulla
+- **Rakentamaan tuotantoratkaisuja**: Luo AI-sovelluksia edistyneellä promptien suunnittelulla ja dataintegraatiolla
 - **Hyödyntämään avoimen lähdekoodin ekosysteemiä**: Integroi Hugging Face -malleja ja yhteisön kontribuutioita
 - **Kehittämään AI-agentteja**: Rakenna älykkäitä agentteja perustamis- ja orkestrointikyvyillä
 - **Toteuttamaan yrityskäytön malleja**: Luo modulaarisia, skaalautuvia AI-ratkaisuja tuotantokäyttöön
@@ -45,9 +45,9 @@ Tämän moduulin suorittamalla opit:
 ---
 
 ### [2: Rakenna AI-ratkaisuja Azure AI Foundrylla](./02.AzureAIFoundryIntegration.md)
-**Painopiste**: Edistynyt prompt-engineering, dataintegraatio ja pilviyhteydet
+**Painopiste**: Edistynyt promptien suunnittelu, dataintegraatio ja pilviyhteydet
 
-**Keskeiset aiheet**: Prompt-engineering • Dataintegraatio • Azure-työnkulut • Suorituskyvyn optimointi • Seuranta
+**Keskeiset aiheet**: Promptien suunnittelu • Dataintegraatio • Azure-työnkulut • Suorituskyvyn optimointi • Seuranta
 
 **Esimerkki**: [Chainlit RAG Application](./samples/04/README.md)
 
@@ -58,7 +58,7 @@ Tämän moduulin suorittamalla opit:
 ### [3: Avoimen lähdekoodin mallit Foundry Localilla](./03.OpenSourceModels.md)
 **Painopiste**: Hugging Face -integraatio, BYOM-strategiat ja yhteisön mallit
 
-**Keskeiset aiheet**: Hugging Face -integraatio • Bring-your-own-model • Model Mondays -oivallukset • Yhteisön kontribuutiot • Mallien valinta
+**Keskeiset aiheet**: Hugging Face -integraatio • Oma malli mukaan (BYOM) • Model Mondays -oivallukset • Yhteisön kontribuutiot • Mallien valinta
 
 **Esimerkki**: [Multi-Agent Orchestration](./samples/05/README.md)
 
@@ -77,10 +77,10 @@ Tämän moduulin suorittamalla opit:
 
 ---
 
-### [5: Rakenna AI-pohjaisia agentteja nopeasti](./05.AIPoweredAgents.md)
+### [5: Rakenna AI-agentteja nopeasti](./05.AIPoweredAgents.md)
 **Painopiste**: Agenttiarkkitehtuurit, järjestelmäpromptit, perustaminen ja orkestrointi
 
-**Keskeiset aiheet**: Agenttisuunnittelumallit • Järjestelmäpromptien suunnittelu • Perustamistekniikat • Moniagenttijärjestelmät • Tuotantokäyttöön ottaminen
+**Keskeiset aiheet**: Agenttien suunnittelumallit • Järjestelmäpromptien suunnittelu • Perustamistekniikat • Moniagenttijärjestelmät • Tuotantokäyttöön ottaminen
 
 **Esimerkki**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
 
@@ -95,14 +95,14 @@ Tämän moduulin suorittamalla opit:
 
 **Esimerkki**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
-**Kesto**: 3-4 tuntia | **Taso**: Ekspertti
+**Kesto**: 3-4 tuntia | **Taso**: Asiantuntija
 
 ---
 
 ### [7: Suorat API-integraatiomallit](./samples/07/README.md)
 **Painopiste**: REST API -integraatio ilman SDK-riippuvuuksia maksimaalisen hallinnan saavuttamiseksi
 
-**Keskeiset aiheet**: HTTP-asiakasohjelman toteutus • Mukautettu autentikointi • Mallien terveyden seuranta • Vastausten suoratoisto • Tuotannon virheenkäsittely
+**Keskeiset aiheet**: HTTP-asiakasohjelman toteutus • Mukautettu autentikointi • Mallien terveyden seuranta • Suoratoistovastaukset • Tuotannon virheenkäsittely
 
 **Esimerkki**: [Direct API Client](./samples/07/README.md)
 
@@ -110,10 +110,10 @@ Tämän moduulin suorittamalla opit:
 
 ---
 
-### [8: Windows 11 -natiivi chat-sovellus](./samples/08/README.md)
-**Painopiste**: Modernien natiivien chat-sovellusten rakentaminen Foundry Local -integraatiolla
+### [8: Windows 11:n alkuperäinen chat-sovellus](./samples/08/README.md)
+**Painopiste**: Modernien alkuperäisten chat-sovellusten rakentaminen Foundry Local -integraatiolla
 
-**Keskeiset aiheet**: Electron-kehitys • Fluent Design System • Natiivi Windows-integraatio • Reaaliaikainen suoratoisto • Chat-käyttöliittymän suunnittelu
+**Keskeiset aiheet**: Electron-kehitys • Fluent Design System • Windows-integraatio • Reaaliaikainen suoratoisto • Chat-käyttöliittymän suunnittelu
 
 **Esimerkki**: [Windows 11 Chat Application](./samples/08/README.md)
 
@@ -122,13 +122,13 @@ Tämän moduulin suorittamalla opit:
 ---
 
 ### [9: Edistynyt moniagenttien orkestrointi](./samples/09/README.md)
-**Painopiste**: Monimutkainen agenttien koordinointi, erikoistuneet tehtävien delegoinnit ja yhteistyöhön perustuvat AI-työnkulut
+**Painopiste**: Monimutkainen agenttien koordinointi, erikoistuneiden tehtävien delegointi ja yhteistyöhön perustuvat AI-työnkulut
 
 **Keskeiset aiheet**: Älykäs agenttien koordinointi • Funktiokutsumallit • Agenttien välinen viestintä • Työnkulun orkestrointi • Laadunvarmistusmekanismit
 
 **Esimerkki**: [Advanced Multi-Agent System](./samples/09/README.md)
 
-**Kesto**: 4-5 tuntia | **Taso**: Ekspertti
+**Kesto**: 4-5 tuntia | **Taso**: Asiantuntija
 
 ---
 
@@ -139,7 +139,7 @@ Tämän moduulin suorittamalla opit:
 
 **Esimerkki**: [Foundry Tools Framework](./samples/10/README.md)
 
-**Kesto**: 4-5 tuntia | **Taso**: Ekspertti
+**Kesto**: 4-5 tuntia | **Taso**: Asiantuntija
 
 ## Esivaatimukset
 
@@ -162,39 +162,39 @@ Tämän moduulin suorittamalla opit:
 - Komentorivin peruskäyttö
 - Python-ohjelmoinnin perusteet
 - REST API -konseptit
-- Perustiedot promptien ja mallien inferenssistä
+- Perustiedot promptien suunnittelusta ja mallien inferenssistä
 
 ## Moduulin aikataulu
 
 **Arvioitu kokonaisaika**: 30-38 tuntia
 
-| Istunto | Painopistealue | Esimerkit | Aika | Monimutkaisuus |
-|---------|----------------|-----------|------|----------------|
-|  1 | Asennus & perusteet | 01, 02, 03 | 2-3 tuntia | Aloittelija |
+| Istunto | Painopistealue | Esimerkit | Aika | Vaikeustaso |
+|---------|----------------|-----------|------|-------------|
+|  1 | Asennus ja perusteet | 01, 02, 03 | 2-3 tuntia | Aloittelija |
 |  2 | AI-ratkaisut | 04 | 2-3 tuntia | Keskitaso |
 |  3 | Avoin lähdekoodi | 05 | 2-3 tuntia | Keskitaso |
 |  4 | Edistyneet mallit | 06 | 3-4 tuntia | Edistynyt |
 |  5 | AI-agentit | 05, 09 | 3-4 tuntia | Edistynyt |
-|  6 | Yritystyökalut | 06, 10 | 3-4 tuntia | Ekspertti |
+|  6 | Yritystyökalut | 06, 10 | 3-4 tuntia | Asiantuntija |
 |  7 | Suora API-integraatio | 07 | 2-3 tuntia | Keskitaso |
-|  8 | Windows 11 -chat-sovellus | 08 | 3-4 tuntia | Edistynyt |
-|  9 | Edistynyt moniagentti | 09 | 4-5 tuntia | Ekspertti |
-| 10 | Työkalukehys | 10 | 4-5 tuntia | Ekspertti |
+|  8 | Windows 11 Chat-sovellus | 08 | 3-4 tuntia | Edistynyt |
+|  9 | Edistynyt moniagentti | 09 | 4-5 tuntia | Asiantuntija |
+| 10 | Työkalukehys | 10 | 4-5 tuntia | Asiantuntija |
 
 ## Keskeiset resurssit
 
 **Virallinen dokumentaatio:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Lähdekoodi ja viralliset esimerkit
 - [Azure AI Foundry Dokumentaatio](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Täydellinen asennus- ja käyttöopas
-- [Model Mondays -sarja](https://aka.ms/model-mondays) - Viikoittaiset malliesittelyt ja tutoriaalit
+- [Model Mondays Series](https://aka.ms/model-mondays) - Viikoittaiset malliesittelyt ja tutoriaalit
 
-**Yhteisö & tuki:**
-- [Foundry Local Keskustelut](https://github.com/microsoft/Foundry-Local/discussions) - Yhteisön kysymykset ja ominaisuuspyynnöt
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Uusimmat uutiset ja parhaat käytännöt
+**Yhteisö ja tuki:**
+- [Foundry Local Keskustelut](https://github.com/microsoft/Foundry-Local/discussions) - Yhteisön Q&A ja ominaisuuspyynnöt
+- [Microsoft AI Kehittäjäyhteisö](https://techcommunity.microsoft.com/category/artificialintelligence) - Uusimmat uutiset ja parhaat käytännöt
 
 ## Oppimistulokset
 
-Moduulin suorittamisen jälkeen sinulla on valmiudet:
+Moduulin suorittamisen jälkeen osaat:
 
 ### Tekninen osaaminen
 - **Käyttöönotto ja hallinta**: Foundry Local -asennukset kehitys- ja tuotantoympäristöissä
@@ -212,16 +212,16 @@ Moduulin suorittamisen jälkeen sinulla on valmiudet:
 - **Nopea prototyyppaus**: Rakenna ja testaa AI-sovelluskonsepteja nopeasti kaikkien 10 esimerkkimallin avulla
 - **Yhteisöintegraatio**: Hyödynnä avoimen lähdekoodin malleja ja osallistu ekosysteemiin
 - **Edistyneet mallit**: Toteuta huippuluokan AI-malleja, kuten RAG, agentit ja työkaluintegraatio
-- **Kehyksen hallinta**: Eksperttitason integraatio LangChainin, Semantic Kernelin, Chainlitin ja Electronin kanssa
-- **Tuotantokäyttöön ottaminen**: Ota käyttöön skaalautuvia AI-ratkaisuja paikallisista prototyypeistä yritysjärjestelmiin
+- **Kehyksen hallinta**: Asiantuntijatason integraatio LangChainin, Semantic Kernelin, Chainlitin ja Electronin kanssa
+- **Tuotantokäyttö**: Ota käyttöön skaalautuvia AI-ratkaisuja paikallisista prototyypeistä yritysjärjestelmiin
 - **Tulevaisuuden kehitys**: Rakenna sovelluksia, jotka ovat valmiita tuleviin AI-teknologioihin ja malleihin
 
 ## Aloittaminen
 
 1. **Ympäristön asennus**: Varmista Windows 11 ja suositeltu laitteisto (katso esivaatimukset)
 2. **Asenna Foundry Local**: Seuraa istuntoa 1 täydelliseen asennukseen ja konfigurointiin
-3. **Suorita esimerkki 01**: Aloita perus REST API -integraatiolla varmistaaksesi asennuksen
-4. **Etene esimerkkien läpi**: Suorita esimerkit 01-10 kattavan osaamisen saavuttamiseksi
+3. **Suorita esimerkki 01**: Aloita REST API -integraatiolla varmistaaksesi asennuksen
+4. **Etene esimerkkien läpi**: Suorita esimerkit 01-10 täydellisen hallinnan saavuttamiseksi
 
 ## Menestysmittarit
 
@@ -234,20 +234,20 @@ Seuraa edistymistäsi kaikkien 10 kattavan esimerkin läpi:
 - [ ] Suorita mallien etsintä ja vertailu (Esimerkki 03)
 
 ### Sovellustaso (Esimerkit 04-06)
-- [ ] Ota käyttöön ja suorita vähintään 4 eri malliperhettä
+- [ ] Ota käyttöön ja suorita vähintään 4 erilaista malliperhettä
 - [ ] Rakenna toimiva RAG-chat-sovellus (Esimerkki 04)
 - [ ] Luo moniagenttien orkestrointijärjestelmä (Esimerkki 05)
 - [ ] Toteuta älykäs mallien reititys (Esimerkki 06)
 
 ### Edistynyt integraatiotaso (Esimerkit 07-10)
 - [ ] Rakenna tuotantovalmiita API-asiakasohjelmia (Esimerkki 07)
-- [ ] Kehitä Windows 11 -natiivi chat-sovellus (Esimerkki 08)
+- [ ] Kehitä Windows 11:n alkuperäinen chat-sovellus (Esimerkki 08)
 - [ ] Toteuta edistynyt moniagenttijärjestelmä (Esimerkki 09)
 - [ ] Luo kattava työkalukehys (Esimerkki 10)
 
 ### Hallinnan indikaattorit
 - [ ] Suorita kaikki 10 esimerkkiä ilman virheitä
-- [ ] Mukauta vähintään 3 esimerkkiä tiettyihin käyttötapauksiin
+- [ ] Mukauta vähintään 3 esimerkkiä erityisiin käyttötapauksiin
 - [ ] Ota käyttöön 2+ esimerkkiä tuotantokaltaisissa ympäristöissä
 - [ ] Osallistu parannuksiin tai laajennuksiin esimerkkikoodissa
 - [ ] Integroi Foundry Local -mallit henkilökohtaisiin/ammatillisiin projekteihin
@@ -372,49 +372,7 @@ npm run build
 ```
 
 **Esimerkki 09: Advanced Multi-Agent System**
-```powershell
-# Navigate to sample directory
-cd samples/09
-
-# Install agent system dependencies
-pip install -r requirements.txt
-
-# Run basic coordination example
-python examples/basic_coordination.py
-
-# Try complex workflow
-python examples/complex_workflow.py
-
-# Interactive agent demo
-python examples/interactive_demo.py
-```
-
-**Esimerkki 10: Foundry Tools Framework**
-```powershell
-# Navigate to sample directory
-cd samples/10
-
-# Install framework dependencies
-pip install -r requirements.txt
-
-# Run basic tools demo
-python examples/basic_tools.py
-
-# Start REST API server
-python examples/rest_api_server.py
-# API available at http://localhost:8080
-
-# Try CLI application
-python examples/cli_application.py --help
-
-# Launch Jupyter notebook
-jupyter notebook examples/jupyter_notebook.ipynb
-
-# Test LangChain integration
-python examples/langchain_demo.py
-```
-
-
+@@CODE_BLOCK
 Tämä moduuli edustaa huippua edge AI -kehityksessä, yhdistäen Microsoftin yritystason työkalut avoimen lähdekoodin ekosysteemin joustavuuteen ja innovaatioon. Hallitsemalla Foundry Localin kaikki 10 kattavaa esimerkkiä, sijoitut AI-sovelluskehityksen eturintamaan.
 
 **Täydellinen oppimispolku:**

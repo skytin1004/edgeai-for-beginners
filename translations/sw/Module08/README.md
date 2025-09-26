@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "50d80c321803b5170d9a9cd9bbfb37a3",
-  "translation_date": "2025-09-25T01:01:36+00:00",
+  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
+  "translation_date": "2025-09-26T18:52:24+00:00",
   "source_file": "Module08/README.md",
   "language_code": "sw"
 }
@@ -11,32 +11,32 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Muhtasari
 
-Microsoft Foundry Local inawakilisha kizazi kipya cha maendeleo ya AI ya ukingoni, ikiwapa waendelezaji zana zenye nguvu za kujenga, kupeleka, na kupanua programu za AI kwa ndani huku ikidumisha muunganisho wa bila mshono na Azure AI Foundry. Moduli hii inatoa mafunzo ya kina kuhusu Foundry Local kuanzia usakinishaji hadi maendeleo ya mawakala wa hali ya juu.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) inawakilisha kizazi kipya cha maendeleo ya AI ya ukingo, ikiwapa waendelezaji zana zenye nguvu za kujenga, kupeleka, na kupanua programu za AI kwa ndani huku wakidumisha muunganisho wa bila mshono na Azure AI Foundry. Moduli hii inatoa mafunzo ya kina kuhusu Foundry Local kuanzia usakinishaji hadi maendeleo ya mawakala wa hali ya juu.
 
 **Teknolojia Muhimu:**
 - Microsoft Foundry Local CLI na SDK
 - Muunganisho wa Azure AI Foundry
 - Utoaji wa modeli kwenye kifaa
-- Kuhifadhi na kuboresha modeli kwa ndani
-- Miundombinu ya msingi wa mawakala
+- Uboreshaji na uhifadhi wa modeli kwa ndani
+- Miundombinu inayotegemea mawakala
 
 ## Malengo ya Kujifunza
 
 Kwa kukamilisha moduli hii, utaweza:
 
 - **Kumiliki Foundry Local**: Kusakinisha, kusanidi, na kuboresha kwa maendeleo ya Windows 11
-- **Kupeleka Modeli Tofauti**: Kuendesha modeli za phi, qwen, deepseek, na GPT kwa ndani kwa kutumia amri za CLI
+- **Kuweka Modeli Tofauti**: Kuendesha phi, qwen, deepseek, na modeli za GPT kwa ndani kwa kutumia amri za CLI
 - **Kujenga Suluhisho za Uzalishaji**: Kuunda programu za AI kwa kutumia uhandisi wa hali ya juu wa maelekezo na muunganisho wa data
 - **Kufaidika na Mfumo wa Chanzo Huria**: Kuunganisha modeli za Hugging Face na michango ya jamii
-- **Kuendeleza Mawakala wa AI**: Kujenga mawakala wenye akili na uwezo wa kuunganisha na kuratibu
-- **Kutumia Mifumo ya Biashara**: Kuunda suluhisho za AI zenye moduli na zinazoweza kupanuka kwa ajili ya kupelekwa uzalishaji
+- **Kuendeleza Mawakala wa AI**: Kujenga mawakala wenye akili kwa kutumia mbinu za msingi na uratibu
+- **Kutumia Mifumo ya Biashara**: Kuunda suluhisho za AI zinazoweza kupanuka kwa ajili ya kupelekwa kwa uzalishaji
 
 ## Muundo wa Kipindi
 
 ### [1: Kuanza na Foundry Local](./01.FoundryLocalSetup.md)
 **Lengo**: Usakinishaji, usanidi wa CLI, upelekaji wa modeli, na uboreshaji wa vifaa
 
-**Mada Muhimu**: Usakinishaji kamili • Amri za CLI • Kuhifadhi modeli • Kuongeza kasi ya vifaa • Upelekaji wa modeli nyingi
+**Mada Muhimu**: Usakinishaji kamili • Amri za CLI • Uhifadhi wa modeli • Uharakishaji wa vifaa • Upelekaji wa modeli nyingi
 
 **Mfano**: [Mwongozo wa Haraka wa REST Chat](./samples/01/README.md) • [Muunganisho wa OpenAI SDK](./samples/02/README.md) • [Ugunduzi wa Modeli na Upimaji](./samples/03/README.md)
 
@@ -58,7 +58,7 @@ Kwa kukamilisha moduli hii, utaweza:
 ### [3: Modeli za Chanzo Huria Foundry Local](./03.OpenSourceModels.md)
 **Lengo**: Muunganisho wa Hugging Face, mikakati ya BYOM, na modeli za jamii
 
-**Mada Muhimu**: Muunganisho wa HuggingFace • Kuleta modeli yako mwenyewe • Maarifa ya Model Mondays • Michango ya jamii • Uchaguzi wa modeli
+**Mada Muhimu**: Muunganisho wa HuggingFace • Leta-modeli-yako-mwenyewe • Maarifa ya Model Mondays • Michango ya jamii • Uchaguzi wa modeli
 
 **Mfano**: [Uratibu wa Mawakala Wengi](./samples/05/README.md)
 
@@ -69,7 +69,7 @@ Kwa kukamilisha moduli hii, utaweza:
 ### [4: Kuchunguza Modeli za Kisasa](./04.CuttingEdgeModels.md)
 **Lengo**: LLMs vs SLMs, utekelezaji wa EdgeAI, na maonyesho ya hali ya juu
 
-**Mada Muhimu**: Ulinganisho wa modeli • Utoaji wa ukingoni vs wingu • Phi + ONNX Runtime • Programu ya Chainlit RAG • Uboreshaji wa WebGPU
+**Mada Muhimu**: Ulinganisho wa modeli • Utoaji wa ukingo vs wingu • Phi + ONNX Runtime • Programu ya Chainlit RAG • Uboreshaji wa WebGPU
 
 **Mfano**: [Router ya Modeli-kama-Zana](./samples/06/README.md)
 
@@ -78,9 +78,9 @@ Kwa kukamilisha moduli hii, utaweza:
 ---
 
 ### [5: Kujenga Mawakala Wenye Nguvu za AI Haraka](./05.AIPoweredAgents.md)
-**Lengo**: Miundombinu ya mawakala, maelekezo ya mfumo, uunganishaji, na uratibu
+**Lengo**: Miundombinu ya mawakala, maelekezo ya mfumo, msingi, na uratibu
 
-**Mada Muhimu**: Mifumo ya kubuni mawakala • Uhandisi wa maelekezo ya mfumo • Mbinu za uunganishaji • Mifumo ya mawakala wengi • Upelekaji wa uzalishaji
+**Mada Muhimu**: Miundo ya mawakala • Uhandisi wa maelekezo ya mfumo • Mbinu za msingi • Mifumo ya mawakala wengi • Upelekaji wa uzalishaji
 
 **Mfano**: [Uratibu wa Mawakala Wengi](./samples/05/README.md) • [Mfumo wa Mawakala Wengi wa Hali ya Juu](./samples/09/README.md)
 
@@ -89,7 +89,7 @@ Kwa kukamilisha moduli hii, utaweza:
 ---
 
 ### [6: Foundry Local - Modeli kama Zana](./06.ModelsAsTools.md)
-**Lengo**: Suluhisho za AI zenye moduli, upanuzi wa biashara, na mifumo ya uzalishaji
+**Lengo**: Suluhisho za AI za moduli, upanuzi wa biashara, na mifumo ya uzalishaji
 
 **Mada Muhimu**: Modeli kama zana • Upelekaji kwenye kifaa • Muunganisho wa SDK/API • Miundombinu ya biashara • Mikakati ya upanuzi
 
@@ -102,7 +102,7 @@ Kwa kukamilisha moduli hii, utaweza:
 ### [7: Mifumo ya Muunganisho wa API Moja kwa Moja](./samples/07/README.md)
 **Lengo**: Muunganisho wa REST API bila utegemezi wa SDK kwa udhibiti wa juu zaidi
 
-**Mada Muhimu**: Utekelezaji wa mteja wa HTTP • Uthibitishaji maalum • Ufuatiliaji wa afya ya modeli • Majibu ya mtiririko • Kushughulikia makosa ya uzalishaji
+**Mada Muhimu**: Utekelezaji wa mteja wa HTTP • Uthibitishaji maalum • Ufuatiliaji wa afya ya modeli • Majibu ya kutiririka • Ushughulikiaji wa makosa ya uzalishaji
 
 **Mfano**: [Mteja wa API Moja kwa Moja](./samples/07/README.md)
 
@@ -110,10 +110,10 @@ Kwa kukamilisha moduli hii, utaweza:
 
 ---
 
-### [8: Programu ya Mazungumzo ya Asili ya Windows 11](./samples/08/README.md)
-**Lengo**: Kujenga programu za kisasa za mazungumzo za asili kwa muunganisho wa Foundry Local
+### [8: Programu ya Mazungumzo Asilia ya Windows 11](./samples/08/README.md)
+**Lengo**: Kujenga programu za mazungumzo za kisasa za asili na muunganisho wa Foundry Local
 
-**Mada Muhimu**: Maendeleo ya Electron • Mfumo wa Ubunifu wa Fluent • Muunganisho wa asili wa Windows • Mtiririko wa wakati halisi • Ubunifu wa kiolesura cha mazungumzo
+**Mada Muhimu**: Maendeleo ya Electron • Mfumo wa Ubunifu wa Fluent • Muunganisho wa asili wa Windows • Kutiririka kwa muda halisi • Ubunifu wa kiolesura cha mazungumzo
 
 **Mfano**: [Programu ya Mazungumzo ya Windows 11](./samples/08/README.md)
 
@@ -122,9 +122,9 @@ Kwa kukamilisha moduli hii, utaweza:
 ---
 
 ### [9: Uratibu wa Mawakala Wengi wa Hali ya Juu](./samples/09/README.md)
-**Lengo**: Uratibu wa mawakala wa hali ya juu, ugawaji wa kazi maalum, na mifumo ya AI ya kushirikiana
+**Lengo**: Uratibu wa mawakala wa hali ya juu, ugawaji wa kazi maalum, na mifumo ya AI ya ushirikiano
 
-**Mada Muhimu**: Uratibu wa mawakala wenye akili • Mifumo ya kupiga kazi • Mawasiliano kati ya mawakala • Uratibu wa mifumo ya kazi • Mbinu za uhakikisho wa ubora
+**Mada Muhimu**: Uratibu wa mawakala wenye akili • Miundo ya kupiga kazi • Mawasiliano kati ya mawakala • Uratibu wa mifumo ya kazi • Mbinu za uhakikisho wa ubora
 
 **Mfano**: [Mfumo wa Mawakala Wengi wa Hali ya Juu](./samples/09/README.md)
 
@@ -135,7 +135,7 @@ Kwa kukamilisha moduli hii, utaweza:
 ### [10: Foundry Local kama Mfumo wa Zana](./samples/10/README.md)
 **Lengo**: Miundombinu inayozingatia zana kwa kuunganisha Foundry Local kwenye programu na mifumo iliyopo
 
-**Mada Muhimu**: Muunganisho wa LangChain • Kazi za Semantic Kernel • Mifumo ya REST API • Zana za CLI • Muunganisho wa Jupyter • Mifumo ya upelekaji uzalishaji
+**Mada Muhimu**: Muunganisho wa LangChain • Kazi za Kernel ya Semantic • Mifumo ya REST API • Zana za CLI • Muunganisho wa Jupyter • Mifumo ya upelekaji wa uzalishaji
 
 **Mfano**: [Mfumo wa Zana za Foundry](./samples/10/README.md)
 
@@ -144,11 +144,11 @@ Kwa kukamilisha moduli hii, utaweza:
 ## Mahitaji ya Awali
 
 ### Mahitaji ya Mfumo
-- **Mfumo wa Uendeshaji**: Windows 11 (22H2 au zaidi)
+- **Mfumo wa Uendeshaji**: Windows 11 (22H2 au baadaye)
 - **Kumbukumbu**: RAM ya 16GB (32GB inapendekezwa kwa modeli kubwa)
-- **Hifadhi**: Nafasi ya bure ya 50GB kwa kuhifadhi modeli
+- **Hifadhi**: Nafasi ya GB 50 kwa uhifadhi wa modeli
 - **Vifaa**: Kifaa chenye NPU kinapendekezwa (Copilot+ PC), GPU ni hiari
-- **Mtandao**: Intaneti ya kasi ya juu kwa upakuaji wa modeli wa awali
+- **Mtandao**: Intaneti ya kasi kwa upakuaji wa modeli wa awali
 
 ### Mazingira ya Maendeleo
 - Visual Studio Code na kiendelezi cha AI Toolkit
@@ -159,7 +159,7 @@ Kwa kukamilisha moduli hii, utaweza:
 
 ### Maarifa ya Awali
 - Uelewa wa msingi wa dhana za AI/ML
-- Uzoefu wa kutumia amri za mstari
+- Uzoefu wa kutumia mstari wa amri
 - Msingi wa programu ya Python
 - Dhana za REST API
 - Maarifa ya msingi ya maelekezo na utoaji wa modeli
@@ -190,42 +190,42 @@ Kwa kukamilisha moduli hii, utaweza:
 
 **Jamii & Usaidizi:**
 - [Majadiliano ya Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Maswali na majibu ya jamii na maombi ya vipengele
-- [Jamii ya Waendelezaji wa Microsoft AI](https://techcommunity.microsoft.com/category/artificialintelligence) - Habari za hivi karibuni na mbinu bora
+- [Jamii ya Waendelezaji wa AI wa Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Habari za hivi karibuni na mbinu bora
 
 ## Matokeo ya Kujifunza
 
 Baada ya kukamilisha moduli hii, utaweza:
 
 ### Ustadi wa Kiufundi
-- **Kupeleka na Kusimamia**: Usakinishaji wa Foundry Local katika mazingira ya maendeleo na uzalishaji
+- **Kuweka na Kusimamia**: Usakinishaji wa Foundry Local katika mazingira ya maendeleo na uzalishaji
 - **Kuunganisha Modeli**: Kufanya kazi bila mshono na familia tofauti za modeli kutoka Microsoft, Hugging Face, na vyanzo vya jamii
 - **Kujenga Programu**: Kuunda programu za AI tayari kwa uzalishaji zenye vipengele vya hali ya juu na uboreshaji
-- **Kuendeleza Mawakala**: Kutekeleza mawakala wa AI wa hali ya juu wenye uunganishaji, uamuzi, na ujumuishaji wa zana
+- **Kuendeleza Mawakala**: Kutekeleza mawakala wa AI wa hali ya juu wenye msingi, uamuzi, na muunganisho wa zana
 
 ### Uelewa wa Kistratejia
 - **Maamuzi ya Miundombinu**: Kufanya chaguo sahihi kati ya upelekaji wa ndani vs wingu
-- **Uboreshaji wa Utendaji**: Kuboresha utendaji wa utoaji wa modeli kwenye usanidi tofauti wa vifaa
-- **Upanuzi wa Biashara**: Kubuni programu zinazopanuka kutoka kwa prototipu za ndani hadi upelekaji wa biashara
+- **Uboreshaji wa Utendaji**: Kuboresha utendaji wa utoaji wa modeli katika usanidi tofauti wa vifaa
+- **Upanuzi wa Biashara**: Kubuni programu zinazopanuka kutoka prototipu za ndani hadi upelekaji wa biashara
 - **Faragha na Usalama**: Kutekeleza suluhisho za AI zinazohifadhi faragha kwa utoaji wa ndani
 
 ### Uwezo wa Ubunifu
 - **Uundaji wa Haraka**: Kujenga na kujaribu dhana za programu za AI haraka kwa kutumia mifumo yote 10 ya sampuli
 - **Muunganisho wa Jamii**: Kufaidika na modeli za chanzo huria na kuchangia kwenye mfumo
-- **Mifumo ya Juu**: Kutekeleza mifumo ya AI ya kisasa ikijumuisha RAG, mawakala, na ujumuishaji wa zana
-- **Ustadi wa Mfumo**: Muunganisho wa kiwango cha mtaalamu na LangChain, Semantic Kernel, Chainlit, na Electron
+- **Mifumo ya Juu**: Kutekeleza mifumo ya AI ya kisasa ikijumuisha RAG, mawakala, na muunganisho wa zana
+- **Ustadi wa Mfumo**: Muunganisho wa kiwango cha mtaalamu na LangChain, Kernel ya Semantic, Chainlit, na Electron
 - **Upelekaji wa Uzalishaji**: Kupeleka suluhisho za AI zinazopanuka kutoka prototipu za ndani hadi mifumo ya biashara
 - **Maendeleo Tayari kwa Teknolojia ya Baadaye**: Kujenga programu tayari kwa teknolojia na mifumo ya AI inayojitokeza
 
 ## Kuanza
 
 1. **Usanidi wa Mazingira**: Hakikisha Windows 11 na vifaa vinavyopendekezwa (angalia Mahitaji ya Awali)
-2. **Sakinisha Foundry Local**: Fuata Kipindi cha 1 kwa usakinishaji kamili na usanidi
+2. **Sakinisha Foundry Local**: Fuata Kipindi cha 1 kwa usakinishaji na usanidi kamili
 3. **Endesha Sampuli 01**: Anza na muunganisho wa msingi wa REST API ili kuthibitisha usanidi
 4. **Endelea na Sampuli**: Kamilisha sampuli 01-10 kwa ustadi wa kina
 
-## Vipimo vya Mafanikio
+## Viashiria vya Mafanikio
 
-Fuata maendeleo yako kupitia mifumo yote 10 ya sampuli kamili:
+Fuata maendeleo yako kupitia sampuli zote 10 za kina:
 
 ### Kiwango cha Msingi (Sampuli 01-03)
 - [ ] Kusakinisha na kusanidi Foundry Local kwa mafanikio
@@ -234,7 +234,7 @@ Fuata maendeleo yako kupitia mifumo yote 10 ya sampuli kamili:
 - [ ] Kufanya ugunduzi wa modeli na upimaji (Sampuli 03)
 
 ### Kiwango cha Programu (Sampuli 04-06)
-- [ ] Kupeleka na kuendesha angalau familia 4 tofauti za modeli
+- [ ] Kuweka na kuendesha angalau familia 4 tofauti za modeli
 - [ ] Kujenga programu ya mazungumzo ya RAG inayofanya kazi (Sampuli 04)
 - [ ] Kuunda mfumo wa uratibu wa mawakala wengi (Sampuli 05)
 - [ ] Kutekeleza mfumo wa uelekezaji wa modeli wenye akili (Sampuli 06)
@@ -243,14 +243,14 @@ Fuata maendeleo yako kupitia mifumo yote 10 ya sampuli kamili:
 - [ ] Kujenga mteja wa API tayari kwa uzalishaji (Sampuli 07)
 - [ ] Kuendeleza programu ya mazungumzo ya asili ya Windows 11 (Sampuli 08)
 - [ ] Kutekeleza mfumo wa mawakala wengi wa hali ya juu (Sampuli 09)
-- [ ] Kuunda mfumo wa zana kamili (Sampuli 10)
+- [ ] Kuunda mfumo wa zana wa kina (Sampuli 10)
 
 ### Viashiria vya Ustadi
-- [ ] Kuendesha mifumo yote 10 bila makosa
-- [ ] Kubinafsisha angalau mifumo 3 kwa matumizi maalum
-- [ ] Kupeleka mifumo 2+ katika mazingira yanayofanana na uzalishaji
-- [ ] Kuchangia maboresho au nyongeza kwenye msimbo wa sampuli
-- [ ] Kuunganisha mifumo ya Foundry Local kwenye miradi ya kibinafsi/kitaalamu
+- [ ] Kuendesha sampuli zote 10 bila makosa
+- [ ] Kubinafsisha angalau sampuli 3 kwa matumizi maalum
+- [ ] Kupeleka sampuli 2+ katika mazingira yanayofanana na uzalishaji
+- [ ] Kuchangia maboresho au nyongeza kwa msimbo wa sampuli
+- [ ] Kuunganisha mifumo ya Foundry Local katika miradi ya kibinafsi/kitaalamu
 
 ## Mwongozo wa Kuanza Haraka - Sampuli Zote 10
 
@@ -371,15 +371,15 @@ npm start
 npm run build
 ```
 
-**Sampuli 09: Mfumo wa Mawakala
-Moduli huu unawakilisha maendeleo ya kisasa katika teknolojia ya AI ya ukingo, ukichanganya zana za Microsoft za kiwango cha biashara na urahisi na ubunifu wa mfumo wa wazi. Kwa kufahamu Foundry Local kupitia sampuli 10 za kina, utakuwa katika mstari wa mbele wa maendeleo ya matumizi ya AI.
+**
+Moduli huu unawakilisha maendeleo ya kisasa katika ukuzaji wa AI ya ukingoni, ukichanganya zana za kiwango cha biashara za Microsoft na urahisi na ubunifu wa mfumo wa chanzo huria. Kwa kufahamu Foundry Local kupitia sampuli 10 za kina, utakuwa katika mstari wa mbele wa ukuzaji wa programu za AI.
 
 **Njia Kamili ya Kujifunza:**
-- **Msingi** (Sampuli 01-03): Muunganisho wa API na usimamizi wa modeli
-- **Matumizi** (Sampuli 04-06): RAG, mawakala, na usambazaji wa akili
-- **Ya Juu** (Sampuli 07-10): Miundombinu ya uzalishaji na muunganisho wa biashara
+- **Msingi** (Sampuli 01-03): Ujumuishaji wa API na usimamizi wa modeli
+- **Matumizi** (Sampuli 04-06): RAG, mawakala, na uelekezaji wa akili
+- **Ya Juu** (Sampuli 07-10): Miundombinu ya uzalishaji na ujumuishaji wa biashara
 
-Kwa muunganisho wa Azure OpenAI (Kikao cha 2), angalia faili za README za sampuli husika kwa vigezo vya mazingira vinavyohitajika na mipangilio ya toleo la API.
+Kwa ujumuishaji wa Azure OpenAI (Kipindi cha 2), angalia faili za README za sampuli husika kwa mabadiliko ya mazingira yanayohitajika na mipangilio ya toleo la API.
 
 ---
 
