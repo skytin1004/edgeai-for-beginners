@@ -4,6 +4,7 @@
 
 | Day | Focus | Estimated Hours |
 |------|-------|------------------|
+| Day 0 | Module 0: Introduction to EdgeAI | 1-2 hours |
 | Day 1 | Module 1: EdgeAI Fundamentals | 3 hours |
 | Day 2 | Module 2: SLM Foundations | 3 hours |
 | Day 3 | Module 3: SLM Deployment | 2 hours |
@@ -35,6 +36,7 @@
 
 | Day | Focus | Estimated Hours |
 |------|-------|------------------|
+| Day 0 | Module 0: Introduction to EdgeAI | 1-2 hours |
 | Day 1-2 | Module 1: EdgeAI Fundamentals | 3 hours |
 | Day 3-4 | Module 2: SLM Foundations | 3 hours |
 | Day 5-6 | Module 3: SLM Deployment | 2 hours |
@@ -45,6 +47,7 @@
 
 | Module | Completion Date | Hours Spent | Key Takeaways |
 |--------|----------------|-------------|--------------|
+| Module 0: Introduction to EdgeAI | | | |
 | Module 1: EdgeAI Fundamentals | | | |
 | Module 2: SLM Foundations | | | |
 | Module 3: SLM Deployment | | | |
@@ -72,8 +75,9 @@ This is a concise 20-hour course that delivers essential knowledge about EdgeAI 
 
 ## Course Overview
 
-This course is organized into seven comprehensive modules:
+This course is organized into eight comprehensive modules:
 
+0. **Introduction to EdgeAI** - Foundation and context setting with industry applications and learning objectives
 1. **EdgeAI Fundamentals and Transformation** - Understanding the core concepts and technology shift
 2. **Small Language Model Foundations** - Exploring various SLM families and their architectures
 3. **Small Language Model Deployment** - Implementing practical deployment strategies
@@ -95,7 +99,8 @@ This course is organized into seven comprehensive modules:
 ### Concentrated Learning Path (1 week)
 
 | Day | Focus | Estimated Hours |
-|------|-------|-----------------|
+|------|-------|------------------|
+| Day 0 | Module 0: Introduction to EdgeAI | 1-2 hours |
 | Day 1-2 | Module 1: EdgeAI Fundamentals | 6 hours |
 | Day 3-4 | Module 2: SLM Foundations | 8 hours |
 | Day 5 | Module 3: SLM Deployment | 3 hours |
@@ -104,10 +109,69 @@ This course is organized into seven comprehensive modules:
 ### Part-time Study (3 weeks)
 
 | Week | Focus | Estimated Hours |
-|------|-------|-----------------|
-| Week 1 | Module 1: EdgeAI Fundamentals | 6-7 hours |
+|------|-------|------------------|
+| Week 1 | Module 0: Introduction + Module 1: EdgeAI Fundamentals | 7-9 hours |
 | Week 2 | Module 2: SLM Foundations | 7-8 hours |
 | Week 3 | Module 3: SLM Deployment (3h) + Module 8: Foundry Local Toolkit (2-3h) | 5-6 hours |
+
+## Module 0: Introduction to EdgeAI
+
+### Key Learning Objectives
+
+- Understand what Edge AI is and why it matters in today's technology landscape
+- Identify major industries transformed by Edge AI and their specific use cases
+- Comprehend the advantages of Small Language Models (SLMs) for edge deployment
+- Establish clear learning expectations and outcomes for the complete course
+- Recognize career opportunities and skill requirements in the Edge AI field
+
+### Study Focus Areas
+
+#### Section 1: Edge AI Paradigm and Definition
+- **Priority Concepts**: 
+  - Edge AI vs. traditional cloud AI processing
+  - The convergence of hardware, model optimization, and business demands
+  - Real-time, privacy-preserving, and cost-efficient AI deployment
+
+#### Section 2: Industry Applications
+- **Priority Concepts**: 
+  - Manufacturing & Industry 4.0: Predictive maintenance and quality control
+  - Healthcare: Diagnostic imaging and patient monitoring
+  - Autonomous Systems: Self-driving vehicles and transportation
+  - Smart Cities: Traffic management and public safety
+  - Consumer Technology: Smartphones, wearables, and smart homes
+
+#### Section 3: Small Language Models Foundation
+- **Priority Concepts**: 
+  - SLM characteristics and performance comparisons
+  - Parameter efficiency vs. capability trade-offs
+  - Edge deployment constraints and optimization strategies
+
+#### Section 4: Learning Framework and Career Path
+- **Priority Concepts**: 
+  - Course architecture and progressive mastery approach
+  - Technical skills and practical implementation goals
+  - Career advancement opportunities and industry applications
+
+### Self-Assessment Questions
+
+1. What are the three main technological trends that have enabled Edge AI?
+2. Compare the advantages and challenges of Edge AI vs. cloud-based AI.
+3. Name three industries where Edge AI provides critical business value and explain why.
+4. How do Small Language Models make Edge AI practical for real-world deployment?
+5. What are the key technical skills you'll develop throughout this course?
+6. Describe the four-phase learning approach used in this course.
+
+### Hands-on Exercises
+
+1. **Industry Research**: Choose one industry application and research a real-world Edge AI implementation (30 minutes)
+2. **Model Exploration**: Browse available Small Language Models on Hugging Face and compare their parameter counts and capabilities (30 minutes)
+3. **Learning Planning**: Review the complete course structure and create your personal study schedule (15 minutes)
+
+### Supplementary Materials
+
+- [Edge AI Market Overview - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
+- [Small Language Models Overview - Hugging Face](https://huggingface.co/blog/small-language-models)
+- [Edge Computing Foundation](https://www.edgecomputing.org/)
 
 ## Module 1: EdgeAI Fundamentals and Transformation
 
@@ -547,18 +611,18 @@ To help you make the most of the 20-hour course timeline, here's a suggested bre
 ### Key Focus Areas by Time Constraint
 
 **If you only have 10 hours:**
-- Complete Modules 1, 2, and 3 (core EdgeAI concepts)
+- Complete Module 0 (Introduction) and Modules 1, 2, and 3 (core EdgeAI concepts)
 - Do at least one hands-on exercise per module
 - Focus on understanding the core concepts rather than implementation details
 
 **If you can dedicate the full 20 hours:**
-- Complete all seven modules
+- Complete all eight modules (including Introduction)
 - Perform key hands-on exercises from each module
 - Complete one mini-project from Module 7
 - Explore at least 2-3 supplementary resources
 
 **If you have more than 20 hours:**
-- Complete all modules with detailed exercises
+- Complete all modules (including Introduction) with detailed exercises
 - Build multiple mini-projects
 - Explore advanced optimization techniques in Module 4
 - Implement production deployment from Module 5
@@ -589,6 +653,7 @@ Use this simplified template to track your learning progress through the 20-hour
 
 | Module | Completion Date | Hours Spent | Key Takeaways |
 |--------|----------------|-------------|---------------|
+| Module 0: Introduction to EdgeAI | | | |
 | Module 1: EdgeAI Fundamentals | | | |
 | Module 2: SLM Foundations | | | |
 | Module 3: SLM Deployment | | | |

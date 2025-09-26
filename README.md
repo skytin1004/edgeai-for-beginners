@@ -78,7 +78,8 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 | Module | Topic | Focus Area | Key Content | Level | Duration |
 |--------|-------|------------|-------------|--------|----------|
-| [📚 01](./Module01/) | [EdgeAI Fundamentals](./Module01/README.md) | Cloud vs Edge AI comparison | EdgeAI Fundamentals • Real World Case Studies • Implementation Guide • Edge Deployment | Beginner | 3-4 hrs |
+| [� 00](./introduction.md) | [Introduction to EdgeAI](./introduction.md) | Foundation & Context | EdgeAI Overview • Industry Applications • SLM Introduction • Learning Objectives | Beginner | 1-2 hrs |
+| [�📚 01](./Module01/) | [EdgeAI Fundamentals](./Module01/README.md) | Cloud vs Edge AI comparison | EdgeAI Fundamentals • Real World Case Studies • Implementation Guide • Edge Deployment | Beginner | 3-4 hrs |
 | [🧠 02](./Module02/) | [SLM Model Foundations](./Module02/README.md) | Model families & architecture | Phi Family • Qwen Family • Gemma Family • BitNET • μModel • Phi-Silica | Beginner | 4-5 hrs |
 | [🚀 03](./Module03/) | [SLM Deployment Practice](./Module03/README.md) | Local & cloud deployment | Advanced Learning • Local Environment • Cloud Deployment | Intermediate | 4-5 hrs |
 | [⚙️ 04](./Module04/) | [Model Optimization Toolkit](./Module04/README.md) | Cross-platform optimization | Introduction • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow Synthesis | Intermediate | 5-6 hrs |
@@ -129,6 +130,7 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 
 **Recommended Learning Path** (20-30 hours total):
 
+0. **📖 Introduction** ([Introduction.md](./introduction.md)): EdgeAI foundation + industry context + learning framework
 1. **📚 Foundation** (Modules 01-02): EdgeAI concepts + SLM model families
 2. **⚙️ Optimization** (Modules 03-04): Deployment + quantization frameworks  
 3. **🚀 Production** (Modules 05-06): SLMOps + AI agents + function calling
@@ -148,7 +150,8 @@ Each module includes theory, hands-on exercises, and production-ready code sampl
 
 ```
 edgeai-for-beginners/
-├── 📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
+├── � introduction.md  # Foundation: EdgeAI Overview & Learning Framework
+├── �📚 Module01-04/     # Fundamentals → SLMs → Deployment → Optimization  
 ├── 🔧 Module05-06/     # SLMOps → AI Agents → Function Calling
 ├── 💻 Module07/        # Platform Samples (VS Code, Windows, Jetson, Mobile)
 ├── 🏭 Module08/        # Foundry Local Toolkit + 10 Comprehensive Samples
