@@ -22,7 +22,7 @@ async def initialize_client():
     global client, model_name
     
     # replace this with model name not alias
-    alias = os.environ.get("MODEL", "Phi-4-mini-instruct-cuda-gpu")
+    alias = os.environ.get("MODEL", "phi-4-mini")
     
     if FOUNDRY_SDK_AVAILABLE:
         try:

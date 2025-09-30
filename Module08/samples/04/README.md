@@ -128,7 +128,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -176,7 +176,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|----------|
-| `MODEL` | Model alias to use | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Model alias to use | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local endpoint | Auto-detected | `http://localhost:51211` |
 | `API_KEY` | API key (optional for local) | `""` | `your-api-key` |
 

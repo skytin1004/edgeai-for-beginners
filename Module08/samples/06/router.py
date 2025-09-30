@@ -35,12 +35,12 @@ class ModelRouter:
                 "temperature": 0.7
             },
             "reasoning": {
-                "model": os.environ.get("REASONING_MODEL", "deepseek-r1-distill-qwen-7b"),
+                "model": os.environ.get("REASONING_MODEL", "deepseek-r1-7b"),
                 "notes": "Step-by-step analysis and logical reasoning",
                 "temperature": 0.3
             },
             "code": {
-                "model": os.environ.get("CODE_MODEL", "qwen2.5-7b-instruct"),
+                "model": os.environ.get("CODE_MODEL", "qwen2.5-7b"),
                 "notes": "Code generation, debugging, and technical tasks",
                 "temperature": 0.2
             },

@@ -321,7 +321,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
