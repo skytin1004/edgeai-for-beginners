@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T09:55:46+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T23:27:07+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "hk"
 }
 -->
 # 範例 04：使用 Chainlit 建立生產級聊天應用程式
 
-一個全面的範例，展示了使用 Microsoft Foundry Local 建立生產級聊天應用程式的多種方法，包含現代化的網頁介面、串流回應，以及最先進的瀏覽器技術。
+一個全面的範例，展示了使用 Microsoft Foundry Local 建立生產級聊天應用程式的多種方法，包含現代化的網頁介面、串流回應以及尖端的瀏覽器技術。
 
 ## 包含內容
 
@@ -33,7 +33,7 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-開啟網址：`http://localhost:8080`
+開啟於：`http://localhost:8080`
 
 ### 2. WebGPU 瀏覽器示範
 
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-開啟網址：`http://localhost:5173`
+開啟於：`http://localhost:5173`
 
 ### 3. 開放 WebUI 設定
 
@@ -57,7 +57,7 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-開啟網址：`http://localhost:3000`
+開啟於：`http://localhost:3000`
 
 ## 架構模式
 
@@ -76,9 +76,9 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 技術 | 使用情境 | 優點 | 缺點 |
 |------|----------|------|------|
-| **Chainlit** | Python 開發者，快速原型設計 | 設定簡單，支援串流 | 僅限 Python |
-| **WebGPU** | 最大隱私，離線情境 | 瀏覽器原生，無需伺服器 | 模型大小有限 |
-| **開放 WebUI** | 生產部署，團隊使用 | 專業 UI，使用者管理 | 需要 Docker |
+| **Chainlit** | Python 開發者、快速原型設計 | 設定簡單，支援串流 | 僅限 Python |
+| **WebGPU** | 最大隱私、離線情境 | 瀏覽器原生，無需伺服器 | 模型大小有限 |
+| **開放 WebUI** | 生產部署、團隊使用 | 專業 UI，使用者管理 | 需要 Docker |
 
 ## 先決條件
 
@@ -124,11 +124,11 @@ foundry service ps
 
 ### Chainlit 聊天應用程式
 
-**功能特色：**
-- 🚀 **即時串流**：生成的 Token 即時顯示
+**功能：**
+- 🚀 **即時串流**：生成的 token 即時顯示
 - 🛡️ **強大的錯誤處理**：優雅降級與恢復
 - 🎨 **現代化 UI**：內建專業聊天介面
-- 🔧 **靈活配置**：支援環境變數與自動檢測
+- 🔧 **靈活配置**：環境變數與自動檢測
 - 📱 **響應式設計**：適用於桌面與行動裝置
 
 **快速開始：**
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -148,14 +148,14 @@ chainlit run samples\04\app.py -w --port 8080
 
 ### WebGPU 瀏覽器示範
 
-**功能特色：**
+**功能：**
 - 🌐 **瀏覽器原生 AI**：無需伺服器，完全在瀏覽器中運行
-- ⚡ **WebGPU 加速**：支援硬體加速
-- 🔒 **最大隱私**：資料不會離開裝置
+- ⚡ **WebGPU 加速**：硬體加速（若可用）
+- 🔒 **最大隱私**：資料不會離開您的裝置
 - 🎯 **零安裝**：適用於任何相容的瀏覽器
-- 🔄 **優雅降級**：若 WebGPU 不可用，會自動切換至 CPU
+- 🔄 **優雅降級**：若 WebGPU 不可用，則回退至 CPU
 
-**運行方式：**
+**運行：**
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
@@ -164,7 +164,7 @@ python -m http.server 5173
 
 ### 開放 WebUI 整合
 
-**功能特色：**
+**功能：**
 - 🎨 **ChatGPT 風格介面**：專業且熟悉的 UI
 - 👥 **多使用者支援**：使用者帳號與對話歷史
 - 📁 **文件處理**：上傳並分析文件
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 變數 | 描述 | 預設值 | 範例 |
 |------|------|--------|------|
-| `MODEL` | 使用的模型別名 | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | 使用的模型別名 | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local 端點 | 自動檢測 | `http://localhost:51211` |
 | `API_KEY` | API 金鑰 (本地可選) | `""` | `your-api-key` |
 
@@ -205,7 +205,7 @@ docker run -d --name open-webui -p 3000:8080 \
    curl http://localhost:51211/v1/models
    ```
 
-2. **埠衝突：**
+2. **端口衝突：**
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -230,12 +230,12 @@ docker run -d --name open-webui -p 3000:8080 \
    - 更新至 Chrome/Edge 113+
    - 啟用 WebGPU：`chrome://flags/#enable-unsafe-webgpu`
    - 檢查 GPU 狀態：`chrome://gpu`
-   - 示範會自動降級至 CPU
+   - 示範將自動回退至 CPU
 
 2. **模型載入錯誤：**
    - 確保網路連線以下載模型
    - 檢查瀏覽器主控台是否有 CORS 錯誤
-   - 確認是否透過 HTTP 提供服務 (非 file://)
+   - 確保使用 HTTP 提供服務 (非 file://)
 
 **開放 WebUI：**
 
@@ -287,18 +287,18 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **Chainlit：**
 - 使用串流以提升感知性能
 - 實施連線池以支援高併發
-- 快取模型回應以處理重複查詢
+- 緩存模型回應以處理重複查詢
 - 監控大型對話歷史的記憶體使用情況
 
 **WebGPU：**
 - 使用 WebGPU 以獲得最大隱私與速度
-- 實施模型量化以縮小模型大小
+- 實施模型量化以減小模型大小
 - 使用 Web Workers 進行背景處理
-- 在瀏覽器存儲中快取已編譯的模型
+- 在瀏覽器存儲中緩存已編譯的模型
 
 **開放 WebUI：**
-- 使用持久性卷保存對話歷史
-- 配置 Docker 容器的資源限制
+- 使用持久化卷保存對話歷史
+- 為 Docker 容器配置資源限制
 - 實施使用者資料的備份策略
 - 設置反向代理以進行 SSL 終止
 
@@ -338,7 +338,7 @@ async def analyze_document(file_path: str):
 ### 安全考量
 
 - **API 金鑰**：使用環境變數，切勿硬編碼
-- **網路**：生產環境使用 HTTPS，考慮使用 VPN 供團隊存取
+- **網路**：在生產環境中使用 HTTPS，考慮使用 VPN 供團隊存取
 - **存取控制**：為開放 WebUI 實施身份驗證
 - **資料隱私**：審核哪些資料留在本地，哪些發送至雲端
 - **更新**：保持 Foundry Local 和容器的最新版本
@@ -365,8 +365,10 @@ async def analyze_document(file_path: str):
 - [`open-webui-guide.md`](./open-webui-guide.md) - 完整的開放 WebUI 設定
 
 ### 相關範例
-- [Session 4 文件](../../04.CuttingEdgeModels.md) - 完整的課程指南
+- [Session 4 文件](../../04.CuttingEdgeModels.md) - 完整課程指南
 - [Foundry Local 範例](https://github.com/microsoft/foundry-local/tree/main/samples) - 官方範例
 
 ---
 
+**免責聲明**：  
+本文件已使用人工智能翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 進行翻譯。儘管我們致力於提供準確的翻譯，請注意自動翻譯可能包含錯誤或不準確之處。原始文件的母語版本應被視為權威來源。對於重要資訊，建議使用專業人工翻譯。我們對因使用此翻譯而引起的任何誤解或錯誤解釋概不負責。

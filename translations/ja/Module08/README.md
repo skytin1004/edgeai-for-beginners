@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:23:44+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-09-30T23:31:44+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ja"
 }
 -->
-# モジュール 08: Microsoft Foundry Local を使った実践 - 完全な開発者ツールキット
+# モジュール 08: Microsoft Foundry Local - 完全な開発者ツールキットの実践
 
 ## 概要
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) は、次世代のエッジAI開発を代表するもので、開発者がローカルでAIアプリケーションを構築、展開、スケールするための強力なツールを提供します。同時にAzure AI Foundryとのシームレスな統合を維持します。このモジュールでは、Foundry Localのインストールから高度なエージェント開発までを包括的にカバーします。
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) は、次世代のエッジAI開発を代表するものであり、開発者がAIアプリケーションをローカルで構築、展開、スケールするための強力なツールを提供します。同時にAzure AI Foundryとのシームレスな統合を維持します。このモジュールでは、Foundry Localのインストールから高度なエージェント開発までを包括的にカバーします。
 
 **主要技術:**
 - Microsoft Foundry Local CLIとSDK
@@ -29,12 +29,12 @@ CO_OP_TRANSLATOR_METADATA:
 - **実用的なソリューションの構築**: 高度なプロンプトエンジニアリングとデータ統合を活用したAIアプリケーションの作成
 - **オープンソースエコシステムの活用**: Hugging Faceモデルやコミュニティの貢献を統合
 - **AIエージェントの開発**: グラウンディングとオーケストレーション機能を備えたインテリジェントエージェントの構築
-- **企業向けパターンの実装**: モジュール化されたスケーラブルなAIソリューションを構築し、実運用に展開
+- **エンタープライズパターンの実装**: モジュール化されたスケーラブルなAIソリューションを構築し、実運用に展開
 
 ## セッション構成
 
 ### [1: Foundry Localの始め方](./01.FoundryLocalSetup.md)
-**フォーカス**: インストール、CLI設定、モデル展開、ハードウェア最適化
+**焦点**: インストール、CLI設定、モデル展開、ハードウェア最適化
 
 **主要トピック**: 完全なインストール • CLIコマンド • モデルキャッシュ • ハードウェアアクセラレーション • 複数モデルの展開
 
@@ -44,8 +44,8 @@ CO_OP_TRANSLATOR_METADATA:
 
 ---
 
-### [2: Azure AI Foundryを使ったAIソリューションの構築](./02.AzureAIFoundryIntegration.md)
-**フォーカス**: 高度なプロンプトエンジニアリング、データ統合、クラウド接続
+### [2: Azure AI Foundryを活用したAIソリューションの構築](./02.AzureAIFoundryIntegration.md)
+**焦点**: 高度なプロンプトエンジニアリング、データ統合、クラウド接続
 
 **主要トピック**: プロンプトエンジニアリング • データ統合 • Azureワークフロー • パフォーマンス最適化 • モニタリング
 
@@ -56,7 +56,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [3: Foundry Localでのオープンソースモデル](./03.OpenSourceModels.md)
-**フォーカス**: Hugging Face統合、BYOM戦略、コミュニティモデル
+**焦点**: Hugging Face統合、BYOM戦略、コミュニティモデル
 
 **主要トピック**: HuggingFace統合 • 独自モデルの持ち込み • Model Mondaysの洞察 • コミュニティの貢献 • モデル選択
 
@@ -67,9 +67,9 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [4: 最先端モデルの探求](./04.CuttingEdgeModels.md)
-**フォーカス**: LLMs vs SLMs、EdgeAIの実装、高度なデモ
+**焦点**: LLMsとSLMsの比較、EdgeAIの実装、高度なデモ
 
-**主要トピック**: モデル比較 • エッジ vs クラウド推論 • Phi + ONNX Runtime • Chainlit RAGアプリ • WebGPU最適化
+**主要トピック**: モデル比較 • エッジとクラウド推論 • Phi + ONNX Runtime • Chainlit RAGアプリ • WebGPU最適化
 
 **サンプル**: [Models-as-Tools Router](./samples/06/README.md)
 
@@ -78,7 +78,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [5: AI駆動エージェントの迅速な構築](./05.AIPoweredAgents.md)
-**フォーカス**: エージェントアーキテクチャ、システムプロンプト、グラウンディング、オーケストレーション
+**焦点**: エージェントアーキテクチャ、システムプロンプト、グラウンディング、オーケストレーション
 
 **主要トピック**: エージェント設計パターン • システムプロンプトエンジニアリング • グラウンディング技術 • 複数エージェントシステム • 実運用展開
 
@@ -89,9 +89,9 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [6: Foundry Local - ツールとしてのモデル](./06.ModelsAsTools.md)
-**フォーカス**: モジュール化されたAIソリューション、企業向けスケーリング、実運用パターン
+**焦点**: モジュール型AIソリューション、エンタープライズスケーリング、実運用パターン
 
-**主要トピック**: ツールとしてのモデル • デバイス上での展開 • SDK/API統合 • 企業アーキテクチャ • スケーリング戦略
+**主要トピック**: ツールとしてのモデル • デバイス上での展開 • SDK/API統合 • エンタープライズアーキテクチャ • スケーリング戦略
 
 **サンプル**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
@@ -100,7 +100,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [7: 直接API統合パターン](./samples/07/README.md)
-**フォーカス**: SDK依存なしで最大限の制御を可能にする純粋なREST API統合
+**焦点**: SDK依存なしで最大限の制御を可能にする純粋なREST API統合
 
 **主要トピック**: HTTPクライアント実装 • カスタム認証 • モデルのヘルスモニタリング • ストリーミングレスポンス • 実運用エラー処理
 
@@ -111,7 +111,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [8: Windows 11ネイティブチャットアプリケーション](./samples/08/README.md)
-**フォーカス**: Foundry Local統合を活用したモダンなネイティブチャットアプリケーションの構築
+**焦点**: Foundry Local統合を活用したモダンなネイティブチャットアプリケーションの構築
 
 **主要トピック**: Electron開発 • Fluent Design System • ネイティブWindows統合 • リアルタイムストリーミング • チャットインターフェース設計
 
@@ -122,7 +122,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [9: 高度なマルチエージェントオーケストレーション](./samples/09/README.md)
-**フォーカス**: 高度なエージェントの調整、専門的なタスクの委任、協調的なAIワークフロー
+**焦点**: 高度なエージェントの調整、専門的なタスクの委任、協調的なAIワークフロー
 
 **主要トピック**: インテリジェントエージェントの調整 • 関数呼び出しパターン • エージェント間通信 • ワークフローオーケストレーション • 品質保証メカニズム
 
@@ -133,7 +133,7 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [10: Foundry Localをツールフレームワークとして活用](./samples/10/README.md)
-**フォーカス**: Foundry Localを既存のアプリケーションやフレームワークに統合するツール優先のアーキテクチャ
+**焦点**: Foundry Localを既存のアプリケーションやフレームワークに統合するツール優先のアーキテクチャ
 
 **主要トピック**: LangChain統合 • Semantic Kernel関数 • REST APIフレームワーク • CLIツール • Jupyter統合 • 実運用展開パターン
 
@@ -151,7 +151,7 @@ CO_OP_TRANSLATOR_METADATA:
 - **ネットワーク**: 初回モデルダウンロード用の高速インターネット
 
 ### 開発環境
-- AI Toolkit拡張機能を備えたVisual Studio Code
+- AI Toolkit拡張機能付きVisual Studio Code
 - Python 3.10+とpip
 - バージョン管理用Git
 - PowerShellまたはコマンドプロンプト
@@ -175,7 +175,7 @@ CO_OP_TRANSLATOR_METADATA:
 |  3 | オープンソース | 05 | 2-3時間 | 中級 |
 |  4 | 高度なモデル | 06 | 3-4時間 | 上級 |
 |  5 | AIエージェント | 05, 09 | 3-4時間 | 上級 |
-|  6 | 企業向けツール | 06, 10 | 3-4時間 | エキスパート |
+|  6 | エンタープライズツール | 06, 10 | 3-4時間 | エキスパート |
 |  7 | 直接API統合 | 07 | 2-3時間 | 中級 |
 |  8 | Windows 11チャットアプリ | 08 | 3-4時間 | 上級 |
 |  9 | 高度なマルチエージェント | 09 | 4-5時間 | エキスパート |
@@ -199,26 +199,26 @@ CO_OP_TRANSLATOR_METADATA:
 ### 技術的習熟
 - **展開と管理**: 開発および実運用環境でのFoundry Localインストール
 - **モデル統合**: Microsoft、Hugging Face、コミュニティソースの多様なモデルファミリーをシームレスに活用
-- **アプリケーション構築**: 高度な機能と最適化を備えた実運用対応のAIアプリケーションを作成
-- **エージェント開発**: グラウンディング、推論、ツール統合を備えた高度なAIエージェントを実装
+- **アプリケーション構築**: 高度な機能と最適化を備えた実運用対応のAIアプリケーションの作成
+- **エージェント開発**: グラウンディング、推論、ツール統合を備えた高度なAIエージェントの実装
 
 ### 戦略的理解
 - **アーキテクチャの選択**: ローカル展開とクラウド展開の間で情報に基づいた選択を行う
 - **パフォーマンス最適化**: 異なるハードウェア構成で推論性能を最適化
-- **企業向けスケーリング**: ローカルプロトタイプから企業展開までスケールするアプリケーションを設計
-- **プライバシーとセキュリティ**: ローカル推論を活用したプライバシー保護型AIソリューションを実装
+- **エンタープライズスケーリング**: ローカルプロトタイプからエンタープライズ展開までスケールするアプリケーションを設計
+- **プライバシーとセキュリティ**: ローカル推論を使用したプライバシー保護型AIソリューションの実装
 
 ### イノベーション能力
-- **迅速なプロトタイピング**: 10のサンプルパターンを活用してAIアプリケーションコンセプトを迅速に構築・テスト
+- **迅速なプロトタイピング**: 10のサンプルパターンすべてを活用してAIアプリケーションコンセプトを迅速に構築およびテスト
 - **コミュニティ統合**: オープンソースモデルを活用し、エコシステムに貢献
-- **高度なパターン**: RAG、エージェント、ツール統合を含む最先端のAIパターンを実装
-- **フレームワーク習熟**: LangChain、Semantic Kernel、Chainlit、Electronとの高度な統合
-- **実運用展開**: ローカルプロトタイプから企業システムまでスケーラブルなAIソリューションを展開
-- **未来対応開発**: 新しいAI技術やパターンに対応可能なアプリケーションを構築
+- **高度なパターン**: RAG、エージェント、ツール統合を含む最先端AIパターンを実装
+- **フレームワーク習熟**: LangChain、Semantic Kernel、Chainlit、Electronとのエキスパートレベルの統合
+- **実運用展開**: ローカルプロトタイプからエンタープライズシステムまでスケーラブルなAIソリューションを展開
+- **未来対応開発**: 新興AI技術とパターンに対応したアプリケーションを構築
 
 ## 始め方
 
-1. **環境セットアップ**: 推奨ハードウェアを備えたWindows 11を準備 (前提条件を参照)
+1. **環境設定**: 推奨ハードウェアを備えたWindows 11を準備 (前提条件を参照)
 2. **Foundry Localのインストール**: セッション1に従い、完全なインストールと設定を実施
 3. **サンプル01を実行**: 基本的なREST API統合からセットアップを確認
 4. **サンプルを順次進める**: サンプル01-10を完了し、包括的な習熟を目指す
@@ -234,7 +234,7 @@ CO_OP_TRANSLATOR_METADATA:
 - [ ] モデルの発見とベンチマークを実施 (サンプル03)
 
 ### アプリケーションレベル (サンプル04-06)
-- [ ] 少なくとも4つの異なるモデルファミリーを展開・実行
+- [ ] 少なくとも4つの異なるモデルファミリーを展開して実行
 - [ ] 機能的なRAGチャットアプリケーションを構築 (サンプル04)
 - [ ] マルチエージェントオーケストレーションシステムを作成 (サンプル05)
 - [ ] インテリジェントモデルルーティングを実装 (サンプル06)
@@ -254,7 +254,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## クイックスタートガイド - 全10サンプル
 
-### 環境セットアップ (すべてのサンプルに必要)
+### 環境設定 (すべてのサンプルに必要)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -371,25 +371,7 @@ npm start
 npm run build
 ```
 
-**サンプル09: Advanced Multi-Agent System**
-```powershell
-# Navigate to sample directory
-cd samples/09
-
-# Install agent system dependencies
-pip install -r requirements.txt
-
-# Run basic coordination example
-python examples/basic_coordination.py
-
-# Try complex workflow
-python examples/complex_workflow.py
-
-# Interactive agent demo
-python examples/interactive_demo.py
-```
-
-**
+**サンプル09: Advanced Multi-Agent
 このモジュールは、Microsoftのエンタープライズ向けツールとオープンソースエコシステムの柔軟性と革新性を組み合わせた、エッジAI開発の最前線を表しています。Foundry Localの10個の包括的なサンプルを習得することで、AIアプリケーション開発の最前線に立つことができます。
 
 **学習パスの全体像:**
@@ -397,7 +379,9 @@ python examples/interactive_demo.py
 - **応用** (サンプル 04-06): RAG、エージェント、インテリジェントルーティング
 - **高度** (サンプル 07-10): プロダクションフレームワークとエンタープライズ統合
 
-Azure OpenAI統合（セッション2）については、必要な環境変数やAPIバージョン設定について各サンプルのREADMEファイルを参照してください。
+Azure OpenAI統合 (セッション2) に関しては、必要な環境変数やAPIバージョン設定について、各サンプルのREADMEファイルを参照してください。
 
 ---
 
+**免責事項**:  
+本書類は、AI翻訳サービス[Co-op Translator](https://github.com/Azure/co-op-translator)を使用して翻訳されています。正確性を期すよう努めておりますが、自動翻訳には誤りや不正確な表現が含まれる可能性があります。原文（元の言語で記載された文書）を信頼できる情報源としてご参照ください。重要な情報については、専門の人間による翻訳を推奨します。本翻訳の利用に起因する誤解や誤認について、当方は一切の責任を負いかねます。

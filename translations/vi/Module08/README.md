@@ -1,23 +1,23 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:48:18+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:53:09+00:00",
   "source_file": "Module08/README.md",
   "language_code": "vi"
 }
 -->
-# Module 08: Thực hành với Microsoft Foundry Local - Bộ công cụ hoàn chỉnh cho nhà phát triển
+# Module 08: Thực hành với Microsoft Foundry Local - Bộ công cụ hoàn chỉnh dành cho nhà phát triển
 
 ## Tổng quan
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) đại diện cho thế hệ tiếp theo của phát triển AI tại biên, cung cấp cho các nhà phát triển các công cụ mạnh mẽ để xây dựng, triển khai và mở rộng ứng dụng AI tại chỗ, đồng thời duy trì tích hợp liền mạch với Azure AI Foundry. Module này cung cấp hướng dẫn toàn diện về Foundry Local từ cài đặt đến phát triển tác nhân nâng cao.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) đại diện cho thế hệ tiếp theo của phát triển AI tại thiết bị, cung cấp cho các nhà phát triển các công cụ mạnh mẽ để xây dựng, triển khai và mở rộng ứng dụng AI tại chỗ, đồng thời duy trì tích hợp liền mạch với Azure AI Foundry. Module này cung cấp hướng dẫn toàn diện về Foundry Local từ cài đặt đến phát triển tác nhân nâng cao.
 
 **Công nghệ chính:**
 - Microsoft Foundry Local CLI và SDK
 - Tích hợp Azure AI Foundry
 - Suy luận mô hình trên thiết bị
-- Bộ nhớ đệm và tối ưu hóa mô hình cục bộ
+- Bộ nhớ đệm và tối ưu hóa mô hình tại chỗ
 - Kiến trúc dựa trên tác nhân
 
 ## Mục tiêu học tập
@@ -38,7 +38,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Chủ đề chính**: Cài đặt hoàn chỉnh • Lệnh CLI • Bộ nhớ đệm mô hình • Tăng tốc phần cứng • Triển khai nhiều mô hình
 
-**Mẫu**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
+**Mẫu**: [REST Chat Quickstart](./samples/01/README.md) • [Tích hợp OpenAI SDK](./samples/02/README.md) • [Khám phá & Đánh giá mô hình](./samples/03/README.md)
 
 **Thời lượng**: 2-3 giờ | **Cấp độ**: Người mới bắt đầu
 
@@ -49,7 +49,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Chủ đề chính**: Kỹ thuật nhắc • Tích hợp dữ liệu • Quy trình Azure • Tối ưu hóa hiệu suất • Giám sát
 
-**Mẫu**: [Chainlit RAG Application](./samples/04/README.md)
+**Mẫu**: [Ứng dụng Chainlit RAG](./samples/04/README.md)
 
 **Thời lượng**: 2-3 giờ | **Cấp độ**: Trung cấp
 
@@ -60,7 +60,7 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Chủ đề chính**: Tích hợp HuggingFace • Mang mô hình của riêng bạn • Thông tin từ Model Mondays • Đóng góp cộng đồng • Lựa chọn mô hình
 
-**Mẫu**: [Multi-Agent Orchestration](./samples/05/README.md)
+**Mẫu**: [Điều phối đa tác nhân](./samples/05/README.md)
 
 **Thời lượng**: 2-3 giờ | **Cấp độ**: Trung cấp
 
@@ -69,9 +69,9 @@ Khi hoàn thành module này, bạn sẽ:
 ### [4: Khám phá mô hình tiên tiến](./04.CuttingEdgeModels.md)
 **Trọng tâm**: LLMs vs SLMs, triển khai EdgeAI và các bản demo nâng cao
 
-**Chủ đề chính**: So sánh mô hình • Suy luận tại biên vs đám mây • Phi + ONNX Runtime • Ứng dụng Chainlit RAG • Tối ưu hóa WebGPU
+**Chủ đề chính**: So sánh mô hình • Suy luận tại thiết bị vs đám mây • Phi + ONNX Runtime • Ứng dụng Chainlit RAG • Tối ưu hóa WebGPU
 
-**Mẫu**: [Models-as-Tools Router](./samples/06/README.md)
+**Mẫu**: [Router Mô hình như Công cụ](./samples/06/README.md)
 
 **Thời lượng**: 3-4 giờ | **Cấp độ**: Nâng cao
 
@@ -82,29 +82,29 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Chủ đề chính**: Mẫu thiết kế tác nhân • Kỹ thuật nhắc hệ thống • Kỹ thuật định hướng • Hệ thống đa tác nhân • Triển khai sản xuất
 
-**Mẫu**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
+**Mẫu**: [Điều phối đa tác nhân](./samples/05/README.md) • [Hệ thống đa tác nhân nâng cao](./samples/09/README.md)
 
 **Thời lượng**: 3-4 giờ | **Cấp độ**: Nâng cao
 
 ---
 
-### [6: Foundry Local - Mô hình như công cụ](./06.ModelsAsTools.md)
+### [6: Foundry Local - Mô hình như Công cụ](./06.ModelsAsTools.md)
 **Trọng tâm**: Giải pháp AI mô-đun, mở rộng doanh nghiệp và mẫu sản xuất
 
-**Chủ đề chính**: Mô hình như công cụ • Triển khai trên thiết bị • Tích hợp SDK/API • Kiến trúc doanh nghiệp • Chiến lược mở rộng
+**Chủ đề chính**: Mô hình như công cụ • Triển khai tại thiết bị • Tích hợp SDK/API • Kiến trúc doanh nghiệp • Chiến lược mở rộng
 
-**Mẫu**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
+**Mẫu**: [Router Mô hình như Công cụ](./samples/06/README.md) • [Khung công cụ Foundry](./samples/10/README.md)
 
 **Thời lượng**: 3-4 giờ | **Cấp độ**: Chuyên gia
 
 ---
 
 ### [7: Mẫu tích hợp API trực tiếp](./samples/07/README.md)
-**Trọng tâm**: Tích hợp API REST thuần túy không phụ thuộc vào SDK để kiểm soát tối đa
+**Trọng tâm**: Tích hợp API REST thuần túy không phụ thuộc SDK để kiểm soát tối đa
 
 **Chủ đề chính**: Triển khai HTTP client • Xác thực tùy chỉnh • Giám sát sức khỏe mô hình • Phản hồi streaming • Xử lý lỗi sản xuất
 
-**Mẫu**: [Direct API Client](./samples/07/README.md)
+**Mẫu**: [API Client trực tiếp](./samples/07/README.md)
 
 **Thời lượng**: 2-3 giờ | **Cấp độ**: Trung cấp
 
@@ -115,29 +115,29 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Chủ đề chính**: Phát triển Electron • Hệ thống thiết kế Fluent • Tích hợp gốc Windows • Streaming thời gian thực • Thiết kế giao diện chat
 
-**Mẫu**: [Windows 11 Chat Application](./samples/08/README.md)
+**Mẫu**: [Ứng dụng chat Windows 11](./samples/08/README.md)
 
 **Thời lượng**: 3-4 giờ | **Cấp độ**: Nâng cao
 
 ---
 
 ### [9: Điều phối đa tác nhân nâng cao](./samples/09/README.md)
-**Trọng tâm**: Điều phối tác nhân phức tạp, phân công nhiệm vụ chuyên biệt và quy trình làm việc AI hợp tác
+**Trọng tâm**: Phối hợp tác nhân phức tạp, phân công nhiệm vụ chuyên biệt và quy trình làm việc AI hợp tác
 
-**Chủ đề chính**: Điều phối tác nhân thông minh • Mẫu gọi hàm • Giao tiếp giữa các tác nhân • Điều phối quy trình làm việc • Cơ chế đảm bảo chất lượng
+**Chủ đề chính**: Phối hợp tác nhân thông minh • Mẫu gọi hàm • Giao tiếp giữa các tác nhân • Điều phối quy trình làm việc • Cơ chế đảm bảo chất lượng
 
-**Mẫu**: [Advanced Multi-Agent System](./samples/09/README.md)
+**Mẫu**: [Hệ thống đa tác nhân nâng cao](./samples/09/README.md)
 
 **Thời lượng**: 4-5 giờ | **Cấp độ**: Chuyên gia
 
 ---
 
-### [10: Foundry Local như khung công cụ](./samples/10/README.md)
-**Trọng tâm**: Kiến trúc ưu tiên công cụ để tích hợp Foundry Local vào các ứng dụng và khung công tác hiện có
+### [10: Foundry Local như Khung công cụ](./samples/10/README.md)
+**Trọng tâm**: Kiến trúc ưu tiên công cụ để tích hợp Foundry Local vào các ứng dụng và khung hiện có
 
 **Chủ đề chính**: Tích hợp LangChain • Chức năng Semantic Kernel • Khung API REST • Công cụ CLI • Tích hợp Jupyter • Mẫu triển khai sản xuất
 
-**Mẫu**: [Foundry Tools Framework](./samples/10/README.md)
+**Mẫu**: [Khung công cụ Foundry](./samples/10/README.md)
 
 **Thời lượng**: 4-5 giờ | **Cấp độ**: Chuyên gia
 
@@ -158,10 +158,10 @@ Khi hoàn thành module này, bạn sẽ:
 - Azure CLI (tùy chọn cho tích hợp đám mây)
 
 ### Kiến thức yêu cầu
-- Hiểu cơ bản về khái niệm AI/ML
+- Hiểu cơ bản về các khái niệm AI/ML
 - Quen thuộc với dòng lệnh
 - Kiến thức cơ bản về lập trình Python
-- Khái niệm API REST
+- Khái niệm REST API
 - Kiến thức cơ bản về nhắc và suy luận mô hình
 
 ## Lộ trình module
@@ -185,12 +185,12 @@ Khi hoàn thành module này, bạn sẽ:
 
 **Tài liệu chính thức:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Mã nguồn và mẫu chính thức
-- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Hướng dẫn cài đặt và sử dụng đầy đủ
-- [Model Mondays Series](https://aka.ms/model-mondays) - Điểm nổi bật và hướng dẫn mô hình hàng tuần
+- [Tài liệu Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Hướng dẫn cài đặt và sử dụng đầy đủ
+- [Series Model Mondays](https://aka.ms/model-mondays) - Điểm nổi bật và hướng dẫn mô hình hàng tuần
 
 **Cộng đồng & Hỗ trợ:**
-- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Hỏi đáp cộng đồng và yêu cầu tính năng
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Tin tức mới nhất và thực tiễn tốt nhất
+- [Thảo luận Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Hỏi đáp cộng đồng và yêu cầu tính năng
+- [Cộng đồng nhà phát triển AI Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Tin tức mới nhất và thực tiễn tốt nhất
 
 ## Kết quả học tập
 
@@ -198,22 +198,22 @@ Khi hoàn thành module này, bạn sẽ có khả năng:
 
 ### Thành thạo kỹ thuật
 - **Triển khai và quản lý**: Cài đặt Foundry Local trên các môi trường phát triển và sản xuất
-- **Tích hợp mô hình**: Làm việc liền mạch với các họ mô hình đa dạng từ Microsoft, Hugging Face và nguồn cộng đồng
+- **Tích hợp mô hình**: Làm việc liền mạch với các dòng mô hình đa dạng từ Microsoft, Hugging Face và nguồn cộng đồng
 - **Xây dựng ứng dụng**: Tạo ứng dụng AI sẵn sàng sản xuất với các tính năng và tối ưu hóa nâng cao
 - **Phát triển tác nhân**: Triển khai các tác nhân AI phức tạp với định hướng, lý luận và tích hợp công cụ
 
 ### Hiểu biết chiến lược
-- **Quyết định kiến trúc**: Đưa ra lựa chọn thông minh giữa triển khai tại chỗ và trên đám mây
+- **Quyết định kiến trúc**: Đưa ra lựa chọn thông minh giữa triển khai tại thiết bị và đám mây
 - **Tối ưu hóa hiệu suất**: Tối ưu hóa hiệu suất suy luận trên các cấu hình phần cứng khác nhau
-- **Mở rộng doanh nghiệp**: Thiết kế ứng dụng có khả năng mở rộng từ nguyên mẫu tại chỗ đến triển khai doanh nghiệp
-- **Bảo mật và quyền riêng tư**: Triển khai giải pháp AI bảo vệ quyền riêng tư với suy luận tại chỗ
+- **Mở rộng doanh nghiệp**: Thiết kế ứng dụng có khả năng mở rộng từ nguyên mẫu tại thiết bị đến triển khai doanh nghiệp
+- **Bảo mật và quyền riêng tư**: Triển khai giải pháp AI bảo vệ quyền riêng tư với suy luận tại thiết bị
 
 ### Khả năng đổi mới
-- **Tạo nguyên mẫu nhanh**: Nhanh chóng xây dựng và thử nghiệm ý tưởng ứng dụng AI trên tất cả 10 mẫu
+- **Tạo nguyên mẫu nhanh**: Nhanh chóng xây dựng và kiểm tra ý tưởng ứng dụng AI trên tất cả 10 mẫu
 - **Tích hợp cộng đồng**: Tận dụng các mô hình mã nguồn mở và đóng góp vào hệ sinh thái
 - **Mẫu nâng cao**: Triển khai các mẫu AI tiên tiến bao gồm RAG, tác nhân và tích hợp công cụ
-- **Thành thạo khung công tác**: Tích hợp chuyên sâu với LangChain, Semantic Kernel, Chainlit và Electron
-- **Triển khai sản xuất**: Triển khai giải pháp AI có khả năng mở rộng từ nguyên mẫu tại chỗ đến hệ thống doanh nghiệp
+- **Thành thạo khung công cụ**: Tích hợp chuyên sâu với LangChain, Semantic Kernel, Chainlit và Electron
+- **Triển khai sản xuất**: Triển khai giải pháp AI có khả năng mở rộng từ nguyên mẫu tại thiết bị đến hệ thống doanh nghiệp
 - **Phát triển sẵn sàng cho tương lai**: Xây dựng ứng dụng sẵn sàng cho các công nghệ và mẫu AI mới nổi
 
 ## Bắt đầu
@@ -225,22 +225,22 @@ Khi hoàn thành module này, bạn sẽ có khả năng:
 
 ## Chỉ số thành công
 
-Theo dõi tiến độ của bạn qua tất cả 10 mẫu toàn diện:
+Theo dõi tiến trình của bạn qua tất cả 10 mẫu toàn diện:
 
 ### Cấp độ cơ bản (Mẫu 01-03)
 - [ ] Cài đặt và cấu hình Foundry Local thành công
 - [ ] Hoàn thành tích hợp API REST (Mẫu 01)
-- [ ] Triển khai khả năng tương thích OpenAI SDK (Mẫu 02)
+- [ ] Triển khai tương thích OpenAI SDK (Mẫu 02)
 - [ ] Thực hiện khám phá và đánh giá mô hình (Mẫu 03)
 
 ### Cấp độ ứng dụng (Mẫu 04-06)
-- [ ] Triển khai và chạy ít nhất 4 họ mô hình khác nhau
-- [ ] Xây dựng ứng dụng chat RAG chức năng (Mẫu 04)
+- [ ] Triển khai và chạy ít nhất 4 dòng mô hình khác nhau
+- [ ] Xây dựng ứng dụng chat RAG hoạt động (Mẫu 04)
 - [ ] Tạo hệ thống điều phối đa tác nhân (Mẫu 05)
 - [ ] Triển khai định tuyến mô hình thông minh (Mẫu 06)
 
 ### Cấp độ tích hợp nâng cao (Mẫu 07-10)
-- [ ] Xây dựng client API sẵn sàng sản xuất (Mẫu 07)
+- [ ] Xây dựng API client sẵn sàng sản xuất (Mẫu 07)
 - [ ] Phát triển ứng dụng chat gốc Windows 11 (Mẫu 08)
 - [ ] Triển khai hệ thống đa tác nhân nâng cao (Mẫu 09)
 - [ ] Tạo khung công cụ toàn diện (Mẫu 10)
@@ -252,9 +252,9 @@ Theo dõi tiến độ của bạn qua tất cả 10 mẫu toàn diện:
 - [ ] Đóng góp cải tiến hoặc mở rộng mã mẫu
 - [ ] Tích hợp các mẫu Foundry Local vào dự án cá nhân/chuyên nghiệp
 
-## Hướng dẫn nhanh - Tất cả 10 mẫu
+## Hướng dẫn bắt đầu nhanh - Tất cả 10 mẫu
 
-### Thiết lập môi trường (Yêu cầu cho tất cả các mẫu)
+### Thiết lập môi trường (Yêu cầu cho tất cả mẫu)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -286,7 +286,7 @@ foundry model run phi-4-mini
 python samples/01/chat_quickstart.py
 ```
 
-**Mẫu 02: OpenAI SDK Integration**
+**Mẫu 02: Tích hợp OpenAI SDK**
 ```powershell
 # Ensure model is running
 foundry status
@@ -295,7 +295,7 @@ foundry status
 python samples/02/sdk_quickstart.py
 ```
 
-**Mẫu 03: Model Discovery & Benchmarking**
+**Mẫu 03: Khám phá & Đánh giá mô hình**
 ```powershell
 # Run comprehensive model testing
 samples/03/list_and_bench.cmd
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Mẫu 04: Chainlit RAG Application**
+**Mẫu 04: Ứng dụng Chainlit RAG**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -316,7 +316,7 @@ chainlit run samples/04/app.py -w
 # Opens browser at http://localhost:8000
 ```
 
-**Mẫu 05: Multi-Agent Orchestration**
+**Mẫu 05: Điều phối đa tác nhân**
 ```powershell
 # Run agent coordinator demo
 python -m samples.05.agents.coordinator
@@ -325,12 +325,12 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Mẫu 06: Models-as-Tools Router**
+**Mẫu 06: Router Mô hình như Công cụ**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -338,7 +338,7 @@ python samples/06/router.py "Analyze this Python code for performance issues"
 
 ### Mẫu tích hợp nâng cao (07-10)
 
-**Mẫu 07: Direct API Client**
+**Mẫu 07: API Client trực tiếp**
 ```powershell
 # Navigate to sample directory
 cd samples/07
@@ -356,7 +356,7 @@ python examples/streaming.py
 python examples/production.py
 ```
 
-**Mẫu 08: Windows 11 Chat Application**
+**Mẫu 08: Ứng dụng chat Windows 11**
 ```powershell
 # Navigate to sample directory
 cd samples/08
@@ -371,7 +371,7 @@ npm start
 npm run build
 ```
 
-**Mẫu 09: Advanced Multi-Agent System**
+**Mẫu 09: Hệ thống đa tác nhân nâng cao**
 ```powershell
 # Navigate to sample directory
 cd samples/09
@@ -389,7 +389,7 @@ python examples/complex_workflow.py
 python examples/interactive_demo.py
 ```
 
-**Mẫu 10: Foundry Tools Framework**
+**Mẫu 10: Khung công cụ Foundry**
 ```powershell
 # Navigate to sample directory
 cd samples/10
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Tóm tắt
-Module này đại diện cho bước tiến mới nhất trong phát triển AI tại biên, kết hợp các công cụ cấp doanh nghiệp của Microsoft với sự linh hoạt và sáng tạo từ hệ sinh thái mã nguồn mở. Bằng cách nắm vững Foundry Local thông qua 10 mẫu toàn diện, bạn sẽ đứng ở vị trí tiên phong trong phát triển ứng dụng AI.
+Module này đại diện cho bước tiến mới nhất trong phát triển AI biên, kết hợp các công cụ cấp doanh nghiệp của Microsoft với sự linh hoạt và sáng tạo của hệ sinh thái mã nguồn mở. Bằng cách nắm vững Foundry Local thông qua toàn bộ 10 mẫu chi tiết, bạn sẽ đứng ở vị trí tiên phong trong phát triển ứng dụng AI.
 
 **Lộ trình học tập hoàn chỉnh:**
 - **Nền tảng** (Mẫu 01-03): Tích hợp API và quản lý mô hình
@@ -465,3 +465,5 @@ Module này đại diện cho bước tiến mới nhất trong phát triển AI
 
 ---
 
+**Tuyên bố miễn trừ trách nhiệm**:  
+Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi cố gắng đảm bảo độ chính xác, xin lưu ý rằng các bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn thông tin chính thức. Đối với các thông tin quan trọng, khuyến nghị sử dụng dịch vụ dịch thuật chuyên nghiệp bởi con người. Chúng tôi không chịu trách nhiệm về bất kỳ sự hiểu lầm hoặc diễn giải sai nào phát sinh từ việc sử dụng bản dịch này.

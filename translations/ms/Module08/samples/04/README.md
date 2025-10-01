@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T00:49:49+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:02:39+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "ms"
 }
 -->
 # Contoh 04: Aplikasi Chat Produksi dengan Chainlit
 
-Contoh lengkap yang menunjukkan pelbagai pendekatan untuk membina aplikasi chat siap produksi menggunakan Microsoft Foundry Local, dengan antara muka web moden, respons penstriman, dan teknologi pelayar terkini.
+Contoh komprehensif yang menunjukkan pelbagai pendekatan untuk membina aplikasi chat siap produksi menggunakan Microsoft Foundry Local, dengan antara muka web moden, respons penstriman, dan teknologi pelayar terkini.
 
-## Apa yang Termasuk
+## Apa yang Disertakan
 
 - **🚀 Aplikasi Chat Chainlit** (`app.py`): Aplikasi chat siap produksi dengan penstriman
 - **🌐 Demo WebGPU** (`webgpu-demo/`): Inferens AI berasaskan pelayar dengan pecutan perkakasan
@@ -33,7 +33,7 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-Dibuka di: `http://localhost:8080`
+Buka di: `http://localhost:8080`
 
 ### 2. Demo Pelayar WebGPU
 
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-Dibuka di: `http://localhost:5173`
+Buka di: `http://localhost:5173`
 
 ### 3. Persediaan Open WebUI
 
@@ -57,7 +57,7 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-Dibuka di: `http://localhost:3000`
+Buka di: `http://localhost:3000`
 
 ## Corak Seni Bina
 
@@ -68,17 +68,17 @@ Dibuka di: `http://localhost:3000`
 | **Data Sensitif Privasi** | 🏠 Tempatan (Foundry) | Data tidak pernah meninggalkan peranti |
 | **Penaakulan Kompleks** | ☁️ Awan (Azure OpenAI) | Akses kepada model yang lebih besar |
 | **Chat Masa Nyata** | 🏠 Tempatan (Foundry) | Latensi lebih rendah, respons lebih pantas |
-| **Analisis Dokumen** | 🔄 Hibrid | Tempatan untuk ekstraksi, awan untuk analisis |
+| **Analisis Dokumen** | 🔄 Hibrid | Tempatan untuk pengekstrakan, awan untuk analisis |
 | **Penjanaan Kod** | 🏠 Tempatan (Foundry) | Privasi + model khusus |
-| **Tugas Penyelidikan** | ☁️ Awan (Azure OpenAI) | Memerlukan pangkalan pengetahuan luas |
+| **Tugas Penyelidikan** | ☁️ Awan (Azure OpenAI) | Memerlukan pangkalan pengetahuan yang luas |
 
 ### Perbandingan Teknologi
 
 | Teknologi | Kes Penggunaan | Kelebihan | Kekurangan |
 |-----------|----------------|-----------|------------|
 | **Chainlit** | Pembangun Python, prototaip pantas | Persediaan mudah, sokongan penstriman | Hanya Python |
-| **WebGPU** | Privasi maksimum, senario luar talian | Asli pelayar, tiada pelayan diperlukan | Saiz model terhad |
-| **Open WebUI** | Penggunaan produksi, pasukan | Antara muka profesional, pengurusan pengguna | Memerlukan Docker |
+| **WebGPU** | Privasi maksimum, senario luar talian | Asli pelayar, tidak memerlukan pelayan | Saiz model terhad |
+| **Open WebUI** | Penggunaan produksi, pasukan | UI profesional, pengurusan pengguna | Memerlukan Docker |
 
 ## Prasyarat
 
@@ -126,8 +126,8 @@ foundry service ps
 
 **Ciri-ciri:**
 - 🚀 **Penstriman Masa Nyata**: Token muncul semasa ia dijana
-- 🛡️ **Pengendalian Ralat Kukuh**: Penurunan dan pemulihan yang lancar
-- 🎨 **Antara Muka Moden**: Antara muka chat profesional sedia digunakan
+- 🛡️ **Pengendalian Ralat Kukuh**: Kemerosotan dan pemulihan yang lancar
+- 🎨 **UI Moden**: Antara muka chat profesional sedia ada
 - 🔧 **Konfigurasi Fleksibel**: Pembolehubah persekitaran dan pengesanan automatik
 - 📱 **Reka Bentuk Responsif**: Berfungsi pada peranti desktop dan mudah alih
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,11 +149,11 @@ chainlit run samples\04\app.py -w --port 8080
 ### Demo Pelayar WebGPU
 
 **Ciri-ciri:**
-- 🌐 **AI Asli Pelayar**: Tiada pelayan diperlukan, berjalan sepenuhnya dalam pelayar
+- 🌐 **AI Asli Pelayar**: Tidak memerlukan pelayan, berjalan sepenuhnya dalam pelayar
 - ⚡ **Pecutan WebGPU**: Pecutan perkakasan apabila tersedia
 - 🔒 **Privasi Maksimum**: Tiada data meninggalkan peranti anda
 - 🎯 **Pemasangan Sifar**: Berfungsi dalam mana-mana pelayar yang serasi
-- 🔄 **Fallback Lancar**: Beralih ke CPU jika WebGPU tidak tersedia
+- 🔄 **Kemerosotan Lancar**: Beralih kepada CPU jika WebGPU tidak tersedia
 
 **Menjalankan:**
 ```cmd
@@ -165,10 +165,10 @@ python -m http.server 5173
 ### Integrasi Open WebUI
 
 **Ciri-ciri:**
-- 🎨 **Antara Muka Seperti ChatGPT**: Antara muka profesional dan biasa
+- 🎨 **Antara Muka Seperti ChatGPT**: UI profesional, biasa digunakan
 - 👥 **Sokongan Berbilang Pengguna**: Akaun pengguna dan sejarah perbualan
 - 📁 **Pemprosesan Fail**: Muat naik dan analisis dokumen
-- 🔄 **Pertukaran Model**: Mudah bertukar antara model yang berbeza
+- 🔄 **Pertukaran Model**: Pertukaran mudah antara model yang berbeza
 - 🐳 **Penggunaan Docker**: Persediaan kontena siap produksi
 
 **Persediaan Pantas:**
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Pembolehubah | Penerangan | Lalai | Contoh |
 |--------------|------------|-------|--------|
-| `MODEL` | Alias model untuk digunakan | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias model untuk digunakan | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Titik akhir Foundry Local | Dikesan secara automatik | `http://localhost:51211` |
 | `API_KEY` | Kunci API (pilihan untuk tempatan) | `""` | `your-api-key` |
 
@@ -227,10 +227,10 @@ docker run -d --name open-webui -p 3000:8080 \
 **Demo WebGPU:**
 
 1. **WebGPU tidak disokong:**
-   - Kemas kini ke Chrome/Edge 113+
+   - Kemas kini kepada Chrome/Edge 113+
    - Aktifkan WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Semak status GPU: `chrome://gpu`
-   - Demo akan beralih ke CPU secara automatik
+   - Demo akan beralih kepada CPU secara automatik
 
 2. **Ralat pemuatan model:**
    - Pastikan sambungan internet untuk muat turun model
@@ -298,7 +298,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Open WebUI:**
 - Gunakan volum berterusan untuk sejarah perbualan
-- Konfigurasikan had sumber untuk kontena Docker
+- Konfigurasi had sumber untuk kontena Docker
 - Laksanakan strategi sandaran untuk data pengguna
 - Sediakan proksi terbalik untuk penamatan SSL
 
@@ -337,23 +337,23 @@ async def analyze_document(file_path: str):
 
 ### Pertimbangan Keselamatan
 
-- **Kunci API**: Gunakan pembolehubah persekitaran, jangan kodkan secara keras
+- **Kunci API**: Gunakan pembolehubah persekitaran, jangan kodkan secara langsung
 - **Rangkaian**: Gunakan HTTPS dalam produksi, pertimbangkan VPN untuk akses pasukan
 - **Kawalan Akses**: Laksanakan pengesahan untuk Open WebUI
 - **Privasi Data**: Audit data yang kekal tempatan vs. dihantar ke awan
-- **Kemas Kini**: Kekalkan Foundry Local dan kontena sentiasa dikemas kini
+- **Kemas Kini**: Pastikan Foundry Local dan kontena dikemas kini
 
 ### Pemantauan dan Penyelenggaraan
 
-- **Pemeriksaan Kesihatan**: Laksanakan pemantauan titik akhir
+- **Semakan Kesihatan**: Laksanakan pemantauan titik akhir
 - **Log**: Pusatkan log dari semua komponen
 - **Metrik**: Jejak masa respons, kadar ralat, penggunaan sumber
-- **Sandaran**: Sandaran berkala data perbualan dan konfigurasi
+- **Sandaran**: Sandaran berkala untuk data perbualan dan konfigurasi
 
 ## Rujukan dan Sumber
 
 ### Dokumentasi
-- [Dokumentasi Chainlit](https://docs.chainlit.io/) - Panduan lengkap rangka kerja
+- [Dokumentasi Chainlit](https://docs.chainlit.io/) - Panduan rangka kerja lengkap
 - [Dokumentasi Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Dokumentasi rasmi Microsoft
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - Integrasi WebGPU
 - [Dokumentasi Open WebUI](https://docs.openwebui.com/) - Konfigurasi lanjutan
@@ -362,7 +362,7 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Aplikasi Chainlit produksi
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Notebook pendidikan
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Inferens AI berasaskan pelayar
-- [`open-webui-guide.md`](./open-webui-guide.md) - Persediaan lengkap Open WebUI
+- [`open-webui-guide.md`](./open-webui-guide.md) - Persediaan Open WebUI lengkap
 
 ### Contoh Berkaitan
 - [Dokumentasi Sesi 4](../../04.CuttingEdgeModels.md) - Panduan sesi lengkap
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat yang kritikal, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.

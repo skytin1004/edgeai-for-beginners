@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T02:06:31+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:42:07+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "hr"
 }
 -->
-# Uzorak 04: Produkcijske aplikacije za chat s Chainlitom
+# Primjer 04: Produkcijske aplikacije za chat s Chainlitom
 
 Sveobuhvatan primjer koji prikazuje različite pristupe izradi produkcijski spremnih aplikacija za chat koristeći Microsoft Foundry Local, s modernim web sučeljima, streaming odgovorima i najnovijim tehnologijama preglednika.
 
@@ -61,7 +61,7 @@ Otvara se na: `http://localhost:3000`
 
 ## Obrasci arhitekture
 
-### Lokalno vs Cloud matrica odluka
+### Lokalno vs. Cloud matrica odluka
 
 | Scenarij | Preporuka | Razlog |
 |----------|-----------|--------|
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -165,7 +165,7 @@ python -m http.server 5173
 ### Integracija Open WebUI
 
 **Značajke:**
-- 🎨 **Sučelje slično ChatGPT-u**: Profesionalno, poznato sučelje
+- 🎨 **Sučelje slično ChatGPT-u**: Profesionalno, poznato UI
 - 👥 **Podrška za više korisnika**: Korisnički računi i povijest razgovora
 - 📁 **Obrada datoteka**: Učitavanje i analiza dokumenata
 - 🔄 **Prebacivanje modela**: Jednostavno prebacivanje između različitih modela
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Varijabla | Opis | Zadano | Primjer |
 |-----------|------|--------|---------|
-| `MODEL` | Alias modela za korištenje | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias modela za korištenje | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint za Foundry Local | Automatski otkriven | `http://localhost:51211` |
 | `API_KEY` | API ključ (opcionalno za lokalno) | `""` | `your-api-key` |
 
@@ -233,7 +233,7 @@ docker run -d --name open-webui -p 3000:8080 \
    - Demo će se automatski prebaciti na CPU
 
 2. **Greške pri učitavanju modela:**
-   - Osigurajte internetsku vezu za preuzimanje modela
+   - Provjerite internetsku vezu za preuzimanje modela
    - Provjerite konzolu preglednika za CORS greške
    - Provjerite da li koristite HTTP (ne file://)
 
@@ -300,7 +300,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Koristite trajne volumene za povijest razgovora
 - Konfigurirajte ograničenja resursa za Docker kontejner
 - Implementirajte strategije za backup korisničkih podataka
-- Postavite reverzni proxy za SSL terminaciju
+- Postavite reverse proxy za SSL terminaciju
 
 ### Obrasci integracije
 
@@ -347,7 +347,7 @@ async def analyze_document(file_path: str):
 
 - **Provjere zdravlja**: Implementirajte praćenje endpointa
 - **Logovi**: Centralizirajte logove svih komponenti
-- **Metričke vrijednosti**: Pratite vrijeme odgovora, stopu grešaka, korištenje resursa
+- **Metrički podaci**: Pratite vrijeme odgovora, stopu grešaka, korištenje resursa
 - **Backup**: Redovito izrađujte backup podataka razgovora i konfiguracija
 
 ## Reference i resursi
@@ -358,15 +358,17 @@ async def analyze_document(file_path: str):
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - Integracija WebGPU-a
 - [Open WebUI Dokumentacija](https://docs.openwebui.com/) - Napredna konfiguracija
 
-### Uzorci datoteka
+### Primjeri datoteka
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produkcijska Chainlit aplikacija
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Edukativni notebook
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - AI inferencija u pregledniku
-- [`open-webui-guide.md`](./open-webui-guide.md) - Kompletno postavljanje Open WebUI
+- [`open-webui-guide.md`](./open-webui-guide.md) - Kompletno postavljanje Open WebUI-a
 
-### Povezani uzorci
-- [Dokumentacija sesije 4](../../04.CuttingEdgeModels.md) - Kompletan vodič za sesiju
-- [Foundry Local Uzorci](https://github.com/microsoft/foundry-local/tree/main/samples) - Službeni uzorci
+### Povezani primjeri
+- [Dokumentacija za sesiju 4](../../04.CuttingEdgeModels.md) - Kompletan vodič za sesiju
+- [Primjeri Foundry Local](https://github.com/microsoft/foundry-local/tree/main/samples) - Službeni primjeri
 
 ---
 
+**Izjava o odricanju odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.

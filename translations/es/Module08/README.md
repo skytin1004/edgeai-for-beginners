@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:14:02+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-09-30T22:56:17+00:00",
   "source_file": "Module08/README.md",
   "language_code": "es"
 }
@@ -31,12 +31,12 @@ Al completar este módulo, podrás:
 - **Desarrollar Agentes de IA**: Construir agentes inteligentes con capacidades de grounding y orquestación
 - **Implementar Patrones Empresariales**: Crear soluciones de IA modulares y escalables para despliegues en producción
 
-## Estructura de las Sesiones
+## Estructura de la Sesión
 
 ### [1: Introducción a Foundry Local](./01.FoundryLocalSetup.md)
 **Enfoque**: Instalación, configuración de CLI, implementación de modelos y optimización de hardware
 
-**Temas Clave**: Instalación completa • Comandos CLI • Caché de modelos • Aceleración de hardware • Despliegue de múltiples modelos
+**Temas Clave**: Instalación completa • Comandos CLI • Caché de modelos • Aceleración de hardware • Implementación de múltiples modelos
 
 **Ejemplo**: [Inicio Rápido REST Chat](./samples/01/README.md) • [Integración con OpenAI SDK](./samples/02/README.md) • [Descubrimiento y Benchmarking de Modelos](./samples/03/README.md)
 
@@ -69,7 +69,7 @@ Al completar este módulo, podrás:
 ### [4: Explorar Modelos de Vanguardia](./04.CuttingEdgeModels.md)
 **Enfoque**: Comparación entre LLMs y SLMs, implementación de EdgeAI y demos avanzados
 
-**Temas Clave**: Comparación de modelos • Inferencia en el borde vs en la nube • Phi + ONNX Runtime • Aplicación RAG con Chainlit • Optimización con WebGPU
+**Temas Clave**: Comparación de modelos • Inferencia en el borde vs en la nube • Phi + ONNX Runtime • Aplicación RAG con Chainlit • Optimización WebGPU
 
 **Ejemplo**: [Router de Modelos como Herramientas](./samples/06/README.md)
 
@@ -203,13 +203,13 @@ Al completar este módulo, estarás preparado para:
 - **Desarrollar Agentes**: Implementar agentes de IA sofisticados con grounding, razonamiento e integración de herramientas
 
 ### Comprensión Estratégica
-- **Decisiones de Arquitectura**: Elegir entre despliegue local y en la nube
-- **Optimización de Rendimiento**: Mejorar el rendimiento de inferencia en diferentes configuraciones de hardware
+- **Decisiones de Arquitectura**: Tomar decisiones informadas entre despliegue local y en la nube
+- **Optimización de Rendimiento**: Optimizar el rendimiento de inferencia en diferentes configuraciones de hardware
 - **Escalabilidad Empresarial**: Diseñar aplicaciones que escalen desde prototipos locales hasta despliegues empresariales
 - **Privacidad y Seguridad**: Implementar soluciones de IA que preserven la privacidad con inferencia local
 
 ### Capacidades de Innovación
-- **Prototipado Rápido**: Construir y probar conceptos de aplicaciones de IA rápidamente utilizando los 10 patrones de ejemplo
+- **Prototipado Rápido**: Construir y probar conceptos de aplicaciones de IA rápidamente en los 10 patrones de ejemplo
 - **Integración Comunitaria**: Aprovechar modelos open-source y contribuir al ecosistema
 - **Patrones Avanzados**: Implementar patrones de IA de vanguardia, incluyendo RAG, agentes e integración de herramientas
 - **Dominio de Frameworks**: Integración experta con LangChain, Semantic Kernel, Chainlit y Electron
@@ -225,7 +225,7 @@ Al completar este módulo, estarás preparado para:
 
 ## Métricas de Éxito
 
-Rastrea tu progreso a través de los 10 ejemplos completos:
+Sigue tu progreso a través de los 10 ejemplos completos:
 
 ### Nivel Básico (Ejemplos 01-03)
 - [ ] Instalar y configurar Foundry Local exitosamente
@@ -245,14 +245,14 @@ Rastrea tu progreso a través de los 10 ejemplos completos:
 - [ ] Implementar un sistema multi-agente avanzado (Ejemplo 09)
 - [ ] Crear un framework completo de herramientas (Ejemplo 10)
 
-### Indicadores de Maestría
+### Indicadores de Dominio
 - [ ] Ejecutar exitosamente los 10 ejemplos sin errores
 - [ ] Personalizar al menos 3 ejemplos para casos de uso específicos
 - [ ] Desplegar 2+ ejemplos en entornos similares a producción
 - [ ] Contribuir mejoras o extensiones al código de ejemplo
 - [ ] Integrar patrones de Foundry Local en proyectos personales/profesionales
 
-## Guía Rápida - Todos los Ejemplos
+## Guía Rápida - Los 10 Ejemplos
 
 ### Configuración del Entorno (Requerido para Todos los Ejemplos)
 
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -416,7 +416,7 @@ python examples/langchain_demo.py
 
 ### Solución de Problemas Comunes
 
-**Errores de Conexión con Foundry Local**
+**Errores de Conexión en Foundry Local**
 ```powershell
 # Check service status
 foundry status
@@ -454,9 +454,9 @@ npm install
 ```
 
 ## Resumen
-Este módulo representa lo más avanzado en el desarrollo de IA en el borde, combinando las herramientas empresariales de Microsoft con la flexibilidad e innovación del ecosistema de código abierto. Al dominar Foundry Local a través de los 10 ejemplos completos, estarás en la vanguardia del desarrollo de aplicaciones de IA.
+Este módulo representa la vanguardia del desarrollo de IA en el borde, combinando las herramientas empresariales de Microsoft con la flexibilidad e innovación del ecosistema de código abierto. Al dominar Foundry Local a través de los 10 ejemplos completos, estarás en la primera línea del desarrollo de aplicaciones de IA.
 
-**Ruta de Aprendizaje Completa:**
+**Ruta de aprendizaje completa:**
 - **Fundamentos** (Ejemplos 01-03): Integración de API y gestión de modelos
 - **Aplicaciones** (Ejemplos 04-06): RAG, agentes y enrutamiento inteligente
 - **Avanzado** (Ejemplos 07-10): Marcos de producción e integración empresarial
@@ -465,3 +465,5 @@ Para la integración con Azure OpenAI (Sesión 2), consulta los archivos README 
 
 ---
 
+**Descargo de responsabilidad**:  
+Este documento ha sido traducido utilizando el servicio de traducción automática [Co-op Translator](https://github.com/Azure/co-op-translator). Aunque nos esforzamos por garantizar la precisión, tenga en cuenta que las traducciones automatizadas pueden contener errores o imprecisiones. El documento original en su idioma nativo debe considerarse como la fuente autorizada. Para información crítica, se recomienda una traducción profesional realizada por humanos. No nos hacemos responsables de malentendidos o interpretaciones erróneas que puedan surgir del uso de esta traducción.

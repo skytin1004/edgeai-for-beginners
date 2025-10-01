@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "d28c8fdf6c32d02120403c7b4526392b",
-  "translation_date": "2025-09-22T18:34:38+00:00",
+  "original_hash": "7f0c6af41a1ae2c5a770c8170da8bd6e",
+  "translation_date": "2025-10-01T00:02:55+00:00",
   "source_file": "Module08/samples/06/README.md",
   "language_code": "pa"
 }
@@ -12,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 ਇਸ ਨਮੂਨੇ ਵਿੱਚ ਇੱਕ ਘੱਟੋ-ਘੱਟ ਰਾਊਟਰ + ਸੰਦ ਰਜਿਸਟਰੀ ਸ਼ਾਮਲ ਹੈ ਜੋ ਯੂਜ਼ਰ ਪ੍ਰਾਂਪਟ ਦੇ ਆਧਾਰ 'ਤੇ ਮਾਡਲ ਚੁਣਦਾ ਹੈ ਅਤੇ Foundry Local ਦੇ OpenAI-ਅਨੁਕੂਲ ਐਂਡਪੌਇੰਟ ਨੂੰ ਕਾਲ ਕਰਦਾ ਹੈ।
 
 ## ਫਾਈਲਾਂ
-- `router.py`: ਸਧਾਰਨ ਰਜਿਸਟਰੀ ਅਤੇ ਹੀਯੂਰਿਸਟਿਕ ਰਾਊਟਿੰਗ; ਐਂਡਪੌਇੰਟ ਖੋਜ + ਹੈਲਥ ਚੈੱਕ।
+- `router.py`: ਸਧਾਰਨ ਰਜਿਸਟਰੀ ਅਤੇ ਹੀਯੂਰਿਸਟਿਕ ਰਾਊਟਿੰਗ; ਐਂਡਪੌਇੰਟ ਖੋਜ + ਸਿਹਤ ਜਾਂਚ।
 
 ## ਚਲਾਓ (cmd.exe)
 ```cmd
@@ -20,8 +20,8 @@ cd Module08
 .\.venv\Scripts\activate
 REM Start whatever models you plan to route to
 foundry model run phi-4-mini
-foundry model run qwen2.5-7b-instruct
-foundry model run deepseek-r1-distill-qwen-7b
+foundry model run qwen2.5-7b
+foundry model run deepseek-r1-7b
 
 python samples\06\router.py "Explain how local-first AI improves privacy in two sentences."
 ```
@@ -34,10 +34,10 @@ set BASE_URL=http://localhost:8000
 set API_KEY=
 REM Override models per tool
 set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
+set REASONING_MODEL=deepseek-r1-7b
+set CODE_MODEL=qwen2.5-7b
 REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-distill-qwen-7b"},"code":{"model":"qwen2.5-7b-instruct"}}
+set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-7b"},"code":{"model":"qwen2.5-7b"}}
 ```
 
 ## ਹਵਾਲੇ
@@ -46,3 +46,5 @@ set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepse
 
 ---
 
+**ਅਸਵੀਕਰਤਾ**:  
+ਇਹ ਦਸਤਾਵੇਜ਼ AI ਅਨੁਵਾਦ ਸੇਵਾ [Co-op Translator](https://github.com/Azure/co-op-translator) ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ ਹੈ। ਜਦੋਂ ਕਿ ਅਸੀਂ ਸਹੀ ਹੋਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਾਂ, ਕਿਰਪਾ ਕਰਕੇ ਧਿਆਨ ਦਿਓ ਕਿ ਸਵੈਚਾਲਿਤ ਅਨੁਵਾਦਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਜਾਂ ਅਸੁਣੀਕਤਾਵਾਂ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਇਸ ਦੀ ਮੂਲ ਭਾਸ਼ਾ ਵਿੱਚ ਮੌਜੂਦ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਅਧਿਕਾਰਤ ਸਰੋਤ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ। ਮਹੱਤਵਪੂਰਨ ਜਾਣਕਾਰੀ ਲਈ, ਪੇਸ਼ੇਵਰ ਮਨੁੱਖੀ ਅਨੁਵਾਦ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਅਸੀਂ ਇਸ ਅਨੁਵਾਦ ਦੀ ਵਰਤੋਂ ਤੋਂ ਪੈਦਾ ਹੋਣ ਵਾਲੇ ਕਿਸੇ ਵੀ ਗਲਤਫਹਿਮੀ ਜਾਂ ਗਲਤ ਵਿਆਖਿਆ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਨਹੀਂ ਹਾਂ।

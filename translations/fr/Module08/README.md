@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:13:17+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-09-30T22:52:55+00:00",
   "source_file": "Module08/README.md",
   "language_code": "fr"
 }
@@ -11,11 +11,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Aperçu
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) représente la nouvelle génération de développement IA en périphérie, offrant aux développeurs des outils puissants pour créer, déployer et étendre des applications IA localement tout en assurant une intégration fluide avec Azure AI Foundry. Ce module couvre de manière exhaustive Foundry Local, de l'installation au développement avancé d'agents.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) représente la nouvelle génération de développement IA en périphérie, offrant aux développeurs des outils puissants pour créer, déployer et étendre des applications IA localement tout en maintenant une intégration fluide avec Azure AI Foundry. Ce module couvre de manière exhaustive Foundry Local, de l'installation au développement avancé d'agents.
 
 **Technologies clés :**
 - CLI et SDK Microsoft Foundry Local
-- Intégration Azure AI Foundry
+- Intégration avec Azure AI Foundry
 - Inférence de modèles sur appareil
 - Mise en cache et optimisation locale des modèles
 - Architectures basées sur des agents
@@ -25,9 +25,9 @@ CO_OP_TRANSLATOR_METADATA:
 En complétant ce module, vous serez capable de :
 
 - **Maîtriser Foundry Local** : Installer, configurer et optimiser pour le développement sous Windows 11
-- **Déployer divers modèles** : Exécuter localement les modèles phi, qwen, deepseek et GPT via des commandes CLI
+- **Déployer divers modèles** : Exécuter localement les modèles phi, qwen, deepseek et GPT avec des commandes CLI
 - **Créer des solutions de production** : Développer des applications IA avec ingénierie avancée des prompts et intégration des données
-- **Exploiter l'écosystème open-source** : Intégrer des modèles Hugging Face et des contributions communautaires
+- **Exploiter l'écosystème open source** : Intégrer des modèles Hugging Face et des contributions communautaires
 - **Développer des agents IA** : Construire des agents intelligents avec des capacités de contextualisation et d'orchestration
 - **Implémenter des modèles d'entreprise** : Créer des solutions IA modulaires et évolutives pour le déploiement en production
 
@@ -49,13 +49,13 @@ En complétant ce module, vous serez capable de :
 
 **Sujets clés** : Ingénierie des prompts • Intégration des données • Flux de travail Azure • Optimisation des performances • Surveillance
 
-**Exemple** : [Application RAG Chainlit](./samples/04/README.md)
+**Exemple** : [Application RAG avec Chainlit](./samples/04/README.md)
 
 **Durée** : 2-3 heures | **Niveau** : Intermédiaire
 
 ---
 
-### [3 : Modèles open-source avec Foundry Local](./03.OpenSourceModels.md)
+### [3 : Modèles open source avec Foundry Local](./03.OpenSourceModels.md)
 **Focus** : Intégration Hugging Face, stratégies BYOM et modèles communautaires
 
 **Sujets clés** : Intégration Hugging Face • Apportez votre propre modèle • Insights Model Mondays • Contributions communautaires • Sélection de modèles
@@ -69,7 +69,7 @@ En complétant ce module, vous serez capable de :
 ### [4 : Explorer les modèles de pointe](./04.CuttingEdgeModels.md)
 **Focus** : LLMs vs SLMs, implémentation EdgeAI et démonstrations avancées
 
-**Sujets clés** : Comparaison de modèles • Inférence en périphérie vs cloud • Phi + ONNX Runtime • Application RAG Chainlit • Optimisation WebGPU
+**Sujets clés** : Comparaison de modèles • Inférence en périphérie vs cloud • Phi + ONNX Runtime • Application RAG avec Chainlit • Optimisation WebGPU
 
 **Exemple** : [Routeur Models-as-Tools](./samples/06/README.md)
 
@@ -184,13 +184,13 @@ En complétant ce module, vous serez capable de :
 ## Ressources clés
 
 **Documentation officielle :**
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Code source et exemples officiels
+- [GitHub Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Code source et exemples officiels
 - [Documentation Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Guide complet de configuration et d'utilisation
 - [Série Model Mondays](https://aka.ms/model-mondays) - Points forts et tutoriels hebdomadaires sur les modèles
 
 **Communauté & Support :**
 - [Discussions Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Q&A communautaire et demandes de fonctionnalités
-- [Communauté des développeurs IA Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Actualités et meilleures pratiques
+- [Communauté des développeurs IA Microsoft](https://techcommunity.microsoft.com/category/artificialintelligence) - Dernières actualités et meilleures pratiques
 
 ## Résultats d'apprentissage
 
@@ -198,7 +198,7 @@ En complétant ce module, vous serez en mesure de :
 
 ### Maîtrise technique
 - **Déployer et gérer** : Installations Foundry Local dans des environnements de développement et de production
-- **Intégrer des modèles** : Travailler sans effort avec des familles de modèles variées de Microsoft, Hugging Face et sources communautaires
+- **Intégrer des modèles** : Travailler de manière fluide avec des familles de modèles variées de Microsoft, Hugging Face et sources communautaires
 - **Créer des applications** : Développer des applications IA prêtes pour la production avec des fonctionnalités avancées et des optimisations
 - **Développer des agents** : Implémenter des agents IA sophistiqués avec contextualisation, raisonnement et intégration d'outils
 
@@ -210,8 +210,8 @@ En complétant ce module, vous serez en mesure de :
 
 ### Capacités d'innovation
 - **Prototypage rapide** : Construire et tester rapidement des concepts d'application IA avec les 10 modèles d'exemples
-- **Intégration communautaire** : Exploiter des modèles open-source et contribuer à l'écosystème
-- **Modèles avancés** : Implémenter des modèles IA de pointe, y compris RAG, agents et intégration d'outils
+- **Intégration communautaire** : Exploiter des modèles open source et contribuer à l'écosystème
+- **Modèles avancés** : Implémenter des modèles IA de pointe incluant RAG, agents et intégration d'outils
 - **Maîtrise des frameworks** : Intégration experte avec LangChain, Semantic Kernel, Chainlit et Electron
 - **Déploiement en production** : Déployer des solutions IA évolutives, des prototypes locaux aux systèmes d'entreprise
 - **Développement prêt pour l'avenir** : Construire des applications prêtes pour les technologies et modèles IA émergents
@@ -220,7 +220,7 @@ En complétant ce module, vous serez en mesure de :
 
 1. **Configuration de l'environnement** : Assurez-vous d'avoir Windows 11 avec le matériel recommandé (voir Prérequis)
 2. **Installer Foundry Local** : Suivez la session 1 pour une installation et une configuration complètes
-3. **Exécuter l'exemple 01** : Commencez par une intégration API REST basique pour vérifier la configuration
+3. **Exécuter l'exemple 01** : Commencez par une intégration API REST de base pour vérifier la configuration
 4. **Progression à travers les exemples** : Complétez les exemples 01-10 pour une maîtrise complète
 
 ## Indicateurs de succès
@@ -231,13 +231,13 @@ Suivez votre progression à travers les 10 exemples complets :
 - [ ] Installer et configurer Foundry Local avec succès
 - [ ] Compléter l'intégration API REST (Exemple 01)
 - [ ] Implémenter la compatibilité SDK OpenAI (Exemple 02)
-- [ ] Effectuer la découverte et le benchmarking des modèles (Exemple 03)
+- [ ] Réaliser la découverte et le benchmarking de modèles (Exemple 03)
 
 ### Niveau application (Exemples 04-06)
 - [ ] Déployer et exécuter au moins 4 familles de modèles différentes
 - [ ] Construire une application de chat RAG fonctionnelle (Exemple 04)
 - [ ] Créer un système d'orchestration multi-agents (Exemple 05)
-- [ ] Implémenter un routage intelligent des modèles (Exemple 06)
+- [ ] Implémenter un routage intelligent de modèles (Exemple 06)
 
 ### Niveau intégration avancée (Exemples 07-10)
 - [ ] Construire un client API prêt pour la production (Exemple 07)
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Exemple 04 : Application RAG Chainlit**
+**Exemple 04 : Application RAG avec Chainlit**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -465,3 +465,5 @@ Pour l'intégration avec Azure OpenAI (Session 2), consultez les fichiers README
 
 ---
 
+**Avertissement** :  
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.

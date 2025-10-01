@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T21:34:24+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:21:35+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "tr"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Microsoft Foundry Local kullanarak üretime hazır chat uygulamaları oluşturmanın çeşitli yaklaşımlarını gösteren kapsamlı bir örnek. Modern web arayüzleri, akış yanıtları ve en son tarayıcı teknolojilerini içerir.
 
-## İçerik
+## İçerikler
 
 - **🚀 Chainlit Chat Uygulaması** (`app.py`): Akış destekli üretime hazır chat uygulaması
 - **🌐 WebGPU Demo** (`webgpu-demo/`): Donanım hızlandırmalı tarayıcı tabanlı AI çıkarımı
@@ -85,7 +85,7 @@ Açılır: `http://localhost:3000`
 - **Foundry Local**: Kurulu ve çalışıyor ([İndir](https://aka.ms/foundry-local-installer))
 - **Python**: 3.10+ ve sanal ortam
 - **Model**: En az bir model yüklü (`foundry model run phi-4-mini`)
-- **Tarayıcı**: Chrome/Edge WebGPU desteği ile demo için
+- **Tarayıcı**: Chrome/Edge ile WebGPU desteği için
 - **Docker**: Open WebUI için (isteğe bağlı)
 
 ## Kurulum ve Ayar
@@ -125,7 +125,7 @@ foundry service ps
 ### Chainlit Chat Uygulaması
 
 **Özellikler:**
-- 🚀 **Gerçek Zamanlı Akış**: Tokenler oluşturuldukça görünür
+- 🚀 **Gerçek Zamanlı Akış**: Tokenlar oluşturuldukça görünür
 - 🛡️ **Güçlü Hata Yönetimi**: Sorunsuz bozulma ve kurtarma
 - 🎨 **Modern Arayüz**: Kutudan çıkan profesyonel chat arayüzü
 - 🔧 **Esnek Yapılandırma**: Ortam değişkenleri ve otomatik algılama
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -166,7 +166,7 @@ python -m http.server 5173
 
 **Özellikler:**
 - 🎨 **ChatGPT Benzeri Arayüz**: Profesyonel, tanıdık arayüz
-- 👥 **Çok Kullanıcılı Destek**: Kullanıcı hesapları ve sohbet geçmişi
+- 👥 **Çoklu Kullanıcı Desteği**: Kullanıcı hesapları ve sohbet geçmişi
 - 📁 **Dosya İşleme**: Belgeleri yükleyip analiz etme
 - 🔄 **Model Değiştirme**: Farklı modeller arasında kolay geçiş
 - 🐳 **Docker Dağıtımı**: Üretime hazır konteyner kurulumu
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Değişken | Açıklama | Varsayılan | Örnek |
 |----------|----------|------------|-------|
-| `MODEL` | Kullanılacak model takma adı | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Kullanılacak model takma adı | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local uç noktası | Otomatik algılanır | `http://localhost:51211` |
 | `API_KEY` | API anahtarı (yerel için isteğe bağlı) | `""` | `your-api-key` |
 
@@ -214,7 +214,7 @@ docker run -d --name open-webui -p 3000:8080 \
    chainlit run samples\04\app.py -w --port 3000
    ```
 
-3. **Python ortamı sorunları:**
+3. **Python ortam sorunları:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -286,7 +286,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Chainlit:**
 - Daha iyi algılanan performans için akış kullanın
-- Yüksek eşzamanlılık için bağlantı havuzlama uygulayın
+- Yüksek eşzamanlılık için bağlantı havuzu uygulayın
 - Tekrarlanan sorgular için model yanıtlarını önbelleğe alın
 - Büyük sohbet geçmişleriyle bellek kullanımını izleyin
 
@@ -316,7 +316,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
         return await foundry_local_completion(prompt)  # Default local
 ```
 
-**Çok Modlu Boru Hattı:**
+**Çok Modlu İşlem Hattı:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -335,7 +335,7 @@ async def analyze_document(file_path: str):
 
 ## Üretim Dağıtımı
 
-### Güvenlik Dikkatleri
+### Güvenlik Hususları
 
 - **API Anahtarları**: Ortam değişkenlerini kullanın, asla kod içine yazmayın
 - **Ağ**: Üretimde HTTPS kullanın, ekip erişimi için VPN düşünün
@@ -347,8 +347,8 @@ async def analyze_document(file_path: str):
 
 - **Sağlık Kontrolleri**: Uç nokta izleme uygulayın
 - **Günlükler**: Tüm bileşenlerden gelen günlükleri merkezileştirin
-- **Metrikler**: Yanıt sürelerini, hata oranlarını, kaynak kullanımını izleyin
-- **Yedekleme**: Sohbet verilerinin ve yapılandırmaların düzenli yedeğini alın
+- **Metrikler**: Yanıt sürelerini, hata oranlarını, kaynak kullanımını takip edin
+- **Yedekleme**: Sohbet verileri ve yapılandırmaların düzenli yedeğini alın
 
 ## Referanslar ve Kaynaklar
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Feragatname**:  
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluğu sağlamak için çaba göstersek de, otomatik çeviriler hata veya yanlışlıklar içerebilir. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul edilmez.

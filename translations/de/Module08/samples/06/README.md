@@ -1,18 +1,18 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "d28c8fdf6c32d02120403c7b4526392b",
-  "translation_date": "2025-09-22T12:58:14+00:00",
+  "original_hash": "7f0c6af41a1ae2c5a770c8170da8bd6e",
+  "translation_date": "2025-09-30T23:01:32+00:00",
   "source_file": "Module08/samples/06/README.md",
   "language_code": "de"
 }
 -->
 # Sitzung 6 Beispiel: Modelle als Werkzeuge
 
-Dieses Beispiel implementiert einen minimalen Router + Tool-Registry, der ein Modell basierend auf der Benutzeranfrage auswählt und den OpenAI-kompatiblen Endpunkt von Foundry Local aufruft.
+Dieses Beispiel implementiert einen minimalen Router + Tool-Registry, der ein Modell basierend auf der Benutzeraufforderung auswählt und den OpenAI-kompatiblen Endpunkt von Foundry Local aufruft.
 
 ## Dateien
-- `router.py`: einfache Registrierung und heuristische Weiterleitung; Endpunkt-Erkennung + Gesundheitsprüfung.
+- `router.py`: einfache Registry und heuristische Routing; Endpunkt-Erkennung + Gesundheitsprüfung.
 
 ## Ausführen (cmd.exe)
 ```cmd
@@ -20,8 +20,8 @@ cd Module08
 .\.venv\Scripts\activate
 REM Start whatever models you plan to route to
 foundry model run phi-4-mini
-foundry model run qwen2.5-7b-instruct
-foundry model run deepseek-r1-distill-qwen-7b
+foundry model run qwen2.5-7b
+foundry model run deepseek-r1-7b
 
 python samples\06\router.py "Explain how local-first AI improves privacy in two sentences."
 ```
@@ -34,10 +34,10 @@ set BASE_URL=http://localhost:8000
 set API_KEY=
 REM Override models per tool
 set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
+set REASONING_MODEL=deepseek-r1-7b
+set CODE_MODEL=qwen2.5-7b
 REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-distill-qwen-7b"},"code":{"model":"qwen2.5-7b-instruct"}}
+set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-7b"},"code":{"model":"qwen2.5-7b"}}
 ```
 
 ## Referenzen
@@ -46,3 +46,5 @@ set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepse
 
 ---
 
+**Haftungsausschluss**:  
+Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die sich aus der Nutzung dieser Übersetzung ergeben.

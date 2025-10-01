@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T21:20:01+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:10:22+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "br"
 }
 -->
 # Exemplo 04: Aplicativos de Chat para Produção com Chainlit
 
-Um exemplo abrangente demonstrando várias abordagens para construir aplicativos de chat prontos para produção usando o Microsoft Foundry Local, com interfaces web modernas, respostas em streaming e tecnologias avançadas de navegador.
+Um exemplo abrangente que demonstra várias abordagens para construir aplicativos de chat prontos para produção usando Microsoft Foundry Local, com interfaces web modernas, respostas em streaming e tecnologias avançadas de navegador.
 
 ## O que está incluído
 
@@ -74,11 +74,11 @@ Abre em: `http://localhost:3000`
 
 ### Comparação de Tecnologias
 
-| Tecnologia   | Caso de Uso                  | Vantagens                     | Desvantagens                |
-|--------------|------------------------------|-------------------------------|-----------------------------|
-| **Chainlit** | Desenvolvedores Python, prototipagem rápida | Configuração fácil, suporte a streaming | Apenas Python              |
-| **WebGPU**   | Máxima privacidade, cenários offline | Nativo do navegador, sem necessidade de servidor | Tamanho limitado de modelo |
-| **Open WebUI** | Implantação em produção, equipes | Interface profissional, gerenciamento de usuários | Requer Docker              |
+| Tecnologia   | Caso de Uso                  | Vantagens                     | Desvantagens          |
+|--------------|------------------------------|-------------------------------|-----------------------|
+| **Chainlit** | Desenvolvedores Python, prototipagem rápida | Configuração fácil, suporte a streaming | Apenas Python         |
+| **WebGPU**   | Máxima privacidade, cenários offline | Nativo do navegador, sem necessidade de servidor | Tamanho limitado do modelo |
+| **Open WebUI** | Implantação em produção, equipes | Interface profissional, gerenciamento de usuários | Requer Docker         |
 
 ## Pré-requisitos
 
@@ -127,8 +127,8 @@ foundry service ps
 
 **Recursos:**
 - 🚀 **Streaming em Tempo Real**: Os tokens aparecem conforme são gerados
-- 🛡️ **Tratamento de Erros Robusto**: Degradação e recuperação elegantes
-- 🎨 **Interface Moderna**: Interface de chat profissional pronta para uso
+- 🛡️ **Tratamento Robusto de Erros**: Degradação e recuperação elegantes
+- 🎨 **UI Moderna**: Interface de chat profissional pronta para uso
 - 🔧 **Configuração Flexível**: Variáveis de ambiente e detecção automática
 - 📱 **Design Responsivo**: Funciona em dispositivos desktop e móveis
 
@@ -138,7 +138,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -187,11 +187,11 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ### Variáveis de Ambiente
 
-| Variável    | Descrição                  | Padrão         | Exemplo               |
-|-------------|----------------------------|----------------|-----------------------|
-| `MODEL`     | Alias do modelo a ser usado | `phi-4-mini`   | `qwen2.5-7b-instruct` |
-| `BASE_URL`  | Endpoint do Foundry Local  | Detectado automaticamente | `http://localhost:51211` |
-| `API_KEY`   | Chave de API (opcional para local) | `""`          | `sua-chave-de-api`    |
+| Variável    | Descrição                     | Padrão         | Exemplo         |
+|-------------|-------------------------------|----------------|-----------------|
+| `MODEL`     | Alias do modelo a ser usado  | `phi-4-mini`   | `qwen2.5-7b`    |
+| `BASE_URL`  | Endpoint do Foundry Local    | Detectado automaticamente | `http://localhost:51211` |
+| `API_KEY`   | Chave de API (opcional para local) | `""`          | `sua-chave-api` |
 
 ## Solução de Problemas
 
@@ -233,7 +233,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 1. **WebGPU não suportado:**
    - Atualize para Chrome/Edge 113+
-   - Habilite WebGPU: `chrome://flags/#enable-unsafe-webgpu`
+   - Ative WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Verifique o status da GPU: `chrome://gpu`
    - A demonstração reverterá automaticamente para CPU
 
@@ -266,7 +266,7 @@ docker run -d --name open-webui -p 3000:8080 \
    ```
   
 
-### Lista de Validação
+### Lista de Verificação de Validação
 
 ```cmd
 # ✅ 1. Foundry Local Setup
@@ -294,14 +294,14 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **Chainlit:**
 - Use streaming para melhor percepção de desempenho
 - Implemente pooling de conexões para alta concorrência
-- Cache de respostas de modelo para consultas repetidas
+- Cache de respostas de modelos para consultas repetidas
 - Monitore o uso de memória com históricos de conversas grandes
 
 **WebGPU:**
 - Use WebGPU para máxima privacidade e velocidade
-- Implemente quantização de modelo para modelos menores
+- Implemente quantização de modelos para modelos menores
 - Use Web Workers para processamento em segundo plano
-- Cache modelos compilados no armazenamento do navegador
+- Cache de modelos compilados no armazenamento do navegador
 
 **Open WebUI:**
 - Use volumes persistentes para histórico de conversas
@@ -349,14 +349,14 @@ async def analyze_document(file_path: str):
 - **Rede**: Use HTTPS em produção, considere VPN para acesso da equipe
 - **Controle de Acesso**: Implemente autenticação para Open WebUI
 - **Privacidade de Dados**: Audite quais dados permanecem locais e quais vão para a nuvem
-- **Atualizações**: Mantenha o Foundry Local e os contêineres atualizados
+- **Atualizações**: Mantenha Foundry Local e contêineres atualizados
 
 ### Monitoramento e Manutenção
 
 - **Verificações de Saúde**: Implemente monitoramento de endpoints
 - **Logs**: Centralize os logs de todos os componentes
 - **Métricas**: Acompanhe tempos de resposta, taxas de erro e uso de recursos
-- **Backup**: Backup regular dos dados de conversas e configurações
+- **Backup**: Backup regular de dados de conversas e configurações
 
 ## Referências e Recursos
 
@@ -378,3 +378,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Aviso Legal**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.

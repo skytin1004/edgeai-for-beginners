@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:38:02+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:18:28+00:00",
   "source_file": "Module08/README.md",
   "language_code": "tr"
 }
 -->
-# Modül 08: Microsoft Foundry Local ile Uygulamalı Çalışma - Geliştirici Araç Seti
+# Modül 08: Microsoft Foundry Local ile Uygulamalı Çalışma - Tam Geliştirici Araç Seti
 
 ## Genel Bakış
 
@@ -24,12 +24,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 Bu modülü tamamladığınızda:
 
-- **Foundry Local'ı Uzmanlıkla Kullanma**: Windows 11 geliştirme için kurulum, yapılandırma ve optimizasyon yapmayı öğrenin.
-- **Çeşitli Modelleri Dağıtma**: Phi, Qwen, Deepseek ve GPT modellerini CLI komutlarıyla yerel olarak çalıştırın.
-- **Üretim Çözümleri Oluşturma**: Gelişmiş prompt mühendisliği ve veri entegrasyonu ile AI uygulamaları oluşturun.
-- **Açık Kaynak Ekosisteminden Yararlanma**: Hugging Face modellerini ve topluluk katkılarını entegre edin.
-- **AI Ajanları Geliştirme**: Temellendirme ve orkestrasyon yeteneklerine sahip akıllı ajanlar oluşturun.
-- **Kurumsal Kalıpları Uygulama**: Modüler, ölçeklenebilir AI çözümleri oluşturun ve üretime dağıtın.
+- **Foundry Local'ı Uzmanlıkla Kullanma**: Windows 11 geliştirme için kurulum, yapılandırma ve optimizasyon yapmayı öğrenin
+- **Çeşitli Modelleri Dağıtma**: Phi, Qwen, Deepseek ve GPT modellerini CLI komutlarıyla yerel olarak çalıştırın
+- **Üretim Çözümleri Oluşturma**: Gelişmiş prompt mühendisliği ve veri entegrasyonu ile AI uygulamaları oluşturun
+- **Açık Kaynak Ekosisteminden Yararlanma**: Hugging Face modellerini ve topluluk katkılarını entegre edin
+- **AI Ajanları Geliştirme**: Temellendirme ve orkestrasyon yeteneklerine sahip akıllı ajanlar oluşturun
+- **Kurumsal Kalıpları Uygulama**: Üretim dağıtımı için modüler, ölçeklenebilir AI çözümleri oluşturun
 
 ## Oturum Yapısı
 
@@ -77,7 +77,7 @@ Bu modülü tamamladığınızda:
 
 ---
 
-### [5: Hızlı AI Güçlü Ajanlar Oluşturma](./05.AIPoweredAgents.md)
+### [5: Hızlı AI Destekli Ajanlar Oluşturma](./05.AIPoweredAgents.md)
 **Odak Noktası**: Ajan mimarileri, sistem promptları, temellendirme ve orkestrasyon
 
 **Anahtar Konular**: Ajan tasarım kalıpları • Sistem prompt mühendisliği • Temellendirme teknikleri • Çoklu ajan sistemleri • Üretim dağıtımı
@@ -144,7 +144,7 @@ Bu modülü tamamladığınızda:
 ## Ön Koşullar
 
 ### Sistem Gereksinimleri
-- **İşletim Sistemi**: Windows 11 (22H2 veya üstü)
+- **İşletim Sistemi**: Windows 11 (22H2 veya daha yeni)
 - **Bellek**: 16GB RAM (Daha büyük modeller için 32GB önerilir)
 - **Depolama**: Model önbellekleme için 50GB boş alan
 - **Donanım**: NPU destekli cihaz önerilir (Copilot+ PC), GPU isteğe bağlı
@@ -194,7 +194,7 @@ Bu modülü tamamladığınızda:
 
 ## Öğrenme Çıktıları
 
-Bu modülü tamamladığınızda aşağıdaki becerilere sahip olacaksınız:
+Bu modülü tamamladığınızda şunları yapabileceksiniz:
 
 ### Teknik Uzmanlık
 - **Dağıtım ve Yönetim**: Foundry Local kurulumlarını geliştirme ve üretim ortamlarında yönetme
@@ -204,53 +204,53 @@ Bu modülü tamamladığınızda aşağıdaki becerilere sahip olacaksınız:
 
 ### Stratejik Anlayış
 - **Mimari Kararlar**: Yerel ve bulut dağıtımı arasında bilinçli seçimler yapma
-- **Performans Optimizasyonu**: Farklı donanım yapılandırmalarında çıkarım performansını optimize etme
+- **Performans Optimizasyonu**: Farklı donanım yapılandırmaları arasında çıkarım performansını optimize etme
 - **Kurumsal Ölçeklendirme**: Yerel prototiplerden kurumsal dağıtımlara ölçeklenen uygulamalar tasarlama
 - **Gizlilik ve Güvenlik**: Yerel çıkarım ile gizlilik koruyucu AI çözümleri uygulama
 
 ### Yenilikçi Yetkinlikler
-- **Hızlı Prototipleme**: Tüm 10 örnek kalıbı üzerinde hızlı bir şekilde AI uygulama konseptleri oluşturma ve test etme
-- **Topluluk Entegrasyonu**: Açık kaynak modellerinden yararlanma ve ekosisteme katkıda bulunma
+- **Hızlı Prototipleme**: Tüm 10 örnek kalıbı boyunca AI uygulama konseptlerini hızlıca oluşturma ve test etme
+- **Topluluk Entegrasyonu**: Açık kaynak modellerden yararlanma ve ekosisteme katkıda bulunma
 - **İleri Kalıplar**: RAG, ajanlar ve araç entegrasyonu dahil olmak üzere en son AI kalıplarını uygulama
 - **Çerçeve Uzmanlığı**: LangChain, Semantik Kernel, Chainlit ve Electron ile uzman düzeyde entegrasyon
 - **Üretim Dağıtımı**: Yerel prototiplerden kurumsal sistemlere ölçeklenebilir AI çözümleri dağıtma
-- **Geleceğe Hazır Geliştirme**: Gelişen AI teknolojileri ve kalıplarına hazır uygulamalar oluşturma
+- **Geleceğe Hazır Geliştirme**: Gelişen AI teknolojileri ve kalıpları için hazır uygulamalar oluşturma
 
 ## Başlangıç
 
-1. **Ortam Kurulumu**: Windows 11 ve önerilen donanımı (bkz. Ön Koşullar) sağlayın.
-2. **Foundry Local'ı Kurun**: Tam kurulum ve yapılandırma için Oturum 1'i takip edin.
-3. **Örnek 01'i Çalıştırın**: Kurulumu doğrulamak için temel REST API entegrasyonu ile başlayın.
-4. **Örnekler Üzerinde İlerleyin**: 01-10 arasındaki örnekleri tamamlayarak kapsamlı bir uzmanlık kazanın.
+1. **Ortam Kurulumu**: Windows 11 ve önerilen donanımı (bkz. Ön Koşullar) sağlayın
+2. **Foundry Local'ı Kurun**: Tam kurulum ve yapılandırma için Oturum 1'i takip edin
+3. **Örnek 01'i Çalıştırın**: Kurulumu doğrulamak için temel REST API entegrasyonu ile başlayın
+4. **Örnekler Üzerinde İlerleyin**: 01-10 örneklerini tamamlayarak kapsamlı bir uzmanlık kazanın
 
 ## Başarı Ölçütleri
 
 Tüm 10 kapsamlı örnek üzerinden ilerlemenizi takip edin:
 
 ### Temel Seviye (Örnekler 01-03)
-- [ ] Foundry Local'ı başarıyla kurun ve yapılandırın.
-- [ ] REST API entegrasyonunu tamamlayın (Örnek 01).
-- [ ] OpenAI SDK uyumluluğunu uygulayın (Örnek 02).
-- [ ] Model keşfi ve karşılaştırmasını gerçekleştirin (Örnek 03).
+- [ ] Foundry Local'ı başarıyla kurun ve yapılandırın
+- [ ] REST API entegrasyonunu tamamlayın (Örnek 01)
+- [ ] OpenAI SDK uyumluluğunu uygulayın (Örnek 02)
+- [ ] Model keşfi ve karşılaştırmasını gerçekleştirin (Örnek 03)
 
 ### Uygulama Seviyesi (Örnekler 04-06)
-- [ ] En az 4 farklı model ailesini dağıtın ve çalıştırın.
-- [ ] İşlevsel bir RAG sohbet uygulaması oluşturun (Örnek 04).
-- [ ] Çoklu ajan orkestrasyon sistemi oluşturun (Örnek 05).
-- [ ] Akıllı model yönlendirme uygulayın (Örnek 06).
+- [ ] En az 4 farklı model ailesini dağıtın ve çalıştırın
+- [ ] İşlevsel bir RAG sohbet uygulaması oluşturun (Örnek 04)
+- [ ] Çoklu ajan orkestrasyon sistemi oluşturun (Örnek 05)
+- [ ] Akıllı model yönlendirme uygulayın (Örnek 06)
 
 ### İleri Entegrasyon Seviyesi (Örnekler 07-10)
-- [ ] Üretime hazır bir API istemcisi oluşturun (Örnek 07).
-- [ ] Windows 11 yerel sohbet uygulaması geliştirin (Örnek 08).
-- [ ] Gelişmiş çoklu ajan sistemi uygulayın (Örnek 09).
-- [ ] Kapsamlı bir araçlar çerçevesi oluşturun (Örnek 10).
+- [ ] Üretime hazır bir API istemcisi oluşturun (Örnek 07)
+- [ ] Windows 11 yerel sohbet uygulaması geliştirin (Örnek 08)
+- [ ] Gelişmiş çoklu ajan sistemi uygulayın (Örnek 09)
+- [ ] Kapsamlı bir araçlar çerçevesi oluşturun (Örnek 10)
 
 ### Uzmanlık Göstergeleri
-- [ ] Tüm 10 örneği hatasız çalıştırın.
-- [ ] Belirli kullanım durumları için en az 3 örneği özelleştirin.
-- [ ] Üretim benzeri ortamlarda 2+ örneği dağıtın.
-- [ ] Örnek kodda iyileştirmeler veya genişletmeler yapın.
-- [ ] Foundry Local kalıplarını kişisel/profesyonel projelere entegre edin.
+- [ ] Tüm 10 örneği hatasız çalıştırın
+- [ ] Belirli kullanım durumları için en az 3 örneği özelleştirin
+- [ ] Üretim benzeri ortamlarda 2+ örnek dağıtın
+- [ ] Örnek kodda iyileştirmeler veya genişletmeler yapın
+- [ ] Foundry Local kalıplarını kişisel/profesyonel projelere entegre edin
 
 ## Hızlı Başlangıç Rehberi - Tüm 10 Örnek
 
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -454,14 +454,16 @@ npm install
 ```
 
 ## Özet
-Bu modül, Microsoft'un kurumsal düzeydeki araçlarını açık kaynak ekosisteminin esneklik ve yenilikleriyle birleştirerek, uç AI geliştirmede en son teknolojiyi temsil ediyor. Foundry Local'ı 10 kapsamlı örnek üzerinden öğrenerek, AI uygulama geliştirme alanında öncü bir konuma ulaşacaksınız.
+Bu modül, Microsoft'un kurumsal düzeydeki araçlarını açık kaynak ekosisteminin esneklik ve yenilikleriyle birleştirerek, uç yapay zeka geliştirmede en son teknolojiyi temsil ediyor. Foundry Local'ı 10 kapsamlı örnek üzerinden öğrenerek, yapay zeka uygulama geliştirme alanında öncü bir konuma ulaşabilirsiniz.
 
 **Tam Öğrenme Yolu:**
 - **Temel** (Örnekler 01-03): API entegrasyonu ve model yönetimi
 - **Uygulamalar** (Örnekler 04-06): RAG, ajanlar ve akıllı yönlendirme
 - **İleri Düzey** (Örnekler 07-10): Üretim çerçeveleri ve kurumsal entegrasyon
 
-Azure OpenAI entegrasyonu (Oturum 2) için, gerekli ortam değişkenleri ve API sürüm ayarları hakkında bilgi almak üzere her bir örneğin README dosyasına bakın.
+Azure OpenAI entegrasyonu (Oturum 2) için, gerekli ortam değişkenleri ve API sürüm ayarları hakkında bilgi almak üzere her bir örneğin README dosyasına bakabilirsiniz.
 
 ---
 
+**Feragatname**:  
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel bir insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlama veya yorumlamalardan sorumlu değiliz.

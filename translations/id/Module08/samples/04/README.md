@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T00:43:19+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:59:35+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "id"
 }
@@ -32,7 +32,7 @@ foundry model run phi-4-mini
 # Run Chainlit app (using port 8080 to avoid conflicts)
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 Buka di: `http://localhost:8080`
 
 ### 2. Demo Browser WebGPU
@@ -44,7 +44,7 @@ cd Module08\samples\04\webgpu-demo
 # Serve the demo
 python -m http.server 5173
 ```
-  
+
 Buka di: `http://localhost:5173`
 
 ### 3. Pengaturan Open WebUI
@@ -56,7 +56,7 @@ docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 Buka di: `http://localhost:3000`
 
 ## Pola Arsitektur
@@ -70,14 +70,14 @@ Buka di: `http://localhost:3000`
 | **Chat Real-time** | 🏠 Lokal (Foundry) | Latensi lebih rendah, respons lebih cepat |
 | **Analisis Dokumen** | 🔄 Hybrid | Lokal untuk ekstraksi, cloud untuk analisis |
 | **Generasi Kode** | 🏠 Lokal (Foundry) | Privasi + model khusus |
-| **Tugas Penelitian** | ☁️ Cloud (Azure OpenAI) | Basis pengetahuan yang luas diperlukan |
+| **Tugas Penelitian** | ☁️ Cloud (Azure OpenAI) | Basis pengetahuan luas diperlukan |
 
 ### Perbandingan Teknologi
 
 | Teknologi | Kasus Penggunaan | Kelebihan | Kekurangan |
 |-----------|------------------|-----------|------------|
 | **Chainlit** | Pengembang Python, prototipe cepat | Pengaturan mudah, dukungan streaming | Hanya Python |
-| **WebGPU** | Privasi maksimum, skenario offline | Native browser, tidak perlu server | Ukuran model terbatas |
+| **WebGPU** | Privasi maksimal, skenario offline | Native browser, tidak perlu server | Ukuran model terbatas |
 | **Open WebUI** | Penerapan produksi, tim | UI profesional, manajemen pengguna | Membutuhkan Docker |
 
 ## Prasyarat
@@ -103,7 +103,7 @@ py -m venv .venv
 # Install dependencies
 pip install -r requirements.txt
 ```
-  
+
 ### 2. Pengaturan Foundry Local
 
 ```cmd
@@ -119,7 +119,7 @@ foundry model run phi-4-mini
 # Verify model is running
 foundry service ps
 ```
-  
+
 ## Aplikasi Contoh
 
 ### Aplikasi Chat Chainlit
@@ -131,13 +131,13 @@ foundry service ps
 - 🔧 **Konfigurasi Fleksibel**: Variabel lingkungan dan deteksi otomatis
 - 📱 **Desain Responsif**: Berfungsi di perangkat desktop dan seluler
 
-**Memulai dengan Cepat:**  
+**Memulai dengan Cepat:**
 ```cmd
 # Run with default settings (recommended)
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -145,23 +145,23 @@ set BASE_URL=http://localhost:51211
 set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 ### Demo Browser WebGPU
 
 **Fitur:**
 - 🌐 **AI Native Browser**: Tidak memerlukan server, berjalan sepenuhnya di browser
-- ⚡ **Akselerasi WebGPU**: Akselerasi perangkat keras saat tersedia
-- 🔒 **Privasi Maksimum**: Data tidak pernah meninggalkan perangkat Anda
+- ⚡ **Akselerasi WebGPU**: Akselerasi perangkat keras jika tersedia
+- 🔒 **Privasi Maksimal**: Data tidak pernah meninggalkan perangkat Anda
 - 🎯 **Tanpa Instalasi**: Berfungsi di browser yang kompatibel
 - 🔄 **Fallback yang Mulus**: Beralih ke CPU jika WebGPU tidak tersedia
 
-**Menjalankan:**  
+**Menjalankan:**
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
 # Open http://localhost:5173
 ```
-  
+
 ### Integrasi Open WebUI
 
 **Fitur:**
@@ -169,23 +169,23 @@ python -m http.server 5173
 - 👥 **Dukungan Multi-pengguna**: Akun pengguna dan riwayat percakapan
 - 📁 **Pemrosesan File**: Unggah dan analisis dokumen
 - 🔄 **Penggantian Model**: Mudah beralih antara model yang berbeda
-- 🐳 **Penerapan Docker**: Pengaturan kontainer siap produksi
+- 🐳 **Penerapan Docker**: Pengaturan siap produksi yang terkontainerisasi
 
-**Pengaturan Cepat:**  
+**Pengaturan Cepat:**
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 ## Referensi Konfigurasi
 
 ### Variabel Lingkungan
 
 | Variabel | Deskripsi | Default | Contoh |
 |----------|-----------|---------|--------|
-| `MODEL` | Alias model yang digunakan | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias model yang digunakan | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint Foundry Local | Terdeteksi otomatis | `http://localhost:51211` |
 | `API_KEY` | API key (opsional untuk lokal) | `""` | `your-api-key` |
 
@@ -195,7 +195,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **Aplikasi Chainlit:**
 
-1. **Layanan tidak tersedia:**  
+1. **Layanan tidak tersedia:**
    ```cmd
    # Check Foundry Local status
    foundry service status
@@ -204,8 +204,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # Validate API endpoint (note: port 51211)
    curl http://localhost:51211/v1/models
    ```
-  
-2. **Konflik port:**  
+
+2. **Konflik port:**
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -213,8 +213,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # Use different port if needed
    chainlit run samples\04\app.py -w --port 3000
    ```
-  
-3. **Masalah lingkungan Python:**  
+
+3. **Masalah lingkungan Python:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -223,7 +223,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Reinstall dependencies
    pip install -r requirements.txt
    ```
-  
+
 **Demo WebGPU:**
 
 1. **WebGPU tidak didukung:**
@@ -235,11 +235,11 @@ docker run -d --name open-webui -p 3000:8080 \
 2. **Kesalahan pemuatan model:**
    - Pastikan koneksi internet untuk mengunduh model
    - Periksa konsol browser untuk kesalahan CORS
-   - Verifikasi Anda melayani melalui HTTP (bukan file://)
+   - Verifikasi bahwa Anda melayani melalui HTTP (bukan file://)
 
 **Open WebUI:**
 
-1. **Koneksi ditolak:**  
+1. **Koneksi ditolak:**
    ```cmd
    # Check Docker is running
    docker --version
@@ -250,8 +250,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # View container logs
    docker logs open-webui
    ```
-  
-2. **Model tidak muncul:**  
+
+2. **Model tidak muncul:**
    ```cmd
    # Verify Foundry Local endpoint
    curl http://localhost:51211/v1/models
@@ -259,7 +259,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Restart Open WebUI
    docker restart open-webui
    ```
-  
+
 ### Daftar Periksa Validasi
 
 ```cmd
@@ -279,32 +279,32 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test WebGPU demo at localhost:5173
 # Test Open WebUI at localhost:3000
 ```
-  
+
 ## Penggunaan Lanjutan
 
 ### Optimasi Performa
 
 **Chainlit:**
 - Gunakan streaming untuk performa yang lebih baik
-- Terapkan pooling koneksi untuk tingkat konkurensi tinggi
-- Cache respons model untuk kueri berulang
-- Pantau penggunaan memori dengan riwayat percakapan besar
+- Implementasikan pooling koneksi untuk tingkat konkurensi tinggi
+- Cache respons model untuk kueri yang berulang
+- Pantau penggunaan memori dengan riwayat percakapan yang besar
 
 **WebGPU:**
-- Gunakan WebGPU untuk privasi dan kecepatan maksimum
-- Terapkan kuantisasi model untuk model yang lebih kecil
+- Gunakan WebGPU untuk privasi dan kecepatan maksimal
+- Implementasikan kuantisasi model untuk model yang lebih kecil
 - Gunakan Web Workers untuk pemrosesan latar belakang
 - Cache model yang dikompilasi di penyimpanan browser
 
 **Open WebUI:**
 - Gunakan volume persisten untuk riwayat percakapan
 - Konfigurasikan batas sumber daya untuk kontainer Docker
-- Terapkan strategi pencadangan untuk data pengguna
-- Atur reverse proxy untuk terminasi SSL
+- Implementasikan strategi pencadangan untuk data pengguna
+- Atur proxy terbalik untuk terminasi SSL
 
 ### Pola Integrasi
 
-**Hybrid Lokal/Cloud:**  
+**Hybrid Lokal/Cloud:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -315,8 +315,8 @@ async def intelligent_routing(prompt: str, metadata: dict):
     else:
         return await foundry_local_completion(prompt)  # Default local
 ```
-  
-**Pipeline Multi-Modal:**  
+
+**Pipeline Multi-Modal:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -332,20 +332,20 @@ async def analyze_document(file_path: str):
     
     return summary
 ```
-  
+
 ## Penerapan Produksi
 
 ### Pertimbangan Keamanan
 
 - **API Keys**: Gunakan variabel lingkungan, jangan pernah hardcode
 - **Jaringan**: Gunakan HTTPS di produksi, pertimbangkan VPN untuk akses tim
-- **Kontrol Akses**: Terapkan autentikasi untuk Open WebUI
-- **Privasi Data**: Audit data apa yang tetap lokal vs. dikirim ke cloud
+- **Kontrol Akses**: Implementasikan autentikasi untuk Open WebUI
+- **Privasi Data**: Audit data apa yang tetap lokal vs. yang dikirim ke cloud
 - **Pembaruan**: Jaga Foundry Local dan kontainer tetap diperbarui
 
 ### Pemantauan dan Pemeliharaan
 
-- **Pemeriksaan Kesehatan**: Terapkan pemantauan endpoint
+- **Pemeriksaan Kesehatan**: Implementasikan pemantauan endpoint
 - **Logging**: Sentralisasi log dari semua komponen
 - **Metrik**: Lacak waktu respons, tingkat kesalahan, penggunaan sumber daya
 - **Pencadangan**: Pencadangan rutin data percakapan dan konfigurasi
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.

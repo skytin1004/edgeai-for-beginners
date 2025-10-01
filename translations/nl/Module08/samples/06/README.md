@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "d28c8fdf6c32d02120403c7b4526392b",
-  "translation_date": "2025-09-22T21:53:45+00:00",
+  "original_hash": "7f0c6af41a1ae2c5a770c8170da8bd6e",
+  "translation_date": "2025-10-01T00:49:29+00:00",
   "source_file": "Module08/samples/06/README.md",
   "language_code": "nl"
 }
 -->
-# Sessie 6 Voorbeeld: Modellen als Tools
+# Sessie 6 Voorbeeld: Modellen als Hulpmiddelen
 
-Dit voorbeeld implementeert een minimale router + toolregister die een model selecteert op basis van de gebruikersprompt en Foundry Local's OpenAI-compatibele endpoint aanroept.
+Dit voorbeeld implementeert een minimale router + toolregister die een model selecteert op basis van de gebruikersprompt en een oproep doet naar Foundry Local's OpenAI-compatibele endpoint.
 
 ## Bestanden
 - `router.py`: eenvoudig register en heuristische routering; endpointdetectie + gezondheidscontrole.
@@ -20,24 +20,24 @@ cd Module08
 .\.venv\Scripts\activate
 REM Start whatever models you plan to route to
 foundry model run phi-4-mini
-foundry model run qwen2.5-7b-instruct
-foundry model run deepseek-r1-distill-qwen-7b
+foundry model run qwen2.5-7b
+foundry model run deepseek-r1-7b
 
 python samples\06\router.py "Explain how local-first AI improves privacy in two sentences."
 ```
 
 ## Opmerkingen
-- De router gebruikt eenvoudige sleutelwoordheuristieken om te kiezen tussen `general`, `reasoning` en `code` tools en print `/v1/models` bij het starten.
+- De router gebruikt eenvoudige trefwoordheuristieken om te kiezen tussen `general`, `reasoning` en `code` tools en print `/v1/models` bij het starten.
 - Configureren via omgevingsvariabelen:
 ```cmd
 set BASE_URL=http://localhost:8000
 set API_KEY=
 REM Override models per tool
 set GENERAL_MODEL=phi-4-mini
-set REASONING_MODEL=deepseek-r1-distill-qwen-7b
-set CODE_MODEL=qwen2.5-7b-instruct
+set REASONING_MODEL=deepseek-r1-7b
+set CODE_MODEL=qwen2.5-7b
 REM Or provide a full JSON registry
-set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-distill-qwen-7b"},"code":{"model":"qwen2.5-7b-instruct"}}
+set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepseek-r1-7b"},"code":{"model":"qwen2.5-7b"}}
 ```
 
 ## Referenties
@@ -46,3 +46,5 @@ set TOOL_REGISTRY={"general":{"model":"phi-4-mini"},"reasoning":{"model":"deepse
 
 ---
 
+**Disclaimer**:  
+Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor cruciale informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.

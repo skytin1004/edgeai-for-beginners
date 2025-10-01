@@ -1,20 +1,20 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T23:55:30+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:49:34+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "nl"
 }
 -->
 # Voorbeeld 04: Productie Chattoepassingen met Chainlit
 
-Een uitgebreid voorbeeld dat meerdere benaderingen demonstreert om productieklare chattoepassingen te bouwen met Microsoft Foundry Local, inclusief moderne webinterfaces, streamingreacties en geavanceerde browsertechnologieën.
+Een uitgebreide demonstratie van verschillende benaderingen om productieklare chattoepassingen te bouwen met Microsoft Foundry Local, inclusief moderne webinterfaces, streamingreacties en geavanceerde browsertechnologieën.
 
 ## Wat is inbegrepen
 
 - **🚀 Chainlit Chat App** (`app.py`): Productieklare chattoepassing met streaming
-- **🌐 WebGPU Demo** (`webgpu-demo/`): Browsergebaseerde AI-inferentie met hardwareversnelling
+- **🌐 WebGPU Demo** (`webgpu-demo/`): AI-inferentie in de browser met hardwareversnelling
 - **🎨 Open WebUI Integratie** (`open-webui-guide.md`): Professionele ChatGPT-achtige interface
 - **📚 Educatief Notebook** (`chainlit_app.ipynb`): Interactieve leermaterialen
 
@@ -32,7 +32,7 @@ foundry model run phi-4-mini
 # Run Chainlit app (using port 8080 to avoid conflicts)
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 Open op: `http://localhost:8080`
 
 ### 2. WebGPU Browser Demo
@@ -44,7 +44,7 @@ cd Module08\samples\04\webgpu-demo
 # Serve the demo
 python -m http.server 5173
 ```
-  
+
 Open op: `http://localhost:5173`
 
 ### 3. Open WebUI Setup
@@ -56,12 +56,12 @@ docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 Open op: `http://localhost:3000`
 
 ## Architectuurpatronen
 
-### Lokale vs Cloud Beslissingsmatrix
+### Matrix voor lokale vs. cloudbeslissingen
 
 | Scenario | Aanbeveling | Reden |
 |----------|-------------|-------|
@@ -76,7 +76,7 @@ Open op: `http://localhost:3000`
 
 | Technologie | Gebruiksscenario | Voordelen | Nadelen |
 |-------------|------------------|-----------|---------|
-| **Chainlit** | Python-ontwikkelaars, snelle prototyping | Eenvoudige setup, streamingondersteuning | Alleen Python |
+| **Chainlit** | Python-ontwikkelaars, snelle prototyping | Eenvoudige installatie, streamingondersteuning | Alleen Python |
 | **WebGPU** | Maximale privacy, offline scenario's | Browser-native, geen server nodig | Beperkte modelgrootte |
 | **Open WebUI** | Productie-implementatie, teams | Professionele UI, gebruikersbeheer | Vereist Docker |
 
@@ -90,7 +90,7 @@ Open op: `http://localhost:3000`
 
 ## Installatie & Setup
 
-### 1. Python Omgevingssetup
+### 1. Python-omgeving instellen
 
 ```cmd
 # Navigate to Module08 directory
@@ -103,8 +103,8 @@ py -m venv .venv
 # Install dependencies
 pip install -r requirements.txt
 ```
-  
-### 2. Foundry Local Setup
+
+### 2. Foundry Local instellen
 
 ```cmd
 # Verify Foundry Local installation
@@ -119,7 +119,7 @@ foundry model run phi-4-mini
 # Verify model is running
 foundry service ps
 ```
-  
+
 ## Voorbeeldtoepassingen
 
 ### Chainlit Chattoepassing
@@ -131,13 +131,13 @@ foundry service ps
 - 🔧 **Flexibele Configuratie**: Omgevingsvariabelen en automatische detectie
 - 📱 **Responsief Ontwerp**: Werkt op desktop en mobiele apparaten
 
-**Snelle Start:**  
+**Snelle Start:**
 ```cmd
 # Run with default settings (recommended)
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -145,57 +145,57 @@ set BASE_URL=http://localhost:51211
 set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 ### WebGPU Browser Demo
 
 **Kenmerken:**
 - 🌐 **Browser-native AI**: Geen server nodig, draait volledig in de browser
 - ⚡ **WebGPU Versnelling**: Hardwareversnelling indien beschikbaar
-- 🔒 **Maximale Privacy**: Geen gegevens verlaten je apparaat
+- 🔒 **Maximale Privacy**: Gegevens verlaten nooit je apparaat
 - 🎯 **Geen Installatie**: Werkt in elke compatibele browser
-- 🔄 **Soepele Terugval**: Valt terug op CPU als WebGPU niet beschikbaar is
+- 🔄 **Soepele Terugvaloptie**: Valt terug op CPU als WebGPU niet beschikbaar is
 
-**Uitvoeren:**  
+**Uitvoeren:**
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
 # Open http://localhost:5173
 ```
-  
+
 ### Open WebUI Integratie
 
 **Kenmerken:**
 - 🎨 **ChatGPT-achtige Interface**: Professionele, vertrouwde UI
-- 👥 **Multi-gebruiker Ondersteuning**: Gebruikersaccounts en gespreksgeschiedenis
+- 👥 **Multi-gebruikersondersteuning**: Gebruikersaccounts en gespreksgeschiedenis
 - 📁 **Bestandsverwerking**: Uploaden en analyseren van documenten
-- 🔄 **Modelwissel**: Eenvoudig schakelen tussen verschillende modellen
+- 🔄 **Modelwisseling**: Eenvoudig schakelen tussen verschillende modellen
 - 🐳 **Docker Implementatie**: Productieklaar containerized setup
 
-**Snelle Setup:**  
+**Snelle Setup:**
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 ## Configuratiereferentie
 
 ### Omgevingsvariabelen
 
 | Variabele | Beschrijving | Standaard | Voorbeeld |
 |-----------|--------------|-----------|-----------|
-| `MODEL` | Modelalias om te gebruiken | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | Foundry Local endpoint | Automatisch gedetecteerd | `http://localhost:51211` |
+| `MODEL` | Modelalias om te gebruiken | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | Foundry Local eindpunt | Automatisch gedetecteerd | `http://localhost:51211` |
 | `API_KEY` | API-sleutel (optioneel voor lokaal) | `""` | `your-api-key` |
 
 ## Probleemoplossing
 
-### Veelvoorkomende Problemen
+### Veelvoorkomende problemen
 
 **Chainlit Toepassing:**
 
-1. **Service niet beschikbaar:**  
+1. **Service niet beschikbaar:**
    ```cmd
    # Check Foundry Local status
    foundry service status
@@ -204,8 +204,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # Validate API endpoint (note: port 51211)
    curl http://localhost:51211/v1/models
    ```
-  
-2. **Poortconflicten:**  
+
+2. **Poortconflicten:**
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -213,8 +213,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # Use different port if needed
    chainlit run samples\04\app.py -w --port 3000
    ```
-  
-3. **Python omgevingsproblemen:**  
+
+3. **Python-omgeving problemen:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -223,7 +223,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Reinstall dependencies
    pip install -r requirements.txt
    ```
-  
+
 **WebGPU Demo:**
 
 1. **WebGPU niet ondersteund:**
@@ -239,7 +239,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **Open WebUI:**
 
-1. **Verbinding geweigerd:**  
+1. **Verbinding geweigerd:**
    ```cmd
    # Check Docker is running
    docker --version
@@ -250,8 +250,8 @@ docker run -d --name open-webui -p 3000:8080 \
    # View container logs
    docker logs open-webui
    ```
-  
-2. **Modellen verschijnen niet:**  
+
+2. **Modellen verschijnen niet:**
    ```cmd
    # Verify Foundry Local endpoint
    curl http://localhost:51211/v1/models
@@ -259,7 +259,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Restart Open WebUI
    docker restart open-webui
    ```
-  
+
 ### Validatiechecklist
 
 ```cmd
@@ -279,7 +279,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test WebGPU demo at localhost:5173
 # Test Open WebUI at localhost:3000
 ```
-  
+
 ## Geavanceerd Gebruik
 
 ### Prestatieoptimalisatie
@@ -292,7 +292,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **WebGPU:**
 - Gebruik WebGPU voor maximale privacy en snelheid
-- Implementeer modelkwantisatie voor kleinere modellen
+- Implementeer modelkwantisering voor kleinere modellen
 - Gebruik Web Workers voor achtergrondverwerking
 - Cache gecompileerde modellen in browseropslag
 
@@ -304,7 +304,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 ### Integratiepatronen
 
-**Hybride Lokaal/Cloud:**  
+**Hybride Lokaal/Cloud:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -315,8 +315,8 @@ async def intelligent_routing(prompt: str, metadata: dict):
     else:
         return await foundry_local_completion(prompt)  # Default local
 ```
-  
-**Multi-Modale Pijplijn:**  
+
+**Multi-Modale Pijplijn:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -332,10 +332,10 @@ async def analyze_document(file_path: str):
     
     return summary
 ```
-  
+
 ## Productie-implementatie
 
-### Beveiligingsoverwegingen
+### Veiligheidsoverwegingen
 
 - **API-sleutels**: Gebruik omgevingsvariabelen, nooit hardcoderen
 - **Netwerk**: Gebruik HTTPS in productie, overweeg VPN voor teamtoegang
@@ -345,7 +345,7 @@ async def analyze_document(file_path: str):
 
 ### Monitoring en Onderhoud
 
-- **Gezondheidscontroles**: Implementeer endpoint monitoring
+- **Gezondheidscontroles**: Implementeer eindpuntmonitoring
 - **Logging**: Centraliseer logs van alle componenten
 - **Statistieken**: Volg responstijden, foutpercentages, resourcegebruik
 - **Back-up**: Regelmatige back-up van gespreksgegevens en configuraties
@@ -361,7 +361,7 @@ async def analyze_document(file_path: str):
 ### Voorbeeldbestanden
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Productie Chainlit toepassing
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Educatief notebook
-- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Browsergebaseerde AI-inferentie
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - AI-inferentie in de browser
 - [`open-webui-guide.md`](./open-webui-guide.md) - Complete Open WebUI setup
 
 ### Gerelateerde Voorbeelden
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Disclaimer**:  
+Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor kritieke informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.

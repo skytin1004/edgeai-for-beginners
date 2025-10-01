@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T01:38:32+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:28:26+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "ro"
 }
 -->
 # Exemplu 04: Aplicații de Chat pentru Producție cu Chainlit
 
-Un exemplu cuprinzător care demonstrează multiple abordări pentru construirea aplicațiilor de chat pregătite pentru producție folosind Microsoft Foundry Local, incluzând interfețe web moderne, răspunsuri în flux și tehnologii avansate pentru browser.
+Un exemplu cuprinzător care demonstrează mai multe abordări pentru construirea aplicațiilor de chat pregătite pentru producție folosind Microsoft Foundry Local, incluzând interfețe web moderne, răspunsuri în flux și tehnologii avansate pentru browser.
 
 ## Ce este inclus
 
@@ -67,10 +67,10 @@ Se deschide la: `http://localhost:3000`
 |----------|-------------|-------|
 | **Date Sensibile** | 🏠 Local (Foundry) | Datele nu părăsesc dispozitivul |
 | **Raționament Complex** | ☁️ Cloud (Azure OpenAI) | Acces la modele mai mari |
-| **Chat în Timp Real** | 🏠 Local (Foundry) | Latență redusă, răspunsuri rapide |
+| **Chat în Timp Real** | 🏠 Local (Foundry) | Latență redusă, răspunsuri mai rapide |
 | **Analiza Documentelor** | 🔄 Hibrid | Local pentru extragere, cloud pentru analiză |
 | **Generare de Cod** | 🏠 Local (Foundry) | Confidențialitate + modele specializate |
-| **Sarcini de Cercetare** | ☁️ Cloud (Azure OpenAI) | Necesită o bază largă de cunoștințe |
+| **Sarcini de Cercetare** | ☁️ Cloud (Azure OpenAI) | Bază de cunoștințe extinsă necesară |
 
 ### Comparație Tehnologică
 
@@ -82,8 +82,8 @@ Se deschide la: `http://localhost:3000`
 
 ## Cerințe Prealabile
 
-- **Foundry Local**: Instalată și rulând ([Download](https://aka.ms/foundry-local-installer))
-- **Python**: Versiunea 3.10+ cu mediu virtual
+- **Foundry Local**: Instalată și rulată ([Descărcare](https://aka.ms/foundry-local-installer))
+- **Python**: 3.10+ cu mediu virtual
 - **Model**: Cel puțin unul încărcat (`foundry model run phi-4-mini`)
 - **Browser**: Chrome/Edge cu suport WebGPU pentru demo-uri
 - **Docker**: Pentru Open WebUI (opțional)
@@ -124,12 +124,12 @@ foundry service ps
 
 ### Aplicația de Chat Chainlit
 
-**Funcționalități:**
+**Caracteristici:**
 - 🚀 **Streaming în Timp Real**: Token-urile apar pe măsură ce sunt generate
 - 🛡️ **Gestionare Robustă a Erorilor**: Degradare și recuperare grațioasă
 - 🎨 **Interfață Modernă**: Interfață profesională de chat gata de utilizare
 - 🔧 **Configurare Flexibilă**: Variabile de mediu și detectare automată
-- 📱 **Design Responsiv**: Funcționează pe desktop și dispozitive mobile
+- 📱 **Design Responsiv**: Funcționează pe dispozitive desktop și mobile
 
 **Start Rapid:**
 ```cmd
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -148,7 +148,7 @@ chainlit run samples\04\app.py -w --port 8080
 
 ### Demo WebGPU în Browser
 
-**Funcționalități:**
+**Caracteristici:**
 - 🌐 **AI Nativ pentru Browser**: Fără server necesar, rulează complet în browser
 - ⚡ **Accelerare WebGPU**: Accelerare hardware când este disponibilă
 - 🔒 **Confidențialitate Maximă**: Datele nu părăsesc niciodată dispozitivul
@@ -164,11 +164,11 @@ python -m http.server 5173
 
 ### Integrare Open WebUI
 
-**Funcționalități:**
+**Caracteristici:**
 - 🎨 **Interfață Asemănătoare ChatGPT**: UI profesional, familiar
 - 👥 **Suport Multi-utilizator**: Conturi de utilizator și istoric conversații
 - 📁 **Procesare Fișiere**: Încărcare și analiză documente
-- 🔄 **Schimbare Modele**: Comutare ușoară între diferite modele
+- 🔄 **Schimbare Modele**: Schimbare ușoară între diferite modele
 - 🐳 **Implementare Docker**: Configurare containerizată pregătită pentru producție
 
 **Configurare Rapidă:**
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variabilă | Descriere | Implicit | Exemplu |
 |-----------|-----------|----------|---------|
-| `MODEL` | Alias-ul modelului utilizat | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias-ul modelului utilizat | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint Foundry Local | Detectat automat | `http://localhost:51211` |
 | `API_KEY` | Cheie API (opțional pentru local) | `""` | `your-api-key` |
 
@@ -235,7 +235,7 @@ docker run -d --name open-webui -p 3000:8080 \
 2. **Erori la încărcarea modelului:**
    - Asigurați-vă că aveți conexiune la internet pentru descărcarea modelului
    - Verificați consola browserului pentru erori CORS
-   - Confirmați că serviți prin HTTP (nu file://)
+   - Verificați că serviți prin HTTP (nu file://)
 
 **Open WebUI:**
 
@@ -293,7 +293,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **WebGPU:**
 - Utilizați WebGPU pentru confidențialitate și viteză maximă
 - Implementați cuantificarea modelului pentru modele mai mici
-- Folosiți Web Workers pentru procesare în fundal
+- Utilizați Web Workers pentru procesare în fundal
 - Cache modele compilate în stocarea browserului
 
 **Open WebUI:**
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Declinare de responsabilitate**:  
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.

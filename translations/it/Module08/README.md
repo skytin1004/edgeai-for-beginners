@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:35:30+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:10:44+00:00",
   "source_file": "Module08/README.md",
   "language_code": "it"
 }
@@ -49,7 +49,7 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Prompt engineering • Integrazione dei dati • Workflow Azure • Ottimizzazione delle prestazioni • Monitoraggio
 
-**Esempi**: [Applicazione Chainlit RAG](./samples/04/README.md)
+**Esempio**: [Applicazione Chainlit RAG](./samples/04/README.md)
 
 **Durata**: 2-3 ore | **Livello**: Intermedio
 
@@ -60,18 +60,18 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Integrazione Hugging Face • Bring-your-own-model • Approfondimenti Model Mondays • Contributi della comunità • Selezione dei modelli
 
-**Esempi**: [Orchestrazione Multi-Agente](./samples/05/README.md)
+**Esempio**: [Orchestrazione Multi-Agente](./samples/05/README.md)
 
 **Durata**: 2-3 ore | **Livello**: Intermedio
 
 ---
 
 ### [4: Esplorare Modelli All'Avanguardia](./04.CuttingEdgeModels.md)
-**Focus**: LLM vs SLM, implementazione EdgeAI e demo avanzate
+**Focus**: Confronto tra LLM e SLM, implementazione EdgeAI e demo avanzate
 
 **Argomenti Chiave**: Confronto tra modelli • Inferenza edge vs cloud • Phi + ONNX Runtime • Applicazione Chainlit RAG • Ottimizzazione WebGPU
 
-**Esempi**: [Router Modelli-come-Strumenti](./samples/06/README.md)
+**Esempio**: [Router Modelli-come-Strumenti](./samples/06/README.md)
 
 **Durata**: 3-4 ore | **Livello**: Avanzato
 
@@ -104,7 +104,7 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Implementazione client HTTP • Autenticazione personalizzata • Monitoraggio della salute dei modelli • Risposte in streaming • Gestione degli errori in produzione
 
-**Esempi**: [Client API Diretta](./samples/07/README.md)
+**Esempio**: [Client API Diretta](./samples/07/README.md)
 
 **Durata**: 2-3 ore | **Livello**: Intermedio
 
@@ -115,7 +115,7 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Sviluppo Electron • Fluent Design System • Integrazione nativa Windows • Streaming in tempo reale • Progettazione interfaccia chat
 
-**Esempi**: [Applicazione Chat Windows 11](./samples/08/README.md)
+**Esempio**: [Applicazione Chat per Windows 11](./samples/08/README.md)
 
 **Durata**: 3-4 ore | **Livello**: Avanzato
 
@@ -126,7 +126,7 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Coordinamento intelligente degli agenti • Pattern di chiamata delle funzioni • Comunicazione tra agenti • Orchestrazione dei workflow • Meccanismi di garanzia della qualità
 
-**Esempi**: [Sistema Multi-Agente Avanzato](./samples/09/README.md)
+**Esempio**: [Sistema Multi-Agente Avanzato](./samples/09/README.md)
 
 **Durata**: 4-5 ore | **Livello**: Esperto
 
@@ -137,7 +137,7 @@ Completando questo modulo, sarai in grado di:
 
 **Argomenti Chiave**: Integrazione LangChain • Funzioni Semantic Kernel • Framework API REST • Strumenti CLI • Integrazione Jupyter • Pattern di distribuzione in produzione
 
-**Esempi**: [Framework Strumenti Foundry](./samples/10/README.md)
+**Esempio**: [Framework Strumenti Foundry](./samples/10/README.md)
 
 **Durata**: 4-5 ore | **Livello**: Esperto
 
@@ -147,7 +147,7 @@ Completando questo modulo, sarai in grado di:
 - **Sistema Operativo**: Windows 11 (22H2 o successivo)
 - **Memoria**: 16GB RAM (32GB consigliati per modelli più grandi)
 - **Spazio di Archiviazione**: 50GB di spazio libero per il caching dei modelli
-- **Hardware**: Dispositivo con NPU consigliato (Copilot+ PC), GPU opzionale
+- **Hardware**: Dispositivo con NPU consigliato (PC Copilot+), GPU opzionale
 - **Rete**: Connessione internet ad alta velocità per il download iniziale dei modelli
 
 ### Ambiente di Sviluppo
@@ -155,7 +155,7 @@ Completando questo modulo, sarai in grado di:
 - Python 3.10+ e pip
 - Git per il controllo di versione
 - PowerShell o Prompt dei Comandi
-- Azure CLI (opzionale per l'integrazione cloud)
+- Azure CLI (opzionale per integrazione cloud)
 
 ### Conoscenze Prerequisite
 - Comprensione di base dei concetti AI/ML
@@ -179,13 +179,13 @@ Completando questo modulo, sarai in grado di:
 |  7 | Integrazione API Diretta | 07 | 2-3 ore | Intermedio |
 |  8 | App Chat Windows 11 | 08 | 3-4 ore | Avanzato |
 |  9 | Multi-Agente Avanzato | 09 | 4-5 ore | Esperto |
-| 10 | Framework di Strumenti | 10 | 4-5 ore | Esperto |
+| 10 | Framework Strumenti | 10 | 4-5 ore | Esperto |
 
 ## Risorse Chiave
 
 **Documentazione Ufficiale:**
-- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Codice sorgente ed esempi ufficiali
-- [Documentazione Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Guida completa all'installazione e all'uso
+- [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Codice sorgente e esempi ufficiali
+- [Documentazione Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Guida completa all'installazione e utilizzo
 - [Serie Model Mondays](https://aka.ms/model-mondays) - Approfondimenti settimanali sui modelli e tutorial
 
 **Comunità & Supporto:**
@@ -198,7 +198,7 @@ Completando questo modulo, sarai in grado di:
 
 ### Padronanza Tecnica
 - **Distribuire e Gestire**: Installazioni di Foundry Local in ambienti di sviluppo e produzione
-- **Integrare Modelli**: Lavorare senza problemi con famiglie di modelli diversi da Microsoft, Hugging Face e fonti della comunità
+- **Integrare Modelli**: Lavorare senza problemi con famiglie di modelli diverse da Microsoft, Hugging Face e fonti della comunità
 - **Creare Applicazioni**: Sviluppare applicazioni AI pronte per la produzione con funzionalità avanzate e ottimizzazioni
 - **Sviluppare Agenti**: Implementare agenti AI sofisticati con grounding, ragionamento e integrazione di strumenti
 
@@ -219,7 +219,7 @@ Completando questo modulo, sarai in grado di:
 ## Come Iniziare
 
 1. **Setup dell'Ambiente**: Assicurati di avere Windows 11 con hardware consigliato (vedi Prerequisiti)
-2. **Installa Foundry Local**: Segui la Sessione 1 per l'installazione e la configurazione completa
+2. **Installa Foundry Local**: Segui la Sessione 1 per l'installazione e configurazione completa
 3. **Esegui l'Esempio 01**: Inizia con l'integrazione API REST di base per verificare il setup
 4. **Progredisci Attraverso gli Esempi**: Completa gli esempi 01-10 per una padronanza completa
 
@@ -237,7 +237,7 @@ Monitora i tuoi progressi attraverso tutti i 10 esempi completi:
 - [ ] Distribuire ed eseguire almeno 4 famiglie di modelli diverse
 - [ ] Creare un'applicazione chat RAG funzionale (Esempio 04)
 - [ ] Creare un sistema di orchestrazione multi-agente (Esempio 05)
-- [ ] Implementare un routing intelligente dei modelli (Esempio 06)
+- [ ] Implementare un router intelligente per i modelli (Esempio 06)
 
 ### Livello di Integrazione Avanzata (Esempi 07-10)
 - [ ] Creare un client API pronto per la produzione (Esempio 07)
@@ -249,7 +249,7 @@ Monitora i tuoi progressi attraverso tutti i 10 esempi completi:
 - [ ] Eseguire con successo tutti i 10 esempi senza errori
 - [ ] Personalizzare almeno 3 esempi per casi d'uso specifici
 - [ ] Distribuire 2+ esempi in ambienti simili alla produzione
-- [ ] Contribuire miglioramenti o estensioni al codice degli esempi
+- [ ] Contribuire con miglioramenti o estensioni al codice degli esempi
 - [ ] Integrare i pattern di Foundry Local in progetti personali/professionali
 
 ## Guida Rapida - Tutti i 10 Esempi
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -356,7 +356,7 @@ python examples/streaming.py
 python examples/production.py
 ```
 
-**Esempio 08: Applicazione Chat Windows 11**
+**Esempio 08: Applicazione Chat per Windows 11**
 ```powershell
 # Navigate to sample directory
 cd samples/08
@@ -454,14 +454,16 @@ npm install
 ```
 
 ## Sommario
-Questo modulo rappresenta l'avanguardia nello sviluppo dell'AI edge, combinando gli strumenti di livello enterprise di Microsoft con la flessibilità e l'innovazione dell'ecosistema open-source. Padroneggiando Foundry Local attraverso tutti i 10 esempi completi, sarai posizionato in prima linea nello sviluppo di applicazioni AI.
+Questo modulo rappresenta l'avanguardia dello sviluppo AI edge, combinando gli strumenti di livello enterprise di Microsoft con la flessibilità e l'innovazione dell'ecosistema open-source. Padroneggiando Foundry Local attraverso tutti i 10 esempi completi, sarai posizionato all'avanguardia nello sviluppo di applicazioni AI.
 
 **Percorso di apprendimento completo:**
 - **Fondamenti** (Esempi 01-03): Integrazione API e gestione dei modelli
 - **Applicazioni** (Esempi 04-06): RAG, agenti e instradamento intelligente
 - **Avanzato** (Esempi 07-10): Framework di produzione e integrazione aziendale
 
-Per l'integrazione con Azure OpenAI (Sessione 2), consulta i file README dei singoli esempi per le variabili di ambiente richieste e le impostazioni della versione API.
+Per l'integrazione con Azure OpenAI (Sessione 2), consulta i file README dei singoli esempi per le variabili d'ambiente richieste e le impostazioni della versione API.
 
 ---
 
+**Clausola di esclusione della responsabilità**:  
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

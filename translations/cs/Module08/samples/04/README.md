@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T01:21:42+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:20:09+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "cs"
 }
@@ -61,14 +61,14 @@ Otevře se na: `http://localhost:3000`
 
 ## Architektonické vzory
 
-### Rozhodovací matice: Lokální vs. cloud
+### Matice rozhodování: Lokální vs. cloud
 
 | Scénář | Doporučení | Důvod |
 |--------|------------|-------|
 | **Citlivá data** | 🏠 Lokální (Foundry) | Data nikdy neopouští zařízení |
 | **Komplexní uvažování** | ☁️ Cloud (Azure OpenAI) | Přístup k větším modelům |
 | **Chat v reálném čase** | 🏠 Lokální (Foundry) | Nižší latence, rychlejší odpovědi |
-| **Analýza dokumentů** | 🔄 Hybrid | Lokální pro extrakci, cloud pro analýzu |
+| **Analýza dokumentů** | 🔄 Hybridní | Lokální pro extrakci, cloud pro analýzu |
 | **Generování kódu** | 🏠 Lokální (Foundry) | Soukromí + specializované modely |
 | **Výzkumné úkoly** | ☁️ Cloud (Azure OpenAI) | Potřeba široké znalostní báze |
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,11 +149,11 @@ chainlit run samples\04\app.py -w --port 8080
 ### WebGPU Browser Demo
 
 **Funkce:**
-- 🌐 **AI nativní pro prohlížeč**: Není potřeba server, běží přímo v prohlížeči
+- 🌐 **AI nativní pro prohlížeč**: Není potřeba server, běží kompletně v prohlížeči
 - ⚡ **Akcelerace WebGPU**: Hardwarová akcelerace, pokud je dostupná
 - 🔒 **Maximální soukromí**: Data nikdy neopouští vaše zařízení
 - 🎯 **Bez instalace**: Funguje v jakémkoli kompatibilním prohlížeči
-- 🔄 **Plynulý přechod**: Automaticky přepne na CPU, pokud WebGPU není dostupné
+- 🔄 **Plynulý přechod**: Automaticky přechází na CPU, pokud WebGPU není dostupné
 
 **Spuštění:**
 ```cmd
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Proměnná | Popis | Výchozí | Příklad |
 |----------|-------|---------|---------|
-| `MODEL` | Alias modelu k použití | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias modelu k použití | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint Foundry Local | Automaticky detekováno | `http://localhost:51211` |
 | `API_KEY` | API klíč (volitelné pro lokální použití) | `""` | `your-api-key` |
 
@@ -230,7 +230,7 @@ docker run -d --name open-webui -p 3000:8080 \
    - Aktualizujte na Chrome/Edge 113+
    - Aktivujte WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Zkontrolujte stav GPU: `chrome://gpu`
-   - Demo automaticky přepne na CPU
+   - Demo automaticky přejde na CPU
 
 2. **Chyby při načítání modelu:**
    - Zajistěte připojení k internetu pro stažení modelu
@@ -288,7 +288,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Používejte streamování pro lepší vnímaný výkon
 - Implementujte pooling připojení pro vysokou souběžnost
 - Cache odpovědi modelu pro opakované dotazy
-- Sledujte využití paměti při velkých historiích konverzací
+- Sledujte využití paměti při dlouhých konverzacích
 
 **WebGPU:**
 - Používejte WebGPU pro maximální soukromí a rychlost
@@ -297,9 +297,9 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Cache kompilované modely v úložišti prohlížeče
 
 **Open WebUI:**
-- Používejte perzistentní svazky pro historii konverzací
+- Používejte trvalé svazky pro historii konverzací
 - Konfigurujte limity zdrojů pro Docker kontejner
-- Implementujte zálohovací strategie pro uživatelská data
+- Implementujte strategie zálohování uživatelských dat
 - Nastavte reverzní proxy pro SSL terminaci
 
 ### Vzory integrace
@@ -335,11 +335,11 @@ async def analyze_document(file_path: str):
 
 ## Produkční nasazení
 
-### Bezpečnostní úvahy
+### Bezpečnostní aspekty
 
 - **API klíče**: Používejte proměnné prostředí, nikdy je nezapisujte přímo do kódu
 - **Síť**: Používejte HTTPS v produkci, zvažte VPN pro přístup týmu
-- **Kontrola přístupu**: Implementujte autentizaci pro Open WebUI
+- **Řízení přístupu**: Implementujte autentizaci pro Open WebUI
 - **Ochrana dat**: Auditujte, která data zůstávají lokálně a která jdou do cloudu
 - **Aktualizace**: Udržujte Foundry Local a kontejnery aktuální
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Prohlášení**:  
+Tento dokument byl přeložen pomocí služby AI pro překlady [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatizované překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.

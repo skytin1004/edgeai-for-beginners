@@ -1,19 +1,19 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T10:41:32+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T23:38:29+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "ko"
 }
 -->
-# Sample 04: Chainlit을 활용한 생산용 채팅 애플리케이션
+# 샘플 04: Chainlit을 활용한 프로덕션 채팅 애플리케이션
 
-Microsoft Foundry Local을 사용하여 현대적인 웹 인터페이스, 스트리밍 응답, 최신 브라우저 기술을 포함한 다양한 접근 방식으로 생산용 채팅 애플리케이션을 구축하는 포괄적인 샘플입니다.
+Microsoft Foundry Local을 사용하여 프로덕션 준비가 완료된 채팅 애플리케이션을 구축하는 다양한 접근 방식을 보여주는 포괄적인 샘플입니다. 현대적인 웹 인터페이스, 스트리밍 응답, 최첨단 브라우저 기술을 포함합니다.
 
 ## 포함된 내용
 
-- **🚀 Chainlit 채팅 앱** (`app.py`): 스트리밍 기능을 갖춘 생산용 채팅 애플리케이션
+- **🚀 Chainlit 채팅 앱** (`app.py`): 스트리밍 기능을 갖춘 프로덕션 준비 채팅 애플리케이션
 - **🌐 WebGPU 데모** (`webgpu-demo/`): 하드웨어 가속을 활용한 브라우저 기반 AI 추론
 - **🎨 Open WebUI 통합** (`open-webui-guide.md`): 전문적인 ChatGPT 스타일 인터페이스
 - **📚 교육용 노트북** (`chainlit_app.ipynb`): 대화형 학습 자료
@@ -78,7 +78,7 @@ docker run -d --name open-webui -p 3000:8080 \
 |------|----------|------|------|
 | **Chainlit** | Python 개발자, 빠른 프로토타이핑 | 쉬운 설정, 스트리밍 지원 | Python 전용 |
 | **WebGPU** | 최대 개인정보 보호, 오프라인 시나리오 | 브라우저 네이티브, 서버 불필요 | 제한된 모델 크기 |
-| **Open WebUI** | 생산 배포, 팀 협업 | 전문 UI, 사용자 관리 | Docker 필요 |
+| **Open WebUI** | 프로덕션 배포, 팀 | 전문 UI, 사용자 관리 | Docker 필요 |
 
 ## 사전 요구 사항
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,7 +149,7 @@ chainlit run samples\04\app.py -w --port 8080
 ### WebGPU 브라우저 데모
 
 **특징:**
-- 🌐 **브라우저 네이티브 AI**: 서버 불필요, 브라우저에서 실행
+- 🌐 **브라우저 네이티브 AI**: 서버 불필요, 브라우저에서만 실행
 - ⚡ **WebGPU 가속**: 하드웨어 가속 지원
 - 🔒 **최대 개인정보 보호**: 데이터가 기기를 벗어나지 않음
 - 🎯 **설치 불필요**: 호환 브라우저에서 바로 작동
@@ -169,7 +169,7 @@ python -m http.server 5173
 - 👥 **다중 사용자 지원**: 사용자 계정 및 대화 기록
 - 📁 **파일 처리**: 문서 업로드 및 분석
 - 🔄 **모델 전환**: 다양한 모델 간 손쉬운 전환
-- 🐳 **Docker 배포**: 컨테이너화된 생산용 설정
+- 🐳 **Docker 배포**: 프로덕션 준비 완료 컨테이너 설정
 
 **빠른 설정:**
 ```cmd
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 변수 | 설명 | 기본값 | 예시 |
 |------|------|--------|------|
-| `MODEL` | 사용할 모델 별칭 | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | 사용할 모델 별칭 | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local 엔드포인트 | 자동 감지 | `http://localhost:51211` |
 | `API_KEY` | API 키 (로컬에서는 선택 사항) | `""` | `your-api-key` |
 
@@ -226,13 +226,13 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **WebGPU 데모:**
 
-1. **WebGPU 지원되지 않음:**
+1. **WebGPU가 지원되지 않음:**
    - Chrome/Edge 113+로 업데이트
    - WebGPU 활성화: `chrome://flags/#enable-unsafe-webgpu`
    - GPU 상태 확인: `chrome://gpu`
    - 데모는 CPU로 자동 전환됨
 
-2. **모델 로드 오류:**
+2. **모델 로딩 오류:**
    - 모델 다운로드를 위한 인터넷 연결 확인
    - 브라우저 콘솔에서 CORS 오류 확인
    - HTTP로 제공 중인지 확인 (file:// 아님)
@@ -288,17 +288,17 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - 스트리밍을 사용하여 더 나은 성능 제공
 - 높은 동시성을 위해 연결 풀링 구현
 - 반복 쿼리에 대해 모델 응답 캐싱
-- 대화 기록이 많은 경우 메모리 사용 모니터링
+- 대화 기록이 큰 경우 메모리 사용 모니터링
 
 **WebGPU:**
 - 최대 개인정보 보호 및 속도를 위해 WebGPU 사용
-- 더 작은 모델을 위해 모델 양자화 구현
+- 작은 모델을 위한 모델 양자화 구현
 - 백그라운드 처리를 위한 Web Workers 사용
 - 브라우저 저장소에 컴파일된 모델 캐싱
 
 **Open WebUI:**
-- 대화 기록을 위한 지속적 볼륨 사용
-- Docker 컨테이너에 대한 리소스 제한 구성
+- 대화 기록을 위한 지속 볼륨 사용
+- Docker 컨테이너의 리소스 제한 구성
 - 사용자 데이터를 위한 백업 전략 구현
 - SSL 종료를 위한 리버스 프록시 설정
 
@@ -333,7 +333,7 @@ async def analyze_document(file_path: str):
     return summary
 ```
 
-## 생산 배포
+## 프로덕션 배포
 
 ### 보안 고려 사항
 
@@ -359,14 +359,16 @@ async def analyze_document(file_path: str):
 - [Open WebUI 문서](https://docs.openwebui.com/) - 고급 구성
 
 ### 샘플 파일
-- [`app.py`](../../../../../Module08/samples/04/app.py) - 생산용 Chainlit 애플리케이션
+- [`app.py`](../../../../../Module08/samples/04/app.py) - 프로덕션 Chainlit 애플리케이션
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - 교육용 노트북
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - 브라우저 기반 AI 추론
 - [`open-webui-guide.md`](./open-webui-guide.md) - Open WebUI 설정 완전 가이드
 
 ### 관련 샘플
-- [Session 4 문서](../../04.CuttingEdgeModels.md) - 세션 전체 가이드
+- [세션 4 문서](../../04.CuttingEdgeModels.md) - 전체 세션 가이드
 - [Foundry Local 샘플](https://github.com/microsoft/foundry-local/tree/main/samples) - 공식 샘플
 
 ---
 
+**면책 조항**:  
+이 문서는 AI 번역 서비스 [Co-op Translator](https://github.com/Azure/co-op-translator)를 사용하여 번역되었습니다. 정확성을 위해 최선을 다하고 있으나, 자동 번역에는 오류나 부정확한 내용이 포함될 수 있습니다. 원본 문서의 원어 버전을 신뢰할 수 있는 권위 있는 자료로 간주해야 합니다. 중요한 정보의 경우, 전문적인 인간 번역을 권장합니다. 이 번역 사용으로 인해 발생하는 오해나 잘못된 해석에 대해 당사는 책임을 지지 않습니다.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T00:37:18+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T22:52:38+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "en"
 }
@@ -32,7 +32,7 @@ foundry model run phi-4-mini
 # Run Chainlit app (using port 8080 to avoid conflicts)
 chainlit run samples\04\app.py -w --port 8080
 ```
-
+  
 Accessible at: `http://localhost:8080`
 
 ### 2. WebGPU Browser Demo
@@ -44,7 +44,7 @@ cd Module08\samples\04\webgpu-demo
 # Serve the demo
 python -m http.server 5173
 ```
-
+  
 Accessible at: `http://localhost:5173`
 
 ### 3. Open WebUI Setup
@@ -56,7 +56,7 @@ docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-
+  
 Accessible at: `http://localhost:3000`
 
 ## Architecture Patterns
@@ -83,7 +83,7 @@ Accessible at: `http://localhost:3000`
 ## Prerequisites
 
 - **Foundry Local**: Installed and running ([Download](https://aka.ms/foundry-local-installer))
-- **Python**: Version 3.10+ with virtual environment support
+- **Python**: Version 3.10+ with virtual environment
 - **Model**: At least one loaded (`foundry model run phi-4-mini`)
 - **Browser**: Chrome/Edge with WebGPU support for demos
 - **Docker**: For Open WebUI (optional)
@@ -103,6 +103,7 @@ py -m venv .venv
 # Install dependencies
 pip install -r requirements.txt
 ```
+  
 
 ### 2. Foundry Local Setup
 
@@ -119,6 +120,7 @@ foundry model run phi-4-mini
 # Verify model is running
 foundry service ps
 ```
+  
 
 ## Sample Applications
 
@@ -127,17 +129,17 @@ foundry service ps
 **Features:**
 - 🚀 **Real-time Streaming**: Tokens appear as they are generated
 - 🛡️ **Robust Error Handling**: Handles errors gracefully
-- 🎨 **Modern UI**: Professional chat interface included
+- 🎨 **Modern UI**: Professional chat interface ready to use
 - 🔧 **Flexible Configuration**: Supports environment variables and auto-detection
-- 📱 **Responsive Design**: Optimized for both desktop and mobile devices
+- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-**Quick Start:**
+**Quick Start:**  
 ```cmd
 # Run with default settings (recommended)
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -145,6 +147,7 @@ set BASE_URL=http://localhost:51211
 set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
+  
 
 ### WebGPU Browser Demo
 
@@ -155,29 +158,31 @@ chainlit run samples\04\app.py -w --port 8080
 - 🎯 **Zero Install**: Works in any compatible browser
 - 🔄 **Graceful Fallback**: Automatically switches to CPU if WebGPU is unavailable
 
-**Running:**
+**Running:**  
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
 # Open http://localhost:5173
 ```
+  
 
 ### Open WebUI Integration
 
 **Features:**
 - 🎨 **ChatGPT-like Interface**: Professional and familiar user interface
 - 👥 **Multi-user Support**: Includes user accounts and conversation history
-- 📁 **File Processing**: Allows document uploads and analysis
+- 📁 **File Processing**: Upload and analyze documents
 - 🔄 **Model Switching**: Easily switch between different models
-- 🐳 **Docker Deployment**: Containerized setup for production environments
+- 🐳 **Docker Deployment**: Production-ready containerized setup
 
-**Quick Setup:**
+**Quick Setup:**  
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
+  
 
 ## Configuration Reference
 
@@ -185,7 +190,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|----------|
-| `MODEL` | Model alias to use | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Model alias to use | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local endpoint | Auto-detected | `http://localhost:51211` |
 | `API_KEY` | API key (optional for local) | `""` | `your-api-key` |
 
@@ -195,7 +200,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **Chainlit Application:**
 
-1. **Service not available:**
+1. **Service not available:**  
    ```cmd
    # Check Foundry Local status
    foundry service status
@@ -204,8 +209,9 @@ docker run -d --name open-webui -p 3000:8080 \
    # Validate API endpoint (note: port 51211)
    curl http://localhost:51211/v1/models
    ```
+  
 
-2. **Port conflicts:**
+2. **Port conflicts:**  
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -213,8 +219,9 @@ docker run -d --name open-webui -p 3000:8080 \
    # Use different port if needed
    chainlit run samples\04\app.py -w --port 3000
    ```
+  
 
-3. **Python environment issues:**
+3. **Python environment issues:**  
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -223,6 +230,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Reinstall dependencies
    pip install -r requirements.txt
    ```
+  
 
 **WebGPU Demo:**
 
@@ -230,16 +238,16 @@ docker run -d --name open-webui -p 3000:8080 \
    - Update to Chrome/Edge 113+
    - Enable WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Check GPU status: `chrome://gpu`
-   - Demo will automatically fallback to CPU
+   - The demo will automatically fallback to CPU
 
 2. **Model loading errors:**
-   - Ensure internet connection for model download
-   - Check browser console for CORS errors
-   - Verify you're serving via HTTP (not file://)
+   - Ensure an active internet connection for model download
+   - Check the browser console for CORS errors
+   - Verify that the demo is served via HTTP (not file://)
 
 **Open WebUI:**
 
-1. **Connection refused:**
+1. **Connection refused:**  
    ```cmd
    # Check Docker is running
    docker --version
@@ -250,8 +258,9 @@ docker run -d --name open-webui -p 3000:8080 \
    # View container logs
    docker logs open-webui
    ```
+  
 
-2. **Models not appearing:**
+2. **Models not appearing:**  
    ```cmd
    # Verify Foundry Local endpoint
    curl http://localhost:51211/v1/models
@@ -259,6 +268,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Restart Open WebUI
    docker restart open-webui
    ```
+  
 
 ### Validation Checklist
 
@@ -279,6 +289,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test WebGPU demo at localhost:5173
 # Test Open WebUI at localhost:3000
 ```
+  
 
 ## Advanced Usage
 
@@ -298,13 +309,13 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Open WebUI:**
 - Use persistent volumes for conversation history
-- Configure resource limits for Docker container
+- Configure resource limits for Docker containers
 - Implement backup strategies for user data
-- Set up reverse proxy for SSL termination
+- Set up a reverse proxy for SSL termination
 
 ### Integration Patterns
 
-**Hybrid Local/Cloud:**
+**Hybrid Local/Cloud:**  
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -315,8 +326,9 @@ async def intelligent_routing(prompt: str, metadata: dict):
     else:
         return await foundry_local_completion(prompt)  # Default local
 ```
+  
 
-**Multi-Modal Pipeline:**
+**Multi-Modal Pipeline:**  
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -332,20 +344,21 @@ async def analyze_document(file_path: str):
     
     return summary
 ```
+  
 
 ## Production Deployment
 
 ### Security Considerations
 
-- **API Keys**: Use environment variables, avoid hardcoding
-- **Network**: Use HTTPS in production, consider VPN for team access
+- **API Keys**: Use environment variables; never hardcode them
+- **Network**: Use HTTPS in production; consider VPN for team access
 - **Access Control**: Implement authentication for Open WebUI
 - **Data Privacy**: Audit what data remains local versus what goes to the cloud
 - **Updates**: Keep Foundry Local and containers up to date
 
 ### Monitoring and Maintenance
 
-- **Health Checks**: Set up endpoint monitoring
+- **Health Checks**: Implement endpoint monitoring
 - **Logging**: Centralize logs from all components
 - **Metrics**: Track response times, error rates, and resource usage
 - **Backup**: Regularly back up conversation data and configurations
@@ -362,11 +375,13 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Production Chainlit application
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Educational notebook
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Browser-based AI inference
-- [`open-webui-guide.md`](./open-webui-guide.md) - Complete Open WebUI setup
+- [`open-webui-guide.md`](./open-webui-guide.md) - Complete Open WebUI setup guide
 
 ### Related Samples
-- [Session 4 Documentation](../../04.CuttingEdgeModels.md) - Full session guide
+- [Session 4 Documentation](../../04.CuttingEdgeModels.md) - Complete session guide
 - [Foundry Local Samples](https://github.com/microsoft/foundry-local/tree/main/samples) - Official sample repository
 
 ---
 
+**Disclaimer**:  
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

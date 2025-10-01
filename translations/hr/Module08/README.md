@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T19:01:56+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T01:38:34+00:00",
   "source_file": "Module08/README.md",
   "language_code": "hr"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Pregled
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) predstavlja novu generaciju razvoja AI tehnologija na rubnim uređajima, omogućujući programerima moćne alate za izgradnju, implementaciju i skaliranje AI aplikacija lokalno, uz besprijekornu integraciju s Azure AI Foundry. Ovaj modul pruža sveobuhvatan pregled Foundry Local-a, od instalacije do naprednog razvoja agenata.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) predstavlja novu generaciju razvoja AI tehnologije na rubnim uređajima, omogućujući programerima moćne alate za izgradnju, implementaciju i skaliranje AI aplikacija lokalno, uz besprijekornu integraciju s Azure AI Foundry. Ovaj modul pruža sveobuhvatan pregled Foundry Local-a, od instalacije do naprednog razvoja agenata.
 
 **Ključne tehnologije:**
 - Microsoft Foundry Local CLI i SDK
@@ -25,7 +25,7 @@ CO_OP_TRANSLATOR_METADATA:
 Nakon završetka ovog modula, moći ćete:
 
 - **Savladati Foundry Local**: Instalirati, konfigurirati i optimizirati za razvoj na Windows 11
-- **Implementirati različite modele**: Pokrenuti phi, qwen, deepseek i GPT modele lokalno pomoću CLI naredbi
+- **Implementirati raznolike modele**: Pokretati phi, qwen, deepseek i GPT modele lokalno pomoću CLI naredbi
 - **Izraditi produkcijska rješenja**: Kreirati AI aplikacije s naprednim inženjeringom upita i integracijom podataka
 - **Iskoristiti otvoreni ekosustav**: Integrirati modele iz Hugging Face-a i doprinose zajednice
 - **Razviti AI agente**: Izraditi inteligentne agente s mogućnostima utemeljenja i orkestracije
@@ -38,7 +38,7 @@ Nakon završetka ovog modula, moći ćete:
 
 **Ključne teme**: Kompletna instalacija • CLI naredbe • Predmemoriranje modela • Ubrzanje hardvera • Implementacija više modela
 
-**Primjer**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integracija](./samples/02/README.md) • [Otkrivanje i usporedba modela](./samples/03/README.md)
+**Primjer**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integracija](./samples/02/README.md) • [Otkrivanje i testiranje modela](./samples/03/README.md)
 
 **Trajanje**: 2-3 sata | **Razina**: Početnik
 
@@ -58,7 +58,7 @@ Nakon završetka ovog modula, moći ćete:
 ### [3: Otvoreni modeli u Foundry Local](./03.OpenSourceModels.md)
 **Fokus**: Integracija Hugging Face-a, strategije BYOM i modeli zajednice
 
-**Ključne teme**: Integracija Hugging Face-a • Donesi-svoj-model (BYOM) • Uvidi iz Model Mondays • Doprinose zajednice • Odabir modela
+**Ključne teme**: Integracija Hugging Face-a • Donošenje vlastitog modela • Uvidi iz Model Mondays • Doprinosi zajednice • Odabir modela
 
 **Primjer**: [Orkestracija više agenata](./samples/05/README.md)
 
@@ -99,7 +99,7 @@ Nakon završetka ovog modula, moći ćete:
 
 ---
 
-### [7: Obrasci direktne API integracije](./samples/07/README.md)
+### [7: Obrasci za direktnu API integraciju](./samples/07/README.md)
 **Fokus**: Čista REST API integracija bez ovisnosti o SDK-u za maksimalnu kontrolu
 
 **Ključne teme**: Implementacija HTTP klijenta • Prilagođena autentifikacija • Praćenje zdravlja modela • Streaming odgovora • Rukovanje greškama u produkciji
@@ -110,19 +110,19 @@ Nakon završetka ovog modula, moći ćete:
 
 ---
 
-### [8: Windows 11 nativna aplikacija za chat](./samples/08/README.md)
+### [8: Izrada nativne aplikacije za chat na Windows 11](./samples/08/README.md)
 **Fokus**: Izrada modernih nativnih aplikacija za chat s integracijom Foundry Local-a
 
 **Ključne teme**: Razvoj s Electronom • Fluent Design System • Nativna integracija s Windowsom • Streaming u stvarnom vremenu • Dizajn sučelja za chat
 
-**Primjer**: [Windows 11 aplikacija za chat](./samples/08/README.md)
+**Primjer**: [Aplikacija za chat na Windows 11](./samples/08/README.md)
 
 **Trajanje**: 3-4 sata | **Razina**: Napredna
 
 ---
 
 ### [9: Napredna orkestracija više agenata](./samples/09/README.md)
-**Fokus**: Sofisticirana koordinacija agenata, delegiranje specijaliziranih zadataka i suradnički AI radni tokovi
+**Fokus**: Sofisticirana koordinacija agenata, specijalizirana delegacija zadataka i suradnički AI radni tokovi
 
 **Ključne teme**: Koordinacija inteligentnih agenata • Obrasci pozivanja funkcija • Komunikacija među agentima • Orkestracija radnih tokova • Mehanizmi osiguranja kvalitete
 
@@ -177,7 +177,7 @@ Nakon završetka ovog modula, moći ćete:
 |  5 | AI agenti | 05, 09 | 3-4 sata | Napredna |
 |  6 | Alati za poduzeća | 06, 10 | 3-4 sata | Ekspert |
 |  7 | Direktna API integracija | 07 | 2-3 sata | Srednja |
-|  8 | Windows 11 aplikacija za chat | 08 | 3-4 sata | Napredna |
+|  8 | Chat aplikacija za Windows 11 | 08 | 3-4 sata | Napredna |
 |  9 | Napredna orkestracija | 09 | 4-5 sati | Ekspert |
 | 10 | Okvir za alate | 10 | 4-5 sati | Ekspert |
 
@@ -198,7 +198,7 @@ Nakon završetka ovog modula, bit ćete osposobljeni za:
 
 ### Tehničko znanje
 - **Implementacija i upravljanje**: Instalacije Foundry Local-a u razvojnim i produkcijskim okruženjima
-- **Integracija modela**: Rad s raznovrsnim obiteljima modela iz Microsofta, Hugging Face-a i zajednice
+- **Integracija modela**: Rad s raznolikim obiteljima modela iz Microsofta, Hugging Face-a i izvora zajednice
 - **Izrada aplikacija**: Kreiranje produkcijski spremnih AI aplikacija s naprednim značajkama i optimizacijama
 - **Razvoj agenata**: Implementacija sofisticiranih AI agenata s utemeljenjem, zaključivanjem i integracijom alata
 
@@ -212,7 +212,7 @@ Nakon završetka ovog modula, bit ćete osposobljeni za:
 - **Brzo prototipiranje**: Brza izrada i testiranje AI koncepta aplikacija kroz svih 10 uzoraka
 - **Integracija zajednice**: Iskorištavanje otvorenih modela i doprinos ekosustavu
 - **Napredni obrasci**: Implementacija najnovijih AI obrazaca uključujući RAG, agente i integraciju alata
-- **Majstorstvo okvira**: Ekspertna integracija s LangChainom, Semantic Kernelom, Chainlitom i Electronom
+- **Ovladavanje okvirima**: Ekspertna integracija s LangChainom, Semantic Kernelom, Chainlitom i Electronom
 - **Produkcijska implementacija**: Implementacija skalabilnih AI rješenja od lokalnih prototipova do sustava za poduzeća
 - **Razvoj za budućnost**: Izrada aplikacija spremnih za nove AI tehnologije i obrasce
 
@@ -221,7 +221,7 @@ Nakon završetka ovog modula, bit ćete osposobljeni za:
 1. **Postavljanje okruženja**: Osigurajte Windows 11 s preporučenim hardverom (vidi preduvjete)
 2. **Instalirajte Foundry Local**: Slijedite Sesiju 1 za kompletnu instalaciju i konfiguraciju
 3. **Pokrenite Primjer 01**: Započnite s osnovnom REST API integracijom kako biste provjerili postavke
-4. **Napredujte kroz primjere**: Završite primjere 01-10 za sveobuhvatno znanje
+4. **Napredujte kroz primjere**: Završite primjere 01-10 za sveobuhvatno ovladavanje
 
 ## Metrike uspjeha
 
@@ -231,7 +231,7 @@ Pratite svoj napredak kroz svih 10 sveobuhvatnih primjera:
 - [ ] Uspješno instalirajte i konfigurirajte Foundry Local
 - [ ] Završite REST API integraciju (Primjer 01)
 - [ ] Implementirajte kompatibilnost s OpenAI SDK-om (Primjer 02)
-- [ ] Provedite otkrivanje i usporedbu modela (Primjer 03)
+- [ ] Provedite otkrivanje i testiranje modela (Primjer 03)
 
 ### Razina aplikacije (Primjeri 04-06)
 - [ ] Implementirajte i pokrenite najmanje 4 različite obitelji modela
@@ -241,18 +241,18 @@ Pratite svoj napredak kroz svih 10 sveobuhvatnih primjera:
 
 ### Razina napredne integracije (Primjeri 07-10)
 - [ ] Izradite produkcijski spreman API klijent (Primjer 07)
-- [ ] Razvijte nativnu aplikaciju za chat za Windows 11 (Primjer 08)
+- [ ] Razvijte nativnu aplikaciju za chat na Windows 11 (Primjer 08)
 - [ ] Implementirajte napredni sustav s više agenata (Primjer 09)
 - [ ] Kreirajte sveobuhvatan okvir za alate (Primjer 10)
 
-### Indikatori majstorstva
+### Indikatori ovladavanja
 - [ ] Uspješno pokrenite svih 10 primjera bez grešaka
 - [ ] Prilagodite najmanje 3 primjera za specifične slučajeve
 - [ ] Implementirajte 2+ primjera u produkcijskim okruženjima
-- [ ] Doprinose poboljšanjima ili proširenjima koda primjera
+- [ ] Doprinite poboljšanjima ili proširenjima koda primjera
 - [ ] Integrirajte obrasce Foundry Local-a u osobne/profesionalne projekte
 
-## Brzi vodič - Svi primjeri
+## Vodič za brzi početak - Svi primjeri
 
 ### Postavljanje okruženja (Potrebno za sve primjere)
 
@@ -295,7 +295,7 @@ foundry status
 python samples/02/sdk_quickstart.py
 ```
 
-**Primjer 03: Otkrivanje i usporedba modela**
+**Primjer 03: Otkrivanje i testiranje modela**
 ```powershell
 # Run comprehensive model testing
 samples/03/list_and_bench.cmd
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -356,7 +356,7 @@ python examples/streaming.py
 python examples/production.py
 ```
 
-**Primjer 08: Windows 11 aplikacija za chat**
+**Primjer 08: Aplikacija za chat na Windows 11**
 ```powershell
 # Navigate to sample directory
 cd samples/08
@@ -416,7 +416,7 @@ python examples/langchain_demo.py
 
 ### Rješavanje uobičajenih problema
 
-**Greške u povezivanju s Foundry Local-om**
+**Problemi s povezivanjem Foundry Local-a**
 ```powershell
 # Check service status
 foundry status
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Sažetak
-Ovaj modul predstavlja vrhunac razvoja edge AI tehnologije, kombinirajući Microsoftove alate na razini poduzeća s fleksibilnošću i inovativnošću otvorenog koda. Savladavanjem Foundry Local kroz svih 10 sveobuhvatnih primjera, bit ćete na čelu razvoja AI aplikacija.
+Ovaj modul predstavlja vrhunac razvoja rubne umjetne inteligencije, kombinirajući Microsoftove alate na razini poduzeća s fleksibilnošću i inovacijama otvorenog ekosustava. Savladavanjem Foundry Local kroz svih 10 sveobuhvatnih primjera, bit ćete na čelu razvoja AI aplikacija.
 
 **Kompletan put učenja:**
 - **Osnove** (Primjeri 01-03): Integracija API-ja i upravljanje modelima
@@ -465,3 +465,5 @@ Za integraciju s Azure OpenAI (Sesija 2), pogledajte pojedinačne README datotek
 
 ---
 
+**Izjava o odricanju odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.

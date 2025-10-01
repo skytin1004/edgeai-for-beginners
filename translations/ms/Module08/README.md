@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:50:01+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:59:57+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ms"
 }
 -->
-# Modul 08: Hands on Dengan Microsoft Foundry Local - Toolkit Pembangun Lengkap
+# Modul 08: Praktikal Dengan Microsoft Foundry Local - Toolkit Pembangun Lengkap
 
 ## Gambaran Keseluruhan
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) mewakili generasi baharu pembangunan AI di hujung, memberikan pembangun alat yang berkuasa untuk membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini menyediakan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen lanjutan.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) mewakili generasi baharu pembangunan AI di hujung, menyediakan alat yang berkuasa untuk pembangun membina, melancarkan, dan menskalakan aplikasi AI secara tempatan sambil mengekalkan integrasi lancar dengan Azure AI Foundry. Modul ini memberikan liputan menyeluruh tentang Foundry Local dari pemasangan hingga pembangunan agen lanjutan.
 
 **Teknologi Utama:**
 - Microsoft Foundry Local CLI dan SDK
@@ -28,8 +28,8 @@ Dengan melengkapkan modul ini, anda akan:
 - **Melancarkan Pelbagai Model**: Jalankan model phi, qwen, deepseek, dan GPT secara tempatan dengan arahan CLI
 - **Membina Penyelesaian Pengeluaran**: Cipta aplikasi AI dengan kejuruteraan prompt lanjutan dan integrasi data
 - **Manfaatkan Ekosistem Sumber Terbuka**: Integrasi model Hugging Face dan sumbangan komuniti
-- **Membangunkan Agen AI**: Bina agen pintar dengan keupayaan grounding dan orkestrasi
-- **Laksanakan Corak Perusahaan**: Cipta penyelesaian AI modular dan boleh diskalakan untuk pelancaran pengeluaran
+- **Membangunkan Agen AI**: Bina agen pintar dengan keupayaan asas dan orkestrasi
+- **Laksanakan Corak Perusahaan**: Cipta penyelesaian AI modular dan berskala untuk pelancaran pengeluaran
 
 ## Struktur Sesi
 
@@ -78,9 +78,9 @@ Dengan melengkapkan modul ini, anda akan:
 ---
 
 ### [5: Bina Agen Berkuasa AI dengan Cepat](./05.AIPoweredAgents.md)
-**Fokus**: Seni bina agen, prompt sistem, grounding, dan orkestrasi
+**Fokus**: Seni bina agen, prompt sistem, asas, dan orkestrasi
 
-**Topik Utama**: Corak reka bentuk agen • Kejuruteraan prompt sistem • Teknik grounding • Sistem multi-agen • Pelancaran pengeluaran
+**Topik Utama**: Corak reka bentuk agen • Kejuruteraan prompt sistem • Teknik asas • Sistem multi-agen • Pelancaran pengeluaran
 
 **Contoh**: [Orkestrasi Multi-Agen](./samples/05/README.md) • [Sistem Multi-Agen Lanjutan](./samples/09/README.md)
 
@@ -145,9 +145,9 @@ Dengan melengkapkan modul ini, anda akan:
 
 ### Keperluan Sistem
 - **Sistem Operasi**: Windows 11 (22H2 atau lebih baru)
-- **Memori**: RAM 16GB (32GB disyorkan untuk model yang lebih besar)
-- **Storan**: Ruang kosong 50GB untuk cache model
-- **Perkakasan**: Peranti dengan NPU disyorkan (Copilot+ PC), GPU pilihan
+- **Memori**: 16GB RAM (32GB disyorkan untuk model yang lebih besar)
+- **Storan**: 50GB ruang kosong untuk cache model
+- **Perkakasan**: Peranti dengan NPU disyorkan (PC Copilot+), GPU pilihan
 - **Rangkaian**: Internet berkelajuan tinggi untuk muat turun model awal
 
 ### Persekitaran Pembangunan
@@ -159,7 +159,7 @@ Dengan melengkapkan modul ini, anda akan:
 
 ### Pengetahuan Prasyarat
 - Pemahaman asas tentang konsep AI/ML
-- Kebiasaan dengan baris arahan
+- Familiariti dengan baris arahan
 - Asas pengaturcaraan Python
 - Konsep API REST
 - Pengetahuan asas tentang prompt dan inferens model
@@ -198,23 +198,23 @@ Setelah melengkapkan modul ini, anda akan dilengkapi untuk:
 
 ### Penguasaan Teknikal
 - **Melancarkan dan Mengurus**: Pemasangan Foundry Local di persekitaran pembangunan dan pengeluaran
-- **Integrasi Model**: Bekerja dengan keluarga model yang pelbagai dari Microsoft, Hugging Face, dan sumber komuniti
+- **Integrasi Model**: Bekerja dengan lancar dengan pelbagai keluarga model dari Microsoft, Hugging Face, dan sumber komuniti
 - **Membina Aplikasi**: Cipta aplikasi AI sedia pengeluaran dengan ciri dan pengoptimuman lanjutan
-- **Membangunkan Agen**: Laksanakan agen AI yang canggih dengan grounding, penaakulan, dan integrasi alat
+- **Membangunkan Agen**: Laksanakan agen AI yang canggih dengan asas, penaakulan, dan integrasi alat
 
 ### Pemahaman Strategik
-- **Keputusan Seni Bina**: Buat pilihan yang bijak antara pelancaran tempatan vs awan
-- **Pengoptimuman Prestasi**: Optimumkan prestasi inferens di pelbagai konfigurasi perkakasan
-- **Penskalaan Perusahaan**: Reka aplikasi yang boleh diskalakan dari prototaip tempatan ke pelancaran perusahaan
+- **Keputusan Seni Bina**: Membuat pilihan yang bijak antara pelancaran tempatan vs awan
+- **Pengoptimuman Prestasi**: Mengoptimumkan prestasi inferens di pelbagai konfigurasi perkakasan
+- **Penskalaan Perusahaan**: Reka aplikasi yang berskala dari prototaip tempatan ke pelancaran perusahaan
 - **Privasi dan Keselamatan**: Laksanakan penyelesaian AI yang memelihara privasi dengan inferens tempatan
 
 ### Keupayaan Inovasi
-- **Prototip Cepat**: Bina dan uji konsep aplikasi AI dengan pantas di semua 10 corak contoh
+- **Prototip Pantas**: Cepat membina dan menguji konsep aplikasi AI di semua 10 corak contoh
 - **Integrasi Komuniti**: Manfaatkan model sumber terbuka dan sumbang kepada ekosistem
 - **Corak Lanjutan**: Laksanakan corak AI terkini termasuk RAG, agen, dan integrasi alat
 - **Penguasaan Kerangka**: Integrasi tahap pakar dengan LangChain, Kernel Semantik, Chainlit, dan Electron
-- **Pelancaran Pengeluaran**: Melancarkan penyelesaian AI yang boleh diskalakan dari prototaip tempatan ke sistem perusahaan
-- **Pembangunan Sedia Masa Depan**: Bina aplikasi yang bersedia untuk teknologi dan corak AI yang muncul
+- **Pelancaran Pengeluaran**: Melancarkan penyelesaian AI berskala dari prototaip tempatan ke sistem perusahaan
+- **Pembangunan Sedia Masa Depan**: Bina aplikasi yang sedia untuk teknologi dan corak AI yang muncul
 
 ## Memulakan
 
@@ -252,7 +252,7 @@ Jejaki kemajuan anda melalui semua 10 contoh menyeluruh:
 - [ ] Menyumbang penambahbaikan atau sambungan kepada kod contoh
 - [ ] Mengintegrasikan corak Foundry Local ke dalam projek peribadi/profesional
 
-## Panduan Permulaan Cepat - Semua 10 Contoh
+## Panduan Permulaan Pantas - Semua 10 Contoh
 
 ### Persediaan Persekitaran (Diperlukan untuk Semua Contoh)
 
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -414,7 +414,7 @@ jupyter notebook examples/jupyter_notebook.ipynb
 python examples/langchain_demo.py
 ```
 
-### Menyelesaikan Isu Biasa
+### Penyelesaian Masalah Isu Biasa
 
 **Ralat Sambungan Foundry Local**
 ```powershell
@@ -465,3 +465,5 @@ Untuk integrasi Azure OpenAI (Sesi 2), sila rujuk fail README sampel individu un
 
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat yang kritikal, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.

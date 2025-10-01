@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T01:31:36+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:24:55+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "sk"
 }
 -->
 # Ukážka 04: Produkčné chatovacie aplikácie s Chainlit
 
-Komplexná ukážka, ktorá demonštruje rôzne prístupy k vytváraniu produkčne pripravených chatovacích aplikácií pomocou Microsoft Foundry Local, zahŕňajúca moderné webové rozhrania, streamovanie odpovedí a najnovšie technológie prehliadačov.
+Komplexná ukážka, ktorá demonštruje rôzne prístupy k vytváraniu produkčne pripravených chatovacích aplikácií pomocou Microsoft Foundry Local, vrátane moderných webových rozhraní, streamovania odpovedí a najnovších technológií prehliadača.
 
 ## Čo je zahrnuté
 
@@ -47,7 +47,7 @@ python -m http.server 5173
 
 Otvára sa na: `http://localhost:5173`
 
-### 3. Open WebUI Setup
+### 3. Nastavenie Open WebUI
 
 ```cmd
 # Run Open WebUI with Docker
@@ -77,13 +77,13 @@ Otvára sa na: `http://localhost:3000`
 | Technológia | Použitie | Výhody | Nevýhody |
 |-------------|----------|--------|----------|
 | **Chainlit** | Python vývojári, rýchle prototypovanie | Jednoduché nastavenie, podpora streamovania | Len pre Python |
-| **WebGPU** | Maximálne súkromie, offline scenáre | Nativné prehliadače, bez potreby servera | Obmedzená veľkosť modelu |
+| **WebGPU** | Maximálne súkromie, offline scenáre | Nativné prehliadačové, bez potreby servera | Obmedzená veľkosť modelu |
 | **Open WebUI** | Produkčné nasadenie, tímy | Profesionálne UI, správa používateľov | Vyžaduje Docker |
 
 ## Predpoklady
 
 - **Foundry Local**: Nainštalované a spustené ([Stiahnuť](https://aka.ms/foundry-local-installer))
-- **Python**: 3.10+ s virtuálnym prostredím
+- **Python**: Verzia 3.10+ s virtuálnym prostredím
 - **Model**: Aspoň jeden načítaný (`foundry model run phi-4-mini`)
 - **Prehliadač**: Chrome/Edge s podporou WebGPU pre demo
 - **Docker**: Pre Open WebUI (voliteľné)
@@ -126,7 +126,7 @@ foundry service ps
 
 **Funkcie:**
 - 🚀 **Streamovanie v reálnom čase**: Tokeny sa zobrazujú počas ich generovania
-- 🛡️ **Robustné spracovanie chýb**: Elegantné zlyhanie a obnova
+- 🛡️ **Robustné spracovanie chýb**: Plynulé zotavenie pri problémoch
 - 🎨 **Moderné UI**: Profesionálne chatovacie rozhranie pripravené na použitie
 - 🔧 **Flexibilná konfigurácia**: Premenné prostredia a automatická detekcia
 - 📱 **Responzívny dizajn**: Funguje na desktopoch aj mobilných zariadeniach
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,11 +149,11 @@ chainlit run samples\04\app.py -w --port 8080
 ### WebGPU Browser Demo
 
 **Funkcie:**
-- 🌐 **AI nativné prehliadaču**: Bez potreby servera, funguje úplne v prehliadači
+- 🌐 **AI nativné pre prehliadač**: Nepotrebuje server, beží priamo v prehliadači
 - ⚡ **Akcelerácia WebGPU**: Hardvérová akcelerácia, ak je dostupná
 - 🔒 **Maximálne súkromie**: Dáta nikdy neopustia vaše zariadenie
 - 🎯 **Bez inštalácie**: Funguje v akomkoľvek kompatibilnom prehliadači
-- 🔄 **Elegantné záložné riešenie**: Automaticky prejde na CPU, ak WebGPU nie je dostupné
+- 🔄 **Plynulý prechod**: Automaticky prejde na CPU, ak WebGPU nie je dostupné
 
 **Spustenie:**
 ```cmd
@@ -166,10 +166,10 @@ python -m http.server 5173
 
 **Funkcie:**
 - 🎨 **Rozhranie podobné ChatGPT**: Profesionálne, známe UI
-- 👥 **Podpora viacerých používateľov**: Používateľské účty a história konverzácií
+- 👥 **Podpora viacerých používateľov**: Účty používateľov a história konverzácií
 - 📁 **Spracovanie súborov**: Nahrávanie a analýza dokumentov
 - 🔄 **Prepínanie modelov**: Jednoduché prepínanie medzi rôznymi modelmi
-- 🐳 **Nasadenie cez Docker**: Produkčne pripravené kontajnerové nastavenie
+- 🐳 **Nasadenie pomocou Dockeru**: Produkčne pripravené kontajnerové nastavenie
 
 **Rýchle nastavenie:**
 ```cmd
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Premenná | Popis | Predvolená hodnota | Príklad |
 |----------|-------|--------------------|---------|
-| `MODEL` | Alias modelu na použitie | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias modelu na použitie | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint Foundry Local | Automaticky detekovaný | `http://localhost:51211` |
 | `API_KEY` | API kľúč (voliteľný pre lokálne) | `""` | `your-api-key` |
 
@@ -193,7 +193,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ### Bežné problémy
 
-**Chainlit Application:**
+**Chainlit aplikácia:**
 
 1. **Služba nie je dostupná:**
    ```cmd
@@ -224,7 +224,7 @@ docker run -d --name open-webui -p 3000:8080 \
    pip install -r requirements.txt
    ```
 
-**WebGPU Demo:**
+**WebGPU demo:**
 
 1. **WebGPU nie je podporované:**
    - Aktualizujte na Chrome/Edge 113+
@@ -239,7 +239,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **Open WebUI:**
 
-1. **Spojenie odmietnuté:**
+1. **Odmietnuté pripojenie:**
    ```cmd
    # Check Docker is running
    docker --version
@@ -286,25 +286,25 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Chainlit:**
 - Používajte streamovanie pre lepší vnímaný výkon
-- Implementujte pooling spojení pre vysokú súbežnosť
+- Implementujte pooling pripojení pre vysokú súbežnosť
 - Cache odpovede modelu pre opakované dotazy
-- Monitorujte využitie pamäte pri veľkých históriách konverzácií
+- Monitorujte pamäť pri veľkých históriách konverzácií
 
 **WebGPU:**
 - Používajte WebGPU pre maximálne súkromie a rýchlosť
 - Implementujte kvantizáciu modelu pre menšie modely
 - Používajte Web Workers na spracovanie na pozadí
-- Cache kompilované modely v úložisku prehliadača
+- Cache skompilované modely v úložisku prehliadača
 
 **Open WebUI:**
 - Používajte perzistentné objemy pre históriu konverzácií
 - Konfigurujte limity zdrojov pre Docker kontajner
-- Implementujte stratégie zálohovania pre používateľské dáta
+- Implementujte stratégie zálohovania pre údaje používateľov
 - Nastavte reverzný proxy server pre SSL termináciu
 
 ### Vzory integrácie
 
-**Hybrid Lokálne/Cloud:**
+**Hybridné lokálne/cloudové riešenie:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -338,7 +338,7 @@ async def analyze_document(file_path: str):
 ### Bezpečnostné úvahy
 
 - **API kľúče**: Používajte premenné prostredia, nikdy ich nezapisujte priamo
-- **Sieť**: Používajte HTTPS v produkcii, zvážte VPN pre tímový prístup
+- **Sieť**: Používajte HTTPS v produkcii, zvážte VPN pre prístup tímu
 - **Kontrola prístupu**: Implementujte autentifikáciu pre Open WebUI
 - **Ochrana údajov**: Auditujte, ktoré údaje zostávajú lokálne a ktoré idú do cloudu
 - **Aktualizácie**: Udržujte Foundry Local a kontajnery aktualizované
@@ -348,7 +348,7 @@ async def analyze_document(file_path: str):
 - **Kontroly stavu**: Implementujte monitorovanie endpointov
 - **Logovanie**: Centralizujte logy zo všetkých komponentov
 - **Metriky**: Sledujte časy odozvy, chybovosť, využitie zdrojov
-- **Zálohovanie**: Pravidelné zálohovanie dát konverzácií a konfigurácií
+- **Zálohovanie**: Pravidelné zálohovanie údajov z konverzácií a konfigurácií
 
 ## Referencie a zdroje
 
@@ -359,7 +359,7 @@ async def analyze_document(file_path: str):
 - [Open WebUI Dokumentácia](https://docs.openwebui.com/) - Pokročilá konfigurácia
 
 ### Ukážkové súbory
-- [`app.py`](../../../../../Module08/samples/04/app.py) - Produkčná aplikácia Chainlit
+- [`app.py`](../../../../../Module08/samples/04/app.py) - Produkčná Chainlit aplikácia
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Edukačný notebook
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - AI inferencia v prehliadači
 - [`open-webui-guide.md`](./open-webui-guide.md) - Kompletné nastavenie Open WebUI
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Upozornenie**:  
+Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, prosím, berte na vedomie, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho pôvodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
