@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T11:28:55+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:07:03+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "pt"
 }
 -->
-# Exemplo 04: Aplicações de Chat para Produção com Chainlit
+# Exemplo 04: Aplicações de Chat em Produção com Chainlit
 
 Um exemplo abrangente que demonstra várias abordagens para construir aplicações de chat prontas para produção utilizando o Microsoft Foundry Local, com interfaces web modernas, respostas em streaming e tecnologias avançadas de navegador.
 
@@ -61,16 +61,16 @@ Abre em: `http://localhost:3000`
 
 ## Padrões de Arquitetura
 
-### Matriz de Decisão Local vs Cloud
+### Matriz de Decisão Local vs Nuvem
 
 | Cenário | Recomendação | Motivo |
 |---------|--------------|--------|
-| **Dados Sensíveis** | 🏠 Local (Foundry) | Os dados nunca saem do dispositivo |
-| **Raciocínio Complexo** | ☁️ Cloud (Azure OpenAI) | Acesso a modelos maiores |
+| **Dados Sensíveis à Privacidade** | 🏠 Local (Foundry) | Os dados nunca saem do dispositivo |
+| **Raciocínio Complexo** | ☁️ Nuvem (Azure OpenAI) | Acesso a modelos maiores |
 | **Chat em Tempo Real** | 🏠 Local (Foundry) | Menor latência, respostas mais rápidas |
-| **Análise de Documentos** | 🔄 Híbrido | Local para extração, cloud para análise |
+| **Análise de Documentos** | 🔄 Híbrido | Local para extração, nuvem para análise |
 | **Geração de Código** | 🏠 Local (Foundry) | Privacidade + modelos especializados |
-| **Tarefas de Pesquisa** | ☁️ Cloud (Azure OpenAI) | Necessidade de uma base de conhecimento ampla |
+| **Tarefas de Pesquisa** | ☁️ Nuvem (Azure OpenAI) | Necessidade de uma base de conhecimento ampla |
 
 ### Comparação de Tecnologias
 
@@ -126,7 +126,7 @@ foundry service ps
 
 **Funcionalidades:**
 - 🚀 **Streaming em Tempo Real**: Os tokens aparecem à medida que são gerados
-- 🛡️ **Gestão Robusta de Erros**: Degradação e recuperação suaves
+- 🛡️ **Gestão Robusta de Erros**: Degradação e recuperação graciosas
 - 🎨 **UI Moderna**: Interface de chat profissional pronta para uso
 - 🔧 **Configuração Flexível**: Variáveis de ambiente e deteção automática
 - 📱 **Design Responsivo**: Funciona em dispositivos desktop e móveis
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -152,8 +152,8 @@ chainlit run samples\04\app.py -w --port 8080
 - 🌐 **IA Nativa do Navegador**: Sem necessidade de servidor, executa inteiramente no navegador
 - ⚡ **Aceleração WebGPU**: Aceleração de hardware quando disponível
 - 🔒 **Máxima Privacidade**: Nenhum dado sai do seu dispositivo
-- 🎯 **Zero Instalação**: Funciona em qualquer navegador compatível
-- 🔄 **Fallback Suave**: Reverte para CPU se WebGPU não estiver disponível
+- 🎯 **Instalação Zero**: Funciona em qualquer navegador compatível
+- 🔄 **Fallback Gracioso**: Reverte para CPU se WebGPU não estiver disponível
 
 **Execução:**
 ```cmd
@@ -168,7 +168,7 @@ python -m http.server 5173
 - 🎨 **Interface Semelhante ao ChatGPT**: UI profissional e familiar
 - 👥 **Suporte Multi-utilizador**: Contas de utilizadores e histórico de conversas
 - 📁 **Processamento de Ficheiros**: Carregar e analisar documentos
-- 🔄 **Troca de Modelos**: Alteração fácil entre diferentes modelos
+- 🔄 **Alternância de Modelos**: Alternância fácil entre diferentes modelos
 - 🐳 **Implementação com Docker**: Configuração pronta para produção em contêineres
 
 **Configuração Rápida:**
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variável | Descrição | Padrão | Exemplo |
 |----------|-----------|--------|---------|
-| `MODEL` | Alias do modelo a usar | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias do modelo a usar | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint do Foundry Local | Deteção automática | `http://localhost:51211` |
 | `API_KEY` | Chave API (opcional para local) | `""` | `your-api-key` |
 
@@ -232,7 +232,7 @@ docker run -d --name open-webui -p 3000:8080 \
    - Verifique o estado da GPU: `chrome://gpu`
    - A demonstração reverterá automaticamente para CPU
 
-2. **Erros ao carregar modelo:**
+2. **Erros ao carregar o modelo:**
    - Certifique-se de que tem conexão à internet para download do modelo
    - Verifique o console do navegador para erros de CORS
    - Confirme que está a servir via HTTP (não file://)
@@ -304,7 +304,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 ### Padrões de Integração
 
-**Híbrido Local/Cloud:**
+**Híbrido Local/Nuvem:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -340,7 +340,7 @@ async def analyze_document(file_path: str):
 - **Chaves API**: Use variáveis de ambiente, nunca codifique diretamente
 - **Rede**: Use HTTPS em produção, considere VPN para acesso da equipa
 - **Controlo de Acesso**: Implemente autenticação para Open WebUI
-- **Privacidade de Dados**: Audite quais dados permanecem locais vs. enviados para a cloud
+- **Privacidade de Dados**: Audite quais dados permanecem locais vs. vão para a nuvem
 - **Atualizações**: Mantenha Foundry Local e contêineres atualizados
 
 ### Monitorização e Manutenção
@@ -348,7 +348,7 @@ async def analyze_document(file_path: str):
 - **Verificações de Saúde**: Implemente monitorização de endpoints
 - **Registos**: Centralize os registos de todos os componentes
 - **Métricas**: Acompanhe tempos de resposta, taxas de erro, uso de recursos
-- **Backup**: Backup regular dos dados de conversas e configurações
+- **Backup**: Backup regular dos dados de conversação e configurações
 
 ## Referências e Recursos
 
@@ -359,7 +359,7 @@ async def analyze_document(file_path: str):
 - [Documentação Open WebUI](https://docs.openwebui.com/) - Configuração avançada
 
 ### Ficheiros de Exemplo
-- [`app.py`](../../../../../Module08/samples/04/app.py) - Aplicação Chainlit para produção
+- [`app.py`](../../../../../Module08/samples/04/app.py) - Aplicação Chainlit de produção
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Notebook educacional
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Inferência de IA baseada no navegador
 - [`open-webui-guide.md`](./open-webui-guide.md) - Configuração completa do Open WebUI
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, tenha em atenção que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes da utilização desta tradução.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T11:44:48+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T23:01:38+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "de"
 }
@@ -14,9 +14,9 @@ Ein umfassendes Beispiel, das verschiedene Ansätze zur Erstellung produktionsre
 ## Was ist enthalten?
 
 - **🚀 Chainlit Chat App** (`app.py`): Produktionsreife Chat-Anwendung mit Streaming
-- **🌐 WebGPU-Demo** (`webgpu-demo/`): Browserbasierte KI-Inferenz mit Hardwarebeschleunigung
-- **🎨 Open WebUI-Integration** (`open-webui-guide.md`): Professionelle ChatGPT-ähnliche Oberfläche
-- **📚 Lehrnotebook** (`chainlit_app.ipynb`): Interaktive Lernmaterialien
+- **🌐 WebGPU-Demo** (`webgpu-demo/`): KI-Inferenz im Browser mit Hardwarebeschleunigung
+- **🎨 Open WebUI-Integration** (`open-webui-guide.md`): Professionelle ChatGPT-ähnliche Benutzeroberfläche
+- **📚 Lehrmaterialien** (`chainlit_app.ipynb`): Interaktive Lerninhalte
 
 ## Schnellstart
 
@@ -66,7 +66,7 @@ docker run -d --name open-webui -p 3000:8080 \
 | Szenario | Empfehlung | Grund |
 |----------|------------|-------|
 | **Datenschutzsensible Daten** | 🏠 Lokal (Foundry) | Daten verlassen das Gerät nicht |
-| **Komplexes Denken** | ☁️ Cloud (Azure OpenAI) | Zugriff auf größere Modelle |
+| **Komplexe Logik** | ☁️ Cloud (Azure OpenAI) | Zugriff auf größere Modelle |
 | **Echtzeit-Chat** | 🏠 Lokal (Foundry) | Niedrigere Latenz, schnellere Antworten |
 | **Dokumentenanalyse** | 🔄 Hybrid | Lokal für Extraktion, Cloud für Analyse |
 | **Code-Generierung** | 🏠 Lokal (Foundry) | Datenschutz + spezialisierte Modelle |
@@ -78,11 +78,11 @@ docker run -d --name open-webui -p 3000:8080 \
 |-------------|----------------|----------|-----------|
 | **Chainlit** | Python-Entwickler, schnelles Prototyping | Einfache Einrichtung, Streaming-Unterstützung | Nur Python |
 | **WebGPU** | Maximale Privatsphäre, Offline-Szenarien | Browser-nativ, kein Server erforderlich | Begrenzte Modellgröße |
-| **Open WebUI** | Produktionsbereitstellung, Teams | Professionelle UI, Benutzerverwaltung | Erfordert Docker |
+| **Open WebUI** | Produktionsbereitstellung, Teams | Professionelle Benutzeroberfläche, Benutzerverwaltung | Erfordert Docker |
 
 ## Voraussetzungen
 
-- **Foundry Local**: Installiert und läuft ([Download](https://aka.ms/foundry-local-installer))
+- **Foundry Local**: Installiert und ausgeführt ([Download](https://aka.ms/foundry-local-installer))
 - **Python**: Version 3.10+ mit virtueller Umgebung
 - **Modell**: Mindestens ein geladenes Modell (`foundry model run phi-4-mini`)
 - **Browser**: Chrome/Edge mit WebGPU-Unterstützung für Demos
@@ -127,7 +127,7 @@ foundry service ps
 **Funktionen:**
 - 🚀 **Echtzeit-Streaming**: Tokens erscheinen, während sie generiert werden
 - 🛡️ **Robuste Fehlerbehandlung**: Sanfte Degradierung und Wiederherstellung
-- 🎨 **Moderne UI**: Professionelle Chat-Oberfläche direkt einsatzbereit
+- 🎨 **Moderne Benutzeroberfläche**: Professionelle Chat-Oberfläche direkt einsatzbereit
 - 🔧 **Flexible Konfiguration**: Umgebungsvariablen und automatische Erkennung
 - 📱 **Responsive Design**: Funktioniert auf Desktop- und Mobilgeräten
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -153,7 +153,7 @@ chainlit run samples\04\app.py -w --port 8080
 - ⚡ **WebGPU-Beschleunigung**: Hardwarebeschleunigung, wenn verfügbar
 - 🔒 **Maximale Privatsphäre**: Keine Daten verlassen Ihr Gerät
 - 🎯 **Keine Installation**: Funktioniert in jedem kompatiblen Browser
-- 🔄 **Sanfte Fallbacks**: Fällt auf CPU zurück, wenn WebGPU nicht verfügbar ist
+- 🔄 **Sanfter Rückfall**: Fällt auf CPU zurück, wenn WebGPU nicht verfügbar ist
 
 **Ausführung:**
 ```cmd
@@ -165,8 +165,8 @@ python -m http.server 5173
 ### Open WebUI-Integration
 
 **Funktionen:**
-- 🎨 **ChatGPT-ähnliche Oberfläche**: Professionelle, vertraute UI
-- 👥 **Multi-Benutzer-Unterstützung**: Benutzerkonten und Gesprächsverlauf
+- 🎨 **ChatGPT-ähnliche Benutzeroberfläche**: Professionell und vertraut
+- 👥 **Multi-User-Unterstützung**: Benutzerkonten und Gesprächsverlauf
 - 📁 **Dateiverarbeitung**: Hochladen und Analysieren von Dokumenten
 - 🔄 **Modellwechsel**: Einfacher Wechsel zwischen verschiedenen Modellen
 - 🐳 **Docker-Bereitstellung**: Produktionsreife containerisierte Einrichtung
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variable | Beschreibung | Standard | Beispiel |
 |----------|--------------|----------|----------|
-| `MODEL` | Modellalias, der verwendet werden soll | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Modellalias, der verwendet werden soll | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local-Endpunkt | Automatisch erkannt | `http://localhost:51211` |
 | `API_KEY` | API-Schlüssel (optional für lokal) | `""` | `your-api-key` |
 
@@ -287,18 +287,18 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **Chainlit:**
 - Verwenden Sie Streaming für eine bessere wahrgenommene Leistung
 - Implementieren Sie Connection-Pooling für hohe Parallelität
-- Cachen Sie Modellantworten für wiederholte Abfragen
+- Zwischenspeichern von Modellantworten für wiederholte Abfragen
 - Überwachen Sie den Speicherverbrauch bei großen Gesprächsverläufen
 
 **WebGPU:**
 - Nutzen Sie WebGPU für maximale Privatsphäre und Geschwindigkeit
 - Implementieren Sie Modellquantisierung für kleinere Modelle
 - Verwenden Sie Web Workers für Hintergrundverarbeitung
-- Cachen Sie kompilierte Modelle im Browser-Speicher
+- Zwischenspeichern Sie kompilierte Modelle im Browser-Speicher
 
 **Open WebUI:**
 - Verwenden Sie persistente Volumes für Gesprächsverläufe
-- Konfigurieren Sie Ressourcenlimits für Docker-Container
+- Konfigurieren Sie Ressourcenlimits für den Docker-Container
 - Implementieren Sie Backup-Strategien für Benutzerdaten
 - Richten Sie einen Reverse-Proxy für SSL-Terminierung ein
 
@@ -346,8 +346,8 @@ async def analyze_document(file_path: str):
 ### Überwachung und Wartung
 
 - **Health Checks**: Implementieren Sie Endpunktüberwachung
-- **Logging**: Zentralisieren Sie Logs aus allen Komponenten
-- **Metriken**: Verfolgen Sie Antwortzeiten, Fehlerraten, Ressourcennutzung
+- **Protokollierung**: Zentralisieren Sie Protokolle aller Komponenten
+- **Metriken**: Verfolgen Sie Antwortzeiten, Fehlerraten und Ressourcennutzung
 - **Backup**: Regelmäßige Sicherung von Gesprächsdaten und Konfigurationen
 
 ## Referenzen und Ressourcen
@@ -360,8 +360,8 @@ async def analyze_document(file_path: str):
 
 ### Beispieldateien
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produktionsreife Chainlit-Anwendung
-- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Lehrnotebook
-- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Browserbasierte KI-Inferenz
+- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Lehrmaterialien
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - KI-Inferenz im Browser
 - [`open-webui-guide.md`](./open-webui-guide.md) - Vollständige Open WebUI-Einrichtung
 
 ### Verwandte Beispiele
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Haftungsausschluss**:  
+Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die sich aus der Nutzung dieser Übersetzung ergeben.

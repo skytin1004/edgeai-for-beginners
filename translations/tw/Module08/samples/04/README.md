@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T09:46:35+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T23:30:38+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "tw"
 }
@@ -33,7 +33,7 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-開啟於：`http://localhost:8080`
+開啟網址：`http://localhost:8080`
 
 ### 2. WebGPU 瀏覽器示範
 
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-開啟於：`http://localhost:5173`
+開啟網址：`http://localhost:5173`
 
 ### 3. Open WebUI 設定
 
@@ -57,17 +57,17 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-開啟於：`http://localhost:3000`
+開啟網址：`http://localhost:3000`
 
 ## 架構模式
 
-### 本地 vs 雲端決策矩陣
+### 本地與雲端決策矩陣
 
 | 情境 | 建議 | 原因 |
 |------|------|------|
 | **隱私敏感資料** | 🏠 本地 (Foundry) | 資料不會離開設備 |
-| **複雜推理** | ☁️ 雲端 (Azure OpenAI) | 可使用更大的模型 |
-| **即時聊天** | 🏠 本地 (Foundry) | 延遲低，回應速度快 |
+| **複雜推理** | ☁️ 雲端 (Azure OpenAI) | 可使用更大型的模型 |
+| **即時聊天** | 🏠 本地 (Foundry) | 低延遲，回應更快 |
 | **文件分析** | 🔄 混合 | 本地進行提取，雲端進行分析 |
 | **程式碼生成** | 🏠 本地 (Foundry) | 隱私 + 專用模型 |
 | **研究任務** | ☁️ 雲端 (Azure OpenAI) | 需要廣泛的知識庫 |
@@ -76,7 +76,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 技術 | 使用情境 | 優點 | 缺點 |
 |------|----------|------|------|
-| **Chainlit** | Python 開發者，快速原型設計 | 設定簡單，支援串流 | 僅限 Python |
+| **Chainlit** | Python 開發者，快速原型設計 | 簡易設定，支援串流 | 僅限 Python |
 | **WebGPU** | 最大隱私，離線情境 | 瀏覽器原生，無需伺服器 | 模型大小有限 |
 | **Open WebUI** | 生產部署，團隊使用 | 專業 UI，使用者管理 | 需要 Docker |
 
@@ -125,7 +125,7 @@ foundry service ps
 ### Chainlit 聊天應用程式
 
 **功能特色：**
-- 🚀 **即時串流**：生成的 token 即時顯示
+- 🚀 **即時串流**：生成的 Token 即時顯示
 - 🛡️ **強大的錯誤處理**：優雅降級與恢復
 - 🎨 **現代化 UI**：內建專業聊天介面
 - 🔧 **靈活配置**：支援環境變數與自動檢測
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 變數 | 描述 | 預設值 | 範例 |
 |------|------|--------|------|
-| `MODEL` | 使用的模型別名 | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | 使用的模型別名 | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local 端點 | 自動檢測 | `http://localhost:51211` |
 | `API_KEY` | API 金鑰 (本地可選) | `""` | `your-api-key` |
 
@@ -280,7 +280,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test Open WebUI at localhost:3000
 ```
 
-## 高級用法
+## 進階使用
 
 ### 性能優化
 
@@ -362,7 +362,7 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - 生產級 Chainlit 應用程式
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - 教育筆記本
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - 基於瀏覽器的 AI 推論
-- [`open-webui-guide.md`](./open-webui-guide.md) - 完整的 Open WebUI 設定
+- [`open-webui-guide.md`](./open-webui-guide.md) - 完整的 Open WebUI 設定指南
 
 ### 相關範例
 - [Session 4 文件](../../04.CuttingEdgeModels.md) - 完整的課程指南
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**免責聲明**：  
+本文件已使用 AI 翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 進行翻譯。雖然我們致力於提供準確的翻譯，但請注意，自動翻譯可能包含錯誤或不準確之處。原始文件的母語版本應被視為權威來源。對於關鍵資訊，建議使用專業人工翻譯。我們對因使用此翻譯而產生的任何誤解或錯誤解釋不承擔責任。

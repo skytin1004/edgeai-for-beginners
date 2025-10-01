@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T02:13:28+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:45:58+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "sl"
 }
 -->
 # Vzorec 04: Produkcijske klepetalne aplikacije s Chainlit
 
-Celovit primer, ki prikazuje različne pristope za izdelavo produkcijsko pripravljenih klepetalnih aplikacij z uporabo Microsoft Foundry Local, vključno z modernimi spletnimi vmesniki, pretočnimi odgovori in najnovejšimi tehnologijami brskalnika.
+Celovit primer, ki prikazuje različne pristope za izdelavo produkcijsko pripravljenih klepetalnih aplikacij z uporabo Microsoft Foundry Local, vključno z modernimi spletnimi vmesniki, pretočnimi odgovori in najsodobnejšimi tehnologijami brskalnika.
 
 ## Kaj je vključeno
 
@@ -47,7 +47,7 @@ python -m http.server 5173
 
 Odpre se na: `http://localhost:5173`
 
-### 3. Nastavitev Open WebUI
+### 3. Namestitev Open WebUI
 
 ```cmd
 # Run Open WebUI with Docker
@@ -59,7 +59,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 Odpre se na: `http://localhost:3000`
 
-## Arhitekturni vzorci
+## Vzorci arhitekture
 
 ### Lokalno vs. oblak: odločitvena matrika
 
@@ -76,7 +76,7 @@ Odpre se na: `http://localhost:3000`
 
 | Tehnologija | Uporaba | Prednosti | Slabosti |
 |-------------|---------|-----------|----------|
-| **Chainlit** | Python razvijalci, hitro prototipiranje | Enostavna nastavitev, podpora za pretok | Samo Python |
+| **Chainlit** | Python razvijalci, hitro prototipiranje | Enostavna namestitev, podpora za pretok | Samo za Python |
 | **WebGPU** | Maksimalna zasebnost, scenariji brez povezave | Brskalniku lastno, brez strežnika | Omejena velikost modela |
 | **Open WebUI** | Produkcijska uporaba, ekipe | Profesionalni vmesnik, upravljanje uporabnikov | Zahteva Docker |
 
@@ -120,13 +120,13 @@ foundry model run phi-4-mini
 foundry service ps
 ```
 
-## Vzorčne aplikacije
+## Vzorec aplikacij
 
 ### Chainlit klepetalna aplikacija
 
-**Lastnosti:**
+**Funkcije:**
 - 🚀 **Pretok v realnem času**: Tokeni se prikažejo, ko so generirani
-- 🛡️ **Zanesljivo obvladovanje napak**: Postopno poslabšanje in okrevanje
+- 🛡️ **Zanesljivo ravnanje z napakami**: Postopno poslabšanje in okrevanje
 - 🎨 **Moderen vmesnik**: Profesionalni klepetalni vmesnik že pripravljen
 - 🔧 **Prilagodljiva konfiguracija**: Spremenljivke okolja in samodejno zaznavanje
 - 📱 **Prilagodljiv dizajn**: Deluje na namiznih in mobilnih napravah
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -148,8 +148,8 @@ chainlit run samples\04\app.py -w --port 8080
 
 ### WebGPU demo v brskalniku
 
-**Lastnosti:**
-- 🌐 **AI v brskalniku**: Brez strežnika, deluje povsem v brskalniku
+**Funkcije:**
+- 🌐 **AI, ki deluje v brskalniku**: Brez strežnika, deluje popolnoma v brskalniku
 - ⚡ **Pospešitev z WebGPU**: Strojna pospešitev, kadar je na voljo
 - 🔒 **Maksimalna zasebnost**: Podatki nikoli ne zapustijo vaše naprave
 - 🎯 **Brez namestitve**: Deluje v katerem koli združljivem brskalniku
@@ -164,8 +164,8 @@ python -m http.server 5173
 
 ### Integracija Open WebUI
 
-**Lastnosti:**
-- 🎨 **Vmesnik podoben ChatGPT**: Profesionalen, znan vmesnik
+**Funkcije:**
+- 🎨 **Vmesnik, podoben ChatGPT**: Profesionalen, znan vmesnik
 - 👥 **Podpora za več uporabnikov**: Uporabniški računi in zgodovina pogovorov
 - 📁 **Obdelava datotek**: Nalaganje in analiza dokumentov
 - 🔄 **Preklapljanje med modeli**: Enostavno preklapljanje med različnimi modeli
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Spremenljivka | Opis | Privzeto | Primer |
 |---------------|------|----------|--------|
-| `MODEL` | Alias modela za uporabo | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias modela za uporabo | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint za Foundry Local | Samodejno zaznano | `http://localhost:51211` |
 | `API_KEY` | API ključ (neobvezno za lokalno) | `""` | `your-api-key` |
 
@@ -286,7 +286,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Chainlit:**
 - Uporabite pretok za boljšo zaznano zmogljivost
-- Implementirajte povezovalne bazene za visoko sočasnost
+- Implementirajte združevanje povezav za visoko sočasnost
 - Predpomnite odgovore modela za ponavljajoče se poizvedbe
 - Spremljajte porabo pomnilnika pri velikih zgodovinah pogovorov
 
@@ -343,11 +343,11 @@ async def analyze_document(file_path: str):
 - **Zasebnost podatkov**: Preglejte, kateri podatki ostanejo lokalni in kateri gredo v oblak
 - **Posodobitve**: Redno posodabljajte Foundry Local in kontejnerje
 
-### Spremljanje in vzdrževanje
+### Nadzor in vzdrževanje
 
-- **Preverjanje stanja**: Implementirajte nadzor nad endpointi
+- **Preverjanje stanja**: Implementirajte nadzor endpointov
 - **Dnevniški zapisi**: Centralizirajte dnevnike iz vseh komponent
-- **Metrični podatki**: Spremljajte odzivne čase, stopnje napak, porabo virov
+- **Metrične podatke**: Spremljajte odzivne čase, stopnje napak, porabo virov
 - **Varnostne kopije**: Redno varnostno kopirajte podatke pogovorov in konfiguracije
 
 ## Reference in viri
@@ -362,7 +362,7 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produkcijska Chainlit aplikacija
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Izobraževalni zvezek
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - AI sklepanje v brskalniku
-- [`open-webui-guide.md`](./open-webui-guide.md) - Celotna nastavitev Open WebUI
+- [`open-webui-guide.md`](./open-webui-guide.md) - Celoten vodnik za Open WebUI
 
 ### Povezani vzorci
 - [Dokumentacija seje 4](../../04.CuttingEdgeModels.md) - Celoten vodnik seje
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Omejitev odgovornosti**:  
+Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem izvirnem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne odgovarjamo za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.

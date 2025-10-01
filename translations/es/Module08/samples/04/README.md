@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T11:36:48+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T22:58:44+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "es"
 }
@@ -74,8 +74,8 @@ Se abre en: `http://localhost:3000`
 
 ### Comparación de Tecnologías
 
-| Tecnología | Caso de Uso | Pros | Contras |
-|------------|-------------|------|--------|
+| Tecnología | Caso de Uso | Ventajas | Desventajas |
+|------------|-------------|----------|-------------|
 | **Chainlit** | Desarrolladores Python, prototipado rápido | Configuración sencilla, soporte de streaming | Solo Python |
 | **WebGPU** | Máxima privacidad, escenarios offline | Nativo del navegador, no requiere servidor | Tamaño de modelo limitado |
 | **Open WebUI** | Despliegue en producción, equipos | UI profesional, gestión de usuarios | Requiere Docker |
@@ -126,7 +126,7 @@ foundry service ps
 
 **Características:**
 - 🚀 **Streaming en Tiempo Real**: Los tokens aparecen a medida que se generan
-- 🛡️ **Manejo de Errores Robusto**: Degradación y recuperación elegantes
+- 🛡️ **Manejo Robusto de Errores**: Degradación y recuperación elegantes
 - 🎨 **UI Moderna**: Interfaz de chat profesional lista para usar
 - 🔧 **Configuración Flexible**: Variables de entorno y detección automática
 - 📱 **Diseño Responsivo**: Funciona en dispositivos de escritorio y móviles
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -152,7 +152,7 @@ chainlit run samples\04\app.py -w --port 8080
 - 🌐 **IA Nativa del Navegador**: No requiere servidor, se ejecuta completamente en el navegador
 - ⚡ **Aceleración WebGPU**: Aceleración por hardware cuando está disponible
 - 🔒 **Máxima Privacidad**: Los datos nunca salen de tu dispositivo
-- 🎯 **Sin Instalación**: Funciona en cualquier navegador compatible
+- 🎯 **Instalación Cero**: Funciona en cualquier navegador compatible
 - 🔄 **Fallback Elegante**: Cambia automáticamente a CPU si WebGPU no está disponible
 
 **Ejecución:**
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variable | Descripción | Predeterminado | Ejemplo |
 |----------|-------------|----------------|---------|
-| `MODEL` | Alias del modelo a usar | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Alias del modelo a usar | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint de Foundry Local | Detectado automáticamente | `http://localhost:51211` |
 | `API_KEY` | Clave API (opcional para local) | `""` | `your-api-key` |
 
@@ -232,7 +232,7 @@ docker run -d --name open-webui -p 3000:8080 \
    - Verifica el estado de la GPU: `chrome://gpu`
    - El demo cambiará automáticamente a CPU
 
-2. **Errores al cargar el modelo:**
+2. **Errores de carga de modelos:**
    - Asegúrate de tener conexión a internet para descargar el modelo
    - Revisa la consola del navegador para errores CORS
    - Verifica que estés sirviendo vía HTTP (no file://)
@@ -260,7 +260,7 @@ docker run -d --name open-webui -p 3000:8080 \
    docker restart open-webui
    ```
 
-### Lista de Validación
+### Lista de Verificación de Validación
 
 ```cmd
 # ✅ 1. Foundry Local Setup
@@ -348,7 +348,7 @@ async def analyze_document(file_path: str):
 - **Verificaciones de Salud**: Implementa monitoreo de endpoints
 - **Registro**: Centraliza los registros de todos los componentes
 - **Métricas**: Rastrea tiempos de respuesta, tasas de error, uso de recursos
-- **Respaldo**: Respaldo regular de datos de conversación y configuraciones
+- **Respaldo**: Realiza respaldos regulares de datos de conversaciones y configuraciones
 
 ## Referencias y Recursos
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Descargo de responsabilidad**:  
+Este documento ha sido traducido utilizando el servicio de traducción automática [Co-op Translator](https://github.com/Azure/co-op-translator). Aunque nos esforzamos por garantizar la precisión, tenga en cuenta que las traducciones automatizadas pueden contener errores o imprecisiones. El documento original en su idioma nativo debe considerarse como la fuente autorizada. Para información crítica, se recomienda una traducción profesional realizada por humanos. No nos hacemos responsables de malentendidos o interpretaciones erróneas que puedan surgir del uso de esta traducción.

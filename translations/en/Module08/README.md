@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:12:36+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-09-30T22:50:10+00:00",
   "source_file": "Module08/README.md",
   "language_code": "en"
 }
@@ -24,7 +24,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 By completing this module, you will:
 
-- **Master Foundry Local**: Install, configure, and optimize it for Windows 11 development.
+- **Master Foundry Local**: Install, configure, and optimize for Windows 11 development.
 - **Deploy Diverse Models**: Run phi, qwen, deepseek, and GPT models locally using CLI commands.
 - **Build Production Solutions**: Develop AI applications with advanced prompt engineering and data integration.
 - **Leverage Open-Source Ecosystem**: Integrate Hugging Face models and community contributions.
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -454,14 +454,16 @@ npm install
 ```
 
 ## Summary
-This module represents the latest advancements in edge AI development, blending Microsoft's enterprise-grade tools with the adaptability and creativity of the open-source ecosystem. By mastering Foundry Local through all 10 detailed samples, you'll be at the forefront of AI application development.
+This module represents the latest advancements in edge AI development, merging Microsoft's enterprise-grade tools with the adaptability and creativity of the open-source ecosystem. By mastering Foundry Local through all 10 detailed samples, you'll be at the forefront of AI application development.
 
 **Complete Learning Path:**
 - **Foundation** (Samples 01-03): API integration and model management
 - **Applications** (Samples 04-06): RAG, agents, and intelligent routing
 - **Advanced** (Samples 07-10): Production frameworks and enterprise integration
 
-For Azure OpenAI integration (Session 2), refer to the individual sample README files for the necessary environment variables and API version configurations.
+For Azure OpenAI integration (Session 2), refer to the README files of each sample for details on required environment variables and API version configurations.
 
 ---
 
+**Disclaimer**:  
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

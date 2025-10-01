@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T01:05:15+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:10:45+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "sw"
 }
@@ -11,10 +11,10 @@ CO_OP_TRANSLATOR_METADATA:
 
 Mfano wa kina unaoonyesha mbinu mbalimbali za kujenga programu za gumzo zinazofaa kwa uzalishaji kwa kutumia Microsoft Foundry Local, zikiwa na miingiliano ya kisasa ya wavuti, majibu ya mtiririko, na teknolojia za kisasa za kivinjari.
 
-## Yaliyomo
+## Kile Kilichojumuishwa
 
 - **🚀 Chainlit Chat App** (`app.py`): Programu ya gumzo inayofaa kwa uzalishaji na mtiririko wa majibu
-- **🌐 WebGPU Demo** (`webgpu-demo/`): Utoaji wa AI kupitia kivinjari na kasi ya vifaa
+- **🌐 WebGPU Demo** (`webgpu-demo/`): Utoaji wa AI kwenye kivinjari kwa kutumia kasi ya vifaa
 - **🎨 Ujumuishaji wa Open WebUI** (`open-webui-guide.md`): Muonekano wa kitaalamu kama ChatGPT
 - **📚 Daftari la Elimu** (`chainlit_app.ipynb`): Vifaa vya kujifunza vya maingiliano
 
@@ -33,9 +33,9 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-Fungua: `http://localhost:8080`
+Fungua kwenye: `http://localhost:8080`
 
-### 2. Demo ya WebGPU Kivinjari
+### 2. Demo ya WebGPU kwenye Kivinjari
 
 ```cmd
 # Navigate to WebGPU demo
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-Fungua: `http://localhost:5173`
+Fungua kwenye: `http://localhost:5173`
 
 ### 3. Usanidi wa Open WebUI
 
@@ -57,30 +57,30 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-Fungua: `http://localhost:3000`
+Fungua kwenye: `http://localhost:3000`
 
 ## Mifumo ya Usanifu
 
-### Uamuzi wa Kati ya Local na Cloud
+### Matirisho ya Uamuzi wa Kawaida ya Kifaa cha Ndani vs Wingu
 
 | Hali | Pendekezo | Sababu |
 |------|-----------|--------|
-| **Data Nyeti ya Faragha** | 🏠 Local (Foundry) | Data haiondoki kwenye kifaa |
-| **Uchambuzi Mgumu** | ☁️ Cloud (Azure OpenAI) | Ufikiaji wa mifano mikubwa zaidi |
-| **Gumzo la Wakati Halisi** | 🏠 Local (Foundry) | Ucheleweshaji mdogo, majibu ya haraka |
-| **Uchambuzi wa Nyaraka** | 🔄 Mseto | Local kwa uchimbaji, cloud kwa uchambuzi |
-| **Uzalishaji wa Nambari** | 🏠 Local (Foundry) | Faragha + mifano maalum |
-| **Kazi za Utafiti** | ☁️ Cloud (Azure OpenAI) | Hifadhidata pana ya maarifa inahitajika |
+| **Takwimu Nyeti za Faragha** | 🏠 Ndani (Foundry) | Takwimu hazitoki kwenye kifaa |
+| **Uchambuzi wa Kina** | ☁️ Wingu (Azure OpenAI) | Ufikiaji wa mifano mikubwa |
+| **Gumzo la Wakati Halisi** | 🏠 Ndani (Foundry) | Ucheleweshaji mdogo, majibu ya haraka |
+| **Uchambuzi wa Nyaraka** | 🔄 Mseto | Ndani kwa uchimbaji, wingu kwa uchambuzi |
+| **Uzalishaji wa Nambari** | 🏠 Ndani (Foundry) | Faragha + mifano maalum |
+| **Kazi za Utafiti** | ☁️ Wingu (Azure OpenAI) | Hifadhidata pana ya maarifa inahitajika |
 
 ### Ulinganisho wa Teknolojia
 
 | Teknolojia | Matumizi | Faida | Hasara |
 |------------|----------|-------|-------|
 | **Chainlit** | Watengenezaji wa Python, prototyping ya haraka | Usanidi rahisi, msaada wa mtiririko | Python pekee |
-| **WebGPU** | Faragha ya juu, hali za nje ya mtandao | Asili ya kivinjari, hakuna seva inayohitajika | Ukubwa wa mfano mdogo |
+| **WebGPU** | Faragha ya juu, hali za nje ya mtandao | Asili ya kivinjari, hakuna seva inayohitajika | Ukubwa mdogo wa mfano |
 | **Open WebUI** | Utekelezaji wa uzalishaji, timu | UI ya kitaalamu, usimamizi wa watumiaji | Inahitaji Docker |
 
-## Mahitaji
+## Mahitaji ya Awali
 
 - **Foundry Local**: Imewekwa na inafanya kazi ([Pakua](https://aka.ms/foundry-local-installer))
 - **Python**: 3.10+ na mazingira ya kawaida
@@ -128,8 +128,8 @@ foundry service ps
 - 🚀 **Mtiririko wa Wakati Halisi**: Tokeni zinaonekana zinapozalishwa
 - 🛡️ **Ushughulikiaji wa Makosa Imara**: Kushuka kwa neema na urejeshaji
 - 🎨 **UI ya Kisasa**: Muonekano wa kitaalamu wa gumzo moja kwa moja
-- 🔧 **Usanidi Rahisi**: Vigezo vya mazingira na utambuzi wa kiotomatiki
-- 📱 **Muundo wa Kujibika**: Inafanya kazi kwenye desktop na vifaa vya mkononi
+- 🔧 **Usanidi Rahisi**: Vigezo vya mazingira na utambuzi wa moja kwa moja
+- 📱 **Muundo wa Kujibika**: Inafanya kazi kwenye kompyuta na vifaa vya mkononi
 
 **Kuanza Haraka:**
 ```cmd
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -146,13 +146,13 @@ set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-### Demo ya WebGPU Kivinjari
+### Demo ya WebGPU kwenye Kivinjari
 
 **Vipengele:**
 - 🌐 **AI Asilia ya Kivinjari**: Hakuna seva inayohitajika, inafanya kazi kabisa kwenye kivinjari
 - ⚡ **Uharakishaji wa WebGPU**: Kasi ya vifaa inapopatikana
-- 🔒 **Faragha ya Juu**: Data haiondoki kwenye kifaa chako
-- 🎯 **Hakuna Usanidi**: Inafanya kazi kwenye kivinjari chochote kinachofaa
+- 🔒 **Faragha ya Juu**: Hakuna data inayotoka kwenye kifaa chako
+- 🎯 **Hakuna Usakinishaji**: Inafanya kazi kwenye kivinjari chochote kinachofaa
 - 🔄 **Urejeshaji wa Neema**: Inarudi kwa CPU ikiwa WebGPU haipatikani
 
 **Kuendesha:**
@@ -165,11 +165,11 @@ python -m http.server 5173
 ### Ujumuishaji wa Open WebUI
 
 **Vipengele:**
-- 🎨 **Muonekano kama ChatGPT**: UI ya kitaalamu, inayofahamika
+- 🎨 **Muonekano Kama ChatGPT**: UI ya kitaalamu, inayofahamika
 - 👥 **Msaada wa Watumiaji Wengi**: Akaunti za watumiaji na historia ya mazungumzo
 - 📁 **Usindikaji wa Faili**: Pakia na uchambue nyaraka
 - 🔄 **Kubadilisha Mfano**: Kubadilisha kwa urahisi kati ya mifano tofauti
-- 🐳 **Utekelezaji wa Docker**: Usanidi wa uzalishaji uliofungashwa
+- 🐳 **Utekelezaji wa Docker**: Usanidi wa kontena unaofaa kwa uzalishaji
 
 **Usanidi Haraka:**
 ```cmd
@@ -185,9 +185,9 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Kigezo | Maelezo | Chaguo-msingi | Mfano |
 |--------|---------|--------------|-------|
-| `MODEL` | Jina la mfano wa kutumia | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | Endpoint ya Foundry Local | Inatambuliwa kiotomatiki | `http://localhost:51211` |
-| `API_KEY` | API key (hiari kwa local) | `""` | `your-api-key` |
+| `MODEL` | Jina la mfano wa kutumia | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | Endpoint ya Foundry Local | Inatambuliwa moja kwa moja | `http://localhost:51211` |
+| `API_KEY` | API key (hiari kwa ndani) | `""` | `your-api-key` |
 
 ## Utatuzi wa Matatizo
 
@@ -205,7 +205,7 @@ docker run -d --name open-webui -p 3000:8080 \
    curl http://localhost:51211/v1/models
    ```
 
-2. **Migongano ya Port:**
+2. **Migongano ya Bandari:**
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -214,7 +214,7 @@ docker run -d --name open-webui -p 3000:8080 \
    chainlit run samples\04\app.py -w --port 3000
    ```
 
-3. **Masuala ya mazingira ya Python:**
+3. **Masuala ya Mazingira ya Python:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -230,10 +230,10 @@ docker run -d --name open-webui -p 3000:8080 \
    - Sasisha hadi Chrome/Edge 113+
    - Washa WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Angalia hali ya GPU: `chrome://gpu`
-   - Demo itarudi kwa CPU kiotomatiki
+   - Demo itarudi kwa CPU moja kwa moja
 
 2. **Makosa ya kupakia mfano:**
-   - Hakikisha muunganisho wa intaneti kwa kupakua mfano
+   - Hakikisha muunganisho wa intaneti kwa upakuaji wa mfano
    - Angalia console ya kivinjari kwa makosa ya CORS
    - Hakikisha unatumia kupitia HTTP (sio file://)
 
@@ -260,7 +260,7 @@ docker run -d --name open-webui -p 3000:8080 \
    docker restart open-webui
    ```
 
-### Orodha ya Uthibitishaji
+### Orodha ya Uhakiki
 
 ```cmd
 # ✅ 1. Foundry Local Setup
@@ -291,7 +291,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Fuata matumizi ya kumbukumbu na historia kubwa ya mazungumzo
 
 **WebGPU:**
-- Tumia WebGPU kwa faragha na kasi ya juu
+- Tumia WebGPU kwa faragha ya juu na kasi
 - Tekeleza quantization ya mfano kwa mifano midogo
 - Tumia Web Workers kwa usindikaji wa nyuma
 - Hifadhi mifano iliyosanikwa kwenye hifadhi ya kivinjari
@@ -304,7 +304,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 ### Mifumo ya Ujumuishaji
 
-**Mseto Local/Cloud:**
+**Mseto wa Ndani/Wingu:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -340,7 +340,7 @@ async def analyze_document(file_path: str):
 - **API Keys**: Tumia vigezo vya mazingira, usiwahi kuweka moja kwa moja
 - **Mtandao**: Tumia HTTPS katika uzalishaji, fikiria VPN kwa ufikiaji wa timu
 - **Udhibiti wa Ufikiaji**: Tekeleza uthibitishaji kwa Open WebUI
-- **Faragha ya Data**: Kagua data inayobaki local dhidi ya inayokwenda cloud
+- **Faragha ya Data**: Kagua ni data gani inabaki ndani vs. inayoenda kwenye wingu
 - **Sasisho**: Weka Foundry Local na kontena zikiwa zimesasishwa
 
 ### Ufuatiliaji na Matengenezo
@@ -353,20 +353,22 @@ async def analyze_document(file_path: str):
 ## Marejeleo na Rasilimali
 
 ### Nyaraka
-- [Chainlit Documentation](https://docs.chainlit.io/) - Mwongozo kamili wa mfumo
-- [Foundry Local Documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Nyaraka rasmi za Microsoft
+- [Nyaraka za Chainlit](https://docs.chainlit.io/) - Mwongozo kamili wa mfumo
+- [Nyaraka za Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Nyaraka rasmi za Microsoft
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - Ujumuishaji wa WebGPU
-- [Open WebUI Documentation](https://docs.openwebui.com/) - Usanidi wa hali ya juu
+- [Nyaraka za Open WebUI](https://docs.openwebui.com/) - Usanidi wa hali ya juu
 
 ### Faili za Mfano
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Programu ya Chainlit ya uzalishaji
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Daftari la elimu
-- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Utoaji wa AI kupitia kivinjari
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Utoaji wa AI kwenye kivinjari
 - [`open-webui-guide.md`](./open-webui-guide.md) - Usanidi kamili wa Open WebUI
 
 ### Sampuli Zinazohusiana
-- [Session 4 Documentation](../../04.CuttingEdgeModels.md) - Mwongozo kamili wa kikao
-- [Foundry Local Samples](https://github.com/microsoft/foundry-local/tree/main/samples) - Sampuli rasmi
+- [Nyaraka za Kikao cha 4](../../04.CuttingEdgeModels.md) - Mwongozo kamili wa kikao
+- [Sampuli za Foundry Local](https://github.com/microsoft/foundry-local/tree/main/samples) - Sampuli rasmi
 
 ---
 
+**Kanusho**:  
+Hati hii imetafsiriwa kwa kutumia huduma ya tafsiri ya AI [Co-op Translator](https://github.com/Azure/co-op-translator). Ingawa tunajitahidi kuhakikisha usahihi, tafadhali fahamu kuwa tafsiri za kiotomatiki zinaweza kuwa na makosa au kutokuwa sahihi. Hati ya asili katika lugha yake ya awali inapaswa kuzingatiwa kama chanzo cha mamlaka. Kwa taarifa muhimu, tafsiri ya kitaalamu ya binadamu inapendekezwa. Hatutawajibika kwa kutoelewana au tafsiri zisizo sahihi zinazotokana na matumizi ya tafsiri hii.

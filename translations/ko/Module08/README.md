@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:24:40+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-09-30T23:35:43+00:00",
   "source_file": "Module08/README.md",
   "language_code": "ko"
 }
 -->
-# 모듈 08: Microsoft Foundry Local - 완벽한 개발자 도구 실습
+# 모듈 08: Microsoft Foundry Local - 완벽한 개발자 도구 키트 실습
 
 ## 개요
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)은 엣지 AI 개발의 차세대를 대표하며, 개발자들이 AI 애플리케이션을 로컬에서 구축, 배포, 확장할 수 있는 강력한 도구를 제공합니다. 이 모듈은 Foundry Local의 설치부터 고급 에이전트 개발까지 포괄적으로 다룹니다.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)은 엣지 AI 개발의 차세대 기술을 대표하며, 개발자들이 강력한 도구를 활용해 AI 애플리케이션을 로컬에서 구축, 배포, 확장할 수 있도록 지원합니다. 이 모듈은 Foundry Local의 설치부터 고급 에이전트 개발까지 포괄적으로 다룹니다.
 
 **핵심 기술:**
 - Microsoft Foundry Local CLI 및 SDK
@@ -28,7 +28,7 @@ CO_OP_TRANSLATOR_METADATA:
 - **다양한 모델 배포**: CLI 명령을 사용하여 phi, qwen, deepseek, GPT 모델을 로컬에서 실행
 - **생산 솔루션 구축**: 고급 프롬프트 엔지니어링 및 데이터 통합을 활용한 AI 애플리케이션 생성
 - **오픈소스 생태계 활용**: Hugging Face 모델 및 커뮤니티 기여 통합
-- **AI 에이전트 개발**: 그라운딩 및 오케스트레이션 기능을 갖춘 지능형 에이전트 구축
+- **AI 에이전트 개발**: 기반 및 오케스트레이션 기능을 갖춘 지능형 에이전트 구축
 - **엔터프라이즈 패턴 구현**: 모듈형, 확장 가능한 AI 솔루션을 생산 배포를 위해 설계
 
 ## 세션 구조
@@ -58,7 +58,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### [3: Foundry Local에서 오픈소스 모델 활용](./03.OpenSourceModels.md)
 **초점**: Hugging Face 통합, BYOM 전략 및 커뮤니티 모델
 
-**핵심 주제**: HuggingFace 통합 • 사용자 모델 가져오기 • Model Mondays 인사이트 • 커뮤니티 기여 • 모델 선택
+**핵심 주제**: HuggingFace 통합 • BYOM(Bring-your-own-model) • Model Mondays 인사이트 • 커뮤니티 기여 • 모델 선택
 
 **샘플**: [Multi-Agent Orchestration](./samples/05/README.md)
 
@@ -78,9 +78,9 @@ CO_OP_TRANSLATOR_METADATA:
 ---
 
 ### [5: 빠르게 AI 기반 에이전트 구축](./05.AIPoweredAgents.md)
-**초점**: 에이전트 아키텍처, 시스템 프롬프트, 그라운딩 및 오케스트레이션
+**초점**: 에이전트 아키텍처, 시스템 프롬프트, 기반 및 오케스트레이션
 
-**핵심 주제**: 에이전트 설계 패턴 • 시스템 프롬프트 엔지니어링 • 그라운딩 기술 • 다중 에이전트 시스템 • 생산 배포
+**핵심 주제**: 에이전트 설계 패턴 • 시스템 프롬프트 엔지니어링 • 기반 기술 • 다중 에이전트 시스템 • 생산 배포
 
 **샘플**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
 
@@ -102,7 +102,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### [7: 직접 API 통합 패턴](./samples/07/README.md)
 **초점**: SDK 의존성 없이 순수 REST API 통합으로 최대 제어
 
-**핵심 주제**: HTTP 클라이언트 구현 • 사용자 인증 • 모델 상태 모니터링 • 스트리밍 응답 • 생산 오류 처리
+**핵심 주제**: HTTP 클라이언트 구현 • 사용자 정의 인증 • 모델 상태 모니터링 • 스트리밍 응답 • 생산 오류 처리
 
 **샘플**: [Direct API Client](./samples/07/README.md)
 
@@ -113,7 +113,7 @@ CO_OP_TRANSLATOR_METADATA:
 ### [8: Windows 11 네이티브 채팅 애플리케이션](./samples/08/README.md)
 **초점**: Foundry Local 통합을 활용한 현대적인 네이티브 채팅 애플리케이션 구축
 
-**핵심 주제**: Electron 개발 • Fluent Design System • 네이티브 Windows 통합 • 실시간 스트리밍 • 채팅 인터페이스 디자인
+**핵심 주제**: Electron 개발 • Fluent Design System • 네이티브 Windows 통합 • 실시간 스트리밍 • 채팅 인터페이스 설계
 
 **샘플**: [Windows 11 Chat Application](./samples/08/README.md)
 
@@ -147,7 +147,7 @@ CO_OP_TRANSLATOR_METADATA:
 - **운영 체제**: Windows 11 (22H2 이상)
 - **메모리**: 16GB RAM (대형 모델의 경우 32GB 권장)
 - **저장 공간**: 모델 캐싱을 위한 50GB의 여유 공간
-- **하드웨어**: NPU 지원 디바이스 권장 (Copilot+ PC), GPU 선택 가능
+- **하드웨어**: NPU 지원 디바이스 권장 (Copilot+ PC), GPU 선택 사항
 - **네트워크**: 초기 모델 다운로드를 위한 고속 인터넷
 
 ### 개발 환경
@@ -168,9 +168,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 **총 예상 시간**: 30-38시간
 
-| 세션 | 초점 영역 | 샘플 | 시간 | 난이도 |
-|------|-----------|------|------|--------|
-|  1 | 설정 및 기본 | 01, 02, 03 | 2-3시간 | 초급 |
+| 세션 | 초점 영역 | 샘플 | 시간 | 복잡도 |
+|------|-----------|-------|------|--------|
+|  1 | 설정 및 기본 사항 | 01, 02, 03 | 2-3시간 | 초급 |
 |  2 | AI 솔루션 | 04 | 2-3시간 | 중급 |
 |  3 | 오픈소스 | 05 | 2-3시간 | 중급 |
 |  4 | 고급 모델 | 06 | 3-4시간 | 고급 |
@@ -190,7 +190,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 **커뮤니티 및 지원:**
 - [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - 커뮤니티 Q&A 및 기능 요청
-- [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - 최신 뉴스 및 모범 사례
+- [Microsoft AI 개발자 커뮤니티](https://techcommunity.microsoft.com/category/artificialintelligence) - 최신 뉴스 및 모범 사례
 
 ## 학습 결과
 
@@ -198,21 +198,21 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 기술 숙련도
 - **배포 및 관리**: 개발 및 생산 환경에서 Foundry Local 설치 관리
-- **모델 통합**: Microsoft, Hugging Face 및 커뮤니티 소스의 다양한 모델을 원활하게 작업
+- **모델 통합**: Microsoft, Hugging Face 및 커뮤니티 소스의 다양한 모델을 원활하게 활용
 - **애플리케이션 구축**: 고급 기능 및 최적화를 갖춘 생산 준비 AI 애플리케이션 생성
-- **에이전트 개발**: 그라운딩, 추론 및 도구 통합을 갖춘 정교한 AI 에이전트 구현
+- **에이전트 개발**: 기반, 추론 및 도구 통합을 갖춘 정교한 AI 에이전트 구현
 
 ### 전략적 이해
 - **아키텍처 결정**: 로컬 vs 클라우드 배포 간의 정보에 입각한 선택
 - **성능 최적화**: 다양한 하드웨어 구성에서 추론 성능 최적화
 - **엔터프라이즈 확장**: 로컬 프로토타입에서 엔터프라이즈 배포로 확장 가능한 애플리케이션 설계
-- **프라이버시 및 보안**: 로컬 추론을 통한 프라이버시 보호 AI 솔루션 구현
+- **프라이버시 및 보안**: 로컬 추론을 활용한 프라이버시 보호 AI 솔루션 구현
 
 ### 혁신 역량
 - **빠른 프로토타이핑**: 모든 10가지 샘플 패턴을 통해 AI 애플리케이션 개념을 빠르게 구축 및 테스트
-- **커뮤니티 통합**: 오픈소스 모델 활용 및 생태계에 기여
+- **커뮤니티 통합**: 오픈소스 모델 활용 및 생태계 기여
 - **고급 패턴**: RAG, 에이전트 및 도구 통합을 포함한 최첨단 AI 패턴 구현
-- **프레임워크 숙련도**: LangChain, Semantic Kernel, Chainlit 및 Electron과의 전문 수준 통합
+- **프레임워크 숙련도**: LangChain, Semantic Kernel, Chainlit 및 Electron과의 전문 통합
 - **생산 배포**: 로컬 프로토타입에서 엔터프라이즈 시스템으로 확장 가능한 AI 솔루션 배포
 - **미래 대비 개발**: 신흥 AI 기술 및 패턴에 대비한 애플리케이션 구축
 
@@ -231,7 +231,7 @@ CO_OP_TRANSLATOR_METADATA:
 - [ ] Foundry Local 설치 및 구성 성공
 - [ ] REST API 통합 완료 (샘플 01)
 - [ ] OpenAI SDK 호환성 구현 (샘플 02)
-- [ ] 모델 발견 및 벤치마킹 수행 (샘플 03)
+- [ ] 모델 탐색 및 벤치마킹 수행 (샘플 03)
 
 ### 애플리케이션 수준 (샘플 04-06)
 - [ ] 최소 4가지 모델 패밀리 배포 및 실행
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## 요약
-이 모듈은 Microsoft의 엔터프라이즈급 도구와 오픈소스 생태계의 유연성과 혁신을 결합하여 엣지 AI 개발의 최첨단을 대표합니다. Foundry Local의 10가지 포괄적인 샘플을 모두 익히면 AI 애플리케이션 개발의 최전선에 설 수 있습니다.
+이 모듈은 Microsoft의 엔터프라이즈급 도구와 오픈소스 생태계의 유연성과 혁신을 결합하여 엣지 AI 개발의 최첨단을 대표합니다. Foundry Local의 10가지 포괄적인 샘플을 모두 익히면 AI 애플리케이션 개발의 선두에 설 수 있습니다.
 
 **완전한 학습 경로:**
 - **기초** (샘플 01-03): API 통합 및 모델 관리
@@ -465,3 +465,5 @@ Azure OpenAI 통합(Session 2)의 경우, 필요한 환경 변수와 API 버전 
 
 ---
 
+**면책 조항**:  
+이 문서는 AI 번역 서비스 [Co-op Translator](https://github.com/Azure/co-op-translator)를 사용하여 번역되었습니다. 정확성을 위해 최선을 다하고 있으나, 자동 번역에는 오류나 부정확성이 포함될 수 있습니다. 원본 문서의 원어 버전을 신뢰할 수 있는 권위 있는 자료로 간주해야 합니다. 중요한 정보의 경우, 전문적인 인간 번역을 권장합니다. 이 번역 사용으로 인해 발생하는 오해나 잘못된 해석에 대해 당사는 책임을 지지 않습니다.

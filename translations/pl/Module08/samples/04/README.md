@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T12:33:25+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:17:58+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "pl"
 }
@@ -61,7 +61,7 @@ Otwiera się pod: `http://localhost:3000`
 
 ## Wzorce architektury
 
-### Lokalna vs chmurowa macierz decyzyjna
+### Lokalny vs chmurowy - macierz decyzyjna
 
 | Scenariusz | Rekomendacja | Powód |
 |------------|--------------|-------|
@@ -78,12 +78,12 @@ Otwiera się pod: `http://localhost:3000`
 |-------------|--------------|--------|------|
 | **Chainlit** | Dla programistów Python, szybkie prototypowanie | Łatwa konfiguracja, wsparcie strumieniowe | Tylko Python |
 | **WebGPU** | Maksymalna prywatność, scenariusze offline | Natywne dla przeglądarki, brak potrzeby serwera | Ograniczony rozmiar modelu |
-| **Open WebUI** | Wdrożenia produkcyjne, zespoły | Profesjonalny UI, zarządzanie użytkownikami | Wymaga Dockera |
+| **Open WebUI** | Wdrożenia produkcyjne, zespoły | Profesjonalny interfejs, zarządzanie użytkownikami | Wymaga Dockera |
 
 ## Wymagania wstępne
 
 - **Foundry Local**: Zainstalowany i uruchomiony ([Pobierz](https://aka.ms/foundry-local-installer))
-- **Python**: 3.10+ z wirtualnym środowiskiem
+- **Python**: Wersja 3.10+ z wirtualnym środowiskiem
 - **Model**: Przynajmniej jeden załadowany (`foundry model run phi-4-mini`)
 - **Przeglądarka**: Chrome/Edge z obsługą WebGPU dla demo
 - **Docker**: Dla Open WebUI (opcjonalnie)
@@ -127,7 +127,7 @@ foundry service ps
 **Funkcje:**
 - 🚀 **Strumieniowanie w czasie rzeczywistym**: Tokeny pojawiają się w miarę ich generowania
 - 🛡️ **Solidne zarządzanie błędami**: Łagodne degradacje i odzyskiwanie
-- 🎨 **Nowoczesny UI**: Profesjonalny interfejs czatu od razu gotowy
+- 🎨 **Nowoczesny interfejs**: Profesjonalny interfejs czatu od razu gotowy
 - 🔧 **Elastyczna konfiguracja**: Zmienne środowiskowe i automatyczne wykrywanie
 - 📱 **Responsywny design**: Działa na komputerach i urządzeniach mobilnych
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -151,7 +151,7 @@ chainlit run samples\04\app.py -w --port 8080
 **Funkcje:**
 - 🌐 **Natywne AI w przeglądarce**: Brak potrzeby serwera, działa całkowicie w przeglądarce
 - ⚡ **Akceleracja WebGPU**: Przyspieszenie sprzętowe, gdy dostępne
-- 🔒 **Maksymalna prywatność**: Dane nigdy nie opuszczają urządzenia
+- 🔒 **Maksymalna prywatność**: Dane nigdy nie opuszczają Twojego urządzenia
 - 🎯 **Zero instalacji**: Działa w każdej kompatybilnej przeglądarce
 - 🔄 **Łagodne przejście**: Automatyczne przejście na CPU, jeśli WebGPU niedostępne
 
@@ -179,14 +179,14 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
   
-## Referencje konfiguracji
+## Referencja konfiguracji
 
 ### Zmienne środowiskowe
 
 | Zmienna | Opis | Domyślna wartość | Przykład |
 |---------|------|------------------|----------|
-| `MODEL` | Alias modelu do użycia | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | Endpoint Foundry Local | Automatyczne wykrywanie | `http://localhost:51211` |
+| `MODEL` | Alias modelu do użycia | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | Punkt końcowy Foundry Local | Automatyczne wykrywanie | `http://localhost:51211` |
 | `API_KEY` | Klucz API (opcjonalny dla lokalnego) | `""` | `your-api-key` |
 
 ## Rozwiązywanie problemów
@@ -230,12 +230,12 @@ docker run -d --name open-webui -p 3000:8080 \
    - Zaktualizuj do Chrome/Edge 113+
    - Włącz WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - Sprawdź status GPU: `chrome://gpu`
-   - Demo automatycznie przejdzie na CPU
+   - Demo automatycznie przełączy się na CPU
 
 2. **Błędy ładowania modelu:**
    - Upewnij się, że masz połączenie z internetem do pobrania modelu
    - Sprawdź konsolę przeglądarki pod kątem błędów CORS
-   - Zweryfikuj, że serwujesz przez HTTP (nie file://)
+   - Zweryfikuj, czy serwujesz przez HTTP (nie file://)
 
 **Open WebUI:**
 
@@ -287,14 +287,14 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **Chainlit:**
 - Używaj strumieniowania dla lepszej percepcji wydajności
 - Implementuj pooling połączeń dla wysokiej równoczesności
-- Cache'uj odpowiedzi modelu dla powtarzających się zapytań
+- Buforuj odpowiedzi modelu dla powtarzających się zapytań
 - Monitoruj użycie pamięci przy dużych historiach rozmów
 
 **WebGPU:**
 - Używaj WebGPU dla maksymalnej prywatności i szybkości
 - Implementuj kwantyzację modelu dla mniejszych modeli
 - Używaj Web Workers do przetwarzania w tle
-- Cache'uj skompilowane modele w pamięci przeglądarki
+- Buforuj skompilowane modele w pamięci przeglądarki
 
 **Open WebUI:**
 - Używaj trwałych woluminów dla historii rozmów
@@ -341,16 +341,16 @@ async def analyze_document(file_path: str):
 - **Sieć**: Używaj HTTPS w produkcji, rozważ VPN dla dostępu zespołu
 - **Kontrola dostępu**: Implementuj uwierzytelnianie dla Open WebUI
 - **Prywatność danych**: Audytuj, które dane pozostają lokalne, a które trafiają do chmury
-- **Aktualizacje**: Utrzymuj Foundry Local i kontenery w aktualnym stanie
+- **Aktualizacje**: Utrzymuj Foundry Local i kontenery w najnowszej wersji
 
 ### Monitorowanie i utrzymanie
 
-- **Kontrole zdrowia**: Implementuj monitorowanie endpointów
+- **Kontrole zdrowia**: Implementuj monitorowanie punktów końcowych
 - **Logowanie**: Centralizuj logi ze wszystkich komponentów
 - **Metryki**: Śledź czasy odpowiedzi, wskaźniki błędów, użycie zasobów
-- **Backup**: Regularne kopie zapasowe danych rozmów i konfiguracji
+- **Backup**: Regularnie twórz kopie zapasowe danych rozmów i konfiguracji
 
-## Referencje i zasoby
+## Odniesienia i zasoby
 
 ### Dokumentacja
 - [Dokumentacja Chainlit](https://docs.chainlit.io/) - Kompletny przewodnik po frameworku
@@ -362,7 +362,7 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produkcyjna aplikacja Chainlit
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Edukacyjny notebook
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Wnioskowanie AI w przeglądarce
-- [`open-webui-guide.md`](./open-webui-guide.md) - Kompletny przewodnik po Open WebUI
+- [`open-webui-guide.md`](./open-webui-guide.md) - Kompletny przewodnik po konfiguracji Open WebUI
 
 ### Powiązane przykłady
 - [Dokumentacja sesji 4](../../04.CuttingEdgeModels.md) - Kompletny przewodnik po sesji
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Zastrzeżenie**:  
+Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być uznawany za autorytatywne źródło. W przypadku informacji o kluczowym znaczeniu zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.

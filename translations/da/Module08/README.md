@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:43:09+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:36:11+00:00",
   "source_file": "Module08/README.md",
   "language_code": "da"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Oversigt
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) repræsenterer næste generation af edge AI-udvikling og giver udviklere kraftfulde værktøjer til at bygge, implementere og skalere AI-applikationer lokalt, samtidig med at der opretholdes en problemfri integration med Azure AI Foundry. Dette modul dækker Foundry Local fra installation til avanceret agentudvikling.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) repræsenterer næste generation af edge AI-udvikling og giver udviklere kraftfulde værktøjer til at bygge, implementere og skalere AI-applikationer lokalt, samtidig med at der opretholdes problemfri integration med Azure AI Foundry. Dette modul dækker Foundry Local fra installation til avanceret agentudvikling.
 
 **Nøgleteknologier:**
 - Microsoft Foundry Local CLI og SDK
@@ -58,7 +58,7 @@ Ved at gennemføre dette modul vil du:
 ### [3: Open Source-modeller i Foundry Local](./03.OpenSourceModels.md)
 **Fokus**: Hugging Face-integration, BYOM-strategier og fællesskabsmodeller
 
-**Nøgleemner**: Hugging Face-integration • Bring-your-own-model • Model Mondays indsigter • Fællesskabsbidrag • Modelvalg
+**Nøgleemner**: Hugging Face-integration • Bring-your-own-model • Model Mondays indsigt • Fællesskabsbidrag • Modelvalg
 
 **Eksempel**: [Multi-Agent Orchestration](./samples/05/README.md)
 
@@ -66,7 +66,7 @@ Ved at gennemføre dette modul vil du:
 
 ---
 
-### [4: Udforsk avancerede modeller](./04.CuttingEdgeModels.md)
+### [4: Udforsk banebrydende modeller](./04.CuttingEdgeModels.md)
 **Fokus**: LLMs vs SLMs, EdgeAI-implementering og avancerede demoer
 
 **Nøgleemner**: Model sammenligning • Edge vs cloud inference • Phi + ONNX Runtime • Chainlit RAG app • WebGPU optimering
@@ -91,7 +91,7 @@ Ved at gennemføre dette modul vil du:
 ### [6: Foundry Local - Modeller som værktøjer](./06.ModelsAsTools.md)
 **Fokus**: Modulære AI-løsninger, virksomhedsskalerbarhed og produktionsmønstre
 
-**Nøgleemner**: Modeller som værktøjer • Implementering på enheden • SDK/API-integration • Virksomhedsarkitekturer • Skaleringsstrategier
+**Nøgleemner**: Modeller som værktøjer • Implementering på enheden • SDK/API integration • Virksomhedsarkitekturer • Skaleringsstrategier
 
 **Eksempel**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
@@ -111,9 +111,9 @@ Ved at gennemføre dette modul vil du:
 ---
 
 ### [8: Windows 11 Native Chat Application](./samples/08/README.md)
-**Fokus**: Bygge moderne native chat-applikationer med Foundry Local-integration
+**Fokus**: Bygge moderne native chat-applikationer med Foundry Local integration
 
-**Nøgleemner**: Electron-udvikling • Fluent Design System • Native Windows-integration • Real-time streaming • Chat-interface design
+**Nøgleemner**: Electron-udvikling • Fluent Design System • Native Windows integration • Real-time streaming • Chat interface design
 
 **Eksempel**: [Windows 11 Chat Application](./samples/08/README.md)
 
@@ -135,7 +135,7 @@ Ved at gennemføre dette modul vil du:
 ### [10: Foundry Local som værktøjsramme](./samples/10/README.md)
 **Fokus**: Værktøjsbaseret arkitektur til integration af Foundry Local i eksisterende applikationer og rammer
 
-**Nøgleemner**: LangChain-integration • Semantiske Kernel-funktioner • REST API-rammer • CLI-værktøjer • Jupyter-integration • Produktionsimplementeringsmønstre
+**Nøgleemner**: LangChain integration • Semantic Kernel funktioner • REST API rammer • CLI værktøjer • Jupyter integration • Produktionsimplementeringsmønstre
 
 **Eksempel**: [Foundry Tools Framework](./samples/10/README.md)
 
@@ -148,14 +148,14 @@ Ved at gennemføre dette modul vil du:
 - **Hukommelse**: 16GB RAM (32GB anbefales til større modeller)
 - **Lagring**: 50GB ledig plads til modelcaching
 - **Hardware**: NPU-aktiveret enhed anbefales (Copilot+ PC), GPU valgfri
-- **Netværk**: Højhastighedsinternet til initial modeldownload
+- **Netværk**: Højhastighedsinternet til første modeldownload
 
 ### Udviklingsmiljø
 - Visual Studio Code med AI Toolkit-udvidelse
 - Python 3.10+ og pip
 - Git til versionskontrol
-- PowerShell eller Command Prompt
-- Azure CLI (valgfri til cloud-integration)
+- PowerShell eller Kommandoprompt
+- Azure CLI (valgfrit til cloud-integration)
 
 ### Videnforudsætninger
 - Grundlæggende forståelse af AI/ML-koncepter
@@ -189,12 +189,12 @@ Ved at gennemføre dette modul vil du:
 - [Model Mondays Series](https://aka.ms/model-mondays) - Ugentlige modelhøjdepunkter og tutorials
 
 **Fællesskab & Support:**
-- [Foundry Local Diskussioner](https://github.com/microsoft/Foundry-Local/discussions) - Fællesskab Q&A og funktionsanmodninger
+- [Foundry Local Diskussioner](https://github.com/microsoft/Foundry-Local/discussions) - Fællesskabets Q&A og funktionsanmodninger
 - [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Seneste nyheder og bedste praksis
 
 ## Læringsresultater
 
-Når du har gennemført dette modul, vil du være i stand til at:
+Når du har gennemført dette modul, vil du være i stand til:
 
 ### Teknisk ekspertise
 - **Implementere og administrere**: Foundry Local installationer på tværs af udviklings- og produktionsmiljøer
@@ -208,20 +208,20 @@ Når du har gennemført dette modul, vil du være i stand til at:
 - **Virksomhedsskalerbarhed**: Designe applikationer, der skalerer fra lokale prototyper til virksomhedsimplementeringer
 - **Privatliv og sikkerhed**: Implementere privatlivsbevarende AI-løsninger med lokal inference
 
-### Innovationskapacitet
+### Innovationskapaciteter
 - **Hurtig prototyping**: Hurtigt bygge og teste AI-applikationskoncepter på tværs af alle 10 eksempelmønstre
 - **Fællesskabsintegration**: Udnytte open source-modeller og bidrage til økosystemet
 - **Avancerede mønstre**: Implementere banebrydende AI-mønstre, herunder RAG, agenter og værktøjsintegration
 - **Rammemesterskab**: Ekspertintegration med LangChain, Semantic Kernel, Chainlit og Electron
 - **Produktionsimplementering**: Implementere skalerbare AI-løsninger fra lokale prototyper til virksomhedssystemer
-- **Fremtidsklar udvikling**: Bygge applikationer klar til fremtidige AI-teknologier og mønstre
+- **Fremtidsklar udvikling**: Bygge applikationer klar til fremtidens AI-teknologier og mønstre
 
 ## Kom godt i gang
 
 1. **Miljøopsætning**: Sørg for Windows 11 med anbefalet hardware (se Forudsætninger)
 2. **Installer Foundry Local**: Følg Session 1 for komplet installation og konfiguration
 3. **Kør Eksempel 01**: Start med grundlæggende REST API-integration for at verificere opsætningen
-4. **Fortsæt gennem eksempler**: Gennemfør eksemplerne 01-10 for omfattende ekspertise
+4. **Fortsæt gennem eksempler**: Gennemfør eksempler 01-10 for omfattende ekspertise
 
 ## Succeskriterier
 
@@ -245,7 +245,7 @@ Følg din fremgang gennem alle 10 omfattende eksempler:
 - [ ] Implementér avanceret multi-agent system (Eksempel 09)
 - [ ] Skab omfattende værktøjsramme (Eksempel 10)
 
-### Ekspertindikatorer
+### Mesterskabsindikatorer
 - [ ] Kør alle 10 eksempler uden fejl
 - [ ] Tilpas mindst 3 eksempler til specifikke brugsscenarier
 - [ ] Implementér 2+ eksempler i produktionslignende miljøer
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -465,3 +465,5 @@ For Azure OpenAI-integration (Session 2), se de individuelle README-filer for de
 
 ---
 
+**Ansvarsfraskrivelse**:  
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på at sikre nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T21:26:58+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:13:28+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "it"
 }
@@ -74,10 +74,10 @@ Apre su: `http://localhost:3000`
 
 ### Confronto Tecnologico
 
-| Tecnologia | Caso d'Uso | Pro | Contro |
-|------------|------------|-----|-------|
+| Tecnologia | Caso d'Uso | Vantaggi | Svantaggi |
+|------------|------------|----------|-----------|
 | **Chainlit** | Sviluppatori Python, prototipazione rapida | Configurazione semplice, supporto streaming | Solo Python |
-| **WebGPU** | Massima privacy, scenari offline | Nativo per browser, nessun server richiesto | Dimensione modello limitata |
+| **WebGPU** | Massima privacy, scenari offline | Nativo per browser, nessun server necessario | Dimensione modello limitata |
 | **Open WebUI** | Distribuzione in produzione, team | Interfaccia professionale, gestione utenti | Richiede Docker |
 
 ## Prerequisiti
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -169,7 +169,7 @@ python -m http.server 5173
 - 👥 **Supporto Multi-utente**: Account utente e cronologia conversazioni
 - 📁 **Elaborazione File**: Carica e analizza documenti
 - 🔄 **Cambio Modello**: Passaggio facile tra modelli diversi
-- 🐳 **Distribuzione Docker**: Configurazione containerizzata pronta per la produzione
+- 🐳 **Distribuzione Docker**: Configurazione pronta per la produzione in container
 
 **Configurazione Rapida:**
 ```cmd
@@ -179,13 +179,13 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-## Riferimento Configurazione
+## Riferimenti di Configurazione
 
 ### Variabili d'Ambiente
 
-| Variabile | Descrizione | Default | Esempio |
-|----------|-------------|---------|---------|
-| `MODEL` | Alias del modello da utilizzare | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| Variabile | Descrizione | Predefinito | Esempio |
+|-----------|-------------|-------------|---------|
+| `MODEL` | Alias del modello da utilizzare | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Endpoint Foundry Local | Rilevato automaticamente | `http://localhost:51211` |
 | `API_KEY` | Chiave API (opzionale per locale) | `""` | `your-api-key` |
 
@@ -229,13 +229,13 @@ docker run -d --name open-webui -p 3000:8080 \
 1. **WebGPU non supportato:**
    - Aggiorna a Chrome/Edge 113+
    - Abilita WebGPU: `chrome://flags/#enable-unsafe-webgpu`
-   - Controlla lo stato GPU: `chrome://gpu`
+   - Controlla stato GPU: `chrome://gpu`
    - La demo passerà automaticamente alla CPU
 
 2. **Errori di caricamento modello:**
    - Assicurati di avere una connessione internet per il download del modello
    - Controlla la console del browser per errori CORS
-   - Verifica che stai servendo via HTTP (non file://)
+   - Verifica che stai servendo tramite HTTP (non file://)
 
 **Open WebUI:**
 
@@ -288,7 +288,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Usa lo streaming per migliorare la percezione delle prestazioni
 - Implementa il pooling delle connessioni per alta concorrenza
 - Memorizza nella cache le risposte del modello per query ripetute
-- Monitora l'uso della memoria con cronologie di conversazione estese
+- Monitora l'uso della memoria con cronologie di conversazioni estese
 
 **WebGPU:**
 - Usa WebGPU per massima privacy e velocità
@@ -337,18 +337,18 @@ async def analyze_document(file_path: str):
 
 ### Considerazioni sulla Sicurezza
 
-- **Chiavi API**: Usa variabili d'ambiente, mai hardcodare
-- **Rete**: Usa HTTPS in produzione, considera VPN per accesso team
+- **Chiavi API**: Usa variabili d'ambiente, non codificarle mai direttamente
+- **Rete**: Usa HTTPS in produzione, considera VPN per accesso del team
 - **Controllo Accessi**: Implementa autenticazione per Open WebUI
 - **Privacy dei Dati**: Controlla quali dati rimangono locali e quali vanno nel cloud
 - **Aggiornamenti**: Mantieni Foundry Local e i container aggiornati
 
 ### Monitoraggio e Manutenzione
 
-- **Controlli di Salute**: Implementa monitoraggio degli endpoint
+- **Controlli di Salute**: Implementa il monitoraggio degli endpoint
 - **Logging**: Centralizza i log di tutti i componenti
-- **Metriche**: Traccia tempi di risposta, tassi di errore, uso delle risorse
-- **Backup**: Backup regolare dei dati delle conversazioni e delle configurazioni
+- **Metriche**: Monitora tempi di risposta, tassi di errore, uso delle risorse
+- **Backup**: Esegui regolarmente il backup dei dati delle conversazioni e delle configurazioni
 
 ## Riferimenti e Risorse
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Disclaimer**:  
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

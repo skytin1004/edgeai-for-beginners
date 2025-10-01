@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T00:02:10+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:52:43+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "he"
 }
 -->
 # דוגמה 04: אפליקציות צ'אט לייצור עם Chainlit
 
-דוגמה מקיפה המדגימה גישות שונות לבניית אפליקציות צ'אט מוכנות לייצור באמצעות Microsoft Foundry Local, עם ממשקי אינטרנט מודרניים, תגובות זורמות וטכנולוגיות דפדפן מתקדמות.
+דוגמה מקיפה המציגה גישות שונות לבניית אפליקציות צ'אט מוכנות לייצור באמצעות Microsoft Foundry Local, עם ממשקי אינטרנט מודרניים, תגובות זורמות וטכנולוגיות דפדפן מתקדמות.
 
 ## מה כלול
 
@@ -32,7 +32,7 @@ foundry model run phi-4-mini
 # Run Chainlit app (using port 8080 to avoid conflicts)
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 נפתח בכתובת: `http://localhost:8080`
 
 ### 2. הדגמת WebGPU בדפדפן
@@ -44,7 +44,7 @@ cd Module08\samples\04\webgpu-demo
 # Serve the demo
 python -m http.server 5173
 ```
-  
+
 נפתח בכתובת: `http://localhost:5173`
 
 ### 3. הגדרת Open WebUI
@@ -56,7 +56,7 @@ docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 נפתח בכתובת: `http://localhost:3000`
 
 ## דפוסי ארכיטקטורה
@@ -64,7 +64,7 @@ docker run -d --name open-webui -p 3000:8080 \
 ### מטריצת החלטות: מקומי מול ענן
 
 | תרחיש | המלצה | סיבה |
-|-------|-------|------|
+|-------|--------|------|
 | **נתונים רגישים לפרטיות** | 🏠 מקומי (Foundry) | הנתונים נשארים במכשיר |
 | **הסקה מורכבת** | ☁️ ענן (Azure OpenAI) | גישה למודלים גדולים יותר |
 | **צ'אט בזמן אמת** | 🏠 מקומי (Foundry) | זמן תגובה נמוך יותר, תגובות מהירות |
@@ -75,16 +75,16 @@ docker run -d --name open-webui -p 3000:8080 \
 ### השוואת טכנולוגיות
 
 | טכנולוגיה | שימוש | יתרונות | חסרונות |
-|-----------|-------|---------|----------|
-| **Chainlit** | מפתחים ב-Python, אב טיפוס מהיר | התקנה פשוטה, תמיכה בתגובות זורמות | מוגבל ל-Python |
+|-----------|-------|---------|---------|
+| **Chainlit** | מפתחים ב-Python, אב טיפוס מהיר | התקנה קלה, תמיכה בתגובות זורמות | מוגבל ל-Python |
 | **WebGPU** | פרטיות מרבית, תרחישים לא מקוונים | מובנה בדפדפן, ללא צורך בשרת | גודל מודל מוגבל |
 | **Open WebUI** | פריסה לייצור, צוותים | ממשק מקצועי, ניהול משתמשים | דורש Docker |
 
-## דרישות מוקדמות
+## דרישות מקדימות
 
 - **Foundry Local**: מותקן ופועל ([הורדה](https://aka.ms/foundry-local-installer))
 - **Python**: גרסה 3.10+ עם סביבה וירטואלית
-- **מודל**: לפחות מודל אחד טעון (`foundry model run phi-4-mini`)
+- **מודל**: לפחות אחד טעון (`foundry model run phi-4-mini`)
 - **דפדפן**: Chrome/Edge עם תמיכה ב-WebGPU להדגמות
 - **Docker**: עבור Open WebUI (אופציונלי)
 
@@ -103,7 +103,7 @@ py -m venv .venv
 # Install dependencies
 pip install -r requirements.txt
 ```
-  
+
 ### 2. הגדרת Foundry Local
 
 ```cmd
@@ -119,7 +119,7 @@ foundry model run phi-4-mini
 # Verify model is running
 foundry service ps
 ```
-  
+
 ## אפליקציות לדוגמה
 
 ### אפליקציית צ'אט Chainlit
@@ -128,7 +128,7 @@ foundry service ps
 - 🚀 **תגובות בזמן אמת**: טוקנים מופיעים בזמן יצירתם
 - 🛡️ **טיפול שגיאות חזק**: התמודדות והתאוששות בצורה חלקה
 - 🎨 **ממשק מודרני**: ממשק צ'אט מקצועי מוכן לשימוש
-- 🔧 **הגדרה גמישה**: משתני סביבה וזיהוי אוטומטי
+- 🔧 **תצורה גמישה**: משתני סביבה וזיהוי אוטומטי
 - 📱 **עיצוב רספונסיבי**: עובד על מחשבים שולחניים ומכשירים ניידים
 
 **התחלה מהירה:**
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -145,7 +145,7 @@ set BASE_URL=http://localhost:51211
 set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
-  
+
 ### הדגמת WebGPU בדפדפן
 
 **תכונות:**
@@ -153,15 +153,15 @@ chainlit run samples\04\app.py -w --port 8080
 - ⚡ **האצת WebGPU**: האצת חומרה כאשר זמינה
 - 🔒 **פרטיות מרבית**: הנתונים לעולם לא עוזבים את המכשיר שלך
 - 🎯 **ללא התקנה**: עובד בכל דפדפן תואם
-- 🔄 **התאוששות חלקה**: נופל חזרה ל-CPU אם WebGPU אינו זמין
+- 🔄 **התמודדות חלקה**: נופל ל-CPU אם WebGPU אינו זמין
 
-**הרצה:**
+**הפעלה:**
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
 # Open http://localhost:5173
 ```
-  
+
 ### אינטגרציה עם Open WebUI
 
 **תכונות:**
@@ -169,7 +169,7 @@ python -m http.server 5173
 - 👥 **תמיכה בריבוי משתמשים**: חשבונות משתמשים והיסטוריית שיחות
 - 📁 **עיבוד קבצים**: העלאה וניתוח מסמכים
 - 🔄 **מעבר בין מודלים**: מעבר קל בין מודלים שונים
-- 🐳 **פריסת Docker**: הגדרה מוכנה לייצור במיכלים
+- 🐳 **פריסה עם Docker**: הגדרה מוכנה לייצור במיכלים
 
 **הגדרה מהירה:**
 ```cmd
@@ -178,15 +178,15 @@ docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_KEY=foundry-local-key \
   ghcr.io/open-webui/open-webui:main
 ```
-  
+
 ## הפניה להגדרות
 
 ### משתני סביבה
 
 | משתנה | תיאור | ברירת מחדל | דוגמה |
 |-------|-------|------------|-------|
-| `MODEL` | כינוי המודל לשימוש | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | נקודת קצה של Foundry Local | מזוהה אוטומטית | `http://localhost:51211` |
+| `MODEL` | כינוי המודל לשימוש | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | נקודת קצה של Foundry Local | זיהוי אוטומטי | `http://localhost:51211` |
 | `API_KEY` | מפתח API (אופציונלי למקומי) | `""` | `your-api-key` |
 
 ## פתרון בעיות
@@ -204,7 +204,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Validate API endpoint (note: port 51211)
    curl http://localhost:51211/v1/models
    ```
-  
+
 2. **התנגשויות פורטים:**
    ```cmd
    # Check what's using port 8080
@@ -213,7 +213,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Use different port if needed
    chainlit run samples\04\app.py -w --port 3000
    ```
-  
+
 3. **בעיות בסביבת Python:**
    ```cmd
    # Verify correct interpreter in VS Code
@@ -223,19 +223,19 @@ docker run -d --name open-webui -p 3000:8080 \
    # Reinstall dependencies
    pip install -r requirements.txt
    ```
-  
+
 **הדגמת WebGPU:**
 
 1. **WebGPU לא נתמך:**
    - עדכון ל-Chrome/Edge גרסה 113+
    - הפעלת WebGPU: `chrome://flags/#enable-unsafe-webgpu`
    - בדיקת מצב GPU: `chrome://gpu`
-   - ההדגמה תיפול אוטומטית ל-CPU
+   - ההדגמה תעבור אוטומטית ל-CPU
 
 2. **שגיאות טעינת מודל:**
    - ודא חיבור לאינטרנט להורדת מודלים
    - בדוק את קונסולת הדפדפן לשגיאות CORS
-   - ודא שאתה משרת דרך HTTP (ולא file://)
+   - ודא שאתה משרת דרך HTTP (לא file://)
 
 **Open WebUI:**
 
@@ -250,7 +250,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # View container logs
    docker logs open-webui
    ```
-  
+
 2. **מודלים לא מופיעים:**
    ```cmd
    # Verify Foundry Local endpoint
@@ -259,7 +259,7 @@ docker run -d --name open-webui -p 3000:8080 \
    # Restart Open WebUI
    docker restart open-webui
    ```
-  
+
 ### רשימת בדיקות אימות
 
 ```cmd
@@ -279,7 +279,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test WebGPU demo at localhost:5173
 # Test Open WebUI at localhost:3000
 ```
-  
+
 ## שימוש מתקדם
 
 ### אופטימיזציית ביצועים
@@ -300,7 +300,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - השתמש בנפחים מתמשכים להיסטוריית שיחות
 - הגדר מגבלות משאבים למיכל Docker
 - יישם אסטרטגיות גיבוי לנתוני משתמשים
-- הגדר reverse proxy לסיום SSL
+- הגדר פרוקסי הפוך לסיום SSL
 
 ### דפוסי אינטגרציה
 
@@ -315,7 +315,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
     else:
         return await foundry_local_completion(prompt)  # Default local
 ```
-  
+
 **צינור רב-מודלי:**
 ```python
 # Combine different AI capabilities
@@ -332,7 +332,7 @@ async def analyze_document(file_path: str):
     
     return summary
 ```
-  
+
 ## פריסה לייצור
 
 ### שיקולי אבטחה
@@ -341,12 +341,12 @@ async def analyze_document(file_path: str):
 - **רשת**: השתמש ב-HTTPS בייצור, שקול VPN לגישה צוותית
 - **בקרת גישה**: יישם אימות עבור Open WebUI
 - **פרטיות נתונים**: בדוק אילו נתונים נשארים מקומיים ואילו עוברים לענן
-- **עדכונים**: שמור את Foundry Local ואת המיכלים מעודכנים
+- **עדכונים**: שמור את Foundry Local והמיכלים מעודכנים
 
 ### ניטור ותחזוקה
 
 - **בדיקות בריאות**: יישם ניטור נקודות קצה
-- **לוגים**: רכז לוגים מכל הרכיבים
+- **רישום**: רכז לוגים מכל הרכיבים
 - **מדדים**: עקוב אחר זמני תגובה, שיעורי שגיאות ושימוש במשאבים
 - **גיבוי**: גיבוי קבוע של נתוני שיחות והגדרות
 
@@ -362,7 +362,7 @@ async def analyze_document(file_path: str):
 - [`app.py`](../../../../../Module08/samples/04/app.py) - אפליקציית Chainlit לייצור
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - מחברת לימודית
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - הסקת AI מבוססת דפדפן
-- [`open-webui-guide.md`](./open-webui-guide.md) - הגדרה מלאה של Open WebUI
+- [`open-webui-guide.md`](./open-webui-guide.md) - הגדרת Open WebUI מלאה
 
 ### דוגמאות קשורות
 - [תיעוד מושב 4](../../04.CuttingEdgeModels.md) - מדריך מושב מלא
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**כתב ויתור**:  
+מסמך זה תורגם באמצעות שירות תרגום מבוסס בינה מלאכותית [Co-op Translator](https://github.com/Azure/co-op-translator). למרות שאנו שואפים לדיוק, יש לקחת בחשבון שתרגומים אוטומטיים עשויים להכיל שגיאות או אי דיוקים. המסמך המקורי בשפתו המקורית צריך להיחשב כמקור סמכותי. עבור מידע קריטי, מומלץ להשתמש בתרגום מקצועי על ידי אדם. איננו נושאים באחריות לאי הבנות או לפרשנויות שגויות הנובעות משימוש בתרגום זה.

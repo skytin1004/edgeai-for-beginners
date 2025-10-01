@@ -1,13 +1,13 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:54:17+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T01:12:13+00:00",
   "source_file": "Module08/README.md",
   "language_code": "hu"
 }
 -->
-# Modul 08: Gyakorlati munka a Microsoft Foundry Local - Teljes fejlesztői eszközkészlettel
+# Modul 08: Gyakorlati munka a Microsoft Foundry Local eszközkészlettel
 
 ## Áttekintés
 
@@ -26,9 +26,9 @@ A modul elvégzésével:
 
 - **Elsajátítod a Foundry Local használatát**: Telepítés, konfigurálás és optimalizálás Windows 11 fejlesztéshez
 - **Különféle modelleket telepítesz**: Phi, Qwen, Deepseek és GPT modellek futtatása helyben CLI parancsokkal
-- **Termelési megoldásokat építesz**: AI alkalmazások létrehozása fejlett prompt engineering és adatintegráció segítségével
-- **Nyílt forráskódú ökoszisztéma kihasználása**: Hugging Face modellek és közösségi hozzájárulások integrálása
-- **AI ügynököket fejlesztesz**: Intelligens ügynökök építése grounding és orchestration képességekkel
+- **Termelési megoldásokat építesz**: AI alkalmazások létrehozása fejlett prompttervezéssel és adatintegrációval
+- **Nyílt forráskódú ökoszisztéma használata**: Hugging Face modellek és közösségi hozzájárulások integrálása
+- **AI ügynököket fejlesztesz**: Intelligens ügynökök építése alapozási és orkestrációs képességekkel
 - **Vállalati minták megvalósítása**: Moduláris, skálázható AI megoldások létrehozása termelési telepítéshez
 
 ## Foglalkozások felépítése
@@ -36,18 +36,18 @@ A modul elvégzésével:
 ### [1: Bevezetés a Foundry Local használatába](./01.FoundryLocalSetup.md)
 **Fókusz**: Telepítés, CLI beállítás, modelltelepítés és hardveroptimalizálás
 
-**Kulcstémák**: Teljes telepítés • CLI parancsok • Modellgyorsítótár • Hardvergyorsítás • Több modell telepítése
+**Kulcstémák**: Teljes telepítés • CLI parancsok • Modellgyorsítótár • Hardvergyorsítás • Többmodell telepítés
 
-**Minta**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integráció](./samples/02/README.md) • [Modellfelfedezés és benchmarking](./samples/03/README.md)
+**Minta**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK integráció](./samples/02/README.md) • [Modellfelfedezés és benchmarking](./samples/03/README.md)
 
 **Időtartam**: 2-3 óra | **Szint**: Kezdő
 
 ---
 
 ### [2: AI megoldások építése az Azure AI Foundry-val](./02.AzureAIFoundryIntegration.md)
-**Fókusz**: Fejlett prompt engineering, adatintegráció és felhőkapcsolat
+**Fókusz**: Fejlett prompttervezés, adatintegráció és felhőkapcsolat
 
-**Kulcstémák**: Prompt engineering • Adatintegráció • Azure munkafolyamatok • Teljesítményoptimalizálás • Monitoring
+**Kulcstémák**: Prompttervezés • Adatintegráció • Azure munkafolyamatok • Teljesítményoptimalizálás • Monitorozás
 
 **Minta**: [Chainlit RAG alkalmazás](./samples/04/README.md)
 
@@ -58,9 +58,9 @@ A modul elvégzésével:
 ### [3: Nyílt forráskódú modellek Foundry Local-ban](./03.OpenSourceModels.md)
 **Fókusz**: Hugging Face integráció, BYOM stratégiák és közösségi modellek
 
-**Kulcstémák**: HuggingFace integráció • Saját modell behozatala • Model Mondays betekintések • Közösségi hozzájárulások • Modellválasztás
+**Kulcstémák**: Hugging Face integráció • Saját modellek használata • Model Mondays betekintések • Közösségi hozzájárulások • Modellválasztás
 
-**Minta**: [Több ügynökös orchestration](./samples/05/README.md)
+**Minta**: [Többügynökös orkestráció](./samples/05/README.md)
 
 **Időtartam**: 2-3 óra | **Szint**: Középhaladó
 
@@ -78,11 +78,11 @@ A modul elvégzésével:
 ---
 
 ### [5: AI-alapú ügynökök gyors építése](./05.AIPoweredAgents.md)
-**Fókusz**: Ügynök architektúrák, rendszerpromptok, grounding és orchestration
+**Fókusz**: Ügynökarchitektúrák, rendszerpromptok, alapozás és orkestráció
 
-**Kulcstémák**: Ügynök tervezési minták • Rendszerprompt engineering • Grounding technikák • Több ügynökös rendszerek • Termelési telepítés
+**Kulcstémák**: Ügynöktervezési minták • Rendszerprompttervezés • Alapozási technikák • Többügynökös rendszerek • Termelési telepítés
 
-**Minta**: [Több ügynökös orchestration](./samples/05/README.md) • [Fejlett több ügynökös rendszer](./samples/09/README.md)
+**Minta**: [Többügynökös orkestráció](./samples/05/README.md) • [Fejlett többügynökös rendszer](./samples/09/README.md)
 
 **Időtartam**: 3-4 óra | **Szint**: Haladó
 
@@ -102,7 +102,7 @@ A modul elvégzésével:
 ### [7: Közvetlen API integrációs minták](./samples/07/README.md)
 **Fókusz**: Tiszta REST API integráció SDK függőségek nélkül a maximális kontroll érdekében
 
-**Kulcstémák**: HTTP kliens megvalósítás • Egyedi hitelesítés • Modell egészségügyi monitoring • Streaming válaszok • Termelési hibakezelés
+**Kulcstémák**: HTTP kliens megvalósítás • Egyedi hitelesítés • Modell egészségmonitorozás • Streaming válaszok • Termelési hibakezelés
 
 **Minta**: [Közvetlen API kliens](./samples/07/README.md)
 
@@ -121,12 +121,12 @@ A modul elvégzésével:
 
 ---
 
-### [9: Fejlett több ügynökös orchestration](./samples/09/README.md)
+### [9: Fejlett többügynökös orkestráció](./samples/09/README.md)
 **Fókusz**: Összetett ügynökkoordináció, specializált feladatdelegálás és együttműködő AI munkafolyamatok
 
-**Kulcstémák**: Intelligens ügynökkoordináció • Funkcióhívási minták • Ügynökök közötti kommunikáció • Munkafolyamat orchestration • Minőségbiztosítási mechanizmusok
+**Kulcstémák**: Intelligens ügynökkoordináció • Funkcióhívási minták • Ügynökök közötti kommunikáció • Munkafolyamat-orkestráció • Minőségbiztosítási mechanizmusok
 
-**Minta**: [Fejlett több ügynökös rendszer](./samples/09/README.md)
+**Minta**: [Fejlett többügynökös rendszer](./samples/09/README.md)
 
 **Időtartam**: 4-5 óra | **Szint**: Szakértő
 
@@ -159,10 +159,10 @@ A modul elvégzésével:
 
 ### Tudás előfeltételek
 - AI/ML alapfogalmak alapvető ismerete
-- Parancssori ismeretek
+- Parancssoros ismeretek
 - Python programozási alapok
 - REST API fogalmak
-- Prompting és modellkövetkeztetés alapvető ismerete
+- Prompttervezés és modellkövetkeztetés alapvető ismerete
 
 ## Modul idővonala
 
@@ -170,87 +170,87 @@ A modul elvégzésével:
 
 | Foglalkozás | Fókuszterület | Minták | Idő | Bonyolultság |
 |-------------|---------------|--------|-----|--------------|
-|  1 | Beállítás és alapok | 01, 02, 03 | 2-3 óra | Kezdő |
+|  1 | Telepítés és alapok | 01, 02, 03 | 2-3 óra | Kezdő |
 |  2 | AI megoldások | 04 | 2-3 óra | Középhaladó |
 |  3 | Nyílt forráskód | 05 | 2-3 óra | Középhaladó |
 |  4 | Fejlett modellek | 06 | 3-4 óra | Haladó |
 |  5 | AI ügynökök | 05, 09 | 3-4 óra | Haladó |
 |  6 | Vállalati eszközök | 06, 10 | 3-4 óra | Szakértő |
 |  7 | Közvetlen API integráció | 07 | 2-3 óra | Középhaladó |
-|  8 | Windows 11 Chat alkalmazás | 08 | 3-4 óra | Haladó |
-|  9 | Fejlett több ügynökös | 09 | 4-5 óra | Szakértő |
+|  8 | Windows 11 chat alkalmazás | 08 | 3-4 óra | Haladó |
+|  9 | Fejlett többügynökös | 09 | 4-5 óra | Szakértő |
 | 10 | Eszközkeretrendszer | 10 | 4-5 óra | Szakértő |
 
 ## Kulcsfontosságú források
 
 **Hivatalos dokumentáció:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Forráskód és hivatalos minták
-- [Azure AI Foundry Dokumentáció](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Teljes beállítási és használati útmutató
-- [Model Mondays sorozat](https://aka.ms/model-mondays) - Heti modellkiemelések és oktatóanyagok
+- [Azure AI Foundry dokumentáció](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Teljes telepítési és használati útmutató
+- [Model Mondays sorozat](https://aka.ms/model-mondays) - Heti modellbemutatók és oktatóanyagok
 
 **Közösség és támogatás:**
-- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Közösségi Q&A és funkciókérések
-- [Microsoft AI Fejlesztői Közösség](https://techcommunity.microsoft.com/category/artificialintelligence) - Legfrissebb hírek és legjobb gyakorlatok
+- [Foundry Local viták](https://github.com/microsoft/Foundry-Local/discussions) - Közösségi kérdések és funkciókérések
+- [Microsoft AI fejlesztői közösség](https://techcommunity.microsoft.com/category/artificialintelligence) - Legfrissebb hírek és legjobb gyakorlatok
 
 ## Tanulási eredmények
 
-A modul elvégzése után képes leszel:
+A modul elvégzésével képes leszel:
 
 ### Technikai jártasság
 - **Telepítés és kezelés**: Foundry Local telepítése és kezelése fejlesztési és termelési környezetekben
 - **Modellek integrálása**: Különféle modellcsaládok zökkenőmentes használata Microsofttól, Hugging Face-től és közösségi forrásokból
 - **Alkalmazások építése**: Termelésre kész AI alkalmazások létrehozása fejlett funkciókkal és optimalizálásokkal
-- **Ügynökök fejlesztése**: Összetett AI ügynökök megvalósítása grounding, érvelés és eszközintegrációval
+- **Ügynökök fejlesztése**: Összetett AI ügynökök megvalósítása alapozással, érveléssel és eszközintegrációval
 
 ### Stratégiai megértés
-- **Architektúra döntések**: Tájékozott választások helyi vs felhő telepítés között
+- **Architektúra döntések**: Tájékozott választás helyi és felhő telepítés között
 - **Teljesítményoptimalizálás**: Következtetési teljesítmény optimalizálása különböző hardverkonfigurációkban
-- **Vállalati skálázás**: Olyan alkalmazások tervezése, amelyek helyi prototípusoktól vállalati telepítésekig skálázhatók
+- **Vállalati skálázás**: Alkalmazások tervezése, amelyek helyi prototípusoktól vállalati telepítésekig skálázhatók
 - **Adatvédelem és biztonság**: Adatvédelmet biztosító AI megoldások megvalósítása helyi következtetéssel
 
 ### Innovációs képességek
-- **Gyors prototípus készítés**: AI alkalmazás koncepciók gyors építése és tesztelése mind a 10 mintázat alapján
-- **Közösségi integráció**: Nyílt forráskódú modellek kihasználása és hozzájárulás az ökoszisztémához
+- **Gyors prototípusépítés**: AI alkalmazás koncepciók gyors építése és tesztelése mind a 10 mintázat alapján
+- **Közösségi integráció**: Nyílt forráskódú modellek használata és hozzájárulás az ökoszisztémához
 - **Fejlett minták**: Legmodernebb AI minták megvalósítása, beleértve a RAG-et, ügynököket és eszközintegrációt
-- **Keretrendszer jártasság**: Szakértő szintű integráció LangChain, Semantic Kernel, Chainlit és Electron keretrendszerekkel
+- **Keretrendszer jártasság**: Szakértő szintű integráció LangChain, Semantic Kernel, Chainlit és Electron eszközökkel
 - **Termelési telepítés**: Skálázható AI megoldások telepítése helyi prototípusoktól vállalati rendszerekig
-- **Jövőre kész fejlesztés**: Olyan alkalmazások építése, amelyek készen állnak a feltörekvő AI technológiákra és mintákra
+- **Jövőálló fejlesztés**: Alkalmazások építése, amelyek készen állnak a feltörekvő AI technológiákra és mintákra
 
 ## Kezdés
 
-1. **Környezet beállítása**: Biztosítsd a Windows 11-et ajánlott hardverrel (lásd Előfeltételek)
+1. **Környezet beállítása**: Biztosítsd a Windows 11-et az ajánlott hardverrel (lásd: Előfeltételek)
 2. **Foundry Local telepítése**: Kövesd az 1. foglalkozást a teljes telepítéshez és konfigurációhoz
 3. **Futtasd az 01-es mintát**: Kezdd az alapvető REST API integrációval a beállítás ellenőrzéséhez
 4. **Haladj végig a mintákon**: Teljesítsd az 01-10 mintákat az átfogó jártasság érdekében
 
 ## Sikerességi mutatók
 
-Kövesd nyomon az előrehaladásodat mind a 10 átfogó mintán keresztül:
+Kövesd nyomon a haladásodat mind a 10 átfogó mintán keresztül:
 
-### Alap szint (Minták 01-03)
+### Alapozási szint (Minták 01-03)
 - [ ] Sikeresen telepítetted és konfiguráltad a Foundry Local-t
-- [ ] REST API integrációt végeztél (01-es minta)
-- [ ] OpenAI SDK kompatibilitást valósítottál meg (02-es minta)
-- [ ] Modellfelfedezést és benchmarkingot végeztél (03-as minta)
+- [ ] REST API integráció befejezése (01-es minta)
+- [ ] OpenAI SDK kompatibilitás megvalósítása (02-es minta)
+- [ ] Modellfelfedezés és benchmarking végrehajtása (03-as minta)
 
 ### Alkalmazási szint (Minták 04-06)
-- [ ] Legalább 4 különböző modellcsaládot telepítettél és futtattál
-- [ ] Működőképes RAG chat alkalmazást építettél (04-es minta)
-- [ ] Több ügynökös orchestration rendszert hoztál létre (05-ös minta)
-- [ ] Intelligens modellirányítást valósítottál meg (06-os minta)
+- [ ] Legalább 4 különböző modellcsalád telepítése és futtatása
+- [ ] Funkcionális RAG chat alkalmazás építése (04-es minta)
+- [ ] Többügynökös orkestrációs rendszer létrehozása (05-ös minta)
+- [ ] Intelligens modellirányító megvalósítása (06-os minta)
 
 ### Fejlett integrációs szint (Minták 07-10)
-- [ ] Termelésre kész API klienst építettél (07-es minta)
-- [ ] Windows 11 natív chat alkalmazást fejlesztettél (08-as minta)
-- [ ] Fejlett több ügynökös rendszert valósítottál meg (09-es minta)
-- [ ] Átfogó eszközkeretrendszert hoztál létre (10-es minta)
+- [ ] Termelésre kész API kliens építése (07-es minta)
+- [ ] Windows 11 natív chat alkalmazás fejlesztése (08-as minta)
+- [ ] Fejlett többügynökös rendszer megvalósítása (09-es minta)
+- [ ] Átfogó eszközkeretrendszer létrehozása (10-es minta)
 
 ### Jártassági mutatók
-- [ ] Sikeresen futtattad mind a 10 mintát hibák nélkül
-- [ ] Legalább 3 mintát testreszabottál specifikus felhasználási esetekhez
-- [ ] Legalább 2 mintát telepítettél termelési környezetben
-- [ ] Javításokat vagy bővítéseket adtál hozzá a mintakódhoz
-- [ ] Foundry Local mintákat integráltál személyes/professzionális projektekbe
+- [ ] Mind a 10 minta hibamentes futtatása
+- [ ] Legalább 3 minta testreszabása specifikus felhasználási esetekhez
+- [ ] 2+ minta telepítése termelési környezetben
+- [ ] Javítások vagy bővítések hozzájárulása a mintakódhoz
+- [ ] Foundry Local minták integrálása személyes/professzionális projektekbe
 
 ## Gyors kezdési útmutató - Mind a 10 minta
 
@@ -275,7 +275,7 @@ foundry --version
 foundry model list
 ```
 
-### Alapvető minták (01-06)
+### Alapozási minták (01-06)
 
 **01-es minta: REST Chat Quickstart**
 ```powershell
@@ -286,8 +286,16 @@ foundry model run phi-4-mini
 python samples/01/chat_quickstart.py
 ```
 
-**02-es minta: OpenAI SDK Integráció**
+**02-es minta: OpenAI SDK integráció**
+```powershell
+# Ensure model is running
+foundry status
 
+# Run SDK demo
+python samples/02/sdk_quickstart.py
+```
+
+**03-as minta: Modellfelfedezés és benchmarking
 Ez a modul az élvonalbeli edge AI fejlesztést képviseli, ötvözve a Microsoft vállalati szintű eszközeit az open-source ökoszisztéma rugalmasságával és innovációjával. Ha elsajátítod a Foundry Local használatát mind a 10 átfogó mintán keresztül, az AI alkalmazásfejlesztés élvonalába kerülsz.
 
 **Teljes tanulási útvonal:**
@@ -299,3 +307,5 @@ Az Azure OpenAI integrációhoz (2. szekció) tekintsd meg az egyes minták READ
 
 ---
 
+**Felelősség kizárása**:  
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

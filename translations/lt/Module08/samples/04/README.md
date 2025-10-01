@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T02:44:10+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T02:01:38+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "lt"
 }
@@ -76,8 +76,8 @@ Atidaroma adresu: `http://localhost:3000`
 
 | Technologija | Naudojimo atvejis | Privalumai | Trūkumai |
 |--------------|-------------------|------------|----------|
-| **Chainlit** | Python programuotojams, greitas prototipavimas | Lengvas nustatymas, srautinė parama | Tik Python |
-| **WebGPU** | Maksimalus privatumas, neprisijungus | Naršyklės integracija, nereikia serverio | Ribotas modelio dydis |
+| **Chainlit** | Python programuotojams, greitas prototipų kūrimas | Lengvas nustatymas, srautinio palaikymas | Tik Python |
+| **WebGPU** | Maksimalus privatumas, neprisijungimo scenarijai | Naršyklės integracija, nereikia serverio | Ribotas modelio dydis |
 | **Open WebUI** | Produkcijos diegimas, komandos | Profesionali sąsaja, vartotojų valdymas | Reikalingas Docker |
 
 ## Reikalavimai
@@ -88,7 +88,7 @@ Atidaroma adresu: `http://localhost:3000`
 - **Naršyklė**: Chrome/Edge su WebGPU palaikymu demonstracijoms
 - **Docker**: Open WebUI (neprivaloma)
 
-## Diegimas ir nustatymas
+## Įdiegimas ir nustatymas
 
 ### 1. Python aplinkos nustatymas
 
@@ -126,7 +126,7 @@ foundry service ps
 
 **Funkcijos:**
 - 🚀 **Realaus laiko srautas**: Žodžiai rodomi, kai jie generuojami
-- 🛡️ **Patikima klaidų tvarkyba**: Sklandus veikimas ir atkūrimas
+- 🛡️ **Patikimas klaidų tvarkymas**: Sklandus veikimo atkūrimas
 - 🎨 **Moderni sąsaja**: Profesionali pokalbių sąsaja iš karto
 - 🔧 **Lankstus konfigūravimas**: Aplinkos kintamieji ir automatinis aptikimas
 - 📱 **Prisitaikantis dizainas**: Veikia tiek kompiuteryje, tiek mobiliajame įrenginyje
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -151,8 +151,8 @@ chainlit run samples\04\app.py -w --port 8080
 **Funkcijos:**
 - 🌐 **AI naršyklėje**: Nereikia serverio, veikia tik naršyklėje
 - ⚡ **WebGPU pagreitinimas**: Aparatūros pagreitinimas, kai įmanoma
-- 🔒 **Maksimalus privatumas**: Duomenys niekada nepalieka įrenginio
-- 🎯 **Nereikia diegti**: Veikia bet kurioje suderinamoje naršyklėje
+- 🔒 **Maksimalus privatumas**: Duomenys niekada nepalieka jūsų įrenginio
+- 🎯 **Nereikia įdiegimo**: Veikia bet kurioje suderinamoje naršyklėje
 - 🔄 **Sklandus atsarginis variantas**: Pereina prie CPU, jei WebGPU nepasiekiamas
 
 **Paleidimas:**
@@ -168,7 +168,7 @@ python -m http.server 5173
 - 🎨 **ChatGPT tipo sąsaja**: Profesionali, pažįstama sąsaja
 - 👥 **Daugelio vartotojų palaikymas**: Vartotojų paskyros ir pokalbių istorija
 - 📁 **Failų apdorojimas**: Įkelkite ir analizuokite dokumentus
-- 🔄 **Modelių keitimas**: Lengvas perjungimas tarp skirtingų modelių
+- 🔄 **Modelių perjungimas**: Lengvas perėjimas tarp skirtingų modelių
 - 🐳 **Docker diegimas**: Produkcijai paruoštas konteinerizuotas nustatymas
 
 **Greitas nustatymas:**
@@ -185,8 +185,8 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Kintamasis | Aprašymas | Numatytasis | Pavyzdys |
 |------------|-----------|-------------|----------|
-| `MODEL` | Naudojamas modelio alias | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | Foundry Local adresas | Automatiškai aptinkamas | `http://localhost:51211` |
+| `MODEL` | Naudojamas modelio alias | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | Foundry Local galinis taškas | Automatiškai aptiktas | `http://localhost:51211` |
 | `API_KEY` | API raktas (neprivalomas vietiniam) | `""` | `your-api-key` |
 
 ## Trikčių šalinimas
@@ -229,7 +229,7 @@ docker run -d --name open-webui -p 3000:8080 \
 1. **WebGPU nepalaikoma:**
    - Atnaujinkite į Chrome/Edge 113+
    - Įjunkite WebGPU: `chrome://flags/#enable-unsafe-webgpu`
-   - Patikrinkite GPU statusą: `chrome://gpu`
+   - Patikrinkite GPU būseną: `chrome://gpu`
    - Demonstracija automatiškai pereis prie CPU
 
 2. **Modelio įkėlimo klaidos:**
@@ -285,22 +285,22 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 ### Našumo optimizavimas
 
 **Chainlit:**
-- Naudokite srautą geresniam našumo įspūdžiui
-- Įgyvendinkite ryšio telkinį dideliam vartotojų skaičiui
-- Talpinkite modelio atsakymus pakartotiniams užklausoms
+- Naudokite srautą, kad pagerintumėte suvokiamą našumą
+- Įgyvendinkite ryšio telkimą dideliam vartotojų skaičiui
+- Talpinkite modelio atsakymus pasikartojantiems užklausoms
 - Stebėkite atminties naudojimą su didelėmis pokalbių istorijomis
 
 **WebGPU:**
 - Naudokite WebGPU maksimaliai privatumui ir greičiui
 - Įgyvendinkite modelio kvantavimą mažesniems modeliams
 - Naudokite Web Workers foniniam apdorojimui
-- Talpinkite kompiliuotus modelius naršyklės saugykloje
+- Talpinkite sudarytus modelius naršyklės saugykloje
 
 **Open WebUI:**
-- Naudokite nuolatinius tomus pokalbių istorijai
-- Konfigūruokite resursų limitus Docker konteineriui
-- Įgyvendinkite duomenų atsargines kopijas
-- Nustatykite atvirkštinį proxy SSL užtikrinimui
+- Naudokite nuolatinius tūrius pokalbių istorijai
+- Konfigūruokite išteklių limitus Docker konteineriui
+- Įgyvendinkite atsarginių kopijų strategijas vartotojų duomenims
+- Nustatykite atvirkštinį proxy SSL užbaigimui
 
 ### Integracijos modeliai
 
@@ -340,14 +340,14 @@ async def analyze_document(file_path: str):
 - **API raktai**: Naudokite aplinkos kintamuosius, niekada nekoduokite
 - **Tinklas**: Naudokite HTTPS produkcijoje, apsvarstykite VPN komandos prieigai
 - **Prieigos kontrolė**: Įgyvendinkite autentifikaciją Open WebUI
-- **Duomenų privatumas**: Audituokite, kurie duomenys lieka vietiniai, o kurie keliauja į debesį
+- **Duomenų privatumas**: Audituokite, kokie duomenys lieka vietiniai, o kokie siunčiami į debesį
 - **Atnaujinimai**: Nuolat atnaujinkite Foundry Local ir konteinerius
 
 ### Stebėjimas ir priežiūra
 
-- **Sveikatos patikros**: Įgyvendinkite galinių taškų stebėjimą
+- **Sveikatos patikrinimai**: Įgyvendinkite galinių taškų stebėjimą
 - **Žurnalai**: Centralizuokite visų komponentų žurnalus
-- **Metrijos**: Stebėkite atsakymo laikus, klaidų dažnį, resursų naudojimą
+- **Metrai**: Stebėkite atsakymo laikus, klaidų dažnį, išteklių naudojimą
 - **Atsarginės kopijos**: Reguliariai kurkite pokalbių duomenų ir konfigūracijų atsargines kopijas
 
 ## Nuorodos ir ištekliai
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, atsiradusius dėl šio vertimo naudojimo.

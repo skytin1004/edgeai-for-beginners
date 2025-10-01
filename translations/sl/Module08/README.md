@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T19:02:52+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T01:42:34+00:00",
   "source_file": "Module08/README.md",
   "language_code": "sl"
 }
@@ -17,7 +17,7 @@ CO_OP_TRANSLATOR_METADATA:
 - Microsoft Foundry Local CLI in SDK
 - Integracija z Azure AI Foundry
 - Lokalna inferenca modelov
-- Predpomnjenje in optimizacija modelov na napravi
+- Lokalno predpomnjenje in optimizacija modelov
 - Arhitekture, ki temeljijo na agentih
 
 ## Cilji učenja
@@ -38,7 +38,7 @@ Z dokončanjem tega modula boste:
 
 **Ključne teme**: Popolna namestitev • Ukazi CLI • Predpomnjenje modelov • Pospeševanje strojne opreme • Uvajanje več modelov
 
-**Primer**: [REST Chat Quickstart](./samples/01/README.md) • [Integracija OpenAI SDK](./samples/02/README.md) • [Odkritje in primerjava modelov](./samples/03/README.md)
+**Primer**: [REST Chat Quickstart](./samples/01/README.md) • [OpenAI SDK Integration](./samples/02/README.md) • [Model Discovery & Benchmarking](./samples/03/README.md)
 
 **Trajanje**: 2-3 ure | **Raven**: Začetnik
 
@@ -49,7 +49,7 @@ Z dokončanjem tega modula boste:
 
 **Ključne teme**: Oblikovanje pozivov • Integracija podatkov • Azure delovni tokovi • Optimizacija zmogljivosti • Spremljanje
 
-**Primer**: [Chainlit RAG aplikacija](./samples/04/README.md)
+**Primer**: [Chainlit RAG Application](./samples/04/README.md)
 
 **Trajanje**: 2-3 ure | **Raven**: Srednje zahtevno
 
@@ -58,20 +58,20 @@ Z dokončanjem tega modula boste:
 ### [3: Odprtokodni modeli v Foundry Local](./03.OpenSourceModels.md)
 **Osredotočenost**: Integracija Hugging Face, strategije BYOM in modeli skupnosti
 
-**Ključne teme**: Integracija Hugging Face • Prinesi svoj model • Vpogledi Model Mondays • Prispevki skupnosti • Izbor modelov
+**Ključne teme**: Integracija HuggingFace • Prinesi svoj model (BYOM) • Vpogledi Model Mondays • Prispevki skupnosti • Izbor modelov
 
-**Primer**: [Orkestracija več agentov](./samples/05/README.md)
+**Primer**: [Multi-Agent Orchestration](./samples/05/README.md)
 
 **Trajanje**: 2-3 ure | **Raven**: Srednje zahtevno
 
 ---
 
-### [4: Raziskovanje naprednih modelov](./04.CuttingEdgeModels.md)
+### [4: Raziskovanje najsodobnejših modelov](./04.CuttingEdgeModels.md)
 **Osredotočenost**: Primerjava LLM proti SLM, implementacija EdgeAI in napredni prikazi
 
 **Ključne teme**: Primerjava modelov • Inferenca na robu proti oblaku • Phi + ONNX Runtime • Chainlit RAG aplikacija • Optimizacija WebGPU
 
-**Primer**: [Usmerjevalnik modelov kot orodij](./samples/06/README.md)
+**Primer**: [Models-as-Tools Router](./samples/06/README.md)
 
 **Trajanje**: 3-4 ure | **Raven**: Napredno
 
@@ -80,9 +80,9 @@ Z dokončanjem tega modula boste:
 ### [5: Hitro gradite AI-podprte agente](./05.AIPoweredAgents.md)
 **Osredotočenost**: Arhitekture agentov, sistemski pozivi, utemeljitev in orkestracija
 
-**Ključne teme**: Vzorci oblikovanja agentov • Oblikovanje sistemskih pozivov • Tehnike utemeljitve • Sistemi več agentov • Uvajanje v produkcijo
+**Ključne teme**: Vzorci oblikovanja agentov • Oblikovanje sistemskih pozivov • Tehnike utemeljitve • Sistemi z več agenti • Uvajanje v produkcijo
 
-**Primer**: [Orkestracija več agentov](./samples/05/README.md) • [Napreden sistem več agentov](./samples/09/README.md)
+**Primer**: [Multi-Agent Orchestration](./samples/05/README.md) • [Advanced Multi-Agent System](./samples/09/README.md)
 
 **Trajanje**: 3-4 ure | **Raven**: Napredno
 
@@ -93,7 +93,7 @@ Z dokončanjem tega modula boste:
 
 **Ključne teme**: Modeli kot orodja • Uvajanje na napravi • Integracija SDK/API • Arhitekture za podjetja • Strategije skaliranja
 
-**Primer**: [Usmerjevalnik modelov kot orodij](./samples/06/README.md) • [Okvir orodij Foundry](./samples/10/README.md)
+**Primer**: [Models-as-Tools Router](./samples/06/README.md) • [Foundry Tools Framework](./samples/10/README.md)
 
 **Trajanje**: 3-4 ure | **Raven**: Strokovno
 
@@ -102,9 +102,9 @@ Z dokončanjem tega modula boste:
 ### [7: Vzorci neposredne integracije API](./samples/07/README.md)
 **Osredotočenost**: Čista integracija REST API brez odvisnosti od SDK za maksimalen nadzor
 
-**Ključne teme**: Implementacija HTTP odjemalca • Prilagojena avtentikacija • Spremljanje zdravja modela • Pretakanje odgovorov • Upravljanje napak v produkciji
+**Ključne teme**: Implementacija HTTP odjemalca • Prilagojena avtentikacija • Spremljanje zdravja modelov • Pretakanje odgovorov • Upravljanje napak v produkciji
 
-**Primer**: [Neposreden API odjemalec](./samples/07/README.md)
+**Primer**: [Direct API Client](./samples/07/README.md)
 
 **Trajanje**: 2-3 ure | **Raven**: Srednje zahtevno
 
@@ -115,18 +115,18 @@ Z dokončanjem tega modula boste:
 
 **Ključne teme**: Razvoj z Electron • Fluent Design System • Domača integracija Windows • Pretakanje v realnem času • Oblikovanje vmesnika za klepet
 
-**Primer**: [Windows 11 aplikacija za klepet](./samples/08/README.md)
+**Primer**: [Windows 11 Chat Application](./samples/08/README.md)
 
 **Trajanje**: 3-4 ure | **Raven**: Napredno
 
 ---
 
 ### [9: Napredna orkestracija več agentov](./samples/09/README.md)
-**Osredotočenost**: Sofisticirana koordinacija agentov, specializirana dodelitev nalog in sodelovalni AI delovni tokovi
+**Osredotočenost**: Sofisticirana koordinacija agentov, specializirana delegacija nalog in sodelovalni AI delovni tokovi
 
 **Ključne teme**: Inteligentna koordinacija agentov • Vzorci klicanja funkcij • Komunikacija med agenti • Orkestracija delovnih tokov • Mehanizmi zagotavljanja kakovosti
 
-**Primer**: [Napreden sistem več agentov](./samples/09/README.md)
+**Primer**: [Advanced Multi-Agent System](./samples/09/README.md)
 
 **Trajanje**: 4-5 ur | **Raven**: Strokovno
 
@@ -137,7 +137,7 @@ Z dokončanjem tega modula boste:
 
 **Ključne teme**: Integracija LangChain • Funkcije Semantic Kernel • Okviri REST API • Orodja CLI • Integracija Jupyter • Vzorci uvajanja v produkcijo
 
-**Primer**: [Okvir orodij Foundry](./samples/10/README.md)
+**Primer**: [Foundry Tools Framework](./samples/10/README.md)
 
 **Trajanje**: 4-5 ur | **Raven**: Strokovno
 
@@ -146,9 +146,9 @@ Z dokončanjem tega modula boste:
 ### Zahteve sistema
 - **Operacijski sistem**: Windows 11 (22H2 ali novejši)
 - **Pomnilnik**: 16GB RAM (32GB priporočeno za večje modele)
-- **Shranjevanje**: 50GB prostega prostora za predpomnjenje modelov
+- **Shramba**: 50GB prostega prostora za predpomnjenje modelov
 - **Strojna oprema**: Priporočena naprava z NPU (Copilot+ PC), GPU opcijsko
-- **Omrežje**: Hitri internet za začetne prenose modelov
+- **Omrežje**: Hitra internetna povezava za začetne prenose modelov
 
 ### Razvojno okolje
 - Visual Studio Code z razširitvijo AI Toolkit
@@ -159,7 +159,7 @@ Z dokončanjem tega modula boste:
 
 ### Predhodno znanje
 - Osnovno razumevanje konceptov AI/ML
-- Poznavanje ukazne vrstice
+- Seznanjenost z ukazno vrstico
 - Osnove programiranja v Pythonu
 - Koncepti REST API
 - Osnovno znanje o oblikovanju pozivov in inferenci modelov
@@ -168,8 +168,8 @@ Z dokončanjem tega modula boste:
 
 **Skupni ocenjeni čas**: 30-38 ur
 
-| Seja | Osredotočenost | Primeri | Čas | Zahtevnost |
-|------|----------------|---------|-----|------------|
+| Seja | Področje | Primeri | Čas | Zahtevnost |
+|------|----------|---------|-----|------------|
 |  1 | Namestitev in osnove | 01, 02, 03 | 2-3 ure | Začetnik |
 |  2 | AI rešitve | 04 | 2-3 ure | Srednje zahtevno |
 |  3 | Odprtokodni modeli | 05 | 2-3 ure | Srednje zahtevno |
@@ -185,20 +185,20 @@ Z dokončanjem tega modula boste:
 
 **Uradna dokumentacija:**
 - [Microsoft Foundry Local GitHub](https://github.com/microsoft/Foundry-Local) - Izvorna koda in uradni primeri
-- [Dokumentacija Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Popoln vodič za nastavitev in uporabo
-- [Serija Model Mondays](https://aka.ms/model-mondays) - Tedenski poudarki modelov in vadnice
+- [Azure AI Foundry Dokumentacija](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) - Popoln vodič za namestitev in uporabo
+- [Model Mondays Series](https://aka.ms/model-mondays) - Tedenski poudarki modelov in vadnice
 
 **Skupnost in podpora:**
-- [Razprave o Foundry Local](https://github.com/microsoft/Foundry-Local/discussions) - Vprašanja in zahteve za funkcije skupnosti
+- [Foundry Local Discussions](https://github.com/microsoft/Foundry-Local/discussions) - Vprašanja in zahteve za funkcije skupnosti
 - [Microsoft AI Developer Community](https://techcommunity.microsoft.com/category/artificialintelligence) - Najnovejše novice in najboljše prakse
 
 ## Rezultati učenja
 
-Po dokončanju tega modula boste opremljeni za:
+Po dokončanju tega modula boste pripravljeni na:
 
 ### Tehnično obvladovanje
 - **Uvajanje in upravljanje**: Namestitve Foundry Local v razvojnih in produkcijskih okoljih
-- **Integracija modelov**: Brezhibno delo z različnimi družinami modelov iz Microsofta, Hugging Face in virov skupnosti
+- **Integracija modelov**: Brezhibno delo z različnimi družinami modelov iz Microsofta, Hugging Face in skupnosti
 - **Gradnja aplikacij**: Ustvarjanje produkcijsko pripravljenih AI aplikacij z naprednimi funkcijami in optimizacijami
 - **Razvoj agentov**: Implementacija sofisticiranih AI agentov z utemeljitvijo, sklepanjem in integracijo orodij
 
@@ -208,18 +208,18 @@ Po dokončanju tega modula boste opremljeni za:
 - **Skaliranje za podjetja**: Oblikovanje aplikacij, ki se skalirajo od lokalnih prototipov do uvajanja v podjetjih
 - **Zasebnost in varnost**: Implementacija rešitev AI, ki ohranjajo zasebnost z lokalno inferenco
 
-### Inovacijske zmožnosti
-- **Hitro prototipiranje**: Hitra gradnja in testiranje konceptov AI aplikacij po vseh 10 vzorcih
+### Inovacijske sposobnosti
+- **Hitro prototipiranje**: Hitro gradite in testirajte koncepte AI aplikacij po vseh 10 vzorčnih vzorcih
 - **Integracija skupnosti**: Izkoristite odprtokodne modele in prispevajte k ekosistemu
-- **Napredni vzorci**: Implementacija najnaprednejših AI vzorcev, vključno z RAG, agenti in integracijo orodij
+- **Napredni vzorci**: Implementacija najsodobnejših AI vzorcev, vključno z RAG, agenti in integracijo orodij
 - **Obvladovanje okvirov**: Strokovna integracija z LangChain, Semantic Kernel, Chainlit in Electron
 - **Uvajanje v produkcijo**: Uvajanje skalabilnih AI rešitev od lokalnih prototipov do sistemov za podjetja
-- **Razvoj za prihodnost**: Gradnja aplikacij, pripravljenih na nove tehnologije in vzorce AI
+- **Razvoj pripravljen na prihodnost**: Gradnja aplikacij, pripravljenih na nove tehnologije in vzorce AI
 
 ## Začetek
 
-1. **Nastavitev okolja**: Poskrbite za Windows 11 z priporočeno strojno opremo (glejte predpogoje)
-2. **Namestite Foundry Local**: Sledite seji 1 za popolno namestitev in konfiguracijo
+1. **Nastavitev okolja**: Zagotovite Windows 11 z priporočeno strojno opremo (glejte predpogoje)
+2. **Namestitev Foundry Local**: Sledite seji 1 za popolno namestitev in konfiguracijo
 3. **Zaženite primer 01**: Začnite z osnovno integracijo REST API za preverjanje nastavitve
 4. **Napredujte skozi primere**: Dokončajte primere 01-10 za celovito obvladovanje
 
@@ -231,7 +231,7 @@ Spremljajte svoj napredek skozi vseh 10 celovitih primerov:
 - [ ] Uspešno namestite in konfigurirajte Foundry Local
 - [ ] Dokončajte integracijo REST API (Primer 01)
 - [ ] Implementirajte združljivost z OpenAI SDK (Primer 02)
-- [ ] Izvedite odkritje in primerjavo modelov (Primer 03)
+- [ ] Izvedite odkrivanje modelov in primerjavo zmogljivosti (Primer 03)
 
 ### Raven aplikacij (Primeri 04-06)
 - [ ] Uvajajte in izvajajte vsaj 4 različne družine modelov
@@ -245,7 +245,7 @@ Spremljajte svoj napredek skozi vseh 10 celovitih primerov:
 - [ ] Implementirajte napreden sistem več agentov (Primer 09)
 - [ ] Ustvarite celovit okvir orodij (Primer 10)
 
-### Indikatorji obvladovanja
+### Kazalniki obvladovanja
 - [ ] Uspešno zaženite vseh 10 primerov brez napak
 - [ ] Prilagodite vsaj 3 primere za specifične primere uporabe
 - [ ] Uvajajte 2+ primera v produkcijsko podobna okolja
@@ -254,7 +254,7 @@ Spremljajte svoj napredek skozi vseh 10 celovitih primerov:
 
 ## Hiter vodič - Vsi 10 primerov
 
-### Nastavitev okolja (Zahtevano za vse primere)
+### Nastavitev okolja (zahtevano za vse primere)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -286,7 +286,7 @@ foundry model run phi-4-mini
 python samples/01/chat_quickstart.py
 ```
 
-**Primer 02: Integracija OpenAI SDK**
+**Primer 02: OpenAI SDK Integration**
 ```powershell
 # Ensure model is running
 foundry status
@@ -295,7 +295,7 @@ foundry status
 python samples/02/sdk_quickstart.py
 ```
 
-**Primer 03: Odkritje in primerjava modelov**
+**Primer 03: Model Discovery & Benchmarking**
 ```powershell
 # Run comprehensive model testing
 samples/03/list_and_bench.cmd
@@ -306,7 +306,7 @@ foundry model download qwen2.5-0.5b
 foundry model benchmark phi-4-mini
 ```
 
-**Primer 04: Chainlit RAG aplikacija**
+**Primer 04: Chainlit RAG Application**
 ```powershell
 # Install Chainlit dependencies
 pip install chainlit langchain chromadb
@@ -316,7 +316,7 @@ chainlit run samples/04/app.py -w
 # Opens browser at http://localhost:8000
 ```
 
-**Primer 05: Orkestracija več agentov**
+**Primer 05: Multi-Agent Orchestration**
 ```powershell
 # Run agent coordinator demo
 python -m samples.05.agents.coordinator
@@ -325,12 +325,12 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Primer 06: Usmerjevalnik modelov kot orodij**
+**Primer 06: Models-as-Tools Router**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -338,7 +338,7 @@ python samples/06/router.py "Analyze this Python code for performance issues"
 
 ### Napredni primeri (07-10)
 
-**Primer 07: Neposreden API odjemalec**
+**Primer 07: Direct API Client**
 ```powershell
 # Navigate to sample directory
 cd samples/07
@@ -356,7 +356,7 @@ python examples/streaming.py
 python examples/production.py
 ```
 
-**Primer 08: Windows 11 aplikacija za klepet**
+**Primer 08: Windows 11 Chat Application**
 ```powershell
 # Navigate to sample directory
 cd samples/08
@@ -371,7 +371,7 @@ npm start
 npm run build
 ```
 
-**Primer 09: Napreden sistem več agentov**
+**Primer 09: Advanced Multi-Agent System**
 ```powershell
 # Navigate to sample directory
 cd samples/09
@@ -389,7 +389,7 @@ python examples/complex_workflow.py
 python examples/interactive_demo.py
 ```
 
-**Primer 10: Okvir orodij Foundry**
+**Primer 10: Foundry Tools Framework**
 ```powershell
 # Navigate to sample directory
 cd samples/10
@@ -454,14 +454,16 @@ npm install
 ```
 
 ## Povzetek
-Ta modul predstavlja vrhunec razvoja robne umetne inteligence, saj združuje Microsoftova orodja na ravni podjetij s prilagodljivostjo in inovativnostjo odprtokodnega ekosistema. Z obvladovanjem Foundry Local skozi vseh 10 celovitih primerov boste na čelu razvoja aplikacij za umetno inteligenco.
+Ta modul predstavlja vrhunec razvoja robne umetne inteligence, saj združuje Microsoftova orodja na ravni podjetij s prilagodljivostjo in inovativnostjo odprtokodnega ekosistema. Z obvladovanjem Foundry Local skozi vseh 10 celovitih primerov boste na čelu razvoja aplikacij umetne inteligence.
 
 **Celotna učna pot:**
 - **Osnove** (Primeri 01-03): Integracija API-jev in upravljanje modelov
 - **Aplikacije** (Primeri 04-06): RAG, agenti in inteligentno usmerjanje
-- **Napredno** (Primeri 07-10): Proizvodni okvirji in integracija na ravni podjetij
+- **Napredno** (Primeri 07-10): Okviri za produkcijo in integracija na ravni podjetij
 
-Za integracijo z Azure OpenAI (Seja 2) si oglejte posamezne README datoteke primerov za potrebne okoljske spremenljivke in nastavitve različice API-ja.
+Za integracijo Azure OpenAI (Seja 2) si oglejte posamezne README datoteke primerov za potrebne okoljske spremenljivke in nastavitve različice API-ja.
 
 ---
 
+**Omejitev odgovornosti**:  
+Ta dokument je bil preveden z uporabo storitve za strojno prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem izvirnem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitne nesporazume ali napačne razlage, ki izhajajo iz uporabe tega prevoda.

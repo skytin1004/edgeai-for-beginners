@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T02:24:05+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:51:40+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "my"
 }
 -->
-# နမူနာ 04: Chainlit ဖြင့် Chat Application များကို ထုတ်လုပ်ခြင်း
+# နမူနာ 04: Chainlit ဖြင့် Chat Application ထုတ်လုပ်ခြင်း
 
-Microsoft Foundry Local ကို အသုံးပြု၍ ထုတ်လုပ်မှုအဆင့် chat application များကို တည်ဆောက်ရန် အမျိုးမျိုးသောနည်းလမ်းများကို ပြသထားသော နမူနာတစ်ခုဖြစ်ပြီး၊ ခေတ်မီ web interface များ၊ streaming response များနှင့် နောက်ဆုံးပေါ် browser နည်းပညာများပါဝင်သည်။
+Microsoft Foundry Local ကို အသုံးပြု၍ ထုတ်လုပ်မှုအဆင့် chat application များကို တည်ဆောက်ရန် နည်းလမ်းများကို ပြသထားသော နမူနာတစ်ခုဖြစ်ပြီး၊ ခေတ်မီ web interface များ၊ streaming response များနှင့် အဆင့်မြင့် browser နည်းပညာများပါဝင်သည်။
 
 ## ပါဝင်သောအရာများ
 
-- **🚀 Chainlit Chat App** (`app.py`): Streaming ပါဝင်သော ထုတ်လုပ်မှုအဆင့် chat application
-- **🌐 WebGPU Demo** (`webgpu-demo/`): Hardware acceleration ဖြင့် browser-based AI inference
-- **🎨 Open WebUI Integration** (`open-webui-guide.md`): ChatGPT နှင့်တူသော professional interface
+- **🚀 Chainlit Chat App** (`app.py`): ထုတ်လုပ်မှုအဆင့် chat application (streaming ပါဝင်သည်)
+- **🌐 WebGPU Demo** (`webgpu-demo/`): Browser-based AI inference (hardware acceleration ပါဝင်သည်)
+- **🎨 Open WebUI Integration** (`open-webui-guide.md`): ChatGPT နှင့် ဆင်တူသော professional interface
 - **📚 Educational Notebook** (`chainlit_app.ipynb`): Interactive learning materials
 
 ## အမြန်စတင်ရန်
@@ -61,29 +61,29 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ## Architecture Patterns
 
-### Local vs Cloud ဆုံးဖြတ်ချက် Matrix
+### Local နှင့် Cloud ရွေးချယ်မှု Matrix
 
-| အခြေအနေ | အကြံပြုချက် | အကြောင်းရင်း |
+| အခြေအနေ | အကြံပြုချက် | အကြောင်းပြချက် |
 |----------|----------------|--------|
-| **Privacy-Sensitive Data** | 🏠 Local (Foundry) | Data သည် device မှ မထွက်သွားပါ |
+| **Privacy-sensitive Data** | 🏠 Local (Foundry) | Data သည် device မှ မထွက်သွားပါ |
 | **Complex Reasoning** | ☁️ Cloud (Azure OpenAI) | Model အကြီးများကို အသုံးပြုနိုင်သည် |
 | **Real-time Chat** | 🏠 Local (Foundry) | Latency နည်းပြီး response မြန်သည် |
 | **Document Analysis** | 🔄 Hybrid | Extraction အတွက် Local၊ Analysis အတွက် Cloud |
-| **Code Generation** | 🏠 Local (Foundry) | Privacy + Specialized models |
+| **Code Generation** | 🏠 Local (Foundry) | Privacy + specialized models |
 | **Research Tasks** | ☁️ Cloud (Azure OpenAI) | ကျယ်ပြန့်သော knowledge base လိုအပ်သည် |
 
 ### နည်းပညာနှိုင်းယှဉ်မှု
 
 | နည်းပညာ | အသုံးပြုမှု | အကျိုးကျေးဇူး | အားနည်းချက် |
 |------------|----------|------|------|
-| **Chainlit** | Python developer များ၊ rapid prototyping | Setup လွယ်၊ streaming support | Python-only |
+| **Chainlit** | Python developer များ၊ rapid prototyping | Setup လွယ်ကူ၊ streaming support | Python-only |
 | **WebGPU** | Privacy အများဆုံး၊ offline scenarios | Browser-native၊ server မလိုအပ် | Model size ကနည်း |
 | **Open WebUI** | Production deployment၊ teams | Professional UI၊ user management | Docker လိုအပ် |
 
 ## လိုအပ်ချက်များ
 
 - **Foundry Local**: Install လုပ်ပြီး run လုပ်ထား ([Download](https://aka.ms/foundry-local-installer))
-- **Python**: 3.10+ နှင့် virtual environment
+- **Python**: 3.10+ (virtual environment ဖြင့်)
 - **Model**: အနည်းဆုံး model တစ်ခု load လုပ်ထား (`foundry model run phi-4-mini`)
 - **Browser**: WebGPU support ရှိသော Chrome/Edge
 - **Docker**: Open WebUI အတွက် (optional)
@@ -124,20 +124,20 @@ foundry service ps
 
 ### Chainlit Chat Application
 
-**Features:**
+**အင်္ဂါရပ်များ:**
 - 🚀 **Real-time Streaming**: Token များကို generate လုပ်သည့်အခါမှာပဲ ပြသသည်
 - 🛡️ **Robust Error Handling**: Error ဖြစ်ပါက recovery လွယ်ကူ
 - 🎨 **Modern UI**: Professional chat interface
 - 🔧 **Flexible Configuration**: Environment variables နှင့် auto-detection
 - 📱 **Responsive Design**: Desktop နှင့် mobile device များတွင် အလုပ်လုပ်သည်
 
-**Quick Start:**
+**အမြန်စတင်ရန်:**
 ```cmd
 # Run with default settings (recommended)
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -148,14 +148,14 @@ chainlit run samples\04\app.py -w --port 8080
 
 ### WebGPU Browser Demo
 
-**Features:**
+**အင်္ဂါရပ်များ:**
 - 🌐 **Browser-native AI**: Server မလိုအပ်၊ browser အတွင်း run လုပ်သည်
 - ⚡ **WebGPU Acceleration**: Hardware acceleration ရရှိနိုင်သည်
 - 🔒 **Maximum Privacy**: Data သည် device မှ မထွက်သွားပါ
 - 🎯 **Zero Install**: Compatible browser များတွင် အလုပ်လုပ်သည်
-- 🔄 **Graceful Fallback**: WebGPU မရရှိပါက CPU သို့ fallback
+- 🔄 **Graceful Fallback**: WebGPU မရရှိပါက CPU ကို fallback လုပ်သည်
 
-**Running:**
+**Run လုပ်ရန်:**
 ```cmd
 cd samples\04\webgpu-demo
 python -m http.server 5173
@@ -164,12 +164,12 @@ python -m http.server 5173
 
 ### Open WebUI Integration
 
-**Features:**
+**အင်္ဂါရပ်များ:**
 - 🎨 **ChatGPT-like Interface**: Professional၊ ရိုးရှင်းသော UI
 - 👥 **Multi-user Support**: User account များနှင့် conversation history
 - 📁 **File Processing**: Document များကို upload လုပ်ပြီး analysis
 - 🔄 **Model Switching**: Model များကို လွယ်ကူစွာ ပြောင်းနိုင်သည်
-- 🐳 **Docker Deployment**: Containerized setup
+- 🐳 **Docker Deployment**: Production-ready containerized setup
 
 **Quick Setup:**
 ```cmd
@@ -183,19 +183,19 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ### Environment Variables
 
-| Variable | Description | Default | Example |
+| Variable | ဖော်ပြချက် | Default | ဥပမာ |
 |----------|-------------|---------|----------|
-| `MODEL` | အသုံးပြုမည့် model alias | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | အသုံးပြုမည့် model alias | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local endpoint | Auto-detected | `http://localhost:51211` |
 | `API_KEY` | API key (optional for local) | `""` | `your-api-key` |
 
 ## Troubleshooting
 
-### Common Issues
+### အများဆုံးဖြစ်သောပြဿနာများ
 
 **Chainlit Application:**
 
-1. **Service not available:**
+1. **Service မရရှိနိုင်:**
    ```cmd
    # Check Foundry Local status
    foundry service status
@@ -214,7 +214,7 @@ docker run -d --name open-webui -p 3000:8080 \
    chainlit run samples\04\app.py -w --port 3000
    ```
 
-3. **Python environment issues:**
+3. **Python environment ပြဿနာများ:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -226,13 +226,13 @@ docker run -d --name open-webui -p 3000:8080 \
 
 **WebGPU Demo:**
 
-1. **WebGPU not supported:**
+1. **WebGPU မရရှိနိုင်:**
    - Chrome/Edge 113+ သို့ update လုပ်ပါ
    - WebGPU ကို enable လုပ်ပါ: `chrome://flags/#enable-unsafe-webgpu`
    - GPU status ကိုစစ်ပါ: `chrome://gpu`
-   - Demo သည် CPU သို့ automatic fallback လုပ်ပါမည်
+   - Demo သည် CPU ကို automatic fallback လုပ်ပါမည်
 
-2. **Model loading errors:**
+2. **Model loading error များ:**
    - Model download အတွက် internet connection ရှိကြောင်းသေချာပါ
    - Browser console တွင် CORS error များကိုစစ်ပါ
    - HTTP ဖြင့် serve လုပ်နေကြောင်း verify လုပ်ပါ (file:// မဟုတ်)
@@ -251,7 +251,7 @@ docker run -d --name open-webui -p 3000:8080 \
    docker logs open-webui
    ```
 
-2. **Models not appearing:**
+2. **Models မပေါ်လာ:**
    ```cmd
    # Verify Foundry Local endpoint
    curl http://localhost:51211/v1/models
@@ -285,14 +285,14 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 ### Performance Optimization
 
 **Chainlit:**
-- Streaming ကိုအသုံးပြု၍ performance ကိုတိုးတက်စေပါ
+- Streaming ကိုအသုံးပြု၍ perceived performance ကိုတိုးတက်စေပါ
 - High concurrency အတွက် connection pooling ကို implement လုပ်ပါ
-- Model response များကို cache လုပ်ပါ
+- Repeated queries အတွက် model response များကို cache လုပ်ပါ
 - Conversation history များကြီးလာပါက memory usage ကို monitor လုပ်ပါ
 
 **WebGPU:**
 - Privacy နှင့် speed အတွက် WebGPU ကိုအသုံးပြုပါ
-- Model size ကိုသေးစေရန် quantization ကို implement လုပ်ပါ
+- Model size ကိုသေးစေရန် model quantization ကို implement လုပ်ပါ
 - Background processing အတွက် Web Workers ကိုအသုံးပြုပါ
 - Browser storage တွင် compiled models များကို cache လုပ်ပါ
 
@@ -340,21 +340,21 @@ async def analyze_document(file_path: str):
 - **API Keys**: Environment variables ကိုအသုံးပြုပါ၊ hardcode မလုပ်ပါနှင့်
 - **Network**: Production တွင် HTTPS ကိုအသုံးပြုပါ၊ team access အတွက် VPN ကိုစဉ်းစားပါ
 - **Access Control**: Open WebUI အတွက် authentication ကို implement လုပ်ပါ
-- **Data Privacy**: Local နှင့် cloud သို့ data သွားလာမှုကို audit လုပ်ပါ
+- **Data Privacy**: Local နှင့် cloud သို့သွားသော data များကို audit လုပ်ပါ
 - **Updates**: Foundry Local နှင့် containers များကို update လုပ်ထားပါ
 
 ### Monitoring and Maintenance
 
 - **Health Checks**: Endpoint monitoring ကို implement လုပ်ပါ
-- **Logging**: Component များမှ logs များကို centralize လုပ်ပါ
-- **Metrics**: Response time၊ error rate၊ resource usage များကို track လုပ်ပါ
+- **Logging**: Component များမှ log များကို centralize လုပ်ပါ
+- **Metrics**: Response time, error rate, resource usage များကို track လုပ်ပါ
 - **Backup**: Conversation data နှင့် configuration များကို regular backup လုပ်ပါ
 
 ## References and Resources
 
 ### Documentation
 - [Chainlit Documentation](https://docs.chainlit.io/) - Framework guide အပြည့်အစုံ
-- [Foundry Local Documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Microsoft ရဲ့ official docs
+- [Foundry Local Documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Microsoft ရဲ့အတည်ပြုထားသော documentation
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - WebGPU integration
 - [Open WebUI Documentation](https://docs.openwebui.com/) - Advanced configuration
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**ဝက်ဘ်ဆိုက်မှတ်ချက်**:  
+ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှန်ကန်မှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက်ဘာသာပြန်ခြင်းတွင် အမှားများ သို့မဟုတ် မမှန်ကန်မှုများ ပါဝင်နိုင်သည်ကို ကျေးဇူးပြု၍ သတိပြုပါ။ မူလဘာသာစကားဖြင့် ရေးသားထားသော စာရွက်စာတမ်းကို အာဏာတည်သော ရင်းမြစ်အဖြစ် သတ်မှတ်ရန် လိုအပ်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူ့ဘာသာပြန်ပညာရှင်များကို အသုံးပြုရန် အကြံပြုပါသည်။ ဤဘာသာပြန်ကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော နားလည်မှုမှားများ သို့မဟုတ် အဓိပ္ပာယ်မှားများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။

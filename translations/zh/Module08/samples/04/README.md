@@ -1,22 +1,22 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T09:38:17+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-09-30T23:20:36+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "zh"
 }
 -->
 # 示例 04：使用 Chainlit 构建生产级聊天应用
 
-一个全面的示例，展示了使用 Microsoft Foundry Local 构建生产级聊天应用的多种方法，包括现代网页界面、流式响应以及先进的浏览器技术。
+一个全面的示例，展示了使用 Microsoft Foundry Local 构建生产级聊天应用的多种方法，包含现代化的网页界面、流式响应以及先进的浏览器技术。
 
 ## 包含内容
 
 - **🚀 Chainlit 聊天应用** (`app.py`)：支持流式响应的生产级聊天应用
 - **🌐 WebGPU 演示** (`webgpu-demo/`)：基于浏览器的 AI 推理，支持硬件加速
 - **🎨 Open WebUI 集成** (`open-webui-guide.md`)：专业的 ChatGPT 风格界面
-- **📚 教学笔记** (`chainlit_app.ipynb`)：交互式学习材料
+- **📚 教学笔记本** (`chainlit_app.ipynb`)：交互式学习材料
 
 ## 快速开始
 
@@ -63,8 +63,8 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ### 本地与云端决策矩阵
 
-| 场景 | 推荐方案 | 原因 |
-|------|----------|------|
+| 场景 | 推荐 | 原因 |
+|------|------|------|
 | **隐私敏感数据** | 🏠 本地 (Foundry) | 数据不会离开设备 |
 | **复杂推理** | ☁️ 云端 (Azure OpenAI) | 可访问更大的模型 |
 | **实时聊天** | 🏠 本地 (Foundry) | 更低延迟，更快响应 |
@@ -77,7 +77,7 @@ docker run -d --name open-webui -p 3000:8080 \
 | 技术 | 使用场景 | 优点 | 缺点 |
 |------|----------|------|------|
 | **Chainlit** | Python 开发者，快速原型设计 | 设置简单，支持流式响应 | 仅支持 Python |
-| **WebGPU** | 最大隐私，离线场景 | 浏览器原生，无需服务器 | 模型大小有限 |
+| **WebGPU** | 最大隐私，离线场景 | 原生浏览器，无需服务器 | 模型大小有限 |
 | **Open WebUI** | 生产部署，团队协作 | 专业界面，用户管理 | 需要 Docker |
 
 ## 前置条件
@@ -125,7 +125,7 @@ foundry service ps
 ### Chainlit 聊天应用
 
 **功能特点：**
-- 🚀 **实时流式响应**：生成的令牌即时显示
+- 🚀 **实时流式响应**：生成的 token 即时显示
 - 🛡️ **强大的错误处理**：优雅降级与恢复
 - 🎨 **现代化界面**：开箱即用的专业聊天界面
 - 🔧 **灵活配置**：支持环境变量与自动检测
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,11 +149,11 @@ chainlit run samples\04\app.py -w --port 8080
 ### WebGPU 浏览器演示
 
 **功能特点：**
-- 🌐 **浏览器原生 AI**：无需服务器，完全在浏览器中运行
+- 🌐 **原生浏览器 AI**：无需服务器，完全在浏览器中运行
 - ⚡ **WebGPU 加速**：支持硬件加速
 - 🔒 **最大隐私保护**：数据绝不会离开设备
 - 🎯 **零安装**：兼容的浏览器即可运行
-- 🔄 **优雅回退**：若 WebGPU 不可用，自动回退至 CPU
+- 🔄 **优雅回退**：WebGPU 不可用时自动切换到 CPU
 
 **运行方式：**
 ```cmd
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | 变量 | 描述 | 默认值 | 示例 |
 |------|------|--------|------|
-| `MODEL` | 使用的模型别名 | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | 使用的模型别名 | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local 端点 | 自动检测 | `http://localhost:51211` |
 | `API_KEY` | API 密钥（本地可选） | `""` | `your-api-key` |
 
@@ -227,14 +227,14 @@ docker run -d --name open-webui -p 3000:8080 \
 **WebGPU 演示：**
 
 1. **WebGPU 不支持：**
-   - 更新至 Chrome/Edge 113+
+   - 更新到 Chrome/Edge 113+
    - 启用 WebGPU：`chrome://flags/#enable-unsafe-webgpu`
    - 检查 GPU 状态：`chrome://gpu`
-   - 演示会自动回退至 CPU
+   - 演示会自动回退到 CPU
 
 2. **模型加载错误：**
    - 确保网络连接以下载模型
-   - 检查浏览器控制台是否有 CORS 错误
+   - 检查浏览器控制台中的 CORS 错误
    - 确保通过 HTTP 服务（而非 file://）
 
 **Open WebUI：**
@@ -298,7 +298,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Open WebUI：**
 - 使用持久卷保存会话历史
-- 配置 Docker 容器的资源限制
+- 为 Docker 容器配置资源限制
 - 实现用户数据的备份策略
 - 设置反向代理以支持 SSL 终止
 
@@ -340,7 +340,7 @@ async def analyze_document(file_path: str):
 - **API 密钥**：使用环境变量，切勿硬编码
 - **网络**：生产环境使用 HTTPS，团队访问可考虑 VPN
 - **访问控制**：为 Open WebUI 实现身份验证
-- **数据隐私**：审查哪些数据保留在本地，哪些发送至云端
+- **数据隐私**：审查哪些数据留在本地，哪些发送到云端
 - **更新**：保持 Foundry Local 和容器的最新版本
 
 ### 监控与维护
@@ -360,13 +360,15 @@ async def analyze_document(file_path: str):
 
 ### 示例文件
 - [`app.py`](../../../../../Module08/samples/04/app.py) - 生产级 Chainlit 应用
-- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - 教学笔记
+- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - 教学笔记本
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - 基于浏览器的 AI 推理
 - [`open-webui-guide.md`](./open-webui-guide.md) - 完整的 Open WebUI 设置指南
 
 ### 相关示例
-- [Session 4 文档](../../04.CuttingEdgeModels.md) - 完整的课程指南
+- [第 4 节文档](../../04.CuttingEdgeModels.md) - 完整课程指南
 - [Foundry Local 示例](https://github.com/microsoft/foundry-local/tree/main/samples) - 官方示例
 
 ---
 
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。

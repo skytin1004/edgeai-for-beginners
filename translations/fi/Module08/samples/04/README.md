@@ -1,20 +1,20 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T23:32:35+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:46:07+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "fi"
 }
 -->
-# Esimerkki 04: Tuotantovalmiit Chat-sovellukset Chainlitillä
+# Esimerkki 04: Tuotantovalmiit chat-sovellukset Chainlitillä
 
-Kattava esimerkki, joka esittelee useita lähestymistapoja tuotantovalmiiden chat-sovellusten rakentamiseen Microsoft Foundry Localin avulla. Mukana modernit verkkokäyttöliittymät, suoratoistovastaukset ja uusimmat selainteknologiat.
+Kattava esimerkki, joka esittelee useita lähestymistapoja tuotantovalmiiden chat-sovellusten rakentamiseen Microsoft Foundry Localin avulla. Mukana modernit verkkokäyttöliittymät, suoratoistovastaukset ja huippuluokan selainteknologiat.
 
-## Mitä sisältyy
+## Sisältö
 
 - **🚀 Chainlit Chat -sovellus** (`app.py`): Tuotantovalmiit chat-sovellukset suoratoistolla
-- **🌐 WebGPU-demo** (`webgpu-demo/`): Selaimessa toimiva tekoälylaskenta laitteistokiihdytyksellä
+- **🌐 WebGPU Demo** (`webgpu-demo/`): Selaimessa toimiva AI-päättely laitteistokiihdytyksellä
 - **🎨 Open WebUI -integraatio** (`open-webui-guide.md`): Ammattimainen ChatGPT-tyylinen käyttöliittymä
 - **📚 Opetuksellinen muistikirja** (`chainlit_app.ipynb`): Interaktiiviset oppimateriaalit
 
@@ -33,9 +33,9 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-Avaa osoitteessa: `http://localhost:8080`
+Avautuu osoitteessa: `http://localhost:8080`
 
-### 2. WebGPU-selain-demo
+### 2. WebGPU-selaindemo
 
 ```cmd
 # Navigate to WebGPU demo
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-Avaa osoitteessa: `http://localhost:5173`
+Avautuu osoitteessa: `http://localhost:5173`
 
 ### 3. Open WebUI -asennus
 
@@ -57,15 +57,15 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-Avaa osoitteessa: `http://localhost:3000`
+Avautuu osoitteessa: `http://localhost:3000`
 
 ## Arkkitehtuurimallit
 
-### Paikallinen vs. pilvipohjainen päätösmatriisi
+### Paikallinen vs pilvipohjainen päätösmatriisi
 
-| Tilanne | Suositus | Perustelu |
-|---------|----------|-----------|
-| **Yksityiset tiedot** | 🏠 Paikallinen (Foundry) | Tiedot eivät poistu laitteelta |
+| Tilanne | Suositus | Peruste |
+|---------|----------|---------|
+| **Tietosensitiiviset tiedot** | 🏠 Paikallinen (Foundry) | Tiedot eivät koskaan poistu laitteelta |
 | **Monimutkainen päättely** | ☁️ Pilvi (Azure OpenAI) | Pääsy suurempiin malleihin |
 | **Reaaliaikainen chat** | 🏠 Paikallinen (Foundry) | Alhaisempi viive, nopeammat vastaukset |
 | **Dokumenttianalyysi** | 🔄 Hybridi | Paikallinen tiedon poimintaan, pilvi analyysiin |
@@ -77,14 +77,14 @@ Avaa osoitteessa: `http://localhost:3000`
 | Teknologia | Käyttötapaus | Edut | Haitat |
 |------------|--------------|------|--------|
 | **Chainlit** | Python-kehittäjät, nopea prototyyppaus | Helppo asennus, suoratoistotuki | Vain Python |
-| **WebGPU** | Maksimaalinen yksityisyys, offline-tilanteet | Selaimen sisäinen, ei palvelinta | Rajoitettu mallikoko |
+| **WebGPU** | Maksimaalinen yksityisyys, offline-tilanteet | Selaimen oma, ei palvelinta tarvitaan | Rajoitettu mallikoko |
 | **Open WebUI** | Tuotantokäyttö, tiimit | Ammattimainen käyttöliittymä, käyttäjähallinta | Vaatii Dockerin |
 
 ## Esivaatimukset
 
 - **Foundry Local**: Asennettu ja käynnissä ([Lataa](https://aka.ms/foundry-local-installer))
 - **Python**: Versio 3.10+ virtuaaliympäristöllä
-- **Malli**: Ainakin yksi ladattu (`foundry model run phi-4-mini`)
+- **Malli**: Vähintään yksi ladattu (`foundry model run phi-4-mini`)
 - **Selain**: Chrome/Edge WebGPU-tuella demoja varten
 - **Docker**: Open WebUI:lle (valinnainen)
 
@@ -125,8 +125,8 @@ foundry service ps
 ### Chainlit Chat -sovellus
 
 **Ominaisuudet:**
-- 🚀 **Reaaliaikainen suoratoisto**: Tokenit näkyvät heti niiden luomisen jälkeen
-- 🛡️ **Vahva virheenkäsittely**: Joustava toiminta ja palautuminen
+- 🚀 **Reaaliaikainen suoratoisto**: Tokenit näkyvät niiden generoinnin aikana
+- 🛡️ **Vahva virheenkäsittely**: Sulava heikentyminen ja palautuminen
 - 🎨 **Moderni käyttöliittymä**: Ammattimainen chat-käyttöliittymä valmiina
 - 🔧 **Joustava konfigurointi**: Ympäristömuuttujat ja automaattinen tunnistus
 - 📱 **Responsiivinen suunnittelu**: Toimii sekä työpöydällä että mobiililaitteilla
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -146,14 +146,14 @@ set API_KEY=your-api-key
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-### WebGPU-selain-demo
+### WebGPU-selaindemo
 
 **Ominaisuudet:**
-- 🌐 **Selaimen sisäinen tekoäly**: Ei palvelinta, toimii täysin selaimessa
+- 🌐 **Selaimen oma AI**: Ei palvelinta tarvitaan, toimii täysin selaimessa
 - ⚡ **WebGPU-kiihdytys**: Laitteistokiihdytys, kun saatavilla
 - 🔒 **Maksimaalinen yksityisyys**: Tiedot eivät koskaan poistu laitteeltasi
 - 🎯 **Ei asennusta**: Toimii missä tahansa yhteensopivassa selaimessa
-- 🔄 **Joustava varajärjestelmä**: Siirtyy CPU:lle, jos WebGPU ei ole käytettävissä
+- 🔄 **Sulava varajärjestelmä**: Siirtyy CPU:lle, jos WebGPU ei ole saatavilla
 
 **Käynnistys:**
 ```cmd
@@ -165,11 +165,11 @@ python -m http.server 5173
 ### Open WebUI -integraatio
 
 **Ominaisuudet:**
-- 🎨 **ChatGPT-tyylinen käyttöliittymä**: Ammattimainen ja tuttu UI
-- 👥 **Monikäyttäjätuki**: Käyttäjätilit ja keskusteluhistoria
+- 🎨 **ChatGPT-tyylinen käyttöliittymä**: Ammattimainen, tuttu UI
+- 👥 **Monen käyttäjän tuki**: Käyttäjätilit ja keskusteluhistoria
 - 📁 **Tiedostojen käsittely**: Lataa ja analysoi dokumentteja
-- 🔄 **Mallien vaihto**: Helppo siirtyminen eri mallien välillä
-- 🐳 **Docker-käyttöönotto**: Tuotantovalmis konttipohjainen asennus
+- 🔄 **Mallin vaihto**: Helppo vaihto eri mallien välillä
+- 🐳 **Docker-asennus**: Tuotantovalmis konttiasennus
 
 **Pika-asennus:**
 ```cmd
@@ -185,9 +185,9 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Muuttuja | Kuvaus | Oletus | Esimerkki |
 |----------|--------|--------|-----------|
-| `MODEL` | Käytettävä mallin alias | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Käytettävä mallialias | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local -päätepiste | Automaattisesti tunnistettu | `http://localhost:51211` |
-| `API_KEY` | API-avain (valinnainen paikallisessa käytössä) | `""` | `your-api-key` |
+| `API_KEY` | API-avain (valinnainen paikalliselle) | `""` | `your-api-key` |
 
 ## Vianmääritys
 
@@ -214,7 +214,7 @@ docker run -d --name open-webui -p 3000:8080 \
    chainlit run samples\04\app.py -w --port 3000
    ```
 
-3. **Python-ympäristöongelmat:**
+3. **Python-ympäristön ongelmat:**
    ```cmd
    # Verify correct interpreter in VS Code
    # Ctrl+Shift+P → Python: Select Interpreter
@@ -234,12 +234,12 @@ docker run -d --name open-webui -p 3000:8080 \
 
 2. **Mallin latausvirheet:**
    - Varmista internet-yhteys mallin latausta varten
-   - Tarkista selaimen konsolista CORS-virheet
-   - Varmista, että käytät HTTP:tä (ei file://)
+   - Tarkista selaimen konsoli CORS-virheiden varalta
+   - Varmista, että palvelet HTTP:n kautta (ei file://)
 
 **Open WebUI:**
 
-1. **Yhteys evätty:**
+1. **Yhteys kielletty:**
    ```cmd
    # Check Docker is running
    docker --version
@@ -260,7 +260,7 @@ docker run -d --name open-webui -p 3000:8080 \
    docker restart open-webui
    ```
 
-### Tarkistuslista
+### Vahvistuslista
 
 ```cmd
 # ✅ 1. Foundry Local Setup
@@ -285,26 +285,26 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 ### Suorituskyvyn optimointi
 
 **Chainlit:**
-- Käytä suoratoistoa paremman käyttäjäkokemuksen saavuttamiseksi
-- Ota käyttöön yhteyksien uudelleenkäyttö korkean samanaikaisuuden tilanteissa
-- Välimuista mallivastaukset toistuviin kyselyihin
-- Seuraa muistinkäyttöä suurissa keskusteluhistorioissa
+- Käytä suoratoistoa paremman koetun suorituskyvyn saavuttamiseksi
+- Toteuta yhteyspoolaus korkeaan samanaikaisuuteen
+- Välimuistita mallivastaukset toistuvia kyselyitä varten
+- Seuraa muistinkäyttöä suurten keskusteluhistorioiden kanssa
 
 **WebGPU:**
 - Käytä WebGPU:ta maksimaalisen yksityisyyden ja nopeuden saavuttamiseksi
-- Toteuta mallien kvantisointi pienempiä malleja varten
-- Käytä Web Workerseja taustaprosessointiin
-- Välimuista käännetyt mallit selaimen tallennustilassa
+- Toteuta mallin kvantisointi pienempiä malleja varten
+- Käytä Web Workers -työntekijöitä taustaprosessointiin
+- Välimuistita käännetyt mallit selaimen tallennustilaan
 
 **Open WebUI:**
 - Käytä pysyviä volyymeja keskusteluhistorian tallentamiseen
 - Määritä resurssirajoitukset Docker-kontille
 - Toteuta varmuuskopiointistrategiat käyttäjätietoja varten
-- Aseta käänteinen välityspalvelin SSL-päätteen asettamiseksi
+- Aseta käänteinen välityspalvelin SSL-päätteen toteuttamiseksi
 
 ### Integraatiomallit
 
-**Hybridi paikallinen/pilvi:**
+**Paikallinen/pilvihybridi:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -316,7 +316,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
         return await foundry_local_completion(prompt)  # Default local
 ```
 
-**Monimodaalinen putki:**
+**Monimodaalinen putkisto:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -335,38 +335,40 @@ async def analyze_document(file_path: str):
 
 ## Tuotantokäyttöönotto
 
-### Tietoturvahuomiot
+### Tietoturva
 
 - **API-avaimet**: Käytä ympäristömuuttujia, älä koskaan kovakoodaa
-- **Verkko**: Käytä HTTPS:ää tuotannossa, harkitse VPN:ää tiimikäyttöön
-- **Pääsynhallinta**: Toteuta todennus Open WebUI:lle
+- **Verkko**: Käytä HTTPS:ää tuotannossa, harkitse VPN:ää tiimin käyttöön
+- **Pääsynhallinta**: Toteuta autentikointi Open WebUI:lle
 - **Tietosuoja**: Tarkista, mitkä tiedot pysyvät paikallisina ja mitkä menevät pilveen
 - **Päivitykset**: Pidä Foundry Local ja kontit ajan tasalla
 
 ### Seuranta ja ylläpito
 
 - **Terveystarkistukset**: Toteuta päätepisteiden seuranta
-- **Lokit**: Keskitä kaikkien komponenttien lokit
-- **Metrikat**: Seuraa vasteaikoja, virheprosentteja ja resurssien käyttöä
-- **Varmuuskopiointi**: Keskustelutietojen ja konfiguraatioiden säännöllinen varmuuskopiointi
+- **Lokit**: Keskitetty lokien hallinta kaikista komponenteista
+- **Metrikka**: Seuraa vasteaikoja, virheprosentteja, resurssien käyttöä
+- **Varmuuskopiointi**: Säännöllinen keskustelutietojen ja konfiguraatioiden varmuuskopiointi
 
 ## Viitteet ja resurssit
 
 ### Dokumentaatio
-- [Chainlit-dokumentaatio](https://docs.chainlit.io/) - Kattava kehysopas
+- [Chainlit-dokumentaatio](https://docs.chainlit.io/) - Täydellinen kehysopas
 - [Foundry Local -dokumentaatio](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Microsoftin viralliset ohjeet
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - WebGPU-integraatio
 - [Open WebUI -dokumentaatio](https://docs.openwebui.com/) - Edistynyt konfigurointi
 
 ### Esimerkkitiedostot
-- [`app.py`](../../../../../Module08/samples/04/app.py) - Tuotantovalmis Chainlit-sovellus
+- [`app.py`](../../../../../Module08/samples/04/app.py) - Tuotantovalmiit Chainlit-sovellukset
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Opetuksellinen muistikirja
-- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Selaimessa toimiva tekoälylaskenta
-- [`open-webui-guide.md`](./open-webui-guide.md) - Täydellinen Open WebUI -asennusopas
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Selaimessa toimiva AI-päättely
+- [`open-webui-guide.md`](./open-webui-guide.md) - Täydellinen Open WebUI -asennus
 
 ### Liittyvät esimerkit
-- [Session 4 Documentation](../../04.CuttingEdgeModels.md) - Täydellinen istunto-opas
+- [Session 4 -dokumentaatio](../../04.CuttingEdgeModels.md) - Täydellinen session opas
 - [Foundry Local -esimerkit](https://github.com/microsoft/foundry-local/tree/main/samples) - Viralliset esimerkit
 
 ---
 
+**Vastuuvapauslauseke**:  
+Tämä asiakirja on käännetty käyttämällä tekoälypohjaista käännöspalvelua [Co-op Translator](https://github.com/Azure/co-op-translator). Vaikka pyrimme tarkkuuteen, huomioithan, että automaattiset käännökset voivat sisältää virheitä tai epätarkkuuksia. Alkuperäistä asiakirjaa sen alkuperäisellä kielellä tulisi pitää ensisijaisena lähteenä. Kriittisen tiedon osalta suositellaan ammattimaista ihmiskäännöstä. Emme ole vastuussa väärinkäsityksistä tai virhetulkinnoista, jotka johtuvat tämän käännöksen käytöstä.

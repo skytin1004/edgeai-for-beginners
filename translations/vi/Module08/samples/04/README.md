@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T00:08:44+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:56:17+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "vi"
 }
 -->
 # Mẫu 04: Ứng dụng Chat Sản xuất với Chainlit
 
-Một mẫu toàn diện minh họa nhiều cách tiếp cận để xây dựng ứng dụng chat sẵn sàng cho sản xuất sử dụng Microsoft Foundry Local, với giao diện web hiện đại, phản hồi theo luồng, và các công nghệ trình duyệt tiên tiến.
+Một mẫu toàn diện trình bày nhiều cách tiếp cận để xây dựng các ứng dụng chat sẵn sàng cho sản xuất sử dụng Microsoft Foundry Local, với giao diện web hiện đại, phản hồi theo luồng và các công nghệ trình duyệt tiên tiến.
 
-## Nội dung bao gồm
+## Những gì được bao gồm
 
 - **🚀 Ứng dụng Chat Chainlit** (`app.py`): Ứng dụng chat sẵn sàng sản xuất với phản hồi theo luồng
 - **🌐 Demo WebGPU** (`webgpu-demo/`): Suy luận AI trên trình duyệt với tăng tốc phần cứng
@@ -59,7 +59,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 Mở tại: `http://localhost:3000`
 
-## Mẫu Kiến trúc
+## Mẫu kiến trúc
 
 ### Ma trận quyết định Local vs Cloud
 
@@ -68,7 +68,7 @@ Mở tại: `http://localhost:3000`
 | **Dữ liệu nhạy cảm về quyền riêng tư** | 🏠 Local (Foundry) | Dữ liệu không rời khỏi thiết bị |
 | **Lý luận phức tạp** | ☁️ Cloud (Azure OpenAI) | Truy cập vào các mô hình lớn hơn |
 | **Chat thời gian thực** | 🏠 Local (Foundry) | Độ trễ thấp, phản hồi nhanh hơn |
-| **Phân tích tài liệu** | 🔄 Hybrid | Local để trích xuất, cloud để phân tích |
+| **Phân tích tài liệu** | 🔄 Kết hợp | Local để trích xuất, cloud để phân tích |
 | **Tạo mã** | 🏠 Local (Foundry) | Quyền riêng tư + mô hình chuyên biệt |
 | **Nhiệm vụ nghiên cứu** | ☁️ Cloud (Azure OpenAI) | Cần cơ sở kiến thức rộng |
 
@@ -76,7 +76,7 @@ Mở tại: `http://localhost:3000`
 
 | Công nghệ | Trường hợp sử dụng | Ưu điểm | Nhược điểm |
 |-----------|--------------------|---------|------------|
-| **Chainlit** | Nhà phát triển Python, tạo mẫu nhanh | Cài đặt dễ dàng, hỗ trợ luồng | Chỉ hỗ trợ Python |
+| **Chainlit** | Nhà phát triển Python, tạo mẫu nhanh | Dễ thiết lập, hỗ trợ theo luồng | Chỉ hỗ trợ Python |
 | **WebGPU** | Quyền riêng tư tối đa, kịch bản offline | Tích hợp trình duyệt, không cần máy chủ | Kích thước mô hình hạn chế |
 | **Open WebUI** | Triển khai sản xuất, nhóm làm việc | Giao diện chuyên nghiệp, quản lý người dùng | Yêu cầu Docker |
 
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -153,7 +153,7 @@ chainlit run samples\04\app.py -w --port 8080
 - ⚡ **Tăng tốc WebGPU**: Tăng tốc phần cứng khi khả dụng
 - 🔒 **Quyền riêng tư tối đa**: Dữ liệu không bao giờ rời khỏi thiết bị của bạn
 - 🎯 **Không cần cài đặt**: Hoạt động trên bất kỳ trình duyệt tương thích nào
-- 🔄 **Dự phòng linh hoạt**: Tự động chuyển sang CPU nếu WebGPU không khả dụng
+- 🔄 **Giảm thiểu linh hoạt**: Tự động chuyển sang CPU nếu WebGPU không khả dụng
 
 **Chạy:**
 ```cmd
@@ -171,7 +171,7 @@ python -m http.server 5173
 - 🔄 **Chuyển đổi mô hình**: Dễ dàng chuyển đổi giữa các mô hình khác nhau
 - 🐳 **Triển khai Docker**: Thiết lập container sẵn sàng sản xuất
 
-**Cài đặt nhanh:**
+**Thiết lập nhanh:**
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
@@ -185,9 +185,9 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Biến | Mô tả | Mặc định | Ví dụ |
 |------|-------|----------|-------|
-| `MODEL` | Bí danh mô hình sử dụng | `phi-4-mini` | `qwen2.5-7b-instruct` |
-| `BASE_URL` | Endpoint Foundry Local | Tự động phát hiện | `http://localhost:51211` |
-| `API_KEY` | API key (tùy chọn cho local) | `""` | `your-api-key` |
+| `MODEL` | Bí danh mô hình sử dụng | `phi-4-mini` | `qwen2.5-7b` |
+| `BASE_URL` | Điểm cuối Foundry Local | Tự động phát hiện | `http://localhost:51211` |
+| `API_KEY` | Khóa API (tùy chọn cho local) | `""` | `your-api-key` |
 
 ## Xử lý sự cố
 
@@ -286,7 +286,7 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 
 **Chainlit:**
 - Sử dụng phản hồi theo luồng để cải thiện hiệu suất cảm nhận
-- Triển khai pooling kết nối để xử lý đồng thời cao
+- Triển khai kết nối pooling để xử lý đồng thời cao
 - Bộ nhớ đệm phản hồi mô hình cho các truy vấn lặp lại
 - Giám sát sử dụng bộ nhớ với lịch sử hội thoại lớn
 
@@ -297,14 +297,14 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Bộ nhớ đệm mô hình đã biên dịch trong lưu trữ trình duyệt
 
 **Open WebUI:**
-- Sử dụng volume lưu trữ để giữ lịch sử hội thoại
+- Sử dụng các volume persistent để lưu lịch sử hội thoại
 - Cấu hình giới hạn tài nguyên cho container Docker
 - Triển khai chiến lược sao lưu cho dữ liệu người dùng
 - Thiết lập proxy ngược để kết thúc SSL
 
 ### Mẫu tích hợp
 
-**Hybrid Local/Cloud:**
+**Kết hợp Local/Cloud:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -316,7 +316,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
         return await foundry_local_completion(prompt)  # Default local
 ```
 
-**Pipeline Đa phương thức:**
+**Pipeline đa phương thức:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -337,36 +337,41 @@ async def analyze_document(file_path: str):
 
 ### Cân nhắc về bảo mật
 
-- **API Keys**: Sử dụng biến môi trường, không bao giờ mã hóa cứng
+- **Khóa API**: Sử dụng biến môi trường, không bao giờ mã hóa cứng
 - **Mạng**: Sử dụng HTTPS trong sản xuất, cân nhắc VPN cho truy cập nhóm
 - **Kiểm soát truy cập**: Triển khai xác thực cho Open WebUI
 - **Quyền riêng tư dữ liệu**: Kiểm tra dữ liệu nào ở lại local và dữ liệu nào lên cloud
-- **Cập nhật**: Giữ Foundry Local và container luôn được cập nhật
+- **Cập nhật**: Giữ Foundry Local và các container được cập nhật
 
 ### Giám sát và bảo trì
 
-- **Kiểm tra sức khỏe**: Triển khai giám sát endpoint
-- **Ghi nhật ký**: Tập trung hóa nhật ký từ tất cả các thành phần
+- **Kiểm tra sức khỏe**: Triển khai giám sát điểm cuối
+- **Ghi nhật ký**: Tập trung nhật ký từ tất cả các thành phần
 - **Số liệu**: Theo dõi thời gian phản hồi, tỷ lệ lỗi, sử dụng tài nguyên
 - **Sao lưu**: Sao lưu thường xuyên dữ liệu hội thoại và cấu hình
 
-## Tài liệu tham khảo và nguồn lực
+## Tài liệu tham khảo và tài nguyên
 
 ### Tài liệu
+
 - [Tài liệu Chainlit](https://docs.chainlit.io/) - Hướng dẫn đầy đủ về framework
 - [Tài liệu Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Tài liệu chính thức của Microsoft
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - Tích hợp WebGPU
 - [Tài liệu Open WebUI](https://docs.openwebui.com/) - Cấu hình nâng cao
 
 ### Tệp mẫu
+
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Ứng dụng Chainlit sản xuất
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Notebook giáo dục
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Suy luận AI trên trình duyệt
-- [`open-webui-guide.md`](./open-webui-guide.md) - Hướng dẫn cài đặt Open WebUI hoàn chỉnh
+- [`open-webui-guide.md`](./open-webui-guide.md) - Hướng dẫn thiết lập Open WebUI hoàn chỉnh
 
 ### Mẫu liên quan
+
 - [Tài liệu Phiên 4](../../04.CuttingEdgeModels.md) - Hướng dẫn phiên đầy đủ
 - [Mẫu Foundry Local](https://github.com/microsoft/foundry-local/tree/main/samples) - Mẫu chính thức
 
 ---
 
+**Tuyên bố miễn trừ trách nhiệm**:  
+Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi cố gắng đảm bảo độ chính xác, xin lưu ý rằng các bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn thông tin chính thức. Đối với các thông tin quan trọng, khuyến nghị sử dụng dịch vụ dịch thuật chuyên nghiệp bởi con người. Chúng tôi không chịu trách nhiệm cho bất kỳ sự hiểu lầm hoặc diễn giải sai nào phát sinh từ việc sử dụng bản dịch này.

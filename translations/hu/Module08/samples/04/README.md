@@ -1,26 +1,26 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-25T01:14:26+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T01:16:11+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "hu"
 }
 -->
-# Minta 04: Termelési Chat Alkalmazások Chainlit-tel
+# Minta 04: Chatalkalmazások gyártási környezetben Chainlit segítségével
 
-Egy átfogó minta, amely bemutatja a termelésre kész chat alkalmazások különböző megközelítéseit a Microsoft Foundry Local segítségével, modern webes felületekkel, streaming válaszokkal és legújabb böngészőtechnológiákkal.
+Egy átfogó példa, amely bemutatja a gyártásra kész chatalkalmazások különböző megközelítéseit a Microsoft Foundry Local használatával, modern webes felületekkel, streaming válaszokkal és legújabb böngészőtechnológiákkal.
 
-## Tartalom
+## Mi található benne?
 
-- **🚀 Chainlit Chat Alkalmazás** (`app.py`): Termelésre kész chat alkalmazás streaming funkcióval
+- **🚀 Chainlit Chatalkalmazás** (`app.py`): Gyártásra kész chatalkalmazás streaming funkcióval
 - **🌐 WebGPU Demó** (`webgpu-demo/`): Böngészőalapú AI következtetés hardvergyorsítással
 - **🎨 Open WebUI Integráció** (`open-webui-guide.md`): Professzionális ChatGPT-szerű felület
 - **📚 Oktatási Jegyzetfüzet** (`chainlit_app.ipynb`): Interaktív tananyagok
 
-## Gyorsindítás
+## Gyors kezdés
 
-### 1. Chainlit Chat Alkalmazás
+### 1. Chainlit Chatalkalmazás
 
 ```cmd
 # Navigate to Module08 directory
@@ -33,7 +33,7 @@ foundry model run phi-4-mini
 chainlit run samples\04\app.py -w --port 8080
 ```
 
-Elérhető itt: `http://localhost:8080`
+Megnyílik: `http://localhost:8080`
 
 ### 2. WebGPU Böngésző Demó
 
@@ -45,7 +45,7 @@ cd Module08\samples\04\webgpu-demo
 python -m http.server 5173
 ```
 
-Elérhető itt: `http://localhost:5173`
+Megnyílik: `http://localhost:5173`
 
 ### 3. Open WebUI Beállítás
 
@@ -57,28 +57,28 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-Elérhető itt: `http://localhost:3000`
+Megnyílik: `http://localhost:3000`
 
-## Architektúra Minták
+## Architektúra minták
 
-### Helyi vs Felhő Döntési Mátrix
+### Lokális vs Felhő döntési mátrix
 
-| Forgatókönyv | Ajánlás | Indoklás |
-|--------------|---------|----------|
-| **Adatvédelem érzékeny adatokkal** | 🏠 Helyi (Foundry) | Az adatok nem hagyják el az eszközt |
-| **Komplex érvelés** | ☁️ Felhő (Azure OpenAI) | Nagyobb modellek elérése |
-| **Valós idejű chat** | 🏠 Helyi (Foundry) | Alacsonyabb késleltetés, gyorsabb válaszok |
-| **Dokumentum elemzés** | 🔄 Hibrid | Helyi kinyeréshez, felhő elemzéshez |
-| **Kódgenerálás** | 🏠 Helyi (Foundry) | Adatvédelem + speciális modellek |
+| Forgatókönyv | Ajánlás | Indok |
+|--------------|---------|-------|
+| **Adatvédelem érzékeny adatok** | 🏠 Lokális (Foundry) | Az adatok nem hagyják el az eszközt |
+| **Komplex következtetés** | ☁️ Felhő (Azure OpenAI) | Nagyobb modellek elérése |
+| **Valós idejű chat** | 🏠 Lokális (Foundry) | Alacsonyabb késleltetés, gyorsabb válaszok |
+| **Dokumentumelemzés** | 🔄 Hibrid | Lokális az adatkinyeréshez, felhő az elemzéshez |
+| **Kódgenerálás** | 🏠 Lokális (Foundry) | Adatvédelem + speciális modellek |
 | **Kutatási feladatok** | ☁️ Felhő (Azure OpenAI) | Széleskörű tudásbázis szükséges |
 
-### Technológiai Összehasonlítás
+### Technológiai összehasonlítás
 
-| Technológia | Használati eset | Előnyök | Hátrányok |
-|-------------|-----------------|---------|-----------|
+| Technológia | Felhasználási terület | Előnyök | Hátrányok |
+|-------------|-----------------------|---------|-----------|
 | **Chainlit** | Python fejlesztők, gyors prototípus készítés | Könnyű beállítás, streaming támogatás | Csak Python |
-| **WebGPU** | Maximális adatvédelem, offline forgatókönyvek | Böngészőalapú, nincs szükség szerverre | Korlátozott modellméret |
-| **Open WebUI** | Termelési telepítés, csapatok | Professzionális UI, felhasználókezelés | Docker szükséges |
+| **WebGPU** | Maximális adatvédelem, offline forgatókönyvek | Böngésző-alapú, nincs szükség szerverre | Korlátozott modellméret |
+| **Open WebUI** | Gyártási környezet, csapatok | Professzionális UI, felhasználókezelés | Docker szükséges |
 
 ## Előfeltételek
 
@@ -88,9 +88,9 @@ Elérhető itt: `http://localhost:3000`
 - **Böngésző**: Chrome/Edge WebGPU támogatással a demókhoz
 - **Docker**: Open WebUI-hoz (opcionális)
 
-## Telepítés és Beállítás
+## Telepítés és beállítás
 
-### 1. Python Környezet Beállítása
+### 1. Python környezet beállítása
 
 ```cmd
 # Navigate to Module08 directory
@@ -104,7 +104,7 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Foundry Local Beállítása
+### 2. Foundry Local beállítása
 
 ```cmd
 # Verify Foundry Local installation
@@ -120,24 +120,24 @@ foundry model run phi-4-mini
 foundry service ps
 ```
 
-## Minta Alkalmazások
+## Mintaalkalmazások
 
-### Chainlit Chat Alkalmazás
+### Chainlit Chatalkalmazás
 
 **Funkciók:**
-- 🚀 **Valós idejű Streaming**: A tokenek azonnal megjelennek, ahogy generálódnak
-- 🛡️ **Robusztus Hibakezelés**: Zökkenőmentes degradáció és helyreállítás
-- 🎨 **Modern UI**: Professzionális chat felület alapértelmezés szerint
-- 🔧 **Rugalmas Konfiguráció**: Környezeti változók és automatikus felismerés
-- 📱 **Reszponzív Design**: Asztali és mobil eszközökön is működik
+- 🚀 **Valós idejű streaming**: A tokenek generálás közben jelennek meg
+- 🛡️ **Erős hibaelhárítás**: Zökkenőmentes degradáció és helyreállítás
+- 🎨 **Modern UI**: Professzionális chatfelület alapból
+- 🔧 **Rugalmas konfiguráció**: Környezeti változók és automatikus felismerés
+- 📱 **Reszponzív dizájn**: Működik asztali és mobil eszközökön
 
-**Gyorsindítás:**
+**Gyors kezdés:**
 ```cmd
 # Run with default settings (recommended)
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -149,11 +149,11 @@ chainlit run samples\04\app.py -w --port 8080
 ### WebGPU Böngésző Demó
 
 **Funkciók:**
-- 🌐 **Böngészőalapú AI**: Nincs szükség szerverre, teljesen böngészőben fut
-- ⚡ **WebGPU Gyorsítás**: Hardvergyorsítás, ha elérhető
-- 🔒 **Maximális Adatvédelem**: Az adatok soha nem hagyják el az eszközt
-- 🎯 **Telepítés Nélkül**: Bármely kompatibilis böngészőben működik
-- 🔄 **Zökkenőmentes Visszaesés**: CPU-ra vált, ha WebGPU nem elérhető
+- 🌐 **Böngésző-alapú AI**: Nincs szükség szerverre, teljesen böngészőben fut
+- ⚡ **WebGPU gyorsítás**: Hardvergyorsítás, ha elérhető
+- 🔒 **Maximális adatvédelem**: Az adatok soha nem hagyják el az eszközt
+- 🎯 **Nulla telepítés**: Működik bármely kompatibilis böngészőben
+- 🔄 **Zökkenőmentes visszaállás**: CPU-ra vált, ha WebGPU nem elérhető
 
 **Futtatás:**
 ```cmd
@@ -165,13 +165,13 @@ python -m http.server 5173
 ### Open WebUI Integráció
 
 **Funkciók:**
-- 🎨 **ChatGPT-szerű Felület**: Professzionális, ismerős UI
-- 👥 **Többfelhasználós Támogatás**: Felhasználói fiókok és beszélgetési előzmények
+- 🎨 **ChatGPT-szerű felület**: Professzionális, ismerős UI
+- 👥 **Többfelhasználós támogatás**: Felhasználói fiókok és beszélgetési előzmények
 - 📁 **Fájlkezelés**: Dokumentumok feltöltése és elemzése
 - 🔄 **Modellváltás**: Könnyű váltás különböző modellek között
-- 🐳 **Docker Telepítés**: Termelésre kész konténeres beállítás
+- 🐳 **Docker telepítés**: Gyártásra kész konténeres beállítás
 
-**Gyors Beállítás:**
+**Gyors beállítás:**
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
@@ -179,21 +179,21 @@ docker run -d --name open-webui -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-## Konfigurációs Referencia
+## Konfigurációs referencia
 
-### Környezeti Változók
+### Környezeti változók
 
 | Változó | Leírás | Alapértelmezett | Példa |
 |---------|--------|-----------------|-------|
-| `MODEL` | Használt modell alias | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Használandó modell alias | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local végpont | Automatikusan felismerve | `http://localhost:51211` |
-| `API_KEY` | API kulcs (opcionális helyi használathoz) | `""` | `your-api-key` |
+| `API_KEY` | API kulcs (opcionális lokális használathoz) | `""` | `your-api-key` |
 
 ## Hibakeresés
 
-### Gyakori Problémák
+### Gyakori problémák
 
-**Chainlit Alkalmazás:**
+**Chainlit alkalmazás:**
 
 1. **Szolgáltatás nem elérhető:**
    ```cmd
@@ -205,7 +205,7 @@ docker run -d --name open-webui -p 3000:8080 \
    curl http://localhost:51211/v1/models
    ```
 
-2. **Port ütközések:**
+2. **Portütközések:**
    ```cmd
    # Check what's using port 8080
    netstat -ano | findstr :8080
@@ -227,15 +227,15 @@ docker run -d --name open-webui -p 3000:8080 \
 **WebGPU Demó:**
 
 1. **WebGPU nem támogatott:**
-   - Frissítsen Chrome/Edge 113+ verzióra
-   - Engedélyezze a WebGPU-t: `chrome://flags/#enable-unsafe-webgpu`
-   - Ellenőrizze a GPU állapotát: `chrome://gpu`
+   - Frissíts Chrome/Edge 113+ verzióra
+   - Engedélyezd a WebGPU-t: `chrome://flags/#enable-unsafe-webgpu`
+   - Ellenőrizd a GPU állapotát: `chrome://gpu`
    - A demó automatikusan CPU-ra vált
 
 2. **Modell betöltési hibák:**
-   - Biztosítsa az internetkapcsolatot a modell letöltéséhez
-   - Ellenőrizze a böngésző konzolját CORS hibákért
-   - Győződjön meg róla, hogy HTTP-n keresztül szolgáltat (nem file://)
+   - Biztosíts internetkapcsolatot a modell letöltéséhez
+   - Ellenőrizd a böngésző konzolt CORS hibákért
+   - Győződj meg róla, hogy HTTP-n keresztül szolgáltatsz (nem file://)
 
 **Open WebUI:**
 
@@ -260,7 +260,7 @@ docker run -d --name open-webui -p 3000:8080 \
    docker restart open-webui
    ```
 
-### Érvényesítési Ellenőrzőlista
+### Érvényesítési ellenőrzőlista
 
 ```cmd
 # ✅ 1. Foundry Local Setup
@@ -280,31 +280,31 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 # Test Open WebUI at localhost:3000
 ```
 
-## Haladó Használat
+## Haladó használat
 
 ### Teljesítményoptimalizálás
 
 **Chainlit:**
-- Használjon streaminget a jobb észlelt teljesítmény érdekében
-- Valósítson meg kapcsolat poolingot nagy egyidejűséghez
-- Cache-elje a modell válaszait ismétlődő lekérdezésekhez
-- Figyelje a memóriahasználatot nagy beszélgetési előzményeknél
+- Használj streaminget a jobb érzékelt teljesítmény érdekében
+- Implementálj kapcsolat poolingot magas párhuzamossághoz
+- Cache-eld a modell válaszait ismételt lekérdezésekhez
+- Figyeld a memóriahasználatot nagy beszélgetési előzmények esetén
 
 **WebGPU:**
-- Használja a WebGPU-t a maximális adatvédelem és sebesség érdekében
-- Valósítson meg modell kvantálást kisebb modellekhez
-- Használjon Web Worker-eket háttérfeldolgozáshoz
-- Cache-elje a lefordított modelleket a böngésző tárolójában
+- Használj WebGPU-t a maximális adatvédelem és sebesség érdekében
+- Implementálj modell kvantálást kisebb modellekhez
+- Használj Web Worker-eket háttérfeldolgozáshoz
+- Cache-eld a lefordított modelleket a böngésző tárolójában
 
 **Open WebUI:**
-- Használjon tartós köteteket a beszélgetési előzményekhez
-- Konfigurálja az erőforrás-korlátokat a Docker konténerhez
-- Valósítson meg biztonsági mentési stratégiákat a felhasználói adatokhoz
-- Állítson be fordított proxy-t az SSL végrehajtásához
+- Használj tartós köteteket a beszélgetési előzményekhez
+- Konfiguráld az erőforráskorlátokat a Docker konténerhez
+- Implementálj biztonsági mentési stratégiákat a felhasználói adatokhoz
+- Állíts be fordított proxy-t SSL termináláshoz
 
-### Integrációs Minták
+### Integrációs minták
 
-**Hibrid Helyi/Felhő:**
+**Hibrid Lokális/Felhő:**
 ```python
 # Route based on complexity and privacy requirements
 async def intelligent_routing(prompt: str, metadata: dict):
@@ -316,7 +316,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
         return await foundry_local_completion(prompt)  # Default local
 ```
 
-**Multi-Modális Folyamat:**
+**Multi-Modális Pipeline:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -333,24 +333,24 @@ async def analyze_document(file_path: str):
     return summary
 ```
 
-## Termelési Telepítés
+## Gyártási telepítés
 
-### Biztonsági Szempontok
+### Biztonsági szempontok
 
-- **API Kulcsok**: Használjon környezeti változókat, soha ne kódolja be
-- **Hálózat**: Használjon HTTPS-t termelésben, fontolja meg VPN használatát csapat hozzáféréshez
-- **Hozzáférés-vezérlés**: Valósítson meg hitelesítést az Open WebUI-hoz
-- **Adatvédelem**: Ellenőrizze, hogy mely adatok maradnak helyben, és melyek kerülnek a felhőbe
-- **Frissítések**: Tartsa naprakészen a Foundry Local-t és a konténereket
+- **API kulcsok**: Használj környezeti változókat, soha ne kódold be
+- **Hálózat**: Használj HTTPS-t gyártásban, fontold meg VPN-t csapat hozzáféréshez
+- **Hozzáférés-vezérlés**: Implementálj hitelesítést az Open WebUI-hoz
+- **Adatvédelem**: Ellenőrizd, hogy mely adatok maradnak lokálisan és melyek kerülnek a felhőbe
+- **Frissítések**: Tartsd naprakészen a Foundry Local-t és a konténereket
 
-### Felügyelet és Karbantartás
+### Felügyelet és karbantartás
 
-- **Egészségügyi Ellenőrzések**: Valósítson meg végpont monitorozást
-- **Naplózás**: Centralizálja az összes komponens naplóit
-- **Metrikák**: Kövesse nyomon a válaszidőket, hibaarányokat, erőforrás-használatot
-- **Biztonsági Mentés**: Rendszeres biztonsági mentés a beszélgetési adatokhoz és konfigurációkhoz
+- **Egészségellenőrzések**: Implementálj végpont monitorozást
+- **Naplózás**: Centralizáld az összes komponens naplóit
+- **Metrikák**: Kövesd a válaszidőket, hibaarányokat, erőforrás-használatot
+- **Biztonsági mentés**: Rendszeres mentés a beszélgetési adatok és konfigurációk számára
 
-## Referenciák és Források
+## Referenciák és források
 
 ### Dokumentáció
 - [Chainlit Dokumentáció](https://docs.chainlit.io/) - Teljes keretrendszer útmutató
@@ -358,15 +358,17 @@ async def analyze_document(file_path: str):
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - WebGPU integráció
 - [Open WebUI Dokumentáció](https://docs.openwebui.com/) - Haladó konfiguráció
 
-### Minta Fájlok
-- [`app.py`](../../../../../Module08/samples/04/app.py) - Termelési Chainlit alkalmazás
+### Mintafájlok
+- [`app.py`](../../../../../Module08/samples/04/app.py) - Gyártásra kész Chainlit alkalmazás
 - [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Oktatási jegyzetfüzet
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Böngészőalapú AI következtetés
 - [`open-webui-guide.md`](./open-webui-guide.md) - Teljes Open WebUI beállítás
 
-### Kapcsolódó Minták
-- [4. Szekció Dokumentáció](../../04.CuttingEdgeModels.md) - Teljes szekció útmutató
-- [Foundry Local Minták](https://github.com/microsoft/foundry-local/tree/main/samples) - Hivatalos minták
+### Kapcsolódó minták
+- [4. szekció dokumentációja](../../04.CuttingEdgeModels.md) - Teljes szekció útmutató
+- [Foundry Local minták](https://github.com/microsoft/foundry-local/tree/main/samples) - Hivatalos minták
 
 ---
 
+**Felelősségi nyilatkozat**:  
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:33:51+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:04:33+00:00",
   "source_file": "Module08/README.md",
   "language_code": "pt"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Visão Geral
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na edge, oferecendo ferramentas poderosas para que os desenvolvedores criem, implementem e escalem aplicações de IA localmente, mantendo uma integração perfeita com o Azure AI Foundry. Este módulo cobre de forma abrangente o Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na edge, oferecendo aos desenvolvedores ferramentas poderosas para criar, implementar e escalar aplicações de IA localmente, mantendo uma integração perfeita com o Azure AI Foundry. Este módulo cobre de forma abrangente o Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
 
 **Tecnologias Principais:**
 - CLI e SDK do Microsoft Foundry Local
@@ -38,7 +38,7 @@ Ao concluir este módulo, você será capaz de:
 
 **Tópicos Principais**: Instalação completa • Comandos CLI • Cache de modelos • Aceleração de hardware • Implementação de múltiplos modelos
 
-**Exemplo**: [Início Rápido com REST Chat](./samples/01/README.md) • [Integração com OpenAI SDK](./samples/02/README.md) • [Descoberta e Benchmarking de Modelos](./samples/03/README.md)
+**Exemplo**: [Introdução ao REST Chat](./samples/01/README.md) • [Integração com OpenAI SDK](./samples/02/README.md) • [Descoberta e Benchmarking de Modelos](./samples/03/README.md)
 
 **Duração**: 2-3 horas | **Nível**: Iniciante
 
@@ -77,10 +77,10 @@ Ao concluir este módulo, você será capaz de:
 
 ---
 
-### [5: Construir Agentes de IA de Forma Rápida](./05.AIPoweredAgents.md)
+### [5: Construir Agentes de IA Rapidamente](./05.AIPoweredAgents.md)
 **Foco**: Arquiteturas de agentes, prompts de sistema, grounding e orquestração
 
-**Tópicos Principais**: Padrões de design de agentes • Engenharia de prompts de sistema • Técnicas de grounding • Sistemas multi-agentes • Implantação em produção
+**Tópicos Principais**: Padrões de design de agentes • Engenharia de prompts de sistema • Técnicas de grounding • Sistemas multi-agente • Implantação em produção
 
 **Exemplo**: [Orquestração Multi-Agente](./samples/05/README.md) • [Sistema Multi-Agente Avançado](./samples/09/README.md)
 
@@ -91,7 +91,7 @@ Ao concluir este módulo, você será capaz de:
 ### [6: Foundry Local - Modelos como Ferramentas](./06.ModelsAsTools.md)
 **Foco**: Soluções modulares de IA, escalabilidade empresarial e padrões de produção
 
-**Tópicos Principais**: Modelos como ferramentas • Implementação no dispositivo • Integração SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
+**Tópicos Principais**: Modelos como ferramentas • Implementação no dispositivo • Integração com SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
 
 **Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas Foundry](./samples/10/README.md)
 
@@ -111,7 +111,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [8: Aplicação de Chat Nativa no Windows 11](./samples/08/README.md)
-**Foco**: Construção de aplicações modernas de chat nativas com integração Foundry Local
+**Foco**: Construção de aplicações modernas de chat nativas com integração ao Foundry Local
 
 **Tópicos Principais**: Desenvolvimento com Electron • Fluent Design System • Integração nativa com Windows • Streaming em tempo real • Design de interface de chat
 
@@ -133,7 +133,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [10: Foundry Local como Framework de Ferramentas](./samples/10/README.md)
-**Foco**: Arquitetura orientada a ferramentas para integrar Foundry Local em aplicações e frameworks existentes
+**Foco**: Arquitetura centrada em ferramentas para integrar o Foundry Local em aplicações e frameworks existentes
 
 **Tópicos Principais**: Integração com LangChain • Funções do Semantic Kernel • Frameworks REST API • Ferramentas CLI • Integração com Jupyter • Padrões de implantação em produção
 
@@ -148,7 +148,7 @@ Ao concluir este módulo, você será capaz de:
 - **Memória**: 16GB RAM (32GB recomendados para modelos maiores)
 - **Armazenamento**: 50GB de espaço livre para cache de modelos
 - **Hardware**: Dispositivo com NPU recomendado (Copilot+ PC), GPU opcional
-- **Rede**: Internet de alta velocidade para download inicial de modelos
+- **Rede**: Internet de alta velocidade para downloads iniciais de modelos
 
 ### Ambiente de Desenvolvimento
 - Visual Studio Code com extensão AI Toolkit
@@ -199,33 +199,33 @@ Ao concluir este módulo, você estará preparado para:
 ### Domínio Técnico
 - **Implementar e Gerir**: Instalações do Foundry Local em ambientes de desenvolvimento e produção
 - **Integrar Modelos**: Trabalhar de forma integrada com diversas famílias de modelos da Microsoft, Hugging Face e fontes da comunidade
-- **Construir Aplicações**: Desenvolver aplicações de IA prontas para produção com recursos avançados e otimizações
+- **Criar Aplicações**: Desenvolver aplicações de IA prontas para produção com recursos avançados e otimizações
 - **Desenvolver Agentes**: Implementar agentes de IA sofisticados com grounding, raciocínio e integração de ferramentas
 
 ### Compreensão Estratégica
 - **Decisões Arquiteturais**: Fazer escolhas informadas entre implantação local e na cloud
 - **Otimização de Desempenho**: Melhorar o desempenho de inferência em diferentes configurações de hardware
-- **Escalabilidade Empresarial**: Projetar aplicações que escalem de protótipos locais para implantações empresariais
-- **Privacidade e Segurança**: Implementar soluções de IA que preservem a privacidade com inferência local
+- **Escalabilidade Empresarial**: Projetar aplicações que escalam de protótipos locais para implantações empresariais
+- **Privacidade e Segurança**: Implementar soluções de IA que preservam a privacidade com inferência local
 
 ### Capacidades de Inovação
 - **Prototipagem Rápida**: Construir e testar conceitos de aplicações de IA rapidamente em todos os 10 padrões de exemplo
 - **Integração Comunitária**: Aproveitar modelos open-source e contribuir para o ecossistema
 - **Padrões Avançados**: Implementar padrões de IA de ponta, incluindo RAG, agentes e integração de ferramentas
-- **Domínio de Frameworks**: Integração de nível especialista com LangChain, Semantic Kernel, Chainlit e Electron
-- **Implantação em Produção**: Implementar soluções de IA escaláveis, desde protótipos locais até sistemas empresariais
+- **Domínio de Frameworks**: Integração avançada com LangChain, Semantic Kernel, Chainlit e Electron
+- **Implantação em Produção**: Implantar soluções de IA escaláveis de protótipos locais para sistemas empresariais
 - **Desenvolvimento Preparado para o Futuro**: Construir aplicações prontas para tecnologias e padrões emergentes de IA
 
-## Primeiros Passos
+## Como Começar
 
-1. **Configuração do Ambiente**: Certifique-se de que está utilizando Windows 11 com hardware recomendado (veja Pré-requisitos)
+1. **Configuração do Ambiente**: Certifique-se de ter o Windows 11 com o hardware recomendado (veja os Pré-requisitos)
 2. **Instalar Foundry Local**: Siga a Sessão 1 para instalação e configuração completas
 3. **Executar o Exemplo 01**: Comece com a integração básica de REST API para verificar a configuração
 4. **Progredir pelos Exemplos**: Complete os exemplos 01-10 para domínio abrangente
 
 ## Métricas de Sucesso
 
-Acompanhe seu progresso através dos 10 exemplos abrangentes:
+Acompanhe seu progresso em todos os 10 exemplos abrangentes:
 
 ### Nível Fundamental (Exemplos 01-03)
 - [ ] Instalar e configurar com sucesso o Foundry Local
@@ -252,7 +252,7 @@ Acompanhe seu progresso através dos 10 exemplos abrangentes:
 - [ ] Contribuir com melhorias ou extensões ao código dos exemplos
 - [ ] Integrar padrões do Foundry Local em projetos pessoais/profissionais
 
-## Guia de Início Rápido - Todos os 10 Exemplos
+## Guia Rápido - Todos os 10 Exemplos
 
 ### Configuração do Ambiente (Necessária para Todos os Exemplos)
 
@@ -277,7 +277,7 @@ foundry model list
 
 ### Exemplos Fundamentais (01-06)
 
-**Exemplo 01: Início Rápido com REST Chat**
+**Exemplo 01: Introdução ao REST Chat**
 ```powershell
 # Start Foundry Local service
 foundry model run phi-4-mini
@@ -330,7 +330,7 @@ python samples/05/examples/specialists_demo.py
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -457,7 +457,7 @@ npm install
 Este módulo representa o estado da arte no desenvolvimento de IA de ponta, combinando as ferramentas empresariais da Microsoft com a flexibilidade e inovação do ecossistema de código aberto. Ao dominar o Foundry Local através dos 10 exemplos abrangentes, estará posicionado na vanguarda do desenvolvimento de aplicações de IA.
 
 **Percurso de Aprendizagem Completo:**
-- **Fundamentos** (Exemplos 01-03): Integração de API e gestão de modelos
+- **Fundação** (Exemplos 01-03): Integração de API e gestão de modelos
 - **Aplicações** (Exemplos 04-06): RAG, agentes e encaminhamento inteligente
 - **Avançado** (Exemplos 07-10): Estruturas de produção e integração empresarial
 
@@ -465,3 +465,5 @@ Para integração com Azure OpenAI (Sessão 2), consulte os ficheiros README ind
 
 ---
 
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, é importante notar que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.

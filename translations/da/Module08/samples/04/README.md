@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T23:15:27+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:38:39+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "da"
 }
@@ -74,15 +74,15 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ### Teknologisammenligning
 
-| Teknologi | Brugsscenarie | Fordele | Ulemper |
-|-----------|---------------|---------|---------|
+| Teknologi | Anvendelse | Fordele | Ulemper |
+|-----------|------------|---------|---------|
 | **Chainlit** | Python-udviklere, hurtig prototyping | Nem opsætning, streaming-understøttelse | Kun Python |
 | **WebGPU** | Maksimal privatliv, offline scenarier | Browser-native, ingen server nødvendig | Begrænset modelstørrelse |
-| **Open WebUI** | Produktionsudrulning, teams | Professionel UI, brugerstyring | Kræver Docker |
+| **Open WebUI** | Produktionsudrulning, teams | Professionel UI, brugeradministration | Kræver Docker |
 
 ## Forudsætninger
 
-- **Foundry Local**: Installeret og kørende ([Download](https://aka.ms/foundry-local-installer))
+- **Foundry Local**: Installeret og kører ([Download](https://aka.ms/foundry-local-installer))
 - **Python**: 3.10+ med virtuel miljø
 - **Model**: Mindst én indlæst (`foundry model run phi-4-mini`)
 - **Browser**: Chrome/Edge med WebGPU-understøttelse til demoer
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variabel | Beskrivelse | Standard | Eksempel |
 |----------|-------------|----------|----------|
-| `MODEL` | Modelalias, der skal bruges | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Modelalias, der skal bruges | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local endpoint | Automatisk detekteret | `http://localhost:51211` |
 | `API_KEY` | API-nøgle (valgfri for lokal) | `""` | `your-api-key` |
 
@@ -288,17 +288,17 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 - Brug streaming for bedre opfattet performance
 - Implementer forbindelsespooling for høj samtidighed
 - Cache modelrespons for gentagne forespørgsler
-- Overvåg hukommelsesbrug med store samtalehistorikker
+- Overvåg hukommelsesforbrug med store samtalehistorikker
 
 **WebGPU:**
 - Brug WebGPU for maksimal privatliv og hastighed
 - Implementer modelkvantisering for mindre modeller
 - Brug Web Workers til baggrundsbehandling
-- Cache kompilerede modeller i browserlager
+- Cache kompilerede modeller i browserlagring
 
 **Open WebUI:**
-- Brug persistente volumener til samtalehistorik
-- Konfigurer ressourcebegrænsninger for Docker-container
+- Brug vedvarende volumener til samtalehistorik
+- Konfigurer ressourcegrænser for Docker-container
 - Implementer backupstrategier for brugerdata
 - Opsæt reverse proxy til SSL-terminering
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Ansvarsfraskrivelse**:  
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på at sikre nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for eventuelle misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.

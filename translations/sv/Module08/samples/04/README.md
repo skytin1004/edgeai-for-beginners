@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T22:49:53+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:35:43+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "sv"
 }
@@ -16,7 +16,7 @@ Ett omfattande exempel som visar flera metoder för att bygga produktionsklara c
 - **🚀 Chainlit Chattapp** (`app.py`): Produktionsklar chattapplikation med strömmande svar
 - **🌐 WebGPU Demo** (`webgpu-demo/`): AI-inferens i webbläsaren med hårdvaruacceleration
 - **🎨 Open WebUI Integration** (`open-webui-guide.md`): Professionellt gränssnitt likt ChatGPT
-- **📚 Utbildningsanteckningsbok** (`chainlit_app.ipynb`): Interaktiva lärmaterial
+- **📚 Utbildande Notebook** (`chainlit_app.ipynb`): Interaktiva läromaterial
 
 ## Snabbstart
 
@@ -47,7 +47,7 @@ python -m http.server 5173
 
 Öppnas på: `http://localhost:5173`
 
-### 3. Open WebUI Installation
+### 3. Open WebUI Setup
 
 ```cmd
 # Run Open WebUI with Docker
@@ -66,11 +66,11 @@ docker run -d --name open-webui -p 3000:8080 \
 | Scenario | Rekommendation | Orsak |
 |----------|----------------|-------|
 | **Integritetskänsliga data** | 🏠 Lokal (Foundry) | Data lämnar aldrig enheten |
-| **Komplexa resonemang** | ☁️ Moln (Azure OpenAI) | Tillgång till större modeller |
+| **Komplex resonemang** | ☁️ Moln (Azure OpenAI) | Tillgång till större modeller |
 | **Realtidschatt** | 🏠 Lokal (Foundry) | Lägre latens, snabbare svar |
 | **Dokumentanalys** | 🔄 Hybrid | Lokal för extraktion, moln för analys |
 | **Kodgenerering** | 🏠 Lokal (Foundry) | Integritet + specialiserade modeller |
-| **Forskningsuppgifter** | ☁️ Moln (Azure OpenAI) | Kräver bred kunskapsbas |
+| **Forskningsuppgifter** | ☁️ Moln (Azure OpenAI) | Bred kunskapsbas behövs |
 
 ### Teknologijämförelse
 
@@ -104,7 +104,7 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Foundry Local Konfiguration
+### 2. Foundry Local-inställning
 
 ```cmd
 # Verify Foundry Local installation
@@ -125,7 +125,7 @@ foundry service ps
 ### Chainlit Chattapplikation
 
 **Funktioner:**
-- 🚀 **Realtidsströmning**: Tokens visas medan de genereras
+- 🚀 **Strömmande i realtid**: Tokens visas medan de genereras
 - 🛡️ **Robust felhantering**: Smidig nedgradering och återhämtning
 - 🎨 **Modernt gränssnitt**: Professionellt chattgränssnitt direkt
 - 🔧 **Flexibel konfiguration**: Miljövariabler och automatisk upptäckt
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -169,9 +169,9 @@ python -m http.server 5173
 - 👥 **Stöd för flera användare**: Användarkonton och konversationshistorik
 - 📁 **Filbearbetning**: Ladda upp och analysera dokument
 - 🔄 **Modellväxling**: Enkel växling mellan olika modeller
-- 🐳 **Docker-distribution**: Produktionsklar containerbaserad installation
+- 🐳 **Docker-distribution**: Produktionsklar containerbaserad setup
 
-**Snabbinstallation:**
+**Snabb konfiguration:**
 ```cmd
 docker run -d --name open-webui -p 3000:8080 \
   -e OPENAI_API_BASE_URL=http://host.docker.internal:51211/v1 \
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variabel | Beskrivning | Standard | Exempel |
 |----------|-------------|----------|---------|
-| `MODEL` | Modellalias att använda | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Modellalias att använda | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local-endpunkt | Automatisk upptäckt | `http://localhost:51211` |
 | `API_KEY` | API-nyckel (valfritt för lokal) | `""` | `your-api-key` |
 
@@ -232,8 +232,8 @@ docker run -d --name open-webui -p 3000:8080 \
    - Kontrollera GPU-status: `chrome://gpu`
    - Demo faller automatiskt tillbaka till CPU
 
-2. **Fel vid modellinläsning:**
-   - Kontrollera internetanslutning för modellnedladdning
+2. **Problem med modellinladdning:**
+   - Säkerställ internetanslutning för modellnedladdning
    - Kontrollera webbläsarkonsolen för CORS-fel
    - Verifiera att du serverar via HTTP (inte file://)
 
@@ -287,20 +287,20 @@ chainlit run samples\04\app.py -w --port 8080  # Should open browser
 **Chainlit:**
 - Använd strömning för bättre upplevd prestanda
 - Implementera anslutningspooler för hög samtidighet
-- Cacha modellens svar för upprepade frågor
+- Cachea modellens svar för upprepade frågor
 - Övervaka minnesanvändning med stora konversationshistoriker
 
 **WebGPU:**
 - Använd WebGPU för maximal integritet och hastighet
 - Implementera modellkvantisering för mindre modeller
 - Använd Web Workers för bakgrundsprocesser
-- Cacha kompilerade modeller i webbläsarens lagring
+- Cachea kompilerade modeller i webbläsarens lagring
 
 **Open WebUI:**
 - Använd persistenta volymer för konversationshistorik
 - Konfigurera resursbegränsningar för Docker-container
 - Implementera backupstrategier för användardata
-- Ställ in omvänd proxy för SSL-terminering
+- Sätt upp omvänd proxy för SSL-terminering
 
 ### Integrationsmönster
 
@@ -354,15 +354,15 @@ async def analyze_document(file_path: str):
 
 ### Dokumentation
 - [Chainlit Dokumentation](https://docs.chainlit.io/) - Komplett ramverksguide
-- [Foundry Local Dokumentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Officiell Microsoft-dokumentation
+- [Foundry Local Dokumentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) - Officiella Microsoft-dokument
 - [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - WebGPU-integration
 - [Open WebUI Dokumentation](https://docs.openwebui.com/) - Avancerad konfiguration
 
 ### Exempelfiler
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produktionsklar Chainlit-applikation
-- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Utbildningsanteckningsbok
-- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - AI-inferens i webbläsaren
-- [`open-webui-guide.md`](./open-webui-guide.md) - Komplett Open WebUI-installation
+- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Utbildande notebook
+- [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Webbläsarbaserad AI-inferens
+- [`open-webui-guide.md`](./open-webui-guide.md) - Komplett Open WebUI-setup
 
 ### Relaterade exempel
 - [Session 4 Dokumentation](../../04.CuttingEdgeModels.md) - Komplett sessionsguide
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Ansvarsfriskrivning**:  
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.

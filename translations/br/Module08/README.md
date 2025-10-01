@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "bad055c54c7952c482113fd7fe1d43c1",
-  "translation_date": "2025-09-26T18:34:37+00:00",
+  "original_hash": "8d9324f9751f93e152a2f706afe8de99",
+  "translation_date": "2025-10-01T00:07:28+00:00",
   "source_file": "Module08/README.md",
   "language_code": "br"
 }
@@ -11,13 +11,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Visão Geral
 
-[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na borda, oferecendo ferramentas poderosas para desenvolvedores criarem, implantarem e escalarem aplicações de IA localmente, mantendo integração perfeita com o Azure AI Foundry. Este módulo fornece uma cobertura abrangente do Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
+[Microsoft Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) representa a próxima geração de desenvolvimento de IA na borda, oferecendo aos desenvolvedores ferramentas poderosas para criar, implantar e escalar aplicações de IA localmente, mantendo integração perfeita com o Azure AI Foundry. Este módulo fornece uma cobertura abrangente do Foundry Local, desde a instalação até o desenvolvimento avançado de agentes.
 
 **Principais Tecnologias:**
 - CLI e SDK do Microsoft Foundry Local
 - Integração com Azure AI Foundry
 - Inferência de modelos no dispositivo
-- Cache e otimização de modelos localmente
+- Cache e otimização de modelos locais
 - Arquiteturas baseadas em agentes
 
 ## Objetivos de Aprendizagem
@@ -58,7 +58,7 @@ Ao concluir este módulo, você será capaz de:
 ### [3: Modelos Open-Source no Foundry Local](./03.OpenSourceModels.md)
 **Foco**: Integração com Hugging Face, estratégias BYOM e modelos da comunidade
 
-**Tópicos Principais**: Integração com Hugging Face • Bring-your-own-model • Insights do Model Mondays • Contribuições da comunidade • Seleção de modelos
+**Tópicos Principais**: Integração com Hugging Face • Traga seu próprio modelo (BYOM) • Insights do Model Mondays • Contribuições da comunidade • Seleção de modelos
 
 **Exemplo**: [Orquestração Multi-Agente](./samples/05/README.md)
 
@@ -71,7 +71,7 @@ Ao concluir este módulo, você será capaz de:
 
 **Tópicos Principais**: Comparação de modelos • Inferência na borda vs na nuvem • Phi + ONNX Runtime • Aplicação Chainlit RAG • Otimização com WebGPU
 
-**Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md)
+**Exemplo**: [Roteador de Modelos como Ferramentas](./samples/06/README.md)
 
 **Duração**: 3-4 horas | **Nível**: Avançado
 
@@ -89,11 +89,11 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [6: Foundry Local - Modelos como Ferramentas](./06.ModelsAsTools.md)
-**Foco**: Soluções modulares de IA, escalabilidade empresarial e padrões de produção
+**Foco**: Soluções de IA modulares, escalabilidade empresarial e padrões de produção
 
 **Tópicos Principais**: Modelos como ferramentas • Implantação no dispositivo • Integração SDK/API • Arquiteturas empresariais • Estratégias de escalabilidade
 
-**Exemplo**: [Router de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas Foundry](./samples/10/README.md)
+**Exemplo**: [Roteador de Modelos como Ferramentas](./samples/06/README.md) • [Framework de Ferramentas Foundry](./samples/10/README.md)
 
 **Duração**: 3-4 horas | **Nível**: Especialista
 
@@ -133,7 +133,7 @@ Ao concluir este módulo, você será capaz de:
 ---
 
 ### [10: Foundry Local como Framework de Ferramentas](./samples/10/README.md)
-**Foco**: Arquitetura centrada em ferramentas para integrar Foundry Local em aplicações e frameworks existentes
+**Foco**: Arquitetura orientada a ferramentas para integrar o Foundry Local em aplicações e frameworks existentes
 
 **Tópicos Principais**: Integração com LangChain • Funções do Semantic Kernel • Frameworks de API REST • Ferramentas CLI • Integração com Jupyter • Padrões de implantação em produção
 
@@ -147,7 +147,7 @@ Ao concluir este módulo, você será capaz de:
 - **Sistema Operacional**: Windows 11 (22H2 ou posterior)
 - **Memória**: 16GB RAM (32GB recomendados para modelos maiores)
 - **Armazenamento**: 50GB de espaço livre para cache de modelos
-- **Hardware**: Dispositivo com NPU recomendado (Copilot+ PC), GPU opcional
+- **Hardware**: Dispositivo com NPU recomendado (PC Copilot+), GPU opcional
 - **Rede**: Internet de alta velocidade para download inicial de modelos
 
 ### Ambiente de Desenvolvimento
@@ -166,7 +166,7 @@ Ao concluir este módulo, você será capaz de:
 
 ## Cronograma do Módulo
 
-**Tempo Estimado Total**: 30-38 horas
+**Tempo Total Estimado**: 30-38 horas
 
 | Sessão | Área de Foco | Exemplos | Tempo | Complexidade |
 |--------|--------------|----------|-------|--------------|
@@ -206,37 +206,37 @@ Ao concluir este módulo, você estará preparado para:
 - **Decisões Arquiteturais**: Fazer escolhas informadas entre implantação local e na nuvem
 - **Otimização de Desempenho**: Otimizar o desempenho de inferência em diferentes configurações de hardware
 - **Escalabilidade Empresarial**: Projetar aplicações que escalam de protótipos locais para implantações empresariais
-- **Privacidade e Segurança**: Implementar soluções de IA que preservam a privacidade com inferência local
+- **Privacidade e Segurança**: Implementar soluções de IA preservando a privacidade com inferência local
 
 ### Capacidades de Inovação
 - **Prototipagem Rápida**: Construir e testar conceitos de aplicações de IA rapidamente em todos os 10 padrões de exemplo
 - **Integração Comunitária**: Aproveitar modelos open-source e contribuir para o ecossistema
 - **Padrões Avançados**: Implementar padrões de IA de ponta, incluindo RAG, agentes e integração de ferramentas
 - **Domínio de Frameworks**: Integração de nível especialista com LangChain, Semantic Kernel, Chainlit e Electron
-- **Implantação em Produção**: Implantar soluções de IA escaláveis, desde protótipos locais até sistemas empresariais
+- **Implantação em Produção**: Implantar soluções de IA escaláveis de protótipos locais para sistemas empresariais
 - **Desenvolvimento Preparado para o Futuro**: Construir aplicações prontas para tecnologias e padrões emergentes de IA
 
-## Primeiros Passos
+## Começando
 
-1. **Configuração do Ambiente**: Certifique-se de ter o Windows 11 com hardware recomendado (veja os Pré-requisitos)
+1. **Configuração do Ambiente**: Certifique-se de ter o Windows 11 com hardware recomendado (veja Pré-requisitos)
 2. **Instalar Foundry Local**: Siga a Sessão 1 para instalação e configuração completas
-3. **Executar o Exemplo 01**: Comece com a integração básica de API REST para verificar a configuração
+3. **Executar Exemplo 01**: Comece com a integração básica de API REST para verificar a configuração
 4. **Progredir pelos Exemplos**: Complete os exemplos 01-10 para domínio abrangente
 
 ## Métricas de Sucesso
 
-Acompanhe seu progresso por todos os 10 exemplos abrangentes:
+Acompanhe seu progresso em todos os 10 exemplos abrangentes:
 
 ### Nível Fundamental (Exemplos 01-03)
 - [ ] Instalar e configurar com sucesso o Foundry Local
-- [ ] Completar a integração com API REST (Exemplo 01)
+- [ ] Completar integração com API REST (Exemplo 01)
 - [ ] Implementar compatibilidade com OpenAI SDK (Exemplo 02)
 - [ ] Realizar descoberta e benchmarking de modelos (Exemplo 03)
 
 ### Nível de Aplicação (Exemplos 04-06)
 - [ ] Implantar e executar pelo menos 4 famílias de modelos diferentes
 - [ ] Construir uma aplicação funcional de chat RAG (Exemplo 04)
-- [ ] Criar um sistema de orquestração multi-agente (Exemplo 05)
+- [ ] Criar sistema de orquestração multi-agente (Exemplo 05)
 - [ ] Implementar roteamento inteligente de modelos (Exemplo 06)
 
 ### Nível de Integração Avançada (Exemplos 07-10)
@@ -249,12 +249,12 @@ Acompanhe seu progresso por todos os 10 exemplos abrangentes:
 - [ ] Executar com sucesso todos os 10 exemplos sem erros
 - [ ] Personalizar pelo menos 3 exemplos para casos de uso específicos
 - [ ] Implantar 2+ exemplos em ambientes semelhantes à produção
-- [ ] Contribuir com melhorias ou extensões ao código dos exemplos
+- [ ] Contribuir com melhorias ou extensões ao código de exemplo
 - [ ] Integrar padrões do Foundry Local em projetos pessoais/profissionais
 
 ## Guia de Início Rápido - Todos os 10 Exemplos
 
-### Configuração do Ambiente (Necessário para Todos os Exemplos)
+### Configuração do Ambiente (Requerido para Todos os Exemplos)
 
 ```powershell
 # 1. Clone and navigate to Module08
@@ -325,12 +325,12 @@ python -m samples.05.agents.coordinator
 python samples/05/examples/specialists_demo.py
 ```
 
-**Exemplo 06: Router de Modelos como Ferramentas**
+**Exemplo 06: Roteador de Modelos como Ferramentas**
 ```powershell
 # Configure environment
 set BASE_URL=http://localhost:8000
 set GENERAL_MODEL=phi-4-mini
-set CODE_MODEL=qwen2.5-7b-instruct
+set CODE_MODEL=qwen2.5-7b
 
 # Run intelligent router
 python samples/06/router.py "Analyze this Python code for performance issues"
@@ -454,7 +454,7 @@ npm install
 ```
 
 ## Resumo
-Este módulo representa o que há de mais avançado no desenvolvimento de IA de borda, combinando as ferramentas empresariais da Microsoft com a flexibilidade e inovação do ecossistema de código aberto. Ao dominar o Foundry Local por meio de todos os 10 exemplos abrangentes, você estará na vanguarda do desenvolvimento de aplicações de IA.
+Este módulo representa o que há de mais avançado no desenvolvimento de IA de borda, combinando as ferramentas de nível empresarial da Microsoft com a flexibilidade e inovação do ecossistema de código aberto. Ao dominar o Foundry Local através de todos os 10 exemplos abrangentes, você estará na vanguarda do desenvolvimento de aplicações de IA.
 
 **Trilha de Aprendizado Completa:**
 - **Fundamentos** (Exemplos 01-03): Integração de API e gerenciamento de modelos
@@ -465,3 +465,5 @@ Para integração com Azure OpenAI (Sessão 2), consulte os arquivos README indi
 
 ---
 
+**Aviso Legal**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

@@ -1,22 +1,22 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "562ac0eae12d808c9f45fbb77eb5c84f",
-  "translation_date": "2025-09-24T23:23:00+00:00",
+  "original_hash": "2f1754a482b6a84e07287a5b775e65b6",
+  "translation_date": "2025-10-01T00:41:35+00:00",
   "source_file": "Module08/samples/04/README.md",
   "language_code": "no"
 }
 -->
-# Eksempel 04: Produksjonsklare Chat-applikasjoner med Chainlit
+# Eksempel 04: Produksjonsklare chat-applikasjoner med Chainlit
 
-Et omfattende eksempel som viser flere tilnærminger til å bygge produksjonsklare chat-applikasjoner ved bruk av Microsoft Foundry Local, med moderne webgrensesnitt, strømmende svar og avanserte nettleserteknologier.
+Et omfattende eksempel som viser flere tilnærminger til å bygge produksjonsklare chat-applikasjoner ved bruk av Microsoft Foundry Local, med moderne webgrensesnitt, strømming av svar og avanserte nettleserteknologier.
 
 ## Hva er inkludert
 
 - **🚀 Chainlit Chat App** (`app.py`): Produksjonsklar chat-applikasjon med strømming
 - **🌐 WebGPU Demo** (`webgpu-demo/`): Nettleserbasert AI-inferens med maskinvareakselerasjon
 - **🎨 Open WebUI-integrasjon** (`open-webui-guide.md`): Profesjonelt ChatGPT-lignende grensesnitt
-- **📚 Pedagogisk Notebook** (`chainlit_app.ipynb`): Interaktive læringsmaterialer
+- **📚 Pedagogisk notatbok** (`chainlit_app.ipynb`): Interaktive læringsmaterialer
 
 ## Kom i gang
 
@@ -66,7 +66,7 @@ docker run -d --name open-webui -p 3000:8080 \
 | Scenario | Anbefaling | Begrunnelse |
 |----------|------------|-------------|
 | **Personvernfølsomme data** | 🏠 Lokal (Foundry) | Data forlater aldri enheten |
-| **Kompleks resonnering** | ☁️ Sky (Azure OpenAI) | Tilgang til større modeller |
+| **Kompleks resonnement** | ☁️ Sky (Azure OpenAI) | Tilgang til større modeller |
 | **Sanntidschat** | 🏠 Lokal (Foundry) | Lavere ventetid, raskere svar |
 | **Dokumentanalyse** | 🔄 Hybrid | Lokal for utvinning, sky for analyse |
 | **Kodegenerering** | 🏠 Lokal (Foundry) | Personvern + spesialiserte modeller |
@@ -90,7 +90,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 ## Installasjon og oppsett
 
-### 1. Python-miljøoppsett
+### 1. Oppsett av Python-miljø
 
 ```cmd
 # Navigate to Module08 directory
@@ -104,7 +104,7 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Foundry Local-oppsett
+### 2. Oppsett av Foundry Local
 
 ```cmd
 # Verify Foundry Local installation
@@ -126,7 +126,7 @@ foundry service ps
 
 **Funksjoner:**
 - 🚀 **Sanntidsstrømming**: Tokens vises mens de genereres
-- 🛡️ **Robust feilbehandling**: Grasiøs nedgradering og gjenoppretting
+- 🛡️ **Robust feilhåndtering**: Grasiøs nedgradering og gjenoppretting
 - 🎨 **Moderne grensesnitt**: Profesjonelt chat-grensesnitt rett ut av boksen
 - 🔧 **Fleksibel konfigurasjon**: Miljøvariabler og automatisk deteksjon
 - 📱 **Responsivt design**: Fungerer på både desktop og mobile enheter
@@ -137,7 +137,7 @@ foundry service ps
 chainlit run samples\04\app.py -w --port 8080
 
 # Use specific model
-set MODEL=qwen2.5-7b-instruct
+set MODEL=qwen2.5-7b
 chainlit run samples\04\app.py -w --port 8080
 
 # Manual endpoint configuration
@@ -185,7 +185,7 @@ docker run -d --name open-webui -p 3000:8080 \
 
 | Variabel | Beskrivelse | Standard | Eksempel |
 |----------|-------------|----------|----------|
-| `MODEL` | Modellalias som skal brukes | `phi-4-mini` | `qwen2.5-7b-instruct` |
+| `MODEL` | Modellalias som skal brukes | `phi-4-mini` | `qwen2.5-7b` |
 | `BASE_URL` | Foundry Local-endepunkt | Automatisk oppdaget | `http://localhost:51211` |
 | `API_KEY` | API-nøkkel (valgfritt for lokal) | `""` | `your-api-key` |
 
@@ -316,7 +316,7 @@ async def intelligent_routing(prompt: str, metadata: dict):
         return await foundry_local_completion(prompt)  # Default local
 ```
 
-**Multi-modal Pipeline:**
+**Multi-modal pipeline:**
 ```python
 # Combine different AI capabilities
 async def analyze_document(file_path: str):
@@ -340,7 +340,7 @@ async def analyze_document(file_path: str):
 - **API-nøkler**: Bruk miljøvariabler, aldri hardkod
 - **Nettverk**: Bruk HTTPS i produksjon, vurder VPN for teamtilgang
 - **Tilgangskontroll**: Implementer autentisering for Open WebUI
-- **Datapersonvern**: Gjennomgå hva som forblir lokalt vs. sendes til skyen
+- **Datapersonvern**: Gjennomgå hva som forblir lokalt vs. går til skyen
 - **Oppdateringer**: Hold Foundry Local og containere oppdatert
 
 ### Overvåking og vedlikehold
@@ -360,7 +360,7 @@ async def analyze_document(file_path: str):
 
 ### Eksempelfiler
 - [`app.py`](../../../../../Module08/samples/04/app.py) - Produksjonsklar Chainlit-applikasjon
-- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Pedagogisk notebook
+- [`chainlit_app.ipynb`](./chainlit_app.ipynb) - Pedagogisk notatbok
 - [`webgpu-demo/`](../../../../../Module08/samples/04/webgpu-demo) - Nettleserbasert AI-inferens
 - [`open-webui-guide.md`](./open-webui-guide.md) - Komplett Open WebUI-oppsett
 
@@ -370,3 +370,5 @@ async def analyze_document(file_path: str):
 
 ---
 
+**Ansvarsfraskrivelse**:  
+Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vær oppmerksom på at automatiserte oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på sitt opprinnelige språk bør anses som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for eventuelle misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.
