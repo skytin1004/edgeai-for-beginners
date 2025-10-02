@@ -91,6 +91,102 @@ By completing this Windows Edge AI development guide, you will master the essent
 - Develop go-to-market strategies for AI-enhanced Windows applications
 - Position applications to leverage Windows ecosystem benefits
 
+## Windows App SDK AI Samples
+
+The Windows App SDK provides comprehensive samples demonstrating AI integration across multiple frameworks and deployment scenarios. These samples are essential references for understanding Windows AI development patterns.
+
+### Windows AI Foundry Samples
+
+| Sample | Framework | Focus Area | Key Features |
+|--------|-----------|------------|-------------|
+| [cs-winui](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsAIFoundry/cs-winui) | C# WinUI 3 | Windows AI APIs Integration | Complete WinUI app demonstrating Windows AI apis, ARM64 optimization, packaged deployment |
+
+**Key Technologies:**
+- Windows AI APIs
+- WinUI 3 framework
+- ARM64 platform optimization
+- Copilot+ PC compatibility
+- Packaged app deployment
+
+**Prerequisites:**
+- Windows 11 with Copilot+ PC recommended
+- Visual Studio 2022
+- ARM64 build configuration
+- Windows App SDK 1.8.1+
+
+### Windows ML Samples
+
+#### C++ Samples
+
+| Sample | Type | Focus Area | Key Features |
+|--------|------|------------|-------------|
+| [CppConsoleDesktop](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Console App | Basic Windows ML | EP discovery, command-line options, model compilation |
+| [CppConsoleDesktop.FrameworkDependent](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Console App | Framework Deployment | Shared runtime, smaller deployment footprint |
+| [CppConsoleDesktop.SelfContained](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Console App | Self-Contained Deployment | Standalone deployment, no runtime dependencies |
+| [CppConsoleDll](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | DLL | Library Usage | WindowsML in shared library, memory management |
+| [CppResnetBuildDemo](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Demo | ResNet Tutorial | Model conversion, EP compilation, Build 2025 tutorial |
+
+#### C# Samples
+
+**Console Applications**
+
+| Sample | Type | Focus Area | Key Features |
+|--------|------|------------|-------------|
+| [CSharpConsoleDesktop](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs) | Console App | Basic C# Integration | Shared helper usage, command-line interface |
+| [ResnetBuildDemoCS](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs) | Demo | ResNet Tutorial | Model conversion, EP compilation, Build 2025 tutorial |
+
+**GUI Applications**
+
+| Sample | Framework | Focus Area | Key Features |
+|--------|-----------|------------|-------------|
+| [cs-wpf](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-wpf) | WPF | Desktop GUI | Image classification with WPF interface |
+| [cs-winforms](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-winforms) | Windows Forms | Traditional GUI | Image classification with Windows Forms |
+| [cs-winui](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-winui) | WinUI 3 | Modern GUI | Image classification with WinUI 3 interface |
+
+#### Python Samples
+
+| Sample | Language | Focus Area | Key Features |
+|--------|----------|------------|-------------|
+| [SqueezeNetPython](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/python) | Python | Image Classification | WinML Python bindings, batch image processing |
+
+### Sample Prerequisites
+
+**System Requirements:**
+- Windows 11 PC running version 24H2 (build 26100) or greater
+- Visual Studio 2022 with C++ and .NET workloads
+- Windows App SDK 1.8.1 or later
+- Python 3.10-3.13 for Python samples on x64 and ARM64 devices
+
+**Windows AI Foundry Specific:**
+- Copilot+ PC recommended for optimal performance
+- ARM64 build configuration for Windows AI samples
+- Package identity required (unpackaged apps no longer supported)
+
+### Common Sample Workflow
+
+Most Windows ML samples follow this standard pattern:
+
+1. **Initialize Environment** - Create ONNX Runtime environment
+2. **Register Execution Providers** - Discover and register available hardware accelerators (CPU, GPU, NPU)
+3. **Load Model** - Load ONNX model, optionally compile for target hardware
+4. **Preprocess Input** - Convert images/data to model input format
+5. **Run Inference** - Execute model and get predictions
+6. **Process Results** - Apply softmax and display top predictions
+
+### Model Files Used
+
+| Model | Purpose | Included | Notes |
+|-------|---------|----------|-------|
+| SqueezeNet | Lightweight image classification | ✅ Included | Pre-trained, ready to use |
+| ResNet-50 | High-accuracy image classification | ❌ Requires conversion | Use [AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/modelconversion) for conversion |
+
+### Hardware Support
+
+All samples automatically detect and utilize available hardware:
+- **CPU** - Universal support across all Windows devices
+- **GPU** - Automatic detection and optimization for available graphics hardware
+- **NPU** - Leverages Neural Processing Units on supported devices (Copilot+ PCs)
+
 ## Windows AI Foundry Platform Components
 
 ### 1. Windows AI APIs
@@ -120,6 +216,93 @@ Windows AI APIs provide ready-to-use AI capabilities powered by on-device models
 ### 2. Foundry Local
 
 Foundry Local provides developers with quick access to ready-to-use open-source language models on Windows Silicon, offering the ability to browse, test, interact, and deploy models in local applications.
+
+#### Foundry Local Sample Applications
+
+The [Foundry Local repository](https://github.com/microsoft/Foundry-Local/tree/main/samples) provides comprehensive samples across multiple programming languages and frameworks, demonstrating various integration patterns and use cases.
+
+| Sample | Language/Framework | Focus Area | Key Features |
+|--------|-------------------|------------|-------------|
+| [dotNET/rag](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag) | C# / .NET | RAG Implementation | Semantic Kernel integration, Qdrant vector store, JINA embeddings, document ingestion, streaming chat |
+| [electron/foundry-chat](https://github.com/microsoft/Foundry-Local/tree/main/samples/electron/foundry-chat) | JavaScript / Electron | Desktop Chat App | Cross-platform chat, local/cloud model switching, OpenAI SDK integration, real-time streaming |
+| [js/hello-foundry-local](https://github.com/microsoft/Foundry-Local/tree/main/samples/js/hello-foundry-local) | JavaScript / Node.js | Basic Integration | Simple SDK usage, model initialization, basic chat functionality |
+| [python/hello-foundry-local](https://github.com/microsoft/Foundry-Local/tree/main/samples/python/hello-foundry-local) | Python | Basic Integration | Python SDK usage, streaming responses, OpenAI-compatible API |
+| [rust/hello-foundry-local](https://github.com/microsoft/Foundry-Local/tree/main/samples/rust/hello-foundry-local) | Rust | Systems Integration | Low-level SDK usage, async operations, reqwest HTTP client |
+
+#### Sample Categories by Use Case
+
+**RAG (Retrieval-Augmented Generation)**
+- **dotNET/rag**: Complete RAG implementation using Semantic Kernel, Qdrant vector database, and JINA embeddings
+- **Architecture**: Document ingestion → Text chunking → Vector embeddings → Similarity search → Context-aware responses
+- **Technologies**: Microsoft.SemanticKernel, Qdrant.Client, BERT ONNX embeddings, streaming chat completion
+
+**Desktop Applications**
+- **electron/foundry-chat**: Production-ready chat application with local/cloud model switching
+- **Features**: Model selector, streaming responses, error handling, cross-platform deployment
+- **Architecture**: Electron main process, IPC communication, secure preload scripts
+
+**SDK Integration Examples**
+- **JavaScript (Node.js)**: Basic model interaction and streaming responses
+- **Python**: OpenAI-compatible API usage with async streaming
+- **Rust**: Low-level integration with reqwest and tokio for async operations
+
+#### Prerequisites for Foundry Local Samples
+
+**System Requirements:**
+- Windows 11 with Foundry Local installed
+- Node.js v16+ for JavaScript/Electron samples
+- .NET 8.0+ for C# samples
+- Python 3.10+ for Python samples
+- Rust 1.70+ for Rust samples
+
+**Installation:**
+```powershell
+# Install Foundry Local
+winget install Microsoft.FoundryLocal
+
+# Verify installation
+foundry --version
+foundry model list
+```
+
+#### Sample-Specific Setup
+
+**dotNET RAG Sample:**
+```powershell
+# Install required packages via NuGet
+# Microsoft.SemanticKernel.Connectors.Onnx
+# Microsoft.SemanticKernel.Connectors.Qdrant
+# Qdrant.Client
+
+# Start Qdrant vector database
+docker run -p 6333:6333 qdrant/qdrant
+
+# Run Jupyter notebook
+jupyter notebook rag_foundrylocal_demo.ipynb
+```
+
+**Electron Chat Sample:**
+```powershell
+# Set environment variables for cloud fallback
+$env:YOUR_API_KEY="your-cloud-api-key"
+$env:YOUR_ENDPOINT="your-cloud-endpoint"
+$env:YOUR_MODEL_NAME="your-cloud-model"
+
+# Install dependencies and run
+npm install
+npm start
+```
+
+**JavaScript/Python/Rust Samples:**
+```powershell
+# Download model (example with phi-3.5-mini)
+foundry model run phi-3.5-mini
+
+# Run respective sample
+node src/app.js          # JavaScript
+python src/app.py        # Python
+cargo run               # Rust
+```
 
 #### Key Features
 
@@ -164,10 +347,18 @@ Windows ML serves as the core AI platform and integrated inferencing runtime on 
 ### Phase 1: Environment Setup and Tool Configuration
 
 **Development Environment Preparation**
-1. Install Visual Studio with AI Toolkit extension
-2. Configure Windows AI Foundry CLI tools
-3. Set up local model testing environment
-4. Establish performance profiling and monitoring tools
+1. Install Visual Studio 2022 with C++ and .NET workloads
+2. Install Windows App SDK 1.8.1 or later
+3. Configure Windows AI Foundry CLI tools
+4. Set up AI Toolkit extension for Visual Studio Code
+5. Establish performance profiling and monitoring tools
+6. Ensure ARM64 build configuration for Copilot+ PC optimization
+
+**Sample Repository Setup**
+1. Clone the [Windows App SDK Samples repository](https://github.com/microsoft/WindowsAppSDK-Samples)
+2. Navigate to `Samples/WindowsAIFoundry/cs-winui` for Windows AI API examples
+3. Navigate to `Samples/WindowsML` for comprehensive Windows ML examples
+4. Review the [build requirements](https://learn.microsoft.com/windows/apps/windows-app-sdk/system-requirements) for your target platforms
 
 **AI Dev Gallery Exploration**
 - Explore sample applications and reference implementations
@@ -337,11 +528,24 @@ Develop a privacy-preserving healthcare documentation tool:
 
 ### Common Development Challenges
 
+**Build Configuration Issues**
+- Ensure ARM64 platform configuration for Windows AI API samples
+- Verify Windows App SDK version compatibility (1.8.1+ required)
+- Check that package identity is properly configured (required for Windows AI APIs)
+- Validate that build tools support the target framework version
+
 **Model Loading Issues**
 - Validate ONNX model compatibility with Windows ML
 - Check model file integrity and format requirements
 - Verify hardware capability requirements for specific models
 - Debug memory allocation issues during model loading
+- Ensure execution provider registration for hardware acceleration
+
+**Deployment Mode Considerations**
+- **Self-Contained Mode**: Fully supported with larger deployment size
+- **Framework-Dependent Mode**: Smaller footprint but requires shared runtime
+- **Unpackaged Applications**: No longer supported for Windows AI APIs
+- Use `dotnet run -p:Platform=ARM64 -p:SelfContained=true` for self-contained ARM64 deployment
 
 **Performance Problems**
 - Profile application performance across different hardware configurations
@@ -409,18 +613,32 @@ Whether you're building consumer applications, enterprise solutions, or speciali
 
 ## Additional Resources
 
-For a step-by-step Windows walkthrough of Foundry Local (install, CLI, dynamic endpoint, SDK usage), see the repo guide: [foundrylocal.md](./foundrylocal.md).
-
 ### Documentation and Learning
 - [Windows AI Foundry Documentation](https://learn.microsoft.com/windows/ai/)
 - [Windows AI APIs Reference](https://learn.microsoft.com/windows/ai/apis/)
+- [Get started building an app with Windows AI APIs](https://learn.microsoft.com/windows/ai/apis/model-setup)
 - [Foundry Local Getting Started](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)
 - [Windows ML Overview](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)
+- [Windows App SDK System Requirements](https://docs.microsoft.com/windows/apps/windows-app-sdk/system-requirements)
+- [Windows App SDK Development Environment Setup](https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment)
+
+### Sample Repositories and Code
+- [Windows App SDK Samples - Windows AI Foundry](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsAIFoundry)
+- [Windows App SDK Samples - Windows ML](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML)
+- [ONNX Runtime Inference Examples](https://github.com/microsoft/onnxruntime-inference-examples)
+- [Windows App SDK Samples Repository](https://github.com/microsoft/WindowsAppSDK-Samples)
 
 ### Development Tools
 - [AI Toolkit for Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)
 - [AI Dev Gallery](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)
 - [Windows AI Samples](https://learn.microsoft.com/windows/ai/samples/)
+- [Model Conversion Tools](https://code.visualstudio.com/docs/intelligentapps/modelconversion)
+
+### Technical Support
+- [Windows ML Documentation](https://learn.microsoft.com/windows/ai/new-windows-ml/overview)
+- [ONNX Runtime Documentation](https://onnxruntime.ai/docs/)
+- [Windows App SDK Documentation](https://docs.microsoft.com/windows/apps/windows-app-sdk/)
+- [Report Issues - Windows App SDK Samples](https://github.com/microsoft/WindowsAppSDK-Samples/issues)
 
 ### Community and Support
 - [Windows Developer Community](https://developer.microsoft.com/en-us/windows/)
@@ -430,3 +648,5 @@ For a step-by-step Windows walkthrough of Foundry Local (install, CLI, dynamic e
 ---
 
 *This guide is designed to evolve with the rapidly advancing Windows AI ecosystem. Regular updates ensure alignment with the latest platform capabilities and development best practices.*
+
+[08. Hands on With Microsoft Foundry Local - Complete Developer Toolkit](../Module08/README.md)

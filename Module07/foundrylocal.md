@@ -120,3 +120,5 @@ winget upgrade --id Microsoft.FoundryLocal
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit with Foundry Local (use `foundry service status` to get the chat endpoint URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Next Windows Developer](./windowdeveloper.md)

@@ -162,3 +162,5 @@ These five EdgeAI implementations demonstrate the maturity and diversity of edge
 The common thread across all these platforms is the democratization of AI capabilities, making sophisticated machine learning accessible to developers across different skill levels and use cases. Whether building mobile applications, desktop software, or embedded systems, these EdgeAI solutions provide the foundation for the next generation of intelligent applications that operate efficiently and privately at the edge.
 
 Each platform offers unique advantages: Jetson Orin Nano for hardware-accelerated edge computing, ONNX Runtime GenAI for cross-platform mobile development, Azure EdgeAI for enterprise cloud-edge integration, Windows ML for Windows-native applications, and Foundry Local for privacy-focused RAG implementations. Together, they represent a comprehensive ecosystem for EdgeAI development.
+
+[Next AI Toolkit](aitoolkit.md)
