@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:48:08+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:40:31+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "vi"
 }
@@ -42,7 +42,7 @@ Mở terminal và chạy lệnh sau:
    brew install foundrylocal
 ```
 
-## 2) CLI Cơ bản (Ba Danh mục)
+## 2) Cơ bản về CLI (Ba danh mục)
 
 - Mô hình:
 ```cmd
@@ -63,12 +63,12 @@ foundry cache list
 ```
 
 Ghi chú:
-- Dịch vụ cung cấp một API REST tương thích với OpenAI. Cổng endpoint được cấp phát động; sử dụng `foundry service status` để tìm ra cổng này.
+- Dịch vụ cung cấp một API REST tương thích với OpenAI. Cổng endpoint được phân bổ động; sử dụng `foundry service status` để tìm ra cổng này.
 - Sử dụng SDKs để tiện lợi hơn; chúng tự động xử lý việc tìm kiếm endpoint khi được hỗ trợ.
 
 ## 3) Tìm Endpoint Local (Cổng động)
 
-Foundry Local cấp phát một cổng động mỗi lần dịch vụ khởi động:
+Foundry Local phân bổ một cổng động mỗi lần dịch vụ khởi động:
 ```cmd
 foundry service status
 ```
@@ -92,9 +92,9 @@ PY
 Tham khảo:
 - Tích hợp SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Sử dụng Mô hình của Bạn (Biên dịch với Olive)
+## 5) Sử dụng mô hình của bạn (Biên dịch với Olive)
 
-Nếu bạn cần một mô hình không có trong danh mục, hãy biên dịch nó sang ONNX cho Foundry Local bằng Olive.
+Nếu bạn cần một mô hình không có trong danh mục, hãy biên dịch nó sang ONNX để sử dụng với Foundry Local bằng Olive.
 
 Quy trình tổng quan (xem tài liệu để biết các bước chi tiết):
 ```cmd
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Trải nghiệm Nhà phát triển Windows liên quan
+## 7) Trải nghiệm phát triển liên quan trên Windows
 
 - Lựa chọn AI local vs cloud trên Windows, bao gồm Foundry Local và Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - Bộ công cụ AI của VS Code với Foundry Local (sử dụng `foundry service status` để lấy URL endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Nhà phát triển Windows tiếp theo](./windowdeveloper.md)
+
 ---
 
+**Tuyên bố miễn trừ trách nhiệm**:  
+Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi cố gắng đảm bảo độ chính xác, xin lưu ý rằng các bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn thông tin chính thức. Đối với các thông tin quan trọng, khuyến nghị sử dụng dịch vụ dịch thuật chuyên nghiệp bởi con người. Chúng tôi không chịu trách nhiệm cho bất kỳ sự hiểu lầm hoặc diễn giải sai nào phát sinh từ việc sử dụng bản dịch này.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T00:21:26+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T12:48:26+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "tr"
 }
@@ -11,153 +11,160 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Giriş
 
-Edge AI geliştirme için Visual Studio Code AI Toolkit kullanımı hakkında kapsamlı rehbere hoş geldiniz. Yapay zeka, merkezi bulut bilişimden dağıtılmış edge cihazlara doğru ilerlerken, geliştiricilerin edge dağıtımının benzersiz zorluklarını - kaynak kısıtlamalarından çevrimdışı çalışma gereksinimlerine kadar - ele alabilecek güçlü ve entegre araçlara ihtiyacı vardır.
+Edge AI geliştirme için Visual Studio Code'daki AI Toolkit'i kullanma konusunda kapsamlı rehbere hoş geldiniz. Yapay zeka, merkezi bulut bilişimden dağıtılmış uç cihazlara doğru ilerlerken, geliştiricilerin kaynak kısıtlamalarından çevrimdışı çalışma gereksinimlerine kadar uç dağıtımın benzersiz zorluklarını ele alabilecek güçlü ve entegre araçlara ihtiyacı vardır.
 
-Visual Studio Code için AI Toolkit, edge cihazlarda verimli bir şekilde çalışan yapay zeka uygulamaları oluşturmak, test etmek ve optimize etmek için özel olarak tasarlanmış eksiksiz bir geliştirme ortamı sunarak bu boşluğu doldurur. IoT sensörleri, mobil cihazlar, gömülü sistemler veya edge sunucular için geliştirme yapıyor olun, bu araç seti, tanıdık VS Code ortamında tüm geliştirme iş akışınızı kolaylaştırır.
+Visual Studio Code için AI Toolkit, uç cihazlarda verimli bir şekilde çalışan yapay zeka uygulamaları oluşturmak, test etmek ve optimize etmek için özel olarak tasarlanmış eksiksiz bir geliştirme ortamı sunarak bu boşluğu doldurur. IoT sensörleri, mobil cihazlar, gömülü sistemler veya uç sunucular için geliştiriyor olun, bu araç seti, tanıdık VS Code ortamında tüm geliştirme iş akışınızı kolaylaştırır.
 
 Bu rehber, AI Toolkit'i Edge AI projelerinizde kullanmak için gerekli temel kavramlar, araçlar ve en iyi uygulamalar konusunda size rehberlik edecek; başlangıçtaki model seçiminden üretim dağıtımına kadar.
 
 ## Genel Bakış
 
-AI Toolkit, VS Code içinde eksiksiz bir Edge AI uygulama yaşam döngüsü için entegre bir geliştirme ortamı sağlar. OpenAI, Anthropic, Google ve GitHub gibi sağlayıcılardan popüler yapay zeka modelleriyle sorunsuz entegrasyon sunarken, ONNX ve Ollama aracılığıyla yerel model dağıtımını destekler - cihaz üzerinde çıkarım gerektiren Edge AI uygulamaları için kritik özellikler.
+Visual Studio Code için AI Toolkit, ajan geliştirme ve yapay zeka uygulamaları oluşturmayı kolaylaştıran güçlü bir eklentidir. Araç seti, Anthropic, OpenAI, GitHub, Google gibi birçok sağlayıcıdan yapay zeka modellerini keşfetme, değerlendirme ve dağıtma için kapsamlı yetenekler sunar ve ONNX ile Ollama kullanarak yerel model çalıştırmayı destekler.
 
-AI Toolkit'i Edge AI geliştirme için ayıran şey, tüm edge dağıtım hattına odaklanmasıdır. Geleneksel yapay zeka geliştirme araçları genellikle bulut dağıtımını hedeflerken, AI Toolkit model optimizasyonu, kaynak kısıtlı testler ve edge'e özgü performans değerlendirmesi için özel özellikler içerir. Araç seti, edge AI geliştirmenin farklı gereksinimler gerektirdiğini anlar - daha küçük model boyutları, daha hızlı çıkarım süreleri, çevrimdışı yetenekler ve donanıma özgü optimizasyonlar.
+AI Toolkit'i diğerlerinden ayıran şey, yapay zeka geliştirme yaşam döngüsünün tamamına yönelik kapsamlı yaklaşımıdır. Geleneksel yapay zeka geliştirme araçları genellikle tek bir alana odaklanırken, AI Toolkit model keşfi, deney, ajan geliştirme, değerlendirme ve dağıtımı kapsayan entegre bir ortam sağlar—hepsi tanıdık VS Code ortamında.
 
-Platform, basit cihaz üzeri çıkarımdan karmaşık çoklu model edge mimarilerine kadar çeşitli dağıtım senaryolarını destekler. Başarılı edge dağıtımı için gerekli olan model dönüştürme, kuantizasyon ve optimizasyon araçlarını sağlarken, VS Code'un bilinen geliştirici verimliliğini korur.
+Platform, hızlı prototipleme ve üretim dağıtımı için özel olarak tasarlanmıştır ve uç AI geliştirme için, uç dağıtım senaryoları için yapay zeka uygulamalarını verimli bir şekilde geliştirebilir, test edebilir ve optimize edebilirsiniz.
 
 ## Öğrenme Hedefleri
 
 Bu rehberin sonunda şunları yapabileceksiniz:
 
 ### Temel Yetkinlikler
-- Edge AI geliştirme iş akışları için Visual Studio Code AI Toolkit'i **kurun ve yapılandırın**
-- Model Kataloğu, Playground ve Agent Builder dahil olmak üzere AI Toolkit arayüzünde **gezinin ve kullanın**
-- Performans ve kaynak kısıtlamalarına dayalı olarak edge dağıtımına uygun yapay zeka modellerini **seçin ve değerlendirin**
-- Edge cihazlar için ONNX formatı ve kuantizasyon tekniklerini kullanarak modelleri **dönüştürün ve optimize edin**
+- Edge AI geliştirme iş akışları için Visual Studio Code'daki AI Toolkit'i **kurmak ve yapılandırmak**
+- AI Toolkit arayüzünü, Model Catalog, Playground ve Agent Builder dahil olmak üzere **gezmek ve kullanmak**
+- Performans ve kaynak kısıtlamalarına dayalı olarak uç dağıtım için uygun yapay zeka modellerini **seçmek ve değerlendirmek**
+- ONNX formatı ve kuantizasyon tekniklerini kullanarak modelleri uç cihazlar için **dönüştürmek ve optimize etmek**
 
 ### Edge AI Geliştirme Becerileri
-- Entegre geliştirme ortamını kullanarak Edge AI uygulamaları **tasarlayın ve uygulayın**
-- Yerel çıkarım ve kaynak izleme kullanarak edge benzeri koşullarda model testleri **yapın**
-- Edge dağıtım senaryoları için optimize edilmiş yapay zeka ajanları **oluşturun ve özelleştirin**
-- Edge bilişimle ilgili metrikleri (gecikme, bellek kullanımı, doğruluk) kullanarak model performansını **değerlendirin**
+- Entegre geliştirme ortamını kullanarak Edge AI uygulamaları **tasarlamak ve uygulamak**
+- Yerel çıkarım ve kaynak izleme kullanarak uç benzeri koşullarda model testi **yapmak**
+- Uç dağıtım senaryoları için optimize edilmiş yapay zeka ajanları **oluşturmak ve özelleştirmek**
+- Uç bilişimle ilgili metrikler (gecikme, bellek kullanımı, doğruluk) kullanarak model performansını **değerlendirmek**
 
 ### Optimizasyon ve Dağıtım
-- Model boyutunu azaltmak için **kuantizasyon ve budama tekniklerini uygulayın** ve kabul edilebilir performansı koruyun
-- CPU, GPU ve NPU hızlandırma dahil olmak üzere belirli edge donanım platformları için modelleri **optimize edin**
-- Kaynak yönetimi ve geri dönüş stratejileri dahil olmak üzere edge AI geliştirme için en iyi uygulamaları **uygulayın**
-- Edge cihazlarda üretim dağıtımı için modelleri ve uygulamaları **hazırlayın**
+- Kabul edilebilir performansı korurken model boyutunu azaltmak için **kuantizasyon ve budama tekniklerini uygulamak**
+- CPU, GPU ve NPU hızlandırma dahil olmak üzere belirli uç donanım platformları için modelleri **optimize etmek**
+- Kaynak yönetimi ve geri dönüş stratejileri gibi uç AI geliştirme için **en iyi uygulamaları uygulamak**
+- Modelleri ve uygulamaları uç cihazlarda üretim dağıtımı için **hazırlamak**
 
 ### İleri Düzey Edge AI Kavramları
-- ONNX Runtime, Windows ML ve TensorFlow Lite dahil olmak üzere edge AI çerçeveleriyle **entegrasyon sağlayın**
-- Edge ortamları için çoklu model mimarileri ve federatif öğrenme senaryolarını **uygulayın**
-- Bellek kısıtlamaları, çıkarım hızı ve donanım uyumluluğu gibi yaygın edge AI sorunlarını **çözün**
-- Üretimdeki edge AI uygulamaları için izleme ve günlükleme stratejileri **tasarlayın**
+- ONNX Runtime, Windows ML ve TensorFlow Lite gibi uç AI çerçeveleriyle **entegrasyon sağlamak**
+- Uç ortamlar için çoklu model mimarileri ve federatif öğrenme senaryoları **uygulamak**
+- Bellek kısıtlamaları, çıkarım hızı ve donanım uyumluluğu gibi yaygın uç AI sorunlarını **çözmek**
+- Üretimdeki uç AI uygulamaları için izleme ve günlükleme stratejileri **tasarlamak**
 
 ### Pratik Uygulama
-- Model seçiminden dağıtıma kadar uçtan uca Edge AI çözümleri **oluşturun**
-- Edge'e özgü geliştirme iş akışları ve optimizasyon tekniklerinde **uzmanlık gösterin**
-- IoT, mobil ve gömülü uygulamalar dahil olmak üzere gerçek dünya edge AI kullanım durumlarına **öğrenilen kavramları uygulayın**
-- Farklı edge AI dağıtım stratejilerini ve bunların avantajlarını **değerlendirin ve karşılaştırın**
+- Model seçiminden dağıtıma kadar uçtan uca Edge AI çözümleri **oluşturmak**
+- Uç spesifik geliştirme iş akışları ve optimizasyon tekniklerinde **uzmanlık göstermek**
+- IoT, mobil ve gömülü uygulamalar dahil olmak üzere gerçek dünya Edge AI kullanım durumlarına **öğrenilen kavramları uygulamak**
+- Farklı uç AI dağıtım stratejilerini ve bunların avantajlarını **değerlendirmek ve karşılaştırmak**
 
 ## Edge AI Geliştirme için Temel Özellikler
 
 ### 1. Model Kataloğu ve Keşfi
-- **Yerel Model Desteği**: Edge dağıtımı için özel olarak optimize edilmiş yapay zeka modellerini keşfedin ve erişin
-- **ONNX Entegrasyonu**: Edge çıkarımı için verimli ONNX formatındaki modellere erişin
-- **Ollama Desteği**: Gizlilik ve çevrimdışı çalışma için Ollama aracılığıyla yerel olarak çalışan modellerden yararlanın
-- **Model Karşılaştırması**: Edge cihazlar için performans ve kaynak tüketimi arasında optimal dengeyi bulmak için modelleri yan yana karşılaştırın
+- **Çoklu Sağlayıcı Desteği**: Anthropic, OpenAI, GitHub, Google ve diğer sağlayıcılardan yapay zeka modellerini keşfedin ve erişin
+- **Yerel Model Entegrasyonu**: Uç dağıtım için ONNX ve Ollama modellerinin basitleştirilmiş keşfi
+- **GitHub Modelleri**: GitHub'ın model barındırma ile doğrudan entegrasyonu
+- **Model Karşılaştırması**: Uç cihaz kısıtlamaları için optimal dengeyi bulmak üzere modelleri yan yana karşılaştırın
 
 ### 2. Etkileşimli Playground
-- **Yerel Test Ortamı**: Edge dağıtımından önce modelleri yerel olarak test edin
-- **Çoklu Mod Deneyimi**: Edge senaryolarında tipik olan görüntüler, metinler ve diğer girdilerle test yapın
-- **Parametre Ayarı**: Edge kısıtlamalarına göre optimize etmek için farklı model parametreleriyle deney yapın
-- **Gerçek Zamanlı Performans İzleme**: Geliştirme sırasında çıkarım hızı ve kaynak kullanımını gözlemleyin
+- **Etkileşimli Test Ortamı**: Kontrollü bir ortamda model yetenekleriyle hızlı deneyler yapın
+- **Çoklu Mod Desteği**: Uç senaryolarda tipik olan görüntüler, metinler ve diğer girdilerle test yapın
+- **Gerçek Zamanlı Deney**: Model yanıtları ve performansı hakkında anında geri bildirim alın
+- **Parametre Optimizasyonu**: Uç dağıtım gereksinimleri için model parametrelerini ince ayar yapın
 
-### 3. Edge Uygulamaları için Agent Builder
-- **Prompt Mühendisliği**: Daha küçük edge modelleriyle verimli çalışan optimize edilmiş istemler oluşturun
-- **MCP Araç Entegrasyonu**: Edge ajan yeteneklerini artırmak için Model Context Protocol araçlarını entegre edin
-- **Kod Üretimi**: Edge dağıtım senaryoları için optimize edilmiş üretim kodu oluşturun
-- **Yapılandırılmış Çıktılar**: Edge uygulamaları için tutarlı, yapılandırılmış yanıtlar sağlayan ajanlar tasarlayın
+### 3. Prompt (Ajan) Oluşturucu
+- **Doğal Dil Üretimi**: Doğal dil açıklamaları kullanarak başlangıç promptları oluşturun
+- **Yinelemeli İyileştirme**: Model yanıtlarına ve performansına dayalı olarak promptları geliştirin
+- **Görev Ayrıştırma**: Prompt zincirleme ve yapılandırılmış çıktılarla karmaşık görevleri parçalayın
+- **Değişken Desteği**: Dinamik ajan davranışı için promptlarda değişkenler kullanın
+- **Üretim Kod Üretimi**: Hızlı uygulama geliştirme için üretime hazır kod oluşturun
 
-### 4. Model Değerlendirme ve Test
-- **Performans Metrikleri**: Edge dağıtımıyla ilgili metrikler kullanarak modelleri değerlendirin (gecikme, bellek kullanımı, doğruluk)
-- **Toplu Test**: Edge ayarlarını optimize etmek için birden fazla model yapılandırmasını aynı anda test edin
-- **Özel Değerlendirme**: Edge AI kullanım durumlarına özel değerlendirme kriterleri oluşturun
-- **Kaynak Profili**: Edge dağıtım planlaması için bellek ve hesaplama gereksinimlerini analiz edin
+### 4. Toplu Çalıştırma ve Değerlendirme
+- **Çoklu Model Testi**: Seçilen modellerde birden fazla promptu aynı anda çalıştırın
+- **Ölçekli Verimli Test**: Çeşitli girdileri ve yapılandırmaları verimli bir şekilde test edin
+- **Özel Test Vakaları**: İşlevselliği doğrulamak için ajanları test vakalarıyla çalıştırın
+- **Performans Karşılaştırması**: Farklı modeller ve yapılandırmalar arasında sonuçları karşılaştırın
 
-### 5. Model Dönüştürme ve Optimizasyon
-- **ONNX Dönüşümü**: Çeşitli formatlardan ONNX'e modelleri dönüştürerek edge uyumluluğu sağlayın
-- **Kuantizasyon**: Model boyutunu azaltın ve kuantizasyon teknikleriyle çıkarım hızını artırın
-- **Donanım Optimizasyonu**: Belirli edge donanımı (CPU, GPU, NPU) için modelleri optimize edin
-- **Format Dönüşümü**: Hugging Face ve diğer kaynaklardan gelen modelleri edge dağıtımı için dönüştürün
+### 5. Veri Setleri ile Model Değerlendirme
+- **Standart Metrikler**: F1 skoru, alaka düzeyi, benzerlik, tutarlılık gibi yerleşik değerlendiricilerle yapay zeka modellerini test edin
+- **Özel Değerlendiriciler**: Belirli kullanım durumları için kendi değerlendirme metriklerinizi oluşturun
+- **Veri Seti Entegrasyonu**: Modelleri kapsamlı veri setlerine karşı test edin
+- **Performans Ölçümü**: Uç dağıtım kararları için model performansını ölçün
 
-### 6. Edge Senaryoları için İnce Ayar
-- **Alan Adaptasyonu**: Belirli edge kullanım durumları ve ortamları için modelleri özelleştirin
-- **Yerel Eğitim**: Edge'e özgü gereksinimler için GPU desteğiyle modelleri yerel olarak eğitin
-- **Azure Entegrasyonu**: Edge dağıtımından önce bulut tabanlı ince ayar için Azure Container Apps'ten yararlanın
-- **Transfer Öğrenimi**: Önceden eğitilmiş modelleri edge'e özgü görevler ve kısıtlamalar için uyarlayın
+### 6. İnce Ayar Yetenekleri
+- **Model Özelleştirme**: Belirli kullanım durumları ve alanlar için modelleri özelleştirin
+- **Uzmanlaşmış Uyarlama**: Modelleri özel alanlara ve gereksinimlere uyarlayın
+- **Uç Optimizasyonu**: Uç dağıtım kısıtlamaları için modelleri ince ayar yapın
+- **Alan-Specifik Eğitim**: Belirli uç kullanım durumlarına uygun modeller oluşturun
 
-### 7. Performans İzleme ve İzleme
-- **Edge Performans Analizi**: Edge benzeri koşullarda model performansını izleyin
-- **İz Toplama**: Optimizasyon için ayrıntılı performans verileri toplayın
-- **Darboğaz Tanımlama**: Edge cihazlara dağıtımdan önce performans sorunlarını belirleyin
-- **Kaynak Kullanımı Takibi**: Edge optimizasyonu için bellek, CPU ve çıkarım süresini izleyin
+### 7. MCP Araç Entegrasyonu
+- **Harici Araç Bağlantısı**: Ajanları Model Context Protocol sunucuları aracılığıyla harici araçlara bağlayın
+- **Gerçek Dünya Eylemleri**: Ajanların veritabanlarını sorgulamasını, API'lere erişmesini veya özel mantık yürütmesini sağlayın
+- **Mevcut MCP Sunucuları**: Komut (stdio) veya HTTP (server-sent event) protokollerinden araçları kullanın
+- **Özel MCP Geliştirme**: Agent Builder'da test ederek yeni MCP sunucuları oluşturun ve taslak oluşturun
+
+### 8. Ajan Geliştirme ve Test
+- **Fonksiyon Çağırma Desteği**: Ajanların harici fonksiyonları dinamik olarak çağırmasını sağlayın
+- **Gerçek Zamanlı Entegrasyon Testi**: Gerçek zamanlı çalıştırmalar ve araç kullanımı ile entegrasyonları test edin
+- **Ajan Sürümleme**: Değerlendirme sonuçları için karşılaştırma yetenekleriyle ajanlar için sürüm kontrolü
+- **Hata Ayıklama ve İzleme**: Ajan geliştirme için yerel izleme ve hata ayıklama yetenekleri
 
 ## Edge AI Geliştirme İş Akışı
 
 ### Aşama 1: Model Keşfi ve Seçimi
-1. **Model Kataloğunu Keşfedin**: Edge dağıtımı için uygun modelleri bulmak için model kataloğunu kullanın
-2. **Performansı Karşılaştırın**: Modelleri boyut, doğruluk ve çıkarım hızı temelinde değerlendirin
-3. **Yerel Test Yapın**: Edge dağıtımından önce Ollama veya ONNX modellerini kullanarak yerel test yapın
-4. **Kaynak Gereksinimlerini Değerlendirin**: Hedef edge cihazlar için bellek ve hesaplama ihtiyaçlarını belirleyin
+1. **Model Kataloğunu Keşfedin**: Uç dağıtım için uygun modelleri bulmak için model kataloğunu kullanın
+2. **Performansı Karşılaştırın**: Boyut, doğruluk ve çıkarım hızına dayalı olarak modelleri değerlendirin
+3. **Yerel Test Yapın**: Uç dağıtımdan önce Ollama veya ONNX modellerini yerel olarak test edin
+4. **Kaynak Gereksinimlerini Değerlendirin**: Hedef uç cihazlar için bellek ve hesaplama ihtiyaçlarını belirleyin
 
 ### Aşama 2: Model Optimizasyonu
-1. **ONNX'e Dönüştürün**: Seçilen modelleri edge uyumluluğu için ONNX formatına dönüştürün
+1. **ONNX'e Dönüştürün**: Seçilen modelleri uç uyumluluğu için ONNX formatına dönüştürün
 2. **Kuantizasyon Uygulayın**: INT8 veya INT4 kuantizasyon ile model boyutunu azaltın
-3. **Donanım Optimizasyonu**: Hedef edge donanımı (ARM, x86, özel hızlandırıcılar) için optimize edin
+3. **Donanım Optimizasyonu**: Hedef uç donanım için optimize edin (ARM, x86, özel hızlandırıcılar)
 4. **Performans Doğrulaması**: Optimize edilmiş modellerin kabul edilebilir doğruluğu koruduğunu doğrulayın
 
 ### Aşama 3: Uygulama Geliştirme
-1. **Ajan Tasarımı**: Agent Builder'ı kullanarak edge'e optimize edilmiş yapay zeka ajanları oluşturun
-2. **Prompt Mühendisliği**: Daha küçük edge modelleriyle etkili çalışan istemler geliştirin
-3. **Entegrasyon Testi**: Ajanları simüle edilmiş edge koşullarında test edin
-4. **Kod Üretimi**: Edge dağıtımı için optimize edilmiş üretim kodu oluşturun
+1. **Ajan Tasarımı**: Agent Builder'ı kullanarak uç için optimize edilmiş yapay zeka ajanları oluşturun
+2. **Prompt Mühendisliği**: Daha küçük uç modellerle etkili çalışan promptlar geliştirin
+3. **Entegrasyon Testi**: Ajanları simüle edilmiş uç koşullarda test edin
+4. **Kod Üretimi**: Uç dağıtım için optimize edilmiş üretim kodu oluşturun
 
 ### Aşama 4: Değerlendirme ve Test
-1. **Toplu Değerlendirme**: Birden fazla yapılandırmayı test ederek optimal edge ayarlarını bulun
+1. **Toplu Değerlendirme**: Optimal uç ayarlarını bulmak için birden fazla yapılandırmayı test edin
 2. **Performans Profili**: Çıkarım hızı, bellek kullanımı ve doğruluğu analiz edin
-3. **Edge Simülasyonu**: Hedef edge dağıtım ortamına benzer koşullarda test yapın
+3. **Uç Simülasyonu**: Hedef uç dağıtım ortamına benzer koşullarda test yapın
 4. **Stres Testi**: Çeşitli yük koşulları altında performansı değerlendirin
 
 ### Aşama 5: Dağıtım Hazırlığı
-1. **Son Optimizasyon**: Test sonuçlarına dayalı son optimizasyonları uygulayın
-2. **Dağıtım Paketleme**: Edge dağıtımı için modelleri ve kodu paketleyin
+1. **Son Optimizasyon**: Test sonuçlarına dayalı olarak son optimizasyonları uygulayın
+2. **Dağıtım Paketleme**: Modelleri ve kodu uç dağıtım için paketleyin
 3. **Dokümantasyon**: Dağıtım gereksinimlerini ve yapılandırmayı belgeleyin
-4. **İzleme Ayarı**: Üretim dağıtımı için izleme ve günlükleme hazırlayın
+4. **İzleme Ayarı**: Uç dağıtım için izleme ve günlükleme hazırlayın
 
 ## Edge AI Geliştirme için Hedef Kitle
 
 ### Edge AI Geliştiricileri
-- Yapay zeka destekli edge cihazlar ve IoT çözümleri geliştiren uygulama geliştiricileri
+- Yapay zeka destekli uç cihazlar ve IoT çözümleri geliştiren uygulama geliştiricileri
 - Kaynak kısıtlı cihazlara yapay zeka yeteneklerini entegre eden gömülü sistem geliştiricileri
-- Akıllı telefonlar ve tabletler için cihaz üzeri yapay zeka uygulamaları oluşturan mobil geliştiriciler
+- Akıllı telefonlar ve tabletler için cihaz üzerinde yapay zeka uygulamaları oluşturan mobil geliştiriciler
 
 ### Edge AI Mühendisleri
-- Edge dağıtımı için modelleri optimize eden ve çıkarım hatlarını yöneten yapay zeka mühendisleri
-- Dağıtılmış edge altyapısında yapay zeka modellerini dağıtan ve yöneten DevOps mühendisleri
-- Edge donanım kısıtlamaları için yapay zeka iş yüklerini optimize eden performans mühendisleri
+- Uç dağıtım için modelleri optimize eden ve çıkarım hatlarını yöneten yapay zeka mühendisleri
+- Dağıtılmış uç altyapısında yapay zeka modellerini dağıtan ve yöneten DevOps mühendisleri
+- Uç donanım kısıtlamaları için yapay zeka iş yüklerini optimize eden performans mühendisleri
 
 ### Araştırmacılar ve Eğitimciler
-- Edge bilişim için verimli modeller ve algoritmalar geliştiren yapay zeka araştırmacıları
-- Edge AI kavramlarını öğreten ve optimizasyon tekniklerini gösteren eğitimciler
-- Edge AI dağıtımındaki zorluklar ve çözümler hakkında bilgi edinen öğrenciler
+- Uç bilişim için verimli modeller ve algoritmalar geliştiren yapay zeka araştırmacıları
+- Uç yapay zeka kavramlarını öğreten ve optimizasyon tekniklerini gösteren eğitimciler
+- Uç yapay zeka dağıtımındaki zorluklar ve çözümler hakkında bilgi edinen öğrenciler
 
 ## Edge AI Kullanım Durumları
 
 ### Akıllı IoT Cihazları
 - **Gerçek Zamanlı Görüntü Tanıma**: IoT kameraları ve sensörlerinde bilgisayarlı görme modellerini dağıtın
 - **Ses İşleme**: Akıllı hoparlörlerde konuşma tanıma ve doğal dil işleme uygulayın
-- **Tahmine Dayalı Bakım**: Endüstriyel edge cihazlarında anomali algılama modelleri çalıştırın
+- **Tahmine Dayalı Bakım**: Endüstriyel uç cihazlarda anomali algılama modelleri çalıştırın
 - **Çevresel İzleme**: Çevresel uygulamalar için sensör veri analizi modellerini dağıtın
 
 ### Mobil ve Gömülü Uygulamalar
@@ -166,166 +173,219 @@ Bu rehberin sonunda şunları yapabileceksiniz:
 - **Sağlık İzleme**: Giyilebilir cihazlar ve tıbbi ekipmanlarda sağlık analizi modelleri çalıştırın
 - **Otonom Sistemler**: Dronlar, robotlar ve araçlar için karar verme modelleri uygulayın
 
-### Edge Bilişim Altyapısı
-- **Edge Veri Merkezleri**: Düşük gecikmeli uygulamalar için edge veri merkezlerinde yapay zeka modellerini dağıtın
+### Uç Bilişim Altyapısı
+- **Uç Veri Merkezleri**: Düşük gecikmeli uygulamalar için uç veri merkezlerinde yapay zeka modellerini dağıtın
 - **CDN Entegrasyonu**: İçerik dağıtım ağlarına yapay zeka işleme yeteneklerini entegre edin
-- **5G Edge**: 5G edge bilişimden yararlanarak yapay zeka destekli uygulamalar oluşturun
-- **Fog Bilişim**: Fog bilişim ortamlarında yapay zeka işleme uygulayın
+- **5G Uç**: Yapay zeka destekli uygulamalar için 5G uç bilişimden yararlanın
+- **Fog Computing**: Fog bilişim ortamlarında yapay zeka işleme uygulayın
 
 ## Kurulum ve Ayar
 
-### Hızlı Kurulum
-AI Toolkit uzantısını doğrudan Visual Studio Code Marketplace'ten yükleyin:
+### Eklenti Kurulumu
+AI Toolkit eklentisini doğrudan Visual Studio Code Marketplace'ten kurun:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**Eklenti Kimliği**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Kurulum Yöntemleri**:
+1. **VS Code Marketplace**: Extensions görünümünde "AI Toolkit" arayın
+2. **Komut Satırı**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Doğrudan Kurulum**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio) üzerinden indirin
 
 ### Edge AI Geliştirme için Ön Koşullar
-- **ONNX Runtime**: Model çıkarımı için ONNX Runtime'ı yükleyin
-- **Ollama** (Opsiyonel): Yerel model sunumu için Ollama'yı yükleyin
-- **Python Ortamı**: Gerekli yapay zeka kütüphaneleriyle Python'u kurun
-- **Edge Donanım Araçları**: CUDA, OpenVINO gibi donanıma özel geliştirme araçlarını yükleyin
+- **Visual Studio Code**: En son sürüm önerilir
+- **Python Ortamı**: Gerekli yapay zeka kütüphaneleriyle Python 3.8+
+- **ONNX Runtime** (Opsiyonel): ONNX model çıkarımı için
+- **Ollama** (Opsiyonel): Yerel model sunumu için
+- **Donanım Hızlandırma Araçları**: CUDA, OpenVINO veya platforma özel hızlandırıcılar
 
 ### İlk Yapılandırma
-1. VS Code'u açın ve AI Toolkit uzantısını yükleyin
-2. Model kaynaklarını yapılandırın (ONNX, Ollama, bulut sağlayıcılar)
-3. Edge testi için yerel geliştirme ortamını ayarlayın
-4. Geliştirme makineniz için donanım hızlandırma seçeneklerini yapılandırın
+1. **Eklenti Aktivasyonu**: VS Code'u açın ve AI Toolkit'in Activity Bar'da göründüğünü doğrulayın
+2. **Model Sağlayıcı Ayarı**: GitHub, OpenAI, Anthropic veya diğer model sağlayıcılara erişimi yapılandırın
+3. **Yerel Ortam**: Python ortamını ayarlayın ve gerekli paketleri yükleyin
+4. **Donanım Hızlandırma**: GPU/NPU hızlandırmayı yapılandırın (varsa)
+5. **MCP Entegrasyonu**: Gerekirse Model Context Protocol sunucularını ayarlayın
 
-## Edge AI Geliştirmeye Başlama
+### İlk Kurulum Kontrol Listesi
+- [ ] AI Toolkit eklentisi kuruldu ve etkinleştirildi
+- [ ] Model kataloğu erişilebilir ve modeller keşfedilebilir
+- [ ] Playground model testi için işlevsel
+- [ ] Prompt geliştirme için Agent Builder erişilebilir
+- [ ] Yerel geliştirme ortamı yapılandırıldı
+- [ ] Donanım hızlandırma (varsa) doğru şekilde yapılandırıldı
 
-### Adım 1: Model Seçimi
-1. Etkinlik Çubuğunda AI Toolkit görünümünü açın
-2. Edge uyumlu modeller için Model Kataloğunu gözden geçirin
-3. Model boyutu, format (ONNX) ve performans özelliklerine göre filtreleme yapın
-4. Dahili karşılaştırma araçlarını kullanarak modelleri karşılaştırın
+## AI Toolkit ile Başlarken
 
-### Adım 2: Yerel Test
-1. Playground'u kullanarak seçilen modelleri yerel olarak test edin
-2. Farklı istemler ve parametrelerle deney yapın
-3. Test sırasında performans metriklerini izleyin
-4. Edge kullanım durumu gereksinimleri için model yanıtlarını değerlendirin
+### Hızlı Başlangıç Rehberi
 
-### Adım 3: Model Optimizasyonu
-1. Model Dönüştürme araçlarını kullanarak edge dağıtımı için optimize edin
-2. Model boyutunu azaltmak için kuantizasyon uygulayın
-3. Optimize edilmiş modelleri kabul edilebilir performansı sağlamak için test edin
-4. Optimizasyon ayarlarını ve performans ödünlerini belgeleyin
+En sorunsuz deneyim için GitHub tarafından barındırılan modellerle başlamanızı öneririz:
 
-### Adım 4: Ajan Geliştirme
-1. Agent Builder'ı kullanarak edge'e optimize edilmiş yapay zeka ajanları oluşturun
-2. Daha küçük modellerle etkili çalışan istemler geliştirin
-3. Edge senaryoları için gerekli araçları ve API'leri entegre edin
-4. Ajanları simüle edilmiş edge koşullarında test edin
+1. **Kurulum**: AI Toolkit'i cihazınız için kurmak üzere [kurulum rehberini](https://code.visualstudio
+2. Doğal dil açıklamaları kullanarak başlangıç istemleri oluşturun  
+3. Model yanıtlarına göre istemleri yineleyin ve geliştirin  
+4. Gelişmiş ajan yetenekleri için MCP araçlarını entegre edin  
 
-### Adım 5: Değerlendirme ve Dağıtım
-1. Toplu değerlendirme kullanarak birden fazla yapılandırmayı test edin
-2. Çeşitli koşullar altında performans profili oluşturun
-3. Hedef edge cihazlar için dağıtım paketlerini hazırlayın
-4. Üretim dağıtımı için izleme ve günlükleme ayarlarını yapın
+#### Adım 3: Test ve Değerlendirme  
+1. Seçilen modellerde birden fazla istemi test etmek için **Toplu Çalıştırma** kullanın  
+2. Ajanları test senaryolarıyla çalıştırarak işlevselliği doğrulayın  
+3. Dahili veya özel metrikler kullanarak doğruluk ve performansı değerlendirin  
+4. Farklı modelleri ve yapılandırmaları karşılaştırın  
 
-## Edge AI Geliştirme için En İyi Uygulamalar
+#### Adım 4: İnce Ayar ve Optimizasyon  
+1. Belirli uç kullanım senaryoları için modelleri özelleştirin  
+2. Alan odaklı ince ayar uygulayın  
+3. Uç cihaz dağıtım kısıtlamaları için optimize edin  
+4. Farklı ajan yapılandırmalarını sürümleyin ve karşılaştırın  
 
-### Model Seçimi
-- **Boyut Kısıtlamaları**: H
-- **Güvenlik**: Edge AI uygulamaları için uygun güvenlik önlemlerini uygulayın
+#### Adım 5: Dağıtım Hazırlığı  
+1. Agent Builder kullanarak üretime hazır kod oluşturun  
+2. Üretim kullanımı için MCP sunucu bağlantılarını ayarlayın  
+3. Uç cihazlar için dağıtım paketlerini hazırlayın  
+4. İzleme ve değerlendirme metriklerini yapılandırın  
 
-## Edge AI Çerçeveleri ile Entegrasyon
+## Uç AI Geliştirme için En İyi Uygulamalar  
 
-### ONNX Runtime
-- **Platformlar Arası Dağıtım**: ONNX modellerini farklı edge platformlarında dağıtın
-- **Donanım Optimizasyonu**: ONNX Runtime'ın donanıma özel optimizasyonlarından yararlanın
-- **Mobil Destek**: Akıllı telefon ve tablet uygulamaları için ONNX Runtime Mobile kullanın
-- **IoT Entegrasyonu**: ONNX Runtime'ın hafif dağıtımlarıyla IoT cihazlarında dağıtım yapın
+### Model Seçimi  
+- **Boyut Kısıtlamaları**: Hedef cihazların bellek sınırlamalarına uygun modeller seçin  
+- **Çıkarım Hızı**: Gerçek zamanlı uygulamalar için hızlı çıkarım sürelerine sahip modelleri tercih edin  
+- **Doğruluk Dengesi**: Model doğruluğunu kaynak kısıtlamalarıyla dengeleyin  
+- **Format Uyumluluğu**: Uç dağıtım için ONNX veya donanım optimizasyonlu formatları tercih edin  
 
-### Windows ML
-- **Windows Cihazları**: Windows tabanlı edge cihazlar ve PC'ler için optimize edin
-- **NPU Hızlandırma**: Windows cihazlarındaki Neural Processing Unit'lerden yararlanın
-- **DirectML**: Windows platformlarında GPU hızlandırması için DirectML kullanın
-- **UWP Entegrasyonu**: Universal Windows Platform uygulamalarıyla entegre edin
+### Optimizasyon Teknikleri  
+- **Kantifikasyon**: Model boyutunu küçültmek ve hızı artırmak için INT8 veya INT4 kantifikasyonu kullanın  
+- **Budama**: Hesaplama gereksinimlerini azaltmak için gereksiz model parametrelerini kaldırın  
+- **Bilgi Damıtma**: Daha büyük modellerin performansını koruyan daha küçük modeller oluşturun  
+- **Donanım Hızlandırma**: Mevcut olduğunda NPU, GPU veya özel hızlandırıcıları kullanın  
 
-### TensorFlow Lite
-- **Mobil Optimizasyon**: TensorFlow Lite modellerini mobil ve gömülü cihazlarda dağıtın
-- **Donanım Delegeleri**: Hızlandırma için özel donanım delegeleri kullanın
-- **Mikro Kontrolcüler**: TensorFlow Lite Micro ile mikro kontrolcülerde dağıtım yapın
-- **Platformlar Arası Destek**: Android, iOS ve gömülü Linux sistemlerinde dağıtım yapın
+### Geliştirme İş Akışı  
+- **Yinelemeli Test**: Geliştirme sırasında uç benzeri koşullarda sık sık test yapın  
+- **Performans İzleme**: Kaynak kullanımı ve çıkarım hızını sürekli izleyin  
+- **Sürüm Kontrolü**: Model sürümlerini ve optimizasyon ayarlarını takip edin  
+- **Dokümantasyon**: Tüm optimizasyon kararlarını ve performans dengelerini belgeleyin  
 
-### Azure IoT Edge
-- **Bulut-Edge Hibrit**: Bulut eğitimini edge çıkarımı ile birleştirin
-- **Modül Dağıtımı**: AI modellerini IoT Edge modülleri olarak dağıtın
-- **Cihaz Yönetimi**: Edge cihazlarını ve model güncellemelerini uzaktan yönetin
-- **Telemetri**: Edge dağıtımlarından performans verileri ve model metrikleri toplayın
+### Dağıtım Dikkat Noktaları  
+- **Kaynak İzleme**: Üretimde bellek, CPU ve güç kullanımını izleyin  
+- **Yedekleme Stratejileri**: Model hataları için yedekleme mekanizmaları uygulayın  
+- **Güncelleme Mekanizmaları**: Model güncellemeleri ve sürüm yönetimi için plan yapın  
+- **Güvenlik**: Uç AI uygulamaları için uygun güvenlik önlemleri alın  
 
-## İleri Düzey Edge AI Senaryoları
+## Uç AI Çerçeveleri ile Entegrasyon  
 
-### Çoklu Model Dağıtımı
-- **Model Toplulukları**: Daha iyi doğruluk veya yedeklilik için birden fazla model dağıtın
-- **A/B Testi**: Edge cihazlarında farklı modelleri aynı anda test edin
-- **Dinamik Seçim**: Mevcut cihaz koşullarına göre modeller seçin
-- **Kaynak Paylaşımı**: Birden fazla dağıtılmış model arasında kaynak kullanımını optimize edin
+### ONNX Runtime  
+- **Çapraz Platform Dağıtımı**: ONNX modellerini farklı uç platformlarda dağıtın  
+- **Donanım Optimizasyonu**: ONNX Runtime'ın donanım odaklı optimizasyonlarını kullanın  
+- **Mobil Destek**: Akıllı telefon ve tablet uygulamaları için ONNX Runtime Mobile kullanın  
+- **IoT Entegrasyonu**: ONNX Runtime'ın hafif dağıtımlarıyla IoT cihazlarında dağıtım yapın  
 
-### Federated Learning
-- **Dağıtılmış Eğitim**: Modelleri birden fazla edge cihazında eğitin
-- **Gizlilik Koruma**: Eğitim verilerini yerel tutarken model iyileştirmelerini paylaşın
-- **İşbirlikçi Öğrenme**: Cihazların kolektif deneyimlerden öğrenmesini sağlayın
-- **Edge-Bulut Koordinasyonu**: Edge cihazları ve bulut altyapısı arasında öğrenmeyi koordine edin
+### Windows ML  
+- **Windows Cihazları**: Windows tabanlı uç cihazlar ve PC'ler için optimize edin  
+- **NPU Hızlandırma**: Windows cihazlarında Neural Processing Units kullanın  
+- **DirectML**: Windows platformlarında GPU hızlandırma için DirectML kullanın  
+- **UWP Entegrasyonu**: Universal Windows Platform uygulamalarıyla entegre edin  
 
-### Gerçek Zamanlı İşleme
-- **Akış İşleme**: Edge cihazlarında sürekli veri akışlarını işleyin
-- **Düşük Gecikmeli Çıkarım**: Minimum çıkarım gecikmesi için optimize edin
-- **Toplu İşleme**: Edge cihazlarında veri gruplarını verimli bir şekilde işleyin
-- **Uyarlanabilir İşleme**: Mevcut cihaz yeteneklerine göre işlemi ayarlayın
+### TensorFlow Lite  
+- **Mobil Optimizasyon**: TensorFlow Lite modellerini mobil ve gömülü cihazlarda dağıtın  
+- **Donanım Delegeleri**: Hızlandırma için özel donanım delegelerini kullanın  
+- **Mikro Kontrolcüler**: TensorFlow Lite Micro ile mikro kontrolcülerde dağıtım yapın  
+- **Çapraz Platform Desteği**: Android, iOS ve gömülü Linux sistemlerinde dağıtım yapın  
 
-## Edge AI Geliştirme Sorunlarını Giderme
+### Azure IoT Edge  
+- **Bulut-Uç Hibrit**: Bulut eğitimi ile uç çıkarımı birleştirin  
+- **Modül Dağıtımı**: AI modellerini IoT Edge modülleri olarak dağıtın  
+- **Cihaz Yönetimi**: Uç cihazları ve model güncellemelerini uzaktan yönetin  
+- **Telemetri**: Uç dağıtımlardan performans verileri ve model metrikleri toplayın  
 
-### Yaygın Sorunlar
-- **Bellek Kısıtlamaları**: Model, hedef cihazın belleği için çok büyük
-- **Çıkarım Hızı**: Model çıkarımı gerçek zamanlı gereksinimler için çok yavaş
-- **Doğruluk Kaybı**: Optimizasyon, model doğruluğunu kabul edilemez şekilde düşürüyor
-- **Donanım Uyumluluğu**: Model, hedef donanımla uyumlu değil
+## Gelişmiş Uç AI Senaryoları  
 
-### Hata Ayıklama Stratejileri
-- **Performans Profili**: AI Toolkit'in izleme özelliklerini kullanarak darboğazları belirleyin
-- **Kaynak İzleme**: Geliştirme sırasında bellek ve CPU kullanımını izleyin
-- **Kademeli Test**: Sorunları izole etmek için optimizasyonları kademeli olarak test edin
-- **Donanım Simülasyonu**: Hedef donanımı simüle etmek için geliştirme araçlarını kullanın
+### Çoklu Model Dağıtımı  
+- **Model Toplulukları**: Daha iyi doğruluk veya yedeklilik için birden fazla model dağıtın  
+- **A/B Testi**: Uç cihazlarda farklı modelleri aynı anda test edin  
+- **Dinamik Seçim**: Mevcut cihaz koşullarına göre modeller seçin  
+- **Kaynak Paylaşımı**: Birden fazla dağıtılmış model arasında kaynak kullanımını optimize edin  
 
-### Optimizasyon Çözümleri
-- **Daha Fazla Kuantizasyon**: Daha agresif kuantizasyon teknikleri uygulayın
-- **Model Mimarisi**: Edge için optimize edilmiş farklı model mimarilerini düşünün
-- **Ön İşleme Optimizasyonu**: Edge kısıtlamaları için veri ön işlemesini optimize edin
-- **Çıkarım Optimizasyonu**: Donanıma özel çıkarım optimizasyonlarını kullanın
+### Federated Learning  
+- **Dağıtılmış Eğitim**: Modelleri birden fazla uç cihazda eğitin  
+- **Gizlilik Koruma**: Eğitim verilerini yerel tutarken model iyileştirmelerini paylaşın  
+- **İşbirlikçi Öğrenme**: Cihazların kolektif deneyimlerden öğrenmesini sağlayın  
+- **Uç-Bulut Koordinasyonu**: Uç cihazlar ve bulut altyapısı arasında öğrenmeyi koordine edin  
 
-## Kaynaklar ve Sonraki Adımlar
+### Gerçek Zamanlı İşleme  
+- **Akış İşleme**: Uç cihazlarda sürekli veri akışlarını işleyin  
+- **Düşük Gecikmeli Çıkarım**: Minimum çıkarım gecikmesi için optimize edin  
+- **Toplu İşleme**: Uç cihazlarda veri gruplarını verimli bir şekilde işleyin  
+- **Uyarlanabilir İşleme**: Mevcut cihaz yeteneklerine göre işlemi ayarlayın  
 
-### Dokümantasyon
-- [AI Toolkit Modeller Kılavuzu](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Dokümantasyonu](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Dokümantasyonu](https://onnxruntime.ai/)
-- [Windows ML Dokümantasyonu](https://docs.microsoft.com/en-us/windows/ai/)
+## Uç AI Geliştirme Sorun Giderme  
 
-### Topluluk ve Destek
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Topluluğu](https://github.com/onnx/onnx)
-- [Edge AI Geliştirici Topluluğu](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Uzantı Pazarı](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Yaygın Sorunlar  
+- **Bellek Kısıtlamaları**: Model hedef cihazın belleği için çok büyük  
+- **Çıkarım Hızı**: Model çıkarımı gerçek zamanlı gereksinimler için çok yavaş  
+- **Doğruluk Bozulması**: Optimizasyon model doğruluğunu kabul edilemez şekilde azaltıyor  
+- **Donanım Uyumluluğu**: Model hedef donanımla uyumlu değil  
 
-### Öğrenme Kaynakları
-- [Edge AI Temelleri Kursu](./Module01/README.md)
-- [Küçük Dil Modelleri Kılavuzu](./Module02/README.md)
-- [Edge Dağıtım Stratejileri](./Module03/README.md)
-- [Windows Edge AI Geliştirme](./windowdeveloper.md)
+### Hata Ayıklama Stratejileri  
+- **Performans Profili**: Darboğazları belirlemek için AI Toolkit'in izleme özelliklerini kullanın  
+- **Kaynak İzleme**: Geliştirme sırasında bellek ve CPU kullanımını izleyin  
+- **Artımlı Test**: Sorunları izole etmek için optimizasyonları kademeli olarak test edin  
+- **Donanım Simülasyonu**: Hedef donanımı simüle etmek için geliştirme araçlarını kullanın  
 
-## Sonuç
+### Optimizasyon Çözümleri  
+- **Daha Fazla Kantifikasyon**: Daha agresif kantifikasyon teknikleri uygulayın  
+- **Model Mimarisi**: Uç için optimize edilmiş farklı model mimarilerini düşünün  
+- **Ön İşleme Optimizasyonu**: Uç kısıtlamaları için veri ön işleme optimizasyonu yapın  
+- **Çıkarım Optimizasyonu**: Donanım odaklı çıkarım optimizasyonlarını kullanın  
 
-Visual Studio Code için AI Toolkit, model keşfi ve optimizasyonundan dağıtım ve izlemeye kadar Edge AI geliştirme için kapsamlı bir platform sunar. Entegre araçları ve iş akışlarını kullanarak, geliştiriciler kaynak kısıtlı edge cihazlarında etkili bir şekilde çalışan AI uygulamaları oluşturabilir, test edebilir ve dağıtabilir.
+## Kaynaklar ve Sonraki Adımlar  
 
-ONNX, Ollama ve çeşitli bulut sağlayıcıları için sunduğu destek, optimizasyon ve değerlendirme yetenekleriyle AI Toolkit, Edge AI geliştirme için ideal bir seçimdir. IoT uygulamaları, mobil AI özellikleri veya gömülü zeka sistemleri oluşturuyor olun, AI Toolkit başarılı Edge AI dağıtımı için gereken araçları ve iş akışlarını sağlar.
+### Resmi Dokümantasyon  
+- [AI Toolkit Geliştirici Dokümantasyonu](https://aka.ms/AIToolkit/doc)  
+- [Kurulum ve Ayar Kılavuzu](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Akıllı Uygulamalar Dokümantasyonu](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) Dokümantasyonu](https://modelcontextprotocol.io/)  
 
-Edge AI gelişmeye devam ederken, VS Code için AI Toolkit, geliştiricilere bir sonraki nesil zeki edge uygulamalarını oluşturmak için en son araçları ve yetenekleri sunarak ön planda kalmaya devam ediyor.
+### Topluluk ve Destek  
+- [AI Toolkit GitHub Deposu](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub Sorunlar ve Özellik Talepleri](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord Topluluğu](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Uzantı Pazarı](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Teknik Kaynaklar  
+- [ONNX Runtime Dokümantasyonu](https://onnxruntime.ai/)  
+- [Ollama Dokümantasyonu](https://ollama.ai/)  
+- [Windows ML Dokümantasyonu](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry Dokümantasyonu](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Öğrenme Yolları  
+- [Uç AI Temelleri Kursu](../Module01/README.md)  
+- [Küçük Dil Modelleri Kılavuzu](../Module02/README.md)  
+- [Uç Dağıtım Stratejileri](../Module03/README.md)  
+- [Windows Uç AI Geliştirme](./windowdeveloper.md)  
+
+### Ek Kaynaklar  
+- **Depo İstatistikleri**: 1.8k+ yıldız, 150+ çatal, 18+ katkıda bulunan  
+- **Lisans**: MIT Lisansı  
+- **Güvenlik**: Microsoft güvenlik politikaları geçerlidir  
+- **Telemetri**: VS Code telemetri ayarlarına saygı gösterir  
+
+## Sonuç  
+
+Visual Studio Code için AI Toolkit, modern AI geliştirme için kapsamlı bir platform sunar ve özellikle Uç AI uygulamaları için değerli olan akıllı ajan geliştirme yeteneklerini sağlar. Anthropic, OpenAI, GitHub ve Google gibi sağlayıcıları destekleyen geniş model kataloğu ve ONNX ile Ollama üzerinden yerel çalıştırma yetenekleriyle, araç seti çeşitli uç dağıtım senaryoları için gereken esnekliği sunar.
+
+Araç setinin gücü, entegre yaklaşımında yatmaktadır—Playground'da model keşfi ve deneyden, Prompt Builder ile sofistike ajan geliştirmeye, kapsamlı değerlendirme yeteneklerine ve sorunsuz MCP araç entegrasyonuna kadar. Uç AI geliştiricileri için bu, kaynak kısıtlı ortamlar için optimize edilmiş AI ajanlarını hızlı bir şekilde prototipleme ve test etme anlamına gelir.
+
+Uç AI geliştirme için temel avantajlar:  
+- **Hızlı Deney**: Uç dağıtıma geçmeden önce modelleri ve ajanları hızlı bir şekilde test edin  
+- **Çoklu Sağlayıcı Esnekliği**: Uç çözümler için en uygun modelleri bulmak için çeşitli kaynaklara erişin  
+- **Yerel Geliştirme**: Çevrimdışı ve gizlilik odaklı geliştirme için ONNX ve Ollama ile test yapın  
+- **Üretim Hazırlığı**: Üretime hazır kod oluşturun ve MCP aracılığıyla harici araçlarla entegre edin  
+- **Kapsamlı Değerlendirme**: Uç AI performansını doğrulamak için dahili ve özel metrikler kullanın  
+
+AI, uç dağıtım senaryolarına doğru ilerlemeye devam ederken, VS Code için AI Toolkit, kaynak kısıtlı ortamlar için akıllı uygulamalar oluşturmak, test etmek ve optimize etmek için gereken geliştirme ortamını ve iş akışını sağlar. IoT çözümleri, mobil AI uygulamaları veya gömülü zeka sistemleri geliştiriyor olun, araç setinin kapsamlı özellik seti ve entegre iş akışı, uç AI geliştirme yaşam döngüsünün tamamını destekler.
+
+Sürekli gelişim ve aktif bir topluluk (1.8k+ GitHub yıldızı) ile AI Toolkit, modern AI geliştiricilerinin uç dağıtım senaryoları için ihtiyaçlarını karşılamak üzere sürekli olarak gelişen AI geliştirme araçlarının ön saflarında yer almaktadır.
+
+[Sonraki Foundry Local](./foundrylocal.md)
 
 ---
 
 **Feragatname**:  
-Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlık içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul edilmemektedir.

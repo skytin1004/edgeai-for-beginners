@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:00:04+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:42:02+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sr"
 }
@@ -63,7 +63,7 @@ foundry cache list
 ```
 
 Напомене:
-- Сервис пружа OpenAI-компатибилан REST API. Порт за приступ се динамички додељује; користите `foundry service status` да бисте га открили.
+- Сервис пружа OpenAI-компатибилан REST API. Порт за приступ је динамички додељен; користите `foundry service status` да га откријете.
 - Користите SDK-ове ради лакшег коришћења; они аутоматски откривају порт где је то подржано.
 
 ## 3) Откривање локалног ендпоинта (Динамички порт)
@@ -125,10 +125,14 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Повезано искуство за Windows програмере
 
-- Избор између локалне и cloud AI опције, укључујући Foundry Local и Windows ML:
+- Избори за локалну и cloud AI на Windows-у, укључујући Foundry Local и Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit са Foundry Local (користите `foundry service status` да бисте добили URL за ендпоинт за ћаскање):
+- VS Code AI Toolkit са Foundry Local (користите `foundry service status` да добијете URL за chat ендпоинт):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Следећи Windows програмер](./windowdeveloper.md)
 
 ---
 
+**Одрицање од одговорности**:  
+Овај документ је преведен помоћу услуге за превођење уз помоћ вештачке интелигенције [Co-op Translator](https://github.com/Azure/co-op-translator). Иако се трудимо да обезбедимо тачност, молимо вас да имате у виду да аутоматски преводи могу садржати грешке или нетачности. Оригинални документ на његовом изворном језику треба сматрати ауторитативним извором. За критичне информације препоручује се професионални превод од стране људи. Не сносимо одговорност за било каква погрешна тумачења или неспоразуме који могу произаћи из коришћења овог превода.

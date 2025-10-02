@@ -1,20 +1,20 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:35:19+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:40:57+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "it"
 }
 -->
 # Foundry Local su Windows e Mac
 
-Questa guida ti aiuta a installare, eseguire e integrare Microsoft Foundry Local su Windows e Mac. Tutti i passaggi e i comandi sono stati verificati con la documentazione di Microsoft Learn.
+Questa guida ti aiuta a installare, eseguire e integrare Microsoft Foundry Local su Windows e Mac. Tutti i passaggi e i comandi sono stati convalidati rispetto alla documentazione di Microsoft Learn.
 
-- Introduzione: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Inizia: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architettura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Riferimento CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
-- Integrare gli SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- Integrare SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Compilare modelli HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Locale vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
@@ -42,7 +42,7 @@ Apri un terminale ed esegui il seguente comando:
    brew install foundrylocal
 ```
 
-## 2) Nozioni di base sulla CLI (Tre Categorie)
+## 2) Nozioni di base sulla CLI (Tre categorie)
 
 - Modello:
 ```cmd
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Esperienza Sviluppatore su Windows Correlata
+## 7) Esperienza Sviluppatore Windows Correlata
 
-- Scelte tra AI locale e cloud su Windows, inclusi Foundry Local e Windows ML:
+- Scelte AI locale vs cloud su Windows, inclusi Foundry Local e Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - Toolkit AI di VS Code con Foundry Local (usa `foundry service status` per ottenere l'URL dell'endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Prossimo Sviluppatore Windows](./windowdeveloper.md)
+
 ---
 
+**Disclaimer**:  
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

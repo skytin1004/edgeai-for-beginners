@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:49:50+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:49:31+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ms"
 }
@@ -63,10 +63,10 @@ foundry cache list
 ```
 
 Nota:
-- Perkhidmatan ini mendedahkan API REST yang serasi dengan OpenAI. Port endpoint diperuntukkan secara dinamik; gunakan `foundry service status` untuk mengenal pasti port tersebut.
+- Perkhidmatan ini menyediakan API REST yang serasi dengan OpenAI. Port endpoint diperuntukkan secara dinamik; gunakan `foundry service status` untuk mengetahuinya.
 - Gunakan SDK untuk kemudahan; ia secara automatik menguruskan penemuan endpoint di mana disokong.
 
-## 3) Kenal Pasti Endpoint Tempatan (Port Dinamik)
+## 3) Menemui Endpoint Tempatan (Port Dinamik)
 
 Foundry Local memperuntukkan port dinamik setiap kali perkhidmatan dimulakan:
 ```cmd
@@ -94,7 +94,7 @@ Rujukan:
 
 ## 5) Bawa Model Anda Sendiri (Kompilasi dengan Olive)
 
-Jika anda memerlukan model yang tidak terdapat dalam katalog, kompilasi model tersebut ke ONNX untuk Foundry Local menggunakan Olive.
+Jika anda memerlukan model yang tidak terdapat dalam katalog, kompilasikannya ke ONNX untuk Foundry Local menggunakan Olive.
 
 Aliran tahap tinggi (lihat dokumen untuk langkah-langkah):
 ```cmd
@@ -118,17 +118,21 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Kemas kini kepada pratonton terkini:
+- Kemas kini ke pratonton terkini:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
 ## 7) Pengalaman Pembangun Windows Berkaitan
 
-- Pilihan AI tempatan vs awan pada Windows, termasuk Foundry Local dan Windows ML:
+- Pilihan AI tempatan vs awan Windows, termasuk Foundry Local dan Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit dengan Foundry Local (gunakan `foundry service status` untuk mendapatkan URL endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Next Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat yang kritikal, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.

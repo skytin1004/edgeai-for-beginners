@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:13:07+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T10:51:47+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fr"
 }
@@ -63,7 +63,7 @@ foundry cache list
 ```
 
 Notes :
-- Le service expose une API REST compatible avec OpenAI. Le port de l'endpoint est attribué dynamiquement ; utilisez `foundry service status` pour le découvrir.
+- Le service expose une API REST compatible OpenAI. Le port de l'endpoint est attribué dynamiquement ; utilisez `foundry service status` pour le découvrir.
 - Utilisez les SDKs pour plus de commodité ; ils gèrent automatiquement la découverte des endpoints là où c'est pris en charge.
 
 ## 3) Découvrir l'endpoint local (Port dynamique)
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Expérience développeur liée à Windows
+## 7) Expérience développeur Windows associée
 
 - Choix entre AI local et cloud sur Windows, y compris Foundry Local et Windows ML :
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - Toolkit AI de VS Code avec Foundry Local (utilisez `foundry service status` pour obtenir l'URL de l'endpoint de chat) :
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Prochain développeur Windows](./windowdeveloper.md)
+
 ---
 
+**Avertissement** :  
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.

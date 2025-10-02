@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:21:17+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:34:40+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "hk"
 }
 -->
 # Foundry Local 在 Windows 和 Mac 上的使用指南
 
-此指南幫助您在 Windows 和 Mac 上安裝、運行及整合 Microsoft Foundry Local。所有步驟及指令均已根據 Microsoft Learn 文檔進行驗證。
+此指南幫助您在 Windows 和 Mac 上安裝、運行及整合 Microsoft Foundry Local。所有步驟和指令均已根據 Microsoft Learn 文檔進行驗證。
 
 - 入門指南：https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - 架構概念：https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -64,7 +64,7 @@ foundry cache list
 
 注意事項：
 - 該服務提供與 OpenAI 兼容的 REST API。端點的端口是動態分配的；使用 `foundry service status` 來查詢。
-- 建議使用 SDKs，它們會自動處理端點查詢（在支持的情況下）。
+- 為方便起見，請使用 SDKs；它們在支持的情況下會自動處理端點查詢。
 
 ## 3) 查詢本地端點（動態端口）
 
@@ -72,7 +72,7 @@ Foundry Local 每次啟動服務時都會分配一個動態端口：
 ```cmd
 foundry service status
 ```
-使用報告的 `http://localhost:<PORT>` 作為您的 `base_url`，並搭配 OpenAI 兼容的路徑（例如 `/v1/chat/completions`）。
+使用報告的 `http://localhost:<PORT>` 作為您的 `base_url`，並搭配 OpenAI 兼容的路徑（例如，`/v1/chat/completions`）。
 
 ## 4) 通過 OpenAI Python SDK 快速測試
 
@@ -107,7 +107,7 @@ foundry model run llama-3.2 --verbose
 
 ## 6) 疑難排解
 
-- 檢查服務狀態及日誌：
+- 檢查服務狀態和日誌：
 ```cmd
 foundry service status
 foundry service diag
@@ -118,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- 更新至最新預覽版本：
+- 更新至最新預覽版：
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Windows 本地 vs 雲端 AI 選擇，包括 Foundry Local 和 Windows ML：
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI 工具包與 Foundry Local 整合（使用 `foundry service status` 獲取聊天端點 URL）：
+- VS Code AI 工具包與 Foundry Local（使用 `foundry service status` 獲取聊天端點 URL）：
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[下一步 Windows 開發者](./windowdeveloper.md)
 
 ---
 
+**免責聲明**：  
+此文件已使用 AI 翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 翻譯而成。我們致力於提供準確的翻譯，但請注意，自動翻譯可能包含錯誤或不準確之處。應以原始語言的文件作為權威來源。對於關鍵資訊，建議尋求專業人工翻譯。我們對因使用此翻譯而引起的任何誤解或錯誤詮釋概不負責。

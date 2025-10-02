@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:44:38+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:25:12+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fi"
 }
@@ -14,8 +14,8 @@ Tämä opas auttaa sinua asentamaan, käyttämään ja integroimaan Microsoft Fo
 - Aloita: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkkitehtuuri: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI-viite: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
-- SDK-integrointi: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-- HF-mallien kääntäminen (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Integroi SDK:t: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- Käännä HF-mallit (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Paikallinen vs pilvi: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Asenna / Päivitä Windowsilla
@@ -63,7 +63,7 @@ foundry cache list
 ```
 
 Huomioita:
-- Palvelu tarjoaa OpenAI-yhteensopivan REST-rajapinnan. Endpoint-portti määritetään dynaamisesti; käytä `foundry service status` löytääksesi sen.
+- Palvelu tarjoaa OpenAI-yhteensopivan REST-API:n. Endpoint-portti määritetään dynaamisesti; käytä `foundry service status` löytääksesi sen.
 - Käytä SDK:ita mukavuuden vuoksi; ne hoitavat endpointin löytämisen automaattisesti, jos tuettu.
 
 ## 3) Paikallisen endpointin löytäminen (Dynaaminen portti)
@@ -72,7 +72,7 @@ Foundry Local määrittää dynaamisen portin aina, kun palvelu käynnistyy:
 ```cmd
 foundry service status
 ```
-Käytä raportoitua `http://localhost:<PORT>` osoitteena `base_url` OpenAI-yhteensopivilla poluilla (esimerkiksi `/v1/chat/completions`).
+Käytä ilmoitettua `http://localhost:<PORT>` osoitteena `base_url` OpenAI-yhteensopivilla poluilla (esimerkiksi `/v1/chat/completions`).
 
 ## 4) Pikatesti OpenAI Python SDK:lla
 
@@ -90,7 +90,7 @@ print(resp.choices[0].message.content)
 PY
 ```
 Viitteet:
-- SDK-integrointi: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- SDK-integraatio: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
 ## 5) Oma malli (Käännä Olive-työkalulla)
 
@@ -103,9 +103,9 @@ foundry cache list
 foundry model run llama-3.2 --verbose
 ```
 Dokumentaatio:
-- BYOM-kääntäminen: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- BYOM-käännös: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) Vianetsintä
+## 6) Vianmääritys
 
 - Tarkista palvelun tila ja lokit:
 ```cmd
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit Foundry Localin kanssa (käytä `foundry service status` saadaksesi chat-endpointin URL-osoitteen):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Seuraava Windows-kehittäjä](./windowdeveloper.md)
+
 ---
 
+**Vastuuvapauslauseke**:  
+Tämä asiakirja on käännetty käyttämällä tekoälypohjaista käännöspalvelua [Co-op Translator](https://github.com/Azure/co-op-translator). Vaikka pyrimme tarkkuuteen, huomioithan, että automaattiset käännökset voivat sisältää virheitä tai epätarkkuuksia. Alkuperäistä asiakirjaa sen alkuperäisellä kielellä tulisi pitää ensisijaisena lähteenä. Kriittisen tiedon osalta suositellaan ammattimaista ihmiskäännöstä. Emme ole vastuussa väärinkäsityksistä tai virhetulkinnoista, jotka johtuvat tämän käännöksen käytöstä.

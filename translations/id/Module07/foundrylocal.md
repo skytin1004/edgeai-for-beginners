@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:48:58+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:45:35+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "id"
 }
@@ -18,7 +18,7 @@ Panduan ini membantu Anda menginstal, menjalankan, dan mengintegrasikan Microsof
 - Kompilasi Model HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Lokal vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Instal / Upgrade di Windows
+## 1) Instalasi / Upgrade di Windows
 
 - Instal:
 ```cmd
@@ -33,7 +33,7 @@ winget upgrade --id Microsoft.FoundryLocal
 foundry --version
 ```
      
-**Instal / Mac**
+**Instalasi / Mac**
 
 **MacOS**: 
 Buka terminal dan jalankan perintah berikut:
@@ -63,8 +63,8 @@ foundry cache list
 ```
 
 Catatan:
-- Layanan ini menyediakan REST API yang kompatibel dengan OpenAI. Port endpoint dialokasikan secara dinamis; gunakan `foundry service status` untuk menemukannya.
-- Gunakan SDK untuk kemudahan; SDK secara otomatis menangani penemuan endpoint di mana didukung.
+- Layanan menyediakan REST API yang kompatibel dengan OpenAI. Port endpoint dialokasikan secara dinamis; gunakan `foundry service status` untuk menemukannya.
+- Gunakan SDK untuk kemudahan; mereka secara otomatis menangani penemuan endpoint di mana didukung.
 
 ## 3) Menemukan Endpoint Lokal (Port Dinamis)
 
@@ -74,7 +74,7 @@ foundry service status
 ```
 Gunakan `http://localhost:<PORT>` yang dilaporkan sebagai `base_url` Anda dengan jalur yang kompatibel dengan OpenAI (misalnya, `/v1/chat/completions`).
 
-## 4) Tes Cepat melalui OpenAI Python SDK
+## 4) Uji Cepat melalui OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -92,11 +92,11 @@ PY
 Referensi:
 - Integrasi SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Bawa Model Anda Sendiri (Kompilasi dengan Olive)
+## 5) Gunakan Model Anda Sendiri (Kompilasi dengan Olive)
 
 Jika Anda membutuhkan model yang tidak ada di katalog, kompilasikan ke ONNX untuk Foundry Local menggunakan Olive.
 
-Alur tingkat tinggi (lihat dokumen untuk langkah-langkahnya):
+Alur tingkat tinggi (lihat dokumen untuk langkah-langkah):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit dengan Foundry Local (gunakan `foundry service status` untuk mendapatkan URL endpoint chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Pengembang Windows Berikutnya](./windowdeveloper.md)
+
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berusaha untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.

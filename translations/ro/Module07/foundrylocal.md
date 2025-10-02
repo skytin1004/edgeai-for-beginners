@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:57:33+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:25:39+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ro"
 }
@@ -63,7 +63,7 @@ foundry cache list
 ```
 
 Note:
-- Serviciul expune un API REST compatibil cu OpenAI. Portul endpoint-ului este alocat dinamic; folosește `foundry service status` pentru a-l descoperi.
+- Serviciul expune o API REST compatibilă cu OpenAI. Portul endpoint-ului este alocat dinamic; folosește `foundry service status` pentru a-l descoperi.
 - Folosește SDK-urile pentru comoditate; acestea gestionează automat descoperirea endpoint-ului acolo unde este suportat.
 
 ## 3) Descoperă Endpoint-ul Local (Port Dinamic)
@@ -72,9 +72,9 @@ Foundry Local alocă un port dinamic de fiecare dată când serviciul pornește:
 ```cmd
 foundry service status
 ```
-Folosește `http://localhost:<PORT>` raportat ca `base_url` împreună cu căile compatibile OpenAI (de exemplu, `/v1/chat/completions`).
+Folosește `http://localhost:<PORT>` raportat ca `base_url` cu căi compatibile OpenAI (de exemplu, `/v1/chat/completions`).
 
-## 4) Test Rapid prin OpenAI Python SDK
+## 4) Test Rapid prin SDK-ul Python OpenAI
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -94,7 +94,7 @@ Referințe:
 
 ## 5) Adu Propriul Model (Compilează cu Olive)
 
-Dacă ai nevoie de un model care nu se află în catalog, compilează-l în ONNX pentru Foundry Local folosind Olive.
+Dacă ai nevoie de un model care nu este în catalog, compilează-l în ONNX pentru Foundry Local folosind Olive.
 
 Flux de nivel înalt (vezi documentația pentru pași):
 ```cmd
@@ -107,7 +107,7 @@ Documentație:
 
 ## 6) Depanare
 
-- Verifică statusul serviciului și logurile:
+- Verifică starea serviciului și jurnalele:
 ```cmd
 foundry service status
 foundry service diag
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Alegeri AI local vs cloud pe Windows, inclusiv Foundry Local și Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit cu Foundry Local (folosește `foundry service status` pentru a obține URL-ul endpoint-ului de chat):
+- Toolkit AI VS Code cu Foundry Local (folosește `foundry service status` pentru a obține URL-ul endpoint-ului de chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Următorul Dezvoltator Windows](./windowdeveloper.md)
 
 ---
 
+**Declinare de responsabilitate**:  
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.

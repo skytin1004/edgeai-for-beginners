@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T15:06:10+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T13:40:47+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "id"
 }
@@ -11,27 +11,27 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Pendahuluan
 
-Selamat datang di panduan lengkap untuk menggunakan AI Toolkit pada Visual Studio Code dalam pengembangan Edge AI. Seiring dengan pergeseran kecerdasan buatan dari komputasi cloud terpusat ke perangkat edge yang terdistribusi, pengembang membutuhkan alat yang kuat dan terintegrasi untuk menangani tantangan unik dalam penerapan edge - mulai dari keterbatasan sumber daya hingga kebutuhan operasi offline.
+Selamat datang di panduan lengkap untuk menggunakan AI Toolkit di Visual Studio Code dalam pengembangan Edge AI. Seiring dengan pergeseran kecerdasan buatan dari komputasi cloud terpusat ke perangkat edge yang terdistribusi, pengembang membutuhkan alat yang kuat dan terintegrasi untuk menangani tantangan unik dalam penerapan edge—mulai dari keterbatasan sumber daya hingga kebutuhan operasi offline.
 
-AI Toolkit untuk Visual Studio Code menjembatani kesenjangan ini dengan menyediakan lingkungan pengembangan lengkap yang dirancang khusus untuk membangun, menguji, dan mengoptimalkan aplikasi AI yang berjalan secara efisien pada perangkat edge. Baik Anda mengembangkan untuk sensor IoT, perangkat seluler, sistem tertanam, atau server edge, toolkit ini menyederhanakan seluruh alur kerja pengembangan Anda dalam lingkungan VS Code yang sudah familiar.
+AI Toolkit untuk Visual Studio Code menjembatani kesenjangan ini dengan menyediakan lingkungan pengembangan lengkap yang dirancang khusus untuk membangun, menguji, dan mengoptimalkan aplikasi AI yang berjalan efisien di perangkat edge. Baik Anda mengembangkan untuk sensor IoT, perangkat seluler, sistem tertanam, atau server edge, toolkit ini menyederhanakan seluruh alur kerja pengembangan Anda dalam lingkungan VS Code yang sudah familiar.
 
 Panduan ini akan membawa Anda melalui konsep-konsep penting, alat-alat, dan praktik terbaik untuk memanfaatkan AI Toolkit dalam proyek Edge AI Anda, mulai dari pemilihan model awal hingga penerapan produksi.
 
 ## Ikhtisar
 
-AI Toolkit menyediakan lingkungan pengembangan terintegrasi untuk seluruh siklus hidup aplikasi Edge AI dalam VS Code. Toolkit ini menawarkan integrasi yang mulus dengan model AI populer dari penyedia seperti OpenAI, Anthropic, Google, dan GitHub, sambil mendukung penerapan model lokal melalui ONNX dan Ollama - kemampuan penting untuk aplikasi Edge AI yang membutuhkan inferensi di perangkat.
+AI Toolkit untuk Visual Studio Code adalah ekstensi yang kuat yang menyederhanakan pengembangan agen dan pembuatan aplikasi AI. Toolkit ini menyediakan kemampuan komprehensif untuk menjelajahi, mengevaluasi, dan menerapkan model AI dari berbagai penyedia—termasuk Anthropic, OpenAI, GitHub, Google—serta mendukung eksekusi model lokal menggunakan ONNX dan Ollama.
 
-Yang membedakan AI Toolkit dalam pengembangan Edge AI adalah fokusnya pada seluruh pipeline penerapan edge. Berbeda dengan alat pengembangan AI tradisional yang terutama menargetkan penerapan cloud, AI Toolkit mencakup fitur khusus untuk optimasi model, pengujian dengan keterbatasan sumber daya, dan evaluasi kinerja spesifik edge. Toolkit ini memahami bahwa pengembangan Edge AI membutuhkan pertimbangan yang berbeda - ukuran model yang lebih kecil, waktu inferensi yang lebih cepat, kemampuan offline, dan optimasi spesifik perangkat keras.
+Yang membedakan AI Toolkit adalah pendekatannya yang menyeluruh terhadap seluruh siklus pengembangan AI. Berbeda dengan alat pengembangan AI tradisional yang hanya berfokus pada aspek tertentu, AI Toolkit menyediakan lingkungan terintegrasi yang mencakup penemuan model, eksperimen, pengembangan agen, evaluasi, dan penerapan—semuanya dalam lingkungan VS Code yang sudah dikenal.
 
-Platform ini mendukung berbagai skenario penerapan, mulai dari inferensi sederhana di perangkat hingga arsitektur edge multi-model yang kompleks. Toolkit ini menyediakan alat untuk konversi model, kuantisasi, dan optimasi yang penting untuk penerapan edge yang sukses, sambil mempertahankan produktivitas pengembang yang dikenal dari VS Code.
+Platform ini dirancang khusus untuk prototipe cepat dan penerapan produksi, dengan fitur seperti pembuatan prompt, starter cepat, integrasi alat MCP (Model Context Protocol) yang mulus, dan kemampuan evaluasi yang luas. Untuk pengembangan Edge AI, ini berarti Anda dapat dengan efisien mengembangkan, menguji, dan mengoptimalkan aplikasi AI untuk skenario penerapan edge sambil mempertahankan alur kerja pengembangan penuh dalam VS Code.
 
 ## Tujuan Pembelajaran
 
-Pada akhir panduan ini, Anda akan mampu:
+Pada akhir panduan ini, Anda akan dapat:
 
 ### Kompetensi Inti
-- **Menginstal dan mengonfigurasi** AI Toolkit untuk alur kerja pengembangan Edge AI
-- **Menavigasi dan menggunakan** antarmuka AI Toolkit, termasuk Model Catalog, Playground, dan Agent Builder
+- **Menginstal dan mengonfigurasi** AI Toolkit untuk Visual Studio Code untuk alur kerja pengembangan Edge AI
+- **Menavigasi dan memanfaatkan** antarmuka AI Toolkit, termasuk Model Catalog, Playground, dan Agent Builder
 - **Memilih dan mengevaluasi** model AI yang cocok untuk penerapan edge berdasarkan kinerja dan keterbatasan sumber daya
 - **Mengonversi dan mengoptimalkan** model menggunakan format ONNX dan teknik kuantisasi untuk perangkat edge
 
@@ -45,68 +45,75 @@ Pada akhir panduan ini, Anda akan mampu:
 - **Menerapkan teknik kuantisasi dan pruning** untuk mengurangi ukuran model sambil mempertahankan kinerja yang dapat diterima
 - **Mengoptimalkan model** untuk platform perangkat keras edge tertentu termasuk akselerasi CPU, GPU, dan NPU
 - **Menerapkan praktik terbaik** untuk pengembangan Edge AI termasuk manajemen sumber daya dan strategi cadangan
-- **Mempersiapkan model dan aplikasi** untuk penerapan produksi pada perangkat edge
+- **Menyiapkan model dan aplikasi** untuk penerapan produksi di perangkat edge
 
 ### Konsep Edge AI Lanjutan
 - **Mengintegrasikan dengan kerangka kerja Edge AI** termasuk ONNX Runtime, Windows ML, dan TensorFlow Lite
 - **Mengimplementasikan arsitektur multi-model** dan skenario pembelajaran federasi untuk lingkungan edge
 - **Memecahkan masalah umum Edge AI** termasuk keterbatasan memori, kecepatan inferensi, dan kompatibilitas perangkat keras
-- **Merancang strategi pemantauan dan pencatatan** untuk aplikasi Edge AI dalam produksi
+- **Merancang strategi pemantauan dan logging** untuk aplikasi Edge AI dalam produksi
 
 ### Aplikasi Praktis
 - **Membangun solusi Edge AI end-to-end** dari pemilihan model hingga penerapan
-- **Menunjukkan kemahiran** dalam alur kerja pengembangan dan teknik optimasi spesifik edge
-- **Menerapkan konsep yang dipelajari** pada kasus penggunaan Edge AI dunia nyata termasuk IoT, seluler, dan aplikasi tertanam
+- **Menunjukkan kemahiran** dalam alur kerja pengembangan dan teknik optimasi khusus edge
+- **Menerapkan konsep yang dipelajari** ke kasus penggunaan Edge AI dunia nyata termasuk IoT, seluler, dan aplikasi tertanam
 - **Mengevaluasi dan membandingkan** berbagai strategi penerapan Edge AI dan komprominya
 
 ## Fitur Utama untuk Pengembangan Edge AI
 
-### 1. Katalog dan Penemuan Model
-- **Dukungan Model Lokal**: Temukan dan akses model AI yang dioptimalkan khusus untuk penerapan edge
-- **Integrasi ONNX**: Akses model dalam format ONNX untuk inferensi edge yang efisien
-- **Dukungan Ollama**: Manfaatkan model yang berjalan secara lokal melalui Ollama untuk privasi dan operasi offline
-- **Perbandingan Model**: Bandingkan model secara berdampingan untuk menemukan keseimbangan optimal antara kinerja dan konsumsi sumber daya untuk perangkat edge
+### 1. Model Catalog dan Penemuan
+- **Dukungan Multi-Penyedia**: Jelajahi dan akses model AI dari Anthropic, OpenAI, GitHub, Google, dan penyedia lainnya
+- **Integrasi Model Lokal**: Penemuan model ONNX dan Ollama yang disederhanakan untuk penerapan edge
+- **Model GitHub**: Integrasi langsung dengan hosting model GitHub untuk akses yang lebih mudah
+- **Perbandingan Model**: Bandingkan model secara berdampingan untuk menemukan keseimbangan optimal untuk keterbatasan perangkat edge
 
 ### 2. Playground Interaktif
-- **Lingkungan Pengujian Lokal**: Uji model secara lokal sebelum penerapan edge
-- **Eksperimen Multi-modal**: Uji dengan gambar, teks, dan input lain yang umum dalam skenario edge
-- **Penyetelan Parameter**: Bereksperimen dengan berbagai parameter model untuk mengoptimalkan keterbatasan edge
-- **Pemantauan Kinerja Real-time**: Amati kecepatan inferensi dan penggunaan sumber daya selama pengembangan
+- **Lingkungan Pengujian Interaktif**: Eksperimen cepat dengan kemampuan model dalam lingkungan yang terkendali
+- **Dukungan Multi-modal**: Uji dengan gambar, teks, dan input lainnya yang umum dalam skenario edge
+- **Eksperimen Real-time**: Umpan balik langsung tentang respons dan kinerja model
+- **Optimasi Parameter**: Sesuaikan parameter model untuk kebutuhan penerapan edge
 
-### 3. Agent Builder untuk Aplikasi Edge
-- **Prompt Engineering**: Buat prompt yang dioptimalkan untuk bekerja secara efisien dengan model edge yang lebih kecil
-- **Integrasi Alat MCP**: Integrasikan alat Model Context Protocol untuk kemampuan agen edge yang lebih baik
-- **Pembuatan Kode**: Hasilkan kode siap produksi yang dioptimalkan untuk skenario penerapan edge
-- **Output Terstruktur**: Rancang agen yang memberikan respons terstruktur yang konsisten untuk aplikasi edge
+### 3. Prompt (Agent) Builder
+- **Generasi Bahasa Alami**: Buat prompt awal menggunakan deskripsi bahasa alami
+- **Penyempurnaan Iteratif**: Tingkatkan prompt berdasarkan respons dan kinerja model
+- **Dekonstruksi Tugas**: Pecah tugas kompleks dengan chaining prompt dan output terstruktur
+- **Dukungan Variabel**: Gunakan variabel dalam prompt untuk perilaku agen yang dinamis
+- **Generasi Kode Produksi**: Hasilkan kode siap produksi untuk pengembangan aplikasi yang cepat
 
-### 4. Evaluasi dan Pengujian Model
-- **Metrik Kinerja**: Evaluasi model menggunakan metrik yang relevan untuk penerapan edge (latensi, penggunaan memori, akurasi)
-- **Pengujian Batch**: Uji beberapa konfigurasi model secara bersamaan untuk menemukan pengaturan edge yang optimal
-- **Evaluasi Kustom**: Buat kriteria evaluasi khusus untuk kasus penggunaan Edge AI
-- **Profil Sumber Daya**: Analisis kebutuhan memori dan komputasi untuk perencanaan penerapan edge
+### 4. Bulk Run dan Evaluasi
+- **Pengujian Multi-Model**: Jalankan beberapa prompt di berbagai model yang dipilih secara bersamaan
+- **Pengujian Skala Efisien**: Uji berbagai input dan konfigurasi dengan efisien
+- **Kasus Uji Kustom**: Jalankan agen dengan kasus uji untuk memvalidasi fungsionalitas
+- **Perbandingan Kinerja**: Bandingkan hasil di berbagai model dan konfigurasi
 
-### 5. Konversi dan Optimasi Model
-- **Konversi ONNX**: Konversi model dari berbagai format ke ONNX untuk kompatibilitas edge
-- **Kuantisasi**: Kurangi ukuran model dan tingkatkan kecepatan inferensi melalui teknik kuantisasi
-- **Optimasi Perangkat Keras**: Optimalkan model untuk perangkat keras edge tertentu (CPU, GPU, NPU)
-- **Transformasi Format**: Transformasi model dari Hugging Face dan sumber lain untuk penerapan edge
+### 5. Evaluasi Model dengan Dataset
+- **Metrik Standar**: Uji model AI menggunakan evaluator bawaan (F1 score, relevansi, kesamaan, koherensi)
+- **Evaluator Kustom**: Buat metrik evaluasi Anda sendiri untuk kasus penggunaan tertentu
+- **Integrasi Dataset**: Uji model terhadap dataset yang komprehensif
+- **Pengukuran Kinerja**: Kuantifikasi kinerja model untuk keputusan penerapan edge
 
-### 6. Fine-tuning untuk Skenario Edge
-- **Adaptasi Domain**: Sesuaikan model untuk kasus penggunaan dan lingkungan edge tertentu
-- **Pelatihan Lokal**: Latih model secara lokal dengan dukungan GPU untuk kebutuhan spesifik edge
-- **Integrasi Azure**: Manfaatkan Azure Container Apps untuk fine-tuning berbasis cloud sebelum penerapan edge
-- **Transfer Learning**: Adaptasi model yang sudah dilatih untuk tugas dan keterbatasan spesifik edge
+### 6. Kemampuan Fine-tuning
+- **Kustomisasi Model**: Sesuaikan model untuk kasus penggunaan dan domain tertentu
+- **Adaptasi Khusus**: Sesuaikan model untuk domain dan kebutuhan khusus
+- **Optimasi Edge**: Fine-tuning model khusus untuk keterbatasan penerapan edge
+- **Pelatihan Domain-Specific**: Buat model yang disesuaikan untuk kasus penggunaan edge tertentu
 
-### 7. Pemantauan Kinerja dan Tracing
-- **Analisis Kinerja Edge**: Pantau kinerja model dalam kondisi mirip edge
-- **Pengumpulan Trace**: Kumpulkan data kinerja yang terperinci untuk optimasi
-- **Identifikasi Bottleneck**: Identifikasi masalah kinerja sebelum penerapan ke perangkat edge
-- **Pelacakan Penggunaan Sumber Daya**: Pantau memori, CPU, dan waktu inferensi untuk optimasi edge
+### 7. Integrasi Alat MCP
+- **Konektivitas Alat Eksternal**: Hubungkan agen ke alat eksternal melalui server Model Context Protocol
+- **Tindakan Dunia Nyata**: Aktifkan agen untuk melakukan query database, mengakses API, atau menjalankan logika kustom
+- **Server MCP yang Ada**: Gunakan alat dari protokol command (stdio) atau HTTP (server-sent event)
+- **Pengembangan MCP Kustom**: Bangun dan buat kerangka server MCP baru dengan pengujian di Agent Builder
+
+### 8. Pengembangan dan Pengujian Agen
+- **Dukungan Pemanggilan Fungsi**: Aktifkan agen untuk memanggil fungsi eksternal secara dinamis
+- **Pengujian Integrasi Real-time**: Uji integrasi dengan run real-time dan penggunaan alat
+- **Versi Agen**: Kontrol versi untuk agen dengan kemampuan perbandingan hasil evaluasi
+- **Debugging dan Tracing**: Kemampuan tracing dan debugging lokal untuk pengembangan agen
 
 ## Alur Kerja Pengembangan Edge AI
 
 ### Fase 1: Penemuan dan Pemilihan Model
-1. **Jelajahi Katalog Model**: Gunakan katalog model untuk menemukan model yang cocok untuk penerapan edge
+1. **Jelajahi Model Catalog**: Gunakan katalog model untuk menemukan model yang cocok untuk penerapan edge
 2. **Bandingkan Kinerja**: Evaluasi model berdasarkan ukuran, akurasi, dan kecepatan inferensi
 3. **Uji Secara Lokal**: Gunakan model Ollama atau ONNX untuk pengujian lokal sebelum penerapan edge
 4. **Tentukan Kebutuhan Sumber Daya**: Tentukan kebutuhan memori dan komputasi untuk perangkat edge target
@@ -119,28 +126,28 @@ Pada akhir panduan ini, Anda akan mampu:
 
 ### Fase 3: Pengembangan Aplikasi
 1. **Desain Agen**: Gunakan Agent Builder untuk membuat agen AI yang dioptimalkan untuk edge
-2. **Prompt Engineering**: Kembangkan prompt yang bekerja efektif dengan model edge yang lebih kecil
-3. **Pengujian Integrasi**: Uji agen dalam kondisi edge yang disimulasikan
-4. **Pembuatan Kode**: Hasilkan kode produksi yang dioptimalkan untuk penerapan edge
+2. **Rekayasa Prompt**: Kembangkan prompt yang bekerja efektif dengan model edge yang lebih kecil
+3. **Pengujian Integrasi**: Uji agen dalam kondisi simulasi edge
+4. **Generasi Kode**: Hasilkan kode produksi yang dioptimalkan untuk penerapan edge
 
 ### Fase 4: Evaluasi dan Pengujian
 1. **Evaluasi Batch**: Uji beberapa konfigurasi untuk menemukan pengaturan edge yang optimal
-2. **Profil Kinerja**: Analisis kecepatan inferensi, penggunaan memori, dan akurasi
+2. **Profiling Kinerja**: Analisis kecepatan inferensi, penggunaan memori, dan akurasi
 3. **Simulasi Edge**: Uji dalam kondisi yang mirip dengan lingkungan penerapan edge target
-4. **Pengujian Stres**: Evaluasi kinerja di bawah berbagai kondisi beban
+4. **Pengujian Beban**: Evaluasi kinerja di bawah berbagai kondisi beban
 
 ### Fase 5: Persiapan Penerapan
 1. **Optimasi Akhir**: Terapkan optimasi akhir berdasarkan hasil pengujian
 2. **Pengemasan Penerapan**: Paketkan model dan kode untuk penerapan edge
-3. **Dokumentasi**: Dokumentasikan persyaratan dan konfigurasi penerapan
-4. **Persiapan Pemantauan**: Siapkan pemantauan dan pencatatan untuk penerapan produksi
+3. **Dokumentasi**: Dokumentasikan kebutuhan dan konfigurasi penerapan
+4. **Persiapan Pemantauan**: Siapkan pemantauan dan logging untuk penerapan edge
 
 ## Target Audiens untuk Pengembangan Edge AI
 
 ### Pengembang Edge AI
 - Pengembang aplikasi yang membangun perangkat edge dan solusi IoT berbasis AI
 - Pengembang sistem tertanam yang mengintegrasikan kemampuan AI ke perangkat dengan keterbatasan sumber daya
-- Pengembang seluler yang membuat aplikasi AI di perangkat untuk smartphone dan tablet
+- Pengembang seluler yang membuat aplikasi AI di perangkat
 
 ### Insinyur Edge AI
 - Insinyur AI yang mengoptimalkan model untuk penerapan edge dan mengelola pipeline inferensi
@@ -148,7 +155,7 @@ Pada akhir panduan ini, Anda akan mampu:
 - Insinyur kinerja yang mengoptimalkan beban kerja AI untuk keterbatasan perangkat keras edge
 
 ### Peneliti dan Pendidik
-- Peneliti AI yang mengembangkan model dan algoritma yang efisien untuk komputasi edge
+- Peneliti AI yang mengembangkan model dan algoritma efisien untuk komputasi edge
 - Pendidik yang mengajarkan konsep Edge AI dan mendemonstrasikan teknik optimasi
 - Mahasiswa yang mempelajari tantangan dan solusi dalam penerapan Edge AI
 
@@ -162,7 +169,7 @@ Pada akhir panduan ini, Anda akan mampu:
 
 ### Aplikasi Seluler dan Tertanam
 - **Terjemahan di Perangkat**: Implementasikan model terjemahan bahasa yang bekerja offline
-- **Augmented Reality**: Terapkan pengenalan objek dan pelacakan real-time untuk aplikasi AR
+- **Augmented Reality**: Terapkan pengenalan objek real-time dan pelacakan untuk aplikasi AR
 - **Pemantauan Kesehatan**: Jalankan model analisis kesehatan pada perangkat wearable dan peralatan medis
 - **Sistem Otonom**: Implementasikan model pengambilan keputusan untuk drone, robot, dan kendaraan
 
@@ -170,182 +177,229 @@ Pada akhir panduan ini, Anda akan mampu:
 - **Pusat Data Edge**: Terapkan model AI di pusat data edge untuk aplikasi latensi rendah
 - **Integrasi CDN**: Integrasikan kemampuan pemrosesan AI ke dalam jaringan pengiriman konten
 - **Edge 5G**: Manfaatkan komputasi edge 5G untuk aplikasi berbasis AI
-- **Komputasi Fog**: Implementasikan pemrosesan AI dalam lingkungan komputasi fog
+- **Fog Computing**: Implementasikan pemrosesan AI di lingkungan fog computing
 
 ## Instalasi dan Pengaturan
 
-### Instalasi Cepat
+### Instalasi Ekstensi
 Instal ekstensi AI Toolkit langsung dari Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**ID Ekstensi**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Metode Instalasi**:
+1. **VS Code Marketplace**: Cari "AI Toolkit" di tampilan Extensions
+2. **Command Line**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Instalasi Langsung**: Unduh dari [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Prasyarat untuk Pengembangan Edge AI
-- **ONNX Runtime**: Instal ONNX Runtime untuk inferensi model
-- **Ollama** (Opsional): Instal Ollama untuk penyajian model lokal
-- **Lingkungan Python**: Siapkan Python dengan pustaka AI yang diperlukan
-- **Alat Perangkat Keras Edge**: Instal alat pengembangan spesifik perangkat keras (CUDA, OpenVINO, dll.)
+- **Visual Studio Code**: Versi terbaru direkomendasikan
+- **Lingkungan Python**: Python 3.8+ dengan pustaka AI yang diperlukan
+- **ONNX Runtime** (Opsional): Untuk inferensi model ONNX
+- **Ollama** (Opsional): Untuk penyajian model lokal
+- **Alat Akselerasi Perangkat Keras**: CUDA, OpenVINO, atau akselerator khusus platform
 
 ### Konfigurasi Awal
-1. Buka VS Code dan instal ekstensi AI Toolkit
-2. Konfigurasikan sumber model (ONNX, Ollama, penyedia cloud)
-3. Siapkan lingkungan pengembangan lokal untuk pengujian edge
-4. Konfigurasikan opsi akselerasi perangkat keras untuk mesin pengembangan Anda
+1. **Aktivasi Ekstensi**: Buka VS Code dan verifikasi AI Toolkit muncul di Activity Bar
+2. **Pengaturan Penyedia Model**: Konfigurasikan akses ke GitHub, OpenAI, Anthropic, atau penyedia model lainnya
+3. **Lingkungan Lokal**: Siapkan lingkungan Python dan instal paket yang diperlukan
+4. **Akselerasi Perangkat Keras**: Konfigurasikan akselerasi GPU/NPU jika tersedia
+5. **Integrasi MCP**: Siapkan server Model Context Protocol jika diperlukan
 
-## Memulai Pengembangan Edge AI
+### Daftar Periksa Pengaturan Awal
+- [ ] Ekstensi AI Toolkit terinstal dan diaktifkan
+- [ ] Katalog model dapat diakses dan model dapat ditemukan
+- [ ] Playground berfungsi untuk pengujian model
+- [ ] Agent Builder dapat diakses untuk pengembangan prompt
+- [ ] Lingkungan pengembangan lokal dikonfigurasi
+- [ ] Akselerasi perangkat keras (jika tersedia) dikonfigurasi dengan benar
 
-### Langkah 1: Pemilihan Model
-1. Buka tampilan AI Toolkit di Activity Bar
-2. Jelajahi Model Catalog untuk model yang kompatibel dengan edge
-3. Filter berdasarkan ukuran model, format (ONNX), dan karakteristik kinerja
-4. Bandingkan model menggunakan alat perbandingan bawaan
+## Memulai dengan AI Toolkit
 
-### Langkah 2: Pengujian Lokal
-1. Gunakan Playground untuk menguji model yang dipilih secara lokal
-2. Bereksperimen dengan berbagai prompt dan parameter
-3. Pantau metrik kinerja selama pengujian
-4. Evaluasi respons model untuk persyaratan kasus penggunaan edge
+### Panduan Memulai Cepat
 
-### Langkah 3: Optimasi Model
-1. Gunakan alat Konversi Model untuk optimasi penerapan edge
-2. Terapkan kuantisasi untuk mengurangi ukuran model
-3. Uji model yang dioptimalkan untuk memastikan kinerja yang dapat diterima
-4. Dokumentasikan pengaturan optimasi dan kompromi kinerja
+Kami merekomendasikan memulai dengan model yang di-host oleh GitHub untuk pengalaman yang paling lancar:
 
-### Langkah 4: Pengembangan Agen
-1. Gunakan Agent Builder untuk membuat agen AI yang dioptimalkan untuk edge
-2. Kembangkan prompt yang bekerja efektif dengan model yang lebih kecil
-3. Integrasikan alat dan API yang diperlukan untuk skenario edge
-4. Uji agen dalam kondisi edge yang disimulasikan
+1. **Instalasi**: Ikuti [panduan instalasi](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup) untuk menyiapkan AI Toolkit di perangkat Anda
+2. **Penemuan Model**: Dari tampilan pohon ekstensi, pilih **CATALOG > Models** untuk menjelajahi model yang tersedia
+3. **Model GitHub**: Mulailah dengan model yang di-host oleh GitHub untuk integrasi yang optimal
+4. **Pengujian Playground**: Dari kartu model mana pun, pilih **Try in Playground** untuk mulai bereksperimen dengan kemampuan model
 
-### Langkah 5: Evaluasi dan Penerapan
-1. Gunakan evaluasi massal untuk menguji beberapa konfigurasi
-2. Profil kinerja di bawah berbagai kondisi
-3. Siapkan paket penerapan untuk perangkat edge target
-4. Siapkan pemantauan dan pencatatan untuk penerapan produksi
+### Langkah-Langkah Pengembangan Edge AI
 
-## Praktik Terbaik untuk Pengembangan Edge AI
+#### Langkah 1: Penjelajahan dan Pemilihan Model
+1. Buka tampilan AI Toolkit di Activity Bar VS Code
+2. Jelajahi Model Catalog untuk model yang cocok untuk penerapan edge
+3. Filter berdasarkan penyedia (GitHub, ONNX, Ollama) sesuai kebutuhan edge Anda
+4. Gunakan **Try in Playground** untuk segera menguji kemampuan model
 
-### Pemilihan Model
-- **Keterbatasan Ukuran**: Pilih model yang sesuai dengan batasan memori perangkat target
-- **Kecepatan Inferensi**: Prioritaskan model dengan waktu inferensi cepat untuk aplikasi real-time
-- **Kompromi Akurasi**: Seimbangkan akurasi model dengan keterbatasan sumber daya
-- **Kompatibilitas Format**: Pilih format ONNX atau format yang dioptimalkan perangkat keras untuk penerapan edge
+#### Langkah 2: Pengembangan Agen
+1. Gunakan **Prompt (Agent) Builder** untuk membuat agen AI yang dioptimalkan untuk edge
+2. Buat prompt awal menggunakan deskripsi bahasa alami  
+3. Iterasi dan perbaiki prompt berdasarkan respons model  
+4. Integrasikan alat MCP untuk meningkatkan kemampuan agen  
 
-### Teknik Optimasi
-- **Kuantisasi**: Gunakan kuantisasi INT8 atau INT4 untuk mengurangi ukuran model dan meningkatkan kecepatan
-- **Pruning**: Hapus parameter model yang tidak diperlukan untuk mengurangi kebutuhan komputasi
-- **Knowledge Distillation**: Buat model yang lebih kecil yang mempertahankan kinerja model yang lebih besar
-- **Akselerasi Perangkat Keras**: Manfaatkan NPU, GPU, atau akselerator khusus jika tersedia
+#### Langkah 3: Pengujian dan Evaluasi  
+1. Gunakan **Bulk Run** untuk menguji beberapa prompt pada model yang dipilih  
+2. Jalankan agen dengan kasus uji untuk memvalidasi fungsionalitas  
+3. Evaluasi akurasi dan kinerja menggunakan metrik bawaan atau kustom  
+4. Bandingkan berbagai model dan konfigurasi  
 
-### Alur Kerja Pengembangan
-- **Pengujian Iteratif**: Uji secara sering dalam kondisi mirip edge selama pengembangan
-- **Pemantauan Kinerja**: Pantau penggunaan sumber daya dan kecepatan inferensi secara terus-menerus
-- **Kontrol Versi**: Lacak versi model dan pengaturan optimasi
-- **Dokumentasi**: Dokumentasikan semua keputusan optimasi dan kompromi kinerja
+#### Langkah 4: Penyesuaian dan Optimasi  
+1. Sesuaikan model untuk kasus penggunaan spesifik  
+2. Terapkan penyesuaian khusus domain  
+3. Optimalkan untuk kendala penerapan di edge  
+4. Versi dan bandingkan konfigurasi agen yang berbeda  
 
-### Pertimbangan Penerapan
-- **Pemantauan Sumber Daya**: Pantau memori, CPU, dan penggunaan daya dalam produksi
-- **Strategi Cadangan**: Terapkan mekanisme cadangan untuk kegagalan model
-- **Mekanisme Pembaruan**: Rencanakan pembaruan model dan manajemen versi
-- **Keamanan**: Terapkan langkah-langkah keamanan yang sesuai untuk aplikasi AI di edge
+#### Langkah 5: Persiapan Penerapan  
+1. Hasilkan kode siap produksi menggunakan Agent Builder  
+2. Siapkan koneksi server MCP untuk penggunaan produksi  
+3. Persiapkan paket penerapan untuk perangkat edge  
+4. Konfigurasikan metrik pemantauan dan evaluasi  
 
-## Integrasi dengan Kerangka Kerja Edge AI
+## Praktik Terbaik untuk Pengembangan AI Edge  
 
-### ONNX Runtime
-- **Penerapan Lintas Platform**: Terapkan model ONNX di berbagai platform edge
-- **Optimasi Perangkat Keras**: Manfaatkan optimasi spesifik perangkat keras dari ONNX Runtime
-- **Dukungan Mobile**: Gunakan ONNX Runtime Mobile untuk aplikasi di smartphone dan tablet
-- **Integrasi IoT**: Terapkan pada perangkat IoT menggunakan distribusi ringan ONNX Runtime
+### Pemilihan Model  
+- **Kendala Ukuran**: Pilih model yang sesuai dengan batas memori perangkat target  
+- **Kecepatan Inferensi**: Prioritaskan model dengan waktu inferensi cepat untuk aplikasi real-time  
+- **Kompromi Akurasi**: Seimbangkan akurasi model dengan kendala sumber daya  
+- **Kompatibilitas Format**: Pilih format seperti ONNX atau yang dioptimalkan untuk perangkat keras edge  
 
-### Windows ML
-- **Perangkat Windows**: Optimalkan untuk perangkat edge berbasis Windows dan PC
-- **Akselerasi NPU**: Manfaatkan Neural Processing Units pada perangkat Windows
-- **DirectML**: Gunakan DirectML untuk akselerasi GPU di platform Windows
-- **Integrasi UWP**: Integrasikan dengan aplikasi Universal Windows Platform
+### Teknik Optimasi  
+- **Kuantisasi**: Gunakan kuantisasi INT8 atau INT4 untuk mengurangi ukuran model dan meningkatkan kecepatan  
+- **Pruning**: Hapus parameter model yang tidak diperlukan untuk mengurangi kebutuhan komputasi  
+- **Distilasi Pengetahuan**: Buat model yang lebih kecil dengan tetap mempertahankan kinerja model yang lebih besar  
+- **Akselerasi Perangkat Keras**: Manfaatkan NPU, GPU, atau akselerator khusus jika tersedia  
 
-### TensorFlow Lite
-- **Optimasi Mobile**: Terapkan model TensorFlow Lite pada perangkat mobile dan embedded
-- **Delegasi Perangkat Keras**: Gunakan delegasi perangkat keras khusus untuk akselerasi
-- **Mikrokontroler**: Terapkan pada mikrokontroler menggunakan TensorFlow Lite Micro
-- **Dukungan Lintas Platform**: Terapkan di Android, iOS, dan sistem Linux embedded
+### Alur Kerja Pengembangan  
+- **Pengujian Iteratif**: Uji secara berkala dalam kondisi mirip edge selama pengembangan  
+- **Pemantauan Kinerja**: Pantau penggunaan sumber daya dan kecepatan inferensi secara terus-menerus  
+- **Kontrol Versi**: Lacak versi model dan pengaturan optimasi  
+- **Dokumentasi**: Dokumentasikan semua keputusan optimasi dan kompromi kinerja  
 
-### Azure IoT Edge
-- **Hybrid Cloud-Edge**: Gabungkan pelatihan di cloud dengan inferensi di edge
-- **Penerapan Modul**: Terapkan model AI sebagai modul IoT Edge
-- **Manajemen Perangkat**: Kelola perangkat edge dan pembaruan model secara remote
-- **Telemetri**: Kumpulkan data kinerja dan metrik model dari penerapan di edge
+### Pertimbangan Penerapan  
+- **Pemantauan Sumber Daya**: Pantau penggunaan memori, CPU, dan daya dalam produksi  
+- **Strategi Cadangan**: Implementasikan mekanisme cadangan untuk kegagalan model  
+- **Mekanisme Pembaruan**: Rencanakan pembaruan model dan manajemen versi  
+- **Keamanan**: Terapkan langkah-langkah keamanan yang sesuai untuk aplikasi AI edge  
 
-## Skenario Edge AI Lanjutan
+## Integrasi dengan Kerangka Kerja AI Edge  
 
-### Penerapan Multi-Model
-- **Ensemble Model**: Terapkan beberapa model untuk meningkatkan akurasi atau redundansi
-- **Pengujian A/B**: Uji berbagai model secara bersamaan di perangkat edge
-- **Pemilihan Dinamis**: Pilih model berdasarkan kondisi perangkat saat ini
-- **Berbagi Sumber Daya**: Optimalkan penggunaan sumber daya di antara beberapa model yang diterapkan
+### ONNX Runtime  
+- **Penerapan Lintas Platform**: Terapkan model ONNX di berbagai platform edge  
+- **Optimasi Perangkat Keras**: Manfaatkan optimasi spesifik perangkat keras dari ONNX Runtime  
+- **Dukungan Mobile**: Gunakan ONNX Runtime Mobile untuk aplikasi smartphone dan tablet  
+- **Integrasi IoT**: Terapkan pada perangkat IoT menggunakan distribusi ringan ONNX Runtime  
 
-### Federated Learning
-- **Pelatihan Terdistribusi**: Latih model di berbagai perangkat edge
-- **Pelestarian Privasi**: Jaga data pelatihan tetap lokal sambil berbagi peningkatan model
-- **Pembelajaran Kolaboratif**: Biarkan perangkat belajar dari pengalaman kolektif
-- **Koordinasi Edge-Cloud**: Koordinasikan pembelajaran antara perangkat edge dan infrastruktur cloud
+### Windows ML  
+- **Perangkat Windows**: Optimalkan untuk perangkat edge berbasis Windows dan PC  
+- **Akselerasi NPU**: Manfaatkan Neural Processing Units pada perangkat Windows  
+- **DirectML**: Gunakan DirectML untuk akselerasi GPU di platform Windows  
+- **Integrasi UWP**: Integrasikan dengan aplikasi Universal Windows Platform  
 
-### Pemrosesan Real-time
-- **Pemrosesan Stream**: Proses aliran data kontinu di perangkat edge
-- **Inferensi Berlatensi Rendah**: Optimalkan untuk latensi inferensi minimal
-- **Pemrosesan Batch**: Proses batch data secara efisien di perangkat edge
-- **Pemrosesan Adaptif**: Sesuaikan pemrosesan berdasarkan kemampuan perangkat saat ini
+### TensorFlow Lite  
+- **Optimasi Mobile**: Terapkan model TensorFlow Lite pada perangkat mobile dan embedded  
+- **Delegasi Perangkat Keras**: Gunakan delegasi perangkat keras khusus untuk akselerasi  
+- **Mikrokontroler**: Terapkan pada mikrokontroler menggunakan TensorFlow Lite Micro  
+- **Dukungan Lintas Platform**: Terapkan di Android, iOS, dan sistem Linux embedded  
 
-## Pemecahan Masalah Pengembangan Edge AI
+### Azure IoT Edge  
+- **Hybrid Cloud-Edge**: Gabungkan pelatihan cloud dengan inferensi edge  
+- **Penerapan Modul**: Terapkan model AI sebagai modul IoT Edge  
+- **Manajemen Perangkat**: Kelola perangkat edge dan pembaruan model secara remote  
+- **Telemetri**: Kumpulkan data kinerja dan metrik model dari penerapan edge  
 
-### Masalah Umum
-- **Keterbatasan Memori**: Model terlalu besar untuk memori perangkat target
-- **Kecepatan Inferensi**: Inferensi model terlalu lambat untuk kebutuhan real-time
-- **Penurunan Akurasi**: Optimasi mengurangi akurasi model secara tidak dapat diterima
-- **Kompatibilitas Perangkat Keras**: Model tidak kompatibel dengan perangkat keras target
+## Skenario AI Edge Lanjutan  
 
-### Strategi Debugging
-- **Profiling Kinerja**: Gunakan fitur tracing AI Toolkit untuk mengidentifikasi hambatan
-- **Pemantauan Sumber Daya**: Pantau penggunaan memori dan CPU selama pengembangan
-- **Pengujian Bertahap**: Uji optimasi secara bertahap untuk mengisolasi masalah
-- **Simulasi Perangkat Keras**: Gunakan alat pengembangan untuk mensimulasikan perangkat keras target
+### Penerapan Multi-Model  
+- **Ensemble Model**: Terapkan beberapa model untuk meningkatkan akurasi atau redundansi  
+- **Pengujian A/B**: Uji berbagai model secara bersamaan pada perangkat edge  
+- **Seleksi Dinamis**: Pilih model berdasarkan kondisi perangkat saat ini  
+- **Berbagi Sumber Daya**: Optimalkan penggunaan sumber daya di antara beberapa model yang diterapkan  
 
-### Solusi Optimasi
-- **Quantisasi Lebih Lanjut**: Terapkan teknik quantisasi yang lebih agresif
-- **Arsitektur Model**: Pertimbangkan arsitektur model yang dioptimalkan untuk edge
-- **Optimasi Pra-pemrosesan**: Optimalkan pra-pemrosesan data untuk keterbatasan edge
-- **Optimasi Inferensi**: Gunakan optimasi inferensi spesifik perangkat keras
+### Federated Learning  
+- **Pelatihan Terdistribusi**: Latih model di beberapa perangkat edge  
+- **Preservasi Privasi**: Simpan data pelatihan secara lokal sambil berbagi peningkatan model  
+- **Pembelajaran Kolaboratif**: Biarkan perangkat belajar dari pengalaman kolektif  
+- **Koordinasi Edge-Cloud**: Koordinasikan pembelajaran antara perangkat edge dan infrastruktur cloud  
 
-## Sumber Daya dan Langkah Selanjutnya
+### Pemrosesan Real-time  
+- **Pemrosesan Stream**: Proses data stream secara kontinu pada perangkat edge  
+- **Inferensi Latensi Rendah**: Optimalkan untuk latensi inferensi minimal  
+- **Pemrosesan Batch**: Proses batch data secara efisien pada perangkat edge  
+- **Pemrosesan Adaptif**: Sesuaikan pemrosesan berdasarkan kemampuan perangkat saat ini  
 
-### Dokumentasi
-- [Panduan Model AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Dokumentasi Model Playground](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [Dokumentasi ONNX Runtime](https://onnxruntime.ai/)
-- [Dokumentasi Windows ML](https://docs.microsoft.com/en-us/windows/ai/)
+## Pemecahan Masalah Pengembangan AI Edge  
 
-### Komunitas dan Dukungan
-- [GitHub AI Toolkit VS Code](https://github.com/microsoft/vscode-ai-toolkit)
-- [Komunitas ONNX](https://github.com/onnx/onnx)
-- [Komunitas Pengembang Edge AI](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [Marketplace Ekstensi VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Masalah Umum  
+- **Kendala Memori**: Model terlalu besar untuk memori perangkat target  
+- **Kecepatan Inferensi**: Inferensi model terlalu lambat untuk kebutuhan real-time  
+- **Degradasi Akurasi**: Optimasi mengurangi akurasi model secara tidak dapat diterima  
+- **Kompatibilitas Perangkat Keras**: Model tidak kompatibel dengan perangkat keras target  
 
-### Sumber Belajar
-- [Kursus Dasar Edge AI](./Module01/README.md)
-- [Panduan Model Bahasa Kecil](./Module02/README.md)
-- [Strategi Penerapan Edge](./Module03/README.md)
-- [Pengembangan Edge AI Windows](./windowdeveloper.md)
+### Strategi Debugging  
+- **Profiling Kinerja**: Gunakan fitur tracing AI Toolkit untuk mengidentifikasi hambatan  
+- **Pemantauan Sumber Daya**: Pantau penggunaan memori dan CPU selama pengembangan  
+- **Pengujian Inkremental**: Uji optimasi secara bertahap untuk mengisolasi masalah  
+- **Simulasi Perangkat Keras**: Gunakan alat pengembangan untuk mensimulasikan perangkat keras target  
 
-## Kesimpulan
+### Solusi Optimasi  
+- **Kuantisasi Lebih Lanjut**: Terapkan teknik kuantisasi yang lebih agresif  
+- **Arsitektur Model**: Pertimbangkan arsitektur model yang dioptimalkan untuk edge  
+- **Optimasi Pra-pemrosesan**: Optimalkan pra-pemrosesan data untuk kendala edge  
+- **Optimasi Inferensi**: Gunakan optimasi inferensi spesifik perangkat keras  
 
-AI Toolkit untuk Visual Studio Code menyediakan platform yang komprehensif untuk pengembangan Edge AI, mulai dari penemuan dan optimasi model hingga penerapan dan pemantauan. Dengan memanfaatkan alat dan alur kerja yang terintegrasi, pengembang dapat dengan efisien membuat, menguji, dan menerapkan aplikasi AI yang berjalan secara efektif pada perangkat edge dengan sumber daya terbatas.
+## Sumber Daya dan Langkah Selanjutnya  
 
-Dukungan toolkit untuk ONNX, Ollama, dan berbagai penyedia cloud, dikombinasikan dengan kemampuan optimasi dan evaluasinya, menjadikannya pilihan ideal untuk pengembangan Edge AI. Baik Anda membangun aplikasi IoT, fitur AI mobile, atau sistem kecerdasan embedded, AI Toolkit menyediakan alat dan alur kerja yang diperlukan untuk penerapan Edge AI yang sukses.
+### Dokumentasi Resmi  
+- [Dokumentasi Pengembang AI Toolkit](https://aka.ms/AIToolkit/doc)  
+- [Panduan Instalasi dan Pengaturan](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [Dokumentasi Aplikasi Cerdas VS Code](https://code.visualstudio.com/docs/intelligentapps)  
+- [Dokumentasi Model Context Protocol (MCP)](https://modelcontextprotocol.io/)  
 
-Seiring dengan perkembangan Edge AI, AI Toolkit untuk VS Code tetap berada di garis depan, menyediakan alat dan kemampuan mutakhir bagi pengembang untuk membangun generasi berikutnya dari aplikasi edge yang cerdas.
+### Komunitas dan Dukungan  
+- [Repositori GitHub AI Toolkit](https://github.com/microsoft/vscode-ai-toolkit)  
+- [Masalah GitHub dan Permintaan Fitur](https://aka.ms/AIToolkit/feedback)  
+- [Komunitas Discord Azure AI Foundry](https://aka.ms/azureaifoundry/discord)  
+- [Marketplace Ekstensi VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Sumber Daya Teknis  
+- [Dokumentasi ONNX Runtime](https://onnxruntime.ai/)  
+- [Dokumentasi Ollama](https://ollama.ai/)  
+- [Dokumentasi Windows ML](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Dokumentasi Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Jalur Pembelajaran  
+- [Kursus Dasar AI Edge](../Module01/README.md)  
+- [Panduan Model Bahasa Kecil](../Module02/README.md)  
+- [Strategi Penerapan Edge](../Module03/README.md)  
+- [Pengembangan AI Edge Windows](./windowdeveloper.md)  
+
+### Sumber Daya Tambahan  
+- **Statistik Repositori**: 1.8k+ bintang, 150+ fork, 18+ kontributor  
+- **Lisensi**: Lisensi MIT  
+- **Keamanan**: Kebijakan keamanan Microsoft berlaku  
+- **Telemetri**: Menghormati pengaturan telemetri VS Code  
+
+## Kesimpulan  
+
+AI Toolkit untuk Visual Studio Code merupakan platform komprehensif untuk pengembangan AI modern, menyediakan kemampuan pengembangan agen yang efisien yang sangat berharga untuk aplikasi AI Edge. Dengan katalog model yang luas yang mendukung penyedia seperti Anthropic, OpenAI, GitHub, dan Google, ditambah eksekusi lokal melalui ONNX dan Ollama, toolkit ini menawarkan fleksibilitas yang diperlukan untuk berbagai skenario penerapan edge.
+
+Kekuatan toolkit ini terletak pada pendekatan terintegrasi—dari penemuan dan eksperimen model di Playground hingga pengembangan agen yang canggih dengan Prompt Builder, kemampuan evaluasi yang komprehensif, dan integrasi alat MCP yang mulus. Bagi pengembang AI Edge, ini berarti prototipe dan pengujian agen AI yang cepat sebelum penerapan edge, dengan kemampuan untuk iterasi cepat dan optimasi untuk lingkungan dengan sumber daya terbatas.
+
+Keuntungan utama untuk pengembangan AI Edge meliputi:  
+- **Eksperimen Cepat**: Uji model dan agen dengan cepat sebelum berkomitmen pada penerapan edge  
+- **Fleksibilitas Multi-Penyedia**: Akses model dari berbagai sumber untuk menemukan solusi edge yang optimal  
+- **Pengembangan Lokal**: Uji dengan ONNX dan Ollama untuk pengembangan offline dan yang menjaga privasi  
+- **Kesiapan Produksi**: Hasilkan kode siap produksi dan integrasikan dengan alat eksternal melalui MCP  
+- **Evaluasi Komprehensif**: Gunakan metrik bawaan dan kustom untuk memvalidasi kinerja AI edge  
+
+Seiring AI terus bergerak menuju skenario penerapan edge, AI Toolkit untuk VS Code menyediakan lingkungan pengembangan dan alur kerja yang diperlukan untuk membangun, menguji, dan mengoptimalkan aplikasi cerdas untuk lingkungan dengan sumber daya terbatas. Baik Anda mengembangkan solusi IoT, aplikasi AI mobile, atau sistem kecerdasan tertanam, fitur lengkap toolkit ini dan alur kerja terintegrasi mendukung seluruh siklus pengembangan AI edge.
+
+Dengan pengembangan yang berkelanjutan dan komunitas yang aktif (1.8k+ bintang GitHub), AI Toolkit tetap berada di garis depan alat pengembangan AI, terus berkembang untuk memenuhi kebutuhan pengembang AI modern yang membangun untuk skenario penerapan edge.
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berusaha untuk memberikan hasil yang akurat, harap diingat bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan profesional oleh manusia. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berusaha untuk memberikan hasil yang akurat, harap diketahui bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau interpretasi yang keliru yang timbul dari penggunaan terjemahan ini.

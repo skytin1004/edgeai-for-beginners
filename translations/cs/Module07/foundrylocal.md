@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:55:00+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:13:50+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "cs"
 }
@@ -16,7 +16,7 @@ Tento průvodce vám pomůže nainstalovat, spustit a integrovat Microsoft Found
 - Referenční příručka CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrace SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Kompilace HF modelů (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Windows AI: Lokální vs cloudové řešení: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- Windows AI: Lokální vs cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Instalace / Aktualizace na Windows
 
@@ -63,10 +63,10 @@ foundry cache list
 ```
 
 Poznámky:
-- Služba poskytuje REST API kompatibilní s OpenAI. Port endpointu je dynamicky přidělen; použijte `foundry service status` pro jeho zjištění.
-- Pro pohodlnější práci použijte SDK; automaticky zajišťují zjištění endpointu tam, kde je to podporováno.
+- Služba poskytuje REST API kompatibilní s OpenAI. Port koncového bodu je dynamicky přidělen; použijte `foundry service status` pro jeho zjištění.
+- Pro pohodlí použijte SDK; automaticky zajišťují zjištění koncového bodu, kde je to podporováno.
 
-## 3) Zjištění lokálního endpointu (Dynamický port)
+## 3) Zjištění lokálního koncového bodu (Dynamický port)
 
 Foundry Local při každém spuštění služby přiděluje dynamický port:
 ```cmd
@@ -125,10 +125,14 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Související zkušenosti vývojářů na Windows
 
-- Možnosti lokálního vs cloudového AI na Windows, včetně Foundry Local a Windows ML:
+- Možnosti lokální vs cloudové AI na Windows, včetně Foundry Local a Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- AI Toolkit ve VS Code s Foundry Local (použijte `foundry service status` pro získání URL endpointu pro chat):
+- AI Toolkit pro VS Code s Foundry Local (použijte `foundry service status` pro získání URL koncového bodu pro chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Další vývojář na Windows](./windowdeveloper.md)
 
 ---
 
+**Prohlášení**:  
+Tento dokument byl přeložen pomocí služby pro automatický překlad [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatické překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.

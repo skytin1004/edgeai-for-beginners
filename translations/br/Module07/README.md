@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e9e31a2b5ff0f6a682a258fa859a8ff5",
-  "translation_date": "2025-09-26T19:32:39+00:00",
+  "original_hash": "c86f39ae10a967d9b337934c067b64f9",
+  "translation_date": "2025-10-02T12:33:17+00:00",
   "source_file": "Module07/README.md",
   "language_code": "br"
 }
@@ -13,16 +13,16 @@ Edge AI representa a convergência da inteligência artificial com a computaçã
 
 ## 1. EdgeAI no NVIDIA Jetson Orin Nano
 
-O NVIDIA Jetson Orin Nano representa um avanço na computação de IA de borda acessível, oferecendo até 67 TOPS de desempenho de IA em um formato compacto, do tamanho de um cartão de crédito. Esta poderosa plataforma de IA de borda democratiza o desenvolvimento de IA generativa para entusiastas, estudantes e desenvolvedores profissionais.
+O NVIDIA Jetson Orin Nano representa um avanço na computação de IA acessível na borda, oferecendo até 67 TOPS de desempenho de IA em um formato compacto do tamanho de um cartão de crédito. Esta poderosa plataforma de IA na borda democratiza o desenvolvimento de IA generativa para entusiastas, estudantes e desenvolvedores profissionais.
 
 ### Principais Características
 - Oferece até 67 TOPS de desempenho de IA — uma melhoria de 1,7X em relação ao seu antecessor
 - 1024 núcleos CUDA e até 32 núcleos Tensor para processamento de IA
-- CPU Arm Cortex-A78AE v8.2 de 6 núcleos e 64 bits com frequência máxima de 1,5 GHz
+- CPU Arm Cortex-A78AE v8.2 de 64 bits com 6 núcleos e frequência máxima de 1,5 GHz
 - Preço de apenas $249, proporcionando aos desenvolvedores, estudantes e criadores a plataforma mais acessível e econômica
 
 ### Aplicações
-O Jetson Orin Nano se destaca na execução de modelos modernos de IA generativa, incluindo transformadores de visão, grandes modelos de linguagem e modelos de visão-linguagem. Ele foi projetado especificamente para casos de uso de GenAI e agora é possível executar vários LLMs em um dispositivo portátil. Casos de uso populares incluem robótica com IA, drones inteligentes, câmeras inteligentes e dispositivos autônomos de borda.
+O Jetson Orin Nano se destaca na execução de modelos modernos de IA generativa, incluindo transformadores de visão, grandes modelos de linguagem e modelos de visão-linguagem. Ele foi projetado especificamente para casos de uso de GenAI e agora é possível executar vários LLMs em um dispositivo portátil. Casos de uso populares incluem robótica com IA, drones inteligentes, câmeras inteligentes e dispositivos autônomos na borda.
 
 **Saiba Mais**: [Supercomputador Jetson Orin Nano da NVIDIA: A Próxima Grande Revolução em EdgeAI](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
@@ -31,14 +31,14 @@ O Jetson Orin Nano se destaca na execução de modelos modernos de IA generativa
 Esta solução demonstra como integrar IA Generativa e Grandes Modelos de Linguagem (LLMs) em aplicativos móveis multiplataforma usando .NET MAUI (Multi-platform App UI) e ONNX Runtime GenAI. Essa abordagem permite que desenvolvedores .NET criem aplicativos móveis sofisticados com IA que funcionam nativamente em dispositivos Android e iOS.
 
 ### Principais Características
-- Baseado no framework .NET MAUI, fornecendo um único código para aplicativos Android e iOS
+- Baseado no framework .NET MAUI, oferecendo um único código para aplicativos Android e iOS
 - Integração com ONNX Runtime GenAI para executar modelos de IA generativa diretamente em dispositivos móveis
 - Suporte a diversos aceleradores de hardware adaptados para dispositivos móveis, incluindo CPU, GPU e processadores de IA especializados
 - Otimizações específicas para plataformas como CoreML para iOS e NNAPI para Android via ONNX Runtime
 - Implementa o ciclo completo de IA generativa, incluindo pré e pós-processamento, inferência, processamento de logits, busca e amostragem, e gerenciamento de cache KV
 
-### Benefícios de Desenvolvimento
-A abordagem .NET MAUI permite que os desenvolvedores aproveitem suas habilidades existentes em C# e .NET enquanto criam aplicativos de IA multiplataforma. O framework ONNX Runtime GenAI suporta várias arquiteturas de modelos, incluindo Llama, Mistral, Phi, Gemma e muitos outros. Kernels ARM64 otimizados aceleram a multiplicação de matrizes quantizadas em INT4, garantindo desempenho eficiente no hardware móvel enquanto mantém a experiência familiar de desenvolvimento em .NET.
+### Benefícios para o Desenvolvimento
+A abordagem .NET MAUI permite que os desenvolvedores aproveitem suas habilidades existentes em C# e .NET enquanto criam aplicativos de IA multiplataforma. O framework ONNX Runtime GenAI suporta várias arquiteturas de modelo, incluindo Llama, Mistral, Phi, Gemma e muitas outras. Kernels ARM64 otimizados aceleram a multiplicação de matrizes quantizadas em INT4, garantindo desempenho eficiente no hardware móvel enquanto mantém a experiência familiar de desenvolvimento em .NET.
 
 ### Casos de Uso
 Esta solução é ideal para desenvolvedores que desejam criar aplicativos móveis com IA usando tecnologias .NET, incluindo chatbots inteligentes, aplicativos de reconhecimento de imagem, ferramentas de tradução de idiomas e sistemas de recomendação personalizados que funcionam totalmente no dispositivo para maior privacidade e capacidade offline.
@@ -47,10 +47,10 @@ Esta solução é ideal para desenvolvedores que desejam criar aplicativos móve
 
 ## 3. EdgeAI no Azure com Motor de Modelos de Linguagem Pequenos
 
-A solução EdgeAI baseada no Azure da Microsoft foca na implantação eficiente de Modelos de Linguagem Pequenos (SLMs) em ambientes híbridos de borda e nuvem. Essa abordagem conecta os serviços de IA em escala de nuvem às necessidades de implantação na borda.
+A solução EdgeAI baseada no Azure da Microsoft foca na implantação eficiente de Modelos de Linguagem Pequenos (SLMs) em ambientes híbridos de nuvem e borda. Essa abordagem conecta os serviços de IA em escala de nuvem às necessidades de implantação na borda.
 
 ### Vantagens da Arquitetura
-- Integração perfeita com serviços de IA do Azure
+- Integração perfeita com os serviços de IA do Azure
 - Executa SLMs/LLMs e modelos multimodais no dispositivo e na nuvem com ONNX Runtime
 - Otimizado para implantação em escala empresarial
 - Suporte para atualizações e gerenciamento contínuos de modelos
@@ -58,20 +58,20 @@ A solução EdgeAI baseada no Azure da Microsoft foca na implantação eficiente
 ### Casos de Uso
 A implementação de EdgeAI no Azure se destaca em cenários que exigem implantação de IA em nível empresarial com capacidades de gerenciamento na nuvem. Isso inclui processamento inteligente de documentos, análises em tempo real e fluxos de trabalho híbridos de IA que aproveitam recursos de computação na nuvem e na borda.
 
-**Saiba Mais**: [Motor de SLM do Azure EdgeAI](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
+**Saiba Mais**: [Motor de SLM EdgeAI do Azure](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
 ## [4. EdgeAI com Windows ML](./windowdeveloper.md)
 
-O Windows ML representa o runtime avançado da Microsoft, otimizado para inferência de modelos no dispositivo e implantação simplificada, servindo como a base do Windows AI Foundry. Esta plataforma permite que os desenvolvedores criem aplicativos Windows com IA que aproveitam todo o espectro de hardware de PCs.
+O Windows ML representa o runtime avançado da Microsoft otimizado para inferência de modelos no dispositivo e implantação simplificada, servindo como a base do Windows AI Foundry. Esta plataforma permite que os desenvolvedores criem aplicativos Windows com IA que aproveitam todo o espectro de hardware de PCs.
 
 ### Capacidades da Plataforma
 - Funciona em todos os PCs com Windows 11 executando a versão 24H2 (build 26100) ou superior
-- Compatível com todos os hardwares de PC x64 e ARM64, mesmo PCs sem NPUs ou GPUs
+- Compatível com hardware de PC x64 e ARM64, mesmo PCs sem NPUs ou GPUs
 - Permite que os desenvolvedores tragam seus próprios modelos e os implantem eficientemente no ecossistema de parceiros de silício, incluindo AMD, Intel, NVIDIA e Qualcomm, abrangendo CPU, GPU, NPU
-- Com APIs de infraestrutura, os desenvolvedores não precisam mais criar várias versões de seus aplicativos para diferentes silícios
+- Aproveitando APIs de infraestrutura, os desenvolvedores não precisam mais criar várias versões de seus aplicativos para diferentes silícios
 
 ### Benefícios para Desenvolvedores
-O Windows ML abstrai o hardware e os provedores de execução, permitindo que você se concentre em escrever seu código. Além disso, o Windows ML é atualizado automaticamente para suportar as últimas NPUs, GPUs e CPUs à medida que são lançadas. A plataforma oferece um framework unificado para desenvolvimento de IA em todo o ecossistema diversificado de hardware do Windows.
+O Windows ML abstrai o hardware e os provedores de execução, permitindo que você se concentre em escrever seu código. Além disso, o Windows ML é atualizado automaticamente para suportar as NPUs, GPUs e CPUs mais recentes à medida que são lançadas. A plataforma oferece um framework unificado para desenvolvimento de IA em todo o ecossistema diversificado de hardware do Windows.
 
 **Saiba Mais**: 
 - [Visão Geral do Windows ML](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview)
@@ -87,18 +87,18 @@ O Foundry Local permite que desenvolvedores de Windows e Mac criem aplicativos d
 - O Kernel Semântico atua como o principal orquestrador, integrando Phi e Componentes Inteligentes para criar um pipeline RAG contínuo
 - Suporte para bancos de dados vetoriais locais, incluindo SQLite e Qdrant
 
-### Benefícios de Implementação
+### Benefícios da Implementação
 RAG, ou Geração Aumentada por Recuperação, é apenas uma maneira sofisticada de dizer "pesquisar algumas informações e colocá-las no prompt". Esta implementação local garante privacidade de dados enquanto fornece respostas inteligentes baseadas em bases de conhecimento personalizadas. A abordagem é particularmente valiosa para cenários empresariais que exigem soberania de dados e capacidades de operação offline.
 
 **Saiba Mais**: 
 - [Foundry Local](./foundrylocal.md)
-- [Exemplos de RAG do Foundry Local](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
+- [Exemplos de RAG Foundry Local](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag)
 
 ### Foundry Local no Windows
 
 O Microsoft Foundry Local fornece um servidor REST compatível com OpenAI, alimentado pelo ONNX Runtime, para executar modelos localmente no Windows. Abaixo está um resumo rápido e validado; veja a documentação oficial para detalhes completos.
 
-- Comece aqui: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Introdução: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arquitetura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Referência CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Guia completo para Windows neste repositório: [foundrylocal.md](./foundrylocal.md)
@@ -146,7 +146,7 @@ Este guia cobre:
 - API Phi Silica para inferência eficiente em hardware NPU
 - APIs de Visão Computacional para processamento de imagens e OCR
 - Integração e otimização do runtime Windows ML
-- CLI do Foundry Local para desenvolvimento e testes locais
+- CLI Foundry Local para desenvolvimento e testes locais
 - Estratégias de otimização de hardware para dispositivos Windows
 - Exemplos práticos de implementação e melhores práticas
 
@@ -158,19 +158,23 @@ Para desenvolvedores que utilizam o Visual Studio Code, a extensão AI Toolkit o
 O guia do AI Toolkit cobre:
 - Descoberta e seleção de modelos para implantação na borda
 - Fluxos de trabalho de teste e otimização locais
-- Integração com ONNX e Ollama para modelos de borda
+- Integração com ONNX e Ollama para modelos na borda
 - Técnicas de conversão e quantização de modelos
-- Desenvolvimento de agentes para cenários de borda
+- Desenvolvimento de agentes para cenários na borda
 - Avaliação de desempenho e monitoramento
 - Preparação para implantação e melhores práticas
 
 ## Conclusão
 
-Essas cinco implementações de EdgeAI demonstram a maturidade e diversidade das soluções de IA na borda disponíveis atualmente. Desde dispositivos de borda acelerados por hardware, como o Jetson Orin Nano, até frameworks de software como ONNX Runtime GenAI e Windows ML, os desenvolvedores têm opções sem precedentes para implantar aplicativos inteligentes na borda.
+Essas cinco implementações de EdgeAI demonstram a maturidade e diversidade das soluções de IA na borda disponíveis atualmente. Desde dispositivos acelerados por hardware como o Jetson Orin Nano até frameworks de software como ONNX Runtime GenAI e Windows ML, os desenvolvedores têm opções sem precedentes para implantar aplicativos inteligentes na borda.
 
 O fio condutor entre todas essas plataformas é a democratização das capacidades de IA, tornando o aprendizado de máquina sofisticado acessível a desenvolvedores de diferentes níveis de habilidade e casos de uso. Seja construindo aplicativos móveis, software de desktop ou sistemas embarcados, essas soluções de EdgeAI fornecem a base para a próxima geração de aplicativos inteligentes que operam de forma eficiente e privada na borda.
 
-Cada plataforma oferece vantagens únicas: Jetson Orin Nano para computação de borda acelerada por hardware, ONNX Runtime GenAI para desenvolvimento móvel multiplataforma, Azure EdgeAI para integração nuvem-borda empresarial, Windows ML para aplicativos nativos do Windows e Foundry Local para implementações RAG focadas em privacidade. Juntas, elas representam um ecossistema abrangente para o desenvolvimento de EdgeAI.
+Cada plataforma oferece vantagens únicas: Jetson Orin Nano para computação acelerada por hardware na borda, ONNX Runtime GenAI para desenvolvimento móvel multiplataforma, Azure EdgeAI para integração nuvem-borda empresarial, Windows ML para aplicativos nativos do Windows e Foundry Local para implementações RAG focadas em privacidade. Juntas, elas representam um ecossistema abrangente para desenvolvimento de EdgeAI.
+
+[Próximo Toolkit de IA](aitoolkit.md)
 
 ---
 
+**Aviso Legal**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

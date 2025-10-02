@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:03:35+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T15:04:09+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "my"
 }
 -->
 # Foundry Local ကို Windows နှင့် Mac တွင် အသုံးပြုခြင်း
 
-ဤလမ်းညွှန်သည် Microsoft Foundry Local ကို Windows နှင့် Mac တွင် ထည့်သွင်းခြင်း၊ အလုပ်လုပ်ခြင်းနှင့် ပေါင်းစပ်အသုံးပြုခြင်းအတွက် အကူအညီပေးပါသည်။ အဆင့်ဆင့်လုပ်ဆောင်မှုများနှင့် command များကို Microsoft Learn စာရွက်စာတမ်းများနှင့်အညီ စစ်ဆေးပြီးဖြစ်သည်။
+ဤလမ်းညွှန်သည် Microsoft Foundry Local ကို Windows နှင့် Mac တွင် ထည့်သွင်းခြင်း၊ အလုပ်လုပ်ခြင်းနှင့် ပေါင်းစပ်အသုံးပြုခြင်းအတွက် အကူအညီပေးပါသည်။ အဆင့်ဆင့်လုပ်ဆောင်မှုများနှင့် အမိန့်များကို Microsoft Learn စာရွက်စာတမ်းများနှင့်အညီ စစ်ဆေးပြီးဖြစ်သည်။
 
 - စတင်အသုံးပြုရန်: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architecture: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -63,12 +63,12 @@ foundry cache list
 ```
 
 မှတ်ချက်များ:
-- Service သည် OpenAI-compatible REST API ကို expose လုပ်ပါသည်။ Endpoint port ကို dynamic အနေနဲ့ allocate လုပ်ပါသည်။ `foundry service status` ကို အသုံးပြု၍ port ကို ရှာဖွေပါ။
-- SDKs ကို အသုံးပြုပါက အဆင်ပြေပါသည်။ SDKs တွင် endpoint discovery ကို automatic အနေနဲ့ handle လုပ်ပေးပါသည်။
+- Service သည် OpenAI-compatible REST API ကို ဖွင့်ပေးသည်။ Endpoint port ကို dynamic အနေနှင့် သတ်မှတ်ပေးသည်။ `foundry service status` ကို အသုံးပြု၍ port ကို ရှာဖွေပါ။
+- SDKs ကို အသုံးပြုပါက အဆင်ပြေပါသည်။ SDKs သည် endpoint discovery ကို support လုပ်သောနေရာများတွင် automatic အနေနှင့် လုပ်ဆောင်ပေးသည်။
 
 ## 3) Local Endpoint ကို ရှာဖွေခြင်း (Dynamic Port)
 
-Foundry Local သည် service စတင်တိုင်း dynamic port ကို assign လုပ်ပါသည်:
+Foundry Local သည် service စတင်တိုင်း dynamic port ကို သတ်မှတ်ပေးသည်:
 ```cmd
 foundry service status
 ```
@@ -92,11 +92,11 @@ PY
 References:
 - SDK Integration: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) ကိုယ်ပိုင် Model (Olive ဖြင့် Compile လုပ်ပါ)
+## 5) ကိုယ်ပိုင် Model (Olive ဖြင့် Compile လုပ်ခြင်း)
 
-Catalog တွင် မပါဝင်သော model ကို Foundry Local အတွက် ONNX အဖြစ် Olive ဖြင့် compile လုပ်ပါ။
+Catalog တွင် မပါဝင်သော model တစ်ခုလိုအပ်ပါက Olive ကို အသုံးပြု၍ Foundry Local အတွက် ONNX အဖြစ် Compile လုပ်ပါ။
 
-အဆင့်မြင့် flow (လမ်းညွှန်စာတမ်းများတွင် အဆင့်များကို ကြည့်ပါ):
+အဆင့်မြင့်လုပ်ဆောင်မှု (လမ်းညွှန်စာတမ်းများကို ကြည့်ပါ):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -118,17 +118,21 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Preview version ကို နောက်ဆုံးပေါ်အဖြစ် update လုပ်ပါ:
+- နောက်ဆုံး preview ကို update လုပ်ပါ:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
 ## 7) Windows Developer အတွေ့အကြုံနှင့် ဆက်စပ်မှု
 
-- Windows local နှင့် cloud AI ရွေးချယ်မှုများ၊ Foundry Local နှင့် Windows ML အပါအဝင်:
+- Windows Local နှင့် Cloud AI ရွေးချယ်မှုများ၊ Foundry Local နှင့် Windows ML အပါအဝင်:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit ကို Foundry Local နှင့်အတူ အသုံးပြုခြင်း (chat endpoint URL ကို ရှာဖွေရန် `foundry service status` ကို အသုံးပြုပါ):
+- VS Code AI Toolkit ကို Foundry Local နှင့်အတူ အသုံးပြုခြင်း (`foundry service status` ကို အသုံးပြု၍ chat endpoint URL ကို ရယူပါ):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Next Windows Developer](./windowdeveloper.md)
 
 ---
 
+**အကြောင်းကြားချက်**:  
+ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှန်ကန်မှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက် ဘာသာပြန်ခြင်းတွင် အမှားများ သို့မဟုတ် မမှန်ကန်မှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းဘာသာစကားဖြင့် ရေးသားထားသော စာရွက်စာတမ်းကို အာဏာတရားရှိသော ရင်းမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူက ဘာသာပြန်ခြင်းကို အကြံပြုပါသည်။ ဤဘာသာပြန်ကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအလွဲအချော်များ သို့မဟုတ် အနားယူမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။

@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:06:22+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T15:19:21+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "lt"
 }
 -->
 # Foundry Local Windows ir Mac
 
-Šis vadovas padės jums įdiegti, paleisti ir integruoti Microsoft Foundry Local Windows ir Mac sistemose. Visi žingsniai ir komandos patikrinti pagal Microsoft Learn dokumentaciją.
+Šis vadovas padės jums įdiegti, paleisti ir integruoti Microsoft Foundry Local Windows ir Mac operacinėse sistemose. Visi žingsniai ir komandos patikrinti pagal Microsoft Learn dokumentaciją.
 
 - Pradėti: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architektūra: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -18,7 +18,7 @@ CO_OP_TRANSLATOR_METADATA:
 - HF modelių kompiliavimas (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: vietinis vs debesų sprendimas: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Diegimas / Atnaujinimas Windows sistemoje
+## 1) Diegimas / Atnaujinimas Windows
 
 - Diegimas:
 ```cmd
@@ -36,7 +36,7 @@ foundry --version
 **Diegimas / Mac**
 
 **MacOS**: 
-Atidarykite terminalą ir paleiskite šią komandą:
+Atidarykite terminalą ir vykdykite šią komandą:
 ```bash
    brew tap microsoft/foundrylocal
    brew install foundrylocal
@@ -64,9 +64,9 @@ foundry cache list
 
 Pastabos:
 - Paslauga teikia OpenAI suderinamą REST API. Prievado numeris priskiriamas dinamiškai; naudokite `foundry service status`, kad jį sužinotumėte.
-- Naudokite SDK patogumui; jie automatiškai aptinka prievadą, kur tai palaikoma.
+- Naudokite SDK patogumui; jie automatiškai aptinka galinius taškus, kur tai palaikoma.
 
-## 3) Vietinio prievado aptikimas (dinaminis prievadas)
+## 3) Vietinio galinio taško aptikimas (dinaminis prievadas)
 
 Foundry Local kiekvieną kartą paleidžiant paslaugą priskiria dinaminį prievadą:
 ```cmd
@@ -74,7 +74,7 @@ foundry service status
 ```
 Naudokite nurodytą `http://localhost:<PORT>` kaip savo `base_url` su OpenAI suderinamais keliais (pvz., `/v1/chat/completions`).
 
-## 4) Greitas testas naudojant OpenAI Python SDK
+## 4) Greitas testas per OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -94,7 +94,7 @@ Nuorodos:
 
 ## 5) Naudokite savo modelį (kompiliavimas su Olive)
 
-Jei jums reikia modelio, kurio nėra kataloge, kompiliuokite jį į ONNX Foundry Local naudojant Olive.
+Jei jums reikia modelio, kurio nėra kataloge, kompiliuokite jį į ONNX formatą Foundry Local naudodami Olive.
 
 Aukšto lygio procesas (žr. dokumentaciją dėl žingsnių):
 ```cmd
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Windows vietinio ir debesų AI pasirinkimai, įskaitant Foundry Local ir Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI įrankių rinkinys su Foundry Local (naudokite `foundry service status`, kad gautumėte pokalbių paslaugos URL):
+- VS Code AI įrankių rinkinys su Foundry Local (naudokite `foundry service status`, kad gautumėte pokalbio galinio taško URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Next Windows Developer](./windowdeveloper.md)
 
 ---
 
+**Atsakomybės apribojimas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.

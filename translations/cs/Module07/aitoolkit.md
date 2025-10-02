@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T17:38:58+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T14:08:29+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "cs"
 }
@@ -15,17 +15,17 @@ Vítejte v komplexním průvodci používáním AI Toolkit pro Visual Studio Cod
 
 AI Toolkit pro Visual Studio Code překonává tuto mezeru tím, že poskytuje kompletní vývojové prostředí speciálně navržené pro vytváření, testování a optimalizaci AI aplikací, které efektivně běží na edge zařízeních. Ať už vyvíjíte pro IoT senzory, mobilní zařízení, vestavěné systémy nebo edge servery, tento nástroj zjednodušuje celý váš vývojový proces v prostředí, které znáte z VS Code.
 
-Tento průvodce vás provede základními koncepty, nástroji a osvědčenými postupy pro využití AI Toolkit ve vašich Edge AI projektech, od výběru modelu až po nasazení do produkce.
+Tento průvodce vás provede základními koncepty, nástroji a osvědčenými postupy pro využití AI Toolkit ve vašich projektech Edge AI, od výběru modelu až po nasazení do produkce.
 
 ## Přehled
 
-AI Toolkit poskytuje integrované vývojové prostředí pro celý životní cyklus Edge AI aplikací v rámci VS Code. Nabízí bezproblémovou integraci s populárními AI modely od poskytovatelů jako OpenAI, Anthropic, Google a GitHub, a zároveň podporuje lokální nasazení modelů prostřednictvím ONNX a Ollama - klíčové funkce pro Edge AI aplikace, které vyžadují inference přímo na zařízení.
+AI Toolkit pro Visual Studio Code je výkonné rozšíření, které zjednodušuje vývoj agentů a tvorbu AI aplikací. Toolkit poskytuje komplexní možnosti pro prozkoumávání, hodnocení a nasazení AI modelů od široké škály poskytovatelů—včetně Anthropic, OpenAI, GitHub, Google—a zároveň podporuje lokální provádění modelů pomocí ONNX a Ollama.
 
-Co odlišuje AI Toolkit pro vývoj Edge AI, je jeho zaměření na celý proces nasazení na edge. Na rozdíl od tradičních AI vývojových nástrojů, které se primárně zaměřují na nasazení v cloudu, AI Toolkit zahrnuje specializované funkce pro optimalizaci modelů, testování v podmínkách omezených zdrojů a hodnocení výkonu specifického pro edge. Nástroj chápe, že vývoj Edge AI vyžaduje jiné přístupy - menší velikosti modelů, rychlejší časy inference, schopnost offline provozu a optimalizace specifické pro hardware.
+Co odlišuje AI Toolkit, je jeho komplexní přístup k celému životnímu cyklu vývoje AI. Na rozdíl od tradičních nástrojů pro vývoj AI, které se zaměřují na jednotlivé aspekty, AI Toolkit poskytuje integrované prostředí, které pokrývá objevování modelů, experimentování, vývoj agentů, hodnocení a nasazení—vše v prostředí VS Code.
 
-Platforma podporuje různé scénáře nasazení, od jednoduché inference na zařízení po komplexní architektury s více modely na edge. Poskytuje nástroje pro konverzi modelů, kvantizaci a optimalizaci, které jsou nezbytné pro úspěšné nasazení na edge, a zároveň zachovává produktivitu vývojáře, kterou je VS Code známý.
+Platforma je speciálně navržena pro rychlé prototypování a nasazení do produkce, s funkcemi jako generování promptů, rychlé starty, bezproblémové integrace MCP (Model Context Protocol) nástrojů a rozsáhlé možnosti hodnocení. Pro vývoj Edge AI to znamená, že můžete efektivně vyvíjet, testovat a optimalizovat AI aplikace pro scénáře nasazení na edge, přičemž si zachováte celý vývojový proces v prostředí VS Code.
 
-## Cíle učení
+## Výukové cíle
 
 Na konci tohoto průvodce budete schopni:
 
@@ -33,7 +33,7 @@ Na konci tohoto průvodce budete schopni:
 - **Nainstalovat a nakonfigurovat** AI Toolkit pro Visual Studio Code pro pracovní postupy vývoje Edge AI
 - **Orientovat se a využívat** rozhraní AI Toolkit, včetně Model Catalog, Playground a Agent Builder
 - **Vybrat a hodnotit** AI modely vhodné pro nasazení na edge na základě výkonu a omezení zdrojů
-- **Konvertovat a optimalizovat** modely pomocí formátu ONNX a technik kvantizace pro edge zařízení
+- **Převádět a optimalizovat** modely pomocí formátu ONNX a technik kvantizace pro edge zařízení
 
 ### Dovednosti vývoje Edge AI
 - **Navrhnout a implementovat** Edge AI aplikace pomocí integrovaného vývojového prostředí
@@ -42,8 +42,8 @@ Na konci tohoto průvodce budete schopni:
 - **Hodnotit výkon modelů** pomocí metrik relevantních pro edge computing (latence, využití paměti, přesnost)
 
 ### Optimalizace a nasazení
-- **Použít kvantizaci a prořezávání** k redukci velikosti modelu při zachování přijatelného výkonu
-- **Optimalizovat modely** pro specifické edge hardwarové platformy včetně akcelerace CPU, GPU a NPU
+- **Použít techniky kvantizace a prořezávání** ke snížení velikosti modelu při zachování přijatelného výkonu
+- **Optimalizovat modely** pro specifické edge hardwarové platformy včetně CPU, GPU a NPU akcelerace
 - **Implementovat osvědčené postupy** pro vývoj Edge AI včetně správy zdrojů a záložních strategií
 - **Připravit modely a aplikace** pro nasazení do produkce na edge zařízeních
 
@@ -53,55 +53,62 @@ Na konci tohoto průvodce budete schopni:
 - **Řešit běžné problémy Edge AI** včetně omezení paměti, rychlosti inference a kompatibility hardwaru
 - **Navrhnout strategie monitorování a logování** pro Edge AI aplikace v produkci
 
-### Praktické využití
+### Praktické použití
 - **Vytvořit kompletní Edge AI řešení** od výběru modelu po nasazení
-- **Prokázat znalost** vývojových postupů specifických pro edge a optimalizačních technik
+- **Prokázat znalosti** v pracovních postupech specifických pro edge a optimalizačních technikách
 - **Aplikovat naučené koncepty** na reálné případy použití Edge AI včetně IoT, mobilních a vestavěných aplikací
 - **Hodnotit a porovnávat** různé strategie nasazení Edge AI a jejich kompromisy
 
 ## Klíčové funkce pro vývoj Edge AI
 
-### 1. Katalog modelů a jejich objevování
-- **Podpora lokálních modelů**: Objevujte a přistupujte k AI modelům speciálně optimalizovaným pro nasazení na edge
-- **Integrace ONNX**: Přístup k modelům ve formátu ONNX pro efektivní inference na edge
-- **Podpora Ollama**: Využívejte modely běžící lokálně prostřednictvím Ollama pro ochranu soukromí a offline provoz
-- **Porovnání modelů**: Porovnávejte modely vedle sebe a najděte optimální rovnováhu mezi výkonem a spotřebou zdrojů pro edge zařízení
+### 1. Katalog modelů a objevování
+- **Podpora více poskytovatelů**: Procházejte a přistupujte k AI modelům od Anthropic, OpenAI, GitHub, Google a dalších poskytovatelů
+- **Integrace lokálních modelů**: Zjednodušené objevování modelů ONNX a Ollama pro nasazení na edge
+- **Modely z GitHubu**: Přímá integrace s hostováním modelů na GitHubu pro zjednodušený přístup
+- **Porovnání modelů**: Porovnávejte modely vedle sebe, abyste našli optimální rovnováhu pro omezení edge zařízení
 
 ### 2. Interaktivní Playground
-- **Lokální testovací prostředí**: Testujte modely lokálně před nasazením na edge
-- **Experimentování s multimodálními vstupy**: Testujte s obrázky, textem a dalšími vstupy typickými pro edge scénáře
-- **Ladění parametrů**: Experimentujte s různými parametry modelu pro optimalizaci omezení na edge
-- **Monitorování výkonu v reálném čase**: Sledujte rychlost inference a využití zdrojů během vývoje
+- **Interaktivní testovací prostředí**: Rychlé experimentování se schopnostmi modelů v kontrolovaném prostředí
+- **Podpora multimodality**: Testování s obrázky, textem a dalšími vstupy typickými pro edge scénáře
+- **Experimentování v reálném čase**: Okamžitá zpětná vazba na odpovědi modelů a výkon
+- **Optimalizace parametrů**: Doladění parametrů modelu pro požadavky nasazení na edge
 
-### 3. Agent Builder pro Edge aplikace
-- **Návrh promptů**: Vytvářejte optimalizované prompty, které efektivně fungují s menšími edge modely
-- **Integrace MCP nástrojů**: Integrujte nástroje Model Context Protocol pro rozšířené schopnosti edge agentů
-- **Generování kódu**: Generujte kód připravený pro produkci optimalizovaný pro scénáře nasazení na edge
-- **Strukturované výstupy**: Navrhujte agenty, kteří poskytují konzistentní, strukturované odpovědi vhodné pro edge aplikace
+### 3. Builder promptů (agentů)
+- **Generování přirozeného jazyka**: Generujte startovací prompty pomocí popisů v přirozeném jazyce
+- **Iterativní zdokonalování**: Zlepšujte prompty na základě odpovědí modelů a výkonu
+- **Rozklad úkolů**: Rozdělujte složité úkoly pomocí řetězení promptů a strukturovaných výstupů
+- **Podpora proměnných**: Používejte proměnné v promptech pro dynamické chování agentů
+- **Generování produkčního kódu**: Generujte kód připravený pro produkci pro rychlý vývoj aplikací
 
-### 4. Hodnocení a testování modelů
-- **Metriky výkonu**: Hodnoťte modely pomocí metrik relevantních pro nasazení na edge (latence, využití paměti, přesnost)
-- **Hromadné testování**: Testujte více konfigurací modelů současně a najděte optimální nastavení pro edge
-- **Vlastní hodnocení**: Vytvářejte vlastní kritéria hodnocení specifická pro případy použití Edge AI
-- **Profilování zdrojů**: Analyzujte požadavky na paměť a výpočetní výkon pro plánování nasazení na edge
+### 4. Hromadné spuštění a hodnocení
+- **Testování více modelů**: Spouštějte více promptů na vybraných modelech současně
+- **Efektivní testování ve velkém**: Testujte různé vstupy a konfigurace efektivně
+- **Vlastní testovací případy**: Spouštějte agenty s testovacími případy pro ověření funkčnosti
+- **Porovnání výkonu**: Porovnávejte výsledky napříč různými modely a konfiguracemi
 
-### 5. Konverze a optimalizace modelů
-- **Konverze do ONNX**: Převádějte modely z různých formátů do ONNX pro kompatibilitu s edge
-- **Kvantizace**: Snižte velikost modelu a zlepšete rychlost inference pomocí technik kvantizace
-- **Optimalizace hardwaru**: Optimalizujte modely pro specifický edge hardware (CPU, GPU, NPU)
-- **Transformace formátů**: Transformujte modely z Hugging Face a dalších zdrojů pro nasazení na edge
+### 5. Hodnocení modelů pomocí datových sad
+- **Standardní metriky**: Testujte AI modely pomocí vestavěných hodnotitelů (F1 skóre, relevance, podobnost, koherence)
+- **Vlastní hodnotitelé**: Vytvářejte vlastní metriky hodnocení pro specifické případy použití
+- **Integrace datových sad**: Testujte modely proti komplexním datovým sadám
+- **Měření výkonu**: Kvantifikujte výkon modelů pro rozhodnutí o nasazení na edge
 
-### 6. Doladění pro scénáře na edge
-- **Adaptace na doménu**: Přizpůsobte modely pro specifické případy použití a prostředí na edge
-- **Lokální trénování**: Trénujte modely lokálně s podporou GPU pro specifické požadavky na edge
-- **Integrace Azure**: Využívejte Azure Container Apps pro doladění v cloudu před nasazením na edge
-- **Transfer Learning**: Přizpůsobte předtrénované modely pro úkoly a omezení specifická pro edge
+### 6. Možnosti doladění
+- **Přizpůsobení modelů**: Přizpůsobte modely pro specifické případy použití a domény
+- **Specializovaná adaptace**: Přizpůsobte modely specializovaným doménám a požadavkům
+- **Optimalizace pro edge**: Doladění modelů specificky pro omezení nasazení na edge
+- **Trénink specifický pro doménu**: Vytvářejte modely přizpůsobené specifickým případům použití na edge
 
-### 7. Monitorování výkonu a sledování
-- **Analýza výkonu na edge**: Sledujte výkon modelu v podmínkách podobných edge
-- **Sběr trasování**: Sbírejte podrobné údaje o výkonu pro optimalizaci
-- **Identifikace úzkých míst**: Identifikujte problémy s výkonem před nasazením na edge zařízení
-- **Sledování využití zdrojů**: Monitorujte paměť, CPU a čas inference pro optimalizaci na edge
+### 7. Integrace MCP nástrojů
+- **Připojení externích nástrojů**: Připojte agenty k externím nástrojům prostřednictvím serverů Model Context Protocol
+- **Akce v reálném světě**: Umožněte agentům dotazovat se na databáze, přistupovat k API nebo provádět vlastní logiku
+- **Existující MCP servery**: Používejte nástroje z příkazového řádku (stdio) nebo HTTP (server-sent event) protokolů
+- **Vývoj vlastních MCP**: Vytvářejte a testujte nové MCP servery pomocí Agent Builder
+
+### 8. Vývoj a testování agentů
+- **Podpora volání funkcí**: Umožněte agentům dynamicky volat externí funkce
+- **Testování integrace v reálném čase**: Testujte integrace s běhy v reálném čase a použitím nástrojů
+- **Verzování agentů**: Správa verzí agentů s možností porovnání výsledků hodnocení
+- **Ladění a trasování**: Lokální trasování a ladění pro vývoj agentů
 
 ## Pracovní postup vývoje Edge AI
 
@@ -112,43 +119,43 @@ Na konci tohoto průvodce budete schopni:
 4. **Posuďte požadavky na zdroje**: Určete potřeby paměti a výpočetního výkonu pro cílová edge zařízení
 
 ### Fáze 2: Optimalizace modelů
-1. **Převod do ONNX**: Převádějte vybrané modely do formátu ONNX pro kompatibilitu s edge
+1. **Převod na ONNX**: Převádějte vybrané modely do formátu ONNX pro kompatibilitu s edge
 2. **Použijte kvantizaci**: Snižte velikost modelu pomocí kvantizace INT8 nebo INT4
 3. **Optimalizace hardwaru**: Optimalizujte pro cílový edge hardware (ARM, x86, specializované akcelerátory)
-4. **Validace výkonu**: Ověřte, že optimalizované modely zachovávají přijatelnou přesnost
+4. **Ověření výkonu**: Ověřte, že optimalizované modely si zachovávají přijatelnou přesnost
 
 ### Fáze 3: Vývoj aplikací
 1. **Návrh agentů**: Použijte Agent Builder k vytvoření AI agentů optimalizovaných pro edge
-2. **Návrh promptů**: Vyvíjejte prompty, které efektivně fungují s menšími modely
-3. **Testování integrace**: Testujte agenty v simulovaných podmínkách na edge
+2. **Inženýrství promptů**: Vyvíjejte prompty, které efektivně fungují s menšími edge modely
+3. **Testování integrace**: Testujte agenty v simulovaných podmínkách edge
 4. **Generování kódu**: Generujte produkční kód optimalizovaný pro nasazení na edge
 
 ### Fáze 4: Hodnocení a testování
-1. **Hromadné hodnocení**: Testujte více konfigurací a najděte optimální nastavení pro edge
+1. **Hromadné hodnocení**: Testujte více konfigurací pro nalezení optimálních edge nastavení
 2. **Profilování výkonu**: Analyzujte rychlost inference, využití paměti a přesnost
-3. **Simulace na edge**: Testujte v podmínkách podobných cílovému prostředí nasazení na edge
+3. **Simulace edge**: Testujte v podmínkách podobných cílovému prostředí nasazení na edge
 4. **Zátěžové testování**: Hodnoťte výkon za různých podmínek zatížení
 
 ### Fáze 5: Příprava na nasazení
 1. **Finální optimalizace**: Proveďte finální optimalizace na základě výsledků testování
 2. **Balíčkování pro nasazení**: Zabalte modely a kód pro nasazení na edge
 3. **Dokumentace**: Dokumentujte požadavky na nasazení a konfiguraci
-4. **Nastavení monitorování**: Připravte monitorování a logování pro nasazení do produkce
+4. **Příprava monitorování**: Připravte monitorování a logování pro nasazení na edge
 
 ## Cílová skupina pro vývoj Edge AI
 
 ### Vývojáři Edge AI
 - Vývojáři aplikací vytvářející edge zařízení a IoT řešení poháněná AI
 - Vývojáři vestavěných systémů integrující AI schopnosti do zařízení s omezenými zdroji
-- Mobilní vývojáři vytvářející AI aplikace běžící přímo na zařízeních
+- Mobilní vývojáři vytvářející AI aplikace na zařízení pro smartphony a tablety
 
 ### Inženýři Edge AI
 - AI inženýři optimalizující modely pro nasazení na edge a spravující inference pipeline
-- DevOps inženýři nasazující a spravující AI modely na distribuované edge infrastruktuře
+- DevOps inženýři nasazující a spravující AI modely napříč distribuovanou edge infrastrukturou
 - Inženýři výkonu optimalizující AI pracovní zátěže pro omezení edge hardwaru
 
 ### Výzkumníci a pedagogové
-- AI výzkumníci vyvíjející efektivní modely a algoritmy pro edge computing
+- Výzkumníci AI vyvíjející efektivní modely a algoritmy pro edge computing
 - Pedagogové vyučující koncepty Edge AI a demonstrující optimalizační techniky
 - Studenti učící se o výzvách a řešeních při nasazení Edge AI
 
@@ -161,8 +168,8 @@ Na konci tohoto průvodce budete schopni:
 - **Monitorování prostředí**: Nasazení modelů analýzy dat ze senzorů pro environmentální aplikace
 
 ### Mobilní a vestavěné aplikace
-- **Překlad na zařízení**: Implementace modelů překladu jazyků, které fungují offline
-- **Rozšířená realita**: Nasazení rozpoznávání objektů v reálném čase a sledování pro AR aplikace
+- **Překlad na zařízení**: Implementace modelů překladu jazyka, které fungují offline
+- **Rozšířená realita**: Nasazení rozpoznávání objektů a sledování v reálném čase pro AR aplikace
 - **Monitorování zdraví**: Spouštění modelů analýzy zdraví na nositelných zařízeních a lékařském vybavení
 - **Autonomní systémy**: Implementace modelů rozhodování pro drony, roboty a vozidla
 
@@ -170,148 +177,199 @@ Na konci tohoto průvodce budete schopni:
 - **Edge datová centra**: Nasazení AI modelů v edge datových centrech pro aplikace s nízkou latencí
 - **Integrace CDN**: Integrace schopností AI zpracování do sítí pro doručování obsahu
 - **5G Edge**: Využití edge computingu s 5G pro aplikace poháněné AI
-- **Fog Computing**: Implementace AI zpracování v prostředích fog computingu
+- **Fog computing**: Implementace AI zpracování v prostředích fog computingu
 
 ## Instalace a nastavení
 
-### Rychlá instalace
+### Instalace rozšíření
 Nainstalujte rozšíření AI Toolkit přímo z Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**ID rozšíření**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Metody instalace**:
+1. **VS Code Marketplace**: Vyhledejte "AI Toolkit" v zobrazení rozšíření
+2. **Příkazový řádek**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Přímá instalace**: Stáhněte z [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Předpoklady pro vývoj Edge AI
-- **ONNX Runtime**: Nainstalujte ONNX Runtime pro inference modelů
-- **Ollama** (volitelné): Nainstalujte Ollama pro lokální obsluhu modelů
-- **Python prostředí**: Nastavte Python s požadovanými AI knihovnami
-- **Nástroje pro edge hardware**: Nainstalujte nástroje pro vývoj specifické pro hardware (CUDA, OpenVINO, atd.)
+- **Visual Studio Code**: Doporučena nejnovější verze
+- **Python prostředí**: Python 3.8+ s požadovanými AI knihovnami
+- **ONNX Runtime** (volitelné): Pro inference modelů ONNX
+- **Ollama** (volitelné): Pro lokální obsluhu modelů
+- **Nástroje pro hardwarovou akceleraci**: CUDA, OpenVINO nebo akcelerátory specifické pro platformu
 
 ### Počáteční konfigurace
-1. Otevřete VS Code a nainstalujte rozšíření AI Toolkit
-2. Nakonfigurujte zdroje modelů (ONNX, Ollama, poskytovatelé cloudu)
-3. Nastavte lokální vývojové prostředí pro testování na edge
-4. Nakonfigurujte možnosti hardwarové akcelerace pro váš vývojový stroj
+1. **Aktivace rozšíření**: Otevřete VS Code a ověřte, že se AI Toolkit zobrazuje v Activity Bar
+2. **Nastavení poskytovatelů modelů**: Nakonfigurujte přístup k GitHubu, OpenAI, Anthropic nebo jiným poskytovatelům modelů
+3. **Lokální prostředí**: Nastavte Python prostředí a nainstalujte požadované balíčky
+4. **Hardwarová akcelerace**: Nakonfigurujte GPU/NPU akceleraci, pokud je dostupná
+5.
+2. Generujte počáteční výzvy pomocí popisů v přirozeném jazyce  
+3. Iterujte a upravujte výzvy na základě odpovědí modelu  
+4. Integrujte nástroje MCP pro rozšířené schopnosti agentů  
 
-## Začínáme s vývojem Edge AI
+#### Krok 3: Testování a hodnocení  
+1. Použijte **Bulk Run** k testování více výzev na vybraných modelech  
+2. Spouštějte agenty s testovacími případy pro ověření funkčnosti  
+3. Hodnoťte přesnost a výkon pomocí vestavěných nebo vlastních metrik  
+4. Porovnávejte různé modely a konfigurace  
 
-### Krok 1: Výběr modelu
-1. Otevřete zobrazení AI Toolkit v Activity Bar
-2. Procházejte katalog modelů pro modely kompatibilní s edge
-3. Filtrovat podle velikosti modelu, formátu (ONNX) a charakteristik výkonu
-4. Porovnávejte modely pomocí vestavěných nástrojů pro porovnání
+#### Krok 4: Doladění a optimalizace  
+1. Přizpůsobte modely pro specifické okrajové případy použití  
+2. Aplikujte doladění specifické pro danou doménu  
+3. Optimalizujte pro omezení nasazení na okrajových zařízeních  
+4. Verzujte a porovnávejte různé konfigurace agentů  
 
-### Krok 2: Lokální testování
-1. Použijte Playground k testování vybraných modelů lokálně
-2. Experimentujte s různými prompty a parametry
-3. Sledujte metriky výkonu během testování
-4. Hodnoťte odpovědi modelů pro požadavky na edge případy použití
+#### Krok 5: Příprava na nasazení  
+1. Generujte produkčně připravený kód pomocí Agent Builderu  
+2. Nastavte připojení k MCP serveru pro produkční použití  
+3. Připravte balíčky pro nasazení na okrajových zařízeních  
+4. Konfigurujte metriky pro monitorování a hodnocení  
 
-### Krok 3: Optimalizace modelu
-1. Použijte nástroje pro konverzi modelů k optimalizaci pro nasazení na edge
-2. Použijte kvantizaci ke snížení velikosti modelu
-3. Testujte optimalizované modely pro zajištění přijatelného výkonu
-4. Dokumentujte nastavení optimalizace a kompromisy výkonu
+## Nejlepší postupy pro vývoj Edge AI  
 
-### Krok 4: Vývoj agentů
-1. Použijte Agent Builder k vytvoření AI agentů optimalizovaných pro
-- **Zabezpečení**: Implementujte vhodná bezpečnostní opatření pro aplikace Edge AI
+### Výběr modelu  
+- **Velikostní omezení**: Vyberte modely, které se vejdou do paměťových limitů cílových zařízení  
+- **Rychlost inferencí**: Upřednostněte modely s rychlou inferencí pro aplikace v reálném čase  
+- **Kompromisy v přesnosti**: Vyvažte přesnost modelu s omezenými zdroji  
+- **Kompatibilita formátů**: Preferujte formáty ONNX nebo optimalizované pro hardware pro nasazení na okraji  
 
-## Integrace s Edge AI frameworky
+### Optimalizační techniky  
+- **Kvantizace**: Použijte kvantizaci INT8 nebo INT4 ke snížení velikosti modelu a zlepšení rychlosti  
+- **Prořezávání**: Odstraňte nepotřebné parametry modelu ke snížení výpočetních požadavků  
+- **Destilace znalostí**: Vytvořte menší modely, které si zachovají výkon větších modelů  
+- **Hardwarová akcelerace**: Využijte NPUs, GPUs nebo specializované akcelerátory, pokud jsou dostupné  
 
-### ONNX Runtime
-- **Nasazení napříč platformami**: Nasazujte ONNX modely na různých edge platformách
-- **Optimalizace hardwaru**: Využijte hardwarově specifické optimalizace ONNX Runtime
-- **Podpora mobilních zařízení**: Používejte ONNX Runtime Mobile pro aplikace na smartphonech a tabletech
-- **Integrace s IoT**: Nasazujte na IoT zařízení pomocí lehkých distribucí ONNX Runtime
+### Pracovní postup vývoje  
+- **Iterativní testování**: Testujte často v podmínkách podobných okraji během vývoje  
+- **Monitorování výkonu**: Nepřetržitě sledujte využití zdrojů a rychlost inferencí  
+- **Správa verzí**: Sledujte verze modelů a nastavení optimalizace  
+- **Dokumentace**: Dokumentujte všechna rozhodnutí o optimalizaci a kompromisy výkonu  
 
-### Windows ML
-- **Zařízení s Windows**: Optimalizujte pro edge zařízení a PC s Windows
-- **Akcelerace pomocí NPU**: Využijte Neural Processing Units na zařízeních s Windows
-- **DirectML**: Používejte DirectML pro akceleraci GPU na platformách Windows
-- **Integrace s UWP**: Integrujte s aplikacemi Universal Windows Platform
+### Úvahy o nasazení  
+- **Monitorování zdrojů**: Sledujte paměť, CPU a spotřebu energie v produkci  
+- **Záložní strategie**: Implementujte mechanismy zálohy pro selhání modelu  
+- **Mechanismy aktualizace**: Plánujte aktualizace modelů a správu verzí  
+- **Bezpečnost**: Implementujte vhodná bezpečnostní opatření pro aplikace Edge AI  
 
-### TensorFlow Lite
-- **Optimalizace pro mobilní zařízení**: Nasazujte TensorFlow Lite modely na mobilní a vestavěná zařízení
-- **Hardwaroví delegáti**: Používejte specializované hardwarové delegáty pro akceleraci
-- **Mikrokontroléry**: Nasazujte na mikrokontroléry pomocí TensorFlow Lite Micro
-- **Podpora napříč platformami**: Nasazujte na Android, iOS a vestavěné systémy Linux
+## Integrace s Edge AI frameworky  
 
-### Azure IoT Edge
-- **Hybridní cloud-edge**: Kombinujte trénování v cloudu s inferencí na edge
-- **Nasazení modulů**: Nasazujte AI modely jako moduly IoT Edge
-- **Správa zařízení**: Spravujte edge zařízení a aktualizace modelů na dálku
-- **Telemetrie**: Sbírejte data o výkonu a metriky modelů z edge nasazení
+### ONNX Runtime  
+- **Nasazení napříč platformami**: Nasazujte ONNX modely na různých okrajových platformách  
+- **Optimalizace hardwaru**: Využijte hardwarově specifické optimalizace ONNX Runtime  
+- **Podpora mobilních zařízení**: Použijte ONNX Runtime Mobile pro aplikace na smartphonech a tabletech  
+- **Integrace IoT**: Nasazujte na IoT zařízení pomocí lehkých distribucí ONNX Runtime  
 
-## Pokročilé scénáře Edge AI
+### Windows ML  
+- **Zařízení Windows**: Optimalizujte pro okrajová zařízení a PC založené na Windows  
+- **Akcelerace NPU**: Využijte Neural Processing Units na zařízeních Windows  
+- **DirectML**: Použijte DirectML pro akceleraci GPU na platformách Windows  
+- **Integrace UWP**: Integrujte s aplikacemi Universal Windows Platform  
 
-### Nasazení více modelů
-- **Modelové ensemble**: Nasazujte více modelů pro zlepšení přesnosti nebo redundanci
-- **A/B testování**: Testujte různé modely současně na edge zařízeních
-- **Dynamický výběr**: Volte modely na základě aktuálních podmínek zařízení
-- **Sdílení zdrojů**: Optimalizujte využití zdrojů napříč nasazenými modely
+### TensorFlow Lite  
+- **Optimalizace pro mobilní zařízení**: Nasazujte modely TensorFlow Lite na mobilní a vestavěná zařízení  
+- **Hardwaroví delegáti**: Použijte specializované hardwarové delegáty pro akceleraci  
+- **Mikrokontroléry**: Nasazujte na mikrokontroléry pomocí TensorFlow Lite Micro  
+- **Podpora napříč platformami**: Nasazujte na Android, iOS a vestavěné systémy Linux  
 
-### Federované učení
-- **Distribuované trénování**: Trénujte modely na více edge zařízeních
-- **Zachování soukromí**: Uchovávejte trénovací data lokálně a sdílejte pouze vylepšení modelů
-- **Spolupracující učení**: Umožněte zařízením učit se z kolektivních zkušeností
-- **Koordinace edge-cloud**: Koordinujte učení mezi edge zařízeními a cloudovou infrastrukturou
+### Azure IoT Edge  
+- **Hybrid cloud-okraj**: Kombinujte trénink v cloudu s inferencí na okraji  
+- **Nasazení modulů**: Nasazujte AI modely jako moduly IoT Edge  
+- **Správa zařízení**: Spravujte okrajová zařízení a aktualizace modelů na dálku  
+- **Telemetrie**: Sbírejte data o výkonu a metriky modelů z nasazení na okraji  
 
-### Zpracování v reálném čase
-- **Streamové zpracování**: Zpracovávejte kontinuální datové toky na edge zařízeních
-- **Inferenční nízká latence**: Optimalizujte pro minimální latenci inferencí
-- **Batchové zpracování**: Efektivně zpracovávejte dávky dat na edge zařízeních
-- **Adaptivní zpracování**: Přizpůsobte zpracování na základě aktuálních schopností zařízení
+## Pokročilé scénáře Edge AI  
 
-## Řešení problémů při vývoji Edge AI
+### Nasazení více modelů  
+- **Modelové soubory**: Nasazujte více modelů pro zlepšení přesnosti nebo redundanci  
+- **A/B testování**: Testujte různé modely současně na okrajových zařízeních  
+- **Dynamický výběr**: Volte modely na základě aktuálních podmínek zařízení  
+- **Sdílení zdrojů**: Optimalizujte využití zdrojů napříč více nasazenými modely  
 
-### Běžné problémy
-- **Paměťová omezení**: Model je příliš velký pro paměť cílového zařízení
-- **Rychlost inferencí**: Inferenční rychlost modelu je příliš pomalá pro požadavky reálného času
-- **Degradace přesnosti**: Optimalizace nepřijatelně snižuje přesnost modelu
-- **Kompatibilita hardwaru**: Model není kompatibilní s cílovým hardwarem
+### Federované učení  
+- **Distribuované trénování**: Trénujte modely na více okrajových zařízeních  
+- **Zachování soukromí**: Uchovávejte tréninková data lokálně při sdílení vylepšení modelu  
+- **Spolupracující učení**: Umožněte zařízením učit se z kolektivních zkušeností  
+- **Koordinace okraj-cloud**: Koordinujte učení mezi okrajovými zařízeními a cloudovou infrastrukturou  
 
-### Strategie ladění
-- **Profilování výkonu**: Používejte funkce sledování AI Toolkit k identifikaci úzkých míst
-- **Monitorování zdrojů**: Sledujte využití paměti a CPU během vývoje
-- **Postupné testování**: Testujte optimalizace postupně, abyste izolovali problémy
-- **Simulace hardwaru**: Používejte vývojové nástroje k simulaci cílového hardwaru
+### Zpracování v reálném čase  
+- **Zpracování streamů**: Zpracovávejte kontinuální datové proudy na okrajových zařízeních  
+- **Inferenční latence**: Optimalizujte pro minimální latenci inferencí  
+- **Batch zpracování**: Efektivně zpracovávejte dávky dat na okrajových zařízeních  
+- **Adaptivní zpracování**: Přizpůsobte zpracování na základě aktuálních schopností zařízení  
 
-### Řešení optimalizace
-- **Další kvantizace**: Aplikujte agresivnější techniky kvantizace
-- **Architektura modelu**: Zvažte různé architektury modelů optimalizované pro edge
-- **Optimalizace předzpracování**: Optimalizujte předzpracování dat pro omezení na edge
-- **Optimalizace inferencí**: Používejte hardwarově specifické optimalizace inferencí
+## Řešení problémů při vývoji Edge AI  
 
-## Zdroje a další kroky
+### Běžné problémy  
+- **Paměťová omezení**: Model je příliš velký pro paměť cílového zařízení  
+- **Rychlost inferencí**: Inferenční rychlost modelu je příliš pomalá pro požadavky v reálném čase  
+- **Degradace přesnosti**: Optimalizace nepřijatelně snižuje přesnost modelu  
+- **Kompatibilita hardwaru**: Model není kompatibilní s cílovým hardwarem  
 
-### Dokumentace
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentation](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentation](https://onnxruntime.ai/)
-- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)
+### Strategie ladění  
+- **Profilování výkonu**: Použijte funkce sledování AI Toolkit k identifikaci úzkých míst  
+- **Monitorování zdrojů**: Sledujte paměť a využití CPU během vývoje  
+- **Postupné testování**: Testujte optimalizace postupně, abyste izolovali problémy  
+- **Simulace hardwaru**: Použijte vývojové nástroje k simulaci cílového hardwaru  
 
-### Komunita a podpora
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Řešení optimalizace  
+- **Další kvantizace**: Aplikujte agresivnější techniky kvantizace  
+- **Architektura modelu**: Zvažte různé architektury modelů optimalizované pro okraj  
+- **Optimalizace předzpracování**: Optimalizujte předzpracování dat pro omezení na okraji  
+- **Optimalizace inferencí**: Použijte optimalizace specifické pro hardware inferencí  
 
-### Výukové materiály
-- [Kurz základů Edge AI](./Module01/README.md)
-- [Průvodce malými jazykovými modely](./Module02/README.md)
-- [Strategie nasazení na edge](./Module03/README.md)
-- [Vývoj Edge AI na Windows](./windowdeveloper.md)
+## Zdroje a další kroky  
 
-## Závěr
+### Oficiální dokumentace  
+- [Dokumentace pro vývojáře AI Toolkit](https://aka.ms/AIToolkit/doc)  
+- [Průvodce instalací a nastavením](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [Dokumentace VS Code Intelligent Apps](https://code.visualstudio.com/docs/intelligentapps)  
+- [Dokumentace Model Context Protocol (MCP)](https://modelcontextprotocol.io/)  
 
-AI Toolkit pro Visual Studio Code poskytuje komplexní platformu pro vývoj Edge AI, od objevování a optimalizace modelů až po jejich nasazení a monitorování. Díky integrovaným nástrojům a pracovním postupům mohou vývojáři efektivně vytvářet, testovat a nasazovat AI aplikace, které fungují efektivně na zařízeních s omezenými zdroji.
+### Komunita a podpora  
+- [GitHub repozitář AI Toolkit](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub problémy a požadavky na funkce](https://aka.ms/AIToolkit/feedback)  
+- [Komunita Azure AI Foundry na Discordu](https://aka.ms/azureaifoundry/discord)  
+- [Marketplace rozšíření VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
 
-Podpora nástrojů jako ONNX, Ollama a různých poskytovatelů cloudových služeb, spolu s optimalizačními a hodnotícími schopnostmi, činí AI Toolkit ideální volbou pro vývoj Edge AI. Ať už vytváříte IoT aplikace, mobilní AI funkce nebo vestavěné inteligentní systémy, AI Toolkit poskytuje nástroje a pracovní postupy potřebné pro úspěšné nasazení Edge AI.
+### Technické zdroje  
+- [Dokumentace ONNX Runtime](https://onnxruntime.ai/)  
+- [Dokumentace Ollama](https://ollama.ai/)  
+- [Dokumentace Windows ML](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Dokumentace Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
 
-Jak se Edge AI dále vyvíjí, AI Toolkit pro VS Code zůstává v čele, poskytuje vývojářům špičkové nástroje a schopnosti pro budování nové generace inteligentních edge aplikací.
+### Vzdělávací cesty  
+- [Kurz základů Edge AI](../Module01/README.md)  
+- [Průvodce malými jazykovými modely](../Module02/README.md)  
+- [Strategie nasazení na okraji](../Module03/README.md)  
+- [Vývoj Edge AI na Windows](./windowdeveloper.md)  
+
+### Další zdroje  
+- **Statistiky repozitáře**: 1.8k+ hvězdiček, 150+ forků, 18+ přispěvatelů  
+- **Licence**: MIT License  
+- **Bezpečnost**: Platí bezpečnostní politiky Microsoftu  
+- **Telemetrie**: Respektuje nastavení telemetrie VS Code  
+
+## Závěr  
+
+AI Toolkit pro Visual Studio Code představuje komplexní platformu pro moderní vývoj AI, která poskytuje zjednodušené možnosti vývoje agentů, jež jsou obzvláště cenné pro aplikace Edge AI. Díky rozsáhlému katalogu modelů podporujících poskytovatele jako Anthropic, OpenAI, GitHub a Google, v kombinaci s lokálním prováděním prostřednictvím ONNX a Ollama, nabízí toolkit flexibilitu potřebnou pro různé scénáře nasazení na okraji.
+
+Síla toolkitu spočívá v jeho integrovaném přístupu – od objevování modelů a experimentování v Playgroundu po sofistikovaný vývoj agentů s Prompt Builderem, komplexní možnosti hodnocení a bezproblémovou integraci nástrojů MCP. Pro vývojáře Edge AI to znamená rychlé prototypování a testování AI agentů před nasazením na okraji s možností rychlé iterace a optimalizace pro prostředí s omezenými zdroji.
+
+Klíčové výhody pro vývoj Edge AI zahrnují:  
+- **Rychlé experimentování**: Testujte modely a agenty rychle před nasazením na okraji  
+- **Flexibilita více poskytovatelů**: Přístup k modelům z různých zdrojů pro nalezení optimálních řešení na okraji  
+- **Lokální vývoj**: Testujte s ONNX a Ollama pro offline a soukromý vývoj  
+- **Připravenost na produkci**: Generujte produkčně připravený kód a integrujte s externími nástroji prostřednictvím MCP  
+- **Komplexní hodnocení**: Používejte vestavěné a vlastní metriky k validaci výkonu Edge AI  
+
+Jak se AI stále více přesouvá k scénářům nasazení na okraji, AI Toolkit pro VS Code poskytuje vývojové prostředí a pracovní postup potřebný k budování, testování a optimalizaci inteligentních aplikací pro prostředí s omezenými zdroji. Ať už vyvíjíte IoT řešení, mobilní AI aplikace nebo vestavěné inteligentní systémy, komplexní sada funkcí toolkitu a integrovaný pracovní postup podporují celý životní cyklus vývoje Edge AI.
+
+S průběžným vývojem a aktivní komunitou (1.8k+ hvězdiček na GitHubu) zůstává AI Toolkit na špičce nástrojů pro vývoj AI, neustále se vyvíjející, aby splňoval potřeby moderních vývojářů AI budujících pro scénáře nasazení na okraji.
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Prohlášení**:  
-Tento dokument byl přeložen pomocí služby pro automatický překlad [Co-op Translator](https://github.com/Azure/co-op-translator). Ačkoli se snažíme o přesnost, mějte prosím na paměti, že automatické překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za závazný zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.
+Tento dokument byl přeložen pomocí služby AI pro překlady [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatizované překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace se doporučuje profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.

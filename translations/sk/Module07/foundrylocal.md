@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:55:53+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:21:38+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sk"
 }
@@ -125,10 +125,14 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Súvisiace skúsenosti vývojárov na Windows
 
-- Lokálne vs cloudové AI možnosti na Windows, vrátane Foundry Local a Windows ML:
+- Možnosti lokálnej vs cloud AI na Windows, vrátane Foundry Local a Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit s Foundry Local (použite `foundry service status` na získanie URL koncového bodu pre chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Ďalší vývojár na Windows](./windowdeveloper.md)
+
 ---
 
+**Upozornenie**:  
+Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, prosím, berte na vedomie, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.

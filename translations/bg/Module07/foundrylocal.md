@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:58:25+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:33:37+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "bg"
 }
@@ -11,20 +11,20 @@ CO_OP_TRANSLATOR_METADATA:
 
 Това ръководство ви помага да инсталирате, стартирате и интегрирате Microsoft Foundry Local на Windows и Mac. Всички стъпки и команди са проверени спрямо документацията на Microsoft Learn.
 
-- Започнете: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Започнете тук: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Архитектура: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI Референция: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Интегриране на SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Компилиране на HF модели (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Локално срещу облачно: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Инсталиране / Актуализация на Windows
+## 1) Инсталиране / Актуализиране на Windows
 
 - Инсталиране:
 ```cmd
 winget install Microsoft.FoundryLocal
 ```
-- Актуализация:
+- Актуализиране:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -118,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Актуализация до последната предварителна версия:
+- Актуализиране до последната предварителна версия:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Локални срещу облачни AI решения за Windows, включително Foundry Local и Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit с Foundry Local (използвайте `foundry service status`, за да получите URL за чат крайна точка):
+- VS Code AI Toolkit с Foundry Local (използвайте `foundry service status`, за да получите URL на крайна точка за чат):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Следващ Windows Developer](./windowdeveloper.md)
 
 ---
 
+**Отказ от отговорност**:  
+Този документ е преведен с помощта на AI услуга за превод [Co-op Translator](https://github.com/Azure/co-op-translator). Въпреки че се стремим към точност, моля, имайте предвид, че автоматизираните преводи може да съдържат грешки или неточности. Оригиналният документ на неговия роден език трябва да се счита за авторитетен източник. За критична информация се препоръчва професионален човешки превод. Ние не носим отговорност за недоразумения или погрешни интерпретации, произтичащи от използването на този превод.

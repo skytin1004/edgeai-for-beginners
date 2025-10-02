@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:42:59+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:14:30+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "da"
 }
@@ -20,11 +20,11 @@ Denne guide hjælper dig med at installere, køre og integrere Microsoft Foundry
 
 ## 1) Installation / Opgradering på Windows
 
-- Installation:
+- Installér:
 ```cmd
 winget install Microsoft.FoundryLocal
 ```
-- Opgradering:
+- Opgrader:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -62,9 +62,9 @@ foundry cache --help
 foundry cache list
 ```
 
-Noter:
+Bemærkninger:
 - Servicen eksponerer en OpenAI-kompatibel REST API. Endepunktets port tildeles dynamisk; brug `foundry service status` for at finde den.
-- Brug SDK'erne for nemheds skyld; de håndterer automatisk opdagelse af endepunkter, hvor det er understøttet.
+- Brug SDK'erne for nemhed; de håndterer automatisk opdagelse af endepunkter, hvor det er understøttet.
 
 ## 3) Find det lokale endepunkt (Dynamisk port)
 
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit med Foundry Local (brug `foundry service status` for at få chat-endepunktets URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Next Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Ansvarsfraskrivelse**:  
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for eventuelle misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.

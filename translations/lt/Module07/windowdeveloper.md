@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "9c2dacb560380677a2c923171d3e423d",
-  "translation_date": "2025-09-23T00:43:14+00:00",
+  "original_hash": "77bb931ce93583c081cf7861f43d9662",
+  "translation_date": "2025-10-02T15:17:39+00:00",
   "source_file": "Module07/windowdeveloper.md",
   "language_code": "lt"
 }
@@ -11,100 +11,196 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Įvadas
 
-Sveiki atvykę į Windows Edge AI kūrimą – išsamų vadovą, padėsiantį kurti išmaniąsias programas, kurios pasitelkia įrenginiuose veikiančią dirbtinio intelekto galią naudojant Microsoft Windows AI Foundry platformą. Šis vadovas skirtas Windows kūrėjams, norintiems integruoti pažangias Edge AI galimybes į savo programas, pasinaudojant visais Windows aparatūros pagreičio privalumais.
+Sveiki atvykę į Windows Edge AI kūrimą – išsamų vadovą, padėsiantį kurti išmaniąsias programas, kurios naudoja įrenginio AI galimybes per Microsoft Windows AI Foundry platformą. Šis vadovas skirtas Windows kūrėjams, norintiems integruoti pažangias Edge AI funkcijas į savo programas, pasinaudojant visais Windows aparatūros pagreičio privalumais.
 
 ### Windows AI privalumai
 
-Windows AI Foundry yra vieninga, patikima ir saugi platforma, palaikanti visą dirbtinio intelekto kūrimo ciklą – nuo modelio pasirinkimo ir pritaikymo iki optimizavimo ir diegimo CPU, GPU, NPU ir hibridinės debesų architektūros pagrindu. Ši platforma demokratizuoja dirbtinio intelekto kūrimą, siūlydama:
+Windows AI Foundry yra vieninga, patikima ir saugi platforma, palaikanti visą AI kūrimo ciklą – nuo modelio pasirinkimo ir pritaikymo iki optimizavimo ir diegimo per CPU, GPU, NPU ir hibridines debesų architektūras. Ši platforma demokratizuoja AI kūrimą, siūlydama:
 
-- **Aparatūros abstrakciją**: Sklandus diegimas AMD, Intel, NVIDIA ir Qualcomm lustuose
-- **Vietinis intelektas**: Privatumo užtikrinantis dirbtinis intelektas, veikiantis tik vietinėje aparatūroje
-- **Optimizuotas našumas**: Modeliai, iš anksto optimizuoti Windows aparatūros konfigūracijoms
-- **Paruošta verslui**: Gamybinio lygio saugumo ir atitikties funkcijos
+- **Aparatūros abstrakciją**: Sklandus diegimas per AMD, Intel, NVIDIA ir Qualcomm lustus
+- **Įrenginio intelektą**: Privatumo užtikrinantis AI, veikiantis tik vietinėje aparatūroje
+- **Optimizuotą našumą**: Modeliai, iš anksto optimizuoti Windows aparatūros konfigūracijoms
+- **Paruoštą verslui**: Gamybinio lygio saugumo ir atitikties funkcijos
 
 ### Kodėl Windows Edge AI?
 
 **Universalus aparatūros palaikymas**  
-Windows ML automatiškai optimizuoja aparatūrą visoje Windows ekosistemoje, užtikrindama, kad jūsų dirbtinio intelekto programos veiktų optimaliai, nepriklausomai nuo pagrindinės lustų architektūros.
+Windows ML automatiškai optimizuoja aparatūrą visoje Windows ekosistemoje, užtikrindama, kad jūsų AI programos veiktų optimaliai, nepriklausomai nuo pagrindinės lustų architektūros.
 
-**Integruota AI vykdymo aplinka**  
+**Integruotas AI vykdymo variklis**  
 Įmontuotas Windows ML inferencijos variklis pašalina sudėtingus nustatymo reikalavimus, leidžiant kūrėjams susitelkti į programos logiką, o ne infrastruktūros problemas.
 
 **Copilot+ PC optimizacija**  
 Specialiai sukurti API, skirti naujos kartos Windows įrenginiams su dedikuotais neuroniniais procesoriais (NPU), užtikrinantys išskirtinį našumą per vatą.
 
 **Kūrėjų ekosistema**  
-Platus įrankių pasirinkimas, įskaitant Visual Studio integraciją, išsamią dokumentaciją ir pavyzdines programas, kurios pagreitina kūrimo ciklus.
+Platus įrankių rinkinys, įskaitant Visual Studio integraciją, išsamią dokumentaciją ir pavyzdines programas, kurios pagreitina kūrimo ciklus.
 
 ## Mokymosi tikslai
 
-Baigę šį Windows Edge AI kūrimo vadovą, įgysite esminių įgūdžių, reikalingų kurti gamybai paruoštas dirbtinio intelekto programas Windows platformoje.
+Baigę šį Windows Edge AI kūrimo vadovą, įgysite esminių įgūdžių, reikalingų kurti gamybai paruoštas AI programas Windows platformoje.
 
 ### Pagrindinės techninės kompetencijos
 
 **Windows AI Foundry įvaldymas**  
 - Suprasti Windows AI Foundry platformos architektūrą ir komponentus  
-- Naršyti visą dirbtinio intelekto kūrimo ciklą Windows ekosistemoje  
-- Įgyvendinti saugumo geriausią praktiką vietinėms dirbtinio intelekto programoms  
+- Naršyti visą AI kūrimo ciklą Windows ekosistemoje  
+- Įgyvendinti saugumo geriausias praktikas įrenginio AI programoms  
 - Optimizuoti programas skirtingoms Windows aparatūros konfigūracijoms  
 
 **API integracijos ekspertizė**  
-- Įvaldyti Windows AI API tekstui, vaizdams ir multimodalinėms programoms  
+- Įvaldyti Windows AI API tekstui, vaizdams ir multimodaliniams pritaikymams  
 - Įgyvendinti Phi Silica kalbos modelio integraciją tekstų generavimui ir samprotavimui  
 - Diegti kompiuterinio matymo galimybes naudojant įmontuotus vaizdų apdorojimo API  
 - Pritaikyti iš anksto apmokytus modelius naudojant LoRA (Low-Rank Adaptation) technikas  
 
 **Foundry Local įgyvendinimas**  
 - Naršyti, vertinti ir diegti atvirojo kodo kalbos modelius naudojant Foundry Local CLI  
-- Suprasti modelių optimizavimą ir kvantizavimą vietiniam diegimui  
-- Įgyvendinti neprisijungus veikiančias dirbtinio intelekto galimybes, kurios veikia be interneto ryšio  
+- Suprasti modelio optimizavimą ir kvantavimą vietiniam diegimui  
+- Įgyvendinti neprisijungus veikiančias AI galimybes, kurios veikia be interneto ryšio  
 - Valdyti modelių gyvavimo ciklus ir atnaujinimus gamybos aplinkoje  
 
 **Windows ML diegimas**  
 - Integruoti pasirinktinius ONNX modelius į Windows programas naudojant Windows ML  
-- Pasinaudoti automatiniu aparatūros pagreičiu CPU, GPU ir NPU architektūrose  
-- Įgyvendinti realaus laiko inferenciją su optimaliu resursų panaudojimu  
-- Kurti mastelio keičiamas dirbtinio intelekto programas įvairiems Windows įrenginių tipams  
+- Pasinaudoti automatiniu aparatūros pagreičiu per CPU, GPU ir NPU architektūras  
+- Įgyvendinti realaus laiko inferenciją su optimaliu resursų naudojimu  
+- Kurti mastelio AI programas įvairiems Windows įrenginių kategorijoms  
 
 ### Programų kūrimo įgūdžiai
 
 **Kryžminės platformos Windows kūrimas**  
-- Kurti dirbtinio intelekto programas naudojant .NET MAUI universaliam Windows diegimui  
-- Integruoti dirbtinio intelekto galimybes į Win32, UWP ir progresyvias interneto programas  
-- Įgyvendinti prisitaikančius UI dizainus, kurie reaguoja į dirbtinio intelekto apdorojimo būsenas  
-- Tvarkyti asinchronines dirbtinio intelekto operacijas laikantis tinkamų vartotojo patirties modelių  
+- Kurti AI palaikomas programas naudojant .NET MAUI universaliam Windows diegimui  
+- Integruoti AI galimybes į Win32, UWP ir progresyvias interneto programas  
+- Įgyvendinti prisitaikančius UI dizainus, kurie prisitaiko prie AI apdorojimo būsenų  
+- Tvarkyti asinchronines AI operacijas laikantis tinkamų vartotojo patirties modelių  
 
 **Našumo optimizavimas**  
-- Profiluoti ir optimizuoti dirbtinio intelekto inferencijos našumą skirtingose aparatūros konfigūracijose  
+- Profiluoti ir optimizuoti AI inferencijos našumą skirtingose aparatūros konfigūracijose  
 - Įgyvendinti efektyvų atminties valdymą dideliems kalbos modeliams  
 - Kurti programas, kurios grakščiai prisitaiko prie turimų aparatūros galimybių  
-- Taikyti talpyklos strategijas dažnai naudojamoms dirbtinio intelekto operacijoms  
+- Taikyti talpyklos strategijas dažnai naudojamoms AI operacijoms  
 
 **Paruošimas gamybai**  
 - Įgyvendinti išsamų klaidų tvarkymą ir atsargines mechanizmus  
-- Kurti telemetriją ir stebėjimą dirbtinio intelekto programų našumui  
-- Taikyti saugumo geriausią praktiką vietiniam dirbtinio intelekto modelių saugojimui ir vykdymui  
+- Kurti telemetriją ir stebėjimą AI programų našumui  
+- Taikyti saugumo geriausias praktikas vietiniam AI modelių saugojimui ir vykdymui  
 - Planuoti diegimo strategijas verslo ir vartotojų programoms  
 
 ### Verslo ir strateginis supratimas
 
-**Dirbtinio intelekto programų architektūra**  
-- Kurti hibridines architektūras, kurios optimizuoja vietinį ir debesų dirbtinio intelekto apdorojimą  
-- Vertinti kompromisus tarp modelio dydžio, tikslumo ir inferencijos greičio  
+**AI programų architektūra**  
+- Kurti hibridines architektūras, kurios optimizuoja vietinį ir debesų AI apdorojimą  
+- Įvertinti kompromisus tarp modelio dydžio, tikslumo ir inferencijos greičio  
 - Planuoti duomenų srautų architektūras, kurios užtikrina privatumą ir intelektą  
-- Įgyvendinti ekonomiškai efektyvius dirbtinio intelekto sprendimus, kurie plečiasi pagal vartotojų poreikius  
+- Įgyvendinti ekonomiškai efektyvius AI sprendimus, kurie plečiasi pagal vartotojų poreikius  
 
 **Rinkos pozicionavimas**  
-- Suprasti Windows gimtųjų dirbtinio intelekto programų konkurencinius pranašumus  
-- Identifikuoti naudojimo atvejus, kur vietinis dirbtinis intelektas suteikia pranašesnę vartotojo patirtį  
-- Kurti rinkos strategijas dirbtinio intelekto praturtintoms Windows programoms  
-- Pozicionuoti programas, kad jos pasinaudotų Windows ekosistemos privalumais  
+- Suprasti konkurencinius pranašumus Windows gimtųjų AI programų  
+- Identifikuoti naudojimo atvejus, kur įrenginio AI suteikia pranašesnę vartotojo patirtį  
+- Kurti rinkos strategijas AI praturtintoms Windows programoms  
+- Pozicionuoti programas, kad pasinaudotų Windows ekosistemos privalumais  
+
+## Windows App SDK AI pavyzdžiai
+
+Windows App SDK siūlo išsamius pavyzdžius, demonstruojančius AI integraciją per įvairias sistemas ir diegimo scenarijus. Šie pavyzdžiai yra esminiai šaltiniai, padedantys suprasti Windows AI kūrimo modelius.
+
+### Windows AI Foundry pavyzdžiai
+
+| Pavyzdys | Sistema | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|---------|-------------------|-----------------------|
+| [cs-winui](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsAIFoundry/cs-winui) | C# WinUI 3 | Windows AI API integracija | Pilna WinUI programa, demonstruojanti Windows AI API, ARM64 optimizaciją, supakuotą diegimą |
+
+**Pagrindinės technologijos:**  
+- Windows AI API  
+- WinUI 3 sistema  
+- ARM64 platformos optimizacija  
+- Copilot+ PC suderinamumas  
+- Supakuotas programos diegimas  
+
+**Reikalavimai:**  
+- Windows 11 su Copilot+ PC rekomenduojama  
+- Visual Studio 2022  
+- ARM64 kūrimo konfigūracija  
+- Windows App SDK 1.8.1+  
+
+### Windows ML pavyzdžiai
+
+#### C++ pavyzdžiai
+
+| Pavyzdys | Tipas | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|-------|-------------------|-----------------------|
+| [CppConsoleDesktop](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Konsolės programa | Pagrindinis Windows ML | EP atradimas, komandų eilutės parinktys, modelio kompiliacija |
+| [CppConsoleDesktop.FrameworkDependent](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Konsolės programa | Framework diegimas | Bendras vykdymo laikas, mažesnis diegimo pėdsakas |
+| [CppConsoleDesktop.SelfContained](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Konsolės programa | Savarankiškas diegimas | Savarankiškas diegimas, be vykdymo laiko priklausomybių |
+| [CppConsoleDll](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | DLL | Bibliotekos naudojimas | WindowsML bendroje bibliotekoje, atminties valdymas |
+| [CppResnetBuildDemo](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cpp) | Demonstracija | ResNet pamoka | Modelio konversija, EP kompiliacija, Build 2025 pamoka |
+
+#### C# pavyzdžiai
+
+**Konsolės programos**
+
+| Pavyzdys | Tipas | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|-------|-------------------|-----------------------|
+| [CSharpConsoleDesktop](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs) | Konsolės programa | Pagrindinė C# integracija | Bendras pagalbininkų naudojimas, komandų eilutės sąsaja |
+| [ResnetBuildDemoCS](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs) | Demonstracija | ResNet pamoka | Modelio konversija, EP kompiliacija, Build 2025 pamoka |
+
+**GUI programos**
+
+| Pavyzdys | Sistema | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|---------|-------------------|-----------------------|
+| [cs-wpf](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-wpf) | WPF | Darbalaukio GUI | Vaizdų klasifikacija su WPF sąsaja |
+| [cs-winforms](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-winforms) | Windows Forms | Tradicinė GUI | Vaizdų klasifikacija su Windows Forms |
+| [cs-winui](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/cs-winui) | WinUI 3 | Moderni GUI | Vaizdų klasifikacija su WinUI 3 sąsaja |
+
+#### Python pavyzdžiai
+
+| Pavyzdys | Kalba | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|-------|-------------------|-----------------------|
+| [SqueezeNetPython](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsML/python) | Python | Vaizdų klasifikacija | WinML Python jungtys, vaizdų apdorojimas partijomis |
+
+### Pavyzdžių reikalavimai
+
+**Sistemos reikalavimai:**  
+- Windows 11 PC, veikiantis versija 24H2 (build 26100) ar naujesnė  
+- Visual Studio 2022 su C++ ir .NET darbo krūviais  
+- Windows App SDK 1.8.1 ar naujesnė  
+- Python 3.10–3.13 Python pavyzdžiams x64 ir ARM64 įrenginiuose  
+
+**Windows AI Foundry specifiniai:**  
+- Copilot+ PC rekomenduojama optimaliam našumui  
+- ARM64 kūrimo konfigūracija Windows AI pavyzdžiams  
+- Reikalinga paketo tapatybė (nepakuotos programos nebepalaikomos)  
+
+### Bendras pavyzdžių darbo srautas
+
+Dauguma Windows ML pavyzdžių laikosi šio standartinio modelio:
+
+1. **Aplinkos inicializavimas** – Sukurti ONNX Runtime aplinką  
+2. **Vykdymo teikėjų registracija** – Atrasti ir registruoti galimus aparatūros pagreičius (CPU, GPU, NPU)  
+3. **Modelio įkėlimas** – Įkelti ONNX modelį, pasirinktinai kompiliuoti tikslinei aparatūrai  
+4. **Įvesties paruošimas** – Konvertuoti vaizdus/duomenis į modelio įvesties formatą  
+5. **Inferencijos vykdymas** – Vykdyti modelį ir gauti prognozes  
+6. **Rezultatų apdorojimas** – Taikyti softmax ir rodyti geriausias prognozes  
+
+### Naudojami modelio failai
+
+| Modelis | Paskirtis | Įtrauktas | Pastabos |
+|---------|----------|-----------|---------|
+| SqueezeNet | Lengva vaizdų klasifikacija | ✅ Įtrauktas | Iš anksto apmokytas, paruoštas naudoti |
+| ResNet-50 | Aukšto tikslumo vaizdų klasifikacija | ❌ Reikia konversijos | Naudokite [AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/modelconversion) konversijai |
+
+### Aparatūros palaikymas
+
+Visi pavyzdžiai automatiškai aptinka ir naudoja galimą aparatūrą:  
+- **CPU** – Universalus palaikymas visiems Windows įrenginiams  
+- **GPU** – Automatinis aptikimas ir optimizavimas galimai grafikos aparatūrai  
+- **NPU** – Naudoja neuroninius procesorius palaikomuose įrenginiuose (Copilot+ PC)  
 
 ## Windows AI Foundry platformos komponentai
 
 ### 1. Windows AI API
 
-Windows AI API siūlo paruoštas naudoti dirbtinio intelekto galimybes, kurias palaiko vietiniai modeliai, optimizuoti efektyvumui ir našumui Copilot+ PC įrenginiuose, reikalaujant minimalios sąrankos.
+Windows AI API siūlo paruoštas naudoti AI galimybes, paremtas vietiniais modeliais, optimizuotais efektyvumui ir našumui Copilot+ PC įrenginiuose, su minimaliu nustatymu.
 
 #### Pagrindinės API kategorijos
 
@@ -115,215 +211,377 @@ Windows AI API siūlo paruoštas naudoti dirbtinio intelekto galimybes, kurias p
 - Integracija su Windows semantine paieška ir žinių gavimu  
 
 **Kompiuterinio matymo API**  
-- **Teksto atpažinimas (OCR)**: Išgaukite tekstą iš vaizdų su dideliu tikslumu  
-- **Vaizdų superrezoliucija**: Padidinkite vaizdų kokybę naudodami vietinius dirbtinio intelekto modelius  
-- **Vaizdų segmentacija**: Identifikuokite ir atskirkite konkrečius objektus vaizduose  
-- **Vaizdų aprašymas**: Generuokite detalius tekstinius aprašymus vizualiniam turiniui  
-- **Objektų šalinimas**: Pašalinkite nereikalingus objektus iš vaizdų naudodami dirbtinio intelekto pagrindu veikiančią inpainting technologiją  
+- **Teksto atpažinimas (OCR)**: Išgauti tekstą iš vaizdų su aukštu tikslumu  
+- **Vaizdų superrezoliucija**: Padidinti vaizdų raišką naudojant vietinius AI modelius  
+- **Vaizdų segmentacija**: Identifikuoti ir izoliuoti specifinius objektus vaizduose  
+- **Vaizdų aprašymas**: Generuoti detalius tekstinius aprašymus vizualiniam turiniui  
+- **Objektų ištrynimas**: Pašalinti nereikalingus objektus iš vaizdų naudojant AI pagrįstą inpainting  
 
 **Multimodalinės galimybės**  
-- **Vaizdų ir teksto integracija**: Sujunkite teksto ir vaizdų supratimą  
-- **Semantinė paieška**: Įgalinkite natūralios kalbos užklausas multimedijos turiniui  
-- **Žinių gavimas**: Kurkite išmanias paieškos patirtis su vietiniais duomenimis  
+- **Vaizdo-teksto integracija**: Sujungti teksto ir vaizdo supratimą  
+- **Semantinė paieška**: Įgalinti natūralios kalbos užklausas per multimedijos turinį  
+- **Žinių gavimas**: Kurti išmanias paieškos patirtis su vietiniais duomenimis  
 
 ### 2. Foundry Local
 
 Foundry Local suteikia kūrėjams greitą prieigą prie paruoštų naudoti atvirojo kodo kalbos modelių Windows Silicon, siūlydamas galimybę naršyti, testuoti, sąveikauti ir diegti modelius vietinėse programose.
 
-#### Pagrindinės funkcijos
+#### Foundry Local pavyzdinės programos
+
+[Foundry Local saugykla](https://github.com/microsoft/Foundry-Local/tree/main/samples) siūlo išsamius pavyzdžius per įvairias programavimo kalbas ir sistemas, demonstruojančius įvairius integracijos modelius ir naudojimo atvejus.
+
+| Pavyzdys | Kalba/Sistema | Fokusavimo sritis | Pagrindinės funkcijos |
+|----------|---------------|-------------------|-----------------------|
+| [dotNET/rag](https://github.com/microsoft/Foundry-Local/tree/main/samples/dotNET/rag) | C# / .NET | RAG įgyvendinimas | Semantinės branduolio integracija, Qdrant vektorinė saugykla, JINA įterpimai, dokumentų įtraukimas, srautinė pokalbių sąveika |
+| [electron/foundry-chat](https://github.com/microsoft/Foundry-Local/tree/main/samples/electron/foundry-chat) | JavaScript / Electron | Darbalaukio pokalbių programa | Kryžminės platformos pokalbiai, vietinių/debesų modelių
+- **Funkcijos**: Modelių pasirinkimas, atsakymų transliavimas, klaidų valdymas, daugiaplatformis diegimas  
+- **Architektūra**: Electron pagrindinis procesas, IPC komunikacija, saugūs išankstiniai scenarijai  
+
+**SDK integracijos pavyzdžiai**  
+- **JavaScript (Node.js)**: Pagrindinė sąveika su modeliu ir atsakymų transliavimas  
+- **Python**: OpenAI suderinama API naudojimas su asinchroniniu transliavimu  
+- **Rust**: Žemo lygio integracija naudojant reqwest ir tokio asinchroninėms operacijoms  
+
+#### Reikalavimai Foundry Local pavyzdžiams  
+
+**Sistemos reikalavimai:**  
+- Windows 11 su įdiegtu Foundry Local  
+- Node.js v16+ JavaScript/Electron pavyzdžiams  
+- .NET 8.0+ C# pavyzdžiams  
+- Python 3.10+ Python pavyzdžiams  
+- Rust 1.70+ Rust pavyzdžiams  
+
+**Įdiegimas:**  
+```powershell
+# Install Foundry Local
+winget install Microsoft.FoundryLocal
+
+# Verify installation
+foundry --version
+foundry model list
+```
+  
+
+#### Pavyzdžių nustatymas  
+
+**dotNET RAG pavyzdys:**  
+```powershell
+# Install required packages via NuGet
+# Microsoft.SemanticKernel.Connectors.Onnx
+# Microsoft.SemanticKernel.Connectors.Qdrant
+# Qdrant.Client
+
+# Start Qdrant vector database
+docker run -p 6333:6333 qdrant/qdrant
+
+# Run Jupyter notebook
+jupyter notebook rag_foundrylocal_demo.ipynb
+```
+  
+**Electron pokalbių pavyzdys:**  
+```powershell
+# Set environment variables for cloud fallback
+$env:YOUR_API_KEY="your-cloud-api-key"
+$env:YOUR_ENDPOINT="your-cloud-endpoint"
+$env:YOUR_MODEL_NAME="your-cloud-model"
+
+# Install dependencies and run
+npm install
+npm start
+```
+  
+**JavaScript/Python/Rust pavyzdžiai:**  
+```powershell
+# Download model (example with phi-3.5-mini)
+foundry model run phi-3.5-mini
+
+# Run respective sample
+node src/app.js          # JavaScript
+python src/app.py        # Python
+cargo run               # Rust
+```
+  
+
+#### Pagrindinės funkcijos  
 
 **Modelių katalogas**  
 - Išsamus iš anksto optimizuotų atvirojo kodo modelių rinkinys  
-- Modeliai optimizuoti CPU, GPU ir NPU, paruošti nedelsiant diegti  
-- Palaikymas populiarioms modelių šeimoms, įskaitant Llama, Mistral, Phi ir specializuotus domenų modelius  
+- Modeliai optimizuoti veikti su CPU, GPU ir NPU, paruošti nedelsiant diegti  
+- Palaikomos populiarios modelių šeimos, tokios kaip Llama, Mistral, Phi, ir specializuoti modeliai  
 
 **CLI integracija**  
 - Komandinės eilutės sąsaja modelių valdymui ir diegimui  
-- Automatiniai optimizavimo ir kvantizavimo darbo srautai  
+- Automatizuoti optimizavimo ir kvantavimo procesai  
 - Integracija su populiariomis kūrimo aplinkomis ir CI/CD procesais  
 
 **Vietinis diegimas**  
-- Pilnas neprisijungus veikimas be debesų priklausomybių  
-- Palaikymas pasirinktiniams modelių formatams ir konfigūracijoms  
-- Efektyvus modelių aptarnavimas su automatiniu aparatūros optimizavimu  
+- Visiškai nepriklausomas nuo debesų, veikia neprisijungus  
+- Palaikomi individualūs modelių formatai ir konfigūracijos  
+- Efektyvus modelių aptarnavimas su automatine aparatūros optimizacija  
 
-### 3. Windows ML
+### 3. Windows ML  
 
-Windows ML yra pagrindinė dirbtinio intelekto platforma ir integruota inferencijos vykdymo aplinka Windows, leidžianti kūrėjams efektyviai diegti pasirinktinius modelius visoje Windows aparatūros ekosistemoje.
+Windows ML yra pagrindinė AI platforma ir integruota inferencijos aplinka Windows sistemose, leidžianti kūrėjams efektyviai diegti individualius modelius įvairioje Windows aparatūros ekosistemoje.  
 
-#### Architektūros privalumai
+#### Architektūros privalumai  
 
 **Universalus aparatūros palaikymas**  
-- Automatinė optimizacija AMD, Intel, NVIDIA ir Qualcomm lustams  
+- Automatinis optimizavimas AMD, Intel, NVIDIA ir Qualcomm lustams  
 - Palaikymas CPU, GPU ir NPU vykdymui su skaidriu perjungimu  
-- Aparatūros abstrakcija, pašalinanti platformai specifinį optimizavimo darbą  
+- Aparatūros abstrakcija, pašalinanti platformai specifinio optimizavimo poreikį  
 
 **Modelių lankstumas**  
-- Palaikymas ONNX modelio formatui su automatiniu konvertavimu iš populiarių sistemų  
-- Pasirinktinių modelių diegimas su gamybos lygio našumu  
+- ONNX modelių formato palaikymas su automatiniu konvertavimu iš populiarių sistemų  
+- Individualių modelių diegimas su gamybos lygio našumu  
 - Integracija su esamomis Windows programų architektūromis  
 
-**Verslo integracija**  
+**Įmonių integracija**  
 - Suderinamumas su Windows saugumo ir atitikties sistemomis  
-- Palaikymas verslo diegimo ir valdymo įrankiams  
+- Palaikymas įmonių diegimo ir valdymo įrankiams  
 - Integracija su Windows įrenginių valdymo ir stebėjimo sistemomis  
 
-## Kūrimo darbo eiga
+## Kūrimo procesas  
 
-### 1 etapas: Aplinkos paruošimas ir įrankių konfigūracija
+### 1 etapas: Aplinkos paruošimas ir įrankių konfigūracija  
 
 **Kūrimo aplinkos paruošimas**  
-1. Įdiekite Visual Studio su AI Toolkit plėtiniu  
-2. Konfigūruokite Windows AI Foundry CLI įrankius  
-3. Nustatykite vietinę modelių testavimo aplinką  
-4. Įdiekite našumo profiliavimo ir stebėjimo įrankius  
+1. Įdiekite Visual Studio 2022 su C++ ir .NET darbo krūviais  
+2. Įdiekite Windows App SDK 1.8.1 ar naujesnę versiją  
+3. Suaktyvinkite Windows AI Foundry CLI įrankius  
+4. Įdiekite AI Toolkit plėtinį Visual Studio Code  
+5. Nustatykite našumo profiliavimo ir stebėjimo įrankius  
+6. Užtikrinkite ARM64 konfigūraciją Copilot+ PC optimizavimui  
 
-**AI Dev Gallery tyrinėjimas**  
-- Naršykite pavyzdines programas ir nuorodines implementacijas  
-- Testuokite Windows AI API su interaktyviais demonstraciniais pavyzdžiais  
-- Peržiūrėkite šaltinio kodą, kad sužinotumėte geriausią praktiką ir modelius  
-- Identifikuokite aktualius pavyzdžius savo konkrečiam naudojimo atvejui  
+**Pavyzdžių saugyklos nustatymas**  
+1. Klonuokite [Windows App SDK pavyzdžių saugyklą](https://github.com/microsoft/WindowsAppSDK-Samples)  
+2. Eikite į `Samples/WindowsAIFoundry/cs-winui`, kad rastumėte Windows AI API pavyzdžius  
+3. Eikite į `Samples/WindowsML`, kad rastumėte išsamius Windows ML pavyzdžius  
+4. Peržiūrėkite [kūrimo reikalavimus](https://learn.microsoft.com/windows/apps/windows-app-sdk/system-requirements) savo tikslinėms platformoms  
 
-### 2 etapas: Modelio pasirinkimas ir integracija
+**AI kūrėjų galerijos tyrinėjimas**  
+- Tyrinėkite pavyzdines programas ir nuorodines implementacijas  
+- Testuokite Windows AI API su interaktyviais demonstraciniais įrankiais  
+- Peržiūrėkite šaltinio kodą, kad sužinotumėte geriausias praktikas ir šablonus  
+- Nustatykite tinkamus pavyzdžius savo konkrečiam naudojimo atvejui  
+
+### 2 etapas: Modelio pasirinkimas ir integracija  
 
 **Reikalavimų analizė**  
-- Apibrėžkite funkcinius reikalavimus dirbtinio intelekto galimybėms  
+- Apibrėžkite AI funkcionalumo reikalavimus  
 - Nustatykite našumo apribojimus ir optimizavimo tikslus  
 - Įvertinkite privatumo ir saugumo reikalavimus  
-- Planuokite diegimo architektūrą ir mastelio keitimo strategijas  
+- Planuokite diegimo architektūrą ir mastelio strategijas  
 
 **Modelio vertinimas**  
-- Naudokite Foundry Local, kad testuotumėte atvirojo kodo modelius savo naudojimo atvejui  
-- Lyginkite Windows AI API su pasirinktinių modelių reikalavimais  
+- Naudokite Foundry Local, kad išbandytumėte atvirojo kodo modelius savo naudojimo atvejui  
+- Atlikite Windows AI API našumo testus pagal individualius modelio reikalavimus  
 - Įvertinkite kompromisus tarp modelio dydžio, tikslumo ir inferencijos greičio  
-- Prototipuokite integracijos metodus su pasirinktais modeliais  
+- Sukurkite prototipus su pasirinktais modeliais  
 
-### 3 etapas: Programos kūrimas
+### 3 etapas: Programos kūrimas  
 
 **Pagrindinė integracija**  
-- Įgyvendinkite Windows AI API integraciją su tinkamu klaidų tvarkymu  
-- Kurkite vartotojo sąsajas, kurios prisitaiko prie dirbtinio intelekto apdorojimo darbo srautų  
+- Įgyvendinkite Windows AI API integraciją su tinkamu klaidų valdymu  
+- Sukurkite vartotojo sąsajas, pritaikytas AI apdorojimo darbo eigoms  
 - Įgyvendinkite talpyklos ir optimizavimo strategijas modelio inferencijai  
-- Pridėkite telemetriją ir stebėjimą dirbtinio intelekto operacijų našumui  
+- Pridėkite telemetriją ir stebėjimą AI veikimo našumui  
 
 **Testavimas ir validacija**  
-- Testuokite programas skirtingose Windows aparatūros konfigūracijose  
-- Patvirtinkite našumo metrikas įvairiomis apkrovos sąlygomis  
-- Įgyvendinkite automatizuotą testavimą dirbtinio intelekto funkcionalumo patikimumui  
-- Vykdykite vartotojo patirties testavimą su dirbtinio intelekto praturtintomis funkcijomis  
+- Testuokite programas įvairiose Windows aparatūros konfigūracijose  
+- Patikrinkite našumo rodiklius esant skirtingoms apkrovoms  
+- Įgyvendinkite automatizuotą testavimą AI funkcionalumo patikimumui  
+- Atlikite vartotojo patirties testavimą su AI praturtintomis funkcijomis  
 
-### 4 etapas: Optimizavimas ir diegimas
+### 4 etapas: Optimizavimas ir diegimas  
 
 **Našumo optimizavimas**  
-- Profiluoti programos našumą skirtingose tikslinėse aparatūros konfigūracijose  
-- Optimizuoti atminties naudojimą ir modelio įkėlimo strategijas  
-- Įgyvendinti adaptacinį elgesį pagal turimas aparatūros galimybes  
-- Pritaikyti vartotojo patirtį skirtingiems našumo scenarijams  
+- Profilinkite programos našumą įvairiose aparatūros konfigūracijose  
+- Optimizuokite atminties naudojimą ir modelio įkėlimo strategijas  
+- Įgyvendinkite adaptyvų elgesį pagal turimus aparatūros pajėgumus  
+- Patobulinkite vartotojo patirtį skirtingiems našumo scenarijams  
 
-**Gamybos diegimas**  
-- Supakuokite programas su tinkamomis dirbtinio intelekto modelių priklausomybėmis  
+**Gamybinis diegimas**  
+- Supakuokite programas su tinkamomis AI modelių priklausomybėmis  
 - Įgyvendinkite atnaujinimo mechanizmus modeliams ir programos logikai  
-- Konfigūruokite stebėjimą ir analizę gamybos aplinkoms  
-- Planuokite diegimo strategijas verslo ir vartotojų aplinkoms  
+- Suaktyvinkite stebėjimą ir analizę gamybinėje aplinkoje  
+- Planuokite diegimo strategijas įmonėms ir vartotojams  
 
-## Praktiniai įgyvendinimo pavyzdžiai
+## Praktiniai įgyvendinimo pavyzdžiai  
 
-### Pavyzdys 1: Išmanioji dokumentų apdorojimo programa
+### Pavyzdys 1: Išmanioji dokumentų apdorojimo programa  
 
-Sukurkite Windows programą, kuri apdoroja dokumentus naudodama kelias dirbtinio intelekto galimybes:
+Sukurkite Windows programą, kuri apdoroja dokumentus naudodama kelias AI funkcijas:  
 
-**Naudotos technologijos:**  
+**Naudojamos technologijos:**  
 - Phi Silica dokumentų santraukų ir klausimų-atsakymų funkcijoms  
-- OCR API tekstų išgavimo iš nuskaitytų dokumentų funkcijoms  
-- Vaizdų aprašymo API diagramų ir grafikų analizei  
-- Pasirinktiniai ONNX modeliai dokumentų klasifikavimui  
+- OCR API tekstui iš nuskaitytų dokumentų išgauti  
+- Vaizdų aprašymo API diagramoms ir grafikams analizuoti  
+- Individualūs ONNX modeliai dokumentų klasifikavimui  
 
 **Įgyvendinimo metodas:**  
-- Kurkite modulinę architektūrą su prijungiamais dirbtinio intelekto komponentais  
+- Sukurkite modulinę architektūrą su prijungiamais AI komponentais  
 - Įgyvendinkite asinchroninį apdorojimą didelėms dokumentų partijoms  
 - Pridėkite progreso indikatorius ir atšaukimo palaikymą ilgai trunkančioms operacijoms  
-- Įtraukite neprisijungus veikiančią funkciją jautrių dokumentų apdorojimui  
+- Įtraukite neprisijungimo galimybę jautrių dokumentų apdorojimui  
 
-### Pavyzdys 2: Mažmeninės prekybos inventoriaus valdymo sistema
+### Pavyzdys 2: Mažmeninės prekybos inventoriaus valdymo sistema  
 
-Sukurkite dirbtinio intelekto pagrindu veikiančią inventoriaus sistemą mažmeninės prekybos programoms:
+Sukurkite AI pagrindu veikiančią inventoriaus sistemą mažmeninės prekybos programoms:  
 
-**Naudotos technologijos:**  
+**Naudojamos technologijos:**  
 - Vaizdų segmentacija produktų identifikavimui  
-- Pasirinktiniai vizualiniai modeliai prekės ženklo ir kategorijos klasifikavimui  
-- Foundry Local specializuotų mažmeninės prekybos kalbos modelių diegimui  
+- Individualūs vizijos modeliai prekės ženklo ir kategorijos klasifikavimui  
+- Foundry Local specializuoti mažmeninės prekybos kalbos modeliai  
 - Integracija su esamomis POS ir inventoriaus sistemomis  
 
 **Įgyvendinimo metodas:**  
-- Sukurkite kamerų integraciją realaus laiko produktų skenavimui  
+- Sukurkite kamerų integraciją realaus laiko produktų nuskaitymui  
 - Įgyvendinkite brūkšninių kodų ir vizualinį produktų atpažinimą  
-- Pridėkite natūralios
-- Naudokite Foundry Local CLI modelių testavimui ir validavimui
-- Pasitelkite Windows AI API testavimo įrankius integracijos patikrinimui
-- Įgyvendinkite individualų logavimą AI operacijų stebėjimui
-- Sukurkite automatizuotą testavimą AI funkcionalumo patikimumui užtikrinti
+- Pridėkite natūralios kalbos inventoriaus užklausas naudodami vietinius kalbos modelius  
+- Sukurkite mastelio architektūrą kelių parduotuvių diegimui  
 
-## Ateities užtikrinimas jūsų programoms
+### Pavyzdys 3: Sveikatos priežiūros dokumentacijos asistentas  
 
-### Naujos technologijos
+Sukurkite privatumo užtikrinančią sveikatos priežiūros dokumentacijos priemonę:  
 
-**Kitos kartos aparatinė įranga**
-- Kurkite programas, kurios išnaudoja būsimus NPU pajėgumus
-- Planuokite didesnius modelių dydžius ir sudėtingumą
-- Įgyvendinkite prisitaikančias architektūras, pritaikytas besikeičiančiai aparatinei įrangai
-- Apsvarstykite kvantinius algoritmus, kad užtikrintumėte ateities suderinamumą
+**Naudojamos technologijos:**  
+- Phi Silica medicininių užrašų generavimui ir klinikiniam sprendimų palaikymui  
+- OCR ranka rašytų medicininių įrašų skaitmenizavimui  
+- Individualūs medicininiai kalbos modeliai, diegiami per Windows ML  
+- Vietinė vektorinė saugykla medicininių žinių paieškai  
 
-**Pažangios AI galimybės**
-- Pasiruoškite multimodalinės AI integracijai su daugiau duomenų tipų
-- Planuokite realaus laiko bendradarbiavimo AI tarp kelių įrenginių
-- Kurkite federacinio mokymosi galimybes
-- Apsvarstykite hibridines edge-cloud intelekto architektūras
+**Įgyvendinimo metodas:**  
+- Užtikrinkite visišką neprisijungimo veikimą pacientų privatumui  
+- Įgyvendinkite medicininės terminologijos validaciją ir pasiūlymus  
+- Pridėkite audito žurnalus atitikties reikalavimams  
+- Sukurkite integraciją su esamomis elektroninėmis sveikatos įrašų sistemomis  
 
-### Nuolatinis mokymasis ir prisitaikymas
+## Našumo optimizavimo strategijos  
 
-**Modelių atnaujinimai**
-- Įgyvendinkite sklandžius modelių atnaujinimo mechanizmus
-- Kurkite programas, kurios prisitaiko prie patobulintų modelių galimybių
-- Planuokite atgalinį suderinamumą su esamais modeliais
-- Įgyvendinkite A/B testavimą modelių našumo vertinimui
+### Aparatūros pritaikytas kūrimas  
 
-**Funkcijų evoliucija**
-- Kurkite modulinės architektūros, kurios leidžia integruoti naujas AI galimybes
-- Planuokite naujų Windows AI API integraciją
-- Įgyvendinkite funkcijų vėliavėles palaipsniui diegiamoms galimybėms
-- Kurkite vartotojo sąsajas, kurios prisitaiko prie patobulintų AI funkcijų
+**NPU optimizavimas**  
+- Sukurkite programas, kurios išnaudoja NPU galimybes Copilot+ kompiuteriuose  
+- Įgyvendinkite sklandų perjungimą į GPU/CPU įrenginiuose be NPU  
+- Optimizuokite modelių formatus NPU specifiniam pagreitinimui  
+- Stebėkite NPU naudojimą ir šilumines charakteristikas  
 
-## Išvada
+**Atminties valdymas**  
+- Įgyvendinkite efektyvias modelių įkėlimo ir talpyklos strategijas  
+- Naudokite atminties žemėlapį dideliems modeliams, kad sumažintumėte paleidimo laiką  
+- Sukurkite atminties sąmoningas programas ribotų išteklių įrenginiams  
+- Įgyvendinkite modelių kvantavimą atminties optimizavimui  
 
-Windows Edge AI kūrimas atspindi galingų AI galimybių susiliejimą su patikima, saugia ir mastelio keičiamą Windows platforma. Įvaldę Windows AI Foundry ekosistemą, kūrėjai gali kurti intelektualias programas, kurios suteikia išskirtinę vartotojo patirtį, išlaikant aukščiausius privatumo, saugumo ir našumo standartus.
+**Baterijos efektyvumas**  
+- Optimizuokite AI operacijas minimaliam energijos suvartojimui  
+- Įgyvendinkite adaptyvų apdorojimą pagal baterijos būklę  
+- Sukurkite efektyvų foninį apdorojimą nuolatinėms AI operacijoms  
+- Naudokite energijos profiliavimo įrankius energijos naudojimui optimizuoti  
 
-Windows AI API, Foundry Local ir Windows ML derinys suteikia neprilygstamą pagrindą kurti naujos kartos intelektualias Windows programas. Kadangi AI toliau vystosi, Windows platforma užtikrina, kad jūsų programos prisitaikys prie naujų technologijų, išlaikant suderinamumą ir našumą įvairioje Windows aparatūros ekosistemoje.
+### Mastelio didinimo aspektai  
 
-Nesvarbu, ar kuriate vartotojų programas, verslo sprendimus, ar specializuotus pramonės įrankius, Windows Edge AI kūrimas suteikia galimybę kurti intelektualias, reaguojančias ir giliai integruotas patirtis, kurios išnaudoja visą modernių Windows įrenginių potencialą.
+**Daugiagijumas**  
+- Sukurkite gijų saugias AI operacijas lygiagrečiam apdorojimui  
+- Įgyvendinkite efektyvų darbo paskirstymą tarp turimų branduolių  
+- Naudokite asinchroninius modelius neblokuojančioms AI operacijoms  
+- Planuokite gijų baseino optimizavimą skirtingoms aparatūros konfigūracijoms  
 
-## Papildomi ištekliai
+**Talpyklos strategijos**  
+- Įgyvendinkite intelektualią talpyklą dažnai naudojamoms AI operacijoms  
+- Sukurkite talpyklos atnaujinimo strategijas modelių atnaujinimams  
+- Naudokite nuolatinę talpyklą brangioms išankstinio apdorojimo operacijoms  
+- Įgyvendinkite paskirstytą talpyklą kelių vartotojų scenarijams  
 
-Norėdami gauti žingsnis po žingsnio Windows Foundry Local vadovą (instaliacija, CLI, dinaminiai galiniai taškai, SDK naudojimas), žiūrėkite repo vadovą: [foundrylocal.md](./foundrylocal.md).
+## Saugumo ir privatumo geriausios praktikos  
 
-### Dokumentacija ir mokymasis
-- [Windows AI Foundry dokumentacija](https://learn.microsoft.com/windows/ai/)
-- [Windows AI API nuoroda](https://learn.microsoft.com/windows/ai/apis/)
-- [Foundry Local pradžia](https://learn.microsoft.com/windows/ai/foundry-local/get-started/)
-- [Windows ML apžvalga](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)
+### Duomenų apsauga  
 
-### Kūrimo įrankiai
-- [AI įrankių rinkinys Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)
-- [AI kūrėjų galerija](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)
-- [Windows AI pavyzdžiai](https://learn.microsoft.com/windows/ai/samples/)
+**Vietinis apdorojimas**  
+- Užtikrinkite, kad jautrūs duomenys niekada nepaliktų vietinio įrenginio  
+- Įgyvendinkite saugų AI modelių ir laikino duomenų saugojimą  
+- Naudokite Windows saugumo funkcijas programų smėlio dėžei  
+- Taikykite šifravimą saugomiems modeliams ir tarpiniams apdorojimo rezultatams  
 
-### Bendruomenė ir palaikymas
-- [Windows kūrėjų bendruomenė](https://developer.microsoft.com/en-us/windows/)
-- [Windows AI Foundry tinklaraštis](https://blogs.windows.com/windowsdeveloper/)
-- [Microsoft Learn AI mokymai](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)
+**Modelių saugumas**  
+- Patikrinkite modelio vientisumą prieš įkėlimą ir vykdymą  
+- Įgyvendinkite saugius modelių atnaujinimo mechanizmus  
+- Naudokite pasirašytus modelius, kad išvengtumėte klastojimo  
+- Taikykite prieigos kontrolę modelių failams ir konfigūracijoms  
+
+### Atitikties aspektai  
+
+**Reguliavimo laikymasis**  
+- Sukurkite programas, atitinkančias GDPR, HIPAA ir kitus reguliavimo reikalavimus  
+- Įgyvendinkite audito žurnalus AI sprendimų priėmimo procesams  
+- Suteikite skaidrumo funkcijas AI sugeneruotiems rezultatams  
+- Leiskite vartotojams kontroliuoti AI duomenų apdorojimą  
+
+**Įmonių saugumas**  
+- Integruokite su Windows įmonių saugumo politikomis  
+- Palaikykite valdomą diegimą per įmonių valdymo įrankius  
+- Įgyvendinkite vaidmenimis pagrįstą prieigos kontrolę AI funkcijoms  
+- Suteikite administracines kontrolės priemones AI funkcionalumui  
+
+## Trikčių šalinimas ir derinimas  
+
+### Dažniausios kūrimo problemos  
+
+**Kūrimo konfigūracijos problemos**  
+- Užtikrinkite ARM64 platformos konfigūraciją Windows AI API pavyzdžiams  
+- Patikrinkite Windows App SDK versijos suderinamumą (reikalinga 1.8.1 ar naujesnė)  
+- Patikrinkite, ar tinkamai sukonfigūruota paketo tapatybė (reikalinga Windows AI API)  
+- Patvirtinkite, kad kūrimo įrankiai palaiko tikslinės sistemos versiją  
+
+**Modelio įkėlimo problemos**  
+- Patikrinkite ONNX modelio suderinamumą su Windows ML  
+- Patikrinkite modelio failo vientisumą ir formato reikalavimus  
+- Patvirtinkite aparatūros galimybių reikalavimus konkretiems modeliams  
+- Derinkite atminties paskirstymo problemas modelio įkėlimo metu  
+- Užtikrinkite vykdymo teikėjo registraciją aparatūros pagreitinimui  
+
+**Diegimo režimo aspektai**  
+- **Savarankiškas režimas**: Pilnai palaikomas, bet su didesniu diegimo dydžiu  
+- **Priklausomas nuo sistemos režimas**: Mažesnis dydis, bet reikalauja bendro vykdymo laiko  
+- **Nepakuotos programos**: Nebepalaikomos Windows AI API  
+- Naudokite `dotnet run -p:Platform=ARM64 -p:SelfContained=true` savarankiškam ARM64 diegimui  
+
+**Našumo problemos**  
+- Profilinkite programos našumą įvairiose aparatūros konfigūracijose  
+- Nustatykite siaurąsias vietas AI apdorojimo grandinėse  
+- Optimizuokite duomenų išankstinį ir poapdorojimą  
+- Įgyvendinkite našumo stebėjimą ir įspėjimus  
+
+**Integracijos sunkumai**  
+- Derinkite API integracijos problemas su tinkamu klaidų valdymu  
+- Patvirtinkite įvesties duomenų formatus ir išankstinio apdorojimo reikalavimus  
+- Kruopščiai testuokite kraštutinius atvejus ir klaidų sąlygas  
+- Įgyvend
+- [Windows App SDK Pavyzdžių Saugykla](https://github.com/microsoft/WindowsAppSDK-Samples)
+
+### Kūrimo Įrankiai
+- [AI Įrankių Rinkinys Visual Studio Code](https://learn.microsoft.com/windows/ai/toolkit/)
+- [AI Kūrėjų Galerija](https://learn.microsoft.com/windows/ai/ai-dev-gallery/)
+- [Windows AI Pavyzdžiai](https://learn.microsoft.com/windows/ai/samples/)
+- [Modelių Konvertavimo Įrankiai](https://code.visualstudio.com/docs/intelligentapps/modelconversion)
+
+### Techninė Pagalba
+- [Windows ML Dokumentacija](https://learn.microsoft.com/windows/ai/new-windows-ml/overview)
+- [ONNX Runtime Dokumentacija](https://onnxruntime.ai/docs/)
+- [Windows App SDK Dokumentacija](https://docs.microsoft.com/windows/apps/windows-app-sdk/)
+- [Pranešti apie problemas - Windows App SDK Pavyzdžiai](https://github.com/microsoft/WindowsAppSDK-Samples/issues)
+
+### Bendruomenė ir Pagalba
+- [Windows Kūrėjų Bendruomenė](https://developer.microsoft.com/en-us/windows/)
+- [Windows AI Foundry Tinklaraštis](https://blogs.windows.com/windowsdeveloper/)
+- [Microsoft Learn AI Mokymai](https://learn.microsoft.com/training/browse/?products=windows&subjects=artificial-intelligence)
 
 ---
 
-*Šis vadovas sukurtas taip, kad evoliucionuotų kartu su sparčiai besivystančia Windows AI ekosistema. Reguliarūs atnaujinimai užtikrina suderinamumą su naujausiomis platformos galimybėmis ir geriausia kūrimo praktika.*
+*Šis vadovas sukurtas taip, kad prisitaikytų prie sparčiai besivystančios Windows AI ekosistemos. Reguliarūs atnaujinimai užtikrina suderinamumą su naujausiomis platformos galimybėmis ir geriausiomis kūrimo praktikomis.*
+
+[08. Praktinis Darbas su Microsoft Foundry Local - Pilnas Kūrėjo Įrankių Rinkinys](../Module08/README.md)
 
 ---
 
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors stengiamės užtikrinti tikslumą, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:17:15+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:12:23+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "fa"
 }
@@ -16,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 - مرجع CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - یکپارچه‌سازی SDKها: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - کامپایل مدل‌های HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- هوش مصنوعی ویندوز: محلی در مقابل ابری: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- Windows AI: محلی در مقابل ابری: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) نصب / ارتقا در ویندوز
 
@@ -64,7 +64,7 @@ foundry cache list
 
 نکات:
 - سرویس یک API REST سازگار با OpenAI را ارائه می‌دهد. پورت نقطه پایانی به صورت پویا تخصیص داده می‌شود؛ از `foundry service status` برای کشف آن استفاده کنید.
-- برای راحتی از SDKها استفاده کنید؛ آن‌ها کشف نقطه پایانی را به صورت خودکار انجام می‌دهند، جایی که پشتیبانی می‌شود.
+- برای راحتی از SDKها استفاده کنید؛ آنها کشف نقطه پایانی را به صورت خودکار انجام می‌دهند، جایی که پشتیبانی می‌شود.
 
 ## 3) کشف نقطه پایانی محلی (پورت پویا)
 
@@ -74,7 +74,7 @@ foundry service status
 ```
 از `http://localhost:<PORT>` گزارش شده به عنوان `base_url` خود با مسیرهای سازگار با OpenAI استفاده کنید (برای مثال، `/v1/chat/completions`).
 
-## 4) آزمایش سریع با OpenAI Python SDK
+## 4) آزمایش سریع از طریق OpenAI Python SDK
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -96,7 +96,7 @@ PY
 
 اگر به مدلی نیاز دارید که در کاتالوگ موجود نیست، آن را با استفاده از Olive به ONNX برای Foundry Local کامپایل کنید.
 
-جریان کلی (برای مراحل به مستندات مراجعه کنید):
+جریان سطح بالا (برای مراحل به مستندات مراجعه کنید):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) تجربه مرتبط توسعه‌دهندگان ویندوز
+## 7) تجربه مرتبط با توسعه‌دهندگان ویندوز
 
-- انتخاب‌های هوش مصنوعی محلی در مقابل ابری ویندوز، شامل Foundry Local و Windows ML:
+- انتخاب‌های AI محلی در مقابل ابری ویندوز، شامل Foundry Local و Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- ابزار هوش مصنوعی VS Code با Foundry Local (از `foundry service status` برای دریافت URL نقطه پایانی چت استفاده کنید):
+- ابزار AI در VS Code با Foundry Local (از `foundry service status` برای دریافت URL نقطه پایانی چت استفاده کنید):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[توسعه‌دهنده بعدی ویندوز](./windowdeveloper.md)
 
 ---
 
+**سلب مسئولیت**:  
+این سند با استفاده از سرویس ترجمه هوش مصنوعی [Co-op Translator](https://github.com/Azure/co-op-translator) ترجمه شده است. در حالی که ما تلاش می‌کنیم ترجمه‌ها دقیق باشند، لطفاً توجه داشته باشید که ترجمه‌های خودکار ممکن است شامل خطاها یا نادرستی‌ها باشند. سند اصلی به زبان اصلی آن باید به عنوان منبع معتبر در نظر گرفته شود. برای اطلاعات حساس، توصیه می‌شود از ترجمه انسانی حرفه‌ای استفاده کنید. ما هیچ مسئولیتی در قبال سوء تفاهم‌ها یا تفسیرهای نادرست ناشی از استفاده از این ترجمه نداریم.

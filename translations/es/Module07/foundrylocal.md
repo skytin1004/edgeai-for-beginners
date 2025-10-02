@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:13:54+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T10:56:40+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "es"
 }
@@ -90,7 +90,7 @@ print(resp.choices[0].message.content)
 PY
 ```
 Referencias:
-- Integración con SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- Integración de SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
 ## 5) Trae tu propio modelo (Compilar con Olive)
 
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Experiencia relacionada para desarrolladores en Windows
+## 7) Experiencia relacionada para desarrolladores de Windows
 
 - Opciones de IA local vs en la nube en Windows, incluyendo Foundry Local y Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- Toolkit de IA en VS Code con Foundry Local (usa `foundry service status` para obtener la URL del endpoint de chat):
+- Toolkit de IA de VS Code con Foundry Local (usa `foundry service status` para obtener la URL del endpoint de chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Próximo desarrollador de Windows](./windowdeveloper.md)
 
 ---
 
+**Descargo de responsabilidad**:  
+Este documento ha sido traducido utilizando el servicio de traducción automática [Co-op Translator](https://github.com/Azure/co-op-translator). Aunque nos esforzamos por garantizar la precisión, tenga en cuenta que las traducciones automatizadas pueden contener errores o imprecisiones. El documento original en su idioma nativo debe considerarse como la fuente autorizada. Para información crítica, se recomienda una traducción profesional realizada por humanos. No nos hacemos responsables de malentendidos o interpretaciones erróneas que puedan surgir del uso de esta traducción.

@@ -1,29 +1,29 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T17:36:25+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T14:01:32+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "hu"
 }
 -->
-# AI Toolkit for Visual Studio Code - Edge AI Fejlesztési Útmutató
+# AI Toolkit for Visual Studio Code - Útmutató az Edge AI fejlesztéséhez
 
 ## Bevezetés
 
-Üdvözlünk az AI Toolkit for Visual Studio Code átfogó útmutatójában, amely az Edge AI fejlesztéshez készült. Ahogy a mesterséges intelligencia a központosított felhőalapú számítástechnikáról a decentralizált edge eszközökre helyeződik át, a fejlesztőknek olyan erőteljes, integrált eszközökre van szükségük, amelyek képesek kezelni az edge telepítés egyedi kihívásait - például az erőforrás-korlátokat és az offline működési követelményeket.
+Üdvözlünk az AI Toolkit for Visual Studio Code átfogó útmutatójában, amely az Edge AI fejlesztéséhez készült. Ahogy a mesterséges intelligencia a központosított felhőalapú számítástechnikáról a decentralizált él-eszközökre helyeződik át, a fejlesztőknek olyan erőteljes, integrált eszközökre van szükségük, amelyek képesek kezelni az él-alapú telepítés egyedi kihívásait - a korlátozott erőforrásoktól az offline működési követelményekig.
 
-Az AI Toolkit for Visual Studio Code áthidalja ezt a szakadékot azáltal, hogy egy teljes fejlesztési környezetet biztosít, amelyet kifejezetten az edge eszközökön hatékonyan futó AI alkalmazások építésére, tesztelésére és optimalizálására terveztek. Legyen szó IoT szenzorokról, mobil eszközökről, beágyazott rendszerekről vagy edge szerverekről, ez az eszköztár leegyszerűsíti a teljes fejlesztési munkafolyamatot a jól ismert VS Code környezetben.
+Az AI Toolkit for Visual Studio Code áthidalja ezt a szakadékot azáltal, hogy egy teljes fejlesztési környezetet biztosít, amely kifejezetten az él-eszközökön hatékonyan futó AI alkalmazások építésére, tesztelésére és optimalizálására készült. Legyen szó IoT érzékelőkről, mobil eszközökről, beágyazott rendszerekről vagy él-szerverekről, ez az eszköztár leegyszerűsíti a teljes fejlesztési munkafolyamatot a megszokott VS Code környezetben.
 
-Ez az útmutató bemutatja az alapvető fogalmakat, eszközöket és legjobb gyakorlatokat, amelyek segítségével az AI Toolkit-et hatékonyan használhatod Edge AI projektjeidben, a kezdeti modell kiválasztástól egészen a termelési telepítésig.
+Ez az útmutató végigvezet az alapvető fogalmakon, eszközökön és legjobb gyakorlatokon, amelyek segítségével az AI Toolkit-et hatékonyan használhatod Edge AI projektjeidben, a kezdeti modellválasztástól a termelési telepítésig.
 
 ## Áttekintés
 
-Az AI Toolkit egy integrált fejlesztési környezetet kínál az Edge AI alkalmazások teljes életciklusához a VS Code-on belül. Zökkenőmentesen integrálódik népszerű AI modellekkel olyan szolgáltatóktól, mint az OpenAI, Anthropic, Google és GitHub, miközben támogatja a helyi modell telepítést az ONNX és Ollama segítségével - kulcsfontosságú képességek az edge AI alkalmazások számára, amelyek eszközön történő inferenciát igényelnek.
+Az AI Toolkit for Visual Studio Code egy erőteljes kiterjesztés, amely leegyszerűsíti az ügynökfejlesztést és az AI alkalmazások létrehozását. Az eszköztár átfogó képességeket kínál AI modellek felfedezésére, értékelésére és telepítésére számos szolgáltatótól - például Anthropic, OpenAI, GitHub, Google - miközben támogatja a helyi modellfuttatást ONNX és Ollama segítségével.
 
-Ami az AI Toolkit-et kiemeli az Edge AI fejlesztés terén, az az edge telepítési folyamat teljes körű támogatása. A hagyományos AI fejlesztési eszközökkel ellentétben, amelyek elsősorban a felhőalapú telepítést célozzák meg, az AI Toolkit speciális funkciókat kínál a modell optimalizálásához, erőforrás-korlátos teszteléshez és edge-specifikus teljesítményértékeléshez. Az eszköztár megérti, hogy az edge AI fejlesztés különböző szempontokat igényel - kisebb modellméretek, gyorsabb inferenciaidők, offline képességek és hardver-specifikus optimalizálások.
+Ami megkülönbözteti az AI Toolkit-et, az a mesterséges intelligencia fejlesztési életciklusának átfogó megközelítése. A hagyományos AI fejlesztési eszközökkel ellentétben, amelyek egyetlen aspektusra összpontosítanak, az AI Toolkit egy integrált környezetet biztosít, amely lefedi a modell felfedezését, kísérletezését, ügynökfejlesztést, értékelést és telepítést - mindezt a megszokott VS Code környezetben.
 
-A platform többféle telepítési forgatókönyvet támogat, az egyszerű eszközön történő inferenciától a komplex, többmodellű edge architektúrákig. Eszközöket biztosít a modell konvertálásához, kvantálásához és optimalizálásához, amelyek elengedhetetlenek a sikeres edge telepítéshez, miközben megőrzi a VS Code által nyújtott fejlesztői produktivitást.
+A platformot kifejezetten gyors prototípus-készítésre és termelési telepítésre tervezték, olyan funkciókkal, mint a prompt generálás, gyors kezdők, zökkenőmentes MCP (Model Context Protocol) eszközintegrációk és kiterjedt értékelési képességek. Az Edge AI fejlesztéshez ez azt jelenti, hogy hatékonyan fejlesztheted, tesztelheted és optimalizálhatod az AI alkalmazásokat él-alapú telepítési forgatókönyvekhez, miközben a teljes fejlesztési munkafolyamatot a VS Code-ban tartod.
 
 ## Tanulási célok
 
@@ -32,240 +32,304 @@ Az útmutató végére képes leszel:
 ### Alapvető kompetenciák
 - **Telepíteni és konfigurálni** az AI Toolkit-et a Visual Studio Code-ban az Edge AI fejlesztési munkafolyamatokhoz
 - **Navigálni és használni** az AI Toolkit felületét, beleértve a Model Catalog, Playground és Agent Builder funkciókat
-- **Kiválasztani és értékelni** az edge telepítésre alkalmas AI modelleket teljesítmény és erőforrás-korlátok alapján
-- **Konvertálni és optimalizálni** modelleket ONNX formátum és kvantálási technikák segítségével edge eszközökhöz
+- **Kiválasztani és értékelni** az él-alapú telepítésre alkalmas AI modelleket teljesítmény és erőforrás-korlátok alapján
+- **Átalakítani és optimalizálni** modelleket ONNX formátum és kvantálási technikák segítségével él-eszközökhöz
 
 ### Edge AI fejlesztési készségek
 - **Edge AI alkalmazásokat tervezni és megvalósítani** az integrált fejlesztési környezetben
-- **Modelleket tesztelni** edge-szerű körülmények között helyi inferencia és erőforrás-figyelés segítségével
-- **AI ügynököket létrehozni és testre szabni**, amelyek optimalizáltak az edge telepítési forgatókönyvekhez
-- **Modellek teljesítményét értékelni** az edge számítástechnikához releváns metrikák alapján (késleltetés, memóriahasználat, pontosság)
+- **Modelleket tesztelni** él-szerű körülmények között helyi inferencia és erőforrás-figyelés segítségével
+- **AI ügynököket létrehozni és testreszabni**, amelyek optimalizáltak él-alapú telepítési forgatókönyvekhez
+- **Modellek teljesítményét értékelni** az él-számításhoz releváns metrikák alapján (késleltetés, memóriahasználat, pontosság)
 
 ### Optimalizálás és telepítés
 - **Kvantálási és metszési technikákat alkalmazni**, hogy csökkentsd a modell méretét, miközben elfogadható teljesítményt tartasz fenn
-- **Modelleket optimalizálni** specifikus edge hardver platformokra, beleértve a CPU, GPU és NPU gyorsítást
-- **Legjobb gyakorlatokat megvalósítani** az edge AI fejlesztéshez, beleértve az erőforrás-kezelést és a visszaesési stratégiákat
-- **Modelleket és alkalmazásokat előkészíteni** edge eszközökön történő termelési telepítéshez
+- **Modelleket optimalizálni** specifikus él-hardver platformokhoz, beleértve a CPU, GPU és NPU gyorsítást
+- **Legjobb gyakorlatokat megvalósítani** az Edge AI fejlesztéshez, beleértve az erőforrás-kezelést és a visszaesési stratégiákat
+- **Modelleket és alkalmazásokat előkészíteni** termelési telepítésre él-eszközökön
 
 ### Haladó Edge AI fogalmak
-- **Integrálni edge AI keretrendszerekkel**, mint az ONNX Runtime, Windows ML és TensorFlow Lite
-- **Többmodellű architektúrákat és federált tanulási forgatókönyveket megvalósítani** edge környezetekben
-- **Gyakori edge AI problémákat elhárítani**, mint például memória-korlátok, inferencia sebesség és hardver-kompatibilitás
-- **Figyelési és naplózási stratégiákat tervezni** edge AI alkalmazásokhoz termelési környezetben
+- **Integrálni él AI keretrendszerekkel**, például ONNX Runtime, Windows ML és TensorFlow Lite
+- **Többmodell-architektúrákat és federált tanulási forgatókönyveket megvalósítani** él-környezetekhez
+- **Gyakori Edge AI problémákat elhárítani**, beleértve a memória-korlátokat, inferencia sebességet és hardver-kompatibilitást
+- **Felügyeleti és naplózási stratégiákat tervezni** Edge AI alkalmazásokhoz termelési környezetben
 
 ### Gyakorlati alkalmazás
-- **Teljes körű Edge AI megoldásokat építeni** a modell kiválasztástól a telepítésig
-- **Profi szinten bemutatni** edge-specifikus fejlesztési munkafolyamatokat és optimalizálási technikákat
-- **A tanult fogalmakat alkalmazni** valós edge AI felhasználási esetekben, beleértve az IoT, mobil és beágyazott alkalmazásokat
-- **Különböző edge AI telepítési stratégiákat értékelni és összehasonlítani**, valamint azok kompromisszumait
+- **Teljes körű Edge AI megoldásokat építeni** a modellválasztástól a telepítésig
+- **Bizonyítani a jártasságot** él-specifikus fejlesztési munkafolyamatokban és optimalizálási technikákban
+- **Alkalmazni a tanult fogalmakat** valós Edge AI felhasználási esetekben, beleértve az IoT-t, mobil és beágyazott alkalmazásokat
+- **Értékelni és összehasonlítani** különböző él-alapú telepítési stratégiákat és azok kompromisszumait
 
 ## Kulcsfunkciók az Edge AI fejlesztéshez
 
 ### 1. Modellkatalógus és felfedezés
-- **Helyi modell támogatás**: AI modellek felfedezése és elérése, amelyek kifejezetten edge telepítésre optimalizáltak
-- **ONNX integráció**: ONNX formátumú modellek elérése hatékony edge inferenciához
-- **Ollama támogatás**: Helyben futó modellek használata Ollama segítségével a magánélet és offline működés érdekében
-- **Modell összehasonlítás**: Modellek összehasonlítása, hogy megtaláld az optimális egyensúlyt a teljesítmény és az erőforrás-fogyasztás között edge eszközökön
+- **Több szolgáltató támogatása**: Böngészés és hozzáférés AI modellekhez Anthropic, OpenAI, GitHub, Google és más szolgáltatóktól
+- **Helyi modell integráció**: ONNX és Ollama modellek egyszerűsített felfedezése él-alapú telepítéshez
+- **GitHub modellek**: Közvetlen integráció a GitHub modell-tárolásával a zökkenőmentes hozzáférés érdekében
+- **Modell összehasonlítás**: Modellek összehasonlítása egymás mellett az él-eszközök korlátainak optimális egyensúlyának megtalálásához
 
 ### 2. Interaktív Playground
-- **Helyi tesztkörnyezet**: Modellek tesztelése helyben, mielőtt edge telepítésre kerülnek
-- **Multimodális kísérletezés**: Tesztelés képekkel, szövegekkel és más edge forgatókönyvekben tipikus bemenetekkel
-- **Paraméterhangolás**: Különböző modellparaméterekkel való kísérletezés az edge korlátok optimalizálása érdekében
-- **Valós idejű teljesítményfigyelés**: Inferencia sebesség és erőforrás-használat megfigyelése a fejlesztés során
+- **Interaktív tesztkörnyezet**: Gyors kísérletezés a modellek képességeivel ellenőrzött környezetben
+- **Többmódú támogatás**: Tesztelés képekkel, szövegekkel és más bemenetekkel, amelyek tipikusak él-forgatókönyvekben
+- **Valós idejű kísérletezés**: Azonnali visszajelzés a modellek válaszairól és teljesítményéről
+- **Paraméter optimalizálás**: Modellparaméterek finomhangolása él-alapú telepítési követelményekhez
 
-### 3. Ügynöképítő edge alkalmazásokhoz
-- **Prompt Engineering**: Optimalizált promptok létrehozása, amelyek hatékonyan működnek kisebb edge modellekkel
-- **MCP eszköz integráció**: Model Context Protocol eszközök integrálása a fejlettebb edge ügynök képességek érdekében
-- **Kódgenerálás**: Termelésre kész kód generálása, amely optimalizált az edge telepítési forgatókönyvekhez
-- **Strukturált kimenetek**: Ügynökök tervezése, amelyek következetes, strukturált válaszokat nyújtanak edge alkalmazásokhoz
+### 3. Prompt (Agent) Builder
+- **Természetes nyelvi generálás**: Kezdő promptok generálása természetes nyelvi leírások alapján
+- **Iteratív finomítás**: Promptok javítása a modellek válaszai és teljesítménye alapján
+- **Feladatbontás**: Összetett feladatok lebontása promptláncolással és strukturált kimenetekkel
+- **Változók támogatása**: Változók használata promptokban a dinamikus ügynökviselkedéshez
+- **Termelési kód generálása**: Termelésre kész kód generálása gyors alkalmazásfejlesztéshez
 
-### 4. Modellértékelés és tesztelés
-- **Teljesítménymetrikák**: Modellek értékelése edge telepítéshez releváns metrikák alapján (késleltetés, memóriahasználat, pontosság)
-- **Batch tesztelés**: Több modellkonfiguráció egyidejű tesztelése az optimális edge beállítások megtalálásához
-- **Egyedi értékelés**: Egyedi értékelési kritériumok létrehozása edge AI felhasználási esetekhez
-- **Erőforrás-profilozás**: Memória- és számítási igények elemzése edge telepítési tervezéshez
+### 4. Tömeges futtatás és értékelés
+- **Többmodell tesztelés**: Több prompt futtatása kiválasztott modelleken egyidejűleg
+- **Hatékony tesztelés nagy léptékben**: Különböző bemenetek és konfigurációk hatékony tesztelése
+- **Egyedi tesztesetek**: Ügynökök futtatása tesztesetekkel a funkcionalitás validálásához
+- **Teljesítmény összehasonlítás**: Eredmények összehasonlítása különböző modellek és konfigurációk között
 
-### 5. Modellkonvertálás és optimalizálás
-- **ONNX konvertálás**: Modellek konvertálása különböző formátumokból ONNX-ba edge kompatibilitás érdekében
-- **Kvantálás**: Modellméret csökkentése és inferencia sebesség javítása kvantálási technikák segítségével
-- **Hardveroptimalizálás**: Modellek optimalizálása specifikus edge hardverekhez (CPU, GPU, NPU)
-- **Formátum átalakítás**: Modellek átalakítása Hugging Face és más forrásokból edge telepítéshez
+### 5. Modellértékelés adathalmazokkal
+- **Standard metrikák**: AI modellek tesztelése beépített értékelőkkel (F1 pontszám, relevancia, hasonlóság, koherencia)
+- **Egyedi értékelők**: Saját értékelési metrikák létrehozása specifikus felhasználási esetekhez
+- **Adathalmaz integráció**: Modellek tesztelése átfogó adathalmazokkal
+- **Teljesítménymérés**: Modell teljesítményének számszerűsítése él-alapú telepítési döntésekhez
 
-### 6. Finomhangolás edge forgatókönyvekhez
-- **Domain Adaptation**: Modellek testreszabása specifikus edge felhasználási esetekhez és környezetekhez
-- **Helyi tanítás**: Modellek helyi tanítása GPU támogatással edge-specifikus követelményekhez
-- **Azure integráció**: Azure Container Apps használata felhőalapú finomhangoláshoz edge telepítés előtt
-- **Transfer Learning**: Előre tanított modellek adaptálása edge-specifikus feladatokhoz és korlátokhoz
+### 6. Finomhangolási képességek
+- **Modell testreszabás**: Modellek testreszabása specifikus felhasználási esetekhez és területekhez
+- **Speciális adaptáció**: Modellek adaptálása speciális területekhez és követelményekhez
+- **Él-optimalizálás**: Modellek finomhangolása kifejezetten él-alapú telepítési korlátokhoz
+- **Terület-specifikus képzés**: Modellek létrehozása, amelyek kifejezetten él-alapú felhasználási esetekhez készültek
 
-### 7. Teljesítményfigyelés és nyomkövetés
-- **Edge teljesítményelemzés**: Modellek teljesítményének figyelése edge-szerű körülmények között
-- **Nyomgyűjtés**: Részletes teljesítményadatok gyűjtése optimalizáláshoz
-- **Szűk keresztmetszetek azonosítása**: Teljesítményproblémák azonosítása edge eszközökön történő telepítés előtt
-- **Erőforrás-használat követése**: Memória, CPU és inferenciaidő figyelése edge optimalizáláshoz
+### 7. MCP eszközintegráció
+- **Külső eszközkapcsolat**: Ügynökök csatlakoztatása külső eszközökhöz Model Context Protocol szervereken keresztül
+- **Valós cselekvések**: Ügynökök engedélyezése adatbázisok lekérdezésére, API-k elérésére vagy egyedi logika végrehajtására
+- **Meglévő MCP szerverek**: Eszközök használata parancs (stdio) vagy HTTP (server-sent event) protokollokon keresztül
+- **Egyedi MCP fejlesztés**: Új MCP szerverek építése és vázlatkészítése teszteléssel az Agent Builderben
+
+### 8. Ügynökfejlesztés és tesztelés
+- **Funkcióhívás támogatása**: Ügynökök engedélyezése külső funkciók dinamikus meghívására
+- **Valós idejű integrációs tesztelés**: Integrációk tesztelése valós idejű futtatásokkal és eszközhasználattal
+- **Ügynök verziókezelés**: Verziókezelés ügynökökhöz összehasonlítási képességekkel az értékelési eredményekhez
+- **Hibakeresés és nyomkövetés**: Helyi nyomkövetési és hibakeresési képességek az ügynökfejlesztéshez
 
 ## Edge AI fejlesztési munkafolyamat
 
 ### 1. fázis: Modell felfedezése és kiválasztása
-1. **Modellek felfedezése**: Használd a modellkatalógust edge telepítésre alkalmas modellek megtalálásához
+1. **Modellkatalógus felfedezése**: Használd a modellkatalógust az él-alapú telepítésre alkalmas modellek megtalálásához
 2. **Teljesítmény összehasonlítása**: Modellek értékelése méret, pontosság és inferencia sebesség alapján
-3. **Helyi tesztelés**: Ollama vagy ONNX modellek használata helyi teszteléshez edge telepítés előtt
-4. **Erőforrásigények felmérése**: Memória- és számítási igények meghatározása a cél edge eszközökhöz
+3. **Helyi tesztelés**: Ollama vagy ONNX modellek használata helyi teszteléshez az él-alapú telepítés előtt
+4. **Erőforrásigények felmérése**: Memória- és számítási igények meghatározása a célzott él-eszközökhöz
 
 ### 2. fázis: Modell optimalizálása
-1. **ONNX konvertálás**: A kiválasztott modellek konvertálása ONNX formátumba edge kompatibilitás érdekében
+1. **Átalakítás ONNX formátumba**: A kiválasztott modellek átalakítása ONNX formátumba az él-kompatibilitás érdekében
 2. **Kvantálás alkalmazása**: Modellméret csökkentése INT8 vagy INT4 kvantálással
-3. **Hardveroptimalizálás**: Optimalizálás cél edge hardverekhez (ARM, x86, speciális gyorsítók)
-4. **Teljesítmény validálása**: Az optimalizált modellek pontosságának fenntartása
+3. **Hardver optimalizálás**: Optimalizálás a célzott él-hardverhez (ARM, x86, speciális gyorsítók)
+4. **Teljesítmény validálása**: Az optimalizált modellek elfogadható pontosságának fenntartása
 
 ### 3. fázis: Alkalmazásfejlesztés
-1. **Ügynök tervezése**: Használd az Agent Builder-t edge-optimalizált AI ügynökök létrehozásához
-2. **Prompt Engineering**: Hatékony promptok fejlesztése kisebb edge modellekhez
-3. **Integrációs tesztelés**: Ügynökök tesztelése szimulált edge körülmények között
-4. **Kódgenerálás**: Termelésre kész kód generálása edge telepítéshez
+1. **Ügynök tervezése**: Az Agent Builder használata él-optimalizált AI ügynökök létrehozásához
+2. **Prompt mérnökség**: Promptok fejlesztése, amelyek hatékonyan működnek kisebb él-modellekkel
+3. **Integrációs tesztelés**: Ügynökök tesztelése szimulált él-körülmények között
+4. **Kód generálása**: Termelésre optimalizált kód generálása él-alapú telepítéshez
 
 ### 4. fázis: Értékelés és tesztelés
-1. **Batch értékelés**: Több konfiguráció tesztelése az optimális edge beállítások megtalálásához
-2. **Teljesítményprofilozás**: Inferencia sebesség, memóriahasználat és pontosság elemzése
-3. **Edge szimuláció**: Tesztelés a cél edge telepítési környezethez hasonló körülmények között
-4. **Stressztesztelés**: Teljesítmény értékelése különböző terhelési körülmények között
+1. **Tömeges értékelés**: Több konfiguráció tesztelése az optimális él-beállítások megtalálásához
+2. **Teljesítmény profilozása**: Inferencia sebesség, memóriahasználat és pontosság elemzése
+3. **Él-szimuláció**: Tesztelés a célzott él-alapú telepítési környezethez hasonló körülmények között
+4. **Terhelési tesztelés**: Teljesítmény értékelése különböző terhelési körülmények között
 
-### 5. fázis: Telepítési előkészítés
+### 5. fázis: Telepítés előkészítése
 1. **Végső optimalizálás**: Végső optimalizálások alkalmazása a tesztelési eredmények alapján
-2. **Telepítési csomagolás**: Modellek és kód csomagolása edge telepítéshez
+2. **Telepítési csomagolás**: Modellek és kód csomagolása él-alapú telepítéshez
 3. **Dokumentáció**: Telepítési követelmények és konfiguráció dokumentálása
-4. **Figyelési beállítás**: Figyelési és naplózási előkészítés edge telepítéshez
+4. **Felügyeleti beállítás**: Felügyelet és naplózás előkészítése él-alapú telepítéshez
 
 ## Célközönség az Edge AI fejlesztéshez
 
 ### Edge AI fejlesztők
-- Alkalmazásfejlesztők, akik AI-alapú edge eszközöket és IoT megoldásokat építenek
-- Beágyazott rendszerek fejlesztői, akik AI képességeket integrálnak erőforrás-korlátos eszközökbe
-- Mobilfejlesztők, akik eszközön futó AI alkalmazásokat készítenek okostelefonokra és tabletekre
+- Alkalmazásfejlesztők, akik AI-alapú él-eszközöket és IoT megoldásokat építenek
+- Beágyazott rendszerek fejlesztői, akik AI képességeket integrálnak erőforrás-korlátozott eszközökbe
+- Mobilfejlesztők, akik AI alkalmazásokat készítenek okostelefonokra és táblagépekre
 
 ### Edge AI mérnökök
-- AI mérnökök, akik modelleket optimalizálnak edge telepítéshez és inferencia csatornákat kezelnek
-- DevOps mérnökök, akik AI modelleket telepítenek és kezelnek elosztott edge infrastruktúrában
-- Teljesítménymérnökök, akik AI munkaterheléseket optimalizálnak edge hardver korlátokhoz
+- AI mérnökök, akik modelleket optimalizálnak él-alapú telepítéshez és inferencia csatornákat kezelnek
+- DevOps mérnökök, akik AI modelleket telepítenek és kezelnek elosztott él-infrastruktúrában
+- Teljesítmény mérnökök, akik AI munkaterheléseket optimalizálnak él-hardver korlátokhoz
 
 ### Kutatók és oktatók
-- AI kutatók, akik hatékony modelleket és algoritmusokat fejlesztenek edge számítástechnikához
-- Oktatók, akik edge AI fogalmakat tanítanak és optimalizálási technikákat mutatnak be
-- Diákok, akik az edge AI telepítés kihívásait és megoldásait tanulják
+- AI kutatók, akik hatékony modelleket és algoritmusokat fejlesztenek él-számításhoz
+- Oktatók, akik Edge AI fogalmakat tanítanak és optimalizálási technikákat demonstrálnak
+- Diákok, akik az Edge AI telepítés kihívásait és megoldásait tanulják
 
 ## Edge AI felhasználási esetek
 
 ### Okos IoT eszközök
-- **Valós idejű képfelismerés**: Számítógépes látás modellek telepítése IoT kamerákon és szenzorokon
+- **Valós idejű képfelismerés**: Számítógépes látás modellek telepítése IoT kamerákon és érzékelőkön
 - **Hangfeldolgozás**: Beszédfelismerés és természetes nyelvi feldolgozás megvalósítása okos hangszórókon
-- **Prediktív karbantartás**: Anomália detektáló modellek futtatása ipari edge eszközökön
-- **Környezeti monitorozás**: Szenzoradat-elemző modellek telepítése környezeti alkalmazásokhoz
+2. Induló promptok létrehozása természetes nyelvi leírások alapján  
+3. Promptok iterálása és finomítása a modell válaszai alapján  
+4. MCP eszközök integrálása az ügynökök képességeinek növelésére  
 
-### Mobil és beágyazott alkalmazások
-- **Eszközön történő fordítás**: Nyelvfordító modellek megvalósítása, amelyek offline működnek
-- **Kiterjesztett valóság**: Valós idejű objektumfelismerés és követés telepítése AR alkalmazásokhoz
-- **Egészségügyi monitorozás**: Egészségügyi elemző modellek futtatása viselhető eszközökön és orvosi berendezéseken
-- **Autonóm rendszerek**: Döntéshozó modellek megvalósítása drónok, robotok és járművek számára
+#### 3. lépés: Tesztelés és értékelés  
+1. Használja a **Bulk Run** funkciót több prompt tesztelésére a kiválasztott modellek között  
+2. Futtassa az ügynököket tesztesetekkel a funkcionalitás validálásához  
+3. Értékelje a pontosságot és teljesítményt beépített vagy egyedi metrikák segítségével  
+4. Hasonlítsa össze különböző modelleket és konfigurációkat  
 
-### Edge számítástechnikai infrastruktúra
-- **Edge adatközpontok**: AI modellek telepítése edge adatközpontokban alacsony késleltetésű alkalmazásokhoz
-- **CDN integráció**: AI feldolgozási kép
-- **Biztonság**: Alkalmazzon megfelelő biztonsági intézkedéseket az Edge AI alkalmazásokhoz
+#### 4. lépés: Finomhangolás és optimalizálás  
+1. Testreszabja a modelleket specifikus edge használati esetekhez  
+2. Alkalmazzon domain-specifikus finomhangolást  
+3. Optimalizálja az edge telepítési korlátokhoz  
+4. Verziózza és hasonlítsa össze az ügynökök különböző konfigurációit  
 
-## Integráció Edge AI keretrendszerekkel
+#### 5. lépés: Telepítési előkészületek  
+1. Generáljon gyártásra kész kódot az Agent Builder segítségével  
+2. Állítsa be az MCP szerverkapcsolatokat gyártási használatra  
+3. Készítse elő a telepítési csomagokat edge eszközökhöz  
+4. Konfigurálja a monitorozási és értékelési metrikákat  
 
-### ONNX Runtime
-- **Platformfüggetlen telepítés**: ONNX modellek telepítése különböző edge platformokon
-- **Hardveroptimalizálás**: Használja ki az ONNX Runtime hardver-specifikus optimalizációit
-- **Mobil támogatás**: ONNX Runtime Mobile használata okostelefonokhoz és táblagépekhez
-- **IoT integráció**: ONNX Runtime könnyű disztribúcióival telepítés IoT eszközökre
+## Legjobb gyakorlatok az Edge AI fejlesztéshez  
 
-### Windows ML
-- **Windows eszközök**: Optimalizálás Windows-alapú edge eszközökre és PC-kre
-- **NPU gyorsítás**: Használja ki a Windows eszközökön található Neural Processing Unitokat
-- **DirectML**: GPU gyorsítás DirectML segítségével Windows platformokon
-- **UWP integráció**: Integráció Universal Windows Platform alkalmazásokkal
+### Modellválasztás  
+- **Méretkorlátok**: Válasszon olyan modelleket, amelyek illeszkednek a cél eszközök memóriakorlátaihoz  
+- **Következtetési sebesség**: Részesítse előnyben a gyors következtetési idővel rendelkező modelleket valós idejű alkalmazásokhoz  
+- **Pontossági kompromisszumok**: Egyensúlyozza a modell pontosságát az erőforrás-korlátokkal  
+- **Formátumkompatibilitás**: Részesítse előnyben az ONNX vagy hardver-optimalizált formátumokat edge telepítéshez  
 
-### TensorFlow Lite
-- **Mobil optimalizálás**: TensorFlow Lite modellek telepítése mobil és beágyazott eszközökre
-- **Hardver delegáltak**: Speciális hardver delegáltak használata a gyorsítás érdekében
-- **Mikrokontrollerek**: Telepítés mikrokontrollerekre TensorFlow Lite Micro segítségével
-- **Platformfüggetlen támogatás**: Telepítés Android, iOS és beágyazott Linux rendszereken
+### Optimalizálási technikák  
+- **Kvantálás**: Használjon INT8 vagy INT4 kvantálást a modell méretének csökkentésére és sebesség növelésére  
+- **Metszés**: Távolítsa el a felesleges modellparamétereket a számítási igény csökkentésére  
+- **Tudásdesztilláció**: Hozzon létre kisebb modelleket, amelyek megtartják a nagyobb modellek teljesítményét  
+- **Hardvergyorsítás**: Használjon NPU-kat, GPU-kat vagy speciális gyorsítókat, ha elérhetők  
 
-### Azure IoT Edge
-- **Felhő-edge hibrid**: Felhőben történő tanítás kombinálása edge eszközökön történő következtetéssel
-- **Modul telepítés**: AI modellek telepítése IoT Edge modulokként
-- **Eszközkezelés**: Edge eszközök és modellfrissítések távoli kezelése
-- **Telemetria**: Teljesítményadatok és modellmetrikák gyűjtése edge telepítésekből
+### Fejlesztési munkafolyamat  
+- **Iteratív tesztelés**: Teszteljen gyakran edge-szerű körülmények között a fejlesztés során  
+- **Teljesítményfigyelés**: Folyamatosan figyelje az erőforrás-használatot és a következtetési sebességet  
+- **Verziókezelés**: Kövesse nyomon a modellverziókat és optimalizálási beállításokat  
+- **Dokumentáció**: Dokumentálja az összes optimalizálási döntést és teljesítmény-kompromisszumot  
 
-## Fejlett Edge AI forgatókönyvek
+### Telepítési szempontok  
+- **Erőforrás-figyelés**: Figyelje a memória-, CPU- és energiahasználatot a gyártásban  
+- **Visszaesési stratégiák**: Implementáljon visszaesési mechanizmusokat modellhibák esetére  
+- **Frissítési mechanizmusok**: Tervezze meg a modellfrissítéseket és verziókezelést  
+- **Biztonság**: Alkalmazzon megfelelő biztonsági intézkedéseket az edge AI alkalmazásokhoz  
 
-### Több modell telepítése
-- **Modellcsoportok**: Több modell telepítése a pontosság vagy redundancia javítása érdekében
-- **A/B tesztelés**: Különböző modellek egyidejű tesztelése edge eszközökön
-- **Dinamikus kiválasztás**: Modellek kiválasztása az aktuális eszközállapot alapján
-- **Erőforrás-megosztás**: Erőforrások optimalizálása több telepített modell között
+## Integráció az Edge AI keretrendszerekkel  
 
-### Federált tanulás
-- **Elosztott tanítás**: Modellek tanítása több edge eszközön
-- **Adatvédelem**: A tanítási adatok helyben tartása, miközben megosztják a modellfejlesztéseket
-- **Közös tanulás**: Eszközök képessé tétele arra, hogy kollektív tapasztalatokból tanuljanak
-- **Edge-felhő koordináció**: Tanulás koordinálása edge eszközök és felhő infrastruktúra között
+### ONNX Runtime  
+- **Platformközi telepítés**: Telepítse az ONNX modelleket különböző edge platformokon  
+- **Hardver-optimalizáció**: Használja az ONNX Runtime hardver-specifikus optimalizációit  
+- **Mobil támogatás**: Használja az ONNX Runtime Mobile-t okostelefonokhoz és tabletekhez  
+- **IoT integráció**: Telepítse IoT eszközökre az ONNX Runtime könnyű disztribúcióival  
 
-### Valós idejű feldolgozás
-- **Folyamatos adatfeldolgozás**: Folyamatos adatfolyamok feldolgozása edge eszközökön
-- **Alacsony késleltetésű következtetés**: Optimalizálás minimális következtetési késleltetésre
-- **Csoportos feldolgozás**: Adatcsoportok hatékony feldolgozása edge eszközökön
-- **Adaptív feldolgozás**: Feldolgozás igazítása az aktuális eszközkapacitásokhoz
+### Windows ML  
+- **Windows eszközök**: Optimalizálja Windows-alapú edge eszközökhöz és PC-khez  
+- **NPU gyorsítás**: Használja a Windows eszközök Neural Processing Unit-jait  
+- **DirectML**: Használja a DirectML-t GPU gyorsításhoz Windows platformokon  
+- **UWP integráció**: Integrálja Universal Windows Platform alkalmazásokkal  
 
-## Edge AI fejlesztés hibakeresése
+### TensorFlow Lite  
+- **Mobil optimalizáció**: Telepítse a TensorFlow Lite modelleket mobil és beágyazott eszközökre  
+- **Hardver delegáltak**: Használjon speciális hardver delegáltakat a gyorsításhoz  
+- **Mikrokontrollerek**: Telepítse mikrokontrollerekre a TensorFlow Lite Micro segítségével  
+- **Platformközi támogatás**: Telepítse Android, iOS és beágyazott Linux rendszerekre  
 
-### Gyakori problémák
-- **Memória korlátok**: Modell túl nagy a cél eszköz memóriájához
-- **Következtetési sebesség**: Modell következtetése túl lassú a valós idejű követelményekhez
-- **Pontosság romlása**: Optimalizálás elfogadhatatlanul csökkenti a modell pontosságát
-- **Hardver kompatibilitás**: Modell nem kompatibilis a cél hardverrel
+### Azure IoT Edge  
+- **Felhő-edge hibrid**: Kombinálja a felhőben történő tanítást az edge következtetéssel  
+- **Modul telepítés**: Telepítse az AI modelleket IoT Edge modulokként  
+- **Eszközkezelés**: Kezelje edge eszközöket és modellfrissítéseket távolról  
+- **Telemetria**: Gyűjtsön teljesítményadatokat és modellmetrikákat edge telepítésekből  
 
-### Hibakeresési stratégiák
-- **Teljesítményprofilozás**: AI Toolkit nyomkövetési funkcióinak használata a szűk keresztmetszetek azonosítására
-- **Erőforrás-figyelés**: Memória- és CPU-használat figyelése a fejlesztés során
-- **Lépésenkénti tesztelés**: Optimalizálások lépésenkénti tesztelése a problémák elkülönítésére
-- **Hardver szimuláció**: Fejlesztői eszközök használata a cél hardver szimulálására
+## Fejlett Edge AI forgatókönyvek  
 
-### Optimalizálási megoldások
-- **További kvantálás**: Aggresszívebb kvantálási technikák alkalmazása
-- **Modellarchitektúra**: Különböző, edge-re optimalizált modellarchitektúrák megfontolása
-- **Előfeldolgozás optimalizálása**: Adatelőfeldolgozás optimalizálása edge korlátokhoz
-- **Következtetés optimalizálása**: Hardver-specifikus következtetési optimalizációk használata
+### Többmodellű telepítés  
+- **Modellcsoportok**: Telepítsen több modellt a pontosság vagy redundancia javítására  
+- **A/B tesztelés**: Teszteljen különböző modelleket egyidejűleg edge eszközökön  
+- **Dinamikus kiválasztás**: Válasszon modelleket az aktuális eszközállapot alapján  
+- **Erőforrás-megosztás**: Optimalizálja az erőforrás-használatot több telepített modell között  
 
-## Források és következő lépések
+### Federált tanulás  
+- **Elosztott tanítás**: Tanítsa a modelleket több edge eszközön  
+- **Adatvédelem megőrzése**: Tartsa helyben a tanítási adatokat, miközben megosztja a modellfejlesztéseket  
+- **Kollaboratív tanulás**: Tegye lehetővé az eszközök számára, hogy tanuljanak a közös tapasztalatokból  
+- **Edge-felhő koordináció**: Koordinálja a tanulást az edge eszközök és a felhő infrastruktúra között  
 
-### Dokumentáció
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentation](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentation](https://onnxruntime.ai/)
-- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)
+### Valós idejű feldolgozás  
+- **Stream feldolgozás**: Folyamatos adatfolyamok feldolgozása edge eszközökön  
+- **Alacsony késleltetésű következtetés**: Optimalizálja a minimális következtetési késleltetés érdekében  
+- **Batch feldolgozás**: Hatékonyan dolgozza fel az adatcsomagokat edge eszközökön  
+- **Adaptív feldolgozás**: Igazítsa a feldolgozást az aktuális eszközképességekhez  
 
-### Közösség és támogatás
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+## Edge AI fejlesztés hibaelhárítása  
 
-### Tanulási források
-- [Edge AI Fundamentals Course](./Module01/README.md)
-- [Small Language Models Guide](./Module02/README.md)
-- [Edge Deployment Strategies](./Module03/README.md)
-- [Windows Edge AI Development](./windowdeveloper.md)
+### Gyakori problémák  
+- **Memóriakorlátok**: A modell túl nagy a cél eszköz memóriájához  
+- **Következtetési sebesség**: A modell következtetése túl lassú valós idejű követelményekhez  
+- **Pontosságromlás**: Az optimalizálás elfogadhatatlanul csökkenti a modell pontosságát  
+- **Hardverkompatibilitás**: A modell nem kompatibilis a cél hardverrel  
 
-## Összegzés
+### Hibakeresési stratégiák  
+- **Teljesítményprofilozás**: Használja az AI Toolkit nyomkövetési funkcióit a szűk keresztmetszetek azonosításához  
+- **Erőforrás-figyelés**: Figyelje a memória- és CPU-használatot a fejlesztés során  
+- **Inkrementális tesztelés**: Tesztelje az optimalizálásokat fokozatosan a problémák elkülönítéséhez  
+- **Hardverszimuláció**: Használja a fejlesztési eszközöket a cél hardver szimulálásához  
 
-Az AI Toolkit for Visual Studio Code átfogó platformot kínál az Edge AI fejlesztéshez, a modellek felfedezésétől és optimalizálásától kezdve a telepítésig és monitorozásig. Az integrált eszközök és munkafolyamatok révén a fejlesztők hatékonyan hozhatnak létre, tesztelhetnek és telepíthetnek AI alkalmazásokat, amelyek hatékonyan működnek erőforrás-korlátozott edge eszközökön.
+### Optimalizálási megoldások  
+- **További kvantálás**: Alkalmazzon agresszívebb kvantálási technikákat  
+- **Modellarchitektúra**: Fontolja meg különböző modellarchitektúrákat, amelyek edge-re optimalizáltak  
+- **Előfeldolgozási optimalizálás**: Optimalizálja az adat előfeldolgozását az edge korlátokhoz  
+- **Következtetési optimalizálás**: Használjon hardver-specifikus következtetési optimalizációkat  
 
-A toolkit támogatása az ONNX, Ollama és különböző felhőszolgáltatók számára, valamint az optimalizálási és értékelési képességei ideális választássá teszik az Edge AI fejlesztéshez. Legyen szó IoT alkalmazásokról, mobil AI funkciókról vagy beágyazott intelligens rendszerekről, az AI Toolkit biztosítja azokat az eszközöket és munkafolyamatokat, amelyek szükségesek a sikeres Edge AI telepítéshez.
+## Erőforrások és következő lépések  
 
-Ahogy az Edge AI tovább fejlődik, az AI Toolkit for VS Code az élvonalban marad, és a fejlesztők számára korszerű eszközöket és képességeket kínál a következő generációs intelligens edge alkalmazások létrehozásához.
+### Hivatalos dokumentáció  
+- [AI Toolkit fejlesztői dokumentáció](https://aka.ms/AIToolkit/doc)  
+- [Telepítési és beállítási útmutató](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Intelligent Apps dokumentáció](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) dokumentáció](https://modelcontextprotocol.io/)  
+
+### Közösség és támogatás  
+- [AI Toolkit GitHub Repository](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub hibák és funkciókérések](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord közösség](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Technikai erőforrások  
+- [ONNX Runtime dokumentáció](https://onnxruntime.ai/)  
+- [Ollama dokumentáció](https://ollama.ai/)  
+- [Windows ML dokumentáció](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry dokumentáció](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Tanulási útvonalak  
+- [Edge AI alapok kurzus](../Module01/README.md)  
+- [Kis nyelvi modellek útmutató](../Module02/README.md)  
+- [Edge telepítési stratégiák](../Module03/README.md)  
+- [Windows Edge AI fejlesztés](./windowdeveloper.md)  
+
+### További erőforrások  
+- **Repository statisztikák**: Több mint 1.8k csillag, 150+ fork, 18+ közreműködő  
+- **Licenc**: MIT Licenc  
+- **Biztonság**: Microsoft biztonsági irányelvek érvényesek  
+- **Telemetria**: Tiszteletben tartja a VS Code telemetria beállításait  
+
+## Összegzés  
+
+Az AI Toolkit for Visual Studio Code egy átfogó platformot képvisel a modern AI fejlesztéshez, amely különösen értékes az Edge AI alkalmazások számára. Kiterjedt modellkatalógusával, amely támogatja az olyan szolgáltatókat, mint az Anthropic, OpenAI, GitHub és Google, valamint az ONNX és Ollama helyi futtatásával, a toolkit biztosítja a rugalmasságot a különféle edge telepítési forgatókönyvekhez.  
+
+A toolkit ereje az integrált megközelítésében rejlik—modellfelfedezéstől és kísérletezéstől a Playgroundban, a Prompt Builderrel történő kifinomult ügynökfejlesztésen, átfogó értékelési képességeken és zökkenőmentes MCP eszközintegráción keresztül. Az Edge AI fejlesztők számára ez gyors prototípus-készítést és AI ügynökök tesztelését jelenti edge telepítés előtt, azzal a képességgel, hogy gyorsan iteráljanak és optimalizáljanak erőforrás-korlátozott környezetekhez.  
+
+Az Edge AI fejlesztés kulcsfontosságú előnyei:  
+- **Gyors kísérletezés**: Modellek és ügynökök gyors tesztelése edge telepítés előtt  
+- **Több szolgáltató rugalmassága**: Modellek elérése különböző forrásokból az optimális edge megoldások megtalálásához  
+- **Helyi fejlesztés**: Tesztelés ONNX és Ollama segítségével offline és adatvédelmi szempontból biztonságos környezetben  
+- **Gyártási készség**: Gyártásra kész kód generálása és külső eszközökkel való integráció MCP-n keresztül  
+- **Átfogó értékelés**: Beépített és egyedi metrikák használata az edge AI teljesítmény validálásához  
+
+Ahogy az AI egyre inkább az edge telepítési forgatókönyvek felé mozdul, az AI Toolkit for VS Code biztosítja azt a fejlesztési környezetet és munkafolyamatot, amely szükséges az intelligens alkalmazások építéséhez, teszteléséhez és optimalizálásához erőforrás-korlátozott környezetekben. Akár IoT megoldásokat, mobil AI alkalmazásokat vagy beágyazott intelligens rendszereket fejleszt, a toolkit átfogó funkciókészlete és integrált munkafolyamata támogatja az egész edge AI fejlesztési életciklust.  
+
+A folyamatos fejlesztés és aktív közösség (több mint 1.8k GitHub csillag) révén az AI Toolkit továbbra is az élvonalban marad az AI fejlesztési eszközök között, folyamatosan fejlődve, hogy megfeleljen a modern AI fejlesztők igényeinek, akik edge telepítési forgatókönyvekre építenek.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Felelősség kizárása**:  
-Ez a dokumentum az AI fordítási szolgáltatás [Co-op Translator](https://github.com/Azure/co-op-translator) segítségével lett lefordítva. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
