@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T13:20:47+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T13:25:28+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "nl"
 }
@@ -15,25 +15,25 @@ Welkom bij de uitgebreide handleiding voor het gebruik van AI Toolkit voor Visua
 
 AI Toolkit voor Visual Studio Code overbrugt deze kloof door een complete ontwikkelomgeving te bieden die specifiek is ontworpen voor het bouwen, testen en optimaliseren van AI-toepassingen die efficiënt draaien op edge-apparaten. Of je nu ontwikkelt voor IoT-sensoren, mobiele apparaten, embedded systemen of edge-servers, deze toolkit stroomlijnt je hele ontwikkelworkflow binnen de vertrouwde VS Code-omgeving.
 
-Deze handleiding neemt je mee door de essentiële concepten, tools en best practices om AI Toolkit in je Edge AI-projecten te benutten, van de initiële modelselectie tot productie-implementatie.
+Deze handleiding neemt je mee door de essentiële concepten, tools en best practices om AI Toolkit te benutten in je Edge AI-projecten, van de initiële modelselectie tot productie-implementatie.
 
 ## Overzicht
 
-De AI Toolkit biedt een geïntegreerde ontwikkelomgeving voor de volledige levenscyclus van Edge AI-toepassingen binnen VS Code. Het biedt naadloze integratie met populaire AI-modellen van providers zoals OpenAI, Anthropic, Google en GitHub, terwijl het lokale modelimplementatie ondersteunt via ONNX en Ollama - cruciale mogelijkheden voor Edge AI-toepassingen die on-device inferentie vereisen.
+AI Toolkit voor Visual Studio Code is een krachtige extensie die agentontwikkeling en het creëren van AI-toepassingen vereenvoudigt. De toolkit biedt uitgebreide mogelijkheden voor het verkennen, evalueren en implementeren van AI-modellen van een breed scala aan providers—waaronder Anthropic, OpenAI, GitHub, Google—en ondersteunt lokale modeluitvoering met ONNX en Ollama.
 
-Wat AI Toolkit onderscheidt voor Edge AI-ontwikkeling is de focus op de volledige edge-implementatiepipeline. In tegenstelling tot traditionele AI-ontwikkeltools die voornamelijk gericht zijn op cloudimplementatie, bevat AI Toolkit gespecialiseerde functies voor modeloptimalisatie, testen onder beperkte middelen en edge-specifieke prestatie-evaluatie. De toolkit begrijpt dat Edge AI-ontwikkeling andere overwegingen vereist - kleinere modelgroottes, snellere inferentietijden, offline mogelijkheden en hardware-specifieke optimalisaties.
+Wat AI Toolkit onderscheidt, is de uitgebreide aanpak van de hele AI-ontwikkelingscyclus. In tegenstelling tot traditionele AI-ontwikkeltools die zich richten op afzonderlijke aspecten, biedt AI Toolkit een geïntegreerde omgeving die modelontdekking, experimentatie, agentontwikkeling, evaluatie en implementatie omvat—alles binnen de vertrouwde VS Code-omgeving.
 
-Het platform ondersteunt meerdere implementatiescenario's, van eenvoudige on-device inferentie tot complexe multi-model edge-architecturen. Het biedt tools voor modelconversie, kwantisatie en optimalisatie die essentieel zijn voor succesvolle edge-implementatie, terwijl het de productiviteit van ontwikkelaars behoudt waar VS Code om bekend staat.
+Het platform is specifiek ontworpen voor snelle prototyping en productie-implementatie, met functies zoals promptgeneratie, snelle starters, naadloze MCP (Model Context Protocol) toolintegraties en uitgebreide evaluatiemogelijkheden. Voor Edge AI-ontwikkeling betekent dit dat je efficiënt AI-toepassingen kunt ontwikkelen, testen en optimaliseren voor edge-implementatiescenario's, terwijl je de volledige ontwikkelworkflow binnen VS Code behoudt.
 
 ## Leerdoelen
 
 Aan het einde van deze handleiding kun je:
 
 ### Kerncompetenties
-- **Installeren en configureren** van AI Toolkit voor Visual Studio Code voor Edge AI-ontwikkelworkflows
+- **Installeren en configureren** van AI Toolkit voor Visual Studio Code voor Edge AI-ontwikkelingsworkflows
 - **Navigeren en gebruiken** van de AI Toolkit-interface, inclusief Model Catalog, Playground en Agent Builder
 - **Selecteren en evalueren** van AI-modellen die geschikt zijn voor edge-implementatie op basis van prestaties en resourcebeperkingen
-- **Converteren en optimaliseren** van modellen met behulp van ONNX-formaat en kwantisatietechnieken voor edge-apparaten
+- **Converteren en optimaliseren** van modellen met behulp van ONNX-formaat en kwantiseringstechnieken voor edge-apparaten
 
 ### Vaardigheden in Edge AI-ontwikkeling
 - **Ontwerpen en implementeren** van Edge AI-toepassingen met behulp van de geïntegreerde ontwikkelomgeving
@@ -42,14 +42,14 @@ Aan het einde van deze handleiding kun je:
 - **Modelprestaties evalueren** met behulp van relevante metrics voor edge computing (latentie, geheugengebruik, nauwkeurigheid)
 
 ### Optimalisatie en implementatie
-- **Kwantisatie en pruning toepassen** om modelgrootte te verminderen terwijl acceptabele prestaties behouden blijven
-- **Modellen optimaliseren** voor specifieke edge-hardwareplatforms, waaronder CPU-, GPU- en NPU-versnelling
+- **Kwantisering en pruning toepassen** om de modelgrootte te verkleinen terwijl de prestaties acceptabel blijven
+- **Modellen optimaliseren** voor specifieke edge-hardwareplatforms, inclusief CPU-, GPU- en NPU-versnelling
 - **Best practices implementeren** voor Edge AI-ontwikkeling, inclusief resourcebeheer en fallback-strategieën
 - **Modellen en toepassingen voorbereiden** voor productie-implementatie op edge-apparaten
 
 ### Geavanceerde Edge AI-concepten
 - **Integreren met edge AI-frameworks** zoals ONNX Runtime, Windows ML en TensorFlow Lite
-- **Multi-model architecturen en federated learning implementeren** voor edge-omgevingen
+- **Multi-modelarchitecturen en federated learning** implementeren voor edge-omgevingen
 - **Veelvoorkomende Edge AI-problemen oplossen** zoals geheugenbeperkingen, inferentiesnelheid en hardwarecompatibiliteit
 - **Monitoring- en logstrategieën ontwerpen** voor Edge AI-toepassingen in productie
 
@@ -57,89 +57,96 @@ Aan het einde van deze handleiding kun je:
 - **End-to-end Edge AI-oplossingen bouwen** van modelselectie tot implementatie
 - **Bekwaamheid demonstreren** in edge-specifieke ontwikkelworkflows en optimalisatietechnieken
 - **Geleerde concepten toepassen** op real-world Edge AI-use cases, waaronder IoT, mobiel en embedded toepassingen
-- **Verschillende Edge AI-implementatiestrategieën evalueren en vergelijken** en hun afwegingen
+- **Verschillende Edge AI-implementatiestrategieën evalueren en vergelijken** en hun afwegingen begrijpen
 
 ## Belangrijke functies voor Edge AI-ontwikkeling
 
 ### 1. Modelcatalogus en ontdekking
-- **Ondersteuning voor lokale modellen**: Ontdek en krijg toegang tot AI-modellen die specifiek zijn geoptimaliseerd voor edge-implementatie
-- **ONNX-integratie**: Toegang tot modellen in ONNX-formaat voor efficiënte edge-inferentie
-- **Ollama-ondersteuning**: Gebruik lokaal draaiende modellen via Ollama voor privacy en offline werking
-- **Modelvergelijking**: Vergelijk modellen naast elkaar om de optimale balans te vinden tussen prestaties en resourceverbruik voor edge-apparaten
+- **Ondersteuning voor meerdere providers**: Blader door en krijg toegang tot AI-modellen van Anthropic, OpenAI, GitHub, Google en andere providers
+- **Lokale modelintegratie**: Vereenvoudigde ontdekking van ONNX- en Ollama-modellen voor edge-implementatie
+- **GitHub-modellen**: Directe integratie met GitHub's modelhosting voor gestroomlijnde toegang
+- **Modelvergelijking**: Vergelijk modellen naast elkaar om de optimale balans te vinden voor edge-apparaatbeperkingen
 
 ### 2. Interactieve Playground
-- **Lokale testomgeving**: Test modellen lokaal voordat ze op edge worden geïmplementeerd
-- **Multi-modale experimenten**: Test met afbeeldingen, tekst en andere inputs die typisch zijn in edge-scenario's
-- **Parameterafstemming**: Experimenteer met verschillende modelparameters om te optimaliseren voor edge-beperkingen
-- **Realtime prestatiemonitoring**: Observeer inferentiesnelheid en resourcegebruik tijdens ontwikkeling
+- **Interactieve testomgeving**: Snel experimenteren met modelmogelijkheden in een gecontroleerde omgeving
+- **Ondersteuning voor multimodale input**: Testen met afbeeldingen, tekst en andere inputs die typisch zijn in edge-scenario's
+- **Realtime experimentatie**: Directe feedback op modelreacties en prestaties
+- **Parameteroptimalisatie**: Fijn afstemmen van modelparameters voor edge-implementatievereisten
 
-### 3. Agent Builder voor edge-toepassingen
-- **Prompt engineering**: Creëer geoptimaliseerde prompts die efficiënt werken met kleinere edge-modellen
-- **MCP-toolintegratie**: Integreer Model Context Protocol-tools voor verbeterde edge-agentmogelijkheden
-- **Codegeneratie**: Genereer productieklare code geoptimaliseerd voor edge-implementatiescenario's
-- **Gestructureerde outputs**: Ontwerp agents die consistente, gestructureerde antwoorden bieden die geschikt zijn voor edge-toepassingen
+### 3. Prompt (Agent) Builder
+- **Generatie van natuurlijke taal**: Starterprompts genereren met behulp van natuurlijke taalbeschrijvingen
+- **Iteratieve verfijning**: Prompts verbeteren op basis van modelreacties en prestaties
+- **Taakdecompositie**: Complexe taken opsplitsen met prompt chaining en gestructureerde outputs
+- **Ondersteuning voor variabelen**: Variabelen gebruiken in prompts voor dynamisch agentgedrag
+- **Productiecodegeneratie**: Productieklaar code genereren voor snelle app-ontwikkeling
 
-### 4. Modelevaluatie en testen
-- **Prestatiemetrics**: Evalueer modellen met behulp van metrics die relevant zijn voor edge-implementatie (latentie, geheugengebruik, nauwkeurigheid)
-- **Batchtesten**: Test meerdere modelconfiguraties tegelijkertijd om optimale edge-instellingen te vinden
-- **Aangepaste evaluatie**: Creëer aangepaste evaluatiecriteria specifiek voor Edge AI-use cases
-- **Resourceprofilering**: Analyseer geheugen- en rekenvereisten voor edge-implementatieplanning
+### 4. Bulkuitvoering en evaluatie
+- **Multi-modeltesten**: Meerdere prompts tegelijkertijd uitvoeren op geselecteerde modellen
+- **Efficiënt testen op schaal**: Verschillende inputs en configuraties efficiënt testen
+- **Aangepaste testcases**: Agents uitvoeren met testcases om functionaliteit te valideren
+- **Prestatievergelijking**: Resultaten vergelijken tussen verschillende modellen en configuraties
 
-### 5. Modelconversie en optimalisatie
-- **ONNX-conversie**: Converteer modellen van verschillende formaten naar ONNX voor edge-compatibiliteit
-- **Kwantisatie**: Verminder modelgrootte en verbeter inferentiesnelheid door kwantisatietechnieken
-- **Hardwareoptimalisatie**: Optimaliseer modellen voor specifieke edge-hardware (CPU, GPU, NPU)
-- **Formaattransformatie**: Transformeer modellen van Hugging Face en andere bronnen voor edge-implementatie
+### 5. Modelevaluatie met datasets
+- **Standaardmetrics**: AI-modellen testen met ingebouwde evaluatoren (F1-score, relevantie, gelijkenis, samenhang)
+- **Aangepaste evaluatoren**: Eigen evaluatiemetrics creëren voor specifieke use cases
+- **Datasetintegratie**: Modellen testen tegen uitgebreide datasets
+- **Prestatiemeting**: Modelprestaties kwantificeren voor edge-implementatiebeslissingen
 
-### 6. Fine-tuning voor edge-scenario's
-- **Domeinaanpassing**: Pas modellen aan voor specifieke edge-use cases en omgevingen
-- **Lokale training**: Train modellen lokaal met GPU-ondersteuning voor edge-specifieke vereisten
-- **Azure-integratie**: Gebruik Azure Container Apps voor cloudgebaseerde fine-tuning voordat edge-implementatie plaatsvindt
-- **Transfer learning**: Pas voorgetrainde modellen aan voor edge-specifieke taken en beperkingen
+### 6. Fine-tuning mogelijkheden
+- **Modelaanpassing**: Modellen aanpassen voor specifieke use cases en domeinen
+- **Gespecialiseerde adaptatie**: Modellen aanpassen aan gespecialiseerde domeinen en vereisten
+- **Edge-optimalisatie**: Modellen specifiek fine-tunen voor edge-implementatiebeperkingen
+- **Domeinspecifieke training**: Modellen creëren die zijn afgestemd op specifieke edge-use cases
 
-### 7. Prestatiemonitoring en tracing
-- **Edge-prestatieanalyse**: Monitor modelprestaties in edge-achtige omstandigheden
-- **Trace-verzameling**: Verzamel gedetailleerde prestatiedata voor optimalisatie
-- **Bottleneck-identificatie**: Identificeer prestatieproblemen voordat implementatie op edge-apparaten plaatsvindt
-- **Resourcegebruik-tracking**: Monitor geheugen, CPU en inferentietijd voor edge-optimalisatie
+### 7. MCP-toolintegratie
+- **Connectiviteit met externe tools**: Agents verbinden met externe tools via Model Context Protocol-servers
+- **Acties in de echte wereld**: Agents in staat stellen databases te raadplegen, API's te benaderen of aangepaste logica uit te voeren
+- **Bestaande MCP-servers**: Tools gebruiken via command (stdio) of HTTP (server-sent event) protocollen
+- **Aangepaste MCP-ontwikkeling**: Nieuwe MCP-servers bouwen en testen in Agent Builder
+
+### 8. Agentontwikkeling en testen
+- **Ondersteuning voor functieaanroepen**: Agents in staat stellen externe functies dynamisch aan te roepen
+- **Realtime integratietesten**: Integraties testen met realtime runs en toolgebruik
+- **Agentversiebeheer**: Versiebeheer voor agents met vergelijkingsmogelijkheden voor evaluatieresultaten
+- **Debugging en tracing**: Lokale tracing- en debuggingmogelijkheden voor agentontwikkeling
 
 ## Workflow voor Edge AI-ontwikkeling
 
 ### Fase 1: Modelontdekking en selectie
-1. **Verken de modelcatalogus**: Gebruik de modelcatalogus om modellen te vinden die geschikt zijn voor edge-implementatie
-2. **Vergelijk prestaties**: Evalueer modellen op basis van grootte, nauwkeurigheid en inferentiesnelheid
-3. **Test lokaal**: Gebruik Ollama of ONNX-modellen om lokaal te testen voordat edge-implementatie plaatsvindt
-4. **Beoordeel resourcevereisten**: Bepaal geheugen- en rekenbehoeften voor doel-edge-apparaten
+1. **Modelcatalogus verkennen**: Gebruik de modelcatalogus om modellen te vinden die geschikt zijn voor edge-implementatie
+2. **Prestaties vergelijken**: Modellen evalueren op basis van grootte, nauwkeurigheid en inferentiesnelheid
+3. **Lokaal testen**: Ollama- of ONNX-modellen lokaal testen voordat ze op edge worden geïmplementeerd
+4. **Resourcevereisten beoordelen**: Geheugen- en computatiebehoeften bepalen voor doel-edge-apparaten
 
 ### Fase 2: Modeloptimalisatie
-1. **Converteer naar ONNX**: Converteer geselecteerde modellen naar ONNX-formaat voor edge-compatibiliteit
-2. **Pas kwantisatie toe**: Verminder modelgrootte door INT8- of INT4-kwantisatie
-3. **Hardwareoptimalisatie**: Optimaliseer voor doel-edge-hardware (ARM, x86, gespecialiseerde accelerators)
-4. **Prestatievalidatie**: Valideer geoptimaliseerde modellen om acceptabele nauwkeurigheid te behouden
+1. **Converteren naar ONNX**: Geselecteerde modellen converteren naar ONNX-formaat voor edge-compatibiliteit
+2. **Kwantisering toepassen**: Modelgrootte verkleinen via INT8- of INT4-kwantisering
+3. **Hardwareoptimalisatie**: Optimaliseren voor doel-edge-hardware (ARM, x86, gespecialiseerde accelerators)
+4. **Prestatievalidatie**: Geoptimaliseerde modellen valideren om acceptabele nauwkeurigheid te behouden
 
 ### Fase 3: Applicatieontwikkeling
 1. **Agentontwerp**: Gebruik Agent Builder om edge-geoptimaliseerde AI-agents te creëren
-2. **Prompt engineering**: Ontwikkel prompts die effectief werken met kleinere edge-modellen
-3. **Integratietesten**: Test agents in gesimuleerde edge-omstandigheden
-4. **Codegeneratie**: Genereer productiecode geoptimaliseerd voor edge-implementatie
+2. **Promptengineering**: Prompts ontwikkelen die effectief werken met kleinere edge-modellen
+3. **Integratietesten**: Agents testen in gesimuleerde edge-omstandigheden
+4. **Codegeneratie**: Productieklaar code genereren die geoptimaliseerd is voor edge-implementatie
 
 ### Fase 4: Evaluatie en testen
-1. **Batch-evaluatie**: Test meerdere configuraties om optimale edge-instellingen te vinden
-2. **Prestatieprofilering**: Analyseer inferentiesnelheid, geheugengebruik en nauwkeurigheid
-3. **Edge-simulatie**: Test in omstandigheden die vergelijkbaar zijn met de doel-edge-implementatieomgeving
-4. **Stress-testen**: Evalueer prestaties onder verschillende belastingomstandigheden
+1. **Batch-evaluatie**: Meerdere configuraties testen om optimale edge-instellingen te vinden
+2. **Prestatieprofilering**: Inferentiesnelheid, geheugengebruik en nauwkeurigheid analyseren
+3. **Edge-simulatie**: Testen in omstandigheden die vergelijkbaar zijn met de doel-edge-implementatieomgeving
+4. **Stress-testen**: Prestaties evalueren onder verschillende belastingomstandigheden
 
-### Fase 5: Implementatievoorbereiding
-1. **Eindoptimalisatie**: Pas laatste optimalisaties toe op basis van testresultaten
-2. **Implementatieverpakking**: Verpak modellen en code voor edge-implementatie
-3. **Documentatie**: Documenteer implementatievereisten en configuratie
-4. **Monitoringinstelling**: Bereid monitoring en logging voor edge-implementatie voor
+### Fase 5: Voorbereiding op implementatie
+1. **Eindoptimalisatie**: Laatste optimalisaties toepassen op basis van testresultaten
+2. **Implementatieverpakking**: Modellen en code verpakken voor edge-implementatie
+3. **Documentatie**: Implementatievereisten en configuratie documenteren
+4. **Monitoring instellen**: Monitoring en logging voorbereiden voor edge-implementatie
 
 ## Doelgroep voor Edge AI-ontwikkeling
 
 ### Edge AI-ontwikkelaars
 - Applicatieontwikkelaars die AI-aangedreven edge-apparaten en IoT-oplossingen bouwen
-- Embedded systeemontwikkelaars die AI-mogelijkheden integreren in apparaten met beperkte middelen
+- Embedded systems-ontwikkelaars die AI-functionaliteiten integreren in apparaten met beperkte middelen
 - Mobiele ontwikkelaars die on-device AI-toepassingen maken voor smartphones en tablets
 
 ### Edge AI-ingenieurs
@@ -155,197 +162,244 @@ Aan het einde van deze handleiding kun je:
 ## Edge AI-use cases
 
 ### Slimme IoT-apparaten
-- **Realtime beeldherkenning**: Computer vision-modellen implementeren op IoT-camera's en sensoren
-- **Spraakverwerking**: Spraakherkenning en natuurlijke taalverwerking implementeren op slimme speakers
-- **Voorspellend onderhoud**: Anomaliedetectiemodellen draaien op industriële edge-apparaten
-- **Milieubewaking**: Sensor data-analysemodellen implementeren voor milieutoepassingen
+- **Realtime beeldherkenning**: Computervisiemodellen implementeren op IoT-camera's en sensoren
+- **Stemverwerking**: Spraakherkenning en natuurlijke taalverwerking implementeren op slimme luidsprekers
+- **Voorspellend onderhoud**: Anomaliedetectiemodellen uitvoeren op industriële edge-apparaten
+- **Milieubewaking**: Sensorgegevensanalysemodellen implementeren voor milieutoepassingen
 
 ### Mobiele en embedded toepassingen
 - **On-device vertaling**: Taalvertalingsmodellen implementeren die offline werken
 - **Augmented reality**: Realtime objectherkenning en tracking implementeren voor AR-toepassingen
-- **Gezondheidsmonitoring**: Gezondheidsanalysmodellen draaien op wearables en medische apparatuur
-- **Autonome systemen**: Beslissingsmodellen implementeren voor drones, robots en voertuigen
+- **Gezondheidsmonitoring**: Gezondheidsanalysemiddelen uitvoeren op draagbare apparaten en medische apparatuur
+- **Autonome systemen**: Besluitvormingsmodellen implementeren voor drones, robots en voertuigen
 
 ### Edge computing-infrastructuur
 - **Edge-datacenters**: AI-modellen implementeren in edge-datacenters voor toepassingen met lage latentie
 - **CDN-integratie**: AI-verwerkingsmogelijkheden integreren in content delivery-netwerken
-- **5G Edge**: 5G edge computing benutten voor AI-aangedreven toepassingen
+- **5G Edge**: 5G-edge computing benutten voor AI-aangedreven toepassingen
 - **Fog computing**: AI-verwerking implementeren in fog computing-omgevingen
 
 ## Installatie en configuratie
 
-### Snelle installatie
+### Extensie-installatie
 Installeer de AI Toolkit-extensie rechtstreeks vanuit de Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**Extensie-ID**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Installatiemethoden**:
+1. **VS Code Marketplace**: Zoek naar "AI Toolkit" in de Extensies-weergave
+2. **Command Line**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Directe installatie**: Download van [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Vereisten voor Edge AI-ontwikkeling
-- **ONNX Runtime**: Installeer ONNX Runtime voor modelinferentie
-- **Ollama** (optioneel): Installeer Ollama voor lokale modelserving
-- **Python-omgeving**: Stel Python in met vereiste AI-bibliotheken
-- **Edge-hardwaretools**: Installeer hardware-specifieke ontwikkeltools (CUDA, OpenVINO, enz.)
+- **Visual Studio Code**: Laatste versie aanbevolen
+- **Python-omgeving**: Python 3.8+ met vereiste AI-bibliotheken
+- **ONNX Runtime** (optioneel): Voor ONNX-modelinferentie
+- **Ollama** (optioneel): Voor lokale modelservering
+- **Hardwareversnellingstools**: CUDA, OpenVINO of platformspecifieke versnellers
 
 ### Initiële configuratie
-1. Open VS Code en installeer de AI Toolkit-extensie
-2. Configureer modelbronnen (ONNX, Ollama, cloudproviders)
-3. Stel een lokale ontwikkelomgeving in voor edge-testen
-4. Configureer hardwareversnellingopties voor je ontwikkelmachine
+1. **Extensie activeren**: Open VS Code en controleer of AI Toolkit verschijnt in de Activiteitenbalk
+2. **Modelproviderinstelling**: Toegang configureren tot GitHub, OpenAI, Anthropic of andere modelproviders
+3. **Lokale omgeving**: Python-omgeving instellen en vereiste pakketten installeren
+4. **Hardwareversnelling**: GPU/NPU-versnelling configureren indien beschikbaar
+5. **MCP-integratie**: Model Context Protocol-servers instellen indien nodig
 
-## Aan de slag met Edge AI-ontwikkeling
+### Checklist voor eerste installatie
+- [ ] AI Toolkit-extensie geïnstalleerd en geactiveerd
+- [ ] Modelcatalogus toegankelijk en modellen vindbaar
+- [ ] Playground functioneel voor modeltesten
+- [ ] Agent Builder toegankelijk voor promptontwikkeling
+- [ ] Lokale ontwikkelomgeving geconfigureerd
+- [ ] Hardwareversnelling (indien beschikbaar) correct geconfigureerd
 
-### Stap 1: Modelselectie
-1. Open de AI Toolkit-weergave in de Activiteitenbalk
-2. Blader door de Model Catalog voor edge-compatibele modellen
-3. Filter op modelgrootte, formaat (ONNX) en prestatiekenmerken
-4. Vergelijk modellen met behulp van de ingebouwde vergelijkingstools
+## Aan de slag met AI Toolkit
 
-### Stap 2: Lokaal testen
-1. Gebruik de Playground om geselecteerde modellen lokaal te testen
-2. Experimenteer met verschillende prompts en parameters
-3. Monitor prestatiemetrics tijdens het testen
-4. Evalueer modelreacties voor edge-use case-vereisten
+### Snelle startgids
 
-### Stap 3: Modeloptimalisatie
-1. Gebruik de Model Conversion-tools om te optimaliseren voor edge-implementatie
-2. Pas kwantisatie toe om modelgrootte te verminderen
-3. Test geoptimaliseerde modellen om acceptabele prestaties te garanderen
-4. Documenteer optimalisatie-instellingen en prestatieafwegingen
+We raden aan te beginnen met modellen die door GitHub worden gehost voor de meest gestroomlijnde ervaring:
 
-### Stap 4: Agentontwikkeling
-1. Gebruik Agent Builder om edge-geoptimaliseerde AI-agents te creëren
-2. Ontwikkel prompts die effectief werken met kleinere modellen
-3. Integreer benodigde tools en API's voor edge-scenario's
-4. Test agents in gesimuleerde edge-omstandigheden
+1. **Installatie**: Volg de [installatiehandleiding](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup) om AI Toolkit op je apparaat in te stellen
+2. **Modelontdekking**: Selecteer **CATALOG > Models** in de extensieboomweergave om beschikbare modellen te verkennen
+3. **GitHub-modellen**: Begin met modellen die door GitHub worden gehost voor optimale integratie
+4. **Playground-testen**: Selecteer **Try in Playground** vanuit een modelkaart om te beginnen met experimenteren met modelmogelijkheden
 
-### Stap 5: Evaluatie en implementatie
-1. Gebruik bulk-evaluatie om meerdere configuraties te testen
-2. Profiel prestaties onder verschillende omstandigheden
-3. Bereid implementatiepakketten voor doel-edge-apparaten
-4. Stel monitoring en logging in voor productie-implementatie
+### Stapsgewijze Edge AI-ontwikkeling
 
-## Best practices voor Edge AI-ontwikkeling
+#### Stap 1: Modelverkenning en selectie
+1. Open de AI Toolkit-weergave in de Activiteitenbalk van VS Code
+2. Blader door de Model Catalog voor modellen die geschikt zijn voor edge-implementatie
+3. Filter op provider (GitHub, ONNX, Ollama) op basis van je edge-vereisten
+4. Gebruik **Try in Playground** om modelmogelijkheden direct te testen
 
-### Modelselectie
-- **Groottebeperkingen**: Kies modellen die binnen de geheugenlimieten van doelapparaten passen
-- **Inferentiesnelheid**: Geef prioriteit aan modellen met snelle inferenties voor realtime toepassingen
-- **Nauwkeurigheidsafwegingen**: Balanceer modelnauwkeurigheid met resourcebeperkingen
-- **Formaatcompatibiliteit**: Geef de voorkeur aan ONNX of hardware-geoptimaliseerde formaten voor edge-implementatie
+#### Stap 2: Agentontwikkeling
+1. Gebruik de **Prompt (Agent) Builder** om edge-geoptimaliseerde AI-agents te creëren
+2. Genereer startprompts met behulp van natuurlijke taalbeschrijvingen  
+3. Itereer en verfijn prompts op basis van modelreacties  
+4. Integreer MCP-tools voor verbeterde agentmogelijkheden  
 
-### Optimalisatietechnieken
-- **Kwantisatie**: Gebruik INT8- of INT4-kwantisatie om modelgrootte te verminderen en snelheid te verbeteren
-- **Pruning**: Verwijder onnodige modelparameters om rekenvereisten te verminderen
-- **Knowledge distillation**: Creëer kleinere modellen die de prestaties van grotere behouden
-- **Hardwareversnelling**: Benut NPUs, GPUs of gespecialiseerde accelerators indien beschikbaar
+#### Stap 3: Testen en Evaluatie  
+1. Gebruik **Bulk Run** om meerdere prompts te testen op geselecteerde modellen  
+2. Voer agents uit met testcases om functionaliteit te valideren  
+3. Evalueer nauwkeurigheid en prestaties met ingebouwde of aangepaste metrics  
+4. Vergelijk verschillende modellen en configuraties  
 
-### Ontwikkelworkflow
-- **Iteratief testen**: Test regelmatig in edge-achtige omstandigheden tijdens ontwikkeling
-- **Prestatiemonitoring**: Monitor continu resourcegebruik en inferentiesnelheid
-- **Versiebeheer**: Houd modelversies en optimalisatie-instellingen bij
-- **Documentatie**: Documenteer alle optimalisatiebeslissingen en prestatieafwegingen
+#### Stap 4: Fijnafstemming en Optimalisatie  
+1. Pas modellen aan voor specifieke edge-use cases  
+2. Voer domeinspecifieke fijnafstemming uit  
+3. Optimaliseer voor beperkingen bij edge-implementatie  
+4. Versieer en vergelijk verschillende agentconfiguraties  
 
-### Implementatieoverwegingen
-- **Resourcebewaking**: Monitor geheugen-, CPU- en stroomgebruik in productie
-- **Fallback-strategieën**: Implementeer fallback-mechanismen voor modelfouten
-- **Update-mechanismen**: Plan voor modelupdates en versiebeheer
-- **Beveiliging**: Implementeer passende beveiligingsmaatregelen voor edge AI-toepassingen
+#### Stap 5: Voorbereiding op Implementatie  
+1. Genereer productieklare code met de Agent Builder  
+2. Stel MCP-serververbindingen in voor productiegebruik  
+3. Bereid implementatiepakketten voor edge-apparaten voor  
+4. Configureer monitoring- en evaluatiemetrics  
 
-## Integratie met Edge AI-frameworks
+## Best Practices voor Edge AI-ontwikkeling  
 
-### ONNX Runtime
-- **Cross-platform Implementatie**: Implementeer ONNX-modellen op verschillende edge-platforms
-- **Hardwareoptimalisatie**: Maak gebruik van hardware-specifieke optimalisaties van ONNX Runtime
-- **Mobiele Ondersteuning**: Gebruik ONNX Runtime Mobile voor toepassingen op smartphones en tablets
-- **IoT-integratie**: Implementeer op IoT-apparaten met behulp van de lichtgewicht distributies van ONNX Runtime
+### Modelselectie  
+- **Beperkingen qua grootte**: Kies modellen die passen binnen de geheugencapaciteit van de doelapparaten  
+- **Inference-snelheid**: Geef prioriteit aan modellen met snelle inference-tijden voor realtime toepassingen  
+- **Nauwkeurigheid versus middelen**: Vind een balans tussen modelnauwkeurigheid en resourcebeperkingen  
+- **Compatibiliteit van formaten**: Geef de voorkeur aan ONNX of hardware-geoptimaliseerde formaten voor edge-implementatie  
 
-### Windows ML
-- **Windows-apparaten**: Optimaliseer voor Windows-gebaseerde edge-apparaten en pc's
-- **NPU-versnelling**: Maak gebruik van Neural Processing Units op Windows-apparaten
-- **DirectML**: Gebruik DirectML voor GPU-versnelling op Windows-platforms
-- **UWP-integratie**: Integreer met Universal Windows Platform-toepassingen
+### Optimalisatietechnieken  
+- **Quantisatie**: Gebruik INT8- of INT4-quantisatie om de modelgrootte te verkleinen en de snelheid te verbeteren  
+- **Pruning**: Verwijder onnodige modelparameters om de rekenvereisten te verminderen  
+- **Knowledge Distillation**: Maak kleinere modellen die de prestaties van grotere modellen behouden  
+- **Hardwareversnelling**: Maak gebruik van NPUs, GPUs of gespecialiseerde versnellers indien beschikbaar  
 
-### TensorFlow Lite
-- **Mobiele Optimalisatie**: Implementeer TensorFlow Lite-modellen op mobiele en embedded apparaten
-- **Hardwaredelegaties**: Gebruik gespecialiseerde hardwaredelegaties voor versnelling
-- **Microcontrollers**: Implementeer op microcontrollers met TensorFlow Lite Micro
-- **Cross-platform Ondersteuning**: Implementeer op Android, iOS en embedded Linux-systemen
+### Ontwikkelworkflow  
+- **Iteratief testen**: Test regelmatig in edge-achtige omstandigheden tijdens ontwikkeling  
+- **Prestatiemonitoring**: Houd resourcegebruik en inference-snelheid continu in de gaten  
+- **Versiebeheer**: Houd modelversies en optimalisatie-instellingen bij  
+- **Documentatie**: Documenteer alle optimalisatiebeslissingen en afwegingen in prestaties  
 
-### Azure IoT Edge
-- **Cloud-Edge Hybride**: Combineer cloudtraining met edge-inferentie
-- **Module-implementatie**: Implementeer AI-modellen als IoT Edge-modules
-- **Apparaatbeheer**: Beheer edge-apparaten en modelupdates op afstand
-- **Telemetrie**: Verzamel prestatiegegevens en modelstatistieken van edge-implementaties
+### Overwegingen bij implementatie  
+- **Resource monitoring**: Houd geheugen-, CPU- en energiegebruik in productie in de gaten  
+- **Fallback-strategieën**: Implementeer fallback-mechanismen voor modelstoringen  
+- **Update-mechanismen**: Plan modelupdates en versiebeheer  
+- **Beveiliging**: Implementeer passende beveiligingsmaatregelen voor edge AI-toepassingen  
 
-## Geavanceerde Edge AI-scenario's
+## Integratie met Edge AI-frameworks  
 
-### Multi-model Implementatie
-- **Modelensembles**: Implementeer meerdere modellen voor verbeterde nauwkeurigheid of redundantie
-- **A/B-testen**: Test verschillende modellen gelijktijdig op edge-apparaten
-- **Dynamische Selectie**: Kies modellen op basis van de huidige apparaatcondities
-- **Resource Sharing**: Optimaliseer het gebruik van middelen over meerdere geïmplementeerde modellen
+### ONNX Runtime  
+- **Cross-platform implementatie**: Implementeer ONNX-modellen op verschillende edge-platforms  
+- **Hardwareoptimalisatie**: Maak gebruik van hardware-specifieke optimalisaties van ONNX Runtime  
+- **Mobiele ondersteuning**: Gebruik ONNX Runtime Mobile voor smartphones en tablets  
+- **IoT-integratie**: Implementeer op IoT-apparaten met behulp van lichte distributies van ONNX Runtime  
 
-### Federated Learning
-- **Gedistribueerde Training**: Train modellen op meerdere edge-apparaten
-- **Privacybescherming**: Houd trainingsgegevens lokaal terwijl modelverbeteringen worden gedeeld
-- **Collaboratief Leren**: Laat apparaten leren van collectieve ervaringen
-- **Edge-Cloud Coördinatie**: Coördineer leren tussen edge-apparaten en cloudinfrastructuur
+### Windows ML  
+- **Windows-apparaten**: Optimaliseer voor Windows-gebaseerde edge-apparaten en pc's  
+- **NPU-versnelling**: Maak gebruik van Neural Processing Units op Windows-apparaten  
+- **DirectML**: Gebruik DirectML voor GPU-versnelling op Windows-platforms  
+- **UWP-integratie**: Integreer met Universal Windows Platform-toepassingen  
 
-### Real-time Verwerking
-- **Streamverwerking**: Verwerk continue datastromen op edge-apparaten
-- **Laag-latentie Inferentie**: Optimaliseer voor minimale inferentielatentie
-- **Batchverwerking**: Verwerk efficiënt batches van gegevens op edge-apparaten
-- **Adaptieve Verwerking**: Pas verwerking aan op basis van de huidige apparaatcapaciteiten
+### TensorFlow Lite  
+- **Mobiele optimalisatie**: Implementeer TensorFlow Lite-modellen op mobiele en embedded apparaten  
+- **Hardwaredelegates**: Gebruik gespecialiseerde hardwaredelegates voor versnelling  
+- **Microcontrollers**: Implementeer op microcontrollers met TensorFlow Lite Micro  
+- **Cross-platform ondersteuning**: Implementeer op Android, iOS en embedded Linux-systemen  
 
-## Problemen oplossen bij Edge AI-ontwikkeling
+### Azure IoT Edge  
+- **Cloud-Edge hybride**: Combineer cloudtraining met edge-inference  
+- **Module-implementatie**: Implementeer AI-modellen als IoT Edge-modules  
+- **Apparaatbeheer**: Beheer edge-apparaten en modelupdates op afstand  
+- **Telemetrie**: Verzamel prestatiegegevens en modelmetrics van edge-implementaties  
 
-### Veelvoorkomende Problemen
-- **Geheugenbeperkingen**: Model te groot voor het geheugen van het doelapparaat
-- **Inferentiesnelheid**: Modelinferentie te traag voor real-time vereisten
-- **Nauwkeurigheidsverlies**: Optimalisatie vermindert modelnauwkeurigheid onaanvaardbaar
-- **Hardwarecompatibiliteit**: Model niet compatibel met doelhardware
+## Geavanceerde Edge AI-scenario's  
 
-### Debugging Strategieën
-- **Prestatieprofilering**: Gebruik de traceerfuncties van AI Toolkit om knelpunten te identificeren
-- **Resource Monitoring**: Monitor geheugen- en CPU-gebruik tijdens ontwikkeling
-- **Incrementeel Testen**: Test optimalisaties stapsgewijs om problemen te isoleren
-- **Hardware Simulatie**: Gebruik ontwikkeltools om doelhardware te simuleren
+### Multi-model implementatie  
+- **Modelensembles**: Implementeer meerdere modellen voor verbeterde nauwkeurigheid of redundantie  
+- **A/B-testen**: Test verschillende modellen tegelijkertijd op edge-apparaten  
+- **Dynamische selectie**: Kies modellen op basis van de huidige apparaatcondities  
+- **Resource sharing**: Optimaliseer resourcegebruik over meerdere geïmplementeerde modellen  
 
-### Optimalisatieoplossingen
-- **Verdere Quantisatie**: Pas agressievere quantisatietechnieken toe
-- **Modelarchitectuur**: Overweeg verschillende modelarchitecturen die geoptimaliseerd zijn voor edge
-- **Preprocessing Optimalisatie**: Optimaliseer gegevensvoorverwerking voor edge-beperkingen
-- **Inferentie Optimalisatie**: Gebruik hardware-specifieke inferentieoptimalisaties
+### Federated Learning  
+- **Gedistribueerde training**: Train modellen op meerdere edge-apparaten  
+- **Privacybescherming**: Houd trainingsdata lokaal terwijl modelverbeteringen worden gedeeld  
+- **Collaboratief leren**: Laat apparaten leren van collectieve ervaringen  
+- **Edge-Cloud coördinatie**: Coördineer leren tussen edge-apparaten en cloudinfrastructuur  
 
-## Bronnen en Volgende Stappen
+### Realtime verwerking  
+- **Streamverwerking**: Verwerk continue datastromen op edge-apparaten  
+- **Inference met lage latentie**: Optimaliseer voor minimale inference-latentie  
+- **Batchverwerking**: Verwerk batches van data efficiënt op edge-apparaten  
+- **Adaptieve verwerking**: Pas verwerking aan op basis van de huidige apparaatcapaciteiten  
 
-### Documentatie
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentatie](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentatie](https://onnxruntime.ai/)
-- [Windows ML Documentatie](https://docs.microsoft.com/en-us/windows/ai/)
+## Problemen oplossen bij Edge AI-ontwikkeling  
 
-### Community en Ondersteuning
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Veelvoorkomende problemen  
+- **Geheugenbeperkingen**: Model te groot voor het geheugen van het doelapparaat  
+- **Inference-snelheid**: Modelinference te traag voor realtimevereisten  
+- **Nauwkeurigheidsverlies**: Optimalisatie vermindert modelnauwkeurigheid onaanvaardbaar  
+- **Hardwarecompatibiliteit**: Model niet compatibel met doelhardware  
 
-### Leerbronnen
-- [Edge AI Fundamentals Cursus](./Module01/README.md)
-- [Small Language Models Guide](./Module02/README.md)
-- [Edge Implementatiestrategieën](./Module03/README.md)
-- [Windows Edge AI Ontwikkeling](./windowdeveloper.md)
+### Debugging-strategieën  
+- **Prestatieprofilering**: Gebruik tracingfuncties van AI Toolkit om knelpunten te identificeren  
+- **Resource monitoring**: Houd geheugen- en CPU-gebruik tijdens ontwikkeling in de gaten  
+- **Incrementeel testen**: Test optimalisaties stapsgewijs om problemen te isoleren  
+- **Hardware simulatie**: Gebruik ontwikkeltools om doelhardware te simuleren  
 
-## Conclusie
+### Optimalisatieoplossingen  
+- **Verdergaande quantisatie**: Pas agressievere quantisatietechnieken toe  
+- **Modelarchitectuur**: Overweeg andere modelarchitecturen die geoptimaliseerd zijn voor edge  
+- **Preprocessing-optimalisatie**: Optimaliseer datavoorverwerking voor edge-beperkingen  
+- **Inference-optimalisatie**: Gebruik hardware-specifieke inference-optimalisaties  
 
-AI Toolkit voor Visual Studio Code biedt een uitgebreid platform voor Edge AI-ontwikkeling, van modelontdekking en optimalisatie tot implementatie en monitoring. Door gebruik te maken van de geïntegreerde tools en workflows kunnen ontwikkelaars efficiënt AI-toepassingen creëren, testen en implementeren die effectief werken op apparaten met beperkte middelen.
+## Bronnen en volgende stappen  
 
-De ondersteuning van de toolkit voor ONNX, Ollama en verschillende cloudproviders, gecombineerd met de optimalisatie- en evaluatiemogelijkheden, maakt het een ideale keuze voor Edge AI-ontwikkeling. Of je nu IoT-toepassingen, mobiele AI-functies of embedded intelligentiesystemen bouwt, AI Toolkit biedt de tools en workflows die nodig zijn voor succesvolle Edge AI-implementatie.
+### Officiële documentatie  
+- [AI Toolkit Developer Documentatie](https://aka.ms/AIToolkit/doc)  
+- [Installatie- en Setupgids](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Intelligent Apps Documentatie](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) Documentatie](https://modelcontextprotocol.io/)  
 
-Naarmate Edge AI blijft evolueren, blijft AI Toolkit voor VS Code voorop lopen en biedt het ontwikkelaars geavanceerde tools en mogelijkheden om de volgende generatie intelligente edge-toepassingen te bouwen.
+### Community en ondersteuning  
+- [AI Toolkit GitHub Repository](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub Issues en Functieaanvragen](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord Community](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Technische bronnen  
+- [ONNX Runtime Documentatie](https://onnxruntime.ai/)  
+- [Ollama Documentatie](https://ollama.ai/)  
+- [Windows ML Documentatie](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry Documentatie](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Leertrajecten  
+- [Edge AI Fundamentals Cursus](../Module01/README.md)  
+- [Small Language Models Gids](../Module02/README.md)  
+- [Edge Implementatiestrategieën](../Module03/README.md)  
+- [Windows Edge AI Ontwikkeling](./windowdeveloper.md)  
+
+### Aanvullende bronnen  
+- **Repository Statistieken**: 1.8k+ sterren, 150+ forks, 18+ bijdragers  
+- **Licentie**: MIT-licentie  
+- **Beveiliging**: Microsoft-beveiligingsbeleid van toepassing  
+- **Telemetrie**: Respecteert VS Code-telemetrie-instellingen  
+
+## Conclusie  
+
+AI Toolkit voor Visual Studio Code biedt een uitgebreid platform voor moderne AI-ontwikkeling, met gestroomlijnde mogelijkheden voor agentontwikkeling die bijzonder waardevol zijn voor Edge AI-toepassingen. Met een uitgebreide modelcatalogus die providers zoals Anthropic, OpenAI, GitHub en Google ondersteunt, gecombineerd met lokale uitvoering via ONNX en Ollama, biedt de toolkit de flexibiliteit die nodig is voor diverse edge-implementatiescenario's.  
+
+De kracht van de toolkit ligt in de geïntegreerde aanpak—van modelontdekking en experimentatie in de Playground tot geavanceerde agentontwikkeling met de Prompt Builder, uitgebreide evaluatiemogelijkheden en naadloze MCP-toolintegratie. Voor Edge AI-ontwikkelaars betekent dit snelle prototyping en testen van AI-agents vóór edge-implementatie, met de mogelijkheid om snel te itereren en te optimaliseren voor omgevingen met beperkte middelen.  
+
+Belangrijke voordelen voor Edge AI-ontwikkeling zijn:  
+- **Snelle experimentatie**: Test modellen en agents snel voordat ze worden geïmplementeerd op edge  
+- **Multi-provider flexibiliteit**: Toegang tot modellen van verschillende bronnen om optimale edge-oplossingen te vinden  
+- **Lokale ontwikkeling**: Test met ONNX en Ollama voor offline en privacyvriendelijke ontwikkeling  
+- **Productieklaar**: Genereer productieklare code en integreer met externe tools via MCP  
+- **Uitgebreide evaluatie**: Gebruik ingebouwde en aangepaste metrics om edge AI-prestaties te valideren  
+
+Naarmate AI zich steeds meer richt op edge-implementatiescenario's, biedt AI Toolkit voor VS Code de ontwikkelomgeving en workflow die nodig zijn om intelligente toepassingen te bouwen, testen en optimaliseren voor omgevingen met beperkte middelen. Of je nu IoT-oplossingen, mobiele AI-toepassingen of embedded intelligentiesystemen ontwikkelt, de uitgebreide functieset en geïntegreerde workflow van de toolkit ondersteunen de volledige edge AI-ontwikkelingscyclus.  
+
+Met voortdurende ontwikkeling en een actieve community (1.8k+ GitHub-sterren) blijft AI Toolkit aan de top van AI-ontwikkeltools, en evolueert het voortdurend om te voldoen aan de behoeften van moderne AI-ontwikkelaars die bouwen voor edge-implementatiescenario's.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Disclaimer**:  
-Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we ons best doen voor nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor kritieke informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor eventuele misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.
+Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in zijn oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor cruciale informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor eventuele misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:42:04+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:10:51+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sv"
 }
@@ -68,7 +68,7 @@ Anteckningar:
 
 ## 3) Upptäck den lokala endpointen (Dynamisk port)
 
-Foundry Local tilldelar en dynamisk port varje gång tjänsten startar:
+Foundry Local tilldelar en dynamisk port varje gång tjänsten startas:
 ```cmd
 foundry service status
 ```
@@ -96,7 +96,7 @@ Referenser:
 
 Om du behöver en modell som inte finns i katalogen, kompilera den till ONNX för Foundry Local med Olive.
 
-Översikt (se dokumentationen för steg):
+Hög nivå-flöde (se dokumentationen för steg):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -125,10 +125,14 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Relaterad Windows-utvecklarupplevelse
 
-- Windows lokalt vs moln AI-val, inklusive Foundry Local och Windows ML:
+- Windows lokala vs molnbaserade AI-val, inklusive Foundry Local och Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit med Foundry Local (använd `foundry service status` för att få chat-endpointens URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Nästa Windows-utvecklare](./windowdeveloper.md)
+
 ---
 
+**Ansvarsfriskrivning**:  
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiska översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.

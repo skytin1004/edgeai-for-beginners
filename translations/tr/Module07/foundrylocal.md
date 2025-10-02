@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:37:52+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:52:06+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "tr"
 }
@@ -64,11 +64,11 @@ foundry cache list
 
 Notlar:
 - Servis, OpenAI uyumlu bir REST API sunar. Endpoint portu dinamik olarak atanır; bunu keşfetmek için `foundry service status` komutunu kullanın.
-- SDK'ları kullanarak kolaylık sağlayabilirsiniz; desteklenen yerlerde endpoint keşfini otomatik olarak yönetirler.
+- SDK'ları kullanarak kolaylık sağlayabilirsiniz; desteklenen yerlerde endpoint keşfini otomatik olarak hallederler.
 
 ## 3) Yerel Endpoint'i Keşfetme (Dinamik Port)
 
-Foundry Local, her servis başlatıldığında dinamik bir port atar:
+Foundry Local, servis her başlatıldığında dinamik bir port atar:
 ```cmd
 foundry service status
 ```
@@ -94,7 +94,7 @@ Referanslar:
 
 ## 5) Kendi Modelinizi Getirin (Olive ile Derleme)
 
-Katalogda bulunmayan bir modele ihtiyacınız varsa, Olive kullanarak onu Foundry Local için ONNX formatına derleyin.
+Katalogda bulunmayan bir modele ihtiyacınız varsa, Olive kullanarak onu ONNX formatına dönüştürüp Foundry Local için derleyin.
 
 Yüksek seviyeli akış (adımlar için belgeleri inceleyin):
 ```cmd
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Windows yerel vs bulut AI seçenekleri, Foundry Local ve Windows ML dahil:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit ile Foundry Local (chat endpoint URL'sini almak için `foundry service status` komutunu kullanın):
+- VS Code AI Toolkit ile Foundry Local (sohbet endpoint URL'sini almak için `foundry service status` kullanın):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Sonraki Windows Geliştirici](./windowdeveloper.md)
 
 ---
 
+**Feragatname**:  
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlıklar içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.

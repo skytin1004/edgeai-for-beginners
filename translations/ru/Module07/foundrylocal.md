@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:15:28+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:04:08+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ru"
 }
 -->
 # Foundry Local на Windows и Mac
 
-Этот гид поможет вам установить, запустить и интегрировать Microsoft Foundry Local на Windows и Mac. Все шаги и команды проверены в документации Microsoft Learn.
+Этот гид поможет вам установить, запустить и интегрировать Microsoft Foundry Local на Windows и Mac. Все шаги и команды проверены в соответствии с документацией Microsoft Learn.
 
 - Начало работы: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Архитектура: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -68,7 +68,7 @@ foundry cache list
 
 ## 3) Определение локальной конечной точки (динамический порт)
 
-Foundry Local выделяет динамический порт каждый раз при запуске сервиса:
+Foundry Local назначает динамический порт каждый раз при запуске сервиса:
 ```cmd
 foundry service status
 ```
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Связанный опыт разработки на Windows
+## 7) Связанный опыт разработчиков Windows
 
-- Выбор между локальным и облачным AI на Windows, включая Foundry Local и Windows ML:
+- Выбор между локальным и облачным AI для Windows, включая Foundry Local и Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - AI Toolkit для VS Code с Foundry Local (используйте `foundry service status`, чтобы получить URL конечной точки для чата):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Следующий разработчик Windows](./windowdeveloper.md)
+
 ---
 
+**Отказ от ответственности**:  
+Этот документ был переведен с помощью сервиса автоматического перевода [Co-op Translator](https://github.com/Azure/co-op-translator). Несмотря на наши усилия обеспечить точность, автоматические переводы могут содержать ошибки или неточности. Оригинальный документ на его родном языке следует считать авторитетным источником. Для получения критически важной информации рекомендуется профессиональный перевод человеком. Мы не несем ответственности за любые недоразумения или неправильные интерпретации, возникшие в результате использования данного перевода.

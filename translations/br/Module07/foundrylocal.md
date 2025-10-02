@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:34:28+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:36:56+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "br"
 }
@@ -42,7 +42,7 @@ Abra um terminal e execute o seguinte comando:
    brew install foundrylocal
 ```
 
-## 2) Noções Básicas do CLI (Três Categorias)
+## 2) Noções Básicas de CLI (Três Categorias)
 
 - Modelo:
 ```cmd
@@ -74,7 +74,7 @@ foundry service status
 ```
 Use o `http://localhost:<PORT>` informado como seu `base_url` com caminhos compatíveis com OpenAI (por exemplo, `/v1/chat/completions`).
 
-## 4) Teste Rápido via SDK Python do OpenAI
+## 4) Teste Rápido via SDK Python OpenAI
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Experiência Relacionada para Desenvolvedores no Windows
+## 7) Experiência Relacionada ao Desenvolvimento no Windows
 
 - Escolhas de IA local vs cloud no Windows, incluindo Foundry Local e Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- Toolkit de IA do VS Code com Foundry Local (use `foundry service status` para obter a URL do endpoint de chat):
+- VS Code AI Toolkit com Foundry Local (use `foundry service status` para obter a URL do endpoint de chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Próximo Desenvolvedor Windows](./windowdeveloper.md)
 
 ---
 
+**Aviso Legal**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automáticas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

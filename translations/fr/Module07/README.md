@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "e9e31a2b5ff0f6a682a258fa859a8ff5",
-  "translation_date": "2025-09-26T19:20:40+00:00",
+  "original_hash": "c86f39ae10a967d9b337934c067b64f9",
+  "translation_date": "2025-10-02T10:49:43+00:00",
   "source_file": "Module07/README.md",
   "language_code": "fr"
 }
@@ -17,12 +17,12 @@ Le NVIDIA Jetson Orin Nano marque une avancée dans le domaine du calcul Edge AI
 
 ### Caractéristiques principales
 - Offre jusqu'à 67 TOPS de performance IA, soit une amélioration de 1,7X par rapport à son prédécesseur
-- 1024 cœurs CUDA et jusqu'à 32 cœurs Tensor pour le traitement IA
+- 1024 cœurs CUDA et jusqu'à 32 Tensor Cores pour le traitement IA
 - CPU Arm Cortex-A78AE v8.2 64 bits à 6 cœurs avec une fréquence maximale de 1,5 GHz
-- Disponible à seulement 249 $, offrant aux développeurs, étudiants et créateurs une plateforme abordable et accessible
+- Prix abordable de seulement 249 $, offrant aux développeurs, étudiants et créateurs une plateforme accessible
 
 ### Applications
-Le Jetson Orin Nano excelle dans l'exécution de modèles modernes d'IA générative, notamment les transformateurs de vision, les grands modèles de langage et les modèles vision-langage. Il est spécialement conçu pour les cas d'utilisation de l'IA générative, permettant désormais d'exécuter plusieurs LLMs sur un appareil de la taille de la paume. Les cas d'utilisation populaires incluent la robotique alimentée par l'IA, les drones intelligents, les caméras intelligentes et les appareils autonomes en périphérie.
+Le Jetson Orin Nano excelle dans l'exécution de modèles modernes d'IA générative, notamment les transformateurs de vision, les grands modèles de langage et les modèles vision-langage. Conçu spécifiquement pour les cas d'utilisation de GenAI, il permet désormais de faire fonctionner plusieurs LLMs sur un appareil de la taille de la paume. Les cas d'utilisation populaires incluent la robotique alimentée par l'IA, les drones intelligents, les caméras intelligentes et les appareils autonomes en périphérie.
 
 **En savoir plus** : [Superordinateur Jetson Orin Nano de NVIDIA : La prochaine grande avancée en EdgeAI](https://medium.com/data-science-in-your-pocket/nvidias-jetson-orin-nano-supercomputer-the-next-big-thing-in-edgeai-e9eff687ae62)
 
@@ -32,7 +32,7 @@ Cette solution montre comment intégrer l'IA générative et les grands modèles
 
 ### Caractéristiques principales
 - Basé sur le framework .NET MAUI, offrant une base de code unique pour les applications Android et iOS
-- Intégration d'ONNX Runtime GenAI permettant d'exécuter des modèles d'IA générative directement sur les appareils mobiles
+- Intégration d'ONNX Runtime GenAI permettant l'exécution de modèles d'IA générative directement sur les appareils mobiles
 - Prise en charge de divers accélérateurs matériels adaptés aux appareils mobiles, notamment CPU, GPU et processeurs IA spécialisés
 - Optimisations spécifiques à la plateforme comme CoreML pour iOS et NNAPI pour Android via ONNX Runtime
 - Implémente le cycle complet de l'IA générative, y compris le prétraitement, l'inférence, le traitement des logits, la recherche et l'échantillonnage, ainsi que la gestion du cache KV
@@ -41,7 +41,7 @@ Cette solution montre comment intégrer l'IA générative et les grands modèles
 L'approche .NET MAUI permet aux développeurs de tirer parti de leurs compétences existantes en C# et .NET tout en créant des applications IA multiplateformes. Le framework ONNX Runtime GenAI prend en charge plusieurs architectures de modèles, notamment Llama, Mistral, Phi, Gemma, et bien d'autres. Les noyaux ARM64 optimisés accélèrent la multiplication matricielle quantifiée INT4, garantissant des performances efficaces sur le matériel mobile tout en conservant l'expérience de développement familière de .NET.
 
 ### Cas d'utilisation
-Cette solution est idéale pour les développeurs souhaitant créer des applications mobiles alimentées par l'IA en utilisant les technologies .NET, notamment des chatbots intelligents, des applications de reconnaissance d'images, des outils de traduction linguistique et des systèmes de recommandation personnalisés fonctionnant entièrement sur l'appareil pour une meilleure confidentialité et une capacité hors ligne.
+Cette solution est idéale pour les développeurs souhaitant créer des applications mobiles alimentées par l'IA en utilisant les technologies .NET, notamment des chatbots intelligents, des applications de reconnaissance d'image, des outils de traduction linguistique et des systèmes de recommandation personnalisés fonctionnant entièrement sur l'appareil pour une confidentialité accrue et une capacité hors ligne.
 
 **En savoir plus** : [Exemple .NET MAUI ONNX Runtime GenAI](https://github.com/microsoft/onnxruntime-genai/tree/jialli/genny-maui/examples/csharp/GennyMaui)
 
@@ -56,13 +56,13 @@ La solution EdgeAI basée sur Azure de Microsoft se concentre sur le déploiemen
 - Prise en charge des mises à jour et de la gestion continues des modèles
 
 ### Cas d'utilisation
-L'implémentation Azure EdgeAI excelle dans les scénarios nécessitant un déploiement IA de niveau entreprise avec des capacités de gestion cloud. Cela inclut le traitement intelligent de documents, l'analyse en temps réel et les flux de travail hybrides d'IA qui exploitent à la fois les ressources cloud et périphériques.
+L'implémentation Azure EdgeAI excelle dans les scénarios nécessitant un déploiement IA de niveau entreprise avec des capacités de gestion cloud. Cela inclut le traitement intelligent de documents, l'analyse en temps réel et les flux de travail hybrides d'IA exploitant à la fois les ressources cloud et périphériques.
 
-**En savoir plus** : [Moteur SLM EdgeAI Azure](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
+**En savoir plus** : [Moteur SLM Azure EdgeAI](https://github.com/microsoft/onnxruntime-genai/tree/main/examples/slm_engine)
 
 ## [4. EdgeAI avec Windows ML](./windowdeveloper.md)
 
-Windows ML représente le runtime de pointe de Microsoft, optimisé pour l'inférence de modèles performants sur l'appareil et le déploiement simplifié, servant de base à Windows AI Foundry. Cette plateforme permet aux développeurs de créer des applications Windows alimentées par l'IA, exploitant tout le potentiel du matériel PC.
+Windows ML représente le runtime de pointe de Microsoft, optimisé pour l'inférence performante des modèles sur l'appareil et le déploiement simplifié, servant de base à Windows AI Foundry. Cette plateforme permet aux développeurs de créer des applications Windows alimentées par l'IA, exploitant tout le potentiel du matériel PC.
 
 ### Capacités de la plateforme
 - Fonctionne sur tous les PC Windows 11 exécutant la version 24H2 (build 26100) ou supérieure
@@ -83,7 +83,7 @@ Foundry Local permet aux développeurs Windows et Mac de créer des applications
 
 ### Architecture technique
 - Combine le modèle de langage Phi, les embeddings locaux et le Kernel sémantique pour créer un scénario RAG
-- Utilise des embeddings comme vecteurs (tableaux) de valeurs en virgule flottante représentant le contenu et sa signification sémantique
+- Utilise des embeddings sous forme de vecteurs (tableaux) de valeurs en virgule flottante représentant le contenu et sa signification sémantique
 - Le Kernel sémantique agit comme l'orchestrateur principal, intégrant Phi et les composants intelligents pour créer un pipeline RAG fluide
 - Prise en charge des bases de données vectorielles locales, notamment SQLite et Qdrant
 
@@ -96,7 +96,7 @@ RAG, ou génération augmentée par récupération, est simplement une manière 
 
 ### Windows Foundry Local
 
-Microsoft Foundry Local fournit un serveur REST compatible OpenAI, alimenté par ONNX Runtime, pour exécuter des modèles localement sur Windows. Voici un résumé rapide validé ; consultez la documentation officielle pour plus de détails.
+Microsoft Foundry Local fournit un serveur REST compatible OpenAI, alimenté par ONNX Runtime, pour exécuter des modèles localement sur Windows. Voici un résumé rapide et validé ; consultez la documentation officielle pour plus de détails.
 
 - Commencer : https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Architecture : https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -144,11 +144,11 @@ La plateforme Windows AI Foundry offre une suite complète d'outils et d'API sp�
 Ce guide couvre :
 - Aperçu de la plateforme Windows AI Foundry et de ses composants
 - API Phi Silica pour une inférence efficace sur le matériel NPU
-- API de vision par ordinateur pour le traitement d'images et l'OCR
+- API de vision par ordinateur pour le traitement d'image et l'OCR
 - Intégration et optimisation du runtime Windows ML
 - CLI Foundry Local pour le développement et les tests locaux
 - Stratégies d'optimisation matérielle pour les appareils Windows
-- Exemples d'implémentation pratiques et meilleures pratiques
+- Exemples pratiques d'implémentation et meilleures pratiques
 
 ### [Kit d'outils IA pour le développement Edge AI](./aitoolkit.md)
 Pour les développeurs utilisant Visual Studio Code, l'extension AI Toolkit fournit un environnement de développement complet spécialement conçu pour la création, les tests et le déploiement d'applications Edge AI. Ce kit d'outils simplifie l'ensemble du flux de travail de développement Edge AI dans VS Code.
@@ -161,16 +161,20 @@ Le guide du kit d'outils IA couvre :
 - Intégration ONNX et Ollama pour les modèles en périphérie
 - Techniques de conversion et de quantification des modèles
 - Développement d'agents pour les scénarios en périphérie
-- Évaluation et surveillance des performances
+- Évaluation des performances et surveillance
 - Préparation au déploiement et meilleures pratiques
 
 ## Conclusion
 
 Ces cinq implémentations d'EdgeAI démontrent la maturité et la diversité des solutions Edge AI disponibles aujourd'hui. Des appareils en périphérie accélérés par le matériel comme le Jetson Orin Nano aux frameworks logiciels comme ONNX Runtime GenAI et Windows ML, les développeurs disposent d'options sans précédent pour déployer des applications intelligentes en périphérie.
 
-Le fil conducteur de toutes ces plateformes est la démocratisation des capacités d'IA, rendant l'apprentissage automatique sophistiqué accessible aux développeurs de différents niveaux de compétence et cas d'utilisation. Que ce soit pour créer des applications mobiles, des logiciels de bureau ou des systèmes embarqués, ces solutions EdgeAI fournissent la base pour la prochaine génération d'applications intelligentes fonctionnant efficacement et en toute confidentialité en périphérie.
+Le fil conducteur de toutes ces plateformes est la démocratisation des capacités d'IA, rendant l'apprentissage automatique sophistiqué accessible aux développeurs de différents niveaux de compétence et cas d'utilisation. Que ce soit pour créer des applications mobiles, des logiciels de bureau ou des systèmes embarqués, ces solutions EdgeAI fournissent la base de la prochaine génération d'applications intelligentes fonctionnant efficacement et en toute confidentialité en périphérie.
 
 Chaque plateforme offre des avantages uniques : Jetson Orin Nano pour le calcul en périphérie accéléré par le matériel, ONNX Runtime GenAI pour le développement mobile multiplateforme, Azure EdgeAI pour l'intégration cloud-périphérie d'entreprise, Windows ML pour les applications natives Windows, et Foundry Local pour les implémentations RAG axées sur la confidentialité. Ensemble, elles représentent un écosystème complet pour le développement EdgeAI.
 
+[Prochain Kit d'outils IA](aitoolkit.md)
+
 ---
 
+**Avertissement** :  
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.

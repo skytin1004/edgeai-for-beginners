@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:33:41+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:31:46+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "pt"
 }
@@ -42,7 +42,7 @@ Abra um terminal e execute o seguinte comando:
    brew install foundrylocal
 ```
 
-## 2) Noções Básicas do CLI (Três Categorias)
+## 2) Noções Básicas de CLI (Três Categorias)
 
 - Modelo:
 ```cmd
@@ -64,7 +64,7 @@ foundry cache list
 
 Notas:
 - O serviço expõe uma API REST compatível com OpenAI. A porta do endpoint é alocada dinamicamente; use `foundry service status` para descobri-la.
-- Utilize os SDKs para maior comodidade; eles gerem automaticamente a descoberta do endpoint onde suportado.
+- Utilize os SDKs para maior conveniência; eles gerem automaticamente a descoberta de endpoints onde suportado.
 
 ## 3) Descobrir o Endpoint Local (Porta Dinâmica)
 
@@ -72,7 +72,7 @@ O Foundry Local atribui uma porta dinâmica cada vez que o serviço é iniciado:
 ```cmd
 foundry service status
 ```
-Use o `http://localhost:<PORT>` reportado como o seu `base_url` com caminhos compatíveis com OpenAI (por exemplo, `/v1/chat/completions`).
+Use o endereço `http://localhost:<PORT>` como o seu `base_url` com caminhos compatíveis com OpenAI (por exemplo, `/v1/chat/completions`).
 
 ## 4) Teste Rápido via OpenAI Python SDK
 
@@ -92,7 +92,7 @@ PY
 Referências:
 - Integração com SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Traga o Seu Próprio Modelo (Compile com Olive)
+## 5) Trazer o Seu Próprio Modelo (Compilar com Olive)
 
 Se precisar de um modelo que não esteja no catálogo, compile-o para ONNX para uso no Foundry Local utilizando Olive.
 
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit com Foundry Local (use `foundry service status` para obter o URL do endpoint de chat):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Próximo Desenvolvedor Windows](./windowdeveloper.md)
+
 ---
 
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, esteja ciente de que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.

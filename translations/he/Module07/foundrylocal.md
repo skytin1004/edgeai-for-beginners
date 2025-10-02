@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:47:12+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:36:28+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "he"
 }
@@ -80,7 +80,7 @@ Foundry Local מקצה פורט דינמי בכל פעם שהשירות מתחי
 foundry service status
 ```
   
-השתמשו בכתובת `http://localhost:<PORT>` שדווחה כ-`base_url` שלכם עם נתיבים תואמי OpenAI (לדוגמה, `/v1/chat/completions`).  
+השתמשו ב-`http://localhost:<PORT>` שדווח כ-`base_url` שלכם עם נתיבים תואמי OpenAI (לדוגמה, `/v1/chat/completions`).  
 
 ## 4) בדיקה מהירה באמצעות OpenAI Python SDK
 
@@ -130,7 +130,7 @@ foundry cache remove <model>
 foundry cache cd <path>
 ```
   
-- עדכון לגרסת התצוגה האחרונה:  
+- עדכון לגרסת התצוגה המקדימה האחרונה:  
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -140,8 +140,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - בחירות AI מקומי מול ענן ב-Windows, כולל Foundry Local ו-Windows ML:  
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers  
-- ערכת כלים AI ב-VS Code עם Foundry Local (השתמשו ב-`foundry service status` כדי לקבל את כתובת נקודת הקצה של הצ'אט):  
+- ערכת כלים AI של VS Code עם Foundry Local (השתמשו ב-`foundry service status` כדי לקבל את כתובת URL של נקודת הקצה לשיחה):  
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components  
+
+[מפתח Windows הבא](./windowdeveloper.md)  
 
 ---
 
+**כתב ויתור**:  
+מסמך זה תורגם באמצעות שירות תרגום מבוסס AI [Co-op Translator](https://github.com/Azure/co-op-translator). למרות שאנו שואפים לדיוק, יש לקחת בחשבון שתרגומים אוטומטיים עשויים להכיל שגיאות או אי דיוקים. המסמך המקורי בשפתו המקורית צריך להיחשב כמקור סמכותי. עבור מידע קריטי, מומלץ להשתמש בתרגום מקצועי על ידי אדם. איננו נושאים באחריות לאי הבנות או לפרשנויות שגויות הנובעות משימוש בתרגום זה.

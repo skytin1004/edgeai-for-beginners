@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T19:16:16+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T14:21:49+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "ro"
 }
@@ -11,326 +11,379 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introducere
 
-Bine ai venit la ghidul complet pentru utilizarea AI Toolkit în Visual Studio Code pentru dezvoltarea Edge AI. Pe măsură ce inteligența artificială se mută de la computarea centralizată în cloud la dispozitivele distribuite de tip edge, dezvoltatorii au nevoie de instrumente puternice și integrate care să gestioneze provocările unice ale implementării pe edge - de la constrângeri de resurse la cerințe de operare offline.
+Bine ați venit la ghidul complet pentru utilizarea AI Toolkit în Visual Studio Code pentru dezvoltarea Edge AI. Pe măsură ce inteligența artificială se mută de la calculul centralizat în cloud la dispozitivele distribuite de tip edge, dezvoltatorii au nevoie de instrumente puternice și integrate care să gestioneze provocările unice ale implementării la margine - de la constrângerile de resurse la cerințele de funcționare offline.
 
-AI Toolkit pentru Visual Studio Code acoperă acest gol, oferind un mediu complet de dezvoltare special conceput pentru construirea, testarea și optimizarea aplicațiilor AI care rulează eficient pe dispozitive edge. Indiferent dacă dezvolți pentru senzori IoT, dispozitive mobile, sisteme integrate sau servere edge, acest toolkit simplifică întregul flux de lucru de dezvoltare în cadrul mediului familiar VS Code.
+AI Toolkit pentru Visual Studio Code acoperă acest gol, oferind un mediu complet de dezvoltare special conceput pentru construirea, testarea și optimizarea aplicațiilor AI care rulează eficient pe dispozitive edge. Indiferent dacă dezvoltați pentru senzori IoT, dispozitive mobile, sisteme integrate sau servere edge, acest toolkit simplifică întregul flux de lucru de dezvoltare în cadrul mediului familiar VS Code.
 
-Acest ghid te va conduce prin conceptele esențiale, instrumentele și cele mai bune practici pentru utilizarea AI Toolkit în proiectele tale Edge AI, de la selecția inițială a modelului până la implementarea în producție.
+Acest ghid vă va conduce prin conceptele esențiale, instrumentele și cele mai bune practici pentru utilizarea AI Toolkit în proiectele Edge AI, de la selecția inițială a modelului până la implementarea în producție.
 
 ## Prezentare Generală
 
-AI Toolkit oferă un mediu de dezvoltare integrat pentru întregul ciclu de viață al aplicațiilor Edge AI în cadrul VS Code. Acesta oferă integrare fără probleme cu modele AI populare de la furnizori precum OpenAI, Anthropic, Google și GitHub, susținând în același timp implementarea locală a modelelor prin ONNX și Ollama - capabilități esențiale pentru aplicațiile Edge AI care necesită inferență pe dispozitiv.
+AI Toolkit pentru Visual Studio Code este o extensie puternică ce simplifică dezvoltarea agenților și crearea aplicațiilor AI. Toolkit-ul oferă capabilități complete pentru explorarea, evaluarea și implementarea modelelor AI de la o gamă largă de furnizori—incluzând Anthropic, OpenAI, GitHub, Google—în timp ce susține execuția locală a modelelor folosind ONNX și Ollama.
 
-Ceea ce diferențiază AI Toolkit pentru dezvoltarea Edge AI este concentrarea pe întregul pipeline de implementare edge. Spre deosebire de instrumentele tradiționale de dezvoltare AI care vizează în principal implementarea în cloud, AI Toolkit include funcționalități specializate pentru optimizarea modelelor, testarea în condiții de resurse limitate și evaluarea performanței specifice edge. Toolkit-ul înțelege că dezvoltarea Edge AI necesită considerații diferite - dimensiuni mai mici ale modelelor, timpi de inferență mai rapizi, capacitate offline și optimizări specifice hardware.
+Ceea ce diferențiază AI Toolkit este abordarea sa cuprinzătoare asupra întregului ciclu de viață al dezvoltării AI. Spre deosebire de instrumentele tradiționale de dezvoltare AI care se concentrează pe aspecte individuale, AI Toolkit oferă un mediu integrat care acoperă descoperirea modelelor, experimentarea, dezvoltarea agenților, evaluarea și implementarea—totul în cadrul mediului familiar VS Code.
 
-Platforma susține multiple scenarii de implementare, de la inferență simplă pe dispozitiv la arhitecturi complexe multi-model pe edge. Oferă instrumente pentru conversia, cuantizarea și optimizarea modelelor, esențiale pentru o implementare de succes pe edge, menținând în același timp productivitatea dezvoltatorului caracteristică VS Code.
+Platforma este special concepută pentru prototipare rapidă și implementare în producție, cu funcții precum generarea de prompturi, inițieri rapide, integrarea fără probleme a instrumentelor MCP (Model Context Protocol) și capabilități extinse de evaluare. Pentru dezvoltarea Edge AI, acest lucru înseamnă că puteți dezvolta, testa și optimiza eficient aplicații AI pentru scenarii de implementare la margine, menținând în același timp întregul flux de lucru de dezvoltare în VS Code.
 
 ## Obiective de Învățare
 
-Până la finalul acestui ghid, vei putea:
+Până la finalul acestui ghid, veți putea:
 
 ### Competențe de Bază
-- **Instala și configura** AI Toolkit pentru Visual Studio Code pentru fluxurile de lucru Edge AI
-- **Naviga și utiliza** interfața AI Toolkit, inclusiv Catalogul de Modele, Playground și Agent Builder
-- **Selecta și evalua** modele AI potrivite pentru implementarea pe edge, bazate pe performanță și constrângeri de resurse
-- **Converti și optimiza** modele utilizând formatul ONNX și tehnici de cuantizare pentru dispozitive edge
+- **Instala și configura** AI Toolkit pentru Visual Studio Code pentru fluxurile de lucru de dezvoltare Edge AI
+- **Naviga și utiliza** interfața AI Toolkit, incluzând Catalogul de Modele, Playground și Agent Builder
+- **Selecta și evalua** modele AI potrivite pentru implementarea la margine, bazate pe performanță și constrângeri de resurse
+- **Converti și optimiza** modele folosind formatul ONNX și tehnici de cuantizare pentru dispozitive edge
 
 ### Abilități de Dezvoltare Edge AI
-- **Proiecta și implementa** aplicații Edge AI utilizând mediul de dezvoltare integrat
-- **Testa modele** în condiții similare edge, utilizând inferență locală și monitorizarea resurselor
-- **Crea și personaliza** agenți AI optimizați pentru scenarii de implementare pe edge
-- **Evalua performanța modelelor** utilizând metrici relevante pentru computarea edge (latență, utilizarea memoriei, acuratețe)
+- **Proiecta și implementa** aplicații Edge AI folosind mediul integrat de dezvoltare
+- **Testa modele** în condiții similare cu cele de la margine, utilizând inferența locală și monitorizarea resurselor
+- **Crea și personaliza** agenți AI optimizați pentru scenarii de implementare la margine
+- **Evalua performanța modelelor** utilizând metrici relevante pentru calculul la margine (latență, utilizarea memoriei, acuratețe)
 
 ### Optimizare și Implementare
-- **Aplica tehnici de cuantizare și pruning** pentru reducerea dimensiunii modelelor, menținând performanța acceptabilă
-- **Optimiza modele** pentru platforme hardware edge specifice, inclusiv accelerare CPU, GPU și NPU
-- **Implementa cele mai bune practici** pentru dezvoltarea Edge AI, inclusiv gestionarea resurselor și strategii de fallback
+- **Aplica tehnici de cuantizare și reducere** pentru a micșora dimensiunea modelelor, menținând performanța acceptabilă
+- **Optimiza modele** pentru platforme hardware edge specifice, incluzând accelerarea CPU, GPU și NPU
+- **Implementa cele mai bune practici** pentru dezvoltarea Edge AI, incluzând gestionarea resurselor și strategii de rezervă
 - **Pregăti modele și aplicații** pentru implementarea în producție pe dispozitive edge
 
 ### Concepte Avansate Edge AI
-- **Integra cu framework-uri Edge AI** precum ONNX Runtime, Windows ML și TensorFlow Lite
+- **Integra cu cadre Edge AI** incluzând ONNX Runtime, Windows ML și TensorFlow Lite
 - **Implementa arhitecturi multi-model** și scenarii de învățare federată pentru medii edge
-- **Depana probleme comune Edge AI** precum constrângerile de memorie, viteza inferenței și compatibilitatea hardware
+- **Depana probleme comune Edge AI** incluzând constrângerile de memorie, viteza inferenței și compatibilitatea hardware
 - **Proiecta strategii de monitorizare și logare** pentru aplicațiile Edge AI în producție
 
 ### Aplicare Practică
 - **Construi soluții Edge AI complete** de la selecția modelului până la implementare
-- **Demonstra competență** în fluxurile de lucru specifice edge și tehnicile de optimizare
-- **Aplica conceptele învățate** la cazuri reale de utilizare Edge AI, inclusiv IoT, mobile și aplicații integrate
+- **Demonstra competență** în fluxurile de lucru specifice dezvoltării la margine și tehnicile de optimizare
+- **Aplica conceptele învățate** la cazuri reale de utilizare Edge AI, incluzând IoT, mobil și aplicații integrate
 - **Evalua și compara** diferite strategii de implementare Edge AI și compromisurile acestora
 
-## Funcționalități Cheie pentru Dezvoltarea Edge AI
+## Funcții Cheie pentru Dezvoltarea Edge AI
 
 ### 1. Catalog de Modele și Descoperire
-- **Suport pentru Modele Locale**: Descoperă și accesează modele AI optimizate special pentru implementarea pe edge
-- **Integrare ONNX**: Accesează modele în format ONNX pentru inferență eficientă pe edge
-- **Suport Ollama**: Utilizează modele care rulează local prin Ollama pentru confidențialitate și operare offline
-- **Comparare Modele**: Compară modele pentru a găsi echilibrul optim între performanță și consumul de resurse pentru dispozitive edge
+- **Suport Multi-Furnizor**: Navigați și accesați modele AI de la Anthropic, OpenAI, GitHub, Google și alți furnizori
+- **Integrare Locală a Modelelor**: Descoperire simplificată a modelelor ONNX și Ollama pentru implementarea la margine
+- **Modele GitHub**: Integrare directă cu găzduirea modelelor GitHub pentru acces simplificat
+- **Comparație Modele**: Comparați modele unul lângă altul pentru a găsi echilibrul optim pentru constrângerile dispozitivelor edge
 
 ### 2. Playground Interactiv
-- **Mediu de Testare Locală**: Testează modele local înainte de implementarea pe edge
-- **Experimentare Multi-modală**: Testează cu imagini, text și alte tipuri de input tipice scenariilor edge
-- **Ajustare Parametri**: Experimentează cu diferiți parametri ai modelului pentru optimizare în condiții edge
-- **Monitorizare Performanță în Timp Real**: Observă viteza inferenței și utilizarea resurselor în timpul dezvoltării
+- **Mediu de Testare Interactiv**: Experimentare rapidă cu capabilitățile modelelor într-un mediu controlat
+- **Suport Multi-modal**: Testați cu imagini, text și alte intrări tipice în scenarii edge
+- **Experimentare în Timp Real**: Feedback imediat asupra răspunsurilor și performanței modelelor
+- **Optimizare Parametri**: Ajustați parametrii modelelor pentru cerințele de implementare la margine
 
-### 3. Agent Builder pentru Aplicații Edge
-- **Inginerie de Prompts**: Creează prompts optimizate care funcționează eficient cu modele mai mici pentru edge
-- **Integrare MCP Tool**: Integrează instrumente Model Context Protocol pentru capabilități avansate ale agenților edge
-- **Generare Cod**: Generează cod gata de producție optimizat pentru scenarii de implementare pe edge
-- **Output Structurat**: Proiectează agenți care oferă răspunsuri consistente și structurate, potrivite pentru aplicații edge
+### 3. Builder de Prompturi (Agenți)
+- **Generare Naturală de Limbaj**: Generați prompturi inițiale folosind descrieri în limbaj natural
+- **Rafinare Iterativă**: Îmbunătățiți prompturile bazate pe răspunsurile și performanța modelelor
+- **Decompoziție de Sarcini**: Fragmentați sarcini complexe cu lanțuri de prompturi și ieșiri structurate
+- **Suport pentru Variabile**: Utilizați variabile în prompturi pentru comportament dinamic al agenților
+- **Generare Cod de Producție**: Generați cod gata de producție pentru dezvoltare rapidă de aplicații
 
-### 4. Evaluare și Testare Modele
-- **Metrici de Performanță**: Evaluează modele utilizând metrici relevante pentru implementarea pe edge (latență, utilizarea memoriei, acuratețe)
-- **Testare Batch**: Testează simultan multiple configurații de modele pentru a găsi setările optime edge
-- **Evaluare Personalizată**: Creează criterii de evaluare personalizate specifice cazurilor de utilizare Edge AI
-- **Profilare Resurse**: Analizează cerințele de memorie și computare pentru planificarea implementării pe edge
+### 4. Execuție și Evaluare în Masă
+- **Testare Multi-Model**: Rulați mai multe prompturi pe modele selectate simultan
+- **Testare Eficientă la Scară**: Testați diverse intrări și configurații eficient
+- **Cazuri de Testare Personalizate**: Rulați agenți cu cazuri de testare pentru validarea funcționalității
+- **Comparație Performanță**: Comparați rezultatele între diferite modele și configurații
 
-### 5. Conversie și Optimizare Modele
-- **Conversie ONNX**: Convertește modele din diverse formate în ONNX pentru compatibilitate edge
-- **Cuantizare**: Reduce dimensiunea modelelor și îmbunătățește viteza inferenței prin tehnici de cuantizare
-- **Optimizare Hardware**: Optimizează modele pentru hardware edge specific (CPU, GPU, NPU)
-- **Transformare Format**: Transformă modele din Hugging Face și alte surse pentru implementare pe edge
+### 5. Evaluarea Modelelor cu Seturi de Date
+- **Metrici Standard**: Testați modele AI folosind evaluatori încorporați (scor F1, relevanță, similaritate, coerență)
+- **Evaluatori Personalizați**: Creați propriile metrici de evaluare pentru cazuri de utilizare specifice
+- **Integrare Seturi de Date**: Testați modele împotriva seturilor de date cuprinzătoare
+- **Măsurarea Performanței**: Cuantificați performanța modelelor pentru decizii de implementare la margine
 
-### 6. Fine-tuning pentru Scenarii Edge
-- **Adaptare Domeniu**: Personalizează modele pentru cazuri de utilizare și medii edge specifice
-- **Antrenare Locală**: Antrenează modele local cu suport GPU pentru cerințe specifice edge
-- **Integrare Azure**: Utilizează Azure Container Apps pentru fine-tuning bazat pe cloud înainte de implementarea pe edge
-- **Transfer Learning**: Adaptează modele pre-antrenate pentru sarcini și constrângeri specifice edge
+### 6. Capabilități de Fine-tuning
+- **Personalizare Model**: Personalizați modele pentru cazuri de utilizare și domenii specifice
+- **Adaptare Specializată**: Adaptați modele la cerințe și domenii specializate
+- **Optimizare Edge**: Ajustați modele special pentru constrângerile de implementare la margine
+- **Antrenament Specific Domeniului**: Creați modele adaptate la cazuri de utilizare edge specifice
 
-### 7. Monitorizare Performanță și Tracing
-- **Analiză Performanță Edge**: Monitorizează performanța modelelor în condiții similare edge
-- **Colectare Trace**: Colectează date detaliate de performanță pentru optimizare
-- **Identificare Bottleneck**: Identifică probleme de performanță înainte de implementarea pe dispozitive edge
-- **Monitorizare Utilizare Resurse**: Monitorizează memoria, CPU și timpul de inferență pentru optimizare edge
+### 7. Integrare Instrumente MCP
+- **Conectivitate Instrumente Externe**: Conectați agenți la instrumente externe prin servere Model Context Protocol
+- **Acțiuni în Lumea Reală**: Permiteți agenților să interogheze baze de date, să acceseze API-uri sau să execute logică personalizată
+- **Servere MCP Existente**: Utilizați instrumente din protocoale de comandă (stdio) sau HTTP (evenimente server-sent)
+- **Dezvoltare MCP Personalizată**: Construiți și creați noi servere MCP cu testare în Agent Builder
+
+### 8. Dezvoltare și Testare Agenți
+- **Suport pentru Apelarea Funcțiilor**: Permiteți agenților să invoce funcții externe dinamic
+- **Testare Integrare în Timp Real**: Testați integrările cu rulări în timp real și utilizarea instrumentelor
+- **Versionare Agenți**: Controlul versiunilor pentru agenți cu capabilități de comparație a rezultatelor evaluării
+- **Depanare și Urmărire**: Capabilități locale de urmărire și depanare pentru dezvoltarea agenților
 
 ## Flux de Lucru pentru Dezvoltarea Edge AI
 
-### Faza 1: Descoperire și Selecție Modele
-1. **Explorează Catalogul de Modele**: Utilizează catalogul pentru a găsi modele potrivite pentru implementarea pe edge
-2. **Compară Performanța**: Evaluează modele bazate pe dimensiune, acuratețe și viteza inferenței
-3. **Testează Local**: Utilizează modele Ollama sau ONNX pentru testare locală înainte de implementare
-4. **Evaluează Cerințele de Resurse**: Determină nevoile de memorie și computare pentru dispozitivele edge țintă
+### Faza 1: Descoperirea și Selecția Modelului
+1. **Explorați Catalogul de Modele**: Utilizați catalogul de modele pentru a găsi modele potrivite pentru implementarea la margine
+2. **Comparați Performanța**: Evaluați modelele bazate pe dimensiune, acuratețe și viteza inferenței
+3. **Testați Local**: Utilizați modele Ollama sau ONNX pentru testare locală înainte de implementarea la margine
+4. **Evaluați Cerințele de Resurse**: Determinați nevoile de memorie și calcul pentru dispozitivele edge țintă
 
-### Faza 2: Optimizare Modele
-1. **Convertește în ONNX**: Convertește modelele selectate în format ONNX pentru compatibilitate edge
-2. **Aplică Cuantizare**: Reduce dimensiunea modelelor prin cuantizare INT8 sau INT4
-3. **Optimizare Hardware**: Optimizează pentru hardware edge țintă (ARM, x86, acceleratoare specializate)
-4. **Validare Performanță**: Validează că modelele optimizate mențin acuratețea acceptabilă
+### Faza 2: Optimizarea Modelului
+1. **Convertiți în ONNX**: Convertiți modelele selectate în format ONNX pentru compatibilitate edge
+2. **Aplicați Cuantizare**: Reduceți dimensiunea modelelor prin cuantizare INT8 sau INT4
+3. **Optimizare Hardware**: Optimizați pentru hardware edge țintă (ARM, x86, acceleratoare specializate)
+4. **Validare Performanță**: Validați că modelele optimizate mențin acuratețea acceptabilă
 
-### Faza 3: Dezvoltare Aplicații
-1. **Proiectare Agenți**: Utilizează Agent Builder pentru a crea agenți AI optimizați pentru edge
-2. **Inginerie de Prompts**: Dezvoltă prompts care funcționează eficient cu modele mai mici
-3. **Testare Integrare**: Testează agenții în condiții simulate edge
-4. **Generare Cod**: Generează cod de producție optimizat pentru implementare pe edge
+### Faza 3: Dezvoltarea Aplicației
+1. **Proiectare Agenți**: Utilizați Agent Builder pentru a crea agenți AI optimizați pentru margine
+2. **Inginerie Prompturi**: Dezvoltați prompturi care funcționează eficient cu modele edge mai mici
+3. **Testare Integrare**: Testați agenții în condiții simulate de margine
+4. **Generare Cod**: Generați cod de producție optimizat pentru implementarea la margine
 
 ### Faza 4: Evaluare și Testare
-1. **Evaluare Batch**: Testează multiple configurații pentru a găsi setările optime edge
-2. **Profilare Performanță**: Analizează viteza inferenței, utilizarea memoriei și acuratețea
-3. **Simulare Edge**: Testează în condiții similare mediului de implementare edge țintă
-4. **Testare de Stres**: Evaluează performanța sub diverse condiții de încărcare
+1. **Evaluare în Masă**: Testați multiple configurații pentru a găsi setările optime edge
+2. **Profilare Performanță**: Analizați viteza inferenței, utilizarea memoriei și acuratețea
+3. **Simulare Margine**: Testați în condiții similare cu mediul de implementare edge țintă
+4. **Testare de Rezistență**: Evaluați performanța sub diverse condiții de încărcare
 
-### Faza 5: Pregătire pentru Implementare
-1. **Optimizare Finală**: Aplică optimizări finale bazate pe rezultatele testării
-2. **Ambalare pentru Implementare**: Pregătește modele și cod pentru implementarea pe edge
-3. **Documentare**: Documentează cerințele de implementare și configurația
-4. **Setare Monitorizare**: Pregătește monitorizarea și logarea pentru implementarea în producție
+### Faza 5: Pregătirea pentru Implementare
+1. **Optimizare Finală**: Aplicați optimizări finale bazate pe rezultatele testării
+2. **Ambalare pentru Implementare**: Pregătiți modelele și codul pentru implementarea la margine
+3. **Documentare**: Documentați cerințele și configurația implementării
+4. **Configurare Monitorizare**: Pregătiți monitorizarea și logarea pentru implementarea la margine
 
-## Public Țintă pentru Dezvoltarea Edge AI
+## Publicul Țintă pentru Dezvoltarea Edge AI
 
 ### Dezvoltatori Edge AI
 - Dezvoltatori de aplicații care construiesc dispozitive edge și soluții IoT alimentate de AI
 - Dezvoltatori de sisteme integrate care integrează capabilități AI în dispozitive cu resurse limitate
-- Dezvoltatori mobile care creează aplicații AI pe dispozitiv pentru smartphone-uri și tablete
+- Dezvoltatori de aplicații mobile care creează aplicații AI pe dispozitive
 
 ### Ingineri Edge AI
-- Ingineri AI care optimizează modele pentru implementarea pe edge și gestionează pipeline-uri de inferență
+- Ingineri AI care optimizează modele pentru implementarea la margine și gestionează fluxurile de inferență
 - Ingineri DevOps care implementează și gestionează modele AI pe infrastructura edge distribuită
 - Ingineri de performanță care optimizează sarcinile AI pentru constrângerile hardware edge
 
 ### Cercetători și Educatori
-- Cercetători AI care dezvoltă modele și algoritmi eficienți pentru computarea edge
+- Cercetători AI care dezvoltă modele și algoritmi eficienți pentru calculul la margine
 - Educatori care predau concepte Edge AI și demonstrează tehnici de optimizare
 - Studenți care învață despre provocările și soluțiile în implementarea Edge AI
 
 ## Cazuri de Utilizare Edge AI
 
 ### Dispozitive IoT Inteligente
-- **Recunoaștere Imagine în Timp Real**: Implementarea modelelor de viziune computerizată pe camere și senzori IoT
-- **Procesare Vocală**: Implementarea recunoașterii vocale și procesării limbajului natural pe difuzoare inteligente
-- **Întreținere Predictivă**: Rularea modelelor de detectare a anomaliilor pe dispozitive industriale edge
-- **Monitorizare Ambientală**: Implementarea modelelor de analiză a datelor de senzori pentru aplicații de mediu
+- **Recunoaștere Imagine în Timp Real**: Implementați modele de viziune computerizată pe camere și senzori IoT
+- **Procesare Vocală**: Implementați recunoaștere vocală și procesare de limbaj natural pe difuzoare inteligente
+- **Întreținere Predictivă**: Rulați modele de detectare a anomaliilor pe dispozitive industriale edge
+- **Monitorizare Ambientală**: Implementați modele de analiză a datelor senzoriale pentru aplicații de mediu
 
 ### Aplicații Mobile și Integrate
-- **Traducere pe Dispozitiv**: Implementarea modelelor de traducere lingvistică care funcționează offline
-- **Realitate Augmentată**: Implementarea recunoașterii și urmărirea obiectelor în timp real pentru aplicații AR
-- **Monitorizare Sănătate**: Rularea modelelor de analiză a sănătății pe dispozitive purtabile și echipamente medicale
-- **Sisteme Autonome**: Implementarea modelelor de luare a deciziilor pentru drone, roboți și vehicule
+- **Traducere pe Dispozitiv**: Implementați modele de traducere lingvistică care funcționează offline
+- **Realitate Augmentată**: Implementați recunoaștere și urmărire de obiecte în timp real pentru aplicații AR
+- **Monitorizare Sănătate**: Rulați modele de analiză a sănătății pe dispozitive purtabile și echipamente medicale
+- **Sisteme Autonome**: Implementați modele de luare a deciziilor pentru drone, roboți și vehicule
 
-### Infrastructură de Computare Edge
-- **Centre de Date Edge**: Implementarea modelelor AI în centre de date edge pentru aplicații cu latență redusă
-- **Integrare CDN**: Integrarea capabilităților de procesare AI în rețelele de livrare de conținut
-- **Edge 5G**: Utilizarea computării edge 5G pentru aplicații alimentate de AI
-- **Computare Fog**: Implementarea procesării AI în medii de computare fog
+### Infrastructură de Calcul Edge
+- **Centre de Date Edge**: Implementați modele AI în centre de date edge pentru aplicații cu latență redusă
+- **Integrare CDN**: Integrați capabilități de procesare AI în rețelele de livrare de conținut
+- **Edge 5G**: Utilizați calculul edge 5G pentru aplicații alimentate de AI
+- **Calcul Fog**: Implementați procesare AI în medii de calcul fog
 
 ## Instalare și Configurare
 
-### Instalare Rapidă
-Instalează extensia AI Toolkit direct din Visual Studio Code Marketplace:
+### Instalarea Extensiei
+Instalați extensia AI Toolkit direct din Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**ID Extensie**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Metode de Instalare**:
+1. **Marketplace VS Code**: Căutați "AI Toolkit" în vizualizarea Extensii
+2. **Linie de Comandă**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Instalare Directă**: Descărcați de la [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Cerințe Prealabile pentru Dezvoltarea Edge AI
-- **ONNX Runtime**: Instalează ONNX Runtime pentru inferența modelelor
-- **Ollama** (Opțional): Instalează Ollama pentru servirea modelelor local
-- **Mediu Python**: Configurează Python cu bibliotecile AI necesare
-- **Instrumente Hardware Edge**: Instalează instrumente de dezvoltare specifice hardware (CUDA, OpenVINO, etc.)
+- **Visual Studio Code**: Recomandată ultima versiune
+- **Mediu Python**: Python 3.8+ cu biblioteci AI necesare
+- **ONNX Runtime** (Opțional): Pentru inferența modelelor ONNX
+- **Ollama** (Opțional): Pentru servirea locală a modelelor
+- **Instrumente de Accelerare Hardware**: CUDA, OpenVINO sau acceleratoare specifice platformei
 
 ### Configurare Inițială
-1. Deschide VS Code și instalează extensia AI Toolkit
-2. Configurează sursele de modele (ONNX, Ollama, furnizori cloud)
-3. Configurează mediul de dezvoltare local pentru testarea edge
-4. Configurează opțiunile de accelerare hardware pentru mașina ta de dezvoltare
+1. **Activarea Extensiei**: Deschideți VS Code și verificați dacă AI Toolkit apare în Bara de Activitate
+2. **Configurare Furnizori Modele**: Configurați accesul la GitHub, OpenAI, Anthropic sau alți furnizori de modele
+3. **Mediu Local**: Configurați mediul Python și instalați pachetele necesare
+4. **Accelerare Hardware**: Configurați accelerarea GPU/NPU dacă este disponibilă
+5. **Integrare MCP**: Configurați serverele Model Context Protocol dacă este necesar
 
-## Începutul Dezvoltării Edge AI
+### Lista de Verificare pentru Prima Configurare
+- [ ] Extensia AI Toolkit instalată și activată
+- [ ] Catalogul de modele accesibil și modelele descoperibile
+- [ ] Playground funcțional pentru testarea modelelor
+- [ ] Agent Builder accesibil pentru dezvoltarea prompturilor
+- [ ] Mediu de dezvoltare local configurat
+- [ ] Accelerare hardware (dacă este disponibilă) configurată corect
 
-### Pasul 1: Selecția Modelului
-1. Deschide vizualizarea AI Toolkit în Activity Bar
-2. Răsfoiește Catalogul de Modele pentru modele compatibile cu edge
-3. Filtrează după dimensiunea modelului, format (ONNX) și caracteristici de performanță
-4. Compară modele utilizând instrumentele de comparare integrate
+## Începutul cu AI Toolkit
 
-### Pasul 2: Testare Locală
-1. Utilizează Playground pentru a testa modelele selectate local
-2. Experimentează cu diferiți prompts și parametri
-3. Monitorizează metricile de performanță în timpul testării
-4. Evaluează răspunsurile modelelor pentru cerințele cazurilor de utilizare edge
+### Ghid de Start Rapid
 
-### Pasul 3: Optimizarea Modelului
-1. Utilizează instrumentele de conversie a modelelor pentru optimizare pentru implementarea pe edge
-2. Aplică cuantizare pentru reducerea dimensiunii modelului
-3. Testează modelele optimizate pentru a asigura performanța acceptabilă
-4. Documentează setările de optimizare și compromisurile de performanță
+Recomandăm să începeți cu modelele găzduite de Git
+2. Generați prompturi de început folosind descrieri în limbaj natural  
+3. Iterați și rafinați prompturile pe baza răspunsurilor modelului  
+4. Integrați instrumentele MCP pentru capabilități avansate ale agenților  
 
-### Pasul 4: Dezvoltarea Agenților
-1. Utilizează Agent Builder pentru a crea agenți AI optimizați pentru edge
-2. Dezvoltă prompts care funcționează eficient cu modele mai mici
-3. Integrează instrumentele și API-urile necesare pentru scenarii edge
-4. Testează agenții în condiții simulate edge
+#### Pasul 3: Testare și Evaluare  
+1. Utilizați **Bulk Run** pentru a testa mai multe prompturi pe modele selectate  
+2. Rulați agenți cu cazuri de test pentru a valida funcționalitatea  
+3. Evaluați acuratețea și performanța folosind metrici integrate sau personalizate  
+4. Comparați diferite modele și configurații  
 
-### Pasul 5: Evaluare și Implementare
-1. Utilizează evaluarea în masă pentru a testa multiple configurații
-2. Profilează performanța în diverse condiții
-3. Pregătește pachetele de implementare pentru dispozitivele edge țintă
-4. Configurează monitorizarea și logarea pentru implementarea în producție
+#### Pasul 4: Ajustare și Optimizare  
+1. Personalizați modelele pentru cazuri de utilizare specifice  
+2. Aplicați ajustări specifice domeniului  
+3. Optimizați pentru constrângerile de implementare la margine  
+4. Versiuneați și comparați diferite configurații ale agenților  
 
-## Cele Mai Bune Practici pentru Dezvoltarea Edge AI
+#### Pasul 5: Pregătirea pentru Implementare  
+1. Generați cod gata de producție folosind Agent Builder  
+2. Configurați conexiunile serverului MCP pentru utilizare în producție  
+3. Pregătiți pachetele de implementare pentru dispozitivele de margine  
+4. Configurați metrici de monitorizare și evaluare  
 
-### Selecția Modelului
-- **Constrângeri de Dimensiune**: Alege modele care se încadrează în limitele de memorie ale dispozitivelor țintă
-- **Viteza Inferenței**: Prioritizează modele cu timpi de inferență rapizi pentru aplicații în timp real
-- **Compromisuri de Acuratețe**: Echilibrează acuratețea modelului cu constrângerile de resurse
-- **Compatibilitate Format**: Preferă formatele ONNX sau optimizate hardware pentru implementarea pe edge
+## Cele mai bune practici pentru dezvoltarea AI la margine  
 
-### Tehnici de
-- **Securitate**: Implementați măsuri de securitate adecvate pentru aplicațiile AI la margine
+### Selectarea modelului  
+- **Constrângeri de dimensiune**: Alegeți modele care se încadrează în limitele de memorie ale dispozitivelor țintă  
+- **Viteză de inferență**: Prioritizați modelele cu timpi de inferență rapizi pentru aplicații în timp real  
+- **Compromisuri de acuratețe**: Echilibrați acuratețea modelului cu constrângerile de resurse  
+- **Compatibilitate format**: Preferă formatele ONNX sau optimizate pentru hardware pentru implementare la margine  
 
-## Integrare cu cadrele AI la margine
+### Tehnici de optimizare  
+- **Cuantizare**: Utilizați cuantizarea INT8 sau INT4 pentru a reduce dimensiunea modelului și a îmbunătăți viteza  
+- **Pruning**: Eliminați parametrii inutili ai modelului pentru a reduce cerințele computaționale  
+- **Distilarea cunoștințelor**: Creați modele mai mici care mențin performanța celor mai mari  
+- **Accelerare hardware**: Folosiți NPUs, GPUs sau acceleratoare specializate, dacă sunt disponibile  
 
-### ONNX Runtime
-- **Implementare pe mai multe platforme**: Implementați modele ONNX pe diferite platforme la margine
-- **Optimizare hardware**: Utilizați optimizările specifice hardware ale ONNX Runtime
-- **Suport pentru dispozitive mobile**: Folosiți ONNX Runtime Mobile pentru aplicații pe smartphone-uri și tablete
-- **Integrare IoT**: Implementați pe dispozitive IoT utilizând distribuțiile ușoare ale ONNX Runtime
+### Flux de lucru în dezvoltare  
+- **Testare iterativă**: Testați frecvent în condiții similare cu cele de margine în timpul dezvoltării  
+- **Monitorizarea performanței**: Monitorizați continuu utilizarea resurselor și viteza de inferență  
+- **Controlul versiunilor**: Urmăriți versiunile modelului și setările de optimizare  
+- **Documentare**: Documentați toate deciziile de optimizare și compromisurile de performanță  
 
-### Windows ML
-- **Dispozitive Windows**: Optimizați pentru dispozitive la margine și PC-uri bazate pe Windows
-- **Accelerare NPU**: Utilizați Unitățile de Procesare Neurală pe dispozitive Windows
-- **DirectML**: Folosiți DirectML pentru accelerarea GPU pe platformele Windows
-- **Integrare UWP**: Integrați cu aplicațiile Universal Windows Platform
+### Considerații pentru implementare  
+- **Monitorizarea resurselor**: Monitorizați memoria, CPU și consumul de energie în producție  
+- **Strategii de rezervă**: Implementați mecanisme de rezervă pentru eșecurile modelului  
+- **Mecanisme de actualizare**: Planificați actualizările modelului și gestionarea versiunilor  
+- **Securitate**: Implementați măsuri de securitate adecvate pentru aplicațiile AI la margine  
 
-### TensorFlow Lite
-- **Optimizare pentru dispozitive mobile**: Implementați modele TensorFlow Lite pe dispozitive mobile și încorporate
-- **Delegări hardware**: Utilizați delegări hardware specializate pentru accelerare
-- **Microcontrolere**: Implementați pe microcontrolere utilizând TensorFlow Lite Micro
-- **Suport pe mai multe platforme**: Implementați pe Android, iOS și sisteme Linux încorporate
+## Integrarea cu cadrele AI la margine  
 
-### Azure IoT Edge
-- **Hibrid cloud-margine**: Combinați antrenarea în cloud cu inferența la margine
-- **Implementare de module**: Implementați modele AI ca module IoT Edge
-- **Managementul dispozitivelor**: Gestionați dispozitivele la margine și actualizările modelelor de la distanță
-- **Telemetrie**: Colectați date de performanță și metrici ale modelelor din implementările la margine
+### ONNX Runtime  
+- **Implementare multiplatformă**: Implementați modele ONNX pe diferite platforme de margine  
+- **Optimizare hardware**: Folosiți optimizările specifice hardware ale ONNX Runtime  
+- **Suport mobil**: Utilizați ONNX Runtime Mobile pentru aplicații pe smartphone-uri și tablete  
+- **Integrare IoT**: Implementați pe dispozitive IoT folosind distribuțiile ușoare ale ONNX Runtime  
 
-## Scenarii avansate AI la margine
+### Windows ML  
+- **Dispozitive Windows**: Optimizați pentru dispozitive de margine și PC-uri bazate pe Windows  
+- **Accelerare NPU**: Folosiți Unități de Procesare Neurală pe dispozitive Windows  
+- **DirectML**: Utilizați DirectML pentru accelerare GPU pe platformele Windows  
+- **Integrare UWP**: Integrați cu aplicațiile Universal Windows Platform  
 
-### Implementare multi-model
-- **Ansambluri de modele**: Implementați mai multe modele pentru o acuratețe îmbunătățită sau redundanță
-- **Testare A/B**: Testați simultan modele diferite pe dispozitive la margine
-- **Selecție dinamică**: Alegeți modele în funcție de condițiile actuale ale dispozitivului
-- **Partajare de resurse**: Optimizați utilizarea resurselor între mai multe modele implementate
+### TensorFlow Lite  
+- **Optimizare mobilă**: Implementați modele TensorFlow Lite pe dispozitive mobile și încorporate  
+- **Delegări hardware**: Utilizați delegări hardware specializate pentru accelerare  
+- **Microcontrolere**: Implementați pe microcontrolere folosind TensorFlow Lite Micro  
+- **Suport multiplatformă**: Implementați pe Android, iOS și sisteme Linux încorporate  
 
-### Învățare federată
-- **Antrenare distribuită**: Antrenați modele pe mai multe dispozitive la margine
-- **Păstrarea confidențialității**: Păstrați datele de antrenare local, partajând în același timp îmbunătățirile modelelor
-- **Învățare colaborativă**: Permiteți dispozitivelor să învețe din experiențele colective
-- **Coordonare margine-cloud**: Coordonați procesul de învățare între dispozitivele la margine și infrastructura cloud
+### Azure IoT Edge  
+- **Hibrid cloud-margine**: Combinați antrenarea în cloud cu inferența la margine  
+- **Implementare module**: Implementați modele AI ca module IoT Edge  
+- **Gestionarea dispozitivelor**: Gestionați dispozitivele de margine și actualizările modelului de la distanță  
+- **Telemetrie**: Colectați date de performanță și metrici ale modelului din implementările la margine  
 
-### Procesare în timp real
-- **Procesare de fluxuri**: Procesați fluxuri continue de date pe dispozitive la margine
-- **Inferență cu latență redusă**: Optimizați pentru o latență minimă în inferență
-- **Procesare în loturi**: Procesați eficient loturi de date pe dispozitive la margine
-- **Procesare adaptivă**: Ajustați procesarea în funcție de capacitățile actuale ale dispozitivului
+## Scenarii avansate AI la margine  
 
-## Depanarea dezvoltării AI la margine
+### Implementare multi-model  
+- **Ensemble de modele**: Implementați mai multe modele pentru acuratețe îmbunătățită sau redundanță  
+- **Testare A/B**: Testați simultan modele diferite pe dispozitive de margine  
+- **Selecție dinamică**: Alegeți modele pe baza condițiilor curente ale dispozitivului  
+- **Partajare resurse**: Optimizați utilizarea resurselor între modele implementate multiple  
 
-### Probleme comune
-- **Constrângeri de memorie**: Modelul este prea mare pentru memoria dispozitivului țintă
-- **Viteză de inferență**: Inferența modelului este prea lentă pentru cerințele în timp real
-- **Degradarea acurateței**: Optimizarea reduce acuratețea modelului într-un mod inacceptabil
-- **Compatibilitate hardware**: Modelul nu este compatibil cu hardware-ul țintă
+### Învățare federată  
+- **Antrenare distribuită**: Antrenați modele pe mai multe dispozitive de margine  
+- **Păstrarea confidențialității**: Păstrați datele de antrenare local, partajând îmbunătățirile modelului  
+- **Învățare colaborativă**: Permiteți dispozitivelor să învețe din experiențele colective  
+- **Coordonare margine-cloud**: Coordonați învățarea între dispozitivele de margine și infrastructura cloud  
 
-### Strategii de depanare
-- **Profilarea performanței**: Utilizați funcțiile de trasare ale AI Toolkit pentru a identifica blocajele
-- **Monitorizarea resurselor**: Monitorizați utilizarea memoriei și a procesorului în timpul dezvoltării
-- **Testare incrementală**: Testați optimizările incremental pentru a izola problemele
-- **Simularea hardware**: Utilizați instrumente de dezvoltare pentru a simula hardware-ul țintă
+### Procesare în timp real  
+- **Procesare fluxuri**: Procesați fluxuri continue de date pe dispozitive de margine  
+- **Inferență cu latență redusă**: Optimizați pentru latență minimă de inferență  
+- **Procesare loturi**: Procesați eficient loturi de date pe dispozitive de margine  
+- **Procesare adaptivă**: Ajustați procesarea pe baza capacităților curente ale dispozitivului  
 
-### Soluții de optimizare
-- **Quantizare suplimentară**: Aplicați tehnici de quantizare mai agresive
-- **Arhitectura modelului**: Luați în considerare arhitecturi de modele diferite, optimizate pentru margine
-- **Optimizarea preprocesării**: Optimizați preprocesarea datelor pentru constrângerile la margine
-- **Optimizarea inferenței**: Utilizați optimizări specifice hardware pentru inferență
+## Depanarea dezvoltării AI la margine  
 
-## Resurse și pași următori
+### Probleme comune  
+- **Constrângeri de memorie**: Modelul este prea mare pentru memoria dispozitivului țintă  
+- **Viteză de inferență**: Inferența modelului este prea lentă pentru cerințele în timp real  
+- **Degradarea acurateței**: Optimizarea reduce acuratețea modelului în mod inacceptabil  
+- **Compatibilitate hardware**: Modelul nu este compatibil cu hardware-ul țintă  
 
-### Documentație
-- [Ghidul modelelor AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Documentația Model Playground](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [Documentația ONNX Runtime](https://onnxruntime.ai/)
-- [Documentația Windows ML](https://docs.microsoft.com/en-us/windows/ai/)
+### Strategii de depanare  
+- **Profilarea performanței**: Utilizați funcțiile de trasare ale AI Toolkit pentru a identifica blocajele  
+- **Monitorizarea resurselor**: Monitorizați memoria și utilizarea CPU în timpul dezvoltării  
+- **Testare incrementală**: Testați optimizările incremental pentru a izola problemele  
+- **Simulare hardware**: Utilizați instrumente de dezvoltare pentru a simula hardware-ul țintă  
 
-### Comunitate și suport
-- [GitHub AI Toolkit pentru VS Code](https://github.com/microsoft/vscode-ai-toolkit)
-- [Comunitatea ONNX](https://github.com/onnx/onnx)
-- [Comunitatea dezvoltatorilor AI la margine](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [Piața de extensii VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Soluții de optimizare  
+- **Cuantizare suplimentară**: Aplicați tehnici de cuantizare mai agresive  
+- **Arhitectura modelului**: Luați în considerare arhitecturi de model diferite optimizate pentru margine  
+- **Optimizare preprocesare**: Optimizați preprocesarea datelor pentru constrângerile de margine  
+- **Optimizare inferență**: Utilizați optimizări specifice hardware pentru inferență  
 
-### Resurse de învățare
-- [Cursul de bază AI la margine](./Module01/README.md)
-- [Ghidul modelelor lingvistice mici](./Module02/README.md)
-- [Strategii de implementare la margine](./Module03/README.md)
-- [Dezvoltare AI la margine pentru Windows](./windowdeveloper.md)
+## Resurse și pași următori  
 
-## Concluzie
+### Documentație oficială  
+- [Documentația pentru dezvoltatori AI Toolkit](https://aka.ms/AIToolkit/doc)  
+- [Ghid de instalare și configurare](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [Documentația pentru aplicații inteligente VS Code](https://code.visualstudio.com/docs/intelligentapps)  
+- [Documentația Protocolului Context Model (MCP)](https://modelcontextprotocol.io/)  
 
-AI Toolkit pentru Visual Studio Code oferă o platformă cuprinzătoare pentru dezvoltarea AI la margine, de la descoperirea și optimizarea modelelor până la implementare și monitorizare. Prin utilizarea instrumentelor și fluxurilor de lucru integrate, dezvoltatorii pot crea, testa și implementa eficient aplicații AI care funcționează bine pe dispozitive la margine cu resurse limitate.
+### Comunitate și suport  
+- [Repository GitHub AI Toolkit](https://github.com/microsoft/vscode-ai-toolkit)  
+- [Probleme și cereri de funcții pe GitHub](https://aka.ms/AIToolkit/feedback)  
+- [Comunitatea Discord Azure AI Foundry](https://aka.ms/azureaifoundry/discord)  
+- [Piața de extensii VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
 
-Suportul toolkit-ului pentru ONNX, Ollama și diferiți furnizori de cloud, combinat cu capacitățile sale de optimizare și evaluare, îl face o alegere ideală pentru dezvoltarea AI la margine. Indiferent dacă construiți aplicații IoT, funcții AI pentru dispozitive mobile sau sisteme de inteligență încorporată, AI Toolkit oferă instrumentele și fluxurile de lucru necesare pentru o implementare de succes a AI la margine.
+### Resurse tehnice  
+- [Documentația ONNX Runtime](https://onnxruntime.ai/)  
+- [Documentația Ollama](https://ollama.ai/)  
+- [Documentația Windows ML](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Documentația Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
 
-Pe măsură ce AI la margine continuă să evolueze, AI Toolkit pentru VS Code rămâne în frunte, oferind dezvoltatorilor instrumente și capabilități de ultimă generație pentru construirea următoarei generații de aplicații inteligente la margine.
+### Căi de învățare  
+- [Cursul de bază AI la margine](../Module01/README.md)  
+- [Ghidul pentru modele lingvistice mici](../Module02/README.md)  
+- [Strategii de implementare la margine](../Module03/README.md)  
+- [Dezvoltare AI la margine pentru Windows](./windowdeveloper.md)  
+
+### Resurse suplimentare  
+- **Statistici repository**: Peste 1.8k stele, 150+ forks, 18+ contribuitori  
+- **Licență**: Licență MIT  
+- **Securitate**: Se aplică politicile de securitate Microsoft  
+- **Telemetrie**: Respectă setările de telemetrie VS Code  
+
+## Concluzie  
+
+AI Toolkit pentru Visual Studio Code reprezintă o platformă cuprinzătoare pentru dezvoltarea modernă AI, oferind capabilități simplificate de dezvoltare a agenților, care sunt deosebit de valoroase pentru aplicațiile AI la margine. Cu un catalog extins de modele care sprijină furnizori precum Anthropic, OpenAI, GitHub și Google, combinat cu execuția locală prin ONNX și Ollama, toolkit-ul oferă flexibilitatea necesară pentru diverse scenarii de implementare la margine.  
+
+Punctul forte al toolkit-ului constă în abordarea sa integrată—de la descoperirea și experimentarea modelelor în Playground, la dezvoltarea sofisticată a agenților cu Prompt Builder, capabilități de evaluare cuprinzătoare și integrarea fără probleme a instrumentelor MCP. Pentru dezvoltatorii AI la margine, acest lucru înseamnă prototipare rapidă și testare a agenților AI înainte de implementarea la margine, cu posibilitatea de a itera rapid și de a optimiza pentru medii cu resurse limitate.  
+
+Avantaje cheie pentru dezvoltarea AI la margine includ:  
+- **Experimentare rapidă**: Testați modele și agenți rapid înainte de a decide implementarea la margine  
+- **Flexibilitate multi-furnizor**: Accesați modele din diverse surse pentru a găsi soluții optime la margine  
+- **Dezvoltare locală**: Testați cu ONNX și Ollama pentru dezvoltare offline și care respectă confidențialitatea  
+- **Pregătire pentru producție**: Generați cod gata de producție și integrați cu instrumente externe prin MCP  
+- **Evaluare cuprinzătoare**: Utilizați metrici integrate și personalizate pentru a valida performanța AI la margine  
+
+Pe măsură ce AI continuă să se îndrepte spre scenarii de implementare la margine, AI Toolkit pentru VS Code oferă mediul de dezvoltare și fluxul de lucru necesar pentru a construi, testa și optimiza aplicații inteligente pentru medii cu resurse limitate. Fie că dezvoltați soluții IoT, aplicații AI mobile sau sisteme de inteligență încorporată, setul cuprinzător de funcții și fluxul de lucru integrat al toolkit-ului sprijină întregul ciclu de viață al dezvoltării AI la margine.  
+
+Cu dezvoltare continuă și o comunitate activă (peste 1.8k stele pe GitHub), AI Toolkit rămâne în fruntea instrumentelor de dezvoltare AI, evoluând constant pentru a răspunde nevoilor dezvoltatorilor moderni de AI care construiesc pentru scenarii de implementare la margine.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.

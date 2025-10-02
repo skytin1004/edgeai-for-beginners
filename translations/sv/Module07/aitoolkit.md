@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T08:42:06+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T13:07:13+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "sv"
 }
@@ -11,19 +11,19 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introduktion
 
-Välkommen till den omfattande guiden för att använda AI Toolkit för Visual Studio Code i Edge AI-utveckling. När artificiell intelligens flyttar från centraliserad molnbaserad databehandling till distribuerade enheter vid kanten, behöver utvecklare kraftfulla, integrerade verktyg som kan hantera de unika utmaningarna med edge-distribution - från resursbegränsningar till krav på offlinefunktionalitet.
+Välkommen till den omfattande guiden för att använda AI Toolkit för Visual Studio Code i Edge AI-utveckling. När artificiell intelligens flyttar från centraliserad molnberäkning till distribuerade enheter vid kanten, behöver utvecklare kraftfulla, integrerade verktyg som kan hantera de unika utmaningarna med edge-distribution – från resursbegränsningar till krav på offlinefunktionalitet.
 
-AI Toolkit för Visual Studio Code fyller denna lucka genom att erbjuda en komplett utvecklingsmiljö som är specifikt utformad för att bygga, testa och optimera AI-applikationer som körs effektivt på edge-enheter. Oavsett om du utvecklar för IoT-sensorer, mobila enheter, inbyggda system eller edge-servrar, förenklar detta verktyg hela din utvecklingsprocess inom den välbekanta VS Code-miljön.
+AI Toolkit för Visual Studio Code överbryggar denna klyfta genom att erbjuda en komplett utvecklingsmiljö som är specifikt utformad för att bygga, testa och optimera AI-applikationer som körs effektivt på edge-enheter. Oavsett om du utvecklar för IoT-sensorer, mobila enheter, inbyggda system eller edge-servrar, förenklar detta verktyg hela din utvecklingsprocess inom den välbekanta VS Code-miljön.
 
 Denna guide kommer att ta dig igenom de grundläggande koncepten, verktygen och bästa praxis för att utnyttja AI Toolkit i dina Edge AI-projekt, från initial modellval till produktionsdistribution.
 
 ## Översikt
 
-AI Toolkit erbjuder en integrerad utvecklingsmiljö för hela livscykeln av Edge AI-applikationer inom VS Code. Det ger sömlös integration med populära AI-modeller från leverantörer som OpenAI, Anthropic, Google och GitHub, samtidigt som det stödjer lokal modelldistribution via ONNX och Ollama - viktiga funktioner för Edge AI-applikationer som kräver inferens direkt på enheten.
+AI Toolkit för Visual Studio Code är en kraftfull extension som förenklar agentutveckling och skapandet av AI-applikationer. Verktyget erbjuder omfattande funktioner för att utforska, utvärdera och distribuera AI-modeller från en mängd olika leverantörer – inklusive Anthropic, OpenAI, GitHub, Google – samtidigt som det stödjer lokal modellkörning med ONNX och Ollama.
 
-Vad som särskiljer AI Toolkit för Edge AI-utveckling är dess fokus på hela edge-distributionskedjan. Till skillnad från traditionella AI-utvecklingsverktyg som främst riktar sig mot molndistribution, inkluderar AI Toolkit specialiserade funktioner för modelloptimering, testning under resursbegränsningar och prestandautvärdering specifik för edge. Verktyget förstår att Edge AI-utveckling kräver andra överväganden - mindre modellstorlekar, snabbare inferenstider, offlinekapacitet och hårdvaruspecifika optimeringar.
+Vad som skiljer AI Toolkit från andra är dess heltäckande tillvägagångssätt för hela AI-utvecklingslivscykeln. Till skillnad från traditionella AI-utvecklingsverktyg som fokuserar på enskilda aspekter, erbjuder AI Toolkit en integrerad miljö som täcker modellupptäckt, experimentering, agentutveckling, utvärdering och distribution – allt inom den välbekanta VS Code-miljön.
 
-Plattformen stödjer flera distributionsscenarier, från enkel inferens på enheten till komplexa multi-modellarkitekturer vid kanten. Den tillhandahåller verktyg för modellkonvertering, kvantisering och optimering som är avgörande för framgångsrik edge-distribution, samtidigt som den bibehåller den produktivitet som VS Code är känt för.
+Plattformen är specifikt utformad för snabb prototypframställning och produktionsdistribution, med funktioner som promptgenerering, snabba startmallar, sömlös MCP (Model Context Protocol)-verktygsintegration och omfattande utvärderingsmöjligheter. För Edge AI-utveckling innebär detta att du effektivt kan utveckla, testa och optimera AI-applikationer för edge-scenarier samtidigt som du behåller hela utvecklingsprocessen inom VS Code.
 
 ## Lärandemål
 
@@ -39,71 +39,78 @@ I slutet av denna guide kommer du att kunna:
 - **Designa och implementera** Edge AI-applikationer med den integrerade utvecklingsmiljön
 - **Utföra modelltestning** under edge-liknande förhållanden med lokal inferens och resursövervakning
 - **Skapa och anpassa** AI-agenter optimerade för edge-distributionsscenarier
-- **Utvärdera modellprestanda** med hjälp av metrik som är relevanta för edge-databehandling (latens, minnesanvändning, noggrannhet)
+- **Utvärdera modellprestanda** med hjälp av metrik som är relevanta för edge-beräkning (latens, minnesanvändning, noggrannhet)
 
 ### Optimering och distribution
-- **Använda kvantisering och beskärning** för att minska modellstorlek samtidigt som prestandan bibehålls
+- **Tillämpa kvantisering och beskärning** för att minska modellstorlek samtidigt som acceptabel prestanda bibehålls
 - **Optimera modeller** för specifika edge-hårdvaruplattformar inklusive CPU-, GPU- och NPU-acceleration
 - **Implementera bästa praxis** för Edge AI-utveckling, inklusive resursförvaltning och fallback-strategier
 - **Förbereda modeller och applikationer** för produktionsdistribution på edge-enheter
 
 ### Avancerade Edge AI-koncept
 - **Integrera med edge AI-ramverk** inklusive ONNX Runtime, Windows ML och TensorFlow Lite
-- **Implementera multi-modellarkitekturer** och federerade inlärningsscenarier för edge-miljöer
+- **Implementera multi-modellarkitekturer** och federerade lärandescenarier för edge-miljöer
 - **Felsöka vanliga Edge AI-problem** inklusive minnesbegränsningar, inferenshastighet och hårdvarukompatibilitet
 - **Designa övervaknings- och loggningsstrategier** för Edge AI-applikationer i produktion
 
 ### Praktisk tillämpning
 - **Bygga kompletta Edge AI-lösningar** från modellval till distribution
-- **Visa färdighet** i edge-specifika utvecklingsarbetsflöden och optimeringstekniker
-- **Tillämpa lärda koncept** på verkliga Edge AI-användningsfall inklusive IoT, mobila och inbyggda applikationer
+- **Demonstrera skicklighet** i edge-specifika utvecklingsarbetsflöden och optimeringstekniker
+- **Tillämpa inlärda koncept** på verkliga Edge AI-användningsfall inklusive IoT, mobila och inbyggda applikationer
 - **Utvärdera och jämföra** olika Edge AI-distributionsstrategier och deras kompromisser
 
-## Viktiga funktioner för Edge AI-utveckling
+## Nyckelfunktioner för Edge AI-utveckling
 
 ### 1. Modellkatalog och upptäckt
-- **Stöd för lokala modeller**: Upptäck och få tillgång till AI-modeller som är specifikt optimerade för edge-distribution
-- **ONNX-integration**: Få tillgång till modeller i ONNX-format för effektiv inferens vid kanten
-- **Ollama-stöd**: Utnyttja lokalt körande modeller via Ollama för integritet och offlinefunktionalitet
-- **Modelljämförelse**: Jämför modeller sida vid sida för att hitta den optimala balansen mellan prestanda och resursförbrukning för edge-enheter
+- **Stöd för flera leverantörer**: Bläddra och få tillgång till AI-modeller från Anthropic, OpenAI, GitHub, Google och andra leverantörer
+- **Lokal modellintegration**: Förenklad upptäckt av ONNX- och Ollama-modeller för edge-distribution
+- **GitHub-modeller**: Direkt integration med GitHubs modellhosting för smidig åtkomst
+- **Modelljämförelse**: Jämför modeller sida vid sida för att hitta optimal balans för edge-enhetsbegränsningar
 
 ### 2. Interaktiv Playground
-- **Lokal testmiljö**: Testa modeller lokalt innan edge-distribution
-- **Multi-modal experimentering**: Testa med bilder, text och andra indata som är typiska för edge-scenarier
-- **Parameterjustering**: Experimentera med olika modellparametrar för att optimera för edge-begränsningar
-- **Prestandaövervakning i realtid**: Observera inferenshastighet och resursanvändning under utveckling
+- **Interaktiv testmiljö**: Snabb experimentering med modellens kapabiliteter i en kontrollerad miljö
+- **Stöd för multimodalitet**: Testa med bilder, text och andra indata som är typiska för edge-scenarier
+- **Experimentering i realtid**: Omedelbar feedback på modellens svar och prestanda
+- **Parameteroptimering**: Finjustera modellparametrar för edge-distributionskrav
 
-### 3. Agent Builder för edge-applikationer
-- **Prompt Engineering**: Skapa optimerade prompts som fungerar effektivt med mindre edge-modeller
-- **MCP-verktygsintegration**: Integrera Model Context Protocol-verktyg för förbättrade edge-agentfunktioner
-- **Kodgenerering**: Generera produktionsklar kod optimerad för edge-distributionsscenarier
-- **Strukturerade utdata**: Designa agenter som ger konsekventa, strukturerade svar som är lämpliga för edge-applikationer
+### 3. Prompt (Agent) Builder
+- **Naturlig språkgenerering**: Generera startprompter med naturliga språkbeskrivningar
+- **Iterativ förbättring**: Förbättra prompter baserat på modellens svar och prestanda
+- **Uppgiftsnedbrytning**: Bryt ner komplexa uppgifter med promptkedjor och strukturerade utdata
+- **Stöd för variabler**: Använd variabler i prompter för dynamiskt agentbeteende
+- **Generering av produktionskod**: Skapa produktionsklar kod för snabb apputveckling
 
-### 4. Modellutvärdering och testning
-- **Prestandametrik**: Utvärdera modeller med metrik som är relevanta för edge-distribution (latens, minnesanvändning, noggrannhet)
-- **Batchtestning**: Testa flera modellkonfigurationer samtidigt för att hitta optimala edge-inställningar
-- **Anpassad utvärdering**: Skapa anpassade utvärderingskriterier specifika för Edge AI-användningsfall
-- **Resursprofilering**: Analysera minnes- och beräkningskrav för edge-distributionsplanering
+### 4. Bulk Run och utvärdering
+- **Testning av flera modeller**: Kör flera prompter över valda modeller samtidigt
+- **Effektiv testning i stor skala**: Testa olika indata och konfigurationer effektivt
+- **Anpassade testfall**: Kör agenter med testfall för att validera funktionalitet
+- **Prestandajämförelse**: Jämför resultat mellan olika modeller och konfigurationer
 
-### 5. Modellkonvertering och optimering
-- **ONNX-konvertering**: Konvertera modeller från olika format till ONNX för edge-kompatibilitet
-- **Kvantisering**: Minska modellstorlek och förbättra inferenshastighet genom kvantiseringstekniker
-- **Hårdvaruoptimering**: Optimera modeller för specifik edge-hårdvara (CPU, GPU, NPU)
-- **Formattransformation**: Transformera modeller från Hugging Face och andra källor för edge-distribution
+### 5. Modellutvärdering med dataset
+- **Standardmetrik**: Testa AI-modeller med inbyggda utvärderare (F1-score, relevans, likhet, koherens)
+- **Anpassade utvärderare**: Skapa egna utvärderingsmetrik för specifika användningsfall
+- **Datasetintegration**: Testa modeller mot omfattande dataset
+- **Prestandamätning**: Kvantifiera modellprestanda för edge-distributionsbeslut
 
-### 6. Finjustering för edge-scenarier
-- **Domänanpassning**: Anpassa modeller för specifika edge-användningsfall och miljöer
-- **Lokal träning**: Träna modeller lokalt med GPU-stöd för edge-specifika krav
-- **Azure-integration**: Utnyttja Azure Container Apps för molnbaserad finjustering innan edge-distribution
-- **Transfer Learning**: Anpassa förtränade modeller för edge-specifika uppgifter och begränsningar
+### 6. Finjusteringsmöjligheter
+- **Modellanpassning**: Anpassa modeller för specifika användningsfall och domäner
+- **Specialiserad anpassning**: Anpassa modeller till specialiserade domäner och krav
+- **Edge-optimering**: Finjustera modeller specifikt för edge-distributionsbegränsningar
+- **Domänspecifik träning**: Skapa modeller skräddarsydda för specifika edge-användningsfall
 
-### 7. Prestandaövervakning och spårning
-- **Edge-prestandaanalys**: Övervaka modellprestanda under edge-liknande förhållanden
-- **Spårinsamling**: Samla detaljerad prestandadata för optimering
-- **Identifiering av flaskhalsar**: Identifiera prestandaproblem innan distribution till edge-enheter
-- **Resursanvändningsspårning**: Övervaka minne, CPU och inferenstid för edge-optimering
+### 7. MCP-verktygsintegration
+- **Anslutning till externa verktyg**: Koppla agenter till externa verktyg via Model Context Protocol-servrar
+- **Åtgärder i verkligheten**: Möjliggör att agenter kan fråga databaser, få åtkomst till API:er eller köra anpassad logik
+- **Befintliga MCP-servrar**: Använd verktyg från kommandon (stdio) eller HTTP (server-sent event)-protokoll
+- **Utveckling av anpassade MCP**: Bygg och skapa nya MCP-servrar med testning i Agent Builder
 
-## Edge AI-utvecklingsarbetsflöde
+### 8. Agentutveckling och testning
+- **Stöd för funktionsanrop**: Möjliggör att agenter kan anropa externa funktioner dynamiskt
+- **Integrationstestning i realtid**: Testa integrationer med realtidskörningar och verktygsanvändning
+- **Versionshantering för agenter**: Versionskontroll för agenter med jämförelsemöjligheter för utvärderingsresultat
+- **Felsökning och spårning**: Lokal spårning och felsökningsmöjligheter för agentutveckling
+
+## Arbetsflöde för Edge AI-utveckling
 
 ### Fas 1: Modellupptäckt och val
 1. **Utforska modellkatalogen**: Använd modellkatalogen för att hitta modeller som är lämpliga för edge-distribution
@@ -113,24 +120,24 @@ I slutet av denna guide kommer du att kunna:
 
 ### Fas 2: Modelloptimering
 1. **Konvertera till ONNX**: Konvertera valda modeller till ONNX-format för edge-kompatibilitet
-2. **Använd kvantisering**: Minska modellstorlek genom INT8- eller INT4-kvantisering
+2. **Tillämpa kvantisering**: Minska modellstorlek genom INT8- eller INT4-kvantisering
 3. **Hårdvaruoptimering**: Optimera för målenheter vid kanten (ARM, x86, specialiserade acceleratorer)
 4. **Prestandavalidering**: Validera att optimerade modeller bibehåller acceptabel noggrannhet
 
 ### Fas 3: Applikationsutveckling
 1. **Agentdesign**: Använd Agent Builder för att skapa edge-optimerade AI-agenter
-2. **Prompt Engineering**: Utveckla prompts som fungerar effektivt med mindre edge-modeller
+2. **Promptteknik**: Utveckla prompter som fungerar effektivt med mindre edge-modeller
 3. **Integrationstestning**: Testa agenter under simulerade edge-förhållanden
 4. **Kodgenerering**: Generera produktionskod optimerad för edge-distribution
 
 ### Fas 4: Utvärdering och testning
-1. **Batchutvärdering**: Testa flera konfigurationer för att hitta optimala edge-inställningar
+1. **Batchutvärdering**: Testa flera konfigurationer för att hitta optimala inställningar vid kanten
 2. **Prestandaprofilering**: Analysera inferenshastighet, minnesanvändning och noggrannhet
-3. **Edge-simulering**: Testa under förhållanden som liknar målenhetens miljö
+3. **Edgesimulering**: Testa under förhållanden som liknar målenheter vid kanten
 4. **Stresstestning**: Utvärdera prestanda under olika belastningsförhållanden
 
-### Fas 5: Förberedelse för distribution
-1. **Slutlig optimering**: Utför slutliga optimeringar baserat på testresultat
+### Fas 5: Distributionsförberedelse
+1. **Slutlig optimering**: Tillämpa slutliga optimeringar baserat på testresultat
 2. **Distributionspaketering**: Paketera modeller och kod för edge-distribution
 3. **Dokumentation**: Dokumentera distributionskrav och konfiguration
 4. **Övervakningsinställning**: Förbered övervakning och loggning för edge-distribution
@@ -140,7 +147,7 @@ I slutet av denna guide kommer du att kunna:
 ### Edge AI-utvecklare
 - Applikationsutvecklare som bygger AI-drivna edge-enheter och IoT-lösningar
 - Utvecklare av inbyggda system som integrerar AI-funktioner i resursbegränsade enheter
-- Mobila utvecklare som skapar AI-applikationer direkt på enheten för smartphones och surfplattor
+- Mobila utvecklare som skapar AI-applikationer på enheten för smartphones och surfplattor
 
 ### Edge AI-ingenjörer
 - AI-ingenjörer som optimerar modeller för edge-distribution och hanterar inferenspipelines
@@ -148,7 +155,7 @@ I slutet av denna guide kommer du att kunna:
 - Prestandaingenjörer som optimerar AI-arbetsbelastningar för edge-hårdvarubegränsningar
 
 ### Forskare och utbildare
-- AI-forskare som utvecklar effektiva modeller och algoritmer för edge-databehandling
+- AI-forskare som utvecklar effektiva modeller och algoritmer för edge-beräkning
 - Utbildare som undervisar i Edge AI-koncept och demonstrerar optimeringstekniker
 - Studenter som lär sig om utmaningar och lösningar inom edge-distribution av AI
 
@@ -157,8 +164,8 @@ I slutet av denna guide kommer du att kunna:
 ### Smarta IoT-enheter
 - **Bildigenkänning i realtid**: Distribuera datorvisionsmodeller på IoT-kameror och sensorer
 - **Röstbearbetning**: Implementera taligenkänning och naturlig språkbehandling på smarta högtalare
-- **Prediktivt underhåll**: Kör anomalidetektionsmodeller på industriella edge-enheter
-- **Miljöövervakning**: Distribuera analysmodeller för sensordata för miljöapplikationer
+- **Prediktivt underhåll**: Kör anomalidetekteringsmodeller på industriella edge-enheter
+- **Miljöövervakning**: Distribuera modeller för analys av sensordata för miljöapplikationer
 
 ### Mobila och inbyggda applikationer
 - **Översättning på enheten**: Implementera språköversättningsmodeller som fungerar offline
@@ -174,167 +181,221 @@ I slutet av denna guide kommer du att kunna:
 
 ## Installation och konfiguration
 
-### Snabbinstallation
-Installera AI Toolkit-tillägget direkt från Visual Studio Code Marketplace:
+### Installation av extension
+Installera AI Toolkit-extensionen direkt från Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**Extension ID**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Installationsmetoder**:
+1. **VS Code Marketplace**: Sök efter "AI Toolkit" i Extensions-vyn
+2. **Kommandorad**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Direkt installation**: Ladda ner från [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Förutsättningar för Edge AI-utveckling
-- **ONNX Runtime**: Installera ONNX Runtime för modellinferens
-- **Ollama** (valfritt): Installera Ollama för lokal modellservering
-- **Python-miljö**: Ställ in Python med nödvändiga AI-bibliotek
-- **Edge-hårdvaruverktyg**: Installera hårdvaruspecifika utvecklingsverktyg (CUDA, OpenVINO, etc.)
+- **Visual Studio Code**: Senaste versionen rekommenderas
+- **Python-miljö**: Python 3.8+ med nödvändiga AI-bibliotek
+- **ONNX Runtime** (valfritt): För ONNX-modellinferens
+- **Ollama** (valfritt): För lokal modellservering
+- **Verktyg för hårdvaruacceleration**: CUDA, OpenVINO eller plattformspecifika acceleratorer
 
 ### Initial konfiguration
-1. Öppna VS Code och installera AI Toolkit-tillägget
-2. Konfigurera modellkällor (ONNX, Ollama, molnleverantörer)
-3. Ställ in lokal utvecklingsmiljö för edge-testning
-4. Konfigurera hårdvaruaccelerationsalternativ för din utvecklingsmaskin
+1. **Aktivering av extension**: Öppna VS Code och verifiera att AI Toolkit visas i aktivitetsfältet
+2. **Inställning av modellleverantör**: Konfigurera åtkomst till GitHub, OpenAI, Anthropic eller andra modellleverantörer
+3. **Lokal miljö**: Ställ in Python-miljö och installera nödvändiga paket
+4. **Hårdvaruacceleration**: Konfigurera GPU/NPU-acceleration om tillgängligt
+5. **MCP-integration**: Ställ in Model Context Protocol-servrar vid behov
 
-## Kom igång med Edge AI-utveckling
+### Checklista för första installationen
+- [ ] AI Toolkit-extension installerad och aktiverad
+- [ ] Modellkatalog tillgänglig och modeller upptäckbara
+- [ ] Playground fungerar för modelltestning
+- [ ] Agent Builder tillgänglig för promptutveckling
+- [ ] Lokal utvecklingsmiljö konfigurerad
+- [ ] Hårdvaruacceleration (om tillgängligt) korrekt konfigurerad
 
-### Steg 1: Modellval
-1. Öppna AI Toolkit-vyn i aktivitetsfältet
-2. Bläddra i modellkatalogen för edge-kompatibla modeller
-3. Filtrera efter modellstorlek, format (ONNX) och prestandaegenskaper
-4. Jämför modeller med de inbyggda jämförelseverktygen
+## Kom igång med AI Toolkit
 
-### Steg 2: Lokal testning
-1. Använd Playground för att testa valda modeller lokalt
-2. Experimentera med olika prompts och parametrar
-3. Övervaka prestandametrik under testning
-4. Utvärdera modellens svar för edge-användningsfall
+### Snabbstartsguide
 
-### Steg 3: Modelloptimering
-1. Använd verktygen för modellkonvertering för att optimera för edge-distribution
-2. Använd kvantisering för att minska modellstorlek
-3. Testa optimerade modeller för att säkerställa acceptabel prestanda
-4. Dokumentera optimeringsinställningar och prestandakompromisser
+Vi rekommenderar att börja med modeller som hostas av GitHub för den mest smidiga upplevelsen:
 
-### Steg 4: Agentutveckling
-1. Använd Agent Builder för att skapa edge-optimerade AI-agenter
-2. Utveckla prompts som fungerar effektivt med mindre modeller
-3. Integrera nödvändiga verktyg och API:er för edge-scenarier
-4. Testa agenter under simulerade edge-förhållanden
+1. **Installation**: Följ [installationsguiden](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup) för att ställa in AI Toolkit på din enhet
+2. **Modellupptäckt**: Från extensionens trädvy, välj **CATALOG > Models** för att utforska tillgängliga modeller
+3. **GitHub-modeller**: Börja med modeller som hostas av GitHub för optimal integration
+4. **Playground-testning**: Från valfri modellkort, välj **Try in Playground** för att börja experimentera med modellens kapabiliteter
 
-### Steg 5: Utvärdering och distribution
-1. Använd bulkutvärdering för att testa flera konfigurationer
-2. Profilera prestanda under olika förhållanden
-3. Förbered distributionspaket för målenheter vid kanten
-4. Ställ in övervakning och loggning för produktionsdistribution
+### Steg-för-steg Edge AI-utveckling
 
-## Bästa praxis för Edge AI-utveckling
+#### Steg 1: Modellutforskning och val
+1. Öppna AI Toolkit-vyn i VS Codes aktivitetsfält
+2. Bläddra i modellkatalogen för modeller som är lämpliga för edge-distribution
+3
+2. Generera startförslag med hjälp av naturliga språkbeskrivningar  
+3. Iterera och förbättra förslag baserat på modellens svar  
+4. Integrera MCP-verktyg för förbättrade agentfunktioner  
 
-### Modellval
-- **Storleksbegränsningar**: Välj modeller som passar inom minnesbegränsningarna för målenheter
-- **Inferenshastighet**: Prioritera modeller med snabb inferens för realtidsapplikationer
-- **Noggrannhetskompromisser**: Balansera modellens noggrannhet med resursbegränsningar
-- **Formatkompatibilitet**: Föredra ONNX eller hårdvaruoptimerade format för edge-distribution
+#### Steg 3: Testning och utvärdering  
+1. Använd **Bulk Run** för att testa flera förslag över valda modeller  
+2. Kör agenter med testfall för att validera funktionalitet  
+3. Utvärdera noggrannhet och prestanda med inbyggda eller anpassade mätvärden  
+4. Jämför olika modeller och konfigurationer  
 
-### Optimeringstekniker
-- **Kvantisering**: Använd INT8- eller INT4-kvantisering för att minska modellstorlek och förbättra hastighet
-- **Beskärning**: Ta bort onödiga modellparametrar för att minska beräkningskrav
-- **Kunskapsdestillation**: Skapa mindre modeller som bibehåller prestandan hos större
-- **Hårdvaruacceleration**:
-- **Säkerhet**: Implementera lämpliga säkerhetsåtgärder för Edge AI-applikationer
+#### Steg 4: Finjustering och optimering  
+1. Anpassa modeller för specifika edge-användningsfall  
+2. Utför domänspecifik finjustering  
+3. Optimera för begränsningar vid edge-distribution  
+4. Versionshantera och jämför olika agentkonfigurationer  
 
-## Integration med Edge AI-ramverk
+#### Steg 5: Förberedelse för distribution  
+1. Generera produktionsklar kod med Agent Builder  
+2. Ställ in MCP-serveranslutningar för produktionsanvändning  
+3. Förbered distributionspaket för edge-enheter  
+4. Konfigurera övervaknings- och utvärderingsmätvärden  
 
-### ONNX Runtime
-- **Plattformsoberoende distribution**: Distribuera ONNX-modeller på olika edge-plattformar
-- **Hårdvaruoptimering**: Utnyttja ONNX Runtimes hårdvaruspecifika optimeringar
-- **Mobilt stöd**: Använd ONNX Runtime Mobile för applikationer på smartphones och surfplattor
-- **IoT-integration**: Distribuera på IoT-enheter med ONNX Runtimes lättviktsdistributioner
+## Bästa praxis för Edge AI-utveckling  
 
-### Windows ML
-- **Windows-enheter**: Optimera för Windows-baserade edge-enheter och datorer
-- **NPU-acceleration**: Utnyttja Neural Processing Units på Windows-enheter
-- **DirectML**: Använd DirectML för GPU-acceleration på Windows-plattformar
-- **UWP-integration**: Integrera med Universal Windows Platform-applikationer
+### Modellval  
+- **Storleksbegränsningar**: Välj modeller som passar inom minnesbegränsningarna för målenheter  
+- **Slutledningshastighet**: Prioritera modeller med snabb slutledningshastighet för realtidsapplikationer  
+- **Noggrannhetsavvägningar**: Balansera modellens noggrannhet med resursbegränsningar  
+- **Formatkompatibilitet**: Föredra ONNX eller hårdvaruoptimerade format för edge-distribution  
 
-### TensorFlow Lite
-- **Mobiloptimering**: Distribuera TensorFlow Lite-modeller på mobila och inbäddade enheter
-- **Hårdvarudelegater**: Använd specialiserade hårdvarudelegater för acceleration
-- **Mikrokontroller**: Distribuera på mikrokontroller med TensorFlow Lite Micro
-- **Plattformsoberoende stöd**: Distribuera på Android, iOS och inbäddade Linux-system
+### Optimeringstekniker  
+- **Kvantisering**: Använd INT8 eller INT4 kvantisering för att minska modellstorlek och förbättra hastighet  
+- **Beskärning**: Ta bort onödiga modellparametrar för att minska beräkningskrav  
+- **Kunskapsdestillation**: Skapa mindre modeller som bibehåller prestandan hos större modeller  
+- **Hårdvaruacceleration**: Utnyttja NPUs, GPUs eller specialiserade acceleratorer när det är möjligt  
 
-### Azure IoT Edge
-- **Hybrid moln-edge**: Kombinera molnbaserad träning med inferens på edge
-- **Moduldistribution**: Distribuera AI-modeller som IoT Edge-moduler
-- **Enhetshantering**: Hantera edge-enheter och modelluppdateringar på distans
-- **Telemetri**: Samla in prestandadata och modellmetrik från edge-distributioner
+### Utvecklingsarbetsflöde  
+- **Iterativ testning**: Testa ofta under edge-liknande förhållanden under utvecklingen  
+- **Prestandaövervakning**: Övervaka kontinuerligt resursanvändning och slutledningshastighet  
+- **Versionskontroll**: Spåra modellversioner och optimeringsinställningar  
+- **Dokumentation**: Dokumentera alla optimeringsbeslut och avvägningar i prestanda  
 
-## Avancerade Edge AI-scenarier
+### Distributionsöverväganden  
+- **Resursövervakning**: Övervaka minne, CPU och strömförbrukning i produktion  
+- **Fallback-strategier**: Implementera fallback-mekanismer vid modellfel  
+- **Uppdateringsmekanismer**: Planera för modelluppdateringar och versionshantering  
+- **Säkerhet**: Implementera lämpliga säkerhetsåtgärder för Edge AI-applikationer  
 
-### Multi-modell distribution
-- **Modellensembler**: Distribuera flera modeller för förbättrad noggrannhet eller redundans
-- **A/B-testning**: Testa olika modeller samtidigt på edge-enheter
-- **Dynamiskt urval**: Välj modeller baserat på aktuella enhetsförhållanden
-- **Resursdelning**: Optimera resursanvändning över flera distribuerade modeller
+## Integration med Edge AI-ramverk  
 
-### Federerad inlärning
-- **Distribuerad träning**: Träna modeller över flera edge-enheter
-- **Integritetsskydd**: Behåll träningsdata lokalt samtidigt som modellförbättringar delas
-- **Samarbetsinlärning**: Möjliggör att enheter lär sig från kollektiva erfarenheter
-- **Edge-moln samordning**: Samordna inlärning mellan edge-enheter och molninfrastruktur
+### ONNX Runtime  
+- **Plattformsoberoende distribution**: Distribuera ONNX-modeller över olika edge-plattformar  
+- **Hårdvaruoptimering**: Utnyttja ONNX Runtimes hårdvaruspecifika optimeringar  
+- **Mobilt stöd**: Använd ONNX Runtime Mobile för smartphone- och surfplatteapplikationer  
+- **IoT-integration**: Distribuera på IoT-enheter med ONNX Runtimes lättviktsdistributioner  
 
-### Realtidsbearbetning
-- **Strömbearbetning**: Bearbeta kontinuerliga dataströmmar på edge-enheter
-- **Låg latens inferens**: Optimera för minimal inferenslatens
-- **Batchbearbetning**: Effektivt bearbeta datapartier på edge-enheter
-- **Adaptiv bearbetning**: Anpassa bearbetning baserat på aktuella enhetskapaciteter
+### Windows ML  
+- **Windows-enheter**: Optimera för Windows-baserade edge-enheter och PC  
+- **NPU-acceleration**: Utnyttja Neural Processing Units på Windows-enheter  
+- **DirectML**: Använd DirectML för GPU-acceleration på Windows-plattformar  
+- **UWP-integration**: Integrera med Universal Windows Platform-applikationer  
 
-## Felsökning av Edge AI-utveckling
+### TensorFlow Lite  
+- **Mobiloptimering**: Distribuera TensorFlow Lite-modeller på mobila och inbäddade enheter  
+- **Hårdvarudelegater**: Använd specialiserade hårdvarudelegater för acceleration  
+- **Mikrokontroller**: Distribuera på mikrokontroller med TensorFlow Lite Micro  
+- **Plattformsoberoende stöd**: Distribuera över Android, iOS och inbäddade Linux-system  
 
-### Vanliga problem
-- **Minnesbegränsningar**: Modellen är för stor för målenhetens minne
-- **Inferenshastighet**: Modellens inferens är för långsam för realtidskrav
-- **Noggrannhetsförsämring**: Optimering minskar modellens noggrannhet oacceptabelt
-- **Hårdvarukompatibilitet**: Modellen är inte kompatibel med målenheten
+### Azure IoT Edge  
+- **Moln-edge hybrid**: Kombinera molnbaserad träning med edge-slutledning  
+- **Moduldistribution**: Distribuera AI-modeller som IoT Edge-moduler  
+- **Enhetshantering**: Hantera edge-enheter och modelluppdateringar på distans  
+- **Telemetri**: Samla in prestandadata och modellmätvärden från edge-distributioner  
 
-### Felsökningsstrategier
-- **Prestandaprofilering**: Använd AI Toolkit's spårningsfunktioner för att identifiera flaskhalsar
-- **Resursövervakning**: Övervaka minne och CPU-användning under utveckling
-- **Inkrementell testning**: Testa optimeringar stegvis för att isolera problem
-- **Hårdvarusimulering**: Använd utvecklingsverktyg för att simulera målenheten
+## Avancerade Edge AI-scenarier  
 
-### Optimeringslösningar
-- **Ytterligare kvantisering**: Använd mer aggressiva kvantiseringstekniker
-- **Modellarkitektur**: Överväg olika modellarkitekturer optimerade för edge
-- **Förbearbetningsoptimering**: Optimera databehandling för edge-begränsningar
-- **Inferensoptimering**: Använd hårdvaruspecifika inferensoptimeringar
+### Multi-modell distribution  
+- **Modellensembler**: Distribuera flera modeller för förbättrad noggrannhet eller redundans  
+- **A/B-testning**: Testa olika modeller samtidigt på edge-enheter  
+- **Dynamiskt urval**: Välj modeller baserat på aktuella enhetsförhållanden  
+- **Resursdelning**: Optimera resursanvändning över flera distribuerade modeller  
 
-## Resurser och nästa steg
+### Federerad inlärning  
+- **Distribuerad träning**: Träna modeller över flera edge-enheter  
+- **Integritetsskydd**: Behåll träningsdata lokalt samtidigt som modellförbättringar delas  
+- **Samarbetsinlärning**: Möjliggör att enheter lär sig av kollektiva erfarenheter  
+- **Edge-moln samordning**: Samordna inlärning mellan edge-enheter och molninfrastruktur  
 
-### Dokumentation
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentation](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentation](https://onnxruntime.ai/)
-- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)
+### Realtidsbearbetning  
+- **Strömbearbetning**: Bearbeta kontinuerliga dataströmmar på edge-enheter  
+- **Slutledning med låg latens**: Optimera för minimal slutledningslatens  
+- **Batchbearbetning**: Effektivt bearbeta datapartier på edge-enheter  
+- **Adaptiv bearbetning**: Anpassa bearbetning baserat på aktuella enhetskapaciteter  
 
-### Community och support
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+## Felsökning av Edge AI-utveckling  
 
-### Lärresurser
-- [Edge AI Fundamentals Course](./Module01/README.md)
-- [Small Language Models Guide](./Module02/README.md)
-- [Edge Deployment Strategies](./Module03/README.md)
-- [Windows Edge AI Development](./windowdeveloper.md)
+### Vanliga problem  
+- **Minnesbegränsningar**: Modellen är för stor för målenhetens minne  
+- **Slutledningshastighet**: Modellens slutledning är för långsam för realtidskrav  
+- **Noggrannhetsförsämring**: Optimering minskar modellens noggrannhet oacceptabelt  
+- **Hårdvarukompatibilitet**: Modellen är inte kompatibel med målhårdvaran  
 
-## Slutsats
+### Felsökningsstrategier  
+- **Prestandaprofilering**: Använd AI Toolkit's spårningsfunktioner för att identifiera flaskhalsar  
+- **Resursövervakning**: Övervaka minne och CPU-användning under utvecklingen  
+- **Inkrementell testning**: Testa optimeringar stegvis för att isolera problem  
+- **Hårdvarusimulering**: Använd utvecklingsverktyg för att simulera målhårdvaran  
 
-AI Toolkit för Visual Studio Code erbjuder en omfattande plattform för Edge AI-utveckling, från modellupptäckt och optimering till distribution och övervakning. Genom att utnyttja dess integrerade verktyg och arbetsflöden kan utvecklare effektivt skapa, testa och distribuera AI-applikationer som fungerar väl på resursbegränsade edge-enheter.
+### Optimeringslösningar  
+- **Ytterligare kvantisering**: Använd mer aggressiva kvantiseringstekniker  
+- **Modellarkitektur**: Överväg olika modellarkitekturer optimerade för edge  
+- **Förbearbetningsoptimering**: Optimera databehandling för edge-begränsningar  
+- **Slutledningsoptimering**: Använd hårdvaruspecifika slutledningsoptimeringar  
 
-Toolkitens stöd för ONNX, Ollama och olika molnleverantörer, kombinerat med dess optimerings- och utvärderingsmöjligheter, gör det till ett idealiskt val för Edge AI-utveckling. Oavsett om du bygger IoT-applikationer, mobila AI-funktioner eller inbäddade intelligenta system, erbjuder AI Toolkit de verktyg och arbetsflöden som behövs för framgångsrik Edge AI-distribution.
+## Resurser och nästa steg  
 
-När Edge AI fortsätter att utvecklas, förblir AI Toolkit för VS Code i framkant och tillhandahåller utvecklare avancerade verktyg och funktioner för att bygga nästa generation av intelligenta edge-applikationer.
+### Officiell dokumentation  
+- [AI Toolkit Developer Documentation](https://aka.ms/AIToolkit/doc)  
+- [Installation och installationsguide](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Intelligent Apps Dokumentation](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) Dokumentation](https://modelcontextprotocol.io/)  
+
+### Community och support  
+- [AI Toolkit GitHub Repository](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub Issues och funktionsförfrågningar](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord Community](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Tekniska resurser  
+- [ONNX Runtime Dokumentation](https://onnxruntime.ai/)  
+- [Ollama Dokumentation](https://ollama.ai/)  
+- [Windows ML Dokumentation](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Lärandespår  
+- [Edge AI Fundamentals Kurs](../Module01/README.md)  
+- [Guide för små språkmodeller](../Module02/README.md)  
+- [Strategier för edge-distribution](../Module03/README.md)  
+- [Windows Edge AI-utveckling](./windowdeveloper.md)  
+
+### Ytterligare resurser  
+- **Repository-statistik**: 1.8k+ stjärnor, 150+ forks, 18+ bidragsgivare  
+- **Licens**: MIT License  
+- **Säkerhet**: Microsofts säkerhetspolicyer gäller  
+- **Telemetri**: Respekterar VS Code telemetriinställningar  
+
+## Slutsats  
+
+AI Toolkit för Visual Studio Code representerar en omfattande plattform för modern AI-utveckling, som erbjuder strömlinjeformade agentutvecklingsmöjligheter som är särskilt värdefulla för Edge AI-applikationer. Med sitt omfattande modellkatalog som stöder leverantörer som Anthropic, OpenAI, GitHub och Google, kombinerat med lokal körning via ONNX och Ollama, erbjuder verktyget den flexibilitet som behövs för olika edge-distributionsscenarier.  
+
+Styrkan i verktyget ligger i dess integrerade tillvägagångssätt—från modellupptäckt och experimentering i Playground till sofistikerad agentutveckling med Prompt Builder, omfattande utvärderingsmöjligheter och sömlös MCP-verktygsintegration. För Edge AI-utvecklare innebär detta snabb prototypframställning och testning av AI-agenter innan edge-distribution, med möjlighet att snabbt iterera och optimera för resursbegränsade miljöer.  
+
+Nyckelfördelar för Edge AI-utveckling inkluderar:  
+- **Snabb experimentering**: Testa modeller och agenter snabbt innan edge-distribution  
+- **Flexibilitet med flera leverantörer**: Få tillgång till modeller från olika källor för att hitta optimala edge-lösningar  
+- **Lokal utveckling**: Testa med ONNX och Ollama för offline- och integritetsskyddande utveckling  
+- **Produktionsberedskap**: Generera produktionsklar kod och integrera med externa verktyg via MCP  
+- **Omfattande utvärdering**: Använd inbyggda och anpassade mätvärden för att validera Edge AI-prestanda  
+
+När AI fortsätter att röra sig mot edge-distributionsscenarier, erbjuder AI Toolkit för VS Code den utvecklingsmiljö och arbetsflöde som behövs för att bygga, testa och optimera intelligenta applikationer för resursbegränsade miljöer. Oavsett om du utvecklar IoT-lösningar, mobila AI-applikationer eller inbäddade intelligenssystem, stödjer verktygets omfattande funktioner och integrerade arbetsflöde hela Edge AI-utvecklingslivscykeln.  
+
+Med pågående utveckling och en aktiv community (1.8k+ GitHub-stjärnor) förblir AI Toolkit i framkant av AI-utvecklingsverktyg och utvecklas kontinuerligt för att möta behoven hos moderna AI-utvecklare som bygger för edge-distributionsscenarier.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör du vara medveten om att automatiska översättningar kan innehålla fel eller inexaktheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.

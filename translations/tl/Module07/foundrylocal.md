@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:50:41+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:53:01+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "tl"
 }
@@ -11,12 +11,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ang gabay na ito ay tumutulong sa iyo na mag-install, magpatakbo, at mag-integrate ng Microsoft Foundry Local sa Windows at Mac. Ang lahat ng mga hakbang at utos ay na-validate batay sa Microsoft Learn docs.
 
-- Simulan: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
+- Magsimula: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Arkitektura: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - CLI Reference: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrate SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-- Compile HF Models (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Windows AI: Local vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- I-compile ang HF Models (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Windows AI: Lokal vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Mag-install / Mag-upgrade sa Windows
 
@@ -36,7 +36,7 @@ foundry --version
 **Mag-install / Mac**
 
 **MacOS**: 
-Buksan ang terminal at patakbuhin ang sumusunod na utos:
+Magbukas ng terminal at patakbuhin ang sumusunod na utos:
 ```bash
    brew tap microsoft/foundrylocal
    brew install foundrylocal
@@ -63,8 +63,8 @@ foundry cache list
 ```
 
 Mga Tala:
-- Ang serbisyo ay nagbibigay ng OpenAI-compatible REST API. Ang port ng endpoint ay dynamic na ina-allocate; gamitin ang `foundry service status` para matuklasan ito.
-- Gamitin ang SDKs para sa kaginhawaan; awtomatikong hinahandle nila ang endpoint discovery kung suportado.
+- Ang serbisyo ay nagbibigay ng OpenAI-compatible REST API. Ang port ng endpoint ay dynamic na itinalaga; gamitin ang `foundry service status` para matuklasan ito.
+- Gamitin ang SDKs para sa kaginhawaan; awtomatikong hinahandle nila ang endpoint discovery kung saan suportado.
 
 ## 3) Tuklasin ang Lokal na Endpoint (Dynamic Port)
 
@@ -72,7 +72,7 @@ Ang Foundry Local ay nag-aassign ng dynamic na port tuwing nagsisimula ang serbi
 ```cmd
 foundry service status
 ```
-Gamitin ang iniulat na `http://localhost:<PORT>` bilang iyong `base_url` kasama ang OpenAI-compatible paths (halimbawa, `/v1/chat/completions`).
+Gamitin ang iniulat na `http://localhost:<PORT>` bilang iyong `base_url` na may OpenAI-compatible paths (halimbawa, `/v1/chat/completions`).
 
 ## 4) Mabilisang Pagsubok gamit ang OpenAI Python SDK
 
@@ -92,11 +92,11 @@ PY
 Mga Sanggunian:
 - SDK Integration: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Magdala ng Sariling Modelo (Compile gamit ang Olive)
+## 5) Magdala ng Sariling Modelo (I-compile gamit ang Olive)
 
 Kung kailangan mo ng modelong wala sa catalog, i-compile ito sa ONNX para sa Foundry Local gamit ang Olive.
 
-High-level flow (tingnan ang docs para sa mga hakbang):
+Pangkalahatang daloy (tingnan ang docs para sa mga hakbang):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -125,10 +125,14 @@ winget upgrade --id Microsoft.FoundryLocal
 
 ## 7) Kaugnay na Karanasan ng Windows Developer
 
-- Mga pagpipilian sa Windows local vs cloud AI, kabilang ang Foundry Local at Windows ML:
+- Mga pagpipilian sa Windows lokal vs cloud AI, kabilang ang Foundry Local at Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit gamit ang Foundry Local (gamitin ang `foundry service status` para makuha ang chat endpoint URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Susunod na Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Paunawa**:  
+Ang dokumentong ito ay isinalin gamit ang AI translation service na [Co-op Translator](https://github.com/Azure/co-op-translator). Bagama't sinisikap naming maging tumpak, mangyaring tandaan na ang mga awtomatikong pagsasalin ay maaaring maglaman ng mga pagkakamali o hindi pagkakatugma. Ang orihinal na dokumento sa kanyang katutubong wika ang dapat ituring na opisyal na sanggunian. Para sa mahalagang impormasyon, inirerekomenda ang propesyonal na pagsasalin ng tao. Hindi kami mananagot sa anumang hindi pagkakaunawaan o maling interpretasyon na dulot ng paggamit ng pagsasaling ito.

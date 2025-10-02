@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:04:35+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T15:11:43+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "uk"
 }
@@ -68,7 +68,7 @@ foundry cache list
 
 ## 3) Визначення локальної кінцевої точки (динамічний порт)
 
-Foundry Local призначає динамічний порт кожного разу, коли сервіс запускається:
+Foundry Local призначає динамічний порт кожного разу при запуску сервісу:
 ```cmd
 foundry service status
 ```
@@ -107,7 +107,7 @@ foundry model run llama-3.2 --verbose
 
 ## 6) Вирішення проблем
 
-- Перевірка статусу сервісу та логів:
+- Перевірка статусу сервісу та журналів:
 ```cmd
 foundry service status
 foundry service diag
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Супутній досвід розробки для Windows
+## 7) Суміжний досвід розробки для Windows
 
 - Вибір між локальним і хмарним AI для Windows, включаючи Foundry Local і Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - AI Toolkit для VS Code із Foundry Local (використовуйте `foundry service status`, щоб отримати URL кінцевої точки для чату):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Наступний розробник Windows](./windowdeveloper.md)
+
 ---
 
+**Відмова від відповідальності**:  
+Цей документ був перекладений за допомогою сервісу автоматичного перекладу [Co-op Translator](https://github.com/Azure/co-op-translator). Хоча ми прагнемо до точності, звертаємо вашу увагу, що автоматичні переклади можуть містити помилки або неточності. Оригінальний документ на його рідній мові слід вважати авторитетним джерелом. Для критично важливої інформації рекомендується професійний людський переклад. Ми не несемо відповідальності за будь-які непорозуміння або неправильні тлумачення, що виникли внаслідок використання цього перекладу.

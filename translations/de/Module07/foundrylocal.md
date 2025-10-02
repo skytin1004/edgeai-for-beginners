@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:14:39+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:00:23+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "de"
 }
@@ -64,7 +64,7 @@ foundry cache list
 
 Hinweise:
 - Der Service stellt eine OpenAI-kompatible REST-API bereit. Der Endpunkt-Port wird dynamisch zugewiesen; verwenden Sie `foundry service status`, um ihn zu ermitteln.
-- Nutzen Sie die SDKs für mehr Komfort; sie übernehmen die automatische Endpunkt-Erkennung, wo unterstützt.
+- Nutzen Sie die SDKs für mehr Komfort; sie übernehmen die Endpunkt-Erkennung automatisch, wo unterstützt.
 
 ## 3) Lokalen Endpunkt entdecken (Dynamischer Port)
 
@@ -118,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- Auf die neueste Vorschau-Version aktualisieren:
+- Auf die neueste Vorschau aktualisieren:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit mit Foundry Local (verwenden Sie `foundry service status`, um die Chat-Endpunkt-URL zu erhalten):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Weiterer Windows-Entwickler](./windowdeveloper.md)
+
 ---
 
+**Haftungsausschluss**:  
+Dieses Dokument wurde mithilfe des KI-Übersetzungsdienstes [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, weisen wir darauf hin, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die aus der Nutzung dieser Übersetzung entstehen.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:46:16+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:30:38+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "nl"
 }
@@ -62,8 +62,8 @@ foundry cache --help
 foundry cache list
 ```
 
-Notities:
-- De service biedt een OpenAI-compatibele REST API. De poort van de endpoint wordt dynamisch toegewezen; gebruik `foundry service status` om deze te achterhalen.
+Opmerkingen:
+- De service biedt een OpenAI-compatibele REST API. De poort van de endpoint wordt dynamisch toegewezen; gebruik `foundry service status` om deze te ontdekken.
 - Gebruik de SDK's voor gemak; zij regelen automatisch de ontdekking van endpoints waar ondersteund.
 
 ## 3) Ontdek de lokale endpoint (Dynamische Poort)
@@ -72,7 +72,7 @@ Foundry Local wijst elke keer dat de service start een dynamische poort toe:
 ```cmd
 foundry service status
 ```
-Gebruik de gerapporteerde `http://localhost:<PORT>` als je `base_url` met OpenAI-compatibele paden (bijvoorbeeld, `/v1/chat/completions`).
+Gebruik de gerapporteerde `http://localhost:<PORT>` als je `base_url` met OpenAI-compatibele paden (bijvoorbeeld `/v1/chat/completions`).
 
 ## 4) Snel testen via OpenAI Python SDK
 
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Windows lokaal vs cloud AI-keuzes, inclusief Foundry Local en Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit met Foundry Local (gebruik `foundry service status` om de chat endpoint-URL te verkrijgen):
+- VS Code AI Toolkit met Foundry Local (gebruik `foundry service status` om de chat-endpoint URL te verkrijgen):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Volgende Windows Developer](./windowdeveloper.md)
 
 ---
 
+**Disclaimer**:  
+Dit document is vertaald met behulp van de AI-vertalingsservice [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u zich ervan bewust te zijn dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor cruciale informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor eventuele misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.

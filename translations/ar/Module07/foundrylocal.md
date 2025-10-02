@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:16:26+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:08:02+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ar"
 }
@@ -66,13 +66,13 @@ foundry cache list
 - الخدمة توفر واجهة REST API متوافقة مع OpenAI. يتم تخصيص منفذ نقطة النهاية ديناميكيًا؛ استخدم `foundry service status` لاكتشافه.
 - استخدم SDKs للراحة؛ فهي تتعامل مع اكتشاف نقطة النهاية تلقائيًا حيثما كان ذلك مدعومًا.
 
-## 3) اكتشاف نقطة النهاية المحلية (المنفذ الديناميكي)
+## 3) اكتشاف نقطة النهاية المحلية (منفذ ديناميكي)
 
 يقوم Foundry Local بتخصيص منفذ ديناميكي في كل مرة يتم فيها بدء الخدمة:
 ```cmd
 foundry service status
 ```
-استخدم `http://localhost:<PORT>` الذي تم الإبلاغ عنه كـ `base_url` مع المسارات المتوافقة مع OpenAI (على سبيل المثال، `/v1/chat/completions`).
+استخدم `http://localhost:<PORT>` المبلغ عنه كـ `base_url` مع المسارات المتوافقة مع OpenAI (على سبيل المثال، `/v1/chat/completions`).
 
 ## 4) اختبار سريع عبر OpenAI Python SDK
 
@@ -92,11 +92,11 @@ PY
 المراجع:
 - دمج SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) استخدم نموذجك الخاص (تجميع باستخدام Olive)
+## 5) استخدم النموذج الخاص بك (تجميع باستخدام Olive)
 
 إذا كنت بحاجة إلى نموذج غير موجود في الكتالوج، قم بتجميعه إلى ONNX لـ Foundry Local باستخدام Olive.
 
-التدفق عالي المستوى (راجع الوثائق للخطوات):
+التدفق العام (راجع الوثائق للخطوات):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) تجربة المطورين ذات الصلة بويندوز
+## 7) تجربة المطورين على ويندوز
 
 - خيارات الذكاء الاصطناعي المحلي مقابل السحابة على ويندوز، بما في ذلك Foundry Local وWindows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - أدوات الذكاء الاصطناعي في VS Code مع Foundry Local (استخدم `foundry service status` للحصول على عنوان URL لنقطة نهاية الدردشة):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[المطور التالي على ويندوز](./windowdeveloper.md)
+
 ---
 
+**إخلاء المسؤولية**:  
+تم ترجمة هذا المستند باستخدام خدمة الترجمة بالذكاء الاصطناعي [Co-op Translator](https://github.com/Azure/co-op-translator). بينما نسعى لتحقيق الدقة، يرجى العلم أن الترجمات الآلية قد تحتوي على أخطاء أو معلومات غير دقيقة. يجب اعتبار المستند الأصلي بلغته الأصلية المصدر الرسمي. للحصول على معلومات حاسمة، يُوصى بالاستعانة بترجمة بشرية احترافية. نحن غير مسؤولين عن أي سوء فهم أو تفسيرات خاطئة ناتجة عن استخدام هذه الترجمة.

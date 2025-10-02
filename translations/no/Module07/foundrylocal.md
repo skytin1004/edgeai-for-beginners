@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:43:52+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T13:18:06+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "no"
 }
@@ -16,7 +16,7 @@ Denne veiledningen hjelper deg med å installere, kjøre og integrere Microsoft 
 - CLI-referanse: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Integrer SDK-er: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 - Kompiler HF-modeller (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Windows AI: Lokal vs sky: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
+- Windows AI: Lokalt vs sky: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Installere / Oppgradere på Windows
 
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit med Foundry Local (bruk `foundry service status` for å få chat-endepunktets URL):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Neste Windows-utvikler](./windowdeveloper.md)
+
 ---
 
+**Ansvarsfraskrivelse**:  
+Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vær oppmerksom på at automatiserte oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på sitt opprinnelige språk bør anses som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.

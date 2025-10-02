@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:38:42+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:59:39+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "el"
 }
 -->
 # Foundry Local σε Windows & Mac
 
-Αυτός ο οδηγός σας βοηθά να εγκαταστήσετε, να εκτελέσετε και να ενσωματώσετε το Microsoft Foundry Local σε Windows και Mac. Όλα τα βήματα και οι εντολές έχουν επαληθευτεί με βάση τα έγγραφα του Microsoft Learn.
+Αυτός ο οδηγός σας βοηθά να εγκαταστήσετε, να εκτελέσετε και να ενσωματώσετε το Microsoft Foundry Local σε Windows και Mac. Όλα τα βήματα και οι εντολές έχουν επικυρωθεί σύμφωνα με τα έγγραφα του Microsoft Learn.
 
 - Ξεκινήστε: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - Αρχιτεκτονική: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
 - Αναφορά CLI: https://learn.microsoft.com/azure/ai-foundry/foundry-local/reference/reference-cli
 - Ενσωμάτωση SDKs: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-- Μεταγλώττιση HF Models (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Συμπίεση μοντέλων HF (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Τοπικό vs Cloud: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
 ## 1) Εγκατάσταση / Αναβάθμιση σε Windows
@@ -63,8 +63,8 @@ foundry cache list
 ```
 
 Σημειώσεις:
-- Η υπηρεσία παρέχει ένα REST API συμβατό με OpenAI. Η θύρα του endpoint εκχωρείται δυναμικά· χρησιμοποιήστε `foundry service status` για να την ανακαλύψετε.
-- Χρησιμοποιήστε τα SDKs για ευκολία· αυτά χειρίζονται αυτόματα την ανακάλυψη του endpoint όπου υποστηρίζεται.
+- Η υπηρεσία εκθέτει ένα REST API συμβατό με OpenAI. Η θύρα του endpoint εκχωρείται δυναμικά· χρησιμοποιήστε `foundry service status` για να την ανακαλύψετε.
+- Χρησιμοποιήστε τα SDKs για ευκολία· αυτά χειρίζονται την ανακάλυψη του endpoint αυτόματα όπου υποστηρίζεται.
 
 ## 3) Ανακάλυψη Τοπικού Endpoint (Δυναμική Θύρα)
 
@@ -92,9 +92,9 @@ PY
 Αναφορές:
 - Ενσωμάτωση SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Φέρτε το Δικό σας Μοντέλο (Μεταγλώττιση με Olive)
+## 5) Φέρτε το Δικό σας Μοντέλο (Συμπίεση με Olive)
 
-Αν χρειάζεστε ένα μοντέλο που δεν υπάρχει στον κατάλογο, μεταγλωττίστε το σε ONNX για το Foundry Local χρησιμοποιώντας το Olive.
+Αν χρειάζεστε ένα μοντέλο που δεν υπάρχει στον κατάλογο, συμπιέστε το σε ONNX για το Foundry Local χρησιμοποιώντας το Olive.
 
 Γενική ροή (δείτε τα έγγραφα για βήματα):
 ```cmd
@@ -103,16 +103,16 @@ foundry cache list
 foundry model run llama-3.2 --verbose
 ```
 Έγγραφα:
-- BYOM μεταγλώττιση: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Συμπίεση BYOM: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) Επίλυση Προβλημάτων
+## 6) Αντιμετώπιση Προβλημάτων
 
-- Ελέγξτε την κατάσταση της υπηρεσίας και τα logs:
+- Έλεγχος κατάστασης υπηρεσίας και αρχείων καταγραφής:
 ```cmd
 foundry service status
 foundry service diag
 ```
-- Καθαρισμός ή μετακίνηση cache:
+- Εκκαθάριση ή μετακίνηση cache:
 ```cmd
 foundry cache list
 foundry cache remove <model>
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit με Foundry Local (χρησιμοποιήστε `foundry service status` για να λάβετε το URL του chat endpoint):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Επόμενος Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Αποποίηση ευθύνης**:  
+Αυτό το έγγραφο έχει μεταφραστεί χρησιμοποιώντας την υπηρεσία αυτόματης μετάφρασης [Co-op Translator](https://github.com/Azure/co-op-translator). Παρόλο που καταβάλλουμε προσπάθειες για ακρίβεια, παρακαλούμε να έχετε υπόψη ότι οι αυτόματες μεταφράσεις ενδέχεται να περιέχουν λάθη ή ανακρίβειες. Το πρωτότυπο έγγραφο στη μητρική του γλώσσα θα πρέπει να θεωρείται η αυθεντική πηγή. Για κρίσιμες πληροφορίες, συνιστάται επαγγελματική ανθρώπινη μετάφραση. Δεν φέρουμε ευθύνη για τυχόν παρεξηγήσεις ή εσφαλμένες ερμηνείες που προκύπτουν από τη χρήση αυτής της μετάφρασης.

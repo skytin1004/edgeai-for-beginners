@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-19T02:03:18+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T10:44:36+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "en"
 }
@@ -11,35 +11,35 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introduction
 
-Welcome to the complete guide for using the AI Toolkit for Visual Studio Code in Edge AI development. As artificial intelligence transitions from centralized cloud computing to distributed edge devices, developers require robust, integrated tools to address the unique challenges of edge deployment—such as resource limitations and offline operation needs.
+Welcome to the complete guide for using AI Toolkit for Visual Studio Code in Edge AI development. As artificial intelligence transitions from centralized cloud computing to distributed edge devices, developers require robust, integrated tools to address the unique challenges of edge deployment—such as resource limitations and offline operation needs.
 
-The AI Toolkit for Visual Studio Code bridges this gap by offering a comprehensive development environment tailored for creating, testing, and optimizing AI applications that run efficiently on edge devices. Whether you're working with IoT sensors, mobile devices, embedded systems, or edge servers, this toolkit simplifies your entire development process within the familiar VS Code interface.
+AI Toolkit for Visual Studio Code bridges this gap by offering a comprehensive development environment tailored for building, testing, and optimizing AI applications that run efficiently on edge devices. Whether you're working with IoT sensors, mobile devices, embedded systems, or edge servers, this toolkit simplifies your entire development workflow within the familiar VS Code interface.
 
-This guide will walk you through the key concepts, tools, and best practices for utilizing the AI Toolkit in your Edge AI projects, from selecting the initial model to deploying it in production.
+This guide will walk you through the key concepts, tools, and best practices for utilizing AI Toolkit in your Edge AI projects, from initial model selection to production deployment.
 
 ## Overview
 
-The AI Toolkit provides an integrated development environment for the entire Edge AI application lifecycle within VS Code. It seamlessly integrates with popular AI models from providers like OpenAI, Anthropic, Google, and GitHub, while also supporting local model deployment through ONNX and Ollama—essential features for Edge AI applications requiring on-device inference.
+AI Toolkit for Visual Studio Code is a powerful extension that streamlines agent development and AI application creation. It offers extensive capabilities for exploring, evaluating, and deploying AI models from various providers—including Anthropic, OpenAI, GitHub, and Google—while supporting local model execution using ONNX and Ollama.
 
-What makes the AI Toolkit stand out for Edge AI development is its focus on the complete edge deployment pipeline. Unlike traditional AI tools that primarily target cloud deployment, this toolkit includes specialized features for model optimization, testing under resource constraints, and performance evaluation tailored to edge environments. It recognizes that edge AI development demands different considerations—smaller model sizes, faster inference times, offline functionality, and hardware-specific optimizations.
+What makes AI Toolkit unique is its holistic approach to the entire AI development lifecycle. Unlike traditional AI tools that focus on specific aspects, AI Toolkit provides an integrated environment covering model discovery, experimentation, agent development, evaluation, and deployment—all within the familiar VS Code interface.
 
-The platform supports various deployment scenarios, from simple on-device inference to complex multi-model edge architectures. It provides tools for model conversion, quantization, and optimization, which are critical for successful edge deployment, all while maintaining the developer-friendly experience that VS Code is known for.
+The platform is designed for rapid prototyping and production deployment, featuring tools like prompt generation, quick starters, seamless MCP (Model Context Protocol) integrations, and robust evaluation capabilities. For Edge AI development, this means you can efficiently develop, test, and optimize AI applications for edge scenarios while maintaining a streamlined workflow within VS Code.
 
 ## Learning Objectives
 
 By the end of this guide, you will be able to:
 
 ### Core Competencies
-- **Install and configure** the AI Toolkit for Visual Studio Code to support Edge AI workflows.
-- **Navigate and use** the AI Toolkit interface, including the Model Catalog, Playground, and Agent Builder.
+- **Install and configure** AI Toolkit for Visual Studio Code to support Edge AI workflows.
+- **Navigate and utilize** the AI Toolkit interface, including Model Catalog, Playground, and Agent Builder.
 - **Select and evaluate** AI models suitable for edge deployment based on performance and resource constraints.
 - **Convert and optimize** models using ONNX format and quantization techniques for edge devices.
 
 ### Edge AI Development Skills
 - **Design and implement** Edge AI applications using the integrated development environment.
-- **Test models** in edge-like conditions using local inference and resource monitoring.
+- **Perform model testing** under edge-like conditions using local inference and resource monitoring.
 - **Create and customize** AI agents optimized for edge deployment scenarios.
-- **Evaluate model performance** using metrics relevant to edge computing, such as latency, memory usage, and accuracy.
+- **Evaluate model performance** using metrics relevant to edge computing (latency, memory usage, accuracy).
 
 ### Optimization and Deployment
 - **Apply quantization and pruning** techniques to reduce model size while maintaining acceptable performance.
@@ -62,84 +62,91 @@ By the end of this guide, you will be able to:
 ## Key Features for Edge AI Development
 
 ### 1. Model Catalog and Discovery
-- **Local Model Support**: Access AI models optimized for edge deployment.
-- **ONNX Integration**: Use models in ONNX format for efficient edge inference.
-- **Ollama Support**: Utilize locally-running models through Ollama for privacy and offline functionality.
-- **Model Comparison**: Compare models side-by-side to find the best balance between performance and resource consumption for edge devices.
+- **Multi-Provider Support**: Browse and access AI models from Anthropic, OpenAI, GitHub, Google, and other providers.
+- **Local Model Integration**: Simplified discovery of ONNX and Ollama models for edge deployment.
+- **GitHub Models**: Direct integration with GitHub's model hosting for streamlined access.
+- **Model Comparison**: Compare models side-by-side to find the optimal balance for edge device constraints.
 
 ### 2. Interactive Playground
-- **Local Testing Environment**: Test models locally before deploying them to edge devices.
-- **Multi-modal Experimentation**: Experiment with images, text, and other inputs typical in edge scenarios.
-- **Parameter Tuning**: Adjust model parameters to optimize for edge constraints.
-- **Real-time Performance Monitoring**: Track inference speed and resource usage during development.
+- **Interactive Testing Environment**: Quickly experiment with model capabilities in a controlled environment.
+- **Multi-modal Support**: Test with images, text, and other inputs typical in edge scenarios.
+- **Real-time Experimentation**: Receive immediate feedback on model responses and performance.
+- **Parameter Optimization**: Fine-tune model parameters for edge deployment requirements.
 
-### 3. Agent Builder for Edge Applications
-- **Prompt Engineering**: Design optimized prompts for smaller edge models.
-- **MCP Tool Integration**: Use Model Context Protocol tools to enhance edge agent capabilities.
-- **Code Generation**: Generate production-ready code tailored for edge deployment scenarios.
-- **Structured Outputs**: Create agents that deliver consistent, structured responses suitable for edge applications.
+### 3. Prompt (Agent) Builder
+- **Natural Language Generation**: Generate starter prompts using natural language descriptions.
+- **Iterative Refinement**: Improve prompts based on model responses and performance.
+- **Task Decomposition**: Break down complex tasks with prompt chaining and structured outputs.
+- **Variable Support**: Use variables in prompts for dynamic agent behavior.
+- **Production Code Generation**: Generate production-ready code for rapid app development.
 
-### 4. Model Evaluation and Testing
-- **Performance Metrics**: Assess models using metrics relevant to edge deployment, such as latency, memory usage, and accuracy.
-- **Batch Testing**: Test multiple model configurations simultaneously to identify optimal edge settings.
-- **Custom Evaluation**: Define evaluation criteria specific to edge AI use cases.
-- **Resource Profiling**: Analyze memory and computational requirements for edge deployment planning.
+### 4. Bulk Run and Evaluation
+- **Multi-Model Testing**: Execute multiple prompts across selected models simultaneously.
+- **Efficient Testing at Scale**: Test various inputs and configurations efficiently.
+- **Custom Test Cases**: Run agents with test cases to validate functionality.
+- **Performance Comparison**: Compare results across different models and configurations.
 
-### 5. Model Conversion and Optimization
-- **ONNX Conversion**: Convert models from various formats to ONNX for edge compatibility.
-- **Quantization**: Reduce model size and improve inference speed using quantization techniques.
-- **Hardware Optimization**: Tailor models for specific edge hardware, such as CPU, GPU, and NPU.
-- **Format Transformation**: Adapt models from Hugging Face and other sources for edge deployment.
+### 5. Model Evaluation with Datasets
+- **Standard Metrics**: Test AI models using built-in evaluators (F1 score, relevance, similarity, coherence).
+- **Custom Evaluators**: Create your own evaluation metrics for specific use cases.
+- **Dataset Integration**: Test models against comprehensive datasets.
+- **Performance Measurement**: Quantify model performance for edge deployment decisions.
 
-### 6. Fine-tuning for Edge Scenarios
-- **Domain Adaptation**: Customize models for specific edge use cases and environments.
-- **Local Training**: Train models locally with GPU support for edge-specific requirements.
-- **Azure Integration**: Use Azure Container Apps for cloud-based fine-tuning before edge deployment.
-- **Transfer Learning**: Adapt pre-trained models for edge-specific tasks and constraints.
+### 6. Fine-tuning Capabilities
+- **Model Customization**: Customize models for specific use cases and domains.
+- **Specialized Adaptation**: Adapt models to specialized domains and requirements.
+- **Edge Optimization**: Fine-tune models specifically for edge deployment constraints.
+- **Domain-Specific Training**: Create models tailored to specific edge use cases.
 
-### 7. Performance Monitoring and Tracing
-- **Edge Performance Analysis**: Monitor model performance in edge-like conditions.
-- **Trace Collection**: Gather detailed performance data for optimization.
-- **Bottleneck Identification**: Detect performance issues before deploying to edge devices.
-- **Resource Usage Tracking**: Monitor memory, CPU, and inference time for edge optimization.
+### 7. MCP Tool Integration
+- **External Tool Connectivity**: Connect agents to external tools through Model Context Protocol servers.
+- **Real-world Actions**: Enable agents to query databases, access APIs, or execute custom logic.
+- **Existing MCP Servers**: Use tools from command (stdio) or HTTP (server-sent event) protocols.
+- **Custom MCP Development**: Build and scaffold new MCP servers with testing in Agent Builder.
+
+### 8. Agent Development and Testing
+- **Function Calling Support**: Enable agents to invoke external functions dynamically.
+- **Real-time Integration Testing**: Test integrations with real-time runs and tool use.
+- **Agent Versioning**: Version control for agents with comparison capabilities for evaluation results.
+- **Debugging and Tracing**: Local tracing and debugging capabilities for agent development.
 
 ## Edge AI Development Workflow
 
 ### Phase 1: Model Discovery and Selection
-1. **Explore Model Catalog**: Use the catalog to find models suitable for edge deployment.
+1. **Explore Model Catalog**: Use the model catalog to find models suitable for edge deployment.
 2. **Compare Performance**: Evaluate models based on size, accuracy, and inference speed.
-3. **Test Locally**: Use Ollama or ONNX models to test locally before deployment.
+3. **Test Locally**: Use Ollama or ONNX models to test locally before edge deployment.
 4. **Assess Resource Requirements**: Determine memory and computational needs for target edge devices.
 
 ### Phase 2: Model Optimization
 1. **Convert to ONNX**: Convert selected models to ONNX format for edge compatibility.
-2. **Apply Quantization**: Reduce model size using INT8 or INT4 quantization.
+2. **Apply Quantization**: Reduce model size through INT8 or INT4 quantization.
 3. **Hardware Optimization**: Optimize for target edge hardware (ARM, x86, specialized accelerators).
-4. **Performance Validation**: Ensure optimized models maintain acceptable accuracy.
+4. **Performance Validation**: Validate optimized models maintain acceptable accuracy.
 
 ### Phase 3: Application Development
 1. **Agent Design**: Use Agent Builder to create edge-optimized AI agents.
-2. **Prompt Engineering**: Develop prompts tailored for smaller edge models.
+2. **Prompt Engineering**: Develop prompts that work effectively with smaller edge models.
 3. **Integration Testing**: Test agents in simulated edge conditions.
-4. **Code Generation**: Generate production-ready code optimized for edge deployment.
+4. **Code Generation**: Generate production code optimized for edge deployment.
 
 ### Phase 4: Evaluation and Testing
-1. **Batch Evaluation**: Test multiple configurations to identify optimal edge settings.
+1. **Batch Evaluation**: Test multiple configurations to find optimal edge settings.
 2. **Performance Profiling**: Analyze inference speed, memory usage, and accuracy.
-3. **Edge Simulation**: Test in conditions similar to the target edge deployment environment.
-4. **Stress Testing**: Evaluate performance under varying load conditions.
+3. **Edge Simulation**: Test in conditions similar to target edge deployment environment.
+4. **Stress Testing**: Evaluate performance under various load conditions.
 
 ### Phase 5: Deployment Preparation
-1. **Final Optimization**: Apply final adjustments based on testing results.
+1. **Final Optimization**: Apply final optimizations based on testing results.
 2. **Deployment Packaging**: Package models and code for edge deployment.
-3. **Documentation**: Document deployment requirements and configurations.
-4. **Monitoring Setup**: Prepare monitoring and logging for production deployment.
+3. **Documentation**: Document deployment requirements and configuration.
+4. **Monitoring Setup**: Prepare monitoring and logging for edge deployment.
 
 ## Target Audience for Edge AI Development
 
 ### Edge AI Developers
-- Developers building AI-powered edge devices and IoT solutions.
-- Embedded systems developers integrating AI into resource-constrained devices.
+- Application developers building AI-powered edge devices and IoT solutions.
+- Embedded systems developers integrating AI capabilities into resource-constrained devices.
 - Mobile developers creating on-device AI applications for smartphones and tablets.
 
 ### Edge AI Engineers
@@ -169,183 +176,230 @@ By the end of this guide, you will be able to:
 ### Edge Computing Infrastructure
 - **Edge Data Centers**: Deploy AI models in edge data centers for low-latency applications.
 - **CDN Integration**: Integrate AI processing capabilities into content delivery networks.
-- **5G Edge**: Utilize 5G edge computing for AI-powered applications.
+- **5G Edge**: Leverage 5G edge computing for AI-powered applications.
 - **Fog Computing**: Implement AI processing in fog computing environments.
 
 ## Installation and Setup
 
-### Quick Installation
+### Extension Installation
 Install the AI Toolkit extension directly from the Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**Extension ID**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Installation Methods**:
+1. **VS Code Marketplace**: Search for "AI Toolkit" in the Extensions view.
+2. **Command Line**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Direct Install**: Download from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio).
 
 ### Prerequisites for Edge AI Development
-- **ONNX Runtime**: Install ONNX Runtime for model inference.
-- **Ollama** (Optional): Install Ollama for local model serving.
-- **Python Environment**: Set up Python with required AI libraries.
-- **Edge Hardware Tools**: Install hardware-specific development tools (CUDA, OpenVINO, etc.).
+- **Visual Studio Code**: Latest version recommended.
+- **Python Environment**: Python 3.8+ with required AI libraries.
+- **ONNX Runtime** (Optional): For ONNX model inference.
+- **Ollama** (Optional): For local model serving.
+- **Hardware Acceleration Tools**: CUDA, OpenVINO, or platform-specific accelerators.
 
 ### Initial Configuration
-1. Open VS Code and install the AI Toolkit extension.
-2. Configure model sources (ONNX, Ollama, cloud providers).
-3. Set up a local development environment for edge testing.
-4. Configure hardware acceleration options for your development machine.
+1. **Extension Activation**: Open VS Code and verify AI Toolkit appears in the Activity Bar.
+2. **Model Provider Setup**: Configure access to GitHub, OpenAI, Anthropic, or other model providers.
+3. **Local Environment**: Set up Python environment and install required packages.
+4. **Hardware Acceleration**: Configure GPU/NPU acceleration if available.
+5. **MCP Integration**: Set up Model Context Protocol servers if needed.
 
-## Getting Started with Edge AI Development
+### First-Time Setup Checklist
+- [ ] AI Toolkit extension installed and activated.
+- [ ] Model catalog accessible and models discoverable.
+- [ ] Playground functional for model testing.
+- [ ] Agent Builder accessible for prompt development.
+- [ ] Local development environment configured.
+- [ ] Hardware acceleration (if available) properly configured.
 
-### Step 1: Model Selection
-1. Open the AI Toolkit view in the Activity Bar.
-2. Browse the Model Catalog for edge-compatible models.
-3. Filter by model size, format (ONNX), and performance characteristics.
-4. Compare models using the built-in comparison tools.
+## Getting Started with AI Toolkit
 
-### Step 2: Local Testing
-1. Use the Playground to test selected models locally.
-2. Experiment with different prompts and parameters.
-3. Monitor performance metrics during testing.
-4. Evaluate model responses for edge use case requirements.
+### Quick Start Guide
 
-### Step 3: Model Optimization
-1. Use the Model Conversion tools to optimize for edge deployment.
-2. Apply quantization to reduce model size.
-3. Test optimized models to ensure acceptable performance.
-4. Document optimization settings and performance trade-offs.
+We recommend starting with models hosted by GitHub for the most streamlined experience:
 
-### Step 4: Agent Development
-1. Use Agent Builder to create edge-optimized AI agents.
-2. Develop prompts tailored for smaller models.
-3. Integrate necessary tools and APIs for edge scenarios.
-4. Test agents in simulated edge conditions.
+1. **Installation**: Follow the [installation guide](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup) to set up AI Toolkit for your device.
+2. **Model Discovery**: From the extension tree view, select **CATALOG > Models** to explore available models.
+3. **GitHub Models**: Start with models hosted by GitHub for optimal integration.
+4. **Playground Testing**: From any model card, select **Try in Playground** to start experimenting with model capabilities.
 
-### Step 5: Evaluation and Deployment
-1. Use bulk evaluation to test multiple configurations.
-2. Profile performance under various conditions.
-3. Prepare deployment packages for target edge devices.
-4. Set up monitoring and logging for production deployment.
+### Step-by-Step Edge AI Development
 
-## Best Practices for Edge AI Development
+#### Step 1: Model Exploration and Selection
+1. Open the AI Toolkit view in VS Code Activity Bar.
+2. Browse the Model Catalog for models suitable for edge deployment.
+3. Filter by provider (GitHub, ONNX, Ollama) based on your edge requirements.
+4. Use **Try in Playground** to test model capabilities immediately.
 
-### Model Selection
-- **Size Constraints**: Choose models that fit within the memory limitations of target devices.
-- **Inference Speed**: Prioritize models with fast inference times for real-time applications.
-- **Accuracy Trade-offs**: Balance model accuracy with resource constraints.
-- **Format Compatibility**: Prefer ONNX or hardware-optimized formats for edge deployment.
+#### Step 2: Agent Development
+1. Use the **Prompt (Agent) Builder** to create edge-optimized AI agents.
+2. Create initial prompts using natural language descriptions  
+3. Refine and iterate prompts based on model feedback  
+4. Utilize MCP tools to enhance agent capabilities  
 
-### Optimization Techniques
-- **Quantization**: Use INT8 or INT4 quantization to reduce model size and improve speed.
-- **Pruning**: Remove unnecessary model parameters to reduce computational requirements.
-- **Knowledge Distillation**: Create smaller models that maintain the performance of larger ones.
-- **Hardware Acceleration**: Leverage NPUs, GPUs, or specialized accelerators when available.
+#### Step 3: Testing and Evaluation  
+1. Use **Bulk Run** to test multiple prompts across selected models  
+2. Execute agents with test cases to verify functionality  
+3. Assess accuracy and performance using built-in or custom metrics  
+4. Compare various models and configurations  
 
-### Development Workflow
-- **Iterative Testing**: Test frequently in edge-like conditions during development.
-- **Performance Monitoring**: Continuously monitor resource usage and inference speed.
-- **Version Control**: Track model versions and optimization settings.
-- **Documentation**: Document all optimization decisions and performance trade-offs.
+#### Step 4: Fine-tuning and Optimization  
+1. Tailor models for specific edge use cases  
+2. Apply domain-specific fine-tuning  
+3. Optimize for constraints in edge deployments  
+4. Version and compare different agent setups  
 
-### Deployment Considerations
-- **Resource Monitoring**: Monitor memory, CPU, and power usage in production.
-- **Fallback Strategies**: Implement fallback mechanisms for model failures.
-- **Update Mechanisms**: Plan for model updates and version management.
-- **Security**: Implement appropriate security measures for edge AI applications
+#### Step 5: Deployment Preparation  
+1. Generate production-ready code using the Agent Builder  
+2. Configure MCP server connections for production environments  
+3. Prepare deployment packages for edge devices  
+4. Set up monitoring and evaluation metrics  
 
-## Integration with Edge AI Frameworks
+## Best Practices for Edge AI Development  
 
-### ONNX Runtime
-- **Cross-platform Deployment**: Deploy ONNX models on various edge platforms
-- **Hardware Optimization**: Utilize ONNX Runtime's optimizations tailored to specific hardware
-- **Mobile Support**: Use ONNX Runtime Mobile for applications on smartphones and tablets
-- **IoT Integration**: Deploy on IoT devices with ONNX Runtime's lightweight distributions
+### Model Selection  
+- **Size Constraints**: Select models that fit within the memory limits of target devices  
+- **Inference Speed**: Focus on models with fast inference times for real-time applications  
+- **Accuracy Trade-offs**: Balance model accuracy with resource limitations  
+- **Format Compatibility**: Opt for ONNX or hardware-optimized formats for edge deployment  
 
-### Windows ML
-- **Windows Devices**: Optimize for edge devices and PCs running Windows
-- **NPU Acceleration**: Take advantage of Neural Processing Units on Windows devices
-- **DirectML**: Use DirectML for GPU acceleration on Windows systems
-- **UWP Integration**: Integrate with Universal Windows Platform applications
+### Optimization Techniques  
+- **Quantization**: Use INT8 or INT4 quantization to reduce model size and enhance speed  
+- **Pruning**: Eliminate unnecessary model parameters to lower computational demands  
+- **Knowledge Distillation**: Develop smaller models that retain the performance of larger ones  
+- **Hardware Acceleration**: Utilize NPUs, GPUs, or specialized accelerators when available  
 
-### TensorFlow Lite
-- **Mobile Optimization**: Deploy TensorFlow Lite models on mobile and embedded devices
-- **Hardware Delegates**: Use specialized hardware delegates for performance acceleration
-- **Micro Controllers**: Deploy TensorFlow Lite Micro on microcontrollers
-- **Cross-platform Support**: Deploy across Android, iOS, and embedded Linux systems
+### Development Workflow  
+- **Iterative Testing**: Regularly test in edge-like conditions during development  
+- **Performance Monitoring**: Continuously track resource usage and inference speed  
+- **Version Control**: Maintain records of model versions and optimization settings  
+- **Documentation**: Keep detailed notes on optimization decisions and performance trade-offs  
 
-### Azure IoT Edge
-- **Cloud-Edge Hybrid**: Combine cloud-based training with edge-based inference
-- **Module Deployment**: Deploy AI models as IoT Edge modules
-- **Device Management**: Remotely manage edge devices and update models
-- **Telemetry**: Gather performance data and metrics from edge deployments
+### Deployment Considerations  
+- **Resource Monitoring**: Track memory, CPU, and power usage in production environments  
+- **Fallback Strategies**: Implement mechanisms to handle model failures  
+- **Update Mechanisms**: Plan for model updates and version management  
+- **Security**: Ensure robust security measures for edge AI applications  
 
-## Advanced Edge AI Scenarios
+## Integration with Edge AI Frameworks  
 
-### Multi-Model Deployment
-- **Model Ensembles**: Deploy multiple models to enhance accuracy or provide redundancy
-- **A/B Testing**: Simultaneously test different models on edge devices
-- **Dynamic Selection**: Select models based on the current conditions of the device
-- **Resource Sharing**: Optimize resource usage across multiple deployed models
+### ONNX Runtime  
+- **Cross-platform Deployment**: Deploy ONNX models across various edge platforms  
+- **Hardware Optimization**: Utilize ONNX Runtime's hardware-specific enhancements  
+- **Mobile Support**: Deploy ONNX Runtime Mobile for smartphones and tablets  
+- **IoT Integration**: Use ONNX Runtime's lightweight distributions for IoT devices  
 
-### Federated Learning
-- **Distributed Training**: Train models across multiple edge devices
-- **Privacy Preservation**: Keep training data local while sharing model updates
-- **Collaborative Learning**: Enable devices to learn collectively from shared experiences
-- **Edge-Cloud Coordination**: Coordinate learning between edge devices and cloud infrastructure
+### Windows ML  
+- **Windows Devices**: Optimize for Windows-based edge devices and PCs  
+- **NPU Acceleration**: Take advantage of Neural Processing Units on Windows devices  
+- **DirectML**: Use DirectML for GPU acceleration on Windows platforms  
+- **UWP Integration**: Incorporate into Universal Windows Platform applications  
 
-### Real-time Processing
-- **Stream Processing**: Handle continuous data streams on edge devices
-- **Low-latency Inference**: Optimize inference for minimal delay
-- **Batch Processing**: Efficiently process data batches on edge devices
-- **Adaptive Processing**: Adjust processing based on the device's current capabilities
+### TensorFlow Lite  
+- **Mobile Optimization**: Deploy TensorFlow Lite models on mobile and embedded devices  
+- **Hardware Delegates**: Utilize specialized hardware delegates for acceleration  
+- **Micro Controllers**: Deploy on microcontrollers using TensorFlow Lite Micro  
+- **Cross-platform Support**: Deploy across Android, iOS, and embedded Linux systems  
 
-## Troubleshooting Edge AI Development
+### Azure IoT Edge  
+- **Cloud-Edge Hybrid**: Combine cloud-based training with edge inference  
+- **Module Deployment**: Deploy AI models as IoT Edge modules  
+- **Device Management**: Remotely manage edge devices and model updates  
+- **Telemetry**: Gather performance data and model metrics from edge deployments  
 
-### Common Issues
-- **Memory Constraints**: Model size exceeds the memory capacity of the target device
-- **Inference Speed**: Model inference is too slow for real-time applications
-- **Accuracy Degradation**: Optimization compromises model accuracy beyond acceptable limits
-- **Hardware Compatibility**: Model is incompatible with the target hardware
+## Advanced Edge AI Scenarios  
 
-### Debugging Strategies
-- **Performance Profiling**: Use AI Toolkit's tracing features to identify bottlenecks
-- **Resource Monitoring**: Track memory and CPU usage during development
-- **Incremental Testing**: Test optimizations step-by-step to pinpoint issues
-- **Hardware Simulation**: Use development tools to simulate the target hardware environment
+### Multi-Model Deployment  
+- **Model Ensembles**: Deploy multiple models for enhanced accuracy or redundancy  
+- **A/B Testing**: Simultaneously test different models on edge devices  
+- **Dynamic Selection**: Choose models based on current device conditions  
+- **Resource Sharing**: Optimize resource usage across multiple deployed models  
 
-### Optimization Solutions
-- **Further Quantization**: Apply more aggressive quantization techniques
-- **Model Architecture**: Explore alternative model architectures optimized for edge devices
-- **Preprocessing Optimization**: Tailor data preprocessing to meet edge constraints
-- **Inference Optimization**: Implement hardware-specific optimizations for inference
+### Federated Learning  
+- **Distributed Training**: Train models across multiple edge devices  
+- **Privacy Preservation**: Keep training data local while sharing model updates  
+- **Collaborative Learning**: Enable devices to learn from shared experiences  
+- **Edge-Cloud Coordination**: Synchronize learning between edge devices and cloud infrastructure  
 
-## Resources and Next Steps
+### Real-time Processing  
+- **Stream Processing**: Handle continuous data streams on edge devices  
+- **Low-latency Inference**: Optimize for minimal inference delays  
+- **Batch Processing**: Efficiently process data batches on edge devices  
+- **Adaptive Processing**: Adjust processing based on current device capabilities  
 
-### Documentation
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentation](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentation](https://onnxruntime.ai/)
-- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)
+## Troubleshooting Edge AI Development  
 
-### Community and Support
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Common Issues  
+- **Memory Constraints**: Model exceeds memory capacity of target device  
+- **Inference Speed**: Model inference is too slow for real-time needs  
+- **Accuracy Degradation**: Optimization compromises model accuracy  
+- **Hardware Compatibility**: Model is incompatible with target hardware  
 
-### Learning Resources
-- [Edge AI Fundamentals Course](./Module01/README.md)
-- [Small Language Models Guide](./Module02/README.md)
-- [Edge Deployment Strategies](./Module03/README.md)
-- [Windows Edge AI Development](./windowdeveloper.md)
+### Debugging Strategies  
+- **Performance Profiling**: Use AI Toolkit's tracing tools to identify bottlenecks  
+- **Resource Monitoring**: Track memory and CPU usage during development  
+- **Incremental Testing**: Test optimizations step-by-step to isolate problems  
+- **Hardware Simulation**: Use development tools to simulate target hardware  
 
-## Conclusion
+### Optimization Solutions  
+- **Further Quantization**: Apply more aggressive quantization methods  
+- **Model Architecture**: Explore alternative architectures optimized for edge use  
+- **Preprocessing Optimization**: Streamline data preprocessing for edge constraints  
+- **Inference Optimization**: Implement hardware-specific inference enhancements  
 
-The AI Toolkit for Visual Studio Code offers a complete platform for Edge AI development, covering everything from model discovery and optimization to deployment and monitoring. By utilizing its integrated tools and workflows, developers can efficiently create, test, and deploy AI applications that perform well on resource-constrained edge devices.
+## Resources and Next Steps  
 
-With support for ONNX, Ollama, and various cloud providers, along with its optimization and evaluation features, the toolkit is an excellent choice for Edge AI development. Whether you're working on IoT applications, mobile AI features, or embedded intelligence systems, the AI Toolkit provides the necessary tools and workflows for successful Edge AI deployment.
+### Official Documentation  
+- [AI Toolkit Developer Documentation](https://aka.ms/AIToolkit/doc)  
+- [Installation and Setup Guide](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Intelligent Apps Documentation](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) Documentation](https://modelcontextprotocol.io/)  
 
-As Edge AI continues to advance, the AI Toolkit for VS Code remains at the forefront, equipping developers with state-of-the-art tools and capabilities to build the next generation of intelligent edge applications.
+### Community and Support  
+- [AI Toolkit GitHub Repository](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub Issues and Feature Requests](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord Community](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Technical Resources  
+- [ONNX Runtime Documentation](https://onnxruntime.ai/)  
+- [Ollama Documentation](https://ollama.ai/)  
+- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Learning Pathways  
+- [Edge AI Fundamentals Course](../Module01/README.md)  
+- [Small Language Models Guide](../Module02/README.md)  
+- [Edge Deployment Strategies](../Module03/README.md)  
+- [Windows Edge AI Development](./windowdeveloper.md)  
+
+### Additional Resources  
+- **Repository Stats**: 1.8k+ stars, 150+ forks, 18+ contributors  
+- **License**: MIT License  
+- **Security**: Microsoft security policies apply  
+- **Telemetry**: Respects VS Code telemetry settings  
+
+## Conclusion  
+
+AI Toolkit for Visual Studio Code is a comprehensive platform for modern AI development, offering streamlined agent development capabilities that are particularly suited for Edge AI applications. With a broad model catalog supporting providers like Anthropic, OpenAI, GitHub, and Google, along with local execution options via ONNX and Ollama, the toolkit provides the flexibility required for diverse edge deployment scenarios.  
+
+The toolkit excels in its integrated approach—from model discovery and experimentation in the Playground to advanced agent development with the Prompt Builder, robust evaluation tools, and seamless MCP tool integration. For Edge AI developers, this means rapid prototyping and testing of AI agents before deployment, with the ability to iterate quickly and optimize for resource-constrained environments.  
+
+Key benefits for Edge AI development include:  
+- **Rapid Experimentation**: Quickly test models and agents before edge deployment  
+- **Multi-Provider Flexibility**: Access models from various sources to find the best edge solutions  
+- **Local Development**: Test with ONNX and Ollama for offline and privacy-focused development  
+- **Production Readiness**: Generate production-ready code and integrate external tools via MCP  
+- **Comprehensive Evaluation**: Validate edge AI performance using built-in and custom metrics  
+
+As AI increasingly moves toward edge deployment scenarios, AI Toolkit for VS Code provides the tools and workflow necessary to build, test, and optimize intelligent applications for resource-constrained environments. Whether you're developing IoT solutions, mobile AI applications, or embedded intelligence systems, the toolkit's extensive feature set and integrated workflow support the entire edge AI development lifecycle.  
+
+With ongoing updates and an active community (1.8k+ GitHub stars), AI Toolkit remains a leading choice for AI development tools, continually evolving to meet the needs of modern developers working on edge deployment scenarios.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

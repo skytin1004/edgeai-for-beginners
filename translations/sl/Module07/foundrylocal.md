@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:02:44+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:56:52+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "sl"
 }
@@ -18,7 +18,7 @@ Ta vodič vam pomaga namestiti, zagnati in integrirati Microsoft Foundry Local n
 - Kompilacija HF modelov (BYOM): https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 - Windows AI: Lokalno vs oblak: https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 
-## 1) Namestitev / Nadgradnja na Windows
+## 1) Namestitev / nadgradnja na Windows
 
 - Namestitev:
 ```cmd
@@ -64,7 +64,7 @@ foundry cache list
 
 Opombe:
 - Storitev omogoča REST API, združljiv z OpenAI. Vrata za dostop so dinamično dodeljena; uporabite `foundry service status`, da jih odkrijete.
-- Uporabite SDK-je za lažjo uporabo; ti samodejno upravljajo odkrivanje končnih točk, kjer je podprto.
+- Uporabite SDK-je za priročnost; ti samodejno upravljajo odkrivanje končne točke, kjer je podprto.
 
 ## 3) Odkrijte lokalno končno točko (dinamična vrata)
 
@@ -72,7 +72,7 @@ Foundry Local dodeli dinamična vrata vsakič, ko se storitev zažene:
 ```cmd
 foundry service status
 ```
-Uporabite poročano `http://localhost:<PORT>` kot vaš `base_url` z OpenAI-združljivimi potmi (na primer, `/v1/chat/completions`).
+Uporabite prijavljeno `http://localhost:<PORT>` kot vaš `base_url` z OpenAI-združljivimi potmi (na primer, `/v1/chat/completions`).
 
 ## 4) Hitri test prek OpenAI Python SDK
 
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Povezana izkušnja razvijalcev na Windows
+## 7) Povezana izkušnja razvijalcev za Windows
 
-- Izbire med lokalno in oblačno AI na Windows, vključno s Foundry Local in Windows ML:
+- Izbire lokalne vs oblačne AI na Windows, vključno z Foundry Local in Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit s Foundry Local (uporabite `foundry service status`, da pridobite URL končne točke za klepet):
+- VS Code AI Toolkit z Foundry Local (uporabite `foundry service status`, da dobite URL končne točke za klepet):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Naslednji razvijalec za Windows](./windowdeveloper.md)
 
 ---
 
+**Omejitev odgovornosti**:  
+Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.

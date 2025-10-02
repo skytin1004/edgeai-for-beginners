@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T19:01:46+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:48:15+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "hr"
 }
@@ -64,7 +64,7 @@ foundry cache list
 
 Napomene:
 - Servis izlaže REST API kompatibilan s OpenAI-jem. Port za endpoint se dinamički dodjeljuje; koristite `foundry service status` za otkrivanje.
-- Koristite SDK-ove radi praktičnosti; oni automatski upravljaju otkrivanjem endpointa gdje je podržano.
+- Koristite SDK-ove radi praktičnosti; oni automatski otkrivaju endpoint gdje je podržano.
 
 ## 3) Otkrivanje lokalnog endpointa (Dinamički port)
 
@@ -103,7 +103,7 @@ foundry cache list
 foundry model run llama-3.2 --verbose
 ```
 Dokumentacija:
-- BYOM kompilacija: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
+- Kompilacija BYOM: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
 ## 6) Rješavanje problema
 
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - Windows lokalne vs cloud AI opcije, uključujući Foundry Local i Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit s Foundry Local (koristite `foundry service status` za dobivanje URL-a endpointa za chat):
+- VS Code AI Toolkit s Foundry Local (koristite `foundry service status` za dobivanje URL-a za chat endpoint):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[Sljedeći Windows Developer](./windowdeveloper.md)
 
 ---
 
+**Izjava o odricanju odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.

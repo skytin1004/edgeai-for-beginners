@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:36:09+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:48:11+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "pl"
 }
@@ -64,15 +64,15 @@ foundry cache list
 
 Uwagi:
 - Usługa udostępnia REST API kompatybilne z OpenAI. Port punktu końcowego jest dynamicznie przydzielany; użyj `foundry service status`, aby go odkryć.
-- Korzystaj z SDK dla wygody; automatycznie obsługują odkrywanie punktu końcowego tam, gdzie jest to wspierane.
+- Korzystaj z SDK dla wygody; automatycznie obsługują odkrywanie punktów końcowych tam, gdzie jest to wspierane.
 
 ## 3) Odkrywanie lokalnego punktu końcowego (Dynamiczny Port)
 
-Foundry Local przydziela dynamiczny port za każdym razem, gdy usługa się uruchamia:
+Foundry Local przydziela dynamiczny port za każdym razem, gdy usługa jest uruchamiana:
 ```cmd
 foundry service status
 ```
-Użyj zgłoszonego `http://localhost:<PORT>` jako swojego `base_url` z kompatybilnymi ścieżkami OpenAI (na przykład, `/v1/chat/completions`).
+Użyj zgłoszonego `http://localhost:<PORT>` jako swojego `base_url` z kompatybilnymi ścieżkami OpenAI (na przykład `/v1/chat/completions`).
 
 ## 4) Szybki test za pomocą OpenAI Python SDK
 
@@ -92,11 +92,11 @@ PY
 Referencje:
 - Integracja SDK: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Własny model (Kompilacja z Olive)
+## 5) Własny model (Kompilacja za pomocą Olive)
 
 Jeśli potrzebujesz modelu, którego nie ma w katalogu, skompiluj go do ONNX dla Foundry Local za pomocą Olive.
 
-Ogólny przebieg (zobacz dokumentację dla szczegółowych kroków):
+Ogólny przepływ (zobacz dokumentację dla szczegółowych kroków):
 ```cmd
 foundry cache cd models
 foundry cache list
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Powiązane doświadczenia dla deweloperów Windows
+## 7) Powiązane doświadczenia deweloperskie na Windows
 
-- Wybory AI lokalnie vs w chmurze, w tym Foundry Local i Windows ML:
+- Wybory AI lokalnie vs w chmurze na Windows, w tym Foundry Local i Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit z Foundry Local (użyj `foundry service status`, aby uzyskać URL punktu końcowego czatu):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Next Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Zastrzeżenie**:  
+Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż staramy się zapewnić dokładność, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego języku źródłowym powinien być uznawany za autorytatywne źródło. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.

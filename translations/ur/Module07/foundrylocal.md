@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:18:06+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T11:19:19+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "ur"
 }
 -->
 # ونڈوز اور میک پر Foundry Local
 
-یہ گائیڈ آپ کو ونڈوز اور میک پر Microsoft Foundry Local انسٹال کرنے، چلانے اور انٹیگریٹ کرنے میں مدد دیتی ہے۔ تمام مراحل اور کمانڈز Microsoft Learn ڈاکیومنٹس کے مطابق تصدیق شدہ ہیں۔
+یہ گائیڈ آپ کو ونڈوز اور میک پر Microsoft Foundry Local انسٹال، چلانے اور انٹیگریٹ کرنے میں مدد دیتی ہے۔ تمام مراحل اور کمانڈز Microsoft Learn ڈاکیومنٹس کے مطابق تصدیق شدہ ہیں۔
 
 - شروع کریں: https://learn.microsoft.com/azure/ai-foundry/foundry-local/get-started
 - آرکیٹیکچر: https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture
@@ -63,8 +63,8 @@ foundry cache list
 ```
 
 نوٹس:
-- سروس OpenAI-compatible REST API کو ظاہر کرتی ہے۔ اینڈ پوائنٹ پورٹ ڈائنامکلی الاٹ کی جاتی ہے؛ `foundry service status` استعمال کریں اسے دریافت کرنے کے لیے۔
-- SDKs استعمال کریں سہولت کے لیے؛ یہ اینڈ پوائنٹ دریافت کو خودکار طور پر ہینڈل کرتے ہیں جہاں سپورٹ ہو۔
+- سروس OpenAI-compatible REST API کو ظاہر کرتی ہے۔ اینڈ پوائنٹ پورٹ ڈائنامک طور پر الاٹ کیا جاتا ہے؛ اسے دریافت کرنے کے لیے `foundry service status` استعمال کریں۔
+- سہولت کے لیے SDKs استعمال کریں؛ یہ اینڈ پوائنٹ دریافت کو خودکار طور پر ہینڈل کرتے ہیں جہاں سپورٹ ہو۔
 
 ## 3) لوکل اینڈ پوائنٹ دریافت کریں (ڈائنامک پورٹ)
 
@@ -72,7 +72,7 @@ Foundry Local ہر بار سروس شروع ہونے پر ایک ڈائنامک 
 ```cmd
 foundry service status
 ```
-رپورٹ شدہ `http://localhost:<PORT>` کو اپنے `base_url` کے طور پر OpenAI-compatible paths کے ساتھ استعمال کریں (مثال کے طور پر، `/v1/chat/completions`)۔
+رپورٹ شدہ `http://localhost:<PORT>` کو OpenAI-compatible راستوں کے ساتھ اپنے `base_url` کے طور پر استعمال کریں (مثال کے طور پر، `/v1/chat/completions`)۔
 
 ## 4) OpenAI Python SDK کے ذریعے فوری ٹیسٹ
 
@@ -94,7 +94,7 @@ PY
 
 ## 5) اپنا ماڈل لائیں (Olive کے ساتھ کمپائل کریں)
 
-اگر آپ کو کیٹلاگ میں موجود ماڈل کی ضرورت نہیں ہے، تو اسے ONNX میں کمپائل کریں Foundry Local کے لیے Olive استعمال کرتے ہوئے۔
+اگر آپ کو کیٹلاگ میں موجود ماڈل کی ضرورت نہیں ہے، تو اسے Olive کے ذریعے Foundry Local کے لیے ONNX میں کمپائل کریں۔
 
 اعلی سطحی فلو (مراحل کے لیے ڈاکیومنٹس دیکھیں):
 ```cmd
@@ -127,8 +127,12 @@ winget upgrade --id Microsoft.FoundryLocal
 
 - ونڈوز لوکل بمقابلہ کلاؤڈ AI کے انتخاب، بشمول Foundry Local اور Windows ML:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
-- VS Code AI Toolkit Foundry Local کے ساتھ (چیٹ اینڈ پوائنٹ URL حاصل کرنے کے لیے `foundry service status` استعمال کریں):
+- VS Code AI Toolkit کے ساتھ Foundry Local (چیٹ اینڈ پوائنٹ URL حاصل کرنے کے لیے `foundry service status` استعمال کریں):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
+
+[اگلا ونڈوز ڈویلپر](./windowdeveloper.md)
 
 ---
 
+**ڈسکلیمر**:  
+یہ دستاویز AI ترجمہ سروس [Co-op Translator](https://github.com/Azure/co-op-translator) کا استعمال کرتے ہوئے ترجمہ کی گئی ہے۔ ہم درستگی کے لیے کوشش کرتے ہیں، لیکن براہ کرم آگاہ رہیں کہ خودکار ترجمے میں غلطیاں یا غیر درستیاں ہو سکتی ہیں۔ اصل دستاویز کو اس کی اصل زبان میں مستند ذریعہ سمجھا جانا چاہیے۔ اہم معلومات کے لیے، پیشہ ور انسانی ترجمہ کی سفارش کی جاتی ہے۔ ہم اس ترجمے کے استعمال سے پیدا ہونے والی کسی بھی غلط فہمی یا غلط تشریح کے ذمہ دار نہیں ہیں۔

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-18T10:56:10+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T13:19:47+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "fi"
 }
@@ -11,47 +11,47 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Johdanto
 
-Tervetuloa kattavaan oppaaseen AI Toolkitin käyttöön Visual Studio Codessa Edge AI -kehityksessä. Kun tekoäly siirtyy keskitetystä pilvilaskennasta hajautetuille reunalaitteille, kehittäjät tarvitsevat tehokkaita, integroituja työkaluja, jotka pystyvät vastaamaan reunasovellusten ainutlaatuisiin haasteisiin – kuten resurssirajoituksiin ja offline-toimintavaatimuksiin.
+Tervetuloa kattavaan oppaaseen AI Toolkitin käytöstä Visual Studio Codessa Edge AI -kehityksessä. Kun tekoäly siirtyy keskitetystä pilvilaskennasta hajautettuihin reunalaitteisiin, kehittäjät tarvitsevat tehokkaita ja integroitavia työkaluja, jotka pystyvät käsittelemään reunasovellusten ainutlaatuisia haasteita, kuten resurssirajoituksia ja offline-toimintavaatimuksia.
 
-AI Toolkit Visual Studio Codessa täyttää tämän tarpeen tarjoamalla täydellisen kehitysympäristön, joka on suunniteltu erityisesti tekoälysovellusten rakentamiseen, testaamiseen ja optimointiin, jotta ne toimivat tehokkaasti reunalaitteilla. Olitpa kehittämässä IoT-antureille, mobiililaitteille, sulautetuille järjestelmille tai reunapalvelimille, tämä työkalu virtaviivaistaa koko kehitysprosessisi tutussa VS Code -ympäristössä.
+AI Toolkit for Visual Studio Code täyttää tämän tarpeen tarjoamalla täydellisen kehitysympäristön, joka on suunniteltu erityisesti tekoälysovellusten rakentamiseen, testaamiseen ja optimointiin, jotta ne toimivat tehokkaasti reunalaitteilla. Olipa kyseessä IoT-anturit, mobiililaitteet, sulautetut järjestelmät tai reunapalvelimet, tämä työkalu virtaviivaistaa koko kehitysprosessin tutussa VS Code -ympäristössä.
 
-Tämä opas johdattaa sinut keskeisiin käsitteisiin, työkaluihin ja parhaisiin käytäntöihin AI Toolkitin hyödyntämiseksi Edge AI -projekteissasi, alkaen mallin valinnasta aina tuotantoon asti.
+Tämä opas johdattaa sinut keskeisiin käsitteisiin, työkaluihin ja parhaisiin käytäntöihin AI Toolkitin hyödyntämiseksi Edge AI -projekteissasi, alkaen mallin valinnasta aina tuotantokäyttöön saakka.
 
 ## Yleiskatsaus
 
-AI Toolkit tarjoaa integroidun kehitysympäristön koko Edge AI -sovelluksen elinkaarelle VS Codessa. Se mahdollistaa saumattoman integraation suosittujen tekoälymallien kanssa, kuten OpenAI, Anthropic, Google ja GitHub, ja tukee paikallista mallien käyttöönottoa ONNX:n ja Ollaman kautta – kriittisiä ominaisuuksia Edge AI -sovelluksille, jotka vaativat laitepohjaista päättelyä.
+AI Toolkit for Visual Studio Code on tehokas laajennus, joka virtaviivaistaa agenttien kehitystä ja tekoälysovellusten luomista. Työkalu tarjoaa kattavat ominaisuudet tekoälymallien tutkimiseen, arviointiin ja käyttöönottoon monilta eri tarjoajilta, kuten Anthropic, OpenAI, GitHub ja Google, samalla kun se tukee paikallista mallien suorittamista ONNX:n ja Ollaman avulla.
 
-Mikä erottaa AI Toolkitin muista Edge AI -kehitystyökaluista, on sen keskittyminen koko reunasovellusten käyttöönoton putkistoon. Toisin kuin perinteiset tekoälykehitystyökalut, jotka keskittyvät pääasiassa pilvikäyttöön, AI Toolkit sisältää erikoistuneita ominaisuuksia mallien optimointiin, resurssirajoitteiseen testaukseen ja reunakohtaiseen suorituskyvyn arviointiin. Työkalu ymmärtää, että Edge AI -kehitys vaatii erilaisia huomioita – pienempiä mallikokoja, nopeampia päättelyaikoja, offline-ominaisuuksia ja laitteistokohtaisia optimointeja.
+AI Toolkit erottuu edukseen kattavalla lähestymistavallaan koko tekoälyn kehityssykliin. Toisin kuin perinteiset tekoälytyökalut, jotka keskittyvät yksittäisiin osa-alueisiin, AI Toolkit tarjoaa integroidun ympäristön, joka kattaa mallien löytämisen, kokeilun, agenttien kehityksen, arvioinnin ja käyttöönoton – kaikki tutussa VS Code -ympäristössä.
 
-Alusta tukee useita käyttöönoton skenaarioita, yksinkertaisesta laitepohjaisesta päättelystä monimutkaisiin monimallisiin reunarakenteisiin. Se tarjoaa työkaluja mallien muuntamiseen, kvantisointiin ja optimointiin, jotka ovat välttämättömiä onnistuneelle reunasovellusten käyttöönotolle, samalla säilyttäen VS Coden tunnetun kehittäjäystävällisyyden.
+Alusta on erityisesti suunniteltu nopeaan prototyyppaukseen ja tuotantokäyttöön, ja siinä on ominaisuuksia, kuten kehotteiden luonti, nopeat aloitusmallit, saumattomat MCP (Model Context Protocol) -työkalujen integraatiot ja laajat arviointimahdollisuudet. Edge AI -kehityksessä tämä tarkoittaa, että voit tehokkaasti kehittää, testata ja optimoida tekoälysovelluksia reunasovelluksia varten samalla kun säilytät koko kehitysprosessin VS Codessa.
 
 ## Oppimistavoitteet
 
 Tämän oppaan lopussa osaat:
 
 ### Keskeiset taidot
-- **Asentaa ja konfiguroida** AI Toolkitin Visual Studio Codeen Edge AI -kehitystyönkulkuja varten
+- **Asentaa ja konfiguroida** AI Toolkitin Visual Studio Codeen Edge AI -kehityksen työnkulkuja varten
 - **Navigoida ja käyttää** AI Toolkitin käyttöliittymää, mukaan lukien Model Catalog, Playground ja Agent Builder
-- **Valita ja arvioida** tekoälymalleja, jotka soveltuvat reunasovelluksiin suorituskyvyn ja resurssirajoitusten perusteella
-- **Muuntaa ja optimoida** malleja ONNX-muotoon ja kvantisointitekniikoilla reunalaitteita varten
+- **Valita ja arvioida** tekoälymalleja, jotka soveltuvat reunakäyttöön suorituskyvyn ja resurssirajoitusten perusteella
+- **Muuntaa ja optimoida** malleja ONNX-muotoon ja käyttää kvantisointitekniikoita reunalaitteille
 
 ### Edge AI -kehitystaidot
 - **Suunnitella ja toteuttaa** Edge AI -sovelluksia integroidussa kehitysympäristössä
-- **Testata malleja** reunamaisissa olosuhteissa paikallisen päättelyn ja resurssien seurannan avulla
-- **Luoda ja mukauttaa** tekoälyagentteja, jotka on optimoitu reunasovelluksiin
+- **Testata malleja** reunamaisia olosuhteita simuloiden paikallisen inferenssin ja resurssien seurannan avulla
+- **Luoda ja mukauttaa** tekoälyagentteja, jotka on optimoitu reunakäyttöön
 - **Arvioida mallien suorituskykyä** reunalaskentaan liittyvien mittareiden avulla (viive, muistin käyttö, tarkkuus)
 
 ### Optimointi ja käyttöönotto
-- **Soveltaa kvantisointi- ja karsintatekniikoita** pienentääksesi mallien kokoa säilyttäen hyväksyttävän suorituskyvyn
+- **Soveltaa kvantisointi- ja karsintatekniikoita** mallien koon pienentämiseksi säilyttäen hyväksyttävä suorituskyky
 - **Optimoida malleja** tiettyjä reunalaitteiden laitteistoalustoja varten, mukaan lukien CPU-, GPU- ja NPU-kiihdytys
-- **Toteuttaa parhaita käytäntöjä** Edge AI -kehityksessä, mukaan lukien resurssien hallinta ja varajärjestelmät
-- **Valmistella mallit ja sovellukset** tuotantokäyttöön reunalaitteilla
+- **Toteuttaa parhaat käytännöt** Edge AI -kehityksessä, mukaan lukien resurssien hallinta ja varajärjestelmät
+- **Valmistella malleja ja sovelluksia** tuotantokäyttöön reunalaitteilla
 
 ### Edistyneet Edge AI -käsitteet
 - **Integrointi reunalaskennan kehyksiin**, kuten ONNX Runtime, Windows ML ja TensorFlow Lite
-- **Toteuttaa monimallisia arkkitehtuureja** ja hajautetun oppimisen skenaarioita reunaympäristöissä
-- **Ratkaista yleisiä Edge AI -ongelmia**, kuten muistin rajoitukset, päättelynopeus ja laitteistoyhteensopivuus
-- **Suunnitella seurantaa ja lokitusta** Edge AI -sovelluksille tuotantoympäristössä
+- **Toteuttaa monimalliset arkkitehtuurit** ja hajautetun oppimisen skenaariot reunaympäristöissä
+- **Ratkaista yleisiä Edge AI -ongelmia**, kuten muistin rajoitukset, inferenssin nopeus ja laitteistoyhteensopivuus
+- **Suunnitella seurantaa ja lokitusta** Edge AI -sovelluksille tuotantokäytössä
 
 ### Käytännön soveltaminen
 - **Rakentaa kokonaisvaltaisia Edge AI -ratkaisuja** mallin valinnasta käyttöönottoon
@@ -62,224 +62,296 @@ Tämän oppaan lopussa osaat:
 ## Keskeiset ominaisuudet Edge AI -kehitykseen
 
 ### 1. Mallikatalogi ja löytäminen
-- **Paikallisten mallien tuki**: Löydä ja käytä tekoälymalleja, jotka on erityisesti optimoitu reunasovelluksiin
-- **ONNX-integraatio**: Käytä malleja ONNX-muodossa tehokasta reunapäättelyä varten
-- **Ollama-tuki**: Hyödynnä paikallisesti toimivia malleja Ollaman kautta yksityisyyden ja offline-toiminnan takaamiseksi
-- **Mallien vertailu**: Vertaa malleja rinnakkain löytääksesi optimaalisen tasapainon suorituskyvyn ja resurssien kulutuksen välillä reunalaitteille
+- **Monen tarjoajan tuki**: Selaa ja käytä tekoälymalleja Anthropicilta, OpenAI:lta, GitHubilta, Googlelta ja muilta tarjoajilta
+- **Paikallisten mallien integrointi**: Yksinkertaistettu ONNX- ja Ollama-mallien löytäminen reunakäyttöön
+- **GitHub-mallit**: Suora integrointi GitHubin mallien isännöintiin helppoa käyttöä varten
+- **Mallien vertailu**: Vertaa malleja rinnakkain löytääksesi optimaalisen tasapainon reunalaitteiden rajoituksiin
 
 ### 2. Interaktiivinen Playground
-- **Paikallinen testausympäristö**: Testaa malleja paikallisesti ennen reunasovellusten käyttöönottoa
-- **Monimodaalinen kokeilu**: Testaa kuvia, tekstiä ja muita reunasovelluksille tyypillisiä syötteitä
-- **Parametrien hienosäätö**: Kokeile erilaisia malliparametreja optimoidaksesi reunarajoituksia varten
-- **Reaaliaikainen suorituskyvyn seuranta**: Tarkkaile päättelynopeutta ja resurssien käyttöä kehityksen aikana
+- **Interaktiivinen testausympäristö**: Nopea kokeilu mallien ominaisuuksilla kontrolloidussa ympäristössä
+- **Monimodaalinen tuki**: Testaa kuvia, tekstiä ja muita reunaskenaarioille tyypillisiä syötteitä
+- **Reaaliaikainen kokeilu**: Välitön palaute mallin vastauksista ja suorituskyvystä
+- **Parametrien optimointi**: Hienosäädä mallin parametreja reunakäyttöön sopiviksi
 
-### 3. Agent Builder reunasovelluksille
-- **Prompt Engineering**: Luo optimoituja kehotteita, jotka toimivat tehokkaasti pienempien reunamallien kanssa
-- **MCP-työkalujen integrointi**: Integroi Model Context Protocol -työkalut parannettuihin reunasovellusominaisuuksiin
-- **Koodin generointi**: Luo tuotantovalmiita koodeja, jotka on optimoitu reunasovelluksia varten
-- **Rakenteelliset tulokset**: Suunnittele agentteja, jotka tuottavat johdonmukaisia ja rakenteellisia vastauksia reunasovelluksiin
+### 3. Kehotteen (Agent) Builder
+- **Luonnollisen kielen generointi**: Luo aloituskehotteita luonnollisen kielen kuvauksilla
+- **Iteratiivinen parantaminen**: Paranna kehotteita mallin vastausten ja suorituskyvyn perusteella
+- **Tehtävien pilkkominen**: Jaa monimutkaiset tehtävät kehotteiden ketjutuksella ja rakenteellisilla tuloksilla
+- **Muuttujien tuki**: Käytä muuttujia kehotteissa dynaamisen agentin käyttäytymisen luomiseksi
+- **Tuotantokoodin generointi**: Luo tuotantovalmiita koodeja nopeaan sovelluskehitykseen
 
-### 4. Mallien arviointi ja testaus
-- **Suorituskykymittarit**: Arvioi malleja reunasovelluksiin liittyvien mittareiden avulla (viive, muistin käyttö, tarkkuus)
-- **Erätestaus**: Testaa useita mallikonfiguraatioita samanaikaisesti löytääksesi optimaaliset reunasäädöt
-- **Mukautettu arviointi**: Luo mukautettuja arviointikriteerejä reunasovellusten käyttötapauksiin
-- **Resurssiprofilointi**: Analysoi muistin ja laskentatehon vaatimuksia reunasovellusten suunnittelua varten
+### 4. Massatestaus ja arviointi
+- **Monimallien testaus**: Suorita useita kehotteita valituilla malleilla samanaikaisesti
+- **Tehokas testaus laajassa mittakaavassa**: Testaa erilaisia syötteitä ja kokoonpanoja tehokkaasti
+- **Mukautetut testitapaukset**: Aja agentteja testitapauksilla toiminnallisuuden validointiin
+- **Suorituskyvyn vertailu**: Vertaa tuloksia eri mallien ja kokoonpanojen välillä
 
-### 5. Mallien muuntaminen ja optimointi
-- **ONNX-muunnos**: Muunna mallit eri formaateista ONNX-muotoon reunayhteensopivuutta varten
-- **Kvantisointi**: Pienennä mallien kokoa ja paranna päättelynopeutta kvantisointitekniikoilla
-- **Laitteisto-optimointi**: Optimoi mallit tiettyjä reunalaitteiden laitteistoja varten (CPU, GPU, NPU)
-- **Formaattimuunnos**: Muunna malleja Hugging Facesta ja muista lähteistä reunasovelluksia varten
+### 5. Mallien arviointi datasetien avulla
+- **Standardimittarit**: Testaa tekoälymalleja sisäänrakennetuilla arviointityökaluilla (F1-pisteet, relevanssi, samankaltaisuus, koherenssi)
+- **Mukautetut arviointityökalut**: Luo omia arviointimittareita erityisiin käyttötapauksiin
+- **Datasetien integrointi**: Testaa malleja kattavia datasettejä vastaan
+- **Suorituskyvyn mittaus**: Kvantifioi mallin suorituskyky reunakäyttöpäätösten tueksi
 
-### 6. Hienosäätö reunaskenaarioihin
-- **Toimialakohtainen mukautus**: Mukauta malleja tiettyihin reunasovelluksiin ja ympäristöihin
-- **Paikallinen koulutus**: Kouluta malleja paikallisesti GPU-tuen avulla reunakohtaisia vaatimuksia varten
-- **Azure-integraatio**: Hyödynnä Azure Container Apps -palvelua pilvipohjaiseen hienosäätöön ennen reunasovellusten käyttöönottoa
-- **Siirto-oppiminen**: Mukauta esikoulutettuja malleja reunakohtaisiin tehtäviin ja rajoituksiin
+### 6. Hienosäätöominaisuudet
+- **Mallien mukauttaminen**: Mukauta malleja erityisiin käyttötapauksiin ja toimialoihin
+- **Erikoistunut sovittaminen**: Sovita malleja erikoistuneisiin toimialoihin ja vaatimuksiin
+- **Reunaoptimointi**: Hienosäädä malleja erityisesti reunakäyttöön liittyviin rajoituksiin
+- **Toimialakohtainen koulutus**: Luo malleja, jotka on räätälöity erityisiin reunakäyttötapauksiin
 
-### 7. Suorituskyvyn seuranta ja jäljitys
-- **Reunasuorituskyvyn analyysi**: Seuraa mallien suorituskykyä reunamaisissa olosuhteissa
-- **Jäljenkeruu**: Kerää yksityiskohtaisia suorituskykytietoja optimointia varten
-- **Pullonkaulojen tunnistaminen**: Tunnista suorituskykyongelmat ennen käyttöönottoa reunalaitteilla
-- **Resurssien käytön seuranta**: Tarkkaile muistin, suorittimen ja päättelyajan käyttöä reunasovellusten optimointia varten
+### 7. MCP-työkalujen integrointi
+- **Ulkoisten työkalujen yhdistäminen**: Yhdistä agentit ulkoisiin työkaluihin Model Context Protocol -palvelimien kautta
+- **Reaaliaikaiset toiminnot**: Mahdollista agenttien kyselyt tietokannoista, API-yhteydet tai mukautetun logiikan suorittaminen
+- **Olemassa olevat MCP-palvelimet**: Käytä työkaluja komentoriviltä (stdio) tai HTTP-protokollasta (server-sent event)
+- **Mukautettu MCP-kehitys**: Rakenna ja testaa uusia MCP-palvelimia Agent Builderissa
 
-## Edge AI -kehitystyönkulku
+### 8. Agenttien kehitys ja testaus
+- **Toimintokutsujen tuki**: Mahdollista agenttien ulkoisten toimintojen dynaaminen kutsuminen
+- **Reaaliaikainen integraatiotestaus**: Testaa integraatioita reaaliaikaisilla ajoilla ja työkalujen käytöllä
+- **Agenttien versiointi**: Versiohallinta agenteille ja vertailuominaisuudet arviointitulosten tarkasteluun
+- **Virheenkorjaus ja jäljitys**: Paikallinen jäljitys ja virheenkorjaus agenttien kehitykseen
+
+## Edge AI -kehityksen työnkulku
 
 ### Vaihe 1: Mallien löytäminen ja valinta
-1. **Tutki mallikatalogia**: Etsi malleja, jotka soveltuvat reunasovelluksiin
-2. **Vertaa suorituskykyä**: Arvioi malleja koon, tarkkuuden ja päättelynopeuden perusteella
-3. **Testaa paikallisesti**: Käytä Ollamaa tai ONNX-malleja paikalliseen testaukseen ennen reunasovellusten käyttöönottoa
-4. **Arvioi resurssivaatimukset**: Määritä muistin ja laskentatehon tarpeet kohdelaitteille
+1. **Tutki mallikatalogia**: Käytä mallikatalogia löytääksesi reunakäyttöön sopivia malleja
+2. **Vertaa suorituskykyä**: Arvioi malleja koon, tarkkuuden ja inferenssin nopeuden perusteella
+3. **Testaa paikallisesti**: Käytä Ollama- tai ONNX-malleja paikalliseen testaukseen ennen reunakäyttöä
+4. **Arvioi resurssivaatimukset**: Määritä muisti- ja laskentatarpeet kohdelaitteille
 
 ### Vaihe 2: Mallien optimointi
 1. **Muunna ONNX-muotoon**: Muunna valitut mallit ONNX-muotoon reunayhteensopivuutta varten
-2. **Sovella kvantisointia**: Pienennä mallien kokoa INT8- tai INT4-kvantisoinnilla
-3. **Laitteisto-optimointi**: Optimoi kohdelaitteiden laitteistoille (ARM, x86, erikoiskiihdyttimet)
+2. **Sovella kvantisointia**: Pienennä mallin kokoa INT8- tai INT4-kvantisoinnilla
+3. **Laitteistooptimointi**: Optimoi kohdelaitteiston mukaan (ARM, x86, erikoiskiihdyttimet)
 4. **Suorituskyvyn validointi**: Varmista, että optimoidut mallit säilyttävät hyväksyttävän tarkkuuden
 
 ### Vaihe 3: Sovelluskehitys
-1. **Agenttien suunnittelu**: Käytä Agent Builderia luodaksesi reunasovelluksiin optimoituja tekoälyagentteja
-2. **Prompt Engineering**: Kehitä kehotteita, jotka toimivat tehokkaasti pienempien mallien kanssa
+1. **Agenttien suunnittelu**: Käytä Agent Builderia luodaksesi reunakäyttöön optimoituja tekoälyagentteja
+2. **Kehotteen suunnittelu**: Kehitä kehotteita, jotka toimivat tehokkaasti pienempien reunamallien kanssa
 3. **Integraatiotestaus**: Testaa agentteja simuloiduissa reunaympäristöissä
-4. **Koodin generointi**: Luo tuotantokoodi, joka on optimoitu reunasovelluksia varten
+4. **Koodin generointi**: Luo tuotantokoodi, joka on optimoitu reunakäyttöön
 
 ### Vaihe 4: Arviointi ja testaus
-1. **Eräarviointi**: Testaa useita konfiguraatioita löytääksesi optimaaliset reunasäädöt
-2. **Suorituskyvyn profilointi**: Analysoi päättelynopeutta, muistin käyttöä ja tarkkuutta
-3. **Reunasimulaatio**: Testaa olosuhteissa, jotka vastaavat kohdelaitteiden ympäristöä
-4. **Rasitustestaus**: Arvioi suorituskykyä erilaisissa kuormitustilanteissa
+1. **Massaarviointi**: Testaa useita kokoonpanoja löytääksesi optimaaliset reunasetukset
+2. **Suorituskyvyn profilointi**: Analysoi inferenssin nopeutta, muistin käyttöä ja tarkkuutta
+3. **Reunasimulaatio**: Testaa olosuhteissa, jotka vastaavat kohteen reunakäyttöympäristöä
+4. **Rasitustestaus**: Arvioi suorituskykyä eri kuormitusolosuhteissa
 
 ### Vaihe 5: Käyttöönoton valmistelu
 1. **Lopullinen optimointi**: Tee lopulliset optimoinnit testitulosten perusteella
-2. **Käyttöönottopaketointi**: Pakkaa mallit ja koodi reunasovellusten käyttöönottoa varten
-3. **Dokumentointi**: Dokumentoi käyttöönoton vaatimukset ja konfiguraatio
-4. **Seurannan asennus**: Valmistele seuranta ja lokitus tuotantokäyttöä varten
+2. **Käyttöpaketointi**: Paketoi mallit ja koodi reunakäyttöä varten
+3. **Dokumentointi**: Dokumentoi käyttöönoton vaatimukset ja kokoonpano
+4. **Seurannan valmistelu**: Valmistaudu seurantaan ja lokitukseen reunakäytössä
 
 ## Kohdeyleisö Edge AI -kehityksessä
 
 ### Edge AI -kehittäjät
-- Sovelluskehittäjät, jotka rakentavat tekoälypohjaisia reunalaitteita ja IoT-ratkaisuja
+- Sovelluskehittäjät, jotka rakentavat tekoälyllä varustettuja reunalaitteita ja IoT-ratkaisuja
 - Sulautettujen järjestelmien kehittäjät, jotka integroivat tekoälyominaisuuksia resurssirajoitteisiin laitteisiin
-- Mobiilikehittäjät, jotka luovat laitepohjaisia tekoälysovelluksia älypuhelimille ja tableteille
+- Mobiilikehittäjät, jotka luovat tekoälysovelluksia älypuhelimille ja tableteille
 
 ### Edge AI -insinöörit
-- Tekoälyinsinöörit, jotka optimoivat malleja reunasovelluksiin ja hallitsevat päättelyputkistoja
+- Tekoälyinsinöörit, jotka optimoivat malleja reunakäyttöön ja hallitsevat inferenssiputkia
 - DevOps-insinöörit, jotka ottavat käyttöön ja hallitsevat tekoälymalleja hajautetussa reunainfrastruktuurissa
-- Suorituskykyinsinöörit, jotka optimoivat tekoälytyökuormia reunalaitteiden laitteistorajoituksia varten
+- Suorituskykyinsinöörit, jotka optimoivat tekoälytyökuormia reunalaitteiden rajoituksiin
 
 ### Tutkijat ja kouluttajat
 - Tekoälytutkijat, jotka kehittävät tehokkaita malleja ja algoritmeja reunalaskentaan
-- Kouluttajat, jotka opettavat Edge AI -käsitteitä ja esittelevät optimointitekniikoita
-- Opiskelijat, jotka oppivat Edge AI -käyttöönoton haasteista ja ratkaisuista
+- Kouluttajat, jotka opettavat Edge AI -käsitteitä ja demonstroivat optimointitekniikoita
+- Opiskelijat, jotka oppivat reunakäyttöön liittyvistä haasteista ja ratkaisuista
 
 ## Edge AI -käyttötapaukset
 
 ### Älykkäät IoT-laitteet
 - **Reaaliaikainen kuvantunnistus**: Ota käyttöön tietokonenäkömalleja IoT-kameroissa ja -antureissa
 - **Puheenkäsittely**: Toteuta puheentunnistus ja luonnollisen kielen käsittely älykaiuttimissa
-- **Ennakoiva kunnossapito**: Suorita poikkeavuuksien tunnistusmalleja teollisuuden reunalaitteilla
-- **Ympäristön seuranta**: Ota käyttöön anturidatan analyysimalleja ympäristösovelluksiin
+- **Ennakoiva huolto**: Käytä poikkeavuuksien tunnistusmalleja teollisuuden reunalaitteilla
+- **Ympäristön seuranta**: Ota käyttöön anturidatan analyysimallit ympäristösovelluksiin
 
 ### Mobiili- ja sulautetut sovellukset
-- **Laitepohjainen käännös**: Toteuta kieltenkäännösmalleja, jotka toimivat offline-tilassa
+- **Laitteessa tapahtuva käännös**: Toteuta kieltenkäännösmalleja, jotka toimivat offline-tilassa
 - **Lisätty todellisuus**: Ota käyttöön reaaliaikainen objektien tunnistus ja seuranta AR-sovelluksissa
-- **Terveydenseuranta**: Suorita terveysanalyysimalleja puettavissa laitteissa ja lääketieteellisissä laitteissa
+- **Terveydenseuranta**: Käytä terveysanalyysimalleja puettavissa laitteissa ja lääketieteellisissä laitteissa
 - **Autonomiset järjestelmät**: Toteuta päätöksentekomalleja droneille, roboteille ja ajoneuvoille
 
-### Reunalaskentainfrastruktuuri
-- **Reunadatakeskukset**: Ota käyttöön tekoälymalleja reunadatakeskuksissa matalan viiveen sovelluksia varten
-- **CDN-integraatio**: Integroi tekoälyn käsittelyominaisuudet sisällönjakeluverkkoihin
-- **5G-reuna**: Hyödynnä 5G-reunalaskentaa tekoälypohjaisiin sovelluksiin
-- **Sumulaskenta**: Toteuta tekoälyn käsittelyä sumulaskentaympäristöissä
+### Reunalaskennan infrastruktuuri
+- **Reunadatakeskukset**: Ota käyttöön tekoälymalleja reunadatakeskuksissa matalan viiveen sovelluksiin
+- **CDN-integraatio**: Integroi tekoälykäsittelyominaisuudet sisällönjakeluverkkoihin
+- **5G-reuna**: Hyödynnä 5G-reunalaskentaa tekoälypohjaisissa sovelluksissa
+- **Sumulaskenta**: Toteuta tekoälykäsittelyä sumulaskentaympäristöissä
 
 ## Asennus ja käyttöönotto
 
-### Nopea asennus
-Asenna AI Toolkit -laajennus suoraan Visual Studio Code Marketplacesta:
+### Laajennuksen asennus
+Asenna AI Toolkit -laajennus suoraan Visual Studio Code -markkinapaikasta:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**Laajennuksen tunnus**: `ms-windows-ai-studio.windows-ai-studio`
 
-### Esivaatimukset Edge AI -kehitykseen
-- **ONNX Runtime**: Asenna ONNX Runtime mallien päättelyä varten
-- **Ollama** (valinnainen): Asenna Ollama paikallista mallipalvelua varten
-- **Python-ympäristö**: Määritä Python tarvittavilla tekoälykirj
-- **Turvallisuus**: Toteuta asianmukaiset turvallisuustoimenpiteet reunalaskennan tekoälysovelluksille
+**Asennustavat**:
+1.
+2. Luo aloituskehotteita luonnollisen kielen kuvauksilla  
+3. Iteroi ja hienosäädä kehotteita mallin vastausten perusteella  
+4. Integroi MCP-työkalut agenttien kyvykkyyksien parantamiseksi  
 
-## Integraatio reunalaskennan tekoälykehyksiin
+#### Vaihe 3: Testaus ja arviointi  
+1. Käytä **Bulk Run** -toimintoa testataksesi useita kehotteita valituilla malleilla  
+2. Suorita agentteja testitapauksilla toiminnallisuuden varmistamiseksi  
+3. Arvioi tarkkuutta ja suorituskykyä sisäänrakennetuilla tai mukautetuilla mittareilla  
+4. Vertaa eri malleja ja kokoonpanoja  
 
-### ONNX Runtime
-- **Monialustainen käyttöönotto**: Ota ONNX-mallit käyttöön eri reunalaskenta-alustoilla
-- **Laitteistojen optimointi**: Hyödynnä ONNX Runtime -ohjelmiston laitteistokohtaisia optimointeja
-- **Mobiilituki**: Käytä ONNX Runtime Mobile -versiota älypuhelin- ja tablettisovelluksissa
-- **IoT-integraatio**: Ota käyttöön IoT-laitteilla ONNX Runtime -ohjelmiston kevyitä jakeluversioita
+#### Vaihe 4: Hienosäätö ja optimointi  
+1. Mukauta malleja erityisiin reunatapauksiin  
+2. Sovella alakohtaisia hienosäätöjä  
+3. Optimoi reuna-alustojen rajoituksia varten  
+4. Versioi ja vertaa eri agenttikokoonpanoja  
 
-### Windows ML
-- **Windows-laitteet**: Optimoi Windows-pohjaisille reunalaitteille ja tietokoneille
-- **NPU-kiihdytys**: Hyödynnä Windows-laitteiden neuroprosessointiyksiköitä
-- **DirectML**: Käytä DirectML:ää GPU-kiihdytykseen Windows-alustoilla
-- **UWP-integraatio**: Integroi Universal Windows Platform -sovelluksiin
+#### Vaihe 5: Valmistautuminen käyttöönottoon  
+1. Luo tuotantovalmiita koodeja Agent Builderin avulla  
+2. Määritä MCP-palvelinyhteydet tuotantokäyttöä varten  
+3. Valmistele käyttöönottopaketit reunalaitteille  
+4. Konfiguroi seuranta- ja arviointimittarit  
 
-### TensorFlow Lite
-- **Mobiilioptimointi**: Ota TensorFlow Lite -mallit käyttöön mobiili- ja sulautetuilla laitteilla
-- **Laitteistodelegaatit**: Käytä erikoistuneita laitteistodelegaatteja kiihdytykseen
-- **Mikrokontrollerit**: Ota käyttöön mikrokontrollereilla TensorFlow Lite Micro -versio
-- **Monialustainen tuki**: Ota käyttöön Android-, iOS- ja sulautetuilla Linux-järjestelmillä
+## Parhaat käytännöt Edge AI -kehityksessä  
 
-### Azure IoT Edge
-- **Pilvi-reuna-hybridi**: Yhdistä pilvikoulutus reunalaskennan inferenssiin
-- **Moduulien käyttöönotto**: Ota tekoälymallit käyttöön IoT Edge -moduuleina
-- **Laitteiden hallinta**: Hallitse reunalaitteita ja mallipäivityksiä etänä
-- **Telemetria**: Kerää suorituskykytietoja ja mallimittareita reunalaskennan käyttöönotosta
+### Mallin valinta  
+- **Kokorajoitukset**: Valitse mallit, jotka mahtuvat kohdelaitteiden muistirajoituksiin  
+- **Päätöksentekonopeus**: Suosi malleja, joilla on nopea päätöksentekoaika reaaliaikaisiin sovelluksiin  
+- **Tarkkuuden kompromissit**: Tasapainota mallin tarkkuus ja resurssirajoitukset  
+- **Muotoyhteensopivuus**: Suosi ONNX- tai laitteistolle optimoituja muotoja reunakäyttöönottoa varten  
 
-## Kehittyneet reunalaskennan tekoälytilanteet
+### Optimointitekniikat  
+- **Kvantisointi**: Käytä INT8- tai INT4-kvantisointia pienentääksesi mallin kokoa ja parantaaksesi nopeutta  
+- **Karsinta**: Poista tarpeettomat malliparametrit laskentavaatimusten vähentämiseksi  
+- **Tietojen tislaus**: Luo pienempiä malleja, jotka säilyttävät suurempien mallien suorituskyvyn  
+- **Laitteistokiihdytys**: Hyödynnä NPU-, GPU- tai erikoiskiihdyttimiä, kun saatavilla  
 
-### Monimallin käyttöönotto
-- **Mallien yhdistelmät**: Ota käyttöön useita malleja tarkkuuden parantamiseksi tai redundanssin lisäämiseksi
-- **A/B-testaus**: Testaa eri malleja samanaikaisesti reunalaitteilla
-- **Dynaaminen valinta**: Valitse mallit laitteen nykytilan perusteella
-- **Resurssien jakaminen**: Optimoi resurssien käyttö useiden mallien välillä
+### Kehitystyönkulku  
+- **Iteratiivinen testaus**: Testaa usein reunaolosuhteita muistuttavissa ympäristöissä kehityksen aikana  
+- **Suorituskyvyn seuranta**: Seuraa jatkuvasti resurssien käyttöä ja päätöksentekonopeutta  
+- **Versiohallinta**: Seuraa malliversioita ja optimointiasetuksia  
+- **Dokumentointi**: Dokumentoi kaikki optimointipäätökset ja suorituskyvyn kompromissit  
 
-### Federatiivinen oppiminen
-- **Hajautettu koulutus**: Kouluta malleja useilla reunalaitteilla
-- **Tietosuojan säilyttäminen**: Pidä koulutusdata paikallisena ja jaa vain malliparannuksia
-- **Yhteisöllinen oppiminen**: Mahdollista laitteiden oppiminen yhteisistä kokemuksista
-- **Reuna-pilvi-yhteistyö**: Koordinoi oppimista reunalaitteiden ja pilvi-infrastruktuurin välillä
+### Käyttöönoton huomioitavat asiat  
+- **Resurssien seuranta**: Seuraa muistia, CPU:ta ja virrankulutusta tuotannossa  
+- **Varajärjestelmät**: Toteuta varamekanismeja mallin epäonnistumisia varten  
+- **Päivitysmekanismit**: Suunnittele mallipäivityksiä ja versiohallintaa varten  
+- **Turvallisuus**: Toteuta asianmukaiset turvallisuustoimenpiteet Edge AI -sovelluksille  
 
-### Reaaliaikainen käsittely
-- **Virtauskäsittely**: Käsittele jatkuvia datavirtoja reunalaitteilla
-- **Matala viive**: Optimoi inferenssi mahdollisimman pienelle viiveelle
-- **Eräkäsittely**: Käsittele tehokkaasti datan erämuotoja reunalaitteilla
-- **Mukautuva käsittely**: Säädä käsittelyä laitteen nykyisten kyvykkyyksien mukaan
+## Integrointi Edge AI -kehitysalustoihin  
 
-## Reunalaskennan tekoälyn kehityksen vianmääritys
+### ONNX Runtime  
+- **Monialustainen käyttöönotto**: Ota ONNX-mallit käyttöön eri reuna-alustoilla  
+- **Laitteisto-optimointi**: Hyödynnä ONNX Runtime -alustan laitteistokohtaisia optimointeja  
+- **Mobiilituki**: Käytä ONNX Runtime Mobilea älypuhelin- ja tablettisovelluksissa  
+- **IoT-integraatio**: Ota käyttöön IoT-laitteilla ONNX Runtime -alustan kevyitä jakeluversioita  
 
-### Yleiset ongelmat
-- **Muistirajoitukset**: Malli liian suuri kohdelaitteen muistiin
-- **Inferenssin nopeus**: Mallin inferenssi liian hidas reaaliaikaisiin vaatimuksiin
-- **Tarkkuuden heikkeneminen**: Optimointi heikentää mallin tarkkuutta liikaa
-- **Laitteistoyhteensopivuus**: Malli ei ole yhteensopiva kohdelaitteen kanssa
+### Windows ML  
+- **Windows-laitteet**: Optimoi Windows-pohjaisille reunalaitteille ja PC:ille  
+- **NPU-kiihdytys**: Hyödynnä Neural Processing Unit -kiihdyttimiä Windows-laitteilla  
+- **DirectML**: Käytä DirectML:ää GPU-kiihdytykseen Windows-alustoilla  
+- **UWP-integraatio**: Integroi Universal Windows Platform -sovelluksiin  
 
-### Vianmääritysstrategiat
-- **Suorituskyvyn profilointi**: Käytä AI Toolkitin jäljitysominaisuuksia pullonkaulojen tunnistamiseen
-- **Resurssien seuranta**: Seuraa muistin ja suorittimen käyttöä kehityksen aikana
-- **Inkrementaalinen testaus**: Testaa optimointeja vaiheittain ongelmien eristämiseksi
-- **Laitteistosimulaatio**: Käytä kehitystyökaluja kohdelaitteiston simulointiin
+### TensorFlow Lite  
+- **Mobiilioptimointi**: Ota TensorFlow Lite -mallit käyttöön mobiili- ja sulautetuilla laitteilla  
+- **Laitteistodelegaatit**: Käytä erikoistuneita laitteistodelegaatteja kiihdytykseen  
+- **Mikrokontrollerit**: Ota käyttöön mikrokontrollereilla TensorFlow Lite Micro -alustalla  
+- **Monialustatuki**: Ota käyttöön Android-, iOS- ja sulautetuilla Linux-järjestelmillä  
 
-### Optimointiratkaisut
-- **Lisäkvantisointi**: Käytä aggressiivisempia kvantisointitekniikoita
-- **Mallin arkkitehtuuri**: Harkitse erilaisia reunalaskentaan optimoituja mallin arkkitehtuureja
-- **Esikäsittelyn optimointi**: Optimoi datan esikäsittely reunalaskennan rajoituksiin
-- **Inferenssin optimointi**: Käytä laitteistokohtaisia inferenssin optimointeja
+### Azure IoT Edge  
+- **Pilvi-reuna-hybridi**: Yhdistä pilvikoulutus ja reunan päätöksenteko  
+- **Moduulikäyttöönotto**: Ota AI-mallit käyttöön IoT Edge -moduuleina  
+- **Laitteiden hallinta**: Hallitse reunalaitteita ja mallipäivityksiä etänä  
+- **Telemetria**: Kerää suorituskykytietoja ja mallimittareita reunan käyttöönotosta  
 
-## Resurssit ja seuraavat askeleet
+## Edistyneet Edge AI -skenaariot  
 
-### Dokumentaatio
-- [AI Toolkit Models Guide](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Model Playground Documentation](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [ONNX Runtime Documentation](https://onnxruntime.ai/)
-- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)
+### Monimallikäyttöönotto  
+- **Mallikokoonpanot**: Ota käyttöön useita malleja tarkkuuden parantamiseksi tai redundanssin lisäämiseksi  
+- **A/B-testaus**: Testaa eri malleja samanaikaisesti reunalaitteilla  
+- **Dynaaminen valinta**: Valitse mallit laitteen nykytilan perusteella  
+- **Resurssien jakaminen**: Optimoi resurssien käyttö useiden mallien välillä  
 
-### Yhteisö ja tuki
-- [VS Code AI Toolkit GitHub](https://github.com/microsoft/vscode-ai-toolkit)
-- [ONNX Community](https://github.com/onnx/onnx)
-- [Edge AI Developer Community](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Federated Learning  
+- **Hajautettu koulutus**: Kouluta malleja useilla reunalaitteilla  
+- **Tietosuoja**: Pidä koulutusdata paikallisena ja jaa vain malliparannuksia  
+- **Yhteisoppiminen**: Mahdollista laitteiden oppiminen kollektiivisista kokemuksista  
+- **Reuna-pilvi-yhteistyö**: Koordinoi oppimista reunalaitteiden ja pilvi-infrastruktuurin välillä  
 
-### Oppimisresurssit
-- [Reunalaskennan tekoälyn perusteet -kurssi](./Module01/README.md)
-- [Pienten kielimallien opas](./Module02/README.md)
-- [Reunalaskennan käyttöönoton strategiat](./Module03/README.md)
-- [Windows-reunalaskennan tekoälyn kehitys](./windowdeveloper.md)
+### Reaaliaikainen käsittely  
+- **Virtauskäsittely**: Käsittele jatkuvia datavirtoja reunalaitteilla  
+- **Matala viive**: Optimoi päätöksenteko vähimmäisviiveellä  
+- **Eräkäsittely**: Käsittele tehokkaasti datan eräkäsittelyä reunalaitteilla  
+- **Mukautuva käsittely**: Säädä käsittelyä laitteen nykyisten kyvykkyyksien mukaan  
 
-## Yhteenveto
+## Edge AI -kehityksen vianmääritys  
 
-Visual Studio Code -ohjelmiston AI Toolkit tarjoaa kattavan alustan reunalaskennan tekoälyn kehitykseen, mallien löytämisestä ja optimoinnista käyttöönottoon ja seurantaan. Hyödyntämällä sen integroituja työkaluja ja työnkulkuja kehittäjät voivat tehokkaasti luoda, testata ja ottaa käyttöön tekoälysovelluksia, jotka toimivat hyvin resurssirajoitteisilla reunalaitteilla.
+### Yleiset ongelmat  
+- **Muistirajoitukset**: Malli liian suuri kohdelaitteen muistiin  
+- **Päätöksentekonopeus**: Mallin päätöksenteko liian hidas reaaliaikaisiin vaatimuksiin  
+- **Tarkkuuden heikkeneminen**: Optimointi heikentää mallin tarkkuutta liikaa  
+- **Laitteistoyhteensopivuus**: Malli ei ole yhteensopiva kohdelaitteen laitteiston kanssa  
 
-Työkalupakin tuki ONNX:lle, Ollamalle ja eri pilvipalveluntarjoajille, yhdistettynä sen optimointi- ja arviointikykyihin, tekee siitä ihanteellisen valinnan reunalaskennan tekoälyn kehitykseen. Olipa kyseessä IoT-sovellukset, mobiilit tekoälyominaisuudet tai sulautetut älyjärjestelmät, AI Toolkit tarjoaa tarvittavat työkalut ja työnkulut onnistuneeseen reunalaskennan tekoälyn käyttöönottoon.
+### Vianmääritysstrategiat  
+- **Suorituskyvyn profilointi**: Käytä AI Toolkitin jäljitystoimintoja pullonkaulojen tunnistamiseen  
+- **Resurssien seuranta**: Seuraa muistia ja CPU:n käyttöä kehityksen aikana  
+- **Inkrementaalinen testaus**: Testaa optimointeja vaiheittain ongelmien eristämiseksi  
+- **Laitteistosimulaatio**: Käytä kehitystyökaluja kohdelaitteiston simulointiin  
 
-Kun reunalaskennan tekoäly kehittyy edelleen, Visual Studio Code -ohjelmiston AI Toolkit pysyy eturintamassa, tarjoten kehittäjille huippuluokan työkaluja ja ominaisuuksia seuraavan sukupolven älykkäiden reunasovellusten rakentamiseen.
+### Optimointiratkaisut  
+- **Lisäkvantisointi**: Sovella aggressiivisempia kvantisointitekniikoita  
+- **Mallin arkkitehtuuri**: Harkitse eri mallin arkkitehtuureja, jotka on optimoitu reunakäyttöön  
+- **Esikäsittelyn optimointi**: Optimoi datan esikäsittely reuna-alustojen rajoituksia varten  
+- **Päätöksenteko-optimointi**: Käytä laitteistokohtaisia päätöksenteko-optimointeja  
+
+## Resurssit ja seuraavat askeleet  
+
+### Virallinen dokumentaatio  
+- [AI Toolkit Developer Documentation](https://aka.ms/AIToolkit/doc)  
+- [Asennus- ja käyttöopas](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [VS Code Intelligent Apps Documentation](https://code.visualstudio.com/docs/intelligentapps)  
+- [Model Context Protocol (MCP) Documentation](https://modelcontextprotocol.io/)  
+
+### Yhteisö ja tuki  
+- [AI Toolkit GitHub Repository](https://github.com/microsoft/vscode-ai-toolkit)  
+- [GitHub Issues ja ominaisuuspyynnöt](https://aka.ms/AIToolkit/feedback)  
+- [Azure AI Foundry Discord -yhteisö](https://aka.ms/azureaifoundry/discord)  
+- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Teknisiä resursseja  
+- [ONNX Runtime Documentation](https://onnxruntime.ai/)  
+- [Ollama Documentation](https://ollama.ai/)  
+- [Windows ML Documentation](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Oppimispolut  
+- [Edge AI Fundamentals Course](../Module01/README.md)  
+- [Small Language Models Guide](../Module02/README.md)  
+- [Edge Deployment Strategies](../Module03/README.md)  
+- [Windows Edge AI Development](./windowdeveloper.md)  
+
+### Lisäresurssit  
+- **Repository Stats**: 1.8k+ tähteä, 150+ haarukkaa, 18+ avustajaa  
+- **Lisenssi**: MIT-lisenssi  
+- **Turvallisuus**: Microsoftin turvallisuuskäytännöt koskevat  
+- **Telemetria**: Kunnioittaa VS Code -telemetria-asetuksia  
+
+## Yhteenveto  
+
+AI Toolkit for Visual Studio Code tarjoaa kattavan alustan modernille AI-kehitykselle, erityisesti arvokkaan työkalupaketin Edge AI -sovellusten kehittämiseen. Sen laaja mallikatalogi tukee tarjoajia kuten Anthropic, OpenAI, GitHub ja Google, ja paikallinen suoritus ONNX:n ja Ollaman kautta tarjoaa joustavuutta monenlaisiin reunakäyttöönottoskenaarioihin.  
+
+Työkalupaketin vahvuus on sen integroitu lähestymistapa—mallien löytämisestä ja kokeilusta Playgroundissa kehittyneeseen agenttien kehitykseen Prompt Builderilla, kattaviin arviointimahdollisuuksiin ja saumattomaan MCP-työkalujen integrointiin. Edge AI -kehittäjille tämä tarkoittaa nopeaa prototyyppien ja AI-agenttien testausta ennen reunakäyttöönottoa, mahdollisuutta iterointiin ja optimointiin resurssirajoitteisissa ympäristöissä.  
+
+Keskeiset edut Edge AI -kehityksessä:  
+- **Nopea kokeilu**: Testaa malleja ja agentteja nopeasti ennen reunakäyttöön sitoutumista  
+- **Monitarjoajavaihtoehdot**: Pääsy malleihin eri lähteistä optimaalisten reunaratkaisujen löytämiseksi  
+- **Paikallinen kehitys**: Testaa ONNX:llä ja Ollamalla offline- ja yksityisyyttä säilyttävässä kehityksessä  
+- **Tuotantovalmius**: Luo tuotantovalmiita koodeja ja integroi ulkoisiin työkaluihin MCP:n kautta  
+- **Kattava arviointi**: Käytä sisäänrakennettuja ja mukautettuja mittareita Edge AI:n suorituskyvyn validointiin  
+
+Kun AI siirtyy yhä enemmän reunakäyttöönottoskenaarioihin, AI Toolkit for VS Code tarjoaa kehitysympäristön ja työnkulun, joka tarvitaan älykkäiden sovellusten rakentamiseen, testaamiseen ja optimointiin resurssirajoitteisissa ympäristöissä. Olipa kyseessä IoT-ratkaisujen, mobiili-AI-sovellusten tai sulautettujen älyjärjestelmien kehittäminen, työkalupaketin kattava ominaisuusvalikoima ja integroitu työnkulku tukevat koko Edge AI -kehityksen elinkaarta.  
+
+Jatkuvan kehityksen ja aktiivisen yhteisön (1.8k+ GitHub-tähteä) ansiosta AI Toolkit pysyy AI-kehitystyökalujen eturintamassa, kehittyen jatkuvasti vastaamaan modernien AI-kehittäjien tarpeita, jotka rakentavat reunakäyttöönottoskenaarioita varten.  
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 

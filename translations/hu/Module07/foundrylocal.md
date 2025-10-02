@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:53:25+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T14:06:57+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "hu"
 }
@@ -42,7 +42,7 @@ Nyiss meg egy terminált, és futtasd az alábbi parancsot:
    brew install foundrylocal
 ```
 
-## 2) CLI Alapok (Három Kategória)
+## 2) CLI Alapok (Három kategória)
 
 - Modell:
 ```cmd
@@ -66,7 +66,7 @@ Megjegyzések:
 - A szolgáltatás egy OpenAI-kompatibilis REST API-t biztosít. A végpont portja dinamikusan van kiosztva; használd a `foundry service status` parancsot a felfedezéshez.
 - Használd az SDK-kat a kényelem érdekében; ezek automatikusan kezelik a végpont felfedezését, ahol támogatott.
 
-## 3) Lokális Végpont Felfedezése (Dinamikus Port)
+## 3) Lokális végpont felfedezése (Dinamikus port)
 
 A Foundry Local minden indításkor dinamikus portot rendel:
 ```cmd
@@ -74,7 +74,7 @@ foundry service status
 ```
 Használd a jelentett `http://localhost:<PORT>` címet `base_url`-ként OpenAI-kompatibilis útvonalakkal (például `/v1/chat/completions`).
 
-## 4) Gyors Teszt OpenAI Python SDK-val
+## 4) Gyors teszt OpenAI Python SDK-val
 
 ```cmd
 set BASE_URL=http://localhost:PORT
@@ -90,11 +90,11 @@ print(resp.choices[0].message.content)
 PY
 ```
 Referenciák:
-- SDK Integráció: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
+- SDK integráció: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
 
-## 5) Saját Modell Hozása (Fordítás Olive-val)
+## 5) Saját modell használata (Fordítás Olive-val)
 
-Ha szükséged van egy modellre, amely nem szerepel a katalógusban, fordítsd ONNX formátumba a Foundry Local számára Olive segítségével.
+Ha szükséged van egy katalógusban nem szereplő modellre, fordítsd ONNX formátumba a Foundry Local számára Olive segítségével.
 
 Magas szintű folyamat (lásd a dokumentációban a lépéseket):
 ```cmd
@@ -123,12 +123,16 @@ foundry cache cd <path>
 winget upgrade --id Microsoft.FoundryLocal
 ```
 
-## 7) Kapcsolódó Windows Fejlesztői Élmény
+## 7) Kapcsolódó Windows fejlesztői élmény
 
 - Windows lokális vs felhő AI választások, beleértve a Foundry Local-t és a Windows ML-t:
   https://learn.microsoft.com/windows/ai/cloud-ai#key-decision-factors-for-app-developers
 - VS Code AI Toolkit Foundry Local-lal (használd a `foundry service status` parancsot a chat végpont URL-jének megszerzéséhez):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[Next Windows Developer](./windowdeveloper.md)
+
 ---
 
+**Felelősség kizárása**:  
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével lett lefordítva. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Fontos információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

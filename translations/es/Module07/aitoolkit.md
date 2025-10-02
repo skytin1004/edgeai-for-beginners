@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ab6b3d55f53ea3d498b3c067b17f8816",
-  "translation_date": "2025-09-17T13:56:59+00:00",
+  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
+  "translation_date": "2025-10-02T10:52:01+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "es"
 }
@@ -11,19 +11,19 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Introducción
 
-Bienvenido a la guía completa para usar AI Toolkit en Visual Studio Code en el desarrollo de Edge AI. A medida que la inteligencia artificial se traslada de la computación centralizada en la nube a dispositivos distribuidos en el borde, los desarrolladores necesitan herramientas integradas y potentes que puedan manejar los desafíos únicos del despliegue en el borde, desde las limitaciones de recursos hasta los requisitos de operación sin conexión.
+Bienvenido a la guía completa para usar AI Toolkit en Visual Studio Code en el desarrollo de Edge AI. A medida que la inteligencia artificial se traslada de la computación centralizada en la nube a dispositivos distribuidos en el borde, los desarrolladores necesitan herramientas integradas y potentes que puedan manejar los desafíos únicos del despliegue en el borde, como las limitaciones de recursos y los requisitos de operación sin conexión.
 
-AI Toolkit para Visual Studio Code cierra esta brecha al proporcionar un entorno de desarrollo completo diseñado específicamente para construir, probar y optimizar aplicaciones de inteligencia artificial que funcionen eficientemente en dispositivos del borde. Ya sea que estés desarrollando para sensores IoT, dispositivos móviles, sistemas embebidos o servidores en el borde, este conjunto de herramientas simplifica todo tu flujo de trabajo de desarrollo dentro del entorno familiar de VS Code.
+AI Toolkit para Visual Studio Code cierra esta brecha al proporcionar un entorno de desarrollo completo diseñado específicamente para construir, probar y optimizar aplicaciones de IA que funcionen eficientemente en dispositivos de borde. Ya sea que estés desarrollando para sensores IoT, dispositivos móviles, sistemas embebidos o servidores de borde, este conjunto de herramientas simplifica todo tu flujo de trabajo de desarrollo dentro del entorno familiar de VS Code.
 
 Esta guía te llevará a través de los conceptos esenciales, herramientas y mejores prácticas para aprovechar AI Toolkit en tus proyectos de Edge AI, desde la selección inicial del modelo hasta el despliegue en producción.
 
 ## Resumen
 
-AI Toolkit ofrece un entorno de desarrollo integrado para todo el ciclo de vida de las aplicaciones de Edge AI dentro de VS Code. Proporciona integración fluida con modelos de inteligencia artificial populares de proveedores como OpenAI, Anthropic, Google y GitHub, mientras que también admite el despliegue local de modelos a través de ONNX y Ollama, capacidades cruciales para aplicaciones de Edge AI que requieren inferencia en el dispositivo.
+AI Toolkit para Visual Studio Code es una extensión poderosa que simplifica el desarrollo de agentes y la creación de aplicaciones de IA. El conjunto de herramientas ofrece capacidades completas para explorar, evaluar y desplegar modelos de IA de una amplia gama de proveedores, incluidos Anthropic, OpenAI, GitHub y Google, mientras admite la ejecución local de modelos utilizando ONNX y Ollama.
 
-Lo que distingue a AI Toolkit para el desarrollo de Edge AI es su enfoque en toda la tubería de despliegue en el borde. A diferencia de las herramientas tradicionales de desarrollo de IA que se centran principalmente en el despliegue en la nube, AI Toolkit incluye características especializadas para la optimización de modelos, pruebas en condiciones de recursos limitados y evaluación de rendimiento específica para el borde. El conjunto de herramientas entiende que el desarrollo de Edge AI requiere consideraciones diferentes: tamaños de modelos más pequeños, tiempos de inferencia más rápidos, capacidad sin conexión y optimizaciones específicas de hardware.
+Lo que distingue a AI Toolkit es su enfoque integral en todo el ciclo de vida del desarrollo de IA. A diferencia de las herramientas tradicionales de desarrollo de IA que se centran en aspectos individuales, AI Toolkit proporciona un entorno integrado que abarca el descubrimiento de modelos, la experimentación, el desarrollo de agentes, la evaluación y el despliegue, todo dentro del entorno familiar de VS Code.
 
-La plataforma admite múltiples escenarios de despliegue, desde inferencia simple en el dispositivo hasta arquitecturas complejas de múltiples modelos en el borde. Proporciona herramientas para la conversión, cuantización y optimización de modelos que son esenciales para un despliegue exitoso en el borde, mientras mantiene la productividad del desarrollador que caracteriza a VS Code.
+La plataforma está diseñada específicamente para la creación rápida de prototipos y el despliegue en producción, con características como generación de prompts, iniciadores rápidos, integraciones fluidas de herramientas MCP (Model Context Protocol) y amplias capacidades de evaluación. Para el desarrollo de Edge AI, esto significa que puedes desarrollar, probar y optimizar aplicaciones de IA para escenarios de despliegue en el borde de manera eficiente mientras mantienes el flujo de trabajo completo dentro de VS Code.
 
 ## Objetivos de Aprendizaje
 
@@ -31,120 +31,127 @@ Al final de esta guía, serás capaz de:
 
 ### Competencias Básicas
 - **Instalar y configurar** AI Toolkit para Visual Studio Code en flujos de trabajo de desarrollo de Edge AI
-- **Navegar y utilizar** la interfaz de AI Toolkit, incluyendo el Catálogo de Modelos, Playground y Agent Builder
+- **Navegar y utilizar** la interfaz de AI Toolkit, incluyendo el Catálogo de Modelos, el Playground y el Constructor de Agentes
 - **Seleccionar y evaluar** modelos de IA adecuados para el despliegue en el borde según el rendimiento y las limitaciones de recursos
-- **Convertir y optimizar** modelos utilizando el formato ONNX y técnicas de cuantización para dispositivos del borde
+- **Convertir y optimizar** modelos utilizando el formato ONNX y técnicas de cuantización para dispositivos de borde
 
 ### Habilidades de Desarrollo de Edge AI
 - **Diseñar e implementar** aplicaciones de Edge AI utilizando el entorno de desarrollo integrado
 - **Realizar pruebas de modelos** en condiciones similares al borde utilizando inferencia local y monitoreo de recursos
 - **Crear y personalizar** agentes de IA optimizados para escenarios de despliegue en el borde
-- **Evaluar el rendimiento de modelos** utilizando métricas relevantes para la computación en el borde (latencia, uso de memoria, precisión)
+- **Evaluar el rendimiento de los modelos** utilizando métricas relevantes para la computación en el borde (latencia, uso de memoria, precisión)
 
 ### Optimización y Despliegue
 - **Aplicar técnicas de cuantización y poda** para reducir el tamaño del modelo mientras se mantiene un rendimiento aceptable
 - **Optimizar modelos** para plataformas de hardware específicas del borde, incluyendo aceleración por CPU, GPU y NPU
 - **Implementar mejores prácticas** para el desarrollo de Edge AI, incluyendo gestión de recursos y estrategias de respaldo
-- **Preparar modelos y aplicaciones** para el despliegue en producción en dispositivos del borde
+- **Preparar modelos y aplicaciones** para el despliegue en producción en dispositivos de borde
 
 ### Conceptos Avanzados de Edge AI
 - **Integrar con frameworks de Edge AI** como ONNX Runtime, Windows ML y TensorFlow Lite
-- **Implementar arquitecturas de múltiples modelos** y escenarios de aprendizaje federado para entornos del borde
+- **Implementar arquitecturas multi-modelo** y escenarios de aprendizaje federado para entornos de borde
 - **Solucionar problemas comunes de Edge AI** como limitaciones de memoria, velocidad de inferencia y compatibilidad de hardware
 - **Diseñar estrategias de monitoreo y registro** para aplicaciones de Edge AI en producción
 
 ### Aplicación Práctica
 - **Construir soluciones completas de Edge AI** desde la selección del modelo hasta el despliegue
 - **Demostrar competencia** en flujos de trabajo de desarrollo específicos del borde y técnicas de optimización
-- **Aplicar conceptos aprendidos** a casos de uso reales de Edge AI, incluyendo IoT, móvil y aplicaciones embebidas
-- **Evaluar y comparar** diferentes estrategias de despliegue en el borde y sus compensaciones
+- **Aplicar conceptos aprendidos** a casos de uso reales de Edge AI, incluyendo IoT, aplicaciones móviles y embebidas
+- **Evaluar y comparar** diferentes estrategias de despliegue de Edge AI y sus compensaciones
 
 ## Características Clave para el Desarrollo de Edge AI
 
 ### 1. Catálogo de Modelos y Descubrimiento
-- **Soporte de Modelos Locales**: Descubre y accede a modelos de IA específicamente optimizados para el despliegue en el borde
-- **Integración con ONNX**: Accede a modelos en formato ONNX para inferencia eficiente en el borde
-- **Soporte de Ollama**: Aprovecha modelos que se ejecutan localmente a través de Ollama para privacidad y operación sin conexión
-- **Comparación de Modelos**: Compara modelos lado a lado para encontrar el equilibrio óptimo entre rendimiento y consumo de recursos para dispositivos del borde
+- **Soporte Multi-Proveedor**: Explora y accede a modelos de IA de Anthropic, OpenAI, GitHub, Google y otros proveedores
+- **Integración de Modelos Locales**: Descubrimiento simplificado de modelos ONNX y Ollama para despliegue en el borde
+- **Modelos de GitHub**: Integración directa con el alojamiento de modelos de GitHub para un acceso simplificado
+- **Comparación de Modelos**: Compara modelos lado a lado para encontrar el equilibrio óptimo para las limitaciones de dispositivos de borde
 
 ### 2. Playground Interactivo
-- **Entorno de Pruebas Locales**: Prueba modelos localmente antes del despliegue en el borde
-- **Experimentación Multimodal**: Prueba con imágenes, texto y otros tipos de entrada típicos en escenarios del borde
-- **Ajuste de Parámetros**: Experimenta con diferentes parámetros de modelos para optimizar las limitaciones del borde
-- **Monitoreo de Rendimiento en Tiempo Real**: Observa la velocidad de inferencia y el uso de recursos durante el desarrollo
+- **Entorno de Pruebas Interactivo**: Experimentación rápida con las capacidades del modelo en un entorno controlado
+- **Soporte Multi-modal**: Prueba con imágenes, texto y otros tipos de entrada típicos en escenarios de borde
+- **Experimentación en Tiempo Real**: Retroalimentación inmediata sobre las respuestas y el rendimiento del modelo
+- **Optimización de Parámetros**: Ajusta los parámetros del modelo para los requisitos de despliegue en el borde
 
-### 3. Constructor de Agentes para Aplicaciones en el Borde
-- **Ingeniería de Prompts**: Crea prompts optimizados que funcionen eficientemente con modelos más pequeños del borde
-- **Integración con Herramientas MCP**: Integra herramientas de Model Context Protocol para capacidades mejoradas de agentes en el borde
-- **Generación de Código**: Genera código listo para producción optimizado para escenarios de despliegue en el borde
-- **Salidas Estructuradas**: Diseña agentes que proporcionen respuestas consistentes y estructuradas adecuadas para aplicaciones en el borde
+### 3. Constructor de Prompts (Agentes)
+- **Generación de Lenguaje Natural**: Genera prompts iniciales utilizando descripciones en lenguaje natural
+- **Refinamiento Iterativo**: Mejora los prompts basándote en las respuestas y el rendimiento del modelo
+- **Descomposición de Tareas**: Divide tareas complejas con encadenamiento de prompts y salidas estructuradas
+- **Soporte de Variables**: Usa variables en los prompts para un comportamiento dinámico del agente
+- **Generación de Código para Producción**: Genera código listo para producción para un desarrollo rápido de aplicaciones
 
-### 4. Evaluación y Pruebas de Modelos
-- **Métricas de Rendimiento**: Evalúa modelos utilizando métricas relevantes para el despliegue en el borde (latencia, uso de memoria, precisión)
-- **Pruebas por Lotes**: Prueba múltiples configuraciones de modelos simultáneamente para encontrar configuraciones óptimas en el borde
-- **Evaluación Personalizada**: Crea criterios de evaluación personalizados específicos para casos de uso de Edge AI
-- **Perfil de Recursos**: Analiza los requisitos de memoria y computación para la planificación del despliegue en el borde
+### 4. Ejecución Masiva y Evaluación
+- **Pruebas Multi-Modelo**: Ejecuta múltiples prompts en modelos seleccionados simultáneamente
+- **Pruebas Eficientes a Escala**: Prueba diversas entradas y configuraciones de manera eficiente
+- **Casos de Prueba Personalizados**: Ejecuta agentes con casos de prueba para validar funcionalidad
+- **Comparación de Rendimiento**: Compara resultados entre diferentes modelos y configuraciones
 
-### 5. Conversión y Optimización de Modelos
-- **Conversión a ONNX**: Convierte modelos de varios formatos a ONNX para compatibilidad en el borde
-- **Cuantización**: Reduce el tamaño del modelo y mejora la velocidad de inferencia mediante técnicas de cuantización
-- **Optimización de Hardware**: Optimiza modelos para hardware específico del borde (CPU, GPU, NPU)
-- **Transformación de Formatos**: Transforma modelos de Hugging Face y otras fuentes para el despliegue en el borde
+### 5. Evaluación de Modelos con Conjuntos de Datos
+- **Métricas Estándar**: Prueba modelos de IA utilizando evaluadores integrados (F1 score, relevancia, similitud, coherencia)
+- **Evaluadores Personalizados**: Crea tus propias métricas de evaluación para casos de uso específicos
+- **Integración de Conjuntos de Datos**: Prueba modelos contra conjuntos de datos completos
+- **Medición de Rendimiento**: Cuantifica el rendimiento del modelo para decisiones de despliegue en el borde
 
-### 6. Ajuste Fino para Escenarios del Borde
-- **Adaptación de Dominio**: Personaliza modelos para casos de uso y entornos específicos del borde
-- **Entrenamiento Local**: Entrena modelos localmente con soporte de GPU para requisitos específicos del borde
-- **Integración con Azure**: Aprovecha Azure Container Apps para ajuste fino basado en la nube antes del despliegue en el borde
-- **Aprendizaje por Transferencia**: Adapta modelos preentrenados para tareas y limitaciones específicas del borde
+### 6. Capacidades de Fine-tuning
+- **Personalización de Modelos**: Personaliza modelos para casos de uso y dominios específicos
+- **Adaptación Especializada**: Adapta modelos a requisitos y dominios especializados
+- **Optimización para el Borde**: Ajusta modelos específicamente para las limitaciones de despliegue en el borde
+- **Entrenamiento Específico del Dominio**: Crea modelos adaptados a casos de uso específicos del borde
 
-### 7. Monitoreo y Trazabilidad de Rendimiento
-- **Análisis de Rendimiento en el Borde**: Monitorea el rendimiento de modelos en condiciones similares al borde
-- **Recopilación de Trazas**: Recopila datos detallados de rendimiento para optimización
-- **Identificación de Cuellos de Botella**: Identifica problemas de rendimiento antes del despliegue en dispositivos del borde
-- **Seguimiento de Uso de Recursos**: Monitorea memoria, CPU y tiempo de inferencia para optimización en el borde
+### 7. Integración de Herramientas MCP
+- **Conectividad con Herramientas Externas**: Conecta agentes a herramientas externas mediante servidores Model Context Protocol
+- **Acciones en el Mundo Real**: Permite que los agentes consulten bases de datos, accedan a APIs o ejecuten lógica personalizada
+- **Servidores MCP Existentes**: Usa herramientas de protocolos de comando (stdio) o HTTP (eventos enviados por el servidor)
+- **Desarrollo de MCP Personalizado**: Construye y prueba nuevos servidores MCP en el Constructor de Agentes
+
+### 8. Desarrollo y Pruebas de Agentes
+- **Soporte para Llamadas a Funciones**: Permite que los agentes invoquen funciones externas dinámicamente
+- **Pruebas de Integración en Tiempo Real**: Prueba integraciones con ejecuciones en tiempo real y uso de herramientas
+- **Versionado de Agentes**: Control de versiones para agentes con capacidades de comparación de resultados de evaluación
+- **Depuración y Rastreo**: Capacidades de rastreo y depuración local para el desarrollo de agentes
 
 ## Flujo de Trabajo de Desarrollo de Edge AI
 
 ### Fase 1: Descubrimiento y Selección de Modelos
-1. **Explorar el Catálogo de Modelos**: Utiliza el catálogo de modelos para encontrar modelos adecuados para el despliegue en el borde
-2. **Comparar Rendimiento**: Evalúa modelos según tamaño, precisión y velocidad de inferencia
-3. **Pruebas Locales**: Usa modelos de Ollama o ONNX para pruebas locales antes del despliegue en el borde
-4. **Evaluar Requisitos de Recursos**: Determina las necesidades de memoria y computación para los dispositivos del borde objetivo
+1. **Explora el Catálogo de Modelos**: Usa el catálogo para encontrar modelos adecuados para el despliegue en el borde
+2. **Compara Rendimiento**: Evalúa modelos según tamaño, precisión y velocidad de inferencia
+3. **Prueba Localmente**: Usa modelos Ollama o ONNX para probar localmente antes del despliegue en el borde
+4. **Evalúa Requisitos de Recursos**: Determina las necesidades de memoria y computación para los dispositivos de borde objetivo
 
 ### Fase 2: Optimización de Modelos
-1. **Convertir a ONNX**: Convierte modelos seleccionados al formato ONNX para compatibilidad en el borde
-2. **Aplicar Cuantización**: Reduce el tamaño del modelo mediante cuantización INT8 o INT4
-3. **Optimización de Hardware**: Optimiza para hardware específico del borde (ARM, x86, aceleradores especializados)
+1. **Convierte a ONNX**: Convierte modelos seleccionados al formato ONNX para compatibilidad con el borde
+2. **Aplica Cuantización**: Reduce el tamaño del modelo mediante cuantización INT8 o INT4
+3. **Optimización de Hardware**: Optimiza para hardware de borde objetivo (ARM, x86, aceleradores especializados)
 4. **Validación de Rendimiento**: Valida que los modelos optimizados mantengan una precisión aceptable
 
 ### Fase 3: Desarrollo de Aplicaciones
-1. **Diseño de Agentes**: Usa Agent Builder para crear agentes de IA optimizados para el borde
+1. **Diseño de Agentes**: Usa el Constructor de Agentes para crear agentes de IA optimizados para el borde
 2. **Ingeniería de Prompts**: Desarrolla prompts que funcionen eficazmente con modelos más pequeños del borde
 3. **Pruebas de Integración**: Prueba agentes en condiciones simuladas del borde
 4. **Generación de Código**: Genera código de producción optimizado para el despliegue en el borde
 
 ### Fase 4: Evaluación y Pruebas
-1. **Evaluación por Lotes**: Prueba múltiples configuraciones para encontrar configuraciones óptimas en el borde
-2. **Perfil de Rendimiento**: Analiza velocidad de inferencia, uso de memoria y precisión
+1. **Evaluación en Lote**: Prueba múltiples configuraciones para encontrar ajustes óptimos en el borde
+2. **Perfilado de Rendimiento**: Analiza velocidad de inferencia, uso de memoria y precisión
 3. **Simulación en el Borde**: Prueba en condiciones similares al entorno de despliegue en el borde
 4. **Pruebas de Estrés**: Evalúa el rendimiento bajo diversas condiciones de carga
 
 ### Fase 5: Preparación para el Despliegue
 1. **Optimización Final**: Aplica optimizaciones finales basadas en los resultados de las pruebas
 2. **Empaquetado para Despliegue**: Empaqueta modelos y código para el despliegue en el borde
-3. **Documentación**: Documenta los requisitos de despliegue y configuración
-4. **Configuración de Monitoreo**: Prepara el monitoreo y registro para el despliegue en producción
+3. **Documentación**: Documenta los requisitos y configuraciones de despliegue
+4. **Configuración de Monitoreo**: Prepara monitoreo y registro para el despliegue en el borde
 
 ## Público Objetivo para el Desarrollo de Edge AI
 
 ### Desarrolladores de Edge AI
-- Desarrolladores de aplicaciones que construyen dispositivos del borde e IoT con capacidades de IA
+- Desarrolladores de aplicaciones que construyen dispositivos de borde e IoT con capacidades de IA
 - Desarrolladores de sistemas embebidos que integran capacidades de IA en dispositivos con recursos limitados
 - Desarrolladores móviles que crean aplicaciones de IA en el dispositivo para smartphones y tablets
 
 ### Ingenieros de Edge AI
-- Ingenieros de IA que optimizan modelos para el despliegue en el borde y gestionan tuberías de inferencia
-- Ingenieros de DevOps que despliegan y gestionan modelos de IA en infraestructuras distribuidas del borde
+- Ingenieros de IA que optimizan modelos para despliegue en el borde y gestionan pipelines de inferencia
+- Ingenieros de DevOps que despliegan y gestionan modelos de IA en infraestructuras distribuidas en el borde
 - Ingenieros de rendimiento que optimizan cargas de trabajo de IA para las limitaciones de hardware del borde
 
 ### Investigadores y Educadores
@@ -157,7 +164,7 @@ Al final de esta guía, serás capaz de:
 ### Dispositivos IoT Inteligentes
 - **Reconocimiento de Imágenes en Tiempo Real**: Despliega modelos de visión por computadora en cámaras y sensores IoT
 - **Procesamiento de Voz**: Implementa reconocimiento de voz y procesamiento de lenguaje natural en altavoces inteligentes
-- **Mantenimiento Predictivo**: Ejecuta modelos de detección de anomalías en dispositivos industriales del borde
+- **Mantenimiento Predictivo**: Ejecuta modelos de detección de anomalías en dispositivos industriales de borde
 - **Monitoreo Ambiental**: Despliega modelos de análisis de datos de sensores para aplicaciones ambientales
 
 ### Aplicaciones Móviles y Embebidas
@@ -167,183 +174,230 @@ Al final de esta guía, serás capaz de:
 - **Sistemas Autónomos**: Implementa modelos de toma de decisiones para drones, robots y vehículos
 
 ### Infraestructura de Computación en el Borde
-- **Centros de Datos en el Borde**: Despliega modelos de IA en centros de datos del borde para aplicaciones de baja latencia
+- **Centros de Datos en el Borde**: Despliega modelos de IA en centros de datos en el borde para aplicaciones de baja latencia
 - **Integración con CDN**: Integra capacidades de procesamiento de IA en redes de entrega de contenido
 - **Edge 5G**: Aprovecha la computación en el borde 5G para aplicaciones impulsadas por IA
 - **Computación en la Niebla**: Implementa procesamiento de IA en entornos de computación en la niebla
 
 ## Instalación y Configuración
 
-### Instalación Rápida
+### Instalación de la Extensión
 Instala la extensión AI Toolkit directamente desde el Visual Studio Code Marketplace:
 
-```
-Install: AI Toolkit for Visual Studio Code (ms-windows-ai-studio.windows-ai-studio)
-```
+**ID de la Extensión**: `ms-windows-ai-studio.windows-ai-studio`
+
+**Métodos de Instalación**:
+1. **Marketplace de VS Code**: Busca "AI Toolkit" en la vista de Extensiones
+2. **Línea de Comando**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
+3. **Instalación Directa**: Descarga desde [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Requisitos Previos para el Desarrollo de Edge AI
-- **ONNX Runtime**: Instala ONNX Runtime para la inferencia de modelos
-- **Ollama** (Opcional): Instala Ollama para servir modelos localmente
-- **Entorno de Python**: Configura Python con las bibliotecas de IA requeridas
-- **Herramientas de Hardware del Borde**: Instala herramientas de desarrollo específicas de hardware (CUDA, OpenVINO, etc.)
+- **Visual Studio Code**: Se recomienda la última versión
+- **Entorno Python**: Python 3.8+ con las bibliotecas de IA requeridas
+- **ONNX Runtime** (Opcional): Para inferencia de modelos ONNX
+- **Ollama** (Opcional): Para servir modelos localmente
+- **Herramientas de Aceleración de Hardware**: CUDA, OpenVINO o aceleradores específicos de la plataforma
 
 ### Configuración Inicial
-1. Abre VS Code e instala la extensión AI Toolkit
-2. Configura las fuentes de modelos (ONNX, Ollama, proveedores en la nube)
-3. Configura el entorno de desarrollo local para pruebas en el borde
-4. Configura opciones de aceleración de hardware para tu máquina de desarrollo
+1. **Activación de la Extensión**: Abre VS Code y verifica que AI Toolkit aparezca en la Barra de Actividades
+2. **Configuración de Proveedores de Modelos**: Configura el acceso a GitHub, OpenAI, Anthropic u otros proveedores de modelos
+3. **Entorno Local**: Configura el entorno Python e instala los paquetes requeridos
+4. **Aceleración de Hardware**: Configura la aceleración por GPU/NPU si está disponible
+5. **Integración MCP**: Configura servidores Model Context Protocol si es necesario
 
-## Primeros Pasos con el Desarrollo de Edge AI
+### Lista de Verificación para la Configuración Inicial
+- [ ] Extensión AI Toolkit instalada y activada
+- [ ] Catálogo de modelos accesible y modelos disponibles
+- [ ] Playground funcional para pruebas de modelos
+- [ ] Constructor de Agentes accesible para desarrollo de prompts
+- [ ] Entorno de desarrollo local configurado
+- [ ] Aceleración de hardware (si está disponible) configurada correctamente
 
-### Paso 1: Selección de Modelos
-1. Abre la vista de AI Toolkit en la Barra de Actividades
-2. Navega por el Catálogo de Modelos para modelos compatibles con el borde
-3. Filtra por tamaño de modelo, formato (ONNX) y características de rendimiento
-4. Compara modelos utilizando las herramientas de comparación integradas
+## Primeros Pasos con AI Toolkit
 
-### Paso 2: Pruebas Locales
-1. Usa el Playground para probar modelos seleccionados localmente
-2. Experimenta con diferentes prompts y parámetros
-3. Monitorea métricas de rendimiento durante las pruebas
-4. Evalúa las respuestas de los modelos para los requisitos del caso de uso en el borde
+### Guía de Inicio Rápido
 
-### Paso 3: Optimización de Modelos
-1. Usa las herramientas de Conversión de Modelos para optimizar el despliegue en el borde
-2. Aplica cuantización para reducir el tamaño del modelo
-3. Prueba modelos optimizados para garantizar un rendimiento aceptable
-4. Documenta configuraciones de optimización y compensaciones de rendimiento
+Recomendamos comenzar con modelos alojados en GitHub para una experiencia más simplificada:
 
-### Paso 4: Desarrollo de Agentes
-1. Usa Agent Builder para crear agentes de IA optimizados para el borde
-2. Desarrolla prompts que funcionen eficazmente con modelos más pequeños
-3. Integra herramientas y APIs necesarias para escenarios del borde
-4. Prueba agentes en condiciones simuladas del borde
+1. **Instalación**: Sigue la [guía de instalación](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup) para configurar AI Toolkit en tu dispositivo
+2. **Descubrimiento de Modelos**: Desde la vista del árbol de extensiones, selecciona **CATALOG > Models** para explorar los modelos disponibles
+3. **Modelos de GitHub**: Comienza con modelos alojados en GitHub para una integración óptima
+4. **Pruebas en el Playground**: Desde cualquier tarjeta de modelo, selecciona **Try in Playground** para comenzar a experimentar con las capacidades del modelo
 
-### Paso 5: Evaluación y Despliegue
-1. Usa evaluación masiva para probar múltiples configuraciones
-2. Perfila el rendimiento bajo diversas condiciones
-3. Prepara paquetes de despliegue para dispositivos del borde objetivo
-4. Configura monitoreo y registro para el despliegue en producción
+### Desarrollo de Edge AI Paso a Paso
 
-## Mejores Prácticas para el Desarrollo de Edge AI
+#### Paso 1: Exploración y Selección de Modelos
+1. Abre la vista de AI Toolkit en la Barra de Actividades de VS Code
+2. Explora el Catálogo de Modelos para encontrar modelos adecuados para el despliegue en el borde
+3. Filtra por proveedor (GitHub, ONNX, Ollama) según tus requisitos de borde
+4. Usa **Try in Playground** para probar las capacidades del modelo de inmediato
 
-### Selección de Modelos
-- **Restricciones de Tamaño**: Elige modelos que se ajusten a las limitaciones de memoria de los dispositivos objetivo
-- **Velocidad de Inferencia**: Prioriza modelos con tiempos de inferencia rápidos para aplicaciones en tiempo real
-- **Compensaciones de Precisión**: Equilibra la precisión del modelo con las limitaciones de recursos
-- **Compatibilidad de Formatos**: Prefiere formatos ONNX o optimizados para hardware para el despliegue en el borde
+#### Paso 2: Desarrollo de Agentes
+1. Usa el **Constructor de Prompts (Agentes)** para crear agentes de IA optimizados para el borde
+2. Generar indicaciones iniciales usando descripciones en lenguaje natural  
+3. Iterar y refinar las indicaciones basándose en las respuestas del modelo  
+4. Integrar herramientas MCP para mejorar las capacidades de los agentes  
 
-### Técnicas de Optimización
-- **Cuantización**: Usa cuantización INT8 o INT4 para reducir el tamaño del modelo y mejorar la velocidad
-- **Poda**: Elimina parámetros innecesarios del modelo para reducir los requisitos computacionales
-- **Destilación de Conocimiento**: Crea modelos más pequeños que mantengan el rendimiento de los más grandes
-- **Aceleración de Hardware**: Aprovecha NPUs, GPUs o aceleradores especializados cuando estén disponibles
+#### Paso 3: Pruebas y Evaluación  
+1. Utilizar **Bulk Run** para probar múltiples indicaciones en modelos seleccionados  
+2. Ejecutar agentes con casos de prueba para validar la funcionalidad  
+3. Evaluar precisión y rendimiento utilizando métricas integradas o personalizadas  
+4. Comparar diferentes modelos y configuraciones  
 
-### Flujo de Trabajo de Desarrollo
-- **Pruebas Iterativas**: Prueba frecuentemente en condiciones similares al borde durante el desarrollo
-- **Monitoreo de Rendimiento**: Monitorea continuamente el uso de recursos y la velocidad de inferencia
-- **Control de Versiones**: Rastrea versiones de modelos y configuraciones de optimización
-- **Documentación**: Documenta todas las decisiones de optimización y compensaciones de rendimiento
+#### Paso 4: Ajuste y Optimización  
+1. Personalizar modelos para casos de uso específicos  
+2. Aplicar ajustes específicos del dominio  
+3. Optimizar para las restricciones de implementación en el borde  
+4. Versionar y comparar diferentes configuraciones de agentes  
 
-### Consideraciones de Despliegue
-- **Monitoreo de Recursos**: Monitorea memoria, CPU y uso de energía en producción
-- **Estrategias de Respaldo**: Implementa mecanismos de respaldo para fallos de modelos
-- **Mecanismos de Actualización**: Planifica actualizaciones de modelos y gestión de versiones
-- **Seguridad**: Implementar medidas de seguridad adecuadas para aplicaciones de IA en el borde
+#### Paso 5: Preparación para el Despliegue  
+1. Generar código listo para producción utilizando el Agent Builder  
+2. Configurar conexiones al servidor MCP para uso en producción  
+3. Preparar paquetes de despliegue para dispositivos en el borde  
+4. Configurar métricas de monitoreo y evaluación  
 
-## Integración con Frameworks de IA en el Borde
+## Mejores Prácticas para el Desarrollo de IA en el Borde  
 
-### ONNX Runtime
-- **Despliegue Multiplataforma**: Implementar modelos ONNX en diferentes plataformas de borde
-- **Optimización de Hardware**: Aprovechar las optimizaciones específicas de hardware de ONNX Runtime
-- **Soporte Móvil**: Usar ONNX Runtime Mobile para aplicaciones en smartphones y tablets
-- **Integración con IoT**: Desplegar en dispositivos IoT utilizando las distribuciones ligeras de ONNX Runtime
+### Selección de Modelos  
+- **Restricciones de Tamaño**: Elegir modelos que se ajusten a las limitaciones de memoria de los dispositivos objetivo  
+- **Velocidad de Inferencia**: Priorizar modelos con tiempos de inferencia rápidos para aplicaciones en tiempo real  
+- **Compromisos de Precisión**: Equilibrar la precisión del modelo con las restricciones de recursos  
+- **Compatibilidad de Formato**: Preferir formatos ONNX o optimizados para hardware en despliegues en el borde  
 
-### Windows ML
-- **Dispositivos Windows**: Optimizar para dispositivos de borde y PCs basados en Windows
-- **Aceleración NPU**: Aprovechar las Unidades de Procesamiento Neural en dispositivos Windows
-- **DirectML**: Usar DirectML para aceleración en GPU en plataformas Windows
-- **Integración UWP**: Integrar con aplicaciones de la Plataforma Universal de Windows
+### Técnicas de Optimización  
+- **Cuantización**: Usar cuantización INT8 o INT4 para reducir el tamaño del modelo y mejorar la velocidad  
+- **Poda**: Eliminar parámetros innecesarios del modelo para reducir los requisitos computacionales  
+- **Destilación de Conocimiento**: Crear modelos más pequeños que mantengan el rendimiento de los más grandes  
+- **Aceleración por Hardware**: Aprovechar NPUs, GPUs o aceleradores especializados cuando estén disponibles  
 
-### TensorFlow Lite
-- **Optimización Móvil**: Implementar modelos de TensorFlow Lite en dispositivos móviles y embebidos
-- **Delegados de Hardware**: Usar delegados de hardware especializados para aceleración
-- **Microcontroladores**: Desplegar en microcontroladores utilizando TensorFlow Lite Micro
-- **Soporte Multiplataforma**: Implementar en sistemas Android, iOS y Linux embebido
+### Flujo de Trabajo de Desarrollo  
+- **Pruebas Iterativas**: Probar frecuentemente en condiciones similares al borde durante el desarrollo  
+- **Monitoreo de Rendimiento**: Monitorear continuamente el uso de recursos y la velocidad de inferencia  
+- **Control de Versiones**: Rastrear versiones de modelos y configuraciones de optimización  
+- **Documentación**: Documentar todas las decisiones de optimización y los compromisos de rendimiento  
 
-### Azure IoT Edge
-- **Híbrido Nube-Borde**: Combinar entrenamiento en la nube con inferencia en el borde
-- **Despliegue de Módulos**: Implementar modelos de IA como módulos de IoT Edge
-- **Gestión de Dispositivos**: Administrar dispositivos de borde y actualizaciones de modelos de forma remota
-- **Telemetría**: Recopilar datos de rendimiento y métricas de modelos desde despliegues en el borde
+### Consideraciones para el Despliegue  
+- **Monitoreo de Recursos**: Supervisar el uso de memoria, CPU y energía en producción  
+- **Estrategias de Respaldo**: Implementar mecanismos de respaldo para fallos del modelo  
+- **Mecanismos de Actualización**: Planificar actualizaciones de modelos y gestión de versiones  
+- **Seguridad**: Implementar medidas de seguridad adecuadas para aplicaciones de IA en el borde  
 
-## Escenarios Avanzados de IA en el Borde
+## Integración con Marcos de IA en el Borde  
 
-### Despliegue Multimodelo
-- **Conjuntos de Modelos**: Implementar múltiples modelos para mejorar la precisión o redundancia
-- **Pruebas A/B**: Probar diferentes modelos simultáneamente en dispositivos de borde
-- **Selección Dinámica**: Elegir modelos según las condiciones actuales del dispositivo
-- **Compartición de Recursos**: Optimizar el uso de recursos entre múltiples modelos desplegados
+### ONNX Runtime  
+- **Despliegue Multiplataforma**: Desplegar modelos ONNX en diferentes plataformas del borde  
+- **Optimización de Hardware**: Aprovechar las optimizaciones específicas de hardware de ONNX Runtime  
+- **Soporte Móvil**: Usar ONNX Runtime Mobile para aplicaciones en smartphones y tablets  
+- **Integración IoT**: Desplegar en dispositivos IoT utilizando distribuciones ligeras de ONNX Runtime  
 
-### Aprendizaje Federado
-- **Entrenamiento Distribuido**: Entrenar modelos en múltiples dispositivos de borde
-- **Preservación de Privacidad**: Mantener los datos de entrenamiento locales mientras se comparten mejoras de modelos
-- **Aprendizaje Colaborativo**: Permitir que los dispositivos aprendan de experiencias colectivas
-- **Coordinación Borde-Nube**: Coordinar el aprendizaje entre dispositivos de borde y la infraestructura en la nube
+### Windows ML  
+- **Dispositivos Windows**: Optimizar para dispositivos en el borde basados en Windows y PCs  
+- **Aceleración NPU**: Aprovechar las Unidades de Procesamiento Neural en dispositivos Windows  
+- **DirectML**: Usar DirectML para aceleración por GPU en plataformas Windows  
+- **Integración UWP**: Integrar con aplicaciones de la Plataforma Universal de Windows  
 
-### Procesamiento en Tiempo Real
-- **Procesamiento de Flujos**: Procesar flujos continuos de datos en dispositivos de borde
-- **Inferencia de Baja Latencia**: Optimizar para una latencia mínima en la inferencia
-- **Procesamiento por Lotes**: Procesar eficientemente lotes de datos en dispositivos de borde
-- **Procesamiento Adaptativo**: Ajustar el procesamiento según las capacidades actuales del dispositivo
+### TensorFlow Lite  
+- **Optimización Móvil**: Desplegar modelos TensorFlow Lite en dispositivos móviles y embebidos  
+- **Delegados de Hardware**: Usar delegados de hardware especializados para aceleración  
+- **Microcontroladores**: Desplegar en microcontroladores utilizando TensorFlow Lite Micro  
+- **Soporte Multiplataforma**: Desplegar en Android, iOS y sistemas Linux embebidos  
 
-## Solución de Problemas en el Desarrollo de IA en el Borde
+### Azure IoT Edge  
+- **Híbrido Nube-Borde**: Combinar entrenamiento en la nube con inferencia en el borde  
+- **Despliegue de Módulos**: Desplegar modelos de IA como módulos de IoT Edge  
+- **Gestión de Dispositivos**: Gestionar dispositivos en el borde y actualizaciones de modelos de forma remota  
+- **Telemetría**: Recopilar datos de rendimiento y métricas de modelos desde despliegues en el borde  
 
-### Problemas Comunes
-- **Restricciones de Memoria**: Modelo demasiado grande para la memoria del dispositivo objetivo
-- **Velocidad de Inferencia**: Inferencia del modelo demasiado lenta para requisitos en tiempo real
-- **Degradación de Precisión**: La optimización reduce la precisión del modelo de manera inaceptable
-- **Compatibilidad de Hardware**: Modelo no compatible con el hardware objetivo
+## Escenarios Avanzados de IA en el Borde  
 
-### Estrategias de Depuración
-- **Perfilado de Rendimiento**: Usar las funciones de trazado del Toolkit de IA para identificar cuellos de botella
-- **Monitoreo de Recursos**: Supervisar el uso de memoria y CPU durante el desarrollo
-- **Pruebas Incrementales**: Probar optimizaciones de manera incremental para aislar problemas
-- **Simulación de Hardware**: Usar herramientas de desarrollo para simular el hardware objetivo
+### Despliegue Multimodelo  
+- **Conjuntos de Modelos**: Desplegar múltiples modelos para mejorar la precisión o redundancia  
+- **Pruebas A/B**: Probar diferentes modelos simultáneamente en dispositivos del borde  
+- **Selección Dinámica**: Elegir modelos basándose en las condiciones actuales del dispositivo  
+- **Compartición de Recursos**: Optimizar el uso de recursos entre múltiples modelos desplegados  
 
-### Soluciones de Optimización
-- **Cuantización Adicional**: Aplicar técnicas de cuantización más agresivas
-- **Arquitectura del Modelo**: Considerar diferentes arquitecturas de modelos optimizadas para el borde
-- **Optimización de Preprocesamiento**: Optimizar el preprocesamiento de datos para las restricciones del borde
-- **Optimización de Inferencia**: Usar optimizaciones de inferencia específicas de hardware
+### Aprendizaje Federado  
+- **Entrenamiento Distribuido**: Entrenar modelos en múltiples dispositivos del borde  
+- **Preservación de Privacidad**: Mantener los datos de entrenamiento locales mientras se comparten mejoras del modelo  
+- **Aprendizaje Colaborativo**: Permitir que los dispositivos aprendan de experiencias colectivas  
+- **Coordinación Borde-Nube**: Coordinar el aprendizaje entre dispositivos del borde y la infraestructura en la nube  
 
-## Recursos y Próximos Pasos
+### Procesamiento en Tiempo Real  
+- **Procesamiento de Flujos**: Procesar flujos continuos de datos en dispositivos del borde  
+- **Inferencia de Baja Latencia**: Optimizar para una latencia mínima en la inferencia  
+- **Procesamiento por Lotes**: Procesar eficientemente lotes de datos en dispositivos del borde  
+- **Procesamiento Adaptativo**: Ajustar el procesamiento según las capacidades actuales del dispositivo  
 
-### Documentación
-- [Guía de Modelos del Toolkit de IA](https://code.visualstudio.com/docs/intelligentapps/models)
-- [Documentación del Playground de Modelos](https://code.visualstudio.com/docs/intelligentapps/playground)
-- [Documentación de ONNX Runtime](https://onnxruntime.ai/)
-- [Documentación de Windows ML](https://docs.microsoft.com/en-us/windows/ai/)
+## Resolución de Problemas en el Desarrollo de IA en el Borde  
 
-### Comunidad y Soporte
-- [GitHub del Toolkit de IA para VS Code](https://github.com/microsoft/vscode-ai-toolkit)
-- [Comunidad ONNX](https://github.com/onnx/onnx)
-- [Comunidad de Desarrolladores de IA en el Borde](https://docs.microsoft.com/en-us/azure/iot-edge/community)
-- [Marketplace de Extensiones de VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+### Problemas Comunes  
+- **Restricciones de Memoria**: El modelo es demasiado grande para la memoria del dispositivo objetivo  
+- **Velocidad de Inferencia**: La inferencia del modelo es demasiado lenta para los requisitos en tiempo real  
+- **Degradación de Precisión**: La optimización reduce la precisión del modelo de manera inaceptable  
+- **Compatibilidad de Hardware**: El modelo no es compatible con el hardware objetivo  
 
-### Recursos de Aprendizaje
-- [Curso de Fundamentos de IA en el Borde](./Module01/README.md)
-- [Guía de Modelos de Lenguaje Pequeños](./Module02/README.md)
-- [Estrategias de Despliegue en el Borde](./Module03/README.md)
-- [Desarrollo de IA en el Borde para Windows](./windowdeveloper.md)
+### Estrategias de Depuración  
+- **Perfilado de Rendimiento**: Usar las funciones de trazado del AI Toolkit para identificar cuellos de botella  
+- **Monitoreo de Recursos**: Supervisar el uso de memoria y CPU durante el desarrollo  
+- **Pruebas Incrementales**: Probar optimizaciones de manera incremental para aislar problemas  
+- **Simulación de Hardware**: Usar herramientas de desarrollo para simular el hardware objetivo  
 
-## Conclusión
+### Soluciones de Optimización  
+- **Cuantización Adicional**: Aplicar técnicas de cuantización más agresivas  
+- **Arquitectura del Modelo**: Considerar diferentes arquitecturas de modelos optimizadas para el borde  
+- **Optimización de Preprocesamiento**: Optimizar el preprocesamiento de datos para las restricciones del borde  
+- **Optimización de Inferencia**: Usar optimizaciones de inferencia específicas de hardware  
 
-El Toolkit de IA para Visual Studio Code proporciona una plataforma integral para el desarrollo de IA en el borde, desde el descubrimiento y la optimización de modelos hasta el despliegue y la monitorización. Al aprovechar sus herramientas y flujos de trabajo integrados, los desarrolladores pueden crear, probar y desplegar aplicaciones de IA de manera eficiente que funcionen eficazmente en dispositivos de borde con recursos limitados.
+## Recursos y Próximos Pasos  
 
-El soporte del Toolkit para ONNX, Ollama y varios proveedores de nube, combinado con sus capacidades de optimización y evaluación, lo convierte en una opción ideal para el desarrollo de IA en el borde. Ya sea que estés construyendo aplicaciones IoT, funciones de IA móvil o sistemas de inteligencia embebida, el Toolkit de IA proporciona las herramientas y flujos de trabajo necesarios para un despliegue exitoso de IA en el borde.
+### Documentación Oficial  
+- [Documentación para Desarrolladores del AI Toolkit](https://aka.ms/AIToolkit/doc)  
+- [Guía de Instalación y Configuración](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
+- [Documentación de Aplicaciones Inteligentes en VS Code](https://code.visualstudio.com/docs/intelligentapps)  
+- [Documentación del Protocolo de Contexto de Modelos (MCP)](https://modelcontextprotocol.io/)  
 
-A medida que la IA en el borde sigue evolucionando, el Toolkit de IA para VS Code se mantiene a la vanguardia, proporcionando a los desarrolladores herramientas y capacidades de última generación para construir la próxima generación de aplicaciones inteligentes en el borde.
+### Comunidad y Soporte  
+- [Repositorio GitHub del AI Toolkit](https://github.com/microsoft/vscode-ai-toolkit)  
+- [Problemas y Solicitudes de Funciones en GitHub](https://aka.ms/AIToolkit/feedback)  
+- [Comunidad Discord de Azure AI Foundry](https://aka.ms/azureaifoundry/discord)  
+- [Marketplace de Extensiones de VS Code](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)  
+
+### Recursos Técnicos  
+- [Documentación de ONNX Runtime](https://onnxruntime.ai/)  
+- [Documentación de Ollama](https://ollama.ai/)  
+- [Documentación de Windows ML](https://docs.microsoft.com/en-us/windows/ai/)  
+- [Documentación de Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
+
+### Rutas de Aprendizaje  
+- [Curso de Fundamentos de IA en el Borde](../Module01/README.md)  
+- [Guía de Modelos de Lenguaje Pequeños](../Module02/README.md)  
+- [Estrategias de Despliegue en el Borde](../Module03/README.md)  
+- [Desarrollo de IA en el Borde para Windows](./windowdeveloper.md)  
+
+### Recursos Adicionales  
+- **Estadísticas del Repositorio**: Más de 1.8k estrellas, 150+ bifurcaciones, 18+ colaboradores  
+- **Licencia**: Licencia MIT  
+- **Seguridad**: Se aplican las políticas de seguridad de Microsoft  
+- **Telemetría**: Respeta la configuración de telemetría de VS Code  
+
+## Conclusión  
+
+AI Toolkit para Visual Studio Code representa una plataforma integral para el desarrollo moderno de IA, proporcionando capacidades simplificadas para el desarrollo de agentes que son especialmente valiosas para aplicaciones de IA en el borde. Con su extenso catálogo de modelos que admite proveedores como Anthropic, OpenAI, GitHub y Google, combinado con la ejecución local a través de ONNX y Ollama, el toolkit ofrece la flexibilidad necesaria para diversos escenarios de despliegue en el borde.
+
+La fortaleza del toolkit radica en su enfoque integrado: desde el descubrimiento y la experimentación de modelos en el Playground hasta el desarrollo sofisticado de agentes con el Prompt Builder, capacidades de evaluación completas e integración fluida de herramientas MCP. Para los desarrolladores de IA en el borde, esto significa prototipos rápidos y pruebas de agentes de IA antes del despliegue en el borde, con la capacidad de iterar rápidamente y optimizar para entornos con restricciones de recursos.
+
+Ventajas clave para el desarrollo de IA en el borde incluyen:  
+- **Experimentación Rápida**: Probar modelos y agentes rápidamente antes de comprometerse con el despliegue en el borde  
+- **Flexibilidad Multiproveedor**: Acceder a modelos de diversas fuentes para encontrar soluciones óptimas en el borde  
+- **Desarrollo Local**: Probar con ONNX y Ollama para desarrollo offline y preservación de la privacidad  
+- **Preparación para Producción**: Generar código listo para producción e integrar con herramientas externas a través de MCP  
+- **Evaluación Integral**: Usar métricas integradas y personalizadas para validar el rendimiento de IA en el borde  
+
+A medida que la IA continúa avanzando hacia escenarios de despliegue en el borde, AI Toolkit para VS Code proporciona el entorno de desarrollo y el flujo de trabajo necesarios para construir, probar y optimizar aplicaciones inteligentes para entornos con restricciones de recursos. Ya sea que estés desarrollando soluciones IoT, aplicaciones de IA móvil o sistemas de inteligencia embebida, el conjunto de características completas del toolkit y su flujo de trabajo integrado respaldan todo el ciclo de vida del desarrollo de IA en el borde.
+
+Con un desarrollo continuo y una comunidad activa (más de 1.8k estrellas en GitHub), AI Toolkit sigue estando a la vanguardia de las herramientas de desarrollo de IA, evolucionando constantemente para satisfacer las necesidades de los desarrolladores modernos de IA que trabajan en escenarios de despliegue en el borde.
+
+[Next Foundry Local](./foundrylocal.md)  
 
 ---
 

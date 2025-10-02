@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "02b037f55de779607eb12edcc7a7fcf2",
-  "translation_date": "2025-09-26T18:28:39+00:00",
+  "original_hash": "ba4a0e432e3b6bfed9026383b0b56cf4",
+  "translation_date": "2025-10-02T12:12:40+00:00",
   "source_file": "Module07/foundrylocal.md",
   "language_code": "mr"
 }
@@ -63,12 +63,12 @@ foundry cache list
 ```
 
 टीप:
-- सेवा OpenAI-सुसंगत REST API उघडते. एंडपॉइंट पोर्ट डायनॅमिकली वाटप केले जाते; `foundry service status` वापरून ते शोधा.
+- सेवा OpenAI-सुसंगत REST API उघडते. एंडपॉइंट पोर्ट डायनॅमिकली नियुक्त केला जातो; `foundry service status` वापरून तो शोधा.
 - सोयीसाठी SDKs वापरा; ते समर्थित ठिकाणी एंडपॉइंट शोध आपोआप हाताळतात.
 
 ## 3) स्थानिक एंडपॉइंट शोधा (डायनॅमिक पोर्ट)
 
-Foundry Local प्रत्येक वेळी सेवा सुरू झाल्यावर डायनॅमिक पोर्ट वाटप करते:
+Foundry Local प्रत्येक वेळी सेवा सुरू झाल्यावर डायनॅमिक पोर्ट नियुक्त करते:
 ```cmd
 foundry service status
 ```
@@ -94,7 +94,7 @@ PY
 
 ## 5) तुमचे स्वतःचे मॉडेल आणा (Olive सह संकलित करा)
 
-जर तुम्हाला कॅटलॉगमध्ये नसलेले मॉडेल आवश्यक असेल, तर ते Olive वापरून ONNX मध्ये Foundry Local साठी संकलित करा.
+जर तुम्हाला कॅटलॉगमध्ये नसलेले मॉडेल आवश्यक असेल, तर ते Foundry Local साठी ONNX मध्ये संकलित करा Olive वापरून.
 
 उच्च-स्तरीय प्रवाह (पायऱ्यांसाठी दस्तऐवज पहा):
 ```cmd
@@ -105,7 +105,7 @@ foundry model run llama-3.2 --verbose
 दस्तऐवज:
 - BYOM संकलन: https://learn.microsoft.com/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
 
-## 6) समस्या निवारण
+## 6) समस्या सोडवणे
 
 - सेवा स्थिती आणि लॉग तपासा:
 ```cmd
@@ -118,7 +118,7 @@ foundry cache list
 foundry cache remove <model>
 foundry cache cd <path>
 ```
-- नवीनतम प्रीव्ह्यूमध्ये अद्यतनित करा:
+- नवीनतम प्रीव्ह्यूमध्ये अपडेट करा:
 ```cmd
 winget upgrade --id Microsoft.FoundryLocal
 ```
@@ -130,5 +130,9 @@ winget upgrade --id Microsoft.FoundryLocal
 - VS Code AI Toolkit Foundry Local सह (चॅट एंडपॉइंट URL मिळवण्यासाठी `foundry service status` वापरा):
   https://learn.microsoft.com/azure/ai-foundry/foundry-local/concepts/foundry-local-architecture#key-components
 
+[पुढील Windows विकसक](./windowdeveloper.md)
+
 ---
 
+**अस्वीकरण**:  
+हा दस्तऐवज AI भाषांतर सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) वापरून अनुवादित करण्यात आला आहे. आम्ही अचूकतेसाठी प्रयत्नशील असलो तरी, कृपया लक्षात ठेवा की स्वयंचलित भाषांतरांमध्ये त्रुटी किंवा अचूकतेचा अभाव असू शकतो. मूळ भाषेतील दस्तऐवज हा अधिकृत स्रोत मानला जावा. महत्त्वाच्या माहितीसाठी, व्यावसायिक मानवी भाषांतराची शिफारस केली जाते. या भाषांतराचा वापर करून उद्भवलेल्या कोणत्याही गैरसमज किंवा चुकीच्या अर्थासाठी आम्ही जबाबदार राहणार नाही.
