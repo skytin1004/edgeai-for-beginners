@@ -6,8 +6,11 @@ EdgeAI for Beginners is a comprehensive educational repository teaching Edge AI 
 
 **Key Technologies:**
 - Python 3.8+ (primary language for AI/ML samples)
+- .NET C# (AI/ML Samples)
 - JavaScript/Node.js with Electron (for desktop applications)
 - Microsoft Foundry Local SDK
+- Microsoft Windows ML 
+- VSCode AI Toolkit
 - OpenAI SDK
 - AI Frameworks: LangChain, Semantic Kernel, Chainlit
 - Model Optimization: Llama.cpp, Microsoft Olive, OpenVINO, Apple MLX
@@ -259,6 +262,11 @@ Most Module08 samples require Microsoft Foundry Local to be running:
 
 ### Starting Foundry Local
 ```bash
+# Start Foundry Local 
+foundry service start
+
+#foundry service host and port are displayed after running this command or `foundry service status`
+
 # Run a specific model
 foundry model run phi-4-mini
 
@@ -270,10 +278,12 @@ foundry model run mistral-7b
 ### Verifying Foundry Local
 ```bash
 # Check service health
-curl http://localhost:8000/health
+curl http://127.0.0.1:55769/
+
+# the Port and PID will be displayed when running `foundry service start`
 
 # List loaded models
-curl http://localhost:8000/v1/models
+curl http://localhost:55769/v1/models
 ```
 
 ### Environment Variables for Samples
@@ -281,7 +291,7 @@ curl http://localhost:8000/v1/models
 Most samples use these environment variables:
 ```bash
 # Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:8000
+set BASE_URL=http://localhost:55769
 set MODEL=phi-4-mini
 set API_KEY=
 
@@ -330,7 +340,7 @@ No build process - samples are run directly with Python interpreter.
 foundry model run phi-4-mini
 
 # Verify it's running
-curl http://localhost:8000/health
+curl http://localhost:55769/health
 ```
 
 ### Python Virtual Environment Issues
