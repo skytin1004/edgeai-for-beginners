@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T08:35:03+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T07:52:27+00:00",
   "source_file": "README.md",
   "language_code": "br"
 }
@@ -20,13 +20,13 @@ CO_OP_TRANSLATOR_METADATA:
 [![Forks no GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 [![Estrelas no GitHub](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)  
 
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Discord do Microsoft Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Siga os passos abaixo para começar a usar esses recursos:
+Siga estes passos para começar a usar os recursos:
 
 1. **Faça um Fork do Repositório**: Clique [![Forks no GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Clone o Repositório**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Junte-se ao Discord do Azure AI Foundry e conecte-se com especialistas e outros desenvolvedores**](https://discord.com/invite/ByRwuEEgH4)  
+3. [**Participe do Discord do Azure AI Foundry e conecte-se com especialistas e outros desenvolvedores**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Suporte Multilíngue
 
@@ -38,12 +38,12 @@ Siga os passos abaixo para começar a usar esses recursos:
 
 ## Introdução
 
-Bem-vindo ao **EdgeAI para Iniciantes** – sua jornada completa no mundo transformador da Inteligência Artificial de Borda. Este curso conecta as capacidades poderosas da IA com a implantação prática em dispositivos de borda, permitindo que você aproveite o potencial da IA diretamente onde os dados são gerados e as decisões precisam ser tomadas.
+Bem-vindo ao **EdgeAI para Iniciantes** – sua jornada completa no mundo transformador da Inteligência Artificial na borda. Este curso conecta as capacidades poderosas da IA com a implantação prática em dispositivos de borda, permitindo que você aproveite o potencial da IA diretamente onde os dados são gerados e as decisões precisam ser tomadas.
 
 ### O que você vai aprender
 
-Este curso leva você dos conceitos fundamentais até implementações prontas para produção, abordando:
-- **Modelos de Linguagem Pequenos (SLMs)** otimizados para implantação em borda
+Este curso leva você dos conceitos fundamentais até implementações prontas para produção, cobrindo:
+- **Modelos de Linguagem Pequenos (SLMs)** otimizados para implantação na borda
 - **Otimização consciente de hardware** em diversas plataformas
 - **Inferência em tempo real** com capacidades de preservação de privacidade
 - **Estratégias de implantação em produção** para aplicações empresariais
@@ -53,13 +53,13 @@ Este curso leva você dos conceitos fundamentais até implementações prontas p
 Edge AI representa uma mudança de paradigma que aborda desafios modernos críticos:
 - **Privacidade e Segurança**: Processa dados sensíveis localmente, sem exposição à nuvem
 - **Desempenho em tempo real**: Elimina latência de rede para aplicações críticas
-- **Eficiência de custos**: Reduz despesas com largura de banda e computação em nuvem
+- **Eficiência de custos**: Reduz despesas com largura de banda e computação na nuvem
 - **Operações resilientes**: Mantém a funcionalidade durante interrupções de rede
 - **Conformidade regulatória**: Atende aos requisitos de soberania de dados
 
 ### Edge AI
 
-Edge AI refere-se à execução de algoritmos de IA e modelos de linguagem localmente em hardware, próximo ao local onde os dados são gerados, sem depender de recursos de nuvem para inferência. Isso reduz a latência, melhora a privacidade e permite a tomada de decisões em tempo real.
+Edge AI refere-se à execução de algoritmos de IA e modelos de linguagem localmente em hardware, próximo ao local onde os dados são gerados, sem depender de recursos na nuvem para inferência. Isso reduz a latência, melhora a privacidade e permite a tomada de decisões em tempo real.
 
 ### Princípios fundamentais:
 - **Inferência no dispositivo**: Modelos de IA executados em dispositivos de borda (telefones, roteadores, microcontroladores, PCs industriais)
@@ -74,7 +74,7 @@ SLMs como Phi-4, Mistral-7B e Gemma são versões otimizadas de LLMs maiores –
 - **Menor demanda computacional**: Otimizado para desempenho em CPU e GPU de borda
 - **Tempos de inicialização mais rápidos**: Inicialização rápida para aplicações responsivas
 
-Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições de:
+Eles desbloqueiam capacidades poderosas de PLN enquanto atendem às restrições de:
 - **Sistemas embarcados**: Dispositivos IoT e controladores industriais
 - **Dispositivos móveis**: Smartphones e tablets com capacidades offline
 - **Dispositivos IoT**: Sensores e dispositivos inteligentes com recursos limitados
@@ -86,24 +86,24 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 | Módulo | Tópico | Área de Foco | Conteúdo Principal | Nível | Duração |
 |--------|-------|------------|-------------|--------|----------|
 | [📖 00 ](./introduction.md) | [Introdução ao EdgeAI](./introduction.md) | Fundamentos e Contexto | Visão geral do EdgeAI • Aplicações na indústria • Introdução aos SLMs • Objetivos de aprendizado | Iniciante | 1-2 hrs |
-| [📚 01](../../Module01) | [Fundamentos do EdgeAI](./Module01/README.md) | Comparação entre Cloud e Edge AI | Fundamentos do EdgeAI • Estudos de caso reais • Guia de implementação • Implantação em borda | Iniciante | 3-4 hrs |
+| [📚 01](../../Module01) | [Fundamentos do EdgeAI](./Module01/README.md) | Comparação entre Cloud e Edge AI | Fundamentos do EdgeAI • Estudos de caso reais • Guia de implementação • Implantação na borda | Iniciante | 3-4 hrs |
 | [🧠 02](../../Module02) | [Fundamentos dos Modelos SLM](./Module02/README.md) | Famílias de modelos e arquitetura | Família Phi • Família Qwen • Família Gemma • BitNET • μModel • Phi-Silica | Iniciante | 4-5 hrs |
 | [🚀 03](../../Module03) | [Prática de Implantação de SLM](./Module03/README.md) | Implantação local e na nuvem | Aprendizado avançado • Ambiente local • Implantação na nuvem | Intermediário | 4-5 hrs |
 | [⚙️ 04](../../Module04) | [Kit de Ferramentas de Otimização de Modelos](./Module04/README.md) | Otimização multiplataforma | Introdução • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Síntese de fluxo de trabalho | Intermediário | 5-6 hrs |
-| [🔧 05](../../Module05) | [Produção com SLMOps](./Module05/README.md) | Operações de produção | Introdução ao SLMOps • Destilação de modelos • Fine-tuning • Implantação em produção | Avançado | 5-6 hrs |
+| [🔧 05](../../Module05) | [SLMOps em Produção](./Module05/README.md) | Operações em produção | Introdução ao SLMOps • Destilação de modelos • Fine-tuning • Implantação em produção | Avançado | 5-6 hrs |
 | [🤖 06](../../Module06) | [Agentes de IA e Chamadas de Função](./Module06/README.md) | Frameworks de agentes e MCP | Introdução aos agentes • Chamadas de função • Protocolo de contexto de modelo | Avançado | 4-5 hrs |
 | [💻 07](../../Module07) | [Implementação em Plataformas](./Module07/README.md) | Exemplos multiplataforma | Kit de ferramentas de IA • Foundry Local • Desenvolvimento no Windows | Avançado | 3-4 hrs |
 | [🏭 08](../../Module08) | [Kit de Ferramentas Foundry Local](./Module08/README.md) | Exemplos prontos para produção | Aplicações de exemplo (veja detalhes abaixo) | Especialista | 8-10 hrs |
 
 ### 🏭 **Módulo 08: Aplicações de Exemplo**
 
-- [01: Início Rápido com REST Chat](./Module08/samples/01/README.md)  
+- [01: Introdução ao REST Chat](./Module08/samples/01/README.md)  
 - [02: Integração com OpenAI SDK](./Module08/samples/02/README.md)  
 - [03: Descoberta e Benchmarking de Modelos](./Module08/samples/03/README.md)  
 - [04: Aplicação Chainlit RAG](./Module08/samples/04/README.md)  
 - [05: Orquestração Multi-Agente](./Module08/samples/05/README.md)  
 - [06: Roteador de Modelos como Ferramentas](./Module08/samples/06/README.md)  
-- [07: Cliente de API Direto](./Module08/samples/07/README.md)  
+- [07: Cliente API Direto](./Module08/samples/07/README.md)  
 - [08: Aplicativo de Chat para Windows 11](./Module08/samples/08/README.md)  
 - [09: Sistema Multi-Agente Avançado](./Module08/samples/09/README.md)  
 - [10: Framework de Ferramentas Foundry](./Module08/samples/10/README.md)  
@@ -119,9 +119,9 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 
 ### 🎯 Competências Centrais
 - **Arquitetura de Edge AI**: Projetar sistemas de IA com foco local e integração na nuvem  
-- **Otimização de Modelos**: Quantizar e comprimir modelos para implantação em borda (85% de aumento de velocidade, 75% de redução de tamanho)  
-- **Implantação Multiplataforma**: Windows, dispositivos móveis, embarcados e sistemas híbridos nuvem-borda  
-- **Operações de Produção**: Monitoramento, escalabilidade e manutenção de IA em borda na produção  
+- **Otimização de Modelos**: Quantizar e comprimir modelos para implantação na borda (85% de aumento de velocidade, 75% de redução de tamanho)  
+- **Implantação Multiplataforma**: Windows, dispositivos móveis, sistemas embarcados e híbridos nuvem-borda  
+- **Operações em Produção**: Monitoramento, escalabilidade e manutenção de IA na borda em produção  
 
 ### 🏗️ Projetos Práticos
 - **Aplicativos de Chat Foundry Local**: Aplicativo nativo para Windows 11 com troca de modelos  
@@ -138,17 +138,17 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 
 **Caminho de Aprendizado Recomendado** (20-30 horas no total):
 
-0. **📖 Introdução** ([Introduction.md](./introduction.md)): Fundamentos do EdgeAI + contexto na indústria + estrutura de aprendizado  
+0. **📖 Introdução** ([Introduction.md](./introduction.md)): Fundamentos do EdgeAI + contexto da indústria + estrutura de aprendizado  
 1. **📚 Fundamentos** (Módulos 01-02): Conceitos de EdgeAI + famílias de modelos SLM  
 2. **⚙️ Otimização** (Módulos 03-04): Implantação + frameworks de quantização  
 3. **🚀 Produção** (Módulos 05-06): SLMOps + Agentes de IA + Chamadas de função  
-4. **💻 Implementação** (Módulos 07-08): Exemplos de plataforma + Ferramentas locais do Foundry  
+4. **💻 Implementação** (Módulos 07-08): Exemplos de plataforma + Ferramentas Foundry Local  
 
 Cada módulo inclui teoria, exercícios práticos e exemplos de código prontos para produção.
 
 ## Impacto na Carreira
 
-**Funções Técnicas**: Arquiteto de Soluções EdgeAI • Engenheiro de ML (Edge) • Desenvolvedor de IoT AI • Desenvolvedor de IA para Mobile  
+**Funções Técnicas**: Arquiteto de Soluções EdgeAI • Engenheiro de ML (Edge) • Desenvolvedor de IoT AI • Desenvolvedor de AI para Mobile  
 
 **Setores da Indústria**: Manufatura 4.0 • Tecnologia em Saúde • Sistemas Autônomos • FinTech • Eletrônicos de Consumo  
 
@@ -168,21 +168,22 @@ edgeai-for-beginners/
 ├── 🌐 translations/    # Multi-language support (8+ languages)
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
+  
 
 ## Destaques do Curso
 
 ✅ **Aprendizado Progressivo**: Teoria → Prática → Implantação em produção  
 ✅ **Estudos de Caso Reais**: Microsoft, Japan Airlines, implementações empresariais  
 ✅ **Exemplos Práticos**: Mais de 50 exemplos, 10 demonstrações abrangentes do Foundry Local  
-✅ **Foco em Desempenho**: Melhorias de 85% na velocidade, reduções de 75% no tamanho  
+✅ **Foco em Desempenho**: Melhorias de velocidade de 85%, reduções de tamanho de 75%  
 ✅ **Multiplataforma**: Windows, mobile, embarcado, híbrido cloud-edge  
 ✅ **Pronto para Produção**: Monitoramento, escalabilidade, segurança, frameworks de conformidade  
 
-📖 **[Guia de Estudos Disponível](STUDY_GUIDE.md)**: Roteiro de aprendizado estruturado de 20 horas com orientação de alocação de tempo e ferramentas de autoavaliação.
+📖 **[Guia de Estudo Disponível](STUDY_GUIDE.md)**: Caminho de aprendizado estruturado de 20 horas com orientação de alocação de tempo e ferramentas de autoavaliação.
 
 ---
 
-**EdgeAI representa o futuro da implantação de IA**: local em primeiro lugar, preservando a privacidade e eficiente. Domine essas habilidades para construir a próxima geração de aplicativos inteligentes.
+**EdgeAI representa o futuro da implantação de IA**: local primeiro, preservação de privacidade e eficiência. Domine essas habilidades para construir a próxima geração de aplicativos inteligentes.
 
 ## Outros Cursos
 
@@ -200,9 +201,21 @@ Nossa equipe produz outros cursos! Confira:
 - [Desenvolvimento Web para Iniciantes](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
 - [IoT para Iniciantes](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Desenvolvimento XR para Iniciantes](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Dominando o GitHub Copilot para Programação em Parceria com IA](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+- [Dominando o GitHub Copilot para Programação em Par com IA](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
 - [Dominando o GitHub Copilot para Desenvolvedores C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
-- [Escolha Sua Própria Aventura com o Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+- [Escolha Sua Própria Aventura com Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+
+## Obtendo Ajuda
+
+Se você estiver com dúvidas ou tiver perguntas sobre como construir aplicativos de IA, participe:
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Se você tiver feedback sobre produtos ou encontrar erros durante o desenvolvimento, visite:
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
 ---
 
+**Aviso Legal**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

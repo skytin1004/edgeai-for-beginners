@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T10:00:22+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T08:15:38+00:00",
   "source_file": "README.md",
   "language_code": "hr"
 }
@@ -32,13 +32,13 @@ Slijedite ove korake kako biste započeli s korištenjem ovih resursa:
 
 #### Podržano putem GitHub Action (Automatizirano i uvijek ažurirano)
 
-[Arapski](../ar/README.md) | [Bengalski](../bn/README.md) | [Bugarski](../bg/README.md) | [Burmanski (Mjanmar)](../my/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Makao)](../mo/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Hrvatski](./README.md) | [Češki](../cs/README.md) | [Danski](../da/README.md) | [Nizozemski](../nl/README.md) | [Finski](../fi/README.md) | [Francuski](../fr/README.md) | [Njemački](../de/README.md) | [Grčki](../el/README.md) | [Hebrejski](../he/README.md) | [Hindski](../hi/README.md) | [Mađarski](../hu/README.md) | [Indonezijski](../id/README.md) | [Talijanski](../it/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Malajski](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Norveški](../no/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Poljski](../pl/README.md) | [Portugalski (Brazil)](../br/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Pandžapski (Gurmukhi)](../pa/README.md) | [Rumunjski](../ro/README.md) | [Ruski](../ru/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Slovački](../sk/README.md) | [Slovenski](../sl/README.md) | [Španjolski](../es/README.md) | [Svahili](../sw/README.md) | [Švedski](../sv/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Tajlandski](../th/README.md) | [Turski](../tr/README.md) | [Ukrajinski](../uk/README.md) | [Urdu](../ur/README.md) | [Vijetnamski](../vi/README.md)
+[Arapski](../ar/README.md) | [Bengalski](../bn/README.md) | [Bugarski](../bg/README.md) | [Burmanski (Mjanmar)](../my/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Macau)](../mo/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Hrvatski](./README.md) | [Češki](../cs/README.md) | [Danski](../da/README.md) | [Nizozemski](../nl/README.md) | [Finski](../fi/README.md) | [Francuski](../fr/README.md) | [Njemački](../de/README.md) | [Grčki](../el/README.md) | [Hebrejski](../he/README.md) | [Hindski](../hi/README.md) | [Mađarski](../hu/README.md) | [Indonezijski](../id/README.md) | [Talijanski](../it/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Malajski](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Norveški](../no/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Poljski](../pl/README.md) | [Portugalski (Brazil)](../br/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Pandžapski (Gurmukhi)](../pa/README.md) | [Rumunjski](../ro/README.md) | [Ruski](../ru/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Slovački](../sk/README.md) | [Slovenski](../sl/README.md) | [Španjolski](../es/README.md) | [Svahili](../sw/README.md) | [Švedski](../sv/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Tajlandski](../th/README.md) | [Turski](../tr/README.md) | [Ukrajinski](../uk/README.md) | [Urdu](../ur/README.md) | [Vijetnamski](../vi/README.md)
 
-**Ako želite da se podrže dodatni jezici, popis podržanih jezika nalazi se [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Ako želite dodati podršku za dodatne jezike, popis podržanih jezika nalazi se [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Uvod
 
-Dobrodošli u **EdgeAI za početnike** – vaš sveobuhvatan put u transformativni svijet rubne umjetne inteligencije. Ovaj tečaj povezuje moćne AI mogućnosti s praktičnom primjenom u stvarnom svijetu na rubnim uređajima, omogućujući vam da iskoristite potencijal AI-a tamo gdje se podaci generiraju i odluke trebaju donositi.
+Dobrodošli u **EdgeAI za početnike** – vaš sveobuhvatan put u transformativni svijet rubne umjetne inteligencije. Ovaj tečaj povezuje moćne AI mogućnosti s praktičnom primjenom na rubnim uređajima, omogućujući vam da iskoristite potencijal AI-a tamo gdje se podaci generiraju i odluke donose.
 
 ### Što ćete savladati
 
@@ -53,15 +53,15 @@ Ovaj tečaj vas vodi od osnovnih pojmova do implementacija spremnih za proizvodn
 Edge AI predstavlja promjenu paradigme koja rješava ključne moderne izazove:
 - **Privatnost i sigurnost**: Obrada osjetljivih podataka lokalno, bez izlaganja oblaku
 - **Performanse u stvarnom vremenu**: Eliminacija mrežne latencije za aplikacije kritične za vrijeme
-- **Učinkovitost troškova**: Smanjenje troškova propusnosti i računalnih resursa u oblaku
+- **Učinkovitost troškova**: Smanjenje troškova propusnosti i računalstva u oblaku
 - **Otpornost operacija**: Održavanje funkcionalnosti tijekom prekida mreže
 - **Regulatorna usklađenost**: Zadovoljavanje zahtjeva za suverenitetom podataka
 
 ### Edge AI
 
-Edge AI odnosi se na pokretanje AI algoritama i jezičnih modela lokalno na hardveru, blizu mjesta gdje se podaci generiraju, bez oslanjanja na resurse oblaka za inference. Smanjuje latenciju, poboljšava privatnost i omogućuje donošenje odluka u stvarnom vremenu.
+Edge AI odnosi se na pokretanje AI algoritama i jezičnih modela lokalno na hardveru, blizu mjesta gdje se podaci generiraju, bez oslanjanja na oblak za inference. Smanjuje latenciju, poboljšava privatnost i omogućuje donošenje odluka u stvarnom vremenu.
 
-### Osnovni principi:
+### Temeljna načela:
 - **Inference na uređaju**: AI modeli se pokreću na rubnim uređajima (telefonima, ruterima, mikrokontrolerima, industrijskim PC-ima)
 - **Offline sposobnost**: Funkcionira bez stalne internetske povezanosti
 - **Niska latencija**: Trenutni odgovori prilagođeni sustavima u stvarnom vremenu
@@ -69,7 +69,7 @@ Edge AI odnosi se na pokretanje AI algoritama i jezičnih modela lokalno na hard
 
 ### Mali jezični modeli (SLM)
 
-SLM-ovi poput Phi-4, Mistral-7B i Gemma su optimizirane verzije većih LLM-ova – trenirani ili destilirani za:
+SLM-ovi poput Phi-4, Mistral-7B i Gemma su optimizirane verzije većih LLM-ova—trenirani ili destilirani za:
 - **Smanjeni memorijski otisak**: Učinkovito korištenje ograničene memorije rubnih uređaja
 - **Niži zahtjevi za računalnu snagu**: Optimizirani za performanse CPU-a i rubnih GPU-a
 - **Brže vrijeme pokretanja**: Brza inicijalizacija za responzivne aplikacije
@@ -88,14 +88,14 @@ Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 | [📖 00 ](./introduction.md) | [Uvod u EdgeAI](./introduction.md) | Osnove i kontekst | Pregled EdgeAI-a • Industrijske primjene • Uvod u SLM • Ciljevi učenja | Početnik | 1-2 sata |
 | [📚 01](../../Module01) | [Osnove EdgeAI-a](./Module01/README.md) | Usporedba oblaka i rubne AI | Osnove EdgeAI-a • Studije slučaja iz stvarnog svijeta • Vodič za implementaciju • Rubna primjena | Početnik | 3-4 sata |
 | [🧠 02](../../Module02) | [Osnove SLM modela](./Module02/README.md) | Obitelji modela i arhitektura | Phi obitelj • Qwen obitelj • Gemma obitelj • BitNET • μModel • Phi-Silica | Početnik | 4-5 sati |
-| [🚀 03](../../Module03) | [Praksa implementacije SLM-a](./Module03/README.md) | Lokalna i oblačna primjena | Napredno učenje • Lokalno okruženje • Primjena u oblaku | Srednji | 4-5 sati |
+| [🚀 03](../../Module03) | [Praksa implementacije SLM-a](./Module03/README.md) | Lokalna i oblačna implementacija | Napredno učenje • Lokalno okruženje • Implementacija u oblaku | Srednji | 4-5 sati |
 | [⚙️ 04](../../Module04) | [Alat za optimizaciju modela](./Module04/README.md) | Optimizacija na više platformi | Uvod • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sinteza radnog tijeka | Srednji | 5-6 sati |
-| [🔧 05](../../Module05) | [SLMOps proizvodnja](./Module05/README.md) | Operacije u proizvodnji | Uvod u SLMOps • Destilacija modela • Fino podešavanje • Primjena u proizvodnji | Napredni | 5-6 sati |
+| [🔧 05](../../Module05) | [SLMOps proizvodnja](./Module05/README.md) | Operacije u proizvodnji | Uvod u SLMOps • Destilacija modela • Fino podešavanje • Implementacija u proizvodnji | Napredni | 5-6 sati |
 | [🤖 06](../../Module06) | [AI agenti i pozivanje funkcija](./Module06/README.md) | Okviri za agente i MCP | Uvod u agente • Pozivanje funkcija • Protokol konteksta modela | Napredni | 4-5 sati |
 | [💻 07](../../Module07) | [Implementacija platforme](./Module07/README.md) | Primjeri na više platformi | AI alatni set • Foundry Local • Razvoj za Windows | Napredni | 3-4 sata |
-| [🏭 08](../../Module08) | [Foundry Local alatni set](./Module08/README.md) | Primjeri spremni za proizvodnju | Primjeri aplikacija (vidi detalje dolje) | Ekspert | 8-10 sati |
+| [🏭 08](../../Module08) | [Foundry Local alatni set](./Module08/README.md) | Primjeri spremni za proizvodnju | Primjene (vidi detalje dolje) | Ekspert | 8-10 sati |
 
-### 🏭 **Modul 08: Primjeri aplikacija**
+### 🏭 **Modul 08: Primjeri primjena**
 
 - [01: REST Chat Quickstart](./Module08/samples/01/README.md)
 - [02: Integracija OpenAI SDK-a](./Module08/samples/02/README.md)
@@ -106,7 +106,7 @@ Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 - [07: Direktni API klijent](./Module08/samples/07/README.md)
 - [08: Windows 11 Chat aplikacija](./Module08/samples/08/README.md)
 - [09: Napredni sustav više agenata](./Module08/samples/09/README.md)
-- [10: Okvir Foundry Tools](./Module08/samples/10/README.md)
+- [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 
 ### 📊 **Sažetak puta učenja**
 - **Ukupno trajanje**: 36-45 sati
@@ -118,9 +118,9 @@ Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 ## Što ćete izgraditi
 
 ### 🎯 Ključne kompetencije
-- **Arhitektura Edge AI-a**: Dizajnirajte AI sustave s lokalnim fokusom i integracijom oblaka
+- **Arhitektura Edge AI-a**: Dizajnirajte sustave AI-a s lokalnim pristupom i integracijom oblaka
 - **Optimizacija modela**: Kvantizirajte i komprimirajte modele za rubnu primjenu (85% ubrzanje, 75% smanjenje veličine)
-- **Primjena na više platformi**: Windows, mobilni uređaji, ugrađeni sustavi i hibridni sustavi rub-oblak
+- **Implementacija na više platformi**: Windows, mobilni uređaji, ugrađeni sustavi i hibridni sustavi rub-oblak
 - **Operacije u proizvodnji**: Praćenje, skaliranje i održavanje Edge AI-a u proizvodnji
 
 ### 🏗️ Praktični projekti
@@ -128,7 +128,7 @@ Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 - **Sustavi više agenata**: Koordinator sa specijaliziranim agentima za složene radne tijekove  
 - **RAG aplikacije**: Lokalna obrada dokumenata s pretraživanjem vektora
 - **Routeri modela**: Inteligentni odabir između modela na temelju analize zadatka
-- **API okviri**: Klijenti spremni za proizvodnju sa streamingom i praćenjem zdravlja
+- **API okviri**: Klijenti spremni za proizvodnju s streamingom i praćenjem zdravlja
 - **Alati na više platformi**: Obrasci integracije LangChain/Semantic Kernel
 
 ### 🏢 Industrijske primjene
@@ -136,15 +136,15 @@ Oni omogućuju moćne NLP mogućnosti uz zadovoljenje ograničenja:
 
 ## Brzi početak
 
-**Preporučeni put učenja** (20-30 sati ukupno):
+**Preporučeni put učenja** (ukupno 20-30 sati):
 
 0. **📖 Uvod** ([Introduction.md](./introduction.md)): Osnove EdgeAI-a + industrijski kontekst + okvir za učenje
 1. **📚 Osnove** (Moduli 01-02): Koncepti EdgeAI-a + obitelji SLM modela
-2. **⚙️ Optimizacija** (Moduli 03-04): Primjena + okviri za kvantizaciju  
+2. **⚙️ Optimizacija** (Moduli 03-04): Implementacija + okviri za kvantizaciju  
 3. **🚀 Produkcija** (Moduli 05-06): SLMOps + AI agenti + pozivanje funkcija  
-4. **💻 Implementacija** (Moduli 07-08): Primjeri platformi + Foundry Local alatni set  
+4. **💻 Implementacija** (Moduli 07-08): Primjeri platforme + Foundry Local alatni set  
 
-Svaki modul uključuje teoriju, praktične vježbe i uzorke koda spremne za produkciju.
+Svaki modul uključuje teoriju, praktične vježbe i primjere koda spremne za produkciju.
 
 ## Utjecaj na karijeru
 
@@ -183,7 +183,7 @@ edgeai-for-beginners/
 
 ---
 
-**EdgeAI predstavlja budućnost AI implementacije**: lokalno usmjeren, čuva privatnost i učinkovit. Savladajte ove vještine kako biste izgradili sljedeću generaciju inteligentnih aplikacija.
+**EdgeAI predstavlja budućnost implementacije AI-a**: lokalno usmjeren, čuva privatnost i učinkovit. Savladajte ove vještine kako biste izgradili sljedeću generaciju inteligentnih aplikacija.
 
 ## Ostali tečajevi
 
@@ -203,7 +203,19 @@ Naš tim nudi i druge tečajeve! Pogledajte:
 - [XR razvoj za početnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Savladavanje GitHub Copilota za AI programiranje u paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
 - [Savladavanje GitHub Copilota za C#/.NET developere](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
-- [Odaberi svoju Copilot avanturu](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+- [Odaberi svoju avanturu s Copilotom](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+
+## Dobivanje pomoći
+
+Ako zapnete ili imate pitanja o izradi AI aplikacija, pridružite se:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Ako imate povratne informacije o proizvodu ili naiđete na greške tijekom izrade, posjetite:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
 ---
 
+**Izjava o odricanju odgovornosti**:  
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane stručnjaka. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.

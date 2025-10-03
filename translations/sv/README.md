@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T08:59:20+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T07:58:17+00:00",
   "source_file": "README.md",
   "language_code": "sv"
 }
 -->
 # EdgeAI för Nybörjare
 
-![Kursens omslagsbild](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.sv.png)
+![Kursomslagsbild](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.sv.png)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
@@ -28,11 +28,11 @@ Följ dessa steg för att komma igång med dessa resurser:
 2. **Klona Repositoriet**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
 3. [**Gå med i Azure AI Foundry Discord och träffa experter och andra utvecklare**](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 Stöd för flera språk
+### 🌐 Stöd för Flera Språk
 
 #### Stöds via GitHub Action (Automatiserat & Alltid Uppdaterat)
 
-[Arabiska](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgariska](../bg/README.md) | [Burmesiska (Myanmar)](../my/README.md) | [Kinesiska (Förenklad)](../zh/README.md) | [Kinesiska (Traditionell, Hongkong)](../hk/README.md) | [Kinesiska (Traditionell, Macau)](../mo/README.md) | [Kinesiska (Traditionell, Taiwan)](../tw/README.md) | [Kroatiska](../hr/README.md) | [Tjeckiska](../cs/README.md) | [Danska](../da/README.md) | [Holländska](../nl/README.md) | [Finska](../fi/README.md) | [Franska](../fr/README.md) | [Tyska](../de/README.md) | [Grekiska](../el/README.md) | [Hebreiska](../he/README.md) | [Hindi](../hi/README.md) | [Ungerska](../hu/README.md) | [Indonesiska](../id/README.md) | [Italienska](../it/README.md) | [Japanska](../ja/README.md) | [Koreanska](../ko/README.md) | [Malajiska](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalesiska](../ne/README.md) | [Norska](../no/README.md) | [Persiska (Farsi)](../fa/README.md) | [Polska](../pl/README.md) | [Portugisiska (Brasilien)](../br/README.md) | [Portugisiska (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Rumänska](../ro/README.md) | [Ryska](../ru/README.md) | [Serbiska (Kyrilliska)](../sr/README.md) | [Slovakiska](../sk/README.md) | [Slovenska](../sl/README.md) | [Spanska](../es/README.md) | [Swahili](../sw/README.md) | [Svenska](./README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thailändska](../th/README.md) | [Turkiska](../tr/README.md) | [Ukrainska](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamesiska](../vi/README.md)
+[Arabiska](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgariska](../bg/README.md) | [Burmesiska (Myanmar)](../my/README.md) | [Kinesiska (Förenklad)](../zh/README.md) | [Kinesiska (Traditionell, Hongkong)](../hk/README.md) | [Kinesiska (Traditionell, Macau)](../mo/README.md) | [Kinesiska (Traditionell, Taiwan)](../tw/README.md) | [Kroatiska](../hr/README.md) | [Tjeckiska](../cs/README.md) | [Danska](../da/README.md) | [Holländska](../nl/README.md) | [Finska](../fi/README.md) | [Franska](../fr/README.md) | [Tyska](../de/README.md) | [Grekiska](../el/README.md) | [Hebreiska](../he/README.md) | [Hindi](../hi/README.md) | [Ungerska](../hu/README.md) | [Indonesiska](../id/README.md) | [Italienska](../it/README.md) | [Japanska](../ja/README.md) | [Koreanska](../ko/README.md) | [Malajiska](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalesiska](../ne/README.md) | [Norska](../no/README.md) | [Persiska (Farsi)](../fa/README.md) | [Polska](../pl/README.md) | [Portugisiska (Brasilien)](../br/README.md) | [Portugisiska (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Rumänska](../ro/README.md) | [Ryska](../ru/README.md) | [Serbiska (Kyrilliska)](../sr/README.md) | [Slovakiska](../sk/README.md) | [Slovenska](../sl/README.md) | [Spanska](../es/README.md) | [Swahili](../sw/README.md) | [Svenska](./README.md) | [Tagalog (Filippinska)](../tl/README.md) | [Thailändska](../th/README.md) | [Turkiska](../tr/README.md) | [Ukrainska](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamesiska](../vi/README.md)
 
 **Om du vill ha ytterligare översättningar finns stödda språk listade [här](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
@@ -40,7 +40,7 @@ Följ dessa steg för att komma igång med dessa resurser:
 
 Välkommen till **EdgeAI för Nybörjare** – din omfattande resa in i den transformativa världen av Edge Artificial Intelligence. Denna kurs bygger en bro mellan kraftfulla AI-funktioner och praktisk, verklig implementering på edge-enheter, vilket ger dig möjlighet att utnyttja AI:s potential direkt där data genereras och beslut behöver fattas.
 
-### Vad du kommer att bemästra
+### Vad Du Kommer Att Lära Dig
 
 Denna kurs tar dig från grundläggande koncept till produktionsklara implementationer och täcker:
 - **Små Språkmodeller (SLMs)** optimerade för edge-distribution
@@ -48,13 +48,13 @@ Denna kurs tar dig från grundläggande koncept till produktionsklara implementa
 - **Realtidsinferens** med integritetsskyddande funktioner
 - **Produktionsdistribution** strategier för företagsapplikationer
 
-### Varför EdgeAI är viktigt
+### Varför EdgeAI Är Viktigt
 
 Edge AI representerar ett paradigmskifte som adresserar moderna utmaningar:
-- **Integritet & Säkerhet**: Bearbeta känslig data lokalt utan exponering för molnet
+- **Integritet & Säkerhet**: Bearbeta känslig data lokalt utan att exponera den för molnet
 - **Realtidsprestanda**: Eliminera nätverksfördröjning för tidskritiska applikationer
 - **Kostnadseffektivitet**: Minska bandbredd och molnberäkningskostnader
-- **Robusta Operationer**: Upprätthåll funktionalitet under nätverksavbrott
+- **Resilienta Operationer**: Upprätthåll funktionalitet under nätverksavbrott
 - **Regulatorisk Efterlevnad**: Uppfyll krav på datasuveränitet
 
 ### Edge AI
@@ -63,9 +63,9 @@ Edge AI innebär att köra AI-algoritmer och språkmodeller lokalt på hårdvara
 
 ### Grundprinciper:
 - **Inferens på enheten**: AI-modeller körs på edge-enheter (telefoner, routrar, mikrokontroller, industriella PC)
-- **Offline-funktionalitet**: Fungerar utan konstant internetanslutning
-- **Låg fördröjning**: Omedelbara svar som passar realtidssystem
-- **Datasuveränitet**: Håller känslig data lokal, förbättrar säkerhet och efterlevnad
+- **Offlinekapacitet**: Fungerar utan konstant internetanslutning
+- **Låg fördröjning**: Omedelbara svar som passar för realtidssystem
+- **Datasuveränitet**: Håller känslig data lokal, vilket förbättrar säkerhet och efterlevnad
 
 ### Små Språkmodeller (SLMs)
 
@@ -75,24 +75,24 @@ SLMs som Phi-4, Mistral-7B och Gemma är optimerade versioner av större LLMs—
 - **Snabbare starttider**: Snabb initialisering för responsiva applikationer
 
 De låser upp kraftfulla NLP-funktioner samtidigt som de möter begränsningarna för:
-- **Inbäddade system**: IoT-enheter och industriella kontroller
-- **Mobila enheter**: Smartphones och surfplattor med offline-funktioner
+- **Inbyggda system**: IoT-enheter och industriella kontroller
+- **Mobila enheter**: Smartphones och surfplattor med offlinekapacitet
 - **IoT-enheter**: Sensorer och smarta enheter med begränsade resurser
 - **Edge-servrar**: Lokala bearbetningsenheter med begränsade GPU-resurser
-- **Persondatorer**: Stationära och bärbara distributionsscenarier
+- **Persondatorer**: Distribution på stationära och bärbara datorer
 
 ## Kursmoduler & Navigering
 
 | Modul | Ämne | Fokusområde | Nyckelinnehåll | Nivå | Varaktighet |
 |-------|------|-------------|----------------|------|-------------|
-| [📖 00 ](./introduction.md) | [Introduktion till EdgeAI](./introduction.md) | Grund & Kontext | Översikt av EdgeAI • Industriella Applikationer • Introduktion till SLM • Lärandemål | Nybörjare | 1-2 timmar |
-| [📚 01](../../Module01) | [EdgeAI Grunder](./Module01/README.md) | Jämförelse mellan moln och Edge AI | Grunder i EdgeAI • Fallstudier från verkligheten • Implementeringsguide • Edge-distribution | Nybörjare | 3-4 timmar |
+| [📖 00 ](./introduction.md) | [Introduktion till EdgeAI](./introduction.md) | Grund & Kontext | Översikt över EdgeAI • Industriella Applikationer • Introduktion till SLM • Lärandemål | Nybörjare | 1-2 timmar |
+| [📚 01](../../Module01) | [EdgeAI Grunder](./Module01/README.md) | Jämförelse mellan moln och Edge AI | EdgeAI Grunder • Fallstudier från verkligheten • Implementeringsguide • Edge-distribution | Nybörjare | 3-4 timmar |
 | [🧠 02](../../Module02) | [SLM Modellgrunder](./Module02/README.md) | Modellsfamiljer & arkitektur | Phi-familjen • Qwen-familjen • Gemma-familjen • BitNET • μModel • Phi-Silica | Nybörjare | 4-5 timmar |
 | [🚀 03](../../Module03) | [SLM Distributionspraktik](./Module03/README.md) | Lokal & molndistribution | Avancerat lärande • Lokal miljö • Molndistribution | Mellanliggande | 4-5 timmar |
-| [⚙️ 04](../../Module04) | [Verktyg för Modelloptimering](./Module04/README.md) | Plattformskorsande optimering | Introduktion • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Arbetsflödessyntes | Mellanliggande | 5-6 timmar |
+| [⚙️ 04](../../Module04) | [Verktyg för Modelloptimering](./Module04/README.md) | Plattformöverskridande optimering | Introduktion • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Arbetsflödessyntes | Mellanliggande | 5-6 timmar |
 | [🔧 05](../../Module05) | [SLMOps Produktion](./Module05/README.md) | Produktionsoperationer | Introduktion till SLMOps • Modell-destillation • Finjustering • Produktionsdistribution | Avancerad | 5-6 timmar |
 | [🤖 06](../../Module06) | [AI-agenter & Funktionsanrop](./Module06/README.md) | Agentramverk & MCP | Introduktion till agenter • Funktionsanrop • Modellkontextprotokoll | Avancerad | 4-5 timmar |
-| [💻 07](../../Module07) | [Plattformsimplementering](./Module07/README.md) | Plattformskorsande exempel | AI-verktyg • Foundry Local • Windows-utveckling | Avancerad | 3-4 timmar |
+| [💻 07](../../Module07) | [Plattformsimplementering](./Module07/README.md) | Plattformöverskridande exempel | AI-verktyg • Foundry Local • Windows-utveckling | Avancerad | 3-4 timmar |
 | [🏭 08](../../Module08) | [Foundry Local Toolkit](./Module08/README.md) | Produktionsklara exempel | Exempelapplikationer (se detaljer nedan) | Expert | 8-10 timmar |
 
 ### 🏭 **Modul 08: Exempelapplikationer**
@@ -111,35 +111,35 @@ De låser upp kraftfulla NLP-funktioner samtidigt som de möter begränsningarna
 ### 📊 **Sammanfattning av Lärandebana**
 - **Total Varaktighet**: 36-45 timmar
 - **Nybörjarbana**: Moduler 01-02 (7-9 timmar)  
-- **Mellanliggande bana**: Moduler 03-04 (9-11 timmar)
-- **Avancerad bana**: Moduler 05-07 (12-15 timmar)
+- **Mellanliggande Bana**: Moduler 03-04 (9-11 timmar)
+- **Avancerad Bana**: Moduler 05-07 (12-15 timmar)
 - **Expertbana**: Modul 08 (8-10 timmar)
 
-## Vad du kommer att bygga
+## Vad Du Kommer Att Bygga
 
 ### 🎯 Kärnkompetenser
 - **Edge AI Arkitektur**: Designa lokala AI-system med molnintegration
 - **Modelloptimering**: Kvantisera och komprimera modeller för edge-distribution (85% snabbare, 75% mindre storlek)
-- **Plattformskorsande Distribution**: Windows, mobila enheter, inbäddade system och moln-edge hybrider
+- **Plattformöverskridande Distribution**: Windows, mobila enheter, inbyggda system och moln-edge hybrider
 - **Produktionsoperationer**: Övervakning, skalning och underhåll av Edge AI i produktion
 
 ### 🏗️ Praktiska Projekt
-- **Foundry Local Chat-appar**: Windows 11 inbyggd applikation med modellväxling
+- **Foundry Local Chat-appar**: Windows 11 inbyggd applikation med modellswitching
 - **Multi-Agent System**: Koordinator med specialistagenter för komplexa arbetsflöden  
 - **RAG Applikationer**: Lokal dokumentbearbetning med vektorsökning
 - **Modellroutrar**: Intelligent val mellan modeller baserat på uppgiftsanalys
 - **API-ramverk**: Produktionsklara klienter med streaming och hälsokontroll
-- **Plattformskorsande Verktyg**: LangChain/Semantic Kernel integrationsmönster
+- **Plattformöverskridande Verktyg**: LangChain/Semantic Kernel integrationsmönster
 
 ### 🏢 Industriella Applikationer
-**Tillverkning** • **Hälsovård** • **Autonoma Fordon** • **Smarta Städer** • **Mobilappar**
+**Tillverkning** • **Hälsovård** • **Autonoma Fordon** • **Smarta Städer** • **Mobila Appar**
 
 ## Snabbstart
 
 **Rekommenderad Lärandebana** (20-30 timmar totalt):
 
 0. **📖 Introduktion** ([Introduction.md](./introduction.md)): EdgeAI-grunder + industriell kontext + läranderamverk
-1. **📚 Grund** (Moduler 01-02): EdgeAI-koncept + SLM-modellfamiljer
+1. **📚 Grund** (Moduler 01-02): EdgeAI-koncept + SLM-modellsfamiljer
 2. **⚙️ Optimering** (Moduler 03-04): Distribution + kvantiseringsramverk  
 3. **🚀 Produktion** (Moduler 05-06): SLMOps + AI-agenter + funktionsanrop  
 4. **💻 Implementering** (Moduler 07-08): Plattformexempel + Foundry Local-verktygssats  
@@ -150,7 +150,7 @@ Varje modul innehåller teori, praktiska övningar och produktionsklara kodexemp
 
 **Tekniska roller**: EdgeAI Lösningsarkitekt • ML-ingenjör (Edge) • IoT AI-utvecklare • Mobil AI-utvecklare  
 
-**Industriella sektorer**: Tillverkning 4.0 • Hälsoteknik • Autonoma system • FinTech • Konsumentelektronik  
+**Industrier**: Tillverkning 4.0 • Hälsoteknik • Autonoma system • FinTech • Konsumentelektronik  
 
 **Portföljprojekt**: Multi-agent system • Produktionsklara RAG-appar • Plattformöverskridande distribution • Prestandaoptimering  
 
@@ -175,19 +175,19 @@ edgeai-for-beginners/
 ✅ **Progressivt lärande**: Teori → Praktik → Produktionsdistribution  
 ✅ **Verkliga fallstudier**: Microsoft, Japan Airlines, företagsimplementeringar  
 ✅ **Praktiska exempel**: 50+ exempel, 10 omfattande Foundry Local-demonstrationer  
-✅ **Prestandafokus**: 85% snabbare, 75% mindre storlek  
-✅ **Multi-plattform**: Windows, mobil, inbäddad, moln-edge hybrid  
+✅ **Fokus på prestanda**: 85 % snabbare, 75 % mindre storlek  
+✅ **Multi-plattform**: Windows, mobil, inbyggda system, moln-edge hybrid  
 ✅ **Produktionsklar**: Övervakning, skalning, säkerhet, efterlevnadsramverk  
 
-📖 **[Studieguide tillgänglig](STUDY_GUIDE.md)**: Strukturerad 20-timmars lärväg med tidsallokeringsråd och självbedömningsverktyg.
+📖 **[Studieguide tillgänglig](STUDY_GUIDE.md)**: Strukturerad 20-timmars lärväg med tidsfördelningsråd och självbedömningsverktyg.
 
 ---
 
-**EdgeAI representerar framtiden för AI-distribution**: lokal först, integritetsbevarande och effektiv. Behärska dessa färdigheter för att bygga nästa generation av intelligenta applikationer.
+**EdgeAI representerar framtiden för AI-distribution**: lokal först, integritetsbevarande och effektiv. Bemästra dessa färdigheter för att bygga nästa generation av intelligenta applikationer.
 
 ## Andra kurser
 
-Vårt team producerar andra kurser! Kolla in:
+Vårt team producerar andra kurser! Kolla in:  
 
 - [MCP för nybörjare](https://github.com/microsoft/mcp-for-beginners)  
 - [AI-agenter för nybörjare](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,5 +205,17 @@ Vårt team producerar andra kurser! Kolla in:
 - [Bemästra GitHub Copilot för C#/.NET-utvecklare](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Välj ditt eget Copilot-äventyr](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
+## Få hjälp
+
+Om du fastnar eller har frågor om att bygga AI-appar, gå med i:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Om du har produktfeedback eller stöter på fel under utvecklingen, besök:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+
 ---
 
+**Ansvarsfriskrivning**:  
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
