@@ -1,15 +1,15 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T07:29:20+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T07:36:59+00:00",
   "source_file": "README.md",
   "language_code": "de"
 }
 -->
-# EdgeAI für Anfänger
+# EdgeAI für Einsteiger
 
-![Kurs Titelbild](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.de.png)
+![Kurs-Titelbild](../../translated_images/cover.eb18d1b9605d754b30973f4e17c6e11ea4f8473d9686ee378d6e7b44e3c70ac7.de.png)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)
@@ -24,7 +24,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Folgen Sie diesen Schritten, um mit diesen Ressourcen zu beginnen:
 
-1. **Repository forken**: Klicken Sie hier [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+1. **Repository forken**: Klicken Sie [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
 2. **Repository klonen**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
 3. [**Treten Sie dem Azure AI Foundry Discord bei und tauschen Sie sich mit Experten und anderen Entwicklern aus**](https://discord.com/invite/ByRwuEEgH4)
 
@@ -38,11 +38,11 @@ Folgen Sie diesen Schritten, um mit diesen Ressourcen zu beginnen:
 
 ## Einführung
 
-Willkommen bei **EdgeAI für Anfänger** – Ihre umfassende Reise in die transformative Welt der Edge-Künstlichen Intelligenz. Dieser Kurs schlägt die Brücke zwischen leistungsstarken KI-Fähigkeiten und praktischen, realen Anwendungen auf Edge-Geräten, sodass Sie die Möglichkeiten der KI direkt dort nutzen können, wo Daten generiert und Entscheidungen getroffen werden müssen.
+Willkommen bei **EdgeAI für Einsteiger** – Ihre umfassende Reise in die transformative Welt der Edge-Künstlichen Intelligenz. Dieser Kurs schlägt die Brücke zwischen leistungsstarken KI-Fähigkeiten und praktischen, realen Anwendungen auf Edge-Geräten, sodass Sie die Möglichkeiten der KI direkt dort nutzen können, wo Daten generiert und Entscheidungen getroffen werden müssen.
 
 ### Was Sie lernen werden
 
-Dieser Kurs führt Sie von den grundlegenden Konzepten bis hin zu produktionsreifen Implementierungen und behandelt:
+Dieser Kurs führt Sie von grundlegenden Konzepten bis hin zu produktionsreifen Implementierungen und behandelt:
 - **Kleine Sprachmodelle (SLMs)**, die für den Einsatz auf Edge-Geräten optimiert sind
 - **Hardware-optimierte Lösungen** für verschiedene Plattformen
 - **Echtzeit-Inferenz** mit datenschutzfreundlichen Funktionen
@@ -52,27 +52,27 @@ Dieser Kurs führt Sie von den grundlegenden Konzepten bis hin zu produktionsrei
 
 Edge AI stellt einen Paradigmenwechsel dar, der moderne Herausforderungen adressiert:
 - **Datenschutz & Sicherheit**: Verarbeitung sensibler Daten lokal, ohne Cloud-Exposition
-- **Echtzeit-Leistung**: Vermeidung von Netzwerklatenz für zeitkritische Anwendungen
+- **Echtzeit-Leistung**: Vermeidung von Netzwerkverzögerungen für zeitkritische Anwendungen
 - **Kostenersparnis**: Reduzierung von Bandbreiten- und Cloud-Computing-Kosten
-- **Robuste Betriebsfähigkeit**: Funktionalität auch bei Netzwerkausfällen
+- **Robuste Funktionalität**: Betrieb auch bei Netzwerkausfällen
 - **Regulatorische Anforderungen**: Einhaltung von Datenschutzbestimmungen
 
 ### Edge AI
 
-Edge AI bezeichnet die Ausführung von KI-Algorithmen und Sprachmodellen lokal auf Hardware, nahe der Datenquelle, ohne auf Cloud-Ressourcen für die Inferenz angewiesen zu sein. Es reduziert Latenz, verbessert den Datenschutz und ermöglicht Echtzeit-Entscheidungen.
+Edge AI bezeichnet die Ausführung von KI-Algorithmen und Sprachmodellen lokal auf Hardware, nahe der Datenquelle, ohne auf Cloud-Ressourcen für die Inferenz angewiesen zu sein. Es reduziert Latenzzeiten, verbessert den Datenschutz und ermöglicht Echtzeit-Entscheidungen.
 
 ### Kernprinzipien:
 - **On-Device-Inferenz**: KI-Modelle laufen auf Edge-Geräten (Smartphones, Router, Mikrocontroller, Industrie-PCs)
 - **Offline-Fähigkeit**: Funktioniert ohne dauerhafte Internetverbindung
 - **Niedrige Latenz**: Sofortige Antworten für Echtzeitsysteme
-- **Datenhoheit**: Sensible Daten bleiben lokal, was Sicherheit und Compliance verbessert
+- **Datensouveränität**: Sensible Daten bleiben lokal, was Sicherheit und Compliance verbessert
 
 ### Kleine Sprachmodelle (SLMs)
 
-SLMs wie Phi-4, Mistral-7B und Gemma sind optimierte Versionen größerer LLMs – trainiert oder destilliert für:
+SLMs wie Phi-4, Mistral-7B und Gemma sind optimierte Versionen größerer LLMs, die für folgende Zwecke trainiert oder destilliert wurden:
 - **Reduzierter Speicherbedarf**: Effiziente Nutzung begrenzter Edge-Geräte-Ressourcen
 - **Geringere Rechenanforderungen**: Optimiert für CPU- und Edge-GPU-Leistung
-- **Schnellere Startzeiten**: Schnelle Initialisierung für reaktionsfähige Anwendungen
+- **Schnellere Startzeiten**: Schnelle Initialisierung für reaktionsschnelle Anwendungen
 
 Sie bieten leistungsstarke NLP-Funktionen und erfüllen gleichzeitig die Anforderungen von:
 - **Eingebetteten Systemen**: IoT-Geräte und industrielle Steuerungen
@@ -86,7 +86,7 @@ Sie bieten leistungsstarke NLP-Funktionen und erfüllen gleichzeitig die Anforde
 | Modul | Thema | Schwerpunkt | Hauptinhalte | Niveau | Dauer |
 |-------|-------|-------------|--------------|--------|-------|
 | [📖 00 ](./introduction.md) | [Einführung in EdgeAI](./introduction.md) | Grundlagen & Kontext | Überblick über EdgeAI • Branchenanwendungen • Einführung in SLMs • Lernziele | Anfänger | 1-2 Std. |
-| [📚 01](../../Module01) | [Grundlagen von EdgeAI](./Module01/README.md) | Vergleich Cloud vs Edge AI | Grundlagen von EdgeAI • Fallstudien • Implementierungsleitfaden • Edge-Bereitstellung | Anfänger | 3-4 Std. |
+| [📚 01](../../Module01) | [Grundlagen von EdgeAI](./Module01/README.md) | Vergleich Cloud vs Edge AI | Grundlagen von EdgeAI • Fallstudien aus der Praxis • Implementierungsleitfaden • Edge-Bereitstellung | Anfänger | 3-4 Std. |
 | [🧠 02](../../Module02) | [SLM-Modellgrundlagen](./Module02/README.md) | Modellfamilien & Architektur | Phi-Familie • Qwen-Familie • Gemma-Familie • BitNET • μModel • Phi-Silica | Anfänger | 4-5 Std. |
 | [🚀 03](../../Module03) | [SLM-Bereitstellungspraxis](./Module03/README.md) | Lokale & Cloud-Bereitstellung | Fortgeschrittenes Lernen • Lokale Umgebung • Cloud-Bereitstellung | Mittelstufe | 4-5 Std. |
 | [⚙️ 04](../../Module04) | [Toolkit zur Modelloptimierung](./Module04/README.md) | Plattformübergreifende Optimierung | Einführung • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow-Synthese | Mittelstufe | 5-6 Std. |
@@ -97,14 +97,14 @@ Sie bieten leistungsstarke NLP-Funktionen und erfüllen gleichzeitig die Anforde
 
 ### 🏭 **Modul 08: Beispielanwendungen**
 
-- [01: REST Chat Quickstart](./Module08/samples/01/README.md)
-- [02: OpenAI SDK Integration](./Module08/samples/02/README.md)
+- [01: REST Chat Schnellstart](./Module08/samples/01/README.md)
+- [02: OpenAI SDK-Integration](./Module08/samples/02/README.md)
 - [03: Modellentdeckung & Benchmarking](./Module08/samples/03/README.md)
-- [04: Chainlit RAG Anwendung](./Module08/samples/04/README.md)
+- [04: Chainlit RAG-Anwendung](./Module08/samples/04/README.md)
 - [05: Multi-Agenten-Orchestrierung](./Module08/samples/05/README.md)
-- [06: Router für Modelle-als-Tools](./Module08/samples/06/README.md)
+- [06: Modelle-als-Tools-Router](./Module08/samples/06/README.md)
 - [07: Direkter API-Client](./Module08/samples/07/README.md)
-- [08: Windows 11 Chat App](./Module08/samples/08/README.md)
+- [08: Windows 11 Chat-App](./Module08/samples/08/README.md)
 - [09: Fortgeschrittenes Multi-Agenten-System](./Module08/samples/09/README.md)
 - [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 
@@ -118,10 +118,10 @@ Sie bieten leistungsstarke NLP-Funktionen und erfüllen gleichzeitig die Anforde
 ## Was Sie entwickeln werden
 
 ### 🎯 Kernkompetenzen
-- **Edge AI Architektur**: Entwurf von lokal-zentrierten KI-Systemen mit Cloud-Integration
-- **Modelloptimierung**: Quantisierung und Komprimierung von Modellen für Edge-Bereitstellung (85% Geschwindigkeitssteigerung, 75% Größenreduktion)
+- **Edge AI Architektur**: Entwerfen Sie lokal-zentrierte KI-Systeme mit Cloud-Integration
+- **Modelloptimierung**: Quantisieren und komprimieren Sie Modelle für Edge-Bereitstellungen (85 % Geschwindigkeitssteigerung, 75 % Größenreduktion)
 - **Plattformübergreifende Bereitstellung**: Windows, Mobilgeräte, eingebettete Systeme und Cloud-Edge-Hybridsysteme
-- **Produktionsbetrieb**: Überwachung, Skalierung und Wartung von Edge AI in der Produktion
+- **Produktionsbetrieb**: Überwachung, Skalierung und Wartung von Edge-KI in der Produktion
 
 ### 🏗️ Praktische Projekte
 - **Foundry Local Chat Apps**: Windows 11 native Anwendung mit Modellwechsel
@@ -129,7 +129,7 @@ Sie bieten leistungsstarke NLP-Funktionen und erfüllen gleichzeitig die Anforde
 - **RAG-Anwendungen**: Lokale Dokumentenverarbeitung mit Vektorsuche
 - **Modell-Router**: Intelligente Auswahl zwischen Modellen basierend auf Aufgabenanalyse
 - **API-Frameworks**: Produktionsreife Clients mit Streaming und Gesundheitsüberwachung
-- **Plattformübergreifende Tools**: LangChain/Semantic Kernel Integrationsmuster
+- **Plattformübergreifende Tools**: LangChain/Semantic Kernel-Integrationsmuster
 
 ### 🏢 Branchenanwendungen
 **Fertigung** • **Gesundheitswesen** • **Autonome Fahrzeuge** • **Smart Cities** • **Mobile Apps**
@@ -150,7 +150,7 @@ Jedes Modul umfasst Theorie, praktische Übungen und produktionsreife Codebeispi
 
 **Technische Rollen**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer  
 
-**Industriesektoren**: Industrie 4.0 • Gesundheitstechnologie • Autonome Systeme • FinTech • Unterhaltungselektronik  
+**Branchensektoren**: Industrie 4.0 • Gesundheitstechnologie • Autonome Systeme • FinTech • Unterhaltungselektronik  
 
 **Portfolio-Projekte**: Multi-Agenten-Systeme • Produktionsreife RAG-Anwendungen • Plattformübergreifende Bereitstellung • Leistungsoptimierung  
 
@@ -177,17 +177,17 @@ edgeai-for-beginners/
 ✅ **Praktische Beispiele**: Über 50 Beispiele, 10 umfassende Foundry Local Demos  
 ✅ **Leistungsfokus**: 85 % Geschwindigkeitsverbesserungen, 75 % Größenreduzierungen  
 ✅ **Multi-Plattform**: Windows, Mobilgeräte, Embedded, Cloud-Edge-Hybride  
-✅ **Produktionsreife**: Überwachung, Skalierung, Sicherheit, Compliance-Frameworks  
+✅ **Produktionsreife**: Überwachung, Skalierung, Sicherheits- und Compliance-Frameworks  
 
-📖 **[Studienleitfaden verfügbar](STUDY_GUIDE.md)**: Strukturierter 20-Stunden-Lernpfad mit Zeitmanagement-Tipps und Selbstbewertungstools.
+📖 **[Lernleitfaden verfügbar](STUDY_GUIDE.md)**: Strukturierter 20-Stunden-Lernpfad mit Zeitmanagement-Tipps und Selbstbewertungstools.
 
 ---
 
-**EdgeAI repräsentiert die Zukunft der KI-Bereitstellung**: lokal zuerst, datenschutzfreundlich und effizient. Beherrschen Sie diese Fähigkeiten, um die nächste Generation intelligenter Anwendungen zu entwickeln.
+**EdgeAI repräsentiert die Zukunft der KI-Bereitstellung**: lokal, datenschutzfreundlich und effizient. Beherrschen Sie diese Fähigkeiten, um die nächste Generation intelligenter Anwendungen zu entwickeln.
 
 ## Weitere Kurse
 
-Unser Team bietet weitere Kurse an! Schauen Sie sich an:
+Unser Team bietet weitere Kurse an! Schauen Sie sich diese an:
 
 - [MCP für Anfänger](https://github.com/microsoft/mcp-for-beginners)  
 - [KI-Agenten für Anfänger](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,5 +205,17 @@ Unser Team bietet weitere Kurse an! Schauen Sie sich an:
 - [GitHub Copilot meistern für C#/.NET-Entwickler](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Wählen Sie Ihr eigenes Copilot-Abenteuer](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
+## Hilfe erhalten
+
+Wenn Sie nicht weiterkommen oder Fragen zum Erstellen von KI-Anwendungen haben, treten Sie bei:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Wenn Sie Produktfeedback geben oder Fehler beim Erstellen melden möchten, besuchen Sie:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+
 ---
 
+**Haftungsausschluss**:  
+Dieses Dokument wurde mit dem KI-Übersetzungsdienst [Co-op Translator](https://github.com/Azure/co-op-translator) übersetzt. Obwohl wir uns um Genauigkeit bemühen, beachten Sie bitte, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die sich aus der Nutzung dieser Übersetzung ergeben.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T09:21:25+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T08:04:51+00:00",
   "source_file": "README.md",
   "language_code": "id"
 }
@@ -34,7 +34,7 @@ Ikuti langkah-langkah berikut untuk mulai menggunakan sumber daya ini:
 
 [Arab](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgaria](../bg/README.md) | [Burma (Myanmar)](../my/README.md) | [Cina (Sederhana)](../zh/README.md) | [Cina (Tradisional, Hong Kong)](../hk/README.md) | [Cina (Tradisional, Makau)](../mo/README.md) | [Cina (Tradisional, Taiwan)](../tw/README.md) | [Kroasia](../hr/README.md) | [Ceko](../cs/README.md) | [Denmark](../da/README.md) | [Belanda](../nl/README.md) | [Finlandia](../fi/README.md) | [Prancis](../fr/README.md) | [Jerman](../de/README.md) | [Yunani](../el/README.md) | [Ibrani](../he/README.md) | [Hindi](../hi/README.md) | [Hungaria](../hu/README.md) | [Indonesia](./README.md) | [Italia](../it/README.md) | [Jepang](../ja/README.md) | [Korea](../ko/README.md) | [Melayu](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegia](../no/README.md) | [Persia (Farsi)](../fa/README.md) | [Polandia](../pl/README.md) | [Portugis (Brasil)](../br/README.md) | [Portugis (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Rumania](../ro/README.md) | [Rusia](../ru/README.md) | [Serbia (Kiril)](../sr/README.md) | [Slovakia](../sk/README.md) | [Slovenia](../sl/README.md) | [Spanyol](../es/README.md) | [Swahili](../sw/README.md) | [Swedia](../sv/README.md) | [Tagalog (Filipina)](../tl/README.md) | [Thailand](../th/README.md) | [Turki](../tr/README.md) | [Ukraina](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnam](../vi/README.md)
 
-**Jika Anda ingin menambahkan bahasa terjemahan lainnya, daftar bahasa yang didukung tersedia [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jika Anda ingin mendukung bahasa tambahan, daftar bahasa yang didukung tersedia [di sini](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Pengantar
 
@@ -53,7 +53,7 @@ Kursus ini membawa Anda dari konsep dasar hingga implementasi siap produksi, men
 Edge AI mewakili perubahan paradigma yang mengatasi tantangan modern yang kritis:
 - **Privasi & Keamanan**: Memproses data sensitif secara lokal tanpa eksposur ke cloud
 - **Performa Waktu Nyata**: Menghilangkan latensi jaringan untuk aplikasi yang membutuhkan waktu respons cepat
-- **Efisiensi Biaya**: Mengurangi penggunaan bandwidth dan biaya komputasi cloud
+- **Efisiensi Biaya**: Mengurangi biaya bandwidth dan komputasi cloud
 - **Operasi Tangguh**: Tetap berfungsi selama gangguan jaringan
 - **Kepatuhan Regulasi**: Memenuhi persyaratan kedaulatan data
 
@@ -74,7 +74,7 @@ SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LL
 - **Permintaan komputasi lebih rendah**: Dioptimalkan untuk performa CPU dan GPU edge
 - **Waktu startup lebih cepat**: Inisialisasi cepat untuk aplikasi yang responsif
 
-SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
+Model ini membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - **Sistem tertanam**: Perangkat IoT dan pengontrol industri
 - **Perangkat seluler**: Smartphone dan tablet dengan kemampuan offline
 - **Perangkat IoT**: Sensor dan perangkat pintar dengan sumber daya terbatas
@@ -118,7 +118,7 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 ## Apa yang Akan Anda Bangun
 
 ### 🎯 Kompetensi Inti
-- **Arsitektur Edge AI**: Merancang sistem AI lokal dengan integrasi cloud
+- **Arsitektur Edge AI**: Merancang sistem AI yang berorientasi lokal dengan integrasi cloud
 - **Optimasi Model**: Kuantisasi dan kompresi model untuk penerapan di edge (peningkatan kecepatan 85%, pengurangan ukuran 75%)
 - **Penerapan Multi-Platform**: Windows, seluler, tertanam, dan sistem hybrid cloud-edge
 - **Operasi Produksi**: Pemantauan, penskalaan, dan pemeliharaan AI edge dalam produksi
@@ -141,8 +141,8 @@ SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 0. **📖 Pengantar** ([Introduction.md](./introduction.md)): Dasar EdgeAI + konteks industri + kerangka pembelajaran
 1. **📚 Dasar** (Modul 01-02): Konsep EdgeAI + keluarga model SLM
 2. **⚙️ Optimasi** (Modul 03-04): Penerapan + kerangka kuantisasi  
-3. **🚀 Produksi** (Modul 05-06): SLMOps + Agen AI + Pemanggilan fungsi  
-4. **💻 Implementasi** (Modul 07-08): Contoh platform + Toolkit Foundry Local  
+3. **🚀 Produksi** (Modul 05-06): SLMOps + agen AI + pemanggilan fungsi  
+4. **💻 Implementasi** (Modul 07-08): Contoh platform + toolkit Foundry Local  
 
 Setiap modul mencakup teori, latihan langsung, dan contoh kode siap produksi.
 
@@ -168,6 +168,7 @@ edgeai-for-beginners/
 ├── 🌐 translations/    # Multi-language support (8+ languages)
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
+  
 
 ## Sorotan Kursus
 
@@ -176,17 +177,17 @@ edgeai-for-beginners/
 ✅ **Contoh Praktis**: 50+ contoh, 10 demo Foundry Local yang komprehensif  
 ✅ **Fokus Kinerja**: Peningkatan kecepatan 85%, pengurangan ukuran 75%  
 ✅ **Multi-Platform**: Windows, mobile, embedded, hybrid cloud-edge  
-✅ **Siap Produksi**: Pemantauan, penskalaan, keamanan, kerangka kerja kepatuhan  
+✅ **Siap Produksi**: Pemantauan, skalabilitas, keamanan, kerangka kerja kepatuhan  
 
 📖 **[Panduan Belajar Tersedia](STUDY_GUIDE.md)**: Jalur pembelajaran terstruktur selama 20 jam dengan panduan alokasi waktu dan alat penilaian mandiri.
 
 ---
 
-**EdgeAI mewakili masa depan penerapan AI**: lokal-pertama, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun generasi berikutnya dari aplikasi cerdas.
+**EdgeAI adalah masa depan penerapan AI**: lokal terlebih dahulu, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun aplikasi cerdas generasi berikutnya.
 
 ## Kursus Lainnya
 
-Tim kami juga membuat kursus lainnya! Lihat:
+Tim kami juga menyediakan kursus lainnya! Lihat:  
 
 - [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)  
 - [Agen AI untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -197,12 +198,24 @@ Tim kami juga membuat kursus lainnya! Lihat:
 - [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
 - [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
-- [Pengembangan Web untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Web Dev untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
 - [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Menguasai GitHub Copilot untuk Pemrograman Berpasangan AI](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
 - [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
+## Mendapatkan Bantuan
+
+Jika Anda mengalami kesulitan atau memiliki pertanyaan tentang membangun aplikasi AI, bergabunglah:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Jika Anda memiliki masukan produk atau menemukan kesalahan saat membangun, kunjungi:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+
 ---
 
+**Penafian**:  
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan profesional oleh manusia. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.

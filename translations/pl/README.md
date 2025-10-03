@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T08:42:44+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T07:54:11+00:00",
   "source_file": "README.md",
   "language_code": "pl"
 }
@@ -32,18 +32,18 @@ Postępuj zgodnie z poniższymi krokami, aby rozpocząć korzystanie z tych zaso
 
 #### Obsługiwane przez GitHub Action (Automatyczne i zawsze aktualne)
 
-[Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](./README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
+[Arabski](../ar/README.md) | [Bengalski](../bn/README.md) | [Bułgarski](../bg/README.md) | [Birmański (Myanmar)](../my/README.md) | [Chiński (uproszczony)](../zh/README.md) | [Chiński (tradycyjny, Hongkong)](../hk/README.md) | [Chiński (tradycyjny, Makau)](../mo/README.md) | [Chiński (tradycyjny, Tajwan)](../tw/README.md) | [Chorwacki](../hr/README.md) | [Czeski](../cs/README.md) | [Duński](../da/README.md) | [Holenderski](../nl/README.md) | [Fiński](../fi/README.md) | [Francuski](../fr/README.md) | [Niemiecki](../de/README.md) | [Grecki](../el/README.md) | [Hebrajski](../he/README.md) | [Hindi](../hi/README.md) | [Węgierski](../hu/README.md) | [Indonezyjski](../id/README.md) | [Włoski](../it/README.md) | [Japoński](../ja/README.md) | [Koreański](../ko/README.md) | [Malajski](../ms/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Norweski](../no/README.md) | [Perski (Farsi)](../fa/README.md) | [Polski](./README.md) | [Portugalski (Brazylia)](../br/README.md) | [Portugalski (Portugalia)](../pt/README.md) | [Pendżabski (Gurmukhi)](../pa/README.md) | [Rumuński](../ro/README.md) | [Rosyjski](../ru/README.md) | [Serbski (cyrylica)](../sr/README.md) | [Słowacki](../sk/README.md) | [Słoweński](../sl/README.md) | [Hiszpański](../es/README.md) | [Suahili](../sw/README.md) | [Szwedzki](../sv/README.md) | [Tagalog (Filipiński)](../tl/README.md) | [Tajski](../th/README.md) | [Turecki](../tr/README.md) | [Ukraiński](../uk/README.md) | [Urdu](../ur/README.md) | [Wietnamski](../vi/README.md)
 
-**Jeśli chcesz, aby obsługiwane były dodatkowe języki, lista dostępnych znajduje się [tutaj](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Jeśli chcesz, aby obsługiwane były dodatkowe języki, lista dostępnych języków znajduje się [tutaj](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Wprowadzenie
 
-Witamy w **EdgeAI dla Początkujących** – kompleksowym kursie wprowadzającym do rewolucyjnego świata Edge Artificial Intelligence. Ten kurs łączy potężne możliwości AI z praktycznym wdrożeniem na urządzeniach brzegowych, umożliwiając wykorzystanie potencjału AI tam, gdzie generowane są dane i podejmowane decyzje.
+Witamy w **EdgeAI dla Początkujących** – kompleksowym kursie wprowadzającym w rewolucyjny świat Edge Artificial Intelligence. Ten kurs łączy potężne możliwości AI z praktycznym wdrożeniem w rzeczywistych urządzeniach brzegowych, umożliwiając wykorzystanie potencjału AI tam, gdzie dane są generowane i decyzje muszą być podejmowane.
 
 ### Czego się nauczysz
 
 Kurs prowadzi od podstawowych koncepcji do gotowych do produkcji implementacji, obejmując:
-- **Małe modele językowe (SLM)** zoptymalizowane pod kątem wdrożeń na urządzeniach brzegowych
+- **Małe modele językowe (SLM)** zoptymalizowane do wdrożeń na urządzeniach brzegowych
 - **Optymalizację sprzętową** na różnych platformach
 - **Wnioskowanie w czasie rzeczywistym** z zachowaniem prywatności
 - **Strategie wdrożeniowe** dla aplikacji korporacyjnych
@@ -62,7 +62,7 @@ Edge AI to zmiana paradygmatu, która rozwiązuje kluczowe współczesne wyzwani
 Edge AI odnosi się do uruchamiania algorytmów AI i modeli językowych lokalnie na sprzęcie, blisko miejsca generowania danych, bez polegania na zasobach chmurowych do wnioskowania. Zmniejsza opóźnienia, zwiększa prywatność i umożliwia podejmowanie decyzji w czasie rzeczywistym.
 
 ### Główne zasady:
-- **Wnioskowanie na urządzeniu**: Modele AI działają na urządzeniach brzegowych (telefony, routery, mikrokontrolery, komputery przemysłowe)
+- **Wnioskowanie na urządzeniu**: Modele AI działają na urządzeniach brzegowych (telefony, routery, mikrokontrolery, przemysłowe PC)
 - **Możliwość pracy offline**: Funkcjonowanie bez stałego połączenia z internetem
 - **Niskie opóźnienia**: Natychmiastowe odpowiedzi odpowiednie dla systemów czasu rzeczywistego
 - **Suwerenność danych**: Przechowywanie wrażliwych danych lokalnie, poprawiając bezpieczeństwo i zgodność
@@ -71,10 +71,10 @@ Edge AI odnosi się do uruchamiania algorytmów AI i modeli językowych lokalnie
 
 SLM, takie jak Phi-4, Mistral-7B i Gemma, to zoptymalizowane wersje większych LLM – trenowane lub destylowane w celu:
 - **Zmniejszenia wymagań pamięciowych**: Efektywne wykorzystanie ograniczonej pamięci urządzeń brzegowych
-- **Obniżenia zapotrzebowania na moc obliczeniową**: Optymalizacja pod kątem wydajności CPU i GPU na urządzeniach brzegowych
+- **Obniżenia zapotrzebowania na moc obliczeniową**: Optymalizacja dla wydajności CPU i GPU na urządzeniach brzegowych
 - **Szybszego uruchamiania**: Szybka inicjalizacja dla responsywnych aplikacji
 
-Oferują potężne możliwości NLP, jednocześnie spełniając ograniczenia:
+Oferują potężne możliwości NLP, spełniając jednocześnie ograniczenia:
 - **Systemów wbudowanych**: Urządzenia IoT i kontrolery przemysłowe
 - **Urządzeń mobilnych**: Smartfony i tablety z funkcjami offline
 - **Urządzeń IoT**: Czujniki i inteligentne urządzenia o ograniczonych zasobach
@@ -83,14 +83,14 @@ Oferują potężne możliwości NLP, jednocześnie spełniając ograniczenia:
 
 ## Moduły kursu i nawigacja
 
-| Moduł | Temat | Obszar skupienia | Kluczowe treści | Poziom | Czas trwania |
-|-------|-------|------------------|-----------------|--------|-------------|
+| Moduł | Temat | Obszar skupienia | Kluczowa zawartość | Poziom | Czas trwania |
+|-------|-------|------------------|--------------------|--------|--------------|
 | [📖 00 ](./introduction.md) | [Wprowadzenie do EdgeAI](./introduction.md) | Podstawy i kontekst | Przegląd EdgeAI • Zastosowania w przemyśle • Wprowadzenie do SLM • Cele nauki | Początkujący | 1-2 godz. |
-| [📚 01](../../Module01) | [Podstawy EdgeAI](./Module01/README.md) | Porównanie chmury i Edge AI | Podstawy EdgeAI • Przypadki użycia • Przewodnik wdrożeniowy • Wdrożenie na urządzeniach brzegowych | Początkujący | 3-4 godz. |
+| [📚 01](../../Module01) | [Podstawy EdgeAI](./Module01/README.md) | Porównanie chmury i Edge AI | Podstawy EdgeAI • Przykłady z życia wzięte • Przewodnik wdrożeniowy • Wdrożenie na urządzeniach brzegowych | Początkujący | 3-4 godz. |
 | [🧠 02](../../Module02) | [Podstawy modeli SLM](./Module02/README.md) | Rodziny modeli i architektura | Rodzina Phi • Rodzina Qwen • Rodzina Gemma • BitNET • μModel • Phi-Silica | Początkujący | 4-5 godz. |
-| [🚀 03](../../Module03) | [Praktyka wdrożeniowa SLM](./Module03/README.md) | Wdrożenie lokalne i w chmurze | Zaawansowana nauka • Środowisko lokalne • Wdrożenie w chmurze | Średniozaawansowany | 4-5 godz. |
+| [🚀 03](../../Module03) | [Praktyka wdrożeniowa SLM](./Module03/README.md) | Wdrożenie lokalne i w chmurze | Zaawansowane nauczanie • Środowisko lokalne • Wdrożenie w chmurze | Średniozaawansowany | 4-5 godz. |
 | [⚙️ 04](../../Module04) | [Zestaw narzędzi do optymalizacji modeli](./Module04/README.md) | Optymalizacja międzyplatformowa | Wprowadzenie • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Synteza przepływu pracy | Średniozaawansowany | 5-6 godz. |
-| [🔧 05](../../Module05) | [SLMOps w produkcji](./Module05/README.md) | Operacje produkcyjne | Wprowadzenie do SLMOps • Destylacja modeli • Dostosowywanie • Wdrożenie produkcyjne | Zaawansowany | 5-6 godz. |
+| [🔧 05](../../Module05) | [Produkcja SLMOps](./Module05/README.md) | Operacje produkcyjne | Wprowadzenie do SLMOps • Destylacja modeli • Dostosowywanie • Wdrożenie produkcyjne | Zaawansowany | 5-6 godz. |
 | [🤖 06](../../Module06) | [Agenci AI i wywoływanie funkcji](./Module06/README.md) | Frameworki agentów i MCP | Wprowadzenie do agentów • Wywoływanie funkcji • Protokół kontekstu modelu | Zaawansowany | 4-5 godz. |
 | [💻 07](../../Module07) | [Implementacja platformy](./Module07/README.md) | Przykłady międzyplatformowe | Zestaw narzędzi AI • Foundry Local • Rozwój na Windows | Zaawansowany | 3-4 godz. |
 | [🏭 08](../../Module08) | [Zestaw narzędzi Foundry Local](./Module08/README.md) | Przykłady gotowe do produkcji | Przykładowe aplikacje (szczegóły poniżej) | Ekspert | 8-10 godz. |
@@ -102,7 +102,7 @@ Oferują potężne możliwości NLP, jednocześnie spełniając ograniczenia:
 - [03: Odkrywanie modeli i benchmarking](./Module08/samples/03/README.md)
 - [04: Aplikacja Chainlit RAG](./Module08/samples/04/README.md)
 - [05: Orkiestracja wieloagentowa](./Module08/samples/05/README.md)
-- [06: Router Models-as-Tools](./Module08/samples/06/README.md)
+- [06: Router modeli jako narzędzi](./Module08/samples/06/README.md)
 - [07: Bezpośredni klient API](./Module08/samples/07/README.md)
 - [08: Aplikacja czatu na Windows 11](./Module08/samples/08/README.md)
 - [09: Zaawansowany system wieloagentowy](./Module08/samples/09/README.md)
@@ -119,17 +119,17 @@ Oferują potężne możliwości NLP, jednocześnie spełniając ograniczenia:
 
 ### 🎯 Kluczowe kompetencje
 - **Architektura Edge AI**: Projektowanie systemów AI z priorytetem lokalnym i integracją z chmurą
-- **Optymalizacja modeli**: Kwantyzacja i kompresja modeli do wdrożeń brzegowych (85% wzrost szybkości, 75% redukcji rozmiaru)
-- **Wdrożenie na wielu platformach**: Windows, urządzenia mobilne, systemy wbudowane i hybrydowe chmura-brzeg
+- **Optymalizacja modeli**: Kwantyzacja i kompresja modeli do wdrożeń na urządzeniach brzegowych (85% wzrost szybkości, 75% redukcji rozmiaru)
+- **Wdrożenie wieloplatformowe**: Windows, mobilne, wbudowane i hybrydowe systemy chmura-brzeg
 - **Operacje produkcyjne**: Monitorowanie, skalowanie i utrzymanie Edge AI w produkcji
 
 ### 🏗️ Praktyczne projekty
-- **Aplikacje czatu Foundry Local**: Natywna aplikacja na Windows 11 z możliwością przełączania modeli
+- **Aplikacje czatu Foundry Local**: Natywna aplikacja na Windows 11 z przełączaniem modeli
 - **Systemy wieloagentowe**: Koordynator z wyspecjalizowanymi agentami do złożonych przepływów pracy  
 - **Aplikacje RAG**: Lokalne przetwarzanie dokumentów z wyszukiwaniem wektorowym
 - **Routery modeli**: Inteligentny wybór modeli na podstawie analizy zadań
 - **Frameworki API**: Klienci gotowi do produkcji ze streamingiem i monitorowaniem stanu
-- **Narzędzia międzyplatformowe**: Wzorce integracji LangChain/Semantic Kernel
+- **Narzędzia wieloplatformowe**: Wzorce integracji LangChain/Semantic Kernel
 
 ### 🏢 Zastosowania przemysłowe
 **Produkcja** • **Opieka zdrowotna** • **Pojazdy autonomiczne** • **Inteligentne miasta** • **Aplikacje mobilne**
@@ -152,7 +152,7 @@ Każdy moduł zawiera teorię, ćwiczenia praktyczne oraz przykłady kodu gotowe
 
 **Sektory przemysłowe**: Przemysł 4.0 • Technologie medyczne • Systemy autonomiczne • FinTech • Elektronika użytkowa  
 
-**Projekty portfolio**: Systemy multi-agentowe • Aplikacje RAG w produkcji • Wdrożenia międzyplatformowe • Optymalizacja wydajności  
+**Projekty portfolio**: Systemy wieloagentowe • Aplikacje produkcyjne RAG • Wdrożenia międzyplatformowe • Optymalizacja wydajności  
 
 ## Struktura repozytorium
 
@@ -187,7 +187,7 @@ edgeai-for-beginners/
 
 ## Inne kursy
 
-Nasza ekipa tworzy również inne kursy! Sprawdź:  
+Nasza ekipa tworzy inne kursy! Sprawdź:  
 
 - [MCP dla początkujących](https://github.com/microsoft/mcp-for-beginners)  
 - [Agenci AI dla początkujących](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,5 +205,17 @@ Nasza ekipa tworzy również inne kursy! Sprawdź:
 - [Opanowanie GitHub Copilot dla programistów C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Wybierz swoją własną przygodę z Copilotem](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
+## Uzyskanie pomocy
+
+Jeśli utkniesz lub masz pytania dotyczące budowania aplikacji AI, dołącz:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Jeśli masz uwagi dotyczące produktu lub napotkasz błędy podczas budowania, odwiedź:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+
 ---
 
+**Zastrzeżenie**:  
+Ten dokument został przetłumaczony za pomocą usługi tłumaczenia AI [Co-op Translator](https://github.com/Azure/co-op-translator). Chociaż dokładamy wszelkich starań, aby tłumaczenie było precyzyjne, prosimy pamiętać, że automatyczne tłumaczenia mogą zawierać błędy lub nieścisłości. Oryginalny dokument w jego rodzimym języku powinien być uznawany za źródło autorytatywne. W przypadku informacji krytycznych zaleca się skorzystanie z profesjonalnego tłumaczenia przez człowieka. Nie ponosimy odpowiedzialności za jakiekolwiek nieporozumienia lub błędne interpretacje wynikające z użycia tego tłumaczenia.

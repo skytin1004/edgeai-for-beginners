@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f3219903847ef3849e482fa30a64ad4",
-  "translation_date": "2025-09-26T08:32:27+00:00",
+  "original_hash": "dbe223abcd2955df69a08033ff16d389",
+  "translation_date": "2025-10-03T07:51:34+00:00",
   "source_file": "README.md",
   "language_code": "pt"
 }
@@ -20,15 +20,15 @@ CO_OP_TRANSLATOR_METADATA:
 [![Forks no GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 [![Estrelas no GitHub](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)  
 
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Discord do Microsoft Azure AI Foundry](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
 Siga estes passos para começar a usar estes recursos:
 
 1. **Faça um Fork do Repositório**: Clique [![Forks no GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Clone o Repositório**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Junte-se ao Discord do Azure AI Foundry e conecte-se com especialistas e outros desenvolvedores**](https://discord.com/invite/ByRwuEEgH4)  
+3. [**Junte-se ao Discord do Azure AI Foundry e conecte-se com especialistas e outros desenvolvedores**](https://discord.com/invite/ByRwuEEgH4)
 
-### 🌐 Suporte Multilingue
+### 🌐 Suporte Multilinguagem
 
 #### Suporte via GitHub Action (Automatizado e Sempre Atualizado)
 
@@ -42,7 +42,7 @@ Bem-vindo ao **EdgeAI para Iniciantes** – a sua jornada completa no mundo tran
 
 ### O que irá aprender
 
-Este curso leva-o desde os conceitos fundamentais até implementações prontas para produção, cobrindo:
+Este curso leva-o desde os conceitos fundamentais até implementações prontas para produção, abordando:
 - **Modelos de Linguagem Pequenos (SLMs)** otimizados para implementação na edge
 - **Otimização orientada ao hardware** em diversas plataformas
 - **Inferência em tempo real** com capacidades de preservação de privacidade
@@ -51,10 +51,10 @@ Este curso leva-o desde os conceitos fundamentais até implementações prontas 
 ### Por que o EdgeAI é importante
 
 Edge AI representa uma mudança de paradigma que aborda desafios modernos críticos:
-- **Privacidade e Segurança**: Processa dados sensíveis localmente sem exposição à cloud
+- **Privacidade e Segurança**: Processa dados sensíveis localmente, sem exposição à cloud
 - **Desempenho em tempo real**: Elimina latência de rede para aplicações críticas
 - **Eficiência de custos**: Reduz despesas com largura de banda e computação na cloud
-- **Operações resilientes**: Mantém a funcionalidade durante falhas de rede
+- **Operações resilientes**: Mantém funcionalidade durante falhas de rede
 - **Conformidade regulatória**: Atende aos requisitos de soberania de dados
 
 ### Edge AI
@@ -65,7 +65,7 @@ Edge AI refere-se à execução de algoritmos de IA e modelos de linguagem local
 - **Inferência no dispositivo**: Modelos de IA executados em dispositivos edge (telemóveis, routers, microcontroladores, PCs industriais)
 - **Capacidade offline**: Funciona sem conectividade persistente à internet
 - **Baixa latência**: Respostas imediatas adequadas para sistemas em tempo real
-- **Soberania de dados**: Mantém dados sensíveis localmente, melhorando a segurança e conformidade
+- **Soberania de dados**: Mantém dados sensíveis localmente, melhorando segurança e conformidade
 
 ### Modelos de Linguagem Pequenos (SLMs)
 
@@ -97,16 +97,16 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 
 ### 🏭 **Módulo 08: Aplicações de Exemplo**
 
-- [01: Início Rápido com REST Chat](./Module08/samples/01/README.md)  
-- [02: Integração com OpenAI SDK](./Module08/samples/02/README.md)  
-- [03: Descoberta e Benchmarking de Modelos](./Module08/samples/03/README.md)  
-- [04: Aplicação Chainlit RAG](./Module08/samples/04/README.md)  
-- [05: Orquestração Multi-Agente](./Module08/samples/05/README.md)  
-- [06: Router de Modelos como Ferramentas](./Module08/samples/06/README.md)  
-- [07: Cliente API Direto](./Module08/samples/07/README.md)  
-- [08: Aplicação de Chat no Windows 11](./Module08/samples/08/README.md)  
-- [09: Sistema Multi-Agente Avançado](./Module08/samples/09/README.md)  
-- [10: Framework de Ferramentas Foundry](./Module08/samples/10/README.md)  
+- [01: Início Rápido com REST Chat](./Module08/samples/01/README.md)
+- [02: Integração com OpenAI SDK](./Module08/samples/02/README.md)
+- [03: Descoberta e Benchmarking de Modelos](./Module08/samples/03/README.md)
+- [04: Aplicação Chainlit RAG](./Module08/samples/04/README.md)
+- [05: Orquestração Multi-Agente](./Module08/samples/05/README.md)
+- [06: Router de Modelos como Ferramentas](./Module08/samples/06/README.md)
+- [07: Cliente API Direto](./Module08/samples/07/README.md)
+- [08: Aplicação de Chat no Windows 11](./Module08/samples/08/README.md)
+- [09: Sistema Multi-Agente Avançado](./Module08/samples/09/README.md)
+- [10: Framework de Ferramentas Foundry](./Module08/samples/10/README.md)
 
 ### 📊 **Resumo do Caminho de Aprendizagem**
 - **Duração Total**: 36-45 horas  
@@ -117,8 +117,8 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 
 ## O que irá construir
 
-### 🎯 Competências Principais
-- **Arquitetura de Edge AI**: Projetar sistemas de IA locais com integração na cloud  
+### 🎯 Competências Centrais
+- **Arquitetura de Edge AI**: Projetar sistemas de IA com foco local e integração na cloud  
 - **Otimização de Modelos**: Quantizar e comprimir modelos para implementação na edge (85% de aumento de velocidade, 75% de redução de tamanho)  
 - **Implementação Multiplataforma**: Windows, dispositivos móveis, sistemas embutidos e híbridos cloud-edge  
 - **Operações em Produção**: Monitorização, escalabilidade e manutenção de IA na edge em produção  
@@ -132,7 +132,7 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 - **Ferramentas Multiplataforma**: Padrões de integração LangChain/Semantic Kernel  
 
 ### 🏢 Aplicações na Indústria
-**Manufatura** • **Saúde** • **Veículos Autónomos** • **Cidades Inteligentes** • **Aplicações Móveis**
+**Manufatura** • **Saúde** • **Veículos Autônomos** • **Cidades Inteligentes** • **Aplicações Móveis**
 
 ## Início Rápido
 
@@ -141,7 +141,7 @@ Eles desbloqueiam capacidades poderosas de NLP enquanto atendem às restrições
 0. **📖 Introdução** ([Introduction.md](./introduction.md)): Fundamentos do EdgeAI + contexto na indústria + framework de aprendizagem  
 1. **📚 Fundamentos** (Módulos 01-02): Conceitos de EdgeAI + famílias de modelos SLM  
 2. **⚙️ Otimização** (Módulos 03-04): Implementação + frameworks de quantização  
-3. **🚀 Produção** (Módulos 05-06): SLMOps + agentes de IA + chamadas de funções  
+3. **🚀 Produção** (Módulos 05-06): SLMOps + agentes de IA + chamadas de função  
 4. **💻 Implementação** (Módulos 07-08): Exemplos de plataforma + toolkit Foundry Local  
 
 Cada módulo inclui teoria, exercícios práticos e exemplos de código prontos para produção.
@@ -187,7 +187,7 @@ edgeai-for-beginners/
 
 ## Outros Cursos
 
-A nossa equipa produz outros cursos! Veja:
+A nossa equipa produz outros cursos! Veja:  
 
 - [MCP para Iniciantes](https://github.com/microsoft/mcp-for-beginners)  
 - [Agentes de IA para Iniciantes](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,5 +205,17 @@ A nossa equipa produz outros cursos! Veja:
 - [Dominar o GitHub Copilot para Desenvolvedores C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Escolha a Sua Própria Aventura com Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
+## Obter Ajuda
+
+Se tiver dúvidas ou precisar de ajuda para construir aplicações de IA, junte-se a:  
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+
+Se tiver feedback sobre produtos ou encontrar erros durante o desenvolvimento, visite:  
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+
 ---
 
+**Aviso**:  
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos pela precisão, esteja ciente de que traduções automáticas podem conter erros ou imprecisões. O documento original na sua língua nativa deve ser considerado a fonte autoritária. Para informações críticas, recomenda-se uma tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.
