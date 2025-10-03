@@ -13,6 +13,14 @@ Windows AI Foundry represents a unified, reliable, and secure platform that supp
 - **Optimized Performance**: Models pre-optimized for Windows hardware configurations
 - **Enterprise-Ready**: Production-grade security and compliance features
 
+### Windows ML 
+Windows Machine Learning (ML) enables C#, C++, and Python developers to run ONNX AI models locally on Windows PCs via the ONNX Runtime, with automatic execution provider management for different hardware (CPUs, GPUs, NPUs). [ONNX Runtime](https://onnxruntime.ai/docs/) can be used with models from PyTorch, Tensorflow/Keras, TFLite, scikit-learn, and other frameworks.
+
+
+![WindowsML A diagram illustrating an ONNX model going through Windows ML to then reach NPUs, GPUs, and CPUs.l](https://learn.microsoft.com/en-us/windows/ai/images/winml-diagram.png)
+
+Windows ML provides a shared Windows-wide copy of the ONNX Runtime, plus the ability to dynamically download execution providers (EPs).
+
 ### Why Windows for Edge AI?
 
 **Universal Hardware Support**
@@ -621,6 +629,7 @@ Whether you're building consumer applications, enterprise solutions, or speciali
 - [Windows ML Overview](https://learn.microsoft.com/windows/ai/new-windows-ml/overview/)
 - [Windows App SDK System Requirements](https://docs.microsoft.com/windows/apps/windows-app-sdk/system-requirements)
 - [Windows App SDK Development Environment Setup](https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment)
+- 
 
 ### Sample Repositories and Code
 - [Windows App SDK Samples - Windows AI Foundry](https://github.com/microsoft/WindowsAppSDK-Samples/tree/main/Samples/WindowsAIFoundry)
