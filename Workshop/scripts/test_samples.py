@@ -159,10 +159,13 @@ def run_sample_test(
         
         # Check exit code
         if proc.returncode != 0:
-            # Some samples may fail if dependencies are missing
-            if "ERROR" in result.output and "Import" in result.output:
+            # Use specific exit codes for known error conditions.
+            # Convention (documented in sample scripts):
+            #   2 = Missing dependencies
+            #   3 = Foundry Local not running
+            if proc.returncode == 2:
                 result.error = "Missing dependencies (expected for some samples)"
-            elif "ERROR" in result.output and "Failed to initialize" in result.output:
+            elif proc.returncode == 3:
                 result.error = "Foundry Local not running"
             else:
                 result.error = f"Non-zero exit code: {proc.returncode}"
