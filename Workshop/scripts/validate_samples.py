@@ -70,7 +70,15 @@ class ValidationResult:
         self.success = True
     
     def add_error(self, msg: str):
-        """Add error message."""
+        """
+        Add an error message to the validation result and mark the validation as failed.
+
+        Parameters:
+            msg (str): The error message to add.
+
+        Side Effects:
+            Sets self.success to False, indicating that the validation did not pass.
+        """
         self.errors.append(msg)
         self.success = False
     
