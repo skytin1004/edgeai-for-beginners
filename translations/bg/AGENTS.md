@@ -1,17 +1,41 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:44:37+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-08T13:40:48+00:00",
   "source_file": "AGENTS.md",
   "language_code": "bg"
 }
 -->
 # AGENTS.md
 
+> **Ръководство за разработчици за допринасяне към EdgeAI за начинаещи**
+> 
+> Този документ предоставя изчерпателна информация за разработчици, AI агенти и сътрудници, работещи с това хранилище. Той обхваща настройка, работни процеси за разработка, тестване и добри практики.
+> 
+> **Последна актуализация**: октомври 2025 | **Версия на документа**: 2.0
+
+## Съдържание
+
+- [Преглед на проекта](../..)
+- [Структура на хранилището](../..)
+- [Предварителни изисквания](../..)
+- [Команди за настройка](../..)
+- [Работен процес за разработка](../..)
+- [Инструкции за тестване](../..)
+- [Насоки за стил на код](../..)
+- [Насоки за Pull Request](../..)
+- [Система за превод](../..)
+- [Интеграция с Foundry Local](../..)
+- [Създаване и разгръщане](../..)
+- [Често срещани проблеми и отстраняване на неизправности](../..)
+- [Допълнителни ресурси](../..)
+- [Бележки, специфични за проекта](../..)
+- [Получаване на помощ](../..)
+
 ## Преглед на проекта
 
-EdgeAI for Beginners е изчерпателно образователно хранилище, което учи разработка на Edge AI с Малки Езикови Модели (SLMs). Курсът обхваща основите на EdgeAI, внедряване на модели, техники за оптимизация и готови за производство реализации с Microsoft Foundry Local и различни AI рамки.
+EdgeAI за начинаещи е изчерпателно образователно хранилище, което обучава разработка на Edge AI с малки езикови модели (SLMs). Курсът обхваща основи на EdgeAI, разгръщане на модели, техники за оптимизация и готови за производство реализации, използвайки Microsoft Foundry Local и различни AI рамки.
 
 **Основни технологии:**
 - Python 3.8+ (основен език за AI/ML примери)
@@ -26,7 +50,7 @@ EdgeAI for Beginners е изчерпателно образователно хр
 
 **Тип хранилище:** Образователно съдържание с 8 модула и 10 изчерпателни примерни приложения
 
-**Архитектура:** Многомодулен учебен път с практически примери, демонстриращи модели за внедряване на Edge AI
+**Архитектура:** Многомодулен учебен път с практически примери, демонстриращи модели за разгръщане на Edge AI
 
 ## Структура на хранилището
 
@@ -43,6 +67,35 @@ edgeai-for-beginners/
 ├── translated_images/     # Localized images
 └── imgs/                  # Course images and assets
 ```
+
+## Предварителни изисквания
+
+### Необходими инструменти
+
+- **Python 3.8+** - За AI/ML примери и тетрадки
+- **Node.js 16+** - За примерното приложение Electron
+- **Git** - За контрол на версиите
+- **Microsoft Foundry Local** - За локално изпълнение на AI модели
+
+### Препоръчителни инструменти
+
+- **Visual Studio Code** - С разширения за Python, Jupyter и Pylance
+- **Windows Terminal** - За по-добро командно изживяване (за потребители на Windows)
+- **Docker** - За контейнеризирана разработка (по избор)
+
+### Системни изисквания
+
+- **RAM**: Минимум 8GB, препоръчително 16GB+ за сценарии с множество модели
+- **Съхранение**: 10GB+ свободно пространство за модели и зависимости
+- **ОС**: Windows 10/11, macOS 11+ или Linux (Ubuntu 20.04+)
+- **Хардуер**: CPU с поддръжка на AVX2; GPU (CUDA, Qualcomm NPU) е опционален, но препоръчителен
+
+### Предварителни знания
+
+- Основно разбиране на програмирането с Python
+- Запознатост с командния ред
+- Разбиране на AI/ML концепции (за разработка на примери)
+- Git работни процеси и процеси за Pull Request
 
 ## Команди за настройка
 
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,15 +145,26 @@ npm run dist
 
 ### Настройка на Foundry Local
 
-Foundry Local е необходим за изпълнение на примерите от Модул08:
+Foundry Local е необходим за изпълнение на примерите. Изтеглете и инсталирайте от официалното хранилище:
 
+**Инсталация:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Ръчно**: Изтеглете от [страницата с издания](https://github.com/microsoft/Foundry-Local/releases)
+
+**Бърз старт:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**Забележка**: Foundry Local автоматично избира най-добрия вариант на модела за вашия хардуер (CUDA GPU, Qualcomm NPU или CPU).
 
 ## Работен процес за разработка
 
@@ -105,10 +172,10 @@ curl http://localhost:8000/health
 
 Това хранилище съдържа предимно **Markdown образователно съдържание**. При извършване на промени:
 
-1. Редактирайте `.md` файловете в съответните директории на модулите
-2. Следвайте съществуващите модели за форматиране
-3. Уверете се, че примерите с код са точни и тествани
-4. Актуализирайте съответното преведено съдържание, ако е необходимо (или оставете автоматизацията да го направи)
+1. Редактирайте `.md` файлове в съответните директории на модули
+2. Следвайте съществуващите модели на форматиране
+3. Уверете се, че примерите за код са точни и тествани
+4. Актуализирайте съответното преведено съдържание, ако е необходимо (или оставете автоматизацията да го обработи)
 
 ### Разработка на примерни приложения
 
@@ -148,17 +215,17 @@ npm run lint       # Check code style
 
 ### Валидиране на съдържание
 
-Хранилището използва автоматизирани работни потоци за превод. Не се изисква ръчно тестване за преводи.
+Хранилището използва автоматизирани работни процеси за превод. Не се изисква ръчно тестване за преводи.
 
-**Ръчна проверка за промени в съдържанието:**
-1. Прегледайте рендирането на Markdown чрез предварителен преглед на `.md` файловете
+**Ръчно валидиране за промени в съдържанието:**
+1. Прегледайте рендирането на Markdown чрез предварителен преглед на `.md` файлове
 2. Уверете се, че всички връзки сочат към валидни цели
 3. Тествайте всички включени кодови фрагменти в документацията
 4. Проверете дали изображенията се зареждат правилно
 
 ### Тестване на примерни приложения
 
-**Модул08/примери/08 (Electron приложение) има изчерпателно тестване:**
+**Module08/samples/08 (Electron приложение) има изчерпателно тестване:**
 ```bash
 cd Module08/samples/08
 
@@ -196,7 +263,7 @@ python samples/09/multi_agent_system.py
 - Поддържайте редовете четими (целете ~80-100 символа, но не строго)
 - Използвайте относителни връзки за вътрешни препратки
 
-### Стил на Python код
+### Python стил на код
 
 - Следвайте конвенциите на PEP 8
 - Използвайте типови подсказки, когато е подходящо
@@ -204,7 +271,7 @@ python samples/09/multi_agent_system.py
 - Използвайте смислени имена на променливи
 - Поддържайте функциите фокусирани и кратки
 
-### Стил на JavaScript/Node.js код
+### JavaScript/Node.js стил на код
 
 ```bash
 # Electron sample follows ESLint configuration
@@ -222,7 +289,42 @@ npm run format      # Format with Prettier
 
 ## Насоки за Pull Request
 
-### Формат на заглавието
+### Работен процес за допринасяне
+
+1. **Fork на хранилището** и създайте нов клон от `main`
+2. **Направете вашите промени**, следвайки насоките за стил на код
+3. **Тествайте обстойно**, използвайки инструкциите за тестване по-горе
+4. **Комитвайте с ясни съобщения**, следвайки формата за конвенционални комити
+5. **Публикувайте във вашия fork** и създайте Pull Request
+6. **Отговаряйте на обратна връзка** от поддържащите по време на прегледа
+
+### Конвенция за именуване на клонове
+
+- `feature/<module>-<description>` - За нови функции или съдържание
+- `fix/<module>-<description>` - За поправки на грешки
+- `docs/<description>` - За подобрения в документацията
+- `refactor/<description>` - За рефакториране на код
+
+### Формат на съобщенията за комити
+
+Следвайте [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Примери:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
+
+### Формат на заглавията
 ```
 [ModuleXX] Brief description of change
 ```
@@ -231,14 +333,18 @@ npm run format      # Format with Prettier
 [Module08/samples/XX] Description for sample changes
 ```
 
-### Преди изпращане
+### Кодекс на поведение
+
+Всички сътрудници трябва да следват [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Моля, прегледайте [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) преди да допринасяте.
+
+### Преди подаване
 
 **За промени в съдържанието:**
 - Прегледайте всички модифицирани Markdown файлове
 - Уверете се, че връзките и изображенията работят
 - Проверете за правописни и граматически грешки
 
-**За промени в примерния код (Модул08/примери/08):**
+**За промени в примерния код (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
@@ -252,57 +358,104 @@ npm test
 ### Процес на преглед
 
 - Промените в образователното съдържание се преглеждат за точност и яснота
-- Примерите с код се тестват за функционалност
-- Актуализациите на преводите се обработват автоматично чрез GitHub Actions
+- Примерният код се тества за функционалност
+- Актуализациите на преводите се обработват автоматично от GitHub Actions
 
 ## Система за превод
 
 **ВАЖНО:** Това хранилище използва автоматизиран превод чрез GitHub Actions.
 
 - Преводите се намират в директорията `/translations/` (50+ езика)
-- Автоматизирано чрез работния поток `co-op-translator.yml`
+- Автоматизирано чрез работния процес `co-op-translator.yml`
 - **НЕ редактирайте ръчно файловете за превод** - те ще бъдат презаписани
-- Редактирайте само английските изходни файлове в основната директория и директориите на модулите
+- Редактирайте само английските изходни файлове в основната и модулните директории
 - Преводите се генерират автоматично при push към клона `main`
 
 ## Интеграция с Foundry Local
 
-Повечето примери от Модул08 изискват Microsoft Foundry Local да бъде стартиран:
+Повечето примери от Module08 изискват Microsoft Foundry Local да бъде стартиран.
+
+### Инсталация и настройка
+
+**Инсталирайте Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Инсталирайте Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Стартиране на Foundry Local
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
+```
+
+### Използване на SDK (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
 ### Проверка на Foundry Local
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### Променливи на средата за примери
 
 Повечето примери използват тези променливи на средата:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,15 +463,17 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
-## Създаване и внедряване
+**Забележка**: При използване на `FoundryLocalManager`, SDK автоматично обработва откриването на услуги и зареждането на модели. Псевдонимите на модели (като `phi-3.5-mini`) гарантират, че най-добрият вариант е избран за вашия хардуер.
 
-### Внедряване на съдържание
+## Създаване и разгръщане
 
-Това хранилище е предимно документация - не се изисква процес на създаване за съдържанието.
+### Разгръщане на съдържание
+
+Това хранилище е предимно документация - не се изисква процес на създаване за съдържание.
 
 ### Създаване на примерни приложения
 
-**Electron приложение (Модул08/примери/08):**
+**Electron приложение (Module08/samples/08):**
 ```bash
 cd Module08/samples/08
 
@@ -338,21 +493,36 @@ npm run pack
 **Python примери:**
 Няма процес на създаване - примерите се изпълняват директно с Python интерпретатор.
 
-## Чести проблеми и отстраняване на неизправности
+## Често срещани проблеми и отстраняване на неизправности
 
-### Foundry Local не е стартиран
-**Проблем:** Примерите се провалят с грешки при връзка
+> **Съвет**: Проверете [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues) за известни проблеми и решения.
+
+### Критични проблеми (блокиращи)
+
+#### Foundry Local не работи
+**Проблем:** Примерите се провалят с грешки при свързване
 
 **Решение:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Проблеми с Python виртуална среда
+### Често срещани проблеми (умерени)
+
+#### Проблеми с Python виртуална среда
 **Проблем:** Грешки при импортиране на модули
 
 **Решение:**
@@ -367,8 +537,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Проблеми със създаване на Electron
-**Проблем:** npm install или грешки при създаване
+#### Проблеми с изграждането на Electron
+**Проблем:** npm install или грешки при изграждане
 
 **Решение:**
 ```bash
@@ -379,41 +549,60 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Конфликти в работния поток за превод
-**Проблем:** Преводният PR влиза в конфликт с вашите промени
+### Проблеми с работния процес (незначителни)
+
+#### Конфликти в работния процес за превод
+**Проблем:** Конфликт на PR за превод с вашите промени
 
 **Решение:**
 - Редактирайте само английските изходни файлове
-- Оставете автоматизирания работен поток за превод да обработи преводите
+- Оставете автоматизирания работен процес за превод да обработи преводите
 - Ако възникнат конфликти, обединете `main` във вашия клон след като преводите бъдат обединени
+
+#### Неуспехи при изтегляне на модели
+**Проблем:** Foundry Local не успява да изтегли модели
+
+**Решение:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## Допълнителни ресурси
 
 ### Учебни пътеки
-- **Начинаещи:** Модули 01-02 (7-9 часа)
-- **Средно ниво:** Модули 03-04 (9-11 часа)
-- **Напреднали:** Модули 05-07 (12-15 часа)
-- **Експерти:** Модул 08 (8-10 часа)
+- **Път за начинаещи:** Модули 01-02 (7-9 часа)
+- **Път за средно напреднали:** Модули 03-04 (9-11 часа)
+- **Път за напреднали:** Модули 05-07 (12-15 часа)
+- **Път за експерти:** Модул 08 (8-10 часа)
 
-### Основно съдържание на модулите
-- **Модул01:** Основи на EdgeAI и реални казуси
-- **Модул02:** Семейства и архитектури на Малки Езикови Модели (SLM)
-- **Модул03:** Стратегии за локално и облачно внедряване
-- **Модул04:** Оптимизация на модели с множество рамки
-- **Модул05:** SLMOps - операции за производство
-- **Модул06:** AI агенти и извикване на функции
-- **Модул07:** Имплементации, специфични за платформи
-- **Модул08:** Инструментариум Foundry Local с 10 изчерпателни примера
+### Основно съдържание на модули
+- **Module01:** Основи на EdgeAI и казуси от реалния свят
+- **Module02:** Семейства и архитектури на малки езикови модели (SLM)
+- **Module03:** Стратегии за локално и облачно разгръщане
+- **Module04:** Оптимизация на модели с множество рамки
+- **Module05:** SLMOps - операции в производството
+- **Module06:** AI агенти и извикване на функции
+- **Module07:** Имплементации, специфични за платформата
+- **Module08:** Инструментариум Foundry Local с 10 изчерпателни примера
 
 ### Външни зависимости
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Локално изпълнение на AI модели
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Локално изпълнение на AI модели с OpenAI-съвместим API
+  - [Документация](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Рамка за оптимизация
-- [Microsoft Olive](https://microsoft.github.io/Olive/) - Инструментариум за оптимизация на модели
-- [OpenVINO](https://docs.openvino.ai/) - Инструментариум за оптимизация на Intel
+- [Microsoft Olive](https://microsoft.github.io/Olive/) - Инструмент за оптимизация на модели
+- [OpenVINO](https://docs.openvino.ai/) - Инструмент за оптимизация на Intel
 
 ## Бележки, специфични за проекта
 
-### Примерни приложения от Модул08
+### Примерни приложения от Module08
 
 Хранилището включва 10 изчерпателни примерни приложения:
 
@@ -423,19 +612,10 @@ npm install
 4. **04-Chainlit RAG Application** - Генерация, базирана на извличане
 5. **05-Multi-Agent Orchestration** - Основна координация на агенти
 6. **06-Models-as-Tools Router** - Интелигентно маршрутизиране на модели
-7. **07-Direct API Client** - Ниско ниво на интеграция с API
-8. **08-Windows 11 Chat App** - Нативно десктоп приложение с Electron
-9. **09-Advanced Multi-Agent System** - Сложна оркестрация на агенти
-10. **10-Foundry Tools Framework** - Интеграция с LangChain/Semantic Kernel
-
-Всеки пример демонстрира различни аспекти на разработката на Edge AI с Foundry Local.
-
-### Съображения за производителност
-
-- SLMs са оптимизирани за внедряване на Edge (2-16GB RAM)
-- Локалното изпълнение осигурява времена за отговор от 50-500ms
-- Техники за квантизация постигат 75% намаление на размера с 85% запазване на производителността
-- Възможности за реално време в разговори с локални модели
+7. **07-Direct API Client
+- Локалното извеждане осигурява време за отговор от 50-500ms
+- Техниките за квантуване постигат 75% намаление на размера с 85% запазване на производителността
+- Възможности за разговор в реално време с локални модели
 
 ### Сигурност и поверителност
 
@@ -444,9 +624,36 @@ npm install
 - Отговаря на изискванията за суверенитет на данните
 - Foundry Local работи изцяло на локален хардуер
 
+## Получаване на помощ
+
+### Документация
+
+- **Основен README**: [README.md](README.md) - Преглед на хранилището и учебни пътища
+- **Учебен наръчник**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - Учебни ресурси и график
+- **Поддръжка**: [SUPPORT.md](SUPPORT.md) - Как да получите помощ
+- **Сигурност**: [SECURITY.md](SECURITY.md) - Докладване на проблеми със сигурността
+
+### Поддръжка от общността
+
+- **GitHub Issues**: [Докладвайте за грешки или поискайте функции](https://github.com/microsoft/edgeai-for-beginners/issues)
+- **GitHub Discussions**: [Задавайте въпроси и споделяйте идеи](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- **Foundry Local Issues**: [Технически проблеми с Foundry Local](https://github.com/microsoft/Foundry-Local/issues)
+
+### Контакт
+
+- **Поддържащи лица**: Вижте [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)
+- **Проблеми със сигурността**: Следвайте отговорното разкриване в [SECURITY.md](SECURITY.md)
+- **Поддръжка от Microsoft**: За корпоративна поддръжка, свържете се с клиентската служба на Microsoft
+
+### Допълнителни ресурси
+
+- **Microsoft Learn**: [Учебни пътища за AI и машинно обучение](https://learn.microsoft.com/training/browse/?products=ai-services)
+- **Документация за Foundry Local**: [Официална документация](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+- **Примери от общността**: Вижте [GitHub Discussions](https://github.com/microsoft/edgeai-for-beginners/discussions) за приноси от общността
+
 ---
 
-**Това е образователно хранилище, фокусирано върху обучението за разработка на Edge AI. Основният модел за принос е подобряване на образователното съдържание и добавяне/усъвършенстване на примерни приложения, които демонстрират концепции за Edge AI.**
+**Това е образователно хранилище, фокусирано върху обучението за разработка на Edge AI. Основният модел на принос е подобряване на образователното съдържание и добавяне/усъвършенстване на примерни приложения, които демонстрират концепции за Edge AI.**
 
 ---
 

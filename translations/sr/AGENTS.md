@@ -1,17 +1,41 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:45:16+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-08T13:47:47+00:00",
   "source_file": "AGENTS.md",
   "language_code": "sr"
 }
 -->
 # AGENTS.md
 
+> **Водич за програмере: Увод у EdgeAI**
+> 
+> Овај документ пружа свеобухватне информације за програмере, AI агенте и сараднике који раде са овим репозиторијумом. Обухвата подешавање, радне токове развоја, тестирање и најбоље праксе.
+> 
+> **Последње ажурирање**: Октобар 2025 | **Верзија документа**: 2.0
+
+## Садржај
+
+- [Преглед пројекта](../..)
+- [Структура репозиторијума](../..)
+- [Предуслови](../..)
+- [Команде за подешавање](../..)
+- [Радни ток развоја](../..)
+- [Упутства за тестирање](../..)
+- [Смернице за стил кода](../..)
+- [Смернице за Pull Request](../..)
+- [Систем за превођење](../..)
+- [Интеграција са Foundry Local](../..)
+- [Изградња и распоређивање](../..)
+- [Чести проблеми и решавање](../..)
+- [Додатни ресурси](../..)
+- [Напомене специфичне за пројекат](../..)
+- [Како добити помоћ](../..)
+
 ## Преглед пројекта
 
-EdgeAI for Beginners је свеобухватан едукативни репозиторијум који подучава развој Edge AI-а са малим језичким моделима (SLM). Курс обухвата основе EdgeAI-а, постављање модела, технике оптимизације и имплементације спремне за производњу користећи Microsoft Foundry Local и различите AI оквире.
+EdgeAI for Beginners је свеобухватан едукативни репозиторијум који учи развој Edge AI-а са малим језичким моделима (SLM). Курс обухвата основе EdgeAI-а, распоређивање модела, технике оптимизације и имплементације спремне за производњу користећи Microsoft Foundry Local и различите AI оквире.
 
 **Кључне технологије:**
 - Python 3.8+ (примарни језик за AI/ML примере)
@@ -26,7 +50,7 @@ EdgeAI for Beginners је свеобухватан едукативни репо
 
 **Тип репозиторијума:** Едукативни садржај са 8 модула и 10 свеобухватних примера апликација
 
-**Архитектура:** Вишемодулни пут учења са практичним примерима који демонстрирају обрасце постављања Edge AI-а
+**Архитектура:** Вишемодуларни пут учења са практичним примерима који демонстрирају обрасце распоређивања Edge AI-а
 
 ## Структура репозиторијума
 
@@ -44,9 +68,38 @@ edgeai-for-beginners/
 └── imgs/                  # Course images and assets
 ```
 
-## Команде за постављање
+## Предуслови
 
-### Постављање репозиторијума
+### Потребни алати
+
+- **Python 3.8+** - За AI/ML примере и бележнице
+- **Node.js 16+** - За Electron пример апликације
+- **Git** - За контролу верзија
+- **Microsoft Foundry Local** - За локално покретање AI модела
+
+### Препоручени алати
+
+- **Visual Studio Code** - Са Python, Jupyter и Pylance екстензијама
+- **Windows Terminal** - За боље искуство командне линије (за кориснике Windows-а)
+- **Docker** - За развој у контејнерима (опционо)
+
+### Системски захтеви
+
+- **RAM**: Минимум 8GB, препоручено 16GB+ за сценарије са више модела
+- **Складиште**: 10GB+ слободног простора за моделе и зависности
+- **ОС**: Windows 10/11, macOS 11+, или Linux (Ubuntu 20.04+)
+- **Хардвер**: CPU са AVX2 подршком; GPU (CUDA, Qualcomm NPU) опционално, али препоручено
+
+### Знање које се подразумева
+
+- Основно разумевање Python програмирања
+- Познавање интерфејса командне линије
+- Разумевање AI/ML концепата (за развој примера)
+- Git радни токови и процеси Pull Request-а
+
+## Команде за подешавање
+
+### Подешавање репозиторијума
 
 ```bash
 # Clone the repository
@@ -56,7 +109,7 @@ cd edgeai-for-beginners
 # No build step required - this is primarily an educational content repository
 ```
 
-### Постављање Python примера (Модул08 и Python примери)
+### Подешавање Python примера (Модул08 и Python примери)
 
 ```bash
 # Create and activate virtual environment
@@ -66,12 +119,15 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
 
-### Постављање Node.js примера (Пример 08 - Windows Chat App)
+### Подешавање Node.js примера (Пример 08 - Windows Chat App)
 
 ```bash
 cd Module08/samples/08
@@ -87,17 +143,28 @@ npm run build
 npm run dist
 ```
 
-### Постављање Foundry Local-а
+### Подешавање Foundry Local-а
 
-Foundry Local је потребан за покретање примера из Модула08:
+Foundry Local је потребан за покретање примера. Преузмите и инсталирајте са званичног репозиторијума:
 
+**Инсталација:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Ручно**: Преузмите са [странице издања](https://github.com/microsoft/Foundry-Local/releases)
+
+**Брзи почетак:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**Напомена**: Foundry Local аутоматски бира најбољу варијанту модела за ваш хардвер (CUDA GPU, Qualcomm NPU, или CPU).
 
 ## Радни ток развоја
 
@@ -107,7 +174,7 @@ curl http://localhost:8000/health
 
 1. Уређујте `.md` датотеке у одговарајућим директоријумима модула
 2. Пратите постојеће обрасце форматирања
-3. Осигурајте да су примери кода тачни и тестирани
+3. Уверите се да су примери кода тачни и тестирани
 4. Ажурирајте одговарајући преведени садржај ако је потребно (или дозволите аутоматизацији да то уради)
 
 ### Развој примера апликација
@@ -152,8 +219,8 @@ npm run lint       # Check code style
 
 **Ручна валидација за измене садржаја:**
 1. Прегледајте рендеровање Markdown-а прегледом `.md` датотека
-2. Проверите да ли сви линкови воде ка важећим циљевима
-3. Тестирајте све укључене исечке кода у документацији
+2. Проверите да ли сви линкови воде до важећих циљева
+3. Тестирајте све делове кода укључене у документацију
 4. Проверите да ли се слике правилно учитавају
 
 ### Тестирање примера апликација
@@ -178,7 +245,7 @@ npm run test:e2e
 npm test -- --coverage
 ```
 
-**Python примери треба ручно тестирати:**
+**Python примери треба ручно да се тестирају:**
 ```bash
 # Each sample can be run directly
 python samples/01/chat_quickstart.py "Test prompt"
@@ -186,22 +253,22 @@ python samples/04/chainlit_rag.py
 python samples/09/multi_agent_system.py
 ```
 
-## Упутства за стил кода
+## Смернице за стил кода
 
 ### Markdown садржај
 
 - Користите доследну хијерархију наслова (# за наслов, ## за главне секције, ### за подсекције)
-- Укључите блокове кода са спецификацијом језика: ```python, ```bash, ```javascript
+- Укључите блокове кода са спецификаторима језика: ```python, ```bash, ```javascript
 - Пратите постојеће форматирање за табеле, листе и наглашавање
-- Држите линије читљивим (циљајте ~80-100 карактера, али није строго)
+- Држите линије читљивим (циљајте на ~80-100 карактера, али није строго)
 - Користите релативне линкове за унутрашње референце
 
 ### Python стил кода
 
 - Пратите PEP 8 конвенције
-- Користите типске назнаке где је прикладно
-- Укључите docstrings за функције и класе
-- Користите смислене називе променљивих
+- Користите типске напомене где је прикладно
+- Укључите docstring-ове за функције и класе
+- Користите смислена имена променљивих
 - Држите функције фокусираним и концизним
 
 ### JavaScript/Node.js стил кода
@@ -220,7 +287,42 @@ npm run format      # Format with Prettier
 - Користите модеран ES6+ синтакс
 - Пратите постојеће обрасце у бази кода
 
-## Упутства за Pull Request
+## Смернице за Pull Request
+
+### Радни ток за доприносе
+
+1. **Fork-ујте репозиторијум** и креирајте нову грану из `main`
+2. **Извршите измене** пратећи смернице за стил кода
+3. **Тестирајте темељно** користећи горе наведена упутства за тестирање
+4. **Комитујте са јасним порукама** пратећи формат конвенционалних комита
+5. **Пошаљите на свој fork** и креирајте Pull Request
+6. **Одговорите на повратне информације** од одржавалаца током прегледа
+
+### Конвенција за именовање грана
+
+- `feature/<module>-<description>` - За нове функције или садржај
+- `fix/<module>-<description>` - За исправке грешака
+- `docs/<description>` - За побољшања документације
+- `refactor/<description>` - За рефакторинг кода
+
+### Формат поруке комита
+
+Пратите [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Примери:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### Формат наслова
 ```
@@ -231,10 +333,14 @@ npm run format      # Format with Prettier
 [Module08/samples/XX] Description for sample changes
 ```
 
-### Пре подношења
+### Кодекс понашања
+
+Сви сарадници морају пратити [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Прегледајте [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) пре доприноса.
+
+### Пре слања
 
 **За измене садржаја:**
-- Прегледајте све модификоване Markdown датотеке
+- Прегледајте све измењене Markdown датотеке
 - Проверите да ли линкови и слике раде
 - Проверите правописне и граматичке грешке
 
@@ -255,7 +361,7 @@ npm test
 - Примери кода се тестирају ради функционалности
 - Ажурирања превода се аутоматски обрађују преко GitHub Actions-а
 
-## Систем превођења
+## Систем за превођење
 
 **ВАЖНО:** Овај репозиторијум користи аутоматизовано превођење преко GitHub Actions-а.
 
@@ -263,46 +369,93 @@ npm test
 - Аутоматизовано преко `co-op-translator.yml` радног тока
 - **НЕ уређујте ручно датотеке превода** - биће преписане
 - Уређујте само изворне датотеке на енглеском у корену и директоријумима модула
-- Преводи се аутоматски генеришу при пушу на `main` грану
+- Преводи се аутоматски генеришу при сваком push-у на `main` грану
 
-## Интеграција Foundry Local-а
+## Интеграција са Foundry Local
 
-Већина примера из Модула08 захтева да Microsoft Foundry Local буде покренут:
+Већина примера из Модула08 захтева да Microsoft Foundry Local буде покренут.
+
+### Инсталација и подешавање
+
+**Инсталирајте Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Инсталирајте Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Покретање Foundry Local-а
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
+```
+
+### Коришћење SDK-а (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
 ### Провера Foundry Local-а
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### Променљиве окружења за примере
 
 Већина примера користи ове променљиве окружења:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,9 +463,11 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
-## Изградња и постављање
+**Напомена**: Када користите `FoundryLocalManager`, SDK аутоматски управља откривањем сервиса и учитавањем модела. Алијаси модела (попут `phi-3.5-mini`) осигуравају да се изабере најбоља варијанта за ваш хардвер.
 
-### Постављање садржаја
+## Изградња и распоређивање
+
+### Распоређивање садржаја
 
 Овај репозиторијум је углавном документација - није потребан процес изградње за садржај.
 
@@ -336,23 +491,38 @@ npm run pack
 ```
 
 **Python примери:**
-Нема процеса изградње - примери се директно покрећу са Python интерпретатором.
+Нема процеса изградње - примери се директно покрећу са Python интерпретером.
 
-## Уобичајени проблеми и решавање
+## Чести проблеми и решавање
 
-### Foundry Local није покренут
-**Проблем:** Примери не успевају са грешкама у вези
+> **Савет**: Проверите [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues) за познате проблеме и решења.
+
+### Критични проблеми (Блокирајући)
+
+#### Foundry Local није покренут
+**Проблем:** Примери не успевају са грешкама повезивања
 
 **Решење:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Проблеми са Python виртуелним окружењем
+### Чести проблеми (Умерени)
+
+#### Проблеми са Python виртуелним окружењем
 **Проблем:** Грешке при увозу модула
 
 **Решење:**
@@ -367,8 +537,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Проблеми са изградњом Electron-а
-**Проблем:** npm install или грешке при изградњи
+#### Проблеми са изградњом Electron-а
+**Проблем:** Грешке при `npm install` или изградњи
 
 **Решење:**
 ```bash
@@ -379,13 +549,29 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Конфликти у радном току превођења
-**Проблем:** Translation PR у конфликту са вашим изменама
+### Проблеми са радним током (Мањи)
+
+#### Конфликти у радном току превођења
+**Проблем:** Преводилачки PR је у конфликту са вашим изменама
 
 **Решење:**
 - Уређујте само изворне датотеке на енглеском
 - Дозволите аутоматизованом радном току превођења да обради преводе
-- Ако дође до конфликта, спојите `main` у вашу грану након што се преводи споје
+- Ако дође до конфликта, спојите `main` у своју грану након што се преводи споје
+
+#### Неуспешно преузимање модела
+**Проблем:** Foundry Local не успева да преузме моделе
+
+**Решење:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## Додатни ресурси
 
@@ -398,7 +584,7 @@ npm install
 ### Кључни садржај модула
 - **Модул01:** Основе EdgeAI-а и студије случаја из стварног света
 - **Модул02:** Породице и архитектуре малих језичких модела (SLM)
-- **Модул03:** Стратегије локалног и облачног постављања
+- **Модул03:** Стратегије локалног и облачног распоређивања
 - **Модул04:** Оптимизација модела са више оквира
 - **Модул05:** SLMOps - операције у производњи
 - **Модул06:** AI агенти и позивање функција
@@ -406,49 +592,55 @@ npm install
 - **Модул08:** Foundry Local алат са 10 свеобухватних примера
 
 ### Спољашње зависности
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Локално окружење за AI моделе
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Локално окружење за AI моделе са OpenAI-компатибилним API-јем
+  - [Документација](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Оквир за оптимизацију
-- [Microsoft Olive](https://microsoft.github.io/Olive/) - Алат за оптимизацију модела
-- [OpenVINO](https://docs.openvino.ai/) - Intel-ов алат за оптимизацију
-
-## Белешке специфичне за пројекат
-
-### Примери апликација из Модула08
-
-Репозиторијум укључује 10 свеобухватних примера апликација:
-
-1. **01-REST Chat Quickstart** - Основна интеграција OpenAI SDK-а
-2. **02-OpenAI SDK Integration** - Напредне функције SDK-а
-3. **03-Model Discovery & Benchmarking** - Алат за поређење модела
-4. **04-Chainlit RAG Application** - Генерација уз помоћ претраживања
-5. **05-Multi-Agent Orchestration** - Основна координација агената
-6. **06-Models-as-Tools Router** - Интелигентно рутирање модела
-7. **07-Direct API Client** - Клијент за ниско-ниво API интеграцију
-8. **08-Windows 11 Chat App** - Нативна Electron десктоп апликација
-9. **09-Advanced Multi-Agent System** - Комплексна оркестрација агената
-10. **10-Foundry Tools Framework** - Интеграција LangChain/Semantic Kernel-а
-
-Сваки пример демонстрира различите аспекте развоја Edge AI-а са Foundry Local-ом.
-
-### Перформансе
-
-- SLM-ови су оптимизовани за постављање на ивици (2-16GB RAM-а)
-- Локално закључивање пружа време одговора од 50-500ms
-- Технике квантовања постижу смањење величине од 75% уз задржавање 85% перформанси
-- Способности за разговор у реалном времену са локалним моделима
+- [Microsoft Olive](https://microsoft.github
+- Локална инференција обезбеђује време одзива од 50-500ms
+- Технике квантовања постижу смањење величине за 75% уз задржавање 85% перформанси
+- Могућности за разговор у реалном времену са локалним моделима
 
 ### Безбедност и приватност
 
-- Сва обрада се дешава локално - нема слања података у облак
+- Сва обрада се одвија локално - нема слања података у облак
 - Погодно за апликације осетљиве на приватност (здравство, финансије)
 - Испуњава захтеве за суверенитет података
 - Foundry Local ради искључиво на локалном хардверу
 
+## Помоћ и подршка
+
+### Документација
+
+- **Главни README**: [README.md](README.md) - Преглед репозиторијума и путеви учења
+- **Водич за учење**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - Ресурси за учење и временски оквир
+- **Подршка**: [SUPPORT.md](SUPPORT.md) - Како добити помоћ
+- **Безбедност**: [SECURITY.md](SECURITY.md) - Пријављивање безбедносних проблема
+
+### Подршка заједнице
+
+- **GitHub Issues**: [Пријавите грешке или затражите функције](https://github.com/microsoft/edgeai-for-beginners/issues)
+- **GitHub Discussions**: [Поставите питања и поделите идеје](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- **Foundry Local Issues**: [Технички проблеми са Foundry Local](https://github.com/microsoft/Foundry-Local/issues)
+
+### Контакт
+
+- **Одржаваоци**: Погледајте [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)
+- **Безбедносни проблеми**: Пратите одговорно обелодањивање у [SECURITY.md](SECURITY.md)
+- **Microsoft подршка**: За подршку предузећима, контактирајте корисничку службу Microsoft-а
+
+### Додатни ресурси
+
+- **Microsoft Learn**: [Путеви учења за AI и машинско учење](https://learn.microsoft.com/training/browse/?products=ai-services)
+- **Foundry Local документација**: [Званична документација](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+- **Примери заједнице**: Погледајте [GitHub Discussions](https://github.com/microsoft/edgeai-for-beginners/discussions) за доприносе заједнице
+
 ---
 
-**Ово је едукативни репозиторијум фокусиран на подучавање развоја Edge AI-а. Примарни образац доприноса је побољшање едукативног садржаја и додавање/унапређење примера апликација које демонстрирају концепте Edge AI-а.**
+**Ово је образовни репозиторијум усмерен на подучавање развоја Edge AI. Примарни образац доприноса је побољшање образовног садржаја и додавање/унапређење пример апликација које демонстрирају концепте Edge AI.**
 
 ---
 
 **Одрицање од одговорности**:  
-Овај документ је преведен помоћу услуге за превођење вештачке интелигенције [Co-op Translator](https://github.com/Azure/co-op-translator). Иако се трудимо да обезбедимо тачност, молимо вас да имате у виду да аутоматски преводи могу садржати грешке или нетачности. Оригинални документ на његовом изворном језику треба сматрати ауторитативним извором. За критичне информације препоручује се професионални превод од стране људи. Не преузимамо одговорност за било каква погрешна тумачења или неспоразуме који могу произаћи из коришћења овог превода.
+Овај документ је преведен помоћу услуге за превођење уз помоћ вештачке интелигенције [Co-op Translator](https://github.com/Azure/co-op-translator). Иако се трудимо да обезбедимо тачност, молимо вас да имате у виду да аутоматски преводи могу садржати грешке или нетачности. Оригинални документ на његовом изворном језику треба сматрати меродавним извором. За критичне информације препоручује се професионални превод од стране људи. Не преузимамо одговорност за било каква погрешна тумачења или неспоразуме који могу настати услед коришћења овог превода.
