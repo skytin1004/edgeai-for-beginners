@@ -1,33 +1,33 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
-  "translation_date": "2025-09-26T09:45:24+00:00",
+  "original_hash": "f86e720f67bb196e2fb6625b2338a1fb",
+  "translation_date": "2025-10-08T15:11:06+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "ro"
 }
 -->
 # EdgeAI pentru Începători: Căi de Învățare și Program de Studiu
 
-### Cale de Învățare Concentrată (1 săptămână)
+### Cale de Învățare Intensivă (1 săptămână)
 
-| Zi | Focus | Ore Estimate |
+| Zi | Focus | Ore Estimative |
 |------|-------|------------------|
 | Ziua 0 | Modulul 0: Introducere în EdgeAI | 1-2 ore |
 | Ziua 1 | Modulul 1: Fundamentele EdgeAI | 3 ore |
-| Ziua 2 | Modulul 2: Bazele SLM | 3 ore |
+| Ziua 2 | Modulul 2: Fundamentele SLM | 3 ore |
 | Ziua 3 | Modulul 3: Implementarea SLM | 2 ore |
-| Zilele 4-5 | Modulul 4: Optimizarea Modelului (6 cadre) | 4 ore |
+| Zilele 4-5 | Modulul 4: Optimizarea Modelului (6 cadre de lucru) | 4 ore |
 | Ziua 6 | Modulul 5: SLMOps | 3 ore |
 | Ziua 7 | Modulele 6-7: Agenți AI & Instrumente de Dezvoltare | 4 ore |
 | Ziua 8 | Modulul 8: Foundry Local Toolkit (Implementare Modernă) | 1 oră |
 
-### Cale de Învățare Concentrată (2 săptămâni)
+### Cale de Învățare Intensivă (2 săptămâni)
 
-| Zi | Focus | Ore Estimate |
+| Zi | Focus | Ore Estimative |
 |------|-------|------------------|
 | Zilele 1-2 | Modulul 1: Fundamentele EdgeAI | 3 ore |
-| Zilele 3-4 | Modulul 2: Bazele SLM | 3 ore |
+| Zilele 3-4 | Modulul 2: Fundamentele SLM | 3 ore |
 | Zilele 5-6 | Modulul 3: Implementarea SLM | 2 ore |
 | Zilele 7-8 | Modulul 4: Optimizarea Modelului | 4 ore |
 | Zilele 9-10 | Modulul 5: SLMOps | 3 ore |
@@ -36,18 +36,18 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### Studiu Part-Time (4 săptămâni)
 
-| Săptămână | Focus | Ore Estimate |
+| Săptămână | Focus | Ore Estimative |
 |------|-------|------------------|
-| Săptămâna 1 | Modulele 1-2: Fundamente & Bazele SLM | 6 ore |
+| Săptămâna 1 | Modulele 1-2: Fundamente & Fundamentele SLM | 6 ore |
 | Săptămâna 2 | Modulele 3-4: Implementare & Optimizare | 6 ore |
 | Săptămâna 3 | Modulele 5-6: SLMOps & Agenți AI | 5 ore |
 | Săptămâna 4 | Modulul 7: Instrumente de Dezvoltare & Integrare | 3 ore |
 
-| Zi | Focus | Ore Estimate |
+| Zi | Focus | Ore Estimative |
 |------|-------|------------------|
 | Ziua 0 | Modulul 0: Introducere în EdgeAI | 1-2 ore |
 | Zilele 1-2 | Modulul 1: Fundamentele EdgeAI | 3 ore |
-| Zilele 3-4 | Modulul 2: Bazele SLM | 3 ore |
+| Zilele 3-4 | Modulul 2: Fundamentele SLM | 3 ore |
 | Zilele 5-6 | Modulul 3: Implementarea SLM | 2 ore |
 | Zilele 7-8 | Modulul 4: Optimizarea Modelului | 4 ore |
 | Zilele 9-10 | Modulul 5: SLMOps | 3 ore |
@@ -58,9 +58,9 @@ CO_OP_TRANSLATOR_METADATA:
 |--------|----------------|-------------|--------------|
 | Modulul 0: Introducere în EdgeAI | | | |
 | Modulul 1: Fundamentele EdgeAI | | | |
-| Modulul 2: Bazele SLM | | | |
+| Modulul 2: Fundamentele SLM | | | |
 | Modulul 3: Implementarea SLM | | | |
-| Modulul 4: Optimizarea Modelului (6 cadre) | | | |
+| Modulul 4: Optimizarea Modelului (6 cadre de lucru) | | | |
 | Modulul 5: SLMOps | | | |
 | Modulul 6: Sisteme Agentice SLM | | | |
 | Modulul 7: Exemple de Implementare EdgeAI | | | |
@@ -69,225 +69,222 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### Studiu Part-Time (4 săptămâni)
 
-| Săptămână | Focus | Ore Estimate |
+| Săptămână | Focus | Ore Estimative |
 |------|-------|------------------|
-| Săptămâna 1 | Modulele 1-2: Fundamente & Bazele SLM | 6 ore |
+| Săptămâna 1 | Modulele 1-2: Fundamente & Fundamentele SLM | 6 ore |
 | Săptămâna 2 | Modulele 3-4: Implementare & Optimizare | 6 ore |
 | Săptămâna 3 | Modulele 5-6: SLMOps & Agenți AI | 5 ore |
 | Săptămâna 4 | Modulul 7: Instrumente de Dezvoltare & Integrare | 3 ore |
 
 ## Introducere
 
-Bine ați venit la ghidul de studiu EdgeAI pentru Începători! Acest document este conceput pentru a vă ajuta să navigați eficient prin materialele cursului și să maximizați experiența de învățare. Oferă căi de învățare structurate, programe de studiu sugerate, rezumate ale conceptelor cheie și resurse suplimentare pentru a vă aprofunda înțelegerea tehnologiilor Edge AI.
+Bine ați venit la ghidul de studiu EdgeAI pentru Începători! Acest document este conceput pentru a vă ajuta să navigați eficient materialele cursului și să maximizați experiența de învățare. Oferă căi de învățare structurate, programe de studiu sugerate, rezumate ale conceptelor cheie și resurse suplimentare pentru a aprofunda înțelegerea tehnologiilor Edge AI.
 
-Acesta este un curs concis de 20 de ore care oferă cunoștințe esențiale despre EdgeAI într-un format eficient din punct de vedere al timpului, fiind ideal pentru profesioniștii ocupați și studenții care doresc să dobândească rapid abilități practice în acest domeniu emergent.
+Acesta este un curs concis de 20 de ore care oferă cunoștințe esențiale despre EdgeAI într-un format eficient din punct de vedere al timpului, fiind ideal pentru profesioniști ocupați și studenți care doresc să dobândească rapid abilități practice în acest domeniu emergent.
 
 ## Prezentare Generală a Cursului
 
 Cursul este organizat în opt module cuprinzătoare:
 
-0. **Introducere în EdgeAI** - Stabilirea fundației și a contextului cu aplicații din industrie și obiective de învățare
-1. **Fundamentele și Transformarea EdgeAI** - Înțelegerea conceptelor de bază și a schimbării tehnologice
-2. **Bazele Micilor Modele de Limbaj (SLM)** - Explorarea diferitelor familii SLM și a arhitecturilor acestora
-3. **Implementarea Micilor Modele de Limbaj** - Strategii practice de implementare
-4. **Conversia Formatului Modelului și Cuantizare** - Optimizare avansată cu 6 cadre, inclusiv OpenVINO
-5. **SLMOps - Operațiuni pentru Micile Modele de Limbaj** - Managementul ciclului de viață și implementare
-6. **Sisteme Agentice SLM** - Agenți AI, apelarea funcțiilor și Protocolul Contextului Modelului
-7. **Exemple de Implementare EdgeAI** - AI Toolkit, dezvoltare pe Windows și implementări specifice platformei
-8. **Microsoft Foundry Local – Set complet de instrumente pentru dezvoltatori** - Dezvoltare locală cu integrare hibridă Azure (Modulul 08)
+0. **Introducere în EdgeAI** - Fundamente și stabilirea contextului cu aplicații industriale și obiective de învățare  
+1. **Fundamentele și Transformarea EdgeAI** - Înțelegerea conceptelor de bază și a schimbării tehnologice  
+2. **Fundamentele Modelului de Limbaj Mic (SLM)** - Explorarea diferitelor familii SLM și a arhitecturilor acestora  
+3. **Implementarea Modelului de Limbaj Mic** - Strategii practice de implementare  
+4. **Conversia Formatului Modelului și Cuantizare** - Optimizare avansată cu 6 cadre de lucru, inclusiv OpenVINO  
+5. **SLMOps - Operațiuni pentru Modele de Limbaj Mic** - Managementul ciclului de viață al producției și implementării  
+6. **Sisteme Agentice SLM** - Agenți AI, apelarea funcțiilor și Protocolul Contextului Modelului  
+7. **Exemple de Implementare EdgeAI** - Toolkit AI, dezvoltare pe Windows și implementări specifice platformei  
+8. **Microsoft Foundry Local – Toolkit Complet pentru Dezvoltatori** - Dezvoltare locală cu integrare hibridă Azure (Modulul 08)
 
 ## Cum să Utilizați Acest Ghid de Studiu
 
-- **Învățare Progresivă**: Urmați modulele în ordine pentru o experiență de învățare coerentă
-- **Puncte de Verificare a Cunoștințelor**: Utilizați întrebările de autoevaluare după fiecare secțiune
-- **Practica Practică**: Finalizați exercițiile sugerate pentru a consolida conceptele teoretice
-- **Resurse Suplimentare**: Explorați materiale suplimentare pentru subiectele care vă interesează cel mai mult
+- **Învățare Progresivă**: Urmați modulele în ordine pentru o experiență de învățare coerentă  
+- **Puncte de Verificare a Cunoștințelor**: Utilizați întrebările de autoevaluare după fiecare secțiune  
+- **Practica Practică**: Finalizați exercițiile sugerate pentru a consolida conceptele teoretice  
+- **Resurse Suplimentare**: Explorați materiale suplimentare pentru subiectele care vă interesează cel mai mult  
 
 ## Recomandări pentru Programul de Studiu
 
-### Cale de Învățare Concentrată (1 săptămână)
+### Cale de Învățare Intensivă (1 săptămână)
 
-| Zi | Focus | Ore Estimate |
+| Zi | Focus | Ore Estimative |
 |------|-------|------------------|
 | Ziua 0 | Modulul 0: Introducere în EdgeAI | 1-2 ore |
 | Zilele 1-2 | Modulul 1: Fundamentele EdgeAI | 6 ore |
-| Zilele 3-4 | Modulul 2: Bazele SLM | 8 ore |
+| Zilele 3-4 | Modulul 2: Fundamentele SLM | 8 ore |
 | Ziua 5 | Modulul 3: Implementarea SLM | 3 ore |
 | Ziua 6 | Modulul 8: Foundry Local Toolkit | 3 ore |
 
 ### Studiu Part-Time (3 săptămâni)
 
-| Săptămână | Focus | Ore Estimate |
+| Săptămână | Focus | Ore Estimative |
 |------|-------|------------------|
 | Săptămâna 1 | Modulul 0: Introducere + Modulul 1: Fundamentele EdgeAI | 7-9 ore |
-| Săptămâna 2 | Modulul 2: Bazele SLM | 7-8 ore |
+| Săptămâna 2 | Modulul 2: Fundamentele SLM | 7-8 ore |
 | Săptămâna 3 | Modulul 3: Implementarea SLM (3h) + Modulul 8: Foundry Local Toolkit (2-3h) | 5-6 ore |
 
 ## Modulul 0: Introducere în EdgeAI
 
 ### Obiective Cheie de Învățare
 
-- Înțelegerea conceptului de Edge AI și a importanței sale în peisajul tehnologic actual
-- Identificarea principalelor industrii transformate de Edge AI și a cazurilor lor specifice de utilizare
-- Înțelegerea avantajelor Micilor Modele de Limbaj (SLM) pentru implementarea la margine
-- Stabilirea așteptărilor clare de învățare și a rezultatelor pentru întregul curs
-- Recunoașterea oportunităților de carieră și a cerințelor de competențe în domeniul Edge AI
+- Înțelegeți ce este Edge AI și de ce este important în peisajul tehnologic actual  
+- Identificați industriile majore transformate de Edge AI și cazurile lor specifice de utilizare  
+- Înțelegeți avantajele Modelelor de Limbaj Mic (SLM) pentru implementarea la margine  
+- Stabiliți așteptări clare de învățare și rezultate pentru întregul curs  
+- Recunoașteți oportunitățile de carieră și cerințele de competențe în domeniul Edge AI  
 
 ### Zone de Focus pentru Studiu
 
 #### Secțiunea 1: Paradigma și Definiția Edge AI
-- **Concepte Prioritare**: 
-  - Edge AI vs. procesarea tradițională AI în cloud
-  - Convergența hardware-ului, optimizarea modelelor și cerințele de afaceri
-  - Implementare AI în timp real, cu protecția confidențialității și eficiență a costurilor
+- **Concepte Prioritare**:  
+  - Edge AI vs. procesarea tradițională AI în cloud  
+  - Convergența hardware-ului, optimizarea modelului și cerințele de afaceri  
+  - Implementare AI în timp real, care protejează confidențialitatea și este eficientă din punct de vedere al costurilor  
 
 #### Secțiunea 2: Aplicații Industriale
-- **Concepte Prioritare**: 
-  - Producție & Industria 4.0: Mentenanță predictivă și controlul calității
-  - Sănătate: Imagistică diagnostică și monitorizarea pacienților
-  - Sisteme Autonome: Vehicule autonome și transport
-  - Orașe Inteligente: Managementul traficului și siguranța publică
-  - Tehnologie pentru Consumatori: Smartphone-uri, dispozitive purtabile și case inteligente
+- **Concepte Prioritare**:  
+  - Producție & Industria 4.0: Mentenanță predictivă și controlul calității  
+  - Sănătate: Imagistică diagnostică și monitorizarea pacienților  
+  - Sisteme Autonome: Vehicule autonome și transport  
+  - Orașe Inteligente: Managementul traficului și siguranța publică  
+  - Tehnologie pentru Consumatori: Smartphone-uri, dispozitive purtabile și case inteligente  
 
-#### Secțiunea 3: Fundamentele Micilor Modele de Limbaj
-- **Concepte Prioritare**: 
-  - Caracteristicile și comparațiile de performanță ale SLM
-  - Eficiența parametrilor vs. compromisurile de capabilitate
-  - Constrângerile de implementare la margine și strategiile de optimizare
+#### Secțiunea 3: Fundamentele Modelelor de Limbaj Mic
+- **Concepte Prioritare**:  
+  - Caracteristicile și comparațiile de performanță ale SLM  
+  - Eficiența parametrilor vs. compromisurile de capabilitate  
+  - Constrângerile de implementare la margine și strategiile de optimizare  
 
 #### Secțiunea 4: Cadru de Învățare și Cale de Carieră
-- **Concepte Prioritare**: 
-  - Arhitectura cursului și abordarea de stăpânire progresivă
-  - Abilități tehnice și obiective practice de implementare
-  - Oportunități de avansare în carieră și aplicații industriale
+- **Concepte Prioritare**:  
+  - Arhitectura cursului și abordarea progresivă a stăpânirii  
+  - Abilități tehnice și obiective de implementare practică  
+  - Oportunități de avansare în carieră și aplicații industriale  
 
 ### Întrebări de Autoevaluare
 
-1. Care sunt cele trei tendințe tehnologice principale care au permis Edge AI?
-2. Comparați avantajele și provocările Edge AI vs. AI bazat pe cloud.
-3. Numiți trei industrii în care Edge AI oferă valoare critică pentru afaceri și explicați de ce.
-4. Cum fac Micile Modele de Limbaj Edge AI practic pentru implementarea în lumea reală?
-5. Care sunt abilitățile tehnice cheie pe care le veți dezvolta pe parcursul acestui curs?
-6. Descrieți abordarea de învățare în patru faze utilizată în acest curs.
+1. Care sunt cele trei tendințe tehnologice principale care au permis Edge AI?  
+2. Comparați avantajele și provocările Edge AI vs. AI bazat pe cloud.  
+3. Numiți trei industrii în care Edge AI oferă valoare critică pentru afaceri și explicați de ce.  
+4. Cum fac Modelele de Limbaj Mic ca Edge AI să fie practic pentru implementarea în lumea reală?  
+5. Care sunt abilitățile tehnice cheie pe care le veți dezvolta pe parcursul acestui curs?  
+6. Descrieți abordarea de învățare în patru faze utilizată în acest curs.  
 
 ### Exerciții Practice
 
-1. **Cercetare Industrială**: Alegeți o aplicație industrială și cercetați o implementare reală Edge AI (30 minute)
-2. **Explorarea Modelelor**: Răsfoiți Micile Modele de Limbaj disponibile pe Hugging Face și comparați numărul lor de parametri și capabilitățile (30 minute)
-3. **Planificarea Învățării**: Revizuiți structura completă a cursului și creați-vă propriul program de studiu (15 minute)
+1. **Cercetare Industrială**: Alegeți o aplicație industrială și cercetați o implementare reală Edge AI (30 minute)  
+2. **Explorarea Modelului**: Răsfoiți Modelele de Limbaj Mic disponibile pe Hugging Face și comparați numărul de parametri și capabilitățile acestora (30 minute)  
+3. **Planificarea Învățării**: Revizuiți structura completă a cursului și creați programul personal de studiu (15 minute)  
 
 ### Materiale Suplimentare
 
-- [Prezentare Generală a Pieței Edge AI - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
-- [Prezentare Generală a Micilor Modele de Limbaj - Hugging Face](https://huggingface.co/blog/small-language-models)
-- [Fundația Edge Computing](https://www.edgecomputing.org/)
+- [Prezentare Generală a Pieței Edge AI - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)  
+- [Prezentare Generală a Modelelor de Limbaj Mic - Hugging Face](https://huggingface.co/blog/small-language-models)  
+- [Fundamentele Calculului la Margine](https://www.edgecomputing.org/)  
 
 ## Modulul 1: Fundamentele și Transformarea EdgeAI
 
 ### Obiective Cheie de Învățare
 
-- Înțelegerea diferențelor dintre AI bazat pe cloud și AI bazat pe margine
-- Stăpânirea tehnicilor de optimizare pentru medii cu resurse limitate
-- Analiza aplicațiilor reale ale tehnologiilor EdgeAI
-- Configurarea unui mediu de dezvoltare pentru proiecte EdgeAI
+- Înțelegeți diferențele dintre AI bazat pe cloud și AI bazat pe margine  
+- Stăpâniți tehnicile de optimizare de bază pentru medii cu resurse limitate  
+- Analizați aplicațiile reale ale tehnologiilor EdgeAI  
+- Configurați un mediu de dezvoltare pentru proiecte EdgeAI  
 
 ### Zone de Focus pentru Studiu
 
 #### Secțiunea 1: Fundamentele EdgeAI
-- **Concepte Prioritare**: 
-  - Paradigmele de calcul Edge vs. Cloud
-  - Tehnici de cuantizare a modelelor
-  - Opțiuni de accelerare hardware (NPU-uri, GPU-uri, CPU-uri)
-  - Avantaje legate de confidențialitate și securitate
+- **Concepte Prioritare**:  
+  - Paradigmele de calcul Edge vs. Cloud  
+  - Tehnici de cuantizare a modelului  
+  - Opțiuni de accelerare hardware (NPU-uri, GPU-uri, CPU-uri)  
+  - Avantajele confidențialității și securității  
 
-- **Materiale Suplimentare**:
-  - [Documentația TensorFlow Lite](https://www.tensorflow.org/lite)
-  - [GitHub ONNX Runtime](https://github.com/microsoft/onnxruntime)
-  - [Documentația Edge Impulse](https://docs.edgeimpulse.com)
+- **Materiale Suplimentare**:  
+  - [Documentația TensorFlow Lite](https://www.tensorflow.org/lite)  
+  - [GitHub ONNX Runtime](https://github.com/microsoft/onnxruntime)  
+  - [Documentația Edge Impulse](https://docs.edgeimpulse.com)  
 
 #### Secțiunea 2: Studii de Caz Reale
-- **Concepte Prioritare**: 
-  - Ecosistemul de modele Microsoft Phi & Mu
-  - Implementări practice în diverse industrii
-  - Considerații pentru implementare
+- **Concepte Prioritare**:  
+  - Ecosistemul de modele Microsoft Phi & Mu  
+  - Implementări practice în diverse industrii  
+  - Considerații de implementare  
 
 #### Secțiunea 3: Ghid Practic de Implementare
-- **Concepte Prioritare**: 
-  - Configurarea mediului de dezvoltare
-  - Instrumente de cuantizare și optimizare
-  - Metode de evaluare pentru implementările EdgeAI
+- **Concepte Prioritare**:  
+  - Configurarea mediului de dezvoltare  
+  - Instrumente de cuantizare și optimizare  
+  - Metode de evaluare pentru implementările EdgeAI  
 
 #### Secțiunea 4: Hardware pentru Implementare la Margine
-- **Concepte Prioritare**: 
-  - Comparații între platformele hardware
-  - Strategii de optimizare pentru hardware specific
-  - Considerații pentru implementare
+- **Concepte Prioritare**:  
+  - Compararea platformelor hardware  
+  - Strategii de optimizare pentru hardware specific  
+  - Considerații de implementare  
 
 ### Întrebări de Autoevaluare
 
-1. Comparați și contrastați implementările AI bazate pe cloud cu cele bazate pe margine.
-2. Explicați trei tehnici cheie pentru optimizarea modelelor pentru implementarea la margine.
-3. Care sunt principalele avantaje ale rulării modelelor AI la margine?
-4. Descrieți procesul de cuantizare a unui model și cum afectează performanța.
-5. Explicați cum influențează diferiții acceleratori hardware (NPU-uri, GPU-uri, CPU-uri) implementarea EdgeAI.
+1. Comparați și contrastați implementările AI bazate pe cloud cu cele bazate pe margine.  
+2. Explicați trei tehnici cheie pentru optimizarea modelelor pentru implementarea la margine.  
+3. Care sunt principalele avantaje ale rulării modelelor AI la margine?  
+4. Descrieți procesul de cuantizare a unui model și cum afectează performanța.  
+5. Explicați cum diferiți acceleratori hardware (NPU-uri, GPU-uri, CPU-uri) influențează implementarea EdgeAI.  
 
 ### Exerciții Practice
 
-1. **Configurare Rapidă a Mediului**: Configurați un mediu minim de dezvoltare cu pachetele esențiale (30 minute)
-2. **Explorarea Modelelor**: Descărcați și examinați un mic model de limbaj pre-antrenat (1 oră)
-3. **Cuantizare de Bază**: Încercați o cuantizare simplă pe un model mic (1 oră)
+1. **Configurare Rapidă a Mediului**: Configurați un mediu de dezvoltare minim cu pachetele esențiale (30 minute)  
+2. **Explorarea Modelului**: Descărcați și examinați un model de limbaj mic pre-antrenat (1 oră)  
+3. **Cuantizare de Bază**: Încercați o cuantizare simplă pe un model mic (1 oră)  
 
-## Modulul 2: Bazele Micilor Modele de Limbaj
+## Modulul 2: Fundamentele Modelului de Limbaj Mic
 
 ### Obiective Cheie de Învățare
 
-- Înțelegerea principiilor arhitecturale ale diferitelor familii SLM
-- Compararea capabilităților modelelor pe diferite scări de parametri
-- Evaluarea modelelor pe baza eficienței, capabilităților și cerințelor de implementare
-- Recunoașterea cazurilor de utilizare potrivite pentru diferite familii de modele
+- Înțelegeți principiile arhitecturale ale diferitelor familii SLM  
+- Comparați capabilitățile modelelor pe diferite scale de parametri  
+- Evaluați modelele pe baza eficienței, capabilității și cerințelor de implementare  
+- Recunoașteți cazurile de utilizare adecvate pentru diferite familii de modele  
 
 ### Zone de Focus pentru Studiu
 
 #### Secțiunea 1: Familia de Modele Microsoft Phi
-- **Concepte Prioritare**: 
-  - Evoluția filozofiei de design
-  - Arhitectură axată pe eficiență
-  - Capabilități specializate
+- **Concepte Prioritare**:  
+  - Evoluția filozofiei de design  
+  - Arhitectura orientată spre eficiență  
+  - Capabilități specializate  
 
 #### Secțiunea 2: Familia Qwen
-- **Concepte Prioritare**: 
-  - Contribuții open source
-  - Opțiuni scalabile de implementare
-  - Arhitectură avansată pentru raționament
+- **Concepte Prioritare**:  
+  - Contribuții open source  
+  - Opțiuni scalabile de implementare  
+  - Arhitectura avansată de raționament  
 
 #### Secțiunea 3: Familia Gemma
-- **Concepte Prioritare**: 
-  - Inovație bazată pe cercetare
-  - Capabilități multimodale
-  - Optimizare pentru dispozitive mobile
+- **Concepte Prioritare**:  
+  - Inovație bazată pe cercetare  
+  - Capabilități multimodale  
+  - Optimizare pentru mobil  
 
 #### Secțiunea 4: Familia BitNET
-- **Concepte Prioritare**: 
-  - Tehnologia de cuantizare pe 1-bit
-  - Cadru de optimizare pentru inferență
-  - Considerații de sustenabilitate
+- **Concepte Prioritare**:  
+  - Tehnologia de cuantizare la 1-bit  
+  - Cadru de optimizare pentru inferență  
+  - Considerații de sustenabilitate  
 
 #### Secțiunea 5: Modelul Microsoft Mu
-- **Concepte Prioritare**: 
-  - Arhitectură axată pe dispozitive
-  - Integrare cu sistemul Windows
-  - Operare cu protecția confidențialității
+- **Concepte Prioritare**:  
+  - Arhitectura orientată spre dispozitive  
+  - Integrarea sistemului cu Windows  
+  - Operare care protejează confidențialitatea  
 
 #### Secțiunea 6: Phi-Silica
-- **Concepte Prioritare**: 
-  - Arhitectură optimizată pentru NPU
-  - Metrice de performanță
-  - Integrare pentru dezvoltatori
+- **Concepte Prioritare**:  
+  - Arhitectura optimizată pentru NPU  
+  - Metrice de performanță  
+  - Integrarea pentru dezvoltatori  
 
-### Întrebări de Autoevaluare
-
-1. Comparați abordările arhitecturale ale familiilor de modele Phi și Qwen.
-2. Explicați cum diferă tehnologia de cuantizare
+### Î
 3. Care sunt avantajele unice ale modelului Mu pentru integrarea cu Windows?
 4. Descrie modul în care Phi-Silica utilizează hardware-ul NPU pentru optimizarea performanței.
 5. Pentru o aplicație mobilă cu conectivitate limitată, care familie de modele ar fi cea mai potrivită și de ce?
@@ -298,13 +295,13 @@ Cursul este organizat în opt module cuprinzătoare:
 2. **Generare simplă de text**: Implementare de bază a generării de text cu un model mic (1 oră)
 3. **Optimizare rapidă**: Aplicarea unei tehnici de optimizare pentru îmbunătățirea vitezei de inferență (1 oră)
 
-## Modulul 3: Implementarea modelelor mici de limbaj (SLM)
+## Modulul 3: Implementarea modelelor de limbaj mici
 
 ### Obiective cheie de învățare
 
 - Selectarea modelelor adecvate în funcție de constrângerile de implementare
 - Stăpânirea tehnicilor de optimizare pentru diverse scenarii de implementare
-- Implementarea SLM-urilor atât în medii locale, cât și în cloud
+- Implementarea modelelor SLM atât în medii locale, cât și în cloud
 - Proiectarea configurațiilor pregătite pentru producție în aplicații EdgeAI
 
 ### Zone de studiu
@@ -329,7 +326,7 @@ Cursul este organizat în opt module cuprinzătoare:
 
 ### Întrebări de autoevaluare
 
-1. Ce factori ar trebui luați în considerare atunci când se selectează între implementarea locală și cea în cloud?
+1. Ce factori trebuie luați în considerare atunci când se alege între implementarea locală și cea în cloud?
 2. Compară Ollama și Microsoft Foundry Local ca opțiuni de implementare.
 3. Explică beneficiile containerizării pentru implementarea SLM.
 4. Care sunt principalele metrici de performanță de monitorizat pentru un SLM implementat la margine?
@@ -364,20 +361,20 @@ Cursul este organizat în opt module cuprinzătoare:
   - Optimizarea formatului GGUF
   - Tehnici de accelerare hardware
 
-#### Secțiunea 3: Suita Microsoft Olive
+#### Secțiunea 3: Microsoft Olive Suite
 - **Concepte prioritare**: 
   - Optimizare conștientă de hardware
-  - Implementare la nivel de întreprindere
-  - Fluxuri de lucru automate de optimizare
+  - Implementare de nivel enterprise
+  - Fluxuri de lucru de optimizare automatizate
 
-#### Secțiunea 4: Toolkit OpenVINO
+#### Secțiunea 4: OpenVINO Toolkit
 - **Concepte prioritare**: 
   - Optimizarea hardware-ului Intel
-  - Cadru de comprimare a rețelelor neuronale (NNCF)
-  - Implementare cross-platform pentru inferență
+  - Cadru de compresie a rețelelor neuronale (NNCF)
+  - Implementare de inferență cross-platform
   - OpenVINO GenAI pentru implementarea LLM
 
-#### Secțiunea 5: Cadru Apple MLX
+#### Secțiunea 5: Apple MLX Framework
 - **Concepte prioritare**: 
   - Optimizarea pentru Apple Silicon
   - Arhitectura memoriei unificate
@@ -395,7 +392,7 @@ Cursul este organizat în opt module cuprinzătoare:
 1. Compară strategiile de cuantizare la diferite niveluri de precizie (1-bit la 8-bit).
 2. Explică avantajele formatului GGUF pentru implementarea la margine.
 3. Cum îmbunătățește optimizarea conștientă de hardware din Microsoft Olive eficiența implementării?
-4. Care sunt beneficiile cheie ale NNCF din OpenVINO pentru comprimarea modelelor?
+4. Care sunt beneficiile cheie ale NNCF din OpenVINO pentru compresia modelelor?
 5. Descrie modul în care Apple MLX utilizează arhitectura memoriei unificate pentru optimizare.
 6. Cum ajută sinteza fluxului de lucru în selecția cadrelor optime de optimizare?
 
@@ -403,24 +400,24 @@ Cursul este organizat în opt module cuprinzătoare:
 
 1. **Cuantizarea modelului**: Aplicarea diferitelor niveluri de cuantizare unui model și compararea rezultatelor (1 oră)
 2. **Optimizare OpenVINO**: Utilizarea NNCF pentru comprimarea unui model pentru hardware-ul Intel (1 oră)
-3. **Compararea cadrelor**: Testarea aceluiași model în trei cadre de optimizare diferite (1 oră)
-4. **Benchmarking performanță**: Măsurarea impactului optimizării asupra vitezei de inferență și utilizării memoriei (1 oră)
+3. **Compararea cadrelor**: Testarea aceluiași model pe trei cadre de optimizare diferite (1 oră)
+4. **Benchmarking de performanță**: Măsurarea impactului optimizării asupra vitezei de inferență și utilizării memoriei (1 oră)
 
-## Modulul 5: SLMOps - Operațiuni pentru modele mici de limbaj
+## Modulul 5: SLMOps - Operațiuni pentru modele de limbaj mici
 
 ### Obiective cheie de învățare
 
 - Înțelegerea principiilor de gestionare a ciclului de viață SLMOps
 - Stăpânirea tehnicilor de distilare și fine-tuning pentru implementarea la margine
 - Implementarea strategiilor de implementare în producție cu monitorizare
-- Construirea fluxurilor de lucru de operare și întreținere SLM la nivel de întreprindere
+- Construirea fluxurilor de lucru de operațiuni și întreținere SLM de nivel enterprise
 
 ### Zone de studiu
 
 #### Secțiunea 1: Introducere în SLMOps
 - **Concepte prioritare**: 
   - Schimbarea paradigmei SLMOps în operațiunile AI
-  - Eficiență costuri și arhitectură orientată spre confidențialitate
+  - Arhitectură eficientă din punct de vedere al costurilor și orientată spre confidențialitate
   - Impact strategic asupra afacerii și avantaje competitive
 
 #### Secțiunea 2: Distilarea modelului
@@ -439,7 +436,7 @@ Cursul este organizat în opt module cuprinzătoare:
 - **Concepte prioritare**: 
   - Conversia și cuantizarea modelului pentru producție
   - Configurarea implementării Foundry Local
-  - Benchmarking performanță și validarea calității
+  - Benchmarking de performanță și validarea calității
 
 ### Întrebări de autoevaluare
 
@@ -458,7 +455,7 @@ Cursul este organizat în opt module cuprinzătoare:
 
 ### Obiective cheie de învățare
 
-- Construirea agenților AI inteligenți pentru medii la margine folosind modele mici de limbaj
+- Construirea agenților AI inteligenți pentru medii la margine folosind modele de limbaj mici
 - Implementarea capacităților de apelare a funcțiilor cu fluxuri de lucru sistematice
 - Stăpânirea integrării Model Context Protocol (MCP) pentru interacțiunea standardizată cu instrumentele
 - Crearea sistemelor agentice sofisticate cu intervenție umană minimă
@@ -469,15 +466,15 @@ Cursul este organizat în opt module cuprinzătoare:
 - **Concepte prioritare**: 
   - Cadru de clasificare a agenților (reflex, bazat pe model, bazat pe obiective, agenți de învățare)
   - Analiza compromisurilor SLM vs LLM
-  - Modele de design pentru agenți specifici marginii
+  - Modele de design specifice pentru agenți la margine
   - Optimizarea resurselor pentru agenți
 
-#### Secțiunea 2: Apelarea funcțiilor în modele mici de limbaj
+#### Secțiunea 2: Apelarea funcțiilor în modele de limbaj mici
 - **Concepte prioritare**: 
   - Implementarea fluxurilor de lucru sistematice (detectarea intenției, output JSON, execuție externă)
   - Implementări specifice platformei (Phi-4-mini, modele Qwen selectate, Microsoft Foundry Local)
   - Exemple avansate (colaborare multi-agent, selecție dinamică de instrumente)
-  - Considerații pentru producție (limitarea ratei, jurnalizare audit, măsuri de securitate)
+  - Considerații pentru producție (limitarea ratei, jurnalizarea auditului, măsuri de securitate)
 
 #### Secțiunea 3: Integrarea Model Context Protocol (MCP)
 - **Concepte prioritare**: 
@@ -497,12 +494,97 @@ Cursul este organizat în opt module cuprinzătoare:
 1. **Agent simplu**: Construirea unui agent AI de bază cu apelarea funcțiilor (1 oră)
 2. **Integrarea MCP**: Implementarea MCP într-o aplicație de agent (30 minute)
 
+## Atelier: Calea de învățare practică
+
+### Obiective cheie de învățare
+
+- Construirea aplicațiilor AI pregătite pentru producție folosind SDK-ul Foundry Local și cele mai bune practici
+- Implementarea gestionării erorilor și a modelelor de feedback pentru utilizatori
+- Crearea de pipeline-uri RAG cu evaluarea calității și monitorizarea performanței
+- Dezvoltarea sistemelor multi-agent cu modele de coordonare
+- Stăpânirea rutării inteligente a modelelor pentru selecția bazată pe sarcini
+- Implementarea soluțiilor AI locale cu arhitecturi care protejează confidențialitatea
+
+### Zone de studiu
+
+#### Sesiunea 01: Începerea cu Foundry Local
+- **Concepte prioritare**:
+  - Integrarea SDK FoundryLocalManager și descoperirea automată a serviciilor
+  - Implementări de chat de bază și streaming
+  - Modele de gestionare a erorilor și feedback pentru utilizatori
+  - Configurare bazată pe mediu
+
+#### Sesiunea 02: Construirea soluțiilor AI cu RAG
+- **Concepte prioritare**:
+  - Încorporări vectoriale în memorie cu sentence-transformers
+  - Implementarea pipeline-ului RAG (recuperare → generare)
+  - Evaluarea calității cu metrici RAGAS
+  - Siguranța importurilor pentru dependențe opționale
+
+#### Sesiunea 03: Modele open-source
+- **Concepte prioritare**:
+  - Strategii de benchmarking multi-model
+  - Măsurători de latență și throughput
+  - Degradare grațioasă și recuperare din erori
+  - Compararea performanței între familiile de modele
+
+#### Sesiunea 04: Modele de ultimă generație
+- **Concepte prioritare**:
+  - Metodologia de comparație SLM vs LLM
+  - Hinturi de tip și formatarea cuprinzătoare a output-ului
+  - Gestionarea erorilor per-model
+  - Rezultate structurate pentru analiză
+
+#### Sesiunea 05: Agenți alimentați de AI
+- **Concepte prioritare**:
+  - Orchestrarea multi-agent cu modelul de coordonare
+  - Gestionarea memoriei agenților și urmărirea stării
+  - Gestionarea erorilor în pipeline și jurnalizarea etapelor
+  - Monitorizarea performanței și statistici
+
+#### Sesiunea 06: Modele ca instrumente
+- **Concepte prioritare**:
+  - Detectarea intenției și potrivirea modelelor
+  - Algoritmi de rutare a modelelor bazate pe cuvinte cheie
+  - Pipeline-uri multi-pas (planificare → execuție → rafinare)
+  - Documentație cuprinzătoare a funcțiilor
+
+### Întrebări de autoevaluare
+
+1. Cum simplifică FoundryLocalManager gestionarea serviciilor comparativ cu apelurile REST manuale?
+2. Explică importanța protecțiilor pentru dependențele opționale, cum ar fi sentence-transformers.
+3. Ce strategii asigură o degradare grațioasă în benchmarking-ul multi-model?
+4. Cum orchestrează modelul de coordonare mai mulți agenți specializați?
+5. Descrie componentele unui router inteligent de modele.
+6. Care sunt elementele cheie ale gestionării erorilor pregătite pentru producție?
+
+### Exerciții practice
+
+1. **Aplicație de chat**: Implementarea unui chat streaming cu gestionarea erorilor (45 minute)
+2. **Pipeline RAG**: Construirea unui RAG minimal cu evaluarea calității (1 oră)
+3. **Benchmarking de modele**: Compararea a 3+ modele pe performanță (1 oră)
+4. **Sistem multi-agent**: Crearea unui coordonator cu 2 agenți specializați (1.5 ore)
+5. **Router inteligent**: Construirea selecției de modele bazate pe sarcini (1 oră)
+6. **Implementare în producție**: Adăugarea monitorizării și gestionării cuprinzătoare a erorilor (45 minute)
+
+### Alocarea timpului
+
+**Învățare concentrată (1 săptămână)**:
+- Ziua 1: Sesiunile 01-02 (Chat + RAG) - 3 ore
+- Ziua 2: Sesiunile 03-04 (Benchmarking + Comparație) - 3 ore
+- Ziua 3: Sesiunile 05-06 (Agenți + Rutare) - 3 ore
+- Ziua 4: Exerciții practice și validare - 2 ore
+
+**Studiu part-time (2 săptămâni)**:
+- Săptămâna 1: Sesiunile 01-03 (6 ore total)
+- Săptămâna 2: Sesiunile 04-06 + exerciții (5 ore total)
+
 ## Modulul 7: Exemple de implementare EdgeAI
 
 ### Obiective cheie de învățare
 
 - Stăpânirea AI Toolkit pentru Visual Studio Code pentru fluxuri de lucru complete de dezvoltare EdgeAI
-- Dobândirea expertizei în platforma Windows AI Foundry și strategiile de optimizare NPU
+- Dobândirea de expertiză în platforma Windows AI Foundry și strategiile de optimizare NPU
 - Implementarea EdgeAI pe mai multe platforme hardware și scenarii de implementare
 - Construirea aplicațiilor EdgeAI pregătite pentru producție cu optimizări specifice platformei
 
@@ -511,7 +593,7 @@ Cursul este organizat în opt module cuprinzătoare:
 #### Secțiunea 1: AI Toolkit pentru Visual Studio Code
 - **Concepte prioritare**: 
   - Mediu complet de dezvoltare Edge AI în cadrul VS Code
-  - Catalog de modele și descoperire pentru implementarea la margine
+  - Catalogul de modele și descoperirea pentru implementarea la margine
   - Testare locală, optimizare și fluxuri de lucru pentru dezvoltarea agenților
   - Monitorizarea performanței și evaluarea pentru scenarii la margine
 
@@ -524,210 +606,211 @@ Cursul este organizat în opt module cuprinzătoare:
 
 #### Secțiunea 3: Implementări specifice platformei
 - **Concepte prioritare**: 
-  - Implementarea NVIDIA Jetson Orin Nano (performanță AI de 67 TOPS)
-  - Aplicații mobile cu .NET MAUI și ONNX Runtime GenAI
-  - Soluții Azure EdgeAI cu arhitectură hibridă cloud-margine
-  - Optimizarea Windows ML cu suport hardware universal
-  - Aplicații Foundry Local cu implementare RAG orientată spre confidențialitate
+  - Implementare NVIDIA Jetson Orin Nano (performanță AI de 67 TOP
+4. Explicați rolul optimizării NPU în aplicațiile moderne de AI la margine.  
+5. Cum utilizează API-ul Phi Silica hardware-ul NPU pentru optimizarea performanței?  
+6. Comparați beneficiile implementării locale versus în cloud pentru aplicațiile sensibile la confidențialitate.  
 
-### Întrebări de autoevaluare
+### Exerciții practice  
 
-1. Cum simplifică AI Toolkit fluxul de lucru de dezvoltare EdgeAI?
-2. Compară strategiile de implementare pe diferite platforme hardware.
-3. Care sunt avantajele Windows AI Foundry pentru dezvoltarea la margine?
-4. Explică rolul optimizării NPU în aplicațiile moderne Edge AI.
-5. Cum utilizează API-ul Phi Silica hardware-ul NPU pentru optimizarea performanței?
-6. Compară beneficiile implementării locale vs. în cloud pentru aplicațiile sensibile la confidențialitate.
+1. **Configurarea AI Toolkit**: Configurați AI Toolkit și optimizați un model (1 oră)  
+2. **Windows AI Foundry**: Creați o aplicație simplă Windows AI utilizând API-ul Phi Silica (1 oră)  
+3. **Implementare pe platforme multiple**: Implementați același model pe două platforme diferite (1 oră)  
+4. **Optimizare NPU**: Testați performanța NPU cu instrumentele Windows AI Foundry (30 minute)  
 
-### Exerciții practice
+## Modulul 8: Microsoft Foundry Local – Kit complet pentru dezvoltatori (modernizat)  
 
-1. **Configurarea AI Toolkit**: Configurarea AI Toolkit și optimizarea unui model (1 oră)
-2. **Windows AI Foundry**: Construirea unei aplicații AI simple pentru Windows folosind API-ul Phi Silica (1 oră)
-3. **Implementare cross-platform**: Implementarea aceluiași model pe două platforme diferite (1 oră)
-4. **Optimizare NPU**: Testarea performanței NPU cu instrumentele Windows AI Foundry (30 minute)
+### Obiective cheie de învățare  
 
-## Modulul 8: Microsoft Foundry Local – Kit complet pentru dezvoltatori (modernizat)
+- Instalați și configurați Foundry Local cu integrarea SDK modernă  
+- Implementați sisteme avansate multi-agent cu modele de coordonare  
+- Creați routere inteligente de modele cu selecție automată bazată pe sarcini  
+- Implementați soluții AI pregătite pentru producție cu monitorizare cuprinzătoare  
+- Integrați cu Azure AI Foundry pentru scenarii de implementare hibridă  
+- Stăpâniți modelele SDK moderne cu FoundryLocalManager și clientul OpenAI  
 
-### Obiective cheie de învățare
+### Zone de studiu  
 
-- Instalarea și configurarea Foundry Local cu integrarea SDK modernă
-- Implementarea sistemelor multi-agent avansate cu modele de coordonare
-- Construirea routerelor inteligente de modele cu selecție automată bazată pe sarcini
-- Implementarea soluțiilor AI pregătite pentru producție cu monitorizare cuprinzătoare
-- Integrarea cu Azure AI Foundry pentru scenarii de implementare hibride
-- Stăpânirea modelelor SDK moderne cu FoundryLocalManager și clientul OpenAI
+#### Secțiunea 1: Instalare și configurare modernă  
+- **Concepte prioritare**:  
+  - Integrarea SDK FoundryLocalManager  
+  - Descoperirea automată a serviciilor și monitorizarea sănătății  
+  - Modele de configurare bazate pe mediu  
+  - Considerații pentru implementarea în producție  
 
-### Zone de studiu
+#### Secțiunea 2: Sisteme avansate multi-agent  
+- **Concepte prioritare**:  
+  - Modelul de coordonare cu agenți specializați  
+  - Specializarea agenților pentru recuperare, raționament și execuție  
+  - Mecanisme de buclă de feedback pentru rafinare  
+  - Monitorizarea performanței și urmărirea statisticilor  
 
-#### Secțiunea 1: Instalare și configurare modernă
-- **Concepte prioritare**: 
-  - Integrarea SDK FoundryLocalManager
-  - Descoperirea automată a serviciilor și monitorizarea sănătății
-  - Modele de configurare bazate pe mediu
-  - Considerații pentru implementarea în producție
+#### Secțiunea 3: Rutare inteligentă a modelelor  
+- **Concepte prioritare**:  
+  - Algoritmi de selecție a modelelor bazate pe cuvinte cheie  
+  - Suport pentru modele multiple (general, raționament, cod, creativ)  
+  - Configurarea variabilelor de mediu pentru flexibilitate  
+  - Verificarea sănătății serviciilor și gestionarea erorilor  
 
-#### Secțiunea 2: Sisteme multi-agent avansate
-- **Concepte prioritare**: 
-  - Modelul de coordonare cu agenți specializați
-  - Specializarea agenților pentru recuperare, raționament și execuție
-  - Mecanisme de feedback pentru rafinare
-  - Monitorizarea performanței și urmărirea statisticilor
+#### Secțiunea 4: Implementare pregătită pentru producție  
+- **Concepte prioritare**:  
+  - Gestionarea cuprinzătoare a erorilor și mecanisme de rezervă  
+  - Monitorizarea cererilor și urmărirea performanței  
+  - Exemple interactive în Jupyter notebook cu benchmark-uri  
+  - Modele de integrare cu aplicații existente  
 
-#### Secțiunea 3: Rutare inteligentă a modelelor
-- **Concepte prioritare**: 
-  - Algoritmi de selecție a modelelor bazate pe cuvinte cheie
-  - Suport pentru modele multiple (general, raționament, cod, creativ)
-  - Configurarea variabilelor de mediu pentru flexibilitate
-  - Verificarea sănătății serviciilor și gestionarea erorilor
+### Întrebări de autoevaluare  
 
-#### Secțiunea 4: Implementare pregătită pentru producție
-- **Concepte prioritare**: 
-  - Gestionarea cuprinzătoare a erorilor și mecanisme de rezervă
-  - Monitorizarea cererilor și urmărirea performanței
-  - Exemple interactive în Jupyter notebook cu benchmark-uri
-  - Modele de integrare cu aplicații existente
+1. Cum diferă abordarea modernă FoundryLocalManager de apelurile REST manuale?  
+2. Explicați modelul de coordonare și cum orchestrează agenții specializați.  
+3. Cum selectează routerul inteligent modelele adecvate pe baza conținutului interogării?  
+4. Care sunt componentele cheie ale unui sistem AI pregătit pentru producție?  
+5. Cum implementați monitorizarea cuprinzătoare a sănătății pentru serviciile Foundry Local?  
+6. Comparați beneficiile abordării modernizate față de modelele tradiționale de implementare.  
 
-### Întrebări de autoevaluare
+### Exerciții practice  
 
-1. Cum diferă abordarea modernă FoundryLocalManager de apelurile REST manuale?
-2. Explică modelul de coordonare și modul în care acesta orchestrează agenții specializați.
-3. Cum selectează routerul inteligent modelele adecvate pe baza conținutului interogării?
-4. Care sunt componentele cheie ale unui sistem de agenți AI pregătit pentru producție?
-5. Cum implementezi monitorizarea cuprinzătoare a sănătății pentru serviciile Foundry Local?
-6. Compară beneficiile abordării modernizate vs. modelele tradiționale de implementare.
+1. **Configurarea SDK modern**: Configurați FoundryLocalManager cu descoperirea automată a serviciilor (30 minute)  
+2. **Sistem multi-agent**: Rulați coordonatorul avansat cu agenți specializați (30 minute)  
+3. **Rutare inteligentă**: Testați routerul de modele cu diferite tipuri de interogări (30 minute)  
+4. **Explorare interactivă**: Utilizați Jupyter notebooks pentru a explora funcționalități avansate (45 minute)  
+5. **Implementare în producție**: Implementați modele de monitorizare și gestionare a erorilor (30 minute)  
+6. **Integrare hibridă**: Configurați scenarii de rezervă Azure AI Foundry (30 minute)  
 
-### Exerciții practice
+## Ghid de alocare a timpului  
 
-1. **Configurarea SDK modern**: Configurarea FoundryLocalManager cu descoperirea automată a serviciilor (30 minute)
-2. **Sistem multi-agent**: Rularea coordonatorului avansat cu agenți specializați (30 minute)
-3. **Rutare inteligentă**: Testarea routerului de modele cu diferite tipuri de interogări (30 minute)
-4. **Explorare interactivă**: Utilizarea Jupyter notebooks pentru explorarea caracteristicilor avansate (45 minute)
-5. **Implementare în producție**: Implementarea modelelor de monitorizare și gestionare a erorilor (30 minute)
-6. **Integrare hibridă**: Configurarea scenariilor de rezervă Azure
-| Exerciții practice | 6 ore | Implementarea practică a tehnicilor cheie |
-| Autoevaluare | 2 ore | Testarea înțelegerii prin întrebări și reflecție |
-| Mini-proiect | 3 ore | Aplicarea cunoștințelor într-o implementare practică mică |
+Pentru a profita la maximum de cele 30 de ore extinse ale cursului (inclusiv atelierul), iată o sugestie de împărțire a timpului:  
 
-### Zone cheie de focus în funcție de timpul disponibil
+| Activitate | Alocare de timp | Descriere |  
+|------------|-----------------|-----------|  
+| Citirea materialelor de bază | 12 ore | Concentrarea pe conceptele esențiale din fiecare modul |  
+| Exerciții practice | 10 ore | Implementarea practică a tehnicilor cheie (inclusiv atelierul) |  
+| Autoevaluare | 3 ore | Testarea înțelegerii prin întrebări și reflecție |  
+| Mini-proiect | 5 ore | Aplicarea cunoștințelor într-o implementare practică mică |  
 
-**Dacă ai doar 10 ore:**
-- Finalizează Modulul 0 (Introducere) și Modulele 1, 2 și 3 (concepte de bază EdgeAI)
-- Realizează cel puțin un exercițiu practic pe modul
-- Concentrează-te pe înțelegerea conceptelor de bază, mai degrabă decât pe detaliile de implementare
+### Zone cheie de concentrare în funcție de constrângerile de timp  
 
-**Dacă poți dedica 20 de ore complete:**
-- Finalizează toate cele opt module (inclusiv Introducerea)
-- Realizează exercițiile practice cheie din fiecare modul
-- Finalizează un mini-proiect din Modulul 7
-- Explorează cel puțin 2-3 resurse suplimentare
+**Dacă aveți doar 10 ore:**  
+- Finalizați Modulul 0 (Introducere) și Modulele 1, 2 și 3 (concepte de bază EdgeAI)  
+- Realizați cel puțin un exercițiu practic pe modul  
+- Concentrați-vă pe înțelegerea conceptelor de bază, mai degrabă decât pe detalii de implementare  
 
-**Dacă ai mai mult de 20 de ore:**
-- Finalizează toate modulele (inclusiv Introducerea) cu exerciții detaliate
-- Construiește mai multe mini-proiecte
-- Explorează tehnici avansate de optimizare în Modulul 4
-- Implementează un proces de implementare în producție din Modulul 5
+**Dacă puteți dedica 20 de ore:**  
+- Finalizați toate cele opt module (inclusiv Introducerea)  
+- Realizați exerciții practice cheie din fiecare modul  
+- Finalizați un mini-proiect din Modulul 7  
+- Explorați cel puțin 2-3 resurse suplimentare  
 
-## Resurse esențiale
+**Dacă aveți mai mult de 20 de ore:**  
+- Finalizați toate modulele (inclusiv Introducerea) cu exerciții detaliate  
+- Construiți mai multe mini-proiecte  
+- Explorați tehnici avansate de optimizare din Modulul 4  
+- Implementați implementarea în producție din Modulul 5  
 
-Aceste resurse atent selectate oferă cea mai mare valoare pentru timpul tău limitat de studiu:
+## Resurse esențiale  
 
-### Documentație obligatorie
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Cel mai eficient instrument de optimizare a modelelor
-- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - Cea mai rapidă metodă de a implementa SLM-uri local
-- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Referință pentru un model optimizat pentru edge
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Setul de instrumente complet de optimizare de la Intel
-- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Mediu integrat de dezvoltare EdgeAI
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Platformă specifică Windows pentru dezvoltare EdgeAI
+Aceste resurse atent selectate oferă cea mai mare valoare pentru timpul dvs. limitat de studiu:  
 
-### Instrumente care economisesc timp
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Acces rapid la modele și implementare
-- [Gradio](https://www.gradio.app/docs/interface) - Dezvoltare rapidă de interfețe UI pentru demonstrații AI
-- [Microsoft Olive](https://github.com/microsoft/Olive) - Optimizare simplificată a modelelor
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inferență eficientă pe CPU
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Cadru pentru comprimarea rețelelor neuronale
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Set de instrumente pentru implementarea modelelor mari de limbaj
+### Documentație obligatorie  
+- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - Cel mai eficient instrument de optimizare a modelelor  
+- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - Cea mai rapidă modalitate de a implementa SLM-uri local  
+- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Referință pentru un model optimizat pentru margine  
+- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Kit complet de optimizare de la Intel  
+- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Mediu de dezvoltare EdgeAI integrat  
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Platformă de dezvoltare EdgeAI specifică Windows  
 
-## Șablon pentru urmărirea progresului
+### Instrumente care economisesc timp  
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Acces rapid la modele și implementare  
+- [Gradio](https://www.gradio.app/docs/interface) - Dezvoltare rapidă de UI pentru demonstrații AI  
+- [Microsoft Olive](https://github.com/microsoft/Olive) - Optimizare simplificată a modelelor  
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inferență eficientă pe CPU  
+- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Cadru de compresie a rețelelor neuronale  
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Kit de implementare pentru modele de limbaj mari  
 
-Folosește acest șablon simplificat pentru a urmări progresul în cadrul cursului de 20 de ore:
+## Șablon de urmărire a progresului  
 
-| Modul | Data finalizării | Ore petrecute | Idei principale |
-|-------|------------------|---------------|-----------------|
-| Modulul 0: Introducere în EdgeAI | | | |
-| Modulul 1: Fundamente EdgeAI | | | |
-| Modulul 2: Fundamente SLM | | | |
-| Modulul 3: Implementarea SLM | | | |
-| Modulul 4: Optimizarea modelelor | | | |
-| Modulul 5: SLMOps | | | |
-| Modulul 6: Agenți AI | | | |
-| Modulul 7: Instrumente de dezvoltare | | | |
-| Modulul 8: Foundry Local Toolkit | | | |
-| Exerciții practice | | | |
-| Mini-proiect | | | |
+Utilizați acest șablon simplificat pentru a urmări progresul dvs. de învățare prin cursul de 20 de ore:  
 
-## Idei pentru mini-proiecte
+| Modul | Data finalizării | Ore petrecute | Concluzii cheie |  
+|-------|------------------|---------------|-----------------|  
+| Modulul 0: Introducere în EdgeAI | | | |  
+| Modulul 1: Fundamentele EdgeAI | | | |  
+| Modulul 2: Fundamentele SLM | | | |  
+| Modulul 3: Implementarea SLM | | | |  
+| Modulul 4: Optimizarea modelelor | | | |  
+| Modulul 5: SLMOps | | | |  
+| Modulul 6: Agenți AI | | | |  
+| Modulul 7: Instrumente de dezvoltare | | | |  
+| Atelier: Învățare practică | | | |  
+| Modulul 8: Kitul Foundry Local | | | |  
+| Exerciții practice | | | |  
+| Mini-proiect | | | |  
 
-Ia în considerare realizarea unuia dintre aceste proiecte pentru a exersa conceptele EdgeAI (fiecare proiect este conceput să dureze 2-4 ore):
+## Idei de mini-proiecte  
 
-### Proiecte pentru începători (2-3 ore fiecare)
-1. **Asistent text pentru Edge**: Creează un instrument simplu de completare a textului offline folosind un model de limbaj mic
-2. **Tablou de bord pentru comparația modelelor**: Construiește o vizualizare de bază a metricilor de performanță pentru diferite SLM-uri
-3. **Experiment de optimizare**: Măsoară impactul diferitelor niveluri de cuantizare asupra aceluiași model de bază
+Luați în considerare finalizarea unuia dintre aceste proiecte pentru a exersa conceptele EdgeAI (fiecare proiect este conceput să dureze 2-4 ore):  
 
-### Proiecte intermediare (3-4 ore fiecare)
-4. **Flux de lucru cu AI Toolkit**: Folosește AI Toolkit din VS Code pentru a optimiza și implementa un model de la început până la sfârșit
-5. **Aplicație Windows AI Foundry**: Creează o aplicație Windows folosind API-ul Phi Silica și optimizarea NPU
-6. **Implementare multiplatformă**: Implementează același model optimizat pe Windows (OpenVINO) și pe mobil (.NET MAUI)
-7. **Agent cu funcții apelabile**: Construiește un agent AI cu capacități de apelare a funcțiilor pentru scenarii edge
+### Proiecte pentru începători (2-3 ore fiecare)  
+1. **Asistent text la margine**: Creați un instrument simplu de completare text offline utilizând un model de limbaj mic  
+2. **Tablou de bord pentru comparația modelelor**: Construiți o vizualizare de bază a metricilor de performanță pentru diferite SLM-uri  
+3. **Experiment de optimizare**: Măsurați impactul diferitelor niveluri de cuantizare asupra aceluiași model de bază  
 
-### Proiecte avansate de integrare (4-5 ore fiecare)
-8. **Pipeline de optimizare OpenVINO**: Implementează o optimizare completă a modelului folosind NNCF și setul de instrumente GenAI
-9. **Pipeline SLMOps**: Implementează un ciclu complet de viață al modelului, de la antrenare la implementare pe edge
-10. **Sistem Edge multi-model**: Implementează mai multe modele specializate care lucrează împreună pe hardware edge
-11. **Sistem de integrare MCP**: Construiește un sistem agentic folosind Model Context Protocol pentru interacțiunea cu instrumentele
+### Proiecte intermediare (3-4 ore fiecare)  
+4. **Flux de lucru AI Toolkit**: Utilizați AI Toolkit din VS Code pentru a optimiza și implementa un model de la început la sfârșit  
+5. **Aplicație Windows AI Foundry**: Creați o aplicație Windows utilizând API-ul Phi Silica și optimizarea NPU  
+6. **Implementare pe platforme multiple**: Implementați același model optimizat pe Windows (OpenVINO) și mobil (.NET MAUI)  
+7. **Agent de apelare funcții**: Construiți un agent AI cu capacități de apelare funcții pentru scenarii la margine  
 
-## Referințe
+### Proiecte avansate de integrare (4-5 ore fiecare)  
+8. **Pipeline de optimizare OpenVINO**: Implementați optimizarea completă a modelelor utilizând NNCF și GenAI toolkit  
+9. **Pipeline SLMOps**: Implementați un ciclu complet de viață al modelului, de la antrenare la implementare la margine  
+10. **Sistem multi-model la margine**: Implementați mai multe modele specializate care lucrează împreună pe hardware la margine  
+11. **Sistem de integrare MCP**: Construiți un sistem agentic utilizând Model Context Protocol pentru interacțiunea cu instrumente  
 
-- Microsoft Learn (Foundry Local)
-  - Prezentare generală: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
-  - Începe: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
-  - Referință CLI: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
-  - Integrare cu SDK-uri de inferență: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-  - Cum să deschizi WebUI: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-  - Compilare modele Hugging Face: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Azure AI Foundry
-  - Prezentare generală: https://learn.microsoft.com/en-us/azure/ai-foundry/
-  - Agenți (prezentare generală): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
-- Instrumente de optimizare și inferență
-  - Microsoft Olive (documentație): https://microsoft.github.io/Olive/
-  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
-  - ONNX Runtime (începe): https://onnxruntime.ai/docs/get-started/with-python.html
-  - Integrare ONNX Runtime Olive: https://onnxruntime.ai/docs/performance/olive.html
-  - OpenVINO (documentație): https://docs.openvino.ai/2025/index.html
-  - Apple MLX (documentație): https://ml-explore.github.io/mlx/build/html/index.html
-- Framework-uri de implementare și modele
-  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
-  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
-  - vLLM (documentație): https://docs.vllm.ai/
-  - Ollama (începe rapid): https://github.com/ollama/ollama#get-started
-- Instrumente pentru dezvoltatori (Windows și VS Code)
-  - AI Toolkit pentru VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
-  - Windows ML (prezentare generală): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+## Referințe  
 
-## Comunitatea de învățare
+- Microsoft Learn (Foundry Local)  
+  - Prezentare generală: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
+  - Începeți: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
+  - Referință CLI: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
+  - Integrare cu SDK-uri de inferență: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
+  - Cum să deschideți WebUI: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
+  - Compilarea modelelor Hugging Face: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
+- Azure AI Foundry  
+  - Prezentare generală: https://learn.microsoft.com/en-us/azure/ai-foundry/  
+  - Agenți (prezentare generală): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
+- Instrumente de optimizare și inferență  
+  - Microsoft Olive (documentație): https://microsoft.github.io/Olive/  
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive  
+  - ONNX Runtime (începeți): https://onnxruntime.ai/docs/get-started/with-python.html  
+  - Integrarea ONNX Runtime Olive: https://onnxruntime.ai/docs/performance/olive.html  
+  - OpenVINO (documentație): https://docs.openvino.ai/2025/index.html  
+  - Apple MLX (documentație): https://ml-explore.github.io/mlx/build/html/index.html  
+- Framework-uri de implementare și modele  
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp  
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index  
+  - vLLM (documentație): https://docs.vllm.ai/  
+  - Ollama (începeți rapid): https://github.com/ollama/ollama#get-started  
+- Instrumente pentru dezvoltatori (Windows și VS Code)  
+  - AI Toolkit pentru VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
+  - Windows ML (prezentare generală): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
 
-Alătură-te discuțiilor și conectează-te cu alți cursanți:
-- Discuții pe GitHub în [repository-ul EdgeAI pentru începători](https://github.com/microsoft/edgeai-for-beginners/discussions)
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
+## Comunitatea de învățare  
 
-## Concluzie
+Alăturați-vă discuțiilor și conectați-vă cu alți cursanți:  
+- Discuții pe GitHub în [repository-ul EdgeAI pentru începători](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
 
-EdgeAI reprezintă frontiera implementării inteligenței artificiale, aducând capabilități puternice direct pe dispozitive, în timp ce abordează preocupări critice legate de confidențialitate, latență și conectivitate. Acest curs de 20 de ore îți oferă cunoștințele esențiale și abilitățile practice pentru a începe să lucrezi imediat cu tehnologiile EdgeAI.
+## Concluzie  
 
-Cursul este conceput să fie concis și axat pe cele mai importante concepte, permițându-ți să dobândești rapid expertiză valoroasă fără un angajament de timp copleșitor. Amintește-ți că practica practică, chiar și cu exemple simple, este cheia consolidării a ceea ce ai învățat.
+EdgeAI reprezintă frontiera implementării inteligenței artificiale, aducând capabilități puternice direct pe dispozitive, în timp ce abordează preocupări critice legate de confidențialitate, latență și conectivitate. Acest curs de 20 de ore vă oferă cunoștințele esențiale și abilitățile practice pentru a începe să lucrați imediat cu tehnologiile EdgeAI.  
 
-Învățare plăcută!
+Cursul este deliberat concis și concentrat pe cele mai importante concepte, permițându-vă să dobândiți rapid expertiză valoroasă fără un angajament de timp copleșitor. Amintiți-vă că practica practică, chiar și cu exemple simple, este cheia consolidării a ceea ce ați învățat.  
+
+Învățare plăcută!  
 
 ---
 
+**Declinare de responsabilitate**:  
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
