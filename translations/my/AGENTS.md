@@ -1,22 +1,46 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:47:09+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-08T11:51:47+00:00",
   "source_file": "AGENTS.md",
   "language_code": "my"
 }
 -->
 # AGENTS.md
 
-## ပရောဂျက်အကျဉ်းချုပ်
+> **EdgeAI အတွက် Developer လမ်းညွှန် - အခြေခံများအတွက်**
+> 
+> ဒီစာရွက်စာတမ်းမှာ ဒီ repository ကို အသုံးပြုနေတဲ့ developer, AI agent, နဲ့ contributor များအတွက် အကျယ်အဝန်းသော အချက်အလက်များကို ပေးထားပါတယ်။ Setup, development workflow, testing, နဲ့ အကောင်းဆုံး လုပ်ဆောင်မှုများကို ဖော်ပြထားပါတယ်။
+> 
+> **နောက်ဆုံးအပ်ဒိတ်**: အောက်တိုဘာ 2025 | **စာရွက်စာတမ်းဗားရှင်း**: 2.0
 
-EdgeAI for Beginners သည် Small Language Models (SLMs) ကို အသုံးပြု၍ Edge AI ဖွံ့ဖြိုးတိုးတက်မှုကို သင်ကြားပေးသည့် ပညာရေးဆိုင်ရာ repository တစ်ခုဖြစ်သည်။ ဒီသင်တန်းတွင် EdgeAI အခြေခံအကြောင်းအရာများ၊ မော်ဒယ်များကို အသုံးချခြင်း၊ အထူးပြုနည်းလမ်းများနှင့် Microsoft Foundry Local နှင့် အမျိုးမျိုးသော AI frameworks များကို အသုံးပြု၍ ထုတ်လုပ်မှုအဆင်သင့် အကောင်အထည်ဖော်မှုများကို လေ့လာနိုင်ပါသည်။
+## အကြောင်းအရာများ
+
+- [Project အကြောင်းအရာ](../..)
+- [Repository ဖွဲ့စည်းမှု](../..)
+- [လိုအပ်ချက်များ](../..)
+- [Setup Commands](../..)
+- [Development Workflow](../..)
+- [Testing လမ်းညွှန်ချက်များ](../..)
+- [Code Style လမ်းညွှန်ချက်များ](../..)
+- [Pull Request လမ်းညွှန်ချက်များ](../..)
+- [Translation System](../..)
+- [Foundry Local Integration](../..)
+- [Build နဲ့ Deployment](../..)
+- [Common Issues နဲ့ Troubleshooting](../..)
+- [အပိုဆောင်းအရင်းအမြစ်များ](../..)
+- [Project-Specific မှတ်ချက်များ](../..)
+- [အကူအညီရယူခြင်း](../..)
+
+## Project အကြောင်းအရာ
+
+EdgeAI for Beginners သည် Small Language Models (SLMs) အသုံးပြု၍ Edge AI ဖွံ့ဖြိုးတိုးတက်မှုကို သင်ကြားပေးသော comprehensive educational repository ဖြစ်သည်။ ဒီ course မှာ EdgeAI အခြေခံများ, model deployment, optimization နည်းလမ်းများ, နဲ့ Microsoft Foundry Local နဲ့ အခြား AI frameworks အသုံးပြု၍ production-ready implementation များကို ဖော်ပြထားသည်။
 
 **အဓိကနည်းပညာများ:**
-- Python 3.8+ (AI/ML နမူနာများအတွက် အဓိက programming language)
-- .NET C# (AI/ML နမူနာများ)
-- JavaScript/Node.js နှင့် Electron (desktop applications အတွက်)
+- Python 3.8+ (AI/ML sample များအတွက် အဓိက programming language)
+- .NET C# (AI/ML sample များ)
+- JavaScript/Node.js နဲ့ Electron (desktop application များအတွက်)
 - Microsoft Foundry Local SDK
 - Microsoft Windows ML 
 - VSCode AI Toolkit
@@ -24,11 +48,11 @@ EdgeAI for Beginners သည် Small Language Models (SLMs) ကို အသု�
 - AI Frameworks: LangChain, Semantic Kernel, Chainlit
 - Model Optimization: Llama.cpp, Microsoft Olive, OpenVINO, Apple MLX
 
-**Repository အမျိုးအစား:** ပညာရေးဆိုင်ရာ အကြောင်းအရာများပါဝင်သော repository (8 modules နှင့် 10 နမူနာ applications)
+**Repository အမျိုးအစား:** 8 modules နဲ့ 10 ခုသော comprehensive sample application များပါဝင်သော သင်ကြားရေးအကြောင်းအရာ repository
 
-**Architecture:** Edge AI deployment patterns ကို လက်တွေ့နမူနာများဖြင့် ပြသထားသော multi-module learning path
+**Architecture:** Multi-module learning path နဲ့ edge AI deployment patterns ကို practical sample များဖြင့် ဖော်ပြထားသည်
 
-## Repository ဖွဲ့စည်းပုံ
+## Repository ဖွဲ့စည်းမှု
 
 ```
 edgeai-for-beginners/
@@ -44,6 +68,35 @@ edgeai-for-beginners/
 └── imgs/                  # Course images and assets
 ```
 
+## လိုအပ်ချက်များ
+
+### လိုအပ်သော Tools
+
+- **Python 3.8+** - AI/ML sample များနဲ့ notebooks အတွက်
+- **Node.js 16+** - Electron sample application အတွက်
+- **Git** - Version control အတွက်
+- **Microsoft Foundry Local** - AI models ကို locally run လုပ်ရန်
+
+### အကြံပြုသော Tools
+
+- **Visual Studio Code** - Python, Jupyter, နဲ့ Pylance extensions ပါဝင်သော
+- **Windows Terminal** - Command-line အတွေ့အကြုံကို ပိုမိုကောင်းမွန်စေရန် (Windows အသုံးပြုသူများအတွက်)
+- **Docker** - Containerized development အတွက် (optional)
+
+### System Requirements
+
+- **RAM**: အနည်းဆုံး 8GB, Multi-model scenarios အတွက် 16GB+ အကြံပြု
+- **Storage**: Models နဲ့ dependencies အတွက် အနည်းဆုံး 10GB+ အခမဲ့နေရာ
+- **OS**: Windows 10/11, macOS 11+, Linux (Ubuntu 20.04+)
+- **Hardware**: AVX2 support ပါဝင်သော CPU; GPU (CUDA, Qualcomm NPU) optional ဖြစ်သော်လည်း အကြံပြု
+
+### Knowledge Requirements
+
+- Python programming အခြေခံကို နားလည်မှု
+- Command-line interface များကို အသုံးပြုနိုင်မှု
+- AI/ML အကြောင်းအရာများကို နားလည်မှု (sample development အတွက်)
+- Git workflow နဲ့ pull request လုပ်ငန်းစဉ်များကို နားလည်မှု
+
 ## Setup Commands
 
 ### Repository Setup
@@ -56,7 +109,7 @@ cd edgeai-for-beginners
 # No build step required - this is primarily an educational content repository
 ```
 
-### Python Sample Setup (Module08 နှင့် Python နမူနာများ)
+### Python Sample Setup (Module08 နဲ့ Python sample များ)
 
 ```bash
 # Create and activate virtual environment
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,44 +145,55 @@ npm run dist
 
 ### Foundry Local Setup
 
-Module08 နမူနာများကို run လုပ်ရန် Foundry Local လိုအပ်ပါသည်။
+Foundry Local သည် sample များကို run လုပ်ရန် လိုအပ်သည်။ အောက်ပါအတိုင်း official repository မှ download နဲ့ install လုပ်ပါ:
 
+**Installation:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Manual**: [releases page](https://github.com/microsoft/Foundry-Local/releases) မှ download လုပ်ပါ
+
+**Quick Start:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
 
-## ဖွံ့ဖြိုးတိုးတက်မှုလုပ်ငန်းစဉ်
+**Note**: Foundry Local သည် hardware (CUDA GPU, Qualcomm NPU, CPU) အတွက် အကောင်းဆုံး model variant ကို အလိုအလျောက် ရွေးချယ်ပေးသည်။
 
-### အကြောင်းအရာ ဖွံ့ဖြိုးတိုးတက်မှု
+## Development Workflow
 
-ဒီ repository တွင် အဓိကအားဖြင့် **Markdown ပညာရေးဆိုင်ရာ အကြောင်းအရာများ** ပါဝင်သည်။ ပြင်ဆင်မှုများလုပ်ဆောင်သောအခါ:
+### Content Development
 
-1. `.md` ဖိုင်များကို သင့် module directories မှာ ပြင်ဆင်ပါ
-2. ရှိပြီးသား formatting ပုံစံများကို လိုက်နာပါ
-3. Code နမူနာများကို မှန်ကန်မှုနှင့် စမ်းသပ်ပြီးကြောင်း သေချာပါ
-4. လိုအပ်ပါက ဘာသာပြန်ထားသော အကြောင်းအရာများကို update လုပ်ပါ (သို့မဟုတ် automation ကို အားထားပါ)
+ဒီ repository မှာ အဓိကအားဖြင့် **Markdown educational content** ပါဝင်သည်။ ပြင်ဆင်မှုများလုပ်ရန်:
 
-### နမူနာ Application ဖွံ့ဖြိုးတိုးတက်မှု
+1. သင့် module directories မှ `.md` ဖိုင်များကို ပြင်ဆင်ပါ
+2. ရှိပြီးသား formatting pattern များကို လိုက်နာပါ
+3. Code ตัวอย่างများကို မှန်ကန်မှုရှိစေရန် စမ်းသပ်ပါ
+4. လိုအပ်ပါက အတူတူသော ဘာသာပြန်အကြောင်းအရာကို update လုပ်ပါ (သို့မဟုတ် automation ကို အားထားပါ)
 
-Python နမူနာများအတွက် (samples 01-07, 09-10):
+### Sample Application Development
+
+Python sample များအတွက် (samples 01-07, 09-10):
 ```bash
 cd Module08
 python samples/01/chat_quickstart.py "Test message"
 ```
 
-Electron နမူနာအတွက် (sample 08):
+Electron sample အတွက် (sample 08):
 ```bash
 cd Module08/samples/08
 npm run dev  # Development with hot reload
 ```
 
-### နမူနာ Applications စမ်းသပ်ခြင်း
+### Testing Sample Applications
 
-Python နမူနာများတွင် automated tests မပါဝင်ပါ၊ သို့သော် run လုပ်ခြင်းဖြင့် စစ်ဆေးနိုင်ပါသည်။
+Python sample များတွင် automated tests မပါဝင်သော်လည်း run လုပ်ခြင်းဖြင့် စမ်းသပ်နိုင်သည်:
 ```bash
 # Test basic chat functionality
 python samples/01/chat_quickstart.py "Hello"
@@ -136,7 +203,7 @@ set MODEL=phi-4-mini
 python samples/02/openai_sdk_client.py
 ```
 
-Electron နမူနာတွင် စမ်းသပ်မှု infrastructure ပါဝင်သည်။
+Electron sample တွင် test infrastructure ပါဝင်သည်:
 ```bash
 cd Module08/samples/08
 npm test           # Run unit tests
@@ -144,21 +211,21 @@ npm run test:e2e   # Run end-to-end tests
 npm run lint       # Check code style
 ```
 
-## စမ်းသပ်မှုညွှန်ကြားချက်များ
+## Testing လမ်းညွှန်ချက်များ
 
-### အကြောင်းအရာ အတည်ပြုခြင်း
+### Content Validation
 
-Repository တွင် automated translation workflows ကို အသုံးပြုထားသည်။ ဘာသာပြန်မှုများအတွက် လက်တွေ့စမ်းသပ်မှုမလိုအပ်ပါ။
+Repository သည် automated translation workflow များကို အသုံးပြုသည်။ ဘာသာပြန်အတွက် manual testing မလိုအပ်ပါ။
 
-**Manual validation အတွက်:**
-1. `.md` ဖိုင်များကို preview လုပ်၍ Markdown rendering ကို စစ်ဆေးပါ
-2. Links များမှန်ကန်သော target များကို ရောက်ရှိကြောင်း သေချာပါ
-3. Documentation တွင်ပါဝင်သော code snippets များကို စမ်းသပ်ပါ
-4. ပုံများမှန်ကန်စွာ load ဖြစ်ကြောင်း စစ်ဆေးပါ
+**Content ပြောင်းလဲမှုများအတွက် manual validation:**
+1. `.md` ဖိုင်များကို preview လုပ်၍ Markdown rendering ကို ပြန်လည်သုံးသပ်ပါ
+2. Link များသည် မှန်ကန်သော target များကို ရောက်ရှိမှုရှိကြောင်း စစ်ဆေးပါ
+3. Documentation တွင် ပါဝင်သော code snippet များကို စမ်းသပ်ပါ
+4. Image များသည် မှန်ကန်စွာ load ဖြစ်ကြောင်း စစ်ဆေးပါ
 
-### နမူနာ Application စမ်းသပ်ခြင်း
+### Sample Application Testing
 
-**Module08/samples/08 (Electron app) တွင် စုံလင်သော စမ်းသပ်မှုများပါဝင်သည်။**
+**Module08/samples/08 (Electron app) တွင် comprehensive testing ပါဝင်သည်:**
 ```bash
 cd Module08/samples/08
 
@@ -178,7 +245,7 @@ npm run test:e2e
 npm test -- --coverage
 ```
 
-**Python နမူနာများကို လက်တွေ့စမ်းသပ်ရမည်။**
+**Python sample များကို manual စမ်းသပ်ရန်လိုအပ်သည်:**
 ```bash
 # Each sample can be run directly
 python samples/01/chat_quickstart.py "Test prompt"
@@ -186,23 +253,23 @@ python samples/04/chainlit_rag.py
 python samples/09/multi_agent_system.py
 ```
 
-## Code Style Guidelines
+## Code Style လမ်းညွှန်ချက်များ
 
-### Markdown အကြောင်းအရာ
+### Markdown Content
 
-- Heading hierarchy ကို တိကျစွာ အသုံးပြုပါ (# for title, ## for main sections, ### for subsections)
-- Code blocks တွင် language specifiers ပါဝင်စေရန်: ```python, ```bash, ```javascript
-- Tables, lists, နှင့် emphasis အတွက် ရှိပြီးသား formatting ကို လိုက်နာပါ
-- လိုင်းများကို ဖတ်ရှုရလွယ်ကူစေရန် (~80-100 characters) ထိန်းသိမ်းပါ
-- Internal references အတွက် relative links ကို အသုံးပြုပါ
+- Heading hierarchy ကို တိကျစွာ အသုံးပြုပါ (# title အတွက်, ## main section အတွက်, ### subsection အတွက်)
+- Language specifier ပါဝင်သော code block များကို အသုံးပြုပါ: ```python, ```bash, ```javascript
+- Table, list, နဲ့ emphasis အတွက် ရှိပြီးသား formatting ကို လိုက်နာပါ
+- Line များကို ဖတ်ရှုရလွယ်ကူစေရန် (~80-100 characters) ထိန်းသိမ်းပါ (strict မဟုတ်ပါ)
+- Internal references အတွက် relative link များကို အသုံးပြုပါ
 
 ### Python Code Style
 
-- PEP 8 conventions ကို လိုက်နာပါ
-- လိုအပ်သောနေရာများတွင် type hints ကို အသုံးပြုပါ
-- Functions နှင့် classes အတွက် docstrings ထည့်ပါ
-- အဓိကအကြောင်းအရာကို ဖော်ပြသော variable names ကို အသုံးပြုပါ
-- Functions များကို အကျဉ်းချုပ်ထားပြီး အဓိကအကြောင်းအရာကို အာရုံစိုက်ပါ
+- PEP 8 convention များကို လိုက်နာပါ
+- လိုအပ်သောနေရာတွင် type hint များကို အသုံးပြုပါ
+- Function နဲ့ class များအတွက် docstring များကို ထည့်ပါ
+- အဓိကကျသော variable name များကို အသုံးပြုပါ
+- Function များကို အဓိကကျသောအရာများအတွက် အတိုချုပ်ထားပါ
 
 ### JavaScript/Node.js Code Style
 
@@ -214,13 +281,48 @@ npm run lint:fix    # Auto-fix style issues
 npm run format      # Format with Prettier
 ```
 
-**အဓိကအချက်များ:**
-- ESLint configuration ကို sample 08 တွင် ပေးထားသည်
-- Prettier ကို code formatting အတွက် အသုံးပြုပါ
+**အဓိက convention များ:**
+- Sample 08 တွင် ESLint configuration ပါဝင်သည်
+- Code formatting အတွက် Prettier ကို အသုံးပြုပါ
 - ES6+ syntax ကို အသုံးပြုပါ
-- Codebase တွင် ရှိပြီးသား patterns များကို လိုက်နာပါ
+- Codebase တွင် ရှိပြီးသား pattern များကို လိုက်နာပါ
 
-## Pull Request Guidelines
+## Pull Request လမ်းညွှန်ချက်များ
+
+### Contribution Workflow
+
+1. **Repository ကို fork လုပ်ပါ** နဲ့ `main` မှ branch အသစ်တစ်ခုကို ဖန်တီးပါ
+2. **သင့်ပြောင်းလဲမှုများကို လုပ်ဆောင်ပါ** code style လမ်းညွှန်ချက်များကို လိုက်နာပါ
+3. **Testing လုပ်ပါ** testing လမ်းညွှန်ချက်များကို အသုံးပြု၍
+4. **Commit message များကို ရှင်းလင်းစွာရေးပါ** conventional commits format ကို လိုက်နာပါ
+5. **သင့် fork သို့ push လုပ်ပါ** နဲ့ pull request တစ်ခုကို ဖန်တီးပါ
+6. **Maintainer များ၏ feedback ကို ဖြေကြားပါ** review အတွင်း
+
+### Branch Naming Convention
+
+- `feature/<module>-<description>` - အခြား feature များအတွက်
+- `fix/<module>-<description>` - Bug fix များအတွက်
+- `docs/<description>` - Documentation ပြုပြင်မှုများအတွက်
+- `refactor/<description>` - Code refactoring အတွက်
+
+### Commit Message Format
+
+[Conventional Commits](https://www.conventionalcommits.org/) ကို လိုက်နာပါ:
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**ဥပမာများ:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### Title Format
 ```
@@ -231,78 +333,129 @@ or
 [Module08/samples/XX] Description for sample changes
 ```
 
+### Code of Conduct
+
+Contributor များသည် [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) ကို လိုက်နာရမည်။ [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) ကို review လုပ်ပါ။
+
 ### Submit မလုပ်မီ
 
-**အကြောင်းအရာ ပြင်ဆင်မှုများအတွက်:**
+**Content ပြောင်းလဲမှုများအတွက်:**
 - Markdown ဖိုင်များကို preview လုပ်ပါ
-- Links နှင့် images မှန်ကန်ကြောင်း စစ်ဆေးပါ
-- စာလုံးပေါင်းနှင့် သဒ္ဒါအမှားများကို စစ်ဆေးပါ
+- Link နဲ့ image များကို စစ်ဆေးပါ
+- Typo နဲ့ grammar error များကို စစ်ဆေးပါ
 
-**နမူနာ code ပြင်ဆင်မှုများအတွက် (Module08/samples/08):**
+**Sample code ပြောင်းလဲမှုများအတွက် (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
 ```
 
-**Python နမူနာများအတွက်:**
-- နမူနာကို run လုပ်၍ အောင်မြင်ကြောင်း စစ်ဆေးပါ
-- Error handling မှန်ကန်ကြောင်း စစ်ဆေးပါ
-- Foundry Local နှင့် အညီဖြစ်ကြောင်း စစ်ဆေးပါ
+**Python sample ပြောင်းလဲမှုများအတွက်:**
+- Sample run လုပ်မှုကို စမ်းသပ်ပါ
+- Error handling အလုပ်လုပ်မှုကို စစ်ဆေးပါ
+- Foundry Local နဲ့ အညီဖြစ်မှုကို စစ်ဆေးပါ
 
 ### Review လုပ်ငန်းစဉ်
 
-- ပညာရေးဆိုင်ရာ အကြောင်းအရာ ပြင်ဆင်မှုများကို မှန်ကန်မှုနှင့် ရှင်းလင်းမှုအတွက် စစ်ဆေးပါ
-- Code နမူနာများကို လုပ်ဆောင်မှုအတွက် စမ်းသပ်ပါ
-- Translation updates များကို GitHub Actions မှ automatic handle လုပ်ပါ
+- Educational content ပြောင်းလဲမှုများကို မှန်ကန်မှုနဲ့ ရှင်းလင်းမှုအတွက် review လုပ်သည်
+- Code sample များကို functionality အတွက် စမ်းသပ်သည်
+- Translation update များကို GitHub Actions မှ အလိုအလျောက် handle လုပ်သည်
 
 ## Translation System
 
-**အရေးကြီး:** ဒီ repository တွင် GitHub Actions မှ automated translation ကို အသုံးပြုထားသည်။
+**အရေးကြီး:** Repository သည် GitHub Actions မှ automated translation ကို အသုံးပြုသည်။
 
-- Translations များကို `/translations/` directory တွင် သိမ်းဆည်းထားသည် (50+ ဘာသာစကား)
-- `co-op-translator.yml` workflow မှ automated ဖြစ်သည်
-- **ဘာသာပြန်ဖိုင်များကို လက်တွေ့ပြင်ဆင်မလုပ်ပါနှင့်** - အလိုအလျောက် overwrite ဖြစ်မည်
-- Root နှင့် module directories တွင် English source files ကိုသာ ပြင်ဆင်ပါ
-- `main` branch သို့ push လုပ်သောအခါ ဘာသာပြန်မှုများကို အလိုအလျောက် ဖန်တီးမည်
+- Translation များသည် `/translations/` directory တွင် ရှိသည် (50+ ဘာသာစကား)
+- `co-op-translator.yml` workflow မှ အလိုအလျောက်လုပ်ဆောင်သည်
+- **Translation ဖိုင်များကို manual ပြင်ဆင်မလုပ်ပါနှင့်** - overwrite ဖြစ်မည်
+- Root နဲ့ module directories တွင် English source ဖိုင်များကိုသာ ပြင်ဆင်ပါ
+- `main` branch သို့ push လုပ်သည်နှင့် translation များကို အလိုအလျောက် ဖန်တီးသည်
 
 ## Foundry Local Integration
 
-Module08 နမူနာများအများစုတွင် Microsoft Foundry Local ကို run လုပ်ရန် လိုအပ်ပါသည်။
+Module08 sample များအများစုသည် Microsoft Foundry Local ကို run လုပ်နေဖို့ လိုအပ်သည်။
 
-### Foundry Local စတင်ခြင်း
+### Installation & Setup
+
+**Foundry Local ကို Install လုပ်ပါ:**
 ```bash
-# Start Foundry Local 
-foundry service start
+# Windows
+winget install Microsoft.FoundryLocal
 
-#foundry service host and port are displayed after running this command or `foundry service status`
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
 
-# Run a specific model
+**Python SDK ကို Install လုပ်ပါ:**
+```bash
+pip install foundry-local-sdk openai
+```
+
+### Foundry Local ကို Start လုပ်ခြင်း
+```bash
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
+
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
 ```
 
-### Foundry Local အတည်ပြုခြင်း
-```bash
-# Check service health
-curl http://127.0.0.1:55769/
+### SDK အသုံးပြုခြင်း (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
 
-# the Port and PID will be displayed when running `foundry service start`
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
-### နမူနာများအတွက် Environment Variables
-
-နမူနာများအများစုတွင် အောက်ပါ environment variables များကို အသုံးပြုသည်။
+### Foundry Local ကို Verify လုပ်ခြင်း
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Service status and endpoint
+foundry service status
+
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
+
+# Note: Port is displayed when running 'foundry service status'
+```
+
+### Sample များအတွက် Environment Variables
+
+Sample များအများစုသည် အောက်ပါ environment variable များကို အသုံးပြုသည်:
+```bash
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,13 +463,15 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
-## Build နှင့် Deployment
+**Note**: `FoundryLocalManager` ကို အသုံးပြုသောအခါ SDK သည် service discovery နဲ့ model loading ကို အလိုအလျောက် handle လုပ်သည်။ Model alias များ (ဥပမာ `phi-3.5-mini`) သည် hardware အတွက် အကောင်းဆုံး variant ကို ရွေးချယ်ပေးသည်။
 
-### အကြောင်းအရာ Deployment
+## Build နဲ့ Deployment
 
-ဒီ repository သည် documentation အဓိကဖြစ်သောကြောင့် အကြောင်းအရာအတွက် build လုပ်စရာမလိုအပ်ပါ။
+### Content Deployment
 
-### နမူနာ Application Build လုပ်ခြင်း
+ဒီ repository သည် documentation ဖြစ်သောကြောင့် content အတွက် build လုပ်စရာမလိုအပ်ပါ။
+
+### Sample Application Building
 
 **Electron Application (Module08/samples/08):**
 ```bash
@@ -335,27 +490,42 @@ npm run dist
 npm run pack
 ```
 
-**Python နမူနာများ:**
-Build လုပ်စရာမလိုအပ်ပါ - Python interpreter ဖြင့် တိုက်ရိုက် run လုပ်နိုင်သည်။
+**Python Samples:**
+Build လုပ်စရာမလိုအပ်ပါ - Python interpreter ဖြင့် sample များကို တိုက်ရိုက် run လုပ်ပါ။
 
-## အများဆုံးတွေ့ရသော ပြဿနာများနှင့် ဖြေရှင်းနည်းများ
+## Common Issues နဲ့ Troubleshooting
 
-### Foundry Local မ run လုပ်ခြင်း
-**ပြဿနာ:** Connection errors ဖြင့် နမူနာများ fail ဖြစ်သည်
+> **Tip**: [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues) တွင် သိရှိထားသော ပြဿနာများနဲ့ ဖြေရှင်းနည်းများကို စစ်ဆေးပါ။
 
-**ဖြေရှင်းနည်း:**
+### Critical Issues (Blocking)
+
+#### Foundry Local မ run လုပ်ခြင်း
+**Issue:** Sample များသည် connection error များဖြင့် fail ဖြစ်သည်
+
+**Solution:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Python Virtual Environment ပြဿနာများ
-**ပြဿနာ:** Module import errors
+### Common Issues (Moderate)
 
-**ဖြေရှင်းနည်း:**
+#### Python Virtual Environment Issues
+**Issue:** Module import error များ
+
+**Solution:**
 ```bash
 # Ensure virtual environment is activated
 # Windows
@@ -367,10 +537,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Electron Build ပြဿနာများ
-**ပြဿနာ:** npm install သို့မဟုတ် build fail ဖြစ်သည်
+#### Electron Build Issues
+**Issue:** npm install သို့မဟုတ် build fail ဖြစ်သည်
 
-**ဖြေရှင်းနည်း:**
+**Solution:**
 ```bash
 cd Module08/samples/08
 # Clean install
@@ -379,15 +549,31 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Translation Workflow Conflicts
-**ပြဿနာ:** Translation PR သင့်ပြင်ဆင်မှုများနှင့် conflict ဖြစ်သည်
+### Workflow Issues (Minor)
 
-**ဖြေရှင်းနည်း:**
-- English source files ကိုသာ ပြင်ဆင်ပါ
+#### Translation Workflow Conflicts
+**Issue:** Translation PR သည် သင့်ပြောင်းလဲမှုများနှင့် conflict ဖြစ်သည်
+
+**Solution:**
+- English source ဖိုင်များကိုသာ ပြင်ဆင်ပါ
 - Automated translation workflow ကို အားထားပါ
-- Conflict ဖြစ်ပါက translation merge ပြီးနောက် `main` ကို သင့် branch ထဲ merge လုပ်ပါ
+- Conflict ဖြစ်ပါက translation များ merge ပြီးနောက် `main` ကို သင့် branch သို့ merge လုပ်ပါ
 
-## အပိုဆောင်း အရင်းအမြစ်များ
+#### Model Download Failures
+**Issue:** Foundry Local သည် model များကို download လုပ်ရန် fail ဖြစ်သည်
+
+**Solution:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
+
+## အပိုဆောင်းအရင်းအမြစ်များ
 
 ### Learning Paths
 - **Beginner Path:** Modules 01-02 (7-9 နာရီ)
@@ -395,60 +581,84 @@ npm install
 - **Advanced Path:** Modules 05-07 (12-15 နာရီ)
 - **Expert Path:** Module 08 (8-10 နာရီ)
 
-### အဓိက Module အကြောင်းအရာ
-- **Module01:** EdgeAI အခြေခံနှင့် အမှန်တကယ် case studies
-- **Module02:** Small Language Model (SLM) များ၏ မျိုးစဉ်နှင့် architecture
-- **Module03:** Local နှင့် cloud deployment strategies
-- **Module04:** Framework များစွာဖြင့် Model optimization
-- **Module05:** SLMOps - production operations
-- **Module06:** AI agents နှင့် function calling
-- **Module07:** Platform-specific implementations
-- **Module08:** Foundry Local toolkit နှင့် 10 comprehensive samples
+### Key Module Content
+- **Module01:** EdgeAI အခြေခံများနဲ့ အမှန်တကယ် case study များ
+- **Module02:** Small Language Model (SLM) များ၏ မျိုးစဉ်နဲ့ architecture များ
+- **Module03:** Local နဲ့ cloud deployment strategy များ
+- **Module04:** Framework များစွာဖြင့် model optimization
+- **Module05:** SLMOps - production operation များ
+- **Module06:** AI agent များနဲ့ function calling
+- **Module07:** Platform-specific implementation များ
+- **Module08:** Foundry Local toolkit နဲ့ 10 ခုသော comprehensive sample များ
 
-### အပြင်ပေါ် Dependencies
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Local AI model runtime
+### External Dependencies
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - OpenAI-compatible API ပါဝင်သော Local AI model runtime
+  - [Documentation](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Optimization framework
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - Model optimization toolkit
-- [OpenVINO](https://docs.openvino.ai/) - Intel's optimization toolkit
+- [OpenVINO](https://docs.openvino.ai/) - Intel ၏ optimization toolkit
 
-## Project-Specific Notes
+## Project-Specific မှတ်ချက်များ
 
-### Module08 နမူနာ Applications
+### Module08 Sample Applications
 
-Repository တွင် 10 comprehensive နမူနာ applications ပါဝင်သည်။
+Repository တွင် 10 ခုသော comprehensive sample application များပါဝင်သည်:
 
 1. **01-REST Chat Quickstart** - OpenAI SDK integration အခြေခံ
-2. **02-OpenAI SDK Integration** - အဆင့်မြင့် SDK features
+2. **02-OpenAI SDK Integration** - Advanced SDK features
 3. **03-Model Discovery & Benchmarking** - Model comparison tools
 4. **04-Chainlit RAG Application** - Retrieval-augmented generation
 5. **05-Multi-Agent Orchestration** - Agent coordination အခြေခံ
 6. **06-Models-as-Tools Router** - Intelligent model routing
 7. **07-Direct API Client** - Low-level API integration
 8. **08-Windows 11 Chat App** - Native Electron desktop application
-9. **09-Advanced Multi-Agent System** - Agent orchestration အဆင့်မြင့်
-10. **10-Foundry Tools Framework** - LangChain/Semantic Kernel integration
+9. **09-Advanced Multi-Agent System** - Complex agent orchestration
+10.
+- ဒေသခံ inference သည် 50-500ms အတွင်း တုံ့ပြန်မှုအချိန်ကို ပေးစွမ်းနိုင်သည်။
+- Quantization နည်းလမ်းများသည် အရွယ်အစားကို 75% လျှော့ချပြီး 85% စွမ်းဆောင်ရည်ကို ထိန်းသိမ်းထားနိုင်သည်။
+- ဒေသခံမော်ဒယ်များနှင့် အချိန်နှင့်တပြေးညီ စကားဝိုင်းစွမ်းရည်များ။
 
-နမူနာတစ်ခုစီသည် Foundry Local ဖြင့် Edge AI ဖွံ့ဖြိုးတိုးတက်မှု၏ အမျိုးမျိုးသော အချက်များကို ပြသထားသည်။
+### လုံခြုံရေးနှင့် ကိုယ်ရေးအချက်အလက်များ
 
-### Performance အချက်များ
+- အားလုံးကို ဒေသတွင်းတွင်သာ အ処理လုပ်ဆောင်သည် - Cloud သို့ အချက်အလက်များ မပို့ပါ။
+- ကိုယ်ရေးအချက်အလက်ကို အထူးဂရုစိုက်ရမည့် အက်ပလီကေးရှင်းများ (ကျန်းမာရေး၊ ငွေကြေး) အတွက် သင့်တော်သည်။
+- ဒေတာပိုင်ဆိုင်မှုလိုအပ်ချက်များကို ဖြည့်ဆည်းပေးနိုင်သည်။
+- Foundry Local သည် ဒေသခံ hardware ပေါ်တွင်သာ အပြည့်အဝ လည်ပတ်သည်။
 
-- SLMs များကို edge deployment အတွက် optimize လုပ်ထားသည် (2-16GB RAM)
-- Local inference မှာ 50-500ms response times ရရှိသည်
-- Quantization နည်းလမ်းများသည် 75% size reduction နှင့် 85% performance retention ရရှိစေသည်
-- Local models ဖြင့် အချိန်နှင့်တပြေးညီ စကားဝိုင်း capabilities ရရှိနိုင်သည်
+## အကူအညီရယူခြင်း
 
-### လုံခြုံရေးနှင့် ကိုယ်ရေးအချက်အလက်
+### Documentation
 
-- အားလုံးကို locally process လုပ်သည် - cloud သို့ data မပို့ပါ
-- Privacy-sensitive applications (healthcare, finance) အတွက် သင့်လျော်သည်
-- Data sovereignty လိုအပ်ချက်များကို ဖြည့်ဆည်းပေးသည်
-- Foundry Local သည် အပြည့်အဝ local hardware ပေါ်တွင် run လုပ်သည်
+- **Main README**: [README.md](README.md) - Repository အကြောင်းအရာနှင့် သင်ယူရန်လမ်းကြောင်းများ
+- **Study Guide**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - သင်ယူရန်အရင်းအမြစ်များနှင့် အချိန်ဇယား
+- **Support**: [SUPPORT.md](SUPPORT.md) - အကူအညီရယူရန်နည်းလမ်းများ
+- **Security**: [SECURITY.md](SECURITY.md) - လုံခြုံရေးပြဿနာများကို အကြောင်းကြားခြင်း
+
+### Community Support
+
+- **GitHub Issues**: [အမှားများကို အကြောင်းကြားရန် သို့မဟုတ် အင်္ဂါရပ်များကို တောင်းဆိုရန်](https://github.com/microsoft/edgeai-for-beginners/issues)
+- **GitHub Discussions**: [မေးခွန်းများမေးရန်နှင့် အကြံဉာဏ်များမျှဝေရန်](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- **Foundry Local Issues**: [Foundry Local နှင့် ဆက်စပ်သော နည်းပညာပြဿနာများ](https://github.com/microsoft/Foundry-Local/issues)
+
+### ဆက်သွယ်ရန်
+
+- **Maintainers**: [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS) တွင် ကြည့်ပါ။
+- **Security Issues**: [SECURITY.md](SECURITY.md) တွင် တာဝန်ရှိသော အကြောင်းကြားမှုကို လိုက်နာပါ။
+- **Microsoft Support**: စီးပွားရေးအတွက် အထူးအကူအညီရယူရန် Microsoft ဖောက်သည်ဝန်ဆောင်မှုကို ဆက်သွယ်ပါ။
+
+### အပိုအရင်းအမြစ်များ
+
+- **Microsoft Learn**: [AI နှင့် Machine Learning သင်ယူရန်လမ်းကြောင်းများ](https://learn.microsoft.com/training/browse/?products=ai-services)
+- **Foundry Local Documentation**: [တရားဝင် Docs](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+- **Community Samples**: GitHub Discussions တွင် [အဖွဲ့အစည်း၏ အထောက်အကူများ](https://github.com/microsoft/edgeai-for-beginners/discussions) ကို ကြည့်ပါ။
 
 ---
 
-**ဒီ repository သည် Edge AI ဖွံ့ဖြိုးတိုးတက်မှုကို သင်ကြားပေးရန် အဓိကထားသော ပညာရေးဆိုင်ရာ repository ဖြစ်သည်။ အဓိကအထောက်အပံ့ပုံစံမှာ ပညာရေးဆိုင်ရာ အကြောင်းအရာများကို တိုးတက်အောင် ပြင်ဆင်ခြင်းနှင့် Edge AI အကြောင်းအရာများကို ပြသထားသော နမူနာ applications များကို ထည့်သွင်းခြင်းဖြစ်သည်။**
+**ဤသည်မှာ Edge AI ဖွံ့ဖြိုးတိုးတက်မှုကို သင်ကြားရန်အတွက် အဓိကထားသော ပညာရေးဆိုင်ရာ Repository ဖြစ်သည်။ အဓိကပံ့ပိုးမှုပုံစံမှာ ပညာရေးဆိုင်ရာအကြောင်းအရာများကို တိုးတက်အောင်လုပ်ခြင်းနှင့် Edge AI အယူအဆများကို ဖော်ပြသည့် နမူနာအက်ပလီကေးရှင်းများကို ထည့်သွင်း/တိုးတက်အောင်လုပ်ခြင်းဖြစ်သည်။**
 
 ---
 
 **အကြောင်းကြားချက်**:  
-ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက် ဘာသာပြန်ခြင်းတွင် အမှားများ သို့မဟုတ် မတိကျမှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းဘာသာစကားဖြင့် ရေးသားထားသော စာရွက်စာတမ်းကို အာဏာတရားရှိသော ရင်းမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူက ဘာသာပြန်ခြင်းကို အကြံပြုပါသည်။ ဤဘာသာပြန်ကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအမှားများ သို့မဟုတ် အနားယူမှားမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။
+ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှုအတွက် ကြိုးစားနေသော်လည်း အလိုအလျောက် ဘာသာပြန်မှုများတွင် အမှားများ သို့မဟုတ် မမှန်ကန်မှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းစာရွက်စာတမ်းကို ၎င်း၏ မူလဘာသာစကားဖြင့် အာဏာတရားရှိသော အရင်းအမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူ့ဘာသာပြန်ပညာရှင်များမှ ပရော်ဖက်ရှင်နယ် ဘာသာပြန်မှုကို အကြံပြုပါသည်။ ဤဘာသာပြန်မှုကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအမှားများ သို့မဟုတ် အနားလွဲမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။
