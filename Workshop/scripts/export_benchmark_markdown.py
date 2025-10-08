@@ -144,7 +144,7 @@ def format_markdown(summary: List[Dict[str, Any]]) -> str:
         )
     hints = (
         "\n**Interpretation**: Lower latency numbers are better; tokens/sec reflects throughput. "
-        "First token latency (if present) approximates perceived responsiveness. Capture baseline before GPU enablement, then re-run for comparison."\
+        "First token latency (if present) approximates perceived responsiveness. Capture baseline before GPU enablement, then re-run for comparison."
     )
     return "\n".join(lines) + "\n" + hints + "\n"
 
