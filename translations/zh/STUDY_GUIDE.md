@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
-  "translation_date": "2025-09-26T07:45:42+00:00",
+  "original_hash": "f86e720f67bb196e2fb6625b2338a1fb",
+  "translation_date": "2025-10-08T16:00:46+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "zh"
 }
 -->
-# 初学者的EdgeAI学习路径与学习计划
+# EdgeAI 初学者指南：学习路径与学习计划
 
 ### 集中学习路径（1周）
 
-| 天数 | 学习内容 | 预计时长 |
+| 天数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第0天 | 模块0：EdgeAI简介 | 1-2小时 |
 | 第1天 | 模块1：EdgeAI基础知识 | 3小时 |
@@ -24,7 +24,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 集中学习路径（2周）
 
-| 天数 | 学习内容 | 预计时长 |
+| 天数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第1-2天 | 模块1：EdgeAI基础知识 | 3小时 |
 | 第3-4天 | 模块2：SLM基础 | 3小时 |
@@ -36,14 +36,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 兼职学习（4周）
 
-| 周数 | 学习内容 | 预计时长 |
+| 周数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第1周 | 模块1-2：基础知识与SLM基础 | 6小时 |
 | 第2周 | 模块3-4：部署与优化 | 6小时 |
 | 第3周 | 模块5-6：SLMOps与AI代理 | 5小时 |
 | 第4周 | 模块7：开发工具与集成 | 3小时 |
 
-| 天数 | 学习内容 | 预计时长 |
+| 天数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第0天 | 模块0：EdgeAI简介 | 1-2小时 |
 | 第1-2天 | 模块1：EdgeAI基础知识 | 3小时 |
@@ -69,7 +69,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 兼职学习（4周）
 
-| 周数 | 学习内容 | 预计时长 |
+| 周数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第1周 | 模块1-2：基础知识与SLM基础 | 6小时 |
 | 第2周 | 模块3-4：部署与优化 | 6小时 |
@@ -78,7 +78,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 简介
 
-欢迎使用《初学者的EdgeAI学习指南》！本指南旨在帮助您高效学习课程内容，最大化学习效果。它提供了结构化的学习路径、建议的学习计划、关键概念总结以及补充资源，以加深您对EdgeAI技术的理解。
+欢迎使用《EdgeAI初学者学习指南》！本指南旨在帮助您有效地学习课程内容并最大化您的学习体验。它提供了结构化的学习路径、建议的学习计划、关键概念总结以及补充资源，以加深您对EdgeAI技术的理解。
 
 这是一个简洁的20小时课程，旨在以高效的方式传授EdgeAI的核心知识，非常适合希望快速掌握这一新兴领域实用技能的忙碌专业人士和学生。
 
@@ -86,28 +86,28 @@ CO_OP_TRANSLATOR_METADATA:
 
 本课程分为八个全面的模块：
 
-0. **EdgeAI简介** - 通过行业应用和学习目标奠定基础和背景
+0. **EdgeAI简介** - 通过行业应用和学习目标奠定基础并设定背景
 1. **EdgeAI基础知识与转型** - 理解核心概念和技术变革
 2. **小型语言模型（SLM）基础** - 探索各种SLM家族及其架构
-3. **小型语言模型部署** - 实施实际部署策略
+3. **小型语言模型部署** - 实现实际部署策略
 4. **模型格式转换与量化** - 使用包括OpenVINO在内的6种框架进行高级优化
 5. **SLMOps - 小型语言模型操作** - 生产生命周期管理与部署
-6. **SLM代理系统** - AI代理、函数调用与模型上下文协议
+6. **SLM代理系统** - AI代理、功能调用与模型上下文协议
 7. **EdgeAI实现示例** - AI工具包、Windows开发与平台特定实现
 8. **Microsoft Foundry本地开发工具包** - 本地优先开发与混合Azure集成（模块08）
 
 ## 如何使用本学习指南
 
-- **循序渐进学习**：按顺序学习模块，以获得最连贯的学习体验
-- **知识检查点**：在每节后使用自我评估问题
+- **循序渐进学习**：按顺序学习模块以获得最连贯的学习体验
+- **知识检查点**：使用每节后的自我评估问题
 - **实践练习**：完成建议的练习以巩固理论概念
-- **补充资源**：深入探索您最感兴趣的主题
+- **补充资源**：探索您最感兴趣主题的额外材料
 
 ## 学习计划建议
 
 ### 集中学习路径（1周）
 
-| 天数 | 学习内容 | 预计时长 |
+| 天数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第0天 | 模块0：EdgeAI简介 | 1-2小时 |
 | 第1-2天 | 模块1：EdgeAI基础知识 | 6小时 |
@@ -117,7 +117,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 兼职学习（3周）
 
-| 周数 | 学习内容 | 预计时长 |
+| 周数 | 学习重点 | 预计时长 |
 |------|-------|------------------|
 | 第1周 | 模块0：简介 + 模块1：EdgeAI基础知识 | 7-9小时 |
 | 第2周 | 模块2：SLM基础 | 7-8小时 |
@@ -127,13 +127,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 关键学习目标
 
-- 理解什么是EdgeAI及其在当今技术领域的重要性
-- 识别被EdgeAI改变的主要行业及其具体应用场景
+- 理解什么是EdgeAI以及它在当今技术领域的重要性
+- 识别被EdgeAI转型的主要行业及其具体应用场景
 - 理解小型语言模型（SLM）在边缘部署中的优势
 - 为整个课程建立清晰的学习期望和成果
 - 认识EdgeAI领域的职业机会和技能要求
 
-### 学习重点
+### 学习重点领域
 
 #### 第1节：EdgeAI范式与定义
 - **重点概念**：
@@ -153,12 +153,12 @@ CO_OP_TRANSLATOR_METADATA:
 - **重点概念**：
   - SLM的特点与性能比较
   - 参数效率与能力权衡
-  - 边缘部署的限制与优化策略
+  - 边缘部署限制与优化策略
 
 #### 第4节：学习框架与职业路径
 - **重点概念**：
   - 课程架构与渐进掌握方法
-  - 技术技能与实践实施目标
+  - 技术技能与实际实施目标
   - 职业发展机会与行业应用
 
 ### 自我评估问题
@@ -173,8 +173,8 @@ CO_OP_TRANSLATOR_METADATA:
 ### 实践练习
 
 1. **行业研究**：选择一个行业应用并研究一个真实的EdgeAI实施案例（30分钟）
-2. **模型探索**：浏览Hugging Face上的小型语言模型，比较其参数数量与能力（30分钟）
-3. **学习计划制定**：查看完整课程结构并制定个人学习计划（15分钟）
+2. **模型探索**：浏览Hugging Face上的小型语言模型并比较其参数数量与能力（30分钟）
+3. **学习计划**：查看完整课程结构并制定个人学习计划（15分钟）
 
 ### 补充材料
 
@@ -191,7 +191,7 @@ CO_OP_TRANSLATOR_METADATA:
 - 分析EdgeAI技术的实际应用案例
 - 为EdgeAI项目设置开发环境
 
-### 学习重点
+### 学习重点领域
 
 #### 第1节：EdgeAI基础知识
 - **重点概念**：
@@ -208,8 +208,8 @@ CO_OP_TRANSLATOR_METADATA:
 #### 第2节：实际案例研究
 - **重点概念**：
   - Microsoft Phi与Mu模型生态系统
-  - 各行业的实际应用
-  - 部署考虑因素
+  - 各行业的实际实施案例
+  - 部署注意事项
 
 #### 第3节：实践实施指南
 - **重点概念**：
@@ -221,11 +221,11 @@ CO_OP_TRANSLATOR_METADATA:
 - **重点概念**：
   - 硬件平台比较
   - 针对特定硬件的优化策略
-  - 部署考虑因素
+  - 部署注意事项
 
 ### 自我评估问题
 
-1. 比较基于云的AI与基于边缘的AI实施。
+1. 比较基于云的AI与基于边缘的AI实施的异同。
 2. 解释三种优化模型用于边缘部署的关键技术。
 3. 在边缘运行AI模型的主要优势是什么？
 4. 描述量化模型的过程及其对性能的影响。
@@ -246,7 +246,7 @@ CO_OP_TRANSLATOR_METADATA:
 - 根据效率、能力和部署需求评估模型
 - 识别不同模型家族的适用场景
 
-### 学习重点
+### 学习重点领域
 
 #### 第1节：Microsoft Phi模型家族
 - **重点概念**：
@@ -288,454 +288,542 @@ CO_OP_TRANSLATOR_METADATA:
 
 1. 比较Phi与Qwen模型家族的架构方法。
 2. 解释BitNET的量化技术与传统量化的不同之处。
-3. Mu模型在Windows集成方面有哪些独特优势？  
-4. 描述Phi-Silica如何利用NPU硬件进行性能优化。  
-5. 对于一个连接性有限的移动应用程序，哪种模型系列最适合？为什么？
+3. Mu模型在Windows集成方面有哪些独特优势？
+4. 描述Phi-Silica如何利用NPU硬件进行性能优化。
+5. 对于一个连接受限的移动应用，哪种模型系列最适合？为什么？
 
 ### 实践练习
 
-1. **模型比较**：对两个不同的SLM模型进行快速基准测试（1小时）  
-2. **简单文本生成**：使用一个小型模型实现基本的文本生成（1小时）  
-3. **快速优化**：应用一种优化技术以提高推理速度（1小时）  
+1. **模型比较**：对两个不同的SLM模型进行快速基准测试（1小时）
+2. **简单文本生成**：使用一个小型模型实现基本的文本生成（1小时）
+3. **快速优化**：应用一种优化技术以提高推理速度（1小时）
 
 ## 模块3：小型语言模型部署
 
-### 关键学习目标
+### 主要学习目标
 
-- 根据部署限制选择合适的模型  
-- 掌握适用于各种部署场景的优化技术  
-- 在本地和云环境中实现SLM部署  
-- 为EdgeAI应用设计生产级配置  
+- 根据部署限制选择合适的模型
+- 掌握针对不同部署场景的优化技术
+- 在本地和云环境中实现SLM部署
+- 为EdgeAI应用设计生产级配置
 
 ### 学习重点领域
 
-#### 第1节：SLM高级学习  
-- **优先概念**：  
-  - 参数分类框架  
-  - 高级优化技术  
-  - 模型获取策略  
+#### 第1节：SLM高级学习
+- **优先概念**：
+  - 参数分类框架
+  - 高级优化技术
+  - 模型获取策略
 
-#### 第2节：本地环境部署  
-- **优先概念**：  
-  - Ollama平台部署  
-  - Microsoft Foundry本地解决方案  
-  - 框架比较分析  
+#### 第2节：本地环境部署
+- **优先概念**：
+  - Ollama平台部署
+  - Microsoft Foundry本地解决方案
+  - 框架比较分析
 
-#### 第3节：容器化云部署  
-- **优先概念**：  
-  - vLLM高性能推理  
-  - 容器编排  
-  - ONNX Runtime实现  
+#### 第3节：容器化云部署
+- **优先概念**：
+  - vLLM高性能推理
+  - 容器编排
+  - ONNX Runtime实现
 
 ### 自我评估问题
 
-1. 在选择本地部署和云部署时应考虑哪些因素？  
-2. 比较Ollama和Microsoft Foundry Local作为部署选项。  
-3. 容器化对SLM部署有哪些好处？  
-4. 对于边缘部署的SLM，关键性能指标有哪些？  
-5. 描述从模型选择到生产实施的完整部署工作流程。  
+1. 在选择本地部署和云部署时应考虑哪些因素？
+2. 比较Ollama和Microsoft Foundry Local作为部署选项。
+3. 解释容器化对SLM部署的好处。
+4. 边缘部署SLM时需要监控哪些关键性能指标？
+5. 描述从模型选择到生产实施的完整部署工作流程。
 
 ### 实践练习
 
-1. **基本本地部署**：使用Ollama部署一个简单的SLM（1小时）  
-2. **性能检查**：对已部署的模型进行快速基准测试（30分钟）  
-3. **简单集成**：创建一个使用已部署模型的最小应用程序（1小时）  
+1. **基础本地部署**：使用Ollama部署一个简单的SLM（1小时）
+2. **性能检查**：对已部署的模型进行快速基准测试（30分钟）
+3. **简单集成**：创建一个使用已部署模型的最小应用程序（1小时）
 
 ## 模块4：模型格式转换与量化
 
-### 关键学习目标
+### 主要学习目标
 
-- 掌握从1位到8位精度的高级量化技术  
-- 理解格式转换策略（GGUF、ONNX）  
-- 在六个框架中实现优化（Llama.cpp、Olive、OpenVINO、MLX、工作流综合）  
-- 在Intel、Apple和跨平台硬件上部署优化模型以实现生产级边缘环境  
+- 掌握从1位到8位精度的高级量化技术
+- 理解格式转换策略（GGUF、ONNX）
+- 在六个框架中实现优化（Llama.cpp、Olive、OpenVINO、MLX、工作流综合）
+- 为Intel、Apple和跨平台硬件的生产边缘环境部署优化模型
 
 ### 学习重点领域
 
-#### 第1节：量化基础  
-- **优先概念**：  
-  - 精度分类框架  
-  - 性能与准确性权衡  
-  - 内存占用优化  
+#### 第1节：量化基础
+- **优先概念**：
+  - 精度分类框架
+  - 性能与准确性权衡
+  - 内存占用优化
 
-#### 第2节：Llama.cpp实现  
-- **优先概念**：  
-  - 跨平台部署  
-  - GGUF格式优化  
-  - 硬件加速技术  
+#### 第2节：Llama.cpp实现
+- **优先概念**：
+  - 跨平台部署
+  - GGUF格式优化
+  - 硬件加速技术
 
-#### 第3节：Microsoft Olive套件  
-- **优先概念**：  
-  - 硬件感知优化  
-  - 企业级部署  
-  - 自动化优化工作流  
+#### 第3节：Microsoft Olive套件
+- **优先概念**：
+  - 硬件感知优化
+  - 企业级部署
+  - 自动化优化工作流
 
-#### 第4节：OpenVINO工具包  
-- **优先概念**：  
-  - Intel硬件优化  
-  - 神经网络压缩框架（NNCF）  
-  - 跨平台推理部署  
-  - OpenVINO GenAI用于LLM部署  
+#### 第4节：OpenVINO工具包
+- **优先概念**：
+  - Intel硬件优化
+  - 神经网络压缩框架（NNCF）
+  - 跨平台推理部署
+  - OpenVINO GenAI用于LLM部署
 
-#### 第5节：Apple MLX框架  
-- **优先概念**：  
-  - Apple Silicon优化  
-  - 统一内存架构  
-  - LoRA微调能力  
+#### 第5节：Apple MLX框架
+- **优先概念**：
+  - Apple Silicon优化
+  - 统一内存架构
+  - LoRA微调能力
 
-#### 第6节：边缘AI开发工作流综合  
-- **优先概念**：  
-  - 统一工作流架构  
-  - 框架选择决策树  
-  - 生产准备验证  
-  - 面向未来的策略  
+#### 第6节：边缘AI开发工作流综合
+- **优先概念**：
+  - 统一工作流架构
+  - 框架选择决策树
+  - 生产准备验证
+  - 面向未来的策略
 
 ### 自我评估问题
 
-1. 比较不同精度级别（1位到8位）的量化策略。  
-2. 解释GGUF格式在边缘部署中的优势。  
-3. Microsoft Olive中的硬件感知优化如何提高部署效率？  
-4. OpenVINO的NNCF在模型压缩方面有哪些关键优势？  
-5. 描述Apple MLX如何利用统一内存架构进行优化。  
-6. 工作流综合如何帮助选择最佳优化框架？  
+1. 比较不同精度级别（1位到8位）的量化策略。
+2. 解释GGUF格式在边缘部署中的优势。
+3. Microsoft Olive中的硬件感知优化如何提高部署效率？
+4. OpenVINO的NNCF在模型压缩方面有哪些关键优势？
+5. 描述Apple MLX如何利用统一内存架构进行优化。
+6. 工作流综合如何帮助选择最佳优化框架？
 
 ### 实践练习
 
-1. **模型量化**：对模型应用不同的量化级别并比较结果（1小时）  
-2. **OpenVINO优化**：使用NNCF压缩一个模型以适配Intel硬件（1小时）  
-3. **框架比较**：在三个不同的优化框架中测试同一个模型（1小时）  
-4. **性能基准测试**：测量优化对推理速度和内存使用的影响（1小时）  
+1. **模型量化**：对模型应用不同的量化级别并比较结果（1小时）
+2. **OpenVINO优化**：使用NNCF压缩模型以适配Intel硬件（1小时）
+3. **框架比较**：在三个不同的优化框架中测试同一模型（1小时）
+4. **性能基准测试**：测量优化对推理速度和内存使用的影响（1小时）
 
 ## 模块5：SLMOps - 小型语言模型操作
 
-### 关键学习目标
+### 主要学习目标
 
-- 理解SLMOps生命周期管理原则  
-- 掌握边缘部署的蒸馏和微调技术  
-- 实现具有监控功能的生产部署策略  
-- 构建企业级SLM操作和维护工作流  
+- 理解SLMOps生命周期管理原则
+- 掌握边缘部署的蒸馏和微调技术
+- 实现带监控的生产部署策略
+- 构建企业级SLM操作和维护工作流
 
 ### 学习重点领域
 
-#### 第1节：SLMOps简介  
-- **优先概念**：  
-  - SLMOps在AI操作中的范式转变  
-  - 成本效率和隐私优先架构  
-  - 战略业务影响和竞争优势  
+#### 第1节：SLMOps简介
+- **优先概念**：
+  - SLMOps在AI操作中的范式转变
+  - 成本效率和隐私优先架构
+  - 战略业务影响和竞争优势
 
-#### 第2节：模型蒸馏  
-- **优先概念**：  
-  - 知识转移技术  
-  - 两阶段蒸馏过程实现  
-  - Azure ML蒸馏工作流  
+#### 第2节：模型蒸馏
+- **优先概念**：
+  - 知识转移技术
+  - 两阶段蒸馏过程实施
+  - Azure ML蒸馏工作流
 
-#### 第3节：微调策略  
-- **优先概念**：  
-  - 参数高效微调（PEFT）  
-  - LoRA和QLoRA高级方法  
-  - 多适配器训练和超参数优化  
+#### 第3节：微调策略
+- **优先概念**：
+  - 参数高效微调（PEFT）
+  - LoRA和QLoRA高级方法
+  - 多适配器训练和超参数优化
 
-#### 第4节：生产部署  
-- **优先概念**：  
-  - 生产级模型转换和量化  
-  - Foundry Local部署配置  
-  - 性能基准测试和质量验证  
+#### 第4节：生产部署
+- **优先概念**：
+  - 生产模型的转换和量化
+  - Foundry Local部署配置
+  - 性能基准测试和质量验证
 
 ### 自我评估问题
 
-1. SLMOps与传统MLOps有何不同？  
-2. 解释模型蒸馏对边缘部署的好处。  
-3. 在资源受限环境中微调SLM时需要考虑哪些关键因素？  
-4. 描述一个完整的边缘AI应用生产部署管道。  
+1. SLMOps与传统MLOps有何不同？
+2. 解释模型蒸馏对边缘部署的好处。
+3. 在资源受限环境中微调SLM时需要考虑哪些关键因素？
+4. 描述一个完整的边缘AI应用生产部署管道。
 
 ### 实践练习
 
-1. **基本蒸馏**：从一个较大的教师模型创建一个较小的模型（1小时）  
-2. **微调实验**：针对特定领域微调一个模型（1小时）  
-3. **部署管道**：设置一个基本的CI/CD管道用于模型部署（1小时）  
+1. **基础蒸馏**：从一个较大的教师模型创建一个较小的模型（1小时）
+2. **微调实验**：针对特定领域微调模型（1小时）
+3. **部署管道**：设置一个基础的CI/CD管道用于模型部署（1小时）
 
-## 模块6：SLM Agentic Systems - AI代理与函数调用
+## 模块6：SLM智能系统 - AI代理与函数调用
 
-### 关键学习目标
+### 主要学习目标
 
-- 使用小型语言模型为边缘环境构建智能AI代理  
-- 实现具有系统化工作流的函数调用功能  
-- 掌握模型上下文协议（MCP）集成以实现标准化工具交互  
-- 创建复杂的代理系统，减少人工干预  
+- 使用小型语言模型构建适用于边缘环境的智能AI代理
+- 实现具有系统化工作流的函数调用功能
+- 掌握模型上下文协议（MCP）集成以实现标准化工具交互
+- 创建复杂的智能系统，减少人工干预
 
 ### 学习重点领域
 
-#### 第1节：AI代理与SLM基础  
-- **优先概念**：  
-  - 代理分类框架（反射型、基于模型、基于目标、学习型代理）  
-  - SLM与LLM权衡分析  
-  - 边缘特定代理设计模式  
-  - 代理资源优化  
+#### 第1节：AI代理与SLM基础
+- **优先概念**：
+  - 代理分类框架（反射型、基于模型、目标导向型、学习型代理）
+  - SLM与LLM的权衡分析
+  - 边缘特定代理设计模式
+  - 代理的资源优化
 
-#### 第2节：小型语言模型中的函数调用  
-- **优先概念**：  
-  - 系统化工作流实现（意图检测、JSON输出、外部执行）  
-  - 平台特定实现（Phi-4-mini、选定的Qwen模型、Microsoft Foundry Local）  
-  - 高级示例（多代理协作、动态工具选择）  
-  - 生产考虑（速率限制、审计日志、安全措施）  
+#### 第2节：小型语言模型中的函数调用
+- **优先概念**：
+  - 系统化工作流实施（意图检测、JSON输出、外部执行）
+  - 平台特定实现（Phi-4-mini、选定的Qwen模型、Microsoft Foundry Local）
+  - 高级示例（多代理协作、动态工具选择）
+  - 生产考虑（速率限制、审计日志、安全措施）
 
-#### 第3节：模型上下文协议（MCP）集成  
-- **优先概念**：  
-  - 协议架构和分层系统设计  
-  - 多后端支持（Ollama用于开发，vLLM用于生产）  
-  - 连接协议（STDIO和SSE模式）  
-  - 实际应用（网页自动化、数据处理、API集成）  
+#### 第3节：模型上下文协议（MCP）集成
+- **优先概念**：
+  - 协议架构和分层系统设计
+  - 多后端支持（Ollama用于开发，vLLM用于生产）
+  - 连接协议（STDIO和SSE模式）
+  - 实际应用（网页自动化、数据处理、API集成）
 
 ### 自我评估问题
 
-1. 边缘AI代理的关键架构考虑是什么？  
-2. 函数调用如何增强代理功能？  
-3. 解释模型上下文协议在代理通信中的作用。  
+1. 边缘AI代理的关键架构考虑是什么？
+2. 函数调用如何增强代理的能力？
+3. 解释模型上下文协议在代理通信中的作用。
 
 ### 实践练习
 
-1. **简单代理**：构建一个带有函数调用的基本AI代理（1小时）  
-2. **MCP集成**：在代理应用中实现MCP（30分钟）  
+1. **简单代理**：构建一个带有函数调用的基础AI代理（1小时）
+2. **MCP集成**：在代理应用中实现MCP（30分钟）
 
-## 模块7：EdgeAI实现示例
+## 工作坊：实践学习路径
 
-### 关键学习目标
+### 主要学习目标
 
-- 掌握Visual Studio Code的AI工具包以实现全面的EdgeAI开发工作流  
-- 熟悉Windows AI Foundry平台和NPU优化策略  
-- 在多个硬件平台和部署场景中实现EdgeAI  
-- 构建具有平台特定优化的生产级EdgeAI应用  
+- 使用Foundry Local SDK和最佳实践构建生产级AI应用
+- 实现全面的错误处理和用户反馈模式
+- 创建带质量评估和性能监控的RAG管道
+- 开发具有协调模式的多代理系统
+- 掌握智能模型路由以进行基于任务的模型选择
+- 部署隐私保护架构的本地优先AI解决方案
 
 ### 学习重点领域
 
-#### 第1节：Visual Studio Code的AI工具包  
-- **优先概念**：  
-  - 在VS Code中实现全面的边缘AI开发环境  
-  - 用于边缘部署的模型目录和发现  
-  - 本地测试、优化和代理开发工作流  
-  - 针对边缘场景的性能监控和评估  
+#### 第01节：从Foundry Local开始
+- **优先概念**：
+  - FoundryLocalManager SDK集成和自动服务发现
+  - 基础和流式聊天实现
+  - 错误处理模式和用户反馈
+  - 基于环境的配置
 
-#### 第2节：Windows EdgeAI开发指南  
-- **优先概念**：  
-  - Windows AI Foundry平台全面概述  
-  - Phi Silica API用于高效NPU推理  
-  - 计算机视觉API用于图像处理和OCR  
-  - Foundry Local CLI用于本地开发和测试  
+#### 第02节：使用RAG构建AI解决方案
+- **优先概念**：
+  - 使用sentence-transformers的内存向量嵌入
+  - RAG管道实施（检索→生成）
+  - 使用RAGAS指标进行质量评估
+  - 可选依赖项的导入安全性
 
-#### 第3节：平台特定实现  
-- **优先概念**：  
-  - NVIDIA Jetson Orin Nano部署（67 TOPS AI性能）  
-  - 使用.NET MAUI和ONNX Runtime GenAI的移动应用程序  
-  - 具有云-边缘混合架构的Azure EdgeAI解决方案  
-  - Windows ML优化与通用硬件支持  
-  - 隐私聚焦的RAG实现的Foundry Local应用  
+#### 第03节：开源模型
+- **优先概念**：
+  - 多模型基准测试策略
+  - 延迟和吞吐量测量
+  - 优雅降级和错误恢复
+  - 不同模型系列的性能比较
+
+#### 第04节：前沿模型
+- **优先概念**：
+  - SLM与LLM比较方法
+  - 类型提示和全面的输出格式
+  - 每模型错误处理
+  - 用于分析的结构化结果
+
+#### 第05节：AI驱动代理
+- **优先概念**：
+  - 使用协调模式进行多代理编排
+  - 代理内存管理和状态跟踪
+  - 管道错误处理和阶段日志记录
+  - 性能监控和统计
+
+#### 第06节：模型作为工具
+- **优先概念**：
+  - 意图检测和模式匹配
+  - 基于关键词的模型路由算法
+  - 多步骤管道（计划→执行→优化）
+  - 全面的函数文档
 
 ### 自我评估问题
 
-1. AI工具包如何简化EdgeAI开发工作流？  
-2. 比较不同硬件平台的部署策略。  
-3. Windows AI Foundry在边缘开发中有哪些优势？  
-4. NPU优化在现代边缘AI应用中起什么作用？  
+1. FoundryLocalManager如何简化服务管理，与手动REST调用相比有哪些优势？
+2. 解释可选依赖项（如sentence-transformers）的导入保护的重要性。
+3. 在多模型基准测试中确保优雅降级的策略是什么？
+4. 协调模式如何编排多个专业代理？
+5. 描述一个智能模型路由器的组成部分。
+6. 生产级错误处理的关键要素是什么？
+
+### 实践练习
+
+1. **聊天应用**：实现带错误处理的流式聊天（45分钟）
+2. **RAG管道**：构建带质量评估的最小RAG（1小时）
+3. **模型基准测试**：比较3个以上模型的性能（1小时）
+4. **多代理系统**：创建带有2个专业代理的协调器（1.5小时）
+5. **智能路由器**：构建基于任务的模型选择（1小时）
+6. **生产部署**：添加监控和全面的错误处理（45分钟）
+
+### 时间分配
+
+**集中学习（1周）**：
+- 第1天：第01-02节（聊天+RAG）- 3小时
+- 第2天：第03-04节（基准测试+比较）- 3小时
+- 第3天：第05-06节（代理+路由）- 3小时
+- 第4天：实践练习和验证 - 2小时
+
+**兼职学习（2周）**：
+- 第1周：第01-03节（共6小时）
+- 第2周：第04-06节+练习（共5小时）
+
+## 模块7：EdgeAI实施示例
+
+### 主要学习目标
+
+- 掌握Visual Studio Code的AI工具包以实现全面的EdgeAI开发工作流
+- 熟悉Windows AI Foundry平台和NPU优化策略
+- 在多个硬件平台和部署场景中实现EdgeAI
+- 构建带有平台特定优化的生产级EdgeAI应用
+
+### 学习重点领域
+
+#### 第1节：Visual Studio Code的AI工具包
+- **优先概念**：
+  - 在VS Code中实现全面的Edge AI开发环境
+  - 用于边缘部署的模型目录和发现
+  - 本地测试、优化和代理开发工作流
+  - 针对边缘场景的性能监控和评估
+
+#### 第2节：Windows EdgeAI开发指南
+- **优先概念**：
+  - Windows AI Foundry平台全面概述
+  - Phi Silica API用于高效NPU推理
+  - 计算机视觉API用于图像处理和OCR
+  - Foundry Local CLI用于本地开发和测试
+
+#### 第3节：平台特定实现
+- **优先概念**：
+  - NVIDIA Jetson Orin Nano部署（67 TOPS AI性能）
+  - 使用.NET MAUI和ONNX Runtime GenAI的移动应用
+  - Azure EdgeAI解决方案的云-边缘混合架构
+  - Windows ML优化与通用硬件支持
+  - 隐私保护RAG实现的Foundry Local应用
+
+### 自我评估问题
+
+1. AI工具包如何简化EdgeAI开发工作流？
+2. 比较不同硬件平台的部署策略。
+3. Windows AI Foundry在边缘开发中的优势是什么？
+4. 解释NPU优化在现代边缘AI应用中的作用  
 5. Phi Silica API如何利用NPU硬件进行性能优化？  
 6. 比较本地部署与云部署在隐私敏感应用中的优势。  
 
-### 实践练习
+### 实践练习  
 
-1. **AI工具包设置**：配置AI工具包并优化一个模型（1小时）  
+1. **AI工具包设置**：配置AI工具包并优化模型（1小时）  
 2. **Windows AI Foundry**：使用Phi Silica API构建一个简单的Windows AI应用程序（1小时）  
-3. **跨平台部署**：在两个不同的平台上部署同一个模型（1小时）  
+3. **跨平台部署**：在两个不同平台上部署同一模型（1小时）  
 4. **NPU优化**：使用Windows AI Foundry工具测试NPU性能（30分钟）  
 
-## 模块8：Microsoft Foundry Local – 完整开发者工具包（现代化）
+## 模块8：Microsoft Foundry Local – 完整开发者工具包（现代化）  
 
-### 关键学习目标
+### 关键学习目标  
 
-- 使用现代SDK集成安装和配置Foundry Local  
-- 实现具有协调器模式的高级多代理系统  
-- 构建具有自动任务选择的智能模型路由器  
-- 部署具有全面监控的生产级AI解决方案  
-- 与Azure AI Foundry集成以实现混合部署场景  
+- 安装并配置Foundry Local，集成现代SDK  
+- 实现高级多代理系统，采用协调器模式  
+- 构建智能模型路由器，自动基于任务选择模型  
+- 部署生产级AI解决方案，提供全面监控  
+- 与Azure AI Foundry集成，实现混合部署场景  
 - 掌握FoundryLocalManager和OpenAI客户端的现代SDK模式  
 
-### 学习重点领域
+### 学习重点领域  
 
-#### 第1节：现代安装和配置  
+#### 第1节：现代化安装与配置  
 - **优先概念**：  
   - FoundryLocalManager SDK集成  
-  - 自动服务发现和健康监控  
+  - 自动服务发现与健康监控  
   - 基于环境的配置模式  
-  - 生产部署考虑  
+  - 生产部署注意事项  
 
 #### 第2节：高级多代理系统  
 - **优先概念**：  
-  - 具有专家代理的协调器模式  
-  - 检索、推理和执行代理专业化  
-  - 用于优化的反馈循环机制  
-  - 性能监控和统计跟踪  
+  - 使用协调器模式管理专业代理  
+  - 检索、推理和执行代理的专业化  
+  - 通过反馈循环机制进行优化  
+  - 性能监控与统计跟踪  
 
 #### 第3节：智能模型路由  
 - **优先概念**：  
   - 基于关键词的模型选择算法  
-  - 多模型支持（通用、推理、代码、创意）  
+  - 支持多模型（通用、推理、代码、创意）  
   - 环境变量配置的灵活性  
-  - 服务健康检查和错误处理  
+  - 服务健康检查与错误处理  
 
 #### 第4节：生产级实现  
 - **优先概念**：  
-  - 全面的错误处理和回退机制  
-  - 请求监控和性能跟踪  
-  - 带基准测试的交互式Jupyter笔记本示例  
+  - 全面的错误处理与备用机制  
+  - 请求监控与性能跟踪  
+  - 使用交互式Jupyter笔记本进行基准测试  
   - 与现有应用的集成模式  
 
-### 自我评估问题
+### 自我评估问题  
 
 1. 现代FoundryLocalManager方法与手动REST调用有何不同？  
-2. 解释协调器模式如何协调专家代理。  
+2. 解释协调器模式及其如何管理专业代理。  
 3. 智能路由器如何根据查询内容选择合适的模型？  
 4. 生产级AI代理系统的关键组成部分是什么？  
-5. 如何为Foundry Local服务实现全面的健康监控？  
+5. 如何为Foundry Local服务实施全面的健康监控？  
 6. 比较现代化方法与传统实现模式的优势。  
 
-### 实践练习
+### 实践练习  
 
-1. **现代SDK设置**：使用自动服务发现配置FoundryLocalManager（30分钟）  
-2. **多代理系统**：运行具有专家代理的高级协调器（30分钟）  
-3. **智能路由**：使用不同的查询类型测试模型路由器（30分钟）  
+1. **现代SDK设置**：配置FoundryLocalManager，启用自动服务发现（30分钟）  
+2. **多代理系统**：运行高级协调器与专业代理（30分钟）  
+3. **智能路由**：使用不同查询类型测试模型路由器（30分钟）  
 4. **交互式探索**：使用Jupyter笔记本探索高级功能（45分钟）  
-5. **生产部署**：实现监控和错误处理模式（30分钟）  
-6. **混合集成**：配置Azure AI Foundry回退场景（30分钟）  
+5. **生产部署**：实施监控与错误处理模式（30分钟）  
+6. **混合集成**：配置Azure AI Foundry备用场景（30分钟）  
 
-## 时间分配指南
+## 时间分配指南  
 
-为了帮助您充分利用20小时的课程时间，以下是建议的时间分配：
+为了帮助您充分利用30小时的课程时间（包括工作坊），以下是建议的时间分配：  
 
 | 活动 | 时间分配 | 描述 |  
 |------|----------|------|  
-| 阅读核心材料 | 9小时 | 专注于每个模块中的关键概念 |  
-| 实践练习 | 6小时 | 实际应用关键技术 |
-| 自我评估 | 2小时 | 通过问题和反思测试你的理解 |
-| 小型项目 | 3小时 | 将知识应用于小型实际实现 |
+| 阅读核心材料 | 12小时 | 专注于每个模块的核心概念 |  
+| 实践练习 | 10小时 | 实践关键技术（包括工作坊） |  
+| 自我评估 | 3小时 | 通过问题和反思测试理解 |  
+| 小型项目 | 5小时 | 将知识应用于小型实践实现 |  
 
-### 根据时间限制的重点领域
+### 根据时间限制的重点领域  
 
-**如果你只有10小时：**
-- 完成模块0（简介）以及模块1、2和3（核心EdgeAI概念）
-- 每个模块至少完成一个实践练习
-- 专注于理解核心概念，而不是实现细节
+**如果您只有10小时：**  
+- 完成模块0（介绍）以及模块1、2和3（核心边缘AI概念）  
+- 每个模块至少完成一个实践练习  
+- 专注于理解核心概念，而非实现细节  
 
-**如果你可以投入完整的20小时：**
-- 完成所有八个模块（包括简介）
-- 每个模块执行关键实践练习
-- 完成模块7中的一个小型项目
-- 探索至少2-3个补充资源
+**如果您可以投入完整的20小时：**  
+- 完成所有八个模块（包括介绍）  
+- 执行每个模块的关键实践练习  
+- 完成模块7中的一个小型项目  
+- 探索至少2-3个补充资源  
 
-**如果你有超过20小时：**
-- 详细完成所有模块（包括简介）和练习
-- 构建多个小型项目
-- 探索模块4中的高级优化技术
-- 实现模块5中的生产部署
+**如果您有超过20小时：**  
+- 完成所有模块（包括介绍），并详细完成练习  
+- 构建多个小型项目  
+- 探索模块4中的高级优化技术  
+- 实现模块5中的生产部署  
 
-## 必备资源
+## 必备资源  
 
-以下精选资源为你的有限学习时间提供最大价值：
+以下精选资源为您的有限学习时间提供最大价值：  
 
-### 必读文档
-- [ONNX Runtime 入门](https://onnxruntime.ai/docs/get-started/with-python.html) - 最高效的模型优化工具
-- [Ollama 快速入门](https://github.com/ollama/ollama#get-started) - 本地部署SLM的最快方式
-- [Microsoft Phi 模型卡](https://huggingface.co/microsoft/phi-2) - 边缘优化模型的参考
-- [OpenVINO 文档](https://docs.openvino.ai/2025/index.html) - Intel全面的优化工具包
-- [VS Code的AI工具包](https://code.visualstudio.com/docs/intelligentapps/overview) - 集成的EdgeAI开发环境
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows专属的EdgeAI开发平台
+### 必读文档  
+- [ONNX Runtime入门](https://onnxruntime.ai/docs/get-started/with-python.html) - 最高效的模型优化工具  
+- [Ollama快速入门](https://github.com/ollama/ollama#get-started) - 本地部署SLM的最快方式  
+- [Microsoft Phi模型卡](https://huggingface.co/microsoft/phi-2) - 边缘优化模型的参考  
+- [OpenVINO文档](https://docs.openvino.ai/2025/index.html) - Intel的全面优化工具包  
+- [VS Code的AI工具包](https://code.visualstudio.com/docs/intelligentapps/overview) - 集成的边缘AI开发环境  
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows专属边缘AI开发平台  
 
-### 节省时间的工具
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - 快速访问和部署模型
-- [Gradio](https://www.gradio.app/docs/interface) - 快速开发AI演示的UI
-- [Microsoft Olive](https://github.com/microsoft/Olive) - 简化模型优化
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - 高效的CPU推理
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - 神经网络压缩框架
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - 大型语言模型部署工具包
+### 节省时间的工具  
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - 快速模型访问与部署  
+- [Gradio](https://www.gradio.app/docs/interface) - 快速开发AI演示的UI  
+- [Microsoft Olive](https://github.com/microsoft/Olive) - 简化模型优化  
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - 高效的CPU推理  
+- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - 神经网络压缩框架  
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - 大型语言模型部署工具包  
 
-## 进度跟踪模板
+## 进度跟踪模板  
 
-使用这个简化模板来跟踪你在20小时课程中的学习进度：
+使用此简化模板跟踪您在20小时课程中的学习进度：  
 
-| 模块 | 完成日期 | 花费时间 | 关键收获 |
-|------|----------|----------|----------|
-| 模块0：EdgeAI简介 | | | |
-| 模块1：EdgeAI基础 | | | |
-| 模块2：SLM基础 | | | |
-| 模块3：SLM部署 | | | |
-| 模块4：模型优化 | | | |
-| 模块5：SLMOps | | | |
-| 模块6：AI代理 | | | |
-| 模块7：开发工具 | | | |
-| 模块8：Foundry本地工具包 | | | |
-| 实践练习 | | | |
-| 小型项目 | | | |
+| 模块 | 完成日期 | 花费时间 | 关键收获 |  
+|------|----------|----------|----------|  
+| 模块0：边缘AI介绍 | | | |  
+| 模块1：边缘AI基础 | | | |  
+| 模块2：SLM基础 | | | |  
+| 模块3：SLM部署 | | | |  
+| 模块4：模型优化 | | | |  
+| 模块5：SLMOps | | | |  
+| 模块6：AI代理 | | | |  
+| 模块7：开发工具 | | | |  
+| 工作坊：实践学习 | | | |  
+| 模块8：Foundry Local工具包 | | | |  
+| 实践练习 | | | |  
+| 小型项目 | | | |  
 
-## 小型项目创意
+## 小型项目创意  
 
-考虑完成以下项目之一来练习EdgeAI概念（每个设计为2-4小时）：
+考虑完成以下项目之一以实践边缘AI概念（每个设计为2-4小时）：  
 
-### 初级项目（每个2-3小时）
-1. **边缘文本助手**：使用小型语言模型创建一个简单的离线文本补全工具
-2. **模型比较仪表盘**：构建一个基本的可视化工具，用于展示不同SLM的性能指标
-3. **优化实验**：测量不同量化级别对同一基础模型的影响
+### 初级项目（每个2-3小时）  
+1. **边缘文本助手**：使用小型语言模型创建一个简单的离线文本补全工具  
+2. **模型比较仪表盘**：构建一个基本的性能指标可视化工具，用于比较不同SLM  
+3. **优化实验**：测量不同量化级别对同一基础模型的影响  
 
-### 中级项目（每个3-4小时）
-4. **AI工具包工作流**：使用VS Code AI工具包从头到尾优化并部署一个模型
-5. **Windows AI Foundry应用**：使用Phi Silica API和NPU优化创建一个Windows应用
-6. **跨平台部署**：在Windows（OpenVINO）和移动设备（.NET MAUI）上部署同一个优化模型
-7. **函数调用代理**：构建一个具有函数调用能力的AI代理，用于边缘场景
+### 中级项目（每个3-4小时）  
+4. **AI工具包工作流**：使用VS Code AI工具包从头到尾优化并部署一个模型  
+5. **Windows AI Foundry应用程序**：使用Phi Silica API和NPU优化创建一个Windows应用程序  
+6. **跨平台部署**：在Windows（OpenVINO）和移动设备（.NET MAUI）上部署同一优化模型  
+7. **函数调用代理**：构建一个具有函数调用能力的AI代理，用于边缘场景  
 
-### 高级集成项目（每个4-5小时）
-8. **OpenVINO优化管道**：使用NNCF和GenAI工具包实现完整的模型优化
-9. **SLMOps管道**：实现从训练到边缘部署的完整模型生命周期
-10. **多模型边缘系统**：在边缘硬件上部署多个协作的专业模型
-11. **MCP集成系统**：使用模型上下文协议构建一个工具交互的代理系统
+### 高级集成项目（每个4-5小时）  
+8. **OpenVINO优化管道**：使用NNCF和GenAI工具包实现完整的模型优化  
+9. **SLMOps管道**：实现从训练到边缘部署的完整模型生命周期  
+10. **多模型边缘系统**：在边缘硬件上部署多个协作的专业模型  
+11. **MCP集成系统**：使用模型上下文协议构建一个代理系统，用于工具交互  
 
-## 参考资料
+## 参考资料  
 
-- Microsoft Learn（Foundry本地）
-  - 概述：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
-  - 入门：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
-  - CLI参考：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
-  - 与推理SDK集成：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-  - Open WebUI使用指南：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-  - 编译Hugging Face模型：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Azure AI Foundry
-  - 概述：https://learn.microsoft.com/en-us/azure/ai-foundry/
-  - 代理（概述）：https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
-- 优化和推理工具
-  - Microsoft Olive（文档）：https://microsoft.github.io/Olive/
-  - Microsoft Olive（GitHub）：https://github.com/microsoft/Olive
-  - ONNX Runtime（入门）：https://onnxruntime.ai/docs/get-started/with-python.html
-  - ONNX Runtime Olive集成：https://onnxruntime.ai/docs/performance/olive.html
-  - OpenVINO（文档）：https://docs.openvino.ai/2025/index.html
-  - Apple MLX（文档）：https://ml-explore.github.io/mlx/build/html/index.html
-- 部署框架和模型
-  - Llama.cpp：https://github.com/ggml-ai/llama.cpp
-  - Hugging Face Transformers：https://huggingface.co/docs/transformers/index
-  - vLLM（文档）：https://docs.vllm.ai/
-  - Ollama（快速入门）：https://github.com/ollama/ollama#get-started
-- 开发工具（Windows和VS Code）
-  - AI工具包（VS Code）：https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
-  - Windows ML（概述）：https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+- Microsoft Learn（Foundry Local）  
+  - 概述：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
+  - 入门：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
+  - CLI参考：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
+  - 与推理SDK集成：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
+  - 打开WebUI教程：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
+  - 编译Hugging Face模型：https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
+- Azure AI Foundry  
+  - 概述：https://learn.microsoft.com/en-us/azure/ai-foundry/  
+  - 代理（概述）：https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
+- 优化与推理工具  
+  - Microsoft Olive（文档）：https://microsoft.github.io/Olive/  
+  - Microsoft Olive（GitHub）：https://github.com/microsoft/Olive  
+  - ONNX Runtime（入门）：https://onnxruntime.ai/docs/get-started/with-python.html  
+  - ONNX Runtime Olive集成：https://onnxruntime.ai/docs/performance/olive.html  
+  - OpenVINO（文档）：https://docs.openvino.ai/2025/index.html  
+  - Apple MLX（文档）：https://ml-explore.github.io/mlx/build/html/index.html  
+- 部署框架与模型  
+  - Llama.cpp：https://github.com/ggml-ai/llama.cpp  
+  - Hugging Face Transformers：https://huggingface.co/docs/transformers/index  
+  - vLLM（文档）：https://docs.vllm.ai/  
+  - Ollama（快速入门）：https://github.com/ollama/ollama#get-started  
+- 开发工具（Windows与VS Code）  
+  - VS Code的AI工具包：https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
+  - Windows ML（概述）：https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
 
-## 学习社区
+## 学习社区  
 
-加入讨论并与其他学习者交流：
-- [EdgeAI for Beginners仓库](https://github.com/microsoft/edgeai-for-beginners/discussions)上的GitHub讨论
-- [Microsoft技术社区](https://techcommunity.microsoft.com/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
+加入讨论，与其他学习者交流：  
+- GitHub上的[EdgeAI for Beginners仓库讨论区](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- [Microsoft技术社区](https://techcommunity.microsoft.com/)  
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
 
-## 结论
+## 结论  
 
-EdgeAI代表了人工智能实现的前沿，将强大的能力直接带到设备，同时解决隐私、延迟和连接性等关键问题。本课程通过20小时的学习，为你提供了必要的知识和实践技能，让你能够立即开始使用EdgeAI技术。
+边缘AI代表了人工智能实现的前沿，将强大的能力直接带到设备上，同时解决隐私、延迟和连接性等关键问题。本课程通过20小时的学习，为您提供必要的知识和实践技能，让您能够立即开始使用边缘AI技术。  
 
-课程内容精简，专注于最重要的概念，让你能够快速获得宝贵的专业知识，而不会感到时间压力。请记住，即使是简单的实践练习，也能有效巩固你的学习成果。
+课程内容简洁明了，专注于最重要的概念，让您能够快速获得宝贵的专业知识，而不会占用过多时间。请记住，即使是简单的实践示例，也能有效巩固您的学习成果。  
 
-祝学习愉快！
+祝学习愉快！  
 
 ---
 
+**免责声明**：  
+本文档使用AI翻译服务 [Co-op Translator](https://github.com/Azure/co-op-translator) 进行翻译。尽管我们努力确保翻译的准确性，但请注意，自动翻译可能包含错误或不准确之处。原始语言的文档应被视为权威来源。对于关键信息，建议使用专业人工翻译。我们对因使用此翻译而产生的任何误解或误读不承担责任。
