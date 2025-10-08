@@ -460,17 +460,9 @@ An automated linter prevents reintroduction of deprecated CLI patterns inside fe
 
 Script: `Workshop/scripts/lint_markdown_cli.py`
 
-Disallowed (inside code fences):
-```
-foundry model chat <alias>
-foundry model list --running
-foundry model list --cached
-foundry model stats
-foundry model benchmark
-foundry model list --available
-```
+Deprecated patterns are blocked inside code fences.
 
-Replacements:
+Recommended replacements:
 | Deprecated | Replacement |
 |------------|-------------|
 | `foundry model chat <a> "..."` | `foundry model run <a> --prompt "..."` |

@@ -14,14 +14,8 @@ This directory contains automation and support scripts used to maintain quality 
 `lint_markdown_cli.py` scans all non-translation `.md` files for disallowed Foundry Local CLI patterns **inside fenced code blocks** (``` ... ```). Informational prose can still mention deprecated commands for historical context.
 
 ### Deprecated Patterns (Blocked Inside Code Fences)
-```
-foundry model chat <alias>
-foundry model list --running
-foundry model list --cached
-foundry model stats
-foundry model benchmark
-foundry model list --available
-```
+
+The linter blocks deprecated CLI patterns. Use modern alternatives instead.
 
 ### Required Replacements
 | Deprecated | Use Instead |
