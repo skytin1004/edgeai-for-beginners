@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
-  "translation_date": "2025-09-26T07:21:47+00:00",
+  "original_hash": "f86e720f67bb196e2fb6625b2338a1fb",
+  "translation_date": "2025-10-08T18:52:41+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "fr"
 }
@@ -54,7 +54,7 @@ CO_OP_TRANSLATOR_METADATA:
 | Jour 11-12 | Module 6 : Systèmes agentiques SLM | 2 heures |
 | Jour 13-14 | Module 7 : Échantillons d'implémentation EdgeAI | 2 heures |
 
-| Module | Date de fin | Temps passé | Points clés |
+| Module | Date de fin | Heures passées | Points clés |
 |--------|----------------|-------------|--------------|
 | Module 0 : Introduction à EdgeAI | | | |
 | Module 1 : Fondamentaux d'EdgeAI | | | |
@@ -91,17 +91,17 @@ Ce cours est organisé en huit modules complets :
 2. **Fondations des Small Language Models (SLM)** - Exploration des différentes familles de SLM et de leurs architectures
 3. **Déploiement des Small Language Models** - Mise en œuvre de stratégies de déploiement pratiques
 4. **Conversion de format de modèle et quantification** - Optimisation avancée avec 6 frameworks, y compris OpenVINO
-5. **SLMOps - Opérations des Small Language Models** - Gestion du cycle de vie en production et déploiement
+5. **SLMOps - Opérations des Small Language Models** - Gestion du cycle de vie de production et déploiement
 6. **Systèmes agentiques SLM** - Agents IA, appels de fonctions et protocole de contexte de modèle
 7. **Échantillons d'implémentation EdgeAI** - Toolkit IA, développement sous Windows et implémentations spécifiques à la plateforme
-8. **Microsoft Foundry Local – Toolkit complet pour développeurs** - Développement local avec intégration hybride Azure (Module 08)
+8. **Microsoft Foundry Local – Toolkit complet pour développeurs** - Développement local-first avec intégration hybride Azure (Module 08)
 
 ## Comment utiliser ce guide d'étude
 
 - **Apprentissage progressif** : Suivez les modules dans l'ordre pour une expérience d'apprentissage cohérente
 - **Points de contrôle des connaissances** : Utilisez les questions d'auto-évaluation après chaque section
-- **Pratique concrète** : Réalisez les exercices suggérés pour renforcer les concepts théoriques
-- **Ressources supplémentaires** : Explorez des matériaux complémentaires pour les sujets qui vous intéressent le plus
+- **Pratique pratique** : Complétez les exercices suggérés pour renforcer les concepts théoriques
+- **Ressources supplémentaires** : Explorez des matériaux supplémentaires pour les sujets qui vous intéressent le plus
 
 ## Recommandations de calendrier d'étude
 
@@ -133,13 +133,13 @@ Ce cours est organisé en huit modules complets :
 - Établir des attentes claires en matière d'apprentissage et de résultats pour le cours complet
 - Reconnaître les opportunités de carrière et les compétences requises dans le domaine d'Edge AI
 
-### Domaines d'étude prioritaires
+### Domaines d'étude
 
 #### Section 1 : Paradigme et définition d'Edge AI
 - **Concepts prioritaires** : 
   - Edge AI vs traitement traditionnel dans le cloud
   - Convergence entre matériel, optimisation de modèle et exigences commerciales
-  - Déploiement d'IA en temps réel, respectueux de la vie privée et rentable
+  - Déploiement d'IA en temps réel, respect de la vie privée et efficacité économique
 
 #### Section 2 : Applications industrielles
 - **Concepts prioritaires** : 
@@ -147,12 +147,12 @@ Ce cours est organisé en huit modules complets :
   - Santé : Imagerie diagnostique et surveillance des patients
   - Systèmes autonomes : Véhicules autonomes et transport
   - Villes intelligentes : Gestion du trafic et sécurité publique
-  - Technologie grand public : Smartphones, wearables et maisons connectées
+  - Technologie grand public : Smartphones, wearables et maisons intelligentes
 
 #### Section 3 : Fondations des Small Language Models
 - **Concepts prioritaires** : 
   - Caractéristiques des SLM et comparaisons de performances
-  - Efficacité des paramètres vs compromis de capacités
+  - Efficacité des paramètres vs compromis de capacité
   - Contraintes de déploiement en périphérie et stratégies d'optimisation
 
 #### Section 4 : Cadre d'apprentissage et parcours de carrière
@@ -166,7 +166,7 @@ Ce cours est organisé en huit modules complets :
 1. Quels sont les trois principales tendances technologiques qui ont permis Edge AI ?
 2. Comparez les avantages et les défis de Edge AI par rapport à l'IA basée sur le cloud.
 3. Nommez trois industries où Edge AI apporte une valeur commerciale critique et expliquez pourquoi.
-4. Comment les Small Language Models rendent-ils Edge AI pratique pour le déploiement réel ?
+4. Comment les Small Language Models rendent-ils Edge AI pratique pour le déploiement dans le monde réel ?
 5. Quelles sont les compétences techniques clés que vous développerez tout au long de ce cours ?
 6. Décrivez l'approche d'apprentissage en quatre phases utilisée dans ce cours.
 
@@ -176,7 +176,7 @@ Ce cours est organisé en huit modules complets :
 2. **Exploration de modèles** : Parcourez les Small Language Models disponibles sur Hugging Face et comparez leurs nombres de paramètres et capacités (30 minutes)
 3. **Planification d'apprentissage** : Passez en revue la structure complète du cours et créez votre propre calendrier d'étude (15 minutes)
 
-### Matériaux complémentaires
+### Matériaux supplémentaires
 
 - [Aperçu du marché Edge AI - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
 - [Aperçu des Small Language Models - Hugging Face](https://huggingface.co/blog/small-language-models)
@@ -187,11 +187,11 @@ Ce cours est organisé en huit modules complets :
 ### Objectifs d'apprentissage clés
 
 - Comprendre les différences entre l'IA basée sur le cloud et l'IA basée sur la périphérie
-- Maîtriser les techniques d'optimisation essentielles pour des environnements à ressources limitées
-- Analyser des applications réelles des technologies EdgeAI
-- Configurer un environnement de développement pour des projets EdgeAI
+- Maîtriser les techniques d'optimisation de base pour les environnements à ressources limitées
+- Analyser les applications réelles des technologies EdgeAI
+- Configurer un environnement de développement pour les projets EdgeAI
 
-### Domaines d'étude prioritaires
+### Domaines d'étude
 
 #### Section 1 : Fondamentaux d'EdgeAI
 - **Concepts prioritaires** : 
@@ -200,15 +200,15 @@ Ce cours est organisé en huit modules complets :
   - Options d'accélération matérielle (NPUs, GPUs, CPUs)
   - Avantages en matière de confidentialité et de sécurité
 
-- **Matériaux complémentaires** :
+- **Matériaux supplémentaires** :
   - [Documentation TensorFlow Lite](https://www.tensorflow.org/lite)
   - [GitHub ONNX Runtime](https://github.com/microsoft/onnxruntime)
   - [Documentation Edge Impulse](https://docs.edgeimpulse.com)
 
-#### Section 2 : Études de cas réelles
+#### Section 2 : Études de cas réels
 - **Concepts prioritaires** : 
   - Écosystème de modèles Microsoft Phi & Mu
-  - Implémentations pratiques dans diverses industries
+  - Implémentations pratiques dans les industries
   - Considérations de déploiement
 
 #### Section 3 : Guide d'implémentation pratique
@@ -220,7 +220,7 @@ Ce cours est organisé en huit modules complets :
 #### Section 4 : Matériel de déploiement en périphérie
 - **Concepts prioritaires** : 
   - Comparaisons des plateformes matérielles
-  - Stratégies d'optimisation pour des matériels spécifiques
+  - Stratégies d'optimisation pour un matériel spécifique
   - Considérations de déploiement
 
 ### Questions d'auto-évaluation
@@ -243,10 +243,10 @@ Ce cours est organisé en huit modules complets :
 
 - Comprendre les principes architecturaux des différentes familles de SLM
 - Comparer les capacités des modèles selon différentes échelles de paramètres
-- Évaluer les modèles en fonction de leur efficacité, de leurs capacités et des exigences de déploiement
-- Identifier les cas d'utilisation appropriés pour différentes familles de modèles
+- Évaluer les modèles en fonction de leur efficacité, capacité et exigences de déploiement
+- Reconnaître les cas d'utilisation appropriés pour différentes familles de modèles
 
-### Domaines d'étude prioritaires
+### Domaines d'étude
 
 #### Section 1 : Famille de modèles Microsoft Phi
 - **Concepts prioritaires** : 
@@ -258,13 +258,13 @@ Ce cours est organisé en huit modules complets :
 - **Concepts prioritaires** : 
   - Contributions open source
   - Options de déploiement évolutives
-  - Architecture avancée de raisonnement
+  - Architecture de raisonnement avancée
 
 #### Section 3 : Famille Gemma
 - **Concepts prioritaires** : 
   - Innovation axée sur la recherche
   - Capacités multimodales
-  - Optimisation pour les mobiles
+  - Optimisation pour mobile
 
 #### Section 4 : Famille BitNET
 - **Concepts prioritaires** : 
@@ -282,460 +282,548 @@ Ce cours est organisé en huit modules complets :
 - **Concepts prioritaires** : 
   - Architecture optimisée pour NPU
   - Indicateurs de performance
-  - Intégration pour les développeurs
+  - Intégration pour développeurs
 
 ### Questions d'auto-évaluation
 
 1. Comparez les approches architecturales des familles de modèles Phi et Qwen.
 2. Expliquez comment la technologie de quantification de BitNET diffère de la quantification traditionnelle.
-3. Quels sont les avantages uniques du modèle Mu pour l'intégration avec Windows ?  
-4. Décrivez comment Phi-Silica exploite le matériel NPU pour optimiser les performances.  
-5. Pour une application mobile avec une connectivité limitée, quelle famille de modèles serait la plus appropriée et pourquoi ?  
+3. Quels sont les avantages uniques du modèle Mu pour l'intégration avec Windows ?
+4. Décrivez comment Phi-Silica exploite le matériel NPU pour optimiser les performances.
+5. Pour une application mobile avec une connectivité limitée, quelle famille de modèles serait la plus appropriée et pourquoi ?
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Comparaison de modèles** : Benchmark rapide de deux modèles SLM différents (1 heure)  
-2. **Génération de texte simple** : Implémentation basique de génération de texte avec un petit modèle (1 heure)  
-3. **Optimisation rapide** : Appliquer une technique d'optimisation pour améliorer la vitesse d'inférence (1 heure)  
+1. **Comparaison de modèles** : Benchmark rapide de deux modèles SLM différents (1 heure)
+2. **Génération de texte simple** : Implémentation basique de génération de texte avec un petit modèle (1 heure)
+3. **Optimisation rapide** : Appliquer une technique d'optimisation pour améliorer la vitesse d'inférence (1 heure)
 
-## Module 3 : Déploiement de petits modèles de langage (SLM)  
+## Module 3 : Déploiement de petits modèles de langage (SLM)
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Sélectionner les modèles appropriés en fonction des contraintes de déploiement  
-- Maîtriser les techniques d'optimisation pour divers scénarios de déploiement  
-- Implémenter des SLM dans des environnements locaux et cloud  
-- Concevoir des configurations prêtes pour la production dans des applications EdgeAI  
+- Sélectionner des modèles adaptés en fonction des contraintes de déploiement
+- Maîtriser les techniques d'optimisation pour divers scénarios de déploiement
+- Implémenter des SLM dans des environnements locaux et cloud
+- Concevoir des configurations prêtes pour la production dans des applications EdgeAI
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
-#### Section 1 : Apprentissage avancé des SLM  
-- **Concepts prioritaires** :  
-  - Cadre de classification des paramètres  
-  - Techniques d'optimisation avancées  
-  - Stratégies d'acquisition de modèles  
+#### Section 1 : Apprentissage avancé des SLM
+- **Concepts prioritaires** : 
+  - Cadre de classification des paramètres
+  - Techniques d'optimisation avancées
+  - Stratégies d'acquisition de modèles
 
-#### Section 2 : Déploiement en environnement local  
-- **Concepts prioritaires** :  
-  - Déploiement sur la plateforme Ollama  
-  - Solutions locales Microsoft Foundry  
-  - Analyse comparative des frameworks  
+#### Section 2 : Déploiement en environnement local
+- **Concepts prioritaires** : 
+  - Déploiement sur la plateforme Ollama
+  - Solutions locales Microsoft Foundry
+  - Analyse comparative des frameworks
 
-#### Section 3 : Déploiement cloud conteneurisé  
-- **Concepts prioritaires** :  
-  - Inférence haute performance avec vLLM  
-  - Orchestration de conteneurs  
-  - Implémentation d'ONNX Runtime  
+#### Section 3 : Déploiement cloud conteneurisé
+- **Concepts prioritaires** : 
+  - Inférence haute performance avec vLLM
+  - Orchestration de conteneurs
+  - Implémentation ONNX Runtime
 
-### Questions d'auto-évaluation  
+### Questions d'auto-évaluation
 
-1. Quels facteurs doivent être pris en compte lors du choix entre un déploiement local et un déploiement cloud ?  
-2. Comparez Ollama et Microsoft Foundry Local en tant qu'options de déploiement.  
-3. Expliquez les avantages de la conteneurisation pour le déploiement des SLM.  
-4. Quels sont les principaux indicateurs de performance à surveiller pour un SLM déployé en périphérie ?  
-5. Décrivez un workflow complet de déploiement, de la sélection du modèle à la mise en production.  
+1. Quels facteurs doivent être pris en compte lors du choix entre un déploiement local et un déploiement cloud ?
+2. Comparez Ollama et Microsoft Foundry Local en tant qu'options de déploiement.
+3. Expliquez les avantages de la conteneurisation pour le déploiement des SLM.
+4. Quels sont les principaux indicateurs de performance à surveiller pour un SLM déployé en périphérie ?
+5. Décrivez un workflow complet de déploiement, de la sélection du modèle à la mise en production.
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Déploiement local basique** : Déployer un SLM simple en utilisant Ollama (1 heure)  
-2. **Vérification des performances** : Effectuer un benchmark rapide sur votre modèle déployé (30 minutes)  
-3. **Intégration simple** : Créer une application minimale utilisant votre modèle déployé (1 heure)  
+1. **Déploiement local basique** : Déployer un SLM simple en utilisant Ollama (1 heure)
+2. **Vérification des performances** : Effectuer un benchmark rapide sur le modèle déployé (30 minutes)
+3. **Intégration simple** : Créer une application minimale utilisant le modèle déployé (1 heure)
 
-## Module 4 : Conversion de format et quantification des modèles  
+## Module 4 : Conversion de format et quantification des modèles
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Maîtriser les techniques avancées de quantification, de 1 bit à 8 bits de précision  
-- Comprendre les stratégies de conversion de format (GGUF, ONNX)  
-- Implémenter des optimisations sur six frameworks (Llama.cpp, Olive, OpenVINO, MLX, synthèse de workflow)  
-- Déployer des modèles optimisés pour des environnements de production en périphérie sur du matériel Intel, Apple et multiplateforme  
+- Maîtriser les techniques avancées de quantification, de 1 bit à 8 bits de précision
+- Comprendre les stratégies de conversion de format (GGUF, ONNX)
+- Implémenter des optimisations sur six frameworks (Llama.cpp, Olive, OpenVINO, MLX, synthèse de workflow)
+- Déployer des modèles optimisés pour des environnements de production en périphérie sur des matériels Intel, Apple et multiplateformes
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
-#### Section 1 : Fondements de la quantification  
-- **Concepts prioritaires** :  
-  - Cadre de classification des précisions  
-  - Compromis entre performance et précision  
-  - Optimisation de l'empreinte mémoire  
+#### Section 1 : Fondements de la quantification
+- **Concepts prioritaires** : 
+  - Cadre de classification de précision
+  - Compromis entre performance et précision
+  - Optimisation de l'empreinte mémoire
 
-#### Section 2 : Implémentation avec Llama.cpp  
-- **Concepts prioritaires** :  
-  - Déploiement multiplateforme  
-  - Optimisation du format GGUF  
-  - Techniques d'accélération matérielle  
+#### Section 2 : Implémentation avec Llama.cpp
+- **Concepts prioritaires** : 
+  - Déploiement multiplateforme
+  - Optimisation du format GGUF
+  - Techniques d'accélération matérielle
 
-#### Section 3 : Suite Microsoft Olive  
-- **Concepts prioritaires** :  
-  - Optimisation adaptée au matériel  
-  - Déploiement de niveau entreprise  
-  - Workflows d'optimisation automatisés  
+#### Section 3 : Suite Microsoft Olive
+- **Concepts prioritaires** : 
+  - Optimisation adaptée au matériel
+  - Déploiement de niveau entreprise
+  - Workflows d'optimisation automatisés
 
-#### Section 4 : Toolkit OpenVINO  
-- **Concepts prioritaires** :  
-  - Optimisation pour matériel Intel  
-  - Framework de compression de réseaux neuronaux (NNCF)  
-  - Déploiement d'inférence multiplateforme  
-  - OpenVINO GenAI pour le déploiement de LLM  
+#### Section 4 : Toolkit OpenVINO
+- **Concepts prioritaires** : 
+  - Optimisation pour matériel Intel
+  - Framework de compression de réseaux neuronaux (NNCF)
+  - Déploiement d'inférence multiplateforme
+  - OpenVINO GenAI pour le déploiement de LLM
 
-#### Section 5 : Framework Apple MLX  
-- **Concepts prioritaires** :  
-  - Optimisation pour Apple Silicon  
-  - Architecture mémoire unifiée  
-  - Capacités de fine-tuning LoRA  
+#### Section 5 : Framework Apple MLX
+- **Concepts prioritaires** : 
+  - Optimisation pour Apple Silicon
+  - Architecture mémoire unifiée
+  - Capacités de fine-tuning LoRA
 
-#### Section 6 : Synthèse de workflow pour le développement Edge AI  
-- **Concepts prioritaires** :  
-  - Architecture de workflow unifiée  
-  - Arbres de décision pour la sélection des frameworks  
-  - Validation de la préparation à la production  
-  - Stratégies pour pérenniser les solutions  
+#### Section 6 : Synthèse de workflow pour le développement Edge AI
+- **Concepts prioritaires** : 
+  - Architecture de workflow unifiée
+  - Arbres de décision pour la sélection de frameworks
+  - Validation de la préparation à la production
+  - Stratégies de pérennisation
 
-### Questions d'auto-évaluation  
+### Questions d'auto-évaluation
 
-1. Comparez les stratégies de quantification pour différents niveaux de précision (1 bit à 8 bits).  
-2. Expliquez les avantages du format GGUF pour le déploiement en périphérie.  
-3. Comment l'optimisation adaptée au matériel dans Microsoft Olive améliore-t-elle l'efficacité du déploiement ?  
-4. Quels sont les principaux avantages du NNCF d'OpenVINO pour la compression des modèles ?  
-5. Décrivez comment Apple MLX exploite l'architecture mémoire unifiée pour l'optimisation.  
-6. Comment la synthèse de workflow aide-t-elle à sélectionner les frameworks d'optimisation optimaux ?  
+1. Comparez les stratégies de quantification selon différents niveaux de précision (1 bit à 8 bits).
+2. Expliquez les avantages du format GGUF pour le déploiement en périphérie.
+3. Comment l'optimisation adaptée au matériel dans Microsoft Olive améliore-t-elle l'efficacité du déploiement ?
+4. Quels sont les principaux avantages du NNCF d'OpenVINO pour la compression des modèles ?
+5. Décrivez comment Apple MLX exploite l'architecture mémoire unifiée pour l'optimisation.
+6. Comment la synthèse de workflow aide-t-elle à sélectionner les frameworks d'optimisation optimaux ?
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Quantification de modèle** : Appliquer différents niveaux de quantification à un modèle et comparer les résultats (1 heure)  
-2. **Optimisation avec OpenVINO** : Utiliser NNCF pour compresser un modèle pour du matériel Intel (1 heure)  
-3. **Comparaison de frameworks** : Tester le même modèle sur trois frameworks d'optimisation différents (1 heure)  
-4. **Benchmarking des performances** : Mesurer l'impact de l'optimisation sur la vitesse d'inférence et l'utilisation mémoire (1 heure)  
+1. **Quantification de modèle** : Appliquer différents niveaux de quantification à un modèle et comparer les résultats (1 heure)
+2. **Optimisation OpenVINO** : Utiliser NNCF pour compresser un modèle destiné au matériel Intel (1 heure)
+3. **Comparaison de frameworks** : Tester le même modèle sur trois frameworks d'optimisation différents (1 heure)
+4. **Benchmarking de performances** : Mesurer l'impact de l'optimisation sur la vitesse d'inférence et l'utilisation de la mémoire (1 heure)
 
-## Module 5 : SLMOps - Opérations pour petits modèles de langage  
+## Module 5 : SLMOps - Opérations pour petits modèles de langage
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Comprendre les principes de gestion du cycle de vie des SLMOps  
-- Maîtriser les techniques de distillation et de fine-tuning pour le déploiement en périphérie  
-- Implémenter des stratégies de déploiement en production avec surveillance  
-- Construire des workflows d'opérations et de maintenance de SLM de niveau entreprise  
+- Comprendre les principes de gestion du cycle de vie des SLMOps
+- Maîtriser les techniques de distillation et de fine-tuning pour le déploiement en périphérie
+- Implémenter des stratégies de déploiement en production avec surveillance
+- Construire des workflows d'opérations et de maintenance de SLM de niveau entreprise
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
-#### Section 1 : Introduction aux SLMOps  
-- **Concepts prioritaires** :  
-  - Changement de paradigme des SLMOps dans les opérations d'IA  
-  - Architecture axée sur la confidentialité et l'efficacité des coûts  
-  - Impact stratégique sur les entreprises et avantages concurrentiels  
+#### Section 1 : Introduction aux SLMOps
+- **Concepts prioritaires** : 
+  - Changement de paradigme des SLMOps dans les opérations d'IA
+  - Architecture axée sur l'efficacité des coûts et la confidentialité
+  - Impact stratégique sur les entreprises et avantages compétitifs
 
-#### Section 2 : Distillation de modèles  
-- **Concepts prioritaires** :  
-  - Techniques de transfert de connaissances  
-  - Implémentation du processus de distillation en deux étapes  
-  - Workflows de distillation avec Azure ML  
+#### Section 2 : Distillation de modèles
+- **Concepts prioritaires** : 
+  - Techniques de transfert de connaissances
+  - Implémentation du processus de distillation en deux étapes
+  - Workflows de distillation Azure ML
 
-#### Section 3 : Stratégies de fine-tuning  
-- **Concepts prioritaires** :  
-  - Fine-tuning efficace en termes de paramètres (PEFT)  
-  - Méthodes avancées LoRA et QLoRA  
-  - Entraînement multi-adaptateurs et optimisation des hyperparamètres  
+#### Section 3 : Stratégies de fine-tuning
+- **Concepts prioritaires** : 
+  - Fine-tuning efficace des paramètres (PEFT)
+  - Méthodes avancées LoRA et QLoRA
+  - Entraînement multi-adaptateurs et optimisation des hyperparamètres
 
-#### Section 4 : Déploiement en production  
-- **Concepts prioritaires** :  
-  - Conversion et quantification des modèles pour la production  
-  - Configuration de déploiement Foundry Local  
-  - Benchmarking des performances et validation de la qualité  
+#### Section 4 : Déploiement en production
+- **Concepts prioritaires** : 
+  - Conversion et quantification de modèles pour la production
+  - Configuration de déploiement Foundry Local
+  - Benchmarking des performances et validation de la qualité
 
-### Questions d'auto-évaluation  
+### Questions d'auto-évaluation
 
-1. En quoi les SLMOps diffèrent-ils des MLOps traditionnels ?  
-2. Expliquez les avantages de la distillation de modèles pour le déploiement en périphérie.  
-3. Quels sont les principaux éléments à prendre en compte pour le fine-tuning des SLM dans des environnements à ressources limitées ?  
-4. Décrivez un pipeline complet de déploiement en production pour des applications Edge AI.  
+1. En quoi les SLMOps diffèrent-ils des MLOps traditionnels ?
+2. Expliquez les avantages de la distillation de modèles pour le déploiement en périphérie.
+3. Quels sont les principaux éléments à prendre en compte pour le fine-tuning des SLM dans des environnements à ressources limitées ?
+4. Décrivez un pipeline complet de déploiement en production pour des applications Edge AI.
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Distillation basique** : Créer un modèle plus petit à partir d'un modèle enseignant plus grand (1 heure)  
-2. **Expérience de fine-tuning** : Affiner un modèle pour un domaine spécifique (1 heure)  
-3. **Pipeline de déploiement** : Configurer un pipeline CI/CD basique pour le déploiement de modèles (1 heure)  
+1. **Distillation basique** : Créer un modèle plus petit à partir d'un modèle enseignant plus grand (1 heure)
+2. **Expérience de fine-tuning** : Fine-tuner un modèle pour un domaine spécifique (1 heure)
+3. **Pipeline de déploiement** : Configurer un pipeline CI/CD basique pour le déploiement de modèles (1 heure)
 
-## Module 6 : Systèmes agentiques SLM - Agents IA et appels de fonctions  
+## Module 6 : Systèmes agentiques SLM - Agents IA et appels de fonctions
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Construire des agents IA intelligents pour des environnements Edge en utilisant des SLM  
-- Implémenter des capacités d'appel de fonctions avec des workflows systématiques  
-- Maîtriser l'intégration du protocole de contexte de modèle (MCP) pour une interaction standardisée avec les outils  
-- Créer des systèmes agentiques sophistiqués nécessitant une intervention humaine minimale  
+- Construire des agents IA intelligents pour des environnements en périphérie en utilisant des petits modèles de langage
+- Implémenter des capacités d'appel de fonctions avec des workflows systématiques
+- Maîtriser l'intégration du protocole de contexte de modèle (MCP) pour une interaction standardisée avec les outils
+- Créer des systèmes agentiques sophistiqués avec une intervention humaine minimale
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
-#### Section 1 : Agents IA et fondements des SLM  
-- **Concepts prioritaires** :  
-  - Cadre de classification des agents (réflexes, basés sur des modèles, basés sur des objectifs, agents apprenants)  
-  - Analyse des compromis entre SLM et LLM  
-  - Modèles de conception d'agents spécifiques à la périphérie  
-  - Optimisation des ressources pour les agents  
+#### Section 1 : Agents IA et fondements des SLM
+- **Concepts prioritaires** : 
+  - Cadre de classification des agents (réflexes, basés sur des modèles, basés sur des objectifs, agents apprenants)
+  - Analyse des compromis entre SLM et LLM
+  - Modèles de conception spécifiques aux agents en périphérie
+  - Optimisation des ressources pour les agents
 
-#### Section 2 : Appels de fonctions dans les SLM  
-- **Concepts prioritaires** :  
-  - Implémentation de workflows systématiques (détection d'intention, sortie JSON, exécution externe)  
-  - Implémentations spécifiques aux plateformes (Phi-4-mini, modèles Qwen sélectionnés, Microsoft Foundry Local)  
-  - Exemples avancés (collaboration multi-agents, sélection dynamique d'outils)  
-  - Considérations pour la production (limitation de débit, journalisation des audits, mesures de sécurité)  
+#### Section 2 : Appels de fonctions dans les petits modèles de langage
+- **Concepts prioritaires** : 
+  - Implémentation de workflows systématiques (détection d'intention, sortie JSON, exécution externe)
+  - Implémentations spécifiques aux plateformes (Phi-4-mini, modèles Qwen sélectionnés, Microsoft Foundry Local)
+  - Exemples avancés (collaboration multi-agents, sélection dynamique d'outils)
+  - Considérations pour la production (limitation de taux, journalisation des audits, mesures de sécurité)
 
-#### Section 3 : Intégration du protocole de contexte de modèle (MCP)  
-- **Concepts prioritaires** :  
-  - Architecture du protocole et conception de système en couches  
-  - Support multi-backend (Ollama pour le développement, vLLM pour la production)  
-  - Protocoles de connexion (modes STDIO et SSE)  
-  - Applications réelles (automatisation web, traitement de données, intégration API)  
+#### Section 3 : Intégration du protocole de contexte de modèle (MCP)
+- **Concepts prioritaires** : 
+  - Architecture du protocole et conception de systèmes en couches
+  - Support multi-backend (Ollama pour le développement, vLLM pour la production)
+  - Protocoles de connexion (modes STDIO et SSE)
+  - Applications réelles (automatisation web, traitement de données, intégration API)
 
-### Questions d'auto-évaluation  
+### Questions d'auto-évaluation
 
-1. Quels sont les principaux éléments architecturaux à considérer pour les agents IA en périphérie ?  
-2. Comment les appels de fonctions améliorent-ils les capacités des agents ?  
-3. Expliquez le rôle du protocole de contexte de modèle dans la communication des agents.  
+1. Quels sont les principaux éléments architecturaux à prendre en compte pour les agents IA en périphérie ?
+2. Comment les appels de fonctions améliorent-ils les capacités des agents ?
+3. Expliquez le rôle du protocole de contexte de modèle dans la communication des agents.
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Agent simple** : Construire un agent IA basique avec des appels de fonctions (1 heure)  
-2. **Intégration MCP** : Implémenter MCP dans une application d'agent (30 minutes)  
+1. **Agent simple** : Construire un agent IA basique avec des appels de fonctions (1 heure)
+2. **Intégration MCP** : Implémenter MCP dans une application d'agent (30 minutes)
 
-## Module 7 : Exemples d'implémentation EdgeAI  
+## Atelier : Parcours d'apprentissage pratique
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Maîtriser l'AI Toolkit pour Visual Studio Code pour des workflows complets de développement EdgeAI  
-- Acquérir une expertise sur la plateforme Windows AI Foundry et les stratégies d'optimisation NPU  
-- Implémenter EdgeAI sur plusieurs plateformes matérielles et scénarios de déploiement  
-- Construire des applications EdgeAI prêtes pour la production avec des optimisations spécifiques à la plateforme  
+- Construire des applications IA prêtes pour la production en utilisant le SDK Foundry Local et les meilleures pratiques
+- Implémenter une gestion complète des erreurs et des modèles de retour utilisateur
+- Créer des pipelines RAG avec évaluation de la qualité et surveillance des performances
+- Développer des systèmes multi-agents avec des modèles de coordination
+- Maîtriser le routage intelligent des modèles pour la sélection basée sur les tâches
+- Déployer des solutions IA locales avec des architectures respectueuses de la confidentialité
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
-#### Section 1 : AI Toolkit pour Visual Studio Code  
-- **Concepts prioritaires** :  
-  - Environnement de développement Edge AI complet dans VS Code  
-  - Catalogue de modèles et découverte pour le déploiement en périphérie  
-  - Workflows de test local, d'optimisation et de développement d'agents  
-  - Surveillance des performances et évaluation pour les scénarios en périphérie  
+#### Session 01 : Premiers pas avec Foundry Local
+- **Concepts prioritaires** :
+  - Intégration du SDK FoundryLocalManager et découverte automatique des services
+  - Implémentations de chat basique et en streaming
+  - Modèles de gestion des erreurs et retour utilisateur
+  - Configuration basée sur l'environnement
 
-#### Section 2 : Guide de développement Windows EdgeAI  
-- **Concepts prioritaires** :  
-  - Aperçu complet de la plateforme Windows AI Foundry  
-  - API Phi Silica pour une inférence NPU efficace  
-  - API de vision par ordinateur pour le traitement d'images et l'OCR  
-  - CLI Foundry Local pour le développement et les tests locaux  
+#### Session 02 : Construire des solutions IA avec RAG
+- **Concepts prioritaires** :
+  - Embeddings vectoriels en mémoire avec sentence-transformers
+  - Implémentation de pipeline RAG (recherche → génération)
+  - Évaluation de la qualité avec les métriques RAGAS
+  - Sécurité des imports pour les dépendances optionnelles
 
-#### Section 3 : Implémentations spécifiques à la plateforme  
-- **Concepts prioritaires** :  
-  - Déploiement NVIDIA Jetson Orin Nano (67 TOPS de performance IA)  
-  - Applications mobiles avec .NET MAUI et ONNX Runtime GenAI  
-  - Solutions Azure EdgeAI avec architecture hybride cloud-périphérie  
-  - Optimisation Windows ML avec support matériel universel  
-  - Applications Foundry Local avec implémentation RAG axée sur la confidentialité  
+#### Session 03 : Modèles open source
+- **Concepts prioritaires** :
+  - Stratégies de benchmarking multi-modèles
+  - Mesures de latence et de débit
+  - Dégradation progressive et récupération des erreurs
+  - Comparaison des performances entre familles de modèles
 
-### Questions d'auto-évaluation  
+#### Session 04 : Modèles de pointe
+- **Concepts prioritaires** :
+  - Méthodologie de comparaison SLM vs LLM
+  - Indications de type et formatage complet des sorties
+  - Gestion des erreurs par modèle
+  - Résultats structurés pour l'analyse
 
-1. Comment l'AI Toolkit simplifie-t-il le workflow de développement EdgeAI ?  
-2. Comparez les stratégies de déploiement sur différentes plateformes matérielles.  
-3. Quels sont les avantages de Windows AI Foundry pour le développement en périphérie ?  
-4. Expliquez le rôle de l'optimisation NPU dans les applications modernes d'Edge AI.  
+#### Session 05 : Agents alimentés par l'IA
+- **Concepts prioritaires** :
+  - Orchestration multi-agents avec modèle de coordination
+  - Gestion de la mémoire des agents et suivi des états
+  - Gestion des erreurs dans les pipelines et journalisation des étapes
+  - Surveillance des performances et statistiques
+
+#### Session 06 : Modèles en tant qu'outils
+- **Concepts prioritaires** :
+  - Détection d'intention et correspondance de modèles
+  - Algorithmes de routage de modèles basés sur des mots-clés
+  - Pipelines multi-étapes (planification → exécution → affinage)
+  - Documentation complète des fonctions
+
+### Questions d'auto-évaluation
+
+1. Comment FoundryLocalManager simplifie-t-il la gestion des services par rapport aux appels REST manuels ?
+2. Expliquez l'importance des gardes d'importation pour les dépendances optionnelles comme sentence-transformers.
+3. Quelles stratégies garantissent une dégradation progressive dans le benchmarking multi-modèles ?
+4. Comment le modèle de coordination orchestre-t-il plusieurs agents spécialisés ?
+5. Décrivez les composants d'un routeur de modèles intelligent.
+6. Quels sont les éléments clés d'une gestion des erreurs prête pour la production ?
+
+### Exercices pratiques
+
+1. **Application de chat** : Implémenter un chat en streaming avec gestion des erreurs (45 minutes)
+2. **Pipeline RAG** : Construire un pipeline RAG minimal avec évaluation de la qualité (1 heure)
+3. **Benchmarking de modèles** : Comparer 3+ modèles sur leurs performances (1 heure)
+4. **Système multi-agents** : Créer un coordinateur avec 2 agents spécialisés (1,5 heure)
+5. **Routeur intelligent** : Construire une sélection de modèles basée sur les tâches (1 heure)
+6. **Déploiement en production** : Ajouter une surveillance et une gestion complète des erreurs (45 minutes)
+
+### Répartition du temps
+
+**Apprentissage concentré (1 semaine)** :
+- Jour 1 : Session 01-02 (Chat + RAG) - 3 heures
+- Jour 2 : Session 03-04 (Benchmarking + Comparaison) - 3 heures
+- Jour 3 : Session 05-06 (Agents + Routage) - 3 heures
+- Jour 4 : Exercices pratiques et validation - 2 heures
+
+**Étude à temps partiel (2 semaines)** :
+- Semaine 1 : Sessions 01-03 (6 heures au total)
+- Semaine 2 : Sessions 04-06 + exercices (5 heures au total)
+
+## Module 7 : Exemples d'implémentation EdgeAI
+
+### Objectifs d'apprentissage clés
+
+- Maîtriser l'AI Toolkit pour Visual Studio Code pour des workflows de développement EdgeAI complets
+- Acquérir une expertise sur la plateforme Windows AI Foundry et les stratégies d'optimisation NPU
+- Implémenter EdgeAI sur plusieurs plateformes matérielles et scénarios de déploiement
+- Construire des applications EdgeAI prêtes pour la production avec des optimisations spécifiques à la plateforme
+
+### Domaines d'étude prioritaires
+
+#### Section 1 : AI Toolkit pour Visual Studio Code
+- **Concepts prioritaires** : 
+  - Environnement de développement Edge AI complet dans VS Code
+  - Catalogue de modèles et découverte pour le déploiement en périphérie
+  - Workflows de test local, optimisation et développement d'agents
+  - Surveillance des performances et évaluation pour les scénarios en périphérie
+
+#### Section 2 : Guide de développement Windows EdgeAI
+- **Concepts prioritaires** : 
+  - Aperçu complet de la plateforme Windows AI Foundry
+  - API Phi Silica pour une inférence NPU efficace
+  - API de vision par ordinateur pour le traitement d'images et l'OCR
+  - CLI Foundry Local pour le développement et les tests locaux
+
+#### Section 3 : Implémentations spécifiques à la plateforme
+- **Concepts prioritaires** : 
+  - Déploiement sur NVIDIA Jetson Orin Nano (performance IA de 67 TOPS)
+  - Applications mobiles avec .NET MAUI et ONNX Runtime GenAI
+  - Solutions Azure EdgeAI avec architecture hybride cloud-périphérie
+  - Optimisation Windows ML avec support matériel universel
+  - Applications Foundry Local avec implémentation RAG axée sur la confidentialité
+
+### Questions d'auto-évaluation
+
+1. Comment l'AI Toolkit simplifie-t-il le workflow de développement EdgeAI ?
+2. Comparez les stratégies de déploiement sur différentes plateformes matérielles.
+3. Quels sont les avantages de Windows AI Foundry pour le développement en périphérie ?
+4. Expliquez le rôle de l'optimisation NPU dans les applications modernes d'IA en périphérie.  
 5. Comment l'API Phi Silica exploite-t-elle le matériel NPU pour optimiser les performances ?  
-6. Comparez les avantages du déploiement local par rapport au déploiement cloud pour des applications sensibles à la confidentialité.  
+6. Comparez les avantages du déploiement local par rapport au déploiement dans le cloud pour les applications sensibles à la confidentialité.  
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Configuration de l'AI Toolkit** : Configurer l'AI Toolkit et optimiser un modèle (1 heure)  
-2. **Windows AI Foundry** : Construire une application IA Windows simple en utilisant l'API Phi Silica (1 heure)  
-3. **Déploiement multiplateforme** : Déployer le même modèle sur deux plateformes différentes (1 heure)  
-4. **Optimisation NPU** : Tester les performances NPU avec les outils Windows AI Foundry (30 minutes)  
+1. **Configuration de l'AI Toolkit** : Configurez l'AI Toolkit et optimisez un modèle (1 heure)  
+2. **Windows AI Foundry** : Créez une application simple Windows AI en utilisant l'API Phi Silica (1 heure)  
+3. **Déploiement multiplateforme** : Déployez le même modèle sur deux plateformes différentes (1 heure)  
+4. **Optimisation NPU** : Testez les performances du NPU avec les outils Windows AI Foundry (30 minutes)  
 
-## Module 8 : Microsoft Foundry Local – Kit complet pour développeurs (modernisé)  
+## Module 8 : Microsoft Foundry Local – Kit complet pour développeurs (modernisé)
 
-### Objectifs d'apprentissage clés  
+### Objectifs d'apprentissage clés
 
-- Installer et configurer Foundry Local avec une intégration SDK moderne  
+- Installer et configurer Foundry Local avec une intégration moderne du SDK  
 - Implémenter des systèmes multi-agents avancés avec des modèles de coordination  
-- Construire des routeurs de modèles intelligents avec sélection automatique basée sur les tâches  
-- Déployer des solutions IA prêtes pour la production avec une surveillance complète  
-- Intégrer avec Azure AI Foundry pour des scénarios de déploiement hybrides  
-- Maîtriser les modèles SDK modernes avec FoundryLocalManager et le client OpenAI  
+- Construire des routeurs de modèles intelligents avec une sélection automatique basée sur les tâches  
+- Déployer des solutions d'IA prêtes pour la production avec un suivi complet  
+- Intégrer avec Azure AI Foundry pour des scénarios de déploiement hybride  
+- Maîtriser les modèles modernes de SDK avec FoundryLocalManager et le client OpenAI  
 
-### Domaines d'étude prioritaires  
+### Domaines d'étude prioritaires
 
 #### Section 1 : Installation et configuration modernes  
 - **Concepts prioritaires** :  
-  - Intégration SDK FoundryLocalManager  
-  - Découverte automatique des services et surveillance de la santé  
+  - Intégration du SDK FoundryLocalManager  
+  - Découverte automatique des services et surveillance de l'état  
   - Modèles de configuration basés sur l'environnement  
   - Considérations pour le déploiement en production  
 
 #### Section 2 : Systèmes multi-agents avancés  
 - **Concepts prioritaires** :  
-  - Modèle de coordination avec agents spécialisés  
+  - Modèle de coordination avec des agents spécialisés  
   - Spécialisation des agents pour la récupération, le raisonnement et l'exécution  
   - Mécanismes de boucle de rétroaction pour le raffinement  
-  - Suivi des performances et statistiques  
+  - Suivi des performances et des statistiques  
 
 #### Section 3 : Routage intelligent des modèles  
 - **Concepts prioritaires** :  
   - Algorithmes de sélection de modèles basés sur des mots-clés  
-  - Support de plusieurs modèles (général, raisonnement, code, créatif)  
-  - Configuration flexible via des variables d'environnement  
-  - Vérification de la santé des services et gestion des erreurs  
+  - Prise en charge de plusieurs modèles (général, raisonnement, code, créatif)  
+  - Configuration des variables d'environnement pour plus de flexibilité  
+  - Vérification de l'état des services et gestion des erreurs  
 
-#### Section 4 : Implémentation prête pour la production  
+#### Section 4 : Mise en œuvre prête pour la production  
 - **Concepts prioritaires** :  
   - Gestion complète des erreurs et mécanismes de secours  
-  - Surveillance des requêtes et suivi des performances  
-  - Exemples interactifs dans des notebooks Jupyter avec benchmarks  
+  - Suivi des requêtes et des performances  
+  - Exemples interactifs avec des notebooks Jupyter et des benchmarks  
   - Modèles d'intégration avec des applications existantes  
 
-### Questions d'auto-évaluation  
+### Questions d'auto-évaluation
 
-1. En quoi l'approche moderne FoundryLocalManager diffère-t-elle des appels REST manuels ?  
+1. En quoi l'approche moderne de FoundryLocalManager diffère-t-elle des appels REST manuels ?  
 2. Expliquez le modèle de coordination et comment il orchestre les agents spécialisés.  
 3. Comment le routeur intelligent sélectionne-t-il les modèles appropriés en fonction du contenu des requêtes ?  
-4. Quels sont les composants clés d'un système d'agent IA prêt pour la production ?  
-5. Comment implémentez-vous une surveillance complète de la santé des services Foundry Local ?  
-6. Comparez les avantages de l'approche modernisée par rapport aux modèles d'implémentation traditionnels.  
+4. Quels sont les composants clés d'un système d'agent d'IA prêt pour la production ?  
+5. Comment mettre en œuvre une surveillance complète de l'état des services Foundry Local ?  
+6. Comparez les avantages de l'approche modernisée par rapport aux modèles de mise en œuvre traditionnels.  
 
-### Exercices pratiques  
+### Exercices pratiques
 
-1. **Configuration SDK moderne** : Configurer FoundryLocalManager avec découverte automatique des services (30 minutes)  
-2. **Système multi-agents** : Exécuter le coordinateur avancé avec des agents spécialisés (30 minutes)  
-3. **Routage intelligent** : Tester le routeur de modèles avec différents types de requêtes (30 minutes)  
-4. **Exploration interactive** : Utiliser les notebooks Jupyter pour explorer les fonctionnalités avancées (45 minutes)  
-5. **Déploiement en production** : Implémenter des modèles de surveillance et de gestion des erreurs (30 minutes)  
-6. **Intégration hybride** : Configurer des scénarios de secours avec Azure AI Foundry (30 minutes)  
+1. **Configuration du SDK moderne** : Configurez FoundryLocalManager avec la découverte automatique des services (30 minutes)  
+2. **Système multi-agents** : Exécutez le coordinateur avancé avec des agents spécialisés (30 minutes)  
+3. **Routage intelligent** : Testez le routeur de modèles avec différents types de requêtes (30 minutes)  
+4. **Exploration interactive** : Utilisez les notebooks Jupyter pour explorer des fonctionnalités avancées (45 minutes)  
+5. **Déploiement en production** : Implémentez des modèles de surveillance et de gestion des erreurs (30 minutes)  
+6. **Intégration hybride** : Configurez des scénarios de secours avec Azure AI Foundry (30 minutes)  
 
-## Guide de répartition du temps  
+## Guide de répartition du temps
 
-Pour vous aider à tirer le meilleur parti des 20 heures de cours, voici une suggestion de répartition du temps :  
+Pour vous aider à tirer le meilleur parti des 30 heures de cours (y compris l'atelier), voici une répartition suggérée de votre temps :  
 
-| Activité | Répartition du temps | Description |  
+| Activité | Allocation de temps | Description |  
 |----------|----------------------|-------------|  
-| Lecture des matériaux principaux | 9 heures | Se concentrer sur les concepts essentiels de chaque module |  
-| Exercices pratiques | 6 heures | Mise en œuvre pratique des techniques clés |
-| Auto-évaluation | 2 heures | Tester votre compréhension à travers des questions et réflexions |
-| Mini-projet | 3 heures | Appliquer vos connaissances à une petite mise en œuvre pratique |
+| Lecture des documents de base | 12 heures | Se concentrer sur les concepts essentiels de chaque module |  
+| Exercices pratiques | 10 heures | Mise en œuvre pratique des techniques clés (y compris l'atelier) |  
+| Auto-évaluation | 3 heures | Tester votre compréhension à travers des questions et des réflexions |  
+| Mini-projet | 5 heures | Appliquer vos connaissances à une petite mise en œuvre pratique |  
 
-### Points clés selon la contrainte de temps
+### Domaines prioritaires en fonction des contraintes de temps
 
-**Si vous n'avez que 10 heures :**
-- Complétez le Module 0 (Introduction) et les Modules 1, 2 et 3 (concepts fondamentaux d'EdgeAI)
-- Réalisez au moins un exercice pratique par module
-- Concentrez-vous sur la compréhension des concepts clés plutôt que sur les détails de mise en œuvre
+**Si vous n'avez que 10 heures :**  
+- Complétez le Module 0 (Introduction) et les Modules 1, 2 et 3 (concepts de base d'EdgeAI)  
+- Réalisez au moins un exercice pratique par module  
+- Concentrez-vous sur la compréhension des concepts de base plutôt que sur les détails de mise en œuvre  
 
-**Si vous pouvez consacrer les 20 heures complètes :**
-- Complétez les huit modules (y compris l'Introduction)
-- Effectuez les exercices pratiques essentiels de chaque module
-- Réalisez un mini-projet du Module 7
-- Explorez au moins 2-3 ressources complémentaires
+**Si vous pouvez consacrer 20 heures :**  
+- Complétez les huit modules (y compris l'Introduction)  
+- Réalisez les exercices pratiques clés de chaque module  
+- Terminez un mini-projet du Module 7  
+- Explorez au moins 2-3 ressources supplémentaires  
 
-**Si vous avez plus de 20 heures :**
-- Complétez tous les modules (y compris l'Introduction) avec des exercices détaillés
-- Réalisez plusieurs mini-projets
-- Explorez des techniques avancées d'optimisation dans le Module 4
-- Implémentez le déploiement en production à partir du Module 5
+**Si vous avez plus de 20 heures :**  
+- Complétez tous les modules (y compris l'Introduction) avec des exercices détaillés  
+- Réalisez plusieurs mini-projets  
+- Explorez des techniques d'optimisation avancées dans le Module 4  
+- Implémentez un déploiement en production à partir du Module 5  
 
 ## Ressources essentielles
 
-Ces ressources soigneusement sélectionnées offrent le meilleur rapport qualité-temps pour vos études :
+Ces ressources soigneusement sélectionnées offrent le meilleur rapport qualité-temps pour vos études :  
 
-### Documentation incontournable
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - L'outil d'optimisation de modèles le plus efficace
-- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - La méthode la plus rapide pour déployer des SLMs localement
-- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Référence pour un modèle optimisé pour les périphériques
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - La boîte à outils d'optimisation complète d'Intel
-- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Environnement de développement intégré pour EdgeAI
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Plateforme de développement EdgeAI spécifique à Windows
+### Documentation incontournable  
+- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - L'outil d'optimisation de modèles le plus efficace  
+- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - Le moyen le plus rapide de déployer des SLM localement  
+- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Référence pour un modèle optimisé pour la périphérie  
+- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Kit d'outils d'optimisation complet d'Intel  
+- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Environnement de développement intégré pour EdgeAI  
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Plateforme de développement EdgeAI spécifique à Windows  
 
-### Outils pour gagner du temps
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Accès rapide aux modèles et déploiement
-- [Gradio](https://www.gradio.app/docs/interface) - Développement rapide d'interface utilisateur pour les démonstrations IA
-- [Microsoft Olive](https://github.com/microsoft/Olive) - Simplification de l'optimisation des modèles
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inférence efficace sur CPU
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Cadre de compression des réseaux neuronaux
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Boîte à outils de déploiement de modèles de langage étendus
+### Outils pour gagner du temps  
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Accès rapide aux modèles et déploiement  
+- [Gradio](https://www.gradio.app/docs/interface) - Développement rapide d'interface utilisateur pour les démos d'IA  
+- [Microsoft Olive](https://github.com/microsoft/Olive) - Simplification de l'optimisation des modèles  
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Inférence efficace sur CPU  
+- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Cadre de compression des réseaux neuronaux  
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Kit d'outils de déploiement de modèles de langage de grande taille  
 
 ## Modèle de suivi des progrès
 
-Utilisez ce modèle simplifié pour suivre vos progrès dans le cours de 20 heures :
+Utilisez ce modèle simplifié pour suivre vos progrès d'apprentissage tout au long du cours de 20 heures :  
 
-| Module | Date de réalisation | Temps passé | Points clés retenus |
-|--------|---------------------|-------------|---------------------|
-| Module 0 : Introduction à EdgeAI | | | |
-| Module 1 : Fondamentaux d'EdgeAI | | | |
-| Module 2 : Fondations des SLM | | | |
-| Module 3 : Déploiement des SLM | | | |
-| Module 4 : Optimisation des modèles | | | |
-| Module 5 : SLMOps | | | |
-| Module 6 : Agents IA | | | |
-| Module 7 : Outils de développement | | | |
-| Module 8 : Boîte à outils locale Foundry | | | |
-| Exercices pratiques | | | |
-| Mini-projet | | | |
+| Module | Date d'achèvement | Heures passées | Points clés retenus |  
+|--------|--------------------|----------------|----------------------|  
+| Module 0 : Introduction à EdgeAI | | | |  
+| Module 1 : Fondamentaux d'EdgeAI | | | |  
+| Module 2 : Fondations des SLM | | | |  
+| Module 3 : Déploiement des SLM | | | |  
+| Module 4 : Optimisation des modèles | | | |  
+| Module 5 : SLMOps | | | |  
+| Module 6 : Agents d'IA | | | |  
+| Module 7 : Outils de développement | | | |  
+| Atelier : Apprentissage pratique | | | |  
+| Module 8 : Foundry Local Toolkit | | | |  
+| Exercices pratiques | | | |  
+| Mini-projet | | | |  
 
 ## Idées de mini-projets
 
-Envisagez de réaliser l'un de ces projets pour pratiquer les concepts d'EdgeAI (chacun conçu pour durer 2 à 4 heures) :
+Envisagez de réaliser l'un de ces projets pour mettre en pratique les concepts d'EdgeAI (chacun conçu pour durer 2 à 4 heures) :  
 
-### Projets débutants (2-3 heures chacun)
-1. **Assistant texte Edge** : Créez un outil simple de complétion de texte hors ligne en utilisant un petit modèle de langage
-2. **Tableau de comparaison de modèles** : Construisez une visualisation basique des métriques de performance entre différents SLMs
-3. **Expérience d'optimisation** : Mesurez l'impact de différents niveaux de quantification sur le même modèle de base
+### Projets débutants (2-3 heures chacun)  
+1. **Assistant texte en périphérie** : Créez un outil simple de complétion de texte hors ligne en utilisant un petit modèle de langage  
+2. **Tableau de bord de comparaison de modèles** : Construisez une visualisation de base des métriques de performance pour différents SLM  
+3. **Expérience d'optimisation** : Mesurez l'impact de différents niveaux de quantification sur le même modèle de base  
 
-### Projets intermédiaires (3-4 heures chacun)
-4. **Workflow avec AI Toolkit** : Utilisez l'AI Toolkit de VS Code pour optimiser et déployer un modèle de bout en bout
-5. **Application Windows AI Foundry** : Créez une application Windows en utilisant l'API Phi Silica et l'optimisation NPU
-6. **Déploiement multiplateforme** : Déployez le même modèle optimisé sur Windows (OpenVINO) et mobile (.NET MAUI)
-7. **Agent d'appel de fonctions** : Construisez un agent IA avec des capacités d'appel de fonctions pour des scénarios Edge
+### Projets intermédiaires (3-4 heures chacun)  
+4. **Workflow AI Toolkit** : Utilisez l'AI Toolkit de VS Code pour optimiser et déployer un modèle de bout en bout  
+5. **Application Windows AI Foundry** : Créez une application Windows en utilisant l'API Phi Silica et l'optimisation NPU  
+6. **Déploiement multiplateforme** : Déployez le même modèle optimisé sur Windows (OpenVINO) et mobile (.NET MAUI)  
+7. **Agent d'appel de fonction** : Construisez un agent d'IA avec des capacités d'appel de fonction pour des scénarios en périphérie  
 
-### Projets d'intégration avancés (4-5 heures chacun)
-8. **Pipeline d'optimisation OpenVINO** : Implémentez une optimisation complète de modèle en utilisant NNCF et la boîte à outils GenAI
-9. **Pipeline SLMOps** : Implémentez un cycle de vie complet de modèle, de l'entraînement au déploiement Edge
-10. **Système Edge multi-modèles** : Déployez plusieurs modèles spécialisés travaillant ensemble sur du matériel Edge
-11. **Système d'intégration MCP** : Construisez un système agentique utilisant le protocole de contexte de modèle pour l'interaction avec des outils
+### Projets d'intégration avancés (4-5 heures chacun)  
+8. **Pipeline d'optimisation OpenVINO** : Implémentez une optimisation complète de modèle en utilisant NNCF et le kit d'outils GenAI  
+9. **Pipeline SLMOps** : Implémentez un cycle de vie complet de modèle, de l'entraînement au déploiement en périphérie  
+10. **Système multi-modèles en périphérie** : Déployez plusieurs modèles spécialisés travaillant ensemble sur du matériel en périphérie  
+11. **Système d'intégration MCP** : Construisez un système agentique en utilisant le protocole Model Context pour l'interaction avec les outils  
 
 ## Références
 
-- Microsoft Learn (Foundry Local)
-  - Vue d'ensemble : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
-  - Démarrage : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
-  - Référence CLI : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
-  - Intégration avec les SDK d'inférence : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-  - Application WebUI ouverte : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-  - Compilation de modèles Hugging Face : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Azure AI Foundry
-  - Vue d'ensemble : https://learn.microsoft.com/en-us/azure/ai-foundry/
-  - Agents (vue d'ensemble) : https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
-- Outils d'optimisation et d'inférence
-  - Microsoft Olive (docs) : https://microsoft.github.io/Olive/
-  - Microsoft Olive (GitHub) : https://github.com/microsoft/Olive
-  - ONNX Runtime (démarrage) : https://onnxruntime.ai/docs/get-started/with-python.html
-  - Intégration Olive avec ONNX Runtime : https://onnxruntime.ai/docs/performance/olive.html
-  - OpenVINO (docs) : https://docs.openvino.ai/2025/index.html
-  - Apple MLX (docs) : https://ml-explore.github.io/mlx/build/html/index.html
-- Cadres de déploiement et modèles
-  - Llama.cpp : https://github.com/ggml-ai/llama.cpp
-  - Hugging Face Transformers : https://huggingface.co/docs/transformers/index
-  - vLLM (docs) : https://docs.vllm.ai/
-  - Ollama (démarrage rapide) : https://github.com/ollama/ollama#get-started
-- Outils de développement (Windows et VS Code)
-  - AI Toolkit pour VS Code : https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
-  - Windows ML (vue d'ensemble) : https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+- Microsoft Learn (Foundry Local)  
+  - Vue d'ensemble : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
+  - Démarrage : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
+  - Référence CLI : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
+  - Intégration avec les SDK d'inférence : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
+  - Guide pour l'interface Web ouverte : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
+  - Compilation des modèles Hugging Face : https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
+- Azure AI Foundry  
+  - Vue d'ensemble : https://learn.microsoft.com/en-us/azure/ai-foundry/  
+  - Agents (vue d'ensemble) : https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
+- Outils d'optimisation et d'inférence  
+  - Microsoft Olive (docs) : https://microsoft.github.io/Olive/  
+  - Microsoft Olive (GitHub) : https://github.com/microsoft/Olive  
+  - ONNX Runtime (démarrage) : https://onnxruntime.ai/docs/get-started/with-python.html  
+  - Intégration ONNX Runtime Olive : https://onnxruntime.ai/docs/performance/olive.html  
+  - OpenVINO (docs) : https://docs.openvino.ai/2025/index.html  
+  - Apple MLX (docs) : https://ml-explore.github.io/mlx/build/html/index.html  
+- Cadres de déploiement et modèles  
+  - Llama.cpp : https://github.com/ggml-ai/llama.cpp  
+  - Hugging Face Transformers : https://huggingface.co/docs/transformers/index  
+  - vLLM (docs) : https://docs.vllm.ai/  
+  - Ollama (démarrage rapide) : https://github.com/ollama/ollama#get-started  
+- Outils pour développeurs (Windows et VS Code)  
+  - AI Toolkit pour VS Code : https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
+  - Windows ML (vue d'ensemble) : https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
 
 ## Communauté d'apprentissage
 
-Rejoignez la discussion et connectez-vous avec d'autres apprenants :
-- Discussions GitHub sur le [repository EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners/discussions)
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
+Rejoignez la discussion et connectez-vous avec d'autres apprenants :  
+- Discussions GitHub sur le [dépôt EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
 
 ## Conclusion
 
-EdgeAI représente l'avant-garde de la mise en œuvre de l'intelligence artificielle, apportant des capacités puissantes directement aux appareils tout en répondant aux préoccupations critiques liées à la confidentialité, la latence et la connectivité. Ce cours de 20 heures vous fournit les connaissances essentielles et les compétences pratiques pour commencer à travailler avec les technologies EdgeAI immédiatement.
+L'EdgeAI représente l'avant-garde de la mise en œuvre de l'intelligence artificielle, apportant des capacités puissantes directement aux appareils tout en répondant aux préoccupations cruciales concernant la confidentialité, la latence et la connectivité. Ce cours de 20 heures vous fournit les connaissances essentielles et les compétences pratiques pour commencer à travailler immédiatement avec les technologies EdgeAI.  
 
-Le cours est délibérément concis et axé sur les concepts les plus importants, vous permettant d'acquérir rapidement une expertise précieuse sans un engagement de temps écrasant. N'oubliez pas que la pratique, même avec des exemples simples, est la clé pour renforcer ce que vous avez appris.
+Le cours est conçu pour être concis et axé sur les concepts les plus importants, vous permettant d'acquérir rapidement une expertise précieuse sans un engagement de temps excessif. Rappelez-vous que la pratique, même avec des exemples simples, est la clé pour renforcer ce que vous avez appris.  
 
-Bon apprentissage !
+Bon apprentissage !  
 
 ---
 
+**Avertissement** :  
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
