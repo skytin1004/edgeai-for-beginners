@@ -91,7 +91,7 @@ def main(argv: List[str]) -> int:
     verbose = '--verbose' in argv
     # Determine repo root: assume script is at Workshop/scripts/...
     script_path = Path(__file__).resolve()
-    repo_root = script_path.parents[3] if (len(script_path.parents) >= 3) else Path.cwd()
+    repo_root = script_path.parents[1] if (len(script_path.parents) >= 2) else Path.cwd()
     md_files = sorted(repo_root.rglob("*.md"))
     if verbose:
         print(f"Scanning {len(md_files)} markdown files from root: {repo_root}")

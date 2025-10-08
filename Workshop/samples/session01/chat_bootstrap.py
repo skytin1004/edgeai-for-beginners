@@ -40,10 +40,10 @@ print(f"[INFO] Using model alias: {alias} -> id: {model_id}")
 print(f"[INFO] Endpoint: {manager.endpoint}")
 
 standard, usage = chat_once(
-  alias,
-  messages=[{"role": "user", "content": prompt}],
-  max_tokens=120,
-  temperature=0.5
+    alias,
+    messages=[{"role": "user", "content": prompt}],
+    max_tokens=120,
+    temperature=0.5
 )
 print("\n[STANDARD RESPONSE]\n" + standard + "\n")
 
