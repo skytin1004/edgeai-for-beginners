@@ -488,6 +488,91 @@ This course is organized into eight comprehensive modules:
 1. **Simple Agent**: Build a basic AI agent with function calling (1 hour)
 2. **MCP Integration**: Implement MCP in an agent application (30 minutes)
 
+## Workshop: Hands-On Learning Path
+
+### Key Learning Objectives
+
+- Build production-ready AI applications using Foundry Local SDK and best practices
+- Implement comprehensive error handling and user feedback patterns
+- Create RAG pipelines with quality evaluation and performance monitoring
+- Develop multi-agent systems with coordinator patterns
+- Master intelligent model routing for task-based model selection
+- Deploy local-first AI solutions with privacy-preserving architectures
+
+### Study Focus Areas
+
+#### Session 01: Getting Started with Foundry Local
+- **Priority Concepts**:
+  - FoundryLocalManager SDK integration and automatic service discovery
+  - Basic and streaming chat implementations
+  - Error handling patterns and user feedback
+  - Environment-based configuration
+
+#### Session 02: Building AI Solutions with RAG
+- **Priority Concepts**:
+  - In-memory vector embeddings with sentence-transformers
+  - RAG pipeline implementation (retrieve → generate)
+  - Quality evaluation with RAGAS metrics
+  - Import safety for optional dependencies
+
+#### Session 03: Open Source Models
+- **Priority Concepts**:
+  - Multi-model benchmarking strategies
+  - Latency and throughput measurements
+  - Graceful degradation and error recovery
+  - Performance comparison across model families
+
+#### Session 04: Cutting-Edge Models
+- **Priority Concepts**:
+  - SLM vs LLM comparison methodology
+  - Type hints and comprehensive output formatting
+  - Per-model error handling
+  - Structured results for analysis
+
+#### Session 05: AI-Powered Agents
+- **Priority Concepts**:
+  - Multi-agent orchestration with coordinator pattern
+  - Agent memory management and state tracking
+  - Pipeline error handling and stage logging
+  - Performance monitoring and statistics
+
+#### Session 06: Models as Tools
+- **Priority Concepts**:
+  - Intent detection and pattern matching
+  - Keyword-based model routing algorithms
+  - Multi-step pipelines (plan → execute → refine)
+  - Comprehensive function documentation
+
+### Self-Assessment Questions
+
+1. How does FoundryLocalManager simplify service management compared to manual REST calls?
+2. Explain the importance of import guards for optional dependencies like sentence-transformers.
+3. What strategies ensure graceful degradation in multi-model benchmarking?
+4. How does the coordinator pattern orchestrate multiple specialist agents?
+5. Describe the components of an intelligent model router.
+6. What are the key elements of production-ready error handling?
+
+### Hands-on Exercises
+
+1. **Chat Application**: Implement streaming chat with error handling (45 minutes)
+2. **RAG Pipeline**: Build minimal RAG with quality evaluation (1 hour)
+3. **Model Benchmarking**: Compare 3+ models on performance (1 hour)
+4. **Multi-Agent System**: Create coordinator with 2 specialist agents (1.5 hours)
+5. **Intelligent Router**: Build task-based model selection (1 hour)
+6. **Production Deployment**: Add monitoring and comprehensive error handling (45 minutes)
+
+### Time Allocation
+
+**Concentrated Learning (1 week)**:
+- Day 1: Session 01-02 (Chat + RAG) - 3 hours
+- Day 2: Session 03-04 (Benchmarking + Comparison) - 3 hours
+- Day 3: Session 05-06 (Agents + Routing) - 3 hours
+- Day 4: Hands-on exercises and validation - 2 hours
+
+**Part-time Study (2 weeks)**:
+- Week 1: Sessions 01-03 (6 hours total)
+- Week 2: Sessions 04-06 + exercises (5 hours total)
+
 ## Module 7: EdgeAI Implementation Samples
 
 ### Key Learning Objectives
@@ -599,14 +684,14 @@ This course is organized into eight comprehensive modules:
 
 ## Time Allocation Guide
 
-To help you make the most of the 20-hour course timeline, here's a suggested breakdown of how to allocate your time:
+To help you make the most of the extended 30-hour course timeline (including Workshop), here's a suggested breakdown of how to allocate your time:
 
 | Activity | Time Allocation | Description |
 |----------|----------------|-------------|
-| Reading Core Materials | 9 hours | Focusing on the essential concepts in each module |
-| Hands-on Exercises | 6 hours | Practical implementation of key techniques |
-| Self-Assessment | 2 hours | Testing your understanding through questions and reflection |
-| Mini-Project | 3 hours | Applying knowledge to a small practical implementation |
+| Reading Core Materials | 12 hours | Focusing on the essential concepts in each module |
+| Hands-on Exercises | 10 hours | Practical implementation of key techniques (including Workshop) |
+| Self-Assessment | 3 hours | Testing your understanding through questions and reflection |
+| Mini-Project | 5 hours | Applying knowledge to a small practical implementation |
 
 ### Key Focus Areas by Time Constraint
 
@@ -661,6 +746,7 @@ Use this simplified template to track your learning progress through the 20-hour
 | Module 5: SLMOps | | | |
 | Module 6: AI Agents | | | |
 | Module 7: Development Tools | | | |
+| Workshop: Hands-On Learning | | | |
 | Module 8: Foundry Local Toolkit | | | |
 | Hands-on Exercises | | | |
 | Mini-Project | | | |

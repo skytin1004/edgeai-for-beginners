@@ -101,6 +101,23 @@ They unlock powerful NLP capabilities while meeting the constraints of:
 - [09: Advanced Multi-Agent System](./Module08/samples/09/README.md)
 - [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 
+### 🎓 **Workshop: Hands-On Learning Path**
+
+Comprehensive hands-on workshop materials with production-ready implementations:
+
+- **[Workshop Guide](./Workshop/Readme.md)** - Complete learning objectives, outcomes, and resource navigation
+- **Python Samples** (6 sessions) - Updated with best practices, error handling, and comprehensive documentation
+- **Jupyter Notebooks** (8 interactive) - Step-by-step tutorials with benchmarks and performance monitoring
+- **Session Guides** - Detailed markdown guides for each workshop session
+- **Validation Tools** - Scripts to verify code quality and run smoke tests
+
+**What You'll Build:**
+- Local AI chat applications with streaming support
+- RAG pipelines with quality evaluation (RAGAS)
+- Multi-model benchmarking and comparison tools
+- Multi-agent orchestration systems
+- Intelligent model routing with task-based selection
+
 ### 📊 **Learning Path Summary**
 - **Total Duration**: 36-45 hours
 - **Beginner Path**: Modules 01-02 (7-9 hours)  
