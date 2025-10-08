@@ -1,24 +1,48 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:27:21+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-08T19:02:51+00:00",
   "source_file": "AGENTS.md",
   "language_code": "ko"
 }
 -->
 # AGENTS.md
 
+> **초보자를 위한 EdgeAI 기여 개발자 가이드**
+> 
+> 이 문서는 이 저장소에서 작업하는 개발자, AI 에이전트 및 기여자를 위한 포괄적인 정보를 제공합니다. 설정, 개발 워크플로, 테스트 및 모범 사례를 다룹니다.
+> 
+> **최종 업데이트**: 2025년 10월 | **문서 버전**: 2.0
+
+## 목차
+
+- [프로젝트 개요](../..)
+- [저장소 구조](../..)
+- [필수 조건](../..)
+- [설정 명령어](../..)
+- [개발 워크플로](../..)
+- [테스트 지침](../..)
+- [코드 스타일 가이드라인](../..)
+- [풀 리퀘스트 가이드라인](../..)
+- [번역 시스템](../..)
+- [Foundry Local 통합](../..)
+- [빌드 및 배포](../..)
+- [일반적인 문제 및 문제 해결](../..)
+- [추가 자료](../..)
+- [프로젝트 관련 참고 사항](../..)
+- [도움 받기](../..)
+
 ## 프로젝트 개요
 
-EdgeAI for Beginners는 소형 언어 모델(SLM)을 활용한 Edge AI 개발을 교육하는 포괄적인 학습 자료 저장소입니다. 이 과정은 EdgeAI의 기본 개념, 모델 배포, 최적화 기술, Microsoft Foundry Local 및 다양한 AI 프레임워크를 활용한 실무 구현을 다룹니다.
+EdgeAI for Beginners는 소형 언어 모델(SLM)을 활용한 Edge AI 개발을 교육하는 포괄적인 학습 저장소입니다. 이 과정은 EdgeAI 기본 사항, 모델 배포, 최적화 기술 및 Microsoft Foundry Local과 다양한 AI 프레임워크를 사용한 프로덕션 준비 구현을 다룹니다.
 
 **주요 기술:**
 - Python 3.8+ (AI/ML 샘플의 주요 언어)
 - .NET C# (AI/ML 샘플)
 - JavaScript/Node.js 및 Electron (데스크톱 애플리케이션용)
 - Microsoft Foundry Local SDK
-- Microsoft Windows ML
+- Microsoft Windows ML 
 - VSCode AI Toolkit
 - OpenAI SDK
 - AI 프레임워크: LangChain, Semantic Kernel, Chainlit
@@ -26,7 +50,7 @@ EdgeAI for Beginners는 소형 언어 모델(SLM)을 활용한 Edge AI 개발을
 
 **저장소 유형:** 8개의 모듈과 10개의 포괄적인 샘플 애플리케이션을 포함한 교육 콘텐츠 저장소
 
-**아키텍처:** Edge AI 배포 패턴을 실습 샘플로 보여주는 다중 모듈 학습 경로
+**아키텍처:** Edge AI 배포 패턴을 보여주는 실용적인 샘플을 포함한 다중 모듈 학습 경로
 
 ## 저장소 구조
 
@@ -43,6 +67,35 @@ edgeai-for-beginners/
 ├── translated_images/     # Localized images
 └── imgs/                  # Course images and assets
 ```
+
+## 필수 조건
+
+### 필수 도구
+
+- **Python 3.8+** - AI/ML 샘플 및 노트북용
+- **Node.js 16+** - Electron 샘플 애플리케이션용
+- **Git** - 버전 관리용
+- **Microsoft Foundry Local** - AI 모델을 로컬에서 실행하기 위해 필요
+
+### 권장 도구
+
+- **Visual Studio Code** - Python, Jupyter 및 Pylance 확장 포함
+- **Windows Terminal** - 향상된 명령줄 경험 제공 (Windows 사용자용)
+- **Docker** - 컨테이너화된 개발 환경 (선택 사항)
+
+### 시스템 요구 사항
+
+- **RAM**: 최소 8GB, 다중 모델 시나리오에서는 16GB 이상 권장
+- **저장 공간**: 모델 및 종속성을 위해 10GB 이상의 여유 공간 필요
+- **운영 체제**: Windows 10/11, macOS 11+, 또는 Linux (Ubuntu 20.04+)
+- **하드웨어**: AVX2 지원 CPU; GPU (CUDA, Qualcomm NPU) 선택 사항이지만 권장
+
+### 지식 요구 사항
+
+- Python 프로그래밍 기본 이해
+- 명령줄 인터페이스에 대한 친숙함
+- AI/ML 개념 이해 (샘플 개발용)
+- Git 워크플로 및 풀 리퀘스트 프로세스
 
 ## 설정 명령어
 
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,15 +145,26 @@ npm run dist
 
 ### Foundry Local 설정
 
-Module08 샘플을 실행하려면 Foundry Local이 필요합니다:
+Foundry Local은 샘플을 실행하는 데 필요합니다. 공식 저장소에서 다운로드 및 설치하세요:
 
+**설치:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **수동 설치**: [릴리스 페이지](https://github.com/microsoft/Foundry-Local/releases)에서 다운로드
+
+**빠른 시작:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**참고**: Foundry Local은 하드웨어에 가장 적합한 모델 변형을 자동으로 선택합니다 (CUDA GPU, Qualcomm NPU 또는 CPU).
 
 ## 개발 워크플로
 
@@ -105,7 +172,7 @@ curl http://localhost:8000/health
 
 이 저장소는 주로 **Markdown 교육 콘텐츠**를 포함합니다. 변경 시:
 
-1. 적절한 모듈 디렉터리에서 `.md` 파일을 편집합니다.
+1. 적절한 모듈 디렉토리에서 `.md` 파일을 편집합니다.
 2. 기존 형식 패턴을 따릅니다.
 3. 코드 예제가 정확하고 테스트되었는지 확인합니다.
 4. 필요한 경우 해당 번역 콘텐츠를 업데이트합니다 (또는 자동화에 맡깁니다).
@@ -151,10 +218,10 @@ npm run lint       # Check code style
 저장소는 자동 번역 워크플로를 사용합니다. 번역에 대한 수동 테스트는 필요하지 않습니다.
 
 **콘텐츠 변경에 대한 수동 검증:**
-1. `.md` 파일을 미리 보기로 렌더링하여 검토합니다.
-2. 모든 링크가 유효한 대상에 연결되는지 확인합니다.
-3. 문서에 포함된 코드 스니펫을 테스트합니다.
-4. 이미지가 올바르게 로드되는지 확인합니다.
+1. `.md` 파일을 미리 보기로 Markdown 렌더링 검토
+2. 모든 링크가 유효한 대상에 연결되는지 확인
+3. 문서에 포함된 코드 스니펫 테스트
+4. 이미지가 올바르게 로드되는지 확인
 
 ### 샘플 애플리케이션 테스트
 
@@ -186,21 +253,21 @@ python samples/04/chainlit_rag.py
 python samples/09/multi_agent_system.py
 ```
 
-## 코드 스타일 지침
+## 코드 스타일 가이드라인
 
 ### Markdown 콘텐츠
 
-- 일관된 제목 계층 구조 사용 (#는 제목, ##는 주요 섹션, ###는 하위 섹션)
+- 일관된 제목 계층 구조 사용 (# 제목, ## 주요 섹션, ### 하위 섹션)
 - 언어 지정자를 포함한 코드 블록 사용: ```python, ```bash, ```javascript
-- 표, 목록, 강조 표시에 기존 형식을 따릅니다.
-- 읽기 쉽게 줄을 유지합니다 (~80-100자 목표, 엄격하지 않음)
+- 표, 목록 및 강조 표시에 기존 형식 따르기
+- 읽기 쉽게 줄 유지 (~80-100자 목표, 엄격하지 않음)
 - 내부 참조에 상대 링크 사용
 
 ### Python 코드 스타일
 
 - PEP 8 규칙 준수
 - 적절한 경우 타입 힌트 사용
-- 함수 및 클래스에 docstring 포함
+- 함수 및 클래스에 대한 docstring 포함
 - 의미 있는 변수 이름 사용
 - 함수는 집중적이고 간결하게 유지
 
@@ -216,98 +283,187 @@ npm run format      # Format with Prettier
 
 **주요 규칙:**
 - 샘플 08에 제공된 ESLint 구성 사용
-- 코드 포맷팅을 위한 Prettier 사용
+- Prettier로 코드 포맷팅
 - 최신 ES6+ 문법 사용
-- 코드베이스의 기존 패턴을 따릅니다.
+- 코드베이스의 기존 패턴 따르기
 
-## Pull Request 지침
+## 풀 리퀘스트 가이드라인
+
+### 기여 워크플로
+
+1. **저장소를 포크**하고 `main`에서 새 브랜치 생성
+2. **코드 스타일 가이드라인을 따라 변경 사항 적용**
+3. **위의 테스트 지침을 사용하여 철저히 테스트**
+4. **명확한 메시지로 커밋** (Conventional Commits 형식 따름)
+5. **포크에 푸시**하고 풀 리퀘스트 생성
+6. **리뷰 중 유지보수자의 피드백에 응답**
+
+### 브랜치 이름 규칙
+
+- `feature/<module>-<description>` - 새로운 기능 또는 콘텐츠 추가
+- `fix/<module>-<description>` - 버그 수정
+- `docs/<description>` - 문서 개선
+- `refactor/<description>` - 코드 리팩토링
+
+### 커밋 메시지 형식
+
+[Conventional Commits](https://www.conventionalcommits.org/)을 따르세요:
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**예시:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### 제목 형식
 ```
 [ModuleXX] Brief description of change
 ```
- 또는 ```
+또는
+```
 [Module08/samples/XX] Description for sample changes
 ```
 
-### 제출 전
+### 행동 강령
+
+모든 기여자는 [Microsoft 오픈 소스 행동 강령](https://opensource.microsoft.com/codeofconduct/)을 따라야 합니다. 기여하기 전에 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)를 검토하세요.
+
+### 제출 전 확인 사항
 
 **콘텐츠 변경의 경우:**
-- 수정된 모든 Markdown 파일을 미리 보기로 확인합니다.
-- 링크와 이미지가 작동하는지 확인합니다.
-- 오타 및 문법 오류를 확인합니다.
+- 수정된 모든 Markdown 파일 미리 보기
+- 링크 및 이미지가 작동하는지 확인
+- 오타 및 문법 오류 확인
 
-**샘플 코드 변경 (Module08/samples/08):**
+**샘플 코드 변경의 경우 (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
 ```
 
 **Python 샘플 변경의 경우:**
-- 샘플이 성공적으로 실행되는지 테스트합니다.
-- 오류 처리가 작동하는지 확인합니다.
-- Foundry Local과의 호환성을 확인합니다.
+- 샘플이 성공적으로 실행되는지 테스트
+- 오류 처리가 작동하는지 확인
+- Foundry Local과의 호환성 확인
 
-### 검토 프로세스
+### 리뷰 프로세스
 
-- 교육 콘텐츠 변경은 정확성과 명확성을 검토합니다.
-- 코드 샘플은 기능성을 테스트합니다.
-- 번역 업데이트는 GitHub Actions에 의해 자동으로 처리됩니다.
+- 교육 콘텐츠 변경은 정확성과 명확성을 검토
+- 코드 샘플은 기능성을 테스트
+- 번역 업데이트는 GitHub Actions에 의해 자동 처리
 
 ## 번역 시스템
 
 **중요:** 이 저장소는 GitHub Actions를 통한 자동 번역을 사용합니다.
 
-- 번역은 `/translations/` 디렉터리에 있습니다 (50개 이상의 언어)
-- `co-op-translator.yml` 워크플로를 통해 자동화됩니다.
-- **번역 파일을 수동으로 편집하지 마십시오** - 덮어쓰기가 발생합니다.
-- 루트 및 모듈 디렉터리의 영어 원본 파일만 편집합니다.
-- 번역은 `main` 브랜치로 푸시 시 자동으로 생성됩니다.
+- 번역은 `/translations/` 디렉토리에 저장 (50개 이상의 언어)
+- `co-op-translator.yml` 워크플로를 통해 자동화
+- **번역 파일을 수동으로 수정하지 마세요** - 덮어쓰기가 발생합니다
+- 루트 및 모듈 디렉토리의 영어 원본 파일만 수정하세요
+- 번역은 `main` 브랜치로 푸시 시 자동 생성됩니다
 
 ## Foundry Local 통합
 
-대부분의 Module08 샘플은 Microsoft Foundry Local 실행이 필요합니다:
+대부분의 Module08 샘플은 Microsoft Foundry Local이 실행 중이어야 합니다.
+
+### 설치 및 설정
+
+**Foundry Local 설치:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Python SDK 설치:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Foundry Local 시작
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
 ```
 
-### Foundry Local 확인
+### SDK 사용법 (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+```
+
+### Foundry Local 검증
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### 샘플용 환경 변수
 
 대부분의 샘플은 다음 환경 변수를 사용합니다:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
 set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
+
+**참고**: `FoundryLocalManager`를 사용할 때 SDK는 서비스 검색 및 모델 로딩을 자동으로 처리합니다. 모델 별칭(예: `phi-3.5-mini`)은 하드웨어에 가장 적합한 변형을 선택합니다.
 
 ## 빌드 및 배포
 
@@ -339,22 +495,37 @@ npm run pack
 
 ## 일반적인 문제 및 문제 해결
 
-### Foundry Local 실행되지 않음
-**문제:** 샘플이 연결 오류로 실패함
+> **팁**: [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues)에서 알려진 문제와 해결책을 확인하세요.
 
-**해결 방법:**
+### 주요 문제 (차단)
+
+#### Foundry Local 실행되지 않음
+**문제:** 샘플이 연결 오류로 실패
+
+**해결책:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Python 가상 환경 문제
+### 일반적인 문제 (중간)
+
+#### Python 가상 환경 문제
 **문제:** 모듈 가져오기 오류
 
-**해결 방법:**
+**해결책:**
 ```bash
 # Ensure virtual environment is activated
 # Windows
@@ -366,10 +537,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Electron 빌드 문제
+#### Electron 빌드 문제
 **문제:** npm 설치 또는 빌드 실패
 
-**해결 방법:**
+**해결책:**
 ```bash
 cd Module08/samples/08
 # Clean install
@@ -378,13 +549,29 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### 번역 워크플로 충돌
-**문제:** 번역 PR이 변경 사항과 충돌함
+### 워크플로 문제 (경미)
 
-**해결 방법:**
-- 영어 원본 파일만 편집합니다.
-- 자동 번역 워크플로에 번역을 맡깁니다.
-- 충돌이 발생하면 번역이 병합된 후 `main`을 브랜치에 병합합니다.
+#### 번역 워크플로 충돌
+**문제:** 번역 PR이 변경 사항과 충돌
+
+**해결책:**
+- 영어 원본 파일만 수정
+- 자동 번역 워크플로에 번역을 맡김
+- 충돌 발생 시 번역이 병합된 후 `main`을 브랜치에 병합
+
+#### 모델 다운로드 실패
+**문제:** Foundry Local이 모델 다운로드에 실패
+
+**해결책:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## 추가 자료
 
@@ -395,22 +582,25 @@ npm install
 - **전문가 경로:** 모듈 08 (8-10시간)
 
 ### 주요 모듈 콘텐츠
-- **Module01:** EdgeAI 기본 개념 및 실제 사례 연구
+- **Module01:** EdgeAI 기본 사항 및 실제 사례 연구
 - **Module02:** 소형 언어 모델(SLM) 계열 및 아키텍처
 - **Module03:** 로컬 및 클라우드 배포 전략
 - **Module04:** 다양한 프레임워크를 활용한 모델 최적화
-- **Module05:** SLMOps - 운영 환경
+- **Module05:** SLMOps - 프로덕션 운영
 - **Module06:** AI 에이전트 및 함수 호출
 - **Module07:** 플랫폼별 구현
 - **Module08:** Foundry Local 툴킷과 10개의 포괄적인 샘플
 
 ### 외부 종속성
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - 로컬 AI 모델 런타임
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - OpenAI 호환 API를 갖춘 로컬 AI 모델 런타임
+  - [문서](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - 최적화 프레임워크
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - 모델 최적화 툴킷
 - [OpenVINO](https://docs.openvino.ai/) - Intel의 최적화 툴킷
 
-## 프로젝트별 참고 사항
+## 프로젝트 관련 참고 사항
 
 ### Module08 샘플 애플리케이션
 
@@ -432,22 +622,49 @@ npm install
 ### 성능 고려 사항
 
 - SLM은 엣지 배포를 위해 최적화됨 (2-16GB RAM)
-- 로컬 추론은 50-500ms 응답 시간을 제공
+- 로컬 추론은 50-500ms의 응답 시간을 제공합니다
 - 양자화 기술로 75% 크기 감소와 85% 성능 유지 달성
 - 로컬 모델을 활용한 실시간 대화 기능
 
 ### 보안 및 개인정보 보호
 
-- 모든 처리는 로컬에서 이루어짐 - 클라우드로 데이터 전송 없음
-- 개인정보 보호가 중요한 애플리케이션(의료, 금융)에 적합
-- 데이터 주권 요구 사항 충족
-- Foundry Local은 완전히 로컬 하드웨어에서 실행됨
+- 모든 처리는 로컬에서 이루어지며, 데이터가 클라우드로 전송되지 않습니다
+- 개인정보 보호가 중요한 애플리케이션(의료, 금융)에 적합합니다
+- 데이터 주권 요구사항을 충족합니다
+- Foundry Local은 완전히 로컬 하드웨어에서 실행됩니다
+
+## 도움 받기
+
+### 문서
+
+- **메인 README**: [README.md](README.md) - 리포지토리 개요 및 학습 경로
+- **학습 가이드**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - 학습 자료 및 일정
+- **지원**: [SUPPORT.md](SUPPORT.md) - 도움을 받는 방법
+- **보안**: [SECURITY.md](SECURITY.md) - 보안 문제 보고
+
+### 커뮤니티 지원
+
+- **GitHub Issues**: [버그 보고 또는 기능 요청](https://github.com/microsoft/edgeai-for-beginners/issues)
+- **GitHub Discussions**: [질문하고 아이디어 공유](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- **Foundry Local Issues**: [Foundry Local 관련 기술 문제](https://github.com/microsoft/Foundry-Local/issues)
+
+### 연락처
+
+- **유지 관리자**: [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS) 참조
+- **보안 문제**: [SECURITY.md](SECURITY.md)에서 책임 있는 공개 절차를 따르세요
+- **Microsoft 지원**: 기업 지원이 필요한 경우 Microsoft 고객 서비스에 문의하세요
+
+### 추가 자료
+
+- **Microsoft Learn**: [AI 및 머신러닝 학습 경로](https://learn.microsoft.com/training/browse/?products=ai-services)
+- **Foundry Local 문서**: [공식 문서](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+- **커뮤니티 샘플**: 커뮤니티 기여는 [GitHub Discussions](https://github.com/microsoft/edgeai-for-beginners/discussions)에서 확인하세요
 
 ---
 
-**이 저장소는 Edge AI 개발을 교육하는 데 중점을 둡니다. 주요 기여 패턴은 교육 콘텐츠를 개선하고 Edge AI 개념을 보여주는 샘플 애플리케이션을 추가/강화하는 것입니다.**
+**이 리포지토리는 Edge AI 개발 교육에 초점을 맞춘 교육용 리포지토리입니다. 주요 기여 패턴은 교육 콘텐츠를 개선하고 Edge AI 개념을 보여주는 샘플 애플리케이션을 추가하거나 강화하는 것입니다.**
 
 ---
 
 **면책 조항**:  
-이 문서는 AI 번역 서비스 [Co-op Translator](https://github.com/Azure/co-op-translator)를 사용하여 번역되었습니다. 정확성을 위해 최선을 다하고 있으나, 자동 번역에는 오류나 부정확성이 포함될 수 있습니다. 원본 문서의 원어 버전을 권위 있는 자료로 간주해야 합니다. 중요한 정보의 경우, 전문적인 인간 번역을 권장합니다. 이 번역 사용으로 인해 발생하는 오해나 잘못된 해석에 대해 당사는 책임을 지지 않습니다.
+이 문서는 AI 번역 서비스 [Co-op Translator](https://github.com/Azure/co-op-translator)를 사용하여 번역되었습니다. 정확성을 위해 노력하고 있지만, 자동 번역에는 오류나 부정확성이 포함될 수 있습니다. 원본 문서를 해당 언어로 작성된 상태에서 권위 있는 자료로 간주해야 합니다. 중요한 정보의 경우, 전문적인 인간 번역을 권장합니다. 이 번역 사용으로 인해 발생하는 오해나 잘못된 해석에 대해 당사는 책임을 지지 않습니다.

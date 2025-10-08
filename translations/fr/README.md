@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T07:35:08+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-08T18:54:11+00:00",
   "source_file": "README.md",
   "language_code": "fr"
 }
@@ -13,7 +13,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Contributeurs GitHub](https://img.shields.io/github/contributors/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/graphs/contributors)  
 [![Problèmes GitHub](https://img.shields.io/github/issues/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/issues)  
-[![Pull Requests GitHub](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)  
+[![Pull-requests GitHub](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)  
 [![PRs Bienvenus](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  
 
 [![Observateurs GitHub](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)  
@@ -38,48 +38,48 @@ Suivez ces étapes pour commencer à utiliser ces ressources :
 
 ## Introduction
 
-Bienvenue dans **EdgeAI pour les Débutants** – votre parcours complet dans le monde transformateur de l'Intelligence Artificielle en périphérie. Ce cours établit un pont entre les capacités puissantes de l'IA et leur déploiement pratique sur des appareils en périphérie, vous permettant de tirer parti du potentiel de l'IA directement là où les données sont générées et où les décisions doivent être prises.
+Bienvenue dans **EdgeAI pour les Débutants** – votre parcours complet dans le monde transformateur de l'Intelligence Artificielle en périphérie. Ce cours relie les capacités puissantes de l'IA à des déploiements pratiques et réels sur des appareils en périphérie, vous permettant de tirer parti du potentiel de l'IA directement là où les données sont générées et où les décisions doivent être prises.
 
 ### Ce que vous allez maîtriser
 
 Ce cours vous guide des concepts fondamentaux aux implémentations prêtes pour la production, couvrant :
-- **Modèles de Langage Réduits (SLMs)** optimisés pour le déploiement en périphérie
-- **Optimisation matérielle** sur diverses plateformes
-- **Inférence en temps réel** avec des capacités de préservation de la vie privée
-- **Stratégies de déploiement en production** pour des applications d'entreprise
+- **Modèles de Langage Réduits (SLMs)** optimisés pour le déploiement en périphérie  
+- **Optimisation matérielle** sur diverses plateformes  
+- **Inférence en temps réel** avec des capacités de préservation de la vie privée  
+- **Stratégies de déploiement en production** pour des applications d'entreprise  
 
 ### Pourquoi EdgeAI est important
 
 Edge AI représente un changement de paradigme qui répond à des défis modernes critiques :
-- **Confidentialité & Sécurité** : Traitez les données sensibles localement sans les exposer au cloud
-- **Performance en temps réel** : Éliminez la latence réseau pour les applications critiques
-- **Efficacité des coûts** : Réduisez les dépenses en bande passante et en calcul cloud
-- **Opérations résilientes** : Maintenez la fonctionnalité en cas de panne réseau
-- **Conformité réglementaire** : Respectez les exigences de souveraineté des données
+- **Confidentialité & Sécurité** : Traitez les données sensibles localement sans les exposer au cloud  
+- **Performance en temps réel** : Éliminez la latence réseau pour les applications critiques  
+- **Efficacité des coûts** : Réduisez les dépenses en bande passante et en calcul cloud  
+- **Opérations résilientes** : Maintenez la fonctionnalité en cas de panne réseau  
+- **Conformité réglementaire** : Respectez les exigences de souveraineté des données  
 
 ### Edge AI
 
 Edge AI désigne l'exécution d'algorithmes d'IA et de modèles de langage localement sur du matériel, près de l'endroit où les données sont générées, sans dépendre des ressources cloud pour l'inférence. Cela réduit la latence, améliore la confidentialité et permet une prise de décision en temps réel.
 
 ### Principes fondamentaux :
-- **Inférence sur appareil** : Les modèles d'IA fonctionnent sur des appareils en périphérie (téléphones, routeurs, microcontrôleurs, PC industriels)
-- **Capacité hors ligne** : Fonctionne sans connectivité Internet persistante
-- **Faible latence** : Réponses immédiates adaptées aux systèmes en temps réel
-- **Souveraineté des données** : Conserve les données sensibles localement, améliorant la sécurité et la conformité
+- **Inférence sur appareil** : Les modèles d'IA s'exécutent sur des appareils en périphérie (téléphones, routeurs, microcontrôleurs, PC industriels)  
+- **Capacité hors ligne** : Fonctionne sans connexion Internet persistante  
+- **Faible latence** : Réponses immédiates adaptées aux systèmes en temps réel  
+- **Souveraineté des données** : Conserve les données sensibles localement, améliorant la sécurité et la conformité  
 
 ### Modèles de Langage Réduits (SLMs)
 
 Les SLMs comme Phi-4, Mistral-7B et Gemma sont des versions optimisées de grands modèles de langage (LLMs)—entraînés ou distillés pour :
-- **Empreinte mémoire réduite** : Utilisation efficace de la mémoire limitée des appareils en périphérie
-- **Moins de demande en calcul** : Optimisés pour les performances CPU et GPU en périphérie
-- **Temps de démarrage plus rapides** : Initialisation rapide pour des applications réactives
+- **Empreinte mémoire réduite** : Utilisation efficace de la mémoire limitée des appareils en périphérie  
+- **Moins de demande en calcul** : Optimisés pour les performances CPU et GPU en périphérie  
+- **Temps de démarrage plus rapides** : Initialisation rapide pour des applications réactives  
 
 Ils débloquent des capacités NLP puissantes tout en respectant les contraintes de :
-- **Systèmes embarqués** : Appareils IoT et contrôleurs industriels
-- **Appareils mobiles** : Smartphones et tablettes avec capacités hors ligne
-- **Appareils IoT** : Capteurs et appareils intelligents avec ressources limitées
-- **Serveurs en périphérie** : Unités de traitement locales avec ressources GPU limitées
-- **Ordinateurs personnels** : Scénarios de déploiement sur ordinateurs de bureau et portables
+- **Systèmes embarqués** : Appareils IoT et contrôleurs industriels  
+- **Appareils mobiles** : Smartphones et tablettes avec capacités hors ligne  
+- **Appareils IoT** : Capteurs et appareils intelligents avec ressources limitées  
+- **Serveurs en périphérie** : Unités de traitement locales avec ressources GPU limitées  
+- **Ordinateurs personnels** : Scénarios de déploiement sur ordinateurs de bureau et portables  
 
 ## Modules du cours & Navigation
 
@@ -90,23 +90,40 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 | [🧠 02](../../Module02) | [Fondations des modèles SLM](./Module02/README.md) | Familles de modèles & architecture | Famille Phi • Famille Qwen • Famille Gemma • BitNET • μModel • Phi-Silica | Débutant | 4-5 h |
 | [🚀 03](../../Module03) | [Pratique de déploiement SLM](./Module03/README.md) | Déploiement local & cloud | Apprentissage avancé • Environnement local • Déploiement cloud | Intermédiaire | 4-5 h |
 | [⚙️ 04](../../Module04) | [Kit d'optimisation des modèles](./Module04/README.md) | Optimisation multiplateforme | Introduction • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Synthèse de workflow | Intermédiaire | 5-6 h |
-| [🔧 05](../../Module05) | [SLMOps Production](./Module05/README.md) | Opérations en production | Introduction à SLMOps • Distillation de modèles • Affinage • Déploiement en production | Avancé | 5-6 h |
+| [🔧 05](../../Module05) | [SLMOps en production](./Module05/README.md) | Opérations en production | Introduction à SLMOps • Distillation de modèles • Affinage • Déploiement en production | Avancé | 5-6 h |
 | [🤖 06](../../Module06) | [Agents IA & Appels de fonctions](./Module06/README.md) | Cadres d'agents & MCP | Introduction aux agents • Appels de fonctions • Protocole de contexte de modèle | Avancé | 4-5 h |
 | [💻 07](../../Module07) | [Implémentation sur plateforme](./Module07/README.md) | Échantillons multiplateformes | Kit d'outils IA • Foundry Local • Développement Windows | Avancé | 3-4 h |
-| [🏭 08](../../Module08) | [Kit d'outils Foundry Local](./Module08/README.md) | Échantillons prêts pour la production | Applications d'échantillons (voir détails ci-dessous) | Expert | 8-10 h |
+| [🏭 08](../../Module08) | [Kit d'outils Foundry Local](./Module08/README.md) | Échantillons prêts pour la production | Applications d'exemple (voir détails ci-dessous) | Expert | 8-10 h |
 
-### 🏭 **Module 08 : Applications d'échantillons**
+### 🏭 **Module 08 : Applications d'exemple**
 
 - [01 : Démarrage rapide REST Chat](./Module08/samples/01/README.md)  
 - [02 : Intégration SDK OpenAI](./Module08/samples/02/README.md)  
 - [03 : Découverte & Benchmarking de modèles](./Module08/samples/03/README.md)  
-- [04 : Application Chainlit RAG](./Module08/samples/04/README.md)  
+- [04 : Application RAG Chainlit](./Module08/samples/04/README.md)  
 - [05 : Orchestration multi-agents](./Module08/samples/05/README.md)  
 - [06 : Routeur de modèles comme outils](./Module08/samples/06/README.md)  
 - [07 : Client API direct](./Module08/samples/07/README.md)  
 - [08 : Application Chat Windows 11](./Module08/samples/08/README.md)  
 - [09 : Système multi-agents avancé](./Module08/samples/09/README.md)  
 - [10 : Cadre d'outils Foundry](./Module08/samples/10/README.md)  
+
+### 🎓 **Atelier : Parcours d'apprentissage pratique**
+
+Matériel d'atelier complet avec implémentations prêtes pour la production :
+
+- **[Guide de l'atelier](./Workshop/Readme.md)** - Objectifs d'apprentissage complets, résultats et navigation des ressources  
+- **Exemples Python** (6 sessions) - Mis à jour avec les meilleures pratiques, gestion des erreurs et documentation complète  
+- **Notebooks Jupyter** (8 interactifs) - Tutoriels pas à pas avec benchmarks et surveillance des performances  
+- **Guides de session** - Guides détaillés en markdown pour chaque session d'atelier  
+- **Outils de validation** - Scripts pour vérifier la qualité du code et effectuer des tests rapides  
+
+**Ce que vous allez construire :**
+- Applications de chat IA locales avec support de streaming  
+- Pipelines RAG avec évaluation de qualité (RAGAS)  
+- Outils de benchmarking et comparaison multi-modèles  
+- Systèmes d'orchestration multi-agents  
+- Routage intelligent de modèles avec sélection basée sur les tâches  
 
 ### 📊 **Résumé du parcours d'apprentissage**
 - **Durée totale** : 36-45 heures  
@@ -119,7 +136,7 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 
 ### 🎯 Compétences clés
 - **Architecture Edge AI** : Concevoir des systèmes IA locaux avec intégration cloud  
-- **Optimisation de modèles** : Quantifier et compresser les modèles pour le déploiement en périphérie (85 % de gain de vitesse, 75 % de réduction de taille)  
+- **Optimisation des modèles** : Quantifier et compresser les modèles pour le déploiement en périphérie (85 % de gain de vitesse, 75 % de réduction de taille)  
 - **Déploiement multiplateforme** : Windows, mobile, embarqué et systèmes hybrides cloud-périphérie  
 - **Opérations en production** : Surveillance, mise à l'échelle et maintenance de l'IA en périphérie en production  
 
@@ -127,34 +144,34 @@ Ils débloquent des capacités NLP puissantes tout en respectant les contraintes
 - **Applications de chat Foundry Local** : Application native Windows 11 avec changement de modèle  
 - **Systèmes multi-agents** : Coordinateur avec agents spécialisés pour des workflows complexes  
 - **Applications RAG** : Traitement local de documents avec recherche vectorielle  
-- **Routeurs de modèles** : Sélection intelligente entre modèles basée sur l'analyse des tâches  
-- **Cadres API** : Clients prêts pour la production avec streaming et surveillance de la santé  
+- **Routeurs de modèles** : Sélection intelligente entre les modèles basée sur l'analyse des tâches  
+- **Frameworks API** : Clients prêts pour la production avec streaming et surveillance de l'état  
 - **Outils multiplateformes** : Modèles d'intégration LangChain/Semantic Kernel  
 
-### 🏢 Applications industrielles
-**Fabrication** • **Santé** • **Véhicules autonomes** • **Villes intelligentes** • **Applications mobiles**
+### 🏢 Applications industrielles  
+**Fabrication** • **Santé** • **Véhicules autonomes** • **Villes intelligentes** • **Applications mobiles**  
 
-## Démarrage rapide
+## Démarrage rapide  
 
-**Parcours d'apprentissage recommandé** (20-30 heures au total) :
+**Parcours d'apprentissage recommandé** (20-30 heures au total) :  
 
 0. **📖 Introduction** ([Introduction.md](./introduction.md)) : Fondations EdgeAI + contexte industriel + cadre d'apprentissage  
 1. **📚 Fondations** (Modules 01-02) : Concepts EdgeAI + familles de modèles SLM  
-2. **⚙️ Optimisation** (Modules 03-04) : Déploiement + cadres de quantification  
+2. **⚙️ Optimisation** (Modules 03-04) : Déploiement + frameworks de quantification  
 3. **🚀 Production** (Modules 05-06) : SLMOps + agents IA + appels de fonctions  
-4. **💻 Implémentation** (Modules 07-08) : Exemples de plateformes + toolkit Foundry Local  
+4. **💻 Mise en œuvre** (Modules 07-08) : Échantillons de plateformes + outils Foundry Local  
 
-Chaque module inclut théorie, exercices pratiques et exemples de code prêts pour la production.
+Chaque module inclut théorie, exercices pratiques et exemples de code prêts pour la production.  
 
-## Impact sur la carrière
+## Impact sur la carrière  
 
 **Rôles techniques** : Architecte de solutions EdgeAI • Ingénieur ML (Edge) • Développeur IoT IA • Développeur IA mobile  
 
-**Secteurs industriels** : Industrie 4.0 • Technologie de santé • Systèmes autonomes • FinTech • Électronique grand public  
+**Secteurs industriels** : Industrie 4.0 • Technologies de santé • Systèmes autonomes • FinTech • Électronique grand public  
 
 **Projets de portfolio** : Systèmes multi-agents • Applications RAG en production • Déploiement multiplateforme • Optimisation des performances  
 
-## Structure du dépôt
+## Structure du dépôt  
 
 ```
 edgeai-for-beginners/
@@ -170,22 +187,22 @@ edgeai-for-beginners/
 ```
   
 
-## Points forts du cours
+## Points forts du cours  
 
 ✅ **Apprentissage progressif** : Théorie → Pratique → Déploiement en production  
 ✅ **Études de cas réelles** : Microsoft, Japan Airlines, implémentations en entreprise  
-✅ **Exemples pratiques** : Plus de 50 exemples, 10 démos Foundry Local complètes  
+✅ **Exemples pratiques** : Plus de 50 exemples, 10 démonstrations complètes Foundry Local  
 ✅ **Focus sur les performances** : Améliorations de vitesse de 85 %, réductions de taille de 75 %  
 ✅ **Multiplateforme** : Windows, mobile, embarqué, hybride cloud-edge  
 ✅ **Prêt pour la production** : Surveillance, mise à l'échelle, sécurité, cadres de conformité  
 
-📖 **[Guide d'étude disponible](STUDY_GUIDE.md)** : Parcours d'apprentissage structuré de 20 heures avec des conseils de répartition du temps et des outils d'auto-évaluation.
+📖 **[Guide d'étude disponible](STUDY_GUIDE.md)** : Parcours d'apprentissage structuré de 20 heures avec conseils de gestion du temps et outils d'auto-évaluation.  
 
----
+---  
 
-**EdgeAI représente l'avenir du déploiement de l'IA** : local en priorité, respectueux de la vie privée et efficace. Maîtrisez ces compétences pour créer la prochaine génération d'applications intelligentes.
+**EdgeAI représente l'avenir du déploiement de l'IA** : local en priorité, respectueux de la vie privée et efficace. Maîtrisez ces compétences pour créer la prochaine génération d'applications intelligentes.  
 
-## Autres cours
+## Autres cours  
 
 Notre équipe propose d'autres cours ! Découvrez :  
 
@@ -195,7 +212,7 @@ Notre équipe propose d'autres cours ! Découvrez :
 - [IA générative pour débutants avec JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
 - [IA générative pour débutants](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
 - [ML pour débutants](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Data Science pour débutants](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+- [Science des données pour débutants](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
 - [IA pour débutants](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Cybersécurité pour débutants](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
 - [Développement web pour débutants](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,7 +222,7 @@ Notre équipe propose d'autres cours ! Découvrez :
 - [Maîtriser GitHub Copilot pour les développeurs C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Choisissez votre propre aventure Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
-## Obtenir de l'aide
+## Obtenir de l'aide  
 
 Si vous êtes bloqué ou avez des questions sur la création d'applications IA, rejoignez :  
 
