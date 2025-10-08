@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T08:12:26+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-08T15:13:02+00:00",
   "source_file": "README.md",
   "language_code": "ro"
 }
@@ -22,44 +22,44 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Urmează acești pași pentru a începe să folosești aceste resurse:
+Urmați acești pași pentru a începe să utilizați aceste resurse:
 
-1. **Forkează Repozitoriul**: Click [![Fork-uri GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
-2. **Clonează Repozitoriul**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
-3. [**Alătură-te Discordului Azure AI Foundry și întâlnește experți și alți dezvoltatori**](https://discord.com/invite/ByRwuEEgH4)
+1. **Forkați Repozitoriul**: Click [![Fork-uri GitHub](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
+2. **Clonați Repozitoriul**:   `git clone https://github.com/microsoft/edgeai-for-beginners.git`
+3. [**Alăturați-vă Discordului Azure AI Foundry și întâlniți experți și alți dezvoltatori**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Suport Multi-Limbă
 
 #### Suportat prin GitHub Action (Automat & Mereu Actualizat)
 
-[Arabă](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgară](../bg/README.md) | [Birmaneză (Myanmar)](../my/README.md) | [Chineză (Simplificată)](../zh/README.md) | [Chineză (Tradițională, Hong Kong)](../hk/README.md) | [Chineză (Tradițională, Macau)](../mo/README.md) | [Chineză (Tradițională, Taiwan)](../tw/README.md) | [Croată](../hr/README.md) | [Cehă](../cs/README.md) | [Daneză](../da/README.md) | [Olandeză](../nl/README.md) | [Finlandeză](../fi/README.md) | [Franceză](../fr/README.md) | [Germană](../de/README.md) | [Greacă](../el/README.md) | [Ebraică](../he/README.md) | [Hindi](../hi/README.md) | [Maghiară](../hu/README.md) | [Indoneziană](../id/README.md) | [Italiană](../it/README.md) | [Japoneză](../ja/README.md) | [Coreeană](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepaleză](../ne/README.md) | [Norvegiană](../no/README.md) | [Persană (Farsi)](../fa/README.md) | [Poloneză](../pl/README.md) | [Portugheză (Brazilia)](../br/README.md) | [Portugheză (Portugalia)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Română](./README.md) | [Rusă](../ru/README.md) | [Sârbă (Chirilică)](../sr/README.md) | [Slovacă](../sk/README.md) | [Slovenă](../sl/README.md) | [Spaniolă](../es/README.md) | [Swahili](../sw/README.md) | [Suedeză](../sv/README.md) | [Tagalog (Filipineză)](../tl/README.md) | [Thailandeză](../th/README.md) | [Turcă](../tr/README.md) | [Ucraineană](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnameză](../vi/README.md)
+[Arabă](../ar/README.md) | [Bengaleză](../bn/README.md) | [Bulgară](../bg/README.md) | [Birmană (Myanmar)](../my/README.md) | [Chineză (Simplificată)](../zh/README.md) | [Chineză (Tradițională, Hong Kong)](../hk/README.md) | [Chineză (Tradițională, Macau)](../mo/README.md) | [Chineză (Tradițională, Taiwan)](../tw/README.md) | [Croată](../hr/README.md) | [Cehă](../cs/README.md) | [Daneză](../da/README.md) | [Olandeză](../nl/README.md) | [Finlandeză](../fi/README.md) | [Franceză](../fr/README.md) | [Germană](../de/README.md) | [Greacă](../el/README.md) | [Ebraică](../he/README.md) | [Hindi](../hi/README.md) | [Maghiară](../hu/README.md) | [Indoneziană](../id/README.md) | [Italiană](../it/README.md) | [Japoneză](../ja/README.md) | [Coreeană](../ko/README.md) | [Malayeză](../ms/README.md) | [Marathi](../mr/README.md) | [Nepaleză](../ne/README.md) | [Norvegiană](../no/README.md) | [Persană (Farsi)](../fa/README.md) | [Poloneză](../pl/README.md) | [Portugheză (Brazilia)](../br/README.md) | [Portugheză (Portugalia)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Română](./README.md) | [Rusă](../ru/README.md) | [Sârbă (Chirilică)](../sr/README.md) | [Slovacă](../sk/README.md) | [Slovenă](../sl/README.md) | [Spaniolă](../es/README.md) | [Swahili](../sw/README.md) | [Suedeză](../sv/README.md) | [Tagalog (Filipineză)](../tl/README.md) | [Thailandeză](../th/README.md) | [Turcă](../tr/README.md) | [Ucraineană](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnameză](../vi/README.md)
 
-**Dacă dorești să fie suportate alte limbi, lista completă este disponibilă [aici](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Dacă doriți să aveți suport pentru alte limbi, lista completă este disponibilă [aici](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introducere
 
-Bine ai venit la **EdgeAI pentru Începători** – o călătorie completă în lumea transformatoare a Inteligenței Artificiale la margine. Acest curs face legătura între capacitățile puternice ale AI și implementarea practică în lumea reală pe dispozitive edge, oferindu-ți puterea de a valorifica potențialul AI direct acolo unde se generează datele și unde trebuie luate deciziile.
+Bine ați venit la **EdgeAI pentru Începători** – o călătorie cuprinzătoare în lumea transformatoare a Inteligenței Artificiale la margine. Acest curs face legătura între capacitățile puternice ale AI și implementarea practică în lumea reală pe dispozitive edge, oferindu-vă posibilitatea de a valorifica potențialul AI direct acolo unde se generează datele și unde trebuie luate deciziile.
 
-### Ce Vei Învăța
+### Ce Veți Învăța
 
-Acest curs te va ghida de la concepte fundamentale la implementări pregătite pentru producție, acoperind:
-- **Modele de Limbaj Mici (SLMs)** optimizate pentru implementare la margine
+Acest curs vă duce de la concepte fundamentale la implementări pregătite pentru producție, acoperind:
+- **Modele de Limbaj Mici (SLMs)** optimizate pentru implementarea la margine
 - **Optimizare hardware** pe diverse platforme
 - **Inferență în timp real** cu capacități de protejare a confidențialității
 - **Strategii de implementare în producție** pentru aplicații enterprise
 
-### De ce Este Important EdgeAI
+### De Ce Este Important EdgeAI
 
 Edge AI reprezintă o schimbare de paradigmă care abordează provocările moderne critice:
-- **Confidențialitate & Securitate**: Procesarea datelor sensibile local, fără expunere la cloud
-- **Performanță în Timp Real**: Eliminarea latenței rețelei pentru aplicații critice
-- **Eficiență Costuri**: Reducerea cheltuielilor de lățime de bandă și calcul în cloud
-- **Operațiuni Reziliente**: Menținerea funcționalității în timpul întreruperilor de rețea
-- **Conformitate Regulatorie**: Respectarea cerințelor de suveranitate a datelor
+- **Confidențialitate & Securitate**: Procesați date sensibile local, fără expunere la cloud
+- **Performanță în timp real**: Eliminați latența rețelei pentru aplicații critice
+- **Eficiență Costuri**: Reduceți cheltuielile de lățime de bandă și calcul în cloud
+- **Operațiuni Reziliente**: Mențineți funcționalitatea în timpul întreruperilor de rețea
+- **Conformitate Regulatorie**: Respectați cerințele de suveranitate a datelor
 
 ### Edge AI
 
-Edge AI se referă la rularea algoritmilor AI și a modelelor de limbaj local pe hardware, aproape de locul unde se generează datele, fără a depinde de resursele cloud pentru inferență. Aceasta reduce latența, îmbunătățește confidențialitatea și permite luarea deciziilor în timp real.
+Edge AI se referă la rularea algoritmilor AI și a modelelor de limbaj local pe hardware, aproape de locul unde se generează datele, fără a se baza pe resurse cloud pentru inferență. Acest lucru reduce latența, îmbunătățește confidențialitatea și permite luarea deciziilor în timp real.
 
 ### Principii de Bază:
 - **Inferență pe dispozitiv**: Modelele AI rulează pe dispozitive edge (telefoane, routere, microcontrolere, PC-uri industriale)
@@ -86,7 +86,7 @@ Acestea oferă capabilități NLP puternice, respectând constrângerile:
 | Modul | Subiect | Zonă de Focus | Conținut Cheie | Nivel | Durată |
 |-------|---------|---------------|----------------|-------|--------|
 | [📖 00 ](./introduction.md) | [Introducere în EdgeAI](./introduction.md) | Fundamente & Context | Prezentare EdgeAI • Aplicații Industriale • Introducere SLM • Obiective de Învățare | Începător | 1-2 ore |
-| [📚 01](../../Module01) | [Fundamentele EdgeAI](./Module01/README.md) | Comparație Cloud vs Edge AI | Fundamente EdgeAI • Studii de Caz Reale • Ghid de Implementare • Implementare Edge | Începător | 3-4 ore |
+| [📚 01](../../Module01) | [Fundamentele EdgeAI](./Module01/README.md) | Comparație Cloud vs Edge AI | Fundamentele EdgeAI • Studii de Caz • Ghid de Implementare • Implementare Edge | Începător | 3-4 ore |
 | [🧠 02](../../Module02) | [Fundamentele Modelului SLM](./Module02/README.md) | Familii de modele & arhitectură | Familia Phi • Familia Qwen • Familia Gemma • BitNET • μModel • Phi-Silica | Începător | 4-5 ore |
 | [🚀 03](../../Module03) | [Practica de Implementare SLM](./Module03/README.md) | Implementare locală & cloud | Învățare Avansată • Mediu Local • Implementare Cloud | Intermediar | 4-5 ore |
 | [⚙️ 04](../../Module04) | [Toolkit de Optimizare a Modelului](./Module04/README.md) | Optimizare cross-platform | Introducere • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Sinteza Fluxului de Lucru | Intermediar | 5-6 ore |
@@ -102,59 +102,76 @@ Acestea oferă capabilități NLP puternice, respectând constrângerile:
 - [03: Descoperirea & Benchmarking-ul Modelului](./Module08/samples/03/README.md)
 - [04: Aplicație Chainlit RAG](./Module08/samples/04/README.md)
 - [05: Orchestrare Multi-Agent](./Module08/samples/05/README.md)
-- [06: Router pentru Modele-ca-Unelte](./Module08/samples/06/README.md)
+- [06: Router Models-as-Tools](./Module08/samples/06/README.md)
 - [07: Client API Direct](./Module08/samples/07/README.md)
 - [08: Aplicație Chat Windows 11](./Module08/samples/08/README.md)
 - [09: Sistem Multi-Agent Avansat](./Module08/samples/09/README.md)
-- [10: Framework-ul Foundry Tools](./Module08/samples/10/README.md)
+- [10: Framework Foundry Tools](./Module08/samples/10/README.md)
 
-### 📊 **Rezumatul Căii de Învățare**
+### 🎓 **Workshop: Cale de Învățare Practică**
+
+Materiale complete pentru workshop cu implementări pregătite pentru producție:
+
+- **[Ghid Workshop](./Workshop/Readme.md)** - Obiective complete de învățare, rezultate și navigare resurse
+- **Exemple Python** (6 sesiuni) - Actualizate cu cele mai bune practici, gestionarea erorilor și documentație cuprinzătoare
+- **Jupyter Notebooks** (8 interactive) - Tutoriale pas cu pas cu benchmark-uri și monitorizare performanță
+- **Ghiduri Sesiuni** - Ghiduri detaliate în markdown pentru fiecare sesiune de workshop
+- **Instrumente de Validare** - Scripturi pentru verificarea calității codului și teste rapide
+
+**Ce Veți Construi:**
+- Aplicații locale de chat AI cu suport pentru streaming
+- Pipeline-uri RAG cu evaluare calitativă (RAGAS)
+- Instrumente de benchmarking și comparație multi-model
+- Sisteme de orchestrare multi-agent
+- Rutare inteligentă a modelelor cu selecție bazată pe sarcini
+
+### 📊 **Rezumat Cale de Învățare**
 - **Durată Totală**: 36-45 ore
-- **Calea Începătorului**: Modulele 01-02 (7-9 ore)  
-- **Calea Intermediară**: Modulele 03-04 (9-11 ore)
-- **Calea Avansată**: Modulele 05-07 (12-15 ore)
-- **Calea Expertului**: Modulul 08 (8-10 ore)
+- **Cale Începător**: Modulele 01-02 (7-9 ore)  
+- **Cale Intermediar**: Modulele 03-04 (9-11 ore)
+- **Cale Avansat**: Modulele 05-07 (12-15 ore)
+- **Cale Expert**: Modulul 08 (8-10 ore)
 
-## Ce Vei Construi
+## Ce Veți Construi
 
 ### 🎯 Competențe de Bază
-- **Arhitectura Edge AI**: Proiectarea sistemelor AI locale cu integrare cloud
-- **Optimizarea Modelului**: Cuantizarea și comprimarea modelelor pentru implementare la margine (creștere de 85% a vitezei, reducere de 75% a dimensiunii)
+- **Arhitectură Edge AI**: Proiectați sisteme AI locale cu integrare cloud
+- **Optimizare Model**: Quantizați și comprimați modele pentru implementare edge (85% creștere viteză, 75% reducere dimensiune)
 - **Implementare Multi-Platformă**: Windows, mobil, încorporat și sisteme hibride cloud-edge
-- **Operațiuni de Producție**: Monitorizare, scalare și întreținere AI la margine în producție
+- **Operațiuni de Producție**: Monitorizare, scalare și întreținere AI edge în producție
 
 ### 🏗️ Proiecte Practice
 - **Aplicații Chat Foundry Local**: Aplicație nativă Windows 11 cu schimbare de model
 - **Sisteme Multi-Agent**: Coordonator cu agenți specializați pentru fluxuri de lucru complexe  
-- **Aplicații RAG**: Procesare locală a documentelor cu căutare vectorială
-- **Routere de Modele**: Selecție inteligentă între modele bazată pe analiza sarcinilor
-- **Framework-uri API**: Clienți pregătiți pentru producție cu streaming și monitorizare a sănătății
-- **Unelte Cross-Platformă**: Modele de integrare LangChain/Semantic Kernel
+- **Aplicații RAG**: Procesare locală de documente cu căutare vectorială
+- **Routere de Model**: Selecție inteligentă între modele bazată pe analiza sarcinilor  
+- **Framework-uri API**: Clienți gata de producție cu streaming și monitorizare a stării  
+- **Instrumente Cross-Platform**: Modele de integrare LangChain/Semantic Kernel  
 
-### 🏢 Aplicații Industriale
-**Producție** • **Sănătate** • **Vehicule Autonome** • **Orașe Inteligente** • **Aplicații Mobile**
+### 🏢 Aplicații Industriale  
+**Producție** • **Sănătate** • **Vehicule Autonome** • **Orașe Inteligente** • **Aplicații Mobile**  
 
-## Start Rapid
+## Start Rapid  
 
-**Calea de Învățare Recomandată** (20-30 ore total):
+**Cale de Învățare Recomandată** (20-30 ore în total):  
 
-0. **📖 Introducere** ([Introduction.md](./introduction.md)): Fundamente EdgeAI + context industrial + cadru de învățare
-1. **📚 Fundamente** (Modulele 01-02): Concepte EdgeAI + familii de modele SLM
-2. **⚙️ Optimizare** (Modulele 03-04): Implementare + framework-uri de cuantizare  
+0. **📖 Introducere** ([Introduction.md](./introduction.md)): Fundamente EdgeAI + context industrial + cadru de învățare  
+1. **📚 Fundamente** (Modulele 01-02): Concepte EdgeAI + familii de modele SLM  
+2. **⚙️ Optimizare** (Modulele 03-04): Implementare + cadre de cuantizare  
 3. **🚀 Producție** (Modulele 05-06): SLMOps + agenți AI + apelarea funcțiilor  
 4. **💻 Implementare** (Modulele 07-08): Exemple de platformă + toolkit Foundry Local  
 
-Fiecare modul include teorie, exerciții practice și exemple de cod gata de producție.
+Fiecare modul include teorie, exerciții practice și exemple de cod gata de producție.  
 
-## Impact asupra carierei
+## Impact asupra Carierei  
 
-**Roluri tehnice**: Arhitect de soluții EdgeAI • Inginer ML (Edge) • Dezvoltator IoT AI • Dezvoltator AI pentru mobil  
+**Roluri Tehnice**: Arhitect Soluții EdgeAI • Inginer ML (Edge) • Dezvoltator IoT AI • Dezvoltator AI Mobile  
 
-**Sectore industriale**: Manufacturing 4.0 • Tehnologie medicală • Sisteme autonome • FinTech • Electronice de consum  
+**Sectore Industriale**: Producție 4.0 • Tehnologie Medicală • Sisteme Autonome • FinTech • Electronice de Consum  
 
-**Proiecte de portofoliu**: Sisteme multi-agent • Aplicații RAG de producție • Implementare cross-platform • Optimizare performanță  
+**Proiecte de Portofoliu**: Sisteme multi-agent • Aplicații RAG de producție • Implementare cross-platform • Optimizare performanță  
 
-## Structura depozitului
+## Structura Repozitorului  
 
 ```
 edgeai-for-beginners/
@@ -170,22 +187,22 @@ edgeai-for-beginners/
 ```
   
 
-## Repere ale cursului
+## Repere ale Cursului  
 
-✅ **Învățare progresivă**: Teorie → Practică → Implementare în producție  
-✅ **Studii de caz reale**: Microsoft, Japan Airlines, implementări enterprise  
-✅ **Exemple practice**: Peste 50 de exemple, 10 demonstrații complete Foundry Local  
-✅ **Focus pe performanță**: Îmbunătățiri de viteză de 85%, reduceri de dimensiune de 75%  
-✅ **Multi-platformă**: Windows, mobil, embedded, cloud-edge hybrid  
-✅ **Gata de producție**: Monitorizare, scalare, securitate, cadre de conformitate  
+✅ **Învățare Progresivă**: Teorie → Practică → Implementare în producție  
+✅ **Studii de Caz Reale**: Microsoft, Japan Airlines, implementări enterprise  
+✅ **Exemple Practice**: Peste 50 de exemple, 10 demonstrații complete Foundry Local  
+✅ **Focus pe Performanță**: Îmbunătățiri de viteză de 85%, reduceri de dimensiune de 75%  
+✅ **Multi-Platformă**: Windows, mobil, embedded, cloud-edge hibrid  
+✅ **Gata de Producție**: Monitorizare, scalare, securitate, cadre de conformitate  
 
-📖 **[Ghid de studiu disponibil](STUDY_GUIDE.md)**: Parcurs de învățare structurat de 20 de ore cu orientări privind alocarea timpului și instrumente de autoevaluare.
+📖 **[Ghid de Studiu Disponibil](STUDY_GUIDE.md)**: Cale de învățare structurată de 20 de ore cu ghid de alocare a timpului și instrumente de autoevaluare.  
 
----
+---  
 
-**EdgeAI reprezintă viitorul implementării AI**: local-prim, care protejează confidențialitatea și eficient. Stăpânește aceste abilități pentru a construi următoarea generație de aplicații inteligente.
+**EdgeAI reprezintă viitorul implementării AI**: local-prim, care protejează confidențialitatea și eficient. Stăpânește aceste abilități pentru a construi următoarea generație de aplicații inteligente.  
 
-## Alte cursuri
+## Alte Cursuri  
 
 Echipa noastră produce și alte cursuri! Verifică:  
 
@@ -203,19 +220,19 @@ Echipa noastră produce și alte cursuri! Verifică:
 - [Dezvoltare XR pentru Începători](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
 - [Stăpânirea GitHub Copilot pentru Programare AI în Perechi](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
 - [Stăpânirea GitHub Copilot pentru Dezvoltatori C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
-- [Alege-ți propria aventură Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+- [Alege-ți Propria Aventură Copilot](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
-## Obținerea ajutorului
+## Obținerea Ajutorului  
 
 Dacă întâmpini dificultăți sau ai întrebări despre construirea aplicațiilor AI, alătură-te:  
 
-[![Discord Azure AI Foundry](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
 
 Dacă ai feedback despre produs sau erori în timpul construirii, vizitează:  
 
-[![Forum pentru Dezvoltatori Azure AI Foundry](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
