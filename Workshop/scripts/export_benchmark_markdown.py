@@ -137,7 +137,7 @@ def format_markdown(summary: List[Dict[str, Any]]) -> str:
                 alias=row["alias"],
                 avg=row["latency_avg"],
                 p95=row["latency_p95"],
-                tps=(f"{row['tokens_per_sec_avg']:.1f}" if row.get("tokens_per_sec_avg") else "-") ,
+                tps=(f"{row['tokens_per_sec_avg']:.1f}" if row.get("tokens_per_sec_avg") else "-")
                 rounds=row["rounds"],
                 ft=(f"{row['first_token_latency_avg']:.2f}" if row.get("first_token_latency_avg") else "-")
             )
