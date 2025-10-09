@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "3f8ec059920a41b354c806f312b6ee24",
-  "translation_date": "2025-09-26T08:43:39+00:00",
+  "original_hash": "f86e720f67bb196e2fb6625b2338a1fb",
+  "translation_date": "2025-10-09T10:30:43+00:00",
   "source_file": "STUDY_GUIDE.md",
   "language_code": "tr"
 }
 -->
-# EdgeAI için Başlangıç Rehberi: Öğrenme Yolları ve Çalışma Programı
+# EdgeAI için Yeni Başlayanlar: Öğrenme Yolları ve Çalışma Programı
 
-### Yoğunlaştırılmış Öğrenme Yolu (1 hafta)
+### Yoğun Öğrenme Yolu (1 hafta)
 
-| Gün | Odak | Tahmini Süre |
+| Gün | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Gün 0 | Modül 0: EdgeAI'ye Giriş | 1-2 saat |
 | Gün 1 | Modül 1: EdgeAI Temelleri | 3 saat |
@@ -22,9 +22,9 @@ CO_OP_TRANSLATOR_METADATA:
 | Gün 7 | Modül 6-7: AI Ajanları ve Geliştirme Araçları | 4 saat |
 | Gün 8 | Modül 8: Foundry Yerel Araç Seti (Modern Uygulama) | 1 saat |
 
-### Yoğunlaştırılmış Öğrenme Yolu (2 hafta)
+### Yoğun Öğrenme Yolu (2 hafta)
 
-| Gün | Odak | Tahmini Süre |
+| Gün | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Gün 1-2 | Modül 1: EdgeAI Temelleri | 3 saat |
 | Gün 3-4 | Modül 2: SLM Temelleri | 3 saat |
@@ -36,14 +36,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### Yarı Zamanlı Çalışma (4 hafta)
 
-| Hafta | Odak | Tahmini Süre |
+| Hafta | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Hafta 1 | Modül 1-2: Temeller ve SLM Temelleri | 6 saat |
 | Hafta 2 | Modül 3-4: Dağıtım ve Optimizasyon | 6 saat |
 | Hafta 3 | Modül 5-6: SLMOps ve AI Ajanları | 5 saat |
 | Hafta 4 | Modül 7: Geliştirme Araçları ve Entegrasyon | 3 saat |
 
-| Gün | Odak | Tahmini Süre |
+| Gün | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Gün 0 | Modül 0: EdgeAI'ye Giriş | 1-2 saat |
 | Gün 1-2 | Modül 1: EdgeAI Temelleri | 3 saat |
@@ -54,7 +54,7 @@ CO_OP_TRANSLATOR_METADATA:
 | Gün 11-12 | Modül 6: SLM Ajan Sistemleri | 2 saat |
 | Gün 13-14 | Modül 7: EdgeAI Uygulama Örnekleri | 2 saat |
 
-| Modül | Tamamlama Tarihi | Harcanan Süre | Ana Çıkarımlar |
+| Modül | Tamamlama Tarihi | Harcanan Saat | Ana Çıkarımlar |
 |--------|----------------|-------------|--------------|
 | Modül 0: EdgeAI'ye Giriş | | | |
 | Modül 1: EdgeAI Temelleri | | | |
@@ -69,7 +69,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### Yarı Zamanlı Çalışma (4 hafta)
 
-| Hafta | Odak | Tahmini Süre |
+| Hafta | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Hafta 1 | Modül 1-2: Temeller ve SLM Temelleri | 6 saat |
 | Hafta 2 | Modül 3-4: Dağıtım ve Optimizasyon | 6 saat |
@@ -78,7 +78,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Giriş
 
-EdgeAI için Başlangıç Rehberi'ne hoş geldiniz! Bu belge, kurs materyallerini etkili bir şekilde kullanmanıza ve öğrenme deneyiminizi en üst düzeye çıkarmanıza yardımcı olmak için tasarlanmıştır. Yapılandırılmış öğrenme yolları, önerilen çalışma programları, anahtar kavram özetleri ve Edge AI teknolojilerini daha iyi anlamanızı sağlayacak ek kaynaklar sunar.
+EdgeAI için Yeni Başlayanlar çalışma rehberine hoş geldiniz! Bu belge, kurs materyallerini etkili bir şekilde takip etmenize ve öğrenme deneyiminizi en üst düzeye çıkarmanıza yardımcı olmak için tasarlanmıştır. Yapılandırılmış öğrenme yolları, önerilen çalışma programları, anahtar kavram özetleri ve Edge AI teknolojilerini daha iyi anlamanızı sağlayacak ek kaynaklar sunar.
 
 Bu, EdgeAI hakkında temel bilgileri zaman açısından verimli bir formatta sunan, yoğun bir 20 saatlik kurstur. Yoğun programlara sahip profesyoneller ve bu yükselen alanda hızlı bir şekilde pratik beceriler kazanmak isteyen öğrenciler için idealdir.
 
@@ -87,13 +87,13 @@ Bu, EdgeAI hakkında temel bilgileri zaman açısından verimli bir formatta sun
 Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 0. **EdgeAI'ye Giriş** - Temel bilgiler ve endüstri uygulamaları ile öğrenme hedeflerinin belirlenmesi
-1. **EdgeAI Temelleri ve Dönüşümü** - Temel kavramların ve teknolojik değişimin anlaşılması
-2. **Küçük Dil Modeli Temelleri** - Çeşitli SLM ailelerinin ve mimarilerinin keşfi
+1. **EdgeAI Temelleri ve Dönüşümü** - Temel kavramların ve teknoloji değişiminin anlaşılması
+2. **Küçük Dil Modeli (SLM) Temelleri** - Çeşitli SLM ailelerinin ve mimarilerinin keşfi
 3. **Küçük Dil Modeli Dağıtımı** - Pratik dağıtım stratejilerinin uygulanması
 4. **Model Format Dönüşümü ve Kuantizasyon** - OpenVINO dahil 6 framework ile ileri düzey optimizasyon
 5. **SLMOps - Küçük Dil Modeli Operasyonları** - Üretim yaşam döngüsü yönetimi ve dağıtım
-6. **SLM Ajan Sistemleri** - AI ajanları, fonksiyon çağrısı ve Model Context Protocol
-7. **EdgeAI Uygulama Örnekleri** - AI Araç Seti, Windows geliştirme ve platforma özel uygulamalar
+6. **SLM Ajan Sistemleri** - AI ajanları, fonksiyon çağrısı ve Model Bağlam Protokolü
+7. **EdgeAI Uygulama Örnekleri** - AI Araç Seti, Windows geliştirme ve platforma özgü uygulamalar
 8. **Microsoft Foundry Yerel – Tam Geliştirici Araç Seti** - Yerel odaklı geliştirme ve hibrit Azure entegrasyonu (Modül 08)
 
 ## Bu Çalışma Rehberi Nasıl Kullanılır
@@ -101,13 +101,13 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 - **Aşamalı Öğrenme**: En tutarlı öğrenme deneyimi için modülleri sırayla takip edin
 - **Bilgi Kontrol Noktaları**: Her bölümden sonra kendinizi değerlendirme sorularını kullanın
 - **Uygulamalı Pratik**: Teorik kavramları pekiştirmek için önerilen alıştırmaları tamamlayın
-- **Ek Kaynaklar**: İlginizi çeken konular için ek materyalleri keşfedin
+- **Ek Kaynaklar**: En çok ilgilendiğiniz konular için ek materyalleri keşfedin
 
 ## Çalışma Programı Önerileri
 
-### Yoğunlaştırılmış Öğrenme Yolu (1 hafta)
+### Yoğun Öğrenme Yolu (1 hafta)
 
-| Gün | Odak | Tahmini Süre |
+| Gün | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Gün 0 | Modül 0: EdgeAI'ye Giriş | 1-2 saat |
 | Gün 1-2 | Modül 1: EdgeAI Temelleri | 6 saat |
@@ -117,7 +117,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Yarı Zamanlı Çalışma (3 hafta)
 
-| Hafta | Odak | Tahmini Süre |
+| Hafta | Odak | Tahmini Saat |
 |------|-------|------------------|
 | Hafta 1 | Modül 0: Giriş + Modül 1: EdgeAI Temelleri | 7-9 saat |
 | Hafta 2 | Modül 2: SLM Temelleri | 7-8 saat |
@@ -127,11 +127,11 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Ana Öğrenme Hedefleri
 
-- Edge AI'nin ne olduğunu ve günümüz teknoloji dünyasında neden önemli olduğunu anlamak
-- Edge AI tarafından dönüştürülen ana endüstrileri ve özel kullanım alanlarını tanımlamak
-- Küçük Dil Modellerinin (SLM'ler) edge dağıtımı için avantajlarını kavramak
-- Kursun tamamı için net öğrenme beklentileri ve sonuçlar belirlemek
-- Edge AI alanındaki kariyer fırsatlarını ve beceri gereksinimlerini tanımak
+- Edge AI'nin ne olduğunu ve günümüz teknoloji dünyasında neden önemli olduğunu anlayın
+- Edge AI tarafından dönüştürülen ana endüstrileri ve spesifik kullanım alanlarını belirleyin
+- Küçük Dil Modellerinin (SLM'ler) uç dağıtım için avantajlarını kavrayın
+- Tüm kurs için net öğrenme beklentileri ve sonuçlar oluşturun
+- Edge AI alanındaki kariyer fırsatlarını ve beceri gereksinimlerini tanıyın
 
 ### Çalışma Odak Alanları
 
@@ -152,8 +152,8 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 #### Bölüm 3: Küçük Dil Modelleri Temeli
 - **Öncelikli Kavramlar**: 
   - SLM özellikleri ve performans karşılaştırmaları
-  - Parametre verimliliği ve yetenek dengesi
-  - Edge dağıtım kısıtlamaları ve optimizasyon stratejileri
+  - Parametre verimliliği ve yetenekler arasındaki denge
+  - Uç dağıtım kısıtlamaları ve optimizasyon stratejileri
 
 #### Bölüm 4: Öğrenme Çerçevesi ve Kariyer Yolu
 - **Öncelikli Kavramlar**: 
@@ -173,23 +173,23 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Uygulamalı Alıştırmalar
 
 1. **Endüstri Araştırması**: Bir endüstri uygulaması seçin ve gerçek bir Edge AI uygulamasını araştırın (30 dakika)
-2. **Model Keşfi**: Hugging Face üzerinde mevcut Küçük Dil Modellerini inceleyin ve parametre sayılarını ve yeteneklerini karşılaştırın (30 dakika)
+2. **Model Keşfi**: Hugging Face'deki mevcut Küçük Dil Modellerini inceleyin ve parametre sayılarını ve yeteneklerini karşılaştırın (30 dakika)
 3. **Öğrenme Planlama**: Kurs yapısını gözden geçirin ve kişisel çalışma programınızı oluşturun (15 dakika)
 
 ### Ek Materyaller
 
-- [Edge AI Pazar Genel Bakışı - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
-- [Küçük Dil Modelleri Genel Bakışı - Hugging Face](https://huggingface.co/blog/small-language-models)
-- [Edge Computing Temelleri](https://www.edgecomputing.org/)
+- [Edge AI Pazar Görünümü - McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-age-of-ai)
+- [Küçük Dil Modelleri Görünümü - Hugging Face](https://huggingface.co/blog/small-language-models)
+- [Edge Computing Temeli](https://www.edgecomputing.org/)
 
 ## Modül 1: EdgeAI Temelleri ve Dönüşümü
 
 ### Ana Öğrenme Hedefleri
 
-- Bulut tabanlı ve edge tabanlı AI arasındaki farkları anlamak
-- Kaynak kısıtlı ortamlar için temel optimizasyon tekniklerini öğrenmek
-- EdgeAI teknolojilerinin gerçek dünya uygulamalarını analiz etmek
-- EdgeAI projeleri için bir geliştirme ortamı kurmak
+- Bulut tabanlı ve uç tabanlı AI arasındaki farkları anlayın
+- Kaynak kısıtlı ortamlar için temel optimizasyon tekniklerini öğrenin
+- EdgeAI teknolojilerinin gerçek dünya uygulamalarını analiz edin
+- EdgeAI projeleri için bir geliştirme ortamı kurun
 
 ### Çalışma Odak Alanları
 
@@ -217,7 +217,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
   - Kuantizasyon ve optimizasyon araçları
   - EdgeAI uygulamaları için değerlendirme yöntemleri
 
-#### Bölüm 4: Edge Dağıtım Donanımı
+#### Bölüm 4: Uç Dağıtım Donanımı
 - **Öncelikli Kavramlar**: 
   - Donanım platformu karşılaştırmaları
   - Belirli donanımlar için optimizasyon stratejileri
@@ -225,9 +225,9 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Kendini Değerlendirme Soruları
 
-1. Bulut tabanlı AI ile edge tabanlı AI uygulamalarını karşılaştırın.
-2. Edge dağıtımı için modelleri optimize etmenin üç ana tekniğini açıklayın.
-3. AI modellerini edge'de çalıştırmanın başlıca avantajları nelerdir?
+1. Bulut tabanlı AI ile uç tabanlı AI uygulamalarını karşılaştırın.
+2. Uç dağıtım için modelleri optimize etmenin üç ana tekniğini açıklayın.
+3. AI modellerini uçta çalıştırmanın başlıca avantajları nelerdir?
 4. Bir modeli kuantize etme sürecini ve bunun performansı nasıl etkilediğini açıklayın.
 5. Farklı donanım hızlandırıcılarının (NPU'lar, GPU'lar, CPU'lar) EdgeAI dağıtımını nasıl etkilediğini açıklayın.
 
@@ -241,10 +241,10 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Ana Öğrenme Hedefleri
 
-- Farklı SLM ailelerinin mimari prensiplerini anlamak
-- Farklı parametre ölçekleri arasında model yeteneklerini karşılaştırmak
-- Verimlilik, yetenek ve dağıtım gereksinimlerine göre modelleri değerlendirmek
-- Farklı model aileleri için uygun kullanım alanlarını tanımak
+- Farklı SLM ailelerinin mimari prensiplerini anlayın
+- Farklı parametre ölçeklerinde model yeteneklerini karşılaştırın
+- Verimlilik, yetenek ve dağıtım gereksinimlerine göre modelleri değerlendirin
+- Farklı model aileleri için uygun kullanım alanlarını tanıyın
 
 ### Çalışma Odak Alanları
 
@@ -252,7 +252,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 - **Öncelikli Kavramlar**: 
   - Tasarım felsefesi evrimi
   - Verimlilik odaklı mimari
-  - Özelleşmiş yetenekler
+  - Özelleştirilmiş yetenekler
 
 #### Bölüm 2: Qwen Ailesi
 - **Öncelikli Kavramlar**: 
@@ -281,7 +281,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 #### Bölüm 6: Phi-Silica
 - **Öncelikli Kavramlar**: 
   - NPU'ya optimize edilmiş mimari
-  - Performans metrikleri
+  - Performans ölçütleri
   - Geliştirici entegrasyonu
 
 ### Kendini Değerlendirme Soruları
@@ -294,9 +294,9 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Uygulamalı Alıştırmalar
 
-1. **Model Karşılaştırması**: İki farklı SLM modelinin hızlı bir karşılaştırması (1 saat)  
-2. **Basit Metin Üretimi**: Küçük bir modelle metin üretiminin temel bir uygulaması (1 saat)  
-3. **Hızlı Optimizasyon**: Çıkarım hızını artırmak için bir optimizasyon tekniği uygulama (1 saat)  
+1. **Model Karşılaştırması**: İki farklı SLM modelinin hızlı bir karşılaştırmasını yapın (1 saat)  
+2. **Basit Metin Üretimi**: Küçük bir modelle metin üretimi için temel bir uygulama yapın (1 saat)  
+3. **Hızlı Optimizasyon**: Çıkarım hızını artırmak için bir optimizasyon tekniği uygulayın (1 saat)  
 
 ## Modül 3: Küçük Dil Modeli Dağıtımı
 
@@ -310,19 +310,19 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Çalışma Odak Alanları
 
 #### Bölüm 1: SLM İleri Düzey Öğrenme  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Parametre sınıflandırma çerçevesi  
   - İleri düzey optimizasyon teknikleri  
   - Model edinme stratejileri  
 
 #### Bölüm 2: Yerel Ortamda Dağıtım  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Ollama platformunda dağıtım  
   - Microsoft Foundry yerel çözümleri  
   - Çerçeve karşılaştırmalı analiz  
 
 #### Bölüm 3: Konteynerleştirilmiş Bulut Dağıtımı  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - vLLM yüksek performanslı çıkarım  
   - Konteyner orkestrasyonu  
   - ONNX Runtime uygulaması  
@@ -337,11 +337,11 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 
 ### Uygulamalı Alıştırmalar
 
-1. **Temel Yerel Dağıtım**: Ollama kullanarak basit bir SLM dağıtımı yapın (1 saat)  
-2. **Performans Kontrolü**: Dağıtılan modelinizde hızlı bir karşılaştırma çalıştırın (30 dakika)  
+1. **Temel Yerel Dağıtım**: Ollama kullanarak basit bir SLM dağıtın (1 saat)  
+2. **Performans Kontrolü**: Dağıtılan modelinizde hızlı bir karşılaştırma yapın (30 dakika)  
 3. **Basit Entegrasyon**: Dağıtılan modelinizi kullanan minimal bir uygulama oluşturun (1 saat)  
 
-## Modül 4: Model Format Dönüşümü ve Kuantizasyon
+## Modül 4: Model Formatı Dönüşümü ve Kuantizasyon
 
 ### Temel Öğrenme Hedefleri
 
@@ -353,38 +353,38 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Çalışma Odak Alanları
 
 #### Bölüm 1: Kuantizasyon Temelleri  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Hassasiyet sınıflandırma çerçevesi  
   - Performans ve doğruluk arasındaki denge  
   - Bellek kullanımını optimize etme  
 
 #### Bölüm 2: Llama.cpp Uygulaması  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Çapraz platformda dağıtım  
-  - GGUF format optimizasyonu  
+  - GGUF formatı optimizasyonu  
   - Donanım hızlandırma teknikleri  
 
 #### Bölüm 3: Microsoft Olive Suite  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Donanım odaklı optimizasyon  
   - Kurumsal düzeyde dağıtım  
   - Otomatik optimizasyon iş akışları  
 
 #### Bölüm 4: OpenVINO Araç Seti  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Intel donanım optimizasyonu  
   - Sinir Ağı Sıkıştırma Çerçevesi (NNCF)  
   - Çapraz platform çıkarım dağıtımı  
   - OpenVINO GenAI ile LLM dağıtımı  
 
 #### Bölüm 5: Apple MLX Çerçevesi  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Apple Silicon optimizasyonu  
   - Birleşik bellek mimarisi  
   - LoRA ince ayar yetenekleri  
 
 #### Bölüm 6: Edge AI Geliştirme İş Akışı Sentezi  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Birleşik iş akışı mimarisi  
   - Çerçeve seçimi karar ağaçları  
   - Üretim hazır olma doğrulaması  
@@ -395,7 +395,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 1. Farklı hassasiyet seviyelerinde kuantizasyon stratejilerini karşılaştırın (1-bit'ten 8-bit'e).  
 2. Edge dağıtımı için GGUF formatının avantajlarını açıklayın.  
 3. Microsoft Olive'deki donanım odaklı optimizasyon, dağıtım verimliliğini nasıl artırır?  
-4. OpenVINO'nun NNCF'sinin model sıkıştırma için temel faydaları nelerdir?  
+4. OpenVINO'nun NNCF'sinin model sıkıştırma için sunduğu temel faydalar nelerdir?  
 5. Apple MLX'in birleşik bellek mimarisini optimizasyon için nasıl kullandığını açıklayın.  
 6. İş akışı sentezi, optimal optimizasyon çerçevelerini seçmede nasıl yardımcı olur?  
 
@@ -404,7 +404,7 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 1. **Model Kuantizasyonu**: Bir modele farklı kuantizasyon seviyeleri uygulayın ve sonuçları karşılaştırın (1 saat)  
 2. **OpenVINO Optimizasyonu**: Intel donanımı için bir modeli NNCF ile sıkıştırın (1 saat)  
 3. **Çerçeve Karşılaştırması**: Aynı modeli üç farklı optimizasyon çerçevesinde test edin (1 saat)  
-4. **Performans Karşılaştırması**: Çıkarım hızı ve bellek kullanımı üzerindeki optimizasyon etkisini ölçün (1 saat)  
+4. **Performans Karşılaştırması**: Optimizasyonun çıkarım hızı ve bellek kullanımı üzerindeki etkisini ölçün (1 saat)  
 
 ## Modül 5: SLMOps - Küçük Dil Modeli Operasyonları
 
@@ -418,25 +418,25 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Çalışma Odak Alanları
 
 #### Bölüm 1: SLMOps'a Giriş  
-- **Öncelikli Konular**:  
-  - SLMOps'un AI operasyonlarındaki paradigma değişimi  
+- **Öncelikli Kavramlar**:  
+  - SLMOps'un yapay zeka operasyonlarındaki paradigma değişimi  
   - Maliyet verimliliği ve gizlilik odaklı mimari  
   - Stratejik iş etkisi ve rekabet avantajları  
 
 #### Bölüm 2: Model Distilasyonu  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Bilgi transfer teknikleri  
   - İki aşamalı distilasyon süreci uygulaması  
   - Azure ML distilasyon iş akışları  
 
 #### Bölüm 3: İnce Ayar Stratejileri  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Parametre verimli ince ayar (PEFT)  
   - LoRA ve QLoRA ileri düzey yöntemleri  
   - Çoklu adaptör eğitimi ve hiperparametre optimizasyonu  
 
 #### Bölüm 4: Üretim Dağıtımı  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Üretim için model dönüşümü ve kuantizasyon  
   - Foundry Local dağıtım yapılandırması  
   - Performans karşılaştırması ve kalite doğrulaması  
@@ -459,30 +459,30 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Temel Öğrenme Hedefleri
 
 - Küçük Dil Modelleri kullanarak edge ortamları için akıllı AI ajanları oluşturmak  
-- Sistematik iş akışları ile fonksiyon çağrısı yeteneklerini uygulamak  
+- Sistematik iş akışlarıyla fonksiyon çağrısı yeteneklerini uygulamak  
 - Standartlaştırılmış araç etkileşimi için Model Context Protocol (MCP) entegrasyonunu öğrenmek  
-- Minimum insan müdahalesi ile gelişmiş agentik sistemler oluşturmak  
+- Minimum insan müdahalesiyle gelişmiş agentik sistemler oluşturmak  
 
 ### Çalışma Odak Alanları
 
 #### Bölüm 1: AI Ajanları ve SLM Temelleri  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Ajan sınıflandırma çerçevesi (refleks, model tabanlı, hedef tabanlı, öğrenen ajanlar)  
   - SLM ve LLM karşılaştırması  
   - Edge'e özgü ajan tasarım desenleri  
   - Ajanlar için kaynak optimizasyonu  
 
 #### Bölüm 2: Küçük Dil Modellerinde Fonksiyon Çağrısı  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Sistematik iş akışı uygulaması (niyet algılama, JSON çıktısı, harici yürütme)  
   - Platforma özgü uygulamalar (Phi-4-mini, seçilmiş Qwen modelleri, Microsoft Foundry Local)  
   - İleri düzey örnekler (çoklu ajan iş birliği, dinamik araç seçimi)  
   - Üretim hususları (hız sınırlama, denetim kaydı, güvenlik önlemleri)  
 
 #### Bölüm 3: Model Context Protocol (MCP) Entegrasyonu  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - Protokol mimarisi ve katmanlı sistem tasarımı  
-  - Çoklu backend desteği (Ollama geliştirme için, vLLM üretim için)  
+  - Çoklu arka uç desteği (geliştirme için Ollama, üretim için vLLM)  
   - Bağlantı protokolleri (STDIO ve SSE modları)  
   - Gerçek dünya uygulamaları (web otomasyonu, veri işleme, API entegrasyonu)  
 
@@ -497,6 +497,91 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 1. **Basit Ajan**: Fonksiyon çağrısı ile temel bir AI ajanı oluşturun (1 saat)  
 2. **MCP Entegrasyonu**: Bir ajan uygulamasında MCP'yi uygulayın (30 dakika)  
 
+## Atölye: Uygulamalı Öğrenme Yolu
+
+### Temel Öğrenme Hedefleri
+
+- Foundry Local SDK ve en iyi uygulamalar kullanarak üretime hazır AI uygulamaları oluşturmak  
+- Kapsamlı hata yönetimi ve kullanıcı geri bildirim desenlerini uygulamak  
+- Kalite değerlendirmesi ve performans izleme ile RAG hatları oluşturmak  
+- Koordinatör desenleriyle çoklu ajan sistemleri geliştirmek  
+- Görev tabanlı model seçimi için akıllı model yönlendirme oluşturmak  
+- Gizlilik koruyucu mimarilerle yerel öncelikli AI çözümleri dağıtmak  
+
+### Çalışma Odak Alanları
+
+#### Oturum 01: Foundry Local ile Başlangıç  
+- **Öncelikli Kavramlar**:  
+  - FoundryLocalManager SDK entegrasyonu ve otomatik hizmet keşfi  
+  - Temel ve akışlı sohbet uygulamaları  
+  - Hata yönetimi desenleri ve kullanıcı geri bildirimi  
+  - Ortam tabanlı yapılandırma  
+
+#### Oturum 02: RAG ile AI Çözümleri Oluşturma  
+- **Öncelikli Kavramlar**:  
+  - Sentence-transformers ile bellek içi vektör gömme  
+  - RAG hattı uygulaması (retrieve → generate)  
+  - RAGAS metrikleri ile kalite değerlendirmesi  
+  - Opsiyonel bağımlılıklar için güvenli ithalat  
+
+#### Oturum 03: Açık Kaynak Modeller  
+- **Öncelikli Kavramlar**:  
+  - Çoklu model karşılaştırma stratejileri  
+  - Gecikme ve işlem hacmi ölçümleri  
+  - Zarif bozulma ve hata kurtarma  
+  - Model aileleri arasında performans karşılaştırması  
+
+#### Oturum 04: En Son Modeller  
+- **Öncelikli Kavramlar**:  
+  - SLM ve LLM karşılaştırma metodolojisi  
+  - Tür ipuçları ve kapsamlı çıktı formatlama  
+  - Model bazlı hata yönetimi  
+  - Analiz için yapılandırılmış sonuçlar  
+
+#### Oturum 05: AI Destekli Ajanlar  
+- **Öncelikli Kavramlar**:  
+  - Koordinatör deseniyle çoklu ajan orkestrasyonu  
+  - Ajan bellek yönetimi ve durum takibi  
+  - Hataya dayanıklı iş akışı ve aşama kaydı  
+  - Performans izleme ve istatistikler  
+
+#### Oturum 06: Araç Olarak Modeller  
+- **Öncelikli Kavramlar**:  
+  - Niyet algılama ve desen eşleştirme  
+  - Anahtar kelime tabanlı model yönlendirme algoritmaları  
+  - Çok adımlı iş akışları (plan → execute → refine)  
+  - Kapsamlı fonksiyon dokümantasyonu  
+
+### Kendini Değerlendirme Soruları
+
+1. FoundryLocalManager, manuel REST çağrılarına kıyasla hizmet yönetimini nasıl basitleştirir?  
+2. Sentence-transformers gibi opsiyonel bağımlılıklar için ithalat korumalarının önemi nedir?  
+3. Çoklu model karşılaştırmasında zarif bozulmayı sağlamak için hangi stratejiler kullanılır?  
+4. Koordinatör deseni, birden fazla uzman ajanı nasıl organize eder?  
+5. Akıllı bir model yönlendiricinin bileşenlerini açıklayın.  
+6. Üretime hazır hata yönetiminin temel unsurları nelerdir?  
+
+### Uygulamalı Alıştırmalar
+
+1. **Sohbet Uygulaması**: Hata yönetimi ile akışlı sohbet uygulaması oluşturun (45 dakika)  
+2. **RAG Hattı**: Kalite değerlendirmesi ile minimal bir RAG oluşturun (1 saat)  
+3. **Model Karşılaştırması**: 3+ modeli performans açısından karşılaştırın (1 saat)  
+4. **Çoklu Ajan Sistemi**: 2 uzman ajan ile koordinatör oluşturun (1.5 saat)  
+5. **Akıllı Yönlendirici**: Görev tabanlı model seçimi oluşturun (1 saat)  
+6. **Üretim Dağıtımı**: İzleme ve kapsamlı hata yönetimi ekleyin (45 dakika)  
+
+### Zaman Dağılımı
+
+**Yoğun Öğrenme (1 hafta)**:  
+- Gün 1: Oturum 01-02 (Sohbet + RAG) - 3 saat  
+- Gün 2: Oturum 03-04 (Karşılaştırma + Kıyaslama) - 3 saat  
+- Gün 3: Oturum 05-06 (Ajanlar + Yönlendirme) - 3 saat  
+- Gün 4: Uygulamalı alıştırmalar ve doğrulama - 2 saat  
+
+**Yarı Zamanlı Çalışma (2 hafta)**:  
+- 1. Hafta: Oturumlar 01-03 (Toplam 6 saat)  
+- 2. Hafta: Oturumlar 04-06 + alıştırmalar (Toplam 5 saat)  
+
 ## Modül 7: EdgeAI Uygulama Örnekleri
 
 ### Temel Öğrenme Hedefleri
@@ -509,222 +594,219 @@ Bu kurs, sekiz kapsamlı modülden oluşmaktadır:
 ### Çalışma Odak Alanları
 
 #### Bölüm 1: Visual Studio Code için AI Toolkit  
-- **Öncelikli Konular**:  
-  - VS Code içinde kapsamlı Edge AI geliştirme ortamı  
+- **Öncelikli Kavramlar**:  
+  - Visual Studio Code içinde kapsamlı Edge AI geliştirme ortamı  
   - Edge dağıtımı için model kataloğu ve keşfi  
   - Yerel test, optimizasyon ve ajan geliştirme iş akışları  
   - Edge senaryoları için performans izleme ve değerlendirme  
 
 #### Bölüm 2: Windows EdgeAI Geliştirme Kılavuzu  
-- **Öncelikli Konular**:  
-  - Windows AI Foundry platformunun kapsamlı bir incelemesi  
-  - Phi Silica API ile verimli NPU çıkarımı  
-  - Görüntü işleme ve OCR için Bilgisayar Görüşü API'leri  
-  - Yerel geliştirme ve test için Foundry Local CLI  
+- **Öncelikli Kavramlar**:  
+  - Windows AI
+4. Modern kenar yapay zeka uygulamalarında NPU optimizasyonunun rolünü açıklayın.  
+5. Phi Silica API, performans optimizasyonu için NPU donanımını nasıl kullanır?  
+6. Gizlilik hassasiyeti olan uygulamalar için yerel ve bulut dağıtımının faydalarını karşılaştırın.  
 
-#### Bölüm 3: Platforma Özgü Uygulamalar  
-- **Öncelikli Konular**:  
-  - NVIDIA Jetson Orin Nano dağıtımı (67 TOPS AI performansı)  
-  - .NET MAUI ve ONNX Runtime GenAI ile mobil uygulamalar  
-  - Bulut-edge hibrit mimarisi ile Azure EdgeAI çözümleri  
-  - Evrensel donanım desteği ile Windows ML optimizasyonu  
-  - Gizlilik odaklı RAG uygulaması ile Foundry Local uygulamaları  
+### Uygulamalı Alıştırmalar  
 
-### Kendini Değerlendirme Soruları
-
-1. AI Toolkit, EdgeAI geliştirme iş akışını nasıl kolaylaştırır?  
-2. Farklı donanım platformları arasında dağıtım stratejilerini karşılaştırın.  
-3. Edge geliştirme için Windows AI Foundry'nin avantajları nelerdir?  
-4. Modern edge AI uygulamalarında NPU optimizasyonunun rolünü açıklayın.  
-5. Phi Silica API, NPU donanımını performans optimizasyonu için nasıl kullanır?  
-6. Gizlilik hassas uygulamalar için yerel ve bulut dağıtımının faydalarını karşılaştırın.  
-
-### Uygulamalı Alıştırmalar
-
-1. **AI Toolkit Kurulumu**: AI Toolkit'i yapılandırın ve bir modeli optimize edin (1 saat)  
+1. **AI Araç Seti Kurulumu**: AI Araç Setini yapılandırın ve bir modeli optimize edin (1 saat)  
 2. **Windows AI Foundry**: Phi Silica API kullanarak basit bir Windows AI uygulaması oluşturun (1 saat)  
 3. **Çapraz Platform Dağıtımı**: Aynı modeli iki farklı platformda dağıtın (1 saat)  
-4. **NPU Optimizasyonu**: Windows AI Foundry araçları ile NPU performansını test edin (30 dakika)  
+4. **NPU Optimizasyonu**: Windows AI Foundry araçlarıyla NPU performansını test edin (30 dakika)  
 
-## Modül 8: Microsoft Foundry Local – Modernize Edilmiş Geliştirici Araç Seti
+## Modül 8: Microsoft Foundry Local – Tam Geliştirici Araç Seti (Modernize Edilmiş)  
 
-### Temel Öğrenme Hedefleri
+### Temel Öğrenme Hedefleri  
 
-- Foundry Local'ı modern SDK entegrasyonu ile kurmak ve yapılandırmak  
-- Koordinatör desenleri ile ileri düzey çoklu ajan sistemleri uygulamak  
-- Otomatik görev tabanlı seçim ile akıllı model yönlendiriciler oluşturmak  
-- Kapsamlı izleme ile üretime hazır AI çözümleri dağıtmak  
-- Hibrit dağıtım senaryoları için Azure AI Foundry ile entegrasyon  
-- FoundryLocalManager ve OpenAI istemcisi ile modern SDK desenlerini öğrenmek  
+- Foundry Local'ı modern SDK entegrasyonu ile kurun ve yapılandırın  
+- Koordinatör desenleriyle gelişmiş çoklu ajan sistemleri uygulayın  
+- Otomatik görev tabanlı seçimle akıllı model yönlendiriciler oluşturun  
+- Kapsamlı izleme ile üretime hazır yapay zeka çözümleri dağıtın  
+- Hibrit dağıtım senaryoları için Azure AI Foundry ile entegre edin  
+- FoundryLocalManager ve OpenAI istemcisi ile modern SDK desenlerini öğrenin  
 
-### Çalışma Odak Alanları
+### Çalışma Odak Alanları  
 
 #### Bölüm 1: Modern Kurulum ve Yapılandırma  
-- **Öncelikli Konular**:  
+- **Öncelikli Kavramlar**:  
   - FoundryLocalManager SDK entegrasyonu  
   - Otomatik hizmet keşfi ve sağlık izleme  
   - Ortam tabanlı yapılandırma desenleri  
-  - Üretim dağıtım hususları  
+  - Üretim dağıtımına yönelik hususlar  
 
-#### Bölüm 2: İleri Düzey Çoklu Ajan Sistemleri  
-- **Öncelikli Konular**:  
+#### Bölüm 2: Gelişmiş Çoklu Ajan Sistemleri  
+- **Öncelikli Kavramlar**:  
   - Uzman ajanlarla koordinatör deseni  
-  - Geri bildirim döngü mekanizmaları ile iyileştirme  
+  - Geri alma, akıl yürütme ve yürütme ajan uzmanlığı  
+  - İyileştirme için geri bildirim döngüsü mekanizmaları  
   - Performans izleme ve istatistik takibi  
 
 #### Bölüm 3: Akıllı Model Yönlendirme  
-- **Öncelikli Konular**:  
-  - Anahtar kelime tabanlı model seçme algoritmaları  
+- **Öncelikli Kavramlar**:  
+  - Anahtar kelime tabanlı model seçim algoritmaları  
   - Birden fazla model desteği (genel, akıl yürütme, kod, yaratıcı)  
   - Esneklik için ortam değişkeni yapılandırması  
   - Hizmet sağlık kontrolü ve hata yönetimi  
 
 #### Bölüm 4: Üretime Hazır Uygulama  
-- **Öncelikli Konular**:  
-  - Kapsamlı hata yönetimi ve geri dönüş mekanizmaları  
+- **Öncelikli Kavramlar**:  
+  - Kapsamlı hata yönetimi ve yedekleme mekanizmaları  
   - İstek izleme ve performans takibi  
   - Benchmarklarla etkileşimli Jupyter notebook örnekleri  
   - Mevcut uygulamalarla entegrasyon desenleri  
 
-### Kendini Değerlendirme Soruları
+### Kendini Değerlendirme Soruları  
 
 1. Modern FoundryLocalManager yaklaşımı manuel REST çağrılarından nasıl farklıdır?  
 2. Koordinatör desenini ve uzman ajanları nasıl yönettiğini açıklayın.  
 3. Akıllı yönlendirici, sorgu içeriğine göre uygun modelleri nasıl seçer?  
-4. Üretime hazır bir AI ajan sistemi için temel bileşenler nelerdir?  
+4. Üretime hazır bir yapay zeka ajan sisteminin temel bileşenleri nelerdir?  
 5. Foundry Local hizmetleri için kapsamlı sağlık izleme nasıl uygulanır?  
 6. Modernize edilmiş yaklaşımın geleneksel uygulama desenlerine göre faydalarını karşılaştırın.  
 
-### Uygulamalı Alıştırmalar
+### Uygulamalı Alıştırmalar  
 
 1. **Modern SDK Kurulumu**: FoundryLocalManager'ı otomatik hizmet keşfi ile yapılandırın (30 dakika)  
-2. **Çoklu Ajan Sistemi**: Uzman ajanlarla ileri düzey koordinatörü çalıştırın (30 dakika)  
+2. **Çoklu Ajan Sistemi**: Uzman ajanlarla gelişmiş koordinatörü çalıştırın (30 dakika)  
 3. **Akıllı Yönlendirme**: Farklı sorgu türleriyle model yönlendiriciyi test edin (30 dakika)  
-4. **Etkileşimli Keşif
-| Uygulamalı Alıştırmalar | 6 saat | Temel tekniklerin pratik uygulaması |
-| Öz Değerlendirme | 2 saat | Sorular ve düşünme yoluyla anlayışınızı test etme |
-| Mini Proje | 3 saat | Bilgiyi küçük bir pratik uygulamada kullanma |
+4. **Etkileşimli Keşif**: Gelişmiş özellikleri keşfetmek için Jupyter notebook'ları kullanın (45 dakika)  
+5. **Üretim Dağıtımı**: İzleme ve hata yönetimi desenlerini uygulayın (30 dakika)  
+6. **Hibrit Entegrasyon**: Azure AI Foundry yedekleme senaryolarını yapılandırın (30 dakika)  
 
-### Zaman Kısıtlamasına Göre Temel Odak Alanları
+## Zaman Dağılımı Kılavuzu  
 
-**Eğer sadece 10 saatiniz varsa:**
-- Modül 0 (Giriş) ve Modüller 1, 2 ve 3'ü (temel EdgeAI kavramları) tamamlayın
-- Her modülden en az bir uygulamalı alıştırma yapın
-- Uygulama detaylarından ziyade temel kavramları anlamaya odaklanın
+30 saatlik genişletilmiş kurs zaman çizelgesinden (Atölye dahil) en iyi şekilde yararlanmanıza yardımcı olmak için önerilen zaman dağılımı:  
 
-**Eğer tam 20 saat ayırabiliyorsanız:**
-- Tüm sekiz modülü (Giriş dahil) tamamlayın
-- Her modülden önemli uygulamalı alıştırmaları gerçekleştirin
-- Modül 7'den bir mini proje tamamlayın
-- En az 2-3 ek kaynağı keşfedin
+| Aktivite | Zaman Dağılımı | Açıklama |  
+|----------|----------------|-------------|  
+| Temel Materyalleri Okuma | 12 saat | Her modüldeki temel kavramlara odaklanma |  
+| Uygulamalı Alıştırmalar | 10 saat | Temel tekniklerin pratik uygulaması (Atölye dahil) |  
+| Kendini Değerlendirme | 3 saat | Sorular ve düşünce yoluyla anlayışınızı test etme |  
+| Mini Proje | 5 saat | Bilgiyi küçük bir pratik uygulamaya dönüştürme |  
 
-**Eğer 20 saatten fazla zamanınız varsa:**
-- Tüm modülleri (Giriş dahil) detaylı alıştırmalarla tamamlayın
-- Birden fazla mini proje oluşturun
-- Modül 4'teki ileri düzey optimizasyon tekniklerini keşfedin
-- Modül 5'ten üretim dağıtımını uygulayın
+### Zaman Kısıtlamasına Göre Anahtar Odak Alanları  
 
-## Temel Kaynaklar
+**Sadece 10 saatiniz varsa:**  
+- Modül 0 (Giriş) ve Modüller 1, 2 ve 3'ü (temel EdgeAI kavramları) tamamlayın  
+- Her modülden en az bir uygulamalı alıştırma yapın  
+- Uygulama detaylarından ziyade temel kavramları anlamaya odaklanın  
 
-Bu özenle seçilmiş kaynaklar, sınırlı çalışma süreniz için en fazla değeri sağlar:
+**Tam 20 saat ayırabiliyorsanız:**  
+- Tüm sekiz modülü (Giriş dahil) tamamlayın  
+- Her modülden önemli uygulamalı alıştırmaları gerçekleştirin  
+- Modül 7'den bir mini proje tamamlayın  
+- En az 2-3 ek kaynağı keşfedin  
 
-### Mutlaka Okunması Gereken Belgeler
-- [ONNX Runtime Getting Started](https://onnxruntime.ai/docs/get-started/with-python.html) - En verimli model optimizasyon aracı
-- [Ollama Quick Start](https://github.com/ollama/ollama#get-started) - SLM'leri yerel olarak dağıtmanın en hızlı yolu
-- [Microsoft Phi Model Card](https://huggingface.co/microsoft/phi-2) - Önde gelen bir edge-optimize edilmiş model için referans
-- [OpenVINO Documentation](https://docs.openvino.ai/2025/index.html) - Intel'in kapsamlı optimizasyon araç seti
-- [AI Toolkit for VS Code](https://code.visualstudio.com/docs/intelligentapps/overview) - Entegre EdgeAI geliştirme ortamı
-- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows'a özgü EdgeAI geliştirme platformu
+**20 saatten fazla zamanınız varsa:**  
+- Tüm modülleri (Giriş dahil) detaylı alıştırmalarla tamamlayın  
+- Birden fazla mini proje oluşturun  
+- Modül 4'teki gelişmiş optimizasyon tekniklerini keşfedin  
+- Modül 5'ten üretim dağıtımını uygulayın  
 
-### Zaman Tasarrufu Sağlayan Araçlar
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Hızlı model erişimi ve dağıtımı
-- [Gradio](https://www.gradio.app/docs/interface) - AI demoları için hızlı UI geliştirme
-- [Microsoft Olive](https://github.com/microsoft/Olive) - Basitleştirilmiş model optimizasyonu
-- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Verimli CPU çıkarımı
-- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Sinir ağı sıkıştırma çerçevesi
-- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Büyük dil modeli dağıtım araç seti
+## Temel Kaynaklar  
 
-## İlerleme Takip Şablonu
+Bu özenle seçilmiş kaynaklar sınırlı çalışma süreniz için en fazla değeri sağlar:  
 
-20 saatlik kurs boyunca öğrenme ilerlemenizi takip etmek için bu basitleştirilmiş şablonu kullanın:
+### Mutlaka Okunması Gereken Belgeler  
+- [ONNX Runtime Başlangıç](https://onnxruntime.ai/docs/get-started/with-python.html) - En verimli model optimizasyon aracı  
+- [Ollama Hızlı Başlangıç](https://github.com/ollama/ollama#get-started) - SLM'leri yerel olarak dağıtmanın en hızlı yolu  
+- [Microsoft Phi Model Kartı](https://huggingface.co/microsoft/phi-2) - Kenar için optimize edilmiş lider bir model referansı  
+- [OpenVINO Belgeleri](https://docs.openvino.ai/2025/index.html) - Intel'in kapsamlı optimizasyon araç seti  
+- [VS Code için AI Araç Seti](https://code.visualstudio.com/docs/intelligentapps/overview) - Entegre EdgeAI geliştirme ortamı  
+- [Windows AI Foundry](https://docs.microsoft.com/en-us/windows/ai/) - Windows'a özgü EdgeAI geliştirme platformu  
 
-| Modül | Tamamlama Tarihi | Harcanan Saat | Temel Çıkarımlar |
-|-------|------------------|---------------|------------------|
-| Modül 0: EdgeAI'ye Giriş | | | |
-| Modül 1: EdgeAI Temelleri | | | |
-| Modül 2: SLM Temelleri | | | |
-| Modül 3: SLM Dağıtımı | | | |
-| Modül 4: Model Optimizasyonu | | | |
-| Modül 5: SLMOps | | | |
-| Modül 6: AI Ajanları | | | |
-| Modül 7: Geliştirme Araçları | | | |
-| Modül 8: Foundry Yerel Araç Seti | | | |
-| Uygulamalı Alıştırmalar | | | |
-| Mini Proje | | | |
+### Zaman Kazandıran Araçlar  
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) - Hızlı model erişimi ve dağıtımı  
+- [Gradio](https://www.gradio.app/docs/interface) - Yapay zeka demoları için hızlı UI geliştirme  
+- [Microsoft Olive](https://github.com/microsoft/Olive) - Basitleştirilmiş model optimizasyonu  
+- [Llama.cpp](https://github.com/ggml-ai/llama.cpp) - Verimli CPU çıkarımı  
+- [OpenVINO NNCF](https://github.com/openvinotoolkit/nncf) - Sinir ağı sıkıştırma çerçevesi  
+- [OpenVINO GenAI](https://github.com/openvinotoolkit/openvino.genai) - Büyük dil modeli dağıtım araç seti  
 
-## Mini Proje Fikirleri
+## İlerleme Takip Şablonu  
 
-EdgeAI kavramlarını uygulamak için aşağıdaki projelerden birini tamamlamayı düşünün (her biri 2-4 saat sürmek üzere tasarlanmıştır):
+20 saatlik kurs boyunca öğrenme ilerlemenizi takip etmek için bu basitleştirilmiş şablonu kullanın:  
 
-### Başlangıç Seviyesi Projeler (2-3 saat)
-1. **Edge Metin Asistanı**: Küçük bir dil modeli kullanarak basit bir çevrimdışı metin tamamlama aracı oluşturun
-2. **Model Karşılaştırma Panosu**: Farklı SLM'lerin performans metriklerini görselleştiren temel bir araç oluşturun
-3. **Optimizasyon Deneyi**: Aynı temel modelde farklı kuantizasyon seviyelerinin etkisini ölçün
+| Modül | Tamamlama Tarihi | Harcanan Saat | Anahtar Çıkarımlar |  
+|--------|----------------|-------------|---------------|  
+| Modül 0: EdgeAI'ye Giriş | | | |  
+| Modül 1: EdgeAI Temelleri | | | |  
+| Modül 2: SLM Temelleri | | | |  
+| Modül 3: SLM Dağıtımı | | | |  
+| Modül 4: Model Optimizasyonu | | | |  
+| Modül 5: SLMOps | | | |  
+| Modül 6: AI Ajanları | | | |  
+| Modül 7: Geliştirme Araçları | | | |  
+| Atölye: Uygulamalı Öğrenme | | | |  
+| Modül 8: Foundry Local Araç Seti | | | |  
+| Uygulamalı Alıştırmalar | | | |  
+| Mini Proje | | | |  
 
-### Orta Seviye Projeler (3-4 saat)
-4. **AI Araç Seti İş Akışı**: VS Code AI Toolkit kullanarak bir modeli baştan sona optimize edin ve dağıtın
-5. **Windows AI Foundry Uygulaması**: Phi Silica API ve NPU optimizasyonu kullanarak bir Windows uygulaması oluşturun
-6. **Çapraz Platform Dağıtımı**: Aynı optimize edilmiş modeli Windows (OpenVINO) ve mobil (.NET MAUI) üzerinde dağıtın
-7. **Fonksiyon Çağırma Ajanı**: Edge senaryoları için fonksiyon çağırma yeteneklerine sahip bir AI ajanı oluşturun
+## Mini Proje Fikirleri  
 
-### İleri Düzey Entegrasyon Projeleri (4-5 saat)
-8. **OpenVINO Optimizasyon Hattı**: NNCF ve GenAI araç seti kullanarak tam model optimizasyonunu uygulayın
-9. **SLMOps Hattı**: Eğitimden edge dağıtımına kadar tam bir model yaşam döngüsünü uygulayın
-10. **Çoklu Model Edge Sistemi**: Edge donanımında birlikte çalışan birden fazla özel modeli dağıtın
-11. **MCP Entegrasyon Sistemi**: Araç etkileşimi için Model Context Protocol kullanarak bir ajan sistemi oluşturun
+EdgeAI kavramlarını uygulamak için bu projelerden birini tamamlamayı düşünün (her biri 2-4 saat tasarlanmıştır):  
 
-## Referanslar
+### Başlangıç Seviyesi Projeler (2-3 saat)  
+1. **Kenar Metin Asistanı**: Küçük bir dil modeli kullanarak basit bir çevrimdışı metin tamamlama aracı oluşturun  
+2. **Model Karşılaştırma Panosu**: Farklı SLM'ler arasındaki performans metriklerinin temel bir görselleştirmesini oluşturun  
+3. **Optimizasyon Deneyi**: Aynı temel modelde farklı kuantizasyon seviyelerinin etkisini ölçün  
 
-- Microsoft Learn (Foundry Local)
-  - Genel Bakış: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
-  - Başlangıç: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
-  - CLI referansı: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli
-  - Çıkarım SDK'ları ile entegrasyon: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks
-  - Open WebUI nasıl yapılır: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui
-  - Hugging Face modellerini derleme: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models
-- Azure AI Foundry
-  - Genel Bakış: https://learn.microsoft.com/en-us/azure/ai-foundry/
-  - Ajanlar (genel bakış): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview
-- Optimizasyon ve Çıkarım Araçları
-  - Microsoft Olive (docs): https://microsoft.github.io/Olive/
-  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive
-  - ONNX Runtime (başlangıç): https://onnxruntime.ai/docs/get-started/with-python.html
-  - ONNX Runtime Olive entegrasyonu: https://onnxruntime.ai/docs/performance/olive.html
-  - OpenVINO (docs): https://docs.openvino.ai/2025/index.html
-  - Apple MLX (docs): https://ml-explore.github.io/mlx/build/html/index.html
-- Dağıtım Çerçeveleri ve Modeller
-  - Llama.cpp: https://github.com/ggml-ai/llama.cpp
-  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index
-  - vLLM (docs): https://docs.vllm.ai/
-  - Ollama (hızlı başlangıç): https://github.com/ollama/ollama#get-started
-- Geliştirici Araçları (Windows ve VS Code)
-  - AI Toolkit for VS Code: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview
-  - Windows ML (genel bakış): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview
+### Orta Seviye Projeler (3-4 saat)  
+4. **AI Araç Seti İş Akışı**: VS Code AI Araç Setini kullanarak bir modeli baştan sona optimize edin ve dağıtın  
+5. **Windows AI Foundry Uygulaması**: Phi Silica API ve NPU optimizasyonu kullanarak bir Windows uygulaması oluşturun  
+6. **Çapraz Platform Dağıtımı**: Aynı optimize edilmiş modeli Windows (OpenVINO) ve mobil (.NET MAUI) üzerinde dağıtın  
+7. **Fonksiyon Çağırma Ajanı**: Kenar senaryoları için fonksiyon çağırma yeteneklerine sahip bir yapay zeka ajanı oluşturun  
 
-## Öğrenme Topluluğu
+### İleri Entegrasyon Projeleri (4-5 saat)  
+8. **OpenVINO Optimizasyon Hattı**: NNCF ve GenAI araç setini kullanarak tam model optimizasyonu uygulayın  
+9. **SLMOps Hattı**: Eğitimden kenar dağıtımına kadar tam bir model yaşam döngüsü uygulayın  
+10. **Çoklu Model Kenar Sistemi**: Kenar donanımında birlikte çalışan birden fazla uzmanlaşmış modeli dağıtın  
+11. **MCP Entegrasyon Sistemi**: Araç etkileşimi için Model Context Protocol kullanarak bir ajan sistemi oluşturun  
 
-Tartışmalara katılın ve diğer öğrenenlerle bağlantı kurun:
-- [EdgeAI for Beginners repository](https://github.com/microsoft/edgeai-for-beginners/discussions) üzerindeki GitHub Tartışmaları
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)
+## Referanslar  
 
-## Sonuç
+- Microsoft Learn (Foundry Local)  
+  - Genel Bakış: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/  
+  - Başlangıç: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started  
+  - CLI referansı: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-cli  
+  - Çıkarım SDK'larıyla entegrasyon: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-integrate-with-inference-sdks  
+  - Open WebUI nasıl yapılır: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-chat-application-with-open-web-ui  
+  - Hugging Face modellerini derleme: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/how-to/how-to-compile-hugging-face-models  
+- Azure AI Foundry  
+  - Genel Bakış: https://learn.microsoft.com/en-us/azure/ai-foundry/  
+  - Ajanlar (genel bakış): https://learn.microsoft.com/en-us/azure/ai-services/agents/overview  
+- Optimizasyon ve Çıkarım Araçları  
+  - Microsoft Olive (belgeler): https://microsoft.github.io/Olive/  
+  - Microsoft Olive (GitHub): https://github.com/microsoft/Olive  
+  - ONNX Runtime (başlangıç): https://onnxruntime.ai/docs/get-started/with-python.html  
+  - ONNX Runtime Olive entegrasyonu: https://onnxruntime.ai/docs/performance/olive.html  
+  - OpenVINO (belgeler): https://docs.openvino.ai/2025/index.html  
+  - Apple MLX (belgeler): https://ml-explore.github.io/mlx/build/html/index.html  
+- Dağıtım Çerçeveleri ve Modeller  
+  - Llama.cpp: https://github.com/ggml-ai/llama.cpp  
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/index  
+  - vLLM (belgeler): https://docs.vllm.ai/  
+  - Ollama (hızlı başlangıç): https://github.com/ollama/ollama#get-started  
+- Geliştirici Araçları (Windows ve VS Code)  
+  - VS Code için AI Araç Seti: https://learn.microsoft.com/en-us/azure/ai-toolkit/overview  
+  - Windows ML (genel bakış): https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview  
 
-EdgeAI, yapay zeka uygulamalarının sınırını temsil eder ve güçlü yetenekleri doğrudan cihazlara getirirken gizlilik, gecikme ve bağlantı sorunlarını ele alır. Bu 20 saatlik kurs, EdgeAI teknolojileriyle hemen çalışmaya başlamak için gerekli bilgi ve pratik becerileri sağlar.
+## Öğrenme Topluluğu  
 
-Kurs, en önemli kavramlara odaklanarak kasıtlı olarak kısa ve öz tutulmuştur, böylece aşırı zaman harcamadan değerli uzmanlık kazanabilirsiniz. Basit örneklerle bile uygulamalı pratik yapmanın öğrendiklerinizi pekiştirmenin anahtarı olduğunu unutmayın.
+Tartışmalara katılın ve diğer öğrenenlerle bağlantı kurun:  
+- [EdgeAI for Beginners deposunda GitHub Tartışmaları](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- [Microsoft Tech Community](https://techcommunity.microsoft.com/)  
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/edge-ai)  
 
-İyi öğrenmeler!
+## Sonuç  
+
+EdgeAI, yapay zeka uygulamalarının sınırını temsil eder ve güçlü yetenekleri doğrudan cihazlara getirirken gizlilik, gecikme ve bağlantı sorunlarını ele alır. Bu 20 saatlik kurs, EdgeAI teknolojileriyle hemen çalışmaya başlamak için gerekli bilgi ve pratik becerileri sağlar.  
+
+Kurs, en önemli kavramlara odaklanarak kasıtlı olarak kısa ve öz tutulmuştur, böylece bunaltıcı bir zaman taahhüdü olmadan değerli uzmanlık kazanabilirsiniz. Basit örneklerle bile uygulamalı pratik, öğrendiklerinizi pekiştirmenin anahtarıdır.  
+
+İyi öğrenmeler!  
 
 ---
 
+**Feragatname**:  
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlık içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.

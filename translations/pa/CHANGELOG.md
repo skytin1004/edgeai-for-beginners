@@ -1,120 +1,214 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "906e890232c6c2e1dac4cccfeb449acd",
-  "translation_date": "2025-09-24T21:06:21+00:00",
+  "original_hash": "cbc822b7b1c0af38342e07c36b8cf0c4",
+  "translation_date": "2025-10-09T10:10:49+00:00",
   "source_file": "CHANGELOG.md",
   "language_code": "pa"
 }
 -->
 # ਚੇਂਜਲੌਗ
 
-EdgeAI for Beginners ਵਿੱਚ ਹੋਣ ਵਾਲੇ ਸਾਰੇ ਮਹੱਤਵਪੂਰਨ ਬਦਲਾਅ ਇੱਥੇ ਦਰਜ ਕੀਤੇ ਗਏ ਹਨ। ਇਸ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਮਿਤੀ-ਅਧਾਰਿਤ ਐਂਟਰੀਜ਼ ਅਤੇ Keep a Changelog ਸਟਾਈਲ (Added, Changed, Fixed, Removed, Docs, Moved) ਵਰਤਿਆ ਗਿਆ ਹੈ।
+EdgeAI for Beginners ਵਿੱਚ ਕੀਤੇ ਗਏ ਸਾਰੇ ਮਹੱਤਵਪੂਰਨ ਬਦਲਾਅ ਇੱਥੇ ਦਰਜ ਕੀਤੇ ਗਏ ਹਨ। ਇਸ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਮਿਤੀ-ਅਧਾਰਿਤ ਐਂਟਰੀਜ਼ ਅਤੇ Keep a Changelog ਸਟਾਈਲ (Added, Changed, Fixed, Removed, Docs, Moved) ਵਰਤਿਆ ਗਿਆ ਹੈ।
+
+## 2025-10-08
+
+### ਜੋੜਿਆ - ਵਰਕਸ਼ਾਪ ਦੀ ਵਿਸਤ੍ਰਿਤ ਅਪਡੇਟ
+- **ਵਰਕਸ਼ਾਪ README.md ਦੀ ਪੂਰੀ ਤਰ੍ਹਾਂ ਮੁੜ ਲਿਖਤ**:
+  - Edge AI ਦੇ ਮੁੱਲ ਪ੍ਰਸਤਾਵ (ਗੋਪਨੀਯਤਾ, ਪ੍ਰਦਰਸ਼ਨ, ਲਾਗਤ) ਨੂੰ ਸਮਝਾਉਣ ਵਾਲਾ ਵਿਸਤ੍ਰਿਤ ਪਰਿਚਯ ਸ਼ਾਮਲ ਕੀਤਾ
+  - 6 ਮੁੱਖ ਸਿੱਖਣ ਦੇ ਉਦੇਸ਼ਾਂ ਨਾਲ ਵਿਸਤ੍ਰਿਤ ਯੋਗਤਾਵਾਂ ਬਣਾਈਆਂ
+  - ਡਿਲੀਵਰੇਬਲ ਅਤੇ ਯੋਗਤਾ ਮੈਟ੍ਰਿਕਸ ਦੇ ਨਾਲ ਸਿੱਖਣ ਦੇ ਨਤੀਜੇ ਵਾਲਾ ਟੇਬਲ ਸ਼ਾਮਲ ਕੀਤਾ
+  - ਉਦਯੋਗ ਸਬੰਧੀਤਾ ਲਈ ਕਰੀਅਰ-ਤਿਆਰ ਯੋਗਤਾਵਾਂ ਦਾ ਸੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕੀਤਾ
+  - ਪੂਰਵ ਸ਼ਰਤਾਂ ਅਤੇ 3-ਕਦਮ ਸੈਟਅਪ ਦੇ ਨਾਲ ਤੁਰੰਤ ਸ਼ੁਰੂ ਕਰਨ ਵਾਲੀ ਗਾਈਡ ਸ਼ਾਮਲ ਕੀਤੀ
+  - Python ਸੈਂਪਲਾਂ ਲਈ ਸਰੋਤ ਟੇਬਲ ਬਣਾਈਆਂ (8 ਫਾਈਲਾਂ ਦੇ ਰਨ ਟਾਈਮ ਦੇ ਨਾਲ)
+  - Jupyter ਨੋਟਬੁੱਕਾਂ ਦੀ ਟੇਬਲ ਸ਼ਾਮਲ ਕੀਤੀ (8 ਨੋਟਬੁੱਕਾਂ ਦੇ ਮੁਸ਼ਕਲ ਦਰਜਿਆਂ ਦੇ ਨਾਲ)
+  - ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਟੇਬਲ ਬਣਾਈ (7 ਮੁੱਖ ਦਸਤਾਵੇਜ਼ "ਕਦੋਂ ਵਰਤਣਾ ਹੈ" ਮਾਰਗਦਰਸ਼ਨ ਦੇ ਨਾਲ)
+  - ਵੱਖ-ਵੱਖ ਯੋਗਤਾਵਾਂ ਦੇ ਪੱਧਰਾਂ ਲਈ ਸਿੱਖਣ ਦੇ ਰਾਹ ਦੀ ਸਿਫਾਰਸ਼ਾਂ ਸ਼ਾਮਲ ਕੀਤੀਆਂ
+
+- **ਵਰਕਸ਼ਾਪ ਵੈਧਤਾ ਅਤੇ ਟੈਸਟਿੰਗ ਢਾਂਚਾ**:
+  - `scripts/validate_samples.py` ਬਣਾਇਆ - syntax, imports, ਅਤੇ best practices ਲਈ ਵਿਸਤ੍ਰਿਤ ਵੈਧਤਾ ਟੂਲ
+  - `scripts/test_samples.py` ਬਣਾਇਆ - ਸਾਰੇ Python ਸੈਂਪਲਾਂ ਲਈ smoke test runner
+  - `scripts/README.md` ਵਿੱਚ ਵੈਧਤਾ ਦਸਤਾਵੇਜ਼ ਸ਼ਾਮਲ ਕੀਤੀ
+
+- **ਵਿਸਤ੍ਰਿਤ ਦਸਤਾਵੇਜ਼**:
+  - `SAMPLES_UPDATE_SUMMARY.md` ਬਣਾਇਆ - 400+ ਲਾਈਨਾਂ ਦੀ ਵਿਸਤ੍ਰਿਤ ਗਾਈਡ ਜੋ ਸਾਰੇ ਸੁਧਾਰਾਂ ਨੂੰ ਕਵਰ ਕਰਦੀ ਹੈ
+  - `UPDATE_COMPLETE.md` ਬਣਾਇਆ - ਅਪਡੇਟ ਪੂਰਨ ਹੋਣ ਦੀ ਕਾਰਜਕਾਰੀ ਸੰਖੇਪ ਰਿਪੋਰਟ
+  - `QUICK_REFERENCE.md` ਬਣਾਇਆ - ਵਰਕਸ਼ਾਪ ਲਈ ਤੁਰੰਤ ਸੰਦਰਭ ਕਾਰਡ
+
+### ਬਦਲਿਆ - ਵਰਕਸ਼ਾਪ Python ਸੈਂਪਲ ਮਾਡਰਨਾਈਜ਼ੇਸ਼ਨ
+- **ਸਾਰੇ 8 Python ਸੈਂਪਲਾਂ ਨੂੰ best practices ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ**:
+  - ਸਾਰੇ I/O ਕਾਰਵਾਈਆਂ ਦੇ ਆਸ-ਪਾਸ try-except blocks ਨਾਲ error handling ਨੂੰ ਵਧਾਇਆ
+  - Type hints ਅਤੇ ਵਿਸਤ੍ਰਿਤ docstrings ਸ਼ਾਮਲ ਕੀਤੇ
+  - [INFO]/[ERROR]/[RESULT] logging pattern ਨੂੰ ਲਗਾਤਾਰ ਲਾਗੂ ਕੀਤਾ
+  - Installation hints ਦੇ ਨਾਲ optional imports ਨੂੰ ਸੁਰੱਖਿਅਤ ਕੀਤਾ
+  - ਸਾਰੇ ਸੈਂਪਲਾਂ ਵਿੱਚ ਯੂਜ਼ਰ ਫੀਡਬੈਕ ਨੂੰ ਸੁਧਾਰਿਆ
+
+- **session01/chat_bootstrap.py**:
+  - Client initialization ਨੂੰ ਵਿਸਤ੍ਰਿਤ error messages ਦੇ ਨਾਲ ਸੁਧਾਰਿਆ
+  - Streaming error handling ਨੂੰ chunk validation ਦੇ ਨਾਲ ਸੁਧਾਰਿਆ
+  - Service unavailability ਲਈ ਬਿਹਤਰ exception handling ਸ਼ਾਮਲ ਕੀਤੀ
+
+- **session02/rag_pipeline.py**:
+  - Sentence-transformers ਲਈ import guards installation hints ਦੇ ਨਾਲ ਸ਼ਾਮਲ ਕੀਤੇ
+  - Embedding ਅਤੇ generation ਕਾਰਵਾਈਆਂ ਲਈ error handling ਨੂੰ ਵਧਾਇਆ
+  - Structured results ਦੇ ਨਾਲ output formatting ਨੂੰ ਸੁਧਾਰਿਆ
+
+- **session02/rag_eval_ragas.py**:
+  - Optional imports (ragas, datasets) ਨੂੰ ਯੂਜ਼ਰ-ਫ੍ਰੈਂਡਲੀ error messages ਦੇ ਨਾਲ ਸੁਰੱਖਿਅਤ ਕੀਤਾ
+  - Evaluation metrics ਲਈ error handling ਸ਼ਾਮਲ ਕੀਤੀ
+  - Evaluation results ਲਈ output formatting ਨੂੰ ਵਧਾਇਆ
+
+- **session03/benchmark_oss_models.py**:
+  - Graceful degradation ਲਾਗੂ ਕੀਤੀ (model failures ਤੇ ਕੰਮ ਜਾਰੀ ਰੱਖਦਾ ਹੈ)
+  - ਵਿਸਤ੍ਰਿਤ progress reporting ਅਤੇ per-model error handling ਸ਼ਾਮਲ ਕੀਤੀ
+  - Error recovery ਦੇ ਨਾਲ statistics calculation ਨੂੰ ਸੁਧਾਰਿਆ
+
+- **session04/model_compare.py**:
+  - Type hints (Tuple return types) ਸ਼ਾਮਲ ਕੀਤੇ
+  - Structured JSON results ਦੇ ਨਾਲ output formatting ਨੂੰ ਵਧਾਇਆ
+  - Per-model error handling ਨੂੰ recovery ਦੇ ਨਾਲ ਲਾਗੂ ਕੀਤਾ
+
+- **session05/agents_orchestrator.py**:
+  - Agent.act() ਨੂੰ ਵਿਸਤ੍ਰਿਤ docstrings ਦੇ ਨਾਲ ਸੁਧਾਰਿਆ
+  - Stage-by-stage logging ਦੇ ਨਾਲ pipeline error handling ਸ਼ਾਮਲ ਕੀਤੀ
+  - Memory management ਅਤੇ state tracking ਨੂੰ ਸੁਧਾਰਿਆ
+
+- **session06/models_router.py**:
+  - Routing components ਲਈ function documentation ਨੂੰ ਵਧਾਇਆ
+  - route() function ਵਿੱਚ ਵਿਸਤ੍ਰਿਤ logging ਸ਼ਾਮਲ ਕੀਤੀ
+  - Structured results ਦੇ ਨਾਲ test output ਨੂੰ ਸੁਧਾਰਿਆ
+
+- **session06/models_pipeline.py**:
+  - chat() helper function ਵਿੱਚ error handling ਸ਼ਾਮਲ ਕੀਤੀ
+  - Stage logging ਅਤੇ progress reporting ਦੇ ਨਾਲ pipeline() ਨੂੰ ਸੁਧਾਰਿਆ
+  - Comprehensive error recovery ਦੇ ਨਾਲ main() ਨੂੰ ਸੁਧਾਰਿਆ
+
+### ਦਸਤਾਵੇਜ਼ - ਵਰਕਸ਼ਾਪ ਦਸਤਾਵੇਜ਼ ਸੁਧਾਰ
+- ਮੁੱਖ README.md ਨੂੰ ਵਰਕਸ਼ਾਪ ਸੈਕਸ਼ਨ ਦੇ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ ਜੋ ਹੱਥ-ਅਨੁਭਵ ਸਿੱਖਣ ਦੇ ਰਾਹ ਨੂੰ ਹਾਈਲਾਈਟ ਕਰਦਾ ਹੈ
+- STUDY_GUIDE.md ਨੂੰ ਵਿਸਤ੍ਰਿਤ ਵਰਕਸ਼ਾਪ ਸੈਕਸ਼ਨ ਦੇ ਨਾਲ ਸੁਧਾਰਿਆ ਜਿਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੈ:
+  - ਸਿੱਖਣ ਦੇ ਉਦੇਸ਼ ਅਤੇ ਅਧਿਐਨ ਫੋਕਸ ਖੇਤਰ
+  - ਸਵੈ-ਮੁਲਾਂਕਣ ਪ੍ਰਸ਼ਨ
+  - ਹੱਥ-ਅਨੁਭਵ ਅਭਿਆਸ ਸਮੇਂ ਦੇ ਅਨੁਮਾਨਾਂ ਦੇ ਨਾਲ
+  - Concentrated ਅਤੇ part-time ਅਧਿਐਨ ਲਈ ਸਮੇਂ ਦਾ ਵੰਡ
+  - ਪ੍ਰਗਤੀ ਟ੍ਰੈਕਿੰਗ ਟੈਂਪਲੇਟ ਵਿੱਚ ਵਰਕਸ਼ਾਪ ਸ਼ਾਮਲ ਕੀਤੀ
+- ਸਮੇਂ ਦੇ ਵੰਡ ਗਾਈਡ ਨੂੰ 20 ਘੰਟਿਆਂ ਤੋਂ 30 ਘੰਟਿਆਂ (ਵਰਕਸ਼ਾਪ ਸਮੇਤ) ਵਿੱਚ ਅਪਡੇਟ ਕੀਤਾ
+- README ਵਿੱਚ ਵਰਕਸ਼ਾਪ ਸੈਂਪਲ ਵੇਰਵੇ ਅਤੇ ਸਿੱਖਣ ਦੇ ਨਤੀਜੇ ਸ਼ਾਮਲ ਕੀਤੇ
+
+### ਠੀਕ ਕੀਤਾ
+- ਵਰਕਸ਼ਾਪ ਸੈਂਪਲਾਂ ਵਿੱਚ inconsistent error handling patterns ਨੂੰ ਹੱਲ ਕੀਤਾ
+- Proper guards ਦੇ ਨਾਲ optional dependency import errors ਨੂੰ ਠੀਕ ਕੀਤਾ
+- ਮਹੱਤਵਪੂਰਨ functions ਵਿੱਚ ਗੁੰਮ type hints ਨੂੰ ਠੀਕ ਕੀਤਾ
+- Error scenarios ਵਿੱਚ ਯੂਜ਼ਰ ਫੀਡਬੈਕ ਦੀ ਘਾਟ ਨੂੰ ਹੱਲ ਕੀਤਾ
+- Comprehensive testing infrastructure ਦੇ ਨਾਲ validation issues ਨੂੰ ਠੀਕ ਕੀਤਾ
+
+---
 
 ## 2025-09-23
 
-### Changed - Module 08 ਦੇ ਮੁੱਖ ਅਧਿਆਇ ਦੀ ਅਧੁਨਿਕਤਾ
-- **Microsoft Foundry-Local ਰਿਪੋਜ਼ਟਰੀ ਪੈਟਰਨਸ ਨਾਲ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੰਗਤਤਾ**  
-  - ਸਾਰੇ ਕੋਡ ਉਦਾਹਰਣਾਂ ਨੂੰ ਅਧੁਨਿਕ `FoundryLocalManager` ਅਤੇ OpenAI SDK ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ  
-  - ਪੁਰਾਣੇ `requests` ਕਾਲਾਂ ਨੂੰ ਸਹੀ SDK ਵਰਤੋਂ ਨਾਲ ਬਦਲਿਆ  
-  - Microsoft ਦੀ ਅਧਿਕਾਰਤ ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਅਤੇ ਨਮੂਨਿਆਂ ਨਾਲ ਲਾਗੂ ਪੈਟਰਨਸ ਨੂੰ ਸੰਗਤ ਕੀਤਾ  
+### ਬਦਲਿਆ - Module 08 ਦੀ ਮਜਬੂਤ ਮਾਡਰਨਾਈਜ਼ੇਸ਼ਨ
+- **Microsoft Foundry-Local repository patterns ਨਾਲ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅਨੁਕੂਲਤਾ**:
+  - ਸਾਰੇ ਕੋਡ ਉਦਾਹਰਣਾਂ ਨੂੰ ਮਾਡਰਨ `FoundryLocalManager` ਅਤੇ OpenAI SDK ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਵਰਤਣ ਲਈ ਅਪਡੇਟ ਕੀਤਾ
+  - Deprecated manual `requests` calls ਨੂੰ proper SDK usage ਨਾਲ ਬਦਲਿਆ
+  - Microsoft ਦੀ ਅਧਿਕਾਰਕ ਦਸਤਾਵੇਜ਼ ਅਤੇ ਸੈਂਪਲਾਂ ਨਾਲ ਅਨੁਕੂਲਤਾ ਲਈ implementation patterns ਨੂੰ align ਕੀਤਾ
 
-- **05.AIPoweredAgents.md ਦੀ ਅਧੁਨਿਕਤਾ**:  
-  - ਬਹੁ-ਏਜੰਟ ਆਰਕਸਟਰੈਸ਼ਨ ਨੂੰ ਅਧੁਨਿਕ SDK ਪੈਟਰਨਸ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ  
-  - ਕੋਆਰਡੀਨੇਟਰ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਵਿੱਚ ਉੱਚ-ਪੱਧਰੀ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ (ਫੀਡਬੈਕ ਲੂਪ, ਪ੍ਰਦਰਸ਼ਨ ਮਾਨੀਟਰਿੰਗ) ਸ਼ਾਮਲ ਕੀਤੀਆਂ  
-  - ਵਿਸ਼ਾਲ ਐਰਰ ਹੈਂਡਲਿੰਗ ਅਤੇ ਸੇਵਾ ਸਿਹਤ ਜਾਂਚ ਸ਼ਾਮਲ ਕੀਤੀ  
-  - ਸਥਾਨਕ ਨਮੂਨਿਆਂ (`samples/05/multi_agent_orchestration.ipynb`) ਲਈ ਸਹੀ ਹਵਾਲੇ ਸ਼ਾਮਲ ਕੀਤੇ  
-  - ਫੰਕਸ਼ਨ ਕਾਲਿੰਗ ਉਦਾਹਰਣਾਂ ਨੂੰ ਅਧੁਨਿਕ `tools` ਪੈਰਾਮੀਟਰ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ  
-  - ਮਾਨੀਟਰਿੰਗ ਅਤੇ ਸਟੈਟਿਸਟਿਕ ਟ੍ਰੈਕਿੰਗ ਨਾਲ ਉਤਪਾਦਨ-ਤਿਆਰ ਪੈਟਰਨਸ ਸ਼ਾਮਲ ਕੀਤੇ  
+- **05.AIPoweredAgents.md ਮਜਬੂਤ ਬਣਾਈ**:
+  - ਮਾਡਰਨ SDK patterns ਵਰਤਣ ਲਈ multi-agent orchestration ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ
+  - Feedback loops ਅਤੇ performance monitoring ਵਰਗੇ advanced features ਦੇ ਨਾਲ coordinator implementation ਨੂੰ ਸੁਧਾਰਿਆ
+  - Comprehensive error handling ਅਤੇ service health checking ਸ਼ਾਮਲ ਕੀਤੀ
+  - Local samples (`samples/05/multi_agent_orchestration.ipynb`) ਲਈ proper references ਸ਼ਾਮਲ ਕੀਤੇ
+  - Deprecated `functions` ਦੀ ਬਜਾਏ ਮਾਡਰਨ `tools` parameter ਵਰਤਣ ਲਈ function calling examples ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ
+  - Monitoring ਅਤੇ statistics tracking ਦੇ ਨਾਲ production-ready patterns ਸ਼ਾਮਲ ਕੀਤੇ
 
-- **06.ModelsAsTools.md ਦੀ ਪੂਰੀ ਦੁਬਾਰਾ ਲਿਖਤ**:  
-  - ਬੇਸਿਕ ਟੂਲ ਰਜਿਸਟਰੀ ਨੂੰ ਸਮਰਥ ਮਾਡਲ ਰਾਊਟਰ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਨਾਲ ਬਦਲਿਆ  
-  - ਵੱਖ-ਵੱਖ ਟਾਸਕ ਕਿਸਮਾਂ ਲਈ ਕੀਵਰਡ-ਅਧਾਰਿਤ ਮਾਡਲ ਚੋਣ ਸ਼ਾਮਲ ਕੀਤੀ (ਜਨਰਲ, ਰੀਜ਼ਨਿੰਗ, ਕੋਡ, ਕ੍ਰੀਏਟਿਵ)  
-  - ਲਚਕਦਾਰ ਮਾਡਲ ਅਸਾਈਨਮੈਂਟ ਨਾਲ ਵਾਤਾਵਰਣ-ਅਧਾਰਿਤ ਕਨਫਿਗਰੇਸ਼ਨ ਸ਼ਾਮਲ ਕੀਤੀ  
-  - ਵਿਸ਼ਾਲ ਸੇਵਾ ਸਿਹਤ ਮਾਨੀਟਰਿੰਗ ਅਤੇ ਐਰਰ ਹੈਂਡਲਿੰਗ ਸ਼ਾਮਲ ਕੀਤੀ  
-  - ਮਾਨੀਟਰਿੰਗ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਟ੍ਰੈਕਿੰਗ ਨਾਲ ਉਤਪਾਦਨ ਡਿਪਲੌਇਮੈਂਟ ਪੈਟਰਨਸ ਸ਼ਾਮਲ ਕੀਤੇ  
-  - ਸਥਾਨਕ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ (`samples/06/router.py` ਅਤੇ `samples/06/model_router.ipynb`) ਨਾਲ ਸੰਗਤ ਕੀਤਾ  
+- **06.ModelsAsTools.md ਦੀ ਪੂਰੀ ਤਰ੍ਹਾਂ ਮੁੜ ਲਿਖਤ**:
+  - Basic tool registry ਨੂੰ intelligent model router implementation ਨਾਲ ਬਦਲਿਆ
+  - ਵੱਖ-ਵੱਖ task types (general, reasoning, code, creative) ਲਈ keyword-based model selection ਸ਼ਾਮਲ ਕੀਤੀ
+  - Flexible model assignment ਦੇ ਨਾਲ environment-based configuration ਸ਼ਾਮਲ ਕੀਤੀ
+  - Comprehensive service health monitoring ਅਤੇ error handling ਦੇ ਨਾਲ ਸੁਧਾਰਿਆ
+  - Request monitoring ਅਤੇ performance tracking ਦੇ ਨਾਲ production deployment patterns ਸ਼ਾਮਲ ਕੀਤੇ
+  - Local implementation (`samples/06/router.py` ਅਤੇ `samples/06/model_router.ipynb`) ਨਾਲ ਅਨੁਕੂਲਤਾ
 
-- **ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਸਟ੍ਰਕਚਰ ਵਿੱਚ ਸੁਧਾਰ**:  
-  - ਅਧੁਨਿਕਤਾ ਅਤੇ SDK ਸੰਗਤਤਾ ਨੂੰ ਉਜਾਗਰ ਕਰਨ ਵਾਲੇ ਓਵਰਵਿਊ ਸੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕੀਤੇ  
-  - ਪੜ੍ਹਨਯੋਗਤਾ ਵਿੱਚ ਸੁਧਾਰ ਲਈ ਇਮੋਜੀ ਅਤੇ ਬਿਹਤਰ ਫਾਰਮੈਟਿੰਗ ਸ਼ਾਮਲ ਕੀਤੀ  
-  - ਸਥਾਨਕ ਨਮੂਨਾ ਫਾਈਲਾਂ ਲਈ ਸਹੀ ਹਵਾਲੇ ਸ਼ਾਮਲ ਕੀਤੇ  
-  - ਉਤਪਾਦਨ-ਤਿਆਰ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਮਾਰਗਦਰਸ਼ਨ ਅਤੇ ਬਿਹਤਰ ਪ੍ਰੈਕਟਿਸ ਸ਼ਾਮਲ ਕੀਤੀਆਂ  
+- **ਦਸਤਾਵੇਜ਼ ਢਾਂਚੇ ਵਿੱਚ ਸੁਧਾਰ**:
+  - Modernization ਅਤੇ SDK alignment ਨੂੰ ਹਾਈਲਾਈਟ ਕਰਨ ਵਾਲੇ overview sections ਸ਼ਾਮਲ ਕੀਤੇ
+  - Improved readability ਲਈ emojis ਅਤੇ ਬਿਹਤਰ formatting ਸ਼ਾਮਲ ਕੀਤੀ
+  - Local sample files ਲਈ proper references ਸ਼ਾਮਲ ਕੀਤੇ
+  - Production-ready implementation guidance ਅਤੇ best practices ਸ਼ਾਮਲ ਕੀਤੇ
 
-### Added
-- Module 08 ਫਾਈਲਾਂ ਵਿੱਚ ਅਧੁਨਿਕ SDK ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਨੂੰ ਉਜਾਗਰ ਕਰਨ ਵਾਲੇ ਵਿਸ਼ਾਲ ਓਵਰਵਿਊ ਸੈਕਸ਼ਨ  
-- ਅਧੁਨਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ (ਬਹੁ-ਏਜੰਟ ਸਿਸਟਮ, ਸਮਰਥ ਰਾਊਟਿੰਗ) ਨੂੰ ਦਰਸਾਉਣ ਵਾਲੇ ਆਰਕੀਟੈਕਚਰ ਹਾਈਲਾਈਟਸ  
-- ਹੱਥ-ਵਰਤੋਂ ਅਨੁਭਵ ਲਈ ਸਿੱਧੇ ਸਥਾਨਕ ਨਮੂਨਾ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਦੇ ਹਵਾਲੇ  
-- ਮਾਨੀਟਰਿੰਗ ਅਤੇ ਐਰਰ ਹੈਂਡਲਿੰਗ ਪੈਟਰਨਸ ਨਾਲ ਉਤਪਾਦਨ ਡਿਪਲੌਇਮੈਂਟ ਮਾਰਗਦਰਸ਼ਨ  
-- ਉੱਚ-ਪੱਧਰੀ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਬੈਂਚਮਾਰਕਸ ਨਾਲ ਇੰਟਰਐਕਟਿਵ Jupyter ਨੋਟਬੁੱਕ ਉਦਾਹਰਣ  
+### ਜੋੜਿਆ
+- Module 08 ਫਾਈਲਾਂ ਵਿੱਚ modern SDK integration ਨੂੰ ਹਾਈਲਾਈਟ ਕਰਨ ਵਾਲੇ ਵਿਸਤ੍ਰਿਤ overview sections
+- Multi-agent systems ਅਤੇ intelligent routing ਵਰਗੇ advanced features ਨੂੰ ਦਰਸਾਉਣ ਵਾਲੇ architecture highlights
+- ਹੱਥ-ਅਨੁਭਵ ਲਈ local sample implementations ਲਈ direct references
+- Monitoring ਅਤੇ error handling patterns ਦੇ ਨਾਲ production deployment guidance
+- Advanced features ਅਤੇ benchmarks ਦੇ ਨਾਲ interactive Jupyter notebook examples
 
-### Fixed
-- ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਅਤੇ ਅਸਲ ਨਮੂਨਾ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਦੇ ਵਿਚਕਾਰ ਸੰਗਤਤਾ ਵਿੱਚ ਗੜਬੜ  
-- Module 08 ਵਿੱਚ ਪੁਰਾਣੇ SDK ਵਰਤੋਂ ਪੈਟਰਨਸ  
-- ਵਿਸ਼ਾਲ ਸਥਾਨਕ ਨਮੂਨਾ ਲਾਇਬ੍ਰੇਰੀ ਲਈ ਗੁੰਮ ਹੋਏ ਹਵਾਲੇ  
-- ਵੱਖ-ਵੱਖ ਸੈਕਸ਼ਨਾਂ ਵਿੱਚ ਅਸੰਗਤ ਇੰਪਲੀਮੈਂਟੇਸ਼ਨ ਪਹੁੰਚ  
+### ਠੀਕ ਕੀਤਾ
+- Documentation ਅਤੇ actual sample implementations ਦੇ ਵਿਚਕਾਰ alignment discrepancies ਨੂੰ ਹੱਲ ਕੀਤਾ
+- Module 08 ਵਿੱਚ outdated SDK usage patterns ਨੂੰ ਠੀਕ ਕੀਤਾ
+- Comprehensive local sample library ਲਈ missing references ਨੂੰ ਠੀਕ ਕੀਤਾ
+- ਵੱਖ-ਵੱਖ sections ਵਿੱਚ inconsistent implementation approaches ਨੂੰ ਹੱਲ ਕੀਤਾ
 
 ---
 
 ## 2025-09-18
 
-### Added
-- Module 08: Microsoft Foundry Local – ਪੂਰਾ ਡਿਵੈਲਪਰ ਟੂਲਕਿਟ  
-  - ਛੇ ਸੈਸ਼ਨ: ਸੈਟਅਪ, Azure AI Foundry ਇੰਟੀਗ੍ਰੇਸ਼ਨ, ਓਪਨ-ਸੋਰਸ ਮਾਡਲ, ਕੱਟਿੰਗ-ਐਜ ਡੈਮੋ, ਏਜੰਟਸ, ਅਤੇ ਮਾਡਲ-ਐਜ਼-ਟੂਲਸ  
-  - `Module08/samples/01`–`06` ਦੇ ਹੇਠਾਂ ਚਲਣਯੋਗ ਨਮੂਨੇ Windows cmd ਨਿਰਦੇਸ਼ਾਂ ਨਾਲ  
-    - `01` REST ਕਵਿਕ ਚੈਟ (`chat_quickstart.py`)  
-    - `02` SDK ਕਵਿਕਸਟਾਰਟ OpenAI/Foundry Local ਅਤੇ Azure OpenAI ਸਪੋਰਟ ਨਾਲ (`sdk_quickstart.py`)  
-    - `03` CLI ਲਿਸਟ-ਐਂਡ-ਬੈਂਚ (`list_and_bench.cmd`)  
-    - `04` Chainlit ਡੈਮੋ (`app.py`)  
-    - `05` ਬਹੁ-ਏਜੰਟ ਆਰਕਸਟਰੈਸ਼ਨ (`python -m samples.05.agents.coordinator`)  
-    - `06` ਮਾਡਲ-ਐਜ਼-ਟੂਲਸ ਰਾਊਟਰ (`router.py`)  
-- Session 2 SDK ਨਮੂਨੇ ਵਿੱਚ Azure OpenAI ਸਪੋਰਟ ਵਾਤਾਵਰਣ ਵੈਰੀਏਬਲ ਕਨਫਿਗਰੇਸ਼ਨ ਨਾਲ  
-- `.vscode/settings.json` ਨੂੰ `Module08/.venv` ਵੱਲ ਪਾਇਥਨ ਵਿਸ਼ਲੇਸ਼ਣ ਰਿਜ਼ੋਲੂਸ਼ਨ ਸੁਧਾਰਨ ਲਈ ਪੋਇੰਟ ਕਰਨ ਲਈ  
-- `.env` `PYTHONPATH` ਹਿੰਟ ਨਾਲ VS Code/Pylance ਜਾਗਰੂਕਤਾ ਲਈ  
+### ਜੋੜਿਆ
+- Module 08: Microsoft Foundry Local – Complete Developer Toolkit
+  - ਛੇ sessions: setup, Azure AI Foundry integration, open-source models, cutting-edge demos, agents, ਅਤੇ models-as-tools
+  - `Module08/samples/01`–`06` ਦੇ ਹੇਠ runnable samples:
+    - `01` REST quick chat (`chat_quickstart.py`)
+    - `02` SDK quickstart OpenAI/Foundry Local ਅਤੇ Azure OpenAI support (`sdk_quickstart.py`)
+    - `03` CLI list-and-bench (`list_and_bench.cmd`)
+    - `04` Chainlit demo (`app.py`)
+    - `05` Multi-agent orchestration (`python -m samples.05.agents.coordinator`)
+    - `06` Models-as-Tools router (`router.py`)
+- Session 2 SDK sample ਵਿੱਚ Azure OpenAI support ਅਤੇ environment variable configuration
+- `.vscode/settings.json` ਨੂੰ `Module08/.venv` ਤੇ point ਕਰਨ ਲਈ ਅਤੇ Python analysis resolution ਨੂੰ ਸੁਧਾਰਨ ਲਈ
+- `.env` ਵਿੱਚ `PYTHONPATH` hint VS Code/Pylance awareness ਲਈ
 
-### Changed
-- Module 08 ਦਸਤਾਵੇਜ਼ ਅਤੇ ਨਮੂਨਿਆਂ ਵਿੱਚ ਡਿਫਾਲਟ ਮਾਡਲ ਨੂੰ `phi-4-mini` ਵਿੱਚ ਅਪਡੇਟ ਕੀਤਾ; Module 08 ਵਿੱਚ ਬਾਕੀ ਰਹੇ `phi-3.5` ਦੇ ਜ਼ਿਕਰ ਹਟਾਏ  
-- ਰਾਊਟਰ (`Module08/samples/06/router.py`) ਸੁਧਾਰ:  
-  - `foundry service status` ਰੇਗੇਕਸ ਪਾਰਸਿੰਗ ਨਾਲ ਐਂਡਪੋਇੰਟ ਖੋਜ  
-  - `/v1/models` ਸਟਾਰਟਅਪ ਤੇ ਸਿਹਤ ਜਾਂਚ  
-  - Env-ਕਨਫਿਗਰੇਸ਼ਨਯੋਗ ਮਾਡਲ ਰਜਿਸਟਰੀ (`GENERAL_MODEL`, `REASONING_MODEL`, `CODE_MODEL`, `TOOL_REGISTRY` JSON)  
-- Module08/requirements.txt ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ: ਹੁਣ `openai` ਸ਼ਾਮਲ ਹੈ (`requests`, `chainlit` ਦੇ ਨਾਲ)  
-- Chainlit ਨਮੂਨਾ ਮਾਰਗਦਰਸ਼ਨ ਸਪਸ਼ਟ ਕੀਤਾ ਅਤੇ ਟ੍ਰਬਲਸ਼ੂਟਿੰਗ ਸ਼ਾਮਲ ਕੀਤੀ; ਵਰਕਸਪੇਸ ਸੈਟਿੰਗਾਂ ਰਾਹੀਂ ਇੰਪੋਰਟ ਰਿਜ਼ੋਲੂਸ਼ਨ  
+### ਬਦਲਿਆ
+- Module 08 docs ਅਤੇ samples ਵਿੱਚ default model ਨੂੰ `phi-4-mini` ਵਿੱਚ ਅਪਡੇਟ ਕੀਤਾ; `phi-3.5` ਦੇ ਬਾਕੀ mentions ਨੂੰ ਹਟਾਇਆ
+- Router (`Module08/samples/06/router.py`) ਸੁਧਾਰ:
+  - Regex parsing ਦੇ ਨਾਲ `foundry service status` ਦੁਆਰਾ endpoint discovery
+  - `/v1/models` health check startup ਤੇ
+  - Env-configurable model registry (`GENERAL_MODEL`, `REASONING_MODEL`, `CODE_MODEL`, `TOOL_REGISTRY` JSON)
+- Requirements ਅਪਡੇਟ ਕੀਤੇ: `Module08/requirements.txt` ਵਿੱਚ `openai` ਸ਼ਾਮਲ ਕੀਤਾ (ਸਾਥ `requests`, `chainlit`)
+- Chainlit sample guidance ਨੂੰ ਸਪਸ਼ਟ ਕੀਤਾ ਅਤੇ troubleshooting ਸ਼ਾਮਲ ਕੀਤੀ; workspace settings ਦੁਆਰਾ import resolution
 
-### Fixed
-- ਇੰਪੋਰਟ ਸਮੱਸਿਆਵਾਂ ਹੱਲ ਕੀਤੀਆਂ:  
-  - ਰਾਊਟਰ ਹੁਣ ਗੈਰ-ਮੌਜੂਦ `utils` ਮੋਡਿਊਲ ਤੇ ਨਿਰਭਰ ਨਹੀਂ; ਫੰਕਸ਼ਨਸ ਇਨਲਾਈਨ ਕੀਤੇ  
-  - ਕੋਆਰਡੀਨੇਟਰ ਰਿਲੇਟਿਵ ਇੰਪੋਰਟ ਵਰਤਦਾ ਹੈ (`from .specialists import ...`) ਅਤੇ ਮੋਡਿਊਲ ਪਾਥ ਰਾਹੀਂ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ  
-  - VS Code/Pylance ਕਨਫਿਗਰੇਸ਼ਨ `chainlit` ਅਤੇ ਪੈਕੇਜ ਇੰਪੋਰਟਸ ਨੂੰ ਰਿਜ਼ੋਲਵ ਕਰਨ ਲਈ  
-- `STUDY_GUIDE.md` ਵਿੱਚ ਛੋਟਾ ਟਾਈਪੋ ਠੀਕ ਕੀਤਾ ਅਤੇ Module 08 ਕਵਰੇਜ ਸ਼ਾਮਲ ਕੀਤੀ  
+### ਠੀਕ ਕੀਤਾ
+- Import issues ਹੱਲ ਕੀਤੇ:
+  - Router ਹੁਣ non-existent `utils` module ਤੇ depend ਨਹੀਂ ਕਰਦਾ; functions inline ਕੀਤੇ
+  - Coordinator relative import (`from .specialists import ...`) ਵਰਤਦਾ ਹੈ ਅਤੇ module path ਦੁਆਰਾ invoke ਹੁੰਦਾ ਹੈ
+  - VS Code/Pylance configuration `chainlit` ਅਤੇ package imports ਨੂੰ resolve ਕਰਨ ਲਈ
+- `STUDY_GUIDE.md` ਵਿੱਚ minor typo ਠੀਕ ਕੀਤਾ ਅਤੇ Module 08 coverage ਸ਼ਾਮਲ ਕੀਤੀ
 
-### Removed
-- ਗੈਰ-ਵਰਤੋਂਸ਼ੀਲ `Module08/infra/obs.py` ਨੂੰ ਮਿਟਾਇਆ ਅਤੇ ਖਾਲੀ `infra/` ਡਾਇਰੈਕਟਰੀ ਹਟਾਈ; ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਝਲਕਵਾਦ ਪੈਟਰਨਸ ਵਿਕਲਪਿਕ ਰੂਪ ਵਿੱਚ ਰੱਖੇ  
+### ਹਟਾਇਆ
+- Unused `Module08/infra/obs.py` ਨੂੰ delete ਕੀਤਾ ਅਤੇ ਖਾਲੀ `infra/` ਡਾਇਰੈਕਟਰੀ ਨੂੰ ਹਟਾਇਆ; observability patterns ਨੂੰ docs ਵਿੱਚ optional ਰੱਖਿਆ
 
-### Moved
-- Module 08 ਡੈਮੋਜ਼ ਨੂੰ `Module08/samples` ਦੇ ਹੇਠਾਂ ਸੈਸ਼ਨ-ਨੰਬਰ ਵਾਲੀਆਂ ਫੋਲਡਰਾਂ ਵਿੱਚ ਇਕੱਠਾ ਕੀਤਾ  
-  - Chainlit ਐਪ ਨੂੰ `samples/04` ਵਿੱਚ ਮੋਵ ਕੀਤਾ  
-  - ਏਜੰਟਸ ਨੂੰ `samples/05` ਵਿੱਚ ਮੋਵ ਕੀਤਾ ਅਤੇ ਪੈਕੇਜ ਰਿਜ਼ੋਲੂਸ਼ਨ ਲਈ `__init__.py` ਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕੀਤੀਆਂ  
+### ਮੂਵ ਕੀਤਾ
+- Module 08 demos ਨੂੰ `Module08/samples` ਦੇ session-numbered folders ਵਿੱਚ consolidate ਕੀਤਾ
+  - Chainlit app ਨੂੰ `samples/04` ਵਿੱਚ ਮੂਵ ਕੀਤਾ
+  - Agents ਨੂੰ `samples/05` ਵਿੱਚ ਮੂਵ ਕੀਤਾ ਅਤੇ package resolution ਲਈ `__init__.py` files ਸ਼ਾਮਲ ਕੀਤੇ
 
-### Docs
-- Module 08 ਸੈਸ਼ਨ ਦਸਤਾਵੇਜ਼ ਅਤੇ ਸਾਰੇ ਨਮੂਨਾ README Microsoft Learn ਅਤੇ ਭਰੋਸੇਮੰਦ ਵੈਂਡਰ ਹਵਾਲੇ ਨਾਲ ਸੰਮ੍ਰਿਧ  
-- `Module08/README.md` ਨੂੰ ਨਮੂਨਾ ਓਵਰਵਿਊ, ਰਾਊਟਰ ਕਨਫਿਗਰੇਸ਼ਨ, ਅਤੇ ਵੈਧਤਾ ਟਿਪਸ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ  
-- `Module07/README.md` Windows Foundry Local ਸੈਕਸ਼ਨ ਨੂੰ Learn ਦਸਤਾਵੇਜ਼ ਦੇ ਖਿਲਾਫ ਵੈਧ ਕੀਤਾ  
-- `STUDY_GUIDE.md` ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ:  
-  - Module 08 ਨੂੰ ਓਵਰਵਿਊ, ਸ਼ਡਿਊਲ, ਪ੍ਰਗਤੀ ਟ੍ਰੈਕਰ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ  
-  - ਵਿਸ਼ਾਲ References ਸੈਕਸ਼ਨ ਸ਼ਾਮਲ ਕੀਤਾ (Foundry Local, Azure AI, Olive, ONNX Runtime, OpenVINO, MLX, Llama.cpp, vLLM, Ollama, AI Toolkit, Windows ML)  
-
----
-
-## Historical (ਸੰਖੇਪ)
-- ਕੋਰਸ ਆਰਕੀਟੈਕਚਰ ਅਤੇ ਮੋਡਿਊਲਸ ਸਥਾਪਿਤ ਕੀਤੇ (Modules 01–07)  
-- ਸਮਰਥਨਸ਼ੀਲ ਸਮੱਗਰੀ ਅਧੁਨਿਕਤਾ, ਫਾਰਮੈਟਿੰਗ ਮਿਆਰਕਰਨ, ਅਤੇ ਸ਼ਾਮਲ ਕੇਸ ਸਟੱਡੀਜ਼  
-- ਅਪਟਿਮਾਈਜ਼ੇਸ਼ਨ ਫਰੇਮਵਰਕਸ ਕਵਰੇਜ ਦਾ ਵਿਸਤਾਰ (Llama.cpp, Olive, OpenVINO, Apple MLX)  
-
-## Unreleased / Backlog (ਪ੍ਰਸਤਾਵ)
-- Foundry Local ਉਪਲਬਧਤਾ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਪ੍ਰਤੀ-ਨਮੂਨਾ ਸਮੋਕ ਟੈਸਟਸ ਨੂੰ ਵਿਕਲਪਿਕ ਰੂਪ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ  
-- ਮਾਡਲ ਹਵਾਲੇ (ਜਿਵੇਂ `phi-4-mini`) ਨੂੰ ਸੰਗਤ ਕਰਨ ਲਈ ਅਨੁਵਾਦਾਂ ਦੀ ਸਮੀਖਾ ਕਰੋ  
-- ਜੇ ਟੀਮਾਂ ਵਰਕਸਪੇਸ-ਵਿਆਪਕ ਸਖ਼ਤੀ ਨੂੰ ਤਰਜੀਹ ਦਿੰਦੀ ਹੈ ਤਾਂ ਘੱਟੋ-ਘੱਟ pyright ਕਨਫਿਗਰੇਸ਼ਨ ਸ਼ਾਮਲ ਕਰੋ  
+### ਦਸਤਾਵੇਜ਼
+- Module 08 session docs ਅਤੇ ਸਾਰੇ sample READMEs enriched Microsoft Learn ਅਤੇ trusted vendor references ਦੇ ਨਾਲ
+- `Module08/README.md` ਨੂੰ Samples Overview, router configuration, ਅਤੇ validation tips ਦੇ ਨਾਲ ਅਪਡੇਟ ਕੀਤਾ
+- `Module07/README.md` Windows Foundry Local section Learn docs ਦੇ ਖਿਲਾਫ validated
+- `STUDY_GUIDE.md` ਨੂੰ ਅਪਡੇਟ ਕੀਤਾ:
+  - Module 08 ਨੂੰ overview, schedules, progress tracker ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ
+  - Comprehensive References section (Foundry Local, Azure AI, Olive, ONNX Runtime, OpenVINO, MLX, Llama.cpp, vLLM, Ollama, AI Toolkit, Windows ML) ਸ਼ਾਮਲ ਕੀਤੀ
 
 ---
 
+## ਇਤਿਹਾਸਕ (ਸੰਖੇਪ)
+- ਕੋਰਸ ਆਰਕੀਟੈਕਚਰ ਅਤੇ ਮੋਡਿਊਲਸ ਸਥਾਪਿਤ ਕੀਤੇ (Modules 01–07)
+- Iterative content modernization, formatting standardization, ਅਤੇ case studies ਸ਼ਾਮਲ ਕੀਤੇ
+- Optimization frameworks coverage (Llama.cpp, Olive, OpenVINO, Apple MLX) ਨੂੰ ਵਧਾਇਆ
+
+## ਅਣਪ੍ਰਕਾਸ਼ਿਤ / ਬੈਕਲੌਗ (ਪ੍ਰਸਤਾਵ)
+- Foundry Local availability ਨੂੰ validate ਕਰਨ ਲਈ optional per-sample smoke tests
+- Model references (e.g., `phi-4-mini`) ਨੂੰ align ਕਰਨ ਲਈ translations ਦੀ ਸਮੀਖਿਆ
+- Workspace-wide strictness ਲਈ minimal pyright config ਸ਼ਾਮਲ ਕਰਨ ਦੀ ਸਿਫਾਰਸ਼
+
+---
+
+**ਅਸਵੀਕਰਤੀ**:  
+ਇਹ ਦਸਤਾਵੇਜ਼ AI ਅਨੁਵਾਦ ਸੇਵਾ [Co-op Translator](https://github.com/Azure/co-op-translator) ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ ਹੈ। ਜਦੋਂ ਕਿ ਅਸੀਂ ਸਹੀ ਹੋਣ ਦਾ ਯਤਨ ਕਰਦੇ ਹਾਂ, ਕਿਰਪਾ ਕਰਕੇ ਧਿਆਨ ਦਿਓ ਕਿ ਸਵੈਚਾਲਿਤ ਅਨੁਵਾਦਾਂ ਵਿੱਚ ਗਲਤੀਆਂ ਜਾਂ ਅਸੁਣਤੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਇਸ ਦੀ ਮੂਲ ਭਾਸ਼ਾ ਵਿੱਚ ਮੌਜੂਦ ਮੂਲ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਅਧਿਕਾਰਤ ਸਰੋਤ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ। ਮਹੱਤਵਪੂਰਨ ਜਾਣਕਾਰੀ ਲਈ, ਪੇਸ਼ੇਵਰ ਮਨੁੱਖੀ ਅਨੁਵਾਦ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਅਸੀਂ ਇਸ ਅਨੁਵਾਦ ਦੀ ਵਰਤੋਂ ਤੋਂ ਪੈਦਾ ਹੋਣ ਵਾਲੀਆਂ ਕਿਸੇ ਵੀ ਗਲਤਫਹਮੀਆਂ ਜਾਂ ਗਲਤ ਵਿਆਖਿਆਵਾਂ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਨਹੀਂ ਹਾਂ।
