@@ -1,0 +1,293 @@
+<!--
+CO_OP_TRANSLATOR_METADATA:
+{
+  "original_hash": "20ef6223850f0ab7b6e546a6df0d7d68",
+  "translation_date": "2025-10-09T14:23:40+00:00",
+  "source_file": "Workshop/QUICK_START.md",
+  "language_code": "da"
+}
+-->
+# Workshop Hurtig Start Guide
+
+## Forudsætninger
+
+### 1. Installer Foundry Local
+
+Følg den officielle installationsvejledning:  
+https://github.com/microsoft/Foundry-Local
+
+```bash
+# Start Foundry Local service
+foundry service start
+
+# Load a model (phi-4-mini recommended for workshop)
+foundry model run phi-4-mini
+
+# Verify service is running
+foundry service status
+```
+
+### 2. Installer Python-afhængigheder
+
+Fra Workshop-mappen:
+
+```bash
+# Create virtual environment (recommended)
+python -m venv .venv
+
+# Activate virtual environment
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+source .venv/bin/activate
+
+# Install requirements
+pip install -r requirements.txt
+```
+
+## Kørsel af Workshop-eksempler
+
+### Session 01: Grundlæggende Chat
+
+```bash
+cd Workshop/samples/session01
+python chat_bootstrap.py "What are the benefits of local AI?"
+```
+
+**Miljøvariabler:**  
+```bash
+set FOUNDRY_LOCAL_ALIAS=phi-4-mini
+set SHOW_USAGE=1
+```
+
+### Session 02: RAG Pipeline
+
+```bash
+cd Workshop/samples/session02
+python rag_pipeline.py
+```
+
+**Miljøvariabler:**  
+```bash
+set FOUNDRY_LOCAL_ALIAS=phi-4-mini
+set RAG_QUESTION="Why use RAG with local inference?"
+set EMBED_MODEL=sentence-transformers/all-MiniLM-L6-v2
+```
+
+### Session 02: RAG Evaluering (Ragas)
+
+```bash
+python rag_eval_ragas.py
+```
+
+**Bemærk**: Kræver yderligere afhængigheder installeret via `requirements.txt`
+
+### Session 03: Benchmarking
+
+```bash
+cd Workshop/samples/session03
+python benchmark_oss_models.py
+```
+
+**Miljøvariabler:**  
+```bash
+set BENCH_MODELS=phi-4-mini,qwen2.5-0.5b,gemma-2-2b
+set BENCH_ROUNDS=5
+set BENCH_PROMPT="Explain RAG briefly"
+set BENCH_STREAM=1
+```
+
+**Output**: JSON med latenstid, gennemløb og første-token-metrics
+
+### Session 04: Model Sammenligning
+
+```bash
+cd Workshop/samples/session04
+python model_compare.py
+```
+
+**Miljøvariabler:**  
+```bash
+set SLM_ALIAS=phi-4-mini
+set LLM_ALIAS=qwen2.5-7b
+set COMPARE_PROMPT="List 5 benefits of local AI inference"
+```
+
+### Session 05: Multi-Agent Orkestrering
+
+```bash
+cd Workshop/samples/session05
+python agents_orchestrator.py
+```
+
+**Miljøvariabler:**  
+```bash
+set AGENT_MODEL_PRIMARY=phi-4-mini
+set AGENT_MODEL_EDITOR=phi-4-mini
+set AGENT_QUESTION="Explain why edge AI matters for compliance"
+```
+
+### Session 06: Model Router
+
+```bash
+cd Workshop/samples/session06
+python models_router.py
+```
+
+**Tester routing-logik** med flere intentioner (kode, opsummering, klassifikation)
+
+### Session 06: Pipeline
+
+```bash
+python models_pipeline.py
+```
+
+**Kompleks flertrins-pipeline** med planlægning, udførelse og forbedring
+
+## Scripts
+
+### Eksportér Benchmark-rapport
+
+```bash
+cd Workshop/scripts
+python export_benchmark_markdown.py \
+    --models "phi-4-mini,qwen2.5-0.5b" \
+    --prompt "Explain RAG briefly" \
+    --rounds 3 \
+    --output benchmark_report.md
+```
+
+**Output**: Markdown-tabel + JSON-metrics
+
+### Lint Markdown CLI-mønstre
+
+```bash
+python lint_markdown_cli.py --verbose
+```
+
+**Formål**: Registrer forældede CLI-mønstre i dokumentation
+
+## Testning
+
+### Smoke Tests
+
+```bash
+cd Workshop
+python -m tests.smoke
+```
+
+**Tests**: Grundlæggende funktionalitet af nøgleeksempler
+
+## Fejlfinding
+
+### Tjeneste kører ikke
+
+```bash
+# Check status
+foundry service status
+
+# Start if not running
+foundry service start
+
+# Load a model
+foundry model run phi-4-mini
+```
+
+### Modulimportfejl
+
+```bash
+# Ensure virtual environment is activated
+.venv\Scripts\activate  # Windows
+source .venv/bin/activate  # macOS/Linux
+
+# Reinstall dependencies
+pip install -r requirements.txt
+```
+
+### Forbindelsesfejl
+
+```bash
+# Check endpoint
+foundry service status
+
+# Set explicit endpoint if needed
+set FOUNDRY_LOCAL_ENDPOINT=http://localhost:8000
+```
+
+### Model ikke fundet
+
+```bash
+# List available models
+foundry model list
+
+# Download and run a model
+foundry model run phi-4-mini
+```
+
+## Miljøvariabel Reference
+
+### Kernekonfiguration
+| Variabel | Standard | Beskrivelse |
+|----------|---------|-------------|
+| `FOUNDRY_LOCAL_ALIAS` | Varierer | Modelalias der skal bruges |
+| `FOUNDRY_LOCAL_ENDPOINT` | Auto | Overstyr tjeneste-endpoint |
+| `SHOW_USAGE` | `0` | Vis token-brugsstatistik |
+| `RETRY_ON_FAIL` | `1` | Aktiver retry-logik |
+| `RETRY_BACKOFF` | `1.0` | Initial retry-forsinkelse (sekunder) |
+
+### Session-specifik
+| Variabel | Standard | Beskrivelse |
+|----------|---------|-------------|
+| `EMBED_MODEL` | `sentence-transformers/all-MiniLM-L6-v2` | Embedding-model |
+| `RAG_QUESTION` | Se eksempel | RAG testspørgsmål |
+| `BENCH_MODELS` | Varierer | Kommaseparerede modeller |
+| `BENCH_ROUNDS` | `3` | Benchmark-iterationer |
+| `BENCH_PROMPT` | Se eksempel | Benchmark-prompt |
+| `BENCH_STREAM` | `0` | Mål første-token-latenstid |
+| `AGENT_MODEL_PRIMARY` | `phi-4-mini` | Primær agentmodel |
+| `AGENT_MODEL_EDITOR` | Primær | Editor-agentmodel |
+| `SLM_ALIAS` | `phi-4-mini` | Lille sproglig model |
+| `LLM_ALIAS` | `qwen2.5-7b` | Stor sproglig model |
+| `COMPARE_PROMPT` | Se eksempel | Sammenligningsprompt |
+
+## Anbefalede Modeller
+
+### Udvikling & Test
+- **phi-4-mini** - Balanceret kvalitet og hastighed
+- **qwen2.5-0.5b** - Meget hurtig til klassifikation
+- **gemma-2-2b** - God kvalitet, moderat hastighed
+
+### Produktionsscenarier
+- **phi-4-mini** - Generelt formål
+- **deepseek-coder-1.3b** - Kodegenerering
+- **qwen2.5-7b** - Højkvalitets svar
+
+## SDK Dokumentation
+
+- **Foundry Local**: https://github.com/microsoft/Foundry-Local  
+- **Python SDK**: https://github.com/microsoft/Foundry-Local/tree/main/sdk/python/foundry_local
+
+## Få Hjælp
+
+1. Tjek tjenestestatus: `foundry service status`  
+2. Se logfiler: Tjek Foundry Local tjenestelogfiler  
+3. Tjek SDK-dokumentation: https://github.com/microsoft/Foundry-Local  
+4. Gennemgå eksempelkode: Alle eksempler har detaljerede docstrings
+
+## Næste Skridt
+
+1. Gennemfør alle workshop-sessioner i rækkefølge  
+2. Eksperimentér med forskellige modeller  
+3. Tilpas eksempler til dine brugsscenarier  
+4. Gennemgå `SDK_MIGRATION_NOTES.md` for avancerede mønstre
+
+---
+
+**Sidst Opdateret**: 2025-01-08  
+**Workshop Version**: Seneste  
+**SDK**: Foundry Local Python SDK
+
+---
+
+**Ansvarsfraskrivelse**:  
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på at sikre nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.
