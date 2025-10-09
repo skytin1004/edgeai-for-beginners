@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T07:59:18+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-09T14:08:57+00:00",
   "source_file": "README.md",
   "language_code": "da"
 }
@@ -16,13 +16,13 @@ CO_OP_TRANSLATOR_METADATA:
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/edgeai-for-beginners.svg)](https://GitHub.com/microsoft/edgeai-for-beginners/pulls)
 [![PRs Velkommen](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![GitHub overvågninger](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)
+[![GitHub følgere](https://img.shields.io/github/watchers/microsoft/edgeai-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/edgeai-for-beginners/watchers)
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
 [![GitHub stjerner](https://img.shields.io/github/stars/microsoft/edgeai-for-beginners?style=social&label=Star)](https://GitHub.com/microsoft/edgeai-for-beginners/stargazers)
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Følg disse trin for at komme i gang med at bruge disse ressourcer:
+Følg disse trin for at komme i gang med at bruge ressourcerne:
 
 1. **Fork repositoryet**: Klik [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
 2. **Klon repositoryet**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
@@ -38,9 +38,9 @@ Følg disse trin for at komme i gang med at bruge disse ressourcer:
 
 ## Introduktion
 
-Velkommen til **EdgeAI for Begyndere** – din omfattende rejse ind i den transformative verden af Edge Artificial Intelligence. Dette kursus bygger bro mellem kraftfulde AI-funktioner og praktisk, virkelighedsnær implementering på edge-enheder, så du kan udnytte AI's potentiale direkte der, hvor data genereres, og beslutninger skal træffes.
+Velkommen til **EdgeAI for Begyndere** – din omfattende rejse ind i den transformative verden af Edge Artificial Intelligence. Dette kursus bygger bro mellem kraftfulde AI-funktioner og praktisk, virkelighedsnær implementering på edge-enheder, hvilket giver dig mulighed for at udnytte AI's potentiale direkte der, hvor data genereres, og beslutninger skal træffes.
 
-### Hvad du vil mestre
+### Hvad du vil lære
 
 Dette kursus tager dig fra grundlæggende begreber til produktionsklare implementeringer og dækker:
 - **Små sprogmodeller (SLMs)** optimeret til edge-implementering
@@ -72,7 +72,7 @@ Edge AI refererer til at køre AI-algoritmer og sprogmodeller lokalt på hardwar
 SLMs som Phi-4, Mistral-7B og Gemma er optimerede versioner af større LLMs – trænet eller destilleret til:
 - **Reduceret hukommelsesforbrug**: Effektiv brug af begrænset edge-enhedshukommelse
 - **Lavere beregningskrav**: Optimeret til CPU og edge GPU-ydelse
-- **Hurtigere opstartstider**: Hurtig initialisering for responsive applikationer
+- **Hurtigere opstartstider**: Hurtig initialisering til responsive applikationer
 
 De låser op for kraftfulde NLP-funktioner, mens de opfylder begrænsningerne for:
 - **Indlejrede systemer**: IoT-enheder og industrielle controllere
@@ -85,15 +85,15 @@ De låser op for kraftfulde NLP-funktioner, mens de opfylder begrænsningerne fo
 
 | Modul | Emne | Fokusområde | Nøgleindhold | Niveau | Varighed |
 |-------|------|-------------|--------------|--------|----------|
-| [📖 00 ](./introduction.md) | [Introduktion til EdgeAI](./introduction.md) | Fundament & Kontekst | EdgeAI Oversigt • Industrielle Anvendelser • SLM Introduktion • Læringsmål | Begynder | 1-2 timer |
-| [📚 01](../../Module01) | [EdgeAI Grundlæggende](./Module01/README.md) | Cloud vs Edge AI sammenligning | EdgeAI Grundlæggende • Virkelige Case Studies • Implementeringsguide • Edge Implementering | Begynder | 3-4 timer |
-| [🧠 02](../../Module02) | [SLM Modelfundamenter](./Module02/README.md) | Modelfamilier & Arkitektur | Phi Familie • Qwen Familie • Gemma Familie • BitNET • μModel • Phi-Silica | Begynder | 4-5 timer |
-| [🚀 03](../../Module03) | [SLM Implementeringspraksis](./Module03/README.md) | Lokal & cloud implementering | Avanceret Læring • Lokal Miljø • Cloud Implementering | Mellem | 4-5 timer |
-| [⚙️ 04](../../Module04) | [Modeloptimeringsværktøj](./Module04/README.md) | Tværplatformsoptimering | Introduktion • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow Syntese | Mellem | 5-6 timer |
+| [📖 00 ](./introduction.md) | [Introduktion til EdgeAI](./introduction.md) | Fundament & Kontekst | EdgeAI Oversigt • Industriapplikationer • SLM Introduktion • Læringsmål | Begynder | 1-2 timer |
+| [📚 01](../../Module01) | [EdgeAI Grundlæggende](./Module01/README.md) | Cloud vs Edge AI sammenligning | EdgeAI Grundlæggende • Virkelige eksempler • Implementeringsguide • Edge-implementering | Begynder | 3-4 timer |
+| [🧠 02](../../Module02) | [SLM Modelfundamenter](./Module02/README.md) | Modelfamilier & arkitektur | Phi Familie • Qwen Familie • Gemma Familie • BitNET • μModel • Phi-Silica | Begynder | 4-5 timer |
+| [🚀 03](../../Module03) | [SLM Implementeringspraksis](./Module03/README.md) | Lokal & cloud implementering | Avanceret læring • Lokal miljø • Cloud implementering | Mellem | 4-5 timer |
+| [⚙️ 04](../../Module04) | [Modeloptimeringsværktøj](./Module04/README.md) | Tværplatformsoptimering | Introduktion • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow-syntese | Mellem | 5-6 timer |
 | [🔧 05](../../Module05) | [SLMOps Produktion](./Module05/README.md) | Produktionsoperationer | SLMOps Introduktion • Modeldestillation • Finjustering • Produktionsimplementering | Avanceret | 5-6 timer |
 | [🤖 06](../../Module06) | [AI-agenter & Funktionskald](./Module06/README.md) | Agentrammer & MCP | Agent Introduktion • Funktionskald • Model Context Protocol | Avanceret | 4-5 timer |
-| [💻 07](../../Module07) | [Platform Implementering](./Module07/README.md) | Tværplatforms eksempler | AI Toolkit • Foundry Lokal • Windows Udvikling | Avanceret | 3-4 timer |
-| [🏭 08](../../Module08) | [Foundry Lokal Toolkit](./Module08/README.md) | Produktionsklare eksempler | Eksempelapplikationer (se detaljer nedenfor) | Ekspert | 8-10 timer |
+| [💻 07](../../Module07) | [Platformimplementering](./Module07/README.md) | Tværplatformseksempler | AI Toolkit • Foundry Local • Windows Udvikling | Avanceret | 3-4 timer |
+| [🏭 08](../../Module08) | [Foundry Local Toolkit](./Module08/README.md) | Produktionsklare eksempler | Eksempelapplikationer (se detaljer nedenfor) | Ekspert | 8-10 timer |
 
 ### 🏭 **Modul 08: Eksempelapplikationer**
 
@@ -108,6 +108,23 @@ De låser op for kraftfulde NLP-funktioner, mens de opfylder begrænsningerne fo
 - [09: Advanced Multi-Agent System](./Module08/samples/09/README.md)
 - [10: Foundry Tools Framework](./Module08/samples/10/README.md)
 
+### 🎓 **Workshop: Praktisk læringssti**
+
+Omfattende praktiske workshopmaterialer med produktionsklare implementeringer:
+
+- **[Workshop Guide](./Workshop/Readme.md)** - Komplette læringsmål, resultater og ressource-navigation
+- **Python Eksempler** (6 sessioner) - Opdateret med bedste praksis, fejlhåndtering og omfattende dokumentation
+- **Jupyter Notebooks** (8 interaktive) - Trinvise tutorials med benchmarks og ydelsesovervågning
+- **Sessionsguider** - Detaljerede markdown-guider for hver workshop-session
+- **Valideringsværktøjer** - Scripts til at verificere kodekvalitet og køre smoke tests
+
+**Hvad du vil bygge:**
+- Lokale AI-chatapplikationer med streaming-support
+- RAG-pipelines med kvalitetsevaluering (RAGAS)
+- Multi-model benchmarking og sammenligningsværktøjer
+- Multi-agent orkestreringssystemer
+- Intelligent model-routing med opgavebaseret udvælgelse
+
 ### 📊 **Læringssti Oversigt**
 - **Total Varighed**: 36-45 timer
 - **Begyndersti**: Moduler 01-02 (7-9 timer)  
@@ -120,41 +137,41 @@ De låser op for kraftfulde NLP-funktioner, mens de opfylder begrænsningerne fo
 ### 🎯 Kernekompetencer
 - **Edge AI Arkitektur**: Design lokale AI-systemer med cloud-integration
 - **Modeloptimering**: Kvantisér og komprimer modeller til edge-implementering (85% hastighedsforøgelse, 75% størrelsesreduktion)
-- **Tværplatformsimplementering**: Windows, mobil, indlejret og cloud-edge hybrid systemer
+- **Tværplatformsimplementering**: Windows, mobil, indlejret og cloud-edge hybrid-systemer
 - **Produktionsoperationer**: Overvågning, skalering og vedligeholdelse af edge AI i produktion
 
 ### 🏗️ Praktiske projekter
-- **Foundry Lokal Chat Apps**: Windows 11 native applikation med modelskift
-- **Multi-Agent Systemer**: Koordinator med specialiserede agenter til komplekse arbejdsgange  
-- **RAG Applikationer**: Lokal dokumentbehandling med vektorsøgning
-- **Model Routers**: Intelligent valg mellem modeller baseret på opgaveanalyse
-- **API Frameworks**: Produktionsklare klienter med streaming og sundhedsovervågning
-- **Tværplatformsværktøjer**: LangChain/Semantic Kernel integrationsmønstre
+- **Foundry Local Chat Apps**: Windows 11 native applikation med modelskift
+- **Multi-agent systemer**: Koordinator med specialistagenter til komplekse arbejdsgange  
+- **RAG-applikationer**: Lokal dokumentbehandling med vektorsøgning
+- **Modelroutere**: Intelligent valg mellem modeller baseret på opgaveanalyse  
+- **API-rammer**: Produktionsklare klienter med streaming og sundhedsovervågning  
+- **Platformuafhængige værktøjer**: LangChain/Semantic Kernel integrationsmønstre  
 
-### 🏢 Industrielle anvendelser
-**Fremstilling** • **Sundhedspleje** • **Autonome køretøjer** • **Smarte byer** • **Mobile apps**
+### 🏢 Industrielle anvendelser  
+**Fremstilling** • **Sundhedssektoren** • **Autonome køretøjer** • **Smarte byer** • **Mobilapps**  
 
-## Hurtig start
+## Hurtig start  
 
-**Anbefalet læringssti** (20-30 timer i alt):
+**Anbefalet læringsforløb** (20-30 timer i alt):  
 
-0. **📖 Introduktion** ([Introduction.md](./introduction.md)): EdgeAI fundament + industriens kontekst + læringsramme
-1. **📚 Fundament** (Moduler 01-02): EdgeAI begreber + SLM modelfamilier
-2. **⚙️ Optimering** (Moduler 03-04): Implementering + kvantiseringsværktøjer  
+0. **📖 Introduktion** ([Introduction.md](./introduction.md)): EdgeAI-grundlag + industrikontekst + læringsramme  
+1. **📚 Grundlag** (Moduler 01-02): EdgeAI-koncepter + SLM-modelfamilier  
+2. **⚙️ Optimering** (Moduler 03-04): Implementering + kvantiseringsrammer  
 3. **🚀 Produktion** (Moduler 05-06): SLMOps + AI-agenter + funktionskald  
 4. **💻 Implementering** (Moduler 07-08): Platformeksempler + Foundry Local værktøjssæt  
 
-Hver modul inkluderer teori, praktiske øvelser og produktionsklare kodeeksempler.
+Hvert modul inkluderer teori, praktiske øvelser og produktionsklare kodeeksempler.  
 
-## Karrierepåvirkning
+## Karriereeffekt  
 
 **Tekniske roller**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer  
 
-**Industrier**: Produktion 4.0 • Sundhedsteknologi • Autonome systemer • FinTech • Forbrugerelektronik  
+**Industrier**: Fremstilling 4.0 • Sundhedsteknologi • Autonome systemer • FinTech • Forbrugerelektronik  
 
-**Porteføljeprojekter**: Multi-agent systemer • Produktionsklare RAG-apps • Cross-platform implementering • Performanceoptimering  
+**Porteføljeprojekter**: Multi-agent systemer • Produktionsklare RAG-apps • Platformuafhængig implementering • Ydelsesoptimering  
 
-## Repository-struktur
+## Repository-struktur  
 
 ```
 edgeai-for-beginners/
@@ -170,24 +187,24 @@ edgeai-for-beginners/
 ```
   
 
-## Kursushøjdepunkter
+## Kursushøjdepunkter  
 
 ✅ **Progressiv læring**: Teori → Praktik → Produktionsimplementering  
 ✅ **Reelle casestudier**: Microsoft, Japan Airlines, virksomhedsimplementeringer  
 ✅ **Praktiske eksempler**: 50+ eksempler, 10 omfattende Foundry Local demoer  
-✅ **Performancefokus**: 85% hastighedsforbedringer, 75% størrelsesreduktioner  
+✅ **Ydelsesfokus**: 85% hastighedsforbedringer, 75% størrelsesreduktioner  
 ✅ **Multi-platform**: Windows, mobil, embedded, cloud-edge hybrid  
-✅ **Produktionsklar**: Overvågning, skalering, sikkerhed, compliance-rammer  
+✅ **Produktionsklar**: Overvågning, skalering, sikkerhed, overholdelsesrammer  
 
-📖 **[Studievejledning tilgængelig](STUDY_GUIDE.md)**: Struktureret 20-timers læringsplan med tidsallokeringsvejledning og selvvurderingsværktøjer.
+📖 **[Studievejledning tilgængelig](STUDY_GUIDE.md)**: Struktureret 20-timers læringsforløb med tidsallokeringsvejledning og selvvurderingsværktøjer.  
 
----
+---  
 
-**EdgeAI repræsenterer fremtiden for AI-implementering**: lokal-først, privatlivsbevarende og effektiv. Mestér disse færdigheder for at bygge næste generation af intelligente applikationer.
+**EdgeAI repræsenterer fremtiden for AI-implementering**: lokal-først, privatlivsbevarende og effektiv. Mestér disse færdigheder for at bygge næste generation af intelligente applikationer.  
 
-## Andre kurser
+## Andre kurser  
 
-Vores team tilbyder også andre kurser! Tjek:
+Vores team tilbyder andre kurser! Tjek:  
 
 - [MCP for begyndere](https://github.com/microsoft/mcp-for-beginners)  
 - [AI-agenter for begyndere](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -205,13 +222,13 @@ Vores team tilbyder også andre kurser! Tjek:
 - [Mestre GitHub Copilot til C#/.NET-udviklere](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Vælg din egen Copilot-eventyr](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
-## Få hjælp
+## Få hjælp  
 
-Hvis du sidder fast eller har spørgsmål om at bygge AI-apps, så deltag i:  
+Hvis du sidder fast eller har spørgsmål om at bygge AI-apps, så deltag:  
 
 [![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
 
-Hvis du har produktfeedback eller oplever fejl under udvikling, besøg:  
+Hvis du har produktfeedback eller fejl under udvikling, besøg:  
 
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
