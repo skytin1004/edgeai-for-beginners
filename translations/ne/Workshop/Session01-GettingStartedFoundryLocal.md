@@ -1,0 +1,523 @@
+<!--
+CO_OP_TRANSLATOR_METADATA:
+{
+  "original_hash": "7c8a73e11384e3462674273498d0f9a6",
+  "translation_date": "2025-10-09T09:26:23+00:00",
+  "source_file": "Workshop/Session01-GettingStartedFoundryLocal.md",
+  "language_code": "ne"
+}
+-->
+# सत्र १: फाउन्ड्री लोकलसँग सुरु गर्दै
+
+## सारांश
+
+फाउन्ड्री लोकलसँग आफ्नो यात्रा सुरु गर्नुहोस्, यसलाई Windows 11 मा स्थापना र कन्फिगर गरेर। CLI सेटअप गर्ने, हार्डवेयर एक्सेलेरेशन सक्षम गर्ने, र मोडेलहरू क्यास गर्ने तरिका सिक्नुहोस् ताकि स्थानीय इनफरेन्स छिटो होस्। यो व्यावहारिक सत्रले Phi, Qwen, DeepSeek, र GPT-OSS-20B जस्ता मोडेलहरू पुन:प्रजननयोग्य CLI आदेशहरूको प्रयोग गरेर चलाउने प्रक्रियामा तपाईंलाई लैजान्छ।
+
+## सिकाइ उद्देश्यहरू
+
+यो सत्रको अन्त्यसम्म, तपाईंले:
+
+- **स्थापना र कन्फिगर गर्नुहोस्**: Windows 11 मा फाउन्ड्री लोकललाई उच्चतम प्रदर्शन सेटिङहरूसँग सेटअप गर्नुहोस्।
+- **CLI सञ्चालनहरूमा महारत हासिल गर्नुहोस्**: मोडेल व्यवस्थापन र परिनियोजनका लागि फाउन्ड्री लोकल CLI प्रयोग गर्नुहोस्।
+- **हार्डवेयर एक्सेलेरेशन सक्षम गर्नुहोस्**: ONNXRuntime वा WebGPU प्रयोग गरेर GPU एक्सेलेरेशन कन्फिगर गर्नुहोस्।
+- **धेरै मोडेलहरू परिनियोजन गर्नुहोस्**: phi-4, GPT-OSS-20B, Qwen, र DeepSeek मोडेलहरू स्थानीय रूपमा चलाउनुहोस्।
+- **आफ्नो पहिलो एप निर्माण गर्नुहोस्**: फाउन्ड्री लोकल Python SDK प्रयोग गर्नका लागि विद्यमान नमूनाहरू अनुकूलन गर्नुहोस्।
+
+# मोडेल परीक्षण गर्नुहोस् (गैर-इन्टरएक्टिभ एकल प्रम्प्ट)
+foundry model run phi-4-mini --prompt "नमस्ते, आफ्नो परिचय दिनुहोस्।"
+
+- Windows 11 (22H2 वा पछिल्लो)
+# उपलब्ध क्याटलग मोडेलहरूको सूची बनाउनुहोस् (लोड गरिएका मोडेलहरू चलाएपछि देखिन्छन्)
+foundry model list
+## नोट: हाल कुनै समर्पित `--running` फ्ल्याग छैन; कुन मोडेल लोड गरिएको छ हेर्नको लागि च्याट सुरु गर्नुहोस् वा सेवा लगहरू निरीक्षण गर्नुहोस्।
+- Python 3.10+ स्थापना गरिएको
+- Visual Studio Code Python एक्सटेन्सनसहित
+- स्थापना गर्नका लागि प्रशासक विशेषाधिकारहरू
+
+### (वैकल्पिक) वातावरणीय भेरिएबलहरू
+
+`.env` फाइल बनाउनुहोस् (वा शेलमा सेट गर्नुहोस्) ताकि स्क्रिप्टहरू पोर्टेबल बनून्:
+# प्रतिक्रियाहरू तुलना गर्नुहोस् (गैर-इन्टरएक्टिभ)
+foundry model run gpt-oss-20b --prompt "सजिलो भाषामा एज AI को व्याख्या गर्नुहोस्।"
+| भेरिएबल | उद्देश्य | उदाहरण |
+|----------|---------|---------|
+| `FOUNDRY_LOCAL_ALIAS` | मनपर्ने मोडेल उपनाम (क्याटलगले उत्तम भेरियन्ट स्वतः चयन गर्छ) | `phi-3.5-mini` |
+| `FOUNDRY_LOCAL_ENDPOINT` | अन्त बिन्दु ओभरराइड गर्नुहोस् (अन्यथा प्रबन्धकबाट स्वतः) | `http://localhost:5273/v1` |
+| `FOUNDRY_LOCAL_STREAM` | स्ट्रिमिङ डेमो सक्षम गर्नुहोस् | `true` |
+
+> यदि `FOUNDRY_LOCAL_ENDPOINT=auto` (वा सेट गरिएको छैन) भने हामी यसलाई SDK प्रबन्धकबाट व्युत्पन्न गर्छौं।
+
+## डेमो प्रवाह (३० मिनेट)
+
+### १. फाउन्ड्री लोकल स्थापना गर्नुहोस् र CLI सेटअप प्रमाणित गर्नुहोस् (१० मिनेट)
+
+# क्यास गरिएका मोडेलहरूको सूची बनाउनुहोस्
+foundry cache list
+
+```powershell
+# Install via winget (recommended)
+winget install Microsoft.FoundryLocal
+
+# Or download from Microsoft Learn
+# https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/install
+```
+
+**macOS (पूर्वावलोकन / यदि समर्थित छ)**
+
+यदि कुनै देशी macOS प्याकेज उपलब्ध छ भने (अधिकृत कागजातहरूमा पछिल्लो जाँच गर्नुहोस्):
+
+```bash
+# Homebrew (if/when available)
+brew update
+brew install foundry-local  # hypothetical formula name
+
+# Or manual download (tarball)
+curl -L -o foundry-local.tar.gz "https://download.microsoft.com/foundry-local/latest/macos/foundry-local.tar.gz"
+tar -xzf foundry-local.tar.gz
+sudo ./install.sh
+```
+
+यदि macOS देशी बाइनरीहरू अझै उपलब्ध छैनन् भने, तपाईं अझै गर्न सक्नुहुन्छ: 
+1. Windows 11 ARM/Intel VM (Parallels / UTM) प्रयोग गर्नुहोस् र Windows चरणहरू पालना गर्नुहोस्। 
+2. कन्टेनर मार्फत मोडेलहरू चलाउनुहोस् (यदि कन्टेनर छवि प्रकाशित गरिएको छ) र `FOUNDRY_LOCAL_ENDPOINT` लाई एक्सपोज गरिएको पोर्टमा सेट गर्नुहोस्। 
+
+**Python भर्चुअल वातावरण बनाउनुहोस् (क्रस-प्ल्याटफर्म)**
+
+Windows PowerShell:
+```powershell
+py -m venv .venv
+ .\.venv\Scripts\Activate.ps1
+```
+
+macOS / Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+pip अपग्रेड गर्नुहोस् र कोर निर्भरताहरू स्थापना गर्नुहोस्:
+```bash
+python -m pip install --upgrade pip
+pip install foundry-local-sdk openai
+```
+
+#### चरण १.२: स्थापना प्रमाणित गर्नुहोस्
+
+```powershell
+# Check version
+foundry --version
+
+# Initialize configuration
+foundry init
+
+# View available commands
+foundry --help
+```
+
+#### चरण १.३: वातावरण कन्फिगर गर्नुहोस्
+
+```powershell
+# Set up Python environment for Module08
+cd Module08
+py -m venv .venv
+.\.venv\Scripts\activate
+
+# Install Foundry Local Python SDK and dependencies
+pip install foundry-local-sdk openai requests
+```
+
+### SDK बुटस्ट्र्यापिङ (सिफारिस गरिएको)
+
+सेवा म्यानुअल रूपमा सुरु गर्ने र मोडेलहरू चलाउने सट्टा, **फाउन्ड्री लोकल Python SDK** ले सबै कुरा बुटस्ट्र्याप गर्न सक्छ:
+
+```python
+from foundry_local import FoundryLocalManager
+from openai import OpenAI
+import os
+
+alias = os.getenv("FOUNDRY_LOCAL_ALIAS", "phi-3.5-mini")
+
+# Bootstraps service + downloads + loads most suitable variant for hardware
+manager = FoundryLocalManager(alias)
+
+print("Service running:", manager.is_service_running())
+print("Endpoint:", manager.endpoint)
+print("Cached models:", manager.list_cached_models())
+
+client = OpenAI(base_url=manager.endpoint, api_key=manager.api_key or "not-needed")
+
+resp = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[
+        {"role": "system", "content": "You are a helpful local assistant."},
+        {"role": "user", "content": "Hello"}
+    ],
+    max_tokens=120,
+    temperature=0.5
+)
+print(resp.choices[0].message.content)
+```
+
+यदि तपाईंलाई स्पष्ट नियन्त्रण मनपर्छ भने, तपाईं अझै CLI + OpenAI ग्राहक प्रयोग गर्न सक्नुहुन्छ, जस्तो कि पछि देखाइएको छ।
+
+### २. GPU एक्सेलेरेशन सक्षम गर्नुहोस् (५ मिनेट)
+
+#### चरण २.१: हार्डवेयर क्षमताहरू जाँच गर्नुहोस्
+
+```powershell
+# Check available compute providers
+foundry system info
+
+# List GPU capabilities
+foundry system gpu-info
+```
+
+#### चरण २.२: हार्डवेयर एक्सेलेरेशन कन्फिगर गर्नुहोस्
+
+```powershell
+# Enable ONNX Runtime GPU (if NVIDIA GPU available)
+foundry config set compute.onnx.enable_gpu true
+
+# Enable WebGPU for broader hardware support
+foundry config set compute.webgpu.enabled true
+
+# Verify configuration
+foundry config list
+```
+
+### ३. CLI मार्फत मोडेलहरू स्थानीय रूपमा चलाउनुहोस् (१० मिनेट)
+
+#### चरण ३.१: Phi-4 मोडेल परिनियोजन गर्नुहोस्
+
+```powershell
+# Download and run phi-4-mini
+foundry model run phi-4-mini
+
+# Test the model (one-shot prompt)
+foundry model run phi-4-mini --prompt "Hello, introduce yourself"
+
+# NOTE: There is no `--running` flag; use `foundry model list` and recent activity to infer loaded models.
+```
+
+#### चरण ३.२: GPT-OSS-20B परिनियोजन गर्नुहोस्
+
+```powershell
+# Download and run GPT-OSS-20B
+foundry model run gpt-oss-20b
+
+# Compare responses (one-shot prompt)
+foundry model run gpt-oss-20b --prompt "Explain edge AI in simple terms"
+```
+
+#### चरण ३.३: थप मोडेलहरू लोड गर्नुहोस्
+
+```powershell
+# Download Qwen model family
+foundry model download qwen2.5-0.5b
+foundry model download qwen2.5-7b
+
+# Download DeepSeek models
+foundry model download deepseek-coder-1.3b
+
+# List cached models
+foundry cache list
+```
+
+### ४. स्टार्टर प्रोजेक्ट: Foundry Local का लागि 01-run-phi अनुकूलन गर्नुहोस् (५ मिनेट)
+
+#### चरण ४.१: आधारभूत च्याट एप्लिकेसन बनाउनुहोस्
+
+`samples/01-foundry-quickstart/chat_quickstart.py` बनाउनुहोस् (यदि उपलब्ध छ भने प्रबन्धक प्रयोग गर्न अद्यावधिक गरिएको):
+
+```python
+#!/usr/bin/env python3
+"""
+Foundry Local Chat Quickstart
+Demo: Basic chat interaction using Foundry Local Python SDK
+Reference: https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk?pivots=programming-language-python
+"""
+
+import os, sys
+from openai import OpenAI
+try:
+    from foundry_local import FoundryLocalManager  # control-plane SDK
+except ImportError:
+    FoundryLocalManager = None
+
+def main():
+    """Main chat function using Foundry Local SDK"""
+    
+    # Preferred: bootstrap via SDK manager (auto start + download + load)
+    alias = os.getenv("FOUNDRY_LOCAL_ALIAS", "phi-3.5-mini")
+    if FoundryLocalManager:
+        manager = FoundryLocalManager(alias)
+        endpoint = manager.endpoint
+        model_id = manager.get_model_info(alias).id
+        api_key = manager.api_key or "not-needed"
+    else:
+        # Fallback: assume default endpoint & alias already running via CLI
+        endpoint = os.getenv("FOUNDRY_LOCAL_ENDPOINT", "http://localhost:5273/v1")
+        model_id = os.getenv("FOUNDRY_LOCAL_ALIAS", "phi-4-mini")
+        api_key = "not-needed"
+
+    client = OpenAI(base_url=endpoint, api_key=api_key)
+    
+    # Get user input
+    if len(sys.argv) > 1:
+        user_message = " ".join(sys.argv[1:])
+    else:
+        user_message = input("Enter your message: ")
+    
+    try:
+        # Make chat completion request
+        response = client.chat.completions.create(
+            model=model_id,
+            messages=[
+                {"role": "system", "content": "You are a helpful AI assistant powered by Microsoft Foundry Local."},
+                {"role": "user", "content": user_message}
+            ],
+            max_tokens=500,
+            temperature=0.7
+        )
+        
+        # Display response
+        print(f"\nModel: {response.model}")
+        print(f"Response: {response.choices[0].message.content}")
+        print(f"Tokens used: {response.usage.total_tokens if response.usage else 'N/A'}")
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        print("\nTroubleshooting:")
+    print("1. Ensure Foundry Local is running: foundry status")
+    print("2. List models: foundry model list")
+    print(f"3. Start model if needed: foundry model run {model_id}")
+    print("4. Or let SDK bootstrap: pip install foundry-local-sdk")
+
+if __name__ == "__main__":
+    main()
+```
+
+#### चरण ४.२: एप्लिकेसन परीक्षण गर्नुहोस्
+
+```powershell
+# Ensure phi-4-mini is running
+foundry model run phi-4-mini
+
+# Run the quickstart app
+python samples/01-foundry-quickstart/chat_quickstart.py "What is Microsoft Foundry Local?"
+
+# Try interactive mode
+python samples/01-foundry-quickstart/chat_quickstart.py
+```
+
+## मुख्य अवधारणाहरू समेटिएका
+
+### १. फाउन्ड्री लोकल आर्किटेक्चर
+
+- **स्थानीय इनफरेन्स इन्जिन**: मोडेलहरू पूर्ण रूपमा तपाईंको उपकरणमा चल्छन्।
+- **OpenAI SDK अनुकूलता**: विद्यमान OpenAI कोडसँग सहज एकीकरण।
+- **मोडेल व्यवस्थापन**: मोडेलहरू डाउनलोड, क्यास, र कुशलतापूर्वक चलाउनुहोस्।
+- **हार्डवेयर अनुकूलन**: GPU, NPU, र CPU एक्सेलेरेशनको उपयोग गर्नुहोस्।
+
+### २. CLI आदेश सन्दर्भ
+
+```powershell
+# Core Commands
+foundry --version              # Check installation
+# Model Management
+foundry model list             # List available models
+foundry model unload <name>    # Unload from memory
+
+foundry config list            # Current configuration
+```
+
+### ३. Python SDK एकीकरण
+
+```python
+# Basic client setup
+from foundry_local import FoundryLocalManager
+from openai import OpenAI
+import os
+
+alias = os.getenv("FOUNDRY_LOCAL_ALIAS", "phi-3.5-mini")
+manager = FoundryLocalManager(alias)
+client = OpenAI(base_url=manager.endpoint, api_key=manager.api_key or "not-needed")
+
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}],
+    max_tokens=50
+)
+print(response.choices[0].message.content)
+
+# Streaming example
+stream = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Give a 1-sentence definition of edge AI."}],
+    stream=True,
+    max_tokens=60,
+    temperature=0.4
+)
+for chunk in stream:
+    delta = chunk.choices[0].delta
+    if delta and delta.content:
+        print(delta.content, end="", flush=True)
+print()
+```
+
+## सामान्य समस्याहरू समाधान गर्ने
+
+### समस्या १: "फाउन्ड्री आदेश फेला परेन"
+
+**समाधान:**
+```powershell
+# Restart PowerShell after installation
+# Or manually add to PATH
+$env:PATH += ";C:\Program Files\Microsoft\FoundryLocal"
+```
+
+### समस्या २: "मोडेल लोड गर्न असफल भयो"
+
+**समाधान:**
+```powershell
+# Check available memory
+foundry system info
+
+# Try smaller model first
+foundry model run phi-4-mini
+
+# Check disk space for model cache
+dir "$env:USERPROFILE\.foundry\models"
+```
+
+### समस्या ३: "localhost:5273 मा जडान अस्वीकृत"
+
+**समाधान:**
+```powershell
+# Check if service is running
+foundry status
+
+# Start service if needed
+foundry service start
+
+# Check for port conflicts
+netstat -an | findstr 5273
+```
+
+## प्रदर्शन अनुकूलन सुझावहरू
+
+### १. मोडेल चयन रणनीति
+
+- **Phi-4-mini**: सामान्य कार्यहरूको लागि उत्तम, कम मेमोरी प्रयोग।
+- **Qwen2.5-0.5b**: छिटो इनफरेन्स, न्यूनतम स्रोतहरू।
+- **GPT-OSS-20B**: उच्चतम गुणस्तर, बढी स्रोतहरू आवश्यक।
+- **DeepSeek-Coder**: प्रोग्रामिङ कार्यहरूको लागि अनुकूलित।
+
+### २. हार्डवेयर अनुकूलन
+
+```powershell
+# Enable all acceleration options
+foundry config set compute.onnx.enable_gpu true
+foundry config set compute.webgpu.enabled true
+foundry config set compute.cpu.threads auto
+
+# Optimize memory usage
+foundry config set model.cache.max_size 10GB
+foundry config set model.preload false
+```
+
+### ३. प्रदर्शन अनुगमन
+
+```powershell
+# Performance & latency measurement
+# Use the Python benchmark script (Session 3) instead of legacy 'model stats' or 'model benchmark' commands.
+# Example:
+set BENCH_MODELS=phi-4-mini,qwen2.5-0.5b
+python Workshop\samples\session03\benchmark_oss_models.py
+
+# Re-run after enabling GPU acceleration to compare:
+foundry config set compute.onnx.enable_gpu true
+python Workshop\samples\session03\benchmark_oss_models.py
+```
+
+### वैकल्पिक सुधारहरू
+
+| सुधार | के हो | कसरी |
+|-------|-------|------|
+| साझा युटिलिटीज | दोहोरिने ग्राहक/बुटस्ट्र्याप तर्क हटाउनुहोस् | `Workshop/samples/workshop_utils.py` प्रयोग गर्नुहोस् (`get_client`, `chat_once`) |
+| टोकन प्रयोग दृश्यता | लागत/क्षमताको सोच सिकाउनुहोस् | `SHOW_USAGE=1` सेट गर्नुहोस् ताकि प्रम्प्ट/समाप्ति/कुल टोकनहरू प्रिन्ट होस् |
+| निर्धारणात्मक तुलना | स्थिर बेंचमार्किङ र प्रतिगमन जाँच | `temperature=0`, `top_p=1`, स्थिर प्रम्प्ट पाठ प्रयोग गर्नुहोस् |
+| पहिलो-टोकन ढिलाइ | प्रतिक्रिया मापन मेट्रिक | स्ट्रिमिङसँग बेंचमार्क स्क्रिप्ट अनुकूलन गर्नुहोस् (`BENCH_STREAM=1`) |
+| अस्थायी त्रुटिहरूमा पुन: प्रयास | चिसो सुरुमा लचिलो डेमो | `RETRY_ON_FAIL=1` (पूर्वनिर्धारित) र `RETRY_BACKOFF` समायोजन गर्नुहोस् |
+| स्मोक परीक्षण | मुख्य प्रवाहहरूमा छिटो जाँच | कार्यशालाको अघि `python Workshop/tests/smoke.py` चलाउनुहोस् |
+| मोडेल उपनाम प्रोफाइलहरू | मेसिनहरू बीच मोडेल सेट छिटो स्विच गर्नुहोस् | `.env` मा `FOUNDRY_LOCAL_ALIAS`, `SLM_ALIAS`, `LLM_ALIAS` राख्नुहोस् |
+| क्यासिङ दक्षता | बहु-नमूना रनमा दोहोरिने वार्मअपहरू टार्नुहोस् | युटिलिटीज क्यास प्रबन्धकहरू; स्क्रिप्ट/नोटबुकहरूमा पुन: प्रयोग गर्नुहोस् |
+| पहिलो रन वार्मअप | p95 ढिलाइ स्पाइकहरू घटाउनुहोस् | `FoundryLocalManager` सिर्जना पछि सानो प्रम्प्ट फायर गर्नुहोस् |
+
+निर्धारणात्मक वार्म बेसलाइनको उदाहरण (PowerShell):
+
+```powershell
+set FOUNDRY_LOCAL_ALIAS=phi-4-mini
+set SHOW_USAGE=1
+python Workshop\samples\session01\chat_bootstrap.py "List two privacy benefits of local inference." | Out-Null
+python Workshop\samples\session01\chat_bootstrap.py "List two privacy benefits of local inference."
+```
+
+तपाईंले दोस्रो रनमा समान आउटपुट र समान टोकन गणना देख्नु पर्छ, निर्धारण पुष्टि गर्दै।
+
+## आगामी चरणहरू
+
+यो सत्र पूरा गरेपछि:
+
+1. **सत्र २ अन्वेषण गर्नुहोस्**: Azure AI Foundry RAG का साथ AI समाधानहरू निर्माण गर्नुहोस्।
+2. **विभिन्न मोडेलहरू प्रयास गर्नुहोस्**: Qwen, DeepSeek, र अन्य मोडेल परिवारहरूसँग प्रयोग गर्नुहोस्।
+3. **प्रदर्शन अनुकूलन गर्नुहोस्**: तपाईंको विशेष हार्डवेयरका लागि सेटिङहरू परिमार्जन गर्नुहोस्।
+4. **अनुकूलित एप्लिकेसनहरू निर्माण गर्नुहोस्**: फाउन्ड्री लोकल SDK तपाईंका आफ्नै प्रोजेक्टहरूमा प्रयोग गर्नुहोस्।
+
+## थप स्रोतहरू
+
+### कागजातहरू
+- [फाउन्ड्री लोकल Python SDK सन्दर्भ](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/reference/reference-sdk?pivots=programming-language-python)
+- [फाउन्ड्री लोकल स्थापना गाइड](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/install)
+- [मोडेल क्याटलग](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/models)
+
+### नमूना कोड
+- [मोड्युल०८ नमूना ०१](./samples/01/README.md) - REST च्याट क्विकस्टार्ट
+- [मोड्युल०८ नमूना ०२](./samples/02/README.md) - OpenAI SDK एकीकरण
+- [मोड्युल०८ नमूना ०३](./samples/03/README.md) - मोडेल खोज र बेंचमार्किङ
+
+### समुदाय
+- [फाउन्ड्री लोकल GitHub छलफलहरू](https://github.com/microsoft/Foundry-Local/discussions)
+- [Azure AI समुदाय](https://techcommunity.microsoft.com/category/artificialintelligence)
+
+---
+
+**सत्र अवधि**: ३० मिनेट व्यावहारिक + १५ मिनेट प्रश्नोत्तर
+**कठिनाइ स्तर**: प्रारम्भिक
+**पूर्वआवश्यकताहरू**: Windows 11, Python 3.10+, प्रशासक पहुँच
+
+## नमूना परिदृश्य र कार्यशाला म्यापिङ
+
+| कार्यशाला स्क्रिप्ट / नोटबुक | परिदृश्य | लक्ष्य | उदाहरण इनपुट(हरू) | आवश्यक डाटासेट |
+|----------------------------|----------|------|------------------|----------------|
+| `samples/session01/chat_bootstrap.py` / `notebooks/session01_chat_bootstrap.ipynb` | आन्तरिक IT टोलीले गोपनीयता मूल्याङ्कन पोर्टलका लागि उपकरणमा इनफरेन्स मूल्याङ्कन गर्दै | स्थानीय SLM ले मानक प्रम्प्टहरूमा उप-सेकेन्ड ढिलाइमा प्रतिक्रिया दिन्छ भन्ने प्रमाणित गर्नुहोस् | "स्थानीय इनफरेन्सका दुई फाइदाहरू सूचीबद्ध गर्नुहोस्।" | कुनै पनि (एकल प्रम्प्ट) |
+| क्विकस्टार्ट अनुकूलन कोड ब्लक | डेभलपरले विद्यमान OpenAI स्क्रिप्टलाई फाउन्ड्री लोकलमा माइग्रेट गर्दै | ड्रप-इन अनुकूलता देखाउनुहोस् | "स्थानीय इनफरेन्सका दुई फाइदाहरू दिनुहोस्।" | इनलाइन प्रम्प्ट मात्र |
+
+### परिदृश्य कथा
+सुरक्षा र अनुपालन टोलीले यो मान्य गर्नुपर्छ कि संवेदनशील प्रोटोटाइप डाटा स्थानीय रूपमा प्रशोधन गर्न सकिन्छ। उनीहरूले बुटस्ट्र्याप स्क्रिप्टलाई विभिन्न प्रम्प्टहरूसँग (गोपनीयता, ढिलाइ, लागत) चलाउँछन्, निर्धारणात्मक `temperature=0` मोड प्रयोग गरेर आधारभूत आउटपुटहरू पछि तुलना गर्नका लागि (सत्र ३ बेंचमार्किङ र सत्र ४ SLM बनाम LLM तुलना)।
+
+### न्यूनतम प्रम्प्ट सेट JSON (वैकल्पिक)
+```json
+[
+    "List two benefits of local inference.",
+    "Summarize why keeping data on device improves privacy.",
+    "Give one trade‑off when choosing an SLM over a large model."
+]
+```
+
+यो सूची प्रयोग गरेर पुन:प्रजननयोग्य मूल्याङ्कन लूप सिर्जना गर्नुहोस् वा भविष्यको प्रतिगमन परीक्षण हार्नेसलाई बीउ दिनुहोस्।
+
+---
+
+**अस्वीकरण**:  
+यो दस्तावेज़ AI अनुवाद सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) प्रयोग गरेर अनुवाद गरिएको हो। हामी यथार्थताको लागि प्रयास गर्छौं, तर कृपया ध्यान दिनुहोस् कि स्वचालित अनुवादमा त्रुटिहरू वा अशुद्धताहरू हुन सक्छ। यसको मूल भाषा मा रहेको मूल दस्तावेज़लाई आधिकारिक स्रोत मानिनुपर्छ। महत्वपूर्ण जानकारीको लागि, व्यावसायिक मानव अनुवाद सिफारिस गरिन्छ। यस अनुवादको प्रयोगबाट उत्पन्न हुने कुनै पनि गलतफहमी वा गलत व्याख्याको लागि हामी जिम्मेवार हुनेछैनौं।
