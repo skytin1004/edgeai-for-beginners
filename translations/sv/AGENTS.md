@@ -1,22 +1,46 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:36:13+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-09T12:42:08+00:00",
   "source_file": "AGENTS.md",
   "language_code": "sv"
 }
 -->
 # AGENTS.md
 
+> **Utvecklingsguide för att bidra till EdgeAI för nybörjare**
+> 
+> Detta dokument ger omfattande information för utvecklare, AI-agenter och bidragsgivare som arbetar med detta repository. Det täcker installation, utvecklingsarbetsflöden, testning och bästa praxis.
+> 
+> **Senast uppdaterad**: Oktober 2025 | **Dokumentversion**: 2.0
+
+## Innehållsförteckning
+
+- [Projektöversikt](../..)
+- [Repository-struktur](../..)
+- [Förutsättningar](../..)
+- [Installationskommandon](../..)
+- [Utvecklingsarbetsflöde](../..)
+- [Testinstruktioner](../..)
+- [Kodstilsguider](../..)
+- [Riktlinjer för pull requests](../..)
+- [Översättningssystem](../..)
+- [Foundry Local-integration](../..)
+- [Bygg och distribution](../..)
+- [Vanliga problem och felsökning](../..)
+- [Ytterligare resurser](../..)
+- [Projekt-specifika anteckningar](../..)
+- [Få hjälp](../..)
+
 ## Projektöversikt
 
-EdgeAI för nybörjare är ett omfattande utbildningsmaterial som lär ut Edge AI-utveckling med små språkmodeller (SLMs). Kursen täcker EdgeAI-grunder, modellimplementering, optimeringstekniker och produktionsklara lösningar med Microsoft Foundry Local och olika AI-ramverk.
+EdgeAI för nybörjare är ett omfattande utbildningsrepository som lär ut Edge AI-utveckling med små språkmodeller (SLMs). Kursen täcker EdgeAI-grunder, modellimplementering, optimeringstekniker och produktionsklara implementationer med Microsoft Foundry Local och olika AI-ramverk.
 
 **Nyckelteknologier:**
 - Python 3.8+ (huvudspråk för AI/ML-exempel)
 - .NET C# (AI/ML-exempel)
-- JavaScript/Node.js med Electron (för skrivbordsapplikationer)
+- JavaScript/Node.js med Electron (för desktop-applikationer)
 - Microsoft Foundry Local SDK
 - Microsoft Windows ML 
 - VSCode AI Toolkit
@@ -24,11 +48,11 @@ EdgeAI för nybörjare är ett omfattande utbildningsmaterial som lär ut Edge A
 - AI-ramverk: LangChain, Semantic Kernel, Chainlit
 - Modelloptimering: Llama.cpp, Microsoft Olive, OpenVINO, Apple MLX
 
-**Repositorytyp:** Utbildningsinnehåll med 8 moduler och 10 omfattande exempelapplikationer
+**Repository-typ:** Utbildningsinnehåll med 8 moduler och 10 omfattande exempelapplikationer
 
 **Arkitektur:** Flermoduls lärväg med praktiska exempel som demonstrerar Edge AI-implementeringsmönster
 
-## Repositorystruktur
+## Repository-struktur
 
 ```
 edgeai-for-beginners/
@@ -44,9 +68,38 @@ edgeai-for-beginners/
 └── imgs/                  # Course images and assets
 ```
 
+## Förutsättningar
+
+### Nödvändiga verktyg
+
+- **Python 3.8+** - För AI/ML-exempel och notebooks
+- **Node.js 16+** - För Electron-exempelapplikation
+- **Git** - För versionskontroll
+- **Microsoft Foundry Local** - För att köra AI-modeller lokalt
+
+### Rekommenderade verktyg
+
+- **Visual Studio Code** - Med Python-, Jupyter- och Pylance-tillägg
+- **Windows Terminal** - För bättre kommandoradsupplevelse (Windows-användare)
+- **Docker** - För containerbaserad utveckling (valfritt)
+
+### Systemkrav
+
+- **RAM**: Minst 8GB, 16GB+ rekommenderas för scenarier med flera modeller
+- **Lagring**: Minst 10GB ledigt utrymme för modeller och beroenden
+- **OS**: Windows 10/11, macOS 11+ eller Linux (Ubuntu 20.04+)
+- **Hårdvara**: CPU med AVX2-stöd; GPU (CUDA, Qualcomm NPU) valfritt men rekommenderas
+
+### Kunskapsförutsättningar
+
+- Grundläggande förståelse för Python-programmering
+- Bekantskap med kommandoradsgränssnitt
+- Förståelse för AI/ML-koncept (för utveckling av exempel)
+- Git-arbetsflöden och processer för pull requests
+
 ## Installationskommandon
 
-### Repositoryinstallation
+### Repository-installation
 
 ```bash
 # Clone the repository
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,15 +145,26 @@ npm run dist
 
 ### Foundry Local-installation
 
-Foundry Local krävs för att köra Modul08-exemplen:
+Foundry Local krävs för att köra exemplen. Ladda ner och installera från den officiella repositoryn:
 
+**Installation:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Manuell**: Ladda ner från [releases-sidan](https://github.com/microsoft/Foundry-Local/releases)
+
+**Snabbstart:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**Obs**: Foundry Local väljer automatiskt den bästa modellvarianten för din hårdvara (CUDA GPU, Qualcomm NPU eller CPU).
 
 ## Utvecklingsarbetsflöde
 
@@ -105,10 +172,10 @@ curl http://localhost:8000/health
 
 Detta repository innehåller främst **Markdown-utbildningsinnehåll**. Vid ändringar:
 
-1. Redigera `.md`-filer i motsvarande modulkataloger
+1. Redigera `.md`-filer i lämpliga modulkataloger
 2. Följ befintliga formateringsmönster
 3. Säkerställ att kodexempel är korrekta och testade
-4. Uppdatera motsvarande översatt innehåll om nödvändigt (eller låt automatisering hantera det)
+4. Uppdatera motsvarande översatt innehåll vid behov (eller låt automatisering hantera det)
 
 ### Utveckling av exempelapplikationer
 
@@ -148,17 +215,17 @@ npm run lint       # Check code style
 
 ### Validering av innehåll
 
-Repository använder automatiserade översättningsarbetsflöden. Ingen manuell testning krävs för översättningar.
+Repositoryn använder automatiserade översättningsarbetsflöden. Ingen manuell testning krävs för översättningar.
 
 **Manuell validering för innehållsändringar:**
-1. Granska Markdown-rendering genom att förhandsgranska `.md`-filer
+1. Förhandsgranska Markdown-rendering genom att visa `.md`-filer
 2. Kontrollera att alla länkar pekar på giltiga mål
 3. Testa eventuella kodsnuttar som ingår i dokumentationen
 4. Kontrollera att bilder laddas korrekt
 
 ### Testning av exempelapplikationer
 
-**Modul08/exempel/08 (Electron-app) har omfattande tester:**
+**Module08/samples/08 (Electron-app) har omfattande tester:**
 ```bash
 cd Module08/samples/08
 
@@ -217,10 +284,45 @@ npm run format      # Format with Prettier
 **Viktiga konventioner:**
 - ESLint-konfiguration tillhandahålls i exempel 08
 - Prettier för kodformatering
-- Använd modern ES6+ syntax
+- Använd modern ES6+-syntax
 - Följ befintliga mönster i kodbasen
 
 ## Riktlinjer för pull requests
+
+### Arbetsflöde för bidrag
+
+1. **Forka repositoryn** och skapa en ny gren från `main`
+2. **Gör dina ändringar** enligt kodstilsguiderna
+3. **Testa noggrant** med hjälp av testinstruktionerna ovan
+4. **Commit med tydliga meddelanden** enligt konventionella commit-format
+5. **Push till din fork** och skapa en pull request
+6. **Svara på feedback** från underhållare under granskningen
+
+### Namngivningskonvention för grenar
+
+- `feature/<modul>-<beskrivning>` - För nya funktioner eller innehåll
+- `fix/<modul>-<beskrivning>` - För buggfixar
+- `docs/<beskrivning>` - För dokumentationsförbättringar
+- `refactor/<beskrivning>` - För kodomstrukturering
+
+### Commit-meddelandeformat
+
+Följ [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Exempel:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### Titelformat
 ```
@@ -231,20 +333,24 @@ eller
 [Module08/samples/XX] Description for sample changes
 ```
 
-### Innan inlämning
+### Uppförandekod
+
+Alla bidragsgivare måste följa [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Läs [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) innan du bidrar.
+
+### Innan du skickar in
 
 **För innehållsändringar:**
 - Förhandsgranska alla ändrade Markdown-filer
 - Kontrollera att länkar och bilder fungerar
 - Kontrollera stavfel och grammatiska fel
 
-**För kodändringar i exempel (Modul08/exempel/08):**
+**För kodändringar i exempel (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
 ```
 
-**För Python-exempeländringar:**
+**För ändringar i Python-exempel:**
 - Testa att exemplet körs framgångsrikt
 - Kontrollera att felhantering fungerar
 - Kontrollera kompatibilitet med Foundry Local
@@ -259,50 +365,97 @@ npm test
 
 **VIKTIGT:** Detta repository använder automatiserad översättning via GitHub Actions.
 
-- Översättningar finns i katalogen `/translations/` (50+ språk)
-- Automatiserat via arbetsflödet `co-op-translator.yml`
+- Översättningar finns i `/translations/`-katalogen (50+ språk)
+- Automatiseras via `co-op-translator.yml`-arbetsflöde
 - **REDIGERA INTE översättningsfiler manuellt** - de kommer att skrivas över
 - Redigera endast engelska källfiler i root- och modulkataloger
 - Översättningar genereras automatiskt vid push till `main`-grenen
 
 ## Foundry Local-integration
 
-De flesta Modul08-exempel kräver att Microsoft Foundry Local körs:
+De flesta Module08-exempel kräver att Microsoft Foundry Local körs.
+
+### Installation och inställning
+
+**Installera Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Installera Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Starta Foundry Local
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
+```
+
+### SDK-användning (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
 ### Verifiera Foundry Local
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### Miljövariabler för exempel
 
 De flesta exempel använder dessa miljövariabler:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,15 +463,17 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
-## Bygg och implementering
+**Obs**: När du använder `FoundryLocalManager` hanterar SDK automatiskt tjänstupptäckt och modellinladdning. Modellalias (som `phi-3.5-mini`) säkerställer att den bästa varianten väljs för din hårdvara.
 
-### Implementering av innehåll
+## Bygg och distribution
+
+### Innehållsdistribution
 
 Detta repository är främst dokumentation - ingen byggprocess krävs för innehåll.
 
 ### Byggprocess för exempelapplikationer
 
-**Electron-applikation (Modul08/exempel/08):**
+**Electron-applikation (Module08/samples/08):**
 ```bash
 cd Module08/samples/08
 
@@ -336,24 +491,39 @@ npm run pack
 ```
 
 **Python-exempel:**
-Ingen byggprocess - exempel körs direkt med Python-tolk.
+Ingen byggprocess - exemplen körs direkt med Python-tolk.
 
 ## Vanliga problem och felsökning
 
-### Foundry Local körs inte
+> **Tips**: Kontrollera [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues) för kända problem och lösningar.
+
+### Kritiska problem (blockerande)
+
+#### Foundry Local körs inte
 **Problem:** Exempel misslyckas med anslutningsfel
 
 **Lösning:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Problem med Python-virtuella miljöer
-**Problem:** Modulimportfel
+### Vanliga problem (måttliga)
+
+#### Problem med Python-virtuella miljöer
+**Problem:** Fel vid modulimport
 
 **Lösning:**
 ```bash
@@ -367,7 +537,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Problem med Electron-bygge
+#### Problem med Electron-bygge
 **Problem:** npm install eller byggfel
 
 **Lösning:**
@@ -379,7 +549,9 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Konflikter i översättningsarbetsflöde
+### Arbetsflödesproblem (mindre)
+
+#### Konflikter i översättningsarbetsflöde
 **Problem:** Översättnings-PR konflikter med dina ändringar
 
 **Lösning:**
@@ -387,11 +559,25 @@ npm install
 - Låt det automatiserade översättningsarbetsflödet hantera översättningar
 - Om konflikter uppstår, slå samman `main` till din gren efter att översättningar har slagits samman
 
+#### Problem med modellnedladdning
+**Problem:** Foundry Local misslyckas med att ladda ner modeller
+
+**Lösning:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
+
 ## Ytterligare resurser
 
 ### Lärvägar
 - **Nybörjarväg:** Moduler 01-02 (7-9 timmar)
-- **Mellannivåväg:** Moduler 03-04 (9-11 timmar)
+- **Mellanväg:** Moduler 03-04 (9-11 timmar)
 - **Avancerad väg:** Moduler 05-07 (12-15 timmar)
 - **Expertväg:** Modul 08 (8-10 timmar)
 
@@ -402,29 +588,32 @@ npm install
 - **Modul04:** Modelloptimering med flera ramverk
 - **Modul05:** SLMOps - produktionsdrift
 - **Modul06:** AI-agenter och funktionsanrop
-- **Modul07:** Plattformsspecifika implementeringar
+- **Modul07:** Plattformsspecifika implementationer
 - **Modul08:** Foundry Local-verktyg med 10 omfattande exempel
 
 ### Externa beroenden
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Lokal AI-modellruntime
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Lokal AI-modellruntime med OpenAI-kompatibel API
+  - [Dokumentation](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Optimeringsramverk
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - Verktyg för modelloptimering
 - [OpenVINO](https://docs.openvino.ai/) - Intels optimeringsverktyg
 
-## Projektspecifika anteckningar
+## Projekt-specifika anteckningar
 
-### Modul08-exempelapplikationer
+### Modul08 Exempelapplikationer
 
-Repository innehåller 10 omfattande exempelapplikationer:
+Repositoryn innehåller 10 omfattande exempelapplikationer:
 
 1. **01-REST Chat Quickstart** - Grundläggande OpenAI SDK-integration
 2. **02-OpenAI SDK Integration** - Avancerade SDK-funktioner
 3. **03-Model Discovery & Benchmarking** - Verktyg för modelljämförelse
-4. **04-Chainlit RAG Application** - Generering med förbättrad hämtning
+4. **04-Chainlit RAG Application** - Generering med återhämtning
 5. **05-Multi-Agent Orchestration** - Grundläggande agentkoordinering
 6. **06-Models-as-Tools Router** - Intelligent modellroutning
 7. **07-Direct API Client** - Låg nivå API-integration
-8. **08-Windows 11 Chat App** - Native Electron-skrivbordsapplikation
+8. **08-Windows 11 Chat App** - Native Electron desktop-applikation
 9. **09-Advanced Multi-Agent System** - Komplex agentkoordinering
 10. **10-Foundry Tools Framework** - LangChain/Semantic Kernel-integration
 
@@ -433,22 +622,49 @@ Varje exempel demonstrerar olika aspekter av Edge AI-utveckling med Foundry Loca
 ### Prestandaöverväganden
 
 - SLMs är optimerade för Edge-implementering (2-16GB RAM)
-- Lokal inferens ger svarstider på 50-500ms
-- Kvantiseringstekniker uppnår 75% storleksreduktion med 85% prestandabehållning
-- Realtidskonversationsmöjligheter med lokala modeller
+- Lokal inferens ger svarstider på 50-500 ms  
+- Kvantiseringstekniker minskar storleken med 75% och behåller 85% av prestandan  
+- Realtidskonversationsmöjligheter med lokala modeller  
 
-### Säkerhet och integritet
+### Säkerhet och integritet  
 
-- All bearbetning sker lokalt - ingen data skickas till molnet
-- Lämplig för integritetskänsliga applikationer (sjukvård, finans)
-- Uppfyller krav på datasuveränitet
-- Foundry Local körs helt på lokal hårdvara
+- All bearbetning sker lokalt - ingen data skickas till molnet  
+- Passar för integritetskänsliga applikationer (sjukvård, finans)  
+- Uppfyller krav på datasuveränitet  
+- Foundry Local körs helt på lokal hårdvara  
+
+## Få hjälp  
+
+### Dokumentation  
+
+- **Huvud-README**: [README.md](README.md) - Översikt över repository och lärvägar  
+- **Studieguide**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - Lärresurser och tidslinje  
+- **Support**: [SUPPORT.md](SUPPORT.md) - Hur man får hjälp  
+- **Säkerhet**: [SECURITY.md](SECURITY.md) - Rapportera säkerhetsproblem  
+
+### Communitysupport  
+
+- **GitHub Issues**: [Rapportera buggar eller begär funktioner](https://github.com/microsoft/edgeai-for-beginners/issues)  
+- **GitHub Discussions**: [Ställ frågor och dela idéer](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- **Foundry Local Issues**: [Tekniska problem med Foundry Local](https://github.com/microsoft/Foundry-Local/issues)  
+
+### Kontakt  
+
+- **Underhållare**: Se [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)  
+- **Säkerhetsproblem**: Följ ansvarsfull rapportering i [SECURITY.md](SECURITY.md)  
+- **Microsoft Support**: För företagsstöd, kontakta Microsofts kundtjänst  
+
+### Ytterligare resurser  
+
+- **Microsoft Learn**: [Lärvägar för AI och maskininlärning](https://learn.microsoft.com/training/browse/?products=ai-services)  
+- **Foundry Local-dokumentation**: [Officiell dokumentation](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)  
+- **Communityexempel**: Kolla [GitHub Discussions](https://github.com/microsoft/edgeai-for-beginners/discussions) för bidrag från communityn  
 
 ---
 
-**Detta är ett utbildningsrepository som fokuserar på att lära ut Edge AI-utveckling. Det primära bidragsmönstret är att förbättra utbildningsinnehåll och lägga till/förbättra exempelapplikationer som demonstrerar Edge AI-koncept.**
+**Detta är ett utbildningsrepository som fokuserar på att lära ut utveckling av Edge AI. Det primära bidragsmönstret är att förbättra utbildningsinnehåll och lägga till/förbättra exempelapplikationer som demonstrerar Edge AI-koncept.**  
 
 ---
 
 **Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiska översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
