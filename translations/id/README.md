@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T08:04:51+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-09T19:00:54+00:00",
   "source_file": "README.md",
   "language_code": "id"
 }
@@ -54,7 +54,7 @@ Edge AI mewakili perubahan paradigma yang mengatasi tantangan modern yang kritis
 - **Privasi & Keamanan**: Memproses data sensitif secara lokal tanpa eksposur ke cloud
 - **Performa Waktu Nyata**: Menghilangkan latensi jaringan untuk aplikasi yang membutuhkan waktu respons cepat
 - **Efisiensi Biaya**: Mengurangi biaya bandwidth dan komputasi cloud
-- **Operasi Tangguh**: Tetap berfungsi selama gangguan jaringan
+- **Operasi Tangguh**: Mempertahankan fungsi selama gangguan jaringan
 - **Kepatuhan Regulasi**: Memenuhi persyaratan kedaulatan data
 
 ### Edge AI
@@ -74,7 +74,7 @@ SLMs seperti Phi-4, Mistral-7B, dan Gemma adalah versi yang dioptimalkan dari LL
 - **Permintaan komputasi lebih rendah**: Dioptimalkan untuk performa CPU dan GPU edge
 - **Waktu startup lebih cepat**: Inisialisasi cepat untuk aplikasi yang responsif
 
-Model ini membuka kemampuan NLP yang kuat sambil memenuhi batasan:
+SLMs membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - **Sistem tertanam**: Perangkat IoT dan pengontrol industri
 - **Perangkat seluler**: Smartphone dan tablet dengan kemampuan offline
 - **Perangkat IoT**: Sensor dan perangkat pintar dengan sumber daya terbatas
@@ -108,6 +108,23 @@ Model ini membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - [09: Sistem Multi-Agen Lanjutan](./Module08/samples/09/README.md)
 - [10: Kerangka Kerja Alat Foundry](./Module08/samples/10/README.md)
 
+### 🎓 **Workshop: Jalur Pembelajaran Praktis**
+
+Materi workshop praktis yang komprehensif dengan implementasi siap produksi:
+
+- **[Panduan Workshop](./Workshop/Readme.md)** - Tujuan pembelajaran lengkap, hasil, dan navigasi sumber daya
+- **Contoh Python** (6 sesi) - Diperbarui dengan praktik terbaik, penanganan kesalahan, dan dokumentasi lengkap
+- **Jupyter Notebooks** (8 interaktif) - Tutorial langkah demi langkah dengan benchmark dan pemantauan performa
+- **Panduan Sesi** - Panduan markdown terperinci untuk setiap sesi workshop
+- **Alat Validasi** - Skrip untuk memverifikasi kualitas kode dan menjalankan tes awal
+
+**Apa yang Akan Anda Bangun:**
+- Aplikasi chat AI lokal dengan dukungan streaming
+- Pipeline RAG dengan evaluasi kualitas (RAGAS)
+- Alat benchmarking dan perbandingan multi-model
+- Sistem orkestrasi multi-agen
+- Routing model cerdas dengan pemilihan berbasis tugas
+
 ### 📊 **Ringkasan Jalur Pembelajaran**
 - **Total Durasi**: 36-45 jam
 - **Jalur Pemula**: Modul 01-02 (7-9 jam)  
@@ -118,7 +135,7 @@ Model ini membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 ## Apa yang Akan Anda Bangun
 
 ### 🎯 Kompetensi Inti
-- **Arsitektur Edge AI**: Merancang sistem AI yang berorientasi lokal dengan integrasi cloud
+- **Arsitektur Edge AI**: Merancang sistem AI lokal dengan integrasi cloud
 - **Optimasi Model**: Kuantisasi dan kompresi model untuk penerapan di edge (peningkatan kecepatan 85%, pengurangan ukuran 75%)
 - **Penerapan Multi-Platform**: Windows, seluler, tertanam, dan sistem hybrid cloud-edge
 - **Operasi Produksi**: Pemantauan, penskalaan, dan pemeliharaan AI edge dalam produksi
@@ -127,32 +144,32 @@ Model ini membuka kemampuan NLP yang kuat sambil memenuhi batasan:
 - **Aplikasi Chat Foundry Lokal**: Aplikasi native Windows 11 dengan pengalihan model
 - **Sistem Multi-Agen**: Koordinator dengan agen spesialis untuk alur kerja kompleks  
 - **Aplikasi RAG**: Pemrosesan dokumen lokal dengan pencarian vektor
-- **Router Model**: Pemilihan cerdas antara model berdasarkan analisis tugas
-- **Kerangka API**: Klien siap produksi dengan streaming dan pemantauan kesehatan
-- **Alat Lintas Platform**: Pola integrasi LangChain/Semantic Kernel
+- **Model Routers**: Pemilihan cerdas antara model berdasarkan analisis tugas
+- **API Frameworks**: Klien siap produksi dengan streaming dan pemantauan kesehatan
+- **Cross-Platform Tools**: Pola integrasi LangChain/Semantic Kernel
 
 ### 🏢 Aplikasi Industri
-**Manufaktur** • **Kesehatan** • **Kendaraan Otonom** • **Kota Pintar** • **Aplikasi Seluler**
+**Manufaktur** • **Kesehatan** • **Kendaraan Otonom** • **Kota Pintar** • **Aplikasi Mobile**
 
-## Mulai Cepat
+## Memulai dengan Cepat
 
 **Jalur Pembelajaran yang Direkomendasikan** (total 20-30 jam):
 
 0. **📖 Pengantar** ([Introduction.md](./introduction.md)): Dasar EdgeAI + konteks industri + kerangka pembelajaran
 1. **📚 Dasar** (Modul 01-02): Konsep EdgeAI + keluarga model SLM
-2. **⚙️ Optimasi** (Modul 03-04): Penerapan + kerangka kuantisasi  
-3. **🚀 Produksi** (Modul 05-06): SLMOps + agen AI + pemanggilan fungsi  
-4. **💻 Implementasi** (Modul 07-08): Contoh platform + toolkit Foundry Local  
+2. **⚙️ Optimasi** (Modul 03-04): Penerapan + kerangka kerja kuantisasi  
+3. **🚀 Produksi** (Modul 05-06): SLMOps + agen AI + pemanggilan fungsi
+4. **💻 Implementasi** (Modul 07-08): Contoh platform + toolkit Foundry Local
 
 Setiap modul mencakup teori, latihan langsung, dan contoh kode siap produksi.
 
 ## Dampak Karier
 
-**Peran Teknis**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer  
+**Peran Teknis**: EdgeAI Solutions Architect • ML Engineer (Edge) • IoT AI Developer • Mobile AI Developer
 
-**Sektor Industri**: Manufaktur 4.0 • Teknologi Kesehatan • Sistem Otonom • FinTech • Elektronik Konsumen  
+**Sektor Industri**: Manufaktur 4.0 • Teknologi Kesehatan • Sistem Otonom • FinTech • Elektronik Konsumen
 
-**Proyek Portofolio**: Sistem multi-agen • Aplikasi RAG produksi • Deployment lintas platform • Optimisasi kinerja  
+**Proyek Portofolio**: Sistem multi-agen • Aplikasi RAG produksi • Penerapan lintas platform • Optimasi kinerja
 
 ## Struktur Repository
 
@@ -168,54 +185,53 @@ edgeai-for-beginners/
 ├── 🌐 translations/    # Multi-language support (8+ languages)
 └── 📋 STUDY_GUIDE.md   # Structured learning paths & time allocation
 ```
-  
 
 ## Sorotan Kursus
 
-✅ **Pembelajaran Progresif**: Teori → Praktik → Deployment produksi  
+✅ **Pembelajaran Progresif**: Teori → Praktik → Penerapan produksi  
 ✅ **Studi Kasus Nyata**: Microsoft, Japan Airlines, implementasi perusahaan  
 ✅ **Contoh Praktis**: 50+ contoh, 10 demo Foundry Local yang komprehensif  
 ✅ **Fokus Kinerja**: Peningkatan kecepatan 85%, pengurangan ukuran 75%  
-✅ **Multi-Platform**: Windows, mobile, embedded, hybrid cloud-edge  
-✅ **Siap Produksi**: Pemantauan, skalabilitas, keamanan, kerangka kerja kepatuhan  
+✅ **Multi-Platform**: Windows, mobile, embedded, cloud-edge hybrid  
+✅ **Siap Produksi**: Pemantauan, skalabilitas, keamanan, kerangka kerja kepatuhan
 
-📖 **[Panduan Belajar Tersedia](STUDY_GUIDE.md)**: Jalur pembelajaran terstruktur selama 20 jam dengan panduan alokasi waktu dan alat penilaian mandiri.
+📖 **[Panduan Studi Tersedia](STUDY_GUIDE.md)**: Jalur pembelajaran terstruktur 20 jam dengan panduan alokasi waktu dan alat penilaian mandiri.
 
 ---
 
-**EdgeAI adalah masa depan penerapan AI**: lokal terlebih dahulu, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun aplikasi cerdas generasi berikutnya.
+**EdgeAI adalah masa depan penerapan AI**: lokal terlebih dahulu, menjaga privasi, dan efisien. Kuasai keterampilan ini untuk membangun generasi berikutnya dari aplikasi cerdas.
 
 ## Kursus Lainnya
 
-Tim kami juga menyediakan kursus lainnya! Lihat:  
+Tim kami juga menyediakan kursus lainnya! Lihat:
 
-- [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)  
-- [Agen AI untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Generative AI untuk Pemula menggunakan .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
-- [Generative AI untuk Pemula menggunakan JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
-- [Generative AI untuk Pemula](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
-- [ML untuk Pemula](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
-- [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)  
-- [Web Dev untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
-- [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
-- [Menguasai GitHub Copilot untuk Pemrograman Berpasangan AI](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
-- [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
-- [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+- [MCP untuk Pemula](https://github.com/microsoft/mcp-for-beginners)
+- [AI Agents Untuk Pemula](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula menggunakan .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula menggunakan JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+- [Generative AI untuk Pemula](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [ML untuk Pemula](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [Data Science untuk Pemula](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+- [AI untuk Pemula](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+- [Keamanan Siber untuk Pemula](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
+- [Web Dev untuk Pemula](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [IoT untuk Pemula](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+- [Pengembangan XR untuk Pemula](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Menguasai GitHub Copilot untuk Pemrograman AI Berpasangan](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Menguasai GitHub Copilot untuk Pengembang C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Pilih Petualangan Copilot Anda Sendiri](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ## Mendapatkan Bantuan
 
-Jika Anda mengalami kesulitan atau memiliki pertanyaan tentang membangun aplikasi AI, bergabunglah:  
+Jika Anda mengalami kesulitan atau memiliki pertanyaan tentang membangun aplikasi AI, bergabunglah:
 
-[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
 
-Jika Anda memiliki masukan produk atau menemukan kesalahan saat membangun, kunjungi:  
+Jika Anda memiliki masukan produk atau menemukan kesalahan saat membangun, kunjungi:
 
-[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 
 **Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan profesional oleh manusia. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.
+Dokumen ini telah diterjemahkan menggunakan layanan penerjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk memberikan hasil yang akurat, harap diperhatikan bahwa terjemahan otomatis dapat mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang otoritatif. Untuk informasi yang bersifat kritis, disarankan menggunakan jasa penerjemahan manusia profesional. Kami tidak bertanggung jawab atas kesalahpahaman atau interpretasi yang keliru yang timbul dari penggunaan terjemahan ini.
