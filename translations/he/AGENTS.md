@@ -1,20 +1,44 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:38:48+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-09T16:27:13+00:00",
   "source_file": "AGENTS.md",
   "language_code": "he"
 }
 -->
 # AGENTS.md
 
+> **מדריך למפתחים לתרומה ל-EdgeAI למתחילים**
+> 
+> מסמך זה מספק מידע מקיף למפתחים, סוכני AI ותורמים העובדים עם מאגר זה. הוא כולל הגדרות, תהליכי פיתוח, בדיקות והמלצות לשיטות עבודה.
+> 
+> **עדכון אחרון**: אוקטובר 2025 | **גרסת מסמך**: 2.0
+
+## תוכן עניינים
+
+- [סקירת הפרויקט](../..)
+- [מבנה המאגר](../..)
+- [דרישות מוקדמות](../..)
+- [פקודות הגדרה](../..)
+- [תהליך פיתוח](../..)
+- [הוראות בדיקה](../..)
+- [הנחיות לסגנון קוד](../..)
+- [הנחיות לבקשות משיכה](../..)
+- [מערכת תרגום](../..)
+- [אינטגרציה מקומית של Foundry](../..)
+- [בנייה ופריסה](../..)
+- [בעיות נפוצות ופתרון תקלות](../..)
+- [משאבים נוספים](../..)
+- [הערות ספציפיות לפרויקט](../..)
+- [קבלת עזרה](../..)
+
 ## סקירת הפרויקט
 
-EdgeAI for Beginners הוא מאגר חינוכי מקיף המלמד פיתוח Edge AI עם מודלים לשוניים קטנים (SLMs). הקורס מכסה את יסודות EdgeAI, פריסת מודלים, טכניקות אופטימיזציה ויישומים מוכנים לייצור באמצעות Microsoft Foundry Local ומגוון מסגרות AI.
+EdgeAI למתחילים הוא מאגר חינוכי מקיף המלמד פיתוח Edge AI עם מודלים לשוניים קטנים (SLMs). הקורס מכסה את יסודות EdgeAI, פריסת מודלים, טכניקות אופטימיזציה ויישומים מוכנים לייצור באמצעות Microsoft Foundry Local ומגוון מסגרות AI.
 
 **טכנולוגיות מרכזיות:**
-- Python 3.8+ (שפת תכנות ראשית לדוגמאות AI/ML)
+- Python 3.8+ (שפה ראשית לדוגמאות AI/ML)
 - .NET C# (דוגמאות AI/ML)
 - JavaScript/Node.js עם Electron (ליישומי שולחן עבודה)
 - Microsoft Foundry Local SDK
@@ -44,9 +68,38 @@ edgeai-for-beginners/
 └── imgs/                  # Course images and assets
 ```
 
-## פקודות התקנה
+## דרישות מוקדמות
 
-### התקנת המאגר
+### כלים נדרשים
+
+- **Python 3.8+** - לדוגמאות AI/ML ומחברות
+- **Node.js 16+** - ליישום דוגמה של Electron
+- **Git** - לניהול גרסאות
+- **Microsoft Foundry Local** - להפעלת מודלים AI באופן מקומי
+
+### כלים מומלצים
+
+- **Visual Studio Code** - עם הרחבות Python, Jupyter ו-Pylance
+- **Windows Terminal** - לחוויית שורת פקודה טובה יותר (משתמשי Windows)
+- **Docker** - לפיתוח במיכלים (אופציונלי)
+
+### דרישות מערכת
+
+- **RAM**: מינימום 8GB, מומלץ 16GB+ לתרחישים רב-מודליים
+- **אחסון**: 10GB+ שטח פנוי למודלים ותלויות
+- **מערכת הפעלה**: Windows 10/11, macOS 11+, או Linux (Ubuntu 20.04+)
+- **חומרה**: מעבד עם תמיכה ב-AVX2; GPU (CUDA, Qualcomm NPU) אופציונלי אך מומלץ
+
+### דרישות ידע
+
+- הבנה בסיסית של תכנות ב-Python
+- היכרות עם ממשקי שורת פקודה
+- הבנה של מושגי AI/ML (לפיתוח דוגמאות)
+- תהליכי עבודה עם Git ותהליכי בקשות משיכה
+
+## פקודות הגדרה
+
+### הגדרת מאגר
 
 ```bash
 # Clone the repository
@@ -56,7 +109,7 @@ cd edgeai-for-beginners
 # No build step required - this is primarily an educational content repository
 ```
 
-### התקנת דוגמאות Python (מודול 08 ודוגמאות Python)
+### הגדרת דוגמאות Python (מודול08 ודוגמאות Python)
 
 ```bash
 # Create and activate virtual environment
@@ -66,12 +119,15 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
 
-### התקנת דוגמאות Node.js (דוגמה 08 - אפליקציית צ'אט ל-Windows)
+### הגדרת דוגמאות Node.js (דוגמה 08 - אפליקציית צ'אט ל-Windows)
 
 ```bash
 cd Module08/samples/08
@@ -87,17 +143,28 @@ npm run build
 npm run dist
 ```
 
-### התקנת Foundry Local
+### הגדרת Foundry Local
 
-Foundry Local נדרש להפעלת דוגמאות מודול 08:
+Foundry Local נדרש להפעלת הדוגמאות. הורד והתקן מהמאגר הרשמי:
 
+**התקנה:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **ידני**: הורד מ-[דף ההפצה](https://github.com/microsoft/Foundry-Local/releases)
+
+**התחלה מהירה:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**הערה**: Foundry Local בוחר אוטומטית את גרסת המודל הטובה ביותר עבור החומרה שלך (CUDA GPU, Qualcomm NPU, או CPU).
 
 ## תהליך פיתוח
 
@@ -105,10 +172,10 @@ curl http://localhost:8000/health
 
 מאגר זה מכיל בעיקר **תוכן חינוכי ב-Markdown**. בעת ביצוע שינויים:
 
-1. ערכו קבצי `.md` בתיקיות המודולים המתאימות
-2. עקבו אחר דפוסי העיצוב הקיימים
-3. ודאו שדוגמאות הקוד מדויקות ונבדקו
-4. עדכנו את התוכן המתורגם המתאים אם נדרש (או תנו לאוטומציה לטפל בכך)
+1. ערוך קבצי `.md` בתיקיות המודולים המתאימות
+2. עקוב אחר דפוסי העיצוב הקיימים
+3. ודא שדוגמאות הקוד מדויקות ונבדקו
+4. עדכן את התוכן המתורגם המתאים אם נדרש (או תן לאוטומציה לטפל בכך)
 
 ### פיתוח יישומי דוגמה
 
@@ -151,14 +218,14 @@ npm run lint       # Check code style
 המאגר משתמש בתהליכי תרגום אוטומטיים. אין צורך בבדיקות ידניות לתרגומים.
 
 **אימות ידני לשינויים בתוכן:**
-1. בדקו את עיצוב Markdown על ידי תצוגה מקדימה של קבצי `.md`
-2. ודאו שכל הקישורים מצביעים על יעדים תקינים
-3. בדקו כל קטעי קוד הכלולים בתיעוד
-4. ודאו שהתמונות נטענות כראוי
+1. סקור את תצוגת Markdown על ידי תצוגה מקדימה של קבצי `.md`
+2. ודא שכל הקישורים מצביעים על יעדים תקפים
+3. בדוק כל קטעי קוד הכלולים בתיעוד
+4. בדוק שהתמונות נטענות כראוי
 
 ### בדיקת יישומי דוגמה
 
-**מודול 08/דוגמאות/08 (אפליקציית Electron) כוללת בדיקות מקיפות:**
+**Module08/samples/08 (אפליקציית Electron) כוללת בדיקות מקיפות:**
 ```bash
 cd Module08/samples/08
 
@@ -186,23 +253,23 @@ python samples/04/chainlit_rag.py
 python samples/09/multi_agent_system.py
 ```
 
-## הנחיות סגנון קוד
+## הנחיות לסגנון קוד
 
 ### תוכן Markdown
 
-- השתמשו בהיררכיית כותרות עקבית (# לכותרת, ## לסעיפים ראשיים, ### לסעיפים משנה)
-- כללו קטעי קוד עם מצייני שפה: ```python, ```bash, ```javascript
-- עקבו אחר העיצוב הקיים לטבלאות, רשימות והדגשות
-- שמרו על שורות קריאות (שאפו ל-80-100 תווים, אך לא באופן מחמיר)
-- השתמשו בקישורים יחסיים להפניות פנימיות
+- השתמש בהיררכיית כותרות עקבית (# לכותרת, ## לסעיפים ראשיים, ### לתת-סעיפים)
+- כלול קטעי קוד עם מפרטי שפה: ```python, ```bash, ```javascript
+- עקוב אחר העיצוב הקיים לטבלאות, רשימות והדגשות
+- שמור על שורות קריאות (שאף ל-~80-100 תווים, אך לא חובה)
+- השתמש בקישורים יחסיים להפניות פנימיות
 
 ### סגנון קוד Python
 
-- עקבו אחר מוסכמות PEP 8
-- השתמשו ברמזי סוג כאשר מתאים
-- כללו docstrings לפונקציות ולמחלקות
-- השתמשו בשמות משתנים משמעותיים
-- שמרו על פונקציות ממוקדות ותמציתיות
+- עקוב אחר מוסכמות PEP 8
+- השתמש ברמזי סוגים במידת הצורך
+- כלול docstrings לפונקציות ומחלקות
+- השתמש בשמות משתנים משמעותיים
+- שמור על פונקציות ממוקדות ותמציתיות
 
 ### סגנון קוד JavaScript/Node.js
 
@@ -217,10 +284,45 @@ npm run format      # Format with Prettier
 **מוסכמות מרכזיות:**
 - תצורת ESLint מסופקת בדוגמה 08
 - Prettier לעיצוב קוד
-- השתמשו בתחביר מודרני ES6+
-- עקבו אחר הדפוסים הקיימים בקוד
+- השתמש בתחביר מודרני ES6+
+- עקוב אחר דפוסים קיימים בקוד
 
-## הנחיות Pull Request
+## הנחיות לבקשות משיכה
+
+### תהליך תרומה
+
+1. **פצל את המאגר** ויצור ענף חדש מ-`main`
+2. **בצע את השינויים שלך** בהתאם להנחיות סגנון הקוד
+3. **בדוק היטב** באמצעות הוראות הבדיקה לעיל
+4. **בצע commit עם הודעות ברורות** בהתאם לפורמט commit מקובל
+5. **דחף למאגר שלך** ויצור בקשת משיכה
+6. **הגב למשוב** מהמתחזקים במהלך הסקירה
+
+### מוסכמת שמות ענפים
+
+- `feature/<module>-<description>` - לתכונות או תוכן חדשים
+- `fix/<module>-<description>` - לתיקוני באגים
+- `docs/<description>` - לשיפורי תיעוד
+- `refactor/<description>` - לשינוי מבנה קוד
+
+### פורמט הודעת Commit
+
+עקוב אחר [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**דוגמאות:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### פורמט כותרת
 ```
@@ -231,23 +333,27 @@ npm run format      # Format with Prettier
 [Module08/samples/XX] Description for sample changes
 ```
 
+### קוד התנהגות
+
+כל התורמים חייבים לעקוב אחר [קוד ההתנהגות של Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). אנא עיין ב-[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) לפני התרומה.
+
 ### לפני הגשה
 
 **לשינויים בתוכן:**
 - תצוגה מקדימה של כל קבצי Markdown ששונו
-- ודאו שהקישורים והתמונות עובדים
-- בדקו שגיאות כתיב ודקדוק
+- ודא שהקישורים והתמונות עובדים
+- בדוק שגיאות כתיב ודקדוק
 
-**לשינויים בקוד לדוגמה (מודול 08/דוגמאות/08):**
+**לשינויים בקוד דוגמה (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
 ```
 
 **לשינויים בדוגמאות Python:**
-- בדקו שהדוגמה פועלת בהצלחה
-- ודאו שטיפול בשגיאות עובד
-- בדקו תאימות ל-Foundry Local
+- בדוק שהדוגמה פועלת בהצלחה
+- ודא שטיפול בשגיאות עובד
+- בדוק תאימות ל-Foundry Local
 
 ### תהליך סקירה
 
@@ -260,55 +366,104 @@ npm test
 **חשוב:** מאגר זה משתמש בתרגום אוטומטי באמצעות GitHub Actions.
 
 - תרגומים נמצאים בתיקיית `/translations/` (50+ שפות)
-- מתבצע אוטומטית באמצעות `co-op-translator.yml` workflow
-- **אין לערוך ידנית קבצי תרגום** - הם יוחלפו
-- ערכו רק קבצי מקור באנגלית בתיקיות השורש והמודולים
-- תרגומים נוצרים אוטומטית בעת דחיפה ל-main branch
+- מתבצע אוטומטית באמצעות תהליך `co-op-translator.yml`
+- **אין לערוך קבצי תרגום ידנית** - הם יוחלפו
+- ערוך רק קבצי מקור באנגלית בתיקיות השורש והמודולים
+- תרגומים נוצרים אוטומטית בעת דחיפה לענף `main`
 
-## אינטגרציה עם Foundry Local
+## אינטגרציה מקומית של Foundry
 
-רוב דוגמאות מודול 08 דורשות ש-Foundry Local יפעל:
+רוב דוגמאות מודול08 דורשות הפעלת Microsoft Foundry Local.
+
+### התקנה והגדרה
+
+**התקן את Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**התקן את Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### הפעלת Foundry Local
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
+```
+
+### שימוש ב-SDK (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
 ### אימות Foundry Local
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### משתני סביבה לדוגמאות
 
 רוב הדוגמאות משתמשות במשתני סביבה אלו:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
 set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
+
+**הערה**: בעת שימוש ב-`FoundryLocalManager`, ה-SDK מטפל אוטומטית בגילוי שירותים וטעינת מודלים. כינויים למודלים (כמו `phi-3.5-mini`) מבטיחים שהגרסה הטובה ביותר נבחרת עבור החומרה שלך.
 
 ## בנייה ופריסה
 
@@ -318,7 +473,7 @@ set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 
 ### בניית יישומי דוגמה
 
-**אפליקציית Electron (מודול 08/דוגמאות/08):**
+**אפליקציית Electron (Module08/samples/08):**
 ```bash
 cd Module08/samples/08
 
@@ -340,19 +495,34 @@ npm run pack
 
 ## בעיות נפוצות ופתרון תקלות
 
-### Foundry Local לא פועל
+> **טיפ**: בדוק [בעיות GitHub](https://github.com/microsoft/edgeai-for-beginners/issues) לבעיות ופתרונות ידועים.
+
+### בעיות קריטיות (חוסמות)
+
+#### Foundry Local לא פועל
 **בעיה:** דוגמאות נכשלות עם שגיאות חיבור
 
 **פתרון:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### בעיות בסביבת Python Virtual
+### בעיות נפוצות (מתונות)
+
+#### בעיות בסביבת Python Virtual
 **בעיה:** שגיאות ייבוא מודולים
 
 **פתרון:**
@@ -367,8 +537,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### בעיות בניית Electron
-**בעיה:** npm install או כשלי בנייה
+#### בעיות בניית Electron
+**בעיה:** npm install או כשלים בבנייה
 
 **פתרון:**
 ```bash
@@ -379,13 +549,29 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### קונפליקטים בתהליך תרגום
-**בעיה:** PR תרגום מתנגש עם השינויים שלכם
+### בעיות תהליך עבודה (קלות)
+
+#### קונפליקטים בתהליך תרגום
+**בעיה:** בקשת תרגום מתנגשת עם השינויים שלך
 
 **פתרון:**
-- ערכו רק קבצי מקור באנגלית
-- תנו לתהליך התרגום האוטומטי לטפל בתרגומים
-- אם מתרחשים קונפליקטים, מיזגו את `main` לענף שלכם לאחר שהתמזגו התרגומים
+- ערוך רק קבצי מקור באנגלית
+- תן לתהליך התרגום האוטומטי לטפל בתרגומים
+- אם מתרחשים קונפליקטים, מיזג את `main` לענף שלך לאחר שהתמזגו התרגומים
+
+#### כשלים בהורדת מודלים
+**בעיה:** Foundry Local נכשל בהורדת מודלים
+
+**פתרון:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## משאבים נוספים
 
@@ -395,29 +581,32 @@ npm install
 - **מסלול מתקדם:** מודולים 05-07 (12-15 שעות)
 - **מסלול מומחים:** מודול 08 (8-10 שעות)
 
-### תוכן מרכזי במודולים
-- **מודול 01:** יסודות EdgeAI ומקרי מבחן בעולם האמיתי
-- **מודול 02:** משפחות וארכיטקטורות של מודלים לשוניים קטנים (SLM)
-- **מודול 03:** אסטרטגיות פריסה מקומיות וענניות
-- **מודול 04:** אופטימיזציית מודלים עם מסגרות שונות
-- **מודול 05:** SLMOps - תפעול בייצור
-- **מודול 06:** סוכני AI וקריאת פונקציות
-- **מודול 07:** יישומים ספציפיים לפלטפורמות
-- **מודול 08:** ערכת כלים Foundry Local עם 10 דוגמאות מקיפות
+### תוכן מודול מרכזי
+- **מודול01:** יסודות EdgeAI ומחקרי מקרה בעולם האמיתי
+- **מודול02:** משפחות מודלים לשוניים קטנים (SLM) וארכיטקטורות
+- **מודול03:** אסטרטגיות פריסה מקומיות ובענן
+- **מודול04:** אופטימיזציית מודלים עם מסגרות שונות
+- **מודול05:** SLMOps - תפעול בייצור
+- **מודול06:** סוכני AI וקריאת פונקציות
+- **מודול07:** יישומים ספציפיים לפלטפורמה
+- **מודול08:** ערכת כלים Foundry Local עם 10 דוגמאות מקיפות
 
 ### תלות חיצונית
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - סביבת ריצה למודלים AI מקומיים
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - זמן ריצה למודלים AI מקומיים עם API תואם OpenAI
+  - [תיעוד](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - מסגרת אופטימיזציה
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - ערכת כלים לאופטימיזציית מודלים
 - [OpenVINO](https://docs.openvino.ai/) - ערכת אופטימיזציה של אינטל
 
 ## הערות ספציפיות לפרויקט
 
-### יישומי דוגמה במודול 08
+### יישומי דוגמה מודול08
 
 המאגר כולל 10 יישומי דוגמה מקיפים:
 
-1. **01-REST Chat Quickstart** - אינטגרציה בסיסית עם OpenAI SDK
+1. **01-REST Chat Quickstart** - אינטגרציה בסיסית של OpenAI SDK
 2. **02-OpenAI SDK Integration** - תכונות מתקדמות של SDK
 3. **03-Model Discovery & Benchmarking** - כלי השוואת מודלים
 4. **04-Chainlit RAG Application** - יצירה מוגברת על ידי אחזור
@@ -426,29 +615,56 @@ npm install
 7. **07-Direct API Client** - אינטגרציה ברמת API נמוכה
 8. **08-Windows 11 Chat App** - אפליקציית שולחן עבודה Electron מקורית
 9. **09-Advanced Multi-Agent System** - תיאום סוכנים מורכב
-10. **10-Foundry Tools Framework** - אינטגרציה עם LangChain/Semantic Kernel
+10. **10-Foundry Tools Framework** - אינטגרציה של LangChain/Semantic Kernel
 
 כל דוגמה מדגימה היבטים שונים של פיתוח Edge AI עם Foundry Local.
 
 ### שיקולי ביצועים
 
-- SLMs מותאמים לפריסה בקצה (2-16GB RAM)
-- הסקה מקומית מספקת זמני תגובה של 50-500ms
-- טכניקות כימות משיגות הפחתת גודל של 75% עם שמירה על 85% ביצועים
-- יכולות שיחה בזמן אמת עם מודלים מקומיים
+- מודלים לשוניים קטנים (SLMs) מותאמים לפריסה בקצה (2-16GB RAM)
+- הסקת מסקנות מקומית מספקת זמני תגובה של 50-500ms  
+- טכניקות כימות משיגות הפחתת גודל של 75% עם שמירה על 85% ביצועים  
+- יכולות שיחה בזמן אמת עם מודלים מקומיים  
 
-### אבטחה ופרטיות
+### אבטחה ופרטיות  
 
-- כל העיבוד מתבצע מקומית - אין שליחת נתונים לענן
-- מתאים ליישומים רגישים לפרטיות (בריאות, פיננסים)
-- עומד בדרישות ריבונות נתונים
-- Foundry Local פועל כולו על חומרה מקומית
+- כל העיבוד מתבצע באופן מקומי - אין שליחת נתונים לענן  
+- מתאים ליישומים רגישים לפרטיות (בריאות, פיננסים)  
+- עומד בדרישות ריבונות נתונים  
+- Foundry Local פועל כולו על חומרה מקומית  
+
+## קבלת עזרה  
+
+### תיעוד  
+
+- **README ראשי**: [README.md](README.md) - סקירת מאגר ונתיבי למידה  
+- **מדריך לימוד**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - משאבי למידה ולוח זמנים  
+- **תמיכה**: [SUPPORT.md](SUPPORT.md) - כיצד לקבל עזרה  
+- **אבטחה**: [SECURITY.md](SECURITY.md) - דיווח על בעיות אבטחה  
+
+### תמיכת קהילה  
+
+- **בעיות בגיטהאב**: [דיווח על באגים או בקשת תכונות](https://github.com/microsoft/edgeai-for-beginners/issues)  
+- **דיונים בגיטהאב**: [שאל שאלות ושתף רעיונות](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- **בעיות Foundry Local**: [בעיות טכניות עם Foundry Local](https://github.com/microsoft/Foundry-Local/issues)  
+
+### יצירת קשר  
+
+- **מתחזקים**: ראה [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)  
+- **בעיות אבטחה**: עקוב אחר גילוי אחראי ב-[SECURITY.md](SECURITY.md)  
+- **תמיכת Microsoft**: עבור תמיכה ארגונית, צור קשר עם שירות הלקוחות של Microsoft  
+
+### משאבים נוספים  
+
+- **Microsoft Learn**: [נתיבי למידה של AI ולמידת מכונה](https://learn.microsoft.com/training/browse/?products=ai-services)  
+- **תיעוד Foundry Local**: [תיעוד רשמי](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)  
+- **דוגמאות קהילה**: בדוק [דיונים בגיטהאב](https://github.com/microsoft/edgeai-for-beginners/discussions) עבור תרומות קהילה  
 
 ---
 
-**זהו מאגר חינוכי המתמקד בהוראת פיתוח Edge AI. דפוס התרומה העיקרי הוא שיפור תוכן חינוכי והוספה/שיפור של יישומי דוגמה המדגימים מושגי Edge AI.**
+**זהו מאגר חינוכי המתמקד בהוראת פיתוח Edge AI. דפוס התרומה העיקרי הוא שיפור תוכן חינוכי והוספה/שיפור של יישומים לדוגמה שמדגימים מושגים של Edge AI.**  
 
 ---
 
 **כתב ויתור**:  
-מסמך זה תורגם באמצעות שירות תרגום מבוסס בינה מלאכותית [Co-op Translator](https://github.com/Azure/co-op-translator). למרות שאנו שואפים לדיוק, יש לקחת בחשבון שתרגומים אוטומטיים עשויים להכיל שגיאות או אי-דיוקים. המסמך המקורי בשפתו המקורית נחשב כמקור הסמכותי. למידע קריטי, מומלץ להשתמש בתרגום מקצועי על ידי מתרגם אנושי. איננו נושאים באחריות לכל אי-הבנה או פרשנות שגויה הנובעת משימוש בתרגום זה.
+מסמך זה תורגם באמצעות שירות תרגום מבוסס בינה מלאכותית [Co-op Translator](https://github.com/Azure/co-op-translator). למרות שאנו שואפים לדיוק, יש לקחת בחשבון שתרגומים אוטומטיים עשויים להכיל שגיאות או אי דיוקים. המסמך המקורי בשפתו המקורית צריך להיחשב כמקור סמכותי. עבור מידע קריטי, מומלץ להשתמש בתרגום מקצועי על ידי אדם. איננו נושאים באחריות לאי הבנות או לפרשנויות שגויות הנובעות משימוש בתרגום זה.
