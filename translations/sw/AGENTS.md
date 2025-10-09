@@ -1,17 +1,41 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:41:38+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-09T20:33:58+00:00",
   "source_file": "AGENTS.md",
   "language_code": "sw"
 }
 -->
 # AGENTS.md
 
+> **Mwongozo wa Mwandishi kwa Kuchangia EdgeAI kwa Anayeanza**
+> 
+> Hati hii inatoa maelezo ya kina kwa waendelezaji, mawakala wa AI, na wachangiaji wanaofanya kazi na hifadhi hii. Inashughulikia usanidi, mtiririko wa maendeleo, upimaji, na mbinu bora.
+> 
+> **Imesasishwa Mwisho**: Oktoba 2025 | **Toleo la Hati**: 2.0
+
+## Jedwali la Maudhui
+
+- [Muhtasari wa Mradi](../..)
+- [Muundo wa Hifadhi](../..)
+- [Mahitaji ya Awali](../..)
+- [Amri za Usanidi](../..)
+- [Mtiririko wa Maendeleo](../..)
+- [Maelekezo ya Upimaji](../..)
+- [Miongozo ya Mtindo wa Nambari](../..)
+- [Miongozo ya Ombi la Kuvuta](../..)
+- [Mfumo wa Tafsiri](../..)
+- [Ujumuishaji wa Foundry Local](../..)
+- [Ujenzi na Uwekaji](../..)
+- [Masuala ya Kawaida na Utatuzi](../..)
+- [Rasilimali za Ziada](../..)
+- [Vidokezo Maalum vya Mradi](../..)
+- [Kupata Msaada](../..)
+
 ## Muhtasari wa Mradi
 
-EdgeAI kwa Kompyuta ni hifadhi ya elimu inayofundisha maendeleo ya Edge AI kwa kutumia Small Language Models (SLMs). Kozi inashughulikia misingi ya EdgeAI, usambazaji wa modeli, mbinu za uboreshaji, na utekelezaji wa kiwango cha uzalishaji kwa kutumia Microsoft Foundry Local na mifumo mbalimbali ya AI.
+EdgeAI kwa Anayeanza ni hifadhi ya elimu inayofundisha maendeleo ya Edge AI kwa kutumia Small Language Models (SLMs). Kozi inashughulikia misingi ya EdgeAI, uwekaji wa modeli, mbinu za uboreshaji, na utekelezaji tayari kwa uzalishaji kwa kutumia Microsoft Foundry Local na mifumo mbalimbali ya AI.
 
 **Teknolojia Muhimu:**
 - Python 3.8+ (lugha kuu kwa sampuli za AI/ML)
@@ -26,7 +50,7 @@ EdgeAI kwa Kompyuta ni hifadhi ya elimu inayofundisha maendeleo ya Edge AI kwa k
 
 **Aina ya Hifadhi:** Hifadhi ya maudhui ya elimu yenye moduli 8 na programu 10 za sampuli za kina
 
-**Muundo:** Njia ya kujifunza yenye moduli nyingi na sampuli za vitendo zinazoonyesha mifumo ya usambazaji wa Edge AI
+**Muundo:** Njia ya kujifunza yenye moduli nyingi na sampuli za vitendo zinazoonyesha mifumo ya uwekaji wa Edge AI
 
 ## Muundo wa Hifadhi
 
@@ -43,6 +67,35 @@ edgeai-for-beginners/
 ├── translated_images/     # Localized images
 └── imgs/                  # Course images and assets
 ```
+
+## Mahitaji ya Awali
+
+### Zana Zinazohitajika
+
+- **Python 3.8+** - Kwa sampuli za AI/ML na daftari
+- **Node.js 16+** - Kwa programu ya sampuli ya Electron
+- **Git** - Kwa udhibiti wa toleo
+- **Microsoft Foundry Local** - Kwa kuendesha modeli za AI kwa ndani
+
+### Zana Zinazopendekezwa
+
+- **Visual Studio Code** - Na viendelezi vya Python, Jupyter, na Pylance
+- **Windows Terminal** - Kwa uzoefu bora wa mstari wa amri (watumiaji wa Windows)
+- **Docker** - Kwa maendeleo yaliyowekwa kwenye kontena (hiari)
+
+### Mahitaji ya Mfumo
+
+- **RAM**: Angalau 8GB, inapendekezwa 16GB+ kwa hali za modeli nyingi
+- **Hifadhi**: Angalau 10GB nafasi ya bure kwa modeli na utegemezi
+- **OS**: Windows 10/11, macOS 11+, au Linux (Ubuntu 20.04+)
+- **Vifaa**: CPU yenye msaada wa AVX2; GPU (CUDA, Qualcomm NPU) hiari lakini inapendekezwa
+
+### Maarifa ya Awali
+
+- Uelewa wa msingi wa programu ya Python
+- Uzoefu na interface ya mstari wa amri
+- Uelewa wa dhana za AI/ML (kwa maendeleo ya sampuli)
+- Mtiririko wa Git na michakato ya ombi la kuvuta
 
 ## Amri za Usanidi
 
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,15 +145,26 @@ npm run dist
 
 ### Usanidi wa Foundry Local
 
-Foundry Local inahitajika kuendesha sampuli za Moduli08:
+Foundry Local inahitajika kuendesha sampuli. Pakua na usakinishe kutoka hifadhi rasmi:
 
+**Usakinishaji:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Mwongozo**: Pakua kutoka [ukurasa wa matoleo](https://github.com/microsoft/Foundry-Local/releases)
+
+**Kuanza Haraka:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**Kumbuka**: Foundry Local huchagua kiotomatiki toleo bora la modeli kwa vifaa vyako (CUDA GPU, Qualcomm NPU, au CPU).
 
 ## Mtiririko wa Maendeleo
 
@@ -105,12 +172,12 @@ curl http://localhost:8000/health
 
 Hifadhi hii ina maudhui ya elimu ya **Markdown**. Unapofanya mabadiliko:
 
-1. Hariri faili za `.md` katika saraka za moduli husika
+1. Hariri faili za `.md` katika saraka za moduli zinazofaa
 2. Fuata mifumo ya muundo iliyopo
-3. Hakikisha mifano ya msimbo ni sahihi na imejaribiwa
+3. Hakikisha mifano ya nambari ni sahihi na imejaribiwa
 4. Sasisha maudhui yaliyotafsiriwa yanayolingana ikiwa ni lazima (au acha otomatiki ishughulikie)
 
-### Maendeleo ya Programu za Sampuli
+### Maendeleo ya Programu ya Sampuli
 
 Kwa sampuli za Python (sampuli 01-07, 09-10):
 ```bash
@@ -118,7 +185,7 @@ cd Module08
 python samples/01/chat_quickstart.py "Test message"
 ```
 
-Kwa sampuli za Electron (sampuli 08):
+Kwa sampuli ya Electron (sampuli 08):
 ```bash
 cd Module08/samples/08
 npm run dev  # Development with hot reload
@@ -126,7 +193,7 @@ npm run dev  # Development with hot reload
 
 ### Upimaji wa Programu za Sampuli
 
-Sampuli za Python hazina majaribio ya kiotomatiki lakini zinaweza kuthibitishwa kwa kuziendesha:
+Sampuli za Python hazina majaribio ya kiotomatiki lakini zinaweza kuthibitishwa kwa kuzitekeleza:
 ```bash
 # Test basic chat functionality
 python samples/01/chat_quickstart.py "Hello"
@@ -136,7 +203,7 @@ set MODEL=phi-4-mini
 python samples/02/openai_sdk_client.py
 ```
 
-Sampuli za Electron zina miundombinu ya majaribio:
+Sampuli ya Electron ina miundombinu ya majaribio:
 ```bash
 cd Module08/samples/08
 npm test           # Run unit tests
@@ -148,17 +215,17 @@ npm run lint       # Check code style
 
 ### Uthibitishaji wa Maudhui
 
-Hifadhi hutumia mtiririko wa tafsiri otomatiki. Hakuna upimaji wa mikono unaohitajika kwa tafsiri.
+Hifadhi hutumia mtiririko wa tafsiri wa kiotomatiki. Hakuna upimaji wa mwongozo unaohitajika kwa tafsiri.
 
-**Uthibitishaji wa mikono kwa mabadiliko ya maudhui:**
-1. Angalia uwasilishaji wa Markdown kwa kutazama faili za `.md`
-2. Hakikisha viungo vyote vinaelekeza kwenye malengo sahihi
-3. Jaribu vipande vyovyote vya msimbo vilivyojumuishwa katika nyaraka
+**Uthibitishaji wa mwongozo kwa mabadiliko ya maudhui:**
+1. Angalia uonyeshaji wa Markdown kwa kutazama faili za `.md`
+2. Hakikisha viungo vyote vinaelekeza kwa malengo sahihi
+3. Jaribu vipande vyovyote vya nambari vilivyojumuishwa katika hati
 4. Hakikisha picha zinapakia vizuri
 
 ### Upimaji wa Programu za Sampuli
 
-**Moduli08/sampuli/08 (programu ya Electron) ina majaribio ya kina:**
+**Module08/samples/08 (programu ya Electron) ina majaribio ya kina:**
 ```bash
 cd Module08/samples/08
 
@@ -178,7 +245,7 @@ npm run test:e2e
 npm test -- --coverage
 ```
 
-**Sampuli za Python zinapaswa kujaribiwa kwa mikono:**
+**Sampuli za Python zinapaswa kujaribiwa kwa mwongozo:**
 ```bash
 # Each sample can be run directly
 python samples/01/chat_quickstart.py "Test prompt"
@@ -186,25 +253,25 @@ python samples/04/chainlit_rag.py
 python samples/09/multi_agent_system.py
 ```
 
-## Miongozo ya Mtindo wa Msimbo
+## Miongozo ya Mtindo wa Nambari
 
 ### Maudhui ya Markdown
 
-- Tumia uongozi thabiti wa vichwa (# kwa kichwa, ## kwa sehemu kuu, ### kwa sehemu ndogo)
-- Jumuisha vizuizi vya msimbo na viainishi vya lugha: ```python, ```bash, ```javascript
+- Tumia ufuatano thabiti wa vichwa (# kwa kichwa, ## kwa sehemu kuu, ### kwa sehemu ndogo)
+- Jumuisha vizuizi vya nambari na viainishi vya lugha: ```python, ```bash, ```javascript
 - Fuata muundo uliopo kwa jedwali, orodha, na msisitizo
 - Weka mistari isomeke (lenga ~80-100 herufi, lakini si lazima)
 - Tumia viungo vya jamaa kwa marejeleo ya ndani
 
-### Mtindo wa Msimbo wa Python
+### Mtindo wa Nambari ya Python
 
 - Fuata kanuni za PEP 8
 - Tumia vidokezo vya aina inapofaa
 - Jumuisha maelezo ya kazi na madarasa
 - Tumia majina ya kutofautisha yenye maana
-- Weka kazi zikiwa zinalenga na fupi
+- Weka kazi zikiwa na lengo na fupi
 
-### Mtindo wa Msimbo wa JavaScript/Node.js
+### Mtindo wa Nambari ya JavaScript/Node.js
 
 ```bash
 # Electron sample follows ESLint configuration
@@ -216,11 +283,46 @@ npm run format      # Format with Prettier
 
 **Kanuni Muhimu:**
 - Usanidi wa ESLint umetolewa katika sampuli 08
-- Prettier kwa muundo wa msimbo
+- Prettier kwa muundo wa nambari
 - Tumia sintaksia ya kisasa ya ES6+
-- Fuata mifumo iliyopo katika hifadhidata ya msimbo
+- Fuata mifumo iliyopo katika hifadhidata
 
 ## Miongozo ya Ombi la Kuvuta
+
+### Mtiririko wa Mchango
+
+1. **Fanya nakala ya hifadhi** na unda tawi jipya kutoka `main`
+2. **Fanya mabadiliko yako** ukifuata miongozo ya mtindo wa nambari
+3. **Jaribu kwa kina** ukitumia maelekezo ya upimaji hapo juu
+4. **Fanya ahadi na ujumbe wazi** ukifuata muundo wa ahadi za kawaida
+5. **Sukuma kwenye nakala yako** na unda ombi la kuvuta
+6. **Jibu maoni** kutoka kwa wasimamizi wakati wa ukaguzi
+
+### Muundo wa Majina ya Tawi
+
+- `feature/<module>-<description>` - Kwa vipengele vipya au maudhui
+- `fix/<module>-<description>` - Kwa marekebisho ya hitilafu
+- `docs/<description>` - Kwa maboresho ya hati
+- `refactor/<description>` - Kwa urekebishaji wa nambari
+
+### Muundo wa Ujumbe wa Ahadi
+
+Fuata [Ahadi za Kawaida](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Mifano:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
 
 ### Muundo wa Kichwa
 ```
@@ -231,78 +333,129 @@ au
 [Module08/samples/XX] Description for sample changes
 ```
 
+### Kanuni ya Maadili
+
+Wachangiaji wote lazima wafuate [Kanuni ya Maadili ya Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Tafadhali soma [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) kabla ya kuchangia.
+
 ### Kabla ya Kuwasilisha
 
 **Kwa mabadiliko ya maudhui:**
-- Tazama faili zote za Markdown zilizobadilishwa
+- Angalia faili zote za Markdown zilizorekebishwa
 - Hakikisha viungo na picha zinafanya kazi
 - Angalia makosa ya tahajia na sarufi
 
-**Kwa mabadiliko ya msimbo wa sampuli (Moduli08/sampuli/08):**
+**Kwa mabadiliko ya nambari ya sampuli (Module08/samples/08):**
 ```bash
 npm run lint
 npm test
 ```
 
 **Kwa mabadiliko ya sampuli za Python:**
-- Jaribu sampuli zinaendesha kwa mafanikio
-- Hakikisha utunzaji wa makosa unafanya kazi
+- Jaribu sampuli inafanya kazi kwa mafanikio
+- Hakikisha utunzaji wa hitilafu unafanya kazi
 - Angalia utangamano na Foundry Local
 
-### Mchakato wa Mapitio
+### Mchakato wa Ukaguzi
 
-- Mabadiliko ya maudhui ya elimu yanapitiwa kwa usahihi na uwazi
-- Sampuli za msimbo zinajaribiwa kwa utendaji
+- Mabadiliko ya maudhui ya elimu yanakaguliwa kwa usahihi na uwazi
+- Sampuli za nambari zinajaribiwa kwa utendaji
 - Sasisho za tafsiri zinashughulikiwa kiotomatiki na GitHub Actions
 
 ## Mfumo wa Tafsiri
 
-**MUHIMU:** Hifadhi hii hutumia tafsiri otomatiki kupitia GitHub Actions.
+**MUHIMU:** Hifadhi hii hutumia tafsiri ya kiotomatiki kupitia GitHub Actions.
 
 - Tafsiri ziko katika saraka ya `/translations/` (lugha 50+)
 - Zinafanywa kiotomatiki kupitia mtiririko wa `co-op-translator.yml`
-- **USIHARIRI faili za tafsiri kwa mikono** - zitafutwa
+- **USIHARIRI faili za tafsiri kwa mkono** - zitafutwa
 - Hariri faili za chanzo za Kiingereza pekee katika saraka kuu na moduli
-- Tafsiri zinazalishwa kiotomatiki unapoweka kwenye tawi la `main`
+- Tafsiri zinazalishwa kiotomatiki unapofanya msukumo kwenye tawi la `main`
 
 ## Ujumuishaji wa Foundry Local
 
-Sampuli nyingi za Moduli08 zinahitaji Microsoft Foundry Local kuendesha:
+Sampuli nyingi za Module08 zinahitaji Microsoft Foundry Local kuendesha.
+
+### Usakinishaji na Usanidi
+
+**Sakinisha Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Sakinisha Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Kuanza Foundry Local
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
 ```
 
-### Kuthibitisha Foundry Local
+### Matumizi ya SDK (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+```
+
+### Uthibitishaji wa Foundry Local
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### Vigezo vya Mazingira kwa Sampuli
 
-Sampuli nyingi zinatumia vigezo hivi vya mazingira:
+Sampuli nyingi hutumia vigezo hivi vya mazingira:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,15 +463,17 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
-## Ujenzi na Usambazaji
+**Kumbuka**: Unapotumia `FoundryLocalManager`, SDK hushughulikia kiotomatiki ugunduzi wa huduma na upakiaji wa modeli. Majina ya modeli (kama `phi-3.5-mini`) huhakikisha toleo bora linachaguliwa kwa vifaa vyako.
 
-### Usambazaji wa Maudhui
+## Ujenzi na Uwekaji
 
-Hifadhi hii ni nyaraka hasa - hakuna mchakato wa ujenzi unaohitajika kwa maudhui.
+### Uwekaji wa Maudhui
+
+Hifadhi hii ni hati pekee - hakuna mchakato wa ujenzi unaohitajika kwa maudhui.
 
 ### Ujenzi wa Programu za Sampuli
 
-**Programu ya Electron (Moduli08/sampuli/08):**
+**Programu ya Electron (Module08/samples/08):**
 ```bash
 cd Module08/samples/08
 
@@ -340,20 +495,35 @@ Hakuna mchakato wa ujenzi - sampuli zinaendeshwa moja kwa moja na tafsiri ya Pyt
 
 ## Masuala ya Kawaida na Utatuzi
 
-### Foundry Local Haifanyi Kazi
-**Tatizo:** Sampuli zinashindwa na makosa ya muunganisho
+> **Kidokezo**: Angalia [Masuala ya GitHub](https://github.com/microsoft/edgeai-for-beginners/issues) kwa matatizo yanayojulikana na suluhisho.
+
+### Masuala Makubwa (Yanayozuia)
+
+#### Foundry Local Haifanyi Kazi
+**Tatizo:** Sampuli zinashindwa na hitilafu za muunganisho
 
 **Suluhisho:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Masuala ya Mazingira ya Virtual ya Python
-**Tatizo:** Makosa ya uingizaji wa moduli
+### Masuala ya Kawaida (Ya Kati)
+
+#### Masuala ya Mazingira ya Virtual ya Python
+**Tatizo:** Hitilafu za uingizaji wa moduli
 
 **Suluhisho:**
 ```bash
@@ -367,8 +537,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Masuala ya Ujenzi wa Electron
-**Tatizo:** npm install au kushindwa kwa ujenzi
+#### Masuala ya Ujenzi wa Electron
+**Tatizo:** Hitilafu za `npm install` au ujenzi
 
 **Suluhisho:**
 ```bash
@@ -379,18 +549,34 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Migogoro ya Mtiririko wa Tafsiri
-**Tatizo:** Tafsiri PR zinagongana na mabadiliko yako
+### Masuala ya Mtiririko wa Kazi (Madogo)
+
+#### Migogoro ya Mtiririko wa Tafsiri
+**Tatizo:** Migogoro ya PR ya tafsiri na mabadiliko yako
 
 **Suluhisho:**
 - Hariri faili za chanzo za Kiingereza pekee
-- Acha mtiririko wa tafsiri otomatiki ushughulikie tafsiri
+- Acha mtiririko wa tafsiri wa kiotomatiki ushughulikie tafsiri
 - Ikiwa migogoro itatokea, unganisha `main` kwenye tawi lako baada ya tafsiri kuunganishwa
+
+#### Hitilafu za Upakuaji wa Modeli
+**Tatizo:** Foundry Local inashindwa kupakua modeli
+
+**Suluhisho:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## Rasilimali za Ziada
 
 ### Njia za Kujifunza
-- **Njia ya Kompyuta:** Moduli 01-02 (saa 7-9)
+- **Njia ya Anayeanza:** Moduli 01-02 (saa 7-9)
 - **Njia ya Kati:** Moduli 03-04 (saa 9-11)
 - **Njia ya Juu:** Moduli 05-07 (saa 12-15)
 - **Njia ya Mtaalamu:** Moduli 08 (saa 8-10)
@@ -398,15 +584,18 @@ npm install
 ### Maudhui Muhimu ya Moduli
 - **Moduli01:** Misingi ya EdgeAI na masomo ya hali halisi
 - **Moduli02:** Familia za Small Language Model (SLM) na miundo
-- **Moduli03:** Mikakati ya usambazaji wa ndani na wingu
-- **Moduli04:** Uboreshaji wa modeli kwa mifumo mbalimbali
+- **Moduli03:** Mikakati ya uwekaji wa ndani na wingu
+- **Moduli04:** Uboreshaji wa modeli na mifumo mbalimbali
 - **Moduli05:** SLMOps - operesheni za uzalishaji
 - **Moduli06:** Mawakala wa AI na kupiga kazi
 - **Moduli07:** Utekelezaji maalum wa jukwaa
 - **Moduli08:** Zana za Foundry Local na sampuli 10 za kina
 
-### Vitegemezi vya Nje
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Muda wa modeli ya AI ya ndani
+### Utegemezi wa Nje
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Muda wa modeli ya AI ya ndani na API inayolingana na OpenAI
+  - [Hati](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Mfumo wa uboreshaji
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - Zana ya uboreshaji wa modeli
 - [OpenVINO](https://docs.openvino.ai/) - Zana ya uboreshaji ya Intel
@@ -425,28 +614,49 @@ Hifadhi inajumuisha programu 10 za sampuli za kina:
 6. **06-Models-as-Tools Router** - Usambazaji wa modeli wenye akili
 7. **07-Direct API Client** - Muunganisho wa API wa kiwango cha chini
 8. **08-Windows 11 Chat App** - Programu ya desktop ya Electron ya asili
-9. **09-Advanced Multi-Agent System** - Uratibu wa mawakala wa hali ya juu
-10. **10-Foundry Tools Framework** - Muunganisho wa LangChain/Semantic Kernel
-
-Kila sampuli inaonyesha vipengele tofauti vya maendeleo ya Edge AI kwa Foundry Local.
-
-### Mazingatio ya Utendaji
-
-- SLMs zimeboreshwa kwa usambazaji wa Edge (RAM 2-16GB)
-- Utoaji wa ndani hutoa nyakati za majibu za 50-500ms
-- Mbinu za upunguzaji hufanikisha kupunguzwa kwa ukubwa kwa 75% na uhifadhi wa utendaji wa 85%
-- Uwezo wa mazungumzo ya wakati halisi na modeli za ndani
+9. **09-Advanced Multi-Agent System** - Uratibu wa mawakala wa hali ngumu
+10. **10-Foundry
+- Utoaji wa matokeo wa ndani hutoa muda wa majibu wa 50-500ms
+- Mbinu za kupunguza ukubwa (quantization) hupunguza ukubwa kwa 75% huku zikihifadhi utendaji wa 85%
+- Uwezo wa mazungumzo ya papo hapo kwa kutumia mifano ya ndani
 
 ### Usalama na Faragha
 
 - Usindikaji wote hufanyika ndani - hakuna data inayotumwa kwa wingu
-- Inafaa kwa programu nyeti za faragha (huduma za afya, fedha)
+- Inafaa kwa programu zinazohitaji faragha (huduma za afya, fedha)
 - Inakidhi mahitaji ya uhuru wa data
 - Foundry Local inaendeshwa kikamilifu kwenye vifaa vya ndani
 
+## Kupata Msaada
+
+### Nyaraka
+
+- **README Kuu**: [README.md](README.md) - Muhtasari wa hifadhi na njia za kujifunza
+- **Mwongozo wa Kujifunza**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - Rasilimali za kujifunza na ratiba
+- **Msaada**: [SUPPORT.md](SUPPORT.md) - Jinsi ya kupata msaada
+- **Usalama**: [SECURITY.md](SECURITY.md) - Kuripoti masuala ya usalama
+
+### Msaada wa Jamii
+
+- **Masuala ya GitHub**: [Ripoti hitilafu au omba vipengele](https://github.com/microsoft/edgeai-for-beginners/issues)
+- **Majadiliano ya GitHub**: [Uliza maswali na shiriki mawazo](https://github.com/microsoft/edgeai-for-beginners/discussions)
+- **Masuala ya Foundry Local**: [Masuala ya kiufundi na Foundry Local](https://github.com/microsoft/Foundry-Local/issues)
+
+### Mawasiliano
+
+- **Wadumishaji**: Tazama [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)
+- **Masuala ya Usalama**: Fuata mchakato wa kufichua kwa uwajibikaji katika [SECURITY.md](SECURITY.md)
+- **Msaada wa Microsoft**: Kwa msaada wa kibiashara, wasiliana na huduma kwa wateja wa Microsoft
+
+### Rasilimali za Ziada
+
+- **Microsoft Learn**: [Njia za Kujifunza AI na Kujifunza kwa Mashine](https://learn.microsoft.com/training/browse/?products=ai-services)
+- **Nyaraka za Foundry Local**: [Nyaraka Rasmi](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+- **Mifano ya Jamii**: Angalia [Majadiliano ya GitHub](https://github.com/microsoft/edgeai-for-beginners/discussions) kwa michango ya jamii
+
 ---
 
-**Hii ni hifadhi ya elimu inayolenga kufundisha maendeleo ya Edge AI. Muundo mkuu wa mchango ni kuboresha maudhui ya elimu na kuongeza/kuboresha programu za sampuli zinazoonyesha dhana za Edge AI.**
+**Hii ni hifadhi ya kielimu inayolenga kufundisha maendeleo ya Edge AI. Muundo wa msingi wa mchango ni kuboresha maudhui ya kielimu na kuongeza/kuboresha programu za mfano zinazoonyesha dhana za Edge AI.**
 
 ---
 

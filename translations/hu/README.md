@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T08:09:15+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-09T20:45:28+00:00",
   "source_file": "README.md",
   "language_code": "hu"
 }
@@ -25,7 +25,7 @@ CO_OP_TRANSLATOR_METADATA:
 Kövesd az alábbi lépéseket, hogy elkezdhesd használni ezeket az erőforrásokat:
 
 1. **Forkold a repót**: Kattints [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)
-2. **Clone-old a repót**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
+2. **Klónozd a repót**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`
 3. [**Csatlakozz az Azure AI Foundry Discordhoz, és találkozz szakértőkkel és fejlesztőkkel**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Többnyelvű támogatás
@@ -38,7 +38,7 @@ Kövesd az alábbi lépéseket, hogy elkezdhesd használni ezeket az erőforrás
 
 ## Bevezetés
 
-Üdvözlünk az **EdgeAI kezdőknek** kurzusban – egy átfogó utazás az Edge Mesterséges Intelligencia átalakító világába. Ez a kurzus összekapcsolja a hatékony MI képességeket a gyakorlati, valós alkalmazásokkal az edge eszközökön, lehetővé téve, hogy közvetlenül ott használd az MI-t, ahol az adatok keletkeznek és döntéseket kell hozni.
+Üdvözlünk az **EdgeAI kezdőknek** kurzusban – egy átfogó utazás az Edge Mesterséges Intelligencia átalakító világába. Ez a kurzus összekapcsolja az erőteljes AI képességeket a gyakorlati, valós alkalmazásokkal az edge eszközökön, lehetővé téve, hogy közvetlenül ott használd az AI-t, ahol az adatok keletkeznek és döntéseket kell hozni.
 
 ### Amit elsajátíthatsz
 
@@ -50,8 +50,8 @@ Ez a kurzus az alapfogalmaktól a gyártásra kész megvalósításokig vezet, a
 
 ### Miért fontos az EdgeAI?
 
-Az EdgeAI egy paradigmaváltást képvisel, amely a modern kihívásokra ad választ:
-- **Adatvédelem és biztonság**: Érzékeny adatok helyi feldolgozása, felhőbe való továbbítás nélkül
+Az Edge AI egy paradigmaváltást képvisel, amely a modern kihívásokra ad választ:
+- **Adatvédelem és biztonság**: Érzékeny adatok helyi feldolgozása, felhőhasználat nélkül
 - **Valós idejű teljesítmény**: Hálózati késleltetés kiküszöbölése időkritikus alkalmazásokhoz
 - **Költséghatékonyság**: Sávszélesség és felhőalapú számítási költségek csökkentése
 - **Rugalmas működés**: Funkcionalitás fenntartása hálózati kiesés esetén
@@ -59,13 +59,13 @@ Az EdgeAI egy paradigmaváltást képvisel, amely a modern kihívásokra ad vál
 
 ### Edge AI
 
-Az Edge AI az MI algoritmusok és nyelvi modellek helyi futtatását jelenti hardveren, közel az adatok keletkezési helyéhez, anélkül, hogy a felhő erőforrásaira támaszkodna a következtetéshez. Ez csökkenti a késleltetést, növeli az adatvédelmet, és lehetővé teszi a valós idejű döntéshozatalt.
+Az Edge AI az AI algoritmusok és nyelvi modellek helyi futtatását jelenti hardveren, közel az adatok keletkezési helyéhez, anélkül, hogy a felhő erőforrásaira támaszkodna a következtetéshez. Ez csökkenti a késleltetést, javítja az adatvédelmet, és lehetővé teszi a valós idejű döntéshozatalt.
 
 ### Alapelvek:
-- **Eszközön történő következtetés**: MI modellek futtatása edge eszközökön (telefonok, routerek, mikrokontrollerek, ipari PC-k)
+- **Eszközön történő következtetés**: AI modellek futtatása edge eszközökön (telefonok, routerek, mikrokontrollerek, ipari PC-k)
 - **Offline képesség**: Működés állandó internetkapcsolat nélkül
 - **Alacsony késleltetés**: Azonnali válaszok valós idejű rendszerekhez
-- **Adatszuverenitás**: Érzékeny adatok helyben tartása, növelve a biztonságot és megfelelőséget
+- **Adatszuverenitás**: Érzékeny adatok helyben tartása, javítva a biztonságot és megfelelést
 
 ### Kis nyelvi modellek (SLM-ek)
 
@@ -83,8 +83,8 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 
 ## Kurzus modulok és navigáció
 
-| Modul | Téma | Fókuszterület | Kulcsfontosságú tartalom | Szint | Időtartam |
-|-------|------|---------------|--------------------------|-------|-----------|
+| Modul | Téma | Fókuszterület | Kulcstartalom | Szint | Időtartam |
+|-------|------|---------------|---------------|-------|-----------|
 | [📖 00 ](./introduction.md) | [Bevezetés az EdgeAI-ba](./introduction.md) | Alapok és kontextus | EdgeAI áttekintés • Ipari alkalmazások • SLM bevezetés • Tanulási célok | Kezdő | 1-2 óra |
 | [📚 01](../../Module01) | [EdgeAI alapok](./Module01/README.md) | Felhő vs Edge AI összehasonlítás | EdgeAI alapok • Valós esettanulmányok • Megvalósítási útmutató • Edge telepítés | Kezdő | 3-4 óra |
 | [🧠 02](../../Module02) | [SLM modellek alapjai](./Module02/README.md) | Modellcsaládok és architektúra | Phi család • Qwen család • Gemma család • BitNET • μModel • Phi-Silica | Kezdő | 4-5 óra |
@@ -97,16 +97,33 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 
 ### 🏭 **08. modul: Mintapéldák**
 
-- [01: REST Chat gyorsindítás](./Module08/samples/01/README.md)
+- [01: REST Chat gyorsindító](./Module08/samples/01/README.md)
 - [02: OpenAI SDK integráció](./Module08/samples/02/README.md)
 - [03: Modell felfedezés és benchmarking](./Module08/samples/03/README.md)
 - [04: Chainlit RAG alkalmazás](./Module08/samples/04/README.md)
 - [05: Többügynökös orkestráció](./Module08/samples/05/README.md)
-- [06: Modellek mint eszközök router](./Module08/samples/06/README.md)
+- [06: Modellek-eszközként router](./Module08/samples/06/README.md)
 - [07: Közvetlen API kliens](./Module08/samples/07/README.md)
 - [08: Windows 11 Chat alkalmazás](./Module08/samples/08/README.md)
 - [09: Haladó többügynökös rendszer](./Module08/samples/09/README.md)
-- [10: Foundry eszközök keretrendszer](./Module08/samples/10/README.md)
+- [10: Foundry Tools keretrendszer](./Module08/samples/10/README.md)
+
+### 🎓 **Workshop: Gyakorlati tanulási útvonal**
+
+Átfogó gyakorlati workshop anyagok gyártásra kész megvalósításokkal:
+
+- **[Workshop útmutató](./Workshop/Readme.md)** - Teljes tanulási célok, eredmények és erőforrás navigáció
+- **Python minták** (6 szekció) - Frissítve legjobb gyakorlatokkal, hibakezeléssel és átfogó dokumentációval
+- **Jupyter Notebookok** (8 interaktív) - Lépésről lépésre oktatóanyagok benchmarkokkal és teljesítményfigyeléssel
+- **Szekció útmutatók** - Részletes markdown útmutatók minden workshop szekcióhoz
+- **Validációs eszközök** - Szkriptek a kódminőség ellenőrzésére és gyors tesztek futtatására
+
+**Amit építeni fogsz:**
+- Helyi AI chat alkalmazások streaming támogatással
+- RAG csővezetékek minőségértékeléssel (RAGAS)
+- Többmodell benchmarking és összehasonlító eszközök
+- Többügynökös orkestrációs rendszerek
+- Intelligens modellirányítás feladat-alapú kiválasztással
 
 ### 📊 **Tanulási útvonal összefoglaló**
 - **Teljes időtartam**: 36-45 óra
@@ -118,7 +135,7 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 ## Amit építeni fogsz
 
 ### 🎯 Alapvető kompetenciák
-- **Edge AI architektúra**: Helyi elsődleges MI rendszerek tervezése felhőintegrációval
+- **Edge AI architektúra**: Helyi első AI rendszerek tervezése felhőintegrációval
 - **Modell optimalizálás**: Modellek kvantálása és tömörítése edge telepítéshez (85% sebességnövekedés, 75% méretcsökkentés)
 - **Többplatformos telepítés**: Windows, mobil, beágyazott és felhő-edge hibrid rendszerek
 - **Gyártási műveletek**: Edge AI monitorozása, skálázása és karbantartása gyártásban
@@ -127,34 +144,34 @@ Ezek erőteljes NLP képességeket nyújtanak, miközben megfelelnek az alábbi 
 - **Foundry Local Chat alkalmazások**: Windows 11 natív alkalmazás modellváltással
 - **Többügynökös rendszerek**: Koordinátor specialistákkal összetett munkafolyamatokhoz  
 - **RAG alkalmazások**: Helyi dokumentumfeldolgozás vektorkereséssel
-- **Modell routerek**: Intelligens modellválasztás feladat elemzése alapján
-- **API keretrendszerek**: Gyártásra kész kliensek streaminggel és állapotfigyeléssel
-- **Keresztplatform eszközök**: LangChain/Semantic Kernel integrációs minták
+- **Modelválasztók**: Intelligens modellválasztás feladat elemzése alapján  
+- **API-keretrendszerek**: Gyártásra kész kliensek streaminggel és állapotfigyeléssel  
+- **Platformközi eszközök**: LangChain/Semantic Kernel integrációs minták  
 
-### 🏢 Ipari alkalmazások
-**Gyártás** • **Egészségügy** • **Autonóm járművek** • **Okos városok** • **Mobil alkalmazások**
+### 🏢 Ipari alkalmazások  
+**Gyártás** • **Egészségügy** • **Autonóm járművek** • **Okos városok** • **Mobilalkalmazások**  
 
-## Gyors kezdés
+## Gyors kezdés  
 
-**Ajánlott tanulási útvonal** (összesen 20-30 óra):
+**Ajánlott tanulási útvonal** (összesen 20-30 óra):  
 
-0. **📖 Bevezetés** ([Introduction.md](./introduction.md)): EdgeAI alapok + ipari kontextus + tanulási keretrendszer
-1. **📚 Alapok** (01-02 modulok): EdgeAI fogalmak + SLM modellcsaládok
-2. **⚙️ Optimalizálás** (03-04 modulok): Telepítés + kvantálási keretrendszerek  
-3. **🚀 Gyártás** (05-06. modulok): SLMOps + AI ügynökök + funkcióhívás  
-4. **💻 Megvalósítás** (07-08. modulok): Platform minták + Foundry Local eszközkészlet  
+0. **📖 Bevezetés** ([Introduction.md](./introduction.md)): EdgeAI alapok + ipari kontextus + tanulási keretrendszer  
+1. **📚 Alapok** (01-02 modulok): EdgeAI fogalmak + SLM modellcsaládok  
+2. **⚙️ Optimalizálás** (03-04 modulok): Telepítési + kvantálási keretrendszerek  
+3. **🚀 Gyártás** (05-06 modulok): SLMOps + AI ügynökök + funkcióhívás  
+4. **💻 Megvalósítás** (07-08 modulok): Platformminták + Foundry Local eszköztár  
 
-Minden modul tartalmaz elméletet, gyakorlati feladatokat és gyártásra kész kódmintákat.
+Minden modul elméletet, gyakorlati feladatokat és gyártásra kész kódmintákat tartalmaz.  
 
-## Karrierhatás
+## Karrierhatás  
 
 **Technikai szerepkörök**: EdgeAI megoldásépítész • ML mérnök (Edge) • IoT AI fejlesztő • Mobil AI fejlesztő  
 
-**Iparágak**: Gyártás 4.0 • Egészségügyi technológia • Autonóm rendszerek • FinTech • Fogyasztói elektronika  
+**Ipari szektorok**: Gyártás 4.0 • Egészségügyi technológia • Autonóm rendszerek • FinTech • Fogyasztói elektronika  
 
-**Portfólió projektek**: Több ügynökös rendszerek • Gyártásra kész RAG alkalmazások • Keresztplatformos telepítés • Teljesítményoptimalizálás  
+**Portfólióprojektek**: Több ügynökös rendszerek • Gyártásra kész RAG alkalmazások • Platformközi telepítés • Teljesítményoptimalizálás  
 
-## Repository felépítése
+## Repository felépítése  
 
 ```
 edgeai-for-beginners/
@@ -170,22 +187,22 @@ edgeai-for-beginners/
 ```
   
 
-## Kurzus kiemelések
+## Kurzus kiemelések  
 
 ✅ **Fokozatos tanulás**: Elmélet → Gyakorlat → Gyártási telepítés  
 ✅ **Valós esettanulmányok**: Microsoft, Japan Airlines, vállalati megvalósítások  
 ✅ **Gyakorlati minták**: 50+ példa, 10 átfogó Foundry Local demó  
-✅ **Teljesítményközpontúság**: 85%-os sebességnövekedés, 75%-os méretcsökkentés  
+✅ **Teljesítményközpontú**: 85%-os sebességnövekedés, 75%-os méretcsökkentés  
 ✅ **Többplatformos**: Windows, mobil, beágyazott, felhő-edge hibrid  
-✅ **Gyártásra kész**: Felügyelet, skálázás, biztonság, megfelelőségi keretrendszerek  
+✅ **Gyártásra kész**: Monitorozás, skálázás, biztonság, megfelelőségi keretrendszerek  
 
-📖 **[Tanulási útmutató elérhető](STUDY_GUIDE.md)**: Strukturált 20 órás tanulási útvonal időbeosztási útmutatóval és önértékelési eszközökkel.
+📖 **[Tanulási útmutató elérhető](STUDY_GUIDE.md)**: Strukturált 20 órás tanulási útvonal időbeosztási útmutatóval és önértékelési eszközökkel.  
 
----
+---  
 
-**Az EdgeAI az AI telepítés jövőjét képviseli**: helyi elsőbbség, adatvédelem és hatékonyság. Sajátítsd el ezeket a készségeket, hogy megalkosd az intelligens alkalmazások következő generációját.
+**Az EdgeAI az AI telepítés jövőjét képviseli**: helyi elsőbbségű, adatvédelmet biztosító és hatékony. Sajátítsd el ezeket a készségeket, hogy megalkosd az intelligens alkalmazások következő generációját.  
 
-## Egyéb kurzusok
+## Egyéb kurzusok  
 
 Csapatunk más kurzusokat is készít! Nézd meg:  
 
@@ -205,17 +222,17 @@ Csapatunk más kurzusokat is készít! Nézd meg:
 - [GitHub Copilot mesterfokon C#/.NET fejlesztőknek](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
 - [Válaszd ki saját Copilot kalandodat](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
 
-## Segítségkérés
+## Segítség kérése  
 
-Ha elakadnál vagy kérdésed van az AI alkalmazások építésével kapcsolatban, csatlakozz:  
+Ha elakadnál, vagy kérdésed van az AI alkalmazások építésével kapcsolatban, csatlakozz:  
 
 [![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
 
-Ha termék-visszajelzésed van vagy hibát tapasztalsz az építés során, látogass el:  
+Ha termék-visszajelzést szeretnél adni, vagy hibát tapasztalsz az építés során, látogass el:  
 
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
 ---
 
-**Felelősségkizárás**:  
-Ezt a dokumentumot az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével fordították le. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget a fordítás használatából eredő félreértésekért vagy téves értelmezésekért.
+**Felelősség kizárása**:  
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.

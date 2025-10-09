@@ -1,21 +1,45 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "ec4ff1735cf3d48aed41d924c0a0ff29",
-  "translation_date": "2025-10-03T08:20:36+00:00",
+  "original_hash": "135b2658979f1e494bb0ecc6e26d4752",
+  "translation_date": "2025-10-09T20:30:31+00:00",
   "source_file": "AGENTS.md",
   "language_code": "en"
 }
 -->
 # AGENTS.md
 
+> **Developer Guide for Contributing to EdgeAI for Beginners**
+> 
+> This document provides detailed information for developers, AI agents, and contributors working with this repository. It includes setup instructions, development workflows, testing procedures, and best practices.
+> 
+> **Last Updated**: October 2025 | **Document Version**: 2.0
+
+## Table of Contents
+
+- [Project Overview](../..)
+- [Repository Structure](../..)
+- [Prerequisites](../..)
+- [Setup Commands](../..)
+- [Development Workflow](../..)
+- [Testing Instructions](../..)
+- [Code Style Guidelines](../..)
+- [Pull Request Guidelines](../..)
+- [Translation System](../..)
+- [Foundry Local Integration](../..)
+- [Build and Deployment](../..)
+- [Common Issues and Troubleshooting](../..)
+- [Additional Resources](../..)
+- [Project-Specific Notes](../..)
+- [Getting Help](../..)
+
 ## Project Overview
 
-EdgeAI for Beginners is a comprehensive educational repository designed to teach Edge AI development using Small Language Models (SLMs). The course covers the basics of EdgeAI, model deployment, optimization techniques, and production-ready implementations using Microsoft Foundry Local and various AI frameworks.
+EdgeAI for Beginners is an educational repository designed to teach Edge AI development using Small Language Models (SLMs). The course covers EdgeAI basics, model deployment, optimization techniques, and production-ready implementations using Microsoft Foundry Local and various AI frameworks.
 
 **Key Technologies:**
-- Python 3.8+ (main language for AI/ML examples)
-- .NET C# (AI/ML examples)
+- Python 3.8+ (main language for AI/ML samples)
+- .NET C# (AI/ML samples)
 - JavaScript/Node.js with Electron (for desktop applications)
 - Microsoft Foundry Local SDK
 - Microsoft Windows ML 
@@ -44,6 +68,35 @@ edgeai-for-beginners/
 └── imgs/                  # Course images and assets
 ```
 
+## Prerequisites
+
+### Required Tools
+
+- **Python 3.8+** - For AI/ML samples and notebooks
+- **Node.js 16+** - For Electron sample application
+- **Git** - For version control
+- **Microsoft Foundry Local** - For running AI models locally
+
+### Recommended Tools
+
+- **Visual Studio Code** - With Python, Jupyter, and Pylance extensions
+- **Windows Terminal** - For an enhanced command-line experience (Windows users)
+- **Docker** - For containerized development (optional)
+
+### System Requirements
+
+- **RAM**: Minimum 8GB, 16GB+ recommended for multi-model scenarios
+- **Storage**: At least 10GB free space for models and dependencies
+- **OS**: Windows 10/11, macOS 11+, or Linux (Ubuntu 20.04+)
+- **Hardware**: CPU with AVX2 support; GPU (CUDA, Qualcomm NPU) optional but recommended
+
+### Knowledge Prerequisites
+
+- Basic Python programming skills
+- Familiarity with command-line interfaces
+- Understanding of AI/ML concepts (for sample development)
+- Knowledge of Git workflows and pull request processes
+
 ## Setup Commands
 
 ### Repository Setup
@@ -56,7 +109,7 @@ cd edgeai-for-beginners
 # No build step required - this is primarily an educational content repository
 ```
 
-### Python Sample Setup (Module08 and Python examples)
+### Python Sample Setup (Module08 and Python samples)
 
 ```bash
 # Create and activate virtual environment
@@ -66,7 +119,10 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 
-# Install dependencies for Module08 samples
+# Install Foundry Local SDK and dependencies
+pip install foundry-local-sdk openai
+
+# Install additional dependencies for Module08 samples
 cd Module08
 pip install -r requirements.txt
 ```
@@ -89,15 +145,26 @@ npm run dist
 
 ### Foundry Local Setup
 
-Foundry Local is required to run the Module08 examples:
+Foundry Local is required to run the samples. Download and install it from the official repository:
 
+**Installation:**
+- **Windows**: `winget install Microsoft.FoundryLocal`
+- **macOS**: `brew tap microsoft/foundrylocal && brew install foundrylocal`
+- **Manual**: Download from [releases page](https://github.com/microsoft/Foundry-Local/releases)
+
+**Quick Start:**
 ```bash
-# Start Foundry Local service with a model
-foundry model run phi-4-mini
+# Run your first model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-# Verify service is running
-curl http://localhost:8000/health
+# List available models
+foundry model ls
+
+# Check service status
+foundry service status
 ```
+
+**Note**: Foundry Local automatically selects the best model variant for your hardware (CUDA GPU, Qualcomm NPU, or CPU).
 
 ## Development Workflow
 
@@ -105,20 +172,20 @@ curl http://localhost:8000/health
 
 This repository primarily contains **Markdown educational content**. When making changes:
 
-1. Edit `.md` files in the relevant module directories
-2. Follow the existing formatting conventions
+1. Edit `.md` files in the appropriate module directories
+2. Follow the existing formatting patterns
 3. Ensure code examples are accurate and tested
 4. Update corresponding translated content if necessary (or let automation handle it)
 
 ### Sample Application Development
 
-For Python examples (samples 01-07, 09-10):
+For Python samples (samples 01-07, 09-10):
 ```bash
 cd Module08
 python samples/01/chat_quickstart.py "Test message"
 ```
 
-For Electron example (sample 08):
+For Electron sample (sample 08):
 ```bash
 cd Module08/samples/08
 npm run dev  # Development with hot reload
@@ -126,7 +193,7 @@ npm run dev  # Development with hot reload
 
 ### Testing Sample Applications
 
-Python examples do not have automated tests but can be validated by running them:
+Python samples don't have automated tests but can be validated by running them:
 ```bash
 # Test basic chat functionality
 python samples/01/chat_quickstart.py "Hello"
@@ -136,7 +203,7 @@ set MODEL=phi-4-mini
 python samples/02/openai_sdk_client.py
 ```
 
-The Electron example has a test infrastructure:
+Electron sample has test infrastructure:
 ```bash
 cd Module08/samples/08
 npm test           # Run unit tests
@@ -151,7 +218,7 @@ npm run lint       # Check code style
 The repository uses automated translation workflows. No manual testing is required for translations.
 
 **Manual validation for content changes:**
-1. Review Markdown rendering by previewing `.md` files
+1. Preview Markdown rendering by opening `.md` files
 2. Verify all links point to valid targets
 3. Test any code snippets included in the documentation
 4. Ensure images load correctly
@@ -178,7 +245,7 @@ npm run test:e2e
 npm test -- --coverage
 ```
 
-**Python examples should be manually tested:**
+**Python samples should be manually tested:**
 ```bash
 # Each sample can be run directly
 python samples/01/chat_quickstart.py "Test prompt"
@@ -190,7 +257,7 @@ python samples/09/multi_agent_system.py
 
 ### Markdown Content
 
-- Use a consistent heading hierarchy (# for title, ## for main sections, ### for subsections)
+- Use consistent heading hierarchy (# for title, ## for main sections, ### for subsections)
 - Include code blocks with language specifiers: ```python, ```bash, ```javascript
 - Follow existing formatting for tables, lists, and emphasis
 - Keep lines readable (aim for ~80-100 characters, but not strict)
@@ -199,7 +266,7 @@ python samples/09/multi_agent_system.py
 ### Python Code Style
 
 - Follow PEP 8 conventions
-- Use type hints where applicable
+- Use type hints where appropriate
 - Include docstrings for functions and classes
 - Use meaningful variable names
 - Keep functions focused and concise
@@ -222,6 +289,41 @@ npm run format      # Format with Prettier
 
 ## Pull Request Guidelines
 
+### Contribution Workflow
+
+1. **Fork the repository** and create a new branch from `main`
+2. **Make your changes** following the code style guidelines
+3. **Test thoroughly** using the testing instructions above
+4. **Commit with clear messages** following the conventional commits format
+5. **Push to your fork** and create a pull request
+6. **Respond to feedback** from maintainers during review
+
+### Branch Naming Convention
+
+- `feature/<module>-<description>` - For new features or content
+- `fix/<module>-<description>` - For bug fixes
+- `docs/<description>` - For documentation improvements
+- `refactor/<description>` - For code refactoring
+
+### Commit Message Format
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/):
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Examples:**
+```
+feat(Module08): add intent-based routing notebook
+docs(AGENTS): update Foundry Local setup instructions
+fix(samples/08): resolve Electron build issue
+```
+
 ### Title Format
 ```
 [ModuleXX] Brief description of change
@@ -230,6 +332,10 @@ or
 ```
 [Module08/samples/XX] Description for sample changes
 ```
+
+### Code of Conduct
+
+All contributors must follow the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Please review [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing.
 
 ### Before Submitting
 
@@ -259,50 +365,97 @@ npm test
 
 **IMPORTANT:** This repository uses automated translation via GitHub Actions.
 
-- Translations are located in the `/translations/` directory (50+ languages)
+- Translations are stored in the `/translations/` directory (50+ languages)
 - Automated via the `co-op-translator.yml` workflow
 - **DO NOT manually edit translation files** - they will be overwritten
 - Edit only English source files in the root and module directories
-- Translations are automatically generated upon pushing to the `main` branch
+- Translations are automatically generated upon push to the `main` branch
 
 ## Foundry Local Integration
 
-Most Module08 examples require Microsoft Foundry Local to be running:
+Most Module08 samples require Microsoft Foundry Local to be running.
+
+### Installation & Setup
+
+**Install Foundry Local:**
+```bash
+# Windows
+winget install Microsoft.FoundryLocal
+
+# macOS
+brew tap microsoft/foundrylocal
+brew install foundrylocal
+```
+
+**Install Python SDK:**
+```bash
+pip install foundry-local-sdk openai
+```
 
 ### Starting Foundry Local
 ```bash
-# Start Foundry Local 
-foundry service start
+# Start service and run a model (auto-downloads if needed)
+foundry model run phi-3.5-mini
 
-#foundry service host and port are displayed after running this command or `foundry service status`
-
-# Run a specific model
+# Or use model aliases for automatic hardware optimization
 foundry model run phi-4-mini
-
-# Or run with different models
+foundry model run qwen2.5-0.5b
 foundry model run qwen2.5-coder-0.5b
-foundry model run mistral-7b
+
+# Check service status
+foundry service status
+
+# List available models
+foundry model ls
+```
+
+### SDK Usage (Python)
+```python
+from foundry_local import FoundryLocalManager
+import openai
+
+# Use model alias for automatic hardware optimization
+alias = "phi-3.5-mini"
+
+# Create manager (auto-starts service and loads model)
+manager = FoundryLocalManager(alias)
+
+# Configure OpenAI client for local Foundry service
+client = openai.OpenAI(
+    base_url=manager.endpoint,
+    api_key=manager.api_key
+)
+
+# Use the model
+response = client.chat.completions.create(
+    model=manager.get_model_info(alias).id,
+    messages=[{"role": "user", "content": "Hello!"}]
+)
 ```
 
 ### Verifying Foundry Local
 ```bash
-# Check service health
-curl http://127.0.0.1:55769/
+# Service status and endpoint
+foundry service status
 
-# the Port and PID will be displayed when running `foundry service start`
+# List loaded models (REST API)
+curl http://localhost:<port>/v1/models
 
-# List loaded models
-curl http://localhost:55769/v1/models
+# Note: Port is displayed when running 'foundry service status'
 ```
 
 ### Environment Variables for Samples
 
-Most examples use these environment variables:
+Most samples use these environment variables:
 ```bash
-# Foundry Local configuration (defaults work for most cases)
-set BASE_URL=http://localhost:55769
-set MODEL=phi-4-mini
-set API_KEY=
+# Foundry Local configuration
+# Note: The SDK (FoundryLocalManager) automatically detects endpoint
+set MODEL=phi-3.5-mini  # or phi-4-mini, qwen2.5-0.5b, qwen2.5-coder-0.5b
+set API_KEY=            # Not required for local usage
+
+# Manual endpoint (if not using SDK)
+# Port is shown via 'foundry service status'
+set BASE_URL=http://localhost:<port>
 
 # For Azure OpenAI fallback (optional)
 set AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
@@ -310,11 +463,13 @@ set AZURE_OPENAI_API_KEY=your-api-key
 set AZURE_OPENAI_API_VERSION=2024-08-01-preview
 ```
 
+**Note**: When using `FoundryLocalManager`, the SDK automatically handles service discovery and model loading. Model aliases (like `phi-3.5-mini`) ensure the best variant is selected for your hardware.
+
 ## Build and Deployment
 
 ### Content Deployment
 
-This repository primarily contains documentation - no build process is required for content.
+This repository is primarily documentation - no build process is required for content.
 
 ### Sample Application Building
 
@@ -335,24 +490,39 @@ npm run dist
 npm run pack
 ```
 
-**Python Examples:**
-No build process - examples are run directly with the Python interpreter.
+**Python Samples:**
+No build process - samples are run directly with the Python interpreter.
 
 ## Common Issues and Troubleshooting
 
-### Foundry Local Not Running
-**Issue:** Examples fail with connection errors
+> **Tip**: Check [GitHub Issues](https://github.com/microsoft/edgeai-for-beginners/issues) for known problems and solutions.
+
+### Critical Issues (Blocking)
+
+#### Foundry Local Not Running
+**Issue:** Samples fail with connection errors
 
 **Solution:**
 ```bash
-# Start Foundry Local service
-foundry model run phi-4-mini
+# Check if service is running
+foundry service status
 
-# Verify it's running
-curl http://localhost:55769/health
+# Start service with a model
+foundry model run phi-3.5-mini
+
+# Or explicitly start service
+foundry service start
+
+# List loaded models
+foundry model ls
+
+# Verify via REST API (port shown in 'foundry service status')
+curl http://localhost:<port>/v1/models
 ```
 
-### Python Virtual Environment Issues
+### Common Issues (Moderate)
+
+#### Python Virtual Environment Issues
 **Issue:** Module import errors
 
 **Solution:**
@@ -367,7 +537,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Electron Build Issues
+#### Electron Build Issues
 **Issue:** npm install or build failures
 
 **Solution:**
@@ -379,13 +549,29 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Translation Workflow Conflicts
+### Workflow Issues (Minor)
+
+#### Translation Workflow Conflicts
 **Issue:** Translation PR conflicts with your changes
 
 **Solution:**
 - Only edit English source files
 - Let the automated translation workflow handle translations
 - If conflicts occur, merge `main` into your branch after translations are merged
+
+#### Model Download Failures
+**Issue:** Foundry Local fails to download models
+
+**Solution:**
+```bash
+# Check internet connectivity
+# Clear model cache and retry
+foundry model remove <model-alias>
+foundry model run <model-alias>
+
+# Check available disk space (models can be 2-16GB)
+# Verify firewall settings allow downloads
+```
 
 ## Additional Resources
 
@@ -403,10 +589,13 @@ npm install
 - **Module05:** SLMOps - production operations
 - **Module06:** AI agents and function calling
 - **Module07:** Platform-specific implementations
-- **Module08:** Foundry Local toolkit with 10 detailed examples
+- **Module08:** Foundry Local toolkit with 10 comprehensive samples
 
 ### External Dependencies
-- [Microsoft Foundry Local](https://foundry.microsoft.com/) - Local AI model runtime
+- [Microsoft Foundry Local](https://github.com/microsoft/Foundry-Local) - Local AI model runtime with OpenAI-compatible API
+  - [Documentation](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)
+  - [Python SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/python)
+  - [JavaScript SDK](https://github.com/microsoft/Foundry-Local/tree/main/sdk/javascript)
 - [Llama.cpp](https://github.com/ggml-org/llama.cpp) - Optimization framework
 - [Microsoft Olive](https://microsoft.github.io/Olive/) - Model optimization toolkit
 - [OpenVINO](https://docs.openvino.ai/) - Intel's optimization toolkit
@@ -428,25 +617,52 @@ The repository includes 10 detailed sample applications:
 9. **09-Advanced Multi-Agent System** - Complex agent orchestration
 10. **10-Foundry Tools Framework** - LangChain/Semantic Kernel integration
 
-Each example demonstrates different aspects of edge AI development with Foundry Local.
+Each sample highlights different aspects of edge AI development with Foundry Local.
 
 ### Performance Considerations
 
 - SLMs are optimized for edge deployment (2-16GB RAM)
-- Local inference provides 50-500ms response times
-- Quantization techniques achieve 75% size reduction with 85% performance retention
-- Real-time conversation capabilities with local models
+- Local inference delivers response times between 50-500ms  
+- Quantization techniques reduce model size by 75% while retaining 85% of performance  
+- Enables real-time conversations using local models  
 
-### Security and Privacy
+### Security and Privacy  
 
-- All processing happens locally - no data is sent to the cloud
-- Suitable for privacy-sensitive applications (healthcare, finance)
-- Meets data sovereignty requirements
-- Foundry Local runs entirely on local hardware
+- All processing is done locally—no data is sent to the cloud  
+- Ideal for privacy-sensitive applications (e.g., healthcare, finance)  
+- Complies with data sovereignty requirements  
+- Foundry Local operates entirely on local hardware  
+
+## Getting Help  
+
+### Documentation  
+
+- **Main README**: [README.md](README.md) - Overview of the repository and learning paths  
+- **Study Guide**: [STUDY_GUIDE.md](STUDY_GUIDE.md) - Learning resources and suggested timeline  
+- **Support**: [SUPPORT.md](SUPPORT.md) - Guidance on how to seek help  
+- **Security**: [SECURITY.md](SECURITY.md) - Instructions for reporting security issues  
+
+### Community Support  
+
+- **GitHub Issues**: [Report bugs or request features](https://github.com/microsoft/edgeai-for-beginners/issues)  
+- **GitHub Discussions**: [Ask questions and share ideas](https://github.com/microsoft/edgeai-for-beginners/discussions)  
+- **Foundry Local Issues**: [Report technical issues with Foundry Local](https://github.com/microsoft/Foundry-Local/issues)  
+
+### Contact  
+
+- **Maintainers**: Refer to [CODEOWNERS](https://github.com/microsoft/edgeai-for-beginners/blob/main/.github/CODEOWNERS)  
+- **Security Issues**: Follow responsible disclosure guidelines in [SECURITY.md](SECURITY.md)  
+- **Microsoft Support**: For enterprise-level support, contact Microsoft customer service  
+
+### Additional Resources  
+
+- **Microsoft Learn**: [AI and Machine Learning Learning Paths](https://learn.microsoft.com/training/browse/?products=ai-services)  
+- **Foundry Local Documentation**: [Official Documentation](https://github.com/microsoft/Foundry-Local/blob/main/docs/README.md)  
+- **Community Samples**: Explore [GitHub Discussions](https://github.com/microsoft/edgeai-for-beginners/discussions) for community-contributed examples  
 
 ---
 
-**This is an educational repository focused on teaching Edge AI development. The primary contribution pattern involves improving educational content and adding/enhancing sample applications that demonstrate Edge AI concepts.**
+**This repository is designed for educational purposes, focusing on teaching Edge AI development. Contributions primarily involve improving educational content and adding or enhancing sample applications that illustrate Edge AI concepts.**  
 
 ---
 

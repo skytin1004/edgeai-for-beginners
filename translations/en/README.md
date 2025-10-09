@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "dbe223abcd2955df69a08033ff16d389",
-  "translation_date": "2025-10-03T07:34:25+00:00",
+  "original_hash": "8bcf70fe61c9007c880f9753cc9c3e01",
+  "translation_date": "2025-10-09T20:32:13+00:00",
   "source_file": "README.md",
   "language_code": "en"
 }
@@ -26,15 +26,15 @@ Follow these steps to start using these resources:
 
 1. **Fork the Repository**: Click [![GitHub forks](https://img.shields.io/github/forks/microsoft/edgeai-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/edgeai-for-beginners/fork)  
 2. **Clone the Repository**: `git clone https://github.com/microsoft/edgeai-for-beginners.git`  
-3. [**Join The Azure AI Foundry Discord to connect with experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)  
+3. [**Join The Azure AI Foundry Discord and connect with experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
 
 ### 🌐 Multi-Language Support
 
 #### Supported via GitHub Action (Automated & Always Up-to-Date)
 
-[Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)  
+[Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh/README.md) | [Chinese (Traditional, Hong Kong)](../hk/README.md) | [Chinese (Traditional, Macau)](../mo/README.md) | [Chinese (Traditional, Taiwan)](../tw/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Korean](../ko/README.md) | [Malay](../ms/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../br/README.md) | [Portuguese (Portugal)](../pt/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
 
-**If you wish to have additional translations, supported languages are listed [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**  
+**If you wish to have additional translations, supported languages are listed [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 ## Introduction
 
@@ -83,17 +83,17 @@ They enable powerful NLP capabilities while meeting the constraints of:
 
 ## Course Modules & Navigation
 
-| Module | Topic | Focus Area | Key Content | Level | Duration |  
-|--------|-------|------------|-------------|--------|----------|  
-| [📖 00 ](./introduction.md) | [Introduction to EdgeAI](./introduction.md) | Foundation & Context | EdgeAI Overview • Industry Applications • SLM Introduction • Learning Objectives | Beginner | 1-2 hrs |  
-| [📚 01](../../Module01) | [EdgeAI Fundamentals](./Module01/README.md) | Cloud vs Edge AI comparison | EdgeAI Fundamentals • Real World Case Studies • Implementation Guide • Edge Deployment | Beginner | 3-4 hrs |  
-| [🧠 02](../../Module02) | [SLM Model Foundations](./Module02/README.md) | Model families & architecture | Phi Family • Qwen Family • Gemma Family • BitNET • μModel • Phi-Silica | Beginner | 4-5 hrs |  
-| [🚀 03](../../Module03) | [SLM Deployment Practice](./Module03/README.md) | Local & cloud deployment | Advanced Learning • Local Environment • Cloud Deployment | Intermediate | 4-5 hrs |  
-| [⚙️ 04](../../Module04) | [Model Optimization Toolkit](./Module04/README.md) | Cross-platform optimization | Introduction • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow Synthesis | Intermediate | 5-6 hrs |  
-| [🔧 05](../../Module05) | [SLMOps Production](./Module05/README.md) | Production operations | SLMOps Introduction • Model Distillation • Fine-tuning • Production Deployment | Advanced | 5-6 hrs |  
-| [🤖 06](../../Module06) | [AI Agents & Function Calling](./Module06/README.md) | Agent frameworks & MCP | Agent Introduction • Function Calling • Model Context Protocol | Advanced | 4-5 hrs |  
-| [💻 07](../../Module07) | [Platform Implementation](./Module07/README.md) | Cross-platform samples | AI Toolkit • Foundry Local • Windows Development | Advanced | 3-4 hrs |  
-| [🏭 08](../../Module08) | [Foundry Local Toolkit](./Module08/README.md) | Production-ready samples | Sample applications (see details below) | Expert | 8-10 hrs |  
+| Module | Topic | Focus Area | Key Content | Level | Duration |
+|--------|-------|------------|-------------|--------|----------|
+| [📖 00 ](./introduction.md) | [Introduction to EdgeAI](./introduction.md) | Foundation & Context | EdgeAI Overview • Industry Applications • SLM Introduction • Learning Objectives | Beginner | 1-2 hrs |
+| [📚 01](../../Module01) | [EdgeAI Fundamentals](./Module01/README.md) | Cloud vs Edge AI comparison | EdgeAI Fundamentals • Real World Case Studies • Implementation Guide • Edge Deployment | Beginner | 3-4 hrs |
+| [🧠 02](../../Module02) | [SLM Model Foundations](./Module02/README.md) | Model families & architecture | Phi Family • Qwen Family • Gemma Family • BitNET • μModel • Phi-Silica | Beginner | 4-5 hrs |
+| [🚀 03](../../Module03) | [SLM Deployment Practice](./Module03/README.md) | Local & cloud deployment | Advanced Learning • Local Environment • Cloud Deployment | Intermediate | 4-5 hrs |
+| [⚙️ 04](../../Module04) | [Model Optimization Toolkit](./Module04/README.md) | Cross-platform optimization | Introduction • Llama.cpp • Microsoft Olive • OpenVINO • Apple MLX • Workflow Synthesis | Intermediate | 5-6 hrs |
+| [🔧 05](../../Module05) | [SLMOps Production](./Module05/README.md) | Production operations | SLMOps Introduction • Model Distillation • Fine-tuning • Production Deployment | Advanced | 5-6 hrs |
+| [🤖 06](../../Module06) | [AI Agents & Function Calling](./Module06/README.md) | Agent frameworks & MCP | Agent Introduction • Function Calling • Model Context Protocol | Advanced | 4-5 hrs |
+| [💻 07](../../Module07) | [Platform Implementation](./Module07/README.md) | Cross-platform samples | AI Toolkit • Foundry Local • Windows Development | Advanced | 3-4 hrs |
+| [🏭 08](../../Module08) | [Foundry Local Toolkit](./Module08/README.md) | Production-ready samples | Sample applications (see details below) | Expert | 8-10 hrs |
 
 ### 🏭 **Module 08: Sample Applications**
 
@@ -107,6 +107,23 @@ They enable powerful NLP capabilities while meeting the constraints of:
 - [08: Windows 11 Chat App](./Module08/samples/08/README.md)  
 - [09: Advanced Multi-Agent System](./Module08/samples/09/README.md)  
 - [10: Foundry Tools Framework](./Module08/samples/10/README.md)  
+
+### 🎓 **Workshop: Hands-On Learning Path**
+
+Comprehensive hands-on workshop materials with production-ready implementations:
+
+- **[Workshop Guide](./Workshop/Readme.md)** - Complete learning objectives, outcomes, and resource navigation  
+- **Python Samples** (6 sessions) - Updated with best practices, error handling, and comprehensive documentation  
+- **Jupyter Notebooks** (8 interactive) - Step-by-step tutorials with benchmarks and performance monitoring  
+- **Session Guides** - Detailed markdown guides for each workshop session  
+- **Validation Tools** - Scripts to verify code quality and run smoke tests  
+
+**What You'll Build:**  
+- Local AI chat applications with streaming support  
+- RAG pipelines with quality evaluation (RAGAS)  
+- Multi-model benchmarking and comparison tools  
+- Multi-agent orchestration systems  
+- Intelligent model routing with task-based selection  
 
 ### 📊 **Learning Path Summary**
 - **Total Duration**: 36-45 hours  
@@ -127,18 +144,18 @@ They enable powerful NLP capabilities while meeting the constraints of:
 - **Foundry Local Chat Apps**: Windows 11 native application with model switching  
 - **Multi-Agent Systems**: Coordinator with specialist agents for complex workflows  
 - **RAG Applications**: Local document processing with vector search  
-- **Model Routers**: Intelligent selection between models based on task analysis  
-- **API Frameworks**: Production-ready clients with streaming and health monitoring  
-- **Cross-Platform Tools**: LangChain/Semantic Kernel integration patterns  
+- **Model Routers**: Smart selection between models based on task analysis  
+- **API Frameworks**: Production-ready clients with streaming capabilities and health monitoring  
+- **Cross-Platform Tools**: Integration patterns for LangChain/Semantic Kernel  
 
-### 🏢 Industry Applications
+### 🏢 Industry Applications  
 **Manufacturing** • **Healthcare** • **Autonomous Vehicles** • **Smart Cities** • **Mobile Apps**  
 
-## Quick Start
+## Quick Start  
 
 **Recommended Learning Path** (20-30 hours total):  
 
-0. **📖 Introduction** ([Introduction.md](./introduction.md)): EdgeAI foundation + industry context + learning framework  
+0. **📖 Introduction** ([Introduction.md](./introduction.md)): EdgeAI fundamentals + industry context + learning framework  
 1. **📚 Foundation** (Modules 01-02): EdgeAI concepts + SLM model families  
 2. **⚙️ Optimization** (Modules 03-04): Deployment + quantization frameworks  
 3. **🚀 Production** (Modules 05-06): SLMOps + AI agents + function calling  
@@ -187,7 +204,7 @@ edgeai-for-beginners/
 
 ## Other Courses  
 
-Our team produces other courses! Check out:  
+Our team offers additional courses! Check out:  
 
 - [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)  
 - [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
@@ -207,15 +224,15 @@ Our team produces other courses! Check out:
 
 ## Getting Help  
 
-If you get stuck or have any questions about building AI apps, join:  
+If you encounter issues or have questions about building AI apps, join:  
 
 [![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)  
 
-If you have product feedback or errors while building visit:  
+For product feedback or troubleshooting errors, visit:  
 
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)  
 
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
