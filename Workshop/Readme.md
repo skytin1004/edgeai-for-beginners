@@ -179,6 +179,42 @@ foundry --version
 foundry service status
 ```
 
+**Ensure Azure AI Foundry Local is running with a fixed port**
+
+```bash
+# Set FoundryLocal to use port 58123 (default)
+foundry service set --port 58123 --show
+
+# Or use a different port
+foundry service set --port 58000 --show
+```
+
+**Verify it's working:**
+```bash
+# Check service status
+foundry service status
+
+# Test the endpoint
+curl http://127.0.0.1:58123/v1/models
+```
+**Finding Available Models**
+To see which models are available in your Foundry Local instance, you can query the models endpoint:
+
+```bash
+# cmd/bash/powershell
+foundry model list
+```
+
+Using Web Endpoint 
+
+```bash
+# Windows PowerShell
+powershell -Command "Invoke-RestMethod -Uri 'http://127.0.0.1:58123/v1/models' -Method Get"
+
+# Or using curl (if available)
+curl http://127.0.0.1:58123/v1/models
+```
+
 #### 2. Clone Repository & Install Dependencies
 
 ```bash
