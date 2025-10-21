@@ -247,6 +247,22 @@ We recommend starting with models hosted by GitHub for the most streamlined expe
 3. Prepare deployment packages for edge devices
 4. Configure monitoring and evaluation metrics
 
+## Samples for AI Toolkit 
+
+Try Our Samples
+The [AI Toolkit samples](https://github.com/Azure-Samples/AI_Toolkit_Samples) are designed to help developers and researchers explore and implement AI solutions effectively. 
+
+Our samples include:
+
+Sample Code: Pre-built examples to demonstrate AI functionalities, such as training, deploying, or integrating models into applications.
+Documentation: Guides and tutorials to help users understand AI Toolkit features and how to use them.
+Prequisites
+
+- Visual Studio Code
+- AI Toolkit for Visual Studio Code
+- GitHub Fine-grained personal access token (PAT)
+- Foundry Local
+
 ## Best Practices for Edge AI Development
 
 ### Model Selection
