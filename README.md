@@ -200,21 +200,38 @@ edgeai-for-beginners/
 
 Our team produces other courses! Check out:
 
-- [MCP for Beginners](https://github.com/microsoft/mcp-for-beginners)
-- [AI Agents For Beginners](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners using JavaScript](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+## Azure / Edge / MCP / Agents
+[![AZD for Beginners](https://img.shields.io/badge/AZD%20for%20Beginners-1E40AF?style=for-the-badge&labelColor=E5E7EB&color=1E40AF)](https://github.com/microsoft/AZD-for-beginners)
+[![Edge AI for Beginners](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-2563EB?style=for-the-badge&labelColor=E5E7EB&color=2563EB)](https://github.com/microsoft/edgeai-for-beginners)
+[![MCP for Beginners](https://img.shields.io/badge/MCP%20for%20Beginners-3B82F6?style=for-the-badge&labelColor=E5E7EB&color=3B82F6)](https://github.com/microsoft/mcp-for-beginners)
+[![AI Agents for Beginners](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-60A5FA?style=for-the-badge&labelColor=E5E7EB&color=60A5FA)](https://github.com/microsoft/ai-agents-for-beginners)
+
+---
+
+## Generative AI Series
+[![Generative AI for Beginners](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-7C3AED?style=for-the-badge&labelColor=E5E7EB&color=7C3AED)](https://github.com/microsoft/generative-ai-for-beginners)
+[![Generative AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
+[![Generative AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-A78BFA?style=for-the-badge&labelColor=E5E7EB&color=A78BFA)](https://github.com/microsoft/generative-ai-for-beginners-java)
+[![Generative AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-C4B5FD?style=for-the-badge&labelColor=E5E7EB&color=C4B5FD)](https://github.com/microsoft/generative-ai-with-javascript)
+
+---
+
+## Core Learning
+[![ML for Beginners](https://img.shields.io/badge/ML%20for%20Beginners-0E7490?style=for-the-badge&labelColor=E5E7EB&color=0E7490)](https://aka.ms/ml-beginners)
+[![Data Science for Beginners](https://img.shields.io/badge/Data%20Science%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/datascience-beginners)
+[![AI for Beginners](https://img.shields.io/badge/AI%20for%20Beginners-2DD4BF?style=for-the-badge&labelColor=E5E7EB&color=2DD4BF)](https://aka.ms/ai-beginners)
+[![Cybersecurity for Beginners](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-0D9488?style=for-the-badge&labelColor=E5E7EB&color=0D9488)](https://github.com/microsoft/Security-101)
+[![Web Dev for Beginners](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/webdev-beginners)
+[![IoT for Beginners](https://img.shields.io/badge/IoT%20for%20Beginners-2DD4BF?style=for-the-badge&labelColor=E5E7EB&color=2DD4BF)](https://aka.ms/iot-beginners)
+[![XR Development for Beginners](https://img.shields.io/badge/XR%20Development%20for%20Beginners-5EEAD4?style=for-the-badge&labelColor=E5E7EB&color=5EEAD4)](https://github.com/microsoft/xr-development-for-beginners)
+
+---
+
+## Copilot Series
+[![Copilot for AI Paired Programming](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-059669?style=for-the-badge&labelColor=E5E7EB&color=059669)](https://aka.ms/GitHubCopilotAI)
+[![Copilot for C#/.NET](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-10B981?style=for-the-badge&labelColor=E5E7EB&color=10B981)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
+[![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-34D399?style=for-the-badge&labelColor=E5E7EB&color=34D399)](https://github.com/microsoft/CopilotAdventures)
+
 
 ## Getting Help
 
