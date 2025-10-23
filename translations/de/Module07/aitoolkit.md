@@ -1,63 +1,63 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
-  "translation_date": "2025-10-02T10:56:51+00:00",
+  "original_hash": "efb0e70d6e87d0795f4d381c3bc99074",
+  "translation_date": "2025-10-21T06:48:22+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "de"
 }
 -->
-# AI-Toolkit für Visual Studio Code - Leitfaden zur Edge-AI-Entwicklung
+# AI Toolkit für Visual Studio Code - Leitfaden zur Edge-AI-Entwicklung
 
 ## Einführung
 
-Willkommen beim umfassenden Leitfaden zur Nutzung des AI-Toolkits für Visual Studio Code in der Edge-AI-Entwicklung. Während künstliche Intelligenz von zentralisiertem Cloud-Computing zu verteilten Edge-Geräten übergeht, benötigen Entwickler leistungsstarke, integrierte Tools, die die einzigartigen Herausforderungen der Edge-Bereitstellung bewältigen können – von Ressourcenbeschränkungen bis hin zu Anforderungen an den Offline-Betrieb.
+Willkommen beim umfassenden Leitfaden zur Nutzung des AI Toolkit für Visual Studio Code in der Edge-AI-Entwicklung. Während künstliche Intelligenz von zentralisiertem Cloud-Computing zu verteilten Edge-Geräten übergeht, benötigen Entwickler leistungsstarke, integrierte Tools, die die einzigartigen Herausforderungen der Edge-Bereitstellung bewältigen können – von Ressourcenbeschränkungen bis hin zu Anforderungen an den Offline-Betrieb.
 
-Das AI-Toolkit für Visual Studio Code schließt diese Lücke, indem es eine vollständige Entwicklungsumgebung bietet, die speziell für die Erstellung, das Testen und die Optimierung von KI-Anwendungen entwickelt wurde, die effizient auf Edge-Geräten laufen. Egal, ob Sie für IoT-Sensoren, mobile Geräte, eingebettete Systeme oder Edge-Server entwickeln, dieses Toolkit vereinfacht Ihren gesamten Entwicklungsworkflow innerhalb der vertrauten VS-Code-Umgebung.
+Das AI Toolkit für Visual Studio Code schließt diese Lücke, indem es eine vollständige Entwicklungsumgebung bietet, die speziell für die Erstellung, das Testen und die Optimierung von KI-Anwendungen entwickelt wurde, die effizient auf Edge-Geräten laufen. Egal, ob Sie für IoT-Sensoren, mobile Geräte, eingebettete Systeme oder Edge-Server entwickeln, dieses Toolkit vereinfacht Ihren gesamten Entwicklungsworkflow innerhalb der vertrauten VS Code-Umgebung.
 
-Dieser Leitfaden führt Sie durch die wesentlichen Konzepte, Tools und Best Practices, um das AI-Toolkit in Ihren Edge-AI-Projekten optimal zu nutzen – von der anfänglichen Modellauswahl bis hin zur Produktionsbereitstellung.
+Dieser Leitfaden führt Sie durch die wesentlichen Konzepte, Tools und Best Practices, um das AI Toolkit in Ihren Edge-AI-Projekten optimal zu nutzen – von der Auswahl des Modells bis hin zur Produktionsbereitstellung.
 
 ## Überblick
 
-Das AI-Toolkit für Visual Studio Code ist eine leistungsstarke Erweiterung, die die Entwicklung von Agenten und die Erstellung von KI-Anwendungen vereinfacht. Das Toolkit bietet umfassende Funktionen zur Erkundung, Bewertung und Bereitstellung von KI-Modellen einer Vielzahl von Anbietern – darunter Anthropic, OpenAI, GitHub und Google – und unterstützt die lokale Modellausführung mit ONNX und Ollama.
+Das AI Toolkit für Visual Studio Code ist eine leistungsstarke Erweiterung, die die Entwicklung von Agenten und die Erstellung von KI-Anwendungen vereinfacht. Das Toolkit bietet umfassende Funktionen zur Erkundung, Bewertung und Bereitstellung von KI-Modellen von einer Vielzahl von Anbietern – darunter Anthropic, OpenAI, GitHub und Google – und unterstützt die lokale Modellausführung mit ONNX und Ollama.
 
-Was das AI-Toolkit auszeichnet, ist sein ganzheitlicher Ansatz für den gesamten KI-Entwicklungszyklus. Im Gegensatz zu traditionellen KI-Entwicklungstools, die sich auf einzelne Aspekte konzentrieren, bietet das AI-Toolkit eine integrierte Umgebung, die Modellentdeckung, Experimentierung, Agentenentwicklung, Bewertung und Bereitstellung abdeckt – alles innerhalb der vertrauten VS-Code-Umgebung.
+Was das AI Toolkit auszeichnet, ist sein ganzheitlicher Ansatz für den gesamten KI-Entwicklungszyklus. Im Gegensatz zu traditionellen KI-Entwicklungstools, die sich auf einzelne Aspekte konzentrieren, bietet das AI Toolkit eine integrierte Umgebung, die Modellentdeckung, Experimentierung, Agentenentwicklung, Bewertung und Bereitstellung abdeckt – alles innerhalb der vertrauten VS Code-Umgebung.
 
-Die Plattform ist speziell für schnelles Prototyping und Produktionsbereitstellung konzipiert, mit Funktionen wie Prompt-Generierung, Schnellstartvorlagen, nahtlosen MCP-Tool-Integrationen (Model Context Protocol) und umfangreichen Bewertungsmöglichkeiten. Für die Edge-AI-Entwicklung bedeutet dies, dass Sie KI-Anwendungen für Edge-Bereitstellungsszenarien effizient entwickeln, testen und optimieren können, während Sie den vollständigen Entwicklungsworkflow in VS Code beibehalten.
+Die Plattform ist speziell für schnelles Prototyping und Produktionsbereitstellung konzipiert, mit Funktionen wie Prompt-Generierung, Schnellstart, nahtlose MCP (Model Context Protocol)-Tool-Integrationen und umfangreiche Bewertungsmöglichkeiten. Für die Edge-AI-Entwicklung bedeutet dies, dass Sie KI-Anwendungen für Edge-Bereitstellungsszenarien effizient entwickeln, testen und optimieren können, während Sie den vollständigen Entwicklungsworkflow in VS Code beibehalten.
 
 ## Lernziele
 
 Am Ende dieses Leitfadens werden Sie in der Lage sein:
 
 ### Kernkompetenzen
-- **Installieren und konfigurieren** des AI-Toolkits für Visual Studio Code für Edge-AI-Entwicklungsworkflows
-- **Navigieren und nutzen** der AI-Toolkit-Oberfläche, einschließlich Model Catalog, Playground und Agent Builder
+- **Installieren und konfigurieren** des AI Toolkit für Visual Studio Code für Edge-AI-Entwicklungsworkflows
+- **Navigieren und nutzen** der AI Toolkit-Oberfläche, einschließlich Model Catalog, Playground und Agent Builder
 - **Auswählen und bewerten** von KI-Modellen, die für Edge-Bereitstellungen geeignet sind, basierend auf Leistung und Ressourcenbeschränkungen
 - **Konvertieren und optimieren** von Modellen mit ONNX-Format und Quantisierungstechniken für Edge-Geräte
 
 ### Fähigkeiten in der Edge-AI-Entwicklung
 - **Entwerfen und implementieren** von Edge-AI-Anwendungen mit der integrierten Entwicklungsumgebung
-- **Modelltests durchführen** unter Edge-ähnlichen Bedingungen mit lokaler Inferenz und Ressourcenüberwachung
+- **Modelltests durchführen** unter edge-ähnlichen Bedingungen mit lokaler Inferenz und Ressourcenüberwachung
 - **Erstellen und anpassen** von KI-Agenten, die für Edge-Bereitstellungsszenarien optimiert sind
 - **Bewerten der Modellleistung** anhand von Metriken, die für Edge-Computing relevant sind (Latenz, Speicherverbrauch, Genauigkeit)
 
 ### Optimierung und Bereitstellung
-- **Quantisierungs- und Pruning-Techniken anwenden**, um die Modellgröße zu reduzieren und gleichzeitig akzeptable Leistung zu gewährleisten
+- **Quantisierung und Pruning anwenden**, um die Modellgröße zu reduzieren und gleichzeitig akzeptable Leistung beizubehalten
 - **Modelle optimieren** für spezifische Edge-Hardwareplattformen, einschließlich CPU-, GPU- und NPU-Beschleunigung
 - **Best Practices implementieren** für die Edge-AI-Entwicklung, einschließlich Ressourcenmanagement und Fallback-Strategien
 - **Modelle und Anwendungen vorbereiten** für die Produktionsbereitstellung auf Edge-Geräten
 
 ### Fortgeschrittene Edge-AI-Konzepte
 - **Integration mit Edge-AI-Frameworks** wie ONNX Runtime, Windows ML und TensorFlow Lite
-- **Implementierung von Multi-Modell-Architekturen** und föderierten Lern-Szenarien für Edge-Umgebungen
-- **Fehlerbehebung bei häufigen Edge-AI-Problemen**, einschließlich Speicherbeschränkungen, Inferenzgeschwindigkeit und Hardwarekompatibilität
-- **Entwicklung von Überwachungs- und Protokollierungsstrategien** für Edge-AI-Anwendungen in der Produktion
+- **Multi-Modell-Architekturen und föderierte Lern-Szenarien** für Edge-Umgebungen implementieren
+- **Häufige Edge-AI-Probleme beheben**, einschließlich Speicherbeschränkungen, Inferenzgeschwindigkeit und Hardwarekompatibilität
+- **Überwachungs- und Protokollierungsstrategien entwerfen** für Edge-AI-Anwendungen in der Produktion
 
 ### Praktische Anwendung
-- **End-to-End-Edge-AI-Lösungen erstellen**, von der Modellauswahl bis zur Bereitstellung
+- **End-to-End-Edge-AI-Lösungen erstellen** von der Modellauswahl bis zur Bereitstellung
 - **Kompetenz demonstrieren** in edge-spezifischen Entwicklungsworkflows und Optimierungstechniken
-- **Erlernte Konzepte anwenden** auf reale Edge-AI-Anwendungsfälle, einschließlich IoT-, Mobil- und eingebetteter Anwendungen
-- **Vergleichen und bewerten** verschiedener Edge-AI-Bereitstellungsstrategien und deren Kompromisse
+- **Erlernte Konzepte anwenden** auf reale Edge-AI-Anwendungsfälle, einschließlich IoT, mobiler und eingebetteter Anwendungen
+- **Unterschiedliche Edge-AI-Bereitstellungsstrategien bewerten und vergleichen** sowie deren Kompromisse analysieren
 
 ## Hauptfunktionen für die Edge-AI-Entwicklung
 
@@ -65,7 +65,7 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 - **Unterstützung mehrerer Anbieter**: Durchsuchen und greifen Sie auf KI-Modelle von Anthropic, OpenAI, GitHub, Google und anderen Anbietern zu
 - **Integration lokaler Modelle**: Vereinfachte Entdeckung von ONNX- und Ollama-Modellen für Edge-Bereitstellungen
 - **GitHub-Modelle**: Direkte Integration mit GitHubs Modell-Hosting für einen optimierten Zugriff
-- **Modellvergleich**: Vergleichen Sie Modelle nebeneinander, um das optimale Gleichgewicht für Edge-Geräte zu finden
+- **Modellvergleich**: Vergleichen Sie Modelle nebeneinander, um ein optimales Gleichgewicht für Edge-Geräte zu finden
 
 ### 2. Interaktiver Playground
 - **Interaktive Testumgebung**: Schnelle Experimente mit Modellfähigkeiten in einer kontrollierten Umgebung
@@ -100,12 +100,12 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 
 ### 7. MCP-Tool-Integration
 - **Externe Tool-Konnektivität**: Agenten mit externen Tools über Model Context Protocol-Server verbinden
-- **Reale Aktionen**: Agenten ermöglichen, Datenbanken abzufragen, APIs zu nutzen oder benutzerdefinierte Logik auszuführen
-- **Bestehende MCP-Server**: Tools aus Kommandozeilen- (stdio) oder HTTP-Protokollen (server-sent event) verwenden
+- **Aktionen in der realen Welt**: Agenten ermöglichen, Datenbanken abzufragen, APIs zu nutzen oder benutzerdefinierte Logik auszuführen
+- **Bestehende MCP-Server**: Tools aus Kommandozeilen- (stdio) oder HTTP- (server-sent event) Protokollen verwenden
 - **Benutzerdefinierte MCP-Entwicklung**: Neue MCP-Server erstellen und mit Tests im Agent Builder testen
 
 ### 8. Agentenentwicklung und -tests
-- **Unterstützung für Funktionsaufrufe**: Agenten ermöglichen, externe Funktionen dynamisch aufzurufen
+- **Funktionsaufruf-Unterstützung**: Agenten ermöglichen, externe Funktionen dynamisch aufzurufen
 - **Echtzeit-Integrationstests**: Integrationen mit Echtzeitläufen und Tool-Nutzung testen
 - **Agenten-Versionierung**: Versionskontrolle für Agenten mit Vergleichsmöglichkeiten für Bewertungsergebnisse
 - **Debugging und Tracing**: Lokale Tracing- und Debugging-Funktionen für die Agentenentwicklung
@@ -121,7 +121,7 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 ### Phase 2: Modelloptimierung
 1. **In ONNX konvertieren**: Ausgewählte Modelle in das ONNX-Format für Edge-Kompatibilität konvertieren
 2. **Quantisierung anwenden**: Modellgröße durch INT8- oder INT4-Quantisierung reduzieren
-3. **Hardware-Optimierung**: Für Ziel-Edge-Hardware (ARM, x86, spezialisierte Beschleuniger) optimieren
+3. **Hardware-Optimierung**: Optimierung für Ziel-Edge-Hardware (ARM, x86, spezialisierte Beschleuniger)
 4. **Leistungsvalidierung**: Validieren, dass optimierte Modelle akzeptable Genauigkeit beibehalten
 
 ### Phase 3: Anwendungsentwicklung
@@ -140,7 +140,7 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 1. **Endgültige Optimierung**: Letzte Optimierungen basierend auf Testergebnissen anwenden
 2. **Bereitstellungspaketierung**: Modelle und Code für Edge-Bereitstellungen paketieren
 3. **Dokumentation**: Bereitstellungsanforderungen und Konfiguration dokumentieren
-4. **Überwachungssetup**: Überwachung und Protokollierung für Edge-Bereitstellungen vorbereiten
+4. **Überwachungs-Setup**: Überwachung und Protokollierung für Edge-Bereitstellungen vorbereiten
 
 ## Zielgruppe für die Edge-AI-Entwicklung
 
@@ -150,14 +150,14 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 - Mobile Entwickler, die KI-Anwendungen für Smartphones und Tablets erstellen
 
 ### Edge-AI-Ingenieure
-- KI-Ingenieure, die Modelle für Edge-Bereitstellungen optimieren und Inferenzpipelines verwalten
+- KI-Ingenieure, die Modelle für Edge-Bereitstellungen optimieren und Inferenz-Pipelines verwalten
 - DevOps-Ingenieure, die KI-Modelle über verteilte Edge-Infrastrukturen bereitstellen und verwalten
 - Performance-Ingenieure, die KI-Workloads für Edge-Hardware-Beschränkungen optimieren
 
 ### Forscher und Pädagogen
 - KI-Forscher, die effiziente Modelle und Algorithmen für Edge-Computing entwickeln
 - Pädagogen, die Edge-AI-Konzepte lehren und Optimierungstechniken demonstrieren
-- Studenten, die die Herausforderungen und Lösungen bei der Edge-AI-Bereitstellung lernen
+- Studenten, die die Herausforderungen und Lösungen bei der Edge-AI-Bereitstellung kennenlernen
 
 ## Edge-AI-Anwendungsfälle
 
@@ -168,13 +168,13 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 - **Umweltüberwachung**: Sensor-Datenanalysemodelle für Umweltanwendungen bereitstellen
 
 ### Mobile und eingebettete Anwendungen
-- **Übersetzung auf dem Gerät**: Sprachübersetzungsmodelle implementieren, die offline arbeiten
+- **Übersetzung auf dem Gerät**: Sprachübersetzungsmodelle implementieren, die offline funktionieren
 - **Erweiterte Realität**: Echtzeit-Objekterkennung und -verfolgung für AR-Anwendungen bereitstellen
 - **Gesundheitsüberwachung**: Gesundheitsanalysemodelle auf Wearables und medizinischen Geräten ausführen
 - **Autonome Systeme**: Entscheidungsmodelle für Drohnen, Roboter und Fahrzeuge implementieren
 
 ### Edge-Computing-Infrastruktur
-- **Edge-Datenzentren**: KI-Modelle in Edge-Datenzentren für Anwendungen mit geringer Latenz bereitstellen
+- **Edge-Datenzentren**: KI-Modelle in Edge-Datenzentren für Anwendungen mit niedriger Latenz bereitstellen
 - **CDN-Integration**: KI-Verarbeitungsfunktionen in Content-Delivery-Netzwerke integrieren
 - **5G-Edge**: 5G-Edge-Computing für KI-gestützte Anwendungen nutzen
 - **Fog-Computing**: KI-Verarbeitung in Fog-Computing-Umgebungen implementieren
@@ -182,14 +182,14 @@ Am Ende dieses Leitfadens werden Sie in der Lage sein:
 ## Installation und Einrichtung
 
 ### Erweiterungsinstallation
-Installieren Sie die AI-Toolkit-Erweiterung direkt aus dem Visual Studio Code Marketplace:
+Installieren Sie die AI Toolkit-Erweiterung direkt aus dem Visual Studio Code Marketplace:
 
 **Erweiterungs-ID**: `ms-windows-ai-studio.windows-ai-studio`
 
 **Installationsmethoden**:
 1. **VS Code Marketplace**: Suchen Sie im Erweiterungsbereich nach "AI Toolkit"
 2. **Befehlszeile**: `code --install-extension ms-windows-ai-studio.windows-ai-studio`
-3. **Direkte Installation**: Herunterladen vom [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+3. **Direkte Installation**: Herunterladen von [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 ### Voraussetzungen für die Edge-AI-Entwicklung
 - **Visual Studio Code**: Neueste Version empfohlen
@@ -199,27 +199,27 @@ Installieren Sie die AI-Toolkit-Erweiterung direkt aus dem Visual Studio Code Ma
 - **Hardware-Beschleunigungstools**: CUDA, OpenVINO oder plattformspezifische Beschleuniger
 
 ### Erstanpassung
-1. **Erweiterungsaktivierung**: Öffnen Sie VS Code und überprüfen Sie, ob das AI-Toolkit in der Aktivitätsleiste erscheint
+1. **Erweiterungsaktivierung**: Öffnen Sie VS Code und überprüfen Sie, ob das AI Toolkit in der Aktivitätsleiste erscheint
 2. **Modellanbieter-Einrichtung**: Zugriff auf GitHub, OpenAI, Anthropic oder andere Modellanbieter konfigurieren
 3. **Lokale Umgebung**: Python-Umgebung einrichten und erforderliche Pakete installieren
 4. **Hardware-Beschleunigung**: GPU/NPU-Beschleunigung konfigurieren, falls verfügbar
 5. **MCP-Integration**: Model Context Protocol-Server einrichten, falls erforderlich
 
-### Ersteinrichtungs-Checkliste
-- [ ] AI-Toolkit-Erweiterung installiert und aktiviert
+### Checkliste für die Ersteinrichtung
+- [ ] AI Toolkit-Erweiterung installiert und aktiviert
 - [ ] Modellkatalog zugänglich und Modelle auffindbar
 - [ ] Playground funktionsfähig für Modelltests
 - [ ] Agent Builder zugänglich für Prompt-Entwicklung
 - [ ] Lokale Entwicklungsumgebung konfiguriert
 - [ ] Hardware-Beschleunigung (falls verfügbar) korrekt konfiguriert
 
-## Erste Schritte mit dem AI-Toolkit
+## Erste Schritte mit dem AI Toolkit
 
-### Schnellstartanleitung
+### Schnellstart-Anleitung
 
 Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die Erfahrung zu optimieren:
 
-1. **Installation**: Folgen Sie der [Installationsanleitung](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup), um das AI-Toolkit auf Ihrem Gerät einzurichten
+1. **Installation**: Folgen Sie der [Installationsanleitung](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup), um das AI Toolkit auf Ihrem Gerät einzurichten
 2. **Modellentdeckung**: Wählen Sie im Erweiterungsbaum **CATALOG > Models**, um verfügbare Modelle zu erkunden
 3. **GitHub-Modelle**: Beginnen Sie mit Modellen, die von GitHub gehostet werden, für eine optimale Integration
 4. **Playground-Tests**: Wählen Sie auf einer Modellkarte **Try in Playground**, um mit den Modellfähigkeiten zu experimentieren
@@ -227,10 +227,10 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 ### Schritt-für-Schritt-Anleitung zur Edge-AI-Entwicklung
 
 #### Schritt 1: Modellentdeckung und -auswahl
-1. Öffnen Sie die AI-Toolkit-Ansicht in der VS-Code-Aktivitätsleiste
+1. Öffnen Sie die AI Toolkit-Ansicht in der VS Code-Aktivitätsleiste
 2. Durchsuchen Sie den Modellkatalog nach Modellen, die für Edge-Bereitstellungen geeignet sind
 3. Filtern Sie nach Anbieter (GitHub, ONNX, Ollama) basierend auf Ihren Edge-Anforderungen
-4. Verwenden Sie **Try in Playground**, um die Modellfähigkeiten sofort zu testen
+4. Verwenden Sie **Try in Playground**, um Modellfähigkeiten sofort zu testen
 
 #### Schritt 2: Agentenentwicklung
 1. Verwenden Sie den **Prompt (Agent) Builder**, um Edge-optimierte KI-Agenten zu erstellen
@@ -241,13 +241,13 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 #### Schritt 3: Testen und Evaluieren  
 1. **Bulk Run** verwenden, um mehrere Prompts über ausgewählte Modelle zu testen  
 2. Agenten mit Testfällen ausführen, um die Funktionalität zu validieren  
-3. Genauigkeit und Leistung mit eingebauten oder benutzerdefinierten Metriken bewerten  
+3. Genauigkeit und Leistung mit integrierten oder benutzerdefinierten Metriken bewerten  
 4. Verschiedene Modelle und Konfigurationen vergleichen  
 
 #### Schritt 4: Feinabstimmung und Optimierung  
 1. Modelle für spezifische Edge-Anwendungsfälle anpassen  
 2. Domänenspezifische Feinabstimmung anwenden  
-3. Optimierung für Edge-Einsatzbeschränkungen durchführen  
+3. Optimierung für Einschränkungen bei Edge-Bereitstellungen  
 4. Versionierung und Vergleich verschiedener Agentenkonfigurationen  
 
 #### Schritt 5: Vorbereitung der Bereitstellung  
@@ -256,17 +256,33 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 3. Bereitstellungspakete für Edge-Geräte vorbereiten  
 4. Überwachungs- und Bewertungsmetriken konfigurieren  
 
-## Best Practices für die Entwicklung von Edge-AI  
+## Beispiele für das AI Toolkit  
+
+Probieren Sie unsere Beispiele aus  
+Die [AI Toolkit Beispiele](https://github.com/Azure-Samples/AI_Toolkit_Samples) wurden entwickelt, um Entwicklern und Forschern zu helfen, KI-Lösungen effektiv zu erkunden und umzusetzen.  
+
+Unsere Beispiele umfassen:  
+
+Beispielcode: Vorgefertigte Beispiele, die KI-Funktionen demonstrieren, wie Training, Bereitstellung oder Integration von Modellen in Anwendungen.  
+Dokumentation: Anleitungen und Tutorials, die Benutzern helfen, die Funktionen des AI Toolkits zu verstehen und zu nutzen.  
+Voraussetzungen  
+
+- Visual Studio Code  
+- AI Toolkit für Visual Studio Code  
+- GitHub Fine-grained personal access token (PAT)  
+- Foundry Local  
+
+## Best Practices für die Entwicklung von Edge-KI  
 
 ### Modellauswahl  
-- **Größenbeschränkungen**: Modelle auswählen, die innerhalb der Speichergrenzen der Zielgeräte liegen  
-- **Inference-Geschwindigkeit**: Modelle mit schneller Inferenz für Echtzeitanwendungen priorisieren  
+- **Größenbeschränkungen**: Modelle auswählen, die innerhalb der Speicherbegrenzungen der Zielgeräte passen  
+- **Inference-Geschwindigkeit**: Modelle mit schneller Inferenzzeit für Echtzeitanwendungen priorisieren  
 - **Genauigkeitskompromisse**: Modellgenauigkeit mit Ressourcenbeschränkungen ausbalancieren  
 - **Formatkompatibilität**: ONNX oder hardwareoptimierte Formate für Edge-Bereitstellungen bevorzugen  
 
 ### Optimierungstechniken  
 - **Quantisierung**: INT8- oder INT4-Quantisierung verwenden, um die Modellgröße zu reduzieren und die Geschwindigkeit zu verbessern  
-- **Pruning**: Überflüssige Modellparameter entfernen, um die Rechenanforderungen zu senken  
+- **Pruning**: Unnötige Modellparameter entfernen, um die Rechenanforderungen zu senken  
 - **Knowledge Distillation**: Kleinere Modelle erstellen, die die Leistung größerer Modelle beibehalten  
 - **Hardware-Beschleunigung**: NPUs, GPUs oder spezialisierte Beschleuniger nutzen, wenn verfügbar  
 
@@ -280,15 +296,15 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 - **Ressourcenüberwachung**: Speicher-, CPU- und Stromverbrauch in der Produktion überwachen  
 - **Fallback-Strategien**: Mechanismen für Modellfehler implementieren  
 - **Update-Mechanismen**: Planung für Modellaktualisierungen und Versionsmanagement  
-- **Sicherheit**: Angemessene Sicherheitsmaßnahmen für Edge-AI-Anwendungen implementieren  
+- **Sicherheit**: Angemessene Sicherheitsmaßnahmen für Edge-KI-Anwendungen implementieren  
 
-## Integration mit Edge-AI-Frameworks  
+## Integration mit Edge-KI-Frameworks  
 
 ### ONNX Runtime  
 - **Plattformübergreifende Bereitstellung**: ONNX-Modelle auf verschiedenen Edge-Plattformen bereitstellen  
 - **Hardware-Optimierung**: Hardware-spezifische Optimierungen der ONNX Runtime nutzen  
 - **Mobile Unterstützung**: ONNX Runtime Mobile für Smartphone- und Tablet-Anwendungen verwenden  
-- **IoT-Integration**: Bereitstellung auf IoT-Geräten mit leichten ONNX Runtime-Distributionen  
+- **IoT-Integration**: Leichte Distributionen der ONNX Runtime für IoT-Geräte nutzen  
 
 ### Windows ML  
 - **Windows-Geräte**: Optimierung für Windows-basierte Edge-Geräte und PCs  
@@ -299,16 +315,16 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 ### TensorFlow Lite  
 - **Mobile Optimierung**: TensorFlow Lite-Modelle auf mobilen und eingebetteten Geräten bereitstellen  
 - **Hardware-Delegates**: Spezialisierte Hardware-Delegates für Beschleunigung verwenden  
-- **Mikrocontroller**: Bereitstellung auf Mikrocontrollern mit TensorFlow Lite Micro  
-- **Plattformübergreifende Unterstützung**: Bereitstellung auf Android, iOS und eingebettetem Linux  
+- **Mikrocontroller**: TensorFlow Lite Micro für Mikrocontroller-Bereitstellungen nutzen  
+- **Plattformübergreifende Unterstützung**: Bereitstellung auf Android, iOS und eingebetteten Linux-Systemen  
 
 ### Azure IoT Edge  
 - **Cloud-Edge-Hybrid**: Cloud-Training mit Edge-Inferenz kombinieren  
-- **Modulbereitstellung**: KI-Modelle als IoT-Edge-Module bereitstellen  
+- **Modulbereitstellung**: KI-Modelle als IoT Edge-Module bereitstellen  
 - **Geräteverwaltung**: Edge-Geräte und Modellaktualisierungen aus der Ferne verwalten  
 - **Telemetrie**: Leistungsdaten und Modellmetriken aus Edge-Bereitstellungen sammeln  
 
-## Fortgeschrittene Edge-AI-Szenarien  
+## Fortgeschrittene Edge-KI-Szenarien  
 
 ### Multi-Modell-Bereitstellung  
 - **Modell-Ensembles**: Mehrere Modelle für verbesserte Genauigkeit oder Redundanz bereitstellen  
@@ -318,21 +334,21 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 
 ### Federated Learning  
 - **Verteiltes Training**: Modelle über mehrere Edge-Geräte hinweg trainieren  
-- **Datenschutz**: Trainingsdaten lokal halten und nur Modellverbesserungen teilen  
+- **Datenschutz**: Trainingsdaten lokal halten, während Modellverbesserungen geteilt werden  
 - **Kollaboratives Lernen**: Geräten ermöglichen, aus kollektiven Erfahrungen zu lernen  
 - **Edge-Cloud-Koordination**: Lernen zwischen Edge-Geräten und Cloud-Infrastruktur koordinieren  
 
 ### Echtzeitverarbeitung  
 - **Stream-Verarbeitung**: Kontinuierliche Datenströme auf Edge-Geräten verarbeiten  
-- **Niedrige Latenz**: Optimierung für minimale Inferenzlatenz  
+- **Niedrige Latenz bei Inferenz**: Optimierung für minimale Inferenzlatenz  
 - **Batch-Verarbeitung**: Effiziente Verarbeitung von Datenbatches auf Edge-Geräten  
 - **Adaptive Verarbeitung**: Verarbeitung basierend auf aktuellen Gerätefähigkeiten anpassen  
 
-## Fehlerbehebung bei der Entwicklung von Edge-AI  
+## Fehlerbehebung bei der Entwicklung von Edge-KI  
 
 ### Häufige Probleme  
-- **Speicherbeschränkungen**: Modell zu groß für den Speicher des Zielgeräts  
-- **Inference-Geschwindigkeit**: Modellinferenz zu langsam für Echtzeitanforderungen  
+- **Speicherbeschränkungen**: Modell zu groß für den Gerätespeicher  
+- **Inferenzgeschwindigkeit**: Modellinferenz zu langsam für Echtzeitanforderungen  
 - **Genauigkeitsverlust**: Optimierung reduziert Modellgenauigkeit unakzeptabel  
 - **Hardware-Kompatibilität**: Modell nicht kompatibel mit Zielhardware  
 
@@ -345,8 +361,8 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 ### Optimierungslösungen  
 - **Weitere Quantisierung**: Aggressivere Quantisierungstechniken anwenden  
 - **Modellarchitektur**: Andere Modellarchitekturen in Betracht ziehen, die für Edge optimiert sind  
-- **Preprocessing-Optimierung**: Datenvorverarbeitung für Edge-Beschränkungen optimieren  
-- **Inference-Optimierung**: Hardware-spezifische Inferenzoptimierungen nutzen  
+- **Optimierung der Vorverarbeitung**: Datenvorverarbeitung für Edge-Beschränkungen optimieren  
+- **Inferenzoptimierung**: Hardware-spezifische Inferenzoptimierungen nutzen  
 
 ## Ressourcen und nächste Schritte  
 
@@ -369,33 +385,33 @@ Wir empfehlen, mit Modellen zu beginnen, die von GitHub gehostet werden, um die 
 - [Azure AI Foundry Dokumentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
 
 ### Lernpfade  
-- [Edge AI Grundlagenkurs](../Module01/README.md)  
+- [Edge-KI Grundlagenkurs](../Module01/README.md)  
 - [Leitfaden für kleine Sprachmodelle](../Module02/README.md)  
 - [Strategien für Edge-Bereitstellungen](../Module03/README.md)  
-- [Windows Edge AI Entwicklung](./windowdeveloper.md)  
+- [Windows Edge-KI-Entwicklung](./windowdeveloper.md)  
 
 ### Zusätzliche Ressourcen  
 - **Repository-Statistiken**: 1.8k+ Sterne, 150+ Forks, 18+ Mitwirkende  
 - **Lizenz**: MIT-Lizenz  
 - **Sicherheit**: Microsoft-Sicherheitsrichtlinien gelten  
-- **Telemetrie**: Respektiert VS Code-Telemetrieeinstellungen  
+- **Telemetrie**: Respektiert VS Code Telemetrie-Einstellungen  
 
 ## Fazit  
 
-Das AI Toolkit für Visual Studio Code stellt eine umfassende Plattform für moderne KI-Entwicklung dar und bietet optimierte Agentenentwicklungsfunktionen, die besonders für Edge-AI-Anwendungen wertvoll sind. Mit seinem umfangreichen Modellkatalog, der Anbieter wie Anthropic, OpenAI, GitHub und Google unterstützt, sowie lokaler Ausführung durch ONNX und Ollama bietet das Toolkit die Flexibilität, die für vielfältige Edge-Bereitstellungsszenarien erforderlich ist.
+Das AI Toolkit für Visual Studio Code stellt eine umfassende Plattform für moderne KI-Entwicklung dar und bietet optimierte Agentenentwicklungsfunktionen, die besonders für Edge-KI-Anwendungen wertvoll sind. Mit seinem umfangreichen Modellkatalog, der Anbieter wie Anthropic, OpenAI, GitHub und Google unterstützt, sowie lokaler Ausführung durch ONNX und Ollama bietet das Toolkit die Flexibilität, die für diverse Edge-Bereitstellungsszenarien erforderlich ist.  
 
-Die Stärke des Toolkits liegt in seinem integrierten Ansatz – von der Modellentdeckung und -experimentierung im Playground über die anspruchsvolle Agentenentwicklung mit dem Prompt Builder, umfassende Bewertungsmöglichkeiten bis hin zur nahtlosen Integration von MCP-Tools. Für Edge-AI-Entwickler bedeutet dies schnelles Prototyping und Testen von KI-Agenten vor der Edge-Bereitstellung mit der Möglichkeit, schnell zu iterieren und für ressourcenbeschränkte Umgebungen zu optimieren.
+Die Stärke des Toolkits liegt in seinem integrierten Ansatz – von der Modellentdeckung und -experimentierung im Playground über die anspruchsvolle Agentenentwicklung mit dem Prompt Builder, umfassende Bewertungsmöglichkeiten bis hin zur nahtlosen Integration von MCP-Tools. Für Edge-KI-Entwickler bedeutet dies schnelles Prototyping und Testen von KI-Agenten vor der Edge-Bereitstellung mit der Möglichkeit, schnell zu iterieren und für ressourcenbeschränkte Umgebungen zu optimieren.  
 
-Wesentliche Vorteile für die Edge-AI-Entwicklung umfassen:  
+Wesentliche Vorteile für die Edge-KI-Entwicklung umfassen:  
 - **Schnelle Experimentierung**: Modelle und Agenten schnell testen, bevor sie für die Edge-Bereitstellung festgelegt werden  
 - **Multi-Anbieter-Flexibilität**: Zugriff auf Modelle aus verschiedenen Quellen, um optimale Edge-Lösungen zu finden  
 - **Lokale Entwicklung**: Testen mit ONNX und Ollama für Offline- und datenschutzfreundliche Entwicklung  
 - **Produktionsreife**: Produktionsbereiten Code generieren und mit externen Tools über MCP integrieren  
-- **Umfassende Bewertung**: Eingebaute und benutzerdefinierte Metriken verwenden, um die Leistung von Edge-AI zu validieren  
+- **Umfassende Bewertung**: Eingebaute und benutzerdefinierte Metriken zur Validierung der Edge-KI-Leistung nutzen  
 
-Da KI zunehmend in Edge-Bereitstellungsszenarien eingesetzt wird, bietet das AI Toolkit für VS Code die Entwicklungsumgebung und den Workflow, die erforderlich sind, um intelligente Anwendungen für ressourcenbeschränkte Umgebungen zu erstellen, zu testen und zu optimieren. Egal, ob Sie IoT-Lösungen, mobile KI-Anwendungen oder eingebettete Intelligenzsysteme entwickeln, die umfassenden Funktionen und der integrierte Workflow des Toolkits unterstützen den gesamten Entwicklungszyklus von Edge-AI.
+Da KI zunehmend in Richtung Edge-Bereitstellungsszenarien geht, bietet das AI Toolkit für VS Code die Entwicklungsumgebung und den Workflow, die erforderlich sind, um intelligente Anwendungen für ressourcenbeschränkte Umgebungen zu erstellen, zu testen und zu optimieren. Ob Sie IoT-Lösungen, mobile KI-Anwendungen oder eingebettete Intelligenzsysteme entwickeln, die umfassenden Funktionen und der integrierte Workflow des Toolkits unterstützen den gesamten Entwicklungszyklus für Edge-KI.  
 
-Mit kontinuierlicher Weiterentwicklung und einer aktiven Community (1.8k+ GitHub-Sterne) bleibt das AI Toolkit an der Spitze der KI-Entwicklungstools und entwickelt sich ständig weiter, um die Bedürfnisse moderner KI-Entwickler zu erfüllen, die für Edge-Bereitstellungsszenarien bauen.
+Mit kontinuierlicher Weiterentwicklung und einer aktiven Community (1.8k+ GitHub-Sterne) bleibt das AI Toolkit an der Spitze der KI-Entwicklungstools und entwickelt sich ständig weiter, um die Bedürfnisse moderner KI-Entwickler zu erfüllen, die für Edge-Bereitstellungsszenarien bauen.  
 
 [Next Foundry Local](./foundrylocal.md)  
 

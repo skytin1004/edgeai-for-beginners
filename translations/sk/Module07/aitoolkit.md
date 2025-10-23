@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "65a22ed38b95f334dd8a893bf2c55806",
-  "translation_date": "2025-10-02T14:15:38+00:00",
+  "original_hash": "efb0e70d6e87d0795f4d381c3bc99074",
+  "translation_date": "2025-10-21T07:33:05+00:00",
   "source_file": "Module07/aitoolkit.md",
   "language_code": "sk"
 }
@@ -11,11 +11,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Úvod
 
-Vitajte v komplexnej príručke na používanie AI Toolkit pre Visual Studio Code pri vývoji Edge AI. Ako sa umelá inteligencia presúva z centralizovaného cloudového výpočtového prostredia na distribuované edge zariadenia, vývojári potrebujú výkonné integrované nástroje, ktoré zvládnu jedinečné výzvy nasadenia na edge - od obmedzených zdrojov až po požiadavky na offline prevádzku.
+Vitajte v komplexnej príručke na používanie AI Toolkit pre Visual Studio Code pri vývoji Edge AI. Ako sa umelá inteligencia presúva z centralizovaného cloudového výpočtového prostredia na distribuované edge zariadenia, vývojári potrebujú výkonné, integrované nástroje, ktoré zvládnu jedinečné výzvy nasadenia na edge - od obmedzených zdrojov až po požiadavky na offline prevádzku.
 
-AI Toolkit pre Visual Studio Code prekonáva tento rozdiel tým, že poskytuje kompletné vývojové prostredie špeciálne navrhnuté na vytváranie, testovanie a optimalizáciu AI aplikácií, ktoré efektívne fungujú na edge zariadeniach. Či už vyvíjate pre IoT senzory, mobilné zariadenia, zabudované systémy alebo edge servery, tento nástroj zjednodušuje celý váš vývojový proces v známom prostredí VS Code.
+AI Toolkit pre Visual Studio Code prekonáva túto medzeru tým, že poskytuje kompletné vývojové prostredie špeciálne navrhnuté na vytváranie, testovanie a optimalizáciu AI aplikácií, ktoré efektívne fungujú na edge zariadeniach. Či už vyvíjate pre IoT senzory, mobilné zariadenia, vstavané systémy alebo edge servery, tento nástroj zjednodušuje celý váš vývojový proces v známom prostredí VS Code.
 
-Táto príručka vás prevedie základnými konceptmi, nástrojmi a najlepšími postupmi na využitie AI Toolkit vo vašich Edge AI projektoch, od výberu modelu až po nasadenie do produkcie.
+Táto príručka vás prevedie základnými konceptmi, nástrojmi a najlepšími postupmi pri využívaní AI Toolkit vo vašich Edge AI projektoch, od výberu modelu až po nasadenie do produkcie.
 
 ## Prehľad
 
@@ -29,13 +29,13 @@ Platforma je špeciálne navrhnutá na rýchle prototypovanie a nasadenie do pro
 
 Na konci tejto príručky budete schopní:
 
-### Základné kompetencie
+### Základné zručnosti
 - **Nainštalovať a nakonfigurovať** AI Toolkit pre Visual Studio Code pre pracovné postupy vývoja Edge AI
 - **Navigovať a využívať** rozhranie AI Toolkit, vrátane Model Catalog, Playground a Agent Builder
 - **Vybrať a hodnotiť** AI modely vhodné pre nasadenie na edge na základe výkonu a obmedzení zdrojov
-- **Konvertovať a optimalizovať** modely pomocou formátu ONNX a techník kvantizácie pre edge zariadenia
+- **Konvertovať a optimalizovať** modely pomocou ONNX formátu a techník kvantizácie pre edge zariadenia
 
-### Zručnosti vo vývoji Edge AI
+### Zručnosti vývoja Edge AI
 - **Navrhnúť a implementovať** Edge AI aplikácie pomocou integrovaného vývojového prostredia
 - **Testovať modely** v podmienkach podobných edge pomocou lokálneho inferencovania a monitorovania zdrojov
 - **Vytvárať a prispôsobovať** AI agentov optimalizovaných pre scenáre nasadenia na edge
@@ -54,9 +54,9 @@ Na konci tejto príručky budete schopní:
 - **Navrhnúť stratégie monitorovania a logovania** pre Edge AI aplikácie v produkcii
 
 ### Praktická aplikácia
-- **Vytvoriť kompletné Edge AI riešenia** od výberu modelu až po nasadenie
-- **Preukázať zručnosti** v edge-špecifických vývojových pracovných postupoch a optimalizačných technikách
-- **Aplikovať naučené koncepty** na reálne prípady použitia Edge AI vrátane IoT, mobilných a zabudovaných aplikácií
+- **Vytvoriť kompletné Edge AI riešenia** od výberu modelu po nasadenie
+- **Preukázať zručnosti** v edge-špecifických vývojových pracovných postupoch a technikách optimalizácie
+- **Aplikovať naučené koncepty** na reálne prípady použitia Edge AI vrátane IoT, mobilných a vstavaných aplikácií
 - **Hodnotiť a porovnávať** rôzne stratégie nasadenia Edge AI a ich kompromisy
 
 ## Kľúčové funkcie pre vývoj Edge AI
@@ -86,21 +86,21 @@ Na konci tejto príručky budete schopní:
 - **Vlastné testovacie prípady**: Spúšťajte agentov s testovacími prípadmi na overenie funkčnosti
 - **Porovnanie výkonu**: Porovnávajte výsledky medzi rôznymi modelmi a konfiguráciami
 
-### 5. Hodnotenie modelov pomocou datasetov
-- **Štandardné metriky**: Testujte AI modely pomocou zabudovaných hodnotiacich nástrojov (F1 skóre, relevancia, podobnosť, koherencia)
-- **Vlastné hodnotiace nástroje**: Vytvorte si vlastné metriky hodnotenia pre konkrétne prípady použitia
-- **Integrácia datasetov**: Testujte modely na komplexných datasetoch
+### 5. Hodnotenie modelov pomocou dátových súborov
+- **Štandardné metriky**: Testujte AI modely pomocou vstavaných hodnotiacich nástrojov (F1 skóre, relevancia, podobnosť, koherencia)
+- **Vlastné hodnotiace nástroje**: Vytvorte vlastné hodnotiace metriky pre konkrétne prípady použitia
+- **Integrácia dátových súborov**: Testujte modely na komplexných dátových súboroch
 - **Meranie výkonu**: Kvantifikujte výkon modelov pre rozhodnutia o nasadení na edge
 
 ### 6. Možnosti doladenia
-- **Prispôsobenie modelov**: Prispôsobte modely pre konkrétne prípady použitia a domény
-- **Špecializovaná adaptácia**: Prispôsobte modely špecifickým požiadavkám a doménam
+- **Prispôsobenie modelov**: Prispôsobte modely pre konkrétne prípady použitia a oblasti
+- **Špecializovaná adaptácia**: Prispôsobte modely špecifickým oblastiam a požiadavkám
 - **Optimalizácia pre edge**: Doladte modely špeciálne pre obmedzenia nasadenia na edge
-- **Tréning pre konkrétnu doménu**: Vytvárajte modely prispôsobené konkrétnym edge prípadom použitia
+- **Tréning špecifický pre oblasť**: Vytvárajte modely prispôsobené konkrétnym edge prípadom použitia
 
 ### 7. Integrácia MCP nástrojov
 - **Pripojenie k externým nástrojom**: Pripojte agentov k externým nástrojom prostredníctvom serverov Model Context Protocol
-- **Akcie v reálnom svete**: Umožnite agentom dotazovať databázy, pristupovať k API alebo vykonávať vlastnú logiku
+- **Akcie v reálnom svete**: Umožnite agentom dotazovať sa na databázy, pristupovať k API alebo vykonávať vlastnú logiku
 - **Existujúce MCP servery**: Používajte nástroje z príkazového riadku (stdio) alebo HTTP (server-sent event) protokolov
 - **Vývoj vlastných MCP**: Vytvárajte a testujte nové MCP servery pomocou Agent Builder
 
@@ -108,7 +108,7 @@ Na konci tejto príručky budete schopní:
 - **Podpora volania funkcií**: Umožnite agentom dynamicky vyvolávať externé funkcie
 - **Testovanie integrácie v reálnom čase**: Testujte integrácie s reálnymi spusteniami a používaním nástrojov
 - **Verzovanie agentov**: Kontrola verzií agentov s možnosťou porovnania výsledkov hodnotenia
-- **Lokalizácia chýb a sledovanie**: Lokálne sledovanie a odstraňovanie chýb pri vývoji agentov
+- **Lokalné sledovanie a ladenie**: Možnosti sledovania a ladenia pre vývoj agentov
 
 ## Pracovný postup vývoja Edge AI
 
@@ -119,7 +119,7 @@ Na konci tejto príručky budete schopní:
 4. **Posúďte požiadavky na zdroje**: Určte potreby pamäte a výpočtového výkonu pre cieľové edge zariadenia
 
 ### Fáza 2: Optimalizácia modelov
-1. **Konvertujte na ONNX**: Konvertujte vybrané modely do formátu ONNX pre kompatibilitu s edge
+1. **Konvertujte na ONNX**: Konvertujte vybrané modely na ONNX formát pre kompatibilitu s edge
 2. **Použite kvantizáciu**: Zmenšite veľkosť modelu pomocou kvantizácie INT8 alebo INT4
 3. **Optimalizácia hardvéru**: Optimalizujte pre cieľový edge hardvér (ARM, x86, špecializované akcelerátory)
 4. **Validácia výkonu**: Overte, že optimalizované modely si zachovávajú prijateľnú presnosť
@@ -138,16 +138,16 @@ Na konci tejto príručky budete schopní:
 
 ### Fáza 5: Príprava na nasadenie
 1. **Finálna optimalizácia**: Použite finálne optimalizácie na základe výsledkov testovania
-2. **Balenie na nasadenie**: Zabaľte modely a kód pre nasadenie na edge
+2. **Balenie na nasadenie**: Zabaľte modely a kód na nasadenie na edge
 3. **Dokumentácia**: Dokumentujte požiadavky na nasadenie a konfiguráciu
 4. **Príprava monitorovania**: Pripravte monitorovanie a logovanie pre nasadenie na edge
 
 ## Cieľová skupina pre vývoj Edge AI
 
 ### Vývojári Edge AI
-- Vývojári aplikácií, ktorí vytvárajú AI-poháňané edge zariadenia a IoT riešenia
-- Vývojári zabudovaných systémov, ktorí integrujú AI schopnosti do zariadení s obmedzenými zdrojmi
-- Mobilní vývojári, ktorí vytvárajú AI aplikácie na zariadeniach ako smartfóny a tablety
+- Vývojári aplikácií vytvárajúci AI-poháňané edge zariadenia a IoT riešenia
+- Vývojári vstavaných systémov integrujúci AI schopnosti do zariadení s obmedzenými zdrojmi
+- Mobilní vývojári vytvárajúci AI aplikácie na zariadeniach ako smartfóny a tablety
 
 ### Inžinieri Edge AI
 - AI inžinieri optimalizujúci modely pre nasadenie na edge a spravujúci inferenčné pipeline
@@ -156,8 +156,8 @@ Na konci tejto príručky budete schopní:
 
 ### Výskumníci a pedagógovia
 - AI výskumníci vyvíjajúci efektívne modely a algoritmy pre edge výpočty
-- Pedagógovia vyučujúci koncepty Edge AI a demonštrujúci optimalizačné techniky
-- Študenti, ktorí sa učia o výzvach a riešeniach pri nasadení Edge AI
+- Pedagógovia vyučujúci koncepty Edge AI a demonštrujúci techniky optimalizácie
+- Študenti učia sa o výzvach a riešeniach pri nasadení Edge AI
 
 ## Prípady použitia Edge AI
 
@@ -167,17 +167,17 @@ Na konci tejto príručky budete schopní:
 - **Prediktívna údržba**: Spúšťanie modelov detekcie anomálií na priemyselných edge zariadeniach
 - **Monitorovanie prostredia**: Nasadenie modelov analýzy senzorových dát pre environmentálne aplikácie
 
-### Mobilné a zabudované aplikácie
+### Mobilné a vstavané aplikácie
 - **Preklad na zariadení**: Implementácia modelov prekladu jazyka, ktoré fungujú offline
-- **Rozšírená realita**: Nasadenie modelov rozpoznávania objektov a sledovania v reálnom čase pre AR aplikácie
-- **Monitorovanie zdravia**: Spúšťanie modelov analýzy zdravia na nositeľných zariadeniach a medicínskom vybavení
+- **Rozšírená realita**: Nasadenie rozpoznávania objektov v reálnom čase a sledovania pre AR aplikácie
+- **Monitorovanie zdravia**: Spúšťanie modelov analýzy zdravia na nositeľných zariadeniach a zdravotníckych prístrojoch
 - **Autonómne systémy**: Implementácia modelov rozhodovania pre drony, roboty a vozidlá
 
 ### Edge výpočtová infraštruktúra
 - **Edge dátové centrá**: Nasadenie AI modelov v edge dátových centrách pre aplikácie s nízkou latenciou
 - **Integrácia CDN**: Integrácia AI schopností spracovania do sietí na doručovanie obsahu
-- **5G Edge**: Využitie edge výpočtov na 5G pre AI-poháňané aplikácie
-- **Fog Computing**: Implementácia AI spracovania v prostrediach fog computing
+- **5G Edge**: Využitie 5G edge výpočtov pre AI-poháňané aplikácie
+- **Fog Computing**: Implementácia AI spracovania v prostrediach fog computingu
 
 ## Inštalácia a nastavenie
 
@@ -194,7 +194,7 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 ### Predpoklady pre vývoj Edge AI
 - **Visual Studio Code**: Odporúčaná najnovšia verzia
 - **Python prostredie**: Python 3.8+ s požadovanými AI knižnicami
-- **ONNX Runtime** (voliteľné): Pre inferenciu ONNX modelov
+- **ONNX Runtime** (voliteľné): Pre inferenciu ONNX model
 2. Generujte počiatočné výzvy pomocou popisov v prirodzenom jazyku  
 3. Iterujte a zdokonaľujte výzvy na základe odpovedí modelu  
 4. Integrujte nástroje MCP na rozšírenie schopností agentov  
@@ -207,25 +207,41 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 
 #### Krok 4: Doladenie a optimalizácia  
 1. Prispôsobte modely pre špecifické okrajové prípady použitia  
-2. Aplikujte doladenie špecifické pre danú doménu  
+2. Aplikujte doladenie špecifické pre danú oblasť  
 3. Optimalizujte pre obmedzenia nasadenia na okraji  
 4. Vytvárajte verzie a porovnávajte rôzne konfigurácie agentov  
 
 #### Krok 5: Príprava na nasadenie  
 1. Generujte produkčne pripravený kód pomocou Agent Builder  
-2. Nastavte pripojenia k MCP serveru na produkčné použitie  
+2. Nastavte pripojenia MCP servera na produkčné použitie  
 3. Pripravte balíčky na nasadenie pre okrajové zariadenia  
 4. Konfigurujte metriky monitorovania a hodnotenia  
+
+## Ukážky pre AI Toolkit  
+
+Vyskúšajte naše ukážky  
+[Ukážky AI Toolkit](https://github.com/Azure-Samples/AI_Toolkit_Samples) sú navrhnuté tak, aby pomohli vývojárom a výskumníkom efektívne preskúmať a implementovať AI riešenia.  
+
+Naše ukážky zahŕňajú:  
+
+Ukážkový kód: Predpripravené príklady na demonštráciu funkcií AI, ako je tréning, nasadenie alebo integrácia modelov do aplikácií.  
+Dokumentácia: Príručky a tutoriály, ktoré pomáhajú používateľom pochopiť funkcie AI Toolkit a ako ich používať.  
+Predpoklady  
+
+- Visual Studio Code  
+- AI Toolkit pre Visual Studio Code  
+- GitHub jemne zrnitý osobný prístupový token (PAT)  
+- Foundry Local  
 
 ## Najlepšie postupy pre vývoj Edge AI  
 
 ### Výber modelu  
 - **Obmedzenia veľkosti**: Vyberte modely, ktoré sa zmestia do pamäťových limitov cieľových zariadení  
 - **Rýchlosť inferencie**: Uprednostnite modely s rýchlou inferenciou pre aplikácie v reálnom čase  
-- **Kompromisy v presnosti**: Vyvážte presnosť modelu s obmedzeniami zdrojov  
-- **Kompatibilita formátov**: Preferujte formáty ONNX alebo hardvérovo optimalizované formáty pre nasadenie na okraji  
+- **Kompromisy presnosti**: Vyvážte presnosť modelu s obmedzeniami zdrojov  
+- **Kompatibilita formátov**: Preferujte ONNX alebo formáty optimalizované pre hardvér na nasadenie na okraji  
 
-### Optimalizačné techniky  
+### Techniky optimalizácie  
 - **Kvantizácia**: Použite kvantizáciu INT8 alebo INT4 na zmenšenie veľkosti modelu a zlepšenie rýchlosti  
 - **Prerezávanie**: Odstráňte nepotrebné parametre modelu na zníženie výpočtových požiadaviek  
 - **Destilácia znalostí**: Vytvorte menšie modely, ktoré si zachovajú výkon väčších modelov  
@@ -233,21 +249,21 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 
 ### Pracovný postup vývoja  
 - **Iteratívne testovanie**: Testujte často v podmienkach podobných okraju počas vývoja  
-- **Monitorovanie výkonu**: Neustále sledujte využitie zdrojov a rýchlosť inferencie  
-- **Verzovanie**: Sledujte verzie modelov a nastavenia optimalizácie  
+- **Monitorovanie výkonu**: Neustále monitorujte využitie zdrojov a rýchlosť inferencie  
+- **Kontrola verzií**: Sledujte verzie modelov a nastavenia optimalizácie  
 - **Dokumentácia**: Dokumentujte všetky rozhodnutia o optimalizácii a kompromisy výkonu  
 
 ### Úvahy o nasadení  
-- **Monitorovanie zdrojov**: Sledujte pamäť, CPU a spotrebu energie v produkcii  
-- **Záložné stratégie**: Implementujte mechanizmy zálohy pre zlyhania modelu  
+- **Monitorovanie zdrojov**: Monitorujte pamäť, CPU a spotrebu energie v produkcii  
+- **Stratégie zálohovania**: Implementujte mechanizmy zálohovania pre zlyhania modelu  
 - **Mechanizmy aktualizácie**: Plánujte aktualizácie modelov a správu verzií  
 - **Bezpečnosť**: Implementujte vhodné bezpečnostné opatrenia pre aplikácie Edge AI  
 
 ## Integrácia s rámcami Edge AI  
 
 ### ONNX Runtime  
-- **Nasadenie naprieč platformami**: Nasadzujte modely ONNX na rôznych okrajových platformách  
-- **Hardvérová optimalizácia**: Využite hardvérovo špecifické optimalizácie ONNX Runtime  
+- **Nasadenie naprieč platformami**: Nasadzujte ONNX modely na rôznych okrajových platformách  
+- **Optimalizácia hardvéru**: Využite hardvérové špecifické optimalizácie ONNX Runtime  
 - **Podpora mobilných zariadení**: Použite ONNX Runtime Mobile pre aplikácie na smartfónoch a tabletoch  
 - **Integrácia IoT**: Nasadzujte na IoT zariadeniach pomocou ľahkých distribúcií ONNX Runtime  
 
@@ -258,10 +274,10 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 - **Integrácia UWP**: Integrujte s aplikáciami Universal Windows Platform  
 
 ### TensorFlow Lite  
-- **Optimalizácia pre mobilné zariadenia**: Nasadzujte modely TensorFlow Lite na mobilných a zabudovaných zariadeniach  
+- **Optimalizácia pre mobilné zariadenia**: Nasadzujte TensorFlow Lite modely na mobilných a zabudovaných zariadeniach  
 - **Hardvérové delegáty**: Použite špecializované hardvérové delegáty na akceleráciu  
-- **Mikrokontroléry**: Nasadzujte na mikrokontroléry pomocou TensorFlow Lite Micro  
-- **Podpora naprieč platformami**: Nasadzujte na Android, iOS a zabudované systémy Linux  
+- **Mikrokontroléry**: Nasadzujte na mikrokontroléroch pomocou TensorFlow Lite Micro  
+- **Podpora naprieč platformami**: Nasadzujte na Android, iOS a zabudované Linux systémy  
 
 ### Azure IoT Edge  
 - **Hybrid cloud-okraj**: Kombinujte tréning v cloude s inferenciou na okraji  
@@ -278,15 +294,15 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 - **Zdieľanie zdrojov**: Optimalizujte využitie zdrojov naprieč viacerými nasadenými modelmi  
 
 ### Federované učenie  
-- **Distribuované tréningy**: Trénujte modely na viacerých okrajových zariadeniach  
-- **Zachovanie súkromia**: Uchovávajte tréningové údaje lokálne pri zdieľaní vylepšení modelu  
+- **Distribuovaný tréning**: Trénujte modely na viacerých okrajových zariadeniach  
+- **Zachovanie súkromia**: Uchovávajte tréningové údaje lokálne pri zdieľaní zlepšení modelu  
 - **Kolaboratívne učenie**: Umožnite zariadeniam učiť sa zo spoločných skúseností  
 - **Koordinácia okraj-cloud**: Koordinujte učenie medzi okrajovými zariadeniami a cloudovou infraštruktúrou  
 
 ### Spracovanie v reálnom čase  
-- **Spracovanie streamov**: Spracovávajte nepretržité dátové toky na okrajových zariadeniach  
-- **Inferencia s nízkou latenciou**: Optimalizujte na minimálnu latenciu inferencie  
-- **Dávkové spracovanie**: Efektívne spracovávajte dávky údajov na okrajových zariadeniach  
+- **Spracovanie streamov**: Spracovávajte kontinuálne dátové toky na okrajových zariadeniach  
+- **Inferencia s nízkou latenciou**: Optimalizujte pre minimálnu latenciu inferencie  
+- **Spracovanie dávok**: Efektívne spracovávajte dávky dát na okrajových zariadeniach  
 - **Adaptívne spracovanie**: Prispôsobte spracovanie na základe aktuálnych schopností zariadenia  
 
 ## Riešenie problémov pri vývoji Edge AI  
@@ -294,27 +310,27 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 ### Bežné problémy  
 - **Pamäťové obmedzenia**: Model je príliš veľký pre pamäť cieľového zariadenia  
 - **Rýchlosť inferencie**: Inferencia modelu je príliš pomalá pre požiadavky v reálnom čase  
-- **Zhoršenie presnosti**: Optimalizácia neprijateľne znižuje presnosť modelu  
+- **Degradácia presnosti**: Optimalizácia znižuje presnosť modelu neprijateľne  
 - **Kompatibilita hardvéru**: Model nie je kompatibilný s cieľovým hardvérom  
 
 ### Stratégie ladenia  
 - **Profilovanie výkonu**: Použite funkcie sledovania AI Toolkit na identifikáciu úzkych miest  
-- **Monitorovanie zdrojov**: Sledujte pamäť a využitie CPU počas vývoja  
+- **Monitorovanie zdrojov**: Monitorujte pamäť a využitie CPU počas vývoja  
 - **Postupné testovanie**: Testujte optimalizácie postupne na izolovanie problémov  
 - **Simulácia hardvéru**: Použite vývojové nástroje na simuláciu cieľového hardvéru  
 
 ### Riešenia optimalizácie  
 - **Ďalšia kvantizácia**: Aplikujte agresívnejšie techniky kvantizácie  
 - **Architektúra modelu**: Zvážte rôzne architektúry modelov optimalizované pre okraj  
-- **Optimalizácia predspracovania**: Optimalizujte predspracovanie údajov pre obmedzenia okraja  
-- **Optimalizácia inferencie**: Použite hardvérovo špecifické optimalizácie inferencie  
+- **Optimalizácia predspracovania**: Optimalizujte predspracovanie dát pre obmedzenia okraja  
+- **Optimalizácia inferencie**: Použite optimalizácie inferencie špecifické pre hardvér  
 
 ## Zdroje a ďalšie kroky  
 
 ### Oficiálna dokumentácia  
 - [Dokumentácia pre vývojárov AI Toolkit](https://aka.ms/AIToolkit/doc)  
 - [Príručka inštalácie a nastavenia](https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup)  
-- [Dokumentácia VS Code Intelligent Apps](https://code.visualstudio.com/docs/intelligentapps)  
+- [Dokumentácia inteligentných aplikácií VS Code](https://code.visualstudio.com/docs/intelligentapps)  
 - [Dokumentácia Model Context Protocol (MCP)](https://modelcontextprotocol.io/)  
 
 ### Komunita a podpora  
@@ -329,11 +345,11 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 - [Dokumentácia Windows ML](https://docs.microsoft.com/en-us/windows/ai/)  
 - [Dokumentácia Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)  
 
-### Vzdelávacie cesty  
+### Cesty učenia  
 - [Kurz základov Edge AI](../Module01/README.md)  
 - [Príručka malých jazykových modelov](../Module02/README.md)  
 - [Stratégie nasadenia na okraji](../Module03/README.md)  
-- [Vývoj Edge AI na Windows](./windowdeveloper.md)  
+- [Vývoj Edge AI pre Windows](./windowdeveloper.md)  
 
 ### Ďalšie zdroje  
 - **Štatistiky repozitára**: 1.8k+ hviezdičiek, 150+ forkov, 18+ prispievateľov  
@@ -343,24 +359,24 @@ Nainštalujte rozšírenie AI Toolkit priamo z Visual Studio Code Marketplace:
 
 ## Záver  
 
-AI Toolkit pre Visual Studio Code predstavuje komplexnú platformu pre moderný vývoj AI, poskytujúcu zjednodušené schopnosti vývoja agentov, ktoré sú obzvlášť cenné pre aplikácie Edge AI. S rozsiahlym katalógom modelov podporujúcim poskytovateľov ako Anthropic, OpenAI, GitHub a Google, v kombinácii s lokálnym vykonávaním cez ONNX a Ollama, ponúka nástroj flexibilitu potrebnú pre rôznorodé scenáre nasadenia na okraji.
+AI Toolkit pre Visual Studio Code predstavuje komplexnú platformu pre moderný vývoj AI, poskytujúcu zjednodušené schopnosti vývoja agentov, ktoré sú obzvlášť cenné pre aplikácie Edge AI. S rozsiahlym katalógom modelov podporujúcim poskytovateľov ako Anthropic, OpenAI, GitHub a Google, v kombinácii s lokálnym vykonávaním prostredníctvom ONNX a Ollama, ponúka toolkit flexibilitu potrebnú pre rôznorodé scenáre nasadenia na okraji.  
 
-Silnou stránkou nástroja je jeho integrovaný prístup—od objavovania modelov a experimentovania v Playground až po sofistikovaný vývoj agentov s Prompt Builder, komplexné hodnotiace schopnosti a bezproblémovú integráciu nástrojov MCP. Pre vývojárov Edge AI to znamená rýchle prototypovanie a testovanie AI agentov pred nasadením na okraji, s možnosťou rýchlej iterácie a optimalizácie pre prostredia s obmedzenými zdrojmi.
+Silnou stránkou toolkitu je jeho integrovaný prístup – od objavovania modelov a experimentovania v Playground až po sofistikovaný vývoj agentov s Prompt Builder, komplexné hodnotiace schopnosti a bezproblémovú integráciu nástrojov MCP. Pre vývojárov Edge AI to znamená rýchle prototypovanie a testovanie AI agentov pred nasadením na okraj, s možnosťou rýchlej iterácie a optimalizácie pre prostredia s obmedzenými zdrojmi.  
 
 Kľúčové výhody pre vývoj Edge AI zahŕňajú:  
-- **Rýchle experimentovanie**: Rýchlo testujte modely a agentov pred záväzným nasadením na okraji  
+- **Rýchle experimentovanie**: Rýchle testovanie modelov a agentov pred nasadením na okraj  
 - **Flexibilita viacerých poskytovateľov**: Prístup k modelom z rôznych zdrojov na nájdenie optimálnych riešení pre okraj  
-- **Lokálny vývoj**: Testujte s ONNX a Ollama pre offline a súkromný vývoj  
-- **Pripravenosť na produkciu**: Generujte produkčne pripravený kód a integrujte s externými nástrojmi cez MCP  
-- **Komplexné hodnotenie**: Použite vstavané a vlastné metriky na overenie výkonu Edge AI  
+- **Lokálny vývoj**: Testovanie s ONNX a Ollama pre offline a súkromný vývoj  
+- **Pripravenosť na produkciu**: Generovanie produkčne pripraveného kódu a integrácia s externými nástrojmi prostredníctvom MCP  
+- **Komplexné hodnotenie**: Použitie vstavaných a vlastných metrík na overenie výkonu Edge AI  
 
-Ako sa AI stále viac presúva k scenárom nasadenia na okraji, AI Toolkit pre VS Code poskytuje vývojové prostredie a pracovný postup potrebný na vytváranie, testovanie a optimalizáciu inteligentných aplikácií pre prostredia s obmedzenými zdrojmi. Či už vyvíjate IoT riešenia, mobilné AI aplikácie alebo zabudované inteligentné systémy, komplexná sada funkcií nástroja a integrovaný pracovný postup podporujú celý životný cyklus vývoja Edge AI.
+Ako sa AI naďalej presúva k scenárom nasadenia na okraji, AI Toolkit pre VS Code poskytuje vývojové prostredie a pracovný postup potrebný na vytváranie, testovanie a optimalizáciu inteligentných aplikácií pre prostredia s obmedzenými zdrojmi. Či už vyvíjate IoT riešenia, mobilné AI aplikácie alebo zabudované inteligentné systémy, komplexná sada funkcií toolkitu a integrovaný pracovný postup podporujú celý životný cyklus vývoja Edge AI.  
 
-S neustálym vývojom a aktívnou komunitou (1.8k+ hviezdičiek na GitHub), AI Toolkit zostáva na čele nástrojov pre vývoj AI, neustále sa vyvíjajúc, aby vyhovoval potrebám moderných vývojárov AI budujúcich pre scenáre nasadenia na okraji.
+S neustálym vývojom a aktívnou komunitou (1.8k+ hviezdičiek na GitHub), AI Toolkit zostáva na čele nástrojov pre vývoj AI, neustále sa vyvíjajúc, aby vyhovoval potrebám moderných vývojárov AI, ktorí budujú scenáre nasadenia na okraji.  
 
 [Next Foundry Local](./foundrylocal.md)  
 
 ---
 
-**Upozornenie**:  
-Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, upozorňujeme, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nenesieme zodpovednosť za akékoľvek nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
+**Zrieknutie sa zodpovednosti**:  
+Tento dokument bol preložený pomocou služby AI prekladu [Co-op Translator](https://github.com/Azure/co-op-translator). Hoci sa snažíme o presnosť, prosím, berte na vedomie, že automatizované preklady môžu obsahovať chyby alebo nepresnosti. Pôvodný dokument v jeho rodnom jazyku by mal byť považovaný za autoritatívny zdroj. Pre kritické informácie sa odporúča profesionálny ľudský preklad. Nie sme zodpovední za žiadne nedorozumenia alebo nesprávne interpretácie vyplývajúce z použitia tohto prekladu.
